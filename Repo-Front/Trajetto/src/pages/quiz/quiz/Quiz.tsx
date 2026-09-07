@@ -1,12 +1,14 @@
 import React from 'react';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useColors } from '@/src/theme';
 import { useQuiz } from './hooks/useQuiz';
 import { styles } from './styles/styles';
 
 export default function Quiz() {
+  const { t } = useTranslation('quiz');
   const insets = useSafeAreaInsets();
   const colors = useColors();
   const s = styles(colors);
@@ -22,7 +24,7 @@ export default function Quiz() {
             <TouchableOpacity onPress={goBack} style={s.headerBackBtn} activeOpacity={0.7}>
               <Ionicons name="chevron-back" size={32} color={colors.white} />
             </TouchableOpacity>
-            <Text style={s.headerText}>Teste de Viajante</Text>
+            <Text style={s.headerText}>{t('quiz.headerTitle')}</Text>
           </View>
         </View>
       </View>
@@ -32,7 +34,7 @@ export default function Quiz() {
       </View>
 
       <ScrollView contentContainerStyle={s.content}>
-        <Text style={s.question}>{current.texto}</Text>
+        <Text style={s.question}>{t(current.texto)}</Text>
 
         {current.tipo === 'sim_nao' && (
           <View>
@@ -44,7 +46,7 @@ export default function Quiz() {
                   onPress={() => setSelected(opt)}
                 >
                   <Text style={[s.simNaoText, selected === opt && s.simNaoTextSelected]}>
-                    {opt === 'sim' ? 'Sim' : 'Não'}
+                    {opt === 'sim' ? t('quiz.yes') : t('quiz.no')}
                   </Text>
                 </TouchableOpacity>
               ))}
@@ -54,7 +56,7 @@ export default function Quiz() {
               onPress={() => setSelected('nao_sei')}
             >
               <Text style={[s.naoSeiText, selected === 'nao_sei' && s.simNaoTextSelected]}>
-                Não sei dizer
+                {t('quiz.dontKnow')}
               </Text>
             </TouchableOpacity>
           </View>
@@ -72,7 +74,7 @@ export default function Quiz() {
                 {isSelected && <View style={s.radioInner} />}
               </View>
               <Text style={[s.optionText, isSelected && s.optionTextSelected]}>
-                {opcao.texto}
+                {t(opcao.texto)}
               </Text>
             </TouchableOpacity>
           );
@@ -86,7 +88,7 @@ export default function Quiz() {
           disabled={!selected}
         >
           <Text style={s.nextButtonText}>
-            {currentIndex === total - 1 ? 'Ver resultado' : 'Próxima pergunta'}
+            {currentIndex === total - 1 ? t('quiz.seeResult') : t('quiz.nextQuestion')}
           </Text>
         </TouchableOpacity>
       </View>

@@ -1,0 +1,32 @@
+{
+  "headerTitle": "Settings",
+  "personalInfo": "Personal information",
+  "firstNameLabel": "First name",
+  "firstNamePlaceholder": "Your first name",
+  "lastNameLabel": "Last name",
+  "lastNamePlaceholder": "Your last name",
+  "birthDateLabel": "Birth date",
+  "birthDatePlaceholder": "MM/DD/YYYY",
+  "telephoneLabel": "Phone",
+  "telephonePlaceholder": "(00) 00000-0000",
+  "emailLabel": "Email",
+  "emailPlaceholder": "youremail@example.com",
+  "countryLabel": "Country",
+  "countryPlaceholder": "Select your country",
+  "save": "Save changes",
+  "logout": "Log out",
+  "updateSuccess": "Profile updated!",
+  "updateError": "Could not update",
+  "menu": {
+    "headerTitle": "My Itineraries",
+    "accountSection": "Account",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "language": "Language",
+    "travelerSection": "Traveler",
+    "retakeTest": "Retake the traveler test",
+    "exploreDestinations": "Explore destinations",
+    "logout": "Log out",
+    "version": "Trajetto v{{version}}"
+  }
+}

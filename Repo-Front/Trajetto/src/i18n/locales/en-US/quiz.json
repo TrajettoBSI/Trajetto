@@ -1,0 +1,139 @@
+{
+  "travelerTest": {
+    "title": "Discover your profile",
+    "subtitle": "Answer a few quick questions and find out what kind of traveler you are.",
+    "retaking": "Retaking the test",
+    "start": "Take the test",
+    "cancel": "Cancel",
+    "skip": "Do it later"
+  },
+  "quiz": {
+    "headerTitle": "Traveler Test",
+    "yes": "Yes",
+    "no": "No",
+    "dontKnow": "Not sure",
+    "seeResult": "See result",
+    "nextQuestion": "Next question"
+  },
+  "result": {
+    "notFound": "Result not found.",
+    "back": "Back",
+    "yourResult": "Your result",
+    "aboutYou": "About you",
+    "matchingDestinations": "📍 Destinations that match you",
+    "backToProfile": "Back to profile",
+    "startExploring": "Start exploring"
+  },
+  "questions": {
+    "1": "Do you prefer busy destinations full of people?",
+    "2": "Are museums, galleries and historical sites must-see stops on your trips?",
+    "3": "Would you sleep in a tent in the middle of a forest?",
+    "4": "What matters most in your destination?",
+    "4_options": {
+      "A": "Paradise beaches and sun",
+      "B": "Trails and natural landscapes",
+      "C": "History, art and local culture",
+      "D": "Parties, bars and nightlife"
+    },
+    "5": "Do you plan every detail of the trip in advance?",
+    "6": "Is splurging on comfortable lodging part of the experience for you?",
+    "7": "How do you prefer to get around at your destination?",
+    "7_options": {
+      "A": "On foot, exploring every corner",
+      "B": "Rental car or private driver",
+      "C": "Public transport like a local",
+      "D": "Boat, ATV, horse — the more unusual, the better"
+    },
+    "8": "Do you try local food even without knowing what you're eating?",
+    "9": "Do you prefer traveling alone?",
+    "10": "Which of these activities suits you best?",
+    "10_options": {
+      "A": "Diving, rafting or climbing",
+      "B": "Historical tour or museum visit",
+      "C": "Spa, pool and massage",
+      "D": "Chatting with locals at a bar"
+    },
+    "11": "Do you feel comfortable changing plans on the fly?",
+    "12": "Are trails, waterfalls and nature parks your kind of thing?",
+    "13": "What do you do on your first morning at a new destination?",
+    "13_options": {
+      "A": "Slow coffee in the room, no rush",
+      "B": "Head straight out to explore the streets",
+      "C": "Look for the first trail available",
+      "D": "Meet other travelers at the hostel"
+    },
+    "14": "Have you ever traveled somewhere just for a festival, event or show?",
+    "15": "How would you describe your travel budget?",
+    "15_options": {
+      "A": "I save on everything to travel more often",
+      "B": "Balanced spending — neither luxury nor deprivation",
+      "C": "I'd rather travel less and well, without saving",
+      "D": "I don't mind much, the experience is what matters"
+    },
+    "16": "What kind of photo do you take most on trips?",
+    "16_options": {
+      "A": "Wild natural landscapes",
+      "B": "Historical monuments and cultural facades",
+      "C": "Moments with friends at parties and bars",
+      "D": "The hotel room, the pool and room service"
+    },
+    "17": "Do you prefer a packed itinerary over a free day with no plans?",
+    "18": "What would your ideal week-long itinerary be?",
+    "18_options": {
+      "A": "Camping and hiking in national parks",
+      "B": "City tour through historic towns and museums",
+      "C": "All-inclusive beach resort, never leaving the place",
+      "D": "Backpacking through several countries"
+    },
+    "19": "Do you like to learn about the local language and customs before traveling?",
+    "20": "If you could choose one type of accommodation, what would it be?",
+    "20_options": {
+      "A": "Hostel with a lively common area",
+      "B": "Boutique hotel with unique, charming decor",
+      "C": "Isolated cabin in the mountains or forest",
+      "D": "Quiet inn by the sea"
+    }
+  },
+  "profiles": {
+    "AVENTUREIRO": {
+      "nome": "Adventurer",
+      "descricao": "You live to step out of your comfort zone! You prefer steep trails, extreme sports and off-the-beaten-path destinations. Controlled risk is part of the joy of traveling.",
+      "destinos": ["Patagonia", "Nepal", "New Zealand", "Costa Rica"]
+    },
+    "CULTURAL": {
+      "nome": "Cultural Explorer",
+      "descricao": "Your luggage is packed with knowledge. You love museums, historical ruins, local food and the stories behind every place. Every trip is a lesson.",
+      "destinos": ["Rome", "Kyoto", "Cairo", "Athens"]
+    },
+    "NATUREZA": {
+      "nome": "Nature Lover",
+      "descricao": "For you, the best view is the one without buildings. Waterfalls, forests, wildlife and wild flora are what make a trip worthwhile.",
+      "destinos": ["Amazon", "Iceland", "Galápagos", "Borneo"]
+    },
+    "LUXO": {
+      "nome": "Luxury Traveler",
+      "descricao": "Comfort is non-negotiable. You prefer five-star hotels, award-winning restaurants and exclusive services. Traveling well is an art, and you take it seriously.",
+      "destinos": ["Dubai", "Maldives", "Amalfi", "Bora Bora"]
+    },
+    "MOCHILEIRO": {
+      "nome": "Backpacker",
+      "descricao": "Light, free and unattached. You prefer hostels, public transport and improvised itineraries. The journey matters as much as the destination.",
+      "destinos": ["Southeast Asia", "South America", "Central Europe", "Morocco"]
+    },
+    "RELAXAMENTO": {
+      "nome": "Relaxed Traveler",
+      "descricao": "Your ideal trip has a beach, sun, a good book and zero commitments. You don't avoid attractions, but you never skip recharging your batteries.",
+      "destinos": ["Maldives", "Fernando de Noronha", "Bali", "Caribbean"]
+    },
+    "SOCIAL": {
+      "nome": "Social Traveler",
+      "descricao": "You collect friendships in every time zone. Festivals, local bars, lively hostels — anywhere you can meet new people is your kind of place.",
+      "destinos": ["Ibiza", "Rio de Janeiro", "Bangkok", "Amsterdam"]
+    },
+    "SOLITARIO": {
+      "nome": "Solo Traveler",
+      "descricao": "You travel to find yourself, not to get lost in crowds. Introspection, silence and a deep connection with the place are what make a trip perfect.",
+      "destinos": ["Scotland", "Tibet", "Finnish Lapland", "Atacama Desert"]
+    }
+  }
+}

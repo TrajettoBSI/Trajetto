@@ -3,6 +3,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 
 const PRIMARY = '#006ecf';
 
@@ -47,6 +48,7 @@ interface TicketCardProps {
 export function TicketCard({
     place, idx, color, isPast, isHighlighted, isLast, onPress, onInfoPress,
 }: TicketCardProps) {
+    const { t } = useTranslation('itinerario');
     return (
         <TouchableOpacity
             style={[
@@ -61,7 +63,7 @@ export function TicketCard({
             {/* Cabeçalho colorido */}
             <View style={[ticketStyles.header, { backgroundColor: isPast ? '#9aa4b2' : color }]}>
                 <View style={ticketStyles.headerLeft}>
-                    <Text style={ticketStyles.stopLabel}>PARADA</Text>
+                    <Text style={ticketStyles.stopLabel}>{t('ticketCard.stopLabel')}</Text>
                     <Text style={ticketStyles.stopNumber}>{String(idx + 1).padStart(2, '0')}</Text>
                 </View>
                 <View style={ticketStyles.headerCenter}>
@@ -70,7 +72,7 @@ export function TicketCard({
                     </Text>
                 </View>
                 <View style={ticketStyles.headerRight}>
-                    <Text style={ticketStyles.timeLabel}>HORÁRIO</Text>
+                    <Text style={ticketStyles.timeLabel}>{t('ticketCard.timeLabel')}</Text>
                     <Text style={ticketStyles.timeValue}>{formatTime(place.estimatedVisitTime)}</Text>
                 </View>
             </View>
@@ -120,11 +122,11 @@ export function TicketCard({
                         ) : null}
                         {place.fee === 'yes' ? (
                             <View style={ticketStyles.feeBadge}>
-                                <Text style={ticketStyles.feeBadgeText}>🎟️ Pago</Text>
+                                <Text style={ticketStyles.feeBadgeText}>{t('ticketCard.paid')}</Text>
                             </View>
                         ) : place.fee === 'no' ? (
                             <View style={ticketStyles.freeBadge}>
-                                <Text style={ticketStyles.freeBadgeText}>🆓 Grátis</Text>
+                                <Text style={ticketStyles.freeBadgeText}>{t('ticketCard.free')}</Text>
                             </View>
                         ) : null}
                     </View>
@@ -134,7 +136,7 @@ export function TicketCard({
                         onPress={onInfoPress}
                         hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
                     >
-                        <Text style={[ticketStyles.infoBtnText, { color: isPast ? '#9aa4b2' : color }]}>Sobre</Text>
+                        <Text style={[ticketStyles.infoBtnText, { color: isPast ? '#9aa4b2' : color }]}>{t('ticketCard.about')}</Text>
                         <Ionicons name="information-circle-outline" size={14} color={isPast ? '#9aa4b2' : color} />
                     </TouchableOpacity>
                 </View>

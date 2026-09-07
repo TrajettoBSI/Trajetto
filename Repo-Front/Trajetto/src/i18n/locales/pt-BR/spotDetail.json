@@ -1,0 +1,25 @@
+{
+  "headerTitle": "Explorar",
+  "free": "🆓 Gratuito",
+  "paid": "💰 Pago",
+  "howToGetThere": "Como chegar",
+  "distance": "distância",
+  "walking": "a pé",
+  "driving": "de carro",
+  "openInMaps": "Abrir rota no Google Maps",
+  "information": "Informações",
+  "address": "Endereço",
+  "website": "Website",
+  "phone": "Telefone",
+  "wikipedia": "Wikipedia",
+  "wikidata": "Wikidata",
+  "coordinates": "Coordenadas",
+  "openingHours": "Horários de funcionamento",
+  "recommendedFor": "Indicado para",
+  "openMapsError": "Não foi possível abrir o Google Maps",
+  "accessibility": {
+    "yes": "♿ Totalmente acessível",
+    "limited": "♿ Parcialmente acessível",
+    "no": "🚫 Não acessível"
+  }
+}

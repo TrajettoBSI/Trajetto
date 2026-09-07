@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomButton from '@/components/CustomButton';
 import { PLACE_COLORS } from '@/constants/placeColors';
@@ -16,6 +17,7 @@ import AlternativesModal from './components/AlternativesModal/AlternativesModal'
 import RatingBottomSheet from './components/RatingBottomSheet/RatingBottomSheet';
 
 export default function Itinerario() {
+  const { t } = useTranslation('itinerario');
   const insets = useSafeAreaInsets();
   const colors = useColors();
   const s = styles(colors);
@@ -40,7 +42,7 @@ export default function Itinerario() {
   } = useItinerario();
 
   if (loading) {
-    return <AsyncState style={s.center} loading loadingText="Carregando itinerário..." />;
+    return <AsyncState style={s.center} loading loadingText={t('loadingText')} />;
   }
 
   if (!itinerary) {
@@ -64,8 +66,8 @@ export default function Itinerario() {
           stopsCount={sorted.length}
         />
 
-        <Text style={s.sectionLabel}>PARADAS DO ROTEIRO</Text>
-        <Text style={s.swipeHint}>← Deslize um card para trocar o lugar</Text>
+        <Text style={s.sectionLabel}>{t('sectionLabel')}</Text>
+        <Text style={s.swipeHint}>{t('swipeHint')}</Text>
 
         <View style={s.timeline}>
           {sorted.map((place, idx) => {
@@ -96,7 +98,7 @@ export default function Itinerario() {
         </View>
 
         <CustomButton
-          title="Exportar em PDF"
+          title={t('exportPdf')}
           onPress={handleExportPDF}
           icon={<Ionicons name="download-outline" size={22} color={colors.white} />}
           style={s.btnExport}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
@@ -10,13 +11,14 @@ type SelectBarProps = {
 };
 
 export default function SelectBar({ count, bulkDeleting, onBulkDelete }: SelectBarProps) {
+  const { t } = useTranslation('roteiros');
   const colors = useColors();
   const s = styles(colors);
 
   return (
     <View style={s.selectBar}>
       <Text style={s.selectBarCount}>
-        {count} selecionado{count !== 1 ? 's' : ''}
+        {t('selectBar.count', { count })}
       </Text>
       <TouchableOpacity
         style={[s.bulkDeleteBtn, count === 0 && s.bulkDeleteBtnDisabled]}
@@ -26,7 +28,7 @@ export default function SelectBar({ count, bulkDeleting, onBulkDelete }: SelectB
       >
         {bulkDeleting
           ? <ActivityIndicator size="small" color={colors.white} />
-          : <Text style={s.bulkDeleteBtnText}>🗑️  Excluir ({count})</Text>
+          : <Text style={s.bulkDeleteBtnText}>{t('selectBar.delete', { count })}</Text>
         }
       </TouchableOpacity>
     </View>

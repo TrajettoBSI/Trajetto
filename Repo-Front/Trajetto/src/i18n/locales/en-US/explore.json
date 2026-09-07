@@ -1,0 +1,16 @@
+{
+  "headerTitle": "Explore",
+  "subtitle": "Discover tourist spots in Rome",
+  "searchPlaceholder": "Search tourist spot...",
+  "resultsCount_one": "{{count}} result",
+  "resultsCount_other": "{{count}} results",
+  "resultsInCategory": " in \"{{category}}\"",
+  "filterModalTitle": "Filter by category",
+  "allCategories": "📍 All categories",
+  "clearFiltersButton": "Clear filters",
+  "emptyNotFoundTitle": "No results",
+  "emptyNotFoundText": "Try other filters or clear the search.",
+  "emptyDefaultTitle": "Explore Rome",
+  "emptyDefaultText": "Search or filter available tourist spots.",
+  "loadingText": "Searching tourist spots..."
+}

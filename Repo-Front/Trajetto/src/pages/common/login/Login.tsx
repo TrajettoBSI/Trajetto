@@ -1,6 +1,7 @@
 import React from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import Animated, { FadeIn, SlideInRight } from 'react-native-reanimated';
+import { useTranslation } from 'react-i18next';
 import CustomInput from '@/components/CustomInput';
 import CustomButton from '@/components/CustomButton';
 import Logo from '@/assets/appImgs/logo.svg';
@@ -9,6 +10,7 @@ import { useLogin } from './hooks/useLogin';
 import { styles } from './styles/styles';
 
 export default function Login() {
+  const { t } = useTranslation('login');
   const colors = useColors();
   const s = styles(colors);
   const {
@@ -34,7 +36,7 @@ export default function Login() {
         <View style={s.header}>
           <View>
             <Animated.Text entering={FadeIn.delay(1000).duration(800)} style={s.intro}>
-              Planeje seu
+              {t('intro')}
             </Animated.Text>
             <View style={s.titleRow}>
               <Animated.View entering={FadeIn.duration(800)} style={s.logoContainer}>
@@ -48,7 +50,7 @@ export default function Login() {
         </View>
 
         <View style={s.card}>
-          <Text style={s.cardTitle}>Login</Text>
+          <Text style={s.cardTitle}>{t('cardTitle')}</Text>
 
           {error ? (
             <View style={s.errorBox}>
@@ -57,34 +59,34 @@ export default function Login() {
           ) : null}
 
           <CustomInput
-            label="E-mail"
+            label={t('emailLabel')}
             type="email"
             value={email}
             onChangeText={setEmail}
-            placeholder="seu@email.com"
+            placeholder={t('emailPlaceholder')}
             autoCapitalize="none"
             error={errors.email}
           />
 
           <CustomInput
-            label="Senha"
+            label={t('passwordLabel')}
             type="password"
             value={password}
             onChangeText={setPassword}
-            placeholder="••••••••"
+            placeholder={t('passwordPlaceholder')}
             error={errors.password}
           />
 
           <TouchableOpacity onPress={goToForgotPassword}>
-            <Text style={s.link}>Esqueceu sua senha?</Text>
+            <Text style={s.link}>{t('forgotPassword')}</Text>
           </TouchableOpacity>
 
-          <CustomButton title="Entrar" onPress={handleLogin} loading={loading} />
+          <CustomButton title={t('submit')} onPress={handleLogin} loading={loading} />
 
           <View style={s.registerRow}>
-            <Text style={s.registerText}>Não tem uma conta? </Text>
+            <Text style={s.registerText}>{t('noAccount')}</Text>
             <TouchableOpacity onPress={goToRegister}>
-              <Text style={s.registerLink}>Cadastre-se</Text>
+              <Text style={s.registerLink}>{t('signUp')}</Text>
             </TouchableOpacity>
           </View>
         </View>

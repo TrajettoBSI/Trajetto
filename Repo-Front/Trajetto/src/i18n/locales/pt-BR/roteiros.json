@@ -1,0 +1,95 @@
+{
+  "header": {
+    "cancelSelect": "Cancelar",
+    "selectedCount_one": "{{count}} selecionado",
+    "selectedCount_other": "{{count}} selecionados",
+    "selectAll": "Todos",
+    "title": "Meus Roteiros",
+    "greeting": "Olá, {{name}} 👋"
+  },
+  "adminBanners": {
+    "adminPanel": "Painel Administrador",
+    "dashboard": "Dashboard de uso"
+  },
+  "loadingItineraries": "Carregando roteiros...",
+  "exploreBanner": {
+    "tag": "✈️  Destinos",
+    "title": "Explore mais\nlugares para ir",
+    "cta": "Descobrir agora →"
+  },
+  "activeSectionLabel": "ROTEIRO ATIVO",
+  "otherSectionLabel": "OUTROS ROTEIROS",
+  "defaultItineraryName": "Roteiro",
+  "activeCard": {
+    "activeBadge": "Ativo",
+    "stopsAndDays": "{{stops}} paradas · {{days}} dias",
+    "deleteButton": "Excluir roteiro"
+  },
+  "inactiveRow": {
+    "stopsAndDate": "{{stops}} paradas · {{date}}",
+    "activate": "Ativar"
+  },
+  "selectBar": {
+    "count_one": "{{count}} selecionado",
+    "count_other": "{{count}} selecionados",
+    "delete": "🗑️  Excluir ({{count}})"
+  },
+  "generate": {
+    "wantNew": "Quer um novo roteiro?",
+    "button": "Gerar Roteiro"
+  },
+  "delete": {
+    "confirmSingle": "Tem certeza que deseja excluir este roteiro?",
+    "titleSingle": "Excluir roteiro",
+    "errorSingle": "Não foi possível excluir o roteiro.",
+    "confirmBulk_one": "Excluir {{count}} roteiro? Essa ação não pode ser desfeita.",
+    "confirmBulk_other": "Excluir {{count}} roteiros? Essa ação não pode ser desfeita.",
+    "titleBulk": "Excluir roteiros",
+    "errorBulk": "Não foi possível excluir alguns roteiros."
+  },
+  "activateError": "Não foi possível ativar o roteiro.",
+  "emptyState": {
+    "createFirst": "Crie seu primeiro",
+    "itinerary": "roteiro",
+    "personalized": "personalizado",
+    "andStart": "e comece a",
+    "explore": "explorar o mundo."
+  },
+  "noItineraryEmptyState": {
+    "generate": "Gere um roteiro personalizado",
+    "andPlan": "e planeje seu",
+    "goHome": "Ir para Início"
+  },
+  "destinations": {
+    "flightTime": "{{hours}}h voo",
+    "tokyo": "Tokyo",
+    "japan": "Japão",
+    "paris": "Paris",
+    "france": "França",
+    "nyc": "NYC",
+    "usa": "EUA",
+    "rome": "Roma",
+    "italy": "Itália",
+    "venice": "Veneza",
+    "curitiba": "Curitiba",
+    "brazil": "Brasil"
+  },
+  "generateFlow": {
+    "configureTitle": "Configurar Roteiro",
+    "generatedTitle": "Roteiro Gerado",
+    "cityLabel": "CIDADE",
+    "cityValue": "🏛️  Roma, Itália",
+    "durationLabel": "DURAÇÃO",
+    "durationValue": "1 dia",
+    "originLabel": "PONTO DE PARTIDA",
+    "originHint": "Digite seu hotel ou endereço em Roma",
+    "originPlaceholder": "Ex: Via Veneto 45, Roma",
+    "generateButton": "Gerar Roteiro",
+    "loadingText": "Criando seu roteiro...",
+    "summaryTitle": "Roma, Itália",
+    "summaryMeta": "{{stops}} paradas · {{origin}}",
+    "regenerate": "Re-gerar",
+    "accept": "Aceitar",
+    "genericError": "Não foi possível gerar o roteiro. Tente novamente."
+  }
+}

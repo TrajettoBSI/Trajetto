@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { PLACE_COLORS } from '@/constants/placeColors';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
@@ -11,6 +12,7 @@ type RouteBarProps = {
 };
 
 export default function RouteBar({ firstUpcomingIdx, hasOriginSeg, placeName }: RouteBarProps) {
+  const { t } = useTranslation('mapa');
   const colors = useColors();
   const s = styles(colors);
   const currentColor = PLACE_COLORS[firstUpcomingIdx % PLACE_COLORS.length];
@@ -21,9 +23,9 @@ export default function RouteBar({ firstUpcomingIdx, hasOriginSeg, placeName }: 
     <View style={s.routeBar}>
       <View style={[s.routeDot, { backgroundColor: currentColor }]} />
       <Text style={s.routeText} numberOfLines={1}>
-        <Text style={[s.routeLabel, { color: currentColor }]}>Agora · </Text>
+        <Text style={[s.routeLabel, { color: currentColor }]}>{t('routeBar.now')}</Text>
         {hasOriginSeg && firstUpcomingIdx === 0
-          ? <Text style={[s.routeNum, { color: colors.primary }]}>Início</Text>
+          ? <Text style={[s.routeNum, { color: colors.primary }]}>{t('routeBar.start')}</Text>
           : <Text style={[s.routeNum, { color: prevColor }]}>{firstUpcomingIdx}</Text>
         }
         <Text style={s.routeArrow}> → </Text>

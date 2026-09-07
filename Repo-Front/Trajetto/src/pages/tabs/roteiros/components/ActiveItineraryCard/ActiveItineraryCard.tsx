@@ -1,10 +1,11 @@
 import React from 'react';
 import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import { Itinerary } from '@/hooks/itineraryStore';
 import { useColors } from '@/src/theme';
 import { isPlacePast } from '@/app/utils/isPlacePast';
-import { formatDate, formatTime } from '@/src/pages/tabs/shared/roteiroFormat';
+import { formatDate, formatTime } from '@/src/i18n/format';
 import Checkbox from '../Checkbox/Checkbox';
 import { styles } from './styles';
 
@@ -21,6 +22,7 @@ type ActiveItineraryCardProps = {
 export default function ActiveItineraryCard({
   itinerary, selectMode, selected, deleting, onPress, onLongPress, onDelete,
 }: ActiveItineraryCardProps) {
+  const { t } = useTranslation('roteiros');
   const colors = useColors();
   const s = styles(colors);
 
@@ -44,7 +46,7 @@ export default function ActiveItineraryCard({
       <View style={s.itineraryCardHeader}>
         <View style={s.activeBadge}>
           <View style={s.activeDot} />
-          <Text style={s.activeBadgeText}>Ativo</Text>
+          <Text style={s.activeBadgeText}>{t('activeCard.activeBadge')}</Text>
         </View>
         <Text style={s.itineraryDates}>
           {formatDate(itinerary.startDate)} → {formatDate(itinerary.endDate)}
@@ -54,13 +56,13 @@ export default function ActiveItineraryCard({
       <View style={s.titleRow}>
         <Ionicons name="location" size={18} color={colors.primary} style={s.locationIcon} />
         <Text style={s.itineraryCardTitle} numberOfLines={1}>
-          {itinerary.places[0]?.name ?? 'Roteiro'}
+          {itinerary.places[0]?.name ?? t('defaultItineraryName')}
         </Text>
         {!selectMode && <Text style={s.chevron}>›</Text>}
       </View>
 
       <Text style={s.itineraryCardSub}>
-        {itinerary.places.length} paradas · {days} dias
+        {t('activeCard.stopsAndDays', { stops: itinerary.places.length, days })}
       </Text>
 
       {!selectMode && (
@@ -100,7 +102,7 @@ export default function ActiveItineraryCard({
           ) : (
             <>
               <Ionicons name="trash-outline" size={18} color={colors.error} />
-              <Text style={s.deleteBtnText}>Excluir roteiro</Text>
+              <Text style={s.deleteBtnText}>{t('activeCard.deleteButton')}</Text>
             </>
           )}
         </TouchableOpacity>

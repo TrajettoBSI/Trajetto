@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { User } from '@/types/user';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
@@ -11,6 +12,7 @@ type UserCardProps = {
 };
 
 export default function UserCard({ user, onEdit, onDelete }: UserCardProps) {
+  const { t } = useTranslation('admin');
   const s = styles(useColors());
 
   return (
@@ -25,14 +27,14 @@ export default function UserCard({ user, onEdit, onDelete }: UserCardProps) {
           <Text style={s.cardMeta}>{user.country}{user.telephone ? ` · ${user.telephone}` : ''}</Text>
           <View style={[s.roleBadge, user.isAdmin && s.roleBadgeAdmin]}>
             <Text style={[s.roleBadgeText, user.isAdmin && s.roleBadgeTextAdmin]}>
-              {user.isAdmin ? '🛡️ Admin' : '👤 Usuário'}
+              {user.isAdmin ? t('userList.roleAdmin') : t('userList.roleUser')}
             </Text>
           </View>
         </View>
       </View>
       <View style={s.cardActions}>
         <TouchableOpacity style={s.editBtn} onPress={onEdit} activeOpacity={0.8}>
-          <Text style={s.editBtnText}>Editar</Text>
+          <Text style={s.editBtnText}>{t('userList.edit')}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={s.deleteBtn} onPress={onDelete} activeOpacity={0.8}>
           <Text style={s.deleteBtnIcon}>🗑️</Text>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import CustomInput from '@/components/CustomInput';
 import PasswordStrength from '@/src/components/PasswordStrength/PasswordStrength';
 import { useColors } from '@/src/theme';
@@ -8,6 +9,7 @@ import { useResetPassword } from './hooks/useResetPassword';
 import { styles } from './styles/styles';
 
 export default function ResetPassword() {
+  const { t } = useTranslation('resetPassword');
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
@@ -28,21 +30,21 @@ export default function ResetPassword() {
       <ScrollView contentContainerStyle={s.container} keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false}>
 
         <View style={s.card}>
-          <Text style={s.cardTitle}>Redefinir senha</Text>
-          <Text style={s.cardSub}>Digite o código enviado para o seu e-mail e escolha uma nova senha.</Text>
+          <Text style={s.cardTitle}>{t('cardTitle')}</Text>
+          <Text style={s.cardSub}>{t('instructions')}</Text>
 
           <CustomInput
-            label="E-mail"
+            label={t('emailLabel')}
             type="email"
             value={email}
             onChangeText={onChangeEmail}
-            placeholder="seu@email.com"
+            placeholder={t('emailPlaceholder')}
             autoCapitalize="none"
             error={errors.email}
           />
 
           <CustomInput
-            label="Código de Verificação"
+            label={t('codeLabel')}
             type="numeric"
             value={code}
             onChangeText={onChangeCode}
@@ -52,11 +54,11 @@ export default function ResetPassword() {
           />
 
           <CustomInput
-            label="Nova Senha"
+            label={t('newPasswordLabel')}
             type="password"
             value={password}
             onChangeText={onChangePassword}
-            placeholder="••••••••"
+            placeholder={t('newPasswordPlaceholder')}
             error={errors.password}
           />
 
@@ -68,13 +70,13 @@ export default function ResetPassword() {
             disabled={loading}
             activeOpacity={0.85}
           >
-            <Text style={s.loginBtnText}>{loading ? 'Redefinindo...' : 'Redefinir senha'}</Text>
+            <Text style={s.loginBtnText}>{loading ? t('submitting') : t('submit')}</Text>
           </TouchableOpacity>
         </View>
 
         <View style={s.registerRow}>
           <TouchableOpacity onPress={() => router.back()}>
-            <Text style={s.registerLink}>Voltar</Text>
+            <Text style={s.registerLink}>{t('back')}</Text>
           </TouchableOpacity>
         </View>
 

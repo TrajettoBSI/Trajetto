@@ -2,6 +2,7 @@ import React from 'react';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import MapView, { Marker, PROVIDER_DEFAULT } from 'react-native-maps';
 import { Ionicons } from '@expo/vector-icons';
 import { categoryIcon } from '@/src/helpers/categoryIcon';
@@ -12,6 +13,7 @@ import InfoRow from './components/InfoRow/InfoRow';
 import { styles } from './styles/styles';
 
 export default function SpotDetail() {
+  const { t } = useTranslation('spotDetail');
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const colors = useColors();
@@ -26,7 +28,7 @@ export default function SpotDetail() {
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
               <Ionicons name="chevron-back" size={32} color={colors.white} />
             </TouchableOpacity>
-            <Text style={s.headerText}>Explorar</Text>
+            <Text style={s.headerText}>{t('headerTitle')}</Text>
           </View>
         </View>
       </View>
@@ -52,17 +54,17 @@ export default function SpotDetail() {
               </View>
               {spot.fee === 'no' && (
                 <View style={[s.badge, s.badgeFree]}>
-                  <Text style={s.badgeText}>🆓 Gratuito</Text>
+                  <Text style={s.badgeText}>{t('free')}</Text>
                 </View>
               )}
               {spot.fee === 'yes' && (
                 <View style={[s.badge, s.badgePaid]}>
-                  <Text style={s.badgeText}>💰 Pago</Text>
+                  <Text style={s.badgeText}>{t('paid')}</Text>
                 </View>
               )}
               {wc && (
                 <View style={[s.badge, s.badgeWc]}>
-                  <Text style={s.badgeText}>{wc}</Text>
+                  <Text style={s.badgeText}>{t(`accessibility.${wc}`, { defaultValue: wc })}</Text>
                 </View>
               )}
             </View>
@@ -71,50 +73,50 @@ export default function SpotDetail() {
 
         {distance !== null && (
           <>
-            <Text style={s.sectionTitle}>Como chegar</Text>
+            <Text style={s.sectionTitle}>{t('howToGetThere')}</Text>
             <View style={s.card}>
               <View style={s.distanceRow}>
                 <View style={s.distanceCard}>
                   <Ionicons name="navigate-outline" size={24} color={colors.gray500} />
                   <Text style={s.distanceValue}>{formatDistance(distance)}</Text>
-                  <Text style={s.distanceLabel}>distância</Text>
+                  <Text style={s.distanceLabel}>{t('distance')}</Text>
                 </View>
                 <View style={s.distanceDivider} />
                 <View style={s.distanceCard}>
                   <Ionicons name="walk-outline" size={24} color={colors.gray500} />
                   <Text style={s.distanceValue}>{formatWalk(distance)}</Text>
-                  <Text style={s.distanceLabel}>a pé</Text>
+                  <Text style={s.distanceLabel}>{t('walking')}</Text>
                 </View>
                 <View style={s.distanceDivider} />
                 <View style={s.distanceCard}>
                   <Ionicons name="car-outline" size={24} color={colors.gray500} />
                   <Text style={s.distanceValue}>{formatCar(distance)}</Text>
-                  <Text style={s.distanceLabel}>de carro</Text>
+                  <Text style={s.distanceLabel}>{t('driving')}</Text>
                 </View>
               </View>
               <TouchableOpacity style={s.mapsBtn} onPress={openMaps} activeOpacity={0.85}>
                 <View style={s.mapsBtnContent}>
                   <Ionicons name="map-outline" size={20} color={colors.white} />
-                  <Text style={s.mapsBtnText}>Abrir rota no Google Maps</Text>
+                  <Text style={s.mapsBtnText}>{t('openInMaps')}</Text>
                 </View>
               </TouchableOpacity>
             </View>
           </>
         )}
 
-        <Text style={s.sectionTitle}>Informações</Text>
+        <Text style={s.sectionTitle}>{t('information')}</Text>
         <View style={s.card}>
-          <InfoRow icon={<Ionicons name="location-outline" size={20} color={colors.gray400} />} label="Endereço" value={spot.address} />
-          <InfoRow icon={<Ionicons name="globe-outline" size={20} color={colors.gray400} />} label="Website" value={spot.website || ''} onPress={spot.website ? openWebsite : undefined} />
-          <InfoRow icon={<Ionicons name="call-outline" size={20} color={colors.gray400} />} label="Telefone" value={spot.phone || ''} onPress={spot.phone ? callPhone : undefined} />
-          <InfoRow icon={<Ionicons name="earth-outline" size={20} color={colors.gray400} />} label="Wikipedia" value={spot.wikipedia || ''} onPress={spot.wikipedia ? openWikipedia : undefined} />
-          <InfoRow icon={<Ionicons name="pin-outline" size={20} color={colors.gray400} />} label="Wikidata" value={spot.wikidata || ''} />
-          <InfoRow icon={<Ionicons name="map-outline" size={20} color={colors.gray400} />} label="Coordenadas" value={`${spot.latitude.toFixed(5)}, ${spot.longitude.toFixed(5)}`} />
+          <InfoRow icon={<Ionicons name="location-outline" size={20} color={colors.gray400} />} label={t('address')} value={spot.address} />
+          <InfoRow icon={<Ionicons name="globe-outline" size={20} color={colors.gray400} />} label={t('website')} value={spot.website || ''} onPress={spot.website ? openWebsite : undefined} />
+          <InfoRow icon={<Ionicons name="call-outline" size={20} color={colors.gray400} />} label={t('phone')} value={spot.phone || ''} onPress={spot.phone ? callPhone : undefined} />
+          <InfoRow icon={<Ionicons name="earth-outline" size={20} color={colors.gray400} />} label={t('wikipedia')} value={spot.wikipedia || ''} onPress={spot.wikipedia ? openWikipedia : undefined} />
+          <InfoRow icon={<Ionicons name="pin-outline" size={20} color={colors.gray400} />} label={t('wikidata')} value={spot.wikidata || ''} />
+          <InfoRow icon={<Ionicons name="map-outline" size={20} color={colors.gray400} />} label={t('coordinates')} value={`${spot.latitude.toFixed(5)}, ${spot.longitude.toFixed(5)}`} />
         </View>
 
         {hours.length > 0 && (
           <>
-            <Text style={s.sectionTitle}>Horários de funcionamento</Text>
+            <Text style={s.sectionTitle}>{t('openingHours')}</Text>
             <View style={s.card}>
               {hours.map((h, i) => (
                 <View key={i} style={[s.hourRow, i < hours.length - 1 && s.hourRowBorder]}>
@@ -128,7 +130,7 @@ export default function SpotDetail() {
 
         {spot.profiles?.length > 0 && (
           <>
-            <Text style={s.sectionTitle}>Indicado para</Text>
+            <Text style={s.sectionTitle}>{t('recommendedFor')}</Text>
             <View style={s.profilesRow}>
               {spot.profiles.map((p, i) => (
                 <View key={i} style={s.profileChip}>

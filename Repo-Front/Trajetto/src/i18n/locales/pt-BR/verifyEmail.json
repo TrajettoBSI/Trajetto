@@ -1,0 +1,11 @@
+{
+  "headerTitle": "Verificação",
+  "title": "Verifique seu Email",
+  "subtitle": "Enviamos um código de 6 dígitos para",
+  "submit": "Confirmar",
+  "codeTooShortTitle": "Atenção",
+  "codeTooShortMessage": "Digite os 6 dígitos do código.",
+  "successTitle": "Sucesso",
+  "successMessage": "Conta verificada! Você já pode fazer login.",
+  "verifyError": "Código inválido. Tente novamente."
+}

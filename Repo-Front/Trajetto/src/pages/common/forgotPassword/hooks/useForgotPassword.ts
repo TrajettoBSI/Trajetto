@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { authService } from '@/services';
 import { validateEmail } from '@/utils/validators';
 import { getErrorMessage } from '@/utils/apiError';
@@ -14,6 +15,7 @@ export type ForgotPasswordData = {
 };
 
 export function useForgotPassword(): ForgotPasswordData {
+  const { t } = useTranslation(['forgotPassword', 'common']);
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
@@ -29,8 +31,8 @@ export function useForgotPassword(): ForgotPasswordData {
     try {
       setLoading(true);
       await authService.requestPasswordCode(email);
-      showAlert('Verifique seu e-mail e insira o código na próxima tela.', {
-        title: 'Código enviado!',
+      showAlert(t('codeSentMessage'), {
+        title: t('codeSentTitle'),
         buttons: [
           {
             text: 'OK',
@@ -39,7 +41,7 @@ export function useForgotPassword(): ForgotPasswordData {
         ],
       });
     } catch (error) {
-      showAlert(getErrorMessage(error, 'Não foi possível enviar o código. Verifique se o e-mail está cadastrado.'), { title: 'Erro' });
+      showAlert(getErrorMessage(error, t('sendError')), { title: t('common:error') });
     } finally {
       setLoading(false);
     }

@@ -1,11 +1,13 @@
 import React from 'react';
 import { ActivityIndicator, SafeAreaView, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import { useColors } from '@/src/theme';
 import { useTravelerTest } from './hooks/useTravelerTest';
 import { styles } from './styles/styles';
 
 export default function TravelerTest() {
+  const { t } = useTranslation('quiz');
   const colors = useColors();
   const s = styles(colors);
   const { fromProfile, skipping, handleSkip, goToQuiz } = useTravelerTest();
@@ -14,15 +16,13 @@ export default function TravelerTest() {
     <SafeAreaView style={s.container}>
       <View style={s.content}>
         <Text style={s.icon}>✈️</Text>
-        <Text style={s.title}>Descubra seu perfil</Text>
-        <Text style={s.subtitle}>
-          Responda algumas perguntas rápidas e descubra que tipo de viajante você é.
-        </Text>
+        <Text style={s.title}>{t('travelerTest.title')}</Text>
+        <Text style={s.subtitle}>{t('travelerTest.subtitle')}</Text>
 
         {fromProfile && (
           <View style={s.retakeBadge}>
             <Ionicons name="sync" size={16} color={colors.white} />
-            <Text style={s.retakeBadgeText}>Refazendo o teste</Text>
+            <Text style={s.retakeBadgeText}>{t('travelerTest.retaking')}</Text>
           </View>
         )}
 
@@ -35,7 +35,7 @@ export default function TravelerTest() {
 
       <View style={s.buttons}>
         <TouchableOpacity style={s.primaryButton} onPress={goToQuiz}>
-          <Text style={s.primaryButtonText}>Fazer o teste</Text>
+          <Text style={s.primaryButtonText}>{t('travelerTest.start')}</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -48,7 +48,7 @@ export default function TravelerTest() {
             <ActivityIndicator color={colors.white} size="small" />
           ) : (
             <Text style={s.secondaryButtonText}>
-              {fromProfile ? 'Cancelar' : 'Deixar para depois'}
+              {fromProfile ? t('travelerTest.cancel') : t('travelerTest.skip')}
             </Text>
           )}
         </TouchableOpacity>

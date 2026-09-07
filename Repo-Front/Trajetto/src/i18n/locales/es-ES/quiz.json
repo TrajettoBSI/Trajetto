@@ -1,0 +1,139 @@
+{
+  "travelerTest": {
+    "title": "Descubre tu perfil",
+    "subtitle": "Responde algunas preguntas rápidas y descubre qué tipo de viajero eres.",
+    "retaking": "Repitiendo el test",
+    "start": "Hacer el test",
+    "cancel": "Cancelar",
+    "skip": "Dejar para después"
+  },
+  "quiz": {
+    "headerTitle": "Test de Viajero",
+    "yes": "Sí",
+    "no": "No",
+    "dontKnow": "No lo sé",
+    "seeResult": "Ver resultado",
+    "nextQuestion": "Siguiente pregunta"
+  },
+  "result": {
+    "notFound": "Resultado no encontrado.",
+    "back": "Volver",
+    "yourResult": "Tu resultado",
+    "aboutYou": "Sobre ti",
+    "matchingDestinations": "📍 Destinos que combinan contigo",
+    "backToProfile": "Volver al perfil",
+    "startExploring": "Empezar a explorar"
+  },
+  "questions": {
+    "1": "¿Prefieres destinos concurridos y llenos de gente?",
+    "2": "¿Los museos, galerías y sitios históricos son paradas obligatorias en tus viajes?",
+    "3": "¿Dormirías en una tienda de campaña en medio de un bosque?",
+    "4": "¿Qué es lo más importante en tu destino?",
+    "4_options": {
+      "A": "Playas paradisíacas y sol",
+      "B": "Senderos y paisajes naturales",
+      "C": "Historia, arte y cultura local",
+      "D": "Fiestas, bares y vida nocturna"
+    },
+    "5": "¿Planificas cada detalle del viaje con antelación?",
+    "6": "¿Gastar bien en un alojamiento cómodo forma parte de la experiencia para ti?",
+    "7": "¿Cómo prefieres moverte dentro del destino?",
+    "7_options": {
+      "A": "A pie, explorando cada rincón",
+      "B": "Coche de alquiler o chófer privado",
+      "C": "Transporte público como un local",
+      "D": "Barco, cuatriciclo, caballo — cuanto más inusual, mejor"
+    },
+    "8": "¿Sueles probar la comida local aunque no sepas qué estás comiendo?",
+    "9": "¿Prefieres viajar solo?",
+    "10": "¿Cuál de estas actividades va más contigo?",
+    "10_options": {
+      "A": "Buceo, rafting o escalada",
+      "B": "Tour histórico o visita a un museo",
+      "C": "Spa, piscina y masaje",
+      "D": "Charlar con los lugareños en un bar"
+    },
+    "11": "¿Te sientes cómodo cambiando de planes en el momento?",
+    "12": "¿Senderos, cascadas y parques naturales son tu tipo de plan?",
+    "13": "¿Qué haces en tu primera mañana en un nuevo destino?",
+    "13_options": {
+      "A": "Café lento en la habitación, sin prisa",
+      "B": "Salgo enseguida a explorar las calles",
+      "C": "Busco el primer sendero disponible",
+      "D": "Conozco a otros viajeros en el hostal"
+    },
+    "14": "¿Alguna vez viajaste a un lugar solo por un festival, evento o show?",
+    "15": "¿Cómo describirías tu presupuesto de viaje?",
+    "15_options": {
+      "A": "Ahorro en todo para viajar más veces",
+      "B": "Gasto equilibrado — ni lujo ni privación",
+      "C": "Prefiero viajar menos y bien, sin ahorrar",
+      "D": "No me importa mucho, lo importante es la experiencia"
+    },
+    "16": "¿Qué tipo de foto tomas más en tus viajes?",
+    "16_options": {
+      "A": "Paisajes naturales salvajes",
+      "B": "Monumentos históricos y fachadas culturales",
+      "C": "Momentos con amigos en fiestas y bares",
+      "D": "La habitación del hotel, la piscina y el servicio de habitaciones"
+    },
+    "17": "¿Prefieres un itinerario lleno de actividades a un día libre sin agenda?",
+    "18": "¿Cuál sería tu itinerario ideal de una semana?",
+    "18_options": {
+      "A": "Acampada y senderismo en parques nacionales",
+      "B": "Recorrido por ciudades históricas y museos",
+      "C": "Resort todo incluido en la playa sin salir del lugar",
+      "D": "Mochilero pasando por varios países"
+    },
+    "19": "¿Te gusta aprender sobre el idioma y las costumbres locales antes de viajar?",
+    "20": "Si pudieras elegir un tipo de alojamiento, ¿cuál sería?",
+    "20_options": {
+      "A": "Hostal con una zona común animada",
+      "B": "Hotel boutique con decoración única y encantadora",
+      "C": "Cabaña aislada en la montaña o el bosque",
+      "D": "Posada tranquila junto al mar"
+    }
+  },
+  "profiles": {
+    "AVENTUREIRO": {
+      "nome": "Aventurero",
+      "descricao": "¡Vives para salir de tu zona de confort! Prefieres senderos empinados, deportes extremos y destinos fuera de lo común. El riesgo controlado es parte del placer de viajar.",
+      "destinos": ["Patagonia", "Nepal", "Nueva Zelanda", "Costa Rica"]
+    },
+    "CULTURAL": {
+      "nome": "Explorador Cultural",
+      "descricao": "Tu equipaje viene lleno de conocimiento. Te encantan los museos, las ruinas históricas, la gastronomía local y las historias detrás de cada lugar. Cada viaje es una lección.",
+      "destinos": ["Roma", "Kioto", "El Cairo", "Atenas"]
+    },
+    "NATUREZA": {
+      "nome": "Amante de la Naturaleza",
+      "descricao": "Para ti, la mejor vista es la que no tiene edificios. Cascadas, bosques, fauna y flora salvaje son lo que hace que un viaje valga la pena.",
+      "destinos": ["Amazonas", "Islandia", "Galápagos", "Borneo"]
+    },
+    "LUXO": {
+      "nome": "Viajero de Lujo",
+      "descricao": "La comodidad no es negociable. Prefieres hoteles de cinco estrellas, restaurantes premiados y servicios exclusivos. Viajar bien es un arte, y te lo tomas en serio.",
+      "destinos": ["Dubái", "Maldivas", "Amalfi", "Bora Bora"]
+    },
+    "MOCHILEIRO": {
+      "nome": "Mochilero",
+      "descricao": "Ligero, libre y sin ataduras. Prefieres hostales, transporte público e itinerarios improvisados. El camino importa tanto como el destino.",
+      "destinos": ["Sudeste Asiático", "América del Sur", "Europa Central", "Marruecos"]
+    },
+    "RELAXAMENTO": {
+      "nome": "Viajero Relajado",
+      "descricao": "Tu viaje ideal tiene playa, sol, un buen libro y cero compromisos. No evitas las atracciones, pero nunca dejas de recargar energías.",
+      "destinos": ["Maldivas", "Fernando de Noronha", "Bali", "Caribe"]
+    },
+    "SOCIAL": {
+      "nome": "Viajero Social",
+      "descricao": "Coleccionas amistades en cada zona horaria. Festivales, bares locales, hostales animados — cualquier lugar donde puedas conocer gente nueva es tu lugar.",
+      "destinos": ["Ibiza", "Río de Janeiro", "Bangkok", "Ámsterdam"]
+    },
+    "SOLITARIO": {
+      "nome": "Viajero Solitario",
+      "descricao": "Viajas para encontrarte a ti mismo, no para perderte entre multitudes. Introspección, silencio y una conexión profunda con el lugar son lo que hace un viaje perfecto.",
+      "destinos": ["Escocia", "Tíbet", "Laponia Finlandesa", "Desierto de Atacama"]
+    }
+  }
+}

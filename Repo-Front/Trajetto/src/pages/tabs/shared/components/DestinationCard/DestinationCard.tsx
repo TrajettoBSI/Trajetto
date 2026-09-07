@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Image, ImageSourcePropType, Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -11,9 +12,9 @@ import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
 type DestinationCardProps = {
-  title: string;
-  subtitle: string;
-  time: string;
+  titleKey: string;
+  subtitleKey: string;
+  hours: number;
   image: ImageSourcePropType;
   bgColor: string;
   rotation: string;
@@ -22,8 +23,9 @@ type DestinationCardProps = {
 };
 
 export default function DestinationCard({
-  title, subtitle, time, image, bgColor, rotation, style, animKey,
+  titleKey, subtitleKey, hours, image, bgColor, rotation, style, animKey,
 }: DestinationCardProps) {
+  const { t } = useTranslation('roteiros');
   const s = styles(useColors());
   const swing = useSharedValue(0);
 
@@ -47,12 +49,12 @@ export default function DestinationCard({
   return (
     <Animated.View style={[s.card, { backgroundColor: bgColor, transform: [{ rotate: rotation }] }, style, animStyle]}>
       <View style={s.cardTop}>
-        <Text style={s.cardTitle} adjustsFontSizeToFit numberOfLines={1}>{title}</Text>
+        <Text style={s.cardTitle} adjustsFontSizeToFit numberOfLines={1}>{t(titleKey)}</Text>
         <View style={s.timeBadge}>
-          <Text style={s.timeText} adjustsFontSizeToFit numberOfLines={1}>{time}</Text>
+          <Text style={s.timeText} adjustsFontSizeToFit numberOfLines={1}>{t('destinations.flightTime', { hours })}</Text>
         </View>
       </View>
-      <Text style={s.cardSubtitle}>{subtitle}</Text>
+      <Text style={s.cardSubtitle}>{t(subtitleKey)}</Text>
       <Image source={image} style={s.cardImage} />
     </Animated.View>
   );

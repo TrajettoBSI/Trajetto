@@ -1,0 +1,32 @@
+{
+  "headerTitle": "Configurações",
+  "personalInfo": "Informações pessoais",
+  "firstNameLabel": "Nome",
+  "firstNamePlaceholder": "Seu nome",
+  "lastNameLabel": "Sobrenome",
+  "lastNamePlaceholder": "Seu sobrenome",
+  "birthDateLabel": "Data de nascimento",
+  "birthDatePlaceholder": "DD/MM/AAAA",
+  "telephoneLabel": "Telefone",
+  "telephonePlaceholder": "(00) 00000-0000",
+  "emailLabel": "E-mail",
+  "emailPlaceholder": "seuemail@exemplo.com",
+  "countryLabel": "País",
+  "countryPlaceholder": "Selecione seu país",
+  "save": "Salvar alterações",
+  "logout": "Sair da conta",
+  "updateSuccess": "Perfil atualizado!",
+  "updateError": "Não foi possível atualizar",
+  "menu": {
+    "headerTitle": "Meus Roteiros",
+    "accountSection": "Conta",
+    "settings": "Configurações",
+    "notifications": "Notificações",
+    "language": "Idioma",
+    "travelerSection": "Viajante",
+    "retakeTest": "Refazer o teste de viajante",
+    "exploreDestinations": "Explorar destinos",
+    "logout": "Sair",
+    "version": "Trajetto v{{version}}"
+  }
+}

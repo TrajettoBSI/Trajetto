@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   statsService, Overview, CountryStats, ProfileStats, AgeGroupStats,
   ItinerariesPerUserPanel, ItineraryOverview, MonthStats, CategoryStats,
@@ -27,6 +28,7 @@ export type DashboardData = {
 };
 
 export function useDashboard(): DashboardData {
+  const { t } = useTranslation('admin');
   const [overview, setOverview] = useState<Overview | null>(null);
   const [countries, setCountries] = useState<CountryStats[]>([]);
   const [profiles, setProfiles] = useState<ProfileStats[]>([]);
@@ -71,7 +73,7 @@ export function useDashboard(): DashboardData {
       setCommented(com);
       setError('');
     } catch (e) {
-      setError(getErrorMessage(e, 'Não foi possível carregar os dados.'));
+      setError(getErrorMessage(e, t('dashboard.loadError')));
     } finally {
       setLoading(false);
       setRefreshing(false);

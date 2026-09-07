@@ -3,6 +3,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import { Marker } from 'react-native-maps';
 import { MaterialIcons } from '@expo/vector-icons';
 import Animated from 'react-native-reanimated';
+import { useTranslation } from 'react-i18next';
 import { PLACE_COLORS } from '@/constants/placeColors';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { useColors } from '@/src/theme';
@@ -17,6 +18,7 @@ type PlaceMarkersProps = {
 };
 
 export default function PlaceMarkers({ points, startDate, firstUpcomingIdx, pulseStyle, onPinPress }: PlaceMarkersProps) {
+  const { t } = useTranslation('mapa');
   const colors = useColors();
   const s = styles(colors);
 
@@ -38,7 +40,7 @@ export default function PlaceMarkers({ points, startDate, firstUpcomingIdx, puls
                 activeOpacity={0.75}
               >
                 <Text style={[s.labelText, { color }]}>{index + 1}. {point.name.length > 14 ? point.name.slice(0, 14) + '…' : point.name}</Text>
-                <Text style={[s.labelSub, { color }]}>{isPast ? 'visitado ✓' : 'ver no itinerário ↗'}</Text>
+                <Text style={[s.labelSub, { color }]}>{isPast ? t('placeMarker.visited') : t('placeMarker.goToItinerary')}</Text>
               </TouchableOpacity>
               <View style={[s.pinContainer, isPast && s.pinContainerPast]}>
                 <MaterialIcons name="location-on" size={42} color={color} />

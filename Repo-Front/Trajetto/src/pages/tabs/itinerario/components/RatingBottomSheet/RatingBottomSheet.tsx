@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { Keyboard, Pressable, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
+import { useTranslation } from 'react-i18next';
 import StarRating from '@/components/Rating';
 import { useColors } from '@/src/theme';
 import { usePlaceRating } from '../../hooks/usePlaceRating';
@@ -29,6 +30,7 @@ export default function RatingBottomSheet({
   startEditRating,
   deleteRating,
 }: RatingBottomSheetProps) {
+  const { t } = useTranslation('itinerario');
   const colors = useColors();
   const s = styles(colors);
   const snapPoints = useMemo(() => ['45%', '90%'], []);
@@ -53,7 +55,7 @@ export default function RatingBottomSheet({
               {selectedPlace.category && (
                 <>
                   <View style={s.row}>
-                    <Text style={s.textSecondary}>Categoria:</Text>
+                    <Text style={s.textSecondary}>{t('ratingSheet.category')}</Text>
                     <Text style={s.textTertiary}>{selectedPlace.category}</Text>
                   </View>
                   <View style={s.divider} />
@@ -82,7 +84,7 @@ export default function RatingBottomSheet({
                 <View style={s.summaryRow}>
                   <Text style={s.textTertiary}>⭐ {ratingData?.average?.toFixed(1) ?? '0.0'}</Text>
                   <StarRating value={ratingData?.average ?? 0} size={18} onChange={() => {}} readonly />
-                  <Text style={s.textTertiary}>{ratingData?.count ?? 0} visitaram</Text>
+                  <Text style={s.textTertiary}>{t('ratingSheet.visitedCount', { count: ratingData?.count ?? 0 })}</Text>
                   <Text style={s.summaryToggle}>{isRatingOpen ? '▲' : '▼'}</Text>
                 </View>
                 <View style={s.divider} />
@@ -101,7 +103,7 @@ export default function RatingBottomSheet({
 
                   {allRatings.map((r) => {
                     const isMine = r.userId === user?.id;
-                    const name = isMine ? `${user?.firstName} ${user?.lastName}` : r.userName ?? `Usuário ${r.userId}`;
+                    const name = isMine ? `${user?.firstName} ${user?.lastName}` : r.userName ?? t('ratingSheet.defaultUserName', { id: r.userId });
                     return (
                       <ReviewItem
                         key={r.id}

@@ -22,7 +22,7 @@
       "softwareKeyboardLayoutMode": "pan",
       "predictiveBackGestureEnabled": false,
       "navigationBar": {
-        "backgroundColor": "#023665" 
+        "backgroundColor": "#023665"
       }
     },
     "web": {
@@ -45,7 +45,8 @@
       ],
       "@react-native-community/datetimepicker",
       "expo-font",
-      "expo-web-browser"
+      "expo-web-browser",
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true,

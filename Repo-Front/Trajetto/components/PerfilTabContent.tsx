@@ -8,49 +8,61 @@ import {
   View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { Ionicons } from '@expo/vector-icons';
+import { useLanguageSwitcher } from '@/src/components/LanguageSwitcher/hooks/useLanguageSwitcher';
+import LanguagePickerModal from '@/src/components/LanguageSwitcher/LanguagePickerModal';
 
 const PRIMARY = '#006ecf';
 
 type MenuItem = {
   icon: keyof typeof Ionicons.glyphMap;
   label: string;
+  value?: string;
   onPress: () => void;
   danger?: boolean;
 };
 
 export default function PerfilTabContent() {
+  const { t } = useTranslation('profile');
   const { user, logout } = useAuth();
   const router = useRouter();
+  const { open, setOpen, current, select } = useLanguageSwitcher();
 
   const menuSections: { title?: string; items: MenuItem[] }[] = [
     {
-      title: 'Conta',
+      title: t('menu.accountSection'),
       items: [
         {
           icon: 'settings-outline',
-          label: 'Configurações',
+          label: t('menu.settings'),
           onPress: () => router.push('/ProfileScreen'),
         },
         {
           icon: 'notifications-outline',
-          label: 'Notificações',
+          label: t('menu.notifications'),
           onPress: () => {},
+        },
+        {
+          icon: 'language-outline',
+          label: t('menu.language'),
+          value: current.label,
+          onPress: () => setOpen(true),
         },
       ],
     },
     {
-      title: 'Viajante',
+      title: t('menu.travelerSection'),
       items: [
         {
           icon: 'briefcase-outline',
-          label: 'Refazer o teste de viajante',
+          label: t('menu.retakeTest'),
           onPress: () => router.push('/TravelerTestScreen?source=profile'),
         },
         {
           icon: 'map-outline',
-          label: 'Explorar destinos',
+          label: t('menu.exploreDestinations'),
           onPress: () => router.push('/ExploreScreen'),
         },
       ],
@@ -59,7 +71,7 @@ export default function PerfilTabContent() {
       items: [
         {
           icon: 'log-out-outline',
-          label: 'Sair',
+          label: t('menu.logout'),
           onPress: logout,
           danger: true,
         },
@@ -80,7 +92,7 @@ export default function PerfilTabContent() {
               <TouchableOpacity onPress={() => router.back()} style={styles.headerBackBtn} activeOpacity={0.7}>
                 <Ionicons name="chevron-back" size={32} color={'white'} />
               </TouchableOpacity>
-              <Text style={styles.headerText}>Meus Roteiros</Text>
+              <Text style={styles.headerText}>{t('menu.headerTitle')}</Text>
             </View>
           </View>
         </View>
@@ -122,6 +134,7 @@ export default function PerfilTabContent() {
                     <Text style={[styles.menuLabel, item.danger && styles.dangerText]}>
                       {item.label}
                     </Text>
+                    {item.value && <Text style={styles.menuValue}>{item.value}</Text>}
                     {!item.danger && <Text style={styles.menuArrow}>›</Text>}
                   </TouchableOpacity>
                   {iIdx < section.items.length - 1 && (
@@ -133,8 +146,15 @@ export default function PerfilTabContent() {
           </View>
         ))}
 
-        <Text style={styles.version}>Trajetto v1.0</Text>
+        <Text style={styles.version}>{t('menu.version', { version: '1.0' })}</Text>
       </ScrollView>
+
+      <LanguagePickerModal
+        visible={open}
+        onClose={() => setOpen(false)}
+        current={current}
+        onSelect={select}
+      />
     </View>
   );
 }
@@ -204,6 +224,7 @@ const styles = StyleSheet.create({
   },
   menuIcon: { marginRight: 14, width: 28, textAlign: 'center' },
   menuLabel: { flex: 1, fontSize: 16, color: '#1a1a1a', fontWeight: '500' },
+  menuValue: { fontSize: 14, color: '#8a9ab0', marginRight: 8 },
   menuArrow: { fontSize: 22, color: '#c0ccd8', fontWeight: '300' },
   dangerText: { color: '#EF4444' },
   separator: { height: 1, backgroundColor: '#f0f3f7', marginLeft: 60 },

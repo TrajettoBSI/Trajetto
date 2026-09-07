@@ -1,6 +1,7 @@
 import React from 'react';
 import { ActivityIndicator, Keyboard, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import MapView from 'react-native-maps';
 import CustomInput from '@/components/CustomInput';
 import { useColors } from '@/src/theme';
@@ -18,6 +19,7 @@ import SpotDetailCard from './components/SpotDetailCard/SpotDetailCard';
 import FilterModal from './components/FilterModal/FilterModal';
 
 export default function Mapa() {
+  const { t } = useTranslation('mapa');
   const colors = useColors();
   const s = styles(colors);
   const {
@@ -102,7 +104,7 @@ export default function Mapa() {
 
       <View style={s.searchWrapper}>
         <CustomInput
-          placeholder="Buscar ponto turístico..."
+          placeholder={t('searchPlaceholder')}
           value={search}
           onChangeText={handleSearchChange}
           returnKeyType="search"

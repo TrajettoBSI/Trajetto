@@ -1,0 +1,23 @@
+{
+  "cancel": "Cancelar",
+  "delete": "Excluir",
+  "save": "Salvar",
+  "confirm": "Confirmar",
+  "back": "Voltar",
+  "retry": "Tentar novamente",
+  "error": "Erro",
+  "success": "Sucesso",
+  "attention": "Atenção",
+  "loading": "Carregando...",
+  "ok": "OK",
+  "apply": "Aplicar",
+  "clear": "Limpar",
+  "clearAll": "Limpar tudo",
+  "logout": "Sair",
+  "search": "Buscar",
+  "any": "Qualquer",
+  "all": "Todos",
+  "genericError": "Não foi possível concluir a operação. Tente novamente.",
+  "tabHome": "Início",
+  "tabMap": "Mapa"
+}

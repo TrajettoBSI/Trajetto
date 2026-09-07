@@ -2,6 +2,7 @@ import React from 'react';
 import { ActivityIndicator, Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import GenerateItineraryFlow from '@/components/GenerateItineraryFlow';
 import CustomButton from '@/components/CustomButton';
 import { useColors } from '@/src/theme';
@@ -15,6 +16,7 @@ import EmptyState from './components/EmptyState/EmptyState';
 import SelectBar from './components/SelectBar/SelectBar';
 
 export default function Roteiros() {
+  const { t } = useTranslation('roteiros');
   const colors = useColors();
   const s = styles(colors);
   const {
@@ -48,20 +50,20 @@ export default function Roteiros() {
         {selectMode ? (
           <>
             <TouchableOpacity onPress={exitSelectMode} activeOpacity={0.8}>
-              <Text style={s.cancelSelectText}>Cancelar</Text>
+              <Text style={s.cancelSelectText}>{t('header.cancelSelect')}</Text>
             </TouchableOpacity>
             <Text style={Platform.OS === 'ios' ? s.headerTitleIos : s.headerTitleAndroid}>
-              {selectedIds.size} selecionado{selectedIds.size !== 1 ? 's' : ''}
+              {t('header.selectedCount', { count: selectedIds.size })}
             </Text>
             <TouchableOpacity onPress={selectAll} activeOpacity={0.8}>
-              <Text style={s.selectAllText}>Todos</Text>
+              <Text style={s.selectAllText}>{t('header.selectAll')}</Text>
             </TouchableOpacity>
           </>
         ) : (
           <>
             <View>
-              <Text style={Platform.OS === 'ios' ? s.headerTitleIos : s.headerTitleAndroid}>Meus Roteiros</Text>
-              <Text style={Platform.OS === 'ios' ? s.headerSubIos : s.headerSubAndroid}>Olá, {user?.firstName} 👋</Text>
+              <Text style={Platform.OS === 'ios' ? s.headerTitleIos : s.headerTitleAndroid}>{t('header.title')}</Text>
+              <Text style={Platform.OS === 'ios' ? s.headerSubIos : s.headerSubAndroid}>{t('header.greeting', { name: user?.firstName })}</Text>
             </View>
             <TouchableOpacity
               style={s.avatarBtn}
@@ -88,14 +90,14 @@ export default function Roteiros() {
         {loading ? (
           <View style={s.centerState}>
             <ActivityIndicator size="large" color={colors.primary} />
-            <Text style={s.stateText}>Carregando roteiros...</Text>
+            <Text style={s.stateText}>{t('loadingItineraries')}</Text>
           </View>
         ) : itinerary ? (
           <>
             {!selectMode && (
               <ExploreBanner onPress={() => router.push('/ExploreScreen')} />
             )}
-            <Text style={s.sectionLabel}>ROTEIRO ATIVO</Text>
+            <Text style={s.sectionLabel}>{t('activeSectionLabel')}</Text>
 
             <ActiveItineraryCard
               itinerary={itinerary}
@@ -109,7 +111,7 @@ export default function Roteiros() {
 
             {inactiveItineraries.length > 0 && (
               <>
-                <Text style={[s.sectionLabel, s.sectionLabelSpaced]}>OUTROS ROTEIROS</Text>
+                <Text style={[s.sectionLabel, s.sectionLabelSpaced]}>{t('otherSectionLabel')}</Text>
                 {inactiveItineraries.map((item) => (
                   <InactiveItineraryRow
                     key={item.id}
@@ -134,10 +136,10 @@ export default function Roteiros() {
         {!selectMode && (
           <View style={[s.generateSection, !itinerary && s.generateSectionEmpty]}>
             {itineraries.length > 0 && itinerary && (
-              <Text style={s.generateLabel}>Quer um novo roteiro?</Text>
+              <Text style={s.generateLabel}>{t('generate.wantNew')}</Text>
             )}
             <CustomButton
-              title="Gerar Roteiro"
+              title={t('generate.button')}
               onPress={() => setShowGenerate(true)}
             />
           </View>

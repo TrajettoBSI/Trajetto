@@ -1,6 +1,7 @@
 import React from 'react';
 import { RefreshControl, ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useTranslation } from 'react-i18next';
 import { adminAccent, useColors } from '@/src/theme';
 import AsyncState from '@/src/components/AsyncState/AsyncState';
 import BarChart from '@/src/components/charts/BarChart/BarChart';
@@ -14,6 +15,7 @@ import BlockTitle from './components/BlockTitle/BlockTitle';
 import { styles } from './styles/styles';
 
 export default function Dashboard() {
+  const { t } = useTranslation('admin');
   const colors = useColors();
   const s = styles(colors);
   const {
@@ -29,7 +31,7 @@ export default function Dashboard() {
       <AsyncState
         style={s.center}
         loading={loading}
-        loadingText="Carregando dashboard..."
+        loadingText={t('dashboard.loadingText')}
         spinnerColor={colors.primaryDark}
         error={error}
         onRetry={load}
@@ -45,24 +47,24 @@ export default function Dashboard() {
         refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primaryDark} />}
       >
         <View style={s.header}>
-          <Text style={s.headerTitle}>Dashboard</Text>
-          <Text style={s.headerSub}>Visão geral da plataforma Trajetto</Text>
+          <Text style={s.headerTitle}>{t('dashboard.headerTitle')}</Text>
+          <Text style={s.headerSub}>{t('dashboard.headerSub')}</Text>
         </View>
 
-        <BlockTitle>Usuários</BlockTitle>
+        <BlockTitle>{t('dashboard.usersBlock')}</BlockTitle>
 
         <View style={s.statsGrid}>
-          <StatCard icon="👥" label="Total de usuários" value={overview?.totalUsers ?? 0} color={colors.primaryDark} />
-          <StatCard icon="👤" label="Clientes" value={overview?.totalClients ?? 0} color={adminAccent.blue} />
-          <StatCard icon="🛡️" label="Administradores" value={overview?.totalAdmins ?? 0} color={adminAccent.violet} />
-          <StatCard icon="✅" label="Verificados" value={overview?.verifiedUsers ?? 0} color={adminAccent.green} sub={`${verifiedPct}% do total`} />
-          <StatCard icon="⏳" label="Não verificados" value={overview?.unverifiedUsers ?? 0} color={adminAccent.red} />
+          <StatCard icon="👥" label={t('dashboard.totalUsers')} value={overview?.totalUsers ?? 0} color={colors.primaryDark} />
+          <StatCard icon="👤" label={t('dashboard.clients')} value={overview?.totalClients ?? 0} color={adminAccent.blue} />
+          <StatCard icon="🛡️" label={t('dashboard.admins')} value={overview?.totalAdmins ?? 0} color={adminAccent.violet} />
+          <StatCard icon="✅" label={t('dashboard.verified')} value={overview?.verifiedUsers ?? 0} color={adminAccent.green} sub={t('dashboard.verifiedSub', { pct: verifiedPct })} />
+          <StatCard icon="⏳" label={t('dashboard.unverified')} value={overview?.unverifiedUsers ?? 0} color={adminAccent.red} />
           {overview?.avgAge && (
-            <StatCard icon="🎂" label="Idade média" value={`${overview.avgAge} anos`} color={adminAccent.cyan} />
+            <StatCard icon="🎂" label={t('dashboard.avgAge')} value={t('dashboard.avgAgeValue', { age: overview.avgAge })} color={adminAccent.cyan} />
           )}
         </View>
 
-        <Section title="Taxa de verificação de e-mail">
+        <Section title={t('dashboard.verificationRate')}>
           <View style={s.verifiedRow}>
             <View style={s.verifiedBarTrack}>
               <View style={[s.verifiedBarFill, { width: `${verifiedPct}%` }]} />
@@ -70,47 +72,47 @@ export default function Dashboard() {
             <Text style={s.verifiedPct}>{verifiedPct}%</Text>
           </View>
           <View style={s.verifiedLegend}>
-            <Text style={s.verifiedLegendText}>✅ {overview?.verifiedUsers} verificados</Text>
-            <Text style={s.verifiedLegendText}>⏳ {overview?.unverifiedUsers} pendentes</Text>
+            <Text style={s.verifiedLegendText}>{t('dashboard.verifiedLegend', { count: overview?.verifiedUsers })}</Text>
+            <Text style={s.verifiedLegendText}>{t('dashboard.unverifiedLegend', { count: overview?.unverifiedUsers })}</Text>
           </View>
         </Section>
 
         {profiles.length > 0 && (
-          <Section title="Perfis de viajante">
+          <Section title={t('dashboard.travelerProfiles')}>
             <DonutLegend data={profiles} labelKey="profile" valueKey="count" />
           </Section>
         )}
 
         {ageGroups.filter((g) => g.count > 0).length > 0 && (
-          <Section title="Faixas etárias">
+          <Section title={t('dashboard.ageGroups')}>
             <BarChart data={ageGroups.filter((g) => g.count > 0)} labelKey="group" valueKey="count" />
           </Section>
         )}
 
         {countries.length > 0 && (
-          <Section title={`Países (${countries.length} países)`}>
+          <Section title={t('dashboard.countries', { count: countries.length })}>
             <BarChart data={countries} labelKey="country" valueKey="count" />
           </Section>
         )}
 
-        <BlockTitle>Roteiros</BlockTitle>
+        <BlockTitle>{t('dashboard.itinerariesBlock')}</BlockTitle>
 
         <View style={s.statsGrid}>
-          <StatCard icon="🗺️" label="Roteiros criados" value={itinerary?.totalItineraries ?? 0} color={adminAccent.amber} />
-          <StatCard icon="📅" label="Duração média" value={`${umaCasa(itinerary?.avgDurationDays)} dias`} color={adminAccent.cyan} />
-          <StatCard icon="⭐" label="Nota média" value={`${umaCasa(itinerary?.avgRating)} / 5`} color={adminAccent.violet} />
-          <StatCard icon="📝" label="Avaliados" value={itinerary?.ratedCount ?? 0} color={adminAccent.green}
-            sub={`${itinerary?.unratedCount ?? 0} sem avaliação`} />
+          <StatCard icon="🗺️" label={t('dashboard.itinerariesCreated')} value={itinerary?.totalItineraries ?? 0} color={adminAccent.amber} />
+          <StatCard icon="📅" label={t('dashboard.avgDuration')} value={t('dashboard.avgDurationValue', { days: umaCasa(itinerary?.avgDurationDays) })} color={adminAccent.cyan} />
+          <StatCard icon="⭐" label={t('dashboard.avgRating')} value={t('dashboard.avgRatingValue', { value: umaCasa(itinerary?.avgRating) })} color={adminAccent.violet} />
+          <StatCard icon="📝" label={t('dashboard.rated')} value={itinerary?.ratedCount ?? 0} color={adminAccent.green}
+            sub={t('dashboard.unratedSub', { count: itinerary?.unratedCount ?? 0 })} />
         </View>
 
         {perMonth.length > 0 && (
-          <Section title="Roteiros criados por mês">
+          <Section title={t('dashboard.itinerariesPerMonth')}>
             <BarChart data={perMonth} labelKey="month" valueKey="count" limit={12} />
           </Section>
         )}
 
         {perClient && perClient.topClients.length > 0 && (
-          <Section title="Clientes com mais roteiros">
+          <Section title={t('dashboard.topClients')}>
             <View>
               {perClient.topClients.map((c, i, arr) => (
                 <RankRow
@@ -120,7 +122,7 @@ export default function Dashboard() {
                   name={c.user}
                   subtitle={c.email}
                   count={c.count}
-                  countLabel={c.count === 1 ? 'roteiro' : 'roteiros'}
+                  countLabel={t('dashboard.itineraryCount', { count: c.count })}
                 />
               ))}
             </View>
@@ -128,29 +130,29 @@ export default function Dashboard() {
         )}
 
         {perClient && perClient.clientsWithoutItinerary > 0 && (
-          <Section title="Clientes sem roteiro">
+          <Section title={t('dashboard.clientsWithoutItinerary')}>
             <View style={s.noItineraryBox}>
               <Text style={s.noItineraryCount}>{perClient.clientsWithoutItinerary}</Text>
               <Text style={s.noItineraryLabel}>
-                clientes ainda não geraram nenhum roteiro
+                {t('dashboard.clientsWithoutCount', { count: perClient.clientsWithoutItinerary })}
               </Text>
               <Text style={s.noItinerarySub}>
-                {perClient.clientsWithItinerary} já geraram pelo menos um
+                {t('dashboard.clientsWithCount', { count: perClient.clientsWithItinerary })}
               </Text>
             </View>
           </Section>
         )}
 
-        <BlockTitle>Locais</BlockTitle>
+        <BlockTitle>{t('dashboard.placesBlock')}</BlockTitle>
 
         {categories.length > 0 && (
-          <Section title={`Categorias (${categories.length})`}>
+          <Section title={t('dashboard.categories', { count: categories.length })}>
             <DonutLegend data={categories} labelKey="category" valueKey="count" labelWidth={124} />
           </Section>
         )}
 
         {visited.length > 0 && (
-          <Section title="Locais que mais aparecem em roteiros">
+          <Section title={t('dashboard.mostVisitedPlaces')}>
             <View>
               {visited.map((p, i, arr) => (
                 <RankRow
@@ -159,7 +161,7 @@ export default function Dashboard() {
                   isLast={i === arr.length - 1}
                   name={p.name}
                   count={p.count}
-                  countLabel={p.count === 1 ? 'roteiro' : 'roteiros'}
+                  countLabel={t('dashboard.itineraryCount', { count: p.count })}
                 />
               ))}
             </View>
@@ -167,7 +169,7 @@ export default function Dashboard() {
         )}
 
         {topRated.length > 0 && (
-          <Section title="Locais com melhor avaliação">
+          <Section title={t('dashboard.topRatedPlaces')}>
             <View>
               {topRated.map((p, i, arr) => (
                 <RankRow
@@ -175,9 +177,9 @@ export default function Dashboard() {
                   index={i}
                   isLast={i === arr.length - 1}
                   name={p.name}
-                  subtitle={`${p.totalRatings} ${p.totalRatings === 1 ? 'avaliação' : 'avaliações'}`}
+                  subtitle={t('dashboard.ratingsCount', { count: p.totalRatings })}
                   count={umaCasa(p.avgRating)}
-                  countLabel="de 5"
+                  countLabel={t('dashboard.outOfFive')}
                 />
               ))}
             </View>
@@ -185,7 +187,7 @@ export default function Dashboard() {
         )}
 
         {commented.length > 0 && (
-          <Section title="Locais mais comentados">
+          <Section title={t('dashboard.mostCommentedPlaces')}>
             <View>
               {commented.map((p, i, arr) => (
                 <RankRow
@@ -194,7 +196,7 @@ export default function Dashboard() {
                   isLast={i === arr.length - 1}
                   name={p.name}
                   count={p.commentCount}
-                  countLabel={p.commentCount === 1 ? 'comentário' : 'comentários'}
+                  countLabel={t('dashboard.commentsCount', { count: p.commentCount })}
                 />
               ))}
             </View>

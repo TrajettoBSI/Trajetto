@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import BottomSheet, { BottomSheetBackdrop } from '@gorhom/bottom-sheet';
 import { TextInput } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { RatingService, Rating, RatingSummary } from '@/services';
 import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
@@ -8,6 +9,7 @@ import { useAuth } from '@/context/AuthContext';
 import { Places } from '@/hooks/itineraryStore';
 
 export function usePlaceRating() {
+  const { t } = useTranslation(['itinerario', 'common']);
   const { user } = useAuth();
   const bottomSheetRef = useRef<BottomSheet>(null);
   const commentInputRef = useRef<TextInput>(null);
@@ -79,7 +81,7 @@ export function usePlaceRating() {
       setIsRatingOpen(false);
       await refreshRatings(xid);
     } catch (e) {
-      showAlert(getErrorMessage(e, 'Não foi possível salvar a avaliação.'), { title: 'Erro' });
+      showAlert(getErrorMessage(e, t('itinerario:ratingSheet.saveError')), { title: t('common:error') });
     }
   };
 
@@ -94,12 +96,12 @@ export function usePlaceRating() {
   const deleteRating = (r: Rating) => {
     const xid = selectedPlace?.xid;
     if (!xid) return;
-    showAlert('Tem certeza?', {
-      title: 'Excluir avaliação',
+    showAlert(t('itinerario:ratingSheet.deleteConfirm'), {
+      title: t('itinerario:ratingSheet.deleteTitle'),
       buttons: [
-        { text: 'Cancelar', style: 'cancel' },
+        { text: t('common:cancel'), style: 'cancel' },
         {
-          text: 'Excluir',
+          text: t('common:delete'),
           style: 'destructive',
           onPress: async () => {
             try {
@@ -107,7 +109,7 @@ export function usePlaceRating() {
               setMyRating(null);
               await refreshRatings(xid);
             } catch (e) {
-              showAlert(getErrorMessage(e, 'Não foi possível excluir a avaliação.'), { title: 'Erro' });
+              showAlert(getErrorMessage(e, t('itinerario:ratingSheet.deleteError')), { title: t('common:error') });
             }
           },
         },

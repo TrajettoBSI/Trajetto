@@ -1,11 +1,13 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { useColors } from '@/src/theme';
 import { DESTINATIONS } from '@/src/pages/tabs/shared/data/destinations';
 import DestinationCard from '@/src/pages/tabs/shared/components/DestinationCard/DestinationCard';
 import { styles } from './styles';
 
 export default function EmptyState({ destIndex }: { destIndex: number }) {
+  const { t } = useTranslation('roteiros');
   const s = styles(useColors());
   const next1 = DESTINATIONS[(destIndex + 1) % DESTINATIONS.length];
   const next2 = DESTINATIONS[(destIndex + 2) % DESTINATIONS.length];
@@ -15,24 +17,24 @@ export default function EmptyState({ destIndex }: { destIndex: number }) {
     <View style={s.wrapper}>
       <View style={s.copyBlock}>
         <View style={s.copyRow}>
-          <Text style={[s.emptyBody, s.emptyBodyTallLine]}>Crie seu primeiro</Text>
-          <Text style={s.emptyHighlight}>roteiro</Text>
+          <Text style={[s.emptyBody, s.emptyBodyTallLine]}>{t('emptyState.createFirst')}</Text>
+          <Text style={s.emptyHighlight}>{t('emptyState.itinerary')}</Text>
         </View>
 
         <View style={s.copyRowTight}>
-          <Text style={s.emptyHighlight}>personalizado</Text>
-          <Text style={[s.emptyBody, s.emptyBodyTallerLine]}>e comece a</Text>
+          <Text style={s.emptyHighlight}>{t('emptyState.personalized')}</Text>
+          <Text style={[s.emptyBody, s.emptyBodyTallerLine]}>{t('emptyState.andStart')}</Text>
         </View>
 
-        <Text style={[s.emptyBody, s.emptyBodyLast]}>explorar o mundo.</Text>
+        <Text style={[s.emptyBody, s.emptyBodyLast]}>{t('emptyState.explore')}</Text>
       </View>
 
       <View style={s.emptyState}>
         <View style={s.cardsStack}>
           <DestinationCard
-            title={current.title}
-            subtitle={current.subtitle}
-            time={current.time}
+            titleKey={current.titleKey}
+            subtitleKey={current.subtitleKey}
+            hours={current.hours}
             image={current.image}
             bgColor={current.bgColor}
             rotation="-6deg"
@@ -40,9 +42,9 @@ export default function EmptyState({ destIndex }: { destIndex: number }) {
             animKey={destIndex}
           />
           <DestinationCard
-            title={next1.title}
-            subtitle={next1.subtitle}
-            time={next1.time}
+            titleKey={next1.titleKey}
+            subtitleKey={next1.subtitleKey}
+            hours={next1.hours}
             image={next1.image}
             bgColor={next1.bgColor}
             rotation="4deg"
@@ -50,9 +52,9 @@ export default function EmptyState({ destIndex }: { destIndex: number }) {
             animKey={destIndex}
           />
           <DestinationCard
-            title={next2.title}
-            subtitle={next2.subtitle}
-            time={next2.time}
+            titleKey={next2.titleKey}
+            subtitleKey={next2.subtitleKey}
+            hours={next2.hours}
             image={next2.image}
             bgColor={next2.bgColor}
             rotation="-2deg"

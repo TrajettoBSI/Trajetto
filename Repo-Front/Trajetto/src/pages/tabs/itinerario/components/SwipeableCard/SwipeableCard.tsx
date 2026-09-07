@@ -9,6 +9,7 @@ import Animated, {
   runOnJS,
 } from 'react-native-reanimated';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
@@ -19,6 +20,7 @@ type SwipeableCardProps = {
 };
 
 export default function SwipeableCard({ children, onSwipeLeft, disabled = false }: SwipeableCardProps) {
+  const { t } = useTranslation('itinerario');
   const colors = useColors();
   const s = styles(colors);
   const translateX = useSharedValue(0);
@@ -50,7 +52,7 @@ export default function SwipeableCard({ children, onSwipeLeft, disabled = false 
       {!disabled && (
         <View style={s.hint}>
           <Ionicons name="sync-outline" size={24} color={colors.primary} />
-          <Text style={s.hintLabel}>Trocar</Text>
+          <Text style={s.hintLabel}>{t('swipeableCard.hint')}</Text>
         </View>
       )}
       <GestureDetector gesture={pan}>

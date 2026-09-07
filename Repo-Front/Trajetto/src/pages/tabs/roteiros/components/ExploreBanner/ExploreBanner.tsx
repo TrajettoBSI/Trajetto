@@ -1,9 +1,11 @@
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
 export default function ExploreBanner({ onPress }: { onPress: () => void }) {
+  const { t } = useTranslation('roteiros');
   const s = styles(useColors());
   return (
     <TouchableOpacity style={s.exploreBanner} onPress={onPress} activeOpacity={0.92}>
@@ -16,11 +18,11 @@ export default function ExploreBanner({ onPress }: { onPress: () => void }) {
 
       <View style={s.exploreBannerContent}>
         <View style={s.exploreBannerTag}>
-          <Text style={s.exploreBannerTagText}>✈️  Destinos</Text>
+          <Text style={s.exploreBannerTagText}>{t('exploreBanner.tag')}</Text>
         </View>
-        <Text style={s.exploreBannerTitle}>Explore mais{'\n'}lugares para ir</Text>
+        <Text style={s.exploreBannerTitle}>{t('exploreBanner.title')}</Text>
         <View style={s.exploreBannerBtn}>
-          <Text style={s.exploreBannerBtnText}>Descobrir agora →</Text>
+          <Text style={s.exploreBannerBtnText}>{t('exploreBanner.cta')}</Text>
         </View>
       </View>
     </TouchableOpacity>

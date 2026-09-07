@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useFocusEffect, useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/context/AuthContext';
 import { useItineraryStore } from '@/hooks/itineraryStore';
 import { getErrorMessage } from '@/utils/apiError';
@@ -7,6 +8,7 @@ import { showAlert } from '@/src/components/alerts/alertService';
 import { useDestinationCarousel } from '@/src/pages/tabs/shared/hooks/useDestinationCarousel';
 
 export function useRoteiros() {
+  const { t } = useTranslation('roteiros');
   const destIndex = useDestinationCarousel();
 
   const { user } = useAuth();
@@ -52,19 +54,19 @@ export function useRoteiros() {
 
   const handleDelete = (id: number) => {
     if (!user) return;
-    showAlert('Tem certeza que deseja excluir este roteiro?', {
-      title: 'Excluir roteiro',
+    showAlert(t('delete.confirmSingle'), {
+      title: t('delete.titleSingle'),
       buttons: [
-        { text: 'Cancelar', style: 'cancel' },
+        { text: t('common:cancel'), style: 'cancel' },
         {
-          text: 'Excluir',
+          text: t('common:delete'),
           style: 'destructive',
           onPress: async () => {
             try {
               setDeleting(id);
               await deleteItinerary(id, user.id);
             } catch (e) {
-              showAlert(getErrorMessage(e, 'Não foi possível excluir o roteiro.'), { title: 'Erro' });
+              showAlert(getErrorMessage(e, t('delete.errorSingle')), { title: t('common:error') });
             } finally {
               setDeleting(null);
             }
@@ -76,12 +78,12 @@ export function useRoteiros() {
 
   const handleBulkDelete = () => {
     if (!user || selectedIds.size === 0) return;
-    showAlert(`Excluir ${selectedIds.size} roteiro${selectedIds.size > 1 ? 's' : ''}? Essa ação não pode ser desfeita.`, {
-      title: 'Excluir roteiros',
+    showAlert(t('delete.confirmBulk', { count: selectedIds.size }), {
+      title: t('delete.titleBulk'),
       buttons: [
-        { text: 'Cancelar', style: 'cancel' },
+        { text: t('common:cancel'), style: 'cancel' },
         {
-          text: 'Excluir',
+          text: t('common:delete'),
           style: 'destructive',
           onPress: async () => {
             setBulkDeleting(true);
@@ -90,7 +92,7 @@ export function useRoteiros() {
               await Promise.all([...selectedIds].map((id) => deleteItinerary(id, user.id)));
               exitSelectMode();
             } catch (e) {
-              showAlert(getErrorMessage(e, 'Não foi possível excluir alguns roteiros.'), { title: 'Erro' });
+              showAlert(getErrorMessage(e, t('delete.errorBulk')), { title: t('common:error') });
             } finally {
               setBulkDeleting(false);
             }
@@ -106,7 +108,7 @@ export function useRoteiros() {
       setActivating(id);
       await activateItinerary(id, user.id);
     } catch (e) {
-      showAlert(getErrorMessage(e, 'Não foi possível ativar o roteiro.'), { title: 'Erro' });
+      showAlert(getErrorMessage(e, t('activateError')), { title: t('common:error') });
     } finally {
       setActivating(null);
     }

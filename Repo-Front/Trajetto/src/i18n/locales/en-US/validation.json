@@ -1,0 +1,35 @@
+{
+  "fields": {
+    "firstName": "First name",
+    "lastName": "Last name"
+  },
+  "name": {
+    "required": "{{field}} is required",
+    "minLength": "{{field}}: at least 2 characters"
+  },
+  "birthDate": {
+    "required": "Date of birth is required",
+    "invalidFormat": "Enter a valid date",
+    "invalid": "Invalid date",
+    "underage": "You must be at least 13 years old"
+  },
+  "telephone": {
+    "required": "Phone number is required",
+    "invalid": "Enter a valid phone number"
+  },
+  "email": {
+    "required": "Email is required",
+    "invalid": "Enter a valid email"
+  },
+  "country": {
+    "required": "Select a country"
+  },
+  "password": {
+    "required": "Password is required",
+    "minLength": "At least 8 characters",
+    "uppercase": "At least one uppercase letter",
+    "lowercase": "At least one lowercase letter",
+    "number": "At least one number",
+    "special": "At least one special character"
+  }
+}

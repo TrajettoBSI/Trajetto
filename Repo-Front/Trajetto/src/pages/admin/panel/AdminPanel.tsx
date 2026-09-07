@@ -2,6 +2,7 @@ import React from 'react';
 import { RefreshControl, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { adminAccent, useColors } from '@/src/theme';
 import AsyncState from '@/src/components/AsyncState/AsyncState';
 import { useAdminPanel } from './hooks/useAdminPanel';
@@ -14,6 +15,7 @@ import StarRating from './components/StarRating/StarRating';
 import RankRow from '@/src/components/charts/RankRow/RankRow';
 
 export default function AdminPanel() {
+  const { t } = useTranslation('admin');
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
@@ -30,25 +32,25 @@ export default function AdminPanel() {
 
       <View style={s.header}>
         <View>
-          <Text style={s.headerTitle}>Painel Admin</Text>
-          <Text style={s.headerSub}>Olá, {userFirstName}</Text>
+          <Text style={s.headerTitle}>{t('panel.headerTitle')}</Text>
+          <Text style={s.headerSub}>{t('panel.greeting', { name: userFirstName })}</Text>
         </View>
         <TouchableOpacity style={s.logoutBtn} onPress={logout} activeOpacity={0.8}>
-          <Text style={s.logoutText}>Sair</Text>
+          <Text style={s.logoutText}>{t('panel.logout')}</Text>
         </TouchableOpacity>
       </View>
 
       <View style={s.quickActions}>
         <TouchableOpacity style={s.quickCard} onPress={() => router.push('/UserListScreen')} activeOpacity={0.85}>
-          <Text style={s.quickLabel}>Usuários</Text>
+          <Text style={s.quickLabel}>{t('panel.quickUsers')}</Text>
           <Text style={s.quickCount}>{overview?.totalUsers ?? '—'}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={[s.quickCard, s.quickCardViolet]} activeOpacity={0.85}>
-          <Text style={s.quickLabel}>Roteiros</Text>
+          <Text style={s.quickLabel}>{t('panel.quickItineraries')}</Text>
           <Text style={s.quickCount}>{overview?.totalItineraries ?? '—'}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={[s.quickCard, s.quickCardGreen]} activeOpacity={0.85}>
-          <Text style={s.quickLabel}>Verificados</Text>
+          <Text style={s.quickLabel}>{t('panel.quickVerified')}</Text>
           <Text style={s.quickCount}>{overview ? `${verifiedPct}%` : '—'}</Text>
         </TouchableOpacity>
       </View>
@@ -59,21 +61,21 @@ export default function AdminPanel() {
           onPress={() => setActiveTab('usuarios')}
           activeOpacity={0.8}
         >
-          <Text style={[s.tabText, activeTab === 'usuarios' && s.tabTextActive]}>👥 Usuários</Text>
+          <Text style={[s.tabText, activeTab === 'usuarios' && s.tabTextActive]}>{t('panel.tabUsers')}</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[s.tabBtn, activeTab === 'roteiros' && s.tabBtnActive]}
           onPress={() => setActiveTab('roteiros')}
           activeOpacity={0.8}
         >
-          <Text style={[s.tabText, activeTab === 'roteiros' && s.tabTextActive]}>🗺️ Roteiros</Text>
+          <Text style={[s.tabText, activeTab === 'roteiros' && s.tabTextActive]}>{t('panel.tabItineraries')}</Text>
         </TouchableOpacity>
       </View>
 
       <AsyncState
         style={s.center}
         loading={loading}
-        loadingText="Carregando dados..."
+        loadingText={t('panel.loadingData')}
         spinnerColor={colors.primaryDark}
         error={error}
         onRetry={load}
@@ -85,17 +87,17 @@ export default function AdminPanel() {
             refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primaryDark} />}
           >
             <View style={s.statsGrid}>
-              <StatCard icon="👥" label="Total usuários" value={overview?.totalUsers ?? 0} color={colors.primaryDark} />
-              <StatCard icon="🛡️" label="Admins" value={overview?.totalAdmins ?? 0} color={adminAccent.violet} />
-              <StatCard icon="🗺️" label="Roteiros" value={overview?.totalItineraries ?? 0} color={adminAccent.amber} />
-              <StatCard icon="✅" label="Verificados" value={overview?.verifiedUsers ?? 0} color={adminAccent.green} sub={`${verifiedPct}% do total`} />
-              <StatCard icon="⏳" label="Não verificados" value={overview?.unverifiedUsers ?? 0} color={adminAccent.red} />
+              <StatCard icon="👥" label={t('panel.totalUsers')} value={overview?.totalUsers ?? 0} color={colors.primaryDark} />
+              <StatCard icon="🛡️" label={t('panel.admins')} value={overview?.totalAdmins ?? 0} color={adminAccent.violet} />
+              <StatCard icon="🗺️" label={t('panel.itineraries')} value={overview?.totalItineraries ?? 0} color={adminAccent.amber} />
+              <StatCard icon="✅" label={t('panel.verified')} value={overview?.verifiedUsers ?? 0} color={adminAccent.green} sub={t('panel.verifiedSub', { pct: verifiedPct })} />
+              <StatCard icon="⏳" label={t('panel.unverified')} value={overview?.unverifiedUsers ?? 0} color={adminAccent.red} />
               {overview?.avgAge && (
-                <StatCard icon="🎂" label="Idade média" value={`${overview.avgAge} anos`} color={adminAccent.cyan} />
+                <StatCard icon="🎂" label={t('panel.avgAge')} value={t('panel.avgAgeValue', { age: overview.avgAge })} color={adminAccent.cyan} />
               )}
             </View>
 
-            <Section title="Taxa de verificação de e-mail">
+            <Section title={t('panel.verificationRate')}>
               <View style={s.verifiedRow}>
                 <View style={s.verifiedBarTrack}>
                   <View style={[s.verifiedBarFill, { width: `${verifiedPct}%` }]} />
@@ -103,25 +105,25 @@ export default function AdminPanel() {
                 <Text style={s.verifiedPct}>{verifiedPct}%</Text>
               </View>
               <View style={s.verifiedLegend}>
-                <Text style={s.verifiedLegendText}>✅ {overview?.verifiedUsers} verificados</Text>
-                <Text style={s.verifiedLegendText}>⏳ {overview?.unverifiedUsers} pendentes</Text>
+                <Text style={s.verifiedLegendText}>{t('panel.verifiedLegend', { count: overview?.verifiedUsers })}</Text>
+                <Text style={s.verifiedLegendText}>{t('panel.unverifiedLegend', { count: overview?.unverifiedUsers })}</Text>
               </View>
             </Section>
 
             {profiles.length > 0 && (
-              <Section title="Perfis de viajante">
+              <Section title={t('panel.travelerProfiles')}>
                 <DonutLegend data={profiles} labelKey="profile" valueKey="count" />
               </Section>
             )}
 
             {ageGroups.filter((g) => g.count > 0).length > 0 && (
-              <Section title="Faixas etárias">
+              <Section title={t('panel.ageGroups')}>
                 <BarChart data={ageGroups.filter((g) => g.count > 0)} labelKey="group" valueKey="count" />
               </Section>
             )}
 
             {countries.length > 0 && (
-              <Section title={`Países (${countries.length})`}>
+              <Section title={t('panel.countries', { count: countries.length })}>
                 <BarChart data={countries} labelKey="country" valueKey="count" />
               </Section>
             )}
@@ -132,7 +134,7 @@ export default function AdminPanel() {
               activeOpacity={0.85}
             >
               <Text style={s.userListBtnIcon}>👥</Text>
-              <Text style={s.userListBtnText}>Ver lista completa de usuários</Text>
+              <Text style={s.userListBtnText}>{t('panel.viewAllUsers')}</Text>
               <Text style={s.userListBtnArrow}>›</Text>
             </TouchableOpacity>
           </ScrollView>
@@ -144,26 +146,26 @@ export default function AdminPanel() {
             refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primaryDark} />}
           >
             <View style={s.statsGrid}>
-              <StatCard icon="🗺️" label="Total roteiros" value={itinOv?.totalItineraries ?? 0} color={colors.primaryDark} />
-              <StatCard icon="📅" label="Duração média" value={itinOv?.avgDurationDays != null ? `${itinOv.avgDurationDays} dias` : '—'} color={adminAccent.blue} />
-              <StatCard icon="⭐" label="Nota média" value={itinOv?.avgRating != null ? `${itinOv.avgRating}/5` : '—'} color={adminAccent.amber} />
-              <StatCard icon="✅" label="Com avaliação" value={itinOv?.ratedCount ?? 0} color={adminAccent.green} sub={`${itinOv?.unratedCount ?? 0} sem nota`} />
+              <StatCard icon="🗺️" label={t('panel.totalItineraries')} value={itinOv?.totalItineraries ?? 0} color={colors.primaryDark} />
+              <StatCard icon="📅" label={t('panel.avgDuration')} value={itinOv?.avgDurationDays != null ? t('panel.avgDurationValue', { days: itinOv.avgDurationDays }) : '—'} color={adminAccent.blue} />
+              <StatCard icon="⭐" label={t('panel.avgRating')} value={itinOv?.avgRating != null ? t('panel.avgRatingValue', { value: itinOv.avgRating }) : '—'} color={adminAccent.amber} />
+              <StatCard icon="✅" label={t('panel.withRating')} value={itinOv?.ratedCount ?? 0} color={adminAccent.green} sub={t('panel.withoutRating', { count: itinOv?.unratedCount ?? 0 })} />
             </View>
 
             {perMonth.length > 0 && (
-              <Section title="Roteiros gerados por mês">
+              <Section title={t('panel.itinerariesPerMonth')}>
                 <BarChart data={perMonth} labelKey="month" valueKey="count" />
               </Section>
             )}
 
             {categories.length > 0 && (
-              <Section title="Locais por categoria">
+              <Section title={t('panel.placesByCategory')}>
                 <DonutLegend data={categories} labelKey="category" valueKey="count" />
               </Section>
             )}
 
             {topRated.length > 0 && (
-              <Section title="Locais mais bem avaliados">
+              <Section title={t('panel.topRatedPlaces')}>
                 <View>
                   {topRated.slice(0, 8).map((item, i, arr) => (
                     <RankRow
@@ -173,7 +175,7 @@ export default function AdminPanel() {
                       name={item.name}
                       subtitle={<StarRating value={item.avgRating} />}
                       count={item.avgRating}
-                      countLabel={`${item.totalRatings} aval.`}
+                      countLabel={t('panel.ratingsCount', { count: item.totalRatings })}
                     />
                   ))}
                 </View>
@@ -181,7 +183,7 @@ export default function AdminPanel() {
             )}
 
             {mostComment.length > 0 && (
-              <Section title="Locais com mais comentários">
+              <Section title={t('panel.mostCommentedPlaces')}>
                 <View>
                   {mostComment.slice(0, 8).map((item, i, arr) => (
                     <RankRow
@@ -189,9 +191,9 @@ export default function AdminPanel() {
                       index={i}
                       isLast={i === arr.length - 1}
                       name={item.name}
-                      subtitle={`💬 ${item.commentCount} ${item.commentCount === 1 ? 'comentário' : 'comentários'}`}
+                      subtitle={t('panel.commentsInline', { count: item.commentCount })}
                       count={item.commentCount}
-                      countLabel="coment."
+                      countLabel={t('panel.commentsAbbrev')}
                     />
                   ))}
                 </View>
@@ -199,7 +201,7 @@ export default function AdminPanel() {
             )}
 
             {mostVisited.length > 0 && (
-              <Section title="Locais mais incluídos em roteiros">
+              <Section title={t('panel.mostVisitedPlaces')}>
                 <BarChart data={mostVisited} labelKey="name" valueKey="count" />
               </Section>
             )}
@@ -207,8 +209,8 @@ export default function AdminPanel() {
             {topRated.length === 0 && mostComment.length === 0 && mostVisited.length === 0 && (
               <View style={s.emptyBox}>
                 <Text style={s.emptyIcon}>📊</Text>
-                <Text style={s.emptyText}>Nenhum dado de locais disponível ainda.</Text>
-                <Text style={s.emptySubText}>Os dados aparecerão conforme os usuários gerarem roteiros e avaliarem locais.</Text>
+                <Text style={s.emptyText}>{t('panel.noPlacesData')}</Text>
+                <Text style={s.emptySubText}>{t('panel.noPlacesDataSub')}</Text>
               </View>
             )}
           </ScrollView>

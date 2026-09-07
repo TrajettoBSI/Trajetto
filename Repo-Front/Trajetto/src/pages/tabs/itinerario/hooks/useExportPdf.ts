@@ -2,15 +2,17 @@ import { Platform } from 'react-native';
 import * as Print from 'expo-print';
 import * as Sharing from 'expo-sharing';
 import * as FileSystem from 'expo-file-system';
+import i18n from '@/src/i18n';
 import { Itinerary } from '@/hooks/itineraryStore';
 import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
-import { formatDate, formatTime } from '@/src/pages/tabs/shared/roteiroFormat';
+import { formatDate, formatTime } from '@/src/i18n/format';
 import { adminAccent } from '@/src/theme';
 
 const PDF_PRIMARY = adminAccent.primary;
 
 function buildItineraryHtml(itinerary: Itinerary) {
+  const t = (key: string) => i18n.t(`itinerario:exportPdfDoc.${key}`);
   const sortedPlaces = [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex);
 
   let placesHtml = '';
@@ -18,10 +20,10 @@ function buildItineraryHtml(itinerary: Itinerary) {
     placesHtml += `
       <div style="margin-bottom: 20px; padding: 15px; border-left: 5px solid ${PDF_PRIMARY}; background-color: #f8fafc; border-radius: 4px;">
         <h3 style="margin: 0 0 8px 0; color: #1a1a1a; font-size: 18px;">${index + 1}. ${place.name}</h3>
-        <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕒 Horário Estimado:</strong> ${formatTime(place.estimatedVisitTime)}</p>
-        <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>📍 Endereço:</strong> ${place.address}</p>
-        ${place.category ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🏷️ Categoria:</strong> ${place.category}</p>` : ''}
-        ${place.openingHours ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕐 Horário de Func.:</strong> ${place.openingHours}</p>` : ''}
+        <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕒 ${t('estimatedTime')}</strong> ${formatTime(place.estimatedVisitTime)}</p>
+        <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>📍 ${t('address')}</strong> ${place.address}</p>
+        ${place.category ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🏷️ ${t('category')}</strong> ${place.category}</p>` : ''}
+        ${place.openingHours ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕐 ${t('openingHours')}</strong> ${place.openingHours}</p>` : ''}
       </div>
     `;
   });
@@ -40,14 +42,14 @@ function buildItineraryHtml(itinerary: Itinerary) {
       </head>
       <body>
         <div class="header">
-          <h1>Trajetto - Roteiro de Viagem</h1>
-          <p><strong>Período:</strong> ${formatDate(itinerary.startDate)} a ${formatDate(itinerary.endDate)}</p>
-          <p><strong>Total de paradas:</strong> ${sortedPlaces.length}</p>
+          <h1>${t('title')}</h1>
+          <p><strong>${t('period')}</strong> ${formatDate(itinerary.startDate)} ${t('periodJoiner')} ${formatDate(itinerary.endDate)}</p>
+          <p><strong>${t('totalStops')}</strong> ${sortedPlaces.length}</p>
         </div>
-        <h2 style="color: ${PDF_PRIMARY}; margin-bottom: 20px;">Suas Paradas</h2>
+        <h2 style="color: ${PDF_PRIMARY}; margin-bottom: 20px;">${t('stopsTitle')}</h2>
         ${placesHtml}
         <div class="footer">
-          <p>Documento gerado pelo aplicativo Trajetto.</p>
+          <p>${t('footer')}</p>
         </div>
       </body>
     </html>
@@ -59,6 +61,7 @@ export function useExportPdf() {
     if (!itinerary) return;
 
     const html = buildItineraryHtml(itinerary);
+    const shareDialogTitle = i18n.t('itinerario:exportPdfDoc.shareDialogTitle');
 
     try {
       const { uri } = await Print.printToFileAsync({ html });
@@ -71,16 +74,16 @@ export function useExportPdf() {
             const base64 = await FileSystem.readAsStringAsync(uri, { encoding: 'base64' });
             const newUri = await StorageAccessFramework.createFileAsync(permissions.directoryUri, 'Trajetto_Roteiro.pdf', 'application/pdf');
             await FileSystem.writeAsStringAsync(newUri, base64, { encoding: 'base64' });
-            showAlert('Roteiro salvo no seu celular!', { title: 'Sucesso' });
+            showAlert(i18n.t('itinerario:exportPdfDoc.androidSuccess'), { title: i18n.t('common:success') });
             return;
           }
         }
-        await Sharing.shareAsync(uri, { UTI: '.pdf', mimeType: 'application/pdf', dialogTitle: 'Salvar Roteiro' });
+        await Sharing.shareAsync(uri, { UTI: '.pdf', mimeType: 'application/pdf', dialogTitle: shareDialogTitle });
       } else {
-        await Sharing.shareAsync(uri, { UTI: '.pdf', mimeType: 'application/pdf', dialogTitle: 'Salvar Roteiro' });
+        await Sharing.shareAsync(uri, { UTI: '.pdf', mimeType: 'application/pdf', dialogTitle: shareDialogTitle });
       }
     } catch (error) {
-      showAlert(getErrorMessage(error, 'Não foi possível gerar ou salvar o PDF.'), { title: 'Erro' });
+      showAlert(getErrorMessage(error, i18n.t('itinerario:exportPdfDoc.genericError')), { title: i18n.t('common:error') });
     }
   };
 

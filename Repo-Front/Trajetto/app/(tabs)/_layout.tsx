@@ -2,6 +2,7 @@ import { Tabs, useRouter } from 'expo-router';
 import React from 'react';
 import { Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 
 import { HapticTab } from '@/components/haptic-tab';
 
@@ -10,6 +11,7 @@ const ACTIVE_TINT = '#ffffff';
 const INACTIVE_TINT = 'rgba(255,255,255,0.45)';
 
 export default function TabLayout() {
+  const { t } = useTranslation('common');
   const router = useRouter();
 
   return (
@@ -42,7 +44,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Início',
+          title: t('tabHome'),
           tabBarIcon: ({ color }) => (
             <Ionicons size={24} name="calendar-outline" color={color} />
           ),
@@ -52,7 +54,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="mapa"
         options={{
-          title: 'Mapa',
+          title: t('tabMap'),
           tabBarIcon: ({ color }) => (
             <Ionicons size={24} name="map-outline" color={color} />
           ),

@@ -1,0 +1,95 @@
+{
+  "header": {
+    "cancelSelect": "Cancelar",
+    "selectedCount_one": "{{count}} seleccionado",
+    "selectedCount_other": "{{count}} seleccionados",
+    "selectAll": "Todos",
+    "title": "Mis Itinerarios",
+    "greeting": "Hola, {{name}} 👋"
+  },
+  "adminBanners": {
+    "adminPanel": "Panel Administrador",
+    "dashboard": "Dashboard de uso"
+  },
+  "loadingItineraries": "Cargando itinerarios...",
+  "exploreBanner": {
+    "tag": "✈️  Destinos",
+    "title": "Explora más\nlugares a donde ir",
+    "cta": "Descubrir ahora →"
+  },
+  "activeSectionLabel": "ITINERARIO ACTIVO",
+  "otherSectionLabel": "OTROS ITINERARIOS",
+  "defaultItineraryName": "Itinerario",
+  "activeCard": {
+    "activeBadge": "Activo",
+    "stopsAndDays": "{{stops}} paradas · {{days}} días",
+    "deleteButton": "Eliminar itinerario"
+  },
+  "inactiveRow": {
+    "stopsAndDate": "{{stops}} paradas · {{date}}",
+    "activate": "Activar"
+  },
+  "selectBar": {
+    "count_one": "{{count}} seleccionado",
+    "count_other": "{{count}} seleccionados",
+    "delete": "🗑️  Eliminar ({{count}})"
+  },
+  "generate": {
+    "wantNew": "¿Quieres un nuevo itinerario?",
+    "button": "Generar Itinerario"
+  },
+  "delete": {
+    "confirmSingle": "¿Seguro que deseas eliminar este itinerario?",
+    "titleSingle": "Eliminar itinerario",
+    "errorSingle": "No se pudo eliminar el itinerario.",
+    "confirmBulk_one": "¿Eliminar {{count}} itinerario? Esta acción no se puede deshacer.",
+    "confirmBulk_other": "¿Eliminar {{count}} itinerarios? Esta acción no se puede deshacer.",
+    "titleBulk": "Eliminar itinerarios",
+    "errorBulk": "No se pudieron eliminar algunos itinerarios."
+  },
+  "activateError": "No se pudo activar el itinerario.",
+  "emptyState": {
+    "createFirst": "Crea tu primer",
+    "itinerary": "itinerario",
+    "personalized": "personalizado",
+    "andStart": "y empieza a",
+    "explore": "explorar el mundo."
+  },
+  "noItineraryEmptyState": {
+    "generate": "Genera un itinerario personalizado",
+    "andPlan": "y planea tu",
+    "goHome": "Ir al inicio"
+  },
+  "destinations": {
+    "flightTime": "{{hours}}h de vuelo",
+    "tokyo": "Tokio",
+    "japan": "Japón",
+    "paris": "París",
+    "france": "Francia",
+    "nyc": "NYC",
+    "usa": "EE. UU.",
+    "rome": "Roma",
+    "italy": "Italia",
+    "venice": "Venecia",
+    "curitiba": "Curitiba",
+    "brazil": "Brasil"
+  },
+  "generateFlow": {
+    "configureTitle": "Configurar Itinerario",
+    "generatedTitle": "Itinerario Generado",
+    "cityLabel": "CIUDAD",
+    "cityValue": "🏛️  Roma, Italia",
+    "durationLabel": "DURACIÓN",
+    "durationValue": "1 día",
+    "originLabel": "PUNTO DE PARTIDA",
+    "originHint": "Ingresa tu hotel o dirección en Roma",
+    "originPlaceholder": "Ej: Via Veneto 45, Roma",
+    "generateButton": "Generar Itinerario",
+    "loadingText": "Creando tu itinerario...",
+    "summaryTitle": "Roma, Italia",
+    "summaryMeta": "{{stops}} paradas · {{origin}}",
+    "regenerate": "Regenerar",
+    "accept": "Aceptar",
+    "genericError": "No se pudo generar el itinerario. Inténtalo de nuevo."
+  }
+}

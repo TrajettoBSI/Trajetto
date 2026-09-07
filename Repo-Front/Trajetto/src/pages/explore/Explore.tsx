@@ -5,6 +5,7 @@ import {
   ScrollView, KeyboardAvoidingView, Platform,
 } from 'react-native';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import CustomInput from '@/components/CustomInput';
@@ -16,6 +17,7 @@ import SpotCard from './components/SpotCard/SpotCard';
 import { styles } from './styles/styles';
 
 export default function Explore() {
+  const { t } = useTranslation(['explore', 'common']);
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
@@ -47,20 +49,20 @@ export default function Explore() {
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
               <Ionicons name="chevron-back" size={32} color={colors.white} />
             </TouchableOpacity>
-            <Text style={s.headerText}>Explorar</Text>
+            <Text style={s.headerText}>{t('explore:headerTitle')}</Text>
           </View>
         </View>
       </View>
       <KeyboardAvoidingView style={s.container} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
 
         <View style={s.header}>
-          <Text style={s.headerTitle}>Explorar</Text>
-          <Text style={s.headerSubtitle}>Descubra pontos turísticos em Roma</Text>
+          <Text style={s.headerTitle}>{t('explore:headerTitle')}</Text>
+          <Text style={s.headerSubtitle}>{t('explore:subtitle')}</Text>
         </View>
 
         <View style={s.searchRow}>
           <CustomInput
-            placeholder="Buscar ponto turístico..."
+            placeholder={t('explore:searchPlaceholder')}
             value={search}
             onChangeText={handleSearchChange}
             returnKeyType="search"
@@ -96,12 +98,12 @@ export default function Explore() {
 
         {searched && !loading && (
           <Text style={s.resultsLabel}>
-            {spots.length} {spots.length === 1 ? 'resultado' : 'resultados'}
-            {selectedCategory ? ` em "${selectedCategory}"` : ''}
+            {t('explore:resultsCount', { count: spots.length })}
+            {selectedCategory ? t('explore:resultsInCategory', { category: selectedCategory }) : ''}
           </Text>
         )}
 
-        <AsyncState style={s.loadingContainer} loading={loading} loadingText="Buscando pontos turísticos...">
+        <AsyncState style={s.loadingContainer} loading={loading} loadingText={t('explore:loadingText')}>
           <FlatList
             data={spots}
             keyExtractor={(item, index) => `${item.name}-${index}`}
@@ -112,16 +114,14 @@ export default function Explore() {
               <View style={s.emptyContainer}>
                 <Text style={s.emptyIcon}>{searched ? '😕' : '🗺️'}</Text>
                 <Text style={s.emptyTitle}>
-                  {searched ? 'Nenhum resultado' : 'Explore Roma'}
+                  {searched ? t('explore:emptyNotFoundTitle') : t('explore:emptyDefaultTitle')}
                 </Text>
                 <Text style={s.emptyText}>
-                  {searched
-                    ? 'Tente outros filtros ou limpe a busca.'
-                    : 'Busque ou filtre pontos turísticos disponíveis.'}
+                  {searched ? t('explore:emptyNotFoundText') : t('explore:emptyDefaultText')}
                 </Text>
                 {searched && (
                   <TouchableOpacity style={s.clearBtn} onPress={handleClearFilter}>
-                    <Text style={s.clearBtnText}>Limpar filtros</Text>
+                    <Text style={s.clearBtnText}>{t('explore:clearFiltersButton')}</Text>
                   </TouchableOpacity>
                 )}
               </View>
@@ -138,7 +138,7 @@ export default function Explore() {
         <TouchableOpacity style={s.modalOverlay} activeOpacity={1} onPress={closeFilter}>
           <View style={s.modalSheet}>
             <View style={s.modalHandle} />
-            <Text style={s.modalTitle}>Filtrar por categoria</Text>
+            <Text style={s.modalTitle}>{t('explore:filterModalTitle')}</Text>
 
             <ScrollView showsVerticalScrollIndicator={false} style={{ maxHeight: 400 }}>
               <TouchableOpacity
@@ -146,7 +146,7 @@ export default function Explore() {
                 onPress={() => setTempCategory('')}
               >
                 <Text style={[s.categoryItemText, tempCategory === '' && s.categoryItemTextSelected]}>
-                  📍 Todas as categorias
+                  {t('explore:allCategories')}
                 </Text>
                 {tempCategory === '' && <Text style={s.checkmark}>✓</Text>}
               </TouchableOpacity>
@@ -167,10 +167,10 @@ export default function Explore() {
 
             <View style={s.modalActions}>
               <TouchableOpacity style={s.clearFilterBtn} onPress={handleClearFilter}>
-                <Text style={s.clearFilterBtnText}>Limpar</Text>
+                <Text style={s.clearFilterBtnText}>{t('common:clear')}</Text>
               </TouchableOpacity>
               <TouchableOpacity style={s.applyBtn} onPress={handleApplyFilter}>
-                <Text style={s.applyBtnText}>Aplicar</Text>
+                <Text style={s.applyBtnText}>{t('common:apply')}</Text>
               </TouchableOpacity>
             </View>
           </View>

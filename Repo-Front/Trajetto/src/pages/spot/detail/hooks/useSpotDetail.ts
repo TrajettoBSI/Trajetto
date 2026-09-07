@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Linking } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import * as Location from 'expo-location';
 import { Place } from '@/services';
 import { showAlert } from '@/src/components/alerts/alertService';
-import { haversineMeters, parseOpeningHours, wheelchairLabel } from '../spotFormat';
+import { haversineMeters, parseOpeningHours } from '../spotFormat';
 
 type Region = {
   latitude: number;
@@ -26,6 +27,7 @@ export type SpotDetailData = {
 };
 
 export function useSpotDetail(): SpotDetailData {
+  const { t } = useTranslation('spotDetail');
   const params = useLocalSearchParams<{ spot: string }>();
   const spot = useMemo(() => JSON.parse(params.spot) as Place, [params.spot]);
 
@@ -42,7 +44,7 @@ export function useSpotDetail(): SpotDetailData {
 
   const openMaps = () => {
     const url = `https://www.google.com/maps/dir/?api=1&destination=${spot.latitude},${spot.longitude}`;
-    Linking.openURL(url).catch(() => showAlert('Não foi possível abrir o Google Maps', { title: 'Erro' }));
+    Linking.openURL(url).catch(() => showAlert(t('openMapsError'), { title: t('common:error') }));
   };
 
   const openWebsite = () => {
@@ -71,7 +73,7 @@ export function useSpotDetail(): SpotDetailData {
       longitudeDelta: 0.012,
     },
     hours: parseOpeningHours(spot.openingHours),
-    wc: wheelchairLabel(spot.wheelchair || ''),
+    wc: spot.wheelchair || null,
     openMaps,
     openWebsite,
     callPhone,

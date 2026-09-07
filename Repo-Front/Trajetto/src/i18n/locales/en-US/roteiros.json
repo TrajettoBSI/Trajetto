@@ -1,0 +1,95 @@
+{
+  "header": {
+    "cancelSelect": "Cancel",
+    "selectedCount_one": "{{count}} selected",
+    "selectedCount_other": "{{count}} selected",
+    "selectAll": "All",
+    "title": "My Itineraries",
+    "greeting": "Hi, {{name}} 👋"
+  },
+  "adminBanners": {
+    "adminPanel": "Admin Panel",
+    "dashboard": "Usage Dashboard"
+  },
+  "loadingItineraries": "Loading itineraries...",
+  "exploreBanner": {
+    "tag": "✈️  Destinations",
+    "title": "Explore more\nplaces to go",
+    "cta": "Discover now →"
+  },
+  "activeSectionLabel": "ACTIVE ITINERARY",
+  "otherSectionLabel": "OTHER ITINERARIES",
+  "defaultItineraryName": "Itinerary",
+  "activeCard": {
+    "activeBadge": "Active",
+    "stopsAndDays": "{{stops}} stops · {{days}} days",
+    "deleteButton": "Delete itinerary"
+  },
+  "inactiveRow": {
+    "stopsAndDate": "{{stops}} stops · {{date}}",
+    "activate": "Activate"
+  },
+  "selectBar": {
+    "count_one": "{{count}} selected",
+    "count_other": "{{count}} selected",
+    "delete": "🗑️  Delete ({{count}})"
+  },
+  "generate": {
+    "wantNew": "Want a new itinerary?",
+    "button": "Generate Itinerary"
+  },
+  "delete": {
+    "confirmSingle": "Are you sure you want to delete this itinerary?",
+    "titleSingle": "Delete itinerary",
+    "errorSingle": "Could not delete the itinerary.",
+    "confirmBulk_one": "Delete {{count}} itinerary? This action cannot be undone.",
+    "confirmBulk_other": "Delete {{count}} itineraries? This action cannot be undone.",
+    "titleBulk": "Delete itineraries",
+    "errorBulk": "Could not delete some itineraries."
+  },
+  "activateError": "Could not activate the itinerary.",
+  "emptyState": {
+    "createFirst": "Create your first",
+    "itinerary": "itinerary",
+    "personalized": "personalized",
+    "andStart": "and start",
+    "explore": "exploring the world."
+  },
+  "noItineraryEmptyState": {
+    "generate": "Generate a personalized itinerary",
+    "andPlan": "and plan your",
+    "goHome": "Go Home"
+  },
+  "destinations": {
+    "flightTime": "{{hours}}h flight",
+    "tokyo": "Tokyo",
+    "japan": "Japan",
+    "paris": "Paris",
+    "france": "France",
+    "nyc": "NYC",
+    "usa": "USA",
+    "rome": "Rome",
+    "italy": "Italy",
+    "venice": "Venice",
+    "curitiba": "Curitiba",
+    "brazil": "Brazil"
+  },
+  "generateFlow": {
+    "configureTitle": "Configure Itinerary",
+    "generatedTitle": "Generated Itinerary",
+    "cityLabel": "CITY",
+    "cityValue": "🏛️  Rome, Italy",
+    "durationLabel": "DURATION",
+    "durationValue": "1 day",
+    "originLabel": "STARTING POINT",
+    "originHint": "Enter your hotel or address in Rome",
+    "originPlaceholder": "Ex: Via Veneto 45, Rome",
+    "generateButton": "Generate Itinerary",
+    "loadingText": "Creating your itinerary...",
+    "summaryTitle": "Rome, Italy",
+    "summaryMeta": "{{stops}} stops · {{origin}}",
+    "regenerate": "Regenerate",
+    "accept": "Accept",
+    "genericError": "Could not generate the itinerary. Try again."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "fields": {
+    "firstName": "Nome",
+    "lastName": "Sobrenome"
+  },
+  "name": {
+    "required": "{{field}} é obrigatório",
+    "minLength": "{{field}}: pelo menos 2 caracteres"
+  },
+  "birthDate": {
+    "required": "Data de nascimento é obrigatória",
+    "invalidFormat": "Insira uma data válida",
+    "invalid": "Data inválida",
+    "underage": "Você precisa ter pelo menos 13 anos de idade"
+  },
+  "telephone": {
+    "required": "Telefone é obrigatório",
+    "invalid": "Insira um telefone válido"
+  },
+  "email": {
+    "required": "O e-mail é obrigatório",
+    "invalid": "Insira um e-mail válido"
+  },
+  "country": {
+    "required": "Selecione um país"
+  },
+  "password": {
+    "required": "A senha é obrigatória",
+    "minLength": "Pelo menos 8 caracteres",
+    "uppercase": "Pelo menos uma letra maiúscula",
+    "lowercase": "Pelo menos uma letra minúscula",
+    "number": "Pelo menos um número",
+    "special": "Pelo menos um caractere especial"
+  }
+}

@@ -17,6 +17,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Svg, { Circle } from 'react-native-svg';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { PlaceSuggestion, searchAddresses } from '../services';
 import { getErrorMessage } from '../utils/apiError';
@@ -120,6 +121,7 @@ const loaderStyles = StyleSheet.create({
 
 // ── Main component ───────────────────────────────────────────────────────────
 export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Props) {
+  const { t } = useTranslation(['roteiros', 'common']);
   const { user } = useAuth();
   const { generateItinerary, acceptGeneratedItinerary } = useItineraryStore();
 
@@ -201,7 +203,7 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
       setStep('preview');
     } catch (e) {
       setStep('config');
-      Alert.alert('Erro', getErrorMessage(e, 'Não foi possível gerar o roteiro. Tente novamente.'));
+      Alert.alert(t('common:error'), getErrorMessage(e, t('roteiros:generateFlow.genericError')));
     }
   };
 
@@ -214,7 +216,7 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
       setStep('preview');
     } catch (e) {
       setStep('config');
-      Alert.alert('Erro', getErrorMessage(e, 'Não foi possível gerar o roteiro. Tente novamente.'));
+      Alert.alert(t('common:error'), getErrorMessage(e, t('roteiros:generateFlow.genericError')));
     }
   };
 
@@ -233,7 +235,7 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
           {step !== 'loading' && (
             <View style={styles.header}>
               <Text style={styles.headerTitle}>
-                {step === 'config' ? 'Configurar Roteiro' : 'Roteiro Gerado'}
+                {step === 'config' ? t('roteiros:generateFlow.configureTitle') : t('roteiros:generateFlow.generatedTitle')}
               </Text>
               {step === 'config' && (
                 <TouchableOpacity onPress={onClose} style={styles.closeBtn}>
@@ -253,24 +255,24 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
             >
 
               {/* Cidade */}
-              <Text style={styles.sectionLabel}>CIDADE</Text>
+              <Text style={styles.sectionLabel}>{t('roteiros:generateFlow.cityLabel')}</Text>
               <View style={styles.chipRow}>
                 <View style={[styles.chip, styles.chipActive]}>
-                  <Text style={styles.chipActiveText}>🏛️  Roma, Itália</Text>
+                  <Text style={styles.chipActiveText}>{t('roteiros:generateFlow.cityValue')}</Text>
                 </View>
               </View>
 
               {/* Duração */}
-              <Text style={styles.sectionLabel}>DURAÇÃO</Text>
+              <Text style={styles.sectionLabel}>{t('roteiros:generateFlow.durationLabel')}</Text>
               <View style={styles.chipRow}>
                 <View style={[styles.chip, styles.chipActive]}>
-                  <Text style={styles.chipActiveText}>1 dia</Text>
+                  <Text style={styles.chipActiveText}>{t('roteiros:generateFlow.durationValue')}</Text>
                 </View>
               </View>
 
               {/* Ponto de partida */}
-              <Text style={styles.sectionLabel}>PONTO DE PARTIDA</Text>
-              <Text style={styles.hint}>Digite seu hotel ou endereço em Roma</Text>
+              <Text style={styles.sectionLabel}>{t('roteiros:generateFlow.originLabel')}</Text>
+              <Text style={styles.hint}>{t('roteiros:generateFlow.originHint')}</Text>
 
               {/* Wrapper com zIndex para garantir visibilidade no iOS */}
               <View style={{ zIndex: 10, elevation: 10 }}>
@@ -282,7 +284,7 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
                   <CustomInput
                     value={addressInput}
                     onChangeText={handleInputChange}
-                    placeholder="Ex: Via Veneto 45, Roma"
+                    placeholder={t('roteiros:generateFlow.originPlaceholder')}
                     returnKeyType="search"
                     autoCorrect={false}
                     inputStyle={styles.addressInput}
@@ -338,7 +340,7 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
               )}
 
               <CustomButton
-                title="Gerar Roteiro"
+                title={t('roteiros:generateFlow.generateButton')}
                 onPress={handleGenerate}
                 disabled={!selectedPlace}
                 style={styles.generateBtn}
@@ -349,7 +351,7 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
           {step === 'loading' && (
             <View style={styles.loadingContainer}>
               <OrbitLoader />
-              <Text style={styles.loadingText}>Criando seu roteiro...</Text>
+              <Text style={styles.loadingText}>{t('roteiros:generateFlow.loadingText')}</Text>
             </View>
           )}
 
@@ -359,13 +361,13 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
               {/* Resumo */}
               <View style={styles.summaryCard}>
                 <View style={{flexDirection: 'row', alignItems: 'center', gap: 6}}>
-                  <Ionicons name="location" size={18} color="white" style={{marginBottom: 5}}/> 
+                  <Ionicons name="location" size={18} color="white" style={{marginBottom: 5}}/>
                   <Text style={[styles.summaryTitle]}>
-                  Roma, Itália
+                  {t('roteiros:generateFlow.summaryTitle')}
                   </Text>
                   </View>
                 <Text style={styles.summaryMeta}>
-                  {generatedItinerary.places.length} paradas · {selectedPlace?.shortName ?? ''}
+                  {t('roteiros:generateFlow.summaryMeta', { stops: generatedItinerary.places.length, origin: selectedPlace?.shortName ?? '' })}
                 </Text>
               </View>
 
@@ -409,12 +411,12 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
               <View style={styles.previewActions}>
                 <TouchableOpacity style={styles.regenBtn} onPress={handleRegenerate} activeOpacity={0.7}>
                   <Ionicons name="reload" size={18} color="#4a5568" />
-                  <Text style={styles.regenBtnText}>Re-gerar</Text>
+                  <Text style={styles.regenBtnText}>{t('roteiros:generateFlow.regenerate')}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.acceptBtn} onPress={handleAccept} activeOpacity={0.85}>
                   <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
                     <Ionicons name="checkmark" size={20} color="#fff" />
-                    <Text style={styles.acceptBtnText}>Aceitar</Text>
+                    <Text style={styles.acceptBtnText}>{t('roteiros:generateFlow.accept')}</Text>
                   </View>
                 </TouchableOpacity>
               </View>

@@ -2,6 +2,7 @@ import React from 'react';
 import { ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomInput from '@/components/CustomInput';
 import CountryPickerModal from '@/src/components/CountryPickerModal/CountryPickerModal';
@@ -11,6 +12,7 @@ import { useProfile } from './hooks/useProfile';
 import { styles } from './styles/styles';
 
 export default function Profile() {
+  const { t } = useTranslation('profile');
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const colors = useColors();
@@ -51,7 +53,7 @@ export default function Profile() {
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
               <Ionicons name="chevron-back" size={32} color={colors.white} />
             </TouchableOpacity>
-            <Text style={s.headerText}>Configurações</Text>
+            <Text style={s.headerText}>{t('headerTitle')}</Text>
           </View>
         </View>
       </View>
@@ -68,23 +70,23 @@ export default function Profile() {
         </View>
 
         <View style={s.card}>
-          <Text style={s.sectionTitle}>Informações pessoais</Text>
+          <Text style={s.sectionTitle}>{t('personalInfo')}</Text>
 
           <View style={s.row}>
             <CustomInput
-              label="Nome"
+              label={t('firstNameLabel')}
               value={firstName}
               onChangeText={onChangeFirstName}
-              placeholder="Seu nome"
+              placeholder={t('firstNamePlaceholder')}
               autoCapitalize="words"
               error={errors.firstName}
               style={s.field}
             />
             <CustomInput
-              label="Sobrenome"
+              label={t('lastNameLabel')}
               value={lastName}
               onChangeText={onChangeLastName}
-              placeholder="Seu sobrenome"
+              placeholder={t('lastNamePlaceholder')}
               autoCapitalize="words"
               error={errors.lastName}
               style={s.field}
@@ -93,21 +95,21 @@ export default function Profile() {
 
           <View style={s.row}>
             <CustomInput
-              label="Data de nascimento"
+              label={t('birthDateLabel')}
               type="numeric"
               value={birthDate}
               onChangeText={onChangeBirthDate}
-              placeholder="DD/MM/AAAA"
+              placeholder={t('birthDatePlaceholder')}
               maxLength={10}
               error={errors.birthDate}
               style={s.field}
             />
             <CustomInput
-              label="Telefone"
+              label={t('telephoneLabel')}
               type="phone-pad"
               value={telephone}
               onChangeText={onChangeTelephone}
-              placeholder="(00) 00000-0000"
+              placeholder={t('telephonePlaceholder')}
               maxLength={15}
               error={errors.telephone}
               style={s.field}
@@ -115,24 +117,24 @@ export default function Profile() {
           </View>
 
           <CustomInput
-            label="E-mail"
+            label={t('emailLabel')}
             type="email"
             value={email}
             onChangeText={onChangeEmail}
-            placeholder="seuemail@exemplo.com"
+            placeholder={t('emailPlaceholder')}
             autoCapitalize="none"
             error={errors.email}
           />
 
           <View style={s.field}>
-            <Text style={s.label}>País</Text>
+            <Text style={s.label}>{t('countryLabel')}</Text>
             <TouchableOpacity
               style={[s.dropdownTrigger, errors.country ? s.inputError : null]}
               onPress={openCountries}
               activeOpacity={0.7}
             >
               <Text style={country ? s.dropdownValue : s.dropdownPlaceholder}>
-                {country || 'Selecione seu país'}
+                {country || t('countryPlaceholder')}
               </Text>
               <Text style={s.dropdownChevron}>▼</Text>
             </TouchableOpacity>
@@ -149,12 +151,12 @@ export default function Profile() {
           <TouchableOpacity style={s.saveButton} onPress={handleUpdate} disabled={loading} activeOpacity={0.85}>
             {loading
               ? <ActivityIndicator size="small" color={colors.white} />
-              : <Text style={s.saveButtonText}>Salvar alterações</Text>
+              : <Text style={s.saveButtonText}>{t('save')}</Text>
             }
           </TouchableOpacity>
 
           <TouchableOpacity style={s.logoutBtn} onPress={logout} activeOpacity={0.7}>
-            <Text style={s.logoutText}>Sair da conta</Text>
+            <Text style={s.logoutText}>{t('logout')}</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>

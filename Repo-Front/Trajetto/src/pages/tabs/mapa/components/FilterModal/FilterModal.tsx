@@ -1,8 +1,10 @@
 import React from 'react';
 import { ScrollView, Switch, Text, TouchableOpacity, View, Modal } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { categoryIcon } from '@/src/helpers/categoryIcon';
 import { useColors } from '@/src/theme';
 import { DISTANCE_OPTIONS } from '../../data/distanceOptions';
+import { formatDistance } from '../../mapaFormat';
 import { styles } from './styles';
 
 type FilterModalProps = {
@@ -25,12 +27,6 @@ type FilterModalProps = {
   onClose: () => void;
 };
 
-const FEE_OPTIONS: { label: string; value: 'yes' | 'no' | '' }[] = [
-  { label: 'Qualquer', value: '' },
-  { label: '🆓 Gratuito', value: 'no' },
-  { label: '💰 Pago', value: 'yes' },
-];
-
 export default function FilterModal({
   visible, categories, profiles, activeCount,
   tempCategory, setTempCategory,
@@ -40,8 +36,15 @@ export default function FilterModal({
   tempMaxDistance, setTempMaxDistance,
   onApply, onClearAll, onClose,
 }: FilterModalProps) {
+  const { t } = useTranslation(['mapa', 'common']);
   const colors = useColors();
   const s = styles(colors);
+
+  const FEE_OPTIONS: { label: string; value: 'yes' | 'no' | '' }[] = [
+    { label: t('common:any'), value: '' },
+    { label: t('mapa:filterModal.feeFree'), value: 'no' },
+    { label: t('mapa:filterModal.feePaid'), value: 'yes' },
+  ];
 
   return (
     <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose}>
@@ -49,17 +52,17 @@ export default function FilterModal({
         <View style={s.modalSheet}>
           <View style={s.modalHandle} />
           <View style={s.modalTitleRow}>
-            <Text style={s.modalTitle}>Filtros</Text>
+            <Text style={s.modalTitle}>{t('mapa:filterModal.title')}</Text>
             {activeCount > 0 && (
               <TouchableOpacity onPress={onClearAll}>
-                <Text style={s.modalClearAll}>Limpar tudo</Text>
+                <Text style={s.modalClearAll}>{t('mapa:filterModal.clearAll')}</Text>
               </TouchableOpacity>
             )}
           </View>
 
           <ScrollView showsVerticalScrollIndicator={false} style={s.scrollArea}>
 
-            <Text style={s.filterSection}>Categoria</Text>
+            <Text style={s.filterSection}>{t('mapa:filterModal.categorySection')}</Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={s.filterChipsRow}>
               {['', ...categories].map((cat) => (
                 <TouchableOpacity
@@ -68,13 +71,13 @@ export default function FilterModal({
                   onPress={() => setTempCategory(cat)}
                 >
                   <Text style={[s.filterChipText, tempCategory === cat && s.filterChipTextActive]}>
-                    {cat ? `${categoryIcon(cat)} ${cat}` : '📍 Todas'}
+                    {cat ? `${categoryIcon(cat)} ${cat}` : t('mapa:filterModal.allCategories')}
                   </Text>
                 </TouchableOpacity>
               ))}
             </ScrollView>
 
-            <Text style={s.filterSection}>Entrada</Text>
+            <Text style={s.filterSection}>{t('mapa:filterModal.feeSection')}</Text>
             <View style={s.filterRow}>
               {FEE_OPTIONS.map((opt) => (
                 <TouchableOpacity
@@ -91,8 +94,8 @@ export default function FilterModal({
 
             <View style={s.switchRow}>
               <View>
-                <Text style={s.filterSection}>Apenas com horário definido</Text>
-                <Text style={s.filterSubLabel}>Exclui locais sem informação de horário</Text>
+                <Text style={s.filterSection}>{t('mapa:filterModal.hoursSection')}</Text>
+                <Text style={s.filterSubLabel}>{t('mapa:filterModal.hoursSubLabel')}</Text>
               </View>
               <Switch
                 value={tempHasHours}
@@ -103,7 +106,7 @@ export default function FilterModal({
               />
             </View>
 
-            <Text style={s.filterSection}>Perfil de viajante</Text>
+            <Text style={s.filterSection}>{t('mapa:filterModal.profileSection')}</Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={s.filterChipsRow}>
               {['', ...profiles].map((p) => (
                 <TouchableOpacity
@@ -112,13 +115,13 @@ export default function FilterModal({
                   onPress={() => setTempProfile(p)}
                 >
                   <Text style={[s.filterChipText, tempProfile === p && s.filterChipTextActive]}>
-                    {p || '👤 Todos'}
+                    {p || t('mapa:filterModal.allProfiles')}
                   </Text>
                 </TouchableOpacity>
               ))}
             </ScrollView>
 
-            <Text style={s.filterSection}>Distância máxima da sua localização</Text>
+            <Text style={s.filterSection}>{t('mapa:filterModal.distanceSection')}</Text>
             <View style={s.filterRow}>
               {DISTANCE_OPTIONS.map((opt) => (
                 <TouchableOpacity
@@ -127,7 +130,7 @@ export default function FilterModal({
                   onPress={() => setTempMaxDistance(opt.value)}
                 >
                   <Text style={[s.filterOptionText, tempMaxDistance === opt.value && s.filterOptionTextActive]}>
-                    {opt.label}
+                    {opt.value ? formatDistance(opt.value) : t('common:any')}
                   </Text>
                 </TouchableOpacity>
               ))}
@@ -137,10 +140,10 @@ export default function FilterModal({
 
           <View style={s.modalActions}>
             <TouchableOpacity style={s.clearFilterBtn} onPress={onClose}>
-              <Text style={s.clearFilterBtnText}>Cancelar</Text>
+              <Text style={s.clearFilterBtnText}>{t('common:cancel')}</Text>
             </TouchableOpacity>
             <TouchableOpacity style={s.applyBtn} onPress={onApply}>
-              <Text style={s.applyBtnText}>Aplicar filtros</Text>
+              <Text style={s.applyBtnText}>{t('mapa:filterModal.apply')}</Text>
             </TouchableOpacity>
           </View>
         </View>

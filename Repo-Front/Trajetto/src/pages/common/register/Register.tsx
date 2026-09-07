@@ -2,6 +2,7 @@ import React from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import CustomInput from '@/components/CustomInput';
 import CustomButton from '@/components/CustomButton';
 import Logo from '@/assets/appImgs/logo.svg';
@@ -12,6 +13,7 @@ import PasswordStrength from '@/src/components/PasswordStrength/PasswordStrength
 import CountryPickerModal from '@/src/components/CountryPickerModal/CountryPickerModal';
 
 export default function Register() {
+  const { t } = useTranslation('register');
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
@@ -51,7 +53,7 @@ export default function Register() {
               <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
                 <Ionicons name="chevron-back" size={32} color={colors.white} />
               </TouchableOpacity>
-              <Text style={s.headerText}>Cadastro</Text>
+              <Text style={s.headerText}>{t('headerTitle')}</Text>
             </View>
 
             <View style={s.headerCenter} pointerEvents="none">
@@ -63,23 +65,23 @@ export default function Register() {
         </View>
 
         <View style={s.card}>
-          <Text style={s.cardTitle}>Crie sua conta</Text>
+          <Text style={s.cardTitle}>{t('cardTitle')}</Text>
 
           <View style={s.row}>
             <CustomInput
-              label="Nome"
+              label={t('firstNameLabel')}
               value={firstName}
               onChangeText={onChangeFirstName}
-              placeholder="Ex: João"
+              placeholder={t('firstNamePlaceholder')}
               autoCapitalize="words"
               error={errors.firstName}
               style={s.field}
             />
             <CustomInput
-              label="Sobrenome"
+              label={t('lastNameLabel')}
               value={lastName}
               onChangeText={onChangeLastName}
-              placeholder="Ex: Silva"
+              placeholder={t('lastNamePlaceholder')}
               autoCapitalize="words"
               error={errors.lastName}
               style={s.field}
@@ -88,21 +90,21 @@ export default function Register() {
 
           <View style={s.row}>
             <CustomInput
-              label="Data de nascimento"
+              label={t('birthDateLabel')}
               type="numeric"
               value={birthDate}
               onChangeText={onChangeBirthDate}
-              placeholder="DD/MM/AAAA"
+              placeholder={t('birthDatePlaceholder')}
               maxLength={10}
               error={errors.birthDate}
               style={s.field}
             />
             <CustomInput
-              label="Telefone"
+              label={t('telephoneLabel')}
               type="phone-pad"
               value={telephone}
               onChangeText={onChangeTelephone}
-              placeholder="(00) 00000-0000"
+              placeholder={t('telephonePlaceholder')}
               maxLength={15}
               error={errors.telephone}
               style={s.field}
@@ -110,24 +112,24 @@ export default function Register() {
           </View>
 
           <CustomInput
-            label="E-mail"
+            label={t('emailLabel')}
             type="email"
             value={email}
             onChangeText={onChangeEmail}
-            placeholder="seuemail@exemplo.com"
+            placeholder={t('emailPlaceholder')}
             autoCapitalize="none"
             error={errors.email}
           />
 
           <View style={s.field}>
-            <Text style={s.label}>País</Text>
+            <Text style={s.label}>{t('countryLabel')}</Text>
             <TouchableOpacity
               style={[s.dropdownTrigger, errors.country ? s.inputError : null]}
               onPress={openCountries}
               activeOpacity={0.7}
             >
               <Text style={country ? s.dropdownValue : s.dropdownPlaceholder}>
-                {country || 'Selecione seu país'}
+                {country || t('countryPlaceholder')}
               </Text>
               <Text style={s.dropdownChevron}>▼</Text>
             </TouchableOpacity>
@@ -142,30 +144,30 @@ export default function Register() {
           />
 
           <CustomInput
-            label="Senha"
+            label={t('passwordLabel')}
             type="password"
             value={password}
             onChangeText={onChangePassword}
-            placeholder="Mínimo 8 caracteres"
+            placeholder={t('passwordPlaceholder')}
             error={errors.password}
           />
           {password.length > 0 && <PasswordStrength password={password} />}
 
           <CustomInput
-            label="Repetir Senha"
+            label={t('confirmPasswordLabel')}
             type="password"
             value={confirmPassword}
             onChangeText={onChangeConfirmPassword}
-            placeholder="Confirme sua senha"
+            placeholder={t('confirmPasswordPlaceholder')}
             returnKeyType="done"
             error={errors.confirmPassword}
             inputStyle={confirmPassword.length > 0 && password === confirmPassword ? s.inputOk : null}
           />
 
-          <CustomButton title="Criar Conta" onPress={handleRegister} loading={loading} style={s.button} />
+          <CustomButton title={t('submit')} onPress={handleRegister} loading={loading} style={s.button} />
 
           <TouchableOpacity onPress={goToLogin} style={s.loginLink}>
-            <Text style={s.loginLinkText}>Já tem conta? <Text style={s.loginLinkBold}>Entrar</Text></Text>
+            <Text style={s.loginLinkText}>{t('haveAccount')}<Text style={s.loginLinkBold}>{t('signIn')}</Text></Text>
           </TouchableOpacity>
         </View>
 

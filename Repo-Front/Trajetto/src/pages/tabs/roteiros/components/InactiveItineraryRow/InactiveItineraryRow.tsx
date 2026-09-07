@@ -1,9 +1,10 @@
 import React from 'react';
 import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import { Itinerary } from '@/hooks/itineraryStore';
 import { useColors } from '@/src/theme';
-import { formatDate } from '@/src/pages/tabs/shared/roteiroFormat';
+import { formatDate } from '@/src/i18n/format';
 import Checkbox from '../Checkbox/Checkbox';
 import { styles } from './styles';
 
@@ -22,6 +23,7 @@ type InactiveItineraryRowProps = {
 export default function InactiveItineraryRow({
   item, selectMode, selected, activating, deleting, onPress, onLongPress, onActivate, onDelete,
 }: InactiveItineraryRowProps) {
+  const { t } = useTranslation('roteiros');
   const colors = useColors();
   const s = styles(colors);
 
@@ -37,10 +39,10 @@ export default function InactiveItineraryRow({
         <View style={s.inactiveCardInfo}>
           <View style={s.inactiveCardTitleRow}>
             <Ionicons name="location" size={18} color={colors.primary} />
-            <Text style={s.inactiveCardTitle} numberOfLines={1}> {item.places[0]?.name ?? 'Roteiro'}</Text>
+            <Text style={s.inactiveCardTitle} numberOfLines={1}> {item.places[0]?.name ?? t('defaultItineraryName')}</Text>
           </View>
           <Text style={s.inactiveCardMeta}>
-            {item.places.length} paradas · {formatDate(item.startDate)}
+            {t('inactiveRow.stopsAndDate', { stops: item.places.length, date: formatDate(item.startDate) })}
           </Text>
         </View>
         {!selectMode && (
@@ -53,7 +55,7 @@ export default function InactiveItineraryRow({
             >
               {activating
                 ? <ActivityIndicator size="small" color={colors.primary} />
-                : <Text style={s.activateBtnText}>Ativar</Text>
+                : <Text style={s.activateBtnText}>{t('inactiveRow.activate')}</Text>
               }
             </TouchableOpacity>
             <TouchableOpacity

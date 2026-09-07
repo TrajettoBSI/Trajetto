@@ -1,0 +1,41 @@
+{
+  "searchPlaceholder": "Search tourist spot...",
+  "originLabel": "Start",
+  "placeMarker": {
+    "visited": "visited ✓",
+    "goToItinerary": "view in itinerary ↗"
+  },
+  "routeBar": {
+    "now": "Now · ",
+    "start": "Start"
+  },
+  "activeFilterChips": {
+    "free": "🆓 Free",
+    "paid": "💰 Paid",
+    "hasHours": "🕐 With hours"
+  },
+  "filterModal": {
+    "title": "Filters",
+    "clearAll": "Clear all",
+    "categorySection": "Category",
+    "allCategories": "📍 All",
+    "feeSection": "Admission",
+    "feeFree": "🆓 Free",
+    "feePaid": "💰 Paid",
+    "hoursSection": "Only with defined hours",
+    "hoursSubLabel": "Excludes places without hours information",
+    "profileSection": "Traveler profile",
+    "allProfiles": "👤 All",
+    "distanceSection": "Maximum distance from your location",
+    "cancel": "Cancel",
+    "apply": "Apply filters"
+  },
+  "spotDetailCard": {
+    "free": "🆓 Free",
+    "paid": "💰 Paid",
+    "walking": "walking",
+    "driving": "driving",
+    "fromHere": "from here",
+    "viewFullDetails": "View full details →"
+  }
+}

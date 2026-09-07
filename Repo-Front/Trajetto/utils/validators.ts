@@ -1,3 +1,5 @@
+import i18n from '@/src/i18n';
+
 // ─── Máscaras ────────────────────────────────────────────
 
 export const maskName = (text: string) =>
@@ -35,19 +37,22 @@ export const fromBirthDateISO = (date: string) => {
 
 // ─── Validações ──────────────────────────────────────────
 
-export const validateName = (value: string, label: string) => {
-  if (!value.trim()) return `${label} é obrigatório`;
-  if (value.trim().length < 2) return `${label}: pelo menos 2 caracteres`;
+export type NameField = 'firstName' | 'lastName';
+
+export const validateName = (value: string, field: NameField) => {
+  const fieldLabel = i18n.t(`validation:fields.${field}`);
+  if (!value.trim()) return i18n.t('validation:name.required', { field: fieldLabel });
+  if (value.trim().length < 2) return i18n.t('validation:name.minLength', { field: fieldLabel });
   return null;
 };
 
 export const validateBirthDate = (value: string) => {
-  if (!value) return 'Data de nascimento é obrigatória';
+  if (!value) return i18n.t('validation:birthDate.required');
 
   const [dayStr, monthStr, yearStr] = value.split('/');
 
   if (!dayStr || !monthStr || !yearStr || yearStr.length < 4) {
-    return 'Insira uma data válida';
+    return i18n.t('validation:birthDate.invalidFormat');
   }
 
   const day = Number(dayStr);
@@ -61,7 +66,7 @@ export const validateBirthDate = (value: string) => {
     month < 1 || month > 12 ||
     year < 1900 || year > new Date().getFullYear()
   ) {
-    return 'Data inválida';
+    return i18n.t('validation:birthDate.invalid');
   }
 
   // Validação real da data (ex: 31/02 não pode)
@@ -71,7 +76,7 @@ export const validateBirthDate = (value: string) => {
     date.getMonth() !== month - 1 ||
     date.getDate() !== day
   ) {
-    return 'Data inválida';
+    return i18n.t('validation:birthDate.invalid');
   }
 
   // Cálculo de idade correto (considerando mês/dia)
@@ -86,38 +91,38 @@ export const validateBirthDate = (value: string) => {
     age--;
   }
 
-  if (age < 13) return 'Você precisa ter pelo menos 13 anos de idade';
-  if (age > 120) return 'Data inválida';
+  if (age < 13) return i18n.t('validation:birthDate.underage');
+  if (age > 120) return i18n.t('validation:birthDate.invalid');
 
   return null;
 };
 
 export const validateTelephone = (value: string) => {
   const cleaned = value.replace(/\D/g, '');
-  if (!value) return 'Telefone é obrigatório';
-  if (cleaned.length < 10 || cleaned.length > 11) return 'Insira um telefone válido';
+  if (!value) return i18n.t('validation:telephone.required');
+  if (cleaned.length < 10 || cleaned.length > 11) return i18n.t('validation:telephone.invalid');
   return null;
 };
 
 export const validateEmail = (value: string) => {
-  if (!value) return 'O e-mail é obrigatório';
+  if (!value) return i18n.t('validation:email.required');
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!regex.test(value)) return 'Insira um e-mail válido';
+  if (!regex.test(value)) return i18n.t('validation:email.invalid');
   return null;
 };
 
 export const validateCountry = (value: string) => {
-  if (!value) return 'Selecione um país';
+  if (!value) return i18n.t('validation:country.required');
   return null;
 };
 
 export const validatePassword = (value: string) => {
-  if (!value) return 'A senha é obrigatória';
-  if (value.length < 8) return 'Pelo menos 8 caracteres';
-  if (!/[A-Z]/.test(value)) return 'Pelo menos uma letra maiúscula';
-  if (!/[a-z]/.test(value)) return 'Pelo menos uma letra minúscula';
-  if (!/[0-9]/.test(value)) return 'Pelo menos um número';
-  if (!/[^A-Za-z0-9]/.test(value)) return 'Pelo menos um caractere especial';
+  if (!value) return i18n.t('validation:password.required');
+  if (value.length < 8) return i18n.t('validation:password.minLength');
+  if (!/[A-Z]/.test(value)) return i18n.t('validation:password.uppercase');
+  if (!/[a-z]/.test(value)) return i18n.t('validation:password.lowercase');
+  if (!/[0-9]/.test(value)) return i18n.t('validation:password.number');
+  if (!/[^A-Za-z0-9]/.test(value)) return i18n.t('validation:password.special');
   return null;
 };
 
@@ -144,8 +149,8 @@ export interface RegisterFields {
 export const validateRegisterForm = (fields: RegisterFields) => {
   const errors: Record<string, string> = {};
   const checks = [
-    ['firstName', validateName(fields.firstName, 'Nome')],
-    ['lastName',  validateName(fields.lastName, 'Sobrenome')],
+    ['firstName', validateName(fields.firstName, 'firstName')],
+    ['lastName',  validateName(fields.lastName, 'lastName')],
     ['birthDate', validateBirthDate(fields.birthDate)],
     ['telephone', validateTelephone(fields.telephone)],
     ['email',     validateEmail(fields.email)],
@@ -172,8 +177,8 @@ export interface ProfileFields {
 export const validateProfileForm = (fields: ProfileFields) => {
   const errors: Record<string, string> = {};
   const checks = [
-    ['firstName', validateName(fields.firstName, 'Nome')],
-    ['lastName',  validateName(fields.lastName, 'Sobrenome')],
+    ['firstName', validateName(fields.firstName, 'firstName')],
+    ['lastName',  validateName(fields.lastName, 'lastName')],
     ['birthDate', validateBirthDate(fields.birthDate)],
     ['telephone', validateTelephone(fields.telephone)],
     ['email',     validateEmail(fields.email)],

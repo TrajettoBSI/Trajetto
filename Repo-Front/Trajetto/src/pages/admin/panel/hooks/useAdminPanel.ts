@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   statsService,
   Overview, CountryStats, ProfileStats, AgeGroupStats,
@@ -34,6 +35,7 @@ export type AdminPanelData = {
 };
 
 export function useAdminPanel(): AdminPanelData {
+  const { t } = useTranslation('admin');
   const { user, logout } = useAuth();
 
   const [activeTab, setActiveTab] = useState<AdminTab>('usuarios');
@@ -73,7 +75,7 @@ export function useAdminPanel(): AdminPanelData {
       setTopRated(tr); setMostComment(mc); setMostVisited(mv);
       setError('');
     } catch (e) {
-      setError(getErrorMessage(e, 'Não foi possível carregar os dados.'));
+      setError(getErrorMessage(e, t('panel.loadError')));
     } finally {
       setLoading(false);
       setRefreshing(false);

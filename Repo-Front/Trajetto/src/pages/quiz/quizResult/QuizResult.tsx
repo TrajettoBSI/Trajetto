@@ -1,19 +1,21 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { useColors } from '@/src/theme';
 import { useQuizResult } from './hooks/useQuizResult';
 import { styles } from './styles/styles';
 
 export default function QuizResult() {
+  const { t } = useTranslation('quiz');
   const s = styles(useColors());
   const { perfil, fromProfile, goBack } = useQuizResult();
 
   if (!perfil) {
     return (
       <SafeAreaView style={s.container}>
-        <Text style={s.errorText}>Resultado não encontrado.</Text>
+        <Text style={s.errorText}>{t('result.notFound')}</Text>
         <TouchableOpacity onPress={goBack} style={s.backButton}>
-          <Text style={s.backButtonText}>Voltar</Text>
+          <Text style={s.backButtonText}>{t('result.back')}</Text>
         </TouchableOpacity>
       </SafeAreaView>
     );
@@ -25,29 +27,29 @@ export default function QuizResult() {
 
         <View style={s.hero}>
           <Text style={s.trophy}>🏆</Text>
-          <Text style={s.heroLabel}>Seu resultado</Text>
+          <Text style={s.heroLabel}>{t('result.yourResult')}</Text>
           <Text style={s.emoji}>{perfil.emoji}</Text>
-          <Text style={s.profileName}>{perfil.nome.toUpperCase()}</Text>
+          <Text style={s.profileName}>{t(perfil.nome).toUpperCase()}</Text>
         </View>
 
         <View style={s.card}>
-          <Text style={s.cardTitle}>Sobre você</Text>
-          <Text style={s.descricao}>{perfil.descricao}</Text>
+          <Text style={s.cardTitle}>{t('result.aboutYou')}</Text>
+          <Text style={s.descricao}>{t(perfil.descricao)}</Text>
         </View>
 
         <View style={s.card}>
-          <Text style={s.cardTitle}>📍 Destinos que combinam com você</Text>
+          <Text style={s.cardTitle}>{t('result.matchingDestinations')}</Text>
           {perfil.destinos_sugeridos.map((destino) => (
             <View key={destino} style={s.destinoRow}>
               <View style={s.destinoDot} />
-              <Text style={s.destinoText}>{destino}</Text>
+              <Text style={s.destinoText}>{t(destino)}</Text>
             </View>
           ))}
         </View>
 
         <TouchableOpacity style={s.backButton} onPress={goBack}>
           <Text style={s.backButtonText}>
-            {fromProfile ? 'Voltar ao perfil' : 'Começar a explorar'}
+            {fromProfile ? t('result.backToProfile') : t('result.startExploring')}
           </Text>
         </TouchableOpacity>
 

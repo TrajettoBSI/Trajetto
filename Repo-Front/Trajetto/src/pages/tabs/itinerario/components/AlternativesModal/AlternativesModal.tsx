@@ -1,5 +1,6 @@
 import React from 'react';
 import { ActivityIndicator, Modal, Text, TouchableOpacity, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { Place } from '@/services';
 import { Places } from '@/hooks/itineraryStore';
 import { useColors } from '@/src/theme';
@@ -18,6 +19,7 @@ type AlternativesModalProps = {
 export default function AlternativesModal({
   visible, swipedPlace, alternatives, loading, onSelect, onCancel,
 }: AlternativesModalProps) {
+  const { t } = useTranslation('itinerario');
   const colors = useColors();
   const s = styles(colors);
 
@@ -26,21 +28,21 @@ export default function AlternativesModal({
       <TouchableOpacity style={s.overlay} activeOpacity={1} onPress={onCancel}>
         <View style={s.sheet}>
           <View style={s.handle} />
-          <Text style={s.title}>Trocar lugar</Text>
+          <Text style={s.title}>{t('alternativesModal.title')}</Text>
           {swipedPlace && (
             <Text style={s.subtitle}>
-              Substituir &quot;{swipedPlace.name}&quot; por:
+              {t('alternativesModal.replace', { name: swipedPlace.name })}
             </Text>
           )}
 
           {loading ? (
             <View style={s.loading}>
               <ActivityIndicator size="large" color={colors.primary} />
-              <Text style={s.loadingText}>Buscando alternativas...</Text>
+              <Text style={s.loadingText}>{t('alternativesModal.loading')}</Text>
             </View>
           ) : alternatives.length === 0 ? (
             <View style={s.empty}>
-              <Text style={s.emptyText}>Nenhuma alternativa encontrada.</Text>
+              <Text style={s.emptyText}>{t('alternativesModal.empty')}</Text>
             </View>
           ) : (
             <View style={s.list}>
@@ -51,7 +53,7 @@ export default function AlternativesModal({
           )}
 
           <TouchableOpacity style={s.cancelBtn} onPress={onCancel}>
-            <Text style={s.cancelBtnText}>Cancelar</Text>
+            <Text style={s.cancelBtnText}>{t('alternativesModal.cancel')}</Text>
           </TouchableOpacity>
         </View>
       </TouchableOpacity>

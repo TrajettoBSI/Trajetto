@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/context/AuthContext';
 import { validateEmail } from '@/utils/validators';
 import { getErrorMessage } from '@/utils/apiError';
@@ -18,6 +19,7 @@ export type LoginData = {
 };
 
 export function useLogin(): LoginData {
+  const { t } = useTranslation('login');
   const router = useRouter();
   const { login } = useAuth();
   const [email, setEmail] = useState('');
@@ -32,7 +34,7 @@ export function useLogin(): LoginData {
     const emailError = validateEmail(email);
     if (emailError) newErrors.email = emailError;
 
-    if (!password) newErrors.password = 'Senha é obrigatória';
+    if (!password) newErrors.password = t('passwordRequired');
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -45,7 +47,7 @@ export function useLogin(): LoginData {
       setLoading(true);
       await login({ email, password });
     } catch (e) {
-      setError(getErrorMessage(e, 'E-mail ou senha inválidos.'));
+      setError(getErrorMessage(e, t('invalidCredentials')));
     } finally {
       setLoading(false);
     }

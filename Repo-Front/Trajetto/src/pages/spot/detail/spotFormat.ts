@@ -25,16 +25,6 @@ export function formatCar(m: number) {
   return min < 60 ? `${min} min` : `${Math.floor(min / 60)}h ${min % 60}min`;
 }
 
-export function wheelchairLabel(value: string) {
-  if (!value) return null;
-  const map: Record<string, string> = {
-    yes: '♿ Totalmente acessível',
-    limited: '♿ Parcialmente acessível',
-    no: '🚫 Não acessível',
-  };
-  return map[value] || value;
-}
-
 export function parseOpeningHours(raw: string): { period: string; hours: string }[] {
   if (!raw) return [];
   return raw

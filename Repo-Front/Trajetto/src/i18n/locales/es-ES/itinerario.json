@@ -1,0 +1,58 @@
+{
+  "loadingText": "Cargando itinerario...",
+  "sectionLabel": "PARADAS DEL ITINERARIO",
+  "swipeHint": "← Desliza una tarjeta para cambiar el lugar",
+  "exportPdf": "Exportar como PDF",
+  "headerCard": {
+    "period": "Período",
+    "stops": "Paradas",
+    "days": "Días",
+    "active": "Activo"
+  },
+  "alternativesModal": {
+    "title": "Cambiar lugar",
+    "replace": "Reemplazar \"{{name}}\" por:",
+    "loading": "Buscando alternativas...",
+    "empty": "No se encontraron alternativas.",
+    "cancel": "Cancelar",
+    "saveError": "No se pudo guardar el cambio."
+  },
+  "swipeableCard": {
+    "hint": "Cambiar"
+  },
+  "ratingSheet": {
+    "category": "Categoría:",
+    "visitedCount_one": "{{count}} visitó",
+    "visitedCount_other": "{{count}} visitaron",
+    "defaultUserName": "Usuario {{id}}",
+    "formTitle": "Valorar lugar",
+    "commentPlaceholder": "Escribe un comentario...",
+    "saveButton": "Guardar valoración",
+    "saveError": "No se pudo guardar la valoración.",
+    "deleteConfirm": "¿Estás seguro?",
+    "deleteTitle": "Eliminar valoración",
+    "deleteError": "No se pudo eliminar la valoración."
+  },
+  "ticketCard": {
+    "stopLabel": "PARADA",
+    "timeLabel": "HORARIO",
+    "paid": "🎟️ De pago",
+    "free": "🆓 Gratis",
+    "about": "Acerca de"
+  },
+  "exportPdfDoc": {
+    "estimatedTime": "Horario Estimado:",
+    "address": "Dirección:",
+    "category": "Categoría:",
+    "openingHours": "Horario de Apertura:",
+    "title": "Trajetto - Itinerario de Viaje",
+    "period": "Período:",
+    "periodJoiner": "a",
+    "totalStops": "Total de paradas:",
+    "stopsTitle": "Tus Paradas",
+    "footer": "Documento generado por la aplicación Trajetto.",
+    "androidSuccess": "¡Itinerario guardado en tu celular!",
+    "shareDialogTitle": "Guardar Itinerario",
+    "genericError": "No se pudo generar o guardar el PDF."
+  }
+}

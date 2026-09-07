@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/context/AuthContext';
 import { userService } from '@/services';
 import {
@@ -34,6 +35,7 @@ export type ProfileData = {
 };
 
 export function useProfile(): ProfileData {
+  const { t } = useTranslation(['profile', 'common']);
   const { logout } = useAuth();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -71,11 +73,11 @@ export function useProfile(): ProfileData {
     try {
       setLoading(true);
       await userService.updateProfile({ firstName, lastName, email, birthDate: toBirthDateISO(birthDate), country, telephone });
-      showAlert('Perfil atualizado!', { title: 'Sucesso' });
+      showAlert(t('profile:updateSuccess'), { title: t('common:success') });
     } catch (e) {
       const fieldErrors = getFieldErrors(e);
       if (Object.keys(fieldErrors).length > 0) setErrors(fieldErrors);
-      showAlert(getErrorMessage(e, 'Não foi possível atualizar'), { title: 'Erro' });
+      showAlert(getErrorMessage(e, t('profile:updateError')), { title: t('common:error') });
     } finally {
       setLoading(false);
     }

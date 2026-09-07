@@ -1,0 +1,16 @@
+{
+  "headerTitle": "Explorar",
+  "subtitle": "Descubra pontos turísticos em Roma",
+  "searchPlaceholder": "Buscar ponto turístico...",
+  "resultsCount_one": "{{count}} resultado",
+  "resultsCount_other": "{{count}} resultados",
+  "resultsInCategory": " em \"{{category}}\"",
+  "filterModalTitle": "Filtrar por categoria",
+  "allCategories": "📍 Todas as categorias",
+  "clearFiltersButton": "Limpar filtros",
+  "emptyNotFoundTitle": "Nenhum resultado",
+  "emptyNotFoundText": "Tente outros filtros ou limpe a busca.",
+  "emptyDefaultTitle": "Explore Roma",
+  "emptyDefaultText": "Busque ou filtre pontos turísticos disponíveis.",
+  "loadingText": "Buscando pontos turísticos..."
+}

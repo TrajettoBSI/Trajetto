@@ -2,6 +2,7 @@ import React from 'react';
 import { Keyboard, KeyboardAvoidingView, Platform, ScrollView, Text, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import CustomInput from '@/components/CustomInput';
 import CustomButton from '@/components/CustomButton';
 import Logo from '@/assets/appImgs/logo.svg';
@@ -10,6 +11,7 @@ import { useVerifyEmail } from './hooks/useVerifyEmail';
 import { styles } from './styles/styles';
 
 export default function VerifyEmail() {
+  const { t } = useTranslation('verifyEmail');
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
@@ -24,7 +26,7 @@ export default function VerifyEmail() {
               <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
                 <Ionicons name="chevron-back" size={32} color={colors.white} />
               </TouchableOpacity>
-              <Text style={s.headerText}>Verificação</Text>
+              <Text style={s.headerText}>{t('headerTitle')}</Text>
             </View>
 
             <View style={s.headerCenter} pointerEvents="none">
@@ -38,9 +40,9 @@ export default function VerifyEmail() {
         <View style={s.card}>
           <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <View>
-              <Text style={s.title}>Verifique seu Email</Text>
+              <Text style={s.title}>{t('title')}</Text>
               <Text style={s.subtitle}>
-                Enviamos um código de 6 dígitos para{'\n'}
+                {t('subtitle')}{'\n'}
                 <Text style={s.emailHighlight}>{email}</Text>
               </Text>
 
@@ -55,7 +57,7 @@ export default function VerifyEmail() {
                 autoFocus
               />
 
-              <CustomButton title="Confirmar" onPress={() => handleVerify()} loading={loading} />
+              <CustomButton title={t('submit')} onPress={() => handleVerify()} loading={loading} />
             </View>
           </TouchableWithoutFeedback>
         </View>

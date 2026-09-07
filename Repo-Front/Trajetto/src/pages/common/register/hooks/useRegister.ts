@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/context/AuthContext';
 import {
   maskName, maskBirthDate, maskTelephone,
@@ -37,6 +38,7 @@ export type RegisterData = {
 };
 
 export function useRegister(): RegisterData {
+  const { t } = useTranslation(['register', 'common']);
   const router = useRouter();
   const { register } = useAuth();
   const [firstName, setFirstName] = useState('');
@@ -58,7 +60,7 @@ export function useRegister(): RegisterData {
   const handleRegister = async () => {
     const errs = validateRegisterForm({ firstName, lastName, birthDate, telephone, email, country, password });
     if (password !== confirmPassword) {
-      errs.confirmPassword = 'As senhas não coincidem';
+      errs.confirmPassword = t('register:passwordMismatch');
     }
     if (Object.keys(errs).length > 0) {
       setErrors(errs);
@@ -68,12 +70,12 @@ export function useRegister(): RegisterData {
     try {
       setLoading(true);
       await register({ firstName, lastName, email, password, birthDate: toBirthDateISO(birthDate), country, telephone });
-      showAlert('Enviamos um código de verificação para o seu email.', { title: 'Quase lá!' });
+      showAlert(t('register:verificationSentMessage'), { title: t('register:verificationSentTitle') });
       router.push({ pathname: '/VerifyEmailScreen', params: { email } });
     } catch (e) {
       const fieldErrors = getFieldErrors(e);
       if (Object.keys(fieldErrors).length > 0) setErrors(fieldErrors);
-      showAlert(getErrorMessage(e, 'Não foi possível criar a conta'), { title: 'Erro' });
+      showAlert(getErrorMessage(e, t('register:createAccountError')), { title: t('common:error') });
     } finally {
       setLoading(false);
     }

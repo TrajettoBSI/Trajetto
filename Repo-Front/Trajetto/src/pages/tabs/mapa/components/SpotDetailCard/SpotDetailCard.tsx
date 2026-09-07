@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { Place } from '@/services';
 import { categoryIcon } from '@/src/helpers/categoryIcon';
 import { useColors } from '@/src/theme';
@@ -14,6 +15,7 @@ type SpotDetailCardProps = {
 };
 
 export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDetailCardProps) {
+  const { t } = useTranslation('mapa');
   const router = useRouter();
   const s = styles(useColors());
 
@@ -31,8 +33,8 @@ export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDe
       </View>
 
       <View style={s.spotCardMeta}>
-        {spot.fee === 'no' && <View style={s.badge}><Text style={s.badgeText}>🆓 Gratuito</Text></View>}
-        {spot.fee === 'yes' && <View style={[s.badge, s.badgePaid]}><Text style={s.badgeText}>💰 Pago</Text></View>}
+        {spot.fee === 'no' && <View style={s.badge}><Text style={s.badgeText}>{t('spotDetailCard.free')}</Text></View>}
+        {spot.fee === 'yes' && <View style={[s.badge, s.badgePaid]}><Text style={s.badgeText}>{t('spotDetailCard.paid')}</Text></View>}
         {spot.openingHours ? <View style={s.badge}><Text style={s.badgeText}>🕐 {spot.openingHours}</Text></View> : null}
       </View>
 
@@ -43,19 +45,19 @@ export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDe
           <View style={s.distanceCard}>
             <Text style={s.distanceIcon}>🚶</Text>
             <Text style={s.distanceValue}>{formatWalkTime(distanceMeters)}</Text>
-            <Text style={s.distanceLabel}>a pé</Text>
+            <Text style={s.distanceLabel}>{t('spotDetailCard.walking')}</Text>
           </View>
           <View style={s.distanceDivider} />
           <View style={s.distanceCard}>
             <Text style={s.distanceIcon}>🚗</Text>
             <Text style={s.distanceValue}>{formatCarTime(distanceMeters)}</Text>
-            <Text style={s.distanceLabel}>de carro</Text>
+            <Text style={s.distanceLabel}>{t('spotDetailCard.driving')}</Text>
           </View>
           <View style={s.distanceDivider} />
           <View style={s.distanceCard}>
             <Text style={s.distanceIcon}>📏</Text>
             <Text style={s.distanceValue}>{formatDistance(distanceMeters)}</Text>
-            <Text style={s.distanceLabel}>daqui</Text>
+            <Text style={s.distanceLabel}>{t('spotDetailCard.fromHere')}</Text>
           </View>
         </View>
       )}
@@ -65,7 +67,7 @@ export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDe
         onPress={() => router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(spot) } })}
         activeOpacity={0.85}
       >
-        <Text style={s.spotCardBtnText}>Ver detalhes completos →</Text>
+        <Text style={s.spotCardBtnText}>{t('spotDetailCard.viewFullDetails')}</Text>
       </TouchableOpacity>
     </View>
   );

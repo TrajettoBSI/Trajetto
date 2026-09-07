@@ -1,0 +1,25 @@
+{
+  "headerTitle": "Explore",
+  "free": "🆓 Free",
+  "paid": "💰 Paid",
+  "howToGetThere": "How to get there",
+  "distance": "distance",
+  "walking": "walking",
+  "driving": "driving",
+  "openInMaps": "Open route in Google Maps",
+  "information": "Information",
+  "address": "Address",
+  "website": "Website",
+  "phone": "Phone",
+  "wikipedia": "Wikipedia",
+  "wikidata": "Wikidata",
+  "coordinates": "Coordinates",
+  "openingHours": "Opening hours",
+  "recommendedFor": "Recommended for",
+  "openMapsError": "Could not open Google Maps",
+  "accessibility": {
+    "yes": "♿ Fully accessible",
+    "limited": "♿ Partially accessible",
+    "no": "🚫 Not accessible"
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { PlacesFilter } from '@/services';
 import { useColors } from '@/src/theme';
 import { formatDistance } from '../../mapaFormat';
@@ -11,6 +12,7 @@ type ActiveFilterChipsProps = {
 };
 
 export default function ActiveFilterChips({ activeFilter, onRemove }: ActiveFilterChipsProps) {
+  const { t } = useTranslation('mapa');
   const s = styles(useColors());
 
   return (
@@ -25,7 +27,7 @@ export default function ActiveFilterChips({ activeFilter, onRemove }: ActiveFilt
       )}
       {activeFilter.fee && (
         <View style={s.chip}>
-          <Text style={s.chipText}>{activeFilter.fee === 'no' ? '🆓 Gratuito' : '💰 Pago'}</Text>
+          <Text style={s.chipText}>{activeFilter.fee === 'no' ? t('activeFilterChips.free') : t('activeFilterChips.paid')}</Text>
           <TouchableOpacity onPress={() => onRemove({ fee: undefined })}>
             <Text style={s.chipClose}>✕</Text>
           </TouchableOpacity>
@@ -33,7 +35,7 @@ export default function ActiveFilterChips({ activeFilter, onRemove }: ActiveFilt
       )}
       {activeFilter.hasHours && (
         <View style={s.chip}>
-          <Text style={s.chipText}>🕐 Com horário</Text>
+          <Text style={s.chipText}>{t('activeFilterChips.hasHours')}</Text>
           <TouchableOpacity onPress={() => onRemove({ hasHours: undefined })}>
             <Text style={s.chipClose}>✕</Text>
           </TouchableOpacity>

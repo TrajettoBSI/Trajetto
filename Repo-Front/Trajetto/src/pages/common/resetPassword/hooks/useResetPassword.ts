@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter, useLocalSearchParams } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { authService } from '@/services';
 import { validateEmail, validatePassword } from '@/utils/validators';
 import { getErrorMessage } from '@/utils/apiError';
@@ -18,6 +19,7 @@ export type ResetPasswordData = {
 };
 
 export function useResetPassword(): ResetPasswordData {
+  const { t } = useTranslation(['resetPassword', 'common']);
   const router = useRouter();
   const params = useLocalSearchParams();
   const [email, setEmail] = useState((params.email as string) || '');
@@ -34,8 +36,8 @@ export function useResetPassword(): ResetPasswordData {
     const newErrors: Record<string, string> = {};
     const emailError = validateEmail(email);
     if (emailError) newErrors.email = emailError;
-    if (!code) newErrors.code = 'O código é obrigatório.';
-    else if (!/^\d{6}$/.test(code)) newErrors.code = 'O código deve ter exatamente 6 dígitos.';
+    if (!code) newErrors.code = t('codeRequired');
+    else if (!/^\d{6}$/.test(code)) newErrors.code = t('codeInvalidLength');
     const passwordError = validatePassword(password);
     if (passwordError) newErrors.password = passwordError;
     if (Object.keys(newErrors).length > 0) {
@@ -46,12 +48,12 @@ export function useResetPassword(): ResetPasswordData {
     try {
       setLoading(true);
       await authService.resetPassword({ email, code, newPassword: password });
-      showAlert('Senha redefinida!', {
-        title: 'Sucesso',
+      showAlert(t('successMessage'), {
+        title: t('successTitle'),
         buttons: [{ text: 'OK', onPress: () => router.replace('/LoginScreen') }],
       });
     } catch (error) {
-      showAlert(getErrorMessage(error, 'Código inválido ou expirado'), { title: 'Erro' });
+      showAlert(getErrorMessage(error, t('resetError')), { title: t('common:error') });
     } finally {
       setLoading(false);
     }

@@ -2,6 +2,7 @@ import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native
 import { Stack, useRouter, useSegments } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import 'react-native-reanimated';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Text, TextInput } from 'react-native';
@@ -10,7 +11,7 @@ import { useFonts, Inter_400Regular, Inter_500Medium, Inter_700Bold } from '@exp
 import { Righteous_400Regular } from '@expo-google-fonts/righteous';
 import { FugazOne_400Regular } from '@expo-google-fonts/fugaz-one';
 
-
+import '@/src/i18n';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { AuthProvider, useAuth } from '../context/AuthContext';
 
@@ -26,6 +27,7 @@ export const unstable_settings = { anchor: '(tabs)' };
 SplashScreen.preventAutoHideAsync();
 
 function RootLayoutNav() {
+  const { t } = useTranslation(['admin', 'resetPassword']);
   const colorScheme = useColorScheme();
   const [fontsLoaded, fontError] = useFonts({
     'Inter': Inter_400Regular,
@@ -94,10 +96,10 @@ function RootLayoutNav() {
         <Stack.Screen name="LoginScreen" options={{ headerShown: false }} />
         <Stack.Screen name="RegisterScreen" options={{ headerShown: false }} />
         <Stack.Screen name="VerifyEmailScreen" options={{ headerShown: false }} />
-        <Stack.Screen name="UserListScreen" options={{ title: 'Usuários', headerBackTitle: '' }} />
+        <Stack.Screen name="UserListScreen" options={{ title: t('admin:userListTitle'), headerBackTitle: '' }} />
         <Stack.Screen name="UserDetailScreen" options={{ headerShown: false }} />
         <Stack.Screen name="ForgotPasswordScreen" options={{ headerShown: false }} />
-        <Stack.Screen name="ResetPasswordScreen" options={{ title: 'Redefinir Senha', headerBackTitle: '' }} />
+        <Stack.Screen name="ResetPasswordScreen" options={{ title: t('resetPassword:title'), headerBackTitle: '' }} />
         <Stack.Screen name="TravelerTestScreen" options={{ headerShown: false }} />
         <Stack.Screen name="QuizScreen" options={{ headerShown: false }} />
         <Stack.Screen name="QuizResultScreen" options={{ headerShown: false }} />

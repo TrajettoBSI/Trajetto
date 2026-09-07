@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Itinerary, Places, useItineraryStore } from '@/hooks/itineraryStore';
 import { Place, placesService } from '@/services';
 import { getErrorMessage } from '@/utils/apiError';
@@ -7,6 +8,7 @@ import { useAuth } from '@/context/AuthContext';
 import { selectAlternatives } from '@/src/domain/alternatives/selectAlternatives';
 
 export function useAlternatives(itinerary: Itinerary | null) {
+  const { t } = useTranslation(['itinerario', 'common']);
   const { user } = useAuth();
   const { replacePlace } = useItineraryStore();
 
@@ -54,7 +56,7 @@ export function useAlternatives(itinerary: Itinerary | null) {
     try {
       await replacePlace(swipedPlace.orderIndex, newPlace);
     } catch (e) {
-      showAlert(getErrorMessage(e, 'Não foi possível salvar a alteração.'), { title: 'Erro' });
+      showAlert(getErrorMessage(e, t('itinerario:alternativesModal.saveError')), { title: t('common:error') });
     }
   }, [swipedPlace, replacePlace]);
 

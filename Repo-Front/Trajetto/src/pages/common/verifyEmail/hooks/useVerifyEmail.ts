@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Keyboard } from 'react-native';
 import { useRouter, useLocalSearchParams } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { authService } from '@/services';
 import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
@@ -14,6 +15,7 @@ export type VerifyEmailData = {
 };
 
 export function useVerifyEmail(): VerifyEmailData {
+  const { t } = useTranslation(['verifyEmail', 'common']);
   const router = useRouter();
   const { email } = useLocalSearchParams();
   const emailStr = String(email ?? '');
@@ -24,16 +26,16 @@ export function useVerifyEmail(): VerifyEmailData {
     const codeToVerify = manualCode ?? code;
     Keyboard.dismiss();
     if (codeToVerify.length < 6) {
-      showAlert('Digite os 6 dígitos do código.', { title: 'Atenção' });
+      showAlert(t('codeTooShortMessage'), { title: t('codeTooShortTitle') });
       return;
     }
     setLoading(true);
     try {
       await authService.verifyEmail(emailStr, codeToVerify);
-      showAlert('Conta verificada! Você já pode fazer login.', { title: 'Sucesso' });
+      showAlert(t('successMessage'), { title: t('successTitle') });
       router.replace('/LoginScreen');
     } catch (e) {
-      showAlert(getErrorMessage(e, 'Código inválido. Tente novamente.'), { title: 'Erro' });
+      showAlert(getErrorMessage(e, t('verifyError')), { title: t('common:error') });
     } finally {
       setLoading(false);
     }

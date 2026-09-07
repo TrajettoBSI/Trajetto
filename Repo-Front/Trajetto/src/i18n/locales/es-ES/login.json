@@ -1,0 +1,14 @@
+{
+  "intro": "Planea tu",
+  "cardTitle": "Iniciar sesión",
+  "emailLabel": "Correo electrónico",
+  "emailPlaceholder": "tu@email.com",
+  "passwordLabel": "Contraseña",
+  "passwordPlaceholder": "••••••••",
+  "forgotPassword": "¿Olvidaste tu contraseña?",
+  "submit": "Entrar",
+  "noAccount": "¿No tienes una cuenta? ",
+  "signUp": "Regístrate",
+  "passwordRequired": "La contraseña es obligatoria",
+  "invalidCredentials": "Correo electrónico o contraseña inválidos."
+}

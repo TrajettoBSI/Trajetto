@@ -1,0 +1,14 @@
+{
+  "intro": "Planeje seu",
+  "cardTitle": "Login",
+  "emailLabel": "E-mail",
+  "emailPlaceholder": "seu@email.com",
+  "passwordLabel": "Senha",
+  "passwordPlaceholder": "••••••••",
+  "forgotPassword": "Esqueceu sua senha?",
+  "submit": "Entrar",
+  "noAccount": "Não tem uma conta? ",
+  "signUp": "Cadastre-se",
+  "passwordRequired": "Senha é obrigatória",
+  "invalidCredentials": "E-mail ou senha inválidos."
+}

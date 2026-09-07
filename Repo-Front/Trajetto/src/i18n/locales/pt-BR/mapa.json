@@ -1,0 +1,41 @@
+{
+  "searchPlaceholder": "Buscar ponto turístico...",
+  "originLabel": "Início",
+  "placeMarker": {
+    "visited": "visitado ✓",
+    "goToItinerary": "ver no itinerário ↗"
+  },
+  "routeBar": {
+    "now": "Agora · ",
+    "start": "Início"
+  },
+  "activeFilterChips": {
+    "free": "🆓 Gratuito",
+    "paid": "💰 Pago",
+    "hasHours": "🕐 Com horário"
+  },
+  "filterModal": {
+    "title": "Filtros",
+    "clearAll": "Limpar tudo",
+    "categorySection": "Categoria",
+    "allCategories": "📍 Todas",
+    "feeSection": "Entrada",
+    "feeFree": "🆓 Gratuito",
+    "feePaid": "💰 Pago",
+    "hoursSection": "Apenas com horário definido",
+    "hoursSubLabel": "Exclui locais sem informação de horário",
+    "profileSection": "Perfil de viajante",
+    "allProfiles": "👤 Todos",
+    "distanceSection": "Distância máxima da sua localização",
+    "cancel": "Cancelar",
+    "apply": "Aplicar filtros"
+  },
+  "spotDetailCard": {
+    "free": "🆓 Gratuito",
+    "paid": "💰 Pago",
+    "walking": "a pé",
+    "driving": "de carro",
+    "fromHere": "daqui",
+    "viewFullDetails": "Ver detalhes completos →"
+  }
+}

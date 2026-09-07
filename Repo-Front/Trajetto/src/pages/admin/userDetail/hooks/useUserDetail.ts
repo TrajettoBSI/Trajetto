@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { userService } from '@/services';
 import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
@@ -28,6 +29,7 @@ export type UserDetailData = {
 };
 
 export function useUserDetail(): UserDetailData {
+  const { t } = useTranslation(['admin', 'common']);
   const { user: userParam } = useLocalSearchParams();
   const user = JSON.parse(userParam as string) as User;
   const router = useRouter();
@@ -46,10 +48,10 @@ export function useUserDetail(): UserDetailData {
     try {
       setLoading(true);
       await userService.update(user.id, { firstName, lastName, email, birthDate, country, telephone });
-      showAlert('Usuário atualizado!', { title: 'Sucesso' });
+      showAlert(t('admin:userDetail.updateSuccess'), { title: t('common:success') });
       router.back();
     } catch (e) {
-      showAlert(getErrorMessage(e, 'Não foi possível atualizar.'), { title: 'Erro' });
+      showAlert(getErrorMessage(e, t('admin:userDetail.updateError')), { title: t('common:error') });
     } finally {
       setLoading(false);
     }
@@ -60,7 +62,7 @@ export function useUserDetail(): UserDetailData {
       await userService.updateRole(user.id, newIsAdmin);
       setIsAdmin(newIsAdmin);
     } catch (e) {
-      showAlert(getErrorMessage(e, 'Não foi possível alterar o cargo.'), { title: 'Erro' });
+      showAlert(getErrorMessage(e, t('admin:userDetail.roleChangeError')), { title: t('common:error') });
     }
   };
 
