@@ -17,11 +17,23 @@ import java.util.List;
 /**
  * Fonte dos indicadores do painel gerencial.
  *
- * <p>A regra desta camada e simples: agrupar, contar, ordenar e recortar sao
- * trabalho do banco; o que sobra aqui e apresentacao -- traduzir mes para
- * portugues e montar a lista fixa de faixas etarias. Em nenhum ponto uma
- * tabela inteira e carregada para ser percorrida em memoria, e nenhum
+ * <p>A regra desta camada e simples: agrupar, contar, ordenar, recortar e
+ * filtrar sao trabalho do banco; o que sobra aqui e apresentacao -- traduzir
+ * mes para portugues e montar a lista fixa de faixas etarias. Em nenhum ponto
+ * uma tabela inteira e carregada para ser percorrida em memoria, e nenhum
  * endpoint devolve mais linhas do que o painel exibe.</p>
+ *
+ * <h2>O recorte gerencial</h2>
+ * <p>Todo indicador recebe o {@link StatsFilter} escolhido no painel e o
+ * repassa a consulta, que aplica os criterios no proprio WHERE. Nenhum numero
+ * e calculado inteiro para depois ser recortado em Java -- fazer isso
+ * significaria trazer da rede exatamente as linhas que o filtro manda
+ * descartar.</p>
+ *
+ * <p>Cada consulta recebe so os criterios que a alcancam, e a assinatura do
+ * metodo de repositorio diz quais sao: os indicadores de usuario respondem a
+ * perfil e pais; os de roteiro, local e avaliacao respondem aos quatro. O
+ * porque esta em {@code StatsRecortes}.</p>
  */
 @Service
 @RequiredArgsConstructor
@@ -52,16 +64,16 @@ public class StatsService {
      * {@code READS SQL DATA}.</p>
      */
     @Transactional
-    public UserOverviewDTO getUserOverview() {
-        return userOverviewStatsRepository.fetchOverview();
+    public UserOverviewDTO getUserOverview(StatsFilter filtro) {
+        return userOverviewStatsRepository.fetchOverview(filtro);
     }
 
-    public List<CountryCountDTO> getUsersByCountry() {
-        return userStatsRepository.countByCountry();
+    public List<CountryCountDTO> getUsersByCountry(StatsFilter filtro) {
+        return userStatsRepository.countByCountry(filtro.profile(), filtro.country());
     }
 
-    public List<ProfileCountDTO> getUsersByTravelerProfile() {
-        return userStatsRepository.countByTravelerProfile().stream()
+    public List<ProfileCountDTO> getUsersByTravelerProfile(StatsFilter filtro) {
+        return userStatsRepository.countByTravelerProfile(filtro.profile(), filtro.country()).stream()
                 .map(linha -> new ProfileCountDTO((String) linha[0], asLong(linha[1])))
                 .toList();
     }
@@ -71,8 +83,8 @@ public class StatsService {
      * única devolvida pelo banco, incluindo as faixas zeradas — que um
      * {@code GROUP BY} não teria como produzir.
      */
-    public List<AgeGroupCountDTO> getUsersByAgeGroup() {
-        AgeGroupBreakdownDTO faixas = userStatsRepository.countByAgeGroup();
+    public List<AgeGroupCountDTO> getUsersByAgeGroup(StatsFilter filtro) {
+        AgeGroupBreakdownDTO faixas = userStatsRepository.countByAgeGroup(filtro.profile(), filtro.country());
 
         return List.of(
                 new AgeGroupCountDTO("< 18",  faixas.under18()),
@@ -92,8 +104,8 @@ public class StatsService {
      * leitura.
      */
     @Transactional
-    public ItineraryOverviewDTO getItineraryOverview() {
-        return itineraryOverviewStatsRepository.fetchOverview();
+    public ItineraryOverviewDTO getItineraryOverview(StatsFilter filtro) {
+        return itineraryOverviewStatsRepository.fetchOverview(filtro);
     }
 
     /**
@@ -102,11 +114,13 @@ public class StatsService {
      * exatamente o que a tela exibe — antes era uma só, devolvendo a lista
      * de todos os clientes para o app recortar e contar.
      */
-    public ItinerariesPerUserPanelDTO getItinerariesPerUser() {
-        List<ItinerariesPerUserDTO> ranking = userStatsRepository
-                .findTopClientsByItineraryCount(PageRequest.of(0, TAMANHO_DO_RANKING));
+    public ItinerariesPerUserPanelDTO getItinerariesPerUser(StatsFilter filtro) {
+        List<ItinerariesPerUserDTO> ranking = userStatsRepository.findTopClientsByItineraryCount(
+                PageRequest.of(0, TAMANHO_DO_RANKING),
+                filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category());
 
-        List<Object[]> cobertura = userStatsRepository.countClientItineraryCoverage();
+        List<Object[]> cobertura = userStatsRepository.countClientItineraryCoverage(
+                filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category());
         if (cobertura.isEmpty()) {
             return new ItinerariesPerUserPanelDTO(ranking, 0, 0);
         }
@@ -115,28 +129,33 @@ public class StatsService {
         return new ItinerariesPerUserPanelDTO(ranking, asLong(linha[0]), asLong(linha[1]));
     }
 
-    public List<MonthCountDTO> getItinerariesPerMonth() {
-        return itineraryStatsRepository.countPerMonth().stream()
+    public List<MonthCountDTO> getItinerariesPerMonth(StatsFilter filtro) {
+        return itineraryStatsRepository.countPerMonth(
+                        filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category()).stream()
                 .map(linha -> new MonthCountDTO(rotuloDoMes(linha.year(), linha.month()), linha.count()))
                 .toList();
     }
 
     // ─── Lugares ───────────────────────────────────────────────────────────
 
-    public List<CategoryCountDTO> getPlacesByCategory() {
-        return placeStatsRepository.countByCategory().stream()
+    public List<CategoryCountDTO> getPlacesByCategory(StatsFilter filtro) {
+        return placeStatsRepository.countByCategory(
+                        filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category()).stream()
                 .map(linha -> new CategoryCountDTO((String) linha[0], asLong(linha[1])))
                 .toList();
     }
 
-    public List<MostVisitedPlaceDTO> getMostVisitedPlaces() {
-        return placeStatsRepository.findMostVisited(PageRequest.of(0, TAMANHO_DO_RANKING));
+    public List<MostVisitedPlaceDTO> getMostVisitedPlaces(StatsFilter filtro) {
+        return placeStatsRepository.findMostVisited(
+                PageRequest.of(0, TAMANHO_DO_RANKING),
+                filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category());
     }
 
     // ─── Avaliações ────────────────────────────────────────────────────────
 
-    public List<TopRatedPlaceDTO> getTopRatedPlaces() {
-        return ratingStatsRepository.findTopRated().stream()
+    public List<TopRatedPlaceDTO> getTopRatedPlaces(StatsFilter filtro) {
+        return ratingStatsRepository.findTopRated(
+                        filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category()).stream()
                 .map(linha -> new TopRatedPlaceDTO(
                         (String) linha[0],
                         (String) linha[1],
@@ -145,13 +164,31 @@ public class StatsService {
                 .toList();
     }
 
-    public List<MostCommentedPlaceDTO> getMostCommentedPlaces() {
-        return ratingStatsRepository.findMostCommented().stream()
+    public List<MostCommentedPlaceDTO> getMostCommentedPlaces(StatsFilter filtro) {
+        return ratingStatsRepository.findMostCommented(
+                        filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category()).stream()
                 .map(linha -> new MostCommentedPlaceDTO(
                         (String) linha[0],
                         (String) linha[1],
                         asLong(linha[2])))
                 .toList();
+    }
+
+    // ─── Opções dos filtros ────────────────────────────────────────────────
+
+    /**
+     * As opções que o painel oferece em cada seletor, lidas da própria base.
+     *
+     * <p>São três consultas de valores distintos, sem recorte: a lista de
+     * opções não pode encolher conforme o usuário filtra, senão não haveria
+     * como desfazer a escolha. Perfil e categoria vêm com o mesmo rótulo que
+     * os gráficos exibem, que é também o que o filtro compara.</p>
+     */
+    public FilterOptionsDTO getFilterOptions() {
+        return new FilterOptionsDTO(
+                userStatsRepository.findProfileOptions(),
+                userStatsRepository.findCountryOptions(),
+                placeStatsRepository.findCategoryOptions());
     }
 
     // ─── Apoio ─────────────────────────────────────────────────────────────

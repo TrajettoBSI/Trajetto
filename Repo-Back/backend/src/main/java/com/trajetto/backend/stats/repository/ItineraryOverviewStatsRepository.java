@@ -1,17 +1,21 @@
 package com.trajetto.backend.stats.repository;
 
 import com.trajetto.backend.stats.dto.ItineraryOverviewDTO;
+import com.trajetto.backend.stats.dto.StatsFilter;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.ParameterMode;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.StoredProcedureQuery;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
 import java.util.List;
 
 /**
  * Cartoes de roteiros do painel, vindos da stored procedure
- * {@code sp_stats_itinerary_overview} (migracao V5).
+ * {@code sp_stats_itinerary_overview} (migracao V5, reescrita com os
+ * parametros do filtro na V7).
  *
  * <p>Contraparte de {@link UserOverviewStatsRepository} para o bloco de
  * roteiros. Sao cinco indicadores em uma linha so: total, duracao media,
@@ -32,11 +36,21 @@ public class ItineraryOverviewStatsRepository {
      * procedure de usuarios: em conexao marcada como somente leitura o MySQL
      * recusa {@code CALL}, porque o servidor nao tem como garantir sozinho
      * que a rotina chamada nao grava. Quem garante que esta so le e a propria
-     * procedure, declarada {@code READS SQL DATA} na migracao V5.
+     * procedure, declarada {@code READS SQL DATA} na migracao V7.
      */
     @Transactional
-    public ItineraryOverviewDTO fetchOverview() {
+    public ItineraryOverviewDTO fetchOverview(StatsFilter filtro) {
         StoredProcedureQuery procedure = entityManager.createStoredProcedureQuery(PROCEDURE_NAME);
+        procedure.registerStoredProcedureParameter(1, LocalDate.class, ParameterMode.IN);
+        procedure.registerStoredProcedureParameter(2, LocalDate.class, ParameterMode.IN);
+        procedure.registerStoredProcedureParameter(3, String.class, ParameterMode.IN);
+        procedure.registerStoredProcedureParameter(4, String.class, ParameterMode.IN);
+        procedure.registerStoredProcedureParameter(5, String.class, ParameterMode.IN);
+        procedure.setParameter(1, filtro.from());
+        procedure.setParameter(2, filtro.to());
+        procedure.setParameter(3, filtro.profile());
+        procedure.setParameter(4, filtro.country());
+        procedure.setParameter(5, filtro.category());
         procedure.execute();
         return toDTO(procedure.getResultList());
     }

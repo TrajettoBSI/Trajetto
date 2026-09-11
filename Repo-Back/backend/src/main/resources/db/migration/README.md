@@ -57,6 +57,7 @@ que ainda não foram executados naquele banco. O controle fica na tabela
 | `V4` | Índices de roteiros e locais: os `UNIQUE` que passam a garantir no banco que um usuário tem no máximo um roteiro ativo e que cada posição de um roteiro é ocupada por um local só, mais a troca de três índices da `V2` por formas que as consultas do painel conseguem usar. |
 | `V5` | `sp_stats_itinerary_overview`, contraparte da `V3` para os cartões de roteiros. |
 | `V6` | Restrições de integridade: a chave estrangeira que faltava entre avaliação e usuário, `ON DELETE CASCADE` nos vínculos de posse, colunas obrigatórias e `CHECK` para as faixas de valor — mais os três índices que o painel ainda não tinha. |
+| `V7` | `sp_stats_user_overview` e `sp_stats_itinerary_overview` recriadas com os cinco parâmetros do recorte do painel gerencial (período, perfil, país e categoria). |
 
 A `V2` limpa duplicatas antes de criar cada `UNIQUE`: e-mail repetido faz a
 conta mais antiga manter o endereço e as demais receberem o sufixo
@@ -64,8 +65,8 @@ conta mais antiga manter o endereço e as demais receberem o sufixo
 primeira e descarta as outras. Em banco íntegro esse passo não altera
 nenhuma linha.
 
-A `V3` e a `V5` criam rotinas, então o usuário do banco precisa do privilégio
-`CREATE ROUTINE`. Com o `root` do ambiente local e do CI isso já vale; num
+A `V3`, a `V5` e a `V7` criam rotinas, então o usuário do banco precisa do
+privilégio `CREATE ROUTINE`. Com o `root` do ambiente local e do CI isso já vale; num
 banco gerenciado, confira antes de subir.
 
 A `V4` também limpa antes de criar cada `UNIQUE`: com mais de um roteiro ativo
@@ -102,6 +103,15 @@ ativas. E `idx_places_category_label` é um **índice funcional**, sobre a
 expressão que `/stats/places-by-category` agrupa — um índice comum sobre
 `category` não serve para agrupar por expressão. A `V6` aplica a mesma
 correção a `/stats/traveler-profiles` e a `/stats/itineraries-per-month`.
+
+A `V7` não mexe em tabela nenhuma: ela só troca o corpo das duas procedures de
+indicadores por uma versão que aceita o recorte do painel. Cada critério é
+opcional dentro da própria rotina (`p_country IS NULL OR ...`), então chamar as
+procedures sem parâmetro nenhum devolve exatamente os mesmos números das
+versões `V3` e `V5`. As condições repetem, em SQL, as que o lado Java escreve
+em `StatsRecortes` — inclusive a comparação de perfil e categoria pelo rótulo
+exibido no painel, que é a expressão dos índices funcionais criados na `V4` e
+na `V6`.
 
 ## Conferindo um plano de consulta
 
