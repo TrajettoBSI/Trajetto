@@ -30,6 +30,12 @@
 		<java.version>21</java.version>
 		<spring-cloud.version>2025.0.1</spring-cloud.version>
 		<tanzu-scg-extensions.version>1.0.1</tanzu-scg-extensions.version>
+		<!-- Alvo do flyway-maven-plugin; mesmos defaults do application-dev.properties.
+		     Sobrescreva com -Ddb.name=... quando apontar para outro banco. -->
+		<db.host>localhost</db.host>
+		<db.port>3306</db.port>
+		<db.name>trajetto_dev</db.name>
+		<db.username>root</db.username>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -166,6 +172,33 @@
 						</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+			<!-- Flyway pela linha de comando (flyway:repair, flyway:info, flyway:validate),
+			     sem precisar subir a aplicacao. Nenhuma credencial fica aqui: a senha vem de
+			     -Dflyway.password=... ou da variavel de ambiente FLYWAY_PASSWORD. -->
+			<plugin>
+				<groupId>org.flywaydb</groupId>
+				<artifactId>flyway-maven-plugin</artifactId>
+				<version>${flyway.version}</version>
+				<configuration>
+					<url>jdbc:mysql://${db.host}:${db.port}/${db.name}?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC</url>
+					<user>${db.username}</user>
+					<locations>
+						<location>filesystem:src/main/resources/db/migration</location>
+					</locations>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.flywaydb</groupId>
+						<artifactId>flyway-mysql</artifactId>
+						<version>${flyway.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>com.mysql</groupId>
+						<artifactId>mysql-connector-j</artifactId>
+						<version>${mysql.version}</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
