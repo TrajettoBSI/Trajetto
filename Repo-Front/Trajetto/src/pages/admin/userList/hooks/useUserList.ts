@@ -1,6 +1,5 @@
 import { useCallback, useState } from 'react';
-import { useFocusEffect } from '@react-navigation/native';
-import { useRouter } from 'expo-router';
+import { useFocusEffect, useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { userService } from '@/services';
 import { getErrorMessage } from '@/utils/apiError';

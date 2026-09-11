@@ -5,7 +5,7 @@ export const styles = (colors: AppColors) =>
   StyleSheet.create({
     wrapper: { flex: 1, position: 'relative' },
     hint: {
-      ...StyleSheet.absoluteFillObject,
+      ...StyleSheet.absoluteFill,
       backgroundColor: colors.hintSurface,
       borderRadius: 16,
       alignItems: 'flex-end',

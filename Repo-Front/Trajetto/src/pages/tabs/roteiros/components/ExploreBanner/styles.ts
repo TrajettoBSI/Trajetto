@@ -11,7 +11,7 @@ export const styles = (colors: AppColors) =>
       justifyContent: 'flex-end',
     },
     exploreBannerOverlay: {
-      ...StyleSheet.absoluteFillObject,
+      ...StyleSheet.absoluteFill,
       backgroundColor: colors.exploreOverlay,
     },
     exploreBannerContent: {
