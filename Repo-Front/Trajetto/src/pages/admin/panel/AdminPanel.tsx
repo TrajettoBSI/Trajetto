@@ -13,6 +13,7 @@ import StatCard from '@/src/components/charts/StatCard/StatCard';
 import Section from '@/src/components/charts/Section/Section';
 import StarRating from './components/StarRating/StarRating';
 import RankRow from '@/src/components/charts/RankRow/RankRow';
+import FilterPanel from '../dashboard/components/FilterPanel/FilterPanel';
 
 export default function AdminPanel() {
   const { t } = useTranslation('admin');
@@ -21,9 +22,10 @@ export default function AdminPanel() {
   const s = styles(colors);
   const {
     activeTab, setActiveTab,
+    filtro, opcoes, ativos, alterarFiltro, limparFiltro,
     overview, countries, profiles, ageGroups,
     itinOv, perMonth, categories, topRated, mostComment, mostVisited,
-    loading, refreshing, error, verifiedPct,
+    loading, updating, refreshing, error, verifiedPct,
     userFirstName, logout, load, onRefresh,
   } = useAdminPanel();
 
@@ -72,20 +74,31 @@ export default function AdminPanel() {
         </TouchableOpacity>
       </View>
 
-      <AsyncState
-        style={s.center}
-        loading={loading}
-        loadingText={t('panel.loadingData')}
-        spinnerColor={colors.primaryDark}
-        error={error}
-        onRetry={load}
+      <ScrollView
+        contentContainerStyle={s.container}
+        showsVerticalScrollIndicator={false}
+        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primaryDark} />}
       >
-        {activeTab === 'usuarios' ? (
-          <ScrollView
-            contentContainerStyle={s.container}
-            showsVerticalScrollIndicator={false}
-            refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primaryDark} />}
-          >
+        <FilterPanel
+          filtro={filtro}
+          opcoes={opcoes}
+          ativos={ativos}
+          atualizando={updating}
+          onAlterar={alterarFiltro}
+          onLimpar={limparFiltro}
+        />
+
+        {loading || error ? (
+          <AsyncState
+            style={s.stateBox}
+            loading={loading}
+            loadingText={t('panel.loadingData')}
+            spinnerColor={colors.primaryDark}
+            error={error}
+            onRetry={load}
+          />
+        ) : activeTab === 'usuarios' ? (
+          <>
             <View style={s.statsGrid}>
               <StatCard icon="👥" label={t('panel.totalUsers')} value={overview?.totalUsers ?? 0} color={colors.primaryDark} />
               <StatCard icon="🛡️" label={t('panel.admins')} value={overview?.totalAdmins ?? 0} color={adminAccent.violet} />
@@ -137,14 +150,9 @@ export default function AdminPanel() {
               <Text style={s.userListBtnText}>{t('panel.viewAllUsers')}</Text>
               <Text style={s.userListBtnArrow}>›</Text>
             </TouchableOpacity>
-          </ScrollView>
-
+          </>
         ) : (
-          <ScrollView
-            contentContainerStyle={s.container}
-            showsVerticalScrollIndicator={false}
-            refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primaryDark} />}
-          >
+          <>
             <View style={s.statsGrid}>
               <StatCard icon="🗺️" label={t('panel.totalItineraries')} value={itinOv?.totalItineraries ?? 0} color={colors.primaryDark} />
               <StatCard icon="📅" label={t('panel.avgDuration')} value={itinOv?.avgDurationDays != null ? t('panel.avgDurationValue', { days: itinOv.avgDurationDays }) : '—'} color={adminAccent.blue} />
@@ -213,9 +221,9 @@ export default function AdminPanel() {
                 <Text style={s.emptySubText}>{t('panel.noPlacesDataSub')}</Text>
               </View>
             )}
-          </ScrollView>
+          </>
         )}
-      </AsyncState>
+      </ScrollView>
     </SafeAreaView>
   );
 }
