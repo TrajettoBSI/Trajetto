@@ -7,7 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "trajetto",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
@@ -18,12 +17,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "edgeToEdgeEnabled": true,
       "softwareKeyboardLayoutMode": "pan",
-      "predictiveBackGestureEnabled": false,
-      "navigationBar": {
-        "backgroundColor": "#023665"
-      }
+      "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",

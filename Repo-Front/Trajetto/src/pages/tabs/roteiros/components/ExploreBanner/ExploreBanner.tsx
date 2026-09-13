@@ -11,7 +11,7 @@ export default function ExploreBanner({ onPress }: { onPress: () => void }) {
     <TouchableOpacity style={s.exploreBanner} onPress={onPress} activeOpacity={0.92}>
       <Image
         source={{ uri: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80' }}
-        style={StyleSheet.absoluteFillObject}
+        style={StyleSheet.absoluteFill}
         resizeMode="cover"
       />
       <View style={s.exploreBannerOverlay} />
