@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {
   FilterOptions,
   Overview, CountryStats, ProfileStats, AgeGroupStats,
-  ItineraryOverview, MonthStats, CategoryStats,
+  ItinerariesPerUserPanel, ItineraryOverview, MonthStats, CategoryStats,
   TopRatedPlace, MostCommentedPlace, MostVisitedPlace,
 } from '@/services';
 import { useAuth } from '@/context/AuthContext';
@@ -24,6 +24,7 @@ export type AdminPanelData = {
   countries: CountryStats[];
   profiles: ProfileStats[];
   ageGroups: AgeGroupStats[];
+  perClient: ItinerariesPerUserPanel | null;
   itinOv: ItineraryOverview | null;
   perMonth: MonthStats[];
   categories: CategoryStats[];
@@ -46,7 +47,7 @@ export function useAdminPanel(): AdminPanelData {
   const [activeTab, setActiveTab] = useState<AdminTab>('usuarios');
   const { filtro, consulta, opcoes, ativos, pronto, alterar, limpar } = useDashboardFilter();
   const {
-    overview, countries, profiles, ageGroups,
+    overview, countries, profiles, ageGroups, perClient,
     itinerary, perMonth, categories, visited, topRated, commented,
     loading, updating, refreshing, error, verifiedPct,
     load, onRefresh,
@@ -64,6 +65,7 @@ export function useAdminPanel(): AdminPanelData {
     countries,
     profiles,
     ageGroups,
+    perClient,
     itinOv: itinerary,
     perMonth,
     categories,
