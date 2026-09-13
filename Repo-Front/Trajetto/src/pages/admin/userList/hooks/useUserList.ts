@@ -23,7 +23,7 @@ export function useUserList(): UserListData {
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const fetchUsers = async () => {
+  const fetchUsers = useCallback(async () => {
     try {
       setLoading(true);
       setUsers(await userService.getAll());
@@ -32,10 +32,10 @@ export function useUserList(): UserListData {
     } finally {
       setLoading(false);
     }
-  };
+  }, [t]);
 
   useFocusEffect(
-    useCallback(() => { fetchUsers(); }, [])
+    useCallback(() => { fetchUsers(); }, [fetchUsers])
   );
 
   const deleteUser = (id: number, name: string) => {

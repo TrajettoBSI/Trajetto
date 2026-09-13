@@ -1,11 +1,9 @@
 // TicketCard.tsx — substitua o <TouchableOpacity style={[styles.card, ...]}> dentro do SwipeableCard
 
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Platform } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
-
-const PRIMARY = '#006ecf';
 
 function categoryIcon(category: string): string {
     const c = (category || '').toLowerCase();

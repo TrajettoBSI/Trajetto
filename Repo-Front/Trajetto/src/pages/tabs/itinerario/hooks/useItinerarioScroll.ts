@@ -26,7 +26,7 @@ export function useItinerarioScroll(itinerary: Itinerary | null) {
     }
     const timer = setTimeout(() => setHighlightedPlace(null), 800);
     return () => clearTimeout(timer);
-  }, [highlightedPlaceIndex]);
+  }, [highlightedPlaceIndex, setHighlightedPlace]);
 
   useFocusEffect(
     useCallback(() => {

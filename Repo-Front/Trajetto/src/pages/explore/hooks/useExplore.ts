@@ -26,7 +26,7 @@ export function useExplore(): ExploreData {
 
   const [spots, setSpots] = useState<Place[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [showFilter, setShowFilter] = useState(false);
@@ -53,8 +53,14 @@ export function useExplore(): ExploreData {
 
   useEffect(() => {
     placesService.getCategories().then(setCategories).catch(() => {});
-    fetchSpots('', '');
-  }, [fetchSpots]);
+    placesService.getAll({})
+      .then((results) => {
+        setSpots(results);
+        setSearched(true);
+      })
+      .catch(() => setSpots([]))
+      .finally(() => setLoading(false));
+  }, []);
 
   const handleSearchChange = (text: string) => {
     setSearch(text);

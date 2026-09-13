@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'expo-router';
 import * as Location from 'expo-location';
 import MapView from 'react-native-maps';
@@ -21,7 +21,12 @@ export function useMapaLocation() {
 
   const [region, setRegion] = useState<Region | undefined>(undefined);
   const [segments, setSegments] = useState<LatLng[][]>([]);
-  const [points, setPoints] = useState<any[]>([]);
+  const points = useMemo<any[]>(
+    () => (itinerary?.places?.length
+      ? [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex)
+      : []),
+    [itinerary],
+  );
   const [userLocation, setUserLocation] = useState<LatLng | null>(null);
   const mapRef = useRef<MapView>(null);
   const isFocusingPin = useRef(false);
@@ -56,12 +61,11 @@ export function useMapaLocation() {
   useEffect(() => {
     if (!user?.id) return;
     if (!itinerary) fetchItinerary(user.id);
-  }, [user, itinerary]);
+  }, [user, itinerary, fetchItinerary]);
 
   useEffect(() => {
     if (!itinerary?.places?.length) return;
     const sorted = [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex);
-    setPoints(sorted);
 
     let cancelled = false;
 
@@ -74,7 +78,7 @@ export function useMapaLocation() {
         }));
       }
 
-      const pairs: Array<[{ lat: number; lng: number }, { lat: number; lng: number }]> = [];
+      const pairs: [{ lat: number; lng: number }, { lat: number; lng: number }][] = [];
       if (itinerary.originLatitude != null) {
         pairs.push([
           { lat: itinerary.originLatitude, lng: itinerary.originLongitude! },
@@ -115,9 +119,9 @@ export function useMapaLocation() {
   const currentSegCoords = currentSegIdx >= 0 ? (segments[currentSegIdx] ?? []) : [];
 
   useEffect(() => {
-    pulseAnim.value = withRepeat(withTiming(1, { duration: 900 }), -1, true);
+    pulseAnim.set(withRepeat(withTiming(1, { duration: 900 }), -1, true));
     return () => cancelAnimation(pulseAnim);
-  }, []);
+  }, [pulseAnim]);
 
   useEffect(() => {
     if (!points.length || focusedMapPlaceIndex === null) return;
@@ -128,7 +132,7 @@ export function useMapaLocation() {
     }, 100);
     const timer = setTimeout(() => { setFocusedMapPlace(null); isFocusingPin.current = false; }, 1200);
     return () => clearTimeout(timer);
-  }, [focusedMapPlaceIndex, points]);
+  }, [focusedMapPlaceIndex, points, setFocusedMapPlace]);
 
   const handlePinPress = (index: number) => {
     setHighlightedPlace(index);

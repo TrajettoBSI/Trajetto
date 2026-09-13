@@ -1,4 +1,4 @@
-import { Tabs, useRouter } from 'expo-router';
+import { Tabs } from 'expo-router';
 import React from 'react';
 import { Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -12,7 +12,6 @@ const INACTIVE_TINT = 'rgba(255,255,255,0.45)';
 
 export default function TabLayout() {
   const { t } = useTranslation('common');
-  const router = useRouter();
 
   return (
     <Tabs

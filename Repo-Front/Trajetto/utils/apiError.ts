@@ -1,7 +1,7 @@
 // Leitura do contrato de erro padrão da API.
 // Formato e códigos: Repo-Back/backend/docs/CONTRATO-DE-ERRO.md
 
-import axios from 'axios';
+import { isAxiosError } from 'axios';
 
 export type ApiErrorCode =
   | 'VALIDATION_ERROR'
@@ -52,7 +52,7 @@ const isApiErrorBody = (data: unknown): data is ApiErrorBody => {
 
 /** Corpo do erro no contrato padrão, ou null se a resposta não seguir o contrato. */
 export const getApiError = (error: unknown): ApiErrorBody | null => {
-  if (!axios.isAxiosError(error)) return null;
+  if (!isAxiosError(error)) return null;
   const data = error.response?.data;
   return isApiErrorBody(data) ? data : null;
 };
@@ -63,7 +63,7 @@ export const getErrorCode = (error: unknown): string | null =>
 
 /** Status HTTP da resposta, quando houver. */
 export const getErrorStatus = (error: unknown): number | null =>
-  axios.isAxiosError(error) ? error.response?.status ?? null : null;
+  isAxiosError(error) ? error.response?.status ?? null : null;
 
 /** Identificador para achar a falha no log do servidor. */
 export const getTraceId = (error: unknown): string | null =>
@@ -83,7 +83,7 @@ export const getErrorMessage = (error: unknown, fallback: string = DEFAULT_MESSA
     return apiError.message;
   }
 
-  if (axios.isAxiosError(error)) {
+  if (isAxiosError(error)) {
     // Sem resposta = servidor fora do ar, timeout ou celular sem rede.
     if (!error.response) return NETWORK_MESSAGE;
 

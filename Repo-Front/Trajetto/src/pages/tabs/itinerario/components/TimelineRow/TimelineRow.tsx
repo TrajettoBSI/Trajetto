@@ -1,6 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
-import { LayoutChangeEvent } from 'react-native';
+import { LayoutChangeEvent, View } from 'react-native';
 import { Places } from '@/hooks/itineraryStore';
 import { TicketCard } from '@/components/TicketCard';
 import { useColors } from '@/src/theme';

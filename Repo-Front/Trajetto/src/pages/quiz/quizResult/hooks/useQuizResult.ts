@@ -1,8 +1,11 @@
 import { useEffect } from 'react';
 import { useRouter, useLocalSearchParams } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { quizData } from '@/data/quizData';
 import { userService } from '@/services';
 import { useAuth } from '@/context/AuthContext';
+import { getErrorMessage } from '@/utils/apiError';
+import { showAlert } from '@/src/components/alerts/alertService';
 
 export type QuizResultData = {
   perfil: ReturnType<typeof getPerfil>;
@@ -15,6 +18,7 @@ function getPerfil(profile: string | undefined) {
 }
 
 export function useQuizResult(): QuizResultData {
+  const { t } = useTranslation('common');
   const router = useRouter();
   const { refreshUser } = useAuth();
   const { profile, source } = useLocalSearchParams<{ profile: string; source?: string }>();
@@ -26,9 +30,9 @@ export function useQuizResult(): QuizResultData {
     if (profile) {
       userService.updateTravelerProfile(profile)
         .then(() => refreshUser())
-        .catch(() => {});
+        .catch((e) => showAlert(getErrorMessage(e), { title: t('error') }));
     }
-  }, [profile]);
+  }, [profile, refreshUser, t]);
 
   return {
     perfil,

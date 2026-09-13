@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import { quizData, shuffle, calcularPerfil, Pergunta } from '@/data/quizData';
 import { applyAnswerScore } from '@/src/domain/quiz/applyAnswerScore';
@@ -23,14 +23,10 @@ export type QuizData = {
 export function useQuiz(): QuizData {
   const router = useRouter();
   const { source } = useLocalSearchParams<{ source?: string }>();
-  const [questions, setQuestions] = useState<Pergunta[]>([]);
+  const [questions] = useState<Pergunta[]>(() => shuffle([...quizData.perguntas]).slice(0, 10));
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [scores, setScores] = useState<Record<string, number>>({ ...INITIAL_SCORES });
-
-  useEffect(() => {
-    setQuestions(shuffle([...quizData.perguntas]).slice(0, 10));
-  }, []);
 
   const current = questions[currentIndex];
   const total = questions.length;

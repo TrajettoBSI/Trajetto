@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { View, TouchableOpacity, StyleSheet } from 'react-native';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 
@@ -18,10 +18,12 @@ export default function StarRating({
   readonly = false,
 }: Props) {
   const [rating, setRating] = useState(value);
+  const [valueAnterior, setValueAnterior] = useState(value);
 
-  useEffect(() => {
+  if (value !== valueAnterior) {
+    setValueAnterior(value);
     setRating(value);
-  }, [value]);
+  }
 
   const handlePress = (index: number) => {
     if (readonly) return;

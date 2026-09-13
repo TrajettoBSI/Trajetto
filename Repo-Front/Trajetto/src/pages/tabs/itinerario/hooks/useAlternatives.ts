@@ -58,7 +58,7 @@ export function useAlternatives(itinerary: Itinerary | null) {
     } catch (e) {
       showAlert(getErrorMessage(e, t('itinerario:alternativesModal.saveError')), { title: t('common:error') });
     }
-  }, [swipedPlace, replacePlace]);
+  }, [swipedPlace, replacePlace, t]);
 
   const handleCancelAlt = useCallback(() => {
     setShowAltModal(false);

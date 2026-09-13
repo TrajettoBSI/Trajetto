@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Keyboard, Pressable, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Keyboard, Pressable, Text, TouchableOpacity, View } from 'react-native';
 import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
 import { useTranslation } from 'react-i18next';
 import StarRating from '@/components/Rating';
