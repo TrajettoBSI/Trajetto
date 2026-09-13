@@ -44,14 +44,15 @@ export const styles = (colors: AppColors) =>
     tabTextActive: { color: colors.white },
 
     container: { padding: 16, paddingBottom: 40 },
-    center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 12, padding: 32 },
     loadingText: { fontSize: 14, color: colors.gray500 },
     errorIcon: { fontSize: 48 },
     errorText: { fontSize: 15, color: colors.gray700, textAlign: 'center' },
     retryBtn: { backgroundColor: colors.primaryDark, borderRadius: 12, paddingHorizontal: 24, paddingVertical: 12 },
     retryText: { color: colors.white, fontFamily: 'Inter-Bold' },
 
-    statsGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 8, marginTop: 16 },
+    stateBox: { minHeight: 280, alignItems: 'center', justifyContent: 'center', gap: 12, padding: 32 },
+
+    statsGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 8 },
 
     verifiedRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginBottom: 10 },
     verifiedBarTrack: { flex: 1, height: 14, backgroundColor: colors.gray100, borderRadius: 7, overflow: 'hidden' },

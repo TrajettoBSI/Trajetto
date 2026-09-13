@@ -7,7 +7,9 @@ import com.trajetto.backend.user.model.UserModel;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
+import org.springframework.data.repository.query.Param;
 
+import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -23,6 +25,12 @@ import java.util.List;
  * <p>Estende {@link Repository}, e nao {@code UserRepository}, de proposito:
  * assim o Spring nao passa a ter dois beans atendendo pelo mesmo tipo na hora
  * de injetar o repositorio de usuarios.</p>
+ *
+ * <p>O recorte do painel entra pelos fragmentos de {@link StatsRecortes}, e
+ * cada metodo recebe apenas os criterios que o alcancam: os indicadores de
+ * usuario respondem a perfil e pais, e os que contam roteiros respondem
+ * tambem a periodo e categoria. Criterio ausente chega nulo e a condicao
+ * correspondente nao filtra nada.</p>
  */
 public interface UserStatsRepository extends Repository<UserModel, Long> {
 
@@ -34,10 +42,12 @@ public interface UserStatsRepository extends Repository<UserModel, Long> {
             SELECT new com.trajetto.backend.stats.dto.CountryCountDTO(u.country, COUNT(u))
             FROM UserModel u
             WHERE u.country IS NOT NULL AND TRIM(u.country) <> ''
+              AND """ + StatsRecortes.USUARIO_JPQL + """
             GROUP BY u.country
             ORDER BY COUNT(u) DESC, u.country ASC
             """)
-    List<CountryCountDTO> countByCountry();
+    List<CountryCountDTO> countByCountry(@Param("profile") String profile,
+                                         @Param("country") String country);
 
     /**
      * Usuarios por perfil de viajante. Quem esta sem perfil (nulo ou em
@@ -60,13 +70,15 @@ public interface UserStatsRepository extends Repository<UserModel, Long> {
             SELECT COALESCE(NULLIF(TRIM(u.travelerProfile), ''), 'Sem perfil') AS profile_label,
                    COUNT(*)                                                    AS total
             FROM users u
+            WHERE """ + StatsRecortes.USUARIO_SQL + """
             GROUP BY profile_label
             ORDER BY (profile_label = 'Sem perfil') ASC, total DESC
             """, nativeQuery = true)
-    List<Object[]> countByTravelerProfile();
+    List<Object[]> countByTravelerProfile(@Param("profile") String profile,
+                                          @Param("country") String country);
 
     /**
-     * Ranking dos clientes que mais criaram roteiros.
+     * Ranking dos clientes que mais criaram roteiros dentro do recorte.
      *
      * <p>Este era o pior ponto do painel: para cada usuario a aplicacao
      * disparava uma consulta de roteiros e contava o tamanho da lista em
@@ -80,7 +92,12 @@ public interface UserStatsRepository extends Repository<UserModel, Long> {
      * resto em vez de mandar a base inteira pela rede. E o JOIN e interno,
      * nao mais LEFT: o ranking so exibe quem tem roteiro, entao o cliente
      * sem nenhum nao precisa nem entrar no agrupamento -- quantos ficaram de
-     * fora e assunto de {@link #countClientItineraryCoverage()}.</p>
+     * fora e assunto de {@link #countClientItineraryCoverage}.</p>
+     *
+     * <p>O recorte entra dos dois lados: o cliente precisa bater com perfil e
+     * pais, e o roteiro contado precisa estar dentro do periodo e ter a
+     * categoria escolhida. Um cliente cujos roteiros ficaram todos fora do
+     * recorte simplesmente nao aparece no ranking.</p>
      */
     @Query("""
             SELECT new com.trajetto.backend.stats.dto.ItinerariesPerUserDTO(
@@ -88,13 +105,21 @@ public interface UserStatsRepository extends Repository<UserModel, Long> {
             FROM UserModel u
             JOIN ItineraryModel i ON i.user = u
             WHERE (u.isAdmin IS NULL OR u.isAdmin = FALSE)
+              AND """ + StatsRecortes.USUARIO_JPQL + """
+              AND """ + StatsRecortes.ROTEIRO_SEM_USUARIO_JPQL + """
             GROUP BY u.id, u.firstName, u.lastName, u.email
             ORDER BY COUNT(i.id) DESC, u.firstName ASC
             """)
-    List<ItinerariesPerUserDTO> findTopClientsByItineraryCount(Pageable pageable);
+    List<ItinerariesPerUserDTO> findTopClientsByItineraryCount(Pageable pageable,
+                                                               @Param("from") LocalDate from,
+                                                               @Param("to") LocalDate to,
+                                                               @Param("profile") String profile,
+                                                               @Param("country") String country,
+                                                               @Param("category") String category);
 
     /**
-     * Quantos clientes ja criaram algum roteiro e quantos ainda nao.
+     * Quantos clientes ja criaram algum roteiro dentro do recorte e quantos
+     * ainda nao.
      *
      * <p>O painel mostrava o segundo numero contando, na propria tela,
      * quantas linhas da lista de clientes vinham com zero. Era a ultima
@@ -107,6 +132,12 @@ public interface UserStatsRepository extends Repository<UserModel, Long> {
      * clientes cairam de cada lado. Nativa porque JPQL nao tem tabela
      * derivada.</p>
      *
+     * <p>Com o filtro ligado, periodo e categoria entram na condicao do LEFT
+     * JOIN, e nao no WHERE: assim o cliente continua na conta mesmo sem
+     * nenhum roteiro no recorte -- que e exatamente o que este indicador
+     * mede. Levado para o WHERE, ele sairia da tabela derivada e o total de
+     * clientes sem roteiro seria sempre zero.</p>
+     *
      * <p>Colunas, na ordem: com roteiro, sem roteiro.</p>
      */
     @Query(value = """
@@ -115,12 +146,19 @@ public interface UserStatsRepository extends Repository<UserModel, Long> {
             FROM (
                 SELECT COUNT(i.id) AS total
                 FROM users u
-                LEFT JOIN itineraries i ON i.user_id = u.code
-                WHERE u.isAdmin IS NULL OR u.isAdmin = 0
+                LEFT JOIN itineraries i
+                       ON i.user_id = u.code
+                      AND """ + StatsRecortes.ROTEIRO_SEM_USUARIO_SQL + """
+                WHERE (u.isAdmin IS NULL OR u.isAdmin = 0)
+                  AND """ + StatsRecortes.USUARIO_SQL + """
                 GROUP BY u.code
             ) c
             """, nativeQuery = true)
-    List<Object[]> countClientItineraryCoverage();
+    List<Object[]> countClientItineraryCoverage(@Param("from") LocalDate from,
+                                                @Param("to") LocalDate to,
+                                                @Param("profile") String profile,
+                                                @Param("country") String country,
+                                                @Param("category") String category);
 
     /**
      * Faixas etarias em uma linha so.
@@ -155,6 +193,37 @@ public interface UserStatsRepository extends Repository<UserModel, Long> {
                                   THEN 1 ELSE 0 END), 0),
                 COALESCE(SUM(CASE WHEN u.birthDate IS NULL THEN 1 ELSE 0 END), 0))
             FROM UserModel u
+            WHERE """ + StatsRecortes.USUARIO_JPQL + """
             """)
-    AgeGroupBreakdownDTO countByAgeGroup();
+    AgeGroupBreakdownDTO countByAgeGroup(@Param("profile") String profile,
+                                         @Param("country") String country);
+
+    // ─── Opções dos seletores do filtro ────────────────────────────────────
+
+    /**
+     * Os perfis de viajante que existem na base, para o seletor do painel.
+     *
+     * <p>Devolve o mesmo rotulo que o grafico exibe e que o filtro compara,
+     * inclusive "Sem perfil" -- que e uma escolha legitima: quem ainda nao
+     * respondeu o teste e um recorte que interessa ao gerente. Esse rotulo
+     * vai para o fim da lista, como no grafico.</p>
+     *
+     * <p>Sem recorte de proposito: se as opcoes fossem filtradas, escolher um
+     * perfil esconderia todos os outros e nao haveria como voltar atras.</p>
+     */
+    @Query(value = """
+            SELECT DISTINCT COALESCE(NULLIF(TRIM(u.travelerProfile), ''), 'Sem perfil') AS profile_label
+            FROM users u
+            ORDER BY (profile_label = 'Sem perfil') ASC, profile_label ASC
+            """, nativeQuery = true)
+    List<String> findProfileOptions();
+
+    /** Os paises cadastrados, para o seletor do painel. Pais em branco fica de fora. */
+    @Query("""
+            SELECT DISTINCT u.country
+            FROM UserModel u
+            WHERE u.country IS NOT NULL AND TRIM(u.country) <> ''
+            ORDER BY u.country ASC
+            """)
+    List<String> findCountryOptions();
 }

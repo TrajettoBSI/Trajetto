@@ -5,12 +5,7 @@ export const styles = (colors: AppColors) =>
   StyleSheet.create({
     safe: { flex: 1, backgroundColor: colors.backgroundMuted },
     container: { padding: 16, paddingBottom: 40 },
-    center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 12, padding: 32 },
-    loadingText: { fontSize: 14, color: colors.gray500 },
-    errorIcon: { fontSize: 48 },
-    errorText: { fontSize: 15, color: colors.gray700, textAlign: 'center' },
-    retryBtn: { backgroundColor: colors.primaryDark, borderRadius: 12, paddingHorizontal: 24, paddingVertical: 12 },
-    retryText: { color: colors.white, fontFamily: 'Inter-Bold' },
+    stateBox: { minHeight: 280, alignItems: 'center', justifyContent: 'center', gap: 12, padding: 32 },
 
     header: { marginBottom: 20, paddingTop: 8 },
     headerTitle: { fontSize: 28, fontFamily: 'Inter-Bold', color: colors.gray900 },

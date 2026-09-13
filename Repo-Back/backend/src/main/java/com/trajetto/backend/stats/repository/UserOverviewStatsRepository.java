@@ -1,17 +1,21 @@
 package com.trajetto.backend.stats.repository;
 
+import com.trajetto.backend.stats.dto.StatsFilter;
 import com.trajetto.backend.stats.dto.UserOverviewDTO;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.ParameterMode;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.StoredProcedureQuery;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
 import java.util.List;
 
 /**
  * Cartoes de usuarios do painel, vindos da stored procedure
- * {@code sp_stats_user_overview} (migracao V3).
+ * {@code sp_stats_user_overview} (migracao V3, reescrita com os parametros do
+ * filtro na V7).
  *
  * <p>Sao sete indicadores que antes exigiam quatro consultas de contagem mais
  * um {@code findAll()} da tabela de usuarios -- este ultimo apenas para
@@ -20,7 +24,10 @@ import java.util.List;
  *
  * <p>A chamada usa {@link StoredProcedureQuery}, a forma padrao do JPA para
  * invocar rotina de banco: e ela que lida com o protocolo de resultado do
- * MySQL para procedures.</p>
+ * MySQL para procedures. Os cinco parametros do recorte sao registrados com o
+ * tipo Java correspondente, e e por isso que um criterio ausente pode viajar
+ * como nulo sem ambiguidade -- o driver sabe que aquele nulo e uma data ou um
+ * texto.</p>
  */
 @Repository
 public class UserOverviewStatsRepository {
@@ -35,11 +42,21 @@ public class UserOverviewStatsRepository {
      * somente leitura faz o MySQL recusar {@code CALL}, porque o servidor nao
      * tem como garantir sozinho que a rotina chamada nao grava. Quem garante
      * que esta so le e a propria procedure, declarada {@code READS SQL DATA}
-     * na migracao V3.
+     * na migracao V7.
      */
     @Transactional
-    public UserOverviewDTO fetchOverview() {
+    public UserOverviewDTO fetchOverview(StatsFilter filtro) {
         StoredProcedureQuery procedure = entityManager.createStoredProcedureQuery(PROCEDURE_NAME);
+        procedure.registerStoredProcedureParameter(1, LocalDate.class, ParameterMode.IN);
+        procedure.registerStoredProcedureParameter(2, LocalDate.class, ParameterMode.IN);
+        procedure.registerStoredProcedureParameter(3, String.class, ParameterMode.IN);
+        procedure.registerStoredProcedureParameter(4, String.class, ParameterMode.IN);
+        procedure.registerStoredProcedureParameter(5, String.class, ParameterMode.IN);
+        procedure.setParameter(1, filtro.from());
+        procedure.setParameter(2, filtro.to());
+        procedure.setParameter(3, filtro.profile());
+        procedure.setParameter(4, filtro.country());
+        procedure.setParameter(5, filtro.category());
         procedure.execute();
         return toDTO(procedure.getResultList());
     }

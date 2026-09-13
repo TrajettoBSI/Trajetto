@@ -3,7 +3,9 @@ package com.trajetto.backend.stats.repository;
 import com.trajetto.backend.rating.model.RatingModel;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
+import org.springframework.data.repository.query.Param;
 
+import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -20,11 +22,16 @@ import java.util.List;
  * ter varias linhas em {@code places} (uma por roteiro que o incluiu), e a
  * numeracao por particao permite ficar so com a primeira ocorrencia de cada
  * xid, que era o que {@code findFirstByXid} buscava linha a linha.</p>
+ *
+ * <p>O recorte do painel chega pelo fragmento
+ * {@link StatsRecortes#AVALIACAO_SQL}: periodo pela data da avaliacao, perfil
+ * e pais por quem avaliou, categoria pelo local avaliado.</p>
  */
 public interface RatingStatsRepository extends Repository<RatingModel, Long> {
 
     /**
-     * Dez lugares com melhor media, com a media e o total de avaliacoes.
+     * Dez lugares com melhor media, com a media e o total de avaliacoes,
+     * contando apenas as avaliacoes do recorte.
      *
      * <p>Colunas, na ordem: nome, xid, media, total de avaliacoes.</p>
      */
@@ -44,15 +51,20 @@ public interface RatingStatsRepository extends Repository<RatingModel, Long> {
             LEFT JOIN primeiro_nome_por_xid pn
                    ON pn.xid = r.touristSpotXid AND pn.ordem = 1
             WHERE r.touristSpotXid IS NOT NULL
+              AND """ + StatsRecortes.AVALIACAO_SQL + """
             GROUP BY r.touristSpotXid, pn.name
             ORDER BY avgRating DESC, totalRatings DESC, name ASC
             LIMIT 10
             """, nativeQuery = true)
-    List<Object[]> findTopRated();
+    List<Object[]> findTopRated(@Param("from") LocalDate from,
+                                @Param("to") LocalDate to,
+                                @Param("profile") String profile,
+                                @Param("country") String country,
+                                @Param("category") String category);
 
     /**
-     * Dez lugares com mais comentarios. Avaliacao sem texto nao conta, como
-     * no painel original.
+     * Dez lugares com mais comentarios dentro do recorte. Avaliacao sem texto
+     * nao conta, como no painel original.
      *
      * <p>Colunas, na ordem: nome, xid, total de comentarios.</p>
      */
@@ -73,9 +85,14 @@ public interface RatingStatsRepository extends Repository<RatingModel, Long> {
             WHERE r.touristSpotXid IS NOT NULL
               AND r.comment IS NOT NULL
               AND TRIM(r.comment) <> ''
+              AND """ + StatsRecortes.AVALIACAO_SQL + """
             GROUP BY r.touristSpotXid, pn.name
             ORDER BY commentCount DESC, name ASC
             LIMIT 10
             """, nativeQuery = true)
-    List<Object[]> findMostCommented();
+    List<Object[]> findMostCommented(@Param("from") LocalDate from,
+                                     @Param("to") LocalDate to,
+                                     @Param("profile") String profile,
+                                     @Param("country") String country,
+                                     @Param("category") String category);
 }

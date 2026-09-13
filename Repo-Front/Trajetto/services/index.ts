@@ -24,9 +24,9 @@ export { RouteService } from './routeService';
 
 export { statsService } from './statsService';
 export type {
-  AgeGroupStats, CategoryStats, ClientItineraryCount, CountryStats,
+  AgeGroupStats, CategoryStats, ClientItineraryCount, CountryStats, FilterOptions,
   ItinerariesPerUserPanel, ItineraryOverview, MonthStats, MostCommentedPlace,
-  MostVisitedPlace, Overview, ProfileStats, TopRatedPlace,
+  MostVisitedPlace, Overview, ProfileStats, StatsFilter, TopRatedPlace,
 } from './statsService';
 
 export { geocodingService, searchAddresses } from './geocodingService';

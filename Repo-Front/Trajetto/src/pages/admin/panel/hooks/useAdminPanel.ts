@@ -1,19 +1,25 @@
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 import {
-  statsService,
+  FilterOptions,
   Overview, CountryStats, ProfileStats, AgeGroupStats,
   ItineraryOverview, MonthStats, CategoryStats,
   TopRatedPlace, MostCommentedPlace, MostVisitedPlace,
 } from '@/services';
-import { getErrorMessage } from '@/utils/apiError';
 import { useAuth } from '@/context/AuthContext';
+import { DashboardFilter } from '../../dashboard/dashboardFilter';
+import { useDashboard } from '../../dashboard/hooks/useDashboard';
+import { useDashboardFilter } from '../../dashboard/hooks/useDashboardFilter';
 
 export type AdminTab = 'usuarios' | 'roteiros';
 
 export type AdminPanelData = {
   activeTab: AdminTab;
   setActiveTab: (tab: AdminTab) => void;
+  filtro: DashboardFilter;
+  opcoes: FilterOptions;
+  ativos: number;
+  alterarFiltro: (mudanca: Partial<DashboardFilter>) => void;
+  limparFiltro: () => void;
   overview: Overview | null;
   countries: CountryStats[];
   profiles: ProfileStats[];
@@ -25,6 +31,7 @@ export type AdminPanelData = {
   mostComment: MostCommentedPlace[];
   mostVisited: MostVisitedPlace[];
   loading: boolean;
+  updating: boolean;
   refreshing: boolean;
   error: string;
   verifiedPct: number;
@@ -35,74 +42,36 @@ export type AdminPanelData = {
 };
 
 export function useAdminPanel(): AdminPanelData {
-  const { t } = useTranslation('admin');
   const { user, logout } = useAuth();
-
   const [activeTab, setActiveTab] = useState<AdminTab>('usuarios');
-
-  const [overview, setOverview] = useState<Overview | null>(null);
-  const [countries, setCountries] = useState<CountryStats[]>([]);
-  const [profiles, setProfiles] = useState<ProfileStats[]>([]);
-  const [ageGroups, setAgeGroups] = useState<AgeGroupStats[]>([]);
-
-  const [itinOv, setItinOv] = useState<ItineraryOverview | null>(null);
-  const [perMonth, setPerMonth] = useState<MonthStats[]>([]);
-  const [categories, setCategories] = useState<CategoryStats[]>([]);
-  const [topRated, setTopRated] = useState<TopRatedPlace[]>([]);
-  const [mostComment, setMostComment] = useState<MostCommentedPlace[]>([]);
-  const [mostVisited, setMostVisited] = useState<MostVisitedPlace[]>([]);
-
-  const [loading, setLoading] = useState(true);
-  const [refreshing, setRefreshing] = useState(false);
-  const [error, setError] = useState('');
-
-  const load = async () => {
-    try {
-      const [ov, co, pr, ag, iov, pm, cat, tr, mc, mv] = await Promise.all([
-        statsService.getOverview(),
-        statsService.getCountries(),
-        statsService.getTravelerProfiles(),
-        statsService.getAgeGroups(),
-        statsService.getItineraryOverview(),
-        statsService.getItinerariesPerMonth(),
-        statsService.getPlacesByCategory(),
-        statsService.getTopRatedPlaces(),
-        statsService.getMostCommentedPlaces(),
-        statsService.getMostVisitedPlaces(),
-      ]);
-      setOverview(ov); setCountries(co); setProfiles(pr); setAgeGroups(ag);
-      setItinOv(iov); setPerMonth(pm); setCategories(cat);
-      setTopRated(tr); setMostComment(mc); setMostVisited(mv);
-      setError('');
-    } catch (e) {
-      setError(getErrorMessage(e, t('panel.loadError')));
-    } finally {
-      setLoading(false);
-      setRefreshing(false);
-    }
-  };
-
-  useEffect(() => { load(); }, []);
-
-  const onRefresh = () => { setRefreshing(true); load(); };
-
-  const verifiedPct = overview && overview.totalUsers > 0
-    ? Math.round((overview.verifiedUsers / overview.totalUsers) * 100) : 0;
+  const { filtro, consulta, opcoes, ativos, pronto, alterar, limpar } = useDashboardFilter();
+  const {
+    overview, countries, profiles, ageGroups,
+    itinerary, perMonth, categories, visited, topRated, commented,
+    loading, updating, refreshing, error, verifiedPct,
+    load, onRefresh,
+  } = useDashboard(consulta, pronto);
 
   return {
     activeTab,
     setActiveTab,
+    filtro,
+    opcoes,
+    ativos,
+    alterarFiltro: alterar,
+    limparFiltro: limpar,
     overview,
     countries,
     profiles,
     ageGroups,
-    itinOv,
+    itinOv: itinerary,
     perMonth,
     categories,
     topRated,
-    mostComment,
-    mostVisited,
+    mostComment: commented,
+    mostVisited: visited,
     loading,
+    updating,
     refreshing,
     error,
     verifiedPct,
