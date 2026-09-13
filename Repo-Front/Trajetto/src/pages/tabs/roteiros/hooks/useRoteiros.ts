@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { useFocusEffect, useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/context/AuthContext';
@@ -27,11 +27,6 @@ export function useRoteiros() {
     }, [user?.id])
   );
 
-  // Sai do modo selecao quando os roteiros mudam (apos bulk delete)
-  useEffect(() => {
-    if (selectMode && itineraries.length === 0) exitSelectMode();
-  }, [itineraries]);
-
   const enterSelectMode = (id: number) => {
     setSelectMode(true);
     setSelectedIds(new Set([id]));
@@ -41,6 +36,12 @@ export function useRoteiros() {
     setSelectMode(false);
     setSelectedIds(new Set());
   };
+
+  // Sai do modo selecao quando nao sobra roteiro (apos bulk delete)
+  if (selectMode && itineraries.length === 0) {
+    setSelectMode(false);
+    setSelectedIds(new Set());
+  }
 
   const toggleSelect = (id: number) => {
     setSelectedIds((prev) => {
