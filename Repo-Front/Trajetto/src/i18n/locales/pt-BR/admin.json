@@ -44,7 +44,17 @@
     "commentsAbbrev": "coment.",
     "mostVisitedPlaces": "Locais mais incluídos em roteiros",
     "noPlacesData": "Nenhum dado de locais disponível ainda.",
-    "noPlacesDataSub": "Os dados aparecerão conforme os usuários gerarem roteiros e avaliarem locais."
+    "noPlacesDataSub": "Os dados aparecerão conforme os usuários gerarem roteiros e avaliarem locais.",
+    "empty": {
+      "chart": "Ainda não há dados para este gráfico.",
+      "chartFiltered": "Nenhum dado para os filtros escolhidos.",
+      "title": "Ainda não há dados",
+      "description": "Os indicadores aparecerão conforme a plataforma for usada.",
+      "titleFiltered": "Nenhum resultado para este recorte",
+      "descriptionFiltered": "Tente ampliar o período ou remover algum filtro.",
+      "clearFilters": "Limpar filtros",
+      "usersScope": "Período e categoria não se aplicam aos indicadores de usuários: aqui valem perfil e país."
+    }
   },
 
   "dashboard": {

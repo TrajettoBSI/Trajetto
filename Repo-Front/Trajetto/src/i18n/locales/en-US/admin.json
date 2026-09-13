@@ -44,7 +44,17 @@
     "commentsAbbrev": "comm.",
     "mostVisitedPlaces": "Places most included in itineraries",
     "noPlacesData": "No place data available yet.",
-    "noPlacesDataSub": "Data will appear as users generate itineraries and rate places."
+    "noPlacesDataSub": "Data will appear as users generate itineraries and rate places.",
+    "empty": {
+      "chart": "No data for this chart yet.",
+      "chartFiltered": "No data for the selected filters.",
+      "title": "No data yet",
+      "description": "Indicators will appear as the platform is used.",
+      "titleFiltered": "No results for this selection",
+      "descriptionFiltered": "Try widening the period or removing a filter.",
+      "clearFilters": "Clear filters",
+      "usersScope": "Period and category don't apply to user indicators: only profile and country count here."
+    }
   },
 
   "dashboard": {

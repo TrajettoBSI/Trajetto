@@ -107,7 +107,6 @@ function RootLayoutNav() {
         <Stack.Screen name="SpotDetailScreen" options={{ headerShown: false }} />
         <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
         <Stack.Screen name="AdminPanelScreen" options={{ headerShown: false }} />
-        <Stack.Screen name="DashboardScreen" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
