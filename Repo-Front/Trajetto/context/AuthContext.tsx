@@ -31,7 +31,9 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     } catch {}
   };
 
-  logoutRef.current = logout;
+  useEffect(() => {
+    logoutRef.current = logout;
+  });
 
   useEffect(() => {
     (async () => {

@@ -48,8 +48,8 @@ const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 
 function OrbitLoader() {
   // Two separate values: ball uses native driver, arc (SVG prop) cannot
-  const ballRot = useRef(new Animated.Value(0)).current;
-  const arcProg = useRef(new Animated.Value(0)).current;
+  const [ballRot] = useState(() => new Animated.Value(0));
+  const [arcProg] = useState(() => new Animated.Value(0));
 
   useEffect(() => {
     const anim = Animated.loop(
@@ -136,7 +136,9 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
   const inputLayoutY = useRef<number>(0);
 
   // Reset on open
-  useEffect(() => {
+  const [visibleAnterior, setVisibleAnterior] = useState(visible);
+  if (visible !== visibleAnterior) {
+    setVisibleAnterior(visible);
     if (visible) {
       setStep('config');
       setAddressInput('');
@@ -144,7 +146,7 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
       setSelectedPlace(null);
       setGeneratedItinerary(null);
     }
-  }, [visible]);
+  }
 
   const handleInputChange = (text: string) => {
     setAddressInput(text);
