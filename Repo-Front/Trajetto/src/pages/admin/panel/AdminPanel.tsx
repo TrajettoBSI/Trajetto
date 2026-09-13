@@ -23,7 +23,7 @@ export default function AdminPanel() {
   const {
     activeTab, setActiveTab,
     filtro, opcoes, ativos, alterarFiltro, limparFiltro,
-    overview, countries, profiles, ageGroups,
+    overview, countries, profiles, ageGroups, perClient,
     itinOv, perMonth, categories, topRated, mostComment, mostVisited,
     loading, updating, refreshing, error, verifiedPct,
     userFirstName, logout, load, onRefresh,
@@ -163,6 +163,38 @@ export default function AdminPanel() {
             {perMonth.length > 0 && (
               <Section title={t('panel.itinerariesPerMonth')}>
                 <BarChart data={perMonth} labelKey="month" valueKey="count" />
+              </Section>
+            )}
+
+            {perClient && perClient.topClients.length > 0 && (
+              <Section title={t('dashboard.topClients')}>
+                <View>
+                  {perClient.topClients.map((c, i, arr) => (
+                    <RankRow
+                      key={i}
+                      index={i}
+                      isLast={i === arr.length - 1}
+                      name={c.user}
+                      subtitle={c.email}
+                      count={c.count}
+                      countLabel={t('dashboard.itineraryCount', { count: c.count })}
+                    />
+                  ))}
+                </View>
+              </Section>
+            )}
+
+            {perClient && perClient.clientsWithoutItinerary > 0 && (
+              <Section title={t('dashboard.clientsWithoutItinerary')}>
+                <View style={s.noItineraryBox}>
+                  <Text style={s.noItineraryCount}>{perClient.clientsWithoutItinerary}</Text>
+                  <Text style={s.noItineraryLabel}>
+                    {t('dashboard.clientsWithoutCount', { count: perClient.clientsWithoutItinerary })}
+                  </Text>
+                  <Text style={s.noItinerarySub}>
+                    {t('dashboard.clientsWithCount', { count: perClient.clientsWithItinerary })}
+                  </Text>
+                </View>
               </Section>
             )}
 

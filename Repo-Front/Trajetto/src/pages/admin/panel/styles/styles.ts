@@ -71,6 +71,11 @@ export const styles = (colors: AppColors) =>
     userListBtnText: { flex: 1, fontSize: 15, fontFamily: 'Inter-Medium', color: colors.gray900 },
     userListBtnArrow: { fontSize: 22, color: colors.gray300 },
 
+    noItineraryBox: { alignItems: 'center', paddingVertical: 8 },
+    noItineraryCount: { fontSize: 40, fontFamily: 'Inter-Bold', color: adminAccent.amber },
+    noItineraryLabel: { fontSize: 14, color: colors.gray500, textAlign: 'center', marginTop: 4 },
+    noItinerarySub: { fontSize: 12, color: colors.gray400, textAlign: 'center', marginTop: 2 },
+
     emptyBox: { alignItems: 'center', paddingVertical: 40, gap: 12 },
     emptyIcon: { fontSize: 48 },
     emptyText: { fontSize: 16, fontFamily: 'Inter-Medium', color: colors.gray700, textAlign: 'center' },
