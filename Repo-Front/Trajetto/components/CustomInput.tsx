@@ -5,7 +5,6 @@ import {
   Text,
   TouchableOpacity,
   StyleSheet,
-  Platform,
   KeyboardTypeOptions,
   ReturnKeyTypeOptions,
   StyleProp,

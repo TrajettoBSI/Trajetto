@@ -2,9 +2,6 @@ import React from 'react';
 import Svg, { Path, Circle, Line, Text as SvgText } from 'react-native-svg';
 
 export default function TrajettoLogo({ width = 280, height = 140 }) {
-  const scale = width / 680;
-  const h = height / (340 * scale);
-
   return (
     <Svg width={width} height={height} viewBox="0 0 680 340">
 

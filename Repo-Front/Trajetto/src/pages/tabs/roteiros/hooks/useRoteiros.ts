@@ -13,7 +13,7 @@ export function useRoteiros() {
 
   const { user } = useAuth();
   const router = useRouter();
-  const { itinerary, itineraries, loading, fetchAllItineraries, deleteItinerary, activateItinerary } = useItineraryStore();
+  const { itinerary, itineraries, loading, deleteItinerary, activateItinerary } = useItineraryStore();
   const [deleting, setDeleting] = useState<number | null>(null);
   const [activating, setActivating] = useState<number | null>(null);
   const [showGenerate, setShowGenerate] = useState(false);
@@ -21,10 +21,12 @@ export function useRoteiros() {
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
   const [bulkDeleting, setBulkDeleting] = useState(false);
 
+  const userId = user?.id;
+
   useFocusEffect(
     useCallback(() => {
-      if (user?.id) fetchAllItineraries(user.id);
-    }, [user?.id])
+      if (userId) useItineraryStore.getState().fetchAllItineraries(userId);
+    }, [userId])
   );
 
   const enterSelectMode = (id: number) => {
@@ -46,7 +48,8 @@ export function useRoteiros() {
   const toggleSelect = (id: number) => {
     setSelectedIds((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
       return next;
     });
   };

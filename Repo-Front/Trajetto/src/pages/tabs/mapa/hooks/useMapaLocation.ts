@@ -61,7 +61,7 @@ export function useMapaLocation() {
   useEffect(() => {
     if (!user?.id) return;
     if (!itinerary) fetchItinerary(user.id);
-  }, [user, itinerary]);
+  }, [user, itinerary, fetchItinerary]);
 
   useEffect(() => {
     if (!itinerary?.places?.length) return;
@@ -78,7 +78,7 @@ export function useMapaLocation() {
         }));
       }
 
-      const pairs: Array<[{ lat: number; lng: number }, { lat: number; lng: number }]> = [];
+      const pairs: [{ lat: number; lng: number }, { lat: number; lng: number }][] = [];
       if (itinerary.originLatitude != null) {
         pairs.push([
           { lat: itinerary.originLatitude, lng: itinerary.originLongitude! },
@@ -121,7 +121,7 @@ export function useMapaLocation() {
   useEffect(() => {
     pulseAnim.set(withRepeat(withTiming(1, { duration: 900 }), -1, true));
     return () => cancelAnimation(pulseAnim);
-  }, []);
+  }, [pulseAnim]);
 
   useEffect(() => {
     if (!points.length || focusedMapPlaceIndex === null) return;
@@ -132,7 +132,7 @@ export function useMapaLocation() {
     }, 100);
     const timer = setTimeout(() => { setFocusedMapPlace(null); isFocusingPin.current = false; }, 1200);
     return () => clearTimeout(timer);
-  }, [focusedMapPlaceIndex, points]);
+  }, [focusedMapPlaceIndex, points, setFocusedMapPlace]);
 
   const handlePinPress = (index: number) => {
     setHighlightedPlace(index);

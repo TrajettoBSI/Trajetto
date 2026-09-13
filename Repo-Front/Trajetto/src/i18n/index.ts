@@ -1,4 +1,4 @@
-import i18n from 'i18next';
+import i18n, { changeLanguage, use as registerPlugin } from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import * as Localization from 'expo-localization';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -80,7 +80,7 @@ const detectInitialLanguage = (): LanguageCode => {
   return deviceTag && isSupportedLanguage(deviceTag) ? deviceTag : DEFAULT_LANGUAGE;
 };
 
-i18n.use(initReactI18next).init({
+registerPlugin(initReactI18next).init({
   resources,
   lng: detectInitialLanguage(),
   fallbackLng: DEFAULT_LANGUAGE,
@@ -93,12 +93,12 @@ i18n.use(initReactI18next).init({
 // Sobrepoe pelo idioma que o usuario escolheu manualmente, se houver.
 AsyncStorage.getItem(LANGUAGE_STORAGE_KEY).then((saved) => {
   if (saved && isSupportedLanguage(saved) && saved !== i18n.language) {
-    i18n.changeLanguage(saved);
+    changeLanguage(saved);
   }
 });
 
 export async function setAppLanguage(code: LanguageCode): Promise<void> {
-  await i18n.changeLanguage(code);
+  await changeLanguage(code);
   await AsyncStorage.setItem(LANGUAGE_STORAGE_KEY, code);
 }
 

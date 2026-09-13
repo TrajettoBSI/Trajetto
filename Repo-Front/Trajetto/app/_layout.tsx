@@ -61,7 +61,6 @@ function RootLayoutNav() {
     const currentSegment = segments[0] ?? '';
     const publicRoutes = ['LoginScreen', 'RegisterScreen', 'ForgotPasswordScreen', 'ResetPasswordScreen', 'VerifyEmailScreen'];
     const inPublic = publicRoutes.includes(currentSegment);
-    const inQuizFlow = ['TravelerTestScreen', 'QuizScreen', 'QuizResultScreen'].includes(currentSegment);
     const inTabs = currentSegment === '(tabs)';
 
     const needsQuiz = !user?.isAdmin && (!user?.travelerProfile || user.travelerProfile === 'SKIPPED');
@@ -83,7 +82,7 @@ function RootLayoutNav() {
     if (fontsLoaded || fontError) {
       SplashScreen.hideAsync();
     }
-  }, [user, loading, segments, fontsLoaded, fontError]);
+  }, [user, loading, segments, fontsLoaded, fontError, router]);
 
   if (!fontsLoaded && !fontError) return null;
 

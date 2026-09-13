@@ -3,8 +3,7 @@ import { Text, View } from 'react-native';
 import { Marker, Polyline } from 'react-native-maps';
 import { PLACE_COLORS } from '@/constants/placeColors';
 import { useColors } from '@/src/theme';
-import { LatLng } from '../../mapaFormat';
-import { interpolateAlongPath, bearing } from '../../mapaFormat';
+import { LatLng, interpolateAlongPath, bearing } from '../../mapaFormat';
 import AnimatedDashedPolyline from '../AnimatedDashedPolyline/AnimatedDashedPolyline';
 import { styles } from './styles';
 

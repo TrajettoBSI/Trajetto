@@ -11,7 +11,6 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  TextInput,
   TouchableOpacity,
   View,
 } from 'react-native';
@@ -21,8 +20,7 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { PlaceSuggestion, searchAddresses } from '../services';
 import { getErrorMessage } from '../utils/apiError';
-import { Itinerary } from '../hooks/itineraryStore';
-import { useItineraryStore } from '../hooks/itineraryStore';
+import { Itinerary, useItineraryStore } from '../hooks/itineraryStore';
 import CustomButton from './CustomButton';
 import CustomInput from './CustomInput';
 import { Ionicons } from '@expo/vector-icons';
@@ -70,7 +68,7 @@ function OrbitLoader() {
     );
     anim.start();
     return () => anim.stop();
-  }, []);
+  }, [ballRot, arcProg]);
 
   const rotate = ballRot.interpolate({ inputRange: [0, 1], outputRange: ['0deg', '360deg'] });
   // Offset shrinks from full circumference (nothing drawn) → 0 (fully drawn)

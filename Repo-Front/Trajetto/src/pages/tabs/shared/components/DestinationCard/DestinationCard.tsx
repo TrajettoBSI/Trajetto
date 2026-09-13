@@ -37,7 +37,7 @@ export default function DestinationCard({
       withTiming(2, { duration: 70, easing: Easing.out(Easing.quad) }),
       withTiming(0, { duration: 60, easing: Easing.out(Easing.quad) }),
     );
-  }, [animKey]);
+  }, [animKey, swing]);
 
   const animStyle = useAnimatedStyle(() => ({
     transform: [

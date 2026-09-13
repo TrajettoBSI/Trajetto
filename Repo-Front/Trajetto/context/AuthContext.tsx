@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
+import React, { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react';
 import { authService, userService } from '../services';
 import { LoginRequest, RegisterRequest, User } from '../types/user';
 
@@ -65,11 +65,11 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     await authService.register(data);
   };
 
-  const refreshUser = async () => {
+  const refreshUser = useCallback(async () => {
     const freshUser = await userService.getProfile();
     await AsyncStorage.setItem('user', JSON.stringify(freshUser));
     setUser(freshUser);
-  };
+  }, []);
 
   return (
     <AuthContext.Provider value={{ user, loading, login, register, logout, refreshUser }}>
