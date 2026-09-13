@@ -54,9 +54,14 @@ export function useDashboard(recorte: StatsFilter, pronto: boolean): DashboardDa
   const [commented, setCommented] = useState<MostCommentedPlace[]>([]);
 
   const [loading, setLoading] = useState(true);
-  const [updating, setUpdating] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState('');
+
+  /**
+   * O recorte da última busca concluída. Enquanto ele difere do recorte
+   * pedido, os números na tela são do filtro anterior.
+   */
+  const [carregado, setCarregado] = useState<StatsFilter | null>(null);
 
   /**
    * Numera as buscas para que só a última mande na tela. Mudar dois seletores
@@ -64,62 +69,62 @@ export function useDashboard(recorte: StatsFilter, pronto: boolean): DashboardDa
    * sem isso, o painel exibiria o recorte anterior por cima do atual.
    */
   const buscaAtual = useRef(0);
-  const jaCarregouUmaVez = useRef(false);
 
-  const load = useCallback(async () => {
+  const load = useCallback(() => {
     const busca = ++buscaAtual.current;
+    const vigente = () => busca === buscaAtual.current;
 
-    try {
-      const [ov, co, pr, ag, cli, itin, mes, cat, vis, top, com] = await Promise.all([
-        statsService.getOverview(recorte),
-        statsService.getCountries(recorte),
-        statsService.getTravelerProfiles(recorte),
-        statsService.getAgeGroups(recorte),
-        statsService.getItinerariesPerUser(recorte),
-        statsService.getItineraryOverview(recorte),
-        statsService.getItinerariesPerMonth(recorte),
-        statsService.getPlacesByCategory(recorte),
-        statsService.getMostVisitedPlaces(recorte),
-        statsService.getTopRatedPlaces(recorte),
-        statsService.getMostCommentedPlaces(recorte),
-      ]);
-      if (busca !== buscaAtual.current) return;
+    return Promise.all([
+      statsService.getOverview(recorte),
+      statsService.getCountries(recorte),
+      statsService.getTravelerProfiles(recorte),
+      statsService.getAgeGroups(recorte),
+      statsService.getItinerariesPerUser(recorte),
+      statsService.getItineraryOverview(recorte),
+      statsService.getItinerariesPerMonth(recorte),
+      statsService.getPlacesByCategory(recorte),
+      statsService.getMostVisitedPlaces(recorte),
+      statsService.getTopRatedPlaces(recorte),
+      statsService.getMostCommentedPlaces(recorte),
+    ])
+      .then(([ov, co, pr, ag, cli, itin, mes, cat, vis, top, com]) => {
+        if (!vigente()) return;
 
-      setOverview(ov);
-      setCountries(co);
-      setProfiles(pr);
-      setAgeGroups(ag);
-      setPerClient(cli);
-      setItinerary(itin);
-      setPerMonth(mes);
-      setCategories(cat);
-      setVisited(vis);
-      setTopRated(top);
-      setCommented(com);
-      setError('');
-    } catch (e) {
-      if (busca !== buscaAtual.current) return;
-      setError(getErrorMessage(e, t('dashboard.loadError')));
-    } finally {
-      if (busca === buscaAtual.current) {
-        jaCarregouUmaVez.current = true;
+        setOverview(ov);
+        setCountries(co);
+        setProfiles(pr);
+        setAgeGroups(ag);
+        setPerClient(cli);
+        setItinerary(itin);
+        setPerMonth(mes);
+        setCategories(cat);
+        setVisited(vis);
+        setTopRated(top);
+        setCommented(com);
+        setError('');
+      })
+      .catch((e) => {
+        if (vigente()) setError(getErrorMessage(e, t('dashboard.loadError')));
+      })
+      .finally(() => {
+        if (!vigente()) return;
+        setCarregado(recorte);
         setLoading(false);
-        setUpdating(false);
         setRefreshing(false);
-      }
-    }
+      });
   }, [recorte, t]);
+
+  useEffect(() => {
+    if (!pronto) return;
+    load();
+  }, [pronto, load]);
 
   /**
    * Só a primeira busca toma a tela inteira. Trocar um filtro depois disso
    * mantém o painel e os seletores no lugar, com um aviso discreto de que os
    * números estão sendo refeitos.
    */
-  useEffect(() => {
-    if (!pronto) return;
-    if (jaCarregouUmaVez.current) setUpdating(true);
-    load();
-  }, [pronto, load]);
+  const updating = !loading && carregado !== null && carregado !== recorte;
 
   const onRefresh = () => { setRefreshing(true); load(); };
 
