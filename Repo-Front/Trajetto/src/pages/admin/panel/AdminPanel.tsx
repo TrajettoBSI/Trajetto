@@ -29,6 +29,38 @@ export default function AdminPanel() {
     userFirstName, logout, load, onRefresh,
   } = useAdminPanel();
 
+  const filtrando = ativos > 0;
+  const periodoOuCategoria = filtro.periodo !== 'todo' || filtro.category !== null;
+  const faixasEtarias = ageGroups.filter((g) => g.count > 0);
+  const totalClientes = (perClient?.clientsWithItinerary ?? 0) + (perClient?.clientsWithoutItinerary ?? 0);
+  const usuariosVazio = (overview?.totalUsers ?? 0) === 0;
+  const roteirosVazio = (itinOv?.totalItineraries ?? 0) === 0
+    && categories.length === 0 && topRated.length === 0
+    && mostComment.length === 0 && mostVisited.length === 0;
+
+  const semDadosNoGrafico = (
+    <Text style={s.emptyChartText}>
+      {t(filtrando ? 'panel.empty.chartFiltered' : 'panel.empty.chart')}
+    </Text>
+  );
+
+  const semDadosNaAba = (icone: string, titulo: string, descricao: string) => (
+    <>
+      <AsyncState
+        style={s.stateBox}
+        empty
+        emptyIcon={filtrando ? '🔍' : icone}
+        emptyTitle={filtrando ? t('panel.empty.titleFiltered') : titulo}
+        emptyDescription={filtrando ? t('panel.empty.descriptionFiltered') : descricao}
+      />
+      {filtrando && (
+        <TouchableOpacity style={[s.retryBtn, s.clearFiltersBtn]} onPress={limparFiltro} activeOpacity={0.85}>
+          <Text style={s.retryText}>{t('panel.empty.clearFilters')}</Text>
+        </TouchableOpacity>
+      )}
+    </>
+  );
+
   return (
     <SafeAreaView style={s.safe}>
 
@@ -99,46 +131,56 @@ export default function AdminPanel() {
           />
         ) : activeTab === 'usuarios' ? (
           <>
-            <View style={s.statsGrid}>
-              <StatCard icon="👥" label={t('panel.totalUsers')} value={overview?.totalUsers ?? 0} color={colors.primaryDark} />
-              <StatCard icon="🛡️" label={t('panel.admins')} value={overview?.totalAdmins ?? 0} color={adminAccent.violet} />
-              <StatCard icon="🗺️" label={t('panel.itineraries')} value={overview?.totalItineraries ?? 0} color={adminAccent.amber} />
-              <StatCard icon="✅" label={t('panel.verified')} value={overview?.verifiedUsers ?? 0} color={adminAccent.green} sub={t('panel.verifiedSub', { pct: verifiedPct })} />
-              <StatCard icon="⏳" label={t('panel.unverified')} value={overview?.unverifiedUsers ?? 0} color={adminAccent.red} />
-              {overview?.avgAge && (
-                <StatCard icon="🎂" label={t('panel.avgAge')} value={t('panel.avgAgeValue', { age: overview.avgAge })} color={adminAccent.cyan} />
-              )}
-            </View>
+            {periodoOuCategoria && (
+              <Text style={s.filterNote}>{t('panel.empty.usersScope')}</Text>
+            )}
 
-            <Section title={t('panel.verificationRate')}>
-              <View style={s.verifiedRow}>
-                <View style={s.verifiedBarTrack}>
-                  <View style={[s.verifiedBarFill, { width: `${verifiedPct}%` }]} />
+            {usuariosVazio ? (
+              semDadosNaAba('👥', t('panel.empty.title'), t('panel.empty.description'))
+            ) : (
+              <>
+                <View style={s.statsGrid}>
+                  <StatCard icon="👥" label={t('panel.totalUsers')} value={overview?.totalUsers ?? 0} color={colors.primaryDark} />
+                  <StatCard icon="🛡️" label={t('panel.admins')} value={overview?.totalAdmins ?? 0} color={adminAccent.violet} />
+                  <StatCard icon="🗺️" label={t('panel.itineraries')} value={overview?.totalItineraries ?? 0} color={adminAccent.amber} />
+                  <StatCard icon="✅" label={t('panel.verified')} value={overview?.verifiedUsers ?? 0} color={adminAccent.green} sub={t('panel.verifiedSub', { pct: verifiedPct })} />
+                  <StatCard icon="⏳" label={t('panel.unverified')} value={overview?.unverifiedUsers ?? 0} color={adminAccent.red} />
+                  {overview?.avgAge && (
+                    <StatCard icon="🎂" label={t('panel.avgAge')} value={t('panel.avgAgeValue', { age: overview.avgAge })} color={adminAccent.cyan} />
+                  )}
                 </View>
-                <Text style={s.verifiedPct}>{verifiedPct}%</Text>
-              </View>
-              <View style={s.verifiedLegend}>
-                <Text style={s.verifiedLegendText}>{t('panel.verifiedLegend', { count: overview?.verifiedUsers })}</Text>
-                <Text style={s.verifiedLegendText}>{t('panel.unverifiedLegend', { count: overview?.unverifiedUsers })}</Text>
-              </View>
-            </Section>
 
-            {profiles.length > 0 && (
-              <Section title={t('panel.travelerProfiles')}>
-                <DonutLegend data={profiles} labelKey="profile" valueKey="count" />
-              </Section>
-            )}
+                <Section title={t('panel.verificationRate')}>
+                  <View style={s.verifiedRow}>
+                    <View style={s.verifiedBarTrack}>
+                      <View style={[s.verifiedBarFill, { width: `${verifiedPct}%` }]} />
+                    </View>
+                    <Text style={s.verifiedPct}>{verifiedPct}%</Text>
+                  </View>
+                  <View style={s.verifiedLegend}>
+                    <Text style={s.verifiedLegendText}>{t('panel.verifiedLegend', { count: overview?.verifiedUsers })}</Text>
+                    <Text style={s.verifiedLegendText}>{t('panel.unverifiedLegend', { count: overview?.unverifiedUsers })}</Text>
+                  </View>
+                </Section>
 
-            {ageGroups.filter((g) => g.count > 0).length > 0 && (
-              <Section title={t('panel.ageGroups')}>
-                <BarChart data={ageGroups.filter((g) => g.count > 0)} labelKey="group" valueKey="count" />
-              </Section>
-            )}
+                <Section title={t('panel.travelerProfiles')}>
+                  {profiles.length > 0
+                    ? <DonutLegend data={profiles} labelKey="profile" valueKey="count" />
+                    : semDadosNoGrafico}
+                </Section>
 
-            {countries.length > 0 && (
-              <Section title={t('panel.countries', { count: countries.length })}>
-                <BarChart data={countries} labelKey="country" valueKey="count" />
-              </Section>
+                <Section title={t('panel.ageGroups')}>
+                  {faixasEtarias.length > 0
+                    ? <BarChart data={faixasEtarias} labelKey="group" valueKey="count" />
+                    : semDadosNoGrafico}
+                </Section>
+
+                <Section title={t('panel.countries', { count: countries.length })}>
+                  {countries.length > 0
+                    ? <BarChart data={countries} labelKey="country" valueKey="count" />
+                    : semDadosNoGrafico}
+                </Section>
+              </>
             )}
 
             <TouchableOpacity
@@ -151,6 +193,8 @@ export default function AdminPanel() {
               <Text style={s.userListBtnArrow}>›</Text>
             </TouchableOpacity>
           </>
+        ) : roteirosVazio ? (
+          semDadosNaAba('📊', t('panel.noPlacesData'), t('panel.noPlacesDataSub'))
         ) : (
           <>
             <View style={s.statsGrid}>
@@ -160,14 +204,14 @@ export default function AdminPanel() {
               <StatCard icon="✅" label={t('panel.withRating')} value={itinOv?.ratedCount ?? 0} color={adminAccent.green} sub={t('panel.withoutRating', { count: itinOv?.unratedCount ?? 0 })} />
             </View>
 
-            {perMonth.length > 0 && (
-              <Section title={t('panel.itinerariesPerMonth')}>
-                <BarChart data={perMonth} labelKey="month" valueKey="count" />
-              </Section>
-            )}
+            <Section title={t('panel.itinerariesPerMonth')}>
+              {perMonth.length > 0
+                ? <BarChart data={perMonth} labelKey="month" valueKey="count" />
+                : semDadosNoGrafico}
+            </Section>
 
-            {perClient && perClient.topClients.length > 0 && (
-              <Section title={t('dashboard.topClients')}>
+            <Section title={t('dashboard.topClients')}>
+              {perClient && perClient.topClients.length > 0 ? (
                 <View>
                   {perClient.topClients.map((c, i, arr) => (
                     <RankRow
@@ -181,11 +225,11 @@ export default function AdminPanel() {
                     />
                   ))}
                 </View>
-              </Section>
-            )}
+              ) : semDadosNoGrafico}
+            </Section>
 
-            {perClient && perClient.clientsWithoutItinerary > 0 && (
-              <Section title={t('dashboard.clientsWithoutItinerary')}>
+            <Section title={t('dashboard.clientsWithoutItinerary')}>
+              {perClient && totalClientes > 0 ? (
                 <View style={s.noItineraryBox}>
                   <Text style={s.noItineraryCount}>{perClient.clientsWithoutItinerary}</Text>
                   <Text style={s.noItineraryLabel}>
@@ -195,17 +239,17 @@ export default function AdminPanel() {
                     {t('dashboard.clientsWithCount', { count: perClient.clientsWithItinerary })}
                   </Text>
                 </View>
-              </Section>
-            )}
+              ) : semDadosNoGrafico}
+            </Section>
 
-            {categories.length > 0 && (
-              <Section title={t('panel.placesByCategory')}>
-                <DonutLegend data={categories} labelKey="category" valueKey="count" />
-              </Section>
-            )}
+            <Section title={t('panel.placesByCategory')}>
+              {categories.length > 0
+                ? <DonutLegend data={categories} labelKey="category" valueKey="count" />
+                : semDadosNoGrafico}
+            </Section>
 
-            {topRated.length > 0 && (
-              <Section title={t('panel.topRatedPlaces')}>
+            <Section title={t('panel.topRatedPlaces')}>
+              {topRated.length > 0 ? (
                 <View>
                   {topRated.slice(0, 8).map((item, i, arr) => (
                     <RankRow
@@ -219,11 +263,11 @@ export default function AdminPanel() {
                     />
                   ))}
                 </View>
-              </Section>
-            )}
+              ) : semDadosNoGrafico}
+            </Section>
 
-            {mostComment.length > 0 && (
-              <Section title={t('panel.mostCommentedPlaces')}>
+            <Section title={t('panel.mostCommentedPlaces')}>
+              {mostComment.length > 0 ? (
                 <View>
                   {mostComment.slice(0, 8).map((item, i, arr) => (
                     <RankRow
@@ -237,22 +281,14 @@ export default function AdminPanel() {
                     />
                   ))}
                 </View>
-              </Section>
-            )}
+              ) : semDadosNoGrafico}
+            </Section>
 
-            {mostVisited.length > 0 && (
-              <Section title={t('panel.mostVisitedPlaces')}>
-                <BarChart data={mostVisited} labelKey="name" valueKey="count" />
-              </Section>
-            )}
-
-            {topRated.length === 0 && mostComment.length === 0 && mostVisited.length === 0 && (
-              <View style={s.emptyBox}>
-                <Text style={s.emptyIcon}>📊</Text>
-                <Text style={s.emptyText}>{t('panel.noPlacesData')}</Text>
-                <Text style={s.emptySubText}>{t('panel.noPlacesDataSub')}</Text>
-              </View>
-            )}
+            <Section title={t('panel.mostVisitedPlaces')}>
+              {mostVisited.length > 0
+                ? <BarChart data={mostVisited} labelKey="name" valueKey="count" />
+                : semDadosNoGrafico}
+            </Section>
           </>
         )}
       </ScrollView>

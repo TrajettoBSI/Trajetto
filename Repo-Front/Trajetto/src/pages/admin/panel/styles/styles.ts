@@ -76,8 +76,7 @@ export const styles = (colors: AppColors) =>
     noItineraryLabel: { fontSize: 14, color: colors.gray500, textAlign: 'center', marginTop: 4 },
     noItinerarySub: { fontSize: 12, color: colors.gray400, textAlign: 'center', marginTop: 2 },
 
-    emptyBox: { alignItems: 'center', paddingVertical: 40, gap: 12 },
-    emptyIcon: { fontSize: 48 },
-    emptyText: { fontSize: 16, fontFamily: 'Inter-Medium', color: colors.gray700, textAlign: 'center' },
-    emptySubText: { fontSize: 13, color: colors.gray400, textAlign: 'center', lineHeight: 20 },
+    emptyChartText: { fontSize: 13, color: colors.gray400, textAlign: 'center', paddingVertical: 12 },
+    filterNote: { fontSize: 12, color: colors.gray500, lineHeight: 18, marginBottom: 12 },
+    clearFiltersBtn: { alignSelf: 'center' },
   });

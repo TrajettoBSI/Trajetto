@@ -6,25 +6,16 @@ import { styles } from './styles';
 
 type AdminBannersProps = {
   onPressUsers: () => void;
-  onPressDashboard: () => void;
 };
 
-export default function AdminBanners({ onPressUsers, onPressDashboard }: AdminBannersProps) {
+export default function AdminBanners({ onPressUsers }: AdminBannersProps) {
   const { t } = useTranslation('roteiros');
   const s = styles(useColors());
   return (
-    <>
-      <TouchableOpacity style={s.adminBanner} onPress={onPressUsers} activeOpacity={0.8}>
-        <Text style={s.bannerIcon}>🛡️</Text>
-        <Text style={s.adminBannerText}>{t('adminBanners.adminPanel')}</Text>
-        <Text style={s.adminBannerArrow}>›</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity style={s.dashboardBanner} onPress={onPressDashboard} activeOpacity={0.8}>
-        <Text style={s.bannerIcon}>📊</Text>
-        <Text style={s.dashboardBannerText}>{t('adminBanners.dashboard')}</Text>
-        <Text style={s.dashboardBannerArrow}>›</Text>
-      </TouchableOpacity>
-    </>
+    <TouchableOpacity style={s.adminBanner} onPress={onPressUsers} activeOpacity={0.8}>
+      <Text style={s.bannerIcon}>🛡️</Text>
+      <Text style={s.adminBannerText}>{t('adminBanners.adminPanel')}</Text>
+      <Text style={s.adminBannerArrow}>›</Text>
+    </TouchableOpacity>
   );
 }

@@ -79,7 +79,6 @@ export default function Roteiros() {
       {!selectMode && user?.isAdmin && (
         <AdminBanners
           onPressUsers={() => router.push('/UserListScreen')}
-          onPressDashboard={() => router.push('/DashboardScreen')}
         />
       )}
 
