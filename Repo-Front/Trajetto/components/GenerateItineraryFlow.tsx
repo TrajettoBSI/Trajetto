@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
-  Alert,
   Animated,
   Easing,
   Keyboard,
@@ -20,6 +19,7 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { PlaceSuggestion, searchAddresses } from '../services';
 import { getErrorMessage } from '../utils/apiError';
+import { FeedbackState } from '../src/components/feedback';
 import { Itinerary, useItineraryStore } from '../hooks/itineraryStore';
 import CustomButton from './CustomButton';
 import CustomInput from './CustomInput';
@@ -124,6 +124,7 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
   const { generateItinerary, acceptGeneratedItinerary } = useItineraryStore();
 
   const [step, setStep] = useState<Step>('config');
+  const [erro, setErro] = useState('');
   const [addressInput, setAddressInput] = useState('');
   const [suggestions, setSuggestions] = useState<PlaceSuggestion[]>([]);
   const [searching, setSearching] = useState(false);
@@ -194,31 +195,25 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
     return result;
   };
 
-  const handleGenerate = async () => {
+  // A falha devolve o usuario para onde ele estava, com o endereco e o roteiro que ja
+  // tinha, e o aviso aparece ali mesmo com a opcao de tentar de novo.
+  const gerar = async (voltarPara: Step) => {
     if (!selectedPlace || !user) return;
+    setErro('');
     setStep('loading');
     try {
       const result = await runGenerate();
       setGeneratedItinerary(result);
       setStep('preview');
     } catch (e) {
-      setStep('config');
-      Alert.alert(t('common:error'), getErrorMessage(e, t('roteiros:generateFlow.genericError')));
+      setStep(voltarPara);
+      setErro(getErrorMessage(e, t('roteiros:generateFlow.genericError')));
     }
   };
 
-  const handleRegenerate = async () => {
-    if (!selectedPlace || !user) return;
-    setStep('loading');
-    try {
-      const result = await runGenerate();
-      setGeneratedItinerary(result);
-      setStep('preview');
-    } catch (e) {
-      setStep('config');
-      Alert.alert(t('common:error'), getErrorMessage(e, t('roteiros:generateFlow.genericError')));
-    }
-  };
+  const handleGenerate = () => gerar('config');
+
+  const handleRegenerate = () => gerar(generatedItinerary ? 'preview' : 'config');
 
   const handleAccept = () => {
     if (!generatedItinerary) return;
@@ -339,6 +334,16 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
                 </View>
               )}
 
+              {erro ? (
+                <FeedbackState
+                  variant="error"
+                  layout="inline"
+                  message={erro}
+                  onAction={handleGenerate}
+                  style={styles.feedback}
+                />
+              ) : null}
+
               <CustomButton
                 title={t('roteiros:generateFlow.generateButton')}
                 onPress={handleGenerate}
@@ -407,6 +412,16 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
                 })}
               </View>
 
+              {erro ? (
+                <FeedbackState
+                  variant="error"
+                  layout="inline"
+                  message={erro}
+                  onAction={handleRegenerate}
+                  style={styles.feedback}
+                />
+              ) : null}
+
               {/* Ações */}
               <View style={styles.previewActions}>
                 <TouchableOpacity style={styles.regenBtn} onPress={handleRegenerate} activeOpacity={0.7}>
@@ -446,6 +461,8 @@ const styles = StyleSheet.create({
   closeBtnText: { fontSize: 18, color: 'rgba(255,255,255,0.8)' },
 
   content: { padding: 24, paddingBottom: 80 },
+
+  feedback: { marginTop: 18 },
 
   sectionLabel: {
     fontSize: Platform.OS === 'ios' ? 11 : 16,

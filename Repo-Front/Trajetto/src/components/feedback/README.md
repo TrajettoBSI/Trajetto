@@ -81,6 +81,9 @@ verificação de conta e perfil.
 **Telas de conteúdo:** roteiro, mapa, exploração, lista de roteiros, lista de usuários e painel
 gerencial.
 
+**Geração de roteiro:** a espera mantém a animação própria dela, que é longa e faz parte da
+identidade do app; a falha passou a aparecer dentro do fluxo, sem devolver o usuário ao começo.
+
 ## Como conferir
 
 ```bash
