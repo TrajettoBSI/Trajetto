@@ -1,11 +1,14 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'expo-router';
 import { Place, placesService } from '@/services';
+import { getErrorMessage } from '@/utils/apiError';
 
 export type ExploreData = {
-  spots: Place[];
+  spots: Place[] | null;
   categories: string[];
   loading: boolean;
+  error: string;
+  reload: () => void;
   search: string;
   selectedCategory: string;
   showFilter: boolean;
@@ -24,9 +27,12 @@ export type ExploreData = {
 export function useExplore(): ExploreData {
   const router = useRouter();
 
-  const [spots, setSpots] = useState<Place[]>([]);
+  // Comeca em null, e nao em lista vazia: antes da primeira resposta nao se sabe ainda se
+  // existe ou nao lugar para mostrar.
+  const [spots, setSpots] = useState<Place[] | null>(null);
   const [categories, setCategories] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [showFilter, setShowFilter] = useState(false);
@@ -37,6 +43,7 @@ export function useExplore(): ExploreData {
 
   const fetchSpots = useCallback(async (searchTerm: string, category: string) => {
     setLoading(true);
+    setError('');
     try {
       const results = await placesService.getAll({
         search: searchTerm || undefined,
@@ -44,8 +51,8 @@ export function useExplore(): ExploreData {
       });
       setSpots(results);
       setSearched(true);
-    } catch {
-      setSpots([]);
+    } catch (e) {
+      setError(getErrorMessage(e));
     } finally {
       setLoading(false);
     }
@@ -58,7 +65,7 @@ export function useExplore(): ExploreData {
         setSpots(results);
         setSearched(true);
       })
-      .catch(() => setSpots([]))
+      .catch((e) => setError(getErrorMessage(e)))
       .finally(() => setLoading(false));
   }, []);
 
@@ -91,6 +98,8 @@ export function useExplore(): ExploreData {
     spots,
     categories,
     loading,
+    error,
+    reload: () => fetchSpots(search, selectedCategory),
     search,
     selectedCategory,
     showFilter,

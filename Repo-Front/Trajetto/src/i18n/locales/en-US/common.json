@@ -19,5 +19,22 @@
   "all": "All",
   "genericError": "Couldn't complete the operation. Please try again.",
   "tabHome": "Home",
-  "tabMap": "Map"
+  "tabMap": "Map",
+  "feedback": {
+    "loading": {
+      "title": "Loading...",
+      "message": "Just a moment while we fetch the information.",
+      "action": ""
+    },
+    "error": {
+      "title": "Something went wrong",
+      "message": "We couldn't load the information. Check your connection and try again.",
+      "action": "Try again"
+    },
+    "empty": {
+      "title": "Nothing here yet",
+      "message": "We found nothing to show right now.",
+      "action": "Refresh"
+    }
+  }
 }

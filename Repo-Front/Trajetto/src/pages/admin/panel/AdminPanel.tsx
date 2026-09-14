@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { adminAccent, useColors } from '@/src/theme';
-import AsyncState from '@/src/components/AsyncState/AsyncState';
+import { FeedbackState } from '@/src/components/feedback';
 import { useAdminPanel } from './hooks/useAdminPanel';
 import { styles } from './styles/styles';
 import BarChart from '@/src/components/charts/BarChart/BarChart';
@@ -39,26 +39,26 @@ export default function AdminPanel() {
     && mostComment.length === 0 && mostVisited.length === 0;
 
   const semDadosNoGrafico = (
-    <Text style={s.emptyChartText}>
-      {t(filtrando ? 'panel.empty.chartFiltered' : 'panel.empty.chart')}
-    </Text>
+    <FeedbackState
+      variant="empty"
+      layout="inline"
+      icon="📈"
+      title=""
+      message={t(filtrando ? 'panel.empty.chartFiltered' : 'panel.empty.chart')}
+    />
   );
 
   const semDadosNaAba = (icone: string, titulo: string, descricao: string) => (
-    <>
-      <AsyncState
-        style={s.stateBox}
-        empty
-        emptyIcon={filtrando ? '🔍' : icone}
-        emptyTitle={filtrando ? t('panel.empty.titleFiltered') : titulo}
-        emptyDescription={filtrando ? t('panel.empty.descriptionFiltered') : descricao}
-      />
-      {filtrando && (
-        <TouchableOpacity style={[s.retryBtn, s.clearFiltersBtn]} onPress={limparFiltro} activeOpacity={0.85}>
-          <Text style={s.retryText}>{t('panel.empty.clearFilters')}</Text>
-        </TouchableOpacity>
-      )}
-    </>
+    <FeedbackState
+      variant="empty"
+      layout="block"
+      style={s.stateBox}
+      icon={filtrando ? '🔍' : icone}
+      title={filtrando ? t('panel.empty.titleFiltered') : titulo}
+      message={filtrando ? t('panel.empty.descriptionFiltered') : descricao}
+      actionLabel={t('panel.empty.clearFilters')}
+      onAction={filtrando ? limparFiltro : undefined}
+    />
   );
 
   return (
@@ -121,13 +121,13 @@ export default function AdminPanel() {
         />
 
         {loading || error ? (
-          <AsyncState
+          <FeedbackState
+            variant={loading ? 'loading' : 'error'}
+            layout="block"
             style={s.stateBox}
-            loading={loading}
-            loadingText={t('panel.loadingData')}
-            spinnerColor={colors.primaryDark}
-            error={error}
-            onRetry={load}
+            title={loading ? t('panel.loadingData') : undefined}
+            message={loading ? '' : error}
+            onAction={load}
           />
         ) : activeTab === 'usuarios' ? (
           <>

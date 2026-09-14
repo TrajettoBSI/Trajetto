@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { ItineraryService } from '../services';
+import { getErrorMessage } from '../utils/apiError';
 
 export interface Places {
   name: string;
@@ -59,8 +60,10 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
       set({ loading: true, error: null });
       const data = await ItineraryService.getItinerary(userId);
       set({ itinerary: data ?? null, loading: false });
-    } catch {
-      set({ itinerary: null, error: null, loading: false });
+    } catch (e) {
+      // Guardar a falha permite a tela dizer que algo deu errado, em vez de mostrar
+      // "voce ainda nao tem roteiro" para quem esta so sem internet.
+      set({ itinerary: null, error: getErrorMessage(e), loading: false });
     }
   },
 
@@ -70,8 +73,8 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
       const data: Itinerary[] = await ItineraryService.getAllItineraries(userId);
       const active = data.find(i => i.active) ?? null;
       set({ itineraries: data, itinerary: active, loading: false });
-    } catch {
-      set({ itineraries: [], itinerary: null, error: null, loading: false });
+    } catch (e) {
+      set({ itineraries: [], itinerary: null, error: getErrorMessage(e), loading: false });
     }
   },
 

@@ -10,6 +10,7 @@ export type VerifyEmailData = {
   email: string;
   code: string;
   loading: boolean;
+  error: string;
   handleVerify: (manualCode?: string) => Promise<void>;
   handleChangeCode: (text: string) => void;
 };
@@ -21,21 +22,23 @@ export function useVerifyEmail(): VerifyEmailData {
   const emailStr = String(email ?? '');
   const [code, setCode] = useState('');
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleVerify = async (manualCode?: string) => {
     const codeToVerify = manualCode ?? code;
     Keyboard.dismiss();
     if (codeToVerify.length < 6) {
-      showAlert(t('codeTooShortMessage'), { title: t('codeTooShortTitle') });
+      setError(t('codeTooShortMessage'));
       return;
     }
+    setError('');
     setLoading(true);
     try {
       await authService.verifyEmail(emailStr, codeToVerify);
       showAlert(t('successMessage'), { title: t('successTitle') });
       router.replace('/LoginScreen');
     } catch (e) {
-      showAlert(getErrorMessage(e, t('verifyError')), { title: t('common:error') });
+      setError(getErrorMessage(e, t('verifyError')));
     } finally {
       setLoading(false);
     }
@@ -43,11 +46,12 @@ export function useVerifyEmail(): VerifyEmailData {
 
   const handleChangeCode = (text: string) => {
     setCode(text);
+    if (error) setError('');
     if (text.length === 6) {
       Keyboard.dismiss();
       setTimeout(() => handleVerify(text), 150);
     }
   };
 
-  return { email: emailStr, code, loading, handleVerify, handleChangeCode };
+  return { email: emailStr, code, loading, error, handleVerify, handleChangeCode };
 }

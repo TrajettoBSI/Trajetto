@@ -1,6 +1,5 @@
 {
   "userListTitle": "Usuários",
-
   "panel": {
     "headerTitle": "Painel Admin",
     "greeting": "Olá, {{name}}",
@@ -56,7 +55,6 @@
       "usersScope": "Período e categoria não se aplicam aos indicadores de usuários: aqui valem perfil e país."
     }
   },
-
   "dashboard": {
     "headerTitle": "Dashboard",
     "headerSub": "Visão geral da plataforma Trajetto",
@@ -129,7 +127,6 @@
     "commentsCount_one": "{{count}} comentário",
     "commentsCount_other": "{{count}} comentários"
   },
-
   "userList": {
     "headerTitle": "Painel Admin",
     "greeting": "Olá, {{name}} 🛡️",
@@ -142,9 +139,10 @@
     "roleUser": "👤 Usuário",
     "deleteConfirm": "Deseja excluir {{name}}?",
     "deleteTitle": "Excluir usuário",
-    "deleteError": "Não foi possível excluir o usuário."
+    "deleteError": "Não foi possível excluir o usuário.",
+    "emptyTitle": "Nenhum usuário cadastrado",
+    "emptyMessage": "Assim que alguém criar uma conta, ela aparece nesta lista."
   },
-
   "userDetail": {
     "personalInfo": "Informações pessoais",
     "firstNameLabel": "Nome",

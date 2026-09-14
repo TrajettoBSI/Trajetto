@@ -11,13 +11,13 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 
-const REGRA = 'components/feedback/feedbackStatus.ts';
+const REGRA = 'src/components/feedback/feedbackStatus.ts';
 
 // A regra é escrita em TypeScript como o resto do app; aqui ela é compilada para uma pasta
 // temporária só para poder ser executada direto pelo Node.
 const saida = fs.mkdtempSync(path.join(os.tmpdir(), 'teste-feedback-'));
 try {
-  execSync(`npx tsc ${REGRA} --outDir "${saida}" --module commonjs --target es2019 --skipLibCheck`, {
+  execSync(`npx tsc ${REGRA} --outDir "${saida}" --module commonjs --target es2019 --skipLibCheck --ignoreConfig`, {
     stdio: ['ignore', 'pipe', 'pipe'],
   });
 } catch (erro) {

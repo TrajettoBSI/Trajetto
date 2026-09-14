@@ -7,7 +7,7 @@ import CustomButton from '@/components/CustomButton';
 import { PLACE_COLORS } from '@/constants/placeColors';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { useColors } from '@/src/theme';
-import AsyncState from '@/src/components/AsyncState/AsyncState';
+import { AsyncBoundary } from '@/src/components/feedback';
 import NoItineraryEmptyState from '@/src/pages/tabs/shared/components/NoItineraryEmptyState/NoItineraryEmptyState';
 import { useItinerario } from './hooks/useItinerario';
 import { styles } from './styles/styles';
@@ -25,6 +25,8 @@ export default function Itinerario() {
     destIndex,
     itinerary,
     loading,
+    error,
+    reload,
     setFocusedMapPlace,
     scrollRef,
     highlightedPlaceIndex,
@@ -41,80 +43,84 @@ export default function Itinerario() {
     router,
   } = useItinerario();
 
-  if (loading) {
-    return <AsyncState style={s.center} loading loadingText={t('loadingText')} />;
-  }
-
-  if (!itinerary) {
-    return <NoItineraryEmptyState destIndex={destIndex} />;
-  }
-
-  const sorted = [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex);
-
   return (
-    <View style={s.safe}>
-      <View style={{ height: insets.top, backgroundColor: colors.primary }} />
-      <ScrollView
-        ref={scrollRef}
-        style={s.container}
-        contentContainerStyle={s.content}
-        showsVerticalScrollIndicator={false}
-      >
-        <ItineraryHeaderCard
-          startDate={itinerary.startDate}
-          endDate={itinerary.endDate}
-          stopsCount={sorted.length}
-        />
+    <AsyncBoundary
+      state={{ loading, error, data: itinerary }}
+      onRetry={reload}
+      style={s.center}
+      loading={{ title: t('loadingText'), message: '' }}
+      renderEmpty={() => <NoItineraryEmptyState destIndex={destIndex} />}
+    >
+      {(roteiro) => {
+        const sorted = [...roteiro.places].sort((a, b) => a.orderIndex - b.orderIndex);
 
-        <Text style={s.sectionLabel}>{t('sectionLabel')}</Text>
-        <Text style={s.swipeHint}>{t('swipeHint')}</Text>
-
-        <View style={s.timeline}>
-          {sorted.map((place, idx) => {
-            const isPast = isPlacePast(itinerary.startDate, place.estimatedVisitTime);
-            const color = PLACE_COLORS[idx % PLACE_COLORS.length];
-            const isLast = idx === sorted.length - 1;
-            const isHighlighted = highlightedPlaceIndex === idx;
-
-            return (
-              <TimelineRow
-                key={`${place.name}-${place.orderIndex}`}
-                place={place}
-                idx={idx}
-                color={color}
-                isPast={isPast}
-                isLast={isLast}
-                isHighlighted={isHighlighted}
-                onLayout={(e) => registerCardOffset(idx, e.nativeEvent.layout.y, sorted.length)}
-                onSwipeLeft={() => handleSwipeLeft(place)}
-                onPress={() => {
-                  setFocusedMapPlace(idx);
-                  router.push({ pathname: '/mapa', params: { from: 'itinerario' } });
-                }}
-                onInfoPress={() => rating.openBottomSheet(place)}
+        return (
+          <View style={s.safe}>
+            <View style={{ height: insets.top, backgroundColor: colors.primary }} />
+            <ScrollView
+              ref={scrollRef}
+              style={s.container}
+              contentContainerStyle={s.content}
+              showsVerticalScrollIndicator={false}
+            >
+              <ItineraryHeaderCard
+                startDate={roteiro.startDate}
+                endDate={roteiro.endDate}
+                stopsCount={sorted.length}
               />
-            );
-          })}
-        </View>
 
-        <CustomButton
-          title={t('exportPdf')}
-          onPress={handleExportPDF}
-          icon={<Ionicons name="download-outline" size={22} color={colors.white} />}
-          style={s.btnExport}
-        />
-      </ScrollView>
+              <Text style={s.sectionLabel}>{t('sectionLabel')}</Text>
+              <Text style={s.swipeHint}>{t('swipeHint')}</Text>
 
-      <AlternativesModal
-        visible={showAltModal}
-        swipedPlace={swipedPlace}
-        alternatives={alternatives}
-        loading={loadingAlts}
-        onSelect={handleSelectAlternative}
-        onCancel={handleCancelAlt}
-      />
+              <View style={s.timeline}>
+                {sorted.map((place, idx) => {
+                  const isPast = isPlacePast(roteiro.startDate, place.estimatedVisitTime);
+                  const color = PLACE_COLORS[idx % PLACE_COLORS.length];
+                  const isLast = idx === sorted.length - 1;
+                  const isHighlighted = highlightedPlaceIndex === idx;
 
-      <RatingBottomSheet {...rating} />
-    </View>
+                  return (
+                    <TimelineRow
+                      key={`${place.name}-${place.orderIndex}`}
+                      place={place}
+                      idx={idx}
+                      color={color}
+                      isPast={isPast}
+                      isLast={isLast}
+                      isHighlighted={isHighlighted}
+                      onLayout={(e) => registerCardOffset(idx, e.nativeEvent.layout.y, sorted.length)}
+                      onSwipeLeft={() => handleSwipeLeft(place)}
+                      onPress={() => {
+                        setFocusedMapPlace(idx);
+                        router.push({ pathname: '/mapa', params: { from: 'itinerario' } });
+                      }}
+                      onInfoPress={() => rating.openBottomSheet(place)}
+                    />
+                  );
+                })}
+              </View>
+
+              <CustomButton
+                title={t('exportPdf')}
+                onPress={handleExportPDF}
+                icon={<Ionicons name="download-outline" size={22} color={colors.white} />}
+                style={s.btnExport}
+              />
+            </ScrollView>
+
+            <AlternativesModal
+              visible={showAltModal}
+              swipedPlace={swipedPlace}
+              alternatives={alternatives}
+              loading={loadingAlts}
+              onSelect={handleSelectAlternative}
+              onCancel={handleCancelAlt}
+            />
+
+            <RatingBottomSheet {...rating} />
+          </View>
+        );
+      }}
+    </AsyncBoundary>
   );
 }

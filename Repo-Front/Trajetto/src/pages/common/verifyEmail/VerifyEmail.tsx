@@ -7,6 +7,7 @@ import CustomInput from '@/components/CustomInput';
 import CustomButton from '@/components/CustomButton';
 import Logo from '@/assets/appImgs/logo.svg';
 import { useColors } from '@/src/theme';
+import { FeedbackState } from '@/src/components/feedback';
 import { useVerifyEmail } from './hooks/useVerifyEmail';
 import { styles } from './styles/styles';
 
@@ -15,7 +16,7 @@ export default function VerifyEmail() {
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
-  const { email, code, loading, handleVerify, handleChangeCode } = useVerifyEmail();
+  const { email, code, loading, error, handleVerify, handleChangeCode } = useVerifyEmail();
 
   return (
     <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
@@ -45,6 +46,10 @@ export default function VerifyEmail() {
                 {t('subtitle')}{'\n'}
                 <Text style={s.emailHighlight}>{email}</Text>
               </Text>
+
+              {error ? (
+                <FeedbackState variant="error" layout="inline" message={error} style={s.feedback} />
+              ) : null}
 
               <CustomInput
                 type="code"

@@ -4,7 +4,11 @@ import { AppColors } from '@/src/theme';
 export const styles = (colors: AppColors) =>
   StyleSheet.create({
     flex: { flex: 1, backgroundColor: colors.backgroundMuted },
-    loadingCenter: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.backgroundMuted },
+    feedback: {
+      marginBottom: 16,
+      borderLeftWidth: 4,
+      borderLeftColor: colors.error,
+    },
     content: { flexGrow: 1, paddingTop: 24 },
     avatarWrapper: { paddingHorizontal: 24 },
     avatarSection: { alignItems: 'center', marginBottom: 28 },

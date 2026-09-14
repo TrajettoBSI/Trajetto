@@ -21,6 +21,7 @@ export type RegisterData = {
   country: string;
   telephone: string;
   loading: boolean;
+  error: string;
   errors: Errors;
   showCountries: boolean;
   onChangeFirstName: (t: string) => void;
@@ -50,6 +51,7 @@ export function useRegister(): RegisterData {
   const [country, setCountry] = useState('');
   const [telephone, setTelephone] = useState('');
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const [showCountries, setShowCountries] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
 
@@ -67,6 +69,7 @@ export function useRegister(): RegisterData {
       return;
     }
     setErrors({});
+    setError('');
     try {
       setLoading(true);
       await register({ firstName, lastName, email, password, birthDate: toBirthDateISO(birthDate), country, telephone });
@@ -75,7 +78,7 @@ export function useRegister(): RegisterData {
     } catch (e) {
       const fieldErrors = getFieldErrors(e);
       if (Object.keys(fieldErrors).length > 0) setErrors(fieldErrors);
-      showAlert(getErrorMessage(e, t('register:createAccountError')), { title: t('common:error') });
+      setError(getErrorMessage(e, t('register:createAccountError')));
     } finally {
       setLoading(false);
     }
@@ -91,6 +94,7 @@ export function useRegister(): RegisterData {
     country,
     telephone,
     loading,
+    error,
     errors,
     showCountries,
     onChangeFirstName: (t) => { setFirstName(maskName(t)); clearError('firstName'); },

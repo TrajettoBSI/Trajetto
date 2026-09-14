@@ -19,5 +19,22 @@
   "all": "Todos",
   "genericError": "No se pudo completar la operación. Inténtalo de nuevo.",
   "tabHome": "Inicio",
-  "tabMap": "Mapa"
+  "tabMap": "Mapa",
+  "feedback": {
+    "loading": {
+      "title": "Cargando...",
+      "message": "Un momento mientras buscamos la información.",
+      "action": ""
+    },
+    "error": {
+      "title": "Algo salió mal",
+      "message": "No fue posible cargar la información. Revisa tu conexión e inténtalo de nuevo.",
+      "action": "Intentar de nuevo"
+    },
+    "empty": {
+      "title": "Nada por aquí todavía",
+      "message": "No encontramos nada para mostrar en este momento.",
+      "action": "Actualizar"
+    }
+  }
 }

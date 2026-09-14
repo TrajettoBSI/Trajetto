@@ -7,6 +7,7 @@ import CustomInput from '@/components/CustomInput';
 import CustomButton from '@/components/CustomButton';
 import Logo from '@/assets/appImgs/logo.svg';
 import { useColors } from '@/src/theme';
+import { FeedbackState } from '@/src/components/feedback';
 import { useForgotPassword } from './hooks/useForgotPassword';
 import { styles } from './styles/styles';
 
@@ -15,7 +16,7 @@ export default function ForgotPassword() {
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
-  const { email, loading, errors, onChangeEmail, handleSend } = useForgotPassword();
+  const { email, loading, error, errors, onChangeEmail, handleSend } = useForgotPassword();
 
   return (
     <KeyboardAvoidingView style={s.kav} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
@@ -43,6 +44,9 @@ export default function ForgotPassword() {
 
           <View style={s.formBlock}>
             <Text style={s.cardSub}>{t('instructions')}</Text>
+            {error ? (
+              <FeedbackState variant="error" layout="inline" message={error} style={s.feedback} />
+            ) : null}
             <CustomInput
               label={t('emailLabel')}
               type="email"

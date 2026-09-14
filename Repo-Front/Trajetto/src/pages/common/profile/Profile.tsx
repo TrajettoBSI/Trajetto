@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomInput from '@/components/CustomInput';
 import CountryPickerModal from '@/src/components/CountryPickerModal/CountryPickerModal';
 import { useColors } from '@/src/theme';
-import AsyncState from '@/src/components/AsyncState/AsyncState';
+import { AsyncBoundary, FeedbackState } from '@/src/components/feedback';
 import { useProfile } from './hooks/useProfile';
 import { styles } from './styles/styles';
 
@@ -25,7 +25,8 @@ export default function Profile() {
     country,
     telephone,
     loading,
-    fetching,
+    error,
+    perfil,
     showCountries,
     errors,
     logout,
@@ -40,10 +41,6 @@ export default function Profile() {
     handleUpdate,
   } = useProfile();
 
-  if (fetching) {
-    return <AsyncState style={s.loadingCenter} loading />;
-  }
-
   return (
     <KeyboardAvoidingView style={s.flex} behavior="padding" keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 30}>
 
@@ -57,6 +54,8 @@ export default function Profile() {
           </View>
         </View>
       </View>
+      <AsyncBoundary state={perfil} onRetry={perfil.reload}>
+        {() => (
       <ScrollView style={s.flex} contentContainerStyle={s.content} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" showsVerticalScrollIndicator={false}>
 
         <View style={s.avatarWrapper}>
@@ -71,6 +70,10 @@ export default function Profile() {
 
         <View style={s.card}>
           <Text style={s.sectionTitle}>{t('personalInfo')}</Text>
+
+          {error ? (
+            <FeedbackState variant="error" layout="inline" message={error} style={s.feedback} />
+          ) : null}
 
           <View style={s.row}>
             <CustomInput
@@ -160,6 +163,8 @@ export default function Profile() {
           </TouchableOpacity>
         </View>
       </ScrollView>
+        )}
+      </AsyncBoundary>
     </KeyboardAvoidingView>
   );
 }

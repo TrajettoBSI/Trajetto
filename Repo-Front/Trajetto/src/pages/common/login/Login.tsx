@@ -6,6 +6,7 @@ import CustomInput from '@/components/CustomInput';
 import CustomButton from '@/components/CustomButton';
 import Logo from '@/assets/appImgs/logo.svg';
 import { useColors } from '@/src/theme';
+import { FeedbackState } from '@/src/components/feedback';
 import { useLogin } from './hooks/useLogin';
 import { styles } from './styles/styles';
 
@@ -53,9 +54,7 @@ export default function Login() {
           <Text style={s.cardTitle}>{t('cardTitle')}</Text>
 
           {error ? (
-            <View style={s.errorBox}>
-              <Text style={s.errorBoxText}>{error}</Text>
-            </View>
+            <FeedbackState variant="error" layout="inline" message={error} style={s.feedback} />
           ) : null}
 
           <CustomInput

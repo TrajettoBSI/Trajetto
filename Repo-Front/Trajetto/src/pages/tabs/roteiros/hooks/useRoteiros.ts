@@ -13,7 +13,7 @@ export function useRoteiros() {
 
   const { user } = useAuth();
   const router = useRouter();
-  const { itinerary, itineraries, loading, deleteItinerary, activateItinerary } = useItineraryStore();
+  const { itinerary, itineraries, loading, error, deleteItinerary, activateItinerary } = useItineraryStore();
   const [deleting, setDeleting] = useState<number | null>(null);
   const [activating, setActivating] = useState<number | null>(null);
   const [showGenerate, setShowGenerate] = useState(false);
@@ -23,11 +23,11 @@ export function useRoteiros() {
 
   const userId = user?.id;
 
-  useFocusEffect(
-    useCallback(() => {
-      if (userId) useItineraryStore.getState().fetchAllItineraries(userId);
-    }, [userId])
-  );
+  const reload = useCallback(() => {
+    if (userId) useItineraryStore.getState().fetchAllItineraries(userId);
+  }, [userId]);
+
+  useFocusEffect(reload);
 
   const enterSelectMode = (id: number) => {
     setSelectMode(true);
@@ -125,6 +125,8 @@ export function useRoteiros() {
     itinerary,
     itineraries,
     loading,
+    error,
+    reload,
     deleting,
     activating,
     showGenerate,

@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import CustomInput from '@/components/CustomInput';
 import PasswordStrength from '@/src/components/PasswordStrength/PasswordStrength';
 import { useColors } from '@/src/theme';
+import { FeedbackState } from '@/src/components/feedback';
 import { useResetPassword } from './hooks/useResetPassword';
 import { styles } from './styles/styles';
 
@@ -18,6 +19,7 @@ export default function ResetPassword() {
     code,
     password,
     loading,
+    error,
     errors,
     onChangeEmail,
     onChangeCode,
@@ -32,6 +34,10 @@ export default function ResetPassword() {
         <View style={s.card}>
           <Text style={s.cardTitle}>{t('cardTitle')}</Text>
           <Text style={s.cardSub}>{t('instructions')}</Text>
+
+          {error ? (
+            <FeedbackState variant="error" layout="inline" message={error} style={s.feedback} />
+          ) : null}
 
           <CustomInput
             label={t('emailLabel')}

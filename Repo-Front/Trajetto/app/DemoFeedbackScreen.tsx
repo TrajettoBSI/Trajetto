@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { AsyncBoundary, useAsyncData } from '../components/feedback';
+import { AsyncBoundary, useAsyncData } from '@/src/components/feedback';
 
 const PRIMARY = '#023665';
 
@@ -27,7 +27,7 @@ const BUSCAS: Record<Cenario, () => Promise<string[]>> = {
 
 export default function DemoFeedbackScreen() {
   const [cenario, setCenario] = useState<Cenario>('carregando');
-  const destinos = useAsyncData(() => BUSCAS[cenario](), [cenario]);
+  const destinos = useAsyncData<string[]>(() => BUSCAS[cenario](), [cenario]);
 
   return (
     <SafeAreaView style={styles.safe}>

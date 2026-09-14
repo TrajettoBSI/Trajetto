@@ -5,7 +5,7 @@ export { AsyncBoundary } from './AsyncBoundary';
 export type { AsyncBoundaryProps } from './AsyncBoundary';
 
 export { FeedbackState } from './FeedbackState';
-export type { FeedbackCopy, FeedbackStateProps, FeedbackVariant } from './FeedbackState';
+export type { FeedbackCopy, FeedbackLayout, FeedbackStateProps, FeedbackVariant } from './FeedbackState';
 
 export { useAsyncData } from './useAsyncData';
 export type { AsyncData, AsyncDataOptions } from './useAsyncData';

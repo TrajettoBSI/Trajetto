@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'expo-router';
 import * as Location from 'expo-location';
 import MapView from 'react-native-maps';
@@ -14,11 +14,12 @@ export function useMapaLocation() {
   const { user } = useAuth();
   const router = useRouter();
   const {
-    itinerary, fetchItinerary,
+    itinerary, loading, error, fetchItinerary,
     setHighlightedPlace,
     focusedMapPlaceIndex, setFocusedMapPlace,
   } = useItineraryStore();
 
+  const userId = user?.id;
   const [region, setRegion] = useState<Region | undefined>(undefined);
   const [segments, setSegments] = useState<LatLng[][]>([]);
   const points = useMemo<any[]>(
@@ -139,8 +140,15 @@ export function useMapaLocation() {
     router.navigate('../itinerario');
   };
 
+  const reload = useCallback(() => {
+    if (userId) fetchItinerary(userId);
+  }, [userId, fetchItinerary]);
+
   return {
     itinerary,
+    loading,
+    error,
+    reload,
     region,
     segments,
     points,

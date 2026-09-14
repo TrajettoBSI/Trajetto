@@ -7,6 +7,7 @@ import CustomInput from '@/components/CustomInput';
 import CustomButton from '@/components/CustomButton';
 import Logo from '@/assets/appImgs/logo.svg';
 import { useColors } from '@/src/theme';
+import { FeedbackState } from '@/src/components/feedback';
 import { useRegister } from './hooks/useRegister';
 import { styles } from './styles/styles';
 import PasswordStrength from '@/src/components/PasswordStrength/PasswordStrength';
@@ -27,6 +28,7 @@ export default function Register() {
     country,
     telephone,
     loading,
+    error,
     errors,
     showCountries,
     onChangeFirstName,
@@ -66,6 +68,10 @@ export default function Register() {
 
         <View style={s.card}>
           <Text style={s.cardTitle}>{t('cardTitle')}</Text>
+
+          {error ? (
+            <FeedbackState variant="error" layout="inline" message={error} style={s.feedback} />
+          ) : null}
 
           <View style={s.row}>
             <CustomInput

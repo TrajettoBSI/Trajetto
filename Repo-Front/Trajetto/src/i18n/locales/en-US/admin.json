@@ -1,6 +1,5 @@
 {
   "userListTitle": "Users",
-
   "panel": {
     "headerTitle": "Admin Panel",
     "greeting": "Hi, {{name}}",
@@ -56,7 +55,6 @@
       "usersScope": "Period and category don't apply to user indicators: only profile and country count here."
     }
   },
-
   "dashboard": {
     "headerTitle": "Dashboard",
     "headerSub": "Trajetto platform overview",
@@ -129,7 +127,6 @@
     "commentsCount_one": "{{count}} comment",
     "commentsCount_other": "{{count}} comments"
   },
-
   "userList": {
     "headerTitle": "Admin Panel",
     "greeting": "Hi, {{name}} 🛡️",
@@ -142,9 +139,10 @@
     "roleUser": "👤 User",
     "deleteConfirm": "Delete {{name}}?",
     "deleteTitle": "Delete user",
-    "deleteError": "Could not delete the user."
+    "deleteError": "Could not delete the user.",
+    "emptyTitle": "No users yet",
+    "emptyMessage": "As soon as someone creates an account, it shows up in this list."
   },
-
   "userDetail": {
     "personalInfo": "Personal information",
     "firstNameLabel": "First name",

@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback } from 'react';
 import { useFocusEffect, useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { userService } from '@/services';
@@ -6,11 +6,11 @@ import { getErrorMessage } from '@/utils/apiError';
 import { User } from '@/types/user';
 import { useAuth } from '@/context/AuthContext';
 import { showAlert } from '@/src/components/alerts/alertService';
+import { AsyncData, useAsyncData } from '@/src/components/feedback';
 
 export type UserListData = {
   admin: User | null;
-  users: User[];
-  loading: boolean;
+  usuarios: AsyncData<User[]>;
   logout: () => Promise<void>;
   editUser: (user: User) => void;
   deleteUser: (id: number, name: string) => void;
@@ -20,22 +20,12 @@ export function useUserList(): UserListData {
   const { t } = useTranslation(['admin', 'common']);
   const { user: admin, logout } = useAuth();
   const router = useRouter();
-  const [users, setUsers] = useState<User[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  const fetchUsers = useCallback(async () => {
-    try {
-      setLoading(true);
-      setUsers(await userService.getAll());
-    } catch (e) {
-      showAlert(getErrorMessage(e, t('admin:userList.loadError')), { title: t('common:error') });
-    } finally {
-      setLoading(false);
-    }
-  }, [t]);
+  // A busca roda ao abrir a tela e a cada volta para ela, e nao sozinha ao montar.
+  const usuarios = useAsyncData<User[]>(() => userService.getAll(), [], { auto: false });
+  const { reload } = usuarios;
 
   useFocusEffect(
-    useCallback(() => { fetchUsers(); }, [fetchUsers])
+    useCallback(() => { reload(); }, [reload])
   );
 
   const deleteUser = (id: number, name: string) => {
@@ -49,7 +39,7 @@ export function useUserList(): UserListData {
           onPress: async () => {
             try {
               await userService.remove(id);
-              fetchUsers();
+              reload();
             } catch (e) {
               showAlert(getErrorMessage(e, t('admin:userList.deleteError')), { title: t('common:error') });
             }
@@ -61,8 +51,7 @@ export function useUserList(): UserListData {
 
   return {
     admin,
-    users,
-    loading,
+    usuarios,
     logout,
     editUser: (user) => router.push({ pathname: '/UserDetailScreen', params: { user: JSON.stringify(user) } }),
     deleteUser,
