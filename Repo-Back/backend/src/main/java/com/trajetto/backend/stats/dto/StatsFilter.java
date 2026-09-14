@@ -22,8 +22,11 @@ import java.time.LocalDate;
  *
  * <p>O período recorta cada bloco pela data que aquele bloco tem: roteiros e
  * locais pela data de início do roteiro, avaliações pela data em que foram
- * feitas. Usuários não têm data de cadastro no esquema, então para eles
- * período e categoria valem como "tem roteiro dentro do recorte".</p>
+ * feitas. Os indicadores de usuário ficam de fora: a tabela não guarda data
+ * de cadastro, e a única leitura possível — "usuário com roteiro no recorte" —
+ * zeraria por construção o indicador de clientes sem roteiro. Pela mesma
+ * razão a categoria não os alcança; para eles valem perfil e país, e o
+ * detalhe está em {@code StatsRecortes}.</p>
  *
  * @param from     primeiro dia do período, inclusive
  * @param to       último dia do período, inclusive
