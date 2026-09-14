@@ -11,21 +11,56 @@ import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 
-// @Component
+/**
+ * População de demonstração do ambiente de desenvolvimento.
+ *
+ * <p>São dez clientes espalhados por cinco países e seis perfis de viajante,
+ * dezoito roteiros entre janeiro e junho de 2026, doze locais em seis
+ * categorias e trinta e três avaliações. O recorte do painel gerencial só
+ * tem o que mostrar se a base tiver variedade nos quatro critérios que ele
+ * filtra, e é para isso que os dados são desenhados assim — inclusive o
+ * Lucas, o único cliente sem roteiro nenhum, que é quem faz o indicador de
+ * "clientes sem roteiro" deixar de ser zero.</p>
+ *
+ * <p>O bean só existe no perfil {@code dev} e só quando
+ * {@code trajetto.seed-demo-data} é verdadeiro — em {@code dev} essa
+ * propriedade nasce da variável de ambiente {@code SEED_DEMO_DATA}, que por
+ * padrão é falsa. Pedir a população é sempre um ato deliberado:</p>
+ *
+ * <pre>SEED_DEMO_DATA=true ./mvnw spring-boot:run</pre>
+ *
+ * <p>Não fosse assim, a população entraria sozinha na base de quem apenas
+ * subisse a aplicação — inclusive na dos testes de integração, que rodam no
+ * mesmo perfil. Mesmo pedida, ela só é gravada quando não há roteiro nenhum
+ * na base, para nunca duplicar o que já está lá.</p>
+ */
+@Component
+@Profile("dev")
+@ConditionalOnProperty(name = "trajetto.seed-demo-data", havingValue = "true")
 @Order(2)
 @RequiredArgsConstructor
 public class DataSeeder implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(DataSeeder.class);
+
+    /**
+     * Primeiro dia da janela em que as avaliações são distribuídas — a mesma
+     * dos roteiros, para que um recorte por período alcance os dois.
+     */
+    private static final LocalDate PRIMEIRA_AVALIACAO = LocalDate.of(2026, 1, 5);
+
+    /** Posição da próxima avaliação na janela. Ver {@link #rating}. */
+    private int avaliacaoSeq = 0;
 
     private final UserRepository userRepository;
     private final ItineraryRepository itineraryRepository;
@@ -300,13 +335,20 @@ public class DataSeeder implements CommandLineRunner {
         itin.getPlaces().add(p);
     }
 
+    /**
+     * As avaliações são datadas em passos fixos de cinco dias a partir de
+     * {@link #PRIMEIRA_AVALIACAO}, e não em dias sorteados a partir de hoje.
+     * A base precisa ser a mesma toda vez que for recriada: um recorte por
+     * período usado como evidência não pode devolver um número hoje e outro
+     * amanhã.
+     */
     private RatingModel rating(Long userId, String xid, int stars, String comment) {
         RatingModel r = new RatingModel();
         r.setUserId(userId);
         r.setTouristSpotXid(xid);
         r.setRating(stars);
         r.setComment(comment);
-        r.setCreatedAt(LocalDateTime.now().minusDays((long)(Math.random() * 150)));
+        r.setCreatedAt(PRIMEIRA_AVALIACAO.plusDays(avaliacaoSeq++ * 5L).atTime(10, 30));
         return r;
     }
 }
