@@ -25,6 +25,8 @@ export default function Itinerario() {
     destIndex,
     itinerary,
     loading,
+    error,
+    retry,
     setFocusedMapPlace,
     scrollRef,
     highlightedPlaceIndex,
@@ -43,6 +45,10 @@ export default function Itinerario() {
 
   if (loading) {
     return <AsyncState style={s.center} loading loadingText={t('loadingText')} />;
+  }
+
+  if (!itinerary && error) {
+    return <AsyncState style={s.center} error={error} onRetry={retry} retryLabel={t('common:retry')} />;
   }
 
   if (!itinerary) {

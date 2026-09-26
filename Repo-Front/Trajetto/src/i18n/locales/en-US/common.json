@@ -19,5 +19,7 @@
   "all": "All",
   "genericError": "Couldn't complete the operation. Please try again.",
   "tabHome": "Home",
-  "tabMap": "Map"
+  "tabMap": "Map",
+  "networkError": "Couldn't reach the server. Check your connection and try again.",
+  "emptyTitle": "Nothing here yet"
 }

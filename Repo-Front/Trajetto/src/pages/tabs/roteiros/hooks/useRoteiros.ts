@@ -13,7 +13,7 @@ export function useRoteiros() {
 
   const { user } = useAuth();
   const router = useRouter();
-  const { itinerary, itineraries, loading, deleteItinerary, activateItinerary } = useItineraryStore();
+  const { itinerary, itineraries, loading, error, deleteItinerary, activateItinerary } = useItineraryStore();
   const [deleting, setDeleting] = useState<number | null>(null);
   const [activating, setActivating] = useState<number | null>(null);
   const [showGenerate, setShowGenerate] = useState(false);
@@ -125,6 +125,8 @@ export function useRoteiros() {
     itinerary,
     itineraries,
     loading,
+    error,
+    retry: () => { if (userId) useItineraryStore.getState().fetchAllItineraries(userId); },
     deleting,
     activating,
     showGenerate,

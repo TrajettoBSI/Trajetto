@@ -54,7 +54,7 @@ export function usePlaceRating() {
       setAllRatings(ratings);
       const mine = ratings.find((r) => r.userId === user?.id);
       setMyRating(mine ?? null);
-    });
+    }).catch(() => {});
   }, [selectedPlace, user?.id]);
 
   const saveRating = async () => {

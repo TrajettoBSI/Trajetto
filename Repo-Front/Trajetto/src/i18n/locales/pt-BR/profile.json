@@ -28,5 +28,6 @@
     "exploreDestinations": "Explorar destinos",
     "logout": "Sair",
     "version": "Trajetto v{{version}}"
-  }
+  },
+  "loadError": "Não foi possível carregar seus dados."
 }

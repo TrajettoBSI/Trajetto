@@ -1,11 +1,14 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { Place, placesService } from '@/services';
+import { getErrorMessage } from '@/utils/apiError';
 
 export type ExploreData = {
   spots: Place[];
   categories: string[];
   loading: boolean;
+  error: string;
   search: string;
   selectedCategory: string;
   showFilter: boolean;
@@ -19,14 +22,17 @@ export type ExploreData = {
   handleApplyFilter: () => void;
   handleClearFilter: () => void;
   handleSpotPress: (spot: Place) => void;
+  retry: () => void;
 };
 
 export function useExplore(): ExploreData {
   const router = useRouter();
+  const { t } = useTranslation('explore');
 
   const [spots, setSpots] = useState<Place[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [showFilter, setShowFilter] = useState(false);
@@ -37,6 +43,7 @@ export function useExplore(): ExploreData {
 
   const fetchSpots = useCallback(async (searchTerm: string, category: string) => {
     setLoading(true);
+    setError('');
     try {
       const results = await placesService.getAll({
         search: searchTerm || undefined,
@@ -44,12 +51,13 @@ export function useExplore(): ExploreData {
       });
       setSpots(results);
       setSearched(true);
-    } catch {
+    } catch (e) {
       setSpots([]);
+      setError(getErrorMessage(e, t('loadError')));
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [t]);
 
   useEffect(() => {
     placesService.getCategories().then(setCategories).catch(() => {});
@@ -58,9 +66,12 @@ export function useExplore(): ExploreData {
         setSpots(results);
         setSearched(true);
       })
-      .catch(() => setSpots([]))
+      .catch((e) => {
+        setSpots([]);
+        setError(getErrorMessage(e, t('loadError')));
+      })
       .finally(() => setLoading(false));
-  }, []);
+  }, [t]);
 
   const handleSearchChange = (text: string) => {
     setSearch(text);
@@ -91,6 +102,7 @@ export function useExplore(): ExploreData {
     spots,
     categories,
     loading,
+    error,
     search,
     selectedCategory,
     showFilter,
@@ -107,5 +119,6 @@ export function useExplore(): ExploreData {
     handleApplyFilter,
     handleClearFilter,
     handleSpotPress,
+    retry: () => fetchSpots(search, selectedCategory),
   };
 }

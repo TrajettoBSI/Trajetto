@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/context/AuthContext';
 import { userService } from '@/services';
@@ -20,6 +20,8 @@ export type ProfileData = {
   telephone: string;
   loading: boolean;
   fetching: boolean;
+  loadError: string;
+  retryLoad: () => void;
   showCountries: boolean;
   errors: Errors;
   logout: () => Promise<void>;
@@ -45,10 +47,11 @@ export function useProfile(): ProfileData {
   const [telephone, setTelephone] = useState('');
   const [loading, setLoading] = useState(false);
   const [fetching, setFetching] = useState(true);
+  const [loadError, setLoadError] = useState('');
   const [showCountries, setShowCountries] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
 
-  useEffect(() => {
+  const loadProfile = useCallback(() => {
     userService.getProfile().then((u) => {
       setFirstName(u.firstName ?? '');
       setLastName(u.lastName ?? '');
@@ -56,8 +59,14 @@ export function useProfile(): ProfileData {
       setBirthDate(u.birthDate ? fromBirthDateISO(u.birthDate) : '');
       setCountry(u.country ?? '');
       setTelephone(u.telephone ?? '');
-    }).finally(() => setFetching(false));
-  }, []);
+    })
+      .catch((e) => setLoadError(getErrorMessage(e, t('profile:loadError'))))
+      .finally(() => setFetching(false));
+  }, [t]);
+
+  useEffect(() => {
+    loadProfile();
+  }, [loadProfile]);
 
   const clearError = (field: string) => {
     if (errors[field]) setErrors((p) => ({ ...p, [field]: '' }));
@@ -92,6 +101,12 @@ export function useProfile(): ProfileData {
     telephone,
     loading,
     fetching,
+    loadError,
+    retryLoad: () => {
+      setLoadError('');
+      setFetching(true);
+      loadProfile();
+    },
     showCountries,
     errors,
     logout,

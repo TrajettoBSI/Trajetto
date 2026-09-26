@@ -19,5 +19,7 @@
   "all": "Todos",
   "genericError": "Não foi possível concluir a operação. Tente novamente.",
   "tabHome": "Início",
-  "tabMap": "Mapa"
+  "tabMap": "Mapa",
+  "networkError": "Não foi possível conectar ao servidor. Verifique sua conexão e tente novamente.",
+  "emptyTitle": "Nada por aqui"
 }

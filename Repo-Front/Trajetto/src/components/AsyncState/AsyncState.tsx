@@ -1,5 +1,6 @@
 import React from 'react';
 import { ActivityIndicator, StyleProp, Text, TouchableOpacity, View, ViewStyle } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
@@ -29,13 +30,14 @@ export default function AsyncState({
   spinnerColor,
   error,
   onRetry,
-  retryLabel = 'Tentar novamente',
+  retryLabel,
   empty,
   emptyIcon = '📭',
-  emptyTitle = 'Nada por aqui',
+  emptyTitle,
   emptyDescription,
   children,
 }: AsyncStateProps) {
+  const { t } = useTranslation('common');
   const colors = useColors();
   const s = styles(colors);
 
@@ -55,7 +57,7 @@ export default function AsyncState({
         <Text style={s.errorText}>{error}</Text>
         {onRetry ? (
           <TouchableOpacity style={s.retryBtn} onPress={onRetry} activeOpacity={0.85}>
-            <Text style={s.retryText}>{retryLabel}</Text>
+            <Text style={s.retryText}>{retryLabel ?? t('retry')}</Text>
           </TouchableOpacity>
         ) : null}
       </View>
@@ -66,7 +68,7 @@ export default function AsyncState({
     return (
       <View style={[s.wrapper, style]}>
         <Text style={s.emptyIcon}>{emptyIcon}</Text>
-        <Text style={s.emptyTitle}>{emptyTitle}</Text>
+        <Text style={s.emptyTitle}>{emptyTitle ?? t('emptyTitle')}</Text>
         {emptyDescription ? <Text style={s.emptyDescription}>{emptyDescription}</Text> : null}
       </View>
     );
