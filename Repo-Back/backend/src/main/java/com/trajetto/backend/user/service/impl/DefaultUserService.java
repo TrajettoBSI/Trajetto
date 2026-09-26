@@ -122,7 +122,12 @@ public class DefaultUserService implements UserService {
                     existingUser.setEmail(userModel.getEmail() != null
                             ? userModel.getEmail().trim().toLowerCase()
                             : null);
-                    existingUser.setTravelerProfile(trimOrNull(userModel.getTravelerProfile()));
+                    // O perfil de viajante so muda pelo teste de perfil. A edicao de cadastro
+                    // pelo painel admin nao envia esse campo, e gravar o nulo recebido apagava o
+                    // perfil do usuario a cada edicao.
+                    if (userModel.getTravelerProfile() != null) {
+                        existingUser.setTravelerProfile(trimOrNull(userModel.getTravelerProfile()));
+                    }
                     existingUser.setTelephone(trimOrNull(userModel.getTelephone()));
                     existingUser.setBirthDate(userModel.getBirthDate());
                     //existingUser.setProfilePictureUrl(userModel.getProfilePictureUrl());
