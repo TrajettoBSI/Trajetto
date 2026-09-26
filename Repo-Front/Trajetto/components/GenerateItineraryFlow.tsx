@@ -25,7 +25,7 @@ import CustomButton from './CustomButton';
 import CustomInput from './CustomInput';
 import { Ionicons } from '@expo/vector-icons';
 
-const PRIMARY = '#006ecf';
+const PRIMARY = '#023665';
 const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
 
 type Step = 'config' | 'loading' | 'preview';

@@ -95,7 +95,7 @@ export type AppColors = {
 };
 
 export const lightColors: AppColors = {
-  primary: '#006ecf',
+  primary: '#023665',
   primaryDark: '#023665',
   primarySurface: '#EEF2FF',
   primarySurfaceAlt: '#F0F4FF',
