@@ -11,6 +11,7 @@ import { useRegister } from './hooks/useRegister';
 import { styles } from './styles/styles';
 import PasswordStrength from '@/src/components/PasswordStrength/PasswordStrength';
 import CountryPickerModal from '@/src/components/CountryPickerModal/CountryPickerModal';
+import OptionPickerModal from '@/src/components/OptionPickerModal/OptionPickerModal';
 
 export default function Register() {
   const { t } = useTranslation('register');
@@ -26,9 +27,12 @@ export default function Register() {
     birthDate,
     country,
     telephone,
+    genderId,
+    genders,
     loading,
     errors,
     showCountries,
+    showGenders,
     onChangeFirstName,
     onChangeLastName,
     onChangeBirthDate,
@@ -39,9 +43,14 @@ export default function Register() {
     onSelectCountry,
     openCountries,
     closeCountries,
+    onSelectGender,
+    openGenders,
+    closeGenders,
     handleRegister,
     goToLogin,
   } = useRegister();
+
+  const selectedGender = genders.find((g) => g.id === genderId);
 
   return (
     <KeyboardAvoidingView style={s.flex} behavior="padding" keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 30}>
@@ -141,6 +150,30 @@ export default function Register() {
             selected={country}
             onSelect={onSelectCountry}
             onClose={closeCountries}
+          />
+
+          <View style={s.field}>
+            <Text style={s.label}>{t('genderLabel')}</Text>
+            <TouchableOpacity
+              style={[s.dropdownTrigger, errors.genderId ? s.inputError : null]}
+              onPress={openGenders}
+              activeOpacity={0.7}
+            >
+              <Text style={selectedGender ? s.dropdownValue : s.dropdownPlaceholder}>
+                {selectedGender ? selectedGender.name : t('genderPlaceholder')}
+              </Text>
+              <Text style={s.dropdownChevron}>▼</Text>
+            </TouchableOpacity>
+            {errors.genderId ? <Text style={s.errorText}>{errors.genderId}</Text> : null}
+          </View>
+
+          <OptionPickerModal
+            visible={showGenders}
+            title={t('genderLabel')}
+            options={genders.map((g) => ({ value: String(g.id), label: g.name }))}
+            selected={genderId !== null ? String(genderId) : null}
+            onSelect={(value) => { if (value !== null) onSelectGender(Number(value)); }}
+            onClose={closeGenders}
           />
 
           <CustomInput

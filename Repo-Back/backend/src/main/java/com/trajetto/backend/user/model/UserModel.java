@@ -1,5 +1,6 @@
 package com.trajetto.backend.user.model;
 
+import com.trajetto.backend.gender.model.GenderModel;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -48,6 +49,10 @@ public class UserModel {
 
     @Column(name = "country")
     private String country;
+
+    @ManyToOne
+    @JoinColumn(name = "gender_id")
+    private GenderModel gender;
 
     @JsonIgnore
     @Column(name = "password")

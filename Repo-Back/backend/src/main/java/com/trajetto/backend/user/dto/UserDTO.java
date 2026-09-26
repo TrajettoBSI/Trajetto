@@ -48,6 +48,9 @@ public class UserDTO {
     @NotBlank(message = "O país é obrigatório")
     private String country;
 
+    @NotNull(message = "O gênero é obrigatório")
+    private Long genderId;
+
     @NotBlank(message = "A senha é obrigatória")
     @Size(min = 8, max = 100, message = "A senha deve ter no mínimo 8 caracteres")
     private String password;

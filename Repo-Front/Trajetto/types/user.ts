@@ -6,6 +6,8 @@ export interface User {
   birthDate: string | null;
   country: string | null;
   telephone: string | null;
+  genderId: number | null;
+  genderName: string | null;
   isAdmin: boolean;
   travelerProfile: string | null;
 }
@@ -23,4 +25,10 @@ export interface RegisterRequest {
   birthDate: string;
   country: string;
   telephone: string;
+  genderId: number;
+}
+
+export interface Gender {
+  id: number;
+  name: string;
 }

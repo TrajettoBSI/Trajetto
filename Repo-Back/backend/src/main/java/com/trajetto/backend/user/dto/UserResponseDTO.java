@@ -17,6 +17,8 @@ public class UserResponseDTO {
     private String telephone;
     private String email;
     private String country;
+    private Long genderId;
+    private String genderName;
     private Boolean isAdmin;
 //    private String profilePictureUrl;
 }

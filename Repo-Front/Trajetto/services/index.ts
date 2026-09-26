@@ -12,6 +12,8 @@ export type { LoginResponse, ResetPasswordRequest } from './authService';
 export { userService } from './userService';
 export type { ProfileRequest } from './userService';
 
+export { genderService } from './genderService';
+
 export { placesService } from './placesService';
 export type { Place, PlacesFilter } from './placesService';
 

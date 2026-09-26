@@ -3,6 +3,8 @@ package com.trajetto.backend.user.facade.impl;
 import com.trajetto.backend.exception.BusinessRuleException;
 import com.trajetto.backend.exception.ForbiddenOperationException;
 import com.trajetto.backend.exception.ResourceNotFoundException;
+import com.trajetto.backend.gender.model.GenderModel;
+import com.trajetto.backend.gender.repository.GenderRepository;
 import com.trajetto.backend.security.UserToken;
 import com.trajetto.backend.user.dto.UserDTO;
 import com.trajetto.backend.user.dto.UserResponseDTO;
@@ -32,6 +34,7 @@ public class DefaultUserFacade implements UserFacade {
     //private final FirebaseStorageService firebaseStorageService;
     private final UserService userService;
     private final UserRepository userRepository;
+    private final GenderRepository genderRepository;
     private final ModelMapper modelMapper;
 
     @Override
@@ -47,6 +50,7 @@ public class DefaultUserFacade implements UserFacade {
         target.setEmail(source.getEmail());
         target.setPassword(source.getPassword());
         target.setIsAdmin(source.getIsAdmin());
+        target.setGender(findGender(source.getGenderId()));
 
         return target;
     }
@@ -87,6 +91,10 @@ public class DefaultUserFacade implements UserFacade {
         target.setCountry(source.getCountry());
         target.setEmail(source.getEmail());
         target.setIsAdmin(source.getIsAdmin());
+        if (source.getGender() != null) {
+            target.setGenderId(source.getGender().getId());
+            target.setGenderName(source.getGender().getName());
+        }
         //target.setProfilePictureUrl(source.getProfilePictureUrl());
 
         return target;
@@ -195,6 +203,11 @@ public class DefaultUserFacade implements UserFacade {
                 .orElseThrow(() -> new ResourceNotFoundException("Usuário", id));
 
         return populateUserResponseDTO(updatedUser);
+    }
+
+    private GenderModel findGender(Long genderId) {
+        return genderRepository.findById(genderId)
+                .orElseThrow(() -> new ResourceNotFoundException("Gênero", genderId));
     }
 
     private Long getLoggedInUserId() {
