@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import GenerateItineraryFlow from '@/components/GenerateItineraryFlow';
 import CustomButton from '@/components/CustomButton';
 import { useColors } from '@/src/theme';
+import AsyncState from '@/src/components/AsyncState/AsyncState';
 import { useRoteiros } from './hooks/useRoteiros';
 import { styles } from './styles/styles';
 import AdminBanners from './components/AdminBanners/AdminBanners';
@@ -26,6 +27,8 @@ export default function Roteiros() {
     itinerary,
     itineraries,
     loading,
+    error,
+    retry,
     deleting,
     activating,
     showGenerate,
@@ -91,6 +94,8 @@ export default function Roteiros() {
             <ActivityIndicator size="large" color={colors.primary} />
             <Text style={s.stateText}>{t('loadingItineraries')}</Text>
           </View>
+        ) : error && itineraries.length === 0 ? (
+          <AsyncState style={s.centerState} error={error} onRetry={retry} retryLabel={t('common:retry')} />
         ) : itinerary ? (
           <>
             {!selectMode && (

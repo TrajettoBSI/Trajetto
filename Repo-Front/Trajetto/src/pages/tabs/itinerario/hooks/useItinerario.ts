@@ -1,4 +1,5 @@
 import { useRouter } from 'expo-router';
+import { useAuth } from '@/context/AuthContext';
 import { useItineraryStore } from '@/hooks/itineraryStore';
 import { useDestinationCarousel } from '@/src/pages/tabs/shared/hooks/useDestinationCarousel';
 import { useAlternatives } from './useAlternatives';
@@ -9,7 +10,8 @@ import { useItinerarioScroll } from './useItinerarioScroll';
 export function useItinerario() {
   const router = useRouter();
   const destIndex = useDestinationCarousel();
-  const { itinerary, loading, setFocusedMapPlace } = useItineraryStore();
+  const { user } = useAuth();
+  const { itinerary, loading, error, setFocusedMapPlace } = useItineraryStore();
 
   const alternatives = useAlternatives(itinerary);
   const rating = usePlaceRating();
@@ -21,6 +23,8 @@ export function useItinerario() {
     destIndex,
     itinerary,
     loading,
+    error,
+    retry: () => { if (user) useItineraryStore.getState().fetchAllItineraries(user.id); },
     setFocusedMapPlace,
     scrollRef,
     highlightedPlaceIndex,

@@ -90,6 +90,7 @@
     "summaryMeta": "{{stops}} paradas · {{origin}}",
     "regenerate": "Regenerar",
     "accept": "Aceptar",
-    "genericError": "No se pudo generar el itinerario. Inténtalo de nuevo."
+    "genericError": "No se pudo generar el itinerario. Inténtalo de nuevo.",
+    "addressNotFound": "No se encontró ninguna dirección. Prueba a incluir el número o el barrio."
   }
 }

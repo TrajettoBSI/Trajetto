@@ -12,5 +12,6 @@
   "emptyNotFoundText": "Prueba otros filtros o borra la búsqueda.",
   "emptyDefaultTitle": "Explora Roma",
   "emptyDefaultText": "Busca o filtra puntos turísticos disponibles.",
-  "loadingText": "Buscando puntos turísticos..."
+  "loadingText": "Buscando puntos turísticos...",
+  "loadError": "No se pudieron cargar los puntos turísticos."
 }

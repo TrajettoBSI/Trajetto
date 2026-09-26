@@ -9,8 +9,13 @@ import { create } from 'axios';
 // Endereço do backend em um lugar só. Trocar de servidor é editar o .env, não o código.
 const BACKEND_URL = process.env.EXPO_PUBLIC_BACKEND_URL ?? 'http://localhost:8080';
 
+// Sem limite, uma requisição a um servidor que não responde deixa a tela carregando para
+// sempre. Com ele, a falha chega à tela como erro de conexão, com a opção de tentar de novo.
+const REQUEST_TIMEOUT_MS = 15000;
+
 export const api = create({
   baseURL: BACKEND_URL,
+  timeout: REQUEST_TIMEOUT_MS,
   headers: { 'Content-Type': 'application/json' },
 });
 

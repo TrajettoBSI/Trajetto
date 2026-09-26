@@ -26,6 +26,8 @@ export default function Profile() {
     telephone,
     loading,
     fetching,
+    loadError,
+    retryLoad,
     showCountries,
     errors,
     logout,
@@ -40,23 +42,38 @@ export default function Profile() {
     handleUpdate,
   } = useProfile();
 
-  if (fetching) {
-    return <AsyncState style={s.loadingCenter} loading />;
+  const header = (
+    <View style={[s.headerWrapper, { paddingTop: insets.top }]}>
+      <View style={s.headerRow}>
+        <View style={s.headerLeft}>
+          <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
+            <Ionicons name="chevron-back" size={32} color={colors.white} />
+          </TouchableOpacity>
+          <Text style={s.headerText}>{t('headerTitle')}</Text>
+        </View>
+      </View>
+    </View>
+  );
+
+  if (fetching || loadError) {
+    return (
+      <View style={s.flex}>
+        {header}
+        <AsyncState
+          style={s.loadingCenter}
+          loading={fetching}
+          error={loadError}
+          onRetry={retryLoad}
+          retryLabel={t('common:retry')}
+        />
+      </View>
+    );
   }
 
   return (
     <KeyboardAvoidingView style={s.flex} behavior="padding" keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 30}>
 
-      <View style={[s.headerWrapper, { paddingTop: insets.top }]}>
-        <View style={s.headerRow}>
-          <View style={s.headerLeft}>
-            <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
-              <Ionicons name="chevron-back" size={32} color={colors.white} />
-            </TouchableOpacity>
-            <Text style={s.headerText}>{t('headerTitle')}</Text>
-          </View>
-        </View>
-      </View>
+      {header}
       <ScrollView style={s.flex} contentContainerStyle={s.content} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" showsVerticalScrollIndicator={false}>
 
         <View style={s.avatarWrapper}>

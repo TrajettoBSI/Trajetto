@@ -12,5 +12,6 @@
   "emptyNotFoundText": "Try other filters or clear the search.",
   "emptyDefaultTitle": "Explore Rome",
   "emptyDefaultText": "Search or filter available tourist spots.",
-  "loadingText": "Searching tourist spots..."
+  "loadingText": "Searching tourist spots...",
+  "loadError": "Couldn't load the tourist spots."
 }

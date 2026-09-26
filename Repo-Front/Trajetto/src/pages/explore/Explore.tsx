@@ -26,6 +26,7 @@ export default function Explore() {
     spots,
     categories,
     loading,
+    error,
     search,
     selectedCategory,
     showFilter,
@@ -39,6 +40,7 @@ export default function Explore() {
     handleApplyFilter,
     handleClearFilter,
     handleSpotPress,
+    retry,
   } = useExplore();
 
   return (
@@ -96,14 +98,21 @@ export default function Explore() {
           </View>
         ) : null}
 
-        {searched && !loading && (
+        {searched && !loading && !error && (
           <Text style={s.resultsLabel}>
             {t('explore:resultsCount', { count: spots.length })}
             {selectedCategory ? t('explore:resultsInCategory', { category: selectedCategory }) : ''}
           </Text>
         )}
 
-        <AsyncState style={s.loadingContainer} loading={loading} loadingText={t('explore:loadingText')}>
+        <AsyncState
+          style={s.loadingContainer}
+          loading={loading}
+          loadingText={t('explore:loadingText')}
+          error={error}
+          onRetry={retry}
+          retryLabel={t('common:retry')}
+        >
           <FlatList
             data={spots}
             keyExtractor={(item, index) => `${item.name}-${index}`}

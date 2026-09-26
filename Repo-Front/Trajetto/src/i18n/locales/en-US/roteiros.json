@@ -90,6 +90,7 @@
     "summaryMeta": "{{stops}} stops · {{origin}}",
     "regenerate": "Regenerate",
     "accept": "Accept",
-    "genericError": "Could not generate the itinerary. Try again."
+    "genericError": "Could not generate the itinerary. Try again.",
+    "addressNotFound": "No address found. Try adding the street number or neighborhood."
   }
 }

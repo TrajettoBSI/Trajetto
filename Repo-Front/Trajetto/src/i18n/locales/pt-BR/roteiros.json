@@ -90,6 +90,7 @@
     "summaryMeta": "{{stops}} paradas · {{origin}}",
     "regenerate": "Re-gerar",
     "accept": "Aceitar",
-    "genericError": "Não foi possível gerar o roteiro. Tente novamente."
+    "genericError": "Não foi possível gerar o roteiro. Tente novamente.",
+    "addressNotFound": "Nenhum endereço encontrado. Tente incluir o número ou o bairro."
   }
 }
