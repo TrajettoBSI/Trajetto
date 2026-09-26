@@ -58,6 +58,7 @@ que ainda não foram executados naquele banco. O controle fica na tabela
 | `V5` | `sp_stats_itinerary_overview`, contraparte da `V3` para os cartões de roteiros. |
 | `V6` | Restrições de integridade: a chave estrangeira que faltava entre avaliação e usuário, `ON DELETE CASCADE` nos vínculos de posse, colunas obrigatórias e `CHECK` para as faixas de valor — mais os três índices que o painel ainda não tinha. |
 | `V7` | `sp_stats_user_overview` e `sp_stats_itinerary_overview` recriadas com os cinco parâmetros do recorte do painel gerencial (período, perfil, país e categoria). |
+| `V8` | Catálogo de pontos turísticos no banco (`tourist_spots` e `tourist_spot_profiles`), com a coluna geográfica `location` (`POINT SRID 4326`) e o índice espacial que resolvem a busca por proximidade. |
 
 A `V2` limpa duplicatas antes de criar cada `UNIQUE`: e-mail repetido faz a
 conta mais antiga manter o endereço e as demais receberem o sufixo
@@ -112,6 +113,36 @@ versões `V3` e `V5`. As condições repetem, em SQL, as que o lado Java escreve
 em `StatsRecortes` — inclusive a comparação de perfil e categoria pelo rótulo
 exibido no painel, que é a expressão dos índices funcionais criados na `V4` e
 na `V6`.
+
+A `V8` cria só a estrutura; quem enche as duas tabelas é o
+`TouristSpotCatalogSync`, a cada inicialização, a partir de
+`data/rome_curated.geojson`. O arquivo segue sendo a fonte do catálogo — o
+banco guarda uma cópia para poder responder a busca. Três detalhes dela:
+
+- **`location` é coluna gerada** a partir de `latitude` e `longitude`, então o
+  ponto nunca diverge dos dois números. O `POINT()` recebe
+  `(longitude, latitude)`, nessa ordem.
+- **O índice espacial só é usado por predicado de contenção.** `ST_Distance`
+  sozinho percorre a tabela inteira; por isso a consulta de
+  `TouristSpotRepository.search` filtra primeiro com `MBRContains` contra o
+  retângulo de um `ST_Buffer` do raio (que usa o índice) e só depois confere
+  `ST_Distance` nos pontos que sobraram. Os dois são calculados no elipsoide
+  WGS 84, então nenhum ponto na borda do raio se perde no primeiro passo — o
+  `TouristSpotSearchIntegrationTest` compara o resultado com a mesma busca
+  feita sem índice.
+- **`ST_Buffer` sobre ponto geográfico** exige MySQL 8.0.26 ou mais novo.
+
+Para ver o índice em ação:
+
+```sql
+EXPLAIN
+SELECT id FROM tourist_spots s
+WHERE MBRContains(ST_Buffer(ST_SRID(POINT(12.4768, 41.8987), 4326), 500), s.location)
+  AND ST_Distance(s.location, ST_SRID(POINT(12.4768, 41.8987), 4326)) <= 500;
+```
+
+O esperado é `type = range` com `key = sx_tourist_spots_location`, e não
+`ALL`.
 
 ## Conferindo um plano de consulta
 
