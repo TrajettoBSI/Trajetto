@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 import { HapticTab } from '@/components/haptic-tab';
 
-const PRIMARY = '#006ecf';
+const PRIMARY = '#023665';
 const ACTIVE_TINT = '#ffffff';
 const INACTIVE_TINT = 'rgba(255,255,255,0.45)';
 
