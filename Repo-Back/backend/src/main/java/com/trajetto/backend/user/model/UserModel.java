@@ -1,6 +1,6 @@
 package com.trajetto.backend.user.model;
 
-import com.trajetto.backend.gender.model.GenderModel;
+import com.trajetto.backend.novocampo.model.NovoCampoModel;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -51,8 +51,9 @@ public class UserModel {
     private String country;
 
     @ManyToOne
-    @JoinColumn(name = "gender_id")
-    private GenderModel gender;
+    // TROCAR (opcional): só se trocou o nome da coluna no SQL. Os dois precisam ser iguais.
+    @JoinColumn(name = "companhia_id")
+    private NovoCampoModel novoCampo;
 
     @JsonIgnore
     @Column(name = "password")

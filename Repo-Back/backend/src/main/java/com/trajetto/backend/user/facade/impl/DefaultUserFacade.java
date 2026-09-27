@@ -3,8 +3,8 @@ package com.trajetto.backend.user.facade.impl;
 import com.trajetto.backend.exception.BusinessRuleException;
 import com.trajetto.backend.exception.ForbiddenOperationException;
 import com.trajetto.backend.exception.ResourceNotFoundException;
-import com.trajetto.backend.gender.model.GenderModel;
-import com.trajetto.backend.gender.repository.GenderRepository;
+import com.trajetto.backend.novocampo.model.NovoCampoModel;
+import com.trajetto.backend.novocampo.repository.NovoCampoRepository;
 import com.trajetto.backend.security.UserToken;
 import com.trajetto.backend.user.dto.UserDTO;
 import com.trajetto.backend.user.dto.UserResponseDTO;
@@ -34,7 +34,7 @@ public class DefaultUserFacade implements UserFacade {
     //private final FirebaseStorageService firebaseStorageService;
     private final UserService userService;
     private final UserRepository userRepository;
-    private final GenderRepository genderRepository;
+    private final NovoCampoRepository novoCampoRepository;
     private final ModelMapper modelMapper;
 
     @Override
@@ -50,7 +50,7 @@ public class DefaultUserFacade implements UserFacade {
         target.setEmail(source.getEmail());
         target.setPassword(source.getPassword());
         target.setIsAdmin(source.getIsAdmin());
-        target.setGender(findGender(source.getGenderId()));
+        target.setNovoCampo(findNovoCampo(source.getNovoCampoId()));
 
         return target;
     }
@@ -91,9 +91,9 @@ public class DefaultUserFacade implements UserFacade {
         target.setCountry(source.getCountry());
         target.setEmail(source.getEmail());
         target.setIsAdmin(source.getIsAdmin());
-        if (source.getGender() != null) {
-            target.setGenderId(source.getGender().getId());
-            target.setGenderName(source.getGender().getName());
+        if (source.getNovoCampo() != null) {
+            target.setNovoCampoId(source.getNovoCampo().getId());
+            target.setNovoCampoName(source.getNovoCampo().getName());
         }
         //target.setProfilePictureUrl(source.getProfilePictureUrl());
 
@@ -205,9 +205,10 @@ public class DefaultUserFacade implements UserFacade {
         return populateUserResponseDTO(updatedUser);
     }
 
-    private GenderModel findGender(Long genderId) {
-        return genderRepository.findById(genderId)
-                .orElseThrow(() -> new ResourceNotFoundException("Gênero", genderId));
+    private NovoCampoModel findNovoCampo(Long novoCampoId) {
+        // TROCAR: nome exibido na mensagem de erro quando o id enviado não existe.
+        return novoCampoRepository.findById(novoCampoId)
+                .orElseThrow(() -> new ResourceNotFoundException("Companhia", novoCampoId));
     }
 
     private Long getLoggedInUserId() {

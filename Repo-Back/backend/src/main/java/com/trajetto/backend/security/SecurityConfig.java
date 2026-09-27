@@ -64,7 +64,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/places").authenticated()
                         .requestMatchers(HttpMethod.GET, "/places/categories").authenticated()
                         .requestMatchers(HttpMethod.GET, "/api/tourist-spots").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/genders").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/novo-campo").permitAll()
                         .requestMatchers(HttpMethod.GET, "/user").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.POST, "/user/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/user/logout").authenticated()

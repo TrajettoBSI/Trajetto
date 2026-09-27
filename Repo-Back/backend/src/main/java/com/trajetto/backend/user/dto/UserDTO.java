@@ -48,8 +48,9 @@ public class UserDTO {
     @NotBlank(message = "O país é obrigatório")
     private String country;
 
-    @NotNull(message = "O gênero é obrigatório")
-    private Long genderId;
+    // TROCAR: mensagem exibida quando o campo não é enviado.
+    @NotNull(message = "A companhia é obrigatória")
+    private Long novoCampoId;
 
     @NotBlank(message = "A senha é obrigatória")
     @Size(min = 8, max = 100, message = "A senha deve ter no mínimo 8 caracteres")

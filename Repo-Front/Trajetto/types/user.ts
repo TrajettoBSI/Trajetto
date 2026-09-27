@@ -6,8 +6,8 @@ export interface User {
   birthDate: string | null;
   country: string | null;
   telephone: string | null;
-  genderId: number | null;
-  genderName: string | null;
+  novoCampoId: number | null;
+  novoCampoName: string | null;
   isAdmin: boolean;
   travelerProfile: string | null;
 }
@@ -25,10 +25,10 @@ export interface RegisterRequest {
   birthDate: string;
   country: string;
   telephone: string;
-  genderId: number;
+  novoCampoId: number;
 }
 
-export interface Gender {
+export interface NovoCampo {
   id: number;
   name: string;
 }

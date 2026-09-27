@@ -27,12 +27,12 @@ export default function Register() {
     birthDate,
     country,
     telephone,
-    genderId,
-    genders,
+    novoCampoId,
+    novoCampoOpcoes,
     loading,
     errors,
     showCountries,
-    showGenders,
+    showNovoCampo,
     onChangeFirstName,
     onChangeLastName,
     onChangeBirthDate,
@@ -43,14 +43,14 @@ export default function Register() {
     onSelectCountry,
     openCountries,
     closeCountries,
-    onSelectGender,
-    openGenders,
-    closeGenders,
+    onSelectNovoCampo,
+    openNovoCampo,
+    closeNovoCampo,
     handleRegister,
     goToLogin,
   } = useRegister();
 
-  const selectedGender = genders.find((g) => g.id === genderId);
+  const selectedNovoCampo = novoCampoOpcoes.find((o) => o.id === novoCampoId);
 
   return (
     <KeyboardAvoidingView style={s.flex} behavior="padding" keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 30}>
@@ -152,28 +152,31 @@ export default function Register() {
             onClose={closeCountries}
           />
 
+          {/* TROCAR: os textos deste campo (título, placeholder e mensagem de obrigatório) ficam
+              nas chaves novoCampoLabel, novoCampoPlaceholder e novoCampoRequired dos 3 arquivos
+              src/i18n/locales/{pt-BR,en-US,es-ES}/register.json. As opções vêm do INSERT da migração. */}
           <View style={s.field}>
-            <Text style={s.label}>{t('genderLabel')}</Text>
+            <Text style={s.label}>{t('novoCampoLabel')}</Text>
             <TouchableOpacity
-              style={[s.dropdownTrigger, errors.genderId ? s.inputError : null]}
-              onPress={openGenders}
+              style={[s.dropdownTrigger, errors.novoCampoId ? s.inputError : null]}
+              onPress={openNovoCampo}
               activeOpacity={0.7}
             >
-              <Text style={selectedGender ? s.dropdownValue : s.dropdownPlaceholder}>
-                {selectedGender ? selectedGender.name : t('genderPlaceholder')}
+              <Text style={selectedNovoCampo ? s.dropdownValue : s.dropdownPlaceholder}>
+                {selectedNovoCampo ? selectedNovoCampo.name : t('novoCampoPlaceholder')}
               </Text>
               <Text style={s.dropdownChevron}>▼</Text>
             </TouchableOpacity>
-            {errors.genderId ? <Text style={s.errorText}>{errors.genderId}</Text> : null}
+            {errors.novoCampoId ? <Text style={s.errorText}>{errors.novoCampoId}</Text> : null}
           </View>
 
           <OptionPickerModal
-            visible={showGenders}
-            title={t('genderLabel')}
-            options={genders.map((g) => ({ value: String(g.id), label: g.name }))}
-            selected={genderId !== null ? String(genderId) : null}
-            onSelect={(value) => { if (value !== null) onSelectGender(Number(value)); }}
-            onClose={closeGenders}
+            visible={showNovoCampo}
+            title={t('novoCampoLabel')}
+            options={novoCampoOpcoes.map((o) => ({ value: String(o.id), label: o.name }))}
+            selected={novoCampoId !== null ? String(novoCampoId) : null}
+            onSelect={(value) => { if (value !== null) onSelectNovoCampo(Number(value)); }}
+            onClose={closeNovoCampo}
           />
 
           <CustomInput

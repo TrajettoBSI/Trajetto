@@ -1,4 +1,4 @@
-package com.trajetto.backend.gender.model;
+package com.trajetto.backend.novocampo.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -9,8 +9,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "genders")
-public class GenderModel {
+// TROCAR (opcional): só se trocou o nome da tabela no SQL. Os dois precisam ser iguais.
+@Table(name = "companhia")
+public class NovoCampoModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
