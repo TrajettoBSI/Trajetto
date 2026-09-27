@@ -208,7 +208,7 @@ public class DefaultUserFacade implements UserFacade {
     private NovoCampoModel findNovoCampo(Long novoCampoId) {
         // TROCAR: nome exibido na mensagem de erro quando o id enviado não existe.
         return novoCampoRepository.findById(novoCampoId)
-                .orElseThrow(() -> new ResourceNotFoundException("Companhia", novoCampoId));
+                .orElseThrow(() -> new ResourceNotFoundException("Orçamento", novoCampoId));
     }
 
     private Long getLoggedInUserId() {

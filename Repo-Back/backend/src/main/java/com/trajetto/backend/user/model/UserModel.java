@@ -52,7 +52,7 @@ public class UserModel {
 
     @ManyToOne
     // TROCAR (opcional): só se trocou o nome da coluna no SQL. Os dois precisam ser iguais.
-    @JoinColumn(name = "companhia_id")
+    @JoinColumn(name = "orcamento_id")
     private NovoCampoModel novoCampo;
 
     @JsonIgnore

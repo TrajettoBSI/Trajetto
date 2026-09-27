@@ -49,7 +49,7 @@ public class UserDTO {
     private String country;
 
     // TROCAR: mensagem exibida quando o campo não é enviado.
-    @NotNull(message = "A companhia é obrigatória")
+    @NotNull(message = "O orcamento é obrigatório")
     private Long novoCampoId;
 
     @NotBlank(message = "A senha é obrigatória")

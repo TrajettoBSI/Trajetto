@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 // TROCAR (opcional): só se trocou o nome da tabela no SQL. Os dois precisam ser iguais.
-@Table(name = "companhia")
+@Table(name = "orcamento")
 public class NovoCampoModel {
 
     @Id
