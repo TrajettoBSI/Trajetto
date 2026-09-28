@@ -142,7 +142,9 @@
     "roleUser": "👤 Usuario",
     "deleteConfirm": "¿Deseas eliminar a {{name}}?",
     "deleteTitle": "Eliminar usuario",
-    "deleteError": "No se pudo eliminar el usuario."
+    "deleteError": "No se pudo eliminar el usuario.",
+    "emptyTitle": "Ningún usuario registrado",
+    "emptyMessage": "En cuanto alguien cree una cuenta, aparecerá en esta lista."
   },
 
   "userDetail": {

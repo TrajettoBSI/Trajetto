@@ -37,5 +37,6 @@
     "driving": "driving",
     "fromHere": "from here",
     "viewFullDetails": "View full details →"
-  }
+  },
+  "loadingText": "Loading your itinerary map..."
 }

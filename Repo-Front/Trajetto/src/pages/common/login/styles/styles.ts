@@ -52,17 +52,10 @@ export const styles = (colors: AppColors) =>
       color: colors.text,
       marginBottom: 15,
     },
-    errorBox: {
-      backgroundColor: colors.errorSurface,
-      borderRadius: 10,
-      padding: 12,
+    feedback: {
       marginBottom: 16,
       borderLeftWidth: 4,
       borderLeftColor: colors.error,
-    },
-    errorBoxText: {
-      fontSize: 13,
-      color: colors.errorText,
     },
     link: {
       fontSize: 14,

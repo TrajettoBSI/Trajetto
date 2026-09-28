@@ -21,5 +21,22 @@
   "tabHome": "Inicio",
   "tabMap": "Mapa",
   "networkError": "No se pudo conectar con el servidor. Revisa tu conexión e inténtalo de nuevo.",
-  "emptyTitle": "No hay nada por aquí"
+  "emptyTitle": "No hay nada por aquí",
+  "feedback": {
+    "loading": {
+      "title": "Cargando...",
+      "message": "Un momento mientras buscamos la información.",
+      "action": ""
+    },
+    "error": {
+      "title": "Algo salió mal",
+      "message": "No fue posible cargar la información. Revisa tu conexión e inténtalo de nuevo.",
+      "action": "Intentar de nuevo"
+    },
+    "empty": {
+      "title": "Nada por aquí todavía",
+      "message": "No encontramos nada para mostrar en este momento.",
+      "action": "Actualizar"
+    }
+  }
 }

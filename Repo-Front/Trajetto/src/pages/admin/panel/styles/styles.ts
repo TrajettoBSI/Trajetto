@@ -44,11 +44,6 @@ export const styles = (colors: AppColors) =>
     tabTextActive: { color: colors.white },
 
     container: { padding: 16, paddingBottom: 40 },
-    loadingText: { fontSize: 14, color: colors.gray500 },
-    errorIcon: { fontSize: 48 },
-    errorText: { fontSize: 15, color: colors.gray700, textAlign: 'center' },
-    retryBtn: { backgroundColor: colors.primaryDark, borderRadius: 12, paddingHorizontal: 24, paddingVertical: 12 },
-    retryText: { color: colors.white, fontFamily: 'Inter-Bold' },
 
     stateBox: { minHeight: 280, alignItems: 'center', justifyContent: 'center', gap: 12, padding: 32 },
 
@@ -76,7 +71,5 @@ export const styles = (colors: AppColors) =>
     noItineraryLabel: { fontSize: 14, color: colors.gray500, textAlign: 'center', marginTop: 4 },
     noItinerarySub: { fontSize: 12, color: colors.gray400, textAlign: 'center', marginTop: 2 },
 
-    emptyChartText: { fontSize: 13, color: colors.gray400, textAlign: 'center', paddingVertical: 12 },
     filterNote: { fontSize: 12, color: colors.gray500, lineHeight: 18, marginBottom: 12 },
-    clearFiltersBtn: { alignSelf: 'center' },
   });

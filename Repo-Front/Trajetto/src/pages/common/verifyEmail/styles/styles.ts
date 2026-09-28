@@ -3,6 +3,11 @@ import { AppColors } from '@/src/theme';
 
 export const styles = (colors: AppColors) =>
   StyleSheet.create({
+    feedback: {
+      marginBottom: 16,
+      borderLeftWidth: 4,
+      borderLeftColor: colors.error,
+    },
     scrollView: { flex: 1, backgroundColor: colors.white },
     scrollContent: { flexGrow: 1 },
     headerWrapper: { paddingHorizontal: 24, paddingBottom: 40, backgroundColor: colors.primary },

@@ -30,7 +30,6 @@ export const styles = (colors: AppColors) =>
     content: { padding: 20, paddingBottom: 32, backgroundColor: colors.white },
 
     centerState: { alignItems: 'center', paddingTop: 60, flex: 1, marginVertical: 100 },
-    stateText: { marginTop: 16, fontSize: 15, color: colors.textMutedLight },
 
     sectionLabel: {
       fontSize: 11, fontFamily: 'Inter-Bold', color: colors.textSubtle,

@@ -1,3 +1,4 @@
+import { useCallback } from 'react';
 import { useRouter } from 'expo-router';
 import { useAuth } from '@/context/AuthContext';
 import { useItineraryStore } from '@/hooks/itineraryStore';
@@ -13,6 +14,11 @@ export function useItinerario() {
   const { user } = useAuth();
   const { itinerary, loading, error, setFocusedMapPlace } = useItineraryStore();
 
+  const userId = user?.id;
+  const reload = useCallback(() => {
+    if (userId) useItineraryStore.getState().fetchAllItineraries(userId);
+  }, [userId]);
+
   const alternatives = useAlternatives(itinerary);
   const rating = usePlaceRating();
   const { handleExportPDF } = useExportPdf();
@@ -24,7 +30,7 @@ export function useItinerario() {
     itinerary,
     loading,
     error,
-    retry: () => { if (user) useItineraryStore.getState().fetchAllItineraries(user.id); },
+    reload,
     setFocusedMapPlace,
     scrollRef,
     highlightedPlaceIndex,

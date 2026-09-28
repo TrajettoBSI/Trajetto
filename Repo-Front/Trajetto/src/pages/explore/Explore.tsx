@@ -10,7 +10,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import CustomInput from '@/components/CustomInput';
 import { useColors } from '@/src/theme';
-import AsyncState from '@/src/components/AsyncState/AsyncState';
+import { AsyncBoundary } from '@/src/components/feedback';
 import { useExplore } from './hooks/useExplore';
 import { categoryIcon } from '@/src/helpers/categoryIcon';
 import SpotCard from './components/SpotCard/SpotCard';
@@ -27,6 +27,7 @@ export default function Explore() {
     categories,
     loading,
     error,
+    reload,
     search,
     selectedCategory,
     showFilter,
@@ -40,7 +41,6 @@ export default function Explore() {
     handleApplyFilter,
     handleClearFilter,
     handleSpotPress,
-    retry,
   } = useExplore();
 
   return (
@@ -100,46 +100,38 @@ export default function Explore() {
 
         {searched && !loading && !error && (
           <Text style={s.resultsLabel}>
-            {t('explore:resultsCount', { count: spots.length })}
+            {t('explore:resultsCount', { count: spots?.length ?? 0 })}
             {selectedCategory ? t('explore:resultsInCategory', { category: selectedCategory }) : ''}
           </Text>
         )}
 
-        <AsyncState
+        <AsyncBoundary
+          state={{ loading, error, data: spots }}
+          onRetry={reload}
+          error={{ message: error }}
           style={s.loadingContainer}
-          loading={loading}
-          loadingText={t('explore:loadingText')}
-          error={error}
-          onRetry={retry}
-          retryLabel={t('common:retry')}
+          loading={{ title: t('explore:loadingText'), message: '' }}
+          empty={{
+            icon: searched ? '😕' : '🗺️',
+            title: searched ? t('explore:emptyNotFoundTitle') : t('explore:emptyDefaultTitle'),
+            message: searched ? t('explore:emptyNotFoundText') : t('explore:emptyDefaultText'),
+            actionLabel: t('explore:clearFiltersButton'),
+            onAction: searched ? handleClearFilter : undefined,
+          }}
         >
-          <FlatList
-            data={spots}
-            keyExtractor={(item, index) => `${item.name}-${index}`}
-            renderItem={({ item }) => (
-              <SpotCard spot={item} onPress={() => handleSpotPress(item)} />
-            )}
-            ListEmptyComponent={
-              <View style={s.emptyContainer}>
-                <Text style={s.emptyIcon}>{searched ? '😕' : '🗺️'}</Text>
-                <Text style={s.emptyTitle}>
-                  {searched ? t('explore:emptyNotFoundTitle') : t('explore:emptyDefaultTitle')}
-                </Text>
-                <Text style={s.emptyText}>
-                  {searched ? t('explore:emptyNotFoundText') : t('explore:emptyDefaultText')}
-                </Text>
-                {searched && (
-                  <TouchableOpacity style={s.clearBtn} onPress={handleClearFilter}>
-                    <Text style={s.clearBtnText}>{t('explore:clearFiltersButton')}</Text>
-                  </TouchableOpacity>
-                )}
-              </View>
-            }
-            contentContainerStyle={spots.length === 0 ? s.listEmpty : s.list}
-            showsVerticalScrollIndicator={false}
-            keyboardShouldPersistTaps="handled"
-          />
-        </AsyncState>
+          {(lista) => (
+            <FlatList
+              data={lista}
+              keyExtractor={(item, index) => `${item.name}-${index}`}
+              renderItem={({ item }) => (
+                <SpotCard spot={item} onPress={() => handleSpotPress(item)} />
+              )}
+              contentContainerStyle={s.list}
+              showsVerticalScrollIndicator={false}
+              keyboardShouldPersistTaps="handled"
+            />
+          )}
+        </AsyncBoundary>
 
       </KeyboardAvoidingView>
 

@@ -61,7 +61,9 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
       const data = await ItineraryService.getItinerary(userId);
       set({ itinerary: data ?? null, loading: false });
     } catch (e) {
-      set({ error: getErrorMessage(e), loading: false });
+      // Guardar a falha permite a tela dizer que algo deu errado, em vez de mostrar
+      // "voce ainda nao tem roteiro" para quem esta so sem internet.
+      set({ itinerary: null, error: getErrorMessage(e), loading: false });
     }
   },
 
@@ -72,7 +74,7 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
       const active = data.find(i => i.active) ?? null;
       set({ itineraries: data, itinerary: active, loading: false });
     } catch (e) {
-      set({ error: getErrorMessage(e), loading: false });
+      set({ itineraries: [], itinerary: null, error: getErrorMessage(e), loading: false });
     }
   },
 

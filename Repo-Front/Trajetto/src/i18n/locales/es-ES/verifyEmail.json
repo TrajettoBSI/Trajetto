@@ -3,7 +3,6 @@
   "title": "Verifica tu correo electrónico",
   "subtitle": "Enviamos un código de 6 dígitos a",
   "submit": "Confirmar",
-  "codeTooShortTitle": "Atención",
   "codeTooShortMessage": "Ingresa los 6 dígitos del código.",
   "successTitle": "Éxito",
   "successMessage": "¡Cuenta verificada! Ya puedes iniciar sesión.",

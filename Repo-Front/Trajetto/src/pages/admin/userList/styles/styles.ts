@@ -26,7 +26,6 @@ export const styles = (colors: AppColors) =>
     logoutText: { color: colors.white, fontFamily: 'Inter-Medium', fontSize: 14 },
 
     center: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.backgroundMuted },
-    loadingText: { marginTop: 12, fontSize: 15, color: colors.gray400 },
 
     list: { padding: 20, paddingBottom: 32, backgroundColor: colors.backgroundMuted, flexGrow: 1 },
 

@@ -11,6 +11,7 @@ export type ResetPasswordData = {
   code: string;
   password: string;
   loading: boolean;
+  error: string;
   errors: Record<string, string>;
   onChangeEmail: (t: string) => void;
   onChangeCode: (t: string) => void;
@@ -26,6 +27,7 @@ export function useResetPassword(): ResetPasswordData {
   const [code, setCode] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const clearError = (field: string) => {
@@ -45,6 +47,7 @@ export function useResetPassword(): ResetPasswordData {
       return;
     }
     setErrors({});
+    setError('');
     try {
       setLoading(true);
       await authService.resetPassword({ email, code, newPassword: password });
@@ -52,8 +55,8 @@ export function useResetPassword(): ResetPasswordData {
         title: t('successTitle'),
         buttons: [{ text: 'OK', onPress: () => router.replace('/LoginScreen') }],
       });
-    } catch (error) {
-      showAlert(getErrorMessage(error, t('resetError')), { title: t('common:error') });
+    } catch (e) {
+      setError(getErrorMessage(e, t('resetError')));
     } finally {
       setLoading(false);
     }
@@ -64,6 +67,7 @@ export function useResetPassword(): ResetPasswordData {
     code,
     password,
     loading,
+    error,
     errors,
     onChangeEmail: (t) => { setEmail(t); clearError('email'); },
     onChangeCode: (t) => { setCode(t.replace(/\D/g, '')); clearError('code'); },

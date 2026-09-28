@@ -21,5 +21,22 @@
   "tabHome": "Home",
   "tabMap": "Map",
   "networkError": "Couldn't reach the server. Check your connection and try again.",
-  "emptyTitle": "Nothing here yet"
+  "emptyTitle": "Nothing here yet",
+  "feedback": {
+    "loading": {
+      "title": "Loading...",
+      "message": "Just a moment while we fetch the information.",
+      "action": ""
+    },
+    "error": {
+      "title": "Something went wrong",
+      "message": "We couldn't load the information. Check your connection and try again.",
+      "action": "Try again"
+    },
+    "empty": {
+      "title": "Nothing here yet",
+      "message": "We found nothing to show right now.",
+      "action": "Refresh"
+    }
+  }
 }
