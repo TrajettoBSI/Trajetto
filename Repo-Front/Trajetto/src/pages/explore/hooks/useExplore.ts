@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { Place, placesService } from '@/services';
 import { getErrorMessage } from '@/utils/apiError';
 
@@ -26,6 +27,7 @@ export type ExploreData = {
 
 export function useExplore(): ExploreData {
   const router = useRouter();
+  const { t } = useTranslation('explore');
 
   // Comeca em null, e nao em lista vazia: antes da primeira resposta nao se sabe ainda se
   // existe ou nao lugar para mostrar.
@@ -52,11 +54,12 @@ export function useExplore(): ExploreData {
       setSpots(results);
       setSearched(true);
     } catch (e) {
-      setError(getErrorMessage(e));
+      setSpots([]);
+      setError(getErrorMessage(e, t('loadError')));
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [t]);
 
   useEffect(() => {
     placesService.getCategories().then(setCategories).catch(() => {});
@@ -65,9 +68,12 @@ export function useExplore(): ExploreData {
         setSpots(results);
         setSearched(true);
       })
-      .catch((e) => setError(getErrorMessage(e)))
+      .catch((e) => {
+        setSpots([]);
+        setError(getErrorMessage(e, t('loadError')));
+      })
       .finally(() => setLoading(false));
-  }, []);
+  }, [t]);
 
   const handleSearchChange = (text: string) => {
     setSearch(text);

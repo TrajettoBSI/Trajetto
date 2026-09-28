@@ -96,7 +96,6 @@ function RootLayoutNav() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false, headerBackTitle: '' }} />
-        <Stack.Screen name="(itinerary)" options={{ headerShown: false }} />
         <Stack.Screen name="LoginScreen" options={{ headerShown: false }} />
         <Stack.Screen name="RegisterScreen" options={{ headerShown: false }} />
         <Stack.Screen name="VerifyEmailScreen" options={{ headerShown: false }} />

@@ -13,7 +13,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useLanguageSwitcher } from '@/src/components/LanguageSwitcher/hooks/useLanguageSwitcher';
 import LanguagePickerModal from '@/src/components/LanguageSwitcher/LanguagePickerModal';
 
-const PRIMARY = '#006ecf';
+const PRIMARY = '#023665';
 
 type MenuItem = {
   icon: keyof typeof Ionicons.glyphMap;

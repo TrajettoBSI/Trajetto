@@ -20,6 +20,8 @@
   "genericError": "Couldn't complete the operation. Please try again.",
   "tabHome": "Home",
   "tabMap": "Map",
+  "networkError": "Couldn't reach the server. Check your connection and try again.",
+  "emptyTitle": "Nothing here yet",
   "feedback": {
     "loading": {
       "title": "Loading...",

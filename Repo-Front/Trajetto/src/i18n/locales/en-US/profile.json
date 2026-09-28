@@ -28,5 +28,6 @@
     "exploreDestinations": "Explore destinations",
     "logout": "Log out",
     "version": "Trajetto v{{version}}"
-  }
+  },
+  "loadError": "Couldn't load your details."
 }

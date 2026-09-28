@@ -92,6 +92,7 @@ export default function Roteiros() {
         <AsyncBoundary
           state={{ loading, error, data: itinerary }}
           onRetry={reload}
+          error={{ message: error ?? undefined }}
           style={s.centerState}
           loading={{ title: t('loadingItineraries'), message: '' }}
           renderEmpty={() => <EmptyState destIndex={destIndex} />}

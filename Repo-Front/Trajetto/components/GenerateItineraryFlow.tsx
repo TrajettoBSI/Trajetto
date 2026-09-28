@@ -25,7 +25,7 @@ import CustomButton from './CustomButton';
 import CustomInput from './CustomInput';
 import { Ionicons } from '@expo/vector-icons';
 
-const PRIMARY = '#006ecf';
+const PRIMARY = '#023665';
 const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
 
 type Step = 'config' | 'loading' | 'preview';
@@ -128,6 +128,7 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
   const [addressInput, setAddressInput] = useState('');
   const [suggestions, setSuggestions] = useState<PlaceSuggestion[]>([]);
   const [searching, setSearching] = useState(false);
+  const [searchMessage, setSearchMessage] = useState('');
   const [selectedPlace, setSelectedPlace] = useState<PlaceSuggestion | null>(null);
   const [generatedItinerary, setGeneratedItinerary] = useState<Itinerary | null>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -150,9 +151,11 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
   const handleInputChange = (text: string) => {
     setAddressInput(text);
     setSelectedPlace(null);
+    setSearchMessage('');
     if (debounceRef.current) clearTimeout(debounceRef.current);
     if (text.trim().length < 3) {
       setSuggestions([]);
+      setSearching(false);
       return;
     }
     setSearching(true);
@@ -160,12 +163,14 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
       try {
         const results = await searchAddresses(text.trim());
         setSuggestions(results);
+        if (results.length === 0) setSearchMessage(t('roteiros:generateFlow.addressNotFound'));
         if (results.length > 0) {
           // Scroll to show suggestions above the keyboard
           scrollViewRef.current?.scrollTo({ y: Math.max(0, inputLayoutY.current - 20), animated: true });
         }
       } catch {
         setSuggestions([]);
+        setSearchMessage(t('common:networkError'));
       } finally {
         setSearching(false);
       }
@@ -183,6 +188,8 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
     setAddressInput('');
     setSuggestions([]);
     setSelectedPlace(null);
+    setSearching(false);
+    setSearchMessage('');
     if (debounceRef.current) clearTimeout(debounceRef.current);
   };
 
@@ -323,6 +330,10 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
                   </View>
                 )}
               </View>
+
+              {!selectedPlace && !searching && searchMessage ? (
+                <Text style={styles.searchMessage}>{searchMessage}</Text>
+              ) : null}
 
               {/* Endereço confirmado */}
               {selectedPlace && (
@@ -552,6 +563,7 @@ const styles = StyleSheet.create({
   },
   resolvedIcon: { marginTop: -1 },
   resolvedText: { flex: 1, fontSize: 13, color: '#2e7d32', lineHeight: 18 },
+  searchMessage: { fontSize: 13, color: '#8a5a00', lineHeight: 18, marginTop: 10 },
 
   generateBtn: {
     backgroundColor: PRIMARY,
@@ -564,7 +576,7 @@ const styles = StyleSheet.create({
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 4 },
     elevation: 5,
-    width: '80%', alignSelf: 'center', height: 55,
+    width: '80%', alignSelf: 'center', minHeight: 55,
   },
   generateBtnDisabled: { opacity: 0.45, shadowOpacity: 0 },
   generateBtnText: { color: '#fff', fontWeight: 'bold', fontSize: 16 },

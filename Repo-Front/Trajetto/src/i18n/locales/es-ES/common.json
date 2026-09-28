@@ -20,6 +20,8 @@
   "genericError": "No se pudo completar la operación. Inténtalo de nuevo.",
   "tabHome": "Inicio",
   "tabMap": "Mapa",
+  "networkError": "No se pudo conectar con el servidor. Revisa tu conexión e inténtalo de nuevo.",
+  "emptyTitle": "No hay nada por aquí",
   "feedback": {
     "loading": {
       "title": "Cargando...",

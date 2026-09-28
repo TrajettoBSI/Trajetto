@@ -11,6 +11,8 @@ const NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search';
 const USER_AGENT = 'TrajettoApp/1.0 (admin@authserver.com.br)';
 
 const COUNTRY_CODES = 'it';
+// Sem limite, uma rede que não responde deixa a busca girando para sempre.
+const REQUEST_TIMEOUT_MS = 10000;
 const RESULT_LIMIT = 5;
 
 export interface PlaceSuggestion {
@@ -32,14 +34,22 @@ export async function searchAddresses(query: string): Promise<PlaceSuggestion[]>
     addressdetails: '1',
   });
 
-  const res = await fetch(`${NOMINATIM_URL}?${params}`, {
-    headers: {
-      'Accept-Language': 'pt-BR,pt;q=0.9',
-      'User-Agent': USER_AGENT,
-    },
-  });
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  let data: unknown;
+  try {
+    const res = await fetch(`${NOMINATIM_URL}?${params}`, {
+      headers: {
+        'Accept-Language': 'pt-BR,pt;q=0.9',
+        'User-Agent': USER_AGENT,
+      },
+      signal: controller.signal,
+    });
+    data = await res.json();
+  } finally {
+    clearTimeout(timer);
+  }
 
-  const data = await res.json();
   if (!Array.isArray(data)) return [];
 
   return data.map((item: any) => {

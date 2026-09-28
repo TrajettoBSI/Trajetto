@@ -2,6 +2,7 @@
 // Formato e códigos: Repo-Back/backend/docs/CONTRATO-DE-ERRO.md
 
 import { isAxiosError } from 'axios';
+import i18n from '@/src/i18n';
 
 export type ApiErrorCode =
   | 'VALIDATION_ERROR'
@@ -39,9 +40,6 @@ export interface ApiErrorBody {
   details?: ApiFieldError[];
 }
 
-const DEFAULT_MESSAGE = 'Não foi possível concluir a operação. Tente novamente.';
-const NETWORK_MESSAGE = 'Não foi possível conectar ao servidor. Verifique sua conexão e tente novamente.';
-
 const isApiErrorBody = (data: unknown): data is ApiErrorBody => {
   if (!data || typeof data !== 'object') return false;
   const body = data as Partial<ApiErrorBody>;
@@ -73,7 +71,7 @@ export const getTraceId = (error: unknown): string | null =>
  * Mensagem pronta para mostrar ao usuário.
  * Em erros de validação, junta as mensagens de cada campo rejeitado.
  */
-export const getErrorMessage = (error: unknown, fallback: string = DEFAULT_MESSAGE): string => {
+export const getErrorMessage = (error: unknown, fallback: string = i18n.t('common:genericError')): string => {
   const apiError = getApiError(error);
 
   if (apiError) {
@@ -85,7 +83,7 @@ export const getErrorMessage = (error: unknown, fallback: string = DEFAULT_MESSA
 
   if (isAxiosError(error)) {
     // Sem resposta = servidor fora do ar, timeout ou celular sem rede.
-    if (!error.response) return NETWORK_MESSAGE;
+    if (!error.response) return i18n.t('common:networkError');
 
     const data = error.response.data;
     if (typeof data === 'string' && data.trim()) return data;

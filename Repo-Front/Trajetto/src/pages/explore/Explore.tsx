@@ -98,7 +98,7 @@ export default function Explore() {
           </View>
         ) : null}
 
-        {searched && !loading && (
+        {searched && !loading && !error && (
           <Text style={s.resultsLabel}>
             {t('explore:resultsCount', { count: spots?.length ?? 0 })}
             {selectedCategory ? t('explore:resultsInCategory', { category: selectedCategory }) : ''}
@@ -108,6 +108,7 @@ export default function Explore() {
         <AsyncBoundary
           state={{ loading, error, data: spots }}
           onRetry={reload}
+          error={{ message: error }}
           style={s.loadingContainer}
           loading={{ title: t('explore:loadingText'), message: '' }}
           empty={{

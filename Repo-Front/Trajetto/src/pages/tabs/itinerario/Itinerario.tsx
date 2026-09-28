@@ -47,6 +47,7 @@ export default function Itinerario() {
     <AsyncBoundary
       state={{ loading, error, data: itinerary }}
       onRetry={reload}
+      error={{ message: error ?? undefined }}
       style={s.center}
       loading={{ title: t('loadingText'), message: '' }}
       renderEmpty={() => <NoItineraryEmptyState destIndex={destIndex} />}

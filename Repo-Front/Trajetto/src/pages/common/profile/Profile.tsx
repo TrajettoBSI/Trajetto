@@ -54,7 +54,7 @@ export default function Profile() {
           </View>
         </View>
       </View>
-      <AsyncBoundary state={perfil} onRetry={perfil.reload}>
+      <AsyncBoundary state={perfil} onRetry={perfil.reload} error={{ title: t('loadError') }}>
         {() => (
       <ScrollView style={s.flex} contentContainerStyle={s.content} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" showsVerticalScrollIndicator={false}>
 
