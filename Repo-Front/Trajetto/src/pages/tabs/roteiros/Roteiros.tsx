@@ -1,12 +1,12 @@
 import React from 'react';
-import { ActivityIndicator, Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import GenerateItineraryFlow from '@/components/GenerateItineraryFlow';
 import CustomButton from '@/components/CustomButton';
 import { useColors } from '@/src/theme';
-import AsyncState from '@/src/components/AsyncState/AsyncState';
+import { AsyncBoundary } from '@/src/components/feedback';
 import { useRoteiros } from './hooks/useRoteiros';
 import { styles } from './styles/styles';
 import AdminBanners from './components/AdminBanners/AdminBanners';
@@ -28,7 +28,7 @@ export default function Roteiros() {
     itineraries,
     loading,
     error,
-    retry,
+    reload,
     deleting,
     activating,
     showGenerate,
@@ -89,14 +89,15 @@ export default function Roteiros() {
         contentContainerStyle={[s.content, { flexGrow: 1 }]}
         showsVerticalScrollIndicator={false}
       >
-        {loading ? (
-          <View style={s.centerState}>
-            <ActivityIndicator size="large" color={colors.primary} />
-            <Text style={s.stateText}>{t('loadingItineraries')}</Text>
-          </View>
-        ) : error && itineraries.length === 0 ? (
-          <AsyncState style={s.centerState} error={error} onRetry={retry} retryLabel={t('common:retry')} />
-        ) : itinerary ? (
+        <AsyncBoundary
+          state={{ loading, error, data: itinerary }}
+          onRetry={reload}
+          error={{ message: error ?? undefined }}
+          style={s.centerState}
+          loading={{ title: t('loadingItineraries'), message: '' }}
+          renderEmpty={() => <EmptyState destIndex={destIndex} />}
+        >
+          {(roteiroAtivo) => (
           <>
             {!selectMode && (
               <ExploreBanner onPress={() => router.push('/ExploreScreen')} />
@@ -104,13 +105,13 @@ export default function Roteiros() {
             <Text style={s.sectionLabel}>{t('activeSectionLabel')}</Text>
 
             <ActiveItineraryCard
-              itinerary={itinerary}
+              itinerary={roteiroAtivo}
               selectMode={selectMode}
-              selected={selectedIds.has(itinerary.id)}
-              deleting={deleting === itinerary.id}
-              onPress={() => selectMode ? toggleSelect(itinerary.id) : router.push('/itinerario')}
-              onLongPress={() => !selectMode && enterSelectMode(itinerary.id)}
-              onDelete={() => handleDelete(itinerary.id)}
+              selected={selectedIds.has(roteiroAtivo.id)}
+              deleting={deleting === roteiroAtivo.id}
+              onPress={() => selectMode ? toggleSelect(roteiroAtivo.id) : router.push('/itinerario')}
+              onLongPress={() => !selectMode && enterSelectMode(roteiroAtivo.id)}
+              onDelete={() => handleDelete(roteiroAtivo.id)}
             />
 
             {inactiveItineraries.length > 0 && (
@@ -133,9 +134,8 @@ export default function Roteiros() {
               </>
             )}
           </>
-        ) : (
-          <EmptyState destIndex={destIndex} />
-        )}
+          )}
+        </AsyncBoundary>
 
         {!selectMode && (
           <View style={[s.generateSection, !itinerary && s.generateSectionEmpty]}>

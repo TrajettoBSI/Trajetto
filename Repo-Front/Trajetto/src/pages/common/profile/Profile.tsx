@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomInput from '@/components/CustomInput';
 import CountryPickerModal from '@/src/components/CountryPickerModal/CountryPickerModal';
 import { useColors } from '@/src/theme';
-import AsyncState from '@/src/components/AsyncState/AsyncState';
+import { AsyncBoundary, FeedbackState } from '@/src/components/feedback';
 import { useProfile } from './hooks/useProfile';
 import { styles } from './styles/styles';
 
@@ -25,9 +25,8 @@ export default function Profile() {
     country,
     telephone,
     loading,
-    fetching,
-    loadError,
-    retryLoad,
+    error,
+    perfil,
     showCountries,
     errors,
     logout,
@@ -42,38 +41,21 @@ export default function Profile() {
     handleUpdate,
   } = useProfile();
 
-  const header = (
-    <View style={[s.headerWrapper, { paddingTop: insets.top }]}>
-      <View style={s.headerRow}>
-        <View style={s.headerLeft}>
-          <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
-            <Ionicons name="chevron-back" size={32} color={colors.white} />
-          </TouchableOpacity>
-          <Text style={s.headerText}>{t('headerTitle')}</Text>
-        </View>
-      </View>
-    </View>
-  );
-
-  if (fetching || loadError) {
-    return (
-      <View style={s.flex}>
-        {header}
-        <AsyncState
-          style={s.loadingCenter}
-          loading={fetching}
-          error={loadError}
-          onRetry={retryLoad}
-          retryLabel={t('common:retry')}
-        />
-      </View>
-    );
-  }
-
   return (
     <KeyboardAvoidingView style={s.flex} behavior="padding" keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 30}>
 
-      {header}
+      <View style={[s.headerWrapper, { paddingTop: insets.top }]}>
+        <View style={s.headerRow}>
+          <View style={s.headerLeft}>
+            <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
+              <Ionicons name="chevron-back" size={32} color={colors.white} />
+            </TouchableOpacity>
+            <Text style={s.headerText}>{t('headerTitle')}</Text>
+          </View>
+        </View>
+      </View>
+      <AsyncBoundary state={perfil} onRetry={perfil.reload} error={{ title: t('loadError') }}>
+        {() => (
       <ScrollView style={s.flex} contentContainerStyle={s.content} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" showsVerticalScrollIndicator={false}>
 
         <View style={s.avatarWrapper}>
@@ -88,6 +70,10 @@ export default function Profile() {
 
         <View style={s.card}>
           <Text style={s.sectionTitle}>{t('personalInfo')}</Text>
+
+          {error ? (
+            <FeedbackState variant="error" layout="inline" message={error} style={s.feedback} />
+          ) : null}
 
           <View style={s.row}>
             <CustomInput
@@ -177,6 +163,8 @@ export default function Profile() {
           </TouchableOpacity>
         </View>
       </ScrollView>
+        )}
+      </AsyncBoundary>
     </KeyboardAvoidingView>
   );
 }

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/context/AuthContext';
 import { userService } from '@/services';
@@ -8,6 +8,8 @@ import {
 } from '@/utils/validators';
 import { getErrorMessage, getFieldErrors } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
+import { AsyncData, useAsyncData } from '@/src/components/feedback';
+import { User } from '@/types/user';
 
 type Errors = Record<string, string>;
 
@@ -19,9 +21,8 @@ export type ProfileData = {
   country: string;
   telephone: string;
   loading: boolean;
-  fetching: boolean;
-  loadError: string;
-  retryLoad: () => void;
+  error: string;
+  perfil: AsyncData<User>;
   showCountries: boolean;
   errors: Errors;
   logout: () => Promise<void>;
@@ -46,27 +47,22 @@ export function useProfile(): ProfileData {
   const [country, setCountry] = useState('');
   const [telephone, setTelephone] = useState('');
   const [loading, setLoading] = useState(false);
-  const [fetching, setFetching] = useState(true);
-  const [loadError, setLoadError] = useState('');
+  const [error, setError] = useState('');
   const [showCountries, setShowCountries] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
 
-  const loadProfile = useCallback(() => {
-    userService.getProfile().then((u) => {
-      setFirstName(u.firstName ?? '');
-      setLastName(u.lastName ?? '');
-      setEmail(u.email ?? '');
-      setBirthDate(u.birthDate ? fromBirthDateISO(u.birthDate) : '');
-      setCountry(u.country ?? '');
-      setTelephone(u.telephone ?? '');
-    })
-      .catch((e) => setLoadError(getErrorMessage(e, t('profile:loadError'))))
-      .finally(() => setFetching(false));
-  }, [t]);
-
-  useEffect(() => {
-    loadProfile();
-  }, [loadProfile]);
+  // Os campos são preenchidos quando a resposta chega; a partir daí eles são do usuário,
+  // e só uma nova busca volta a mexer neles.
+  const perfil = useAsyncData<User>(async () => {
+    const u = await userService.getProfile();
+    setFirstName(u.firstName ?? '');
+    setLastName(u.lastName ?? '');
+    setEmail(u.email ?? '');
+    setBirthDate(u.birthDate ? fromBirthDateISO(u.birthDate) : '');
+    setCountry(u.country ?? '');
+    setTelephone(u.telephone ?? '');
+    return u;
+  });
 
   const clearError = (field: string) => {
     if (errors[field]) setErrors((p) => ({ ...p, [field]: '' }));
@@ -79,6 +75,7 @@ export function useProfile(): ProfileData {
       return;
     }
     setErrors({});
+    setError('');
     try {
       setLoading(true);
       await userService.updateProfile({ firstName, lastName, email, birthDate: toBirthDateISO(birthDate), country, telephone });
@@ -86,7 +83,7 @@ export function useProfile(): ProfileData {
     } catch (e) {
       const fieldErrors = getFieldErrors(e);
       if (Object.keys(fieldErrors).length > 0) setErrors(fieldErrors);
-      showAlert(getErrorMessage(e, t('profile:updateError')), { title: t('common:error') });
+      setError(getErrorMessage(e, t('profile:updateError')));
     } finally {
       setLoading(false);
     }
@@ -100,13 +97,8 @@ export function useProfile(): ProfileData {
     country,
     telephone,
     loading,
-    fetching,
-    loadError,
-    retryLoad: () => {
-      setLoadError('');
-      setFetching(true);
-      loadProfile();
-    },
+    error,
+    perfil,
     showCountries,
     errors,
     logout,

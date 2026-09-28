@@ -9,6 +9,7 @@ import { showAlert } from '@/src/components/alerts/alertService';
 export type ForgotPasswordData = {
   email: string;
   loading: boolean;
+  error: string;
   errors: Record<string, string>;
   onChangeEmail: (t: string) => void;
   handleSend: () => Promise<void>;
@@ -19,15 +20,17 @@ export function useForgotPassword(): ForgotPasswordData {
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const handleSend = async () => {
-    const error = validateEmail(email);
-    if (error) {
-      setErrors({ email: error });
+    const emailError = validateEmail(email);
+    if (emailError) {
+      setErrors({ email: emailError });
       return;
     }
     setErrors({});
+    setError('');
     try {
       setLoading(true);
       await authService.requestPasswordCode(email);
@@ -40,8 +43,8 @@ export function useForgotPassword(): ForgotPasswordData {
           },
         ],
       });
-    } catch (error) {
-      showAlert(getErrorMessage(error, t('sendError')), { title: t('common:error') });
+    } catch (e) {
+      setError(getErrorMessage(e, t('sendError')));
     } finally {
       setLoading(false);
     }
@@ -50,6 +53,7 @@ export function useForgotPassword(): ForgotPasswordData {
   return {
     email,
     loading,
+    error,
     errors,
     onChangeEmail: (t) => {
       setEmail(t);

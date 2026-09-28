@@ -23,11 +23,11 @@ export function useRoteiros() {
 
   const userId = user?.id;
 
-  useFocusEffect(
-    useCallback(() => {
-      if (userId) useItineraryStore.getState().fetchAllItineraries(userId);
-    }, [userId])
-  );
+  const reload = useCallback(() => {
+    if (userId) useItineraryStore.getState().fetchAllItineraries(userId);
+  }, [userId]);
+
+  useFocusEffect(reload);
 
   const enterSelectMode = (id: number) => {
     setSelectMode(true);
@@ -126,7 +126,7 @@ export function useRoteiros() {
     itineraries,
     loading,
     error,
-    retry: () => { if (userId) useItineraryStore.getState().fetchAllItineraries(userId); },
+    reload,
     deleting,
     activating,
     showGenerate,

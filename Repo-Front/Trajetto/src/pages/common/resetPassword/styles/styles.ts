@@ -3,6 +3,11 @@ import { AppColors } from '@/src/theme';
 
 export const styles = (colors: AppColors) =>
   StyleSheet.create({
+    feedback: {
+      marginBottom: 16,
+      borderLeftWidth: 4,
+      borderLeftColor: colors.error,
+    },
     container: { flexGrow: 1, backgroundColor: colors.backgroundMuted, justifyContent: 'center', paddingHorizontal: 24, paddingVertical: 40 },
     card: { backgroundColor: colors.white, borderRadius: 24, padding: 28, shadowColor: colors.shadow, shadowOpacity: 0.08, shadowRadius: 16, shadowOffset: { width: 0, height: 6 }, elevation: 6 },
     cardTitle: { fontSize: 22, fontFamily: 'Inter-Bold', color: colors.text, marginBottom: 4 },

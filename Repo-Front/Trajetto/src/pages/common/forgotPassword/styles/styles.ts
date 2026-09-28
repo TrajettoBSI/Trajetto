@@ -3,6 +3,11 @@ import { AppColors } from '@/src/theme';
 
 export const styles = (colors: AppColors) =>
   StyleSheet.create({
+    feedback: {
+      marginBottom: 16,
+      borderLeftWidth: 4,
+      borderLeftColor: colors.error,
+    },
     kav: { flex: 1, backgroundColor: colors.primary },
     container: { flexGrow: 1 },
     card: {

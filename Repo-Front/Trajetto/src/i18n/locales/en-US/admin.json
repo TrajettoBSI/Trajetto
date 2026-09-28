@@ -142,7 +142,9 @@
     "roleUser": "👤 User",
     "deleteConfirm": "Delete {{name}}?",
     "deleteTitle": "Delete user",
-    "deleteError": "Could not delete the user."
+    "deleteError": "Could not delete the user.",
+    "emptyTitle": "No users yet",
+    "emptyMessage": "As soon as someone creates an account, it shows up in this list."
   },
 
   "userDetail": {

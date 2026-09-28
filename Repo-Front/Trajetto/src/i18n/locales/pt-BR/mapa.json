@@ -37,5 +37,6 @@
     "driving": "de carro",
     "fromHere": "daqui",
     "viewFullDetails": "Ver detalhes completos →"
-  }
+  },
+  "loadingText": "Carregando o mapa do seu roteiro..."
 }

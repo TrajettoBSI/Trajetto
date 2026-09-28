@@ -56,17 +56,9 @@ export const styles = (colors: AppColors) =>
     resultsLabel: { fontSize: 13, color: colors.gray500, marginBottom: 8 },
 
     loadingContainer: { alignItems: 'center', marginTop: 48, gap: 12 },
-    loadingText: { fontSize: 14, color: colors.gray500 },
 
     list: { paddingBottom: 32 },
-    listEmpty: { flex: 1 },
 
-    emptyContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 32, paddingTop: 48 },
-    emptyIcon: { fontSize: 56, marginBottom: 16 },
-    emptyTitle: { fontSize: 18, fontFamily: 'Inter-Medium', color: colors.gray700, marginBottom: 8, textAlign: 'center' },
-    emptyText: { fontSize: 14, color: colors.gray400, textAlign: 'center', lineHeight: 20 },
-    clearBtn: { marginTop: 16, backgroundColor: colors.primary, borderRadius: 10, paddingHorizontal: 20, paddingVertical: 10 },
-    clearBtnText: { color: colors.white, fontFamily: 'Inter-Medium' },
 
     modalOverlay: { flex: 1, backgroundColor: colors.overlay, justifyContent: 'flex-end' },
     modalSheet: {
