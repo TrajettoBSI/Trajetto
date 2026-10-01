@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { Rating } from '@/services';
 import StarRating from '@/components/Rating';
 import { useColors } from '@/src/theme';
@@ -14,7 +15,8 @@ type ReviewItemProps = {
 };
 
 export default function ReviewItem({ review, displayName, isMine, onEdit, onDelete }: ReviewItemProps) {
-  const s = styles(useColors());
+  const colors = useColors();
+  const s = styles(colors);
 
   return (
     <View style={s.reviewCard}>
@@ -29,10 +31,10 @@ export default function ReviewItem({ review, displayName, isMine, onEdit, onDele
         {isMine && (
           <View style={s.reviewActions}>
             <TouchableOpacity onPress={onEdit}>
-              <Text style={s.reviewActionIcon}>✏️</Text>
+              <Ionicons name="pencil-outline" size={18} color={colors.gray500} />
             </TouchableOpacity>
             <TouchableOpacity onPress={onDelete}>
-              <Text style={s.reviewActionIcon}>🗑️</Text>
+              <Ionicons name="trash-outline" size={18} color={colors.error} />
             </TouchableOpacity>
           </View>
         )}

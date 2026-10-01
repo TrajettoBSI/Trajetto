@@ -17,25 +17,25 @@ type RatingFormProps = {
 export default function RatingForm({
   commentInputRef, ratingValue, onChangeRatingValue, comment, onChangeComment, onSave,
 }: RatingFormProps) {
-  const { t } = useTranslation('itinerario');
+  const { t } = useTranslation('spotDetail');
   const colors = useColors();
   const s = styles(colors);
 
   return (
     <View style={s.ratingDropdown}>
-      <Text style={s.ratingTitle}>{t('ratingSheet.formTitle')}</Text>
+      <Text style={s.ratingTitle}>{t('rating.formTitle')}</Text>
       <StarRating value={ratingValue} size={22} onChange={onChangeRatingValue} />
       <TextInput
         ref={commentInputRef}
         value={comment}
         onChangeText={onChangeComment}
-        placeholder={t('ratingSheet.commentPlaceholder')}
+        placeholder={t('rating.commentPlaceholder')}
         placeholderTextColor={colors.timelineDotPast}
         style={s.ratingInput}
         multiline
       />
       <TouchableOpacity style={s.ratingButton} onPress={onSave}>
-        <Text style={s.ratingButtonText}>{t('ratingSheet.saveButton')}</Text>
+        <Text style={s.ratingButtonText}>{t('rating.saveButton')}</Text>
       </TouchableOpacity>
     </View>
   );

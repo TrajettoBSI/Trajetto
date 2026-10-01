@@ -36,6 +36,9 @@
     "walking": "walking",
     "driving": "driving",
     "fromHere": "from here",
+    "openUntil": "Open until {{time}}",
+    "opensAt": "Opens at {{time}}",
+    "closedToday": "Closed today",
     "viewFullDetails": "View full details →"
   },
   "loadingText": "Loading your itinerary map..."

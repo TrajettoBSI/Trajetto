@@ -12,18 +12,25 @@
     "dashboard": "Usage Dashboard"
   },
   "loadingItineraries": "Loading itineraries...",
-  "exploreBanner": {
-    "tag": "✈️  Destinations",
-    "title": "Explore more\nplaces to go",
-    "cta": "Discover now →"
+  "searchCard": {
+    "title": "What's the next itinerary?",
+    "placeholder": "Search destinations"
+  },
+  "exploreCard": {
+    "title": "Explore destinations",
+    "subtitle": "Discover tourist spots before building your itinerary"
   },
   "activeSectionLabel": "ACTIVE ITINERARY",
   "otherSectionLabel": "OTHER ITINERARIES",
+  "showMore": "Show more (+{{count}})",
   "defaultItineraryName": "Itinerary",
   "activeCard": {
     "activeBadge": "Active",
     "stopsAndDays": "{{stops}} stops · {{days}} days",
-    "deleteButton": "Delete itinerary"
+    "progressPercent": "{{percent}}%",
+    "progressDone": "done",
+    "openButton": "Open Itinerary",
+    "deleteButton": "Delete"
   },
   "inactiveRow": {
     "stopsAndDate": "{{stops}} stops · {{date}}",
@@ -49,16 +56,14 @@
   },
   "activateError": "Could not activate the itinerary.",
   "emptyState": {
-    "createFirst": "Create your first",
-    "itinerary": "itinerary",
-    "personalized": "personalized",
-    "andStart": "and start",
-    "explore": "exploring the world."
+    "title": "No trip planned yet",
+    "body": "Search a city and we'll build the first day for you — you rearrange the stops from there.",
+    "cta": "Create my first itinerary"
   },
   "noItineraryEmptyState": {
-    "generate": "Generate a personalized itinerary",
-    "andPlan": "and plan your",
-    "goHome": "Go Home"
+    "title": "No active itinerary",
+    "body": "Create an itinerary to see it here.",
+    "cta": "Create Itinerary"
   },
   "destinations": {
     "flightTime": "{{hours}}h flight",
@@ -75,15 +80,15 @@
     "brazil": "Brazil"
   },
   "generateFlow": {
-    "configureTitle": "Configure Itinerary",
+    "configureTitle": "New Itinerary",
     "generatedTitle": "Generated Itinerary",
-    "cityLabel": "CITY",
-    "cityValue": "🏛️  Rome, Italy",
+    "destinyLabel": "DESTINY",
     "durationLabel": "DURATION",
     "durationValue": "1 day",
     "originLabel": "STARTING POINT",
     "originHint": "Enter your hotel or address in Rome",
     "originPlaceholder": "Ex: Via Veneto 45, Rome",
+    "currentLocationLabel": "Current Location",
     "generateButton": "Generate Itinerary",
     "loadingText": "Creating your itinerary...",
     "summaryTitle": "Rome, Italy",

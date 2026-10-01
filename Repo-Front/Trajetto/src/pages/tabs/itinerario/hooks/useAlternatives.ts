@@ -10,7 +10,7 @@ import { selectAlternatives } from '@/src/domain/alternatives/selectAlternatives
 export function useAlternatives(itinerary: Itinerary | null) {
   const { t } = useTranslation(['itinerario', 'common']);
   const { user } = useAuth();
-  const { replacePlace } = useItineraryStore();
+  const { replacePlace, setHighlightedPlace } = useItineraryStore();
 
   const [showAltModal, setShowAltModal] = useState(false);
   const [swipedPlace, setSwipedPlace] = useState<Places | null>(null);
@@ -50,15 +50,17 @@ export function useAlternatives(itinerary: Itinerary | null) {
       category: alt.category ?? null,
       fee: alt.fee ?? null,
     };
+    const replacedIndex = swipedPlace.orderIndex;
     setShowAltModal(false);
     setSwipedPlace(null);
     setAlternatives([]);
     try {
-      await replacePlace(swipedPlace.orderIndex, newPlace);
+      await replacePlace(replacedIndex, newPlace);
+      setHighlightedPlace(replacedIndex);
     } catch (e) {
       showAlert(getErrorMessage(e, t('itinerario:alternativesModal.saveError')), { title: t('common:error') });
     }
-  }, [swipedPlace, replacePlace, t]);
+  }, [swipedPlace, replacePlace, setHighlightedPlace, t]);
 
   const handleCancelAlt = useCallback(() => {
     setShowAltModal(false);

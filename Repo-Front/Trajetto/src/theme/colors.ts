@@ -104,7 +104,7 @@ export const lightColors: AppColors = {
   warningSurface: '#FFF7ED',
   infoSurface: '#F5F3FF',
   background: '#ffffff',
-  backgroundMuted: '#f4f6f9',
+  backgroundMuted: '#F6F8FC',
   surface: '#f8f9fb',
   border: '#e2e8f0',
   surfaceAlt: '#f8fafc',

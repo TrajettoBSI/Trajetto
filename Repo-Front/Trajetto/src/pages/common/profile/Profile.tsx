@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomInput from '@/components/CustomInput';
 import CountryPickerModal from '@/src/components/CountryPickerModal/CountryPickerModal';
+import ProfileHero from '@/src/components/ProfileHero/ProfileHero';
 import { useColors } from '@/src/theme';
 import { AsyncBoundary, FeedbackState } from '@/src/components/feedback';
 import { useProfile } from './hooks/useProfile';
@@ -29,7 +30,6 @@ export default function Profile() {
     perfil,
     showCountries,
     errors,
-    logout,
     onChangeFirstName,
     onChangeLastName,
     onChangeBirthDate,
@@ -58,15 +58,7 @@ export default function Profile() {
         {() => (
       <ScrollView style={s.flex} contentContainerStyle={s.content} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" showsVerticalScrollIndicator={false}>
 
-        <View style={s.avatarWrapper}>
-          <View style={s.avatarSection}>
-            <View style={s.avatarCircle}>
-              <Ionicons name="person" size={40} color={colors.white} />
-            </View>
-            <Text style={s.avatarName}>{firstName} {lastName}</Text>
-            <Text style={s.avatarEmail}>{email}</Text>
-          </View>
-        </View>
+        <ProfileHero name={`${firstName} ${lastName}`.trim()} email={email} />
 
         <View style={s.card}>
           <Text style={s.sectionTitle}>{t('personalInfo')}</Text>
@@ -156,10 +148,6 @@ export default function Profile() {
               ? <ActivityIndicator size="small" color={colors.white} />
               : <Text style={s.saveButtonText}>{t('save')}</Text>
             }
-          </TouchableOpacity>
-
-          <TouchableOpacity style={s.logoutBtn} onPress={logout} activeOpacity={0.7}>
-            <Text style={s.logoutText}>{t('logout')}</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>

@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import * as Location from 'expo-location';
 import { Place } from '@/services';
 import { showAlert } from '@/src/components/alerts/alertService';
-import { haversineMeters, parseOpeningHours } from '../spotFormat';
+import { haversineMeters, isOpenNow, OpeningHoursEntry, parseOpeningHours } from '../spotFormat';
 
 type Region = {
   latitude: number;
@@ -15,10 +15,11 @@ type Region = {
 };
 
 export type SpotDetailData = {
-  spot: Place;
+  spot: Place & { xid?: string };
   distance: number | null;
   region: Region;
-  hours: { period: string; hours: string }[];
+  hours: OpeningHoursEntry[];
+  openNow: boolean | null;
   wc: string | null;
   openMaps: () => void;
   openWebsite: () => void;
@@ -29,7 +30,7 @@ export type SpotDetailData = {
 export function useSpotDetail(): SpotDetailData {
   const { t } = useTranslation('spotDetail');
   const params = useLocalSearchParams<{ spot: string }>();
-  const spot = useMemo(() => JSON.parse(params.spot) as Place, [params.spot]);
+  const spot = useMemo(() => JSON.parse(params.spot) as Place & { xid?: string }, [params.spot]);
 
   const [distance, setDistance] = useState<number | null>(null);
 
@@ -52,7 +53,9 @@ export function useSpotDetail(): SpotDetailData {
   };
 
   const callPhone = () => {
-    if (spot.phone) Linking.openURL(`tel:${spot.phone}`).catch(() => {});
+    if (!spot.phone) return;
+    const number = spot.phone.replace(/[^\d+]/g, '');
+    Linking.openURL(`tel:${number}`).catch(() => showAlert(t('callError'), { title: t('common:error') }));
   };
 
   const openWikipedia = () => {
@@ -63,6 +66,8 @@ export function useSpotDetail(): SpotDetailData {
     }
   };
 
+  const hours = parseOpeningHours(spot.openingHours);
+
   return {
     spot,
     distance,
@@ -72,7 +77,8 @@ export function useSpotDetail(): SpotDetailData {
       latitudeDelta: 0.012,
       longitudeDelta: 0.012,
     },
-    hours: parseOpeningHours(spot.openingHours),
+    hours,
+    openNow: isOpenNow(hours),
     wc: spot.wheelchair || null,
     openMaps,
     openWebsite,

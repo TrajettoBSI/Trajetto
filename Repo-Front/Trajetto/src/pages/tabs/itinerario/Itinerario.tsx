@@ -14,7 +14,6 @@ import { styles } from './styles/styles';
 import ItineraryHeaderCard from './components/ItineraryHeaderCard/ItineraryHeaderCard';
 import TimelineRow from './components/TimelineRow/TimelineRow';
 import AlternativesModal from './components/AlternativesModal/AlternativesModal';
-import RatingBottomSheet from './components/RatingBottomSheet/RatingBottomSheet';
 
 export default function Itinerario() {
   const { t } = useTranslation('itinerario');
@@ -38,8 +37,8 @@ export default function Itinerario() {
     handleSwipeLeft,
     handleSelectAlternative,
     handleCancelAlt,
-    rating,
     handleExportPDF,
+    openSpotDetail,
     router,
   } = useItinerario();
 
@@ -50,14 +49,16 @@ export default function Itinerario() {
       error={{ message: error ?? undefined }}
       style={s.center}
       loading={{ title: t('loadingText'), message: '' }}
-      renderEmpty={() => <NoItineraryEmptyState destIndex={destIndex} />}
+      renderEmpty={() => <NoItineraryEmptyState destIndex={destIndex} title="Trajetto" />}
     >
       {(roteiro) => {
         const sorted = [...roteiro.places].sort((a, b) => a.orderIndex - b.orderIndex);
 
         return (
           <View style={s.safe}>
-            <View style={{ height: insets.top, backgroundColor: colors.primary }} />
+            <View style={[s.headerBar, { paddingTop: insets.top + 12 }]}>
+              <Text style={s.headerBarTitle}>Trajetto</Text>
+            </View>
             <ScrollView
               ref={scrollRef}
               style={s.container}
@@ -68,10 +69,11 @@ export default function Itinerario() {
                 startDate={roteiro.startDate}
                 endDate={roteiro.endDate}
                 stopsCount={sorted.length}
+                startTime={sorted[0]?.estimatedVisitTime}
+                endTime={sorted[sorted.length - 1]?.estimatedVisitTime}
               />
 
               <Text style={s.sectionLabel}>{t('sectionLabel')}</Text>
-              <Text style={s.swipeHint}>{t('swipeHint')}</Text>
 
               <View style={s.timeline}>
                 {sorted.map((place, idx) => {
@@ -90,12 +92,12 @@ export default function Itinerario() {
                       isLast={isLast}
                       isHighlighted={isHighlighted}
                       onLayout={(e) => registerCardOffset(idx, e.nativeEvent.layout.y, sorted.length)}
-                      onSwipeLeft={() => handleSwipeLeft(place)}
+                      onSwitchPress={() => handleSwipeLeft(place)}
                       onPress={() => {
                         setFocusedMapPlace(idx);
                         router.push({ pathname: '/mapa', params: { from: 'itinerario' } });
                       }}
-                      onInfoPress={() => rating.openBottomSheet(place)}
+                      onInfoPress={() => openSpotDetail(place)}
                     />
                   );
                 })}
@@ -117,8 +119,6 @@ export default function Itinerario() {
               onSelect={handleSelectAlternative}
               onCancel={handleCancelAlt}
             />
-
-            <RatingBottomSheet {...rating} />
           </View>
         );
       }}

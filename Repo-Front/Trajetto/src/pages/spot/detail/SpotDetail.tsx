@@ -5,9 +5,12 @@ import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import MapView, { Marker, PROVIDER_DEFAULT } from 'react-native-maps';
 import { Ionicons } from '@expo/vector-icons';
-import { categoryIcon } from '@/src/helpers/categoryIcon';
+import StarRating from '@/components/Rating';
+import RatingForm from '@/src/components/rating/RatingForm/RatingForm';
+import ReviewItem from '@/src/components/rating/ReviewItem/ReviewItem';
 import { useColors } from '@/src/theme';
 import { useSpotDetail } from './hooks/useSpotDetail';
+import { useSpotRating } from './hooks/useSpotRating';
 import { formatCar, formatDistance, formatWalk } from './spotFormat';
 import InfoRow from './components/InfoRow/InfoRow';
 import { styles } from './styles/styles';
@@ -18,7 +21,14 @@ export default function SpotDetail() {
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
-  const { spot, distance, region, hours, wc, openMaps, openWebsite, callPhone, openWikipedia } = useSpotDetail();
+  const { spot, distance, region, hours, openNow, wc, openMaps, openWebsite, callPhone, openWikipedia } = useSpotDetail();
+  const {
+    user, commentInputRef, allRatings, isRatingOpen, setIsRatingOpen,
+    ratingData, ratingValue, setRatingValue, comment, setComment,
+    saveRating, startEditRating, deleteRating,
+  } = useSpotRating(spot.xid);
+
+  const wikipediaTitle = spot.wikipedia?.split(':')[1]?.replace(/_/g, ' ') ?? spot.wikipedia;
 
   return (
     <View style={s.safe}>
@@ -34,94 +44,139 @@ export default function SpotDetail() {
       </View>
       <ScrollView contentContainerStyle={s.container} showsVerticalScrollIndicator={false}>
 
-        <MapView style={s.map} provider={PROVIDER_DEFAULT} initialRegion={region} scrollEnabled zoomEnabled>
-          <Marker
-            coordinate={{ latitude: spot.latitude, longitude: spot.longitude }}
-            title={spot.name}
-            description={spot.category}
-          />
-        </MapView>
-
-        <View style={s.header}>
-          <View style={s.iconWrapper}>
-            <Text style={s.iconText}>{categoryIcon(spot.category)}</Text>
-          </View>
-          <View style={s.titleText}>
-            <Text style={s.name}>{spot.name}</Text>
-            <View style={s.badgeRow}>
-              <View style={s.badge}>
-                <Text style={s.badgeText}>{spot.category}</Text>
-              </View>
-              {spot.fee === 'no' && (
-                <View style={[s.badge, s.badgeFree]}>
-                  <Text style={s.badgeText}>{t('free')}</Text>
-                </View>
-              )}
-              {spot.fee === 'yes' && (
-                <View style={[s.badge, s.badgePaid]}>
-                  <Text style={s.badgeText}>{t('paid')}</Text>
-                </View>
-              )}
-              {wc && (
-                <View style={[s.badge, s.badgeWc]}>
-                  <Text style={s.badgeText}>{t(`accessibility.${wc}`, { defaultValue: wc })}</Text>
-                </View>
-              )}
-            </View>
-          </View>
+        <View style={s.mapCard}>
+          <MapView style={s.map} provider={PROVIDER_DEFAULT} initialRegion={region} scrollEnabled zoomEnabled>
+            <Marker
+              coordinate={{ latitude: spot.latitude, longitude: spot.longitude }}
+              title={spot.name}
+              description={spot.category}
+            />
+          </MapView>
         </View>
 
+        <View style={s.badgeRow}>
+          <View style={s.badgePill}>
+            <Text style={s.badgePillText}>{spot.category}</Text>
+          </View>
+          {spot.fee === 'no' && (
+            <View style={s.badgePill}>
+              <Text style={s.badgePillText}>{t('free')}</Text>
+            </View>
+          )}
+          {spot.fee === 'yes' && (
+            <View style={s.badgePill}>
+              <Text style={s.badgePillText}>{t('paid')}</Text>
+            </View>
+          )}
+          {wc && (
+            <View style={s.badgePill}>
+              <Text style={s.badgePillText}>{t(`accessibility.${wc}`, { defaultValue: wc })}</Text>
+            </View>
+          )}
+        </View>
+
+        <Text style={s.name}>{spot.name}</Text>
+
         {distance !== null && (
+          <Text style={s.subtitleLine}>
+            {formatDistance(distance)} {t('awaySuffix')}  ·  {formatWalk(distance)} {t('walkSuffix')}  ·  {formatCar(distance)} {t('driveSuffix')}
+          </Text>
+        )}
+
+        <View style={s.actionsRow}>
+          <TouchableOpacity style={s.actionBtn} onPress={openMaps} activeOpacity={0.8}>
+            <Ionicons name="map-outline" size={22} color={colors.gray900} />
+            <Text style={s.actionBtnText}>{t('directions')}</Text>
+          </TouchableOpacity>
+          {spot.phone ? (
+            <TouchableOpacity style={s.actionBtn} onPress={callPhone} activeOpacity={0.8}>
+              <Ionicons name="call-outline" size={22} color={colors.gray900} />
+              <Text style={s.actionBtnText}>{t('call')}</Text>
+            </TouchableOpacity>
+          ) : null}
+          {spot.website ? (
+            <TouchableOpacity style={s.actionBtn} onPress={openWebsite} activeOpacity={0.8}>
+              <Ionicons name="globe-outline" size={22} color={colors.gray900} />
+              <Text style={s.actionBtnText}>{t('website')}</Text>
+            </TouchableOpacity>
+          ) : null}
+        </View>
+
+        {spot.xid && (
           <>
-            <Text style={s.sectionTitle}>{t('howToGetThere')}</Text>
+            <Text style={s.sectionTitle}>{t('rating.sectionTitle')}</Text>
             <View style={s.card}>
-              <View style={s.distanceRow}>
-                <View style={s.distanceCard}>
-                  <Ionicons name="navigate-outline" size={24} color={colors.gray500} />
-                  <Text style={s.distanceValue}>{formatDistance(distance)}</Text>
-                  <Text style={s.distanceLabel}>{t('distance')}</Text>
+              <TouchableOpacity style={s.ratingSummaryRow} onPress={() => setIsRatingOpen(!isRatingOpen)} activeOpacity={0.8}>
+                <View style={s.ratingAverageRow}>
+                  <Ionicons name="star" size={16} color="#f5b301" />
+                  <Text style={s.ratingAverage}>{ratingData?.average?.toFixed(1) ?? '0.0'}</Text>
                 </View>
-                <View style={s.distanceDivider} />
-                <View style={s.distanceCard}>
-                  <Ionicons name="walk-outline" size={24} color={colors.gray500} />
-                  <Text style={s.distanceValue}>{formatWalk(distance)}</Text>
-                  <Text style={s.distanceLabel}>{t('walking')}</Text>
-                </View>
-                <View style={s.distanceDivider} />
-                <View style={s.distanceCard}>
-                  <Ionicons name="car-outline" size={24} color={colors.gray500} />
-                  <Text style={s.distanceValue}>{formatCar(distance)}</Text>
-                  <Text style={s.distanceLabel}>{t('driving')}</Text>
-                </View>
-              </View>
-              <TouchableOpacity style={s.mapsBtn} onPress={openMaps} activeOpacity={0.85}>
-                <View style={s.mapsBtnContent}>
-                  <Ionicons name="map-outline" size={20} color={colors.white} />
-                  <Text style={s.mapsBtnText}>{t('openInMaps')}</Text>
-                </View>
+                <StarRating value={ratingData?.average ?? 0} size={18} onChange={() => {}} readonly />
+                <Text style={s.ratingCount}>{t('rating.visitedCount', { count: ratingData?.count ?? 0 })}</Text>
+                <Text style={s.ratingToggle}>{isRatingOpen ? '▲' : '▼'}</Text>
               </TouchableOpacity>
+
+              {isRatingOpen && (
+                <View style={s.ratingExpanded}>
+                  <RatingForm
+                    commentInputRef={commentInputRef}
+                    ratingValue={ratingValue}
+                    onChangeRatingValue={setRatingValue}
+                    comment={comment}
+                    onChangeComment={setComment}
+                    onSave={saveRating}
+                  />
+
+                  {allRatings.map((r) => {
+                    const isMine = r.userId === user?.id;
+                    const name = isMine ? `${user?.firstName} ${user?.lastName}` : r.userName ?? t('rating.defaultUserName', { id: r.userId });
+                    return (
+                      <ReviewItem
+                        key={r.id}
+                        review={r}
+                        displayName={name}
+                        isMine={isMine}
+                        onEdit={() => startEditRating(r)}
+                        onDelete={() => deleteRating(r)}
+                      />
+                    );
+                  })}
+                </View>
+              )}
             </View>
           </>
         )}
 
         <Text style={s.sectionTitle}>{t('information')}</Text>
         <View style={s.card}>
-          <InfoRow icon={<Ionicons name="location-outline" size={20} color={colors.gray400} />} label={t('address')} value={spot.address} />
-          <InfoRow icon={<Ionicons name="globe-outline" size={20} color={colors.gray400} />} label={t('website')} value={spot.website || ''} onPress={spot.website ? openWebsite : undefined} />
-          <InfoRow icon={<Ionicons name="call-outline" size={20} color={colors.gray400} />} label={t('phone')} value={spot.phone || ''} onPress={spot.phone ? callPhone : undefined} />
-          <InfoRow icon={<Ionicons name="earth-outline" size={20} color={colors.gray400} />} label={t('wikipedia')} value={spot.wikipedia || ''} onPress={spot.wikipedia ? openWikipedia : undefined} />
-          <InfoRow icon={<Ionicons name="pin-outline" size={20} color={colors.gray400} />} label={t('wikidata')} value={spot.wikidata || ''} />
-          <InfoRow icon={<Ionicons name="map-outline" size={20} color={colors.gray400} />} label={t('coordinates')} value={`${spot.latitude.toFixed(5)}, ${spot.longitude.toFixed(5)}`} />
+          <InfoRow value={spot.address} />
+          <InfoRow value={spot.phone || ''} onPress={spot.phone ? callPhone : undefined} />
+          <InfoRow value={spot.website || ''} onPress={spot.website ? openWebsite : undefined} />
+          {spot.wikipedia ? (
+            <InfoRow prefix={t('wikipedia')} value={wikipediaTitle ?? ''} onPress={openWikipedia} />
+          ) : null}
+          <InfoRow value={spot.wikidata || ''} isLast />
         </View>
 
         {hours.length > 0 && (
           <>
-            <Text style={s.sectionTitle}>{t('openingHours')}</Text>
+            <View style={s.sectionHeaderRow}>
+              <Text style={s.sectionTitle}>{t('openingHours')}</Text>
+              {openNow !== null && (
+                <View style={s.openBadge}>
+                  <Text style={s.openBadgeText}>{openNow ? t('openNow') : t('closedNow')}</Text>
+                </View>
+              )}
+            </View>
             <View style={s.card}>
               {hours.map((h, i) => (
                 <View key={i} style={[s.hourRow, i < hours.length - 1 && s.hourRowBorder]}>
-                  <Text style={s.hourPeriod}>{h.period}</Text>
-                  <Text style={s.hourValue}>{h.hours}</Text>
+                  <Text style={[s.hourPeriod, h.isToday && s.hourTextToday, h.closed && s.hourTextClosed]}>
+                    {h.period}{h.isToday ? ` · ${t('today')}` : ''}
+                  </Text>
+                  <Text style={[s.hourValue, h.isToday && s.hourTextToday, h.closed && s.hourTextClosed]}>
+                    {h.closed ? t('closed') : h.hours}
+                  </Text>
                 </View>
               ))}
             </View>
@@ -131,10 +186,10 @@ export default function SpotDetail() {
         {spot.profiles?.length > 0 && (
           <>
             <Text style={s.sectionTitle}>{t('recommendedFor')}</Text>
-            <View style={s.profilesRow}>
+            <View style={s.badgeRow}>
               {spot.profiles.map((p, i) => (
-                <View key={i} style={s.profileChip}>
-                  <Text style={s.profileChipText}>👤 {p}</Text>
+                <View key={i} style={s.badgePill}>
+                  <Text style={s.badgePillText}>{p}</Text>
                 </View>
               ))}
             </View>

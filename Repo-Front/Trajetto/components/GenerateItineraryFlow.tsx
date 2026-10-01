@@ -16,6 +16,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Svg, { Circle } from 'react-native-svg';
 import { useTranslation } from 'react-i18next';
+import * as Location from 'expo-location';
 import { useAuth } from '../context/AuthContext';
 import { PlaceSuggestion, searchAddresses } from '../services';
 import { getErrorMessage } from '../utils/apiError';
@@ -32,6 +33,7 @@ type Step = 'config' | 'loading' | 'preview';
 
 type Props = {
   visible: boolean;
+  initialPlace?: PlaceSuggestion;
   onAccept: (itinerary: Itinerary) => void;
   onClose: () => void;
 };
@@ -118,7 +120,7 @@ const loaderStyles = StyleSheet.create({
 });
 
 // ── Main component ───────────────────────────────────────────────────────────
-export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Props) {
+export default function GenerateItineraryFlow({ visible, initialPlace, onAccept, onClose }: Props) {
   const { t } = useTranslation(['roteiros', 'common']);
   const { user } = useAuth();
   const { generateItinerary, acceptGeneratedItinerary } = useItineraryStore();
@@ -134,6 +136,7 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scrollViewRef = useRef<ScrollView>(null);
   const inputLayoutY = useRef<number>(0);
+  const searchRequestId = useRef(0);
 
   // Reset on open
   const [visibleAnterior, setVisibleAnterior] = useState(visible);
@@ -149,6 +152,11 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
   }
 
   const handleInputChange = (text: string) => {
+    // Selecionar uma sugestao atualiza o value do input controlado, o que pode ecoar
+    // um onChangeText espurio com o mesmo texto (comum no Android) — ignora esse eco
+    // pra nao zerar a selecao que acabou de ser confirmada.
+    if (selectedPlace && text === selectedPlace.shortName) return;
+
     setAddressInput(text);
     setSelectedPlace(null);
     setSearchMessage('');
@@ -156,12 +164,15 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
     if (text.trim().length < 3) {
       setSuggestions([]);
       setSearching(false);
+      searchRequestId.current += 1; // invalida qualquer busca ainda em voo
       return;
     }
     setSearching(true);
+    const requestId = ++searchRequestId.current;
     debounceRef.current = setTimeout(async () => {
       try {
         const results = await searchAddresses(text.trim());
+        if (searchRequestId.current !== requestId) return; // resposta de uma busca ja abandonada
         setSuggestions(results);
         if (results.length === 0) setSearchMessage(t('roteiros:generateFlow.addressNotFound'));
         if (results.length > 0) {
@@ -169,19 +180,38 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
           scrollViewRef.current?.scrollTo({ y: Math.max(0, inputLayoutY.current - 20), animated: true });
         }
       } catch {
+        if (searchRequestId.current !== requestId) return;
         setSuggestions([]);
         setSearchMessage(t('common:networkError'));
       } finally {
-        setSearching(false);
+        if (searchRequestId.current === requestId) setSearching(false);
       }
     }, 400);
   };
 
   const handleSelectSuggestion = (item: PlaceSuggestion) => {
+    searchRequestId.current += 1; // cancela qualquer busca pendente/em voo pra nao repopular a lista depois da selecao
+    if (debounceRef.current) clearTimeout(debounceRef.current);
     Keyboard.dismiss();
     setSelectedPlace(item);
     setAddressInput(item.shortName);
     setSuggestions([]);
+  };
+
+  useEffect(() => {
+    if (visible && initialPlace) handleSelectSuggestion(initialPlace);
+  }, [visible, initialPlace]);
+
+  const handleUseCurrentLocation = async () => {
+    try {
+      const { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== 'granted') return;
+      const loc = await Location.getCurrentPositionAsync({});
+      const label = t('roteiros:generateFlow.currentLocationLabel');
+      handleSelectSuggestion({ lat: loc.coords.latitude, lng: loc.coords.longitude, shortName: label, displayName: label });
+    } catch {
+      // GPS indisponivel: usuario ainda pode digitar o endereco manualmente
+    }
   };
 
   const handleClearInput = () => {
@@ -228,6 +258,9 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
     onAccept(generatedItinerary);
   };
 
+  const totalFields = 2;
+  const completedFields = 1 + (selectedPlace ? 1 : 0);
+
   return (
     <Modal visible={visible} animationType="slide" presentationStyle="pageSheet" onRequestClose={onClose}>
       <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
@@ -236,13 +269,25 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
           {/* ── Header ── */}
           {step !== 'loading' && (
             <View style={styles.header}>
-              <Text style={styles.headerTitle}>
-                {step === 'config' ? t('roteiros:generateFlow.configureTitle') : t('roteiros:generateFlow.generatedTitle')}
-              </Text>
+              <View style={styles.headerTopRow}>
+                <View>
+                  <Text style={styles.headerTitle}>
+                    {step === 'config' ? t('roteiros:generateFlow.configureTitle') : t('roteiros:generateFlow.generatedTitle')}
+                  </Text>
+                  {step === 'config' && (
+                    <Text style={styles.headerCounter}>{completedFields}/{totalFields}</Text>
+                  )}
+                </View>
+                {step === 'config' && (
+                  <TouchableOpacity onPress={onClose} style={styles.closeBtn}>
+                    <Text style={styles.closeBtnText}>✕</Text>
+                  </TouchableOpacity>
+                )}
+              </View>
               {step === 'config' && (
-                <TouchableOpacity onPress={onClose} style={styles.closeBtn}>
-                  <Text style={styles.closeBtnText}>✕</Text>
-                </TouchableOpacity>
+                <View style={styles.progressTrack}>
+                  <View style={[styles.progressFill, { width: `${(completedFields / totalFields) * 100}%` }]} />
+                </View>
               )}
             </View>
           )}
@@ -256,94 +301,103 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
               nestedScrollEnabled
             >
 
-              {/* Cidade */}
-              <Text style={styles.sectionLabel}>{t('roteiros:generateFlow.cityLabel')}</Text>
-              <View style={styles.chipRow}>
-                <View style={[styles.chip, styles.chipActive]}>
-                  <Text style={styles.chipActiveText}>{t('roteiros:generateFlow.cityValue')}</Text>
-                </View>
-              </View>
-
-              {/* Duração */}
-              <Text style={styles.sectionLabel}>{t('roteiros:generateFlow.durationLabel')}</Text>
-              <View style={styles.chipRow}>
-                <View style={[styles.chip, styles.chipActive]}>
-                  <Text style={styles.chipActiveText}>{t('roteiros:generateFlow.durationValue')}</Text>
+              {/* Destino */}
+              <View style={styles.card}>
+                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.destinyLabel')}</Text>
+                <View style={styles.fakeSearchBoxDisabled}>
+                  <Ionicons name="location" size={20} color="#8a9ab0" style={styles.inputIcon} />
+                  <Text style={styles.fakeSearchTextFilled}>
+                    {t('roteiros:destinations.rome')}, {t('roteiros:destinations.italy')}
+                  </Text>
                 </View>
               </View>
 
               {/* Ponto de partida */}
-              <Text style={styles.sectionLabel}>{t('roteiros:generateFlow.originLabel')}</Text>
-              <Text style={styles.hint}>{t('roteiros:generateFlow.originHint')}</Text>
+              <View style={styles.card}>
+                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.originLabel')}</Text>
+                <Text style={styles.hint}>{t('roteiros:generateFlow.originHint')}</Text>
 
-              {/* Wrapper com zIndex para garantir visibilidade no iOS */}
-              <View style={{ zIndex: 10, elevation: 10 }}>
-                {/* Campo com ícone de lupa e X */}
-                <View
-                  style={styles.autocompleteWrapper}
-                  onLayout={e => { inputLayoutY.current = e.nativeEvent.layout.y; }}
-                >
-                  <CustomInput
-                    value={addressInput}
-                    onChangeText={handleInputChange}
-                    placeholder={t('roteiros:generateFlow.originPlaceholder')}
-                    returnKeyType="search"
-                    autoCorrect={false}
-                    inputStyle={styles.addressInput}
-                    style={{ marginBottom: 0 }}
-                    inputWrapperStyle={[
-                      { backgroundColor: '#fff' },
-                      selectedPlace ? styles.inputRowSelected : null,
-                      (suggestions.length > 0 && !selectedPlace) && { borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }
-                    ]}
-                    leftIcon={<Ionicons name="search" size={20} color="#8a9ab0" style={styles.inputIcon} />}
-                    rightElement={
-                      searching ? (
-                        <ActivityIndicator size="small" color={PRIMARY} />
-                      ) : addressInput.length > 0 ? (
-                        <TouchableOpacity onPress={handleClearInput} style={styles.clearBtn}>
-                          <Text style={styles.clearBtnText}>✕</Text>
+                {/* Wrapper com zIndex para garantir visibilidade no iOS */}
+                <View style={{ zIndex: 10, elevation: 10 }}>
+                  {/* Campo com ícone de lupa e X */}
+                  <View
+                    style={styles.autocompleteWrapper}
+                    onLayout={e => { inputLayoutY.current = e.nativeEvent.layout.y; }}
+                  >
+                    <CustomInput
+                      value={addressInput}
+                      onChangeText={handleInputChange}
+                      placeholder={t('roteiros:generateFlow.originPlaceholder')}
+                      returnKeyType="search"
+                      autoCorrect={false}
+                      inputStyle={styles.addressInput}
+                      style={{ marginBottom: 0 }}
+                      inputWrapperStyle={[
+                        styles.fakeSearchBox,
+                        selectedPlace ? styles.inputRowSelected : null,
+                        (suggestions.length > 0 && !selectedPlace) && { borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }
+                      ]}
+                      leftIcon={<Ionicons name="search" size={20} color="#8a9ab0" style={styles.inputIcon} />}
+                      rightElement={
+                        searching ? (
+                          <ActivityIndicator size="small" color={PRIMARY} />
+                        ) : addressInput.length > 0 ? (
+                          <TouchableOpacity onPress={handleClearInput} style={styles.clearBtn}>
+                            <Text style={styles.clearBtnText}>✕</Text>
+                          </TouchableOpacity>
+                        ) : null
+                      }
+                    />
+                  </View>
+
+                  {/* Dropdown de sugestões */}
+                  {suggestions.length > 0 && !selectedPlace && (
+                    <View style={styles.suggestionsBox}>
+                      {suggestions.map((item, idx) => (
+                        <TouchableOpacity
+                          key={idx}
+                          style={[styles.suggestionItem, idx < suggestions.length - 1 && styles.suggestionDivider]}
+                          onPress={() => handleSelectSuggestion(item)}
+                        >
+                          <Ionicons name="location" size={22} color="#8a9ab0"/>
+                          <View style={{ flex: 1 }}>
+                            <Text style={styles.suggestionPrimary} numberOfLines={1}>{item.shortName}</Text>
+                            <Text style={styles.suggestionSecondary} numberOfLines={1}>
+                              {item.displayName.split(',').slice(1, 3).join(',')}
+                            </Text>
+                          </View>
                         </TouchableOpacity>
-                      ) : null
-                    }
-                  />
+                      ))}
+                    </View>
+                  )}
                 </View>
 
-                {/* Dropdown de sugestões */}
-                {suggestions.length > 0 && !selectedPlace && (
-                  <View style={styles.suggestionsBox}>
-                    {suggestions.map((item, idx) => (
-                      <TouchableOpacity
-                        key={idx}
-                        style={[styles.suggestionItem, idx < suggestions.length - 1 && styles.suggestionDivider]}
-                        onPress={() => handleSelectSuggestion(item)}
-                      >
-                        <Ionicons name="location" size={22} color="#8a9ab0"/>
-                        <View style={{ flex: 1 }}>
-                          <Text style={styles.suggestionPrimary} numberOfLines={1}>{item.shortName}</Text>
-                          <Text style={styles.suggestionSecondary} numberOfLines={1}>
-                            {item.displayName.split(',').slice(1, 3).join(',')}
-                          </Text>
-                        </View>
-                      </TouchableOpacity>
-                    ))}
+                {!selectedPlace && !searching && searchMessage ? (
+                  <Text style={styles.searchMessage}>{searchMessage}</Text>
+                ) : null}
+
+                {/* Endereço confirmado */}
+                {selectedPlace && (
+                  <View style={styles.resolvedBox}>
+                    <Ionicons name="checkmark-circle" size={20} color="#2e7d32" style={styles.resolvedIcon} />
+                    <Text style={styles.resolvedText} numberOfLines={2}>
+                      {selectedPlace.displayName.split(',').slice(0, 3).join(',')}
+                    </Text>
                   </View>
                 )}
+
+                <View style={styles.chipRow}>
+                  <TouchableOpacity style={styles.chip} onPress={handleUseCurrentLocation}>
+                    <Text style={styles.chipText}>{t('roteiros:generateFlow.currentLocationLabel')}</Text>
+                  </TouchableOpacity>
+                </View>
               </View>
 
-              {!selectedPlace && !searching && searchMessage ? (
-                <Text style={styles.searchMessage}>{searchMessage}</Text>
-              ) : null}
-
-              {/* Endereço confirmado */}
-              {selectedPlace && (
-                <View style={styles.resolvedBox}>
-                  <Ionicons name="checkmark-circle" size={20} color="#2e7d32" style={styles.resolvedIcon} />
-                  <Text style={styles.resolvedText} numberOfLines={2}>
-                    {selectedPlace.displayName.split(',').slice(0, 3).join(',')}
-                  </Text>
-                </View>
-              )}
+              {/* Duração */}
+              <View style={styles.card}>
+                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.durationLabel')}</Text>
+                <Text style={styles.durationValue}>{t('roteiros:generateFlow.durationValue')}</Text>
+              </View>
 
               {erro ? (
                 <FeedbackState
@@ -435,15 +489,11 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
 
               {/* Ações */}
               <View style={styles.previewActions}>
-                <TouchableOpacity style={styles.regenBtn} onPress={handleRegenerate} activeOpacity={0.7}>
-                  <Ionicons name="reload" size={18} color="#4a5568" />
+                <TouchableOpacity style={styles.regenBtn} onPress={handleRegenerate} activeOpacity={0.85}>
                   <Text style={styles.regenBtnText}>{t('roteiros:generateFlow.regenerate')}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.acceptBtn} onPress={handleAccept} activeOpacity={0.85}>
-                  <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
-                    <Ionicons name="checkmark" size={20} color="#fff" />
-                    <Text style={styles.acceptBtnText}>{t('roteiros:generateFlow.accept')}</Text>
-                  </View>
+                  <Text style={styles.acceptBtnText}>{t('roteiros:generateFlow.accept')}</Text>
                 </TouchableOpacity>
               </View>
             </ScrollView>
@@ -456,46 +506,78 @@ export default function GenerateItineraryFlow({ visible, onAccept, onClose }: Pr
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#f4f6f9' },
+  container: { flex: 1, backgroundColor: '#F6F8FC' },
 
   header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    backgroundColor: PRIMARY,
+    backgroundColor: '#fff',
     paddingTop: Platform.OS === 'ios' ? 20 : 16,
-    paddingBottom: 18,
+    paddingBottom: 16,
     paddingHorizontal: 24,
   },
-  headerTitle: { fontSize: Platform.OS === 'ios' ? 14 : 22, fontWeight: 'bold', color: '#fff' },
+  headerTopRow: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' },
+  headerTitle: { fontSize: Platform.OS === 'ios' ? 20 : 26, fontWeight: 'bold', color: '#1a1a1a' },
+  headerCounter: { fontSize: 13, color: '#8a9ab0', marginTop: 2 },
   closeBtn: { padding: 4 },
-  closeBtnText: { fontSize: 18, color: 'rgba(255,255,255,0.8)' },
+  closeBtnText: { fontSize: 18, color: '#8a9ab0' },
+  progressTrack: { height: 4, backgroundColor: '#e2e8f0', borderRadius: 2, overflow: 'hidden', marginTop: 16 },
+  progressFill: { height: '100%', backgroundColor: PRIMARY, borderRadius: 2 },
 
   content: { padding: 24, paddingBottom: 80 },
 
   feedback: { marginTop: 18 },
 
-  sectionLabel: {
+  card: {
+    backgroundColor: '#fff',
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 16,
+  },
+  cardLabel: {
     fontSize: Platform.OS === 'ios' ? 11 : 16,
     fontWeight: '700',
     color: '#8a9ab0',
     letterSpacing: 0.8,
     textTransform: 'uppercase',
-    marginBottom: 10,
-    marginTop: 20,
+    marginBottom: 12,
   },
-  hint: { fontSize: Platform.OS === 'ios' ? 13 : 18, color: '#8a9ab0', marginBottom: 10 },
+  hint: { fontSize: Platform.OS === 'ios' ? 13 : 18, color: '#8a9ab0', marginBottom: 10, marginTop: -6 },
 
-  chipRow: { flexDirection: 'row', gap: 10, marginBottom: 4 },
-  chip: {
-    borderRadius: 20,
-    paddingHorizontal: 18,
-    paddingVertical: 10,
-    borderWidth: 1.5,
-    borderColor: '#dde4ee',
+  fakeSearchBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    borderRadius: 14,
+    paddingHorizontal: 16,
+    shadowColor: '#000',
+    shadowOpacity: 0.15,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 3,
   },
-  chipActive: { borderColor: '#8a9ab0' },
-  chipActiveText: { fontWeight: '700', fontSize: Platform.OS === 'ios' ? 12 : 18 },
+  fakeSearchBoxDisabled: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#F6F8FC',
+    borderRadius: 14,
+    paddingHorizontal: 16,
+  },
+  fakeSearchTextFilled: { fontSize: Platform.OS === 'ios' ? 15 : 18, color: '#4a5568', fontWeight: '600', paddingVertical: 9 },
+
+  durationValue: { fontSize: Platform.OS === 'ios' ? 18 : 22, fontWeight: 'bold', color: '#1a1a1a' },
+
+  chipRow: { flexDirection: 'row', gap: 10, marginTop: 12, marginBottom: 4 },
+  chip: {
+    backgroundColor: '#fff',
+    borderRadius: 16,
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    shadowColor: '#000',
+    shadowOpacity: 0.12,
+    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 1 },
+    elevation: 1,
+  },
+  chipText: { fontWeight: '700', fontSize: Platform.OS === 'ios' ? 12 : 18, color: '#1a1a1a' },
 
   autocompleteWrapper: { marginBottom: 0 },
   inputRow: {
@@ -511,7 +593,7 @@ const styles = StyleSheet.create({
   inputIcon: { marginRight: 8 },
   addressInput: {
     flex: 1,
-    paddingVertical: 14,
+    paddingVertical: 9,
     fontSize: Platform.OS === 'ios' ? 16 : 18,
     color: '#1a1a1a',
   },
@@ -645,28 +727,27 @@ const styles = StyleSheet.create({
   previewActions: { flexDirection: 'row', gap: 12 },
   regenBtn: {
     flex: 1,
-    borderWidth: 1.5,
-    borderColor: '#c0ccd8',
-    borderRadius: 14,
-    paddingVertical: 15,
+    borderRadius: 12,
+    padding: 16,
+    minHeight: 52,
     alignItems: 'center',
-    backgroundColor: '#fff',
-    flexDirection: 'row',
     justifyContent: 'center',
+    backgroundColor: '#fff',
   },
-  regenBtnText: { fontSize: 15, fontWeight: '700', color: '#4a5568', marginLeft: 6 },
+  regenBtnText: { fontSize: 16, fontWeight: 'bold', color: '#1a1a1a' },
   acceptBtn: {
-    flex: 1,
+    flex: 1.3,
     backgroundColor: PRIMARY,
-    borderRadius: 14,
-    paddingVertical: 15,
+    borderRadius: 12,
+    padding: 16,
+    minHeight: 52,
     alignItems: 'center',
     justifyContent: 'center',
     shadowColor: PRIMARY,
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
-    elevation: 4,
-    flexDirection: 'row'
+    shadowOpacity: 0.35,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 5,
   },
-  acceptBtnText: { fontSize: 15, fontWeight: 'bold', color: '#fff', marginLeft: 6 },
+  acceptBtnText: { fontSize: 16, fontWeight: 'bold', color: '#fff' },
 });

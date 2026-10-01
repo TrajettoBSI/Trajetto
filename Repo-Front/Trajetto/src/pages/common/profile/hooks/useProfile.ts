@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useAuth } from '@/context/AuthContext';
 import { userService } from '@/services';
 import {
   maskName, maskBirthDate, maskTelephone,
@@ -25,7 +24,6 @@ export type ProfileData = {
   perfil: AsyncData<User>;
   showCountries: boolean;
   errors: Errors;
-  logout: () => Promise<void>;
   onChangeFirstName: (t: string) => void;
   onChangeLastName: (t: string) => void;
   onChangeBirthDate: (t: string) => void;
@@ -39,7 +37,6 @@ export type ProfileData = {
 
 export function useProfile(): ProfileData {
   const { t } = useTranslation(['profile', 'common']);
-  const { logout } = useAuth();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -101,7 +98,6 @@ export function useProfile(): ProfileData {
     perfil,
     showCountries,
     errors,
-    logout,
     onChangeFirstName: (t) => { setFirstName(maskName(t)); clearError('firstName'); },
     onChangeLastName: (t) => { setLastName(maskName(t)); clearError('lastName'); },
     onChangeBirthDate: (t) => { setBirthDate(maskBirthDate(t)); clearError('birthDate'); },

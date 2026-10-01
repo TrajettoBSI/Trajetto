@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Place } from '@/services';
 import { categoryIcon } from '@/src/helpers/categoryIcon';
 import { useColors } from '@/src/theme';
-import { formatCarTime, formatDistance, formatWalkTime } from '../../mapaFormat';
+import { formatCarTime, formatDistance, formatWalkTime, resolveTodayHours } from '../../mapaFormat';
 import { styles } from './styles';
 
 type SpotDetailCardProps = {
@@ -18,6 +18,7 @@ export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDe
   const { t } = useTranslation('mapa');
   const router = useRouter();
   const s = styles(useColors());
+  const todayHours = resolveTodayHours(spot.openingHours);
 
   return (
     <View style={s.spotCard}>
@@ -35,9 +36,17 @@ export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDe
       <View style={s.spotCardMeta}>
         {spot.fee === 'no' && <View style={s.badge}><Text style={s.badgeText}>{t('spotDetailCard.free')}</Text></View>}
         {spot.fee === 'yes' && <View style={[s.badge, s.badgePaid]}><Text style={s.badgeText}>{t('spotDetailCard.paid')}</Text></View>}
-        {spot.openingHours ? <View style={s.badge}><Text style={s.badgeText}>🕐 {spot.openingHours}</Text></View> : null}
       </View>
 
+      {todayHours.kind === 'open' && (
+        <Text style={s.spotCardDetail}>🕐 {t('spotDetailCard.openUntil', { time: todayHours.closesAt })}</Text>
+      )}
+      {todayHours.kind === 'beforeOpening' && (
+        <Text style={s.spotCardDetail}>🕐 {t('spotDetailCard.opensAt', { time: todayHours.opensAt })}</Text>
+      )}
+      {todayHours.kind === 'closed' && (
+        <Text style={[s.spotCardDetail, s.closedText]}>🕐 {t('spotDetailCard.closedToday')}</Text>
+      )}
       {spot.address ? <Text style={s.spotCardDetail}>📍 {spot.address}</Text> : null}
 
       {distanceMeters !== null && (

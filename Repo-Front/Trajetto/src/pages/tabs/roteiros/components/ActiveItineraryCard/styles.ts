@@ -5,6 +5,7 @@ export const styles = (colors: AppColors) =>
   StyleSheet.create({
     itineraryCard: {
       backgroundColor: colors.white, borderRadius: 20, padding: 20, marginBottom: 12,
+      borderWidth: 1, borderColor: colors.border,
       shadowColor: colors.shadow, shadowOpacity: 0.08, shadowRadius: 12,
       shadowOffset: { width: 0, height: 4 }, elevation: 5,
     },
@@ -31,7 +32,14 @@ export const styles = (colors: AppColors) =>
     locationIcon: { marginBottom: 5 },
     itineraryCardTitle: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.text, flex: 1 },
     chevron: { fontSize: 22, color: colors.borderMuted, marginLeft: 8 },
-    itineraryCardSub: { fontSize: 13, color: colors.textSubtle, marginBottom: 20 },
+    itineraryCardSub: { fontSize: 13, color: colors.textSubtle },
+
+    progressRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },
+    progressPercentBlock: { alignItems: 'center' },
+    progressPercentText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.text },
+    progressDoneText: { fontSize: 11, color: colors.textSubtle },
+    progressTrack: { height: 6, borderRadius: 3, backgroundColor: colors.divider, marginBottom: 20, overflow: 'hidden' },
+    progressFill: { height: '100%', borderRadius: 3, backgroundColor: colors.primary },
 
     timeline: { gap: 0 },
     timelineItem: { flexDirection: 'row', minHeight: 56 },
@@ -48,10 +56,16 @@ export const styles = (colors: AppColors) =>
     timelineAddress: { fontSize: 12, color: colors.textSubtle },
     divider: { height: 1, backgroundColor: colors.dividerSoft, marginVertical: 12 },
 
+    buttonRow: { flexDirection: 'row', gap: 12 },
+    openBtn: {
+      flex: 1.6, alignItems: 'center', justifyContent: 'center',
+      borderRadius: 12, paddingVertical: 13, backgroundColor: colors.primary, minHeight: 48,
+    },
+    openBtnText: { fontSize: 15, fontFamily: 'Inter-Bold', color: colors.white },
     deleteBtn: {
-      flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8,
+      flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8,
       borderWidth: 1.5, borderColor: colors.dangerBorder, borderRadius: 12,
       paddingVertical: 13, backgroundColor: colors.dangerSurface, minHeight: 48,
     },
-    deleteBtnText: { fontSize: 15, fontFamily: 'Inter-Medium', color: colors.error },
+    deleteBtnText: { fontSize: 15, fontFamily: 'Inter-Bold', color: colors.error },
   });
