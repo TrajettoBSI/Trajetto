@@ -7,6 +7,7 @@
 import React from 'react';
 import { ActivityIndicator, StyleProp, Text, TouchableOpacity, View, ViewStyle } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { Ionicons } from '@expo/vector-icons';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
@@ -37,7 +38,7 @@ export interface FeedbackStateProps extends FeedbackCopy {
 
 const ICONE_PADRAO: Record<FeedbackVariant, string> = {
   loading: '',
-  error: '⚠️',
+  error: '',
   empty: '📭',
 };
 
@@ -72,9 +73,13 @@ export function FeedbackState({
         style={[s.inline, erro ? s.inlineError : s.inlineNeutral, style]}
         accessibilityRole="summary"
       >
-        {variant === 'loading'
-          ? <ActivityIndicator size="small" color={colors.primaryDark} />
-          : <Text style={s.inlineIcon}>{simbolo}</Text>}
+        {variant === 'loading' ? (
+          <ActivityIndicator size="small" color={colors.primaryDark} />
+        ) : erro && !icon ? (
+          <Ionicons name="alert-circle" size={20} color={colors.error} />
+        ) : (
+          <Text style={s.inlineIcon}>{simbolo}</Text>
+        )}
 
         <View style={s.inlineTexts}>
           {Boolean(textoDoTitulo) && (
@@ -96,9 +101,13 @@ export function FeedbackState({
 
   return (
     <View style={[layout === 'screen' ? s.screen : s.block, style]} accessibilityRole="summary">
-      {variant === 'loading'
-        ? <ActivityIndicator size="large" color={colors.primaryDark} />
-        : <Text style={s.icon}>{simbolo}</Text>}
+      {variant === 'loading' ? (
+        <ActivityIndicator size="large" color={colors.primaryDark} />
+      ) : variant === 'error' && !icon ? (
+        <Ionicons name="alert-circle" size={44} color={colors.error} />
+      ) : (
+        <Text style={s.icon}>{simbolo}</Text>
+      )}
 
       {Boolean(textoDoTitulo) && <Text style={s.title}>{textoDoTitulo}</Text>}
       {Boolean(textoDaMensagem) && <Text style={s.message}>{textoDaMensagem}</Text>}

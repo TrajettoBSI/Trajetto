@@ -1,6 +1,7 @@
 {
   "intro": "Plan your",
   "cardTitle": "Login",
+  "cardSubtitle": "Welcome back! Sign in to continue.",
   "emailLabel": "Email",
   "emailPlaceholder": "your@email.com",
   "passwordLabel": "Password",

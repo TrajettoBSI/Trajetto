@@ -2,10 +2,17 @@ import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useColors } from '@/src/theme';
-import { MenuItem as MenuItemType } from '@/src/pages/profile/Perfil/hooks/usePerfil';
 import { styles } from './styles';
 
-export default function MenuItem({ icon, label, value, onPress, danger }: MenuItemType) {
+export type MenuItemProps = {
+  icon: keyof typeof Ionicons.glyphMap;
+  label: string;
+  value?: string;
+  onPress: () => void;
+  danger?: boolean;
+};
+
+export default function MenuItem({ icon, label, value, onPress, danger }: MenuItemProps) {
   const colors = useColors();
   const s = styles(colors);
 

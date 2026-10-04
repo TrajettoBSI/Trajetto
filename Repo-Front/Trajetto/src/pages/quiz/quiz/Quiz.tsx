@@ -29,8 +29,11 @@ export default function Quiz() {
         </View>
       </View>
 
-      <View style={s.progressTrack}>
-        <View style={[s.progressFill, { width: `${progress * 100}%` }]} />
+      <View style={s.progressRow}>
+        <View style={s.progressTrack}>
+          <View style={[s.progressFill, { width: `${progress * 100}%` }]} />
+        </View>
+        <Text style={s.progressLabel}>{t('quiz.progressLabel', { current: currentIndex + 1, total })}</Text>
       </View>
 
       <ScrollView contentContainerStyle={s.content}>
@@ -45,6 +48,11 @@ export default function Quiz() {
                   style={[s.simNaoButton, selected === opt && s.simNaoSelected]}
                   onPress={() => setSelected(opt)}
                 >
+                  {selected === opt && (
+                    <View style={s.simNaoCheck}>
+                      <Ionicons name="checkmark" size={12} color={colors.white} />
+                    </View>
+                  )}
                   <Text style={[s.simNaoText, selected === opt && s.simNaoTextSelected]}>
                     {opt === 'sim' ? t('quiz.yes') : t('quiz.no')}
                   </Text>

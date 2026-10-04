@@ -24,9 +24,11 @@ export const styles = (colors: AppColors) =>
       width: 44, height: 44, borderRadius: 22,
       backgroundColor: colors.avatarSurface,
       alignItems: 'center', justifyContent: 'center',
+      shadowColor: colors.shadow, shadowOpacity: 0.1, shadowRadius: 4,
+      shadowOffset: { width: 0, height: 2 }, elevation: 2,
     },
 
-    content: { padding: 20, paddingTop: 4, paddingBottom: 32, backgroundColor: colors.white },
+    content: { padding: 20, paddingTop: 4, paddingBottom: 120, backgroundColor: colors.white },
 
     centerState: { alignItems: 'center', paddingTop: 60, flex: 1, marginVertical: 100 },
 

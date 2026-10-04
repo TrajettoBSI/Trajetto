@@ -11,14 +11,13 @@ import { AsyncData, useAsyncData } from '@/src/components/feedback';
 export type UserListData = {
   admin: User | null;
   usuarios: AsyncData<User[]>;
-  logout: () => Promise<void>;
   editUser: (user: User) => void;
   deleteUser: (id: number, name: string) => void;
 };
 
 export function useUserList(): UserListData {
   const { t } = useTranslation(['admin', 'common']);
-  const { user: admin, logout } = useAuth();
+  const { user: admin } = useAuth();
   const router = useRouter();
   // A busca roda ao abrir a tela e a cada volta para ela, e nao sozinha ao montar.
   const usuarios = useAsyncData<User[]>(() => userService.getAll(), [], { auto: false });
@@ -52,7 +51,6 @@ export function useUserList(): UserListData {
   return {
     admin,
     usuarios,
-    logout,
     editUser: (user) => router.push({ pathname: '/UserDetailScreen', params: { user: JSON.stringify(user) } }),
     deleteUser,
   };

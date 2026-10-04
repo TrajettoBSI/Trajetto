@@ -4,35 +4,30 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useColors } from '@/src/theme';
 import LanguagePickerModal from '@/src/components/LanguageSwitcher/LanguagePickerModal';
-import { usePerfil } from './hooks/usePerfil';
-import MenuItem from '@/src/components/MenuItem/MenuItem';
 import ProfileHero from '@/src/components/ProfileHero/ProfileHero';
+import MenuItem from '@/src/components/MenuItem/MenuItem';
+import { useAdminProfile } from './hooks/useAdminProfile';
 import { styles } from './styles/styles';
 
-export default function Perfil() {
+export default function AdminProfile() {
   const colors = useColors();
   const insets = useSafeAreaInsets();
   const s = styles(colors);
-  const { t, user, router, menuSections, languagePicker } = usePerfil();
+  const { t, user, router, menuSections, languagePicker } = useAdminProfile();
 
   return (
     <View style={s.safe}>
-      <View style={[s.headerWrapper, { paddingTop: insets.top }]}>
-        <View style={s.headerRow}>
-          <View style={s.headerLeft}>
-            <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
-              <Ionicons name="chevron-back" size={32} color={colors.white} />
-            </TouchableOpacity>
-            <Text style={s.headerText}>{t('menu.headerTitle')}</Text>
-          </View>
-        </View>
+      <View style={[s.header, { paddingTop: insets.top + 16 }]}>
+        <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
+          <Ionicons name="chevron-back" size={28} color={colors.white} />
+        </TouchableOpacity>
+        <Text style={s.headerTitle}>{t('profile.headerTitle')}</Text>
       </View>
 
       <ScrollView contentContainerStyle={s.content} showsVerticalScrollIndicator={false}>
         <ProfileHero
           name={`${user?.firstName ?? ''} ${user?.lastName ?? ''}`.trim()}
           email={user?.email}
-          travelerProfile={user?.travelerProfile && user.travelerProfile !== 'SKIPPED' ? user.travelerProfile : undefined}
         />
 
         {menuSections.map((section, sIdx) => (
@@ -48,8 +43,6 @@ export default function Perfil() {
             </View>
           </View>
         ))}
-
-        <Text style={s.version}>{t('menu.version', { version: '1.0' })}</Text>
       </ScrollView>
 
       <LanguagePickerModal

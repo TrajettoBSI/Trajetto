@@ -6,8 +6,6 @@ export const styles = (colors: AppColors) =>
     card: {
       backgroundColor: colors.white,
       borderRadius: 20,
-      borderWidth: 1,
-      borderColor: colors.border,
       padding: 18,
       alignItems: 'center',
     },

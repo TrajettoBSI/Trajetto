@@ -9,46 +9,26 @@ export type MenuSection = {
   items: MenuItemProps[];
 };
 
-export function usePerfil() {
-  const { t } = useTranslation('profile');
+export function useAdminProfile() {
+  const { t } = useTranslation('admin');
   const { user, logout } = useAuth();
   const router = useRouter();
   const { open, setOpen, current, select } = useLanguageSwitcher();
 
   const menuSections: MenuSection[] = [
     {
-      title: t('menu.accountSection'),
+      title: t('profile.accountSection'),
       items: [
         {
-          icon: 'settings-outline',
-          label: t('menu.settings'),
-          onPress: () => router.push('/ProfileScreen'),
-        },
-        {
           icon: 'notifications-outline',
-          label: t('menu.notifications'),
+          label: t('profile.notifications'),
           onPress: () => {},
         },
         {
           icon: 'language-outline',
-          label: t('menu.language'),
+          label: t('profile.language'),
           value: current.label,
           onPress: () => setOpen(true),
-        },
-      ],
-    },
-    {
-      title: t('menu.travelerSection'),
-      items: [
-        {
-          icon: 'briefcase-outline',
-          label: t('menu.retakeTest'),
-          onPress: () => router.push('/TravelerTestScreen?source=profile'),
-        },
-        {
-          icon: 'map-outline',
-          label: t('menu.exploreDestinations'),
-          onPress: () => router.push('/ExploreScreen'),
         },
       ],
     },
@@ -56,7 +36,7 @@ export function usePerfil() {
       items: [
         {
           icon: 'log-out-outline',
-          label: t('menu.logout'),
+          label: t('profile.logout'),
           onPress: logout,
           danger: true,
         },

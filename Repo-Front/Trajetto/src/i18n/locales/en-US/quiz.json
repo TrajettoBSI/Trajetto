@@ -9,6 +9,7 @@
   },
   "quiz": {
     "headerTitle": "Traveler Test",
+    "progressLabel": "{{current}} of {{total}}",
     "yes": "Yes",
     "no": "No",
     "dontKnow": "Not sure",
@@ -20,7 +21,7 @@
     "back": "Back",
     "yourResult": "Your result",
     "aboutYou": "About you",
-    "matchingDestinations": "📍 Destinations that match you",
+    "matchingDestinations": "Destinations that match you",
     "backToProfile": "Back to profile",
     "startExploring": "Start exploring"
   },

@@ -93,8 +93,9 @@ function RootLayoutNav() {
         <Stack.Screen name="LoginScreen" options={{ headerShown: false }} />
         <Stack.Screen name="RegisterScreen" options={{ headerShown: false }} />
         <Stack.Screen name="VerifyEmailScreen" options={{ headerShown: false }} />
-        <Stack.Screen name="UserListScreen" options={{ title: t('admin:userListTitle'), headerBackTitle: '' }} />
+        <Stack.Screen name="UserListScreen" options={{ headerShown: false }} />
         <Stack.Screen name="UserDetailScreen" options={{ headerShown: false }} />
+        <Stack.Screen name="AdminProfileScreen" options={{ headerShown: false }} />
         <Stack.Screen name="ForgotPasswordScreen" options={{ headerShown: false }} />
         <Stack.Screen name="ResetPasswordScreen" options={{ title: t('resetPassword:title'), headerBackTitle: '' }} />
         <Stack.Screen name="TravelerTestScreen" options={{ headerShown: false }} />

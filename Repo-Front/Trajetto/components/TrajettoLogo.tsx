@@ -1,5 +1,6 @@
 import React from 'react';
 import Svg, { Path, Circle, Line, Text as SvgText } from 'react-native-svg';
+import { colors } from '@/src/theme';
 
 export default function TrajettoLogo({ width = 280, height = 140 }) {
   return (
@@ -17,22 +18,22 @@ export default function TrajettoLogo({ width = 280, height = 140 }) {
 
       {/* Linha principal azul */}
       <Path d="M138,228 Q230,198 340,205 Q450,212 542,186"
-        fill="none" stroke="#023665" strokeWidth={2} strokeLinecap="round" />
+        fill="none" stroke={colors.primary} strokeWidth={2} strokeLinecap="round" />
 
       {/* Ponto de destino */}
-      <Circle cx={340} cy={145} r={5} fill="#023665" />
-      <Circle cx={340} cy={145} r={10} fill="none" stroke="#023665" strokeWidth={1.5} opacity={0.4} />
+      <Circle cx={340} cy={145} r={5} fill={colors.primary} />
+      <Circle cx={340} cy={145} r={10} fill="none" stroke={colors.primary} strokeWidth={1.5} opacity={0.4} />
 
       {/* Linha vertical sutil */}
       <Line x1={340} y1={155} x2={340} y2={228}
-        stroke="#023665" strokeWidth={0.8} opacity={0.15}
+        stroke={colors.primary} strokeWidth={0.8} opacity={0.15}
         strokeDasharray="3,4" />
 
       {/* Wordmark */}
       <SvgText
         x={340} y={272}
         textAnchor="middle"
-        fill="#023665"
+        fill={colors.primary}
         fontSize={36}
         fontWeight="500"
         letterSpacing={8}>

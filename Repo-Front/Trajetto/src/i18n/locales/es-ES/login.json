@@ -1,6 +1,7 @@
 {
   "intro": "Planea tu",
   "cardTitle": "Iniciar sesión",
+  "cardSubtitle": "¡Bienvenido de nuevo! Inicia sesión para continuar.",
   "emailLabel": "Correo electrónico",
   "emailPlaceholder": "tu@email.com",
   "passwordLabel": "Contraseña",
