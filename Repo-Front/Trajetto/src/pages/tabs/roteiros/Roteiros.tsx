@@ -1,5 +1,5 @@
-import React from 'react';
-import { Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import React, { useRef } from 'react';
+import { Animated, Platform, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
@@ -10,11 +10,12 @@ import { AsyncBoundary } from '@/src/components/feedback';
 import { useRoteiros } from './hooks/useRoteiros';
 import { styles } from './styles/styles';
 import AdminBanners from './components/AdminBanners/AdminBanners';
-import ExploreBanner from './components/ExploreBanner/ExploreBanner';
 import ActiveItineraryCard from './components/ActiveItineraryCard/ActiveItineraryCard';
 import InactiveItineraryRow from './components/InactiveItineraryRow/InactiveItineraryRow';
 import EmptyState from './components/EmptyState/EmptyState';
 import SelectBar from './components/SelectBar/SelectBar';
+import SearchCard from './components/SearchCard/SearchCard';
+import ExploreDestinationsCard from './components/ExploreDestinationsCard/ExploreDestinationsCard';
 
 export default function Roteiros() {
   const { t } = useTranslation('roteiros');
@@ -33,9 +34,13 @@ export default function Roteiros() {
     activating,
     showGenerate,
     setShowGenerate,
+    generatePrefill,
+    openGenerate,
     selectMode,
     selectedIds,
     bulkDeleting,
+    showAllInactive,
+    setShowAllInactive,
     enterSelectMode,
     exitSelectMode,
     toggleSelect,
@@ -46,7 +51,26 @@ export default function Roteiros() {
   } = useRoteiros();
 
   const inactiveItineraries = itineraries.filter((i) => !i.active);
+  const visibleInactiveItineraries = showAllInactive ? inactiveItineraries : inactiveItineraries.slice(0, 4);
+  const hiddenInactiveCount = inactiveItineraries.length - visibleInactiveItineraries.length;
 
+  const scrollY = useRef(new Animated.Value(0)).current;
+  const GREETING_COLLAPSE_RANGE = 70;
+  const greetingFontSize = scrollY.interpolate({
+    inputRange: [0, GREETING_COLLAPSE_RANGE],
+    outputRange: [Platform.OS === 'ios' ? 20 : 24, Platform.OS === 'ios' ? 13 : 18],
+    extrapolate: 'clamp',
+  });
+  const greetingMarginTop = scrollY.interpolate({
+    inputRange: [0, GREETING_COLLAPSE_RANGE],
+    outputRange: [14, 2],
+    extrapolate: 'clamp',
+  });
+  const titleFontSize = scrollY.interpolate({
+    inputRange: [0, GREETING_COLLAPSE_RANGE],
+    outputRange: [Platform.OS === 'ios' ? 19 : 27, Platform.OS === 'ios' ? 16 : 24],
+    extrapolate: 'clamp',
+  });
   return (
     <SafeAreaView style={s.safe} edges={['top', 'left', 'right']}>
       <View style={s.header}>
@@ -65,15 +89,17 @@ export default function Roteiros() {
         ) : (
           <>
             <View>
-              <Text style={Platform.OS === 'ios' ? s.headerTitleIos : s.headerTitleAndroid}>{t('header.title')}</Text>
-              <Text style={Platform.OS === 'ios' ? s.headerSubIos : s.headerSubAndroid}>{t('header.greeting', { name: user?.firstName })}</Text>
+              <Animated.Text style={[s.headerTitle, { fontSize: titleFontSize }]}>{t('header.title')}</Animated.Text>
+              <Animated.Text style={[s.headerGreeting, { fontSize: greetingFontSize, marginTop: greetingMarginTop }]}>
+                {t('header.greeting', { name: user?.firstName })}
+              </Animated.Text>
             </View>
             <TouchableOpacity
               style={s.avatarBtn}
               onPress={() => router.push('/perfil')}
               activeOpacity={0.8}
             >
-              <Ionicons name="person" size={24} color={colors.white} />
+              <Ionicons name="person" size={24} color={colors.textSubtle} />
             </TouchableOpacity>
           </>
         )}
@@ -85,23 +111,41 @@ export default function Roteiros() {
         />
       )}
 
-      <ScrollView
+      <Animated.ScrollView
         contentContainerStyle={[s.content, { flexGrow: 1 }]}
         showsVerticalScrollIndicator={false}
+        onScroll={Animated.event(
+          [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+          { useNativeDriver: false }
+        )}
+        scrollEventThrottle={16}
       >
+        {!selectMode && (
+          <SearchCard
+            onPressSearch={() => openGenerate()}
+            onPressChip={() => openGenerate({
+              lat: 41.9028,
+              lng: 12.4964,
+              shortName: t('destinations.rome'),
+              displayName: `${t('destinations.rome')}, ${t('destinations.italy')}`,
+            })}
+          />
+        )}
+
+        {!selectMode && (
+          <ExploreDestinationsCard onPress={() => router.push('/ExploreScreen')} />
+        )}
+
         <AsyncBoundary
           state={{ loading, error, data: itinerary }}
           onRetry={reload}
           error={{ message: error ?? undefined }}
           style={s.centerState}
           loading={{ title: t('loadingItineraries'), message: '' }}
-          renderEmpty={() => <EmptyState destIndex={destIndex} />}
+          renderEmpty={() => <EmptyState destIndex={destIndex} onCreate={() => openGenerate()} />}
         >
           {(roteiroAtivo) => (
           <>
-            {!selectMode && (
-              <ExploreBanner onPress={() => router.push('/ExploreScreen')} />
-            )}
             <Text style={s.sectionLabel}>{t('activeSectionLabel')}</Text>
 
             <ActiveItineraryCard
@@ -117,7 +161,7 @@ export default function Roteiros() {
             {inactiveItineraries.length > 0 && (
               <>
                 <Text style={[s.sectionLabel, s.sectionLabelSpaced]}>{t('otherSectionLabel')}</Text>
-                {inactiveItineraries.map((item) => (
+                {visibleInactiveItineraries.map((item) => (
                   <InactiveItineraryRow
                     key={item.id}
                     item={item}
@@ -131,24 +175,31 @@ export default function Roteiros() {
                     onDelete={() => handleDelete(item.id)}
                   />
                 ))}
+                {hiddenInactiveCount > 0 && (
+                  <TouchableOpacity
+                    style={s.showMoreBtn}
+                    onPress={() => setShowAllInactive(true)}
+                    activeOpacity={0.7}
+                  >
+                    <Text style={s.showMoreText}>{t('showMore', { count: hiddenInactiveCount })}</Text>
+                  </TouchableOpacity>
+                )}
               </>
             )}
           </>
           )}
         </AsyncBoundary>
 
-        {!selectMode && (
-          <View style={[s.generateSection, !itinerary && s.generateSectionEmpty]}>
-            {itineraries.length > 0 && itinerary && (
-              <Text style={s.generateLabel}>{t('generate.wantNew')}</Text>
-            )}
+        {!selectMode && itinerary && (
+          <View style={s.generateSection}>
+            <Text style={s.generateLabel}>{t('generate.wantNew')}</Text>
             <CustomButton
               title={t('generate.button')}
-              onPress={() => setShowGenerate(true)}
+              onPress={() => openGenerate()}
             />
           </View>
         )}
-      </ScrollView>
+      </Animated.ScrollView>
 
       {selectMode && (
         <SelectBar
@@ -160,6 +211,7 @@ export default function Roteiros() {
 
       <GenerateItineraryFlow
         visible={showGenerate}
+        initialPlace={generatePrefill}
         onClose={() => setShowGenerate(false)}
         onAccept={() => {
           setShowGenerate(false);

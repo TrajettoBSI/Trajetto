@@ -6,6 +6,7 @@ export const styles = (colors: AppColors) =>
     inactiveCard: {
       backgroundColor: colors.white, borderRadius: 14,
       paddingHorizontal: 16, paddingVertical: 14, marginBottom: 10,
+      borderWidth: 1, borderColor: colors.border,
       shadowColor: colors.shadow, shadowOpacity: 0.05, shadowRadius: 6, elevation: 2,
     },
     cardSelected: {

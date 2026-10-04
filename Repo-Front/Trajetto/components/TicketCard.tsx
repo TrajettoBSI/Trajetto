@@ -1,5 +1,3 @@
-// TicketCard.tsx — substitua o <TouchableOpacity style={[styles.card, ...]}> dentro do SwipeableCard
-
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -41,10 +39,11 @@ interface TicketCardProps {
     isLast: boolean;
     onPress: () => void;
     onInfoPress: () => void;
+    onSwitchPress: () => void;
 }
 
 export function TicketCard({
-    place, idx, color, isPast, isHighlighted, isLast, onPress, onInfoPress,
+    place, idx, color, isPast, isHighlighted, isLast, onPress, onInfoPress, onSwitchPress,
 }: TicketCardProps) {
     const { t } = useTranslation('itinerario');
     return (
@@ -58,6 +57,7 @@ export function TicketCard({
             activeOpacity={0.75}
             onPress={onPress}
         >
+          <View style={ticketStyles.ticketInner}>
             {/* Cabeçalho colorido */}
             <View style={[ticketStyles.header, { backgroundColor: isPast ? '#9aa4b2' : color }]}>
                 <View style={ticketStyles.headerLeft}>
@@ -108,38 +108,43 @@ export function TicketCard({
                     </View>
                 ) : null}
 
-                {/* Rodapé do ticket */}
-                <View style={ticketStyles.footer}>
-                    <View style={ticketStyles.tagsRow}>
-                        {place.category ? (
-                            <View style={[ticketStyles.badge, { backgroundColor: isPast ? '#e8eaed' : `${color}18` }]}>
-                                <Text style={[ticketStyles.badgeText, { color: isPast ? '#9aa4b2' : color }]}>
-                                    {place.category.charAt(0).toUpperCase() + place.category.slice(1)}
-                                </Text>
-                            </View>
-                        ) : null}
-                        {place.fee === 'yes' ? (
-                            <View style={ticketStyles.feeBadge}>
-                                <Text style={ticketStyles.feeBadgeText}>{t('ticketCard.paid')}</Text>
-                            </View>
-                        ) : place.fee === 'no' ? (
-                            <View style={ticketStyles.freeBadge}>
-                                <Text style={ticketStyles.freeBadgeText}>{t('ticketCard.free')}</Text>
-                            </View>
-                        ) : null}
-                    </View>
-
-                    <TouchableOpacity
-                        style={[ticketStyles.infoBtn, { borderColor: isPast ? '#c8d0da' : `${color}55` }]}
-                        onPress={onInfoPress}
-                        hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-                    >
-                        <Text style={[ticketStyles.infoBtnText, { color: isPast ? '#9aa4b2' : color }]}>{t('ticketCard.about')}</Text>
-                        <Ionicons name="information-circle-outline" size={14} color={isPast ? '#9aa4b2' : color} />
-                    </TouchableOpacity>
+                <View style={ticketStyles.tagsRow}>
+                    {place.category ? (
+                        <View style={[ticketStyles.badge, { backgroundColor: isPast ? '#e8eaed' : `${color}18` }]}>
+                            <Text style={[ticketStyles.badgeText, { color: isPast ? '#9aa4b2' : color }]}>
+                                {place.category.charAt(0).toUpperCase() + place.category.slice(1)}
+                            </Text>
+                        </View>
+                    ) : null}
+                    {place.fee === 'yes' ? (
+                        <View style={ticketStyles.feeBadge}>
+                            <Text style={ticketStyles.feeBadgeText}>{t('ticketCard.paid')}</Text>
+                        </View>
+                    ) : place.fee === 'no' ? (
+                        <View style={ticketStyles.freeBadge}>
+                            <Text style={ticketStyles.freeBadgeText}>{t('ticketCard.free')}</Text>
+                        </View>
+                    ) : null}
                 </View>
             </View>
 
+            {/* Rodapé do ticket */}
+            <View style={ticketStyles.footer}>
+                <TouchableOpacity
+                    style={ticketStyles.aboutBtn}
+                    onPress={onInfoPress}
+                >
+                    <Text style={ticketStyles.aboutBtnText}>{t('ticketCard.about')}</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={[ticketStyles.switchBtn, { backgroundColor: isPast ? '#c8d0da' : color }]}
+                    onPress={onSwitchPress}
+                    disabled={isPast}
+                >
+                    <Text style={ticketStyles.switchBtnText}>{t('ticketCard.switch')}</Text>
+                </TouchableOpacity>
+            </View>
+          </View>
         </TouchableOpacity>
     );
 }
@@ -147,10 +152,8 @@ export function TicketCard({
 const ticketStyles = StyleSheet.create({
     ticket: {
         flex: 1,
-        backgroundColor: '#fff',
         borderRadius: 16,
         marginBottom: 12,
-        overflow: 'hidden',
         shadowColor: '#000',
         shadowOpacity: 0.08,
         shadowRadius: 8,
@@ -158,6 +161,11 @@ const ticketStyles = StyleSheet.create({
         elevation: 4,
         borderWidth: 1.5,
         borderColor: 'transparent',
+    },
+    ticketInner: {
+        borderRadius: 16,
+        overflow: 'hidden',
+        backgroundColor: '#fff',
     },
     pastTicket: {
         opacity: 0.55,
@@ -192,14 +200,14 @@ const ticketStyles = StyleSheet.create({
         height: 30,
         borderRadius: 20,
         marginLeft: -9,
-        backgroundColor: '#f4f6f9',
+        backgroundColor: '#F6F8FC',
     },
     notchRight: {
         width: 30,
         height: 30,
         borderRadius: 20,
         marginRight: -9,
-        backgroundColor: '#f4f6f9',
+        backgroundColor: '#F6F8FC',
     },
     dashes: {
         flex: 1,
@@ -218,7 +226,7 @@ const ticketStyles = StyleSheet.create({
     body: {
         paddingHorizontal: 16,
         paddingTop: 10,
-        paddingBottom: 12,
+        paddingBottom: 16,
     },
     placeName: {
         fontSize: 16,
@@ -241,14 +249,7 @@ const ticketStyles = StyleSheet.create({
         lineHeight: 17,
     },
 
-    // ── Rodapé ──
-    footer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginTop: 10,
-    },
-    tagsRow: { flexDirection: 'row', gap: 6, flexWrap: 'wrap', flex: 1 },
+    tagsRow: { flexDirection: 'row', gap: 6, flexWrap: 'wrap', marginTop: 10 },
     badge: {
         borderRadius: 20,
         paddingHorizontal: 10,
@@ -269,16 +270,26 @@ const ticketStyles = StyleSheet.create({
         paddingVertical: 4,
     },
     freeBadgeText: { fontSize: 11, fontWeight: '600', color: '#15803d' },
-    infoBtn: {
+    footer: {
         flexDirection: 'row',
-        alignItems: 'center',
-        gap: 4,
-        borderWidth: 1.5,
-        borderRadius: 20,
-        paddingHorizontal: 10,
-        paddingVertical: 5,
+        borderTopWidth: 1,
+        borderTopColor: '#f0f2f5',
     },
-    infoBtnText: { fontSize: 12, fontWeight: '700' },
+    aboutBtn: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 16,
+        backgroundColor: '#fff',
+    },
+    aboutBtnText: { fontSize: 15, fontWeight: '700', color: '#1a1a1a' },
+    switchBtn: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 16,
+    },
+    switchBtnText: { fontSize: 15, fontWeight: '700', color: '#fff' },
 
     // ── Ícone mapa (canto) ──
     mapCorner: {

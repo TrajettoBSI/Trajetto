@@ -12,18 +12,25 @@
     "dashboard": "Dashboard de uso"
   },
   "loadingItineraries": "Carregando roteiros...",
-  "exploreBanner": {
-    "tag": "✈️  Destinos",
-    "title": "Explore mais\nlugares para ir",
-    "cta": "Descobrir agora →"
+  "searchCard": {
+    "title": "Qual o próximo roteiro?",
+    "placeholder": "Buscar destinos"
+  },
+  "exploreCard": {
+    "title": "Explorar destinos",
+    "subtitle": "Descubra pontos turísticos antes de montar o roteiro"
   },
   "activeSectionLabel": "ROTEIRO ATIVO",
   "otherSectionLabel": "OUTROS ROTEIROS",
+  "showMore": "Mostrar mais (+{{count}})",
   "defaultItineraryName": "Roteiro",
   "activeCard": {
     "activeBadge": "Ativo",
     "stopsAndDays": "{{stops}} paradas · {{days}} dias",
-    "deleteButton": "Excluir roteiro"
+    "progressPercent": "{{percent}}%",
+    "progressDone": "concluído",
+    "openButton": "Abrir Roteiro",
+    "deleteButton": "Excluir"
   },
   "inactiveRow": {
     "stopsAndDate": "{{stops}} paradas · {{date}}",
@@ -49,16 +56,14 @@
   },
   "activateError": "Não foi possível ativar o roteiro.",
   "emptyState": {
-    "createFirst": "Crie seu primeiro",
-    "itinerary": "roteiro",
-    "personalized": "personalizado",
-    "andStart": "e comece a",
-    "explore": "explorar o mundo."
+    "title": "Nenhuma viagem planejada ainda",
+    "body": "Busque uma cidade e montamos o primeiro dia pra voce — depois e so reorganizar as paradas.",
+    "cta": "Criar meu primeiro roteiro"
   },
   "noItineraryEmptyState": {
-    "generate": "Gere um roteiro personalizado",
-    "andPlan": "e planeje seu",
-    "goHome": "Ir para Início"
+    "title": "Nenhum roteiro ativo",
+    "body": "Crie um roteiro para ve-lo aqui.",
+    "cta": "Criar Roteiro"
   },
   "destinations": {
     "flightTime": "{{hours}}h voo",
@@ -75,15 +80,15 @@
     "brazil": "Brasil"
   },
   "generateFlow": {
-    "configureTitle": "Configurar Roteiro",
+    "configureTitle": "Novo Roteiro",
     "generatedTitle": "Roteiro Gerado",
-    "cityLabel": "CIDADE",
-    "cityValue": "🏛️  Roma, Itália",
+    "destinyLabel": "DESTINO",
     "durationLabel": "DURAÇÃO",
     "durationValue": "1 dia",
     "originLabel": "PONTO DE PARTIDA",
     "originHint": "Digite seu hotel ou endereço em Roma",
     "originPlaceholder": "Ex: Via Veneto 45, Roma",
+    "currentLocationLabel": "Localização atual",
     "generateButton": "Gerar Roteiro",
     "loadingText": "Criando seu roteiro...",
     "summaryTitle": "Roma, Itália",

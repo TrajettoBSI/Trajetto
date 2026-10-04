@@ -31,6 +31,10 @@ export default function ActiveItineraryCard({
     (1000 * 60 * 60 * 24)
   ) + 1;
 
+  const places = itinerary.places ?? [];
+  const doneCount = places.filter((p) => isPlacePast(itinerary.startDate, p.estimatedVisitTime)).length;
+  const progress = places.length > 0 ? Math.round((doneCount / places.length) * 100) : 0;
+
   return (
     <TouchableOpacity
       style={[s.itineraryCard, selectMode && selected && s.cardSelected]}
@@ -56,18 +60,27 @@ export default function ActiveItineraryCard({
       <View style={s.titleRow}>
         <Ionicons name="location" size={18} color={colors.primary} style={s.locationIcon} />
         <Text style={s.itineraryCardTitle} numberOfLines={1}>
-          {itinerary.places[0]?.name ?? t('defaultItineraryName')}
+          {places[0]?.name ?? t('defaultItineraryName')}
         </Text>
         {!selectMode && <Text style={s.chevron}>›</Text>}
       </View>
 
-      <Text style={s.itineraryCardSub}>
-        {t('activeCard.stopsAndDays', { stops: itinerary.places.length, days })}
-      </Text>
+      <View style={s.progressRow}>
+        <Text style={s.itineraryCardSub}>
+          {t('activeCard.stopsAndDays', { stops: places.length, days })}
+        </Text>
+        <View style={s.progressPercentBlock}>
+          <Text style={s.progressPercentText}>{t('activeCard.progressPercent', { percent: progress })}</Text>
+          <Text style={s.progressDoneText}>{t('activeCard.progressDone')}</Text>
+        </View>
+      </View>
+      <View style={s.progressTrack}>
+        <View style={[s.progressFill, { width: `${progress}%` }]} />
+      </View>
 
       {!selectMode && (
         <View style={s.timeline}>
-          {itinerary.places
+          {places
             .slice()
             .sort((a, b) => a.orderIndex - b.orderIndex)
             .map((place, idx) => {
@@ -76,7 +89,7 @@ export default function ActiveItineraryCard({
                 <View key={idx} style={s.timelineItem}>
                   <View style={s.timelineLeft}>
                     <View style={[s.timelineDot, isPast ? s.timelineDotPast : (idx === 0 ? s.timelineDotFirst : s.timelineDotNext)]} />
-                    {idx < itinerary.places.length - 1 && <View style={s.timelineLine} />}
+                    {idx < places.length - 1 && <View style={s.timelineLine} />}
                   </View>
                   <View style={[s.timelineContent, isPast && s.timelineContentPast]}>
                     <Text style={s.timelineTime}>{formatTime(place.estimatedVisitTime)}</Text>
@@ -91,21 +104,26 @@ export default function ActiveItineraryCard({
 
       {!selectMode && <View style={s.divider} />}
       {!selectMode && (
-        <TouchableOpacity
-          style={s.deleteBtn}
-          onPress={onDelete}
-          disabled={deleting}
-          activeOpacity={0.8}
-        >
-          {deleting ? (
-            <ActivityIndicator size="small" color={colors.error} />
-          ) : (
-            <>
-              <Ionicons name="trash-outline" size={18} color={colors.error} />
-              <Text style={s.deleteBtnText}>{t('activeCard.deleteButton')}</Text>
-            </>
-          )}
-        </TouchableOpacity>
+        <View style={s.buttonRow}>
+          <TouchableOpacity style={s.openBtn} onPress={onPress} activeOpacity={0.8}>
+            <Text style={s.openBtnText}>{t('activeCard.openButton')}</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={s.deleteBtn}
+            onPress={onDelete}
+            disabled={deleting}
+            activeOpacity={0.8}
+          >
+            {deleting ? (
+              <ActivityIndicator size="small" color={colors.error} />
+            ) : (
+              <>
+                <Ionicons name="trash-outline" size={18} color={colors.error} />
+                <Text style={s.deleteBtnText}>{t('activeCard.deleteButton')}</Text>
+              </>
+            )}
+          </TouchableOpacity>
+        </View>
       )}
     </TouchableOpacity>
   );

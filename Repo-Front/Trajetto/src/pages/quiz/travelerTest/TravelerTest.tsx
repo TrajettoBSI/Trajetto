@@ -15,9 +15,20 @@ export default function TravelerTest() {
   return (
     <SafeAreaView style={s.container}>
       <View style={s.content}>
-        <Text style={s.icon}>✈️</Text>
-        <Text style={s.title}>{t('travelerTest.title')}</Text>
-        <Text style={s.subtitle}>{t('travelerTest.subtitle')}</Text>
+        <View style={s.hero}>
+          <Ionicons name="location-outline" size={18} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { top: 4, left: 18 }]} />
+          <Ionicons name="compass-outline" size={20} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { bottom: 10, right: 12, transform: [{ rotate: '14deg' }] }]} />
+          <Ionicons name="globe-outline" size={16} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { top: 14, right: 22 }]} />
+          <View style={s.heroBadge}>
+            <Ionicons name="airplane" size={40} color={colors.primary} />
+          </View>
+        </View>
+
+        <View style={s.dots}>
+          <View style={[s.dot, s.dotActive]} />
+          <View style={s.dot} />
+          <View style={s.dot} />
+        </View>
 
         {fromProfile && (
           <View style={s.retakeBadge}>
@@ -26,16 +37,16 @@ export default function TravelerTest() {
           </View>
         )}
 
-        <View style={s.dots}>
-          <View style={[s.dot, s.dotActive]} />
-          <View style={s.dot} />
-          <View style={s.dot} />
+        <View style={s.textBlock}>
+          <Text style={s.title}>{t('travelerTest.title')}</Text>
+          <Text style={s.subtitle}>{t('travelerTest.subtitle')}</Text>
         </View>
       </View>
 
       <View style={s.buttons}>
-        <TouchableOpacity style={s.primaryButton} onPress={goToQuiz}>
+        <TouchableOpacity style={s.primaryButton} onPress={goToQuiz} activeOpacity={0.85}>
           <Text style={s.primaryButtonText}>{t('travelerTest.start')}</Text>
+          <Ionicons name="arrow-forward" size={18} color={colors.primaryDark} />
         </TouchableOpacity>
 
         <TouchableOpacity

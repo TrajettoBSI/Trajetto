@@ -59,7 +59,7 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
     try {
       set({ loading: true, error: null });
       const data = await ItineraryService.getItinerary(userId);
-      set({ itinerary: data ?? null, loading: false });
+      set({ itinerary: data?.id ? data : null, loading: false });
     } catch (e) {
       // Guardar a falha permite a tela dizer que algo deu errado, em vez de mostrar
       // "voce ainda nao tem roteiro" para quem esta so sem internet.

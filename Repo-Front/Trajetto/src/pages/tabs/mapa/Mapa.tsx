@@ -2,7 +2,7 @@ import React from 'react';
 import { ActivityIndicator, Keyboard, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
-import MapView from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps';
 import CustomInput from '@/components/CustomInput';
 import { useColors } from '@/src/theme';
 import NoItineraryEmptyState from '@/src/pages/tabs/shared/components/NoItineraryEmptyState/NoItineraryEmptyState';
@@ -20,7 +20,7 @@ import SpotDetailCard from './components/SpotDetailCard/SpotDetailCard';
 import FilterModal from './components/FilterModal/FilterModal';
 
 export default function Mapa() {
-  const { t } = useTranslation('mapa');
+  const { t } = useTranslation(['mapa', 'common']);
   const colors = useColors();
   const s = styles(colors);
   const {
@@ -76,7 +76,32 @@ export default function Mapa() {
       state={{ loading, error, data: itinerary }}
       onRetry={reload}
       loading={{ title: t('loadingText'), message: '' }}
-      renderEmpty={() => <NoItineraryEmptyState destIndex={destIndex} />}
+      renderEmpty={() => {
+        const emptyRegion = region ?? { latitude: -25.4284, longitude: -49.2733, latitudeDelta: 0.05, longitudeDelta: 0.05 };
+        return (
+          <NoItineraryEmptyState
+            destIndex={destIndex}
+            title={t('common:tabMap')}
+            background={
+              <>
+                <MapView
+                  key={region ? 'gps' : 'fallback'}
+                  style={s.map}
+                  initialRegion={emptyRegion}
+                  scrollEnabled={false}
+                  zoomEnabled={false}
+                  rotateEnabled={false}
+                  pitchEnabled={false}
+                  showsUserLocation
+                >
+                  <Marker coordinate={emptyRegion} />
+                </MapView>
+                <View style={s.mapEmptyScrim} />
+              </>
+            }
+          />
+        );
+      }}
     >
       {(roteiro) => (
         <View style={s.container}>

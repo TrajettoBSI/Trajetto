@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { Ionicons } from '@expo/vector-icons';
 import { User } from '@/types/user';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
@@ -13,13 +14,14 @@ type UserCardProps = {
 
 export default function UserCard({ user, onEdit, onDelete }: UserCardProps) {
   const { t } = useTranslation('admin');
-  const s = styles(useColors());
+  const colors = useColors();
+  const s = styles(colors);
 
   return (
     <View style={s.card}>
       <View style={s.cardLeft}>
         <View style={s.avatarCircle}>
-          <Text style={s.avatarEmoji}>👤</Text>
+          <Ionicons name="person" size={22} color={colors.textSubtle} />
         </View>
         <View style={s.cardInfo}>
           <Text style={s.cardName}>{user.firstName} {user.lastName}</Text>
@@ -37,7 +39,7 @@ export default function UserCard({ user, onEdit, onDelete }: UserCardProps) {
           <Text style={s.editBtnText}>{t('userList.edit')}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={s.deleteBtn} onPress={onDelete} activeOpacity={0.8}>
-          <Text style={s.deleteBtnIcon}>🗑️</Text>
+          <Ionicons name="trash-outline" size={18} color={colors.error} />
         </TouchableOpacity>
       </View>
     </View>

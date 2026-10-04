@@ -1,5 +1,7 @@
+import { colors } from './colors';
+
 export const chartColors = [
-  '#023665', '#2563EB', '#7C3AED', '#DB2777',
+  colors.primary, '#2563EB', '#7C3AED', '#DB2777',
   '#D97706', '#16A34A', '#0891B2', '#DC2626',
 ] as const;
 

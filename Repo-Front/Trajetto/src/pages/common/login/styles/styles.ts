@@ -3,35 +3,35 @@ import { AppColors } from '@/src/theme';
 
 export const styles = (colors: AppColors) =>
   StyleSheet.create({
-    header: {
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: 5,
-      paddingBottom: 80,
-      backgroundColor: colors.primary,
-    },
     container: {
       flexGrow: 1,
       backgroundColor: colors.primary,
-      paddingTop: 150,
     },
+    hero: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingBottom: 56,
+      gap: 6,
+    },
+    heroDecoration: { position: 'absolute' },
     intro: {
-      fontSize: 12,
+      fontSize: 13,
       color: colors.onPrimaryMuted,
-      marginBottom: 5,
-      marginLeft: 2,
+      marginBottom: 4,
     },
-    titleRow: {
-      flexDirection: 'row',
+    logoBadge: {
       alignItems: 'center',
-      gap: 5,
-    },
-    logoContainer: {
-      alignItems: 'center',
+      justifyContent: 'center',
       backgroundColor: colors.white,
-      borderRadius: 10,
-      padding: 5,
+      borderRadius: 20,
+      width: 72,
+      height: 72,
+      marginBottom: 10,
+      shadowColor: colors.shadow,
+      shadowOpacity: 0.2,
+      shadowRadius: 10,
+      shadowOffset: { width: 0, height: 4 },
+      elevation: 6,
     },
     brand: {
       fontSize: 30,
@@ -50,21 +50,33 @@ export const styles = (colors: AppColors) =>
       fontSize: 22,
       fontFamily: 'Inter-Bold',
       color: colors.text,
-      marginBottom: 15,
+      marginBottom: 4,
+    },
+    cardSubtitle: {
+      fontSize: 14,
+      color: colors.textSubtle,
+      marginBottom: 20,
     },
     feedback: {
       marginBottom: 16,
       borderLeftWidth: 4,
       borderLeftColor: colors.error,
     },
+    inputIcon: { marginRight: 8 },
+    forgotBtn: {
+      alignSelf: 'flex-end',
+      marginBottom: 24,
+    },
     link: {
       fontSize: 14,
       color: colors.primary,
-      textAlign: 'right',
-      marginBottom: 30,
+      fontFamily: 'Inter-Medium',
+    },
+    submitBtn: {
+      borderRadius: 28,
     },
     registerRow: {
-      marginTop: 30,
+      marginTop: 28,
       flexDirection: 'row',
       justifyContent: 'center',
     },

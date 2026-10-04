@@ -1,5 +1,6 @@
 import React from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
@@ -17,6 +18,7 @@ export default function Register() {
   const { t } = useTranslation('register');
   const router = useRouter();
   const colors = useColors();
+  const insets = useSafeAreaInsets();
   const s = styles(colors);
   const {
     firstName,
@@ -50,7 +52,7 @@ export default function Register() {
       <ScrollView style={s.scrollView} contentContainerStyle={s.content} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" showsVerticalScrollIndicator={false}>
 
         <View style={s.headerWrapper}>
-          <View style={s.headerRow}>
+          <View style={[s.headerRow, { marginTop: insets.top + 16 }]}>
             <View style={s.headerLeft}>
               <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
                 <Ionicons name="chevron-back" size={32} color={colors.white} />
@@ -82,6 +84,7 @@ export default function Register() {
               autoCapitalize="words"
               error={errors.firstName}
               style={s.field}
+              leftIcon={<Ionicons name="person-outline" size={18} color={colors.gray400} style={s.inputIcon} />}
             />
             <CustomInput
               label={t('lastNameLabel')}
@@ -91,6 +94,7 @@ export default function Register() {
               autoCapitalize="words"
               error={errors.lastName}
               style={s.field}
+              leftIcon={<Ionicons name="person-outline" size={18} color={colors.gray400} style={s.inputIcon} />}
             />
           </View>
 
@@ -104,6 +108,7 @@ export default function Register() {
               maxLength={10}
               error={errors.birthDate}
               style={s.field}
+              leftIcon={<Ionicons name="calendar-outline" size={18} color={colors.gray400} style={s.inputIcon} />}
             />
             <CustomInput
               label={t('telephoneLabel')}
@@ -114,6 +119,7 @@ export default function Register() {
               maxLength={15}
               error={errors.telephone}
               style={s.field}
+              leftIcon={<Ionicons name="call-outline" size={18} color={colors.gray400} style={s.inputIcon} />}
             />
           </View>
 
@@ -125,6 +131,7 @@ export default function Register() {
             placeholder={t('emailPlaceholder')}
             autoCapitalize="none"
             error={errors.email}
+            leftIcon={<Ionicons name="mail-outline" size={18} color={colors.gray400} style={s.inputIcon} />}
           />
 
           <View style={s.field}>
@@ -134,10 +141,11 @@ export default function Register() {
               onPress={openCountries}
               activeOpacity={0.7}
             >
-              <Text style={country ? s.dropdownValue : s.dropdownPlaceholder}>
+              <Ionicons name="earth-outline" size={18} color={colors.gray400} style={s.inputIcon} />
+              <Text style={[country ? s.dropdownValue : s.dropdownPlaceholder, s.dropdownText]}>
                 {country || t('countryPlaceholder')}
               </Text>
-              <Text style={s.dropdownChevron}>▼</Text>
+              <Ionicons name="chevron-down" size={16} color={colors.gray400} />
             </TouchableOpacity>
             {errors.country ? <Text style={s.errorText}>{errors.country}</Text> : null}
           </View>
@@ -156,6 +164,7 @@ export default function Register() {
             onChangeText={onChangePassword}
             placeholder={t('passwordPlaceholder')}
             error={errors.password}
+            leftIcon={<Ionicons name="lock-closed-outline" size={18} color={colors.gray400} style={s.inputIcon} />}
           />
           {password.length > 0 && <PasswordStrength password={password} />}
 
@@ -166,8 +175,9 @@ export default function Register() {
             onChangeText={onChangeConfirmPassword}
             placeholder={t('confirmPasswordPlaceholder')}
             returnKeyType="done"
-            error={errors.confirmPassword}
+            error={errors.confirmPassword || (confirmPassword.length > 0 && password !== confirmPassword ? t('passwordMismatch') : undefined)}
             inputStyle={confirmPassword.length > 0 && password === confirmPassword ? s.inputOk : null}
+            leftIcon={<Ionicons name="lock-closed-outline" size={18} color={colors.gray400} style={s.inputIcon} />}
           />
 
           <CustomButton title={t('submit')} onPress={handleRegister} loading={loading} style={s.button} />

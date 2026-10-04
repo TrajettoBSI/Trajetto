@@ -1,2 +1,2 @@
-import PerfilTabContent from '@/components/PerfilTabContent';
-export default PerfilTabContent;
+import Perfil from '@/src/pages/profile/Perfil/Perfil';
+export default Perfil;

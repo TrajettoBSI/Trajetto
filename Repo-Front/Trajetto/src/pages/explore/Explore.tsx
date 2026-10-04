@@ -12,7 +12,7 @@ import CustomInput from '@/components/CustomInput';
 import { useColors } from '@/src/theme';
 import { AsyncBoundary } from '@/src/components/feedback';
 import { useExplore } from './hooks/useExplore';
-import { categoryIcon } from '@/src/helpers/categoryIcon';
+import { categoryIcon, formatCategoryLabel } from '@/src/helpers/categoryIcon';
 import SpotCard from './components/SpotCard/SpotCard';
 import { styles } from './styles/styles';
 
@@ -90,7 +90,7 @@ export default function Explore() {
         {selectedCategory ? (
           <View style={s.activeFilterRow}>
             <View style={s.activeFilterChip}>
-              <Text style={s.activeFilterText}>{selectedCategory}</Text>
+              <Text style={s.activeFilterText}>{formatCategoryLabel(selectedCategory)}</Text>
               <TouchableOpacity onPress={handleClearFilter}>
                 <Text style={s.activeFilterClose}>✕</Text>
               </TouchableOpacity>
@@ -101,7 +101,7 @@ export default function Explore() {
         {searched && !loading && !error && (
           <Text style={s.resultsLabel}>
             {t('explore:resultsCount', { count: spots?.length ?? 0 })}
-            {selectedCategory ? t('explore:resultsInCategory', { category: selectedCategory }) : ''}
+            {selectedCategory ? t('explore:resultsInCategory', { category: formatCategoryLabel(selectedCategory) }) : ''}
           </Text>
         )}
 
@@ -145,11 +145,15 @@ export default function Explore() {
               <TouchableOpacity
                 style={[s.categoryItem, tempCategory === '' && s.categoryItemSelected]}
                 onPress={() => setTempCategory('')}
+                activeOpacity={0.7}
               >
+                <View style={[s.categoryIconBadge, tempCategory === '' && s.categoryIconBadgeSelected]}>
+                  <Ionicons name="apps" size={16} color={tempCategory === '' ? colors.primary : colors.gray500} />
+                </View>
                 <Text style={[s.categoryItemText, tempCategory === '' && s.categoryItemTextSelected]}>
                   {t('explore:allCategories')}
                 </Text>
-                {tempCategory === '' && <Text style={s.checkmark}>✓</Text>}
+                {tempCategory === '' && <Ionicons name="checkmark" size={20} color={colors.primary} />}
               </TouchableOpacity>
 
               {categories.map((cat) => (
@@ -157,11 +161,15 @@ export default function Explore() {
                   key={cat}
                   style={[s.categoryItem, tempCategory === cat && s.categoryItemSelected]}
                   onPress={() => setTempCategory(cat)}
+                  activeOpacity={0.7}
                 >
+                  <View style={[s.categoryIconBadge, tempCategory === cat && s.categoryIconBadgeSelected]}>
+                    <Text style={s.categoryIconEmoji}>{categoryIcon(cat)}</Text>
+                  </View>
                   <Text style={[s.categoryItemText, tempCategory === cat && s.categoryItemTextSelected]}>
-                    {categoryIcon(cat)} {cat}
+                    {formatCategoryLabel(cat)}
                   </Text>
-                  {tempCategory === cat && <Text style={s.checkmark}>✓</Text>}
+                  {tempCategory === cat && <Ionicons name="checkmark" size={20} color={colors.primary} />}
                 </TouchableOpacity>
               ))}
             </ScrollView>

@@ -1,10 +1,11 @@
 import React from 'react';
-import { ActivityIndicator, Modal, Text, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, Modal, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { Place } from '@/services';
 import { Places } from '@/hooks/itineraryStore';
 import { useColors } from '@/src/theme';
 import AltCard from './AltCard';
+import { haversineMeters } from './distance';
 import { styles } from './styles';
 
 type AlternativesModalProps = {
@@ -45,11 +46,16 @@ export default function AlternativesModal({
               <Text style={s.emptyText}>{t('alternativesModal.empty')}</Text>
             </View>
           ) : (
-            <View style={s.list}>
+            <ScrollView style={s.listScroll} contentContainerStyle={s.list} showsVerticalScrollIndicator={false}>
               {alternatives.map((alt, i) => (
-                <AltCard key={i} alt={alt} onPress={() => onSelect(alt)} />
+                <AltCard
+                  key={i}
+                  alt={alt}
+                  onPress={() => onSelect(alt)}
+                  distanceMeters={swipedPlace ? haversineMeters(swipedPlace.latitude, swipedPlace.longitude, alt.latitude, alt.longitude) : null}
+                />
               ))}
-            </View>
+            </ScrollView>
           )}
 
           <TouchableOpacity style={s.cancelBtn} onPress={onCancel}>

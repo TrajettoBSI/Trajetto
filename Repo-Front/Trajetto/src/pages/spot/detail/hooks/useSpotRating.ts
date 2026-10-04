@@ -1,20 +1,16 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
-import BottomSheet, { BottomSheetBackdrop } from '@gorhom/bottom-sheet';
+import { useEffect, useRef, useState } from 'react';
 import { TextInput } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { RatingService, Rating, RatingSummary } from '@/services';
 import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
 import { useAuth } from '@/context/AuthContext';
-import { Places } from '@/hooks/itineraryStore';
 
-export function usePlaceRating() {
-  const { t } = useTranslation(['itinerario', 'common']);
+export function useSpotRating(xid: string | undefined) {
+  const { t } = useTranslation(['spotDetail', 'common']);
   const { user } = useAuth();
-  const bottomSheetRef = useRef<BottomSheet>(null);
   const commentInputRef = useRef<TextInput>(null);
 
-  const [selectedPlace, setSelectedPlace] = useState<Places & { xid?: string } | null>(null);
   const [allRatings, setAllRatings] = useState<Rating[]>([]);
   const [isRatingOpen, setIsRatingOpen] = useState(false);
   const [ratingData, setRatingData] = useState<RatingSummary | undefined>();
@@ -22,32 +18,7 @@ export function usePlaceRating() {
   const [ratingValue, setRatingValue] = useState(0);
   const [comment, setComment] = useState('');
 
-  const openBottomSheet = (place: Places & { xid?: string }) => {
-    setSelectedPlace(place);
-    setIsRatingOpen(false);
-    setRatingValue(0);
-    setComment('');
-    setMyRating(null);
-    setAllRatings([]);
-    bottomSheetRef.current?.expand();
-  };
-
-  const renderBackdrop = useCallback(
-    (props: any) => (
-      <BottomSheetBackdrop {...props} disappearsOnIndex={-1} appearsOnIndex={0} opacity={0.5} />
-    ),
-    []
-  );
-
-  const refreshRatings = useCallback(async (xid: string) => {
-    const summary = await RatingService.getSummary(xid);
-    setRatingData(summary);
-    const ratings = await RatingService.getByPlace(xid);
-    setAllRatings(ratings);
-  }, []);
-
   useEffect(() => {
-    const xid = selectedPlace?.xid;
     if (!xid) return;
     RatingService.getSummary(xid).then(setRatingData).catch(() => {});
     RatingService.getByPlace(xid).then((ratings) => {
@@ -55,10 +26,17 @@ export function usePlaceRating() {
       const mine = ratings.find((r) => r.userId === user?.id);
       setMyRating(mine ?? null);
     }).catch(() => {});
-  }, [selectedPlace, user?.id]);
+  }, [xid, user?.id]);
+
+  const refreshRatings = async () => {
+    if (!xid) return;
+    const summary = await RatingService.getSummary(xid);
+    setRatingData(summary);
+    const ratings = await RatingService.getByPlace(xid);
+    setAllRatings(ratings);
+  };
 
   const saveRating = async () => {
-    const xid = selectedPlace?.xid;
     if (!xid) return;
     try {
       if (myRating) {
@@ -79,9 +57,9 @@ export function usePlaceRating() {
         setMyRating(created);
       }
       setIsRatingOpen(false);
-      await refreshRatings(xid);
+      await refreshRatings();
     } catch (e) {
-      showAlert(getErrorMessage(e, t('itinerario:ratingSheet.saveError')), { title: t('common:error') });
+      showAlert(getErrorMessage(e, t('spotDetail:rating.saveError')), { title: t('common:error') });
     }
   };
 
@@ -94,10 +72,9 @@ export function usePlaceRating() {
   };
 
   const deleteRating = (r: Rating) => {
-    const xid = selectedPlace?.xid;
     if (!xid) return;
-    showAlert(t('itinerario:ratingSheet.deleteConfirm'), {
-      title: t('itinerario:ratingSheet.deleteTitle'),
+    showAlert(t('spotDetail:rating.deleteConfirm'), {
+      title: t('spotDetail:rating.deleteTitle'),
       buttons: [
         { text: t('common:cancel'), style: 'cancel' },
         {
@@ -107,9 +84,9 @@ export function usePlaceRating() {
             try {
               await RatingService.delete(r.id, user?.id ?? 0);
               setMyRating(null);
-              await refreshRatings(xid);
+              await refreshRatings();
             } catch (e) {
-              showAlert(getErrorMessage(e, t('itinerario:ratingSheet.deleteError')), { title: t('common:error') });
+              showAlert(getErrorMessage(e, t('spotDetail:rating.deleteError')), { title: t('common:error') });
             }
           },
         },
@@ -119,9 +96,7 @@ export function usePlaceRating() {
 
   return {
     user,
-    bottomSheetRef,
     commentInputRef,
-    selectedPlace,
     allRatings,
     isRatingOpen,
     setIsRatingOpen,
@@ -131,8 +106,6 @@ export function usePlaceRating() {
     setRatingValue,
     comment,
     setComment,
-    openBottomSheet,
-    renderBackdrop,
     saveRating,
     startEditRating,
     deleteRating,

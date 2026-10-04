@@ -9,6 +9,7 @@
   },
   "quiz": {
     "headerTitle": "Teste de Viajante",
+    "progressLabel": "{{current}} de {{total}}",
     "yes": "Sim",
     "no": "Não",
     "dontKnow": "Não sei dizer",
@@ -20,7 +21,7 @@
     "back": "Voltar",
     "yourResult": "Seu resultado",
     "aboutYou": "Sobre você",
-    "matchingDestinations": "📍 Destinos que combinam com você",
+    "matchingDestinations": "Destinos que combinam com você",
     "backToProfile": "Voltar ao perfil",
     "startExploring": "Começar a explorar"
   },

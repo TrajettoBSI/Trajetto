@@ -5,20 +5,24 @@ export const styles = (colors: AppColors) =>
   StyleSheet.create({
     container: { flex: 1, backgroundColor: colors.white },
 
+    progressRow: {
+      flexDirection: 'row', alignItems: 'center', gap: 10,
+      marginHorizontal: 20, marginBottom: 20,
+    },
     progressTrack: {
+      flex: 1,
       height: 6,
       backgroundColor: colors.gray200,
-      marginHorizontal: 20,
       borderRadius: 3,
-      marginBottom: 8,
     },
     progressFill: {
       height: 6,
       backgroundColor: colors.primary,
       borderRadius: 3,
     },
+    progressLabel: { fontSize: 12, fontFamily: 'Inter-Bold', color: colors.gray400 },
 
-    content: { padding: 24, paddingBottom: 16 },
+    content: { flexGrow: 1, padding: 24, paddingTop: 0, paddingBottom: 16, justifyContent: 'center' },
 
     question: {
       fontSize: 20,
@@ -32,19 +36,26 @@ export const styles = (colors: AppColors) =>
     simNaoButton: {
       flex: 1,
       padding: 20,
-      borderRadius: 12,
-      borderWidth: 2,
+      borderRadius: 16,
+      borderWidth: 1.5,
       borderColor: colors.gray200,
       alignItems: 'center',
+      justifyContent: 'center',
     },
     simNaoSelected: { borderColor: colors.primary, backgroundColor: colors.primarySurface },
+    simNaoCheck: {
+      position: 'absolute', top: 8, right: 8,
+      width: 18, height: 18, borderRadius: 9,
+      backgroundColor: colors.primary,
+      alignItems: 'center', justifyContent: 'center',
+    },
     simNaoText: { fontSize: 17, fontFamily: 'Inter-Medium', color: colors.gray600 },
     simNaoTextSelected: { color: colors.primary },
     naoSeiButton: {
       marginTop: 12,
       padding: 14,
-      borderRadius: 12,
-      borderWidth: 2,
+      borderRadius: 16,
+      borderWidth: 1.5,
       borderColor: colors.gray300,
       alignItems: 'center',
       backgroundColor: colors.gray50,
@@ -55,8 +66,8 @@ export const styles = (colors: AppColors) =>
       flexDirection: 'row',
       alignItems: 'center',
       padding: 16,
-      borderRadius: 12,
-      borderWidth: 2,
+      borderRadius: 16,
+      borderWidth: 1.5,
       borderColor: colors.gray200,
       marginBottom: 12,
       gap: 14,
@@ -84,7 +95,7 @@ export const styles = (colors: AppColors) =>
     footer: { padding: 24, paddingTop: 8 },
     nextButton: {
       backgroundColor: colors.primary,
-      borderRadius: 12,
+      borderRadius: 28,
       padding: 16,
       alignItems: 'center',
     },

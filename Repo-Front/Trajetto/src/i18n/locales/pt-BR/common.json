@@ -22,6 +22,13 @@
   "tabMap": "Mapa",
   "networkError": "Não foi possível conectar ao servidor. Verifique sua conexão e tente novamente.",
   "emptyTitle": "Nada por aqui",
+  "passwordStrength": {
+    "length": "8+ caracteres",
+    "case": "maiúsculas e minúsculas",
+    "number": "um número",
+    "special": "um caractere especial",
+    "missing": "Falta: {{items}}"
+  },
   "feedback": {
     "loading": {
       "title": "Carregando...",

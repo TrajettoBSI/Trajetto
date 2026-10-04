@@ -19,6 +19,7 @@ export const styles = (colors: AppColors) =>
     badgePaid: { backgroundColor: colors.warningSurface },
     badgeText: { fontSize: 12, color: colors.gray700, fontFamily: 'Inter-Medium' },
     spotCardDetail: { fontSize: 13, color: colors.textSlate, marginBottom: 4 },
+    closedText: { color: colors.error },
 
     distanceRow: { flexDirection: 'row', alignItems: 'center', backgroundColor: colors.surfaceAlt, borderRadius: 12, padding: 12, marginVertical: 10 },
     distanceCard: { flex: 1, alignItems: 'center', gap: 2 },

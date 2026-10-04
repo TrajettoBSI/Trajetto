@@ -6,6 +6,7 @@ import Svg, {
   Circle,
   Text as SvgText,
 } from 'react-native-svg';
+import { colors } from '@/src/theme';
 
 export default function RegisterIllustration({ width = 300, height = 133 }: { width?: number; height?: number }) {
   return (
@@ -45,7 +46,7 @@ export default function RegisterIllustration({ width = 300, height = 133 }: { wi
       <Path
         d="M110,225 L110,118 L245,118 L245,85 L340,85 L340,118 L520,118 L520,225"
         fill="none"
-        stroke="#023665"
+        stroke={colors.primary}
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -56,7 +57,7 @@ export default function RegisterIllustration({ width = 300, height = 133 }: { wi
       <Path
         d="M110,225 L110,118 L245,118 L245,85 L340,85 L340,118 L520,118 L520,225"
         fill="none"
-        stroke="#023665"
+        stroke={colors.primary}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -69,19 +70,19 @@ export default function RegisterIllustration({ width = 300, height = 133 }: { wi
       <Circle cx="110" cy="225" r="11" fill="none" stroke="#B6A79A" strokeWidth="1.5" opacity="0.5"/>
 
       {/* Pontos intermediários */}
-      <Circle cx="245" cy="85" r="5" fill="#023665" opacity="0.4"/>
-      <Circle cx="340" cy="85" r="5" fill="#023665" opacity="0.4"/>
+      <Circle cx="245" cy="85" r="5" fill={colors.primary} opacity="0.4"/>
+      <Circle cx="340" cy="85" r="5" fill={colors.primary} opacity="0.4"/>
 
       {/* Ponto de destino */}
-      <Circle cx="520" cy="118" r="8" fill="#023665"/>
-      <Circle cx="520" cy="118" r="14" fill="none" stroke="#023665" strokeWidth="1.5" opacity="0.3"/>
-      <Circle cx="520" cy="118" r="20" fill="none" stroke="#023665" strokeWidth="1" opacity="0.15"/>
+      <Circle cx="520" cy="118" r="8" fill={colors.primary}/>
+      <Circle cx="520" cy="118" r="14" fill="none" stroke={colors.primary} strokeWidth="1.5" opacity="0.3"/>
+      <Circle cx="520" cy="118" r="20" fill="none" stroke={colors.primary} strokeWidth="1" opacity="0.15"/>
 
       {/* Cruz no destino */}
-      <Line x1="520" y1="100" x2="520" y2="108" stroke="#023665" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
-      <Line x1="520" y1="128" x2="520" y2="136" stroke="#023665" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
-      <Line x1="502" y1="118" x2="510" y2="118" stroke="#023665" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
-      <Line x1="530" y1="118" x2="538" y2="118" stroke="#023665" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+      <Line x1="520" y1="100" x2="520" y2="108" stroke={colors.primary} strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+      <Line x1="520" y1="128" x2="520" y2="136" stroke={colors.primary} strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+      <Line x1="502" y1="118" x2="510" y2="118" stroke={colors.primary} strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+      <Line x1="530" y1="118" x2="538" y2="118" stroke={colors.primary} strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
 
       {/* Texto */}
       <SvgText

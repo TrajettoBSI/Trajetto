@@ -3,31 +3,23 @@ import { AppColors } from '@/src/theme';
 
 export const styles = (colors: AppColors) =>
   StyleSheet.create({
-    safe: { flex: 1, backgroundColor: colors.primaryDark },
+    safe: { flex: 1, backgroundColor: colors.backgroundMuted },
 
     header: {
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
-      paddingTop: 16,
-      paddingBottom: 20,
-      paddingHorizontal: 24,
-      backgroundColor: colors.primaryDark,
+      paddingHorizontal: 20,
+      paddingBottom: 12,
     },
-    headerTitle: { fontSize: 24, fontFamily: 'Inter-Bold', color: colors.white },
-    headerSub: { fontSize: 13, color: colors.onPrimaryFaint, marginTop: 2 },
-    logoutBtn: {
-      borderWidth: 1.5,
-      borderColor: colors.glassBorderStrong,
-      borderRadius: 10,
-      paddingHorizontal: 14,
-      paddingVertical: 7,
-    },
-    logoutText: { color: colors.white, fontFamily: 'Inter-Medium', fontSize: 14 },
+    headerLeft: { flexDirection: 'row', alignItems: 'center', gap: 4 },
+    headerBackBtn: { padding: 4, marginRight: 4 },
+    headerTitle: { fontSize: 20, fontFamily: 'Inter-Bold', color: colors.text },
+    headerSub: { fontSize: 13, color: colors.textSubtle, marginTop: 2 },
 
-    center: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.backgroundMuted },
+    center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
 
-    list: { padding: 20, paddingBottom: 32, backgroundColor: colors.backgroundMuted, flexGrow: 1 },
+    list: { paddingHorizontal: 16, paddingBottom: 32, flexGrow: 1 },
 
     sectionLabel: {
       fontSize: 11, fontFamily: 'Inter-Bold', color: colors.textSubtle,

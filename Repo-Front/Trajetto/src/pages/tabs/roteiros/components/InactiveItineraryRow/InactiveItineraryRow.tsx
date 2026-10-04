@@ -26,6 +26,7 @@ export default function InactiveItineraryRow({
   const { t } = useTranslation('roteiros');
   const colors = useColors();
   const s = styles(colors);
+  const places = item.places ?? [];
 
   return (
     <View style={[s.inactiveCard, selectMode && selected && s.cardSelected]}>
@@ -39,10 +40,10 @@ export default function InactiveItineraryRow({
         <View style={s.inactiveCardInfo}>
           <View style={s.inactiveCardTitleRow}>
             <Ionicons name="location" size={18} color={colors.primary} />
-            <Text style={s.inactiveCardTitle} numberOfLines={1}> {item.places[0]?.name ?? t('defaultItineraryName')}</Text>
+            <Text style={s.inactiveCardTitle} numberOfLines={1}> {places[0]?.name ?? t('defaultItineraryName')}</Text>
           </View>
           <Text style={s.inactiveCardMeta}>
-            {t('inactiveRow.stopsAndDate', { stops: item.places.length, date: formatDate(item.startDate) })}
+            {t('inactiveRow.stopsAndDate', { stops: places.length, date: formatDate(item.startDate) })}
           </Text>
         </View>
         {!selectMode && (

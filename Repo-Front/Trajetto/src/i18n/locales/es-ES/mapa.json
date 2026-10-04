@@ -36,6 +36,9 @@
     "walking": "a pie",
     "driving": "en coche",
     "fromHere": "desde aquí",
+    "openUntil": "Abierto hasta {{time}}",
+    "opensAt": "Abre a las {{time}}",
+    "closedToday": "Cerrado hoy",
     "viewFullDetails": "Ver detalles completos →"
   },
   "loadingText": "Cargando el mapa de tu itinerario..."

@@ -15,7 +15,6 @@ export const styles = (colors: AppColors) =>
     reviewAvatarText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 16 },
     reviewInfo: { flex: 1 },
     reviewName: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.text, marginBottom: 2 },
-    reviewActions: { flexDirection: 'row', gap: 8 },
-    reviewActionIcon: { fontSize: 16 },
+    reviewActions: { flexDirection: 'row', gap: 12 },
     reviewComment: { fontSize: 13, color: colors.textMuted, lineHeight: 18 },
   });

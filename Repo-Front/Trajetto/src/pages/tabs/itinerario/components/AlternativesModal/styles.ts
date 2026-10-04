@@ -10,6 +10,7 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.white,
       borderTopLeftRadius: 24, borderTopRightRadius: 24,
       paddingHorizontal: 24, paddingBottom: 40, paddingTop: 8,
+      maxHeight: '85%',
     },
     handle: {
       width: 40, height: 4, backgroundColor: colors.border,
@@ -21,6 +22,7 @@ export const styles = (colors: AppColors) =>
     loadingText: { fontSize: 14, color: colors.gray500 },
     empty: { alignItems: 'center', paddingVertical: 32 },
     emptyText: { fontSize: 14, color: colors.gray400 },
+    listScroll: { flexShrink: 1 },
     list: { gap: 10, marginBottom: 20 },
     card: {
       flexDirection: 'row', alignItems: 'center',
@@ -34,8 +36,15 @@ export const styles = (colors: AppColors) =>
     iconText: { fontSize: 24 },
     info: { flex: 1 },
     name: { fontSize: 15, fontFamily: 'Inter-Bold', color: colors.gray900 },
-    cat: { fontSize: 12, color: colors.primary, marginTop: 2, textTransform: 'capitalize', fontFamily: 'Inter-Medium' },
-    addr: { fontSize: 11, color: colors.gray400, marginTop: 2 },
+    metaRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: 4 },
+    catBadge: {
+      alignSelf: 'flex-start', backgroundColor: colors.gray100,
+      borderRadius: 8, paddingHorizontal: 8, paddingVertical: 2,
+    },
+    cat: { fontSize: 11, color: colors.gray700, textTransform: 'capitalize', fontFamily: 'Inter-Medium' },
+    distance: { fontSize: 11, color: colors.gray400, fontFamily: 'Inter-Medium' },
+    addr: { fontSize: 11, color: colors.gray400, marginTop: 4 },
+    chevron: { fontSize: 22, color: colors.gray300, marginLeft: 4 },
     freeBadge: { backgroundColor: colors.successSurface, borderRadius: 8, paddingHorizontal: 8, paddingVertical: 4 },
     freeBadgeText: { fontSize: 12 },
     paidBadge: { backgroundColor: colors.warningSurface, borderRadius: 8, paddingHorizontal: 8, paddingVertical: 4 },

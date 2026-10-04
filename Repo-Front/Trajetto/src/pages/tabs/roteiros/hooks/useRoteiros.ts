@@ -1,8 +1,9 @@
-import { useCallback, useState } from 'react';
-import { useFocusEffect, useRouter } from 'expo-router';
+import { useCallback, useEffect, useState } from 'react';
+import { useFocusEffect, useLocalSearchParams, useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/context/AuthContext';
 import { useItineraryStore } from '@/hooks/itineraryStore';
+import { PlaceSuggestion } from '@/services';
 import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
 import { useDestinationCarousel } from '@/src/pages/tabs/shared/hooks/useDestinationCarousel';
@@ -13,15 +14,30 @@ export function useRoteiros() {
 
   const { user } = useAuth();
   const router = useRouter();
+  const params = useLocalSearchParams<{ openGenerate?: string }>();
   const { itinerary, itineraries, loading, error, deleteItinerary, activateItinerary } = useItineraryStore();
   const [deleting, setDeleting] = useState<number | null>(null);
   const [activating, setActivating] = useState<number | null>(null);
   const [showGenerate, setShowGenerate] = useState(false);
+  const [generatePrefill, setGeneratePrefill] = useState<PlaceSuggestion | undefined>(undefined);
   const [selectMode, setSelectMode] = useState(false);
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
   const [bulkDeleting, setBulkDeleting] = useState(false);
+  const [showAllInactive, setShowAllInactive] = useState(false);
 
   const userId = user?.id;
+
+  const openGenerate = (prefill?: PlaceSuggestion) => {
+    setGeneratePrefill(prefill);
+    setShowGenerate(true);
+  };
+
+  useEffect(() => {
+    if (params.openGenerate) {
+      openGenerate();
+      router.setParams({ openGenerate: undefined });
+    }
+  }, [params.openGenerate]);
 
   const reload = useCallback(() => {
     if (userId) useItineraryStore.getState().fetchAllItineraries(userId);
@@ -39,11 +55,12 @@ export function useRoteiros() {
     setSelectedIds(new Set());
   };
 
-  // Sai do modo selecao quando nao sobra roteiro (apos bulk delete)
-  if (selectMode && itineraries.length === 0) {
-    setSelectMode(false);
-    setSelectedIds(new Set());
-  }
+  useEffect(() => {
+    if (selectMode && itineraries.length === 0) {
+      setSelectMode(false);
+      setSelectedIds(new Set());
+    }
+  }, [itineraries.length, selectMode]);
 
   const toggleSelect = (id: number) => {
     setSelectedIds((prev) => {
@@ -131,9 +148,13 @@ export function useRoteiros() {
     activating,
     showGenerate,
     setShowGenerate,
+    generatePrefill,
+    openGenerate,
     selectMode,
     selectedIds,
     bulkDeleting,
+    showAllInactive,
+    setShowAllInactive,
     enterSelectMode,
     exitSelectMode,
     toggleSelect,
