@@ -1,0 +1,15 @@
+# Banco NoSQL de desenvolvimento (catalogo de pontos turisticos).
+# Subir:  docker compose up -d
+# Parar:  docker compose down
+# Apagar os dados tambem: docker compose down -v
+services:
+  mongo:
+    image: mongo:7
+    container_name: trajetto-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - trajetto-mongo-data:/data/db
+
+volumes:
+  trajetto-mongo-data:
