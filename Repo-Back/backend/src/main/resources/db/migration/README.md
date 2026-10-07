@@ -59,6 +59,7 @@ que ainda não foram executados naquele banco. O controle fica na tabela
 | `V6` | Restrições de integridade: a chave estrangeira que faltava entre avaliação e usuário, `ON DELETE CASCADE` nos vínculos de posse, colunas obrigatórias e `CHECK` para as faixas de valor — mais os três índices que o painel ainda não tinha. |
 | `V7` | `sp_stats_user_overview` e `sp_stats_itinerary_overview` recriadas com os cinco parâmetros do recorte do painel gerencial (período, perfil, país e categoria). |
 | `V8` | Catálogo de pontos turísticos no banco (`tourist_spots` e `tourist_spot_profiles`), com a coluna geográfica `location` (`POINT SRID 4326`) e o índice espacial que resolvem a busca por proximidade. |
+| `V11` | Remove `tourist_spots` e `tourist_spot_profiles`: o catálogo de pontos turísticos migrou para uma coleção MongoDB (`tourist_spots`, com os perfis embutidos e índice `2dsphere`). Pula de `V8` para `V11` porque `V9`/`V10` já estão em uso por outra branch (`teste_def`, `tipo_item`) neste mesmo banco local. |
 
 A `V2` limpa duplicatas antes de criar cada `UNIQUE`: e-mail repetido faz a
 conta mais antiga manter o endereço e as demais receberem o sufixo
@@ -114,7 +115,13 @@ em `StatsRecortes` — inclusive a comparação de perfil e categoria pelo rótu
 exibido no painel, que é a expressão dos índices funcionais criados na `V4` e
 na `V6`.
 
-A `V8` cria só a estrutura; quem enche as duas tabelas é o
+> **Nota:** a `V11` removeu as tabelas que a `V8` cria. O texto abaixo descreve
+> o desenho original (por que o catálogo foi trazido para dentro do banco, e
+> por que em cima de índice espacial do MySQL); o catálogo em si migrou para
+> uma coleção MongoDB com índice `2dsphere` equivalente — ver
+> `TouristSpotMongoSchema`, `TouristSpotMongoIndexes` e `TouristSpotRepository`.
+
+A `V8` cria só a estrutura; quem enchia as duas tabelas era o
 `TouristSpotCatalogSync`, a cada inicialização, a partir de
 `data/rome_curated.geojson`. O arquivo segue sendo a fonte do catálogo — o
 banco guarda uma cópia para poder responder a busca. Três detalhes dela:
@@ -143,6 +150,14 @@ WHERE MBRContains(ST_Buffer(ST_SRID(POINT(12.4768, 41.8987), 4326), 500), s.loca
 
 O esperado é `type = range` com `key = sx_tourist_spots_location`, e não
 `ALL`.
+
+A `V11` desfaz a `V8`: apaga as duas tabelas, porque o catálogo não mora mais
+no MySQL. O índice espacial, a coluna gerada e o passo `MBRContains` acima
+viraram o equivalente MongoDB — índice `2dsphere` sobre `location` (um ponto
+GeoJSON) e o estágio `$geoNear` do aggregation framework, em
+`TouristSpotRepository.search`. A sincronização a partir do GeoJSON continua
+existindo, só que escrevendo documentos em vez de linhas (veja
+`TouristSpotCatalogSync`).
 
 ## Conferindo um plano de consulta
 
