@@ -3,7 +3,7 @@
   "originLabel": "Start",
   "placeMarker": {
     "visited": "visited ✓",
-    "goToItinerary": "view in itinerary ↗"
+    "goToItinerary": "view details ↗"
   },
   "routeBar": {
     "now": "Now · ",
