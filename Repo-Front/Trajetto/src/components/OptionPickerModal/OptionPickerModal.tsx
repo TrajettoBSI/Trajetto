@@ -42,6 +42,7 @@ export default function OptionPickerModal({
             <Text style={s.emptyText}>{emptyText}</Text>
           ) : (
             <FlatList
+              style={s.optionsList}
               data={options}
               keyExtractor={(item) => item.value ?? '__todos__'}
               renderItem={({ item }) => {
