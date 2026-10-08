@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { Ionicons } from '@expo/vector-icons';
 import { FilterOptions } from '@/services';
 import { useColors } from '@/src/theme';
 import OptionPickerModal, { PickerOption } from '@/src/components/OptionPickerModal/OptionPickerModal';
@@ -11,7 +12,7 @@ type CampoId = keyof DashboardFilter;
 
 /** Um seletor do painel: o que ele mostra fechado e o que oferece aberto. */
 type CampoDoFiltro = {
-  rotulo: string;
+  icone: keyof typeof Ionicons.glyphMap;
   valor: string;
   ativo: boolean;
   titulo: string;
@@ -38,6 +39,11 @@ type FilterPanelProps = {
  * opção vem da própria base (`opcoes`), então o gerente nunca escolhe um país
  * ou uma categoria que não existe e volta com o painel vazio.
  *
+ * Os seletores aparecem como chips numa fileira horizontal rolável (em vez de
+ * uma grade fixa): o rótulo de cada campo fica só no título do modal que ele
+ * abre, e o chip mostra direto o valor escolhido - um texto de país ou
+ * categoria longo nunca quebra o layout, só cresce o chip.
+ *
  * O componente não guarda o recorte nem busca nada: exibe o que recebe e
  * avisa a mudança. Guardar entre sessões é do `useDashboardFilter`, buscar é
  * do `useDashboard`.
@@ -46,7 +52,8 @@ export default function FilterPanel({
   filtro, opcoes, ativos, atualizando, onAlterar, onLimpar,
 }: FilterPanelProps) {
   const { t } = useTranslation('admin');
-  const s = styles(useColors());
+  const colors = useColors();
+  const s = styles(colors);
   const [aberto, setAberto] = useState<CampoId | null>(null);
 
   const todos = t('dashboard.filters.all');
@@ -60,7 +67,7 @@ export default function FilterPanel({
 
   const campos: Record<CampoId, CampoDoFiltro> = {
     periodo: {
-      rotulo: t('dashboard.filters.period'),
+      icone: 'calendar-outline',
       valor: t(`dashboard.filters.periods.${filtro.periodo}`),
       ativo: filtro.periodo !== 'todo',
       titulo: t('dashboard.filters.selectPeriod'),
@@ -69,7 +76,7 @@ export default function FilterPanel({
       escolher: (valor: string | null) => onAlterar({ periodo: (valor as PeriodoId) ?? 'todo' }),
     },
     profile: {
-      rotulo: t('dashboard.filters.profile'),
+      icone: 'person-outline',
       valor: filtro.profile ?? todos,
       ativo: filtro.profile !== null,
       titulo: t('dashboard.filters.selectProfile'),
@@ -78,7 +85,7 @@ export default function FilterPanel({
       escolher: (valor: string | null) => onAlterar({ profile: valor }),
     },
     country: {
-      rotulo: t('dashboard.filters.country'),
+      icone: 'globe-outline',
       valor: filtro.country ?? todos,
       ativo: filtro.country !== null,
       titulo: t('dashboard.filters.selectCountry'),
@@ -87,7 +94,7 @@ export default function FilterPanel({
       escolher: (valor: string | null) => onAlterar({ country: valor }),
     },
     category: {
-      rotulo: t('dashboard.filters.category'),
+      icone: 'pricetag-outline',
       valor: filtro.category ?? todas,
       ativo: filtro.category !== null,
       titulo: t('dashboard.filters.selectCategory'),
@@ -104,7 +111,7 @@ export default function FilterPanel({
     <View style={s.card}>
       <View style={s.header}>
         <Text style={s.title}>{t('dashboard.filters.title')}</Text>
-        {atualizando && <ActivityIndicator size="small" style={s.spinner} />}
+        {atualizando && <ActivityIndicator size="small" color={colors.primary} style={s.spinner} />}
         <View style={s.headerRight}>
           {ativos > 0 && (
             <>
@@ -119,34 +126,37 @@ export default function FilterPanel({
         </View>
       </View>
 
-      <View style={s.grid}>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={s.chipRow}
+      >
         {ordem.map((id) => {
           const campo = campos[id];
           return (
             <TouchableOpacity
               key={id}
-              style={[s.field, campo.ativo && s.fieldActive]}
+              style={[s.chip, campo.ativo && s.chipActive]}
               onPress={() => setAberto(id)}
               activeOpacity={0.7}
             >
-              <Text style={s.fieldLabel}>{campo.rotulo}</Text>
-              <View style={s.fieldValueRow}>
-                <Text
-                  style={[s.fieldValue, campo.ativo && s.fieldValueActive]}
-                  numberOfLines={1}
-                >
-                  {campo.valor}
-                </Text>
-                <Text style={s.chevron}>▾</Text>
-              </View>
+              <Ionicons
+                name={campo.icone}
+                size={15}
+                color={campo.ativo ? colors.primaryDark : colors.gray500}
+              />
+              <Text style={[s.chipText, campo.ativo && s.chipTextActive]} numberOfLines={1}>
+                {campo.valor}
+              </Text>
+              <Ionicons
+                name="chevron-down"
+                size={13}
+                color={campo.ativo ? colors.primaryDark : colors.gray400}
+              />
             </TouchableOpacity>
           );
         })}
-      </View>
-
-      {ativos > 0 && (
-        <Text style={s.note}>{t('dashboard.filters.activeNote', { count: ativos })}</Text>
-      )}
+      </ScrollView>
 
       {campoAberto && (
         <OptionPickerModal

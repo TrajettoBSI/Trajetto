@@ -76,8 +76,6 @@
       "selectCountry": "Selecciona el país",
       "selectCategory": "Selecciona la categoría de lugar",
       "noOptions": "No hay opciones disponibles",
-      "activeNote_one": "{{count}} filtro aplicado a los indicadores",
-      "activeNote_other": "{{count}} filtros aplicados a los indicadores",
       "periods": {
         "todo": "Todo el período",
         "ultimos30": "Últimos 30 días",

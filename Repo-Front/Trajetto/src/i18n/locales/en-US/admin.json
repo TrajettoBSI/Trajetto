@@ -76,8 +76,6 @@
       "selectCountry": "Select the country",
       "selectCategory": "Select the place category",
       "noOptions": "No options available",
-      "activeNote_one": "{{count}} filter applied to the indicators",
-      "activeNote_other": "{{count}} filters applied to the indicators",
       "periods": {
         "todo": "All time",
         "ultimos30": "Last 30 days",
