@@ -15,7 +15,6 @@ export function useMapaLocation() {
   const router = useRouter();
   const {
     itinerary, loading, error, fetchItinerary,
-    setHighlightedPlace,
     focusedMapPlaceIndex, setFocusedMapPlace,
   } = useItineraryStore();
 
@@ -136,8 +135,7 @@ export function useMapaLocation() {
   }, [focusedMapPlaceIndex, points, setFocusedMapPlace]);
 
   const handlePinPress = (index: number) => {
-    setHighlightedPlace(index);
-    router.navigate('../itinerario');
+    router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(points[index]), origin: 'mapa' } });
   };
 
   const reload = useCallback(() => {

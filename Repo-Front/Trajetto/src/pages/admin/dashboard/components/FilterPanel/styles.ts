@@ -4,12 +4,16 @@ import { AppColors } from '@/src/theme';
 export const styles = (colors: AppColors) =>
   StyleSheet.create({
     card: {
-      backgroundColor: colors.white, borderRadius: 16, padding: 16, marginBottom: 16,
+      backgroundColor: colors.white, borderRadius: 16, paddingVertical: 14,
+      borderWidth: 1, borderColor: colors.border, marginBottom: 16,
       shadowColor: colors.shadow, shadowOpacity: 0.05, shadowRadius: 6,
       shadowOffset: { width: 0, height: 2 }, elevation: 2,
     },
 
-    header: { flexDirection: 'row', alignItems: 'center', marginBottom: 12 },
+    header: {
+      flexDirection: 'row', alignItems: 'center',
+      paddingHorizontal: 16, marginBottom: 10,
+    },
     title: {
       fontSize: 11, fontFamily: 'Inter-Bold', color: colors.gray500,
       textTransform: 'uppercase', letterSpacing: 0.8,
@@ -25,17 +29,18 @@ export const styles = (colors: AppColors) =>
     },
     clear: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.primary },
 
-    grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
-    field: {
-      width: '47%', borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10,
+    scrollRowWrapper: { position: 'relative' },
+    scrollFade: { position: 'absolute', top: 0, bottom: 0, width: 28 },
+    scrollFadeLeft: { left: 0 },
+    scrollFadeRight: { right: 0 },
+
+    chipRow: { paddingHorizontal: 16, gap: 8 },
+    chip: {
+      flexDirection: 'row', alignItems: 'center', gap: 6,
+      maxWidth: 190, borderRadius: 20, paddingHorizontal: 14, paddingVertical: 9,
       backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.border,
     },
-    fieldActive: { backgroundColor: colors.primarySurface, borderColor: colors.primaryBorder },
-    fieldLabel: { fontSize: 11, color: colors.gray500, fontFamily: 'Inter-Medium', marginBottom: 2 },
-    fieldValueRow: { flexDirection: 'row', alignItems: 'center', gap: 6 },
-    fieldValue: { flex: 1, fontSize: 14, color: colors.gray700, fontFamily: 'Inter-Medium' },
-    fieldValueActive: { color: colors.primaryDark, fontFamily: 'Inter-Bold' },
-    chevron: { fontSize: 12, color: colors.gray400 },
-
-    note: { fontSize: 11, color: colors.gray400, marginTop: 10 },
+    chipActive: { backgroundColor: colors.primarySurface, borderColor: colors.primaryBorder },
+    chipText: { fontSize: 13, color: colors.gray700, fontFamily: 'Inter-Medium', flexShrink: 1 },
+    chipTextActive: { color: colors.primaryDark, fontFamily: 'Inter-Bold' },
   });

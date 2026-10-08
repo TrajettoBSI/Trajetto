@@ -48,8 +48,12 @@
     "noPlacesDataSub": "Los datos aparecerán a medida que los usuarios generen itinerarios y valoren lugares.",
     "empty": {
       "chart": "Aún no hay datos para este gráfico.",
+      "chartFiltered": "No hay datos para los filtros elegidos.",
       "title": "Aún no hay datos",
-      "description": "Los indicadores aparecerán a medida que se use la plataforma."
+      "titleFiltered": "Ningún resultado para esta selección",
+      "description": "Los indicadores aparecerán a medida que se use la plataforma.",
+      "descriptionFiltered": "Intenta ampliar el período o quitar algún filtro.",
+      "clearFilters": "Limpiar filtros"
     }
   },
 
@@ -72,8 +76,6 @@
       "selectCountry": "Selecciona el país",
       "selectCategory": "Selecciona la categoría de lugar",
       "noOptions": "No hay opciones disponibles",
-      "activeNote_one": "{{count}} filtro aplicado a los indicadores",
-      "activeNote_other": "{{count}} filtros aplicados a los indicadores",
       "periods": {
         "todo": "Todo el período",
         "ultimos30": "Últimos 30 días",

@@ -73,7 +73,7 @@ export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDe
 
       <TouchableOpacity
         style={s.spotCardBtn}
-        onPress={() => router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(spot) } })}
+        onPress={() => router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(spot), origin: 'mapa' } })}
         activeOpacity={0.85}
       >
         <Text style={s.spotCardBtnText}>{t('spotDetailCard.viewFullDetails')}</Text>

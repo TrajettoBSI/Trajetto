@@ -36,7 +36,7 @@ export function useItinerario() {
     } catch {
       // mantem o recorte do roteiro como fallback
     }
-    router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(spot) } });
+    router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(spot), origin: 'itinerario' } });
   }, [router]);
 
   return {

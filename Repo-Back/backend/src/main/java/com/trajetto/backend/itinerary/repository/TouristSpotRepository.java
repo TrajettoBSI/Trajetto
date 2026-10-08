@@ -1,23 +1,46 @@
 package com.trajetto.backend.itinerary.repository;
 
-import com.trajetto.backend.itinerary.model.TouristSpotModel;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.Repository;
-import org.springframework.data.repository.query.Param;
+import com.trajetto.backend.itinerary.model.TouristSpotDocument;
+import org.bson.Document;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.aggregation.Aggregation;
+import org.springframework.data.mongodb.core.aggregation.AggregationOperation;
+import org.springframework.data.mongodb.core.aggregation.AggregationOptions;
+import org.springframework.data.mongodb.core.query.Collation;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 /**
- * Consultas sobre o catalogo de pontos turisticos (tabela {@code tourist_spots}, migracao V8).
+ * Consultas sobre o catalogo de pontos turisticos (colecao {@code tourist_spots}).
  *
  * <p>Toda a filtragem do mapa acontece aqui, no banco -- inclusive a de
- * proximidade, que antes era uma formula de Haversine aplicada em Java ponto
- * a ponto sobre a lista inteira carregada em memoria.</p>
+ * proximidade, que usa o {@code $geoNear} do aggregation framework sobre o
+ * indice {@code 2dsphere} de {@code location}.</p>
+ *
+ * <p>{@code category}/{@code fee}/{@code profiles} comparam por igualdade
+ * simples, mas a agregacao roda com uma <b>collation</b> case-insensitive
+ * (mesmo nivel do {@code category_1}/{@code profiles_1} de
+ * {@link com.trajetto.backend.itinerary.data.TouristSpotMongoIndexes}) --
+ * e o que mantem o indice realmente util, no lugar do regex ancorado que so
+ * aparecia como "IXSCAN" no plano mas examinava a colecao inteira.</p>
+ *
+ * <p>{@code $geoNear} nao pode conviver com {@code $text} na mesma pipeline
+ * (restricao do MongoDB), entao a busca por texto usa {@code $regex}
+ * case-insensitive em vez do indice de texto -- o mesmo tipo de varredura que
+ * o {@code LIKE '%texto%'} da versao MySQL ja fazia, sem regressao. Collation
+ * nao se aplica a {@code $regex}, so a comparacoes de igualdade/ordenacao.</p>
  */
-public interface TouristSpotRepository extends Repository<TouristSpotModel, Long> {
+@Repository
+public class TouristSpotRepository {
 
     /** Uma linha da busca. {@code distanceMeters} e nulo quando nao ha ponto de referencia. */
-    interface TouristSpotRow {
+    public interface TouristSpotRow {
         Long getId();
         String getName();
         String getAddress();
@@ -36,89 +59,138 @@ public interface TouristSpotRepository extends Repository<TouristSpotModel, Long
         Double getDistanceMeters();
     }
 
-    /**
-     * Busca de pontos do catalogo com filtros opcionais, incluindo proximidade.
-     *
-     * <p>Todo criterio e guardado por {@code :parametro IS NULL}, o mesmo
-     * padrao de {@code StatsRecortes}: sem valor, ele nao filtra nada.</p>
-     *
-     * <h2>Proximidade</h2>
-     * <p>Com um ponto de referencia ({@code lat}, {@code lng}) e um raio em
-     * metros, o filtro e feito em dois passos:</p>
-     * <ol>
-     *   <li>{@code MBRContains} contra o retangulo envolvente de
-     *       {@code ST_Buffer(ponto, raio)}. E um predicado de contencao, entao
-     *       o otimizador o resolve pelo indice espacial
-     *       {@code sx_tourist_spots_location} (plano {@code range}) em vez de
-     *       percorrer a tabela;</li>
-     *   <li>{@code ST_Distance}, que no SRID 4326 devolve metros sobre o
-     *       elipsoide WGS 84, so nos pontos que passaram pelo retangulo, para
-     *       descartar os que ficaram nos cantos.</li>
-     * </ol>
-     * <p>A guarda {@code :lat IS NULL OR ...} nao atrapalha o indice: com o
-     * ponto informado ela vira uma constante falsa e o otimizador a elimina
-     * antes de escolher o plano.</p>
-     *
-     * <p>Com ponto de referencia o resultado vem do mais perto para o mais
-     * longe; sem ele, na ordem do catalogo.</p>
-     *
-     * <p>Texto, categoria, entrada e perfil sao comparados pela collation da
-     * tabela ({@code utf8mb4_0900_ai_ci}), que ja ignora maiusculas -- o
-     * mesmo {@code equalsIgnoreCase} que o filtro em Java fazia.</p>
-     */
-    @Query(value = """
-            SELECT s.id            AS id,
-                   s.name          AS name,
-                   s.address       AS address,
-                   s.latitude      AS latitude,
-                   s.longitude     AS longitude,
-                   s.category      AS category,
-                   s.fee           AS fee,
-                   s.opening_hours AS openingHours,
-                   s.phone         AS phone,
-                   s.website       AS website,
-                   s.wikidata      AS wikidata,
-                   s.wikipedia     AS wikipedia,
-                   s.wheelchair    AS wheelchair,
-                   (SELECT GROUP_CONCAT(sp.profile ORDER BY sp.profile SEPARATOR ',')
-                    FROM tourist_spot_profiles sp
-                    WHERE sp.spot_id = s.id) AS profiles,
-                   CASE WHEN :lat IS NULL THEN NULL
-                        ELSE ST_Distance(s.location, ST_SRID(POINT(:lng, :lat), 4326))
-                   END AS distanceMeters
-            FROM tourist_spots s
-            WHERE (:search IS NULL
-                   OR s.name    LIKE CONCAT('%', :search, '%')
-                   OR s.address LIKE CONCAT('%', :search, '%'))
-              AND (:category IS NULL OR s.category = :category)
-              AND (:fee IS NULL OR s.fee = :fee)
-              AND (:onlyWithHours IS NULL OR s.opening_hours IS NOT NULL)
-              AND (:profile IS NULL OR EXISTS (
-                       SELECT 1 FROM tourist_spot_profiles fp
-                       WHERE fp.spot_id = s.id AND fp.profile = :profile))
-              AND (:lat IS NULL OR (
-                       MBRContains(ST_Buffer(ST_SRID(POINT(:lng, :lat), 4326), :radius), s.location)
-                       AND ST_Distance(s.location, ST_SRID(POINT(:lng, :lat), 4326)) <= :radius))
-            ORDER BY distanceMeters, s.id
-            LIMIT :limit
-            """, nativeQuery = true)
-    List<TouristSpotRow> search(@Param("search") String search,
-                                @Param("category") String category,
-                                @Param("fee") String fee,
-                                @Param("onlyWithHours") Boolean onlyWithHours,
-                                @Param("profile") String profile,
-                                @Param("lat") Double lat,
-                                @Param("lng") Double lng,
-                                @Param("radius") Double radius,
-                                @Param("limit") int limit);
+    /** Projecao de saida do aggregate: os campos do documento mais a distancia que o $geoNear injeta. */
+    private static final class Row implements TouristSpotRow {
+        private Long id;
+        private String name;
+        private String address;
+        private double latitude;
+        private double longitude;
+        private String category;
+        private String fee;
+        private String openingHours;
+        private String phone;
+        private String website;
+        private String wikidata;
+        private String wikipedia;
+        private String wheelchair;
+        private List<String> profiles;
+        private Double distanceMeters;
 
-    @Query(value = """
-            SELECT DISTINCT category FROM tourist_spots
-            WHERE category IS NOT NULL
-            ORDER BY category
-            """, nativeQuery = true)
-    List<String> findCategories();
+        @Override public Long getId() { return id; }
+        @Override public String getName() { return name; }
+        @Override public String getAddress() { return address; }
+        @Override public Double getLatitude() { return latitude; }
+        @Override public Double getLongitude() { return longitude; }
+        @Override public String getCategory() { return category; }
+        @Override public String getFee() { return fee; }
+        @Override public String getOpeningHours() { return openingHours; }
+        @Override public String getPhone() { return phone; }
+        @Override public String getWebsite() { return website; }
+        @Override public String getWikidata() { return wikidata; }
+        @Override public String getWikipedia() { return wikipedia; }
+        @Override public String getWheelchair() { return wheelchair; }
+        @Override public Double getDistanceMeters() { return distanceMeters; }
 
-    @Query(value = "SELECT DISTINCT profile FROM tourist_spot_profiles ORDER BY profile", nativeQuery = true)
-    List<String> findProfiles();
+        @Override
+        public String getProfiles() {
+            return profiles == null || profiles.isEmpty() ? null : String.join(",", profiles);
+        }
+    }
+
+    /** Mesma collation dos indices category_1/profiles_1 -- ignora caixa e acento, igual ao ai_ci do MySQL. */
+    private static final Collation CASE_INSENSITIVE = Collation.of("pt").strength(Collation.ComparisonLevel.primary());
+
+    private final MongoTemplate mongoTemplate;
+
+    public TouristSpotRepository(MongoTemplate mongoTemplate) {
+        this.mongoTemplate = mongoTemplate;
+    }
+
+    public List<TouristSpotRow> search(String search, String category, String fee, Boolean onlyWithHours,
+                                        String profile, Double lat, Double lng, Double radius, int limit) {
+        boolean near = lat != null && lng != null && radius != null;
+
+        List<AggregationOperation> stages = new ArrayList<>();
+
+        if (near) {
+            // $geoNear cru: NearQuery + Distance/Metrics do Spring Data aplica
+            // um fator de conversao de unidade tanto na entrada (maxDistance)
+            // quanto na saida (o campo de distancia) -- unidade "metros" nao
+            // existe nesse enum (so km, milhas e radianos), entao o resultado
+            // sempre saia errado de um lado ou do outro. Em metros puro,
+            // sem nenhuma conversao, e o formato nativo do $geoNear esferico
+            // sobre um indice 2dsphere.
+            AggregationOperation geoNear = context -> new Document("$geoNear", new Document()
+                    .append("near", new Document("type", "Point")
+                            .append("coordinates", List.of(lng, lat)))
+                    .append("distanceField", "distanceMeters")
+                    .append("spherical", true)
+                    .append("maxDistance", radius));
+            stages.add(geoNear);
+        }
+
+        List<Criteria> filters = new ArrayList<>();
+        if (search != null) {
+            String regex = Pattern.quote(search);
+            filters.add(new Criteria().orOperator(
+                    Criteria.where("name").regex(regex, "i"),
+                    Criteria.where("address").regex(regex, "i")));
+        }
+        // Igualdade simples: quem ignora maiuscula aqui e a collation
+        // aplicada no aggregate() abaixo, nao um regex -- so assim o indice
+        // category_1/profiles_1 (criado com a mesma collation) e realmente
+        // usado em vez de examinar a colecao inteira.
+        if (category != null) {
+            filters.add(Criteria.where("category").is(category));
+        }
+        if (fee != null) {
+            filters.add(Criteria.where("fee").is(fee));
+        }
+        if (Boolean.TRUE.equals(onlyWithHours)) {
+            filters.add(Criteria.where("openingHours").ne(null));
+        }
+        if (profile != null) {
+            filters.add(Criteria.where("profiles").is(profile));
+        }
+        if (!filters.isEmpty()) {
+            stages.add(Aggregation.match(filters.size() == 1
+                    ? filters.get(0)
+                    : new Criteria().andOperator(filters.toArray(new Criteria[0]))));
+        }
+
+        // Com ponto de referencia, do mais perto para o mais longe; sem ele, na
+        // ordem do catalogo -- id desempata e da um resultado deterministico
+        // mesmo quando duas distancias empatam.
+        stages.add(near
+                ? Aggregation.sort(Sort.by(Sort.Order.asc("distanceMeters"), Sort.Order.asc("id")))
+                : Aggregation.sort(Sort.Direction.ASC, "id"));
+        stages.add(Aggregation.limit(limit));
+
+        Aggregation aggregation = Aggregation.newAggregation(
+                        TouristSpotDocument.class, stages.toArray(new AggregationOperation[0]))
+                .withOptions(AggregationOptions.builder().collation(CASE_INSENSITIVE).build());
+
+        return mongoTemplate.aggregate(aggregation, TouristSpotDocument.class, Row.class)
+                .getMappedResults()
+                .stream()
+                .map(row -> (TouristSpotRow) row)
+                .toList();
+    }
+
+    public List<String> findCategories() {
+        List<String> categories = mongoTemplate.findDistinct(
+                Query.query(Criteria.where("category").ne(null)),
+                "category", TouristSpotDocument.class, String.class);
+        return categories.stream().sorted().toList();
+    }
+
+    public List<String> findProfiles() {
+        // Lista vazia conta como valor distinto "undefined" no MongoDB; o filtro
+        // de tamanho descarta esses pontos sem perfil antes do distinct.
+        List<String> profiles = mongoTemplate.findDistinct(
+                Query.query(Criteria.where("profiles").not().size(0)),
+                "profiles", TouristSpotDocument.class, String.class);
+        return profiles.stream().sorted().toList();
+    }
 }

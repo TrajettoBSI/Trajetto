@@ -14,7 +14,17 @@ export const styles = (colors: AppColors) =>
       borderTopRightRadius: 24,
       paddingHorizontal: 24,
       paddingBottom: 40,
-      maxHeight: '60%',
+      maxHeight: '80%',
+    },
+    /**
+     * Sem isso, a FlatList (um ScrollView por baixo) nao recebe altura
+     * definida do pai -- so ter maxHeight no modalSheet nao basta, porque o
+     * Yoga nao propaga altura disponivel para um filho sem flex proprio. O
+     * sintoma e sempre o mesmo: a lista parece mostrar so o primeiro item.
+     */
+    optionsList: {
+      flexGrow: 0,
+      flexShrink: 1,
     },
     modalHandle: {
       width: 40,

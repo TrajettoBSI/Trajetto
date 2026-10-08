@@ -21,16 +21,24 @@ export type SpotDetailData = {
   hours: OpeningHoursEntry[];
   openNow: boolean | null;
   wc: string | null;
+  backLabel: string;
   openMaps: () => void;
   openWebsite: () => void;
   callPhone: () => void;
   openWikipedia: () => void;
 };
 
+/** Quem pode navegar pra ca manda esse valor em params.origin. */
+const KNOWN_ORIGINS = ['mapa', 'itinerario', 'explorar'] as const;
+
 export function useSpotDetail(): SpotDetailData {
   const { t } = useTranslation('spotDetail');
-  const params = useLocalSearchParams<{ spot: string }>();
+  const params = useLocalSearchParams<{ spot: string; origin?: string }>();
   const spot = useMemo(() => JSON.parse(params.spot) as Place & { xid?: string }, [params.spot]);
+  const origin = KNOWN_ORIGINS.includes(params.origin as typeof KNOWN_ORIGINS[number])
+    ? (params.origin as typeof KNOWN_ORIGINS[number])
+    : 'explorar';
+  const backLabel = t(`backTo.${origin}`);
 
   const [distance, setDistance] = useState<number | null>(null);
 
@@ -80,6 +88,7 @@ export function useSpotDetail(): SpotDetailData {
     hours,
     openNow: isOpenNow(hours),
     wc: spot.wheelchair || null,
+    backLabel,
     openMaps,
     openWebsite,
     callPhone,
