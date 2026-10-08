@@ -6,6 +6,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.aggregation.AggregationOperation;
+import org.springframework.data.mongodb.core.aggregation.AggregationOptions;
+import org.springframework.data.mongodb.core.query.Collation;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
@@ -21,10 +23,18 @@ import java.util.regex.Pattern;
  * proximidade, que usa o {@code $geoNear} do aggregation framework sobre o
  * indice {@code 2dsphere} de {@code location}.</p>
  *
+ * <p>{@code category}/{@code fee}/{@code profiles} comparam por igualdade
+ * simples, mas a agregacao roda com uma <b>collation</b> case-insensitive
+ * (mesmo nivel do {@code category_1}/{@code profiles_1} de
+ * {@link com.trajetto.backend.itinerary.data.TouristSpotMongoIndexes}) --
+ * e o que mantem o indice realmente util, no lugar do regex ancorado que so
+ * aparecia como "IXSCAN" no plano mas examinava a colecao inteira.</p>
+ *
  * <p>{@code $geoNear} nao pode conviver com {@code $text} na mesma pipeline
  * (restricao do MongoDB), entao a busca por texto usa {@code $regex}
  * case-insensitive em vez do indice de texto -- o mesmo tipo de varredura que
- * o {@code LIKE '%texto%'} da versao MySQL ja fazia, sem regressao.</p>
+ * o {@code LIKE '%texto%'} da versao MySQL ja fazia, sem regressao. Collation
+ * nao se aplica a {@code $regex}, so a comparacoes de igualdade/ordenacao.</p>
  */
 @Repository
 public class TouristSpotRepository {
@@ -88,6 +98,9 @@ public class TouristSpotRepository {
         }
     }
 
+    /** Mesma collation dos indices category_1/profiles_1 -- ignora caixa e acento, igual ao ai_ci do MySQL. */
+    private static final Collation CASE_INSENSITIVE = Collation.of("pt").strength(Collation.ComparisonLevel.primary());
+
     private final MongoTemplate mongoTemplate;
 
     public TouristSpotRepository(MongoTemplate mongoTemplate) {
@@ -124,21 +137,21 @@ public class TouristSpotRepository {
                     Criteria.where("name").regex(regex, "i"),
                     Criteria.where("address").regex(regex, "i")));
         }
-        // MySQL comparava por uma collation que ja ignora maiusculas
-        // (utf8mb4_0900_ai_ci); o Mongo compara binario por padrao, entao a
-        // igualdade exata vira regex ancorado e case-insensitive para manter
-        // o mesmo comportamento.
+        // Igualdade simples: quem ignora maiuscula aqui e a collation
+        // aplicada no aggregate() abaixo, nao um regex -- so assim o indice
+        // category_1/profiles_1 (criado com a mesma collation) e realmente
+        // usado em vez de examinar a colecao inteira.
         if (category != null) {
-            filters.add(Criteria.where("category").regex(exact(category), "i"));
+            filters.add(Criteria.where("category").is(category));
         }
         if (fee != null) {
-            filters.add(Criteria.where("fee").regex(exact(fee), "i"));
+            filters.add(Criteria.where("fee").is(fee));
         }
         if (Boolean.TRUE.equals(onlyWithHours)) {
             filters.add(Criteria.where("openingHours").ne(null));
         }
         if (profile != null) {
-            filters.add(Criteria.where("profiles").regex(exact(profile), "i"));
+            filters.add(Criteria.where("profiles").is(profile));
         }
         if (!filters.isEmpty()) {
             stages.add(Aggregation.match(filters.size() == 1
@@ -155,7 +168,8 @@ public class TouristSpotRepository {
         stages.add(Aggregation.limit(limit));
 
         Aggregation aggregation = Aggregation.newAggregation(
-                TouristSpotDocument.class, stages.toArray(new AggregationOperation[0]));
+                        TouristSpotDocument.class, stages.toArray(new AggregationOperation[0]))
+                .withOptions(AggregationOptions.builder().collation(CASE_INSENSITIVE).build());
 
         return mongoTemplate.aggregate(aggregation, TouristSpotDocument.class, Row.class)
                 .getMappedResults()
@@ -178,10 +192,5 @@ public class TouristSpotRepository {
                 Query.query(Criteria.where("profiles").not().size(0)),
                 "profiles", TouristSpotDocument.class, String.class);
         return profiles.stream().sorted().toList();
-    }
-
-    /** Regex que so bate com o valor inteiro (^...$), com os caracteres especiais escapados. */
-    private static String exact(String value) {
-        return "^" + Pattern.quote(value) + "$";
     }
 }
