@@ -1,15 +1,12 @@
 package com.trajetto.backend.itinerary.repository;
 
 import com.trajetto.backend.itinerary.model.TouristSpotDocument;
+import org.bson.Document;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.geo.Distance;
-import org.springframework.data.geo.Metrics;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.aggregation.AggregationOperation;
-import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.NearQuery;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
@@ -104,10 +101,20 @@ public class TouristSpotRepository {
         List<AggregationOperation> stages = new ArrayList<>();
 
         if (near) {
-            NearQuery nearQuery = NearQuery.near(new GeoJsonPoint(lng, lat))
-                    .spherical(true)
-                    .maxDistance(new Distance(radius, Metrics.NEUTRAL));
-            stages.add(Aggregation.geoNear(nearQuery, "distanceMeters"));
+            // $geoNear cru: NearQuery + Distance/Metrics do Spring Data aplica
+            // um fator de conversao de unidade tanto na entrada (maxDistance)
+            // quanto na saida (o campo de distancia) -- unidade "metros" nao
+            // existe nesse enum (so km, milhas e radianos), entao o resultado
+            // sempre saia errado de um lado ou do outro. Em metros puro,
+            // sem nenhuma conversao, e o formato nativo do $geoNear esferico
+            // sobre um indice 2dsphere.
+            AggregationOperation geoNear = context -> new Document("$geoNear", new Document()
+                    .append("near", new Document("type", "Point")
+                            .append("coordinates", List.of(lng, lat)))
+                    .append("distanceField", "distanceMeters")
+                    .append("spherical", true)
+                    .append("maxDistance", radius));
+            stages.add(geoNear);
         }
 
         List<Criteria> filters = new ArrayList<>();
@@ -117,17 +124,21 @@ public class TouristSpotRepository {
                     Criteria.where("name").regex(regex, "i"),
                     Criteria.where("address").regex(regex, "i")));
         }
+        // MySQL comparava por uma collation que ja ignora maiusculas
+        // (utf8mb4_0900_ai_ci); o Mongo compara binario por padrao, entao a
+        // igualdade exata vira regex ancorado e case-insensitive para manter
+        // o mesmo comportamento.
         if (category != null) {
-            filters.add(Criteria.where("category").is(category));
+            filters.add(Criteria.where("category").regex(exact(category), "i"));
         }
         if (fee != null) {
-            filters.add(Criteria.where("fee").is(fee));
+            filters.add(Criteria.where("fee").regex(exact(fee), "i"));
         }
         if (Boolean.TRUE.equals(onlyWithHours)) {
             filters.add(Criteria.where("openingHours").ne(null));
         }
         if (profile != null) {
-            filters.add(Criteria.where("profiles").is(profile));
+            filters.add(Criteria.where("profiles").regex(exact(profile), "i"));
         }
         if (!filters.isEmpty()) {
             stages.add(Aggregation.match(filters.size() == 1
@@ -135,9 +146,12 @@ public class TouristSpotRepository {
                     : new Criteria().andOperator(filters.toArray(new Criteria[0]))));
         }
 
-        if (near) {
-            stages.add(Aggregation.sort(Sort.Direction.ASC, "distanceMeters"));
-        }
+        // Com ponto de referencia, do mais perto para o mais longe; sem ele, na
+        // ordem do catalogo -- id desempata e da um resultado deterministico
+        // mesmo quando duas distancias empatam.
+        stages.add(near
+                ? Aggregation.sort(Sort.by(Sort.Order.asc("distanceMeters"), Sort.Order.asc("id")))
+                : Aggregation.sort(Sort.Direction.ASC, "id"));
         stages.add(Aggregation.limit(limit));
 
         Aggregation aggregation = Aggregation.newAggregation(
@@ -164,5 +178,10 @@ public class TouristSpotRepository {
                 Query.query(Criteria.where("profiles").not().size(0)),
                 "profiles", TouristSpotDocument.class, String.class);
         return profiles.stream().sorted().toList();
+    }
+
+    /** Regex que so bate com o valor inteiro (^...$), com os caracteres especiais escapados. */
+    private static String exact(String value) {
+        return "^" + Pattern.quote(value) + "$";
     }
 }
