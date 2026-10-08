@@ -30,7 +30,9 @@ export const styles = (colors: AppColors) =>
     clear: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.primary },
 
     scrollRowWrapper: { position: 'relative' },
-    scrollFade: { position: 'absolute', right: 0, top: 0, bottom: 0, width: 28 },
+    scrollFade: { position: 'absolute', top: 0, bottom: 0, width: 28 },
+    scrollFadeLeft: { left: 0 },
+    scrollFadeRight: { right: 0 },
 
     chipRow: { paddingHorizontal: 16, gap: 8 },
     chip: {
