@@ -1,5 +1,9 @@
 {
-  "headerTitle": "Explorar",
+  "backTo": {
+    "mapa": "Mapa",
+    "itinerario": "Itinerario",
+    "explorar": "Explorar"
+  },
   "free": "🆓 Gratis",
   "paid": "💰 De pago",
   "awaySuffix": "de distancia",

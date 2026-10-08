@@ -97,7 +97,7 @@ export function useExplore(): ExploreData {
   };
 
   const handleSpotPress = (spot: Place) => {
-    router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(spot) } });
+    router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(spot), origin: 'explorar' } });
   };
 
   return {

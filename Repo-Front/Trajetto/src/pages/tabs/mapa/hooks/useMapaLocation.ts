@@ -135,7 +135,7 @@ export function useMapaLocation() {
   }, [focusedMapPlaceIndex, points, setFocusedMapPlace]);
 
   const handlePinPress = (index: number) => {
-    router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(points[index]) } });
+    router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(points[index]), origin: 'mapa' } });
   };
 
   const reload = useCallback(() => {

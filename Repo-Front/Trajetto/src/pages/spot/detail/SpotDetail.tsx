@@ -21,7 +21,7 @@ export default function SpotDetail() {
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
-  const { spot, distance, region, hours, openNow, wc, openMaps, openWebsite, callPhone, openWikipedia } = useSpotDetail();
+  const { spot, distance, region, hours, openNow, wc, backLabel, openMaps, openWebsite, callPhone, openWikipedia } = useSpotDetail();
   const {
     user, commentInputRef, allRatings, isRatingOpen, setIsRatingOpen,
     ratingData, ratingValue, setRatingValue, comment, setComment,
@@ -38,7 +38,7 @@ export default function SpotDetail() {
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
               <Ionicons name="chevron-back" size={32} color={colors.white} />
             </TouchableOpacity>
-            <Text style={s.headerText}>{t('headerTitle')}</Text>
+            <Text style={s.headerText}>{backLabel}</Text>
           </View>
         </View>
       </View>
