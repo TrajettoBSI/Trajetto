@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ActivityIndicator, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useTranslation } from 'react-i18next';
 import { Ionicons } from '@expo/vector-icons';
 import { FilterOptions } from '@/services';
@@ -126,37 +127,46 @@ export default function FilterPanel({
         </View>
       </View>
 
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={s.chipRow}
-      >
-        {ordem.map((id) => {
-          const campo = campos[id];
-          return (
-            <TouchableOpacity
-              key={id}
-              style={[s.chip, campo.ativo && s.chipActive]}
-              onPress={() => setAberto(id)}
-              activeOpacity={0.7}
-            >
-              <Ionicons
-                name={campo.icone}
-                size={15}
-                color={campo.ativo ? colors.primaryDark : colors.gray500}
-              />
-              <Text style={[s.chipText, campo.ativo && s.chipTextActive]} numberOfLines={1}>
-                {campo.valor}
-              </Text>
-              <Ionicons
-                name="chevron-down"
-                size={13}
-                color={campo.ativo ? colors.primaryDark : colors.gray400}
-              />
-            </TouchableOpacity>
-          );
-        })}
-      </ScrollView>
+      <View style={s.scrollRowWrapper}>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={s.chipRow}
+        >
+          {ordem.map((id) => {
+            const campo = campos[id];
+            return (
+              <TouchableOpacity
+                key={id}
+                style={[s.chip, campo.ativo && s.chipActive]}
+                onPress={() => setAberto(id)}
+                activeOpacity={0.7}
+              >
+                <Ionicons
+                  name={campo.icone}
+                  size={15}
+                  color={campo.ativo ? colors.primaryDark : colors.gray500}
+                />
+                <Text style={[s.chipText, campo.ativo && s.chipTextActive]} numberOfLines={1}>
+                  {campo.valor}
+                </Text>
+                <Ionicons
+                  name="chevron-down"
+                  size={13}
+                  color={campo.ativo ? colors.primaryDark : colors.gray400}
+                />
+              </TouchableOpacity>
+            );
+          })}
+        </ScrollView>
+        <LinearGradient
+          colors={['rgba(255,255,255,0)', colors.white]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 0 }}
+          style={s.scrollFade}
+          pointerEvents="none"
+        />
+      </View>
 
       {campoAberto && (
         <OptionPickerModal

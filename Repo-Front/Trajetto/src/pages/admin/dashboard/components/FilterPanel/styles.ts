@@ -29,6 +29,9 @@ export const styles = (colors: AppColors) =>
     },
     clear: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.primary },
 
+    scrollRowWrapper: { position: 'relative' },
+    scrollFade: { position: 'absolute', right: 0, top: 0, bottom: 0, width: 28 },
+
     chipRow: { paddingHorizontal: 16, gap: 8 },
     chip: {
       flexDirection: 'row', alignItems: 'center', gap: 6,
