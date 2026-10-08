@@ -48,8 +48,12 @@
     "noPlacesDataSub": "Os dados aparecerão conforme os usuários gerarem roteiros e avaliarem locais.",
     "empty": {
       "chart": "Ainda não há dados para este gráfico.",
+      "chartFiltered": "Nenhum dado para os filtros escolhidos.",
       "title": "Ainda não há dados",
-      "description": "Os indicadores aparecerão conforme a plataforma for usada."
+      "titleFiltered": "Nenhum resultado para este recorte",
+      "description": "Os indicadores aparecerão conforme a plataforma for usada.",
+      "descriptionFiltered": "Tente ampliar o período ou remover algum filtro.",
+      "clearFilters": "Limpar filtros"
     }
   },
 

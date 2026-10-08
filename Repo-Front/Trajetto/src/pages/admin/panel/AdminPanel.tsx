@@ -13,6 +13,7 @@ import DonutLegend from '@/src/components/charts/DonutLegend/DonutLegend';
 import StatListRow from '@/src/components/charts/StatListRow/StatListRow';
 import HeroStatCard from '@/src/components/charts/HeroStatCard/HeroStatCard';
 import Section from '@/src/components/charts/Section/Section';
+import FilterPanel from '../dashboard/components/FilterPanel/FilterPanel';
 
 export default function AdminPanel() {
   const { t } = useTranslation('admin');
@@ -21,12 +22,14 @@ export default function AdminPanel() {
   const s = styles(colors);
   const {
     activeTab, setActiveTab,
+    filtro, opcoes, ativos, alterarFiltro, limparFiltro,
     overview, countries, profiles, ageGroups,
     itinOv, perMonth, categories, topRated, mostVisited,
-    loading, refreshing, error, verifiedPct,
+    loading, updating, refreshing, error, verifiedPct,
     userFirstName, load, onRefresh,
   } = useAdminPanel();
 
+  const filtrando = ativos > 0;
   const faixasEtarias = ageGroups.filter((g) => g.count > 0);
   const usuariosVazio = (overview?.totalUsers ?? 0) === 0;
   const roteirosVazio = (itinOv?.totalItineraries ?? 0) === 0
@@ -41,7 +44,7 @@ export default function AdminPanel() {
       layout="inline"
       icon="📈"
       title=""
-      message={t('panel.empty.chart')}
+      message={t(filtrando ? 'panel.empty.chartFiltered' : 'panel.empty.chart')}
     />
   );
 
@@ -50,9 +53,11 @@ export default function AdminPanel() {
       variant="empty"
       layout="block"
       style={s.stateBox}
-      icon={icone}
-      title={titulo}
-      message={descricao}
+      icon={filtrando ? '🔍' : icone}
+      title={filtrando ? t('panel.empty.titleFiltered') : titulo}
+      message={filtrando ? t('panel.empty.descriptionFiltered') : descricao}
+      actionLabel={t('panel.empty.clearFilters')}
+      onAction={filtrando ? limparFiltro : undefined}
     />
   );
 
@@ -113,6 +118,15 @@ export default function AdminPanel() {
         showsVerticalScrollIndicator={false}
         refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primaryDark} />}
       >
+        <FilterPanel
+          filtro={filtro}
+          opcoes={opcoes}
+          ativos={ativos}
+          atualizando={updating}
+          onAlterar={alterarFiltro}
+          onLimpar={limparFiltro}
+        />
+
         {loading || error ? (
           <FeedbackState
             variant={loading ? 'loading' : 'error'}

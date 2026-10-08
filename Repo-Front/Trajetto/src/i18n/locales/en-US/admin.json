@@ -48,8 +48,12 @@
     "noPlacesDataSub": "Data will appear as users generate itineraries and rate places.",
     "empty": {
       "chart": "No data for this chart yet.",
+      "chartFiltered": "No data for the selected filters.",
       "title": "No data yet",
-      "description": "Indicators will appear as the platform is used."
+      "titleFiltered": "No results for this selection",
+      "description": "Indicators will appear as the platform is used.",
+      "descriptionFiltered": "Try widening the period or removing a filter.",
+      "clearFilters": "Clear filters"
     }
   },
 
