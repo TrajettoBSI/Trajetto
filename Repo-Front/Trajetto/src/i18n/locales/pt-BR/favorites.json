@@ -1,0 +1,9 @@
+{
+  "backLabel": "Perfil",
+  "title": "Meus favoritos",
+  "subtitle": "Os lugares que você guardou para visitar",
+  "loadingText": "Carregando seus favoritos...",
+  "emptyTitle": "Nenhum favorito ainda",
+  "emptyText": "Toque no coração na página de um lugar para guardá-lo aqui.",
+  "emptyAction": "Explorar lugares"
+}

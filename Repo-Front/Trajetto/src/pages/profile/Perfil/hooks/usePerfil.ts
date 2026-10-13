@@ -46,6 +46,11 @@ export function usePerfil() {
           onPress: () => router.push('/TravelerTestScreen?source=profile'),
         },
         {
+          icon: 'heart-outline',
+          label: t('menu.favorites'),
+          onPress: () => router.push('/FavoritesScreen'),
+        },
+        {
           icon: 'map-outline',
           label: t('menu.exploreDestinations'),
           onPress: () => router.push('/ExploreScreen'),

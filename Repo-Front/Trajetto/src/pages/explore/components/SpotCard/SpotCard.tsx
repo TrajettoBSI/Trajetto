@@ -6,7 +6,7 @@ import { categoryIcon } from '@/src/helpers/categoryIcon';
 import { styles } from './styles';
 
 type SpotCardProps = {
-  spot: Place;
+  spot: Pick<Place, 'name' | 'category' | 'address'>;
   onPress: () => void;
 };
 

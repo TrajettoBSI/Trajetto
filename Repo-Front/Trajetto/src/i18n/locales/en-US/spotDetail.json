@@ -2,7 +2,8 @@
   "backTo": {
     "mapa": "Map",
     "itinerario": "Itinerary",
-    "explorar": "Explore"
+    "explorar": "Explore",
+    "favoritos": "Favorites"
   },
   "free": "🆓 Free",
   "paid": "💰 Paid",
@@ -42,5 +43,10 @@
     "deleteConfirm": "Are you sure?",
     "deleteTitle": "Delete rating",
     "deleteError": "Could not delete the rating."
+  },
+  "favorite": {
+    "add": "Add to favorites",
+    "remove": "Remove from favorites",
+    "error": "Could not update your favorites."
   }
 }
