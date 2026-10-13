@@ -112,6 +112,7 @@ app deste tamanho.
   agora (selecao de alternativas, pontuacao do quiz). Outros hooks ainda tem logica de
   orquestracao que poderia crescer a ponto de merecer extracao (ex: `useMapaLocation`,
   que monta os segmentos de rota).
-- Nao ha testes automatizados (unitarios) para os hooks nem para `src/domain/` ainda — so o
-  teste de arquitetura (`npm run test:arquitetura`), que cobre exclusivamente a regra de
-  "nenhuma tela fala direto com o backend".
+- Os testes automatizados (Jest + React Native Testing Library, em `tests/unit/`) cobrem
+  telas, hooks, servicos e `src/domain/`; o resultado e como reproduzir estao em
+  `docs/COBERTURA-DE-TESTES.md`. O teste de arquitetura (`npm run test:arquitetura`) continua
+  cobrindo a regra de "nenhuma tela fala direto com o backend".
