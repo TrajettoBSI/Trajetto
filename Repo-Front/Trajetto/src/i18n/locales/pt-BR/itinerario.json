@@ -21,7 +21,9 @@
     "paid": "🎟️ Pago",
     "free": "🆓 Grátis",
     "about": "Sobre",
-    "switch": "Trocar"
+    "switch": "Trocar",
+    "addNote": "Adicionar anotação",
+    "editNote": "Editar anotação"
   },
   "exportPdfDoc": {
     "estimatedTime": "Horário Estimado:",
@@ -36,6 +38,14 @@
     "footer": "Documento gerado pelo aplicativo Trajetto.",
     "androidSuccess": "Roteiro salvo no seu celular!",
     "shareDialogTitle": "Salvar Roteiro",
-    "genericError": "Não foi possível gerar ou salvar o PDF."
+    "genericError": "Não foi possível gerar ou salvar o PDF.",
+    "note": "Anotação:"
+  },
+  "noteModal": {
+    "title": "Anotação da parada",
+    "placeholder": "Ex.: comprar ingresso antes, levar casaco...",
+    "save": "Salvar anotação",
+    "cancel": "Cancelar",
+    "saveError": "Não foi possível salvar a anotação."
   }
 }

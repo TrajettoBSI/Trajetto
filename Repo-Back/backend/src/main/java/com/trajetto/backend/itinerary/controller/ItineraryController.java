@@ -3,9 +3,15 @@ package com.trajetto.backend.itinerary.controller;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
+import com.trajetto.backend.itinerary.dto.NoteRequestDTO;
 import com.trajetto.backend.itinerary.dto.PlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.RatingRequestDTO;
+import com.trajetto.backend.exception.ApiErrorCode;
+import com.trajetto.backend.exception.ApiException;
 import com.trajetto.backend.itinerary.service.ItineraryService;
+import com.trajetto.backend.security.UserToken;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import java.util.List;
 import lombok.Getter;
@@ -13,6 +19,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -79,6 +86,20 @@ public class ItineraryController {
             @PathVariable Integer orderIndex,
             @Valid @RequestBody PlaceRequestDTO req) {
         return ResponseEntity.ok(itineraryService.replacePlace(itineraryId, orderIndex, req));
+    }
+
+    @Operation(summary = "Grava a anotacao pessoal do usuario numa parada do roteiro; texto em branco remove a anotacao")
+    @SecurityRequirement(name = "AuthServer")
+    @PatchMapping("/{itineraryId}/place/{orderIndex}/note")
+    public ResponseEntity<ItineraryResponseDTO> updateNote(
+            @AuthenticationPrincipal UserToken userToken,
+            @PathVariable Long itineraryId,
+            @PathVariable Integer orderIndex,
+            @Valid @RequestBody NoteRequestDTO req) {
+        if (userToken == null) {
+            throw new ApiException(ApiErrorCode.UNAUTHENTICATED);
+        }
+        return ResponseEntity.ok(itineraryService.updateNote(itineraryId, orderIndex, userToken.getId(), req));
     }
 
     @DeleteMapping("/{itineraryId}/user/{userId}")

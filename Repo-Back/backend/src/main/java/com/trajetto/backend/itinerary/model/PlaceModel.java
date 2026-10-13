@@ -48,6 +48,10 @@ public class PlaceModel {
     @Column(name = "fee")
     private String fee;
 
+    /** Anotacao pessoal do usuario sobre esta parada (migracao V13). */
+    @Column(name = "note", length = 1000)
+    private String note;
+
     /** Toda parada pertence a um roteiro; a coluna e NOT NULL desde a migracao V6. */
     @ManyToOne
     @JoinColumn(name = "itinerary_id", nullable = false)

@@ -6,6 +6,7 @@ import com.trajetto.backend.itinerary.data.RomePlacesLoader.RomePlace;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
+import com.trajetto.backend.itinerary.dto.NoteRequestDTO;
 import com.trajetto.backend.itinerary.dto.PlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.PlaceResponseDTO;
 import com.trajetto.backend.itinerary.dto.RatingRequestDTO;
@@ -292,6 +293,31 @@ public class ItineraryService {
         return toDTO(itineraryRepository.save(itinerary));
     }
 
+    /**
+     * Grava a anotacao pessoal do usuario numa parada do roteiro (RF10).
+     *
+     * <p>So o dono do roteiro anota. Texto em branco remove a anotacao, para
+     * que o banco guarde {@code NULL} -- e nao uma string vazia -- quando a
+     * parada nao tem observacao.</p>
+     */
+    public ItineraryResponseDTO updateNote(Long itineraryId, Integer orderIndex, Long userId, NoteRequestDTO req) {
+        ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
+                .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
+        if (!itinerary.getUser().getId().equals(userId)) {
+            throw new ForbiddenOperationException("Este roteiro pertence a outro usuário.");
+        }
+
+        PlaceModel place = itinerary.getPlaces().stream()
+                .filter(p -> p.getOrderIndex().equals(orderIndex))
+                .findFirst()
+                .orElseThrow(() -> new ResourceNotFoundException("Local de índice " + orderIndex + " não encontrado no roteiro."));
+
+        String note = req.getNote();
+        place.setNote(note == null || note.isBlank() ? null : note.trim());
+
+        return toDTO(itineraryRepository.save(itinerary));
+    }
+
     public void deleteItinerary(Long itineraryId, Long userId) {
         ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
                 .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
@@ -332,6 +358,7 @@ public class ItineraryService {
         dto.setOpeningHours(model.getOpeningHours());
         dto.setCategory(model.getCategory());
         dto.setFee(model.getFee());
+        dto.setNote(model.getNote());
         return dto;
     }
 }

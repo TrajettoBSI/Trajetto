@@ -14,6 +14,7 @@ import { styles } from './styles/styles';
 import ItineraryHeaderCard from './components/ItineraryHeaderCard/ItineraryHeaderCard';
 import TimelineRow from './components/TimelineRow/TimelineRow';
 import AlternativesModal from './components/AlternativesModal/AlternativesModal';
+import NoteModal from './components/NoteModal/NoteModal';
 
 export default function Itinerario() {
   const { t } = useTranslation('itinerario');
@@ -40,6 +41,14 @@ export default function Itinerario() {
     handleExportPDF,
     openSpotDetail,
     router,
+    notePlace,
+    noteDraft,
+    setNoteDraft,
+    savingNote,
+    noteError,
+    openNote,
+    closeNote,
+    saveNote,
   } = useItinerario();
 
   return (
@@ -98,6 +107,7 @@ export default function Itinerario() {
                         router.push({ pathname: '/mapa', params: { from: 'itinerario' } });
                       }}
                       onInfoPress={() => openSpotDetail(place)}
+                      onNotePress={() => openNote(place)}
                     />
                   );
                 })}
@@ -118,6 +128,16 @@ export default function Itinerario() {
               loading={loadingAlts}
               onSelect={handleSelectAlternative}
               onCancel={handleCancelAlt}
+            />
+
+            <NoteModal
+              place={notePlace}
+              draft={noteDraft}
+              saving={savingNote}
+              error={noteError}
+              onChangeDraft={setNoteDraft}
+              onSave={saveNote}
+              onCancel={closeNote}
             />
           </View>
         );

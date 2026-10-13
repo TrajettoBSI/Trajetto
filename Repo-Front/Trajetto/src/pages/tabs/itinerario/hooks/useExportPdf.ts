@@ -11,6 +11,9 @@ import { adminAccent } from '@/src/theme';
 
 const PDF_PRIMARY = adminAccent.primary;
 
+const escapeHtml = (text: string) =>
+  text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
 function buildItineraryHtml(itinerary: Itinerary) {
   const t = (key: string) => i18n.t(`itinerario:exportPdfDoc.${key}`);
   const sortedPlaces = [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex);
@@ -24,6 +27,7 @@ function buildItineraryHtml(itinerary: Itinerary) {
         <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>📍 ${t('address')}</strong> ${place.address}</p>
         ${place.category ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🏷️ ${t('category')}</strong> ${place.category}</p>` : ''}
         ${place.openingHours ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕐 ${t('openingHours')}</strong> ${place.openingHours}</p>` : ''}
+        ${place.note ? `<p style="margin: 8px 0 0 0; font-size: 14px; color: #5c4a12; white-space: pre-wrap;"><strong>📝 ${t('note')}</strong> ${escapeHtml(place.note)}</p>` : ''}
       </div>
     `;
   });

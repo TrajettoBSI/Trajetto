@@ -12,6 +12,8 @@ export interface Places {
   openingHours?: string | null;
   category?: string | null;
   fee?: string | null;
+  xid?: string | null;
+  note?: string | null;
 }
 
 export interface Itinerary {
@@ -43,6 +45,7 @@ type ItineraryStore = {
   rateItinerary: (itineraryId: number, rating: number | null, ratingDescription: string | null) => Promise<void>;
   updateDate: (itineraryId: number, date: string | null) => Promise<void>;
   replacePlace: (orderIndex: number, newPlace: Places) => Promise<void>;
+  updateNote: (orderIndex: number, note: string | null) => Promise<void>;
   setHighlightedPlace: (index: number | null) => void;
   setFocusedMapPlace: (index: number | null) => void;
 };
@@ -128,6 +131,16 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
     const { itinerary } = get();
     if (!itinerary) return;
     const updated = await ItineraryService.replacePlace(itinerary.id, orderIndex, newPlace);
+    set(state => ({
+      itinerary: state.itinerary?.id === updated.id ? updated : state.itinerary,
+      itineraries: state.itineraries.map(i => i.id === updated.id ? updated : i),
+    }));
+  },
+
+  updateNote: async (orderIndex, note) => {
+    const { itinerary } = get();
+    if (!itinerary) return;
+    const updated = await ItineraryService.updateNote(itinerary.id, orderIndex, note);
     set(state => ({
       itinerary: state.itinerary?.id === updated.id ? updated : state.itinerary,
       itineraries: state.itineraries.map(i => i.id === updated.id ? updated : i),

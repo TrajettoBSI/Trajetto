@@ -21,7 +21,9 @@
     "paid": "🎟️ De pago",
     "free": "🆓 Gratis",
     "about": "Acerca de",
-    "switch": "Cambiar"
+    "switch": "Cambiar",
+    "addNote": "Añadir nota",
+    "editNote": "Editar nota"
   },
   "exportPdfDoc": {
     "estimatedTime": "Horario Estimado:",
@@ -36,6 +38,14 @@
     "footer": "Documento generado por la aplicación Trajetto.",
     "androidSuccess": "¡Itinerario guardado en tu celular!",
     "shareDialogTitle": "Guardar Itinerario",
-    "genericError": "No se pudo generar o guardar el PDF."
+    "genericError": "No se pudo generar o guardar el PDF.",
+    "note": "Nota:"
+  },
+  "noteModal": {
+    "title": "Nota de la parada",
+    "placeholder": "Ej.: comprar la entrada antes, llevar abrigo...",
+    "save": "Guardar nota",
+    "cancel": "Cancelar",
+    "saveError": "No se pudo guardar la nota."
   }
 }

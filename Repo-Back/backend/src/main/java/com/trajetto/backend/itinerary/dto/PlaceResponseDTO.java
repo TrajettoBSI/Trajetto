@@ -17,4 +17,5 @@ public class PlaceResponseDTO {
     private String openingHours;
     private String category;
     private String fee;
+    private String note;
 }

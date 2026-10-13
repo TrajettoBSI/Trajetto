@@ -35,6 +35,11 @@ export class ItineraryService {
         return response.data;
     }
 
+    static async updateNote(itineraryId: number, orderIndex: number, note: string | null) {
+        const response = await api.patch(`/itinerary/${itineraryId}/place/${orderIndex}/note`, { note });
+        return response.data;
+    }
+
     static async replacePlace(itineraryId: number, orderIndex: number, place: {
         name: string; address: string; latitude: number; longitude: number;
         estimatedVisitTime: string; openingHours?: string | null;

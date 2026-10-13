@@ -7,6 +7,7 @@ import { useDestinationCarousel } from '@/src/pages/tabs/shared/hooks/useDestina
 import { useAlternatives } from './useAlternatives';
 import { useExportPdf } from './useExportPdf';
 import { useItinerarioScroll } from './useItinerarioScroll';
+import { useItineraryNote } from './useItineraryNote';
 
 export function useItinerario() {
   const router = useRouter();
@@ -21,6 +22,7 @@ export function useItinerario() {
 
   const alternatives = useAlternatives(itinerary);
   const { handleExportPDF } = useExportPdf();
+  const note = useItineraryNote();
   const { scrollRef, highlightedPlaceIndex, registerCardOffset } = useItinerarioScroll(itinerary);
 
   // O roteiro guarda so um recorte do lugar (sem telefone, site, etc.), mas carrega o xid
@@ -51,6 +53,7 @@ export function useItinerario() {
     highlightedPlaceIndex,
     registerCardOffset,
     ...alternatives,
+    ...note,
     openSpotDetail,
     handleExportPDF: () => handleExportPDF(itinerary),
   };
