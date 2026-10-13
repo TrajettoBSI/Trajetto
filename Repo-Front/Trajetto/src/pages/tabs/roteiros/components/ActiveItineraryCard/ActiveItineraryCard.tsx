@@ -34,7 +34,7 @@ export default function ActiveItineraryCard({
 
   const places = itinerary.places ?? [];
   const doneCount = places.filter((p) => isPlacePast(placeDate(itinerary.startDate, p), p.estimatedVisitTime)).length;
-  const itineraryDays = groupByDay(itinerary.startDate, places);
+  const itineraryDays = groupByDay(itinerary.startDate, places, itinerary.endDate);
   const todayDate = resolveDay(itineraryDays.map((d) => d.date), null, toIsoDate(new Date()));
   const shownDay = itineraryDays.find((d) => d.date === todayDate);
   const shownPlaces = shownDay?.places ?? [];

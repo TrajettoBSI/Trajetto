@@ -8,6 +8,7 @@ import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
 import { formatDate, formatTime } from '@/src/i18n/format';
 import { groupByDay } from '@/src/domain/itinerary/itineraryDays';
+import { freePeriod } from '@/src/domain/itinerary/freePeriod';
 import { categoryLabel } from '@/src/helpers/categoryIcon';
 import { adminAccent } from '@/src/theme';
 
@@ -19,12 +20,16 @@ const escapeHtml = (text: string) =>
 function buildItineraryHtml(itinerary: Itinerary) {
   const t = (key: string) => i18n.t(`itinerario:exportPdfDoc.${key}`);
   const sortedPlaces = [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex);
-  const days = groupByDay(itinerary.startDate, itinerary.places);
+  const days = groupByDay(itinerary.startDate, itinerary.places, itinerary.endDate);
 
   let placesHtml = '';
   days.forEach((day) => {
     if (days.length > 1) {
       placesHtml += `<h3 style="color: ${PDF_PRIMARY}; margin: 28px 0 12px 0;">${i18n.t('itinerario:daySelector.day', { number: day.number })} - ${formatDate(day.date)}</h3>`;
+    }
+    const free = freePeriod(day.places);
+    if (free) {
+      placesHtml += `<p style="margin: 0 0 16px 0; font-size: 14px; color: #2e7d32;">${i18n.t(`itinerario:freePeriod.${free.period}.title`)}</p>`;
     }
     day.places.forEach((place, index) => {
       placesHtml += `

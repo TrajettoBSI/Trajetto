@@ -31,4 +31,6 @@ GenerateItineraryRequestDTO {
     @Min(value = 1, message = "O roteiro deve ter pelo menos 1 dia")
     @Max(value = MAX_DAYS, message = "O roteiro pode ter no máximo " + MAX_DAYS + " dias")
     private Integer days;
+
+    private TravelPace pace;
 }

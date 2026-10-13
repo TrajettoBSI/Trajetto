@@ -53,5 +53,23 @@
   },
   "daySelector": {
     "day": "Día {{number}}"
+  },
+  "meals": {
+    "breakfast": "Desayuno",
+    "lunch": "Almuerzo",
+    "dinner": "Cena",
+    "near": "Sugerencias cerca de {{name}}",
+    "loadError": "No se pudieron cargar las sugerencias.",
+    "retry": "Reintentar"
+  },
+  "freePeriod": {
+    "morning": {
+      "title": "Mañana libre",
+      "text": "Empieza el día sin prisa: el itinerario de hoy comienza por la tarde."
+    },
+    "afternoon": {
+      "title": "Tarde libre",
+      "text": "Después del almuerzo, la tarde es tuya para descansar o explorar sin prisa."
+    }
   }
 }

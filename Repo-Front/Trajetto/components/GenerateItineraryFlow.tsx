@@ -19,7 +19,7 @@ import { useTranslation } from 'react-i18next';
 import * as Location from 'expo-location';
 import DateTimePicker, { DateTimePickerAndroid, DateTimePickerEvent } from '@react-native-community/datetimepicker';
 import { useAuth } from '../context/AuthContext';
-import { PlaceSuggestion, searchAddresses } from '../services';
+import { PlaceSuggestion, searchAddresses, TravelPace } from '../services';
 import { getErrorMessage } from '../utils/apiError';
 import { FeedbackState } from '../src/components/feedback';
 import { Itinerary, useItineraryStore } from '../hooks/itineraryStore';
@@ -28,6 +28,7 @@ import CustomInput from './CustomInput';
 import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../src/theme';
 import { addDays, groupByDay, toIsoDate } from '../src/domain/itinerary/itineraryDays';
+import { freePeriod } from '../src/domain/itinerary/freePeriod';
 import { formatDate, formatWeekday, formatWeekdayDayMonth } from '../src/i18n/format';
 
 const PRIMARY = colors.primary;
@@ -36,6 +37,12 @@ const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1A
 type Step = 'config' | 'loading' | 'preview';
 
 const MAX_DAYS = 7;
+
+const PACES: { id: TravelPace; icon: string; multiDayOnly: boolean }[] = [
+  { id: 'INTENSO', icon: '🔥', multiDayOnly: false },
+  { id: 'EQUILIBRADO', icon: '⚖️', multiDayOnly: true },
+  { id: 'LEVE', icon: '🌿', multiDayOnly: false },
+];
 
 const fromIsoDate = (iso: string) => new Date(`${iso}T00:00:00`);
 
@@ -143,6 +150,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   const [generatedItinerary, setGeneratedItinerary] = useState<Itinerary | null>(null);
   const [startDate, setStartDate] = useState(() => toIsoDate(new Date()));
   const [days, setDays] = useState(1);
+  const [pace, setPace] = useState<TravelPace>('INTENSO');
   const [showIosCalendar, setShowIosCalendar] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scrollViewRef = useRef<ScrollView>(null);
@@ -161,11 +169,14 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
       setGeneratedItinerary(null);
       setStartDate(toIsoDate(new Date()));
       setDays(1);
+      setPace('INTENSO');
       setShowIosCalendar(false);
     }
   }
 
   const endDate = addDays(startDate, days - 1);
+  const availablePaces = PACES.filter((p) => days > 1 || !p.multiDayOnly);
+  const effectivePace = availablePaces.some((p) => p.id === pace) ? pace : 'INTENSO';
 
   const handlePickDate = (event: DateTimePickerEvent, date?: Date) => {
     if (Platform.OS === 'ios') setShowIosCalendar(false);
@@ -260,7 +271,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
   const runGenerate = async () => {
     const start = Date.now();
-    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days);
+    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days, effectivePace);
     const elapsed = Date.now() - start;
     const remaining = 2000 - elapsed;
     if (remaining > 0) await new Promise(r => setTimeout(r, remaining));
@@ -483,6 +494,36 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 </Text>
               </View>
 
+              <View style={styles.card}>
+                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.paceLabel')}</Text>
+                {availablePaces.map((option) => {
+                  const active = option.id === effectivePace;
+                  return (
+                    <TouchableOpacity
+                      key={option.id}
+                      style={[styles.paceOption, active && styles.paceOptionActive]}
+                      onPress={() => setPace(option.id)}
+                      activeOpacity={0.8}
+                      accessibilityRole="radio"
+                      accessibilityState={{ selected: active }}
+                    >
+                      <Text style={styles.paceIcon}>{option.icon}</Text>
+                      <View style={styles.paceTextBox}>
+                        <Text style={[styles.paceTitle, active && styles.paceTitleActive]}>
+                          {t(`roteiros:generateFlow.paces.${option.id}.title`)}
+                        </Text>
+                        <Text style={styles.paceDescription}>{t(`roteiros:generateFlow.paces.${option.id}.description`)}</Text>
+                      </View>
+                      <Ionicons
+                        name={active ? 'radio-button-on' : 'radio-button-off'}
+                        size={22}
+                        color={active ? PRIMARY : '#c3ccd8'}
+                      />
+                    </TouchableOpacity>
+                  );
+                })}
+              </View>
+
               {erro ? (
                 <FeedbackState
                   variant="error"
@@ -523,14 +564,14 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 <Text style={styles.summaryMeta}>
                   {t('roteiros:generateFlow.summaryMeta', {
                     stops: generatedItinerary.places.length,
-                    days: t('roteiros:generateFlow.daysCount', { count: groupByDay(generatedItinerary.startDate, generatedItinerary.places).length }),
+                    days: t('roteiros:generateFlow.daysCount', { count: groupByDay(generatedItinerary.startDate, generatedItinerary.places, generatedItinerary.endDate).length }),
                     origin: selectedPlace?.shortName ?? '',
                   })}
                 </Text>
               </View>
 
               {/* Lista completa de lugares */}
-              {groupByDay(generatedItinerary.startDate, generatedItinerary.places).map((day, _dayIdx, allDays) => (
+              {groupByDay(generatedItinerary.startDate, generatedItinerary.places, generatedItinerary.endDate).map((day, _dayIdx, allDays) => (
               <View key={day.date}>
               {allDays.length > 1 && (
                 <Text style={styles.previewDayLabel}>
@@ -570,6 +611,11 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     </View>
                   );
                 })}
+                {freePeriod(day.places) && (
+                  <Text style={styles.previewFreePeriod}>
+                    🌿 {t(`itinerario:freePeriod.${freePeriod(day.places)!.period}.title`)}
+                  </Text>
+                )}
               </View>
               </View>
               ))}
@@ -688,6 +734,24 @@ const styles = StyleSheet.create({
   dateFieldOpen: { borderColor: PRIMARY },
   dateFieldText: { flex: 1, fontSize: Platform.OS === 'ios' ? 16 : 18, fontWeight: '600', color: '#1a1a1a' },
   dateFieldWeekday: { fontSize: 13, color: '#8a9ab0', textTransform: 'capitalize' },
+  paceOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    borderRadius: 14,
+    borderWidth: 1.5,
+    borderColor: '#e2e8f0',
+    padding: 12,
+    marginBottom: 8,
+    backgroundColor: '#fff',
+  },
+  paceOptionActive: { borderColor: PRIMARY, backgroundColor: '#F6F8FC' },
+  paceIcon: { fontSize: 22 },
+  paceTextBox: { flex: 1 },
+  paceTitle: { fontSize: Platform.OS === 'ios' ? 15 : 17, fontWeight: '700', color: '#1a1a1a' },
+  paceTitleActive: { color: PRIMARY },
+  paceDescription: { fontSize: Platform.OS === 'ios' ? 12 : 14, color: '#8a9ab0', marginTop: 2 },
+  previewFreePeriod: { fontSize: 13, fontWeight: '600', color: '#2e7d32', paddingVertical: 10 },
   previewDayLabel: {
     fontSize: 12,
     fontWeight: '700',

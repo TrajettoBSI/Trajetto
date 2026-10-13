@@ -16,6 +16,8 @@ export interface Place {
   wheelchair?: string;
 }
 
+export type NearbyPlace = Place & { distanceMeters?: number | null };
+
 export interface PlacesFilter {
   search?: string;
   category?: string;
@@ -39,6 +41,15 @@ export const placesService = {
     if (filter.lng)          params.lng         = filter.lng;
     if (filter.maxDistance)  params.maxDistance = filter.maxDistance;
     const res = await api.get('/places', { params });
+    return res.data;
+  },
+
+  nearby: async (
+    lat: number,
+    lng: number,
+    options: { radius?: number; limit?: number; category?: string } = {},
+  ): Promise<NearbyPlace[]> => {
+    const res = await api.get('/places/nearby', { params: { lat, lng, ...options } });
     return res.data;
   },
 

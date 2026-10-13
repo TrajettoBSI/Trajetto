@@ -17,6 +17,9 @@ import ItineraryHeaderCard from './components/ItineraryHeaderCard/ItineraryHeade
 import TimelineRow from './components/TimelineRow/TimelineRow';
 import AlternativesModal from './components/AlternativesModal/AlternativesModal';
 import NoteModal from './components/NoteModal/NoteModal';
+import MealSuggestionCard from './components/MealSuggestionCard/MealSuggestionCard';
+import FreePeriodCard from './components/FreePeriodCard/FreePeriodCard';
+import { freePeriod } from '@/src/domain/itinerary/freePeriod';
 
 const TAB_BAR_SPACE = 64 + 4 + 24;
 
@@ -48,6 +51,9 @@ export default function Itinerario() {
     handleCancelAlt,
     handleExportPDF,
     openSpotDetail,
+    mealSuggestions,
+    retryMealSuggestions,
+    openMealPlace,
     router,
     notePlace,
     noteDraft,
@@ -70,6 +76,7 @@ export default function Itinerario() {
     >
       {(roteiro) => {
         const sorted = dayPlaces;
+        const free = freePeriod(sorted);
 
         return (
           <View style={s.safe}>
@@ -122,8 +129,12 @@ export default function Itinerario() {
                   const isHighlighted = highlightedPlaceIndex === place.orderIndex;
 
                   return (
+                    <React.Fragment key={`${place.name}-${place.orderIndex}`}>
+                    {free?.insertAt === idx && <FreePeriodCard period={free.period} />}
+                    {mealSuggestions.filter((m) => m.insertAt === idx).map((m) => (
+                      <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} onRetry={retryMealSuggestions} />
+                    ))}
                     <TimelineRow
-                      key={`${place.name}-${place.orderIndex}`}
                       place={place}
                       idx={idx}
                       color={color}
@@ -139,8 +150,13 @@ export default function Itinerario() {
                       onInfoPress={() => openSpotDetail(place)}
                       onNotePress={() => openNote(place)}
                     />
+                    </React.Fragment>
                   );
                 })}
+                {free?.insertAt === sorted.length && <FreePeriodCard period={free.period} />}
+                {mealSuggestions.filter((m) => m.insertAt === sorted.length).map((m) => (
+                  <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} onRetry={retryMealSuggestions} />
+                ))}
               </View>
 
               <CustomButton

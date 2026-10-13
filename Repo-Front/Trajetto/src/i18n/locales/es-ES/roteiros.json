@@ -91,6 +91,21 @@
     "daysCount_other": "{{count}} días",
     "lessDays": "Un día menos",
     "moreDays": "Un día más",
+    "paceLabel": "RITMO DEL VIAJE",
+    "paces": {
+      "INTENSO": {
+        "title": "Todos los días completos",
+        "description": "Hasta 7 paradas por día, de 9h a 21h"
+      },
+      "EQUILIBRADO": {
+        "title": "Algunos días completos",
+        "description": "Alterna días completos con días de 4 paradas y la mañana o la tarde libre"
+      },
+      "LEVE": {
+        "title": "Itinerario ligero, sin prisa",
+        "description": "Pocas paradas por día, empezando a las 10h"
+      }
+    },
     "originLabel": "PUNTO DE PARTIDA",
     "originHint": "Ingresa tu hotel o dirección en Roma",
     "originPlaceholder": "Ej: Via Veneto 45, Roma",

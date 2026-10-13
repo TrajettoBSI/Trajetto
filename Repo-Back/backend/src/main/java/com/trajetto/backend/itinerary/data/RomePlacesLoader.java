@@ -28,7 +28,8 @@ public class RomePlacesLoader {
             String website,    // ← novo
             String wikidata,   // ← novo
             String wikipedia,  // ← novo
-            String wheelchair  // ← novo
+            String wheelchair, // ← novo
+            int popularity
     ) {}
 
     @Autowired
@@ -62,12 +63,13 @@ public class RomePlacesLoader {
                 String wikidata   = props.path("wikidata").asText("");
                 String wikipedia  = props.path("wikipedia").asText("");
                 String wheelchair = props.path("wheelchair").asText("");
+                int popularity    = props.path("popularity").asInt(0);
 
                 if (!name.isBlank() && lat != 0.0 && lon != 0.0) {
                     loaded.add(new RomePlace(
                             name, address, lat, lon, profiles,
                             openingHours, category, fee,
-                            phone, website, wikidata, wikipedia, wheelchair
+                            phone, website, wikidata, wikipedia, wheelchair, popularity
                     ));
                 }
             }

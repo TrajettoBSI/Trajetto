@@ -9,7 +9,7 @@ export function useItineraryDay(itinerary: Itinerary | null) {
   const setSelectedDay = useItineraryStore((state) => state.setSelectedDay);
 
   const days = useMemo<ItineraryDay<Places>[]>(
-    () => (itinerary ? groupByDay(itinerary.startDate, itinerary.places ?? []) : []),
+    () => (itinerary ? groupByDay(itinerary.startDate, itinerary.places ?? [], itinerary.endDate) : []),
     [itinerary],
   );
 

@@ -91,6 +91,21 @@
     "daysCount_other": "{{count}} days",
     "lessDays": "One day less",
     "moreDays": "One more day",
+    "paceLabel": "TRAVEL PACE",
+    "paces": {
+      "INTENSO": {
+        "title": "Every day packed",
+        "description": "Up to 7 stops a day, from 9am to 9pm"
+      },
+      "EQUILIBRADO": {
+        "title": "Some days packed",
+        "description": "Alternates packed days with 4-stop days and a free morning or afternoon"
+      },
+      "LEVE": {
+        "title": "Light, no rush",
+        "description": "Just a few stops a day, starting at 10am"
+      }
+    },
     "originLabel": "STARTING POINT",
     "originHint": "Enter your hotel or address in Rome",
     "originPlaceholder": "Ex: Via Veneto 45, Rome",
