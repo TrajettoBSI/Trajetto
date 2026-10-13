@@ -16,5 +16,5 @@ export const styles = (colors: AppColors) =>
       paddingHorizontal: 20, paddingVertical: 12, minWidth: 140, alignItems: 'center',
     },
     bulkDeleteBtnDisabled: { backgroundColor: colors.dangerBorder },
-    bulkDeleteBtnText: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.white },
+    bulkDeleteBtnText: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.onPrimary },
   });

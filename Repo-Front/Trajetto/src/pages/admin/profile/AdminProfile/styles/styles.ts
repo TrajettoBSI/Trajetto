@@ -14,7 +14,7 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.primary,
     },
     headerBackBtn: { padding: 4, marginRight: 8 },
-    headerTitle: { fontSize: 20, fontFamily: 'Inter-Bold', color: colors.white },
+    headerTitle: { fontSize: 20, fontFamily: 'Inter-Bold', color: colors.onPrimary },
 
     section: { paddingHorizontal: 20, marginBottom: 8 },
     sectionTitle: {

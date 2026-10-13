@@ -4,6 +4,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useColors } from '@/src/theme';
 import LanguagePickerModal from '@/src/components/LanguageSwitcher/LanguagePickerModal';
+import ThemePickerModal from '@/src/components/ThemeSwitcher/ThemePickerModal';
 import ProfileHero from '@/src/components/ProfileHero/ProfileHero';
 import MenuItem from '@/src/components/MenuItem/MenuItem';
 import { useAdminProfile } from './hooks/useAdminProfile';
@@ -13,13 +14,13 @@ export default function AdminProfile() {
   const colors = useColors();
   const insets = useSafeAreaInsets();
   const s = styles(colors);
-  const { t, user, router, menuSections, languagePicker } = useAdminProfile();
+  const { t, user, router, menuSections, languagePicker, themePicker } = useAdminProfile();
 
   return (
     <View style={s.safe}>
       <View style={[s.header, { paddingTop: insets.top + 16 }]}>
         <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
-          <Ionicons name="chevron-back" size={28} color={colors.white} />
+          <Ionicons name="chevron-back" size={28} color={colors.onPrimary} />
         </TouchableOpacity>
         <Text style={s.headerTitle}>{t('profile.headerTitle')}</Text>
       </View>
@@ -51,6 +52,8 @@ export default function AdminProfile() {
         current={languagePicker.current}
         onSelect={languagePicker.select}
       />
+
+      <ThemePickerModal picker={themePicker} />
     </View>
   );
 }

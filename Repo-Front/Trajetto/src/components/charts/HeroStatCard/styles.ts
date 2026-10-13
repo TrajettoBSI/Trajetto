@@ -14,8 +14,8 @@ export const styles = (colors: AppColors) =>
       textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 10,
     },
     row: { flexDirection: 'row', alignItems: 'center', gap: 14 },
-    number: { fontSize: 36, fontFamily: 'Inter-Bold', color: colors.white },
+    number: { fontSize: 36, fontFamily: 'Inter-Bold', color: colors.onPrimary },
     chipRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, flex: 1 },
     chip: { backgroundColor: colors.glassSurface, borderRadius: 20, paddingHorizontal: 12, paddingVertical: 6 },
-    chipText: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.white },
+    chipText: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.onPrimary },
   });

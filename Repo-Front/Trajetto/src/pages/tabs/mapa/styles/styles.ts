@@ -17,5 +17,5 @@ export const styles = (colors: AppColors) =>
     filterBtn: { padding: 6, borderRadius: 8, backgroundColor: colors.gray100 },
     filterBtnActive: { backgroundColor: colors.primarySurface },
     filterBadge: { position: 'absolute', top: -4, right: -4, backgroundColor: colors.primary, borderRadius: 8, width: 16, height: 16, alignItems: 'center', justifyContent: 'center' },
-    filterBadgeText: { color: colors.white, fontSize: 10, fontFamily: 'Inter-Bold' },
+    filterBadgeText: { color: colors.onPrimary, fontSize: 10, fontFamily: 'Inter-Bold' },
   });

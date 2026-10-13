@@ -16,7 +16,7 @@ export const styles = (colors: AppColors) =>
     },
     chipActive: { backgroundColor: colors.primary, borderColor: colors.primary },
     chipTitle: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.gray900 },
-    chipTitleActive: { color: colors.white },
+    chipTitleActive: { color: colors.onPrimary },
     chipDate: { fontSize: 11, color: colors.gray500, marginTop: 2 },
     chipDateActive: { color: colors.onPrimaryMuted },
   });

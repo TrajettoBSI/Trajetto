@@ -4,6 +4,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
+import { countryLabel } from '@/src/i18n/countries';
 import CustomInput from '@/components/CustomInput';
 import CustomButton from '@/components/CustomButton';
 import Logo from '@/assets/appImgs/logo.svg';
@@ -55,7 +56,7 @@ export default function Register() {
           <View style={[s.headerRow, { marginTop: insets.top + 16 }]}>
             <View style={s.headerLeft}>
               <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
-                <Ionicons name="chevron-back" size={32} color={colors.white} />
+                <Ionicons name="chevron-back" size={32} color={colors.onPrimary} />
               </TouchableOpacity>
               <Text style={s.headerText}>{t('headerTitle')}</Text>
             </View>
@@ -143,7 +144,7 @@ export default function Register() {
             >
               <Ionicons name="earth-outline" size={18} color={colors.gray400} style={s.inputIcon} />
               <Text style={[country ? s.dropdownValue : s.dropdownPlaceholder, s.dropdownText]}>
-                {country || t('countryPlaceholder')}
+                {countryLabel(country) || t('countryPlaceholder')}
               </Text>
               <Ionicons name="chevron-down" size={16} color={colors.gray400} />
             </TouchableOpacity>

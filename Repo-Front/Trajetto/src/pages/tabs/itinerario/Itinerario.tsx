@@ -89,7 +89,7 @@ export default function Itinerario() {
                 accessibilityRole="button"
                 accessibilityLabel={t('exportPdf')}
               >
-                <Ionicons name="download-outline" size={18} color={colors.white} />
+                <Ionicons name="download-outline" size={18} color={colors.onPrimary} />
                 <Text style={s.headerExportText}>{t('exportPdfShort')}</Text>
               </TouchableOpacity>
             </View>
@@ -162,7 +162,7 @@ export default function Itinerario() {
               <CustomButton
                 title={t('exportPdf')}
                 onPress={handleExportPDF}
-                icon={<Ionicons name="download-outline" size={22} color={colors.white} />}
+                icon={<Ionicons name="download-outline" size={22} color={colors.onPrimary} />}
                 style={s.btnExport}
               />
             </ScrollView>

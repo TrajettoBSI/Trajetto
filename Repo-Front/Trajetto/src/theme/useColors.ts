@@ -1,5 +1,6 @@
-import { AppColors, lightColors } from './colors';
+import { AppColors } from './colors';
+import { useTheme } from './ThemeContext';
 
 export function useColors(): AppColors {
-  return lightColors;
+  return useTheme().colors;
 }

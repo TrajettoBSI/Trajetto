@@ -29,5 +29,5 @@ export const styles = (colors: AppColors) =>
     distanceDivider: { width: 1, height: 36, backgroundColor: colors.gray200 },
 
     spotCardBtn: { backgroundColor: colors.primary, borderRadius: 12, paddingVertical: 12, alignItems: 'center' },
-    spotCardBtnText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 14 },
+    spotCardBtnText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 14 },
   });

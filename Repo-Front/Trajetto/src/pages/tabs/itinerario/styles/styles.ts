@@ -13,8 +13,8 @@ export const styles = (colors: AppColors) =>
       paddingHorizontal: 12, paddingVertical: 6, borderRadius: 16,
       backgroundColor: colors.glassSurface, borderWidth: 1, borderColor: colors.glassBorder,
     },
-    headerExportText: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.white },
-    headerBarTitle: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.white },
+    headerExportText: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.onPrimary },
+    headerBarTitle: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.onPrimary },
     container: { flex: 1, backgroundColor: colors.backgroundMuted },
     content: { padding: 20 },
 

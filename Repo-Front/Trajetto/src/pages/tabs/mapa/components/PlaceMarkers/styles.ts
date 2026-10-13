@@ -25,5 +25,5 @@ export const styles = (colors: AppColors) =>
       position: 'absolute', top: 5, width: 17, height: 17, borderRadius: 9,
       alignItems: 'center', justifyContent: 'center', borderWidth: 1.5, borderColor: colors.white,
     },
-    numberText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 10 },
+    numberText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 10 },
   });

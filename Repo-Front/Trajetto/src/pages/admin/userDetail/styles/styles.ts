@@ -51,7 +51,7 @@ export const styles = (colors: AppColors) =>
     },
     roleBtnActive: { backgroundColor: colors.primaryDark, borderColor: colors.primaryDark },
     roleBtnText: { fontFamily: 'Inter-Bold', color: colors.chipMutedText, fontSize: 14 },
-    roleBtnTextActive: { color: colors.white },
+    roleBtnTextActive: { color: colors.onPrimary },
 
     saveButton: {
       backgroundColor: colors.primaryDark, borderRadius: 14, paddingVertical: 15,
@@ -59,5 +59,5 @@ export const styles = (colors: AppColors) =>
       shadowRadius: 8, shadowOffset: { width: 0, height: 4 }, elevation: 5,
       minHeight: 50, justifyContent: 'center',
     },
-    saveButtonText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 16 },
+    saveButtonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 16 },
   });

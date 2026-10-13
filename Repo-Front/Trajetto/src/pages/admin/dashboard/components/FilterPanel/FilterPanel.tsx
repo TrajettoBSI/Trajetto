@@ -7,6 +7,7 @@ import { FilterOptions } from '@/services';
 import { useColors } from '@/src/theme';
 import OptionPickerModal, { PickerOption } from '@/src/components/OptionPickerModal/OptionPickerModal';
 import { categoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
+import { countryLabel } from '@/src/i18n/countries';
 import { DashboardFilter, PERIODOS, PeriodoId } from '../../dashboardFilter';
 import { styles } from './styles';
 
@@ -92,10 +93,10 @@ export default function FilterPanel({
     },
     country: {
       icone: 'globe-outline',
-      valor: filtro.country ?? todos,
+      valor: filtro.country ? countryLabel(filtro.country) : todos,
       ativo: filtro.country !== null,
       titulo: t('dashboard.filters.selectCountry'),
-      opcoes: comOpcaoTodos(opcoes.countries, todos),
+      opcoes: comOpcaoTodos(opcoes.countries, todos, (c) => countryLabel(c)),
       escolhido: filtro.country,
       escolher: (valor: string | null) => onAlterar({ country: valor }),
     },
@@ -165,14 +166,14 @@ export default function FilterPanel({
           })}
         </ScrollView>
         <LinearGradient
-          colors={[colors.white, 'rgba(255,255,255,0)']}
+          colors={[colors.white, colors.surfaceTransparent]}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 0 }}
           style={[s.scrollFade, s.scrollFadeLeft]}
           pointerEvents="none"
         />
         <LinearGradient
-          colors={['rgba(255,255,255,0)', colors.white]}
+          colors={[colors.surfaceTransparent, colors.white]}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 0 }}
           style={[s.scrollFade, s.scrollFadeRight]}

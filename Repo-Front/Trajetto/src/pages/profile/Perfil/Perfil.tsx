@@ -4,6 +4,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useColors } from '@/src/theme';
 import LanguagePickerModal from '@/src/components/LanguageSwitcher/LanguagePickerModal';
+import ThemePickerModal from '@/src/components/ThemeSwitcher/ThemePickerModal';
 import { usePerfil } from './hooks/usePerfil';
 import MenuItem from '@/src/components/MenuItem/MenuItem';
 import ProfileHero from '@/src/components/ProfileHero/ProfileHero';
@@ -13,7 +14,7 @@ export default function Perfil() {
   const colors = useColors();
   const insets = useSafeAreaInsets();
   const s = styles(colors);
-  const { t, user, router, menuSections, languagePicker } = usePerfil();
+  const { t, user, router, menuSections, languagePicker, themePicker } = usePerfil();
 
   return (
     <View style={s.safe}>
@@ -21,7 +22,7 @@ export default function Perfil() {
         <View style={s.headerRow}>
           <View style={s.headerLeft}>
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
-              <Ionicons name="chevron-back" size={32} color={colors.white} />
+              <Ionicons name="chevron-back" size={32} color={colors.onPrimary} />
             </TouchableOpacity>
             <Text style={s.headerText}>{t('menu.headerTitle')}</Text>
           </View>
@@ -58,6 +59,8 @@ export default function Perfil() {
         current={languagePicker.current}
         onSelect={languagePicker.select}
       />
+
+      <ThemePickerModal picker={themePicker} />
     </View>
   );
 }

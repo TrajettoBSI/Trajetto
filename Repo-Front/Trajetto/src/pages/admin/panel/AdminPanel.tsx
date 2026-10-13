@@ -15,6 +15,8 @@ import HeroStatCard from '@/src/components/charts/HeroStatCard/HeroStatCard';
 import Section from '@/src/components/charts/Section/Section';
 import FilterPanel from '../dashboard/components/FilterPanel/FilterPanel';
 import { categoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
+import { formatDecimal } from '@/src/i18n/format';
+import { countryLabel } from '@/src/i18n/countries';
 
 export default function AdminPanel() {
   const { t } = useTranslation('admin');
@@ -188,7 +190,7 @@ export default function AdminPanel() {
                     <View style={s.metricsCard}>
                       {countries.length > 0
                         ? countries.map((c, i) => (
-                          <StatListRow key={c.country} label={c.country} value={c.count} isLast={i === countries.length - 1} />
+                          <StatListRow key={c.country} label={countryLabel(c.country)} value={c.count} isLast={i === countries.length - 1} />
                         ))
                         : semDadosNoGrafico}
                     </View>
@@ -213,11 +215,11 @@ export default function AdminPanel() {
             <View style={s.metricsCard}>
               <StatListRow
                 label={t('panel.avgDuration')}
-                value={itinOv?.avgDurationDays != null ? t('panel.avgDurationValue', { days: itinOv.avgDurationDays }) : '—'}
+                value={itinOv?.avgDurationDays != null ? t('panel.avgDurationValue', { days: formatDecimal(itinOv.avgDurationDays) }) : '—'}
               />
               <StatListRow
                 label={t('panel.avgRating')}
-                value={itinOv?.avgRating != null ? t('panel.avgRatingValue', { value: itinOv.avgRating }) : '—'}
+                value={itinOv?.avgRating != null ? t('panel.avgRatingValue', { value: formatDecimal(itinOv.avgRating) }) : '—'}
               />
               <StatListRow
                 label={t('panel.withRating')}
@@ -248,7 +250,7 @@ export default function AdminPanel() {
                   <View style={s.featuredInfo}>
                     <Text style={s.featuredName} numberOfLines={1}>{featured.name}</Text>
                     <Text style={s.featuredSub}>
-                      {t('panel.avgRatingValue', { value: featured.avgRating })} · {t('panel.ratingsCount', { count: featured.totalRatings })}
+                      {t('panel.avgRatingValue', { value: formatDecimal(featured.avgRating) })} · {t('panel.ratingsCount', { count: featured.totalRatings })}
                     </Text>
                   </View>
                 </View>

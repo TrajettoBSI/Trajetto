@@ -47,5 +47,17 @@
     }
   },
   "stars_one": "{{count}} star",
-  "stars_other": "{{count}} stars"
+  "stars_other": "{{count}} stars",
+  "theme": {
+    "title": "Theme",
+    "system": "System default",
+    "light": "Light",
+    "dark": "Dark",
+    "highContrast": "High contrast"
+  },
+  "selectCountry": "Select your country",
+  "modal": {
+    "title": "This is a modal",
+    "goHome": "Go to home screen"
+  }
 }

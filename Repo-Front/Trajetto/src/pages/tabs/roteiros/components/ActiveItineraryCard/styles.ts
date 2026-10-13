@@ -62,7 +62,7 @@ export const styles = (colors: AppColors) =>
       flex: 1.6, alignItems: 'center', justifyContent: 'center',
       borderRadius: 12, paddingVertical: 13, backgroundColor: colors.primary, minHeight: 48,
     },
-    openBtnText: { fontSize: 15, fontFamily: 'Inter-Bold', color: colors.white },
+    openBtnText: { fontSize: 15, fontFamily: 'Inter-Bold', color: colors.onPrimary },
     deleteBtn: {
       flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8,
       borderWidth: 1.5, borderColor: colors.dangerBorder, borderRadius: 12,

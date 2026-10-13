@@ -14,7 +14,7 @@ export const styles = (colors: AppColors) =>
     headerRow: { flexDirection: 'row', alignItems: 'center', marginTop: 70, marginBottom: 20, position: 'relative', height: 44 },
     headerLeft: { flexDirection: 'row', alignItems: 'center', zIndex: 10 },
     headerBackBtn: { padding: 8, marginLeft: -12 },
-    headerText: { fontSize: 16, fontFamily: 'Inter-Bold', color: colors.white, marginLeft: -4 },
+    headerText: { fontSize: 16, fontFamily: 'Inter-Bold', color: colors.onPrimary, marginLeft: -4 },
     headerCenter: { position: 'absolute', left: 0, right: 0, top: 0, bottom: 0, justifyContent: 'center', alignItems: 'center' },
     logoBadge: { alignItems: 'center', backgroundColor: colors.white, borderRadius: 10, padding: 5 },
     card: {

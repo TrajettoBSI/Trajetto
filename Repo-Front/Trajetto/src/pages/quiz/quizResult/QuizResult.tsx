@@ -66,7 +66,7 @@ export default function QuizResult() {
           <Text style={s.backButtonText}>
             {fromProfile ? t('result.backToProfile') : t('result.startExploring')}
           </Text>
-          <Ionicons name="arrow-forward" size={18} color={colors.white} />
+          <Ionicons name="arrow-forward" size={18} color={colors.onPrimary} />
         </TouchableOpacity>
 
       </ScrollView>

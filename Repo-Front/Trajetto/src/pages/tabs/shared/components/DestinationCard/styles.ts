@@ -23,7 +23,7 @@ export const styles = (colors: AppColors) =>
     cardTitle: {
       fontSize: 22,
       fontFamily: 'Inter-Bold',
-      color: colors.white,
+      color: colors.onPrimary,
       flex: 1,
     },
     timeBadge: {
@@ -37,7 +37,7 @@ export const styles = (colors: AppColors) =>
     timeText: {
       fontSize: 11,
       fontFamily: 'Inter-Medium',
-      color: colors.white,
+      color: colors.onPrimary,
     },
     cardSubtitle: {
       fontSize: 12,

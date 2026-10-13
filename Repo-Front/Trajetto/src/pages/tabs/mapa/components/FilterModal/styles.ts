@@ -22,7 +22,7 @@ export const styles = (colors: AppColors) =>
     filterChip: { borderWidth: 1, borderColor: colors.gray200, borderRadius: 20, paddingHorizontal: 14, paddingVertical: 8, marginRight: 8, backgroundColor: colors.white },
     filterChipActive: { backgroundColor: colors.primary, borderColor: colors.primary },
     filterChipText: { fontSize: 13, color: colors.gray700, textTransform: 'capitalize' },
-    filterChipTextActive: { color: colors.white, fontFamily: 'Inter-Medium' },
+    filterChipTextActive: { color: colors.onPrimary, fontFamily: 'Inter-Medium' },
 
     filterRow: { flexDirection: 'row', marginBottom: 16 },
 
@@ -37,5 +37,5 @@ export const styles = (colors: AppColors) =>
     clearFilterBtn: { flex: 1, borderRadius: 12, borderWidth: 1, borderColor: colors.gray200, paddingVertical: 14, alignItems: 'center' },
     clearFilterBtnText: { color: colors.gray500, fontFamily: 'Inter-Medium', fontSize: 15 },
     applyBtn: { flex: 2, backgroundColor: colors.primary, borderRadius: 12, paddingVertical: 14, alignItems: 'center' },
-    applyBtnText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 15 },
+    applyBtnText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 15 },
   });

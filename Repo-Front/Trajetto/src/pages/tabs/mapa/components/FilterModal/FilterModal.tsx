@@ -79,7 +79,7 @@ export default function FilterModal({
                 ))}
               </ScrollView>
               <LinearGradient
-                colors={['rgba(255,255,255,0)', colors.white]}
+                colors={[colors.surfaceTransparent, colors.white]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 style={s.scrollFade}
@@ -103,7 +103,7 @@ export default function FilterModal({
                 ))}
               </ScrollView>
               <LinearGradient
-                colors={['rgba(255,255,255,0)', colors.white]}
+                colors={[colors.surfaceTransparent, colors.white]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 style={s.scrollFade}
@@ -144,7 +144,7 @@ export default function FilterModal({
                 ))}
               </ScrollView>
               <LinearGradient
-                colors={['rgba(255,255,255,0)', colors.white]}
+                colors={[colors.surfaceTransparent, colors.white]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 style={s.scrollFade}
@@ -162,7 +162,7 @@ export default function FilterModal({
                 onValueChange={setTempHasHours}
                 trackColor={{ false: colors.gray300, true: colors.primary }}
                 ios_backgroundColor={colors.gray300}
-                thumbColor={colors.white}
+                thumbColor={colors.onPrimary}
               />
             </View>
 

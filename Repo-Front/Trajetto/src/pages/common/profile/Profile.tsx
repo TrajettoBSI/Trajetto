@@ -3,6 +3,7 @@ import { ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, Text, To
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
+import { countryLabel } from '@/src/i18n/countries';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomInput from '@/components/CustomInput';
 import CountryPickerModal from '@/src/components/CountryPickerModal/CountryPickerModal';
@@ -48,7 +49,7 @@ export default function Profile() {
         <View style={s.headerRow}>
           <View style={s.headerLeft}>
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
-              <Ionicons name="chevron-back" size={32} color={colors.white} />
+              <Ionicons name="chevron-back" size={32} color={colors.onPrimary} />
             </TouchableOpacity>
             <Text style={s.headerText}>{t('headerTitle')}</Text>
           </View>
@@ -129,7 +130,7 @@ export default function Profile() {
               activeOpacity={0.7}
             >
               <Text style={country ? s.dropdownValue : s.dropdownPlaceholder}>
-                {country || t('countryPlaceholder')}
+                {countryLabel(country) || t('countryPlaceholder')}
               </Text>
               <Text style={s.dropdownChevron}>▼</Text>
             </TouchableOpacity>
@@ -145,7 +146,7 @@ export default function Profile() {
 
           <TouchableOpacity style={s.saveButton} onPress={handleUpdate} disabled={loading} activeOpacity={0.85}>
             {loading
-              ? <ActivityIndicator size="small" color={colors.white} />
+              ? <ActivityIndicator size="small" color={colors.onPrimary} />
               : <Text style={s.saveButtonText}>{t('save')}</Text>
             }
           </TouchableOpacity>

@@ -22,7 +22,7 @@ export default function Quiz() {
         <View style={s.headerRow}>
           <View style={s.headerLeft}>
             <TouchableOpacity onPress={goBack} style={s.headerBackBtn} activeOpacity={0.7}>
-              <Ionicons name="chevron-back" size={32} color={colors.white} />
+              <Ionicons name="chevron-back" size={32} color={colors.onPrimary} />
             </TouchableOpacity>
             <Text style={s.headerText}>{t('quiz.headerTitle')}</Text>
           </View>
@@ -50,7 +50,7 @@ export default function Quiz() {
                 >
                   {selected === opt && (
                     <View style={s.simNaoCheck}>
-                      <Ionicons name="checkmark" size={12} color={colors.white} />
+                      <Ionicons name="checkmark" size={12} color={colors.onPrimary} />
                     </View>
                   )}
                   <Text style={[s.simNaoText, selected === opt && s.simNaoTextSelected]}>
