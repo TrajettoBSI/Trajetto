@@ -1,11 +1,14 @@
 {
   "loadingText": "Cargando itinerario...",
   "sectionLabel": "PARADAS DEL ITINERARIO",
+  "daySectionLabel": "PARADAS DEL DÍA {{number}} DE {{total}}",
   "exportPdf": "Exportar como PDF",
+  "exportPdfShort": "PDF",
   "headerCard": {
     "period": "Período",
     "stops": "Paradas",
-    "active": "Activo"
+    "active": "Activo",
+    "days": "Días"
   },
   "alternativesModal": {
     "title": "Cambiar lugar",
@@ -21,7 +24,9 @@
     "paid": "🎟️ De pago",
     "free": "🆓 Gratis",
     "about": "Acerca de",
-    "switch": "Cambiar"
+    "switch": "Cambiar",
+    "addNote": "Añadir nota",
+    "editNote": "Editar nota"
   },
   "exportPdfDoc": {
     "estimatedTime": "Horario Estimado:",
@@ -36,6 +41,17 @@
     "footer": "Documento generado por la aplicación Trajetto.",
     "androidSuccess": "¡Itinerario guardado en tu celular!",
     "shareDialogTitle": "Guardar Itinerario",
-    "genericError": "No se pudo generar o guardar el PDF."
+    "genericError": "No se pudo generar o guardar el PDF.",
+    "note": "Nota:"
+  },
+  "noteModal": {
+    "title": "Nota de la parada",
+    "placeholder": "Ej.: comprar la entrada antes, llevar abrigo...",
+    "save": "Guardar nota",
+    "cancel": "Cancelar",
+    "saveError": "No se pudo guardar la nota."
+  },
+  "daySelector": {
+    "day": "Día {{number}}"
   }
 }

@@ -25,6 +25,7 @@
     "language": "Idioma",
     "travelerSection": "Viajero",
     "retakeTest": "Repetir el test de viajero",
+    "favorites": "Mis favoritos",
     "exploreDestinations": "Explorar destinos",
     "logout": "Salir",
     "version": "Trajetto v{{version}}"

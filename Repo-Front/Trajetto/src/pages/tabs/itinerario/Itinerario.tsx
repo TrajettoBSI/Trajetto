@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -9,11 +9,16 @@ import { isPlacePast } from '@/app/utils/isPlacePast';
 import { useColors } from '@/src/theme';
 import { AsyncBoundary } from '@/src/components/feedback';
 import NoItineraryEmptyState from '@/src/pages/tabs/shared/components/NoItineraryEmptyState/NoItineraryEmptyState';
+import DaySelector from '@/src/pages/tabs/shared/components/DaySelector/DaySelector';
+import { placeDate } from '@/src/domain/itinerary/itineraryDays';
 import { useItinerario } from './hooks/useItinerario';
 import { styles } from './styles/styles';
 import ItineraryHeaderCard from './components/ItineraryHeaderCard/ItineraryHeaderCard';
 import TimelineRow from './components/TimelineRow/TimelineRow';
 import AlternativesModal from './components/AlternativesModal/AlternativesModal';
+import NoteModal from './components/NoteModal/NoteModal';
+
+const TAB_BAR_SPACE = 64 + 4 + 24;
 
 export default function Itinerario() {
   const { t } = useTranslation('itinerario');
@@ -27,6 +32,10 @@ export default function Itinerario() {
     error,
     reload,
     setFocusedMapPlace,
+    days,
+    currentDay,
+    dayPlaces,
+    selectDay,
     scrollRef,
     highlightedPlaceIndex,
     registerCardOffset,
@@ -40,6 +49,14 @@ export default function Itinerario() {
     handleExportPDF,
     openSpotDetail,
     router,
+    notePlace,
+    noteDraft,
+    setNoteDraft,
+    savingNote,
+    noteError,
+    openNote,
+    closeNote,
+    saveNote,
   } = useItinerario();
 
   return (
@@ -52,35 +69,57 @@ export default function Itinerario() {
       renderEmpty={() => <NoItineraryEmptyState destIndex={destIndex} title="Trajetto" />}
     >
       {(roteiro) => {
-        const sorted = [...roteiro.places].sort((a, b) => a.orderIndex - b.orderIndex);
+        const sorted = dayPlaces;
 
         return (
           <View style={s.safe}>
             <View style={[s.headerBar, { paddingTop: insets.top + 12 }]}>
               <Text style={s.headerBarTitle}>Trajetto</Text>
+              <TouchableOpacity
+                style={s.headerExportBtn}
+                onPress={handleExportPDF}
+                activeOpacity={0.8}
+                accessibilityRole="button"
+                accessibilityLabel={t('exportPdf')}
+              >
+                <Ionicons name="download-outline" size={18} color={colors.white} />
+                <Text style={s.headerExportText}>{t('exportPdfShort')}</Text>
+              </TouchableOpacity>
             </View>
             <ScrollView
               ref={scrollRef}
               style={s.container}
-              contentContainerStyle={s.content}
+              contentContainerStyle={[s.content, { paddingBottom: insets.bottom + TAB_BAR_SPACE }]}
               showsVerticalScrollIndicator={false}
             >
               <ItineraryHeaderCard
                 startDate={roteiro.startDate}
                 endDate={roteiro.endDate}
-                stopsCount={sorted.length}
+                stopsCount={roteiro.places.length}
+                daysCount={days.length}
                 startTime={sorted[0]?.estimatedVisitTime}
                 endTime={sorted[sorted.length - 1]?.estimatedVisitTime}
               />
 
-              <Text style={s.sectionLabel}>{t('sectionLabel')}</Text>
+              <DaySelector
+                days={days}
+                selectedDate={currentDay?.date ?? null}
+                onSelect={selectDay}
+                style={s.daySelector}
+              />
+
+              <Text style={s.sectionLabel}>
+                {days.length > 1 && currentDay
+                  ? t('daySectionLabel', { number: currentDay.number, total: days.length })
+                  : t('sectionLabel')}
+              </Text>
 
               <View style={s.timeline}>
                 {sorted.map((place, idx) => {
-                  const isPast = isPlacePast(roteiro.startDate, place.estimatedVisitTime);
+                  const isPast = isPlacePast(placeDate(roteiro.startDate, place), place.estimatedVisitTime);
                   const color = PLACE_COLORS[idx % PLACE_COLORS.length];
                   const isLast = idx === sorted.length - 1;
-                  const isHighlighted = highlightedPlaceIndex === idx;
+                  const isHighlighted = highlightedPlaceIndex === place.orderIndex;
 
                   return (
                     <TimelineRow
@@ -91,13 +130,14 @@ export default function Itinerario() {
                       isPast={isPast}
                       isLast={isLast}
                       isHighlighted={isHighlighted}
-                      onLayout={(e) => registerCardOffset(idx, e.nativeEvent.layout.y, sorted.length)}
+                      onLayout={(e) => registerCardOffset(place.orderIndex, e.nativeEvent.layout.y)}
                       onSwitchPress={() => handleSwipeLeft(place)}
                       onPress={() => {
                         setFocusedMapPlace(idx);
                         router.push({ pathname: '/mapa', params: { from: 'itinerario' } });
                       }}
                       onInfoPress={() => openSpotDetail(place)}
+                      onNotePress={() => openNote(place)}
                     />
                   );
                 })}
@@ -118,6 +158,16 @@ export default function Itinerario() {
               loading={loadingAlts}
               onSelect={handleSelectAlternative}
               onCancel={handleCancelAlt}
+            />
+
+            <NoteModal
+              place={notePlace}
+              draft={noteDraft}
+              saving={savingNote}
+              error={noteError}
+              onChangeDraft={setNoteDraft}
+              onSave={saveNote}
+              onCancel={closeNote}
             />
           </View>
         );

@@ -2,7 +2,8 @@
   "backTo": {
     "mapa": "Mapa",
     "itinerario": "Itinerário",
-    "explorar": "Explorar"
+    "explorar": "Explorar",
+    "favoritos": "Favoritos"
   },
   "free": "🆓 Gratuito",
   "paid": "💰 Pago",
@@ -42,5 +43,10 @@
     "deleteConfirm": "Tem certeza?",
     "deleteTitle": "Excluir avaliação",
     "deleteError": "Não foi possível excluir a avaliação."
+  },
+  "favorite": {
+    "add": "Adicionar aos favoritos",
+    "remove": "Remover dos favoritos",
+    "error": "Não foi possível atualizar seus favoritos."
   }
 }

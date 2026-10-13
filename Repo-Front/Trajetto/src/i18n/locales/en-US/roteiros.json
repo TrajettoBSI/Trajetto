@@ -30,7 +30,8 @@
     "progressPercent": "{{percent}}%",
     "progressDone": "done",
     "openButton": "Open Itinerary",
-    "deleteButton": "Delete"
+    "deleteButton": "Delete",
+    "dayOf": "Day {{number}} of {{total}}"
   },
   "inactiveRow": {
     "stopsAndDate": "{{stops}} stops · {{date}}",
@@ -83,8 +84,13 @@
     "configureTitle": "New Itinerary",
     "generatedTitle": "Generated Itinerary",
     "destinyLabel": "DESTINY",
+    "startDateLabel": "START DATE",
+    "pickStartDate": "Choose start date",
     "durationLabel": "DURATION",
-    "durationValue": "1 day",
+    "daysCount_one": "{{count}} day",
+    "daysCount_other": "{{count}} days",
+    "lessDays": "One day less",
+    "moreDays": "One more day",
     "originLabel": "STARTING POINT",
     "originHint": "Enter your hotel or address in Rome",
     "originPlaceholder": "Ex: Via Veneto 45, Rome",
@@ -92,7 +98,7 @@
     "generateButton": "Generate Itinerary",
     "loadingText": "Creating your itinerary...",
     "summaryTitle": "Rome, Italy",
-    "summaryMeta": "{{stops}} stops · {{origin}}",
+    "summaryMeta": "{{stops}} stops · {{days}} · {{origin}}",
     "regenerate": "Regenerate",
     "accept": "Accept",
     "genericError": "Could not generate the itinerary. Try again.",

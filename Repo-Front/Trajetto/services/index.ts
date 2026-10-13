@@ -17,6 +17,9 @@ export type { Place, PlacesFilter } from './placesService';
 
 export { ItineraryService } from './itineraryService';
 
+export { favoriteService } from './favoriteService';
+export type { FavoritePlace, FavoritePlaceRequest } from './favoriteService';
+
 export { RatingService } from './ratingService';
 export type { CreateRatingRequest, Rating, RatingSummary } from './ratingService';
 

@@ -11,6 +11,18 @@ export function formatDate(date: string | Date, locale = activeLocale()): string
   return new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(d);
 }
 
+export function formatWeekday(date: string, locale = activeLocale()): string {
+  const d = new Date(`${date}T00:00:00`);
+  if (Number.isNaN(d.getTime())) return '';
+  return new Intl.DateTimeFormat(locale, { weekday: 'long' }).format(d);
+}
+
+export function formatWeekdayDayMonth(date: string, locale = activeLocale()): string {
+  const d = new Date(`${date}T00:00:00`);
+  if (Number.isNaN(d.getTime())) return '';
+  return new Intl.DateTimeFormat(locale, { weekday: 'short', day: '2-digit', month: '2-digit' }).format(d);
+}
+
 /** Intervalo "inicio → fim" com os dois lados no formato do locale ativo. */
 export function formatDateRange(start: string, end: string, locale = activeLocale()): string {
   return `${formatDate(start, locale)} → ${formatDate(end, locale)}`;

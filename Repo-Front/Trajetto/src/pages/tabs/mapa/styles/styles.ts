@@ -8,6 +8,7 @@ export const styles = (colors: AppColors) =>
     mapEmptyScrim: { ...StyleSheet.absoluteFill, backgroundColor: colors.backgroundMuted, opacity: 0.3 },
 
     searchWrapper: { position: 'absolute', top: 56, left: 16, right: 16, zIndex: 20 },
+    daySelector: { marginTop: 10, flexGrow: 0 },
     searchBar: { flexDirection: 'row', alignItems: 'center', backgroundColor: colors.white, borderRadius: 14, paddingHorizontal: 14, paddingVertical: 10, shadowColor: colors.shadow, shadowOpacity: 0.12, shadowRadius: 8, shadowOffset: { width: 0, height: 3 }, elevation: 6, gap: 8 },
     searchInput: { flex: 1, fontSize: 15, color: colors.gray900 },
     clearBtn: { padding: 4 },

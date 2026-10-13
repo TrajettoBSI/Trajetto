@@ -6,8 +6,8 @@ export class ItineraryService {
         return response.data;
     }
 
-    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number) {
-        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude });
+    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number, startDate: string, days: number) {
+        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude, startDate, days });
         return response.data;
     }
 
@@ -32,6 +32,11 @@ export class ItineraryService {
 
     static async updateDate(itineraryId: number, date: string | null) {
         const response = await api.patch(`/itinerary/${itineraryId}/date`, { date });
+        return response.data;
+    }
+
+    static async updateNote(itineraryId: number, orderIndex: number, note: string | null) {
+        const response = await api.patch(`/itinerary/${itineraryId}/place/${orderIndex}/note`, { note });
         return response.data;
     }
 

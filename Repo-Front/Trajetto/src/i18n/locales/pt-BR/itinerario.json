@@ -1,11 +1,14 @@
 {
   "loadingText": "Carregando itinerário...",
   "sectionLabel": "PARADAS DO ROTEIRO",
+  "daySectionLabel": "PARADAS DO DIA {{number}} DE {{total}}",
   "exportPdf": "Exportar em PDF",
+  "exportPdfShort": "PDF",
   "headerCard": {
     "period": "Período",
     "stops": "Paradas",
-    "active": "Ativo"
+    "active": "Ativo",
+    "days": "Dias"
   },
   "alternativesModal": {
     "title": "Trocar lugar",
@@ -21,7 +24,9 @@
     "paid": "🎟️ Pago",
     "free": "🆓 Grátis",
     "about": "Sobre",
-    "switch": "Trocar"
+    "switch": "Trocar",
+    "addNote": "Adicionar anotação",
+    "editNote": "Editar anotação"
   },
   "exportPdfDoc": {
     "estimatedTime": "Horário Estimado:",
@@ -36,6 +41,17 @@
     "footer": "Documento gerado pelo aplicativo Trajetto.",
     "androidSuccess": "Roteiro salvo no seu celular!",
     "shareDialogTitle": "Salvar Roteiro",
-    "genericError": "Não foi possível gerar ou salvar o PDF."
+    "genericError": "Não foi possível gerar ou salvar o PDF.",
+    "note": "Anotação:"
+  },
+  "noteModal": {
+    "title": "Anotação da parada",
+    "placeholder": "Ex.: comprar ingresso antes, levar casaco...",
+    "save": "Salvar anotação",
+    "cancel": "Cancelar",
+    "saveError": "Não foi possível salvar a anotação."
+  },
+  "daySelector": {
+    "day": "Dia {{number}}"
   }
 }

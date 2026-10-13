@@ -11,6 +11,7 @@ import ReviewItem from '@/src/components/rating/ReviewItem/ReviewItem';
 import { useColors } from '@/src/theme';
 import { useSpotDetail } from './hooks/useSpotDetail';
 import { useSpotRating } from './hooks/useSpotRating';
+import { useSpotFavorite } from './hooks/useSpotFavorite';
 import { formatCar, formatDistance, formatWalk } from './spotFormat';
 import InfoRow from './components/InfoRow/InfoRow';
 import { styles } from './styles/styles';
@@ -27,6 +28,7 @@ export default function SpotDetail() {
     ratingData, ratingValue, setRatingValue, comment, setComment,
     saveRating, startEditRating, deleteRating,
   } = useSpotRating(spot.xid);
+  const { isFavorite, savingFavorite, toggleFavorite } = useSpotFavorite(spot);
 
   const wikipediaTitle = spot.wikipedia?.split(':')[1]?.replace(/_/g, ' ') ?? spot.wikipedia;
 
@@ -40,6 +42,16 @@ export default function SpotDetail() {
             </TouchableOpacity>
             <Text style={s.headerText}>{backLabel}</Text>
           </View>
+          <TouchableOpacity
+            onPress={toggleFavorite}
+            disabled={savingFavorite}
+            style={s.headerFavoriteBtn}
+            activeOpacity={0.7}
+            accessibilityRole="button"
+            accessibilityLabel={isFavorite ? t('favorite.remove') : t('favorite.add')}
+          >
+            <Ionicons name={isFavorite ? 'heart' : 'heart-outline'} size={26} color={colors.white} />
+          </TouchableOpacity>
         </View>
       </View>
       <ScrollView contentContainerStyle={s.container} showsVerticalScrollIndicator={false}>

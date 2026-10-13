@@ -41,6 +41,7 @@ export const styles = (colors: AppColors) =>
     progressTrack: { height: 6, borderRadius: 3, backgroundColor: colors.divider, marginBottom: 20, overflow: 'hidden' },
     progressFill: { height: '100%', borderRadius: 3, backgroundColor: colors.primary },
 
+    dayLabel: { fontSize: 11, fontFamily: 'Inter-Bold', color: colors.textSubtle, letterSpacing: 0.8, textTransform: 'uppercase', marginBottom: 8 },
     timeline: { gap: 0 },
     timelineItem: { flexDirection: 'row', minHeight: 56 },
     timelineLeft: { alignItems: 'center', width: 20, marginRight: 14 },
