@@ -1,5 +1,6 @@
 package com.trajetto.backend.itinerary.service;
 
+import com.trajetto.backend.itinerary.data.PlaceXid;
 import com.trajetto.backend.itinerary.data.RomePlacesLoader;
 import com.trajetto.backend.itinerary.data.RomePlacesLoader.RomePlace;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
@@ -185,7 +186,7 @@ public class ItineraryService {
         for (int i = 0; i < ordered.size(); i++) {
             RomePlace rp = ordered.get(i);
             PlaceModel p = new PlaceModel();
-            p.setXid("osm_" + rp.name().toLowerCase().replaceAll("[^a-z0-9]", "_"));
+            p.setXid(PlaceXid.of(rp.name()));
             p.setName(rp.name());
             p.setAddress(rp.address());
             p.setLatitude(rp.latitude());

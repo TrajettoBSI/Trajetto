@@ -60,6 +60,7 @@ que ainda não foram executados naquele banco. O controle fica na tabela
 | `V7` | `sp_stats_user_overview` e `sp_stats_itinerary_overview` recriadas com os cinco parâmetros do recorte do painel gerencial (período, perfil, país e categoria). |
 | `V8` | Catálogo de pontos turísticos no banco (`tourist_spots` e `tourist_spot_profiles`), com a coluna geográfica `location` (`POINT SRID 4326`) e o índice espacial que resolvem a busca por proximidade. |
 | `V11` | Remove `tourist_spots` e `tourist_spot_profiles`: o catálogo de pontos turísticos migrou para uma coleção MongoDB (`tourist_spots`, com os perfis embutidos e índice `2dsphere`). Pula de `V8` para `V11` porque `V9`/`V10` já estão em uso por outra branch (`teste_def`, `tipo_item`) neste mesmo banco local. |
+| `V12` | `favorite_places`, os locais favoritos de cada usuário (OB05.1, RF08): um local favoritado uma vez só por usuário (`UNIQUE`), favoritos apagados junto com o usuário (`ON DELETE CASCADE`) e o recorte do local que a lista exibe, já que o catálogo mora no MongoDB. |
 
 A `V2` limpa duplicatas antes de criar cada `UNIQUE`: e-mail repetido faz a
 conta mais antiga manter o endereço e as demais receberem o sufixo
