@@ -117,6 +117,14 @@ export default function Itinerario() {
                   : t('sectionLabel')}
               </Text>
 
+              {sorted.length === 0 && (
+                <View style={s.freeDay}>
+                  <Text style={s.freeDayIcon}>🌿</Text>
+                  <Text style={s.freeDayTitle}>{t('freeDay.title')}</Text>
+                  <Text style={s.freeDayText}>{t('freeDay.text')}</Text>
+                </View>
+              )}
+
               <View style={s.timeline}>
                 {sorted.map((place, idx) => {
                   const isPast = isPlacePast(placeDate(roteiro.startDate, place), place.estimatedVisitTime);

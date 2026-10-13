@@ -42,6 +42,7 @@ export const styles = (colors: AppColors) =>
     progressFill: { height: '100%', borderRadius: 3, backgroundColor: colors.primary },
 
     dayLabel: { fontSize: 11, fontFamily: 'Inter-Bold', color: colors.textSubtle, letterSpacing: 0.8, textTransform: 'uppercase', marginBottom: 8 },
+    freeDayText: { fontSize: 14, color: colors.textSubtle, marginBottom: 12 },
     timeline: { gap: 0 },
     timelineItem: { flexDirection: 'row', minHeight: 56 },
     timelineLeft: { alignItems: 'center', width: 20, marginRight: 14 },

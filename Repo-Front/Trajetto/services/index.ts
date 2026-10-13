@@ -16,6 +16,7 @@ export { placesService } from './placesService';
 export type { NearbyPlace, Place, PlacesFilter } from './placesService';
 
 export { ItineraryService } from './itineraryService';
+export type { TravelPace } from './itineraryService';
 
 export { favoriteService } from './favoriteService';
 export type { FavoritePlace, FavoritePlaceRequest } from './favoriteService';

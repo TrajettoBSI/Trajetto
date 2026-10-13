@@ -1,13 +1,15 @@
 import { api } from './api';
 
+export type TravelPace = 'INTENSO' | 'EQUILIBRADO' | 'METADE_LIVRE' | 'LEVE';
+
 export class ItineraryService {
     static async getItinerary(userId: number) {
         const response = await api.get(`/itinerary/active/${userId}`);
         return response.data;
     }
 
-    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number, startDate: string, days: number) {
-        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude, startDate, days });
+    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number, startDate: string, days: number, pace: TravelPace) {
+        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude, startDate, days, pace });
         return response.data;
     }
 

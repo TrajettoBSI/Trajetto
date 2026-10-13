@@ -19,12 +19,15 @@ const escapeHtml = (text: string) =>
 function buildItineraryHtml(itinerary: Itinerary) {
   const t = (key: string) => i18n.t(`itinerario:exportPdfDoc.${key}`);
   const sortedPlaces = [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex);
-  const days = groupByDay(itinerary.startDate, itinerary.places);
+  const days = groupByDay(itinerary.startDate, itinerary.places, itinerary.endDate);
 
   let placesHtml = '';
   days.forEach((day) => {
     if (days.length > 1) {
       placesHtml += `<h3 style="color: ${PDF_PRIMARY}; margin: 28px 0 12px 0;">${i18n.t('itinerario:daySelector.day', { number: day.number })} - ${formatDate(day.date)}</h3>`;
+    }
+    if (day.places.length === 0) {
+      placesHtml += `<p style="margin: 0 0 20px 0; font-size: 14px; color: #64748b;">${i18n.t('itinerario:freeDay.title')}</p>`;
     }
     day.places.forEach((place, index) => {
       placesHtml += `

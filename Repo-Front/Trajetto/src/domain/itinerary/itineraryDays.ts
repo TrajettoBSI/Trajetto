@@ -23,8 +23,11 @@ export const addDays = (isoDate: string, days: number) => {
 
 export const placeDate = (startDate: string, place: DatedPlace) => place.visitDate ?? startDate;
 
-export function groupByDay<P extends DatedPlace>(startDate: string, places: P[]): ItineraryDay<P>[] {
+export function groupByDay<P extends DatedPlace>(startDate: string, places: P[], endDate?: string | null): ItineraryDay<P>[] {
   const byDate = new Map<string, P[]>();
+  for (let date = startDate; endDate && date <= endDate; date = addDays(date, 1)) {
+    byDate.set(date, []);
+  }
   [...places]
     .sort((a, b) => a.orderIndex - b.orderIndex)
     .forEach((place) => {

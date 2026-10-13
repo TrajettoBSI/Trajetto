@@ -23,7 +23,7 @@ type ActiveItineraryCardProps = {
 export default function ActiveItineraryCard({
   itinerary, selectMode, selected, deleting, onPress, onLongPress, onDelete,
 }: ActiveItineraryCardProps) {
-  const { t } = useTranslation('roteiros');
+  const { t } = useTranslation(['roteiros', 'itinerario']);
   const colors = useColors();
   const s = styles(colors);
 
@@ -34,7 +34,7 @@ export default function ActiveItineraryCard({
 
   const places = itinerary.places ?? [];
   const doneCount = places.filter((p) => isPlacePast(placeDate(itinerary.startDate, p), p.estimatedVisitTime)).length;
-  const itineraryDays = groupByDay(itinerary.startDate, places);
+  const itineraryDays = groupByDay(itinerary.startDate, places, itinerary.endDate);
   const todayDate = resolveDay(itineraryDays.map((d) => d.date), null, toIsoDate(new Date()));
   const shownDay = itineraryDays.find((d) => d.date === todayDate);
   const shownPlaces = shownDay?.places ?? [];
@@ -87,6 +87,10 @@ export default function ActiveItineraryCard({
         <Text style={s.dayLabel}>
           {t('activeCard.dayOf', { number: shownDay.number, total: itineraryDays.length })}
         </Text>
+      )}
+
+      {!selectMode && shownDay && shownPlaces.length === 0 && (
+        <Text style={s.freeDayText}>{t('itinerario:freeDay.title')}</Text>
       )}
 
       {!selectMode && (

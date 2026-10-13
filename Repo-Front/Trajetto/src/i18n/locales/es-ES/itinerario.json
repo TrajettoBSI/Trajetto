@@ -59,5 +59,9 @@
     "lunch": "Almuerzo",
     "dinner": "Cena",
     "near": "Sugerencias cerca de {{name}}"
+  },
+  "freeDay": {
+    "title": "Día libre",
+    "text": "Nada programado para este día. Aprovecha para descansar o recorrer la ciudad sin prisa."
   }
 }

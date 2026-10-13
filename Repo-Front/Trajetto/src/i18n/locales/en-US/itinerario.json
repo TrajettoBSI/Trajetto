@@ -59,5 +59,9 @@
     "lunch": "Lunch",
     "dinner": "Dinner",
     "near": "Suggestions near {{name}}"
+  },
+  "freeDay": {
+    "title": "Free day",
+    "text": "Nothing planned for this day. Take the chance to rest or explore the city at your own pace."
   }
 }
