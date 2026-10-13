@@ -5795,7 +5795,7 @@
         "address": "Foro Traiano, 85, Roma",
         "opening_hours": "We-Mo 09:30-18:30",
         "website": "https://www.palazzovalentini.it/",
-        "fee": "€ 12"
+        "fee": "yes"
       }
     },
     {
@@ -9232,7 +9232,7 @@
         ]
       },
       "properties": {
-        "name": "rilievo di Asclepio",
+        "name": "Rilievo di Asclepio",
         "category": "historic_ruins",
         "profiles": [
           "CULTURAL",
@@ -13251,7 +13251,7 @@
         ]
       },
       "properties": {
-        "name": "pan divino",
+        "name": "Pan Divino",
         "name_en": "Pan Divino",
         "category": "restaurant",
         "profiles": [
@@ -13329,7 +13329,7 @@
         ]
       },
       "properties": {
-        "name": "la fornace",
+        "name": "La Fornace",
         "name_en": "la fornace - restaurant and pizzeria",
         "category": "restaurant",
         "profiles": [
@@ -14946,7 +14946,7 @@
         ]
       },
       "properties": {
-        "name": "ristorante giapponese sushime",
+        "name": "Ristorante Giapponese Sushime",
         "category": "restaurant",
         "profiles": [
           "SOCIAL",
