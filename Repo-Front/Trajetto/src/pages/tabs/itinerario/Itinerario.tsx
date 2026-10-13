@@ -50,6 +50,7 @@ export default function Itinerario() {
     handleExportPDF,
     openSpotDetail,
     mealSuggestions,
+    retryMealSuggestions,
     openMealPlace,
     router,
     notePlace,
@@ -135,7 +136,7 @@ export default function Itinerario() {
                   return (
                     <React.Fragment key={`${place.name}-${place.orderIndex}`}>
                     {mealSuggestions.filter((m) => m.insertAt === idx).map((m) => (
-                      <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} />
+                      <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} onRetry={retryMealSuggestions} />
                     ))}
                     <TimelineRow
                       place={place}
@@ -157,7 +158,7 @@ export default function Itinerario() {
                   );
                 })}
                 {mealSuggestions.filter((m) => m.insertAt === sorted.length).map((m) => (
-                  <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} />
+                  <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} onRetry={retryMealSuggestions} />
                 ))}
               </View>
 

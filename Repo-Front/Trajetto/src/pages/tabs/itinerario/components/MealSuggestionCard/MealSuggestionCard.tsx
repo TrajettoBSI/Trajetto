@@ -16,13 +16,14 @@ const formatDistance = (meters?: number | null) =>
 type MealSuggestionCardProps = {
   suggestion: MealSuggestion;
   onSelect: (place: NearbyPlace) => void;
+  onRetry: () => void;
 };
 
-export default function MealSuggestionCard({ suggestion, onSelect }: MealSuggestionCardProps) {
+export default function MealSuggestionCard({ suggestion, onSelect, onRetry }: MealSuggestionCardProps) {
   const { t } = useTranslation('itinerario');
   const colors = useColors();
   const s = styles(colors);
-  const { meal, anchor, options } = suggestion;
+  const { meal, anchor, options, failed } = suggestion;
 
   if (options && options.length === 0) return null;
 
@@ -42,7 +43,12 @@ export default function MealSuggestionCard({ suggestion, onSelect }: MealSuggest
           </View>
         </View>
 
-        {options === null ? (
+        {failed ? (
+          <TouchableOpacity style={s.retry} onPress={onRetry} activeOpacity={0.7}>
+            <Text style={s.retryText}>{t('meals.loadError')}</Text>
+            <Text style={s.retryAction}>{t('meals.retry')}</Text>
+          </TouchableOpacity>
+        ) : options === null ? (
           <ActivityIndicator size="small" color={colors.primary} style={s.loading} />
         ) : (
           options.map((place) => (

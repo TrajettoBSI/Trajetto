@@ -23,6 +23,9 @@ export const styles = (colors: AppColors) =>
     title: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.gray900 },
     subtitle: { fontSize: 12, color: colors.gray500, marginTop: 1 },
     loading: { marginVertical: 8 },
+    retry: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 8 },
+    retryText: { flex: 1, fontSize: 13, color: colors.gray500 },
+    retryAction: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.primary },
     option: {
       flexDirection: 'row',
       alignItems: 'center',

@@ -58,7 +58,9 @@
     "breakfast": "Breakfast",
     "lunch": "Lunch",
     "dinner": "Dinner",
-    "near": "Suggestions near {{name}}"
+    "near": "Suggestions near {{name}}",
+    "loadError": "Could not load the suggestions.",
+    "retry": "Try again"
   },
   "freeDay": {
     "title": "Free day",

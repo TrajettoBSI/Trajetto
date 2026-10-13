@@ -58,7 +58,9 @@
     "breakfast": "Desayuno",
     "lunch": "Almuerzo",
     "dinner": "Cena",
-    "near": "Sugerencias cerca de {{name}}"
+    "near": "Sugerencias cerca de {{name}}",
+    "loadError": "No se pudieron cargar las sugerencias.",
+    "retry": "Reintentar"
   },
   "freeDay": {
     "title": "Día libre",
