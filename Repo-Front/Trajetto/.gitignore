@@ -23,3 +23,6 @@ app-example
 /android
 .DS_Store
 .claude
+
+# relatorio de cobertura do Jest
+coverage/
