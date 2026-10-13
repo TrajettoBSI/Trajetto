@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import MapView, { Marker, PROVIDER_DEFAULT } from 'react-native-maps';
 import { Ionicons } from '@expo/vector-icons';
 import StarRating from '@/components/Rating';
+import { categoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
 import RatingForm from '@/src/components/rating/RatingForm/RatingForm';
 import ReviewItem from '@/src/components/rating/ReviewItem/ReviewItem';
 import { useColors } from '@/src/theme';
@@ -61,14 +62,14 @@ export default function SpotDetail() {
             <Marker
               coordinate={{ latitude: spot.latitude, longitude: spot.longitude }}
               title={spot.name}
-              description={spot.category}
+              description={categoryLabel(spot.category)}
             />
           </MapView>
         </View>
 
         <View style={s.badgeRow}>
           <View style={s.badgePill}>
-            <Text style={s.badgePillText}>{spot.category}</Text>
+            <Text style={s.badgePillText}>{categoryLabel(spot.category)}</Text>
           </View>
           {spot.fee === 'no' && (
             <View style={s.badgePill}>
@@ -201,7 +202,7 @@ export default function SpotDetail() {
             <View style={s.badgeRow}>
               {spot.profiles.map((p, i) => (
                 <View key={i} style={s.badgePill}>
-                  <Text style={s.badgePillText}>{p}</Text>
+                  <Text style={s.badgePillText}>{profileLabel(p)}</Text>
                 </View>
               ))}
             </View>

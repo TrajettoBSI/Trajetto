@@ -1,3 +1,5 @@
+import i18n from '@/src/i18n';
+
 export function categoryIcon(category: string): string {
   const c = (category || '').toLowerCase();
   if (c.includes('museum')) return '🏛️';
@@ -37,4 +39,18 @@ export function formatCategoryLabel(category: string): string {
     .filter(Boolean)
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
     .join(' ');
+}
+
+const isRawKey = (value: string) => /^[a-z_]+$|^[A-Z_]+$/.test(value);
+
+const fallbackLabel = (value: string) => (isRawKey(value) ? formatCategoryLabel(value) : value);
+
+export function categoryLabel(category: string | null | undefined): string {
+  if (!category) return '';
+  return i18n.t(`places:categories.${category.toLowerCase()}`, { defaultValue: fallbackLabel(category) });
+}
+
+export function profileLabel(profile: string | null | undefined): string {
+  if (!profile) return '';
+  return i18n.t(`quiz:profiles.${profile.toUpperCase()}.nome`, { defaultValue: fallbackLabel(profile) });
 }

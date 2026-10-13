@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
+import { categoryLabel } from '@/src/helpers/categoryIcon';
 
 function categoryIcon(category: string): string {
     const c = (category || '').toLowerCase();
@@ -114,7 +115,7 @@ export function TicketCard({
                     {place.category ? (
                         <View style={[ticketStyles.badge, { backgroundColor: isPast ? '#e8eaed' : `${color}18` }]}>
                             <Text style={[ticketStyles.badgeText, { color: isPast ? '#9aa4b2' : color }]}>
-                                {place.category.charAt(0).toUpperCase() + place.category.slice(1)}
+                                {categoryLabel(place.category)}
                             </Text>
                         </View>
                     ) : null}

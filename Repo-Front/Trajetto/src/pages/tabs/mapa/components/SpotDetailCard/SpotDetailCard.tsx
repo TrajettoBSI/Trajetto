@@ -3,7 +3,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Place } from '@/services';
-import { categoryIcon } from '@/src/helpers/categoryIcon';
+import { categoryIcon, categoryLabel } from '@/src/helpers/categoryIcon';
 import { useColors } from '@/src/theme';
 import { formatCarTime, formatDistance, formatWalkTime, resolveTodayHours } from '../../mapaFormat';
 import { styles } from './styles';
@@ -26,7 +26,7 @@ export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDe
         <Text style={s.spotCardEmoji}>{categoryIcon(spot.category)}</Text>
         <View style={s.spotCardInfo}>
           <Text style={s.spotCardName} numberOfLines={1}>{spot.name}</Text>
-          <Text style={s.spotCardCategory}>{spot.category}</Text>
+          <Text style={s.spotCardCategory}>{categoryLabel(spot.category)}</Text>
         </View>
         <TouchableOpacity onPress={onClose} style={s.spotCardClose}>
           <Text style={s.spotCardCloseText}>✕</Text>

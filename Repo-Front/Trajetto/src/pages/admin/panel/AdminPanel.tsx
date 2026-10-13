@@ -14,6 +14,7 @@ import StatListRow from '@/src/components/charts/StatListRow/StatListRow';
 import HeroStatCard from '@/src/components/charts/HeroStatCard/HeroStatCard';
 import Section from '@/src/components/charts/Section/Section';
 import FilterPanel from '../dashboard/components/FilterPanel/FilterPanel';
+import { categoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
 
 export default function AdminPanel() {
   const { t } = useTranslation('admin');
@@ -167,7 +168,7 @@ export default function AdminPanel() {
 
                 <Section title={t('panel.travelerProfiles')}>
                   {profiles.length > 0
-                    ? <DonutLegend data={profiles} labelKey="profile" valueKey="count" />
+                    ? <DonutLegend data={profiles.map((p) => ({ ...p, profile: profileLabel(p.profile) }))} labelKey="profile" valueKey="count" />
                     : semDadosNoGrafico}
                 </Section>
 
@@ -234,7 +235,7 @@ export default function AdminPanel() {
 
             <Section title={t('panel.placesByCategory')}>
               {categories.length > 0
-                ? <DonutLegend data={categories} labelKey="category" valueKey="count" uppercase={false} bold={false} />
+                ? <DonutLegend data={categories.map((c) => ({ ...c, category: categoryLabel(c.category) }))} labelKey="category" valueKey="count" uppercase={false} bold={false} />
                 : semDadosNoGrafico}
             </Section>
 

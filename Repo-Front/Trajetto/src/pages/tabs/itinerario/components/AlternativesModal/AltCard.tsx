@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { Place } from '@/services';
 import { useColors } from '@/src/theme';
-import { categoryIcon } from '@/src/helpers/categoryIcon';
+import { categoryIcon, categoryLabel } from '@/src/helpers/categoryIcon';
 import { formatDistance } from './distance';
 import { styles } from './styles';
 
@@ -25,7 +25,7 @@ export default function AltCard({ alt, onPress, distanceMeters }: AltCardProps) 
         <View style={s.metaRow}>
           {alt.category ? (
             <View style={s.catBadge}>
-              <Text style={s.cat} numberOfLines={1}>{alt.category}</Text>
+              <Text style={s.cat} numberOfLines={1}>{categoryLabel(alt.category)}</Text>
             </View>
           ) : null}
           {distanceMeters !== null ? (

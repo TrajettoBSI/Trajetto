@@ -20,6 +20,7 @@ import ptBRRoteiros from './locales/pt-BR/roteiros.json';
 import ptBRItinerario from './locales/pt-BR/itinerario.json';
 import ptBRMapa from './locales/pt-BR/mapa.json';
 import ptBRFavorites from './locales/pt-BR/favorites.json';
+import ptBRPlaces from './locales/pt-BR/places.json';
 
 import enUSCommon from './locales/en-US/common.json';
 import enUSValidation from './locales/en-US/validation.json';
@@ -37,6 +38,7 @@ import enUSRoteiros from './locales/en-US/roteiros.json';
 import enUSItinerario from './locales/en-US/itinerario.json';
 import enUSMapa from './locales/en-US/mapa.json';
 import enUSFavorites from './locales/en-US/favorites.json';
+import enUSPlaces from './locales/en-US/places.json';
 
 import esESCommon from './locales/es-ES/common.json';
 import esESValidation from './locales/es-ES/validation.json';
@@ -54,6 +56,7 @@ import esESRoteiros from './locales/es-ES/roteiros.json';
 import esESItinerario from './locales/es-ES/itinerario.json';
 import esESMapa from './locales/es-ES/mapa.json';
 import esESFavorites from './locales/es-ES/favorites.json';
+import esESPlaces from './locales/es-ES/places.json';
 
 export const LANGUAGE_STORAGE_KEY = 'app_language';
 
@@ -63,21 +66,21 @@ const resources = {
     forgotPassword: ptBRForgotPassword, resetPassword: ptBRResetPassword, verifyEmail: ptBRVerifyEmail,
     quiz: ptBRQuiz, profile: ptBRProfile, explore: ptBRExplore, spotDetail: ptBRSpotDetail,
     admin: ptBRAdmin, roteiros: ptBRRoteiros, itinerario: ptBRItinerario, mapa: ptBRMapa,
-    favorites: ptBRFavorites,
+    favorites: ptBRFavorites, places: ptBRPlaces,
   },
   'en-US': {
     common: enUSCommon, validation: enUSValidation, login: enUSLogin, register: enUSRegister,
     forgotPassword: enUSForgotPassword, resetPassword: enUSResetPassword, verifyEmail: enUSVerifyEmail,
     quiz: enUSQuiz, profile: enUSProfile, explore: enUSExplore, spotDetail: enUSSpotDetail,
     admin: enUSAdmin, roteiros: enUSRoteiros, itinerario: enUSItinerario, mapa: enUSMapa,
-    favorites: enUSFavorites,
+    favorites: enUSFavorites, places: enUSPlaces,
   },
   'es-ES': {
     common: esESCommon, validation: esESValidation, login: esESLogin, register: esESRegister,
     forgotPassword: esESForgotPassword, resetPassword: esESResetPassword, verifyEmail: esESVerifyEmail,
     quiz: esESQuiz, profile: esESProfile, explore: esESExplore, spotDetail: esESSpotDetail,
     admin: esESAdmin, roteiros: esESRoteiros, itinerario: esESItinerario, mapa: esESMapa,
-    favorites: esESFavorites,
+    favorites: esESFavorites, places: esESPlaces,
   },
 };
 
