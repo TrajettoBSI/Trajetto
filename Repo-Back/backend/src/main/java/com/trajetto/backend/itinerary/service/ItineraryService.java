@@ -1,8 +1,10 @@
 package com.trajetto.backend.itinerary.service;
 
+import com.trajetto.backend.itinerary.data.BookingLinks;
 import com.trajetto.backend.itinerary.data.PlaceXid;
 import com.trajetto.backend.itinerary.data.RomePlacesLoader;
 import com.trajetto.backend.itinerary.data.RomePlacesLoader.RomePlace;
+import com.trajetto.backend.itinerary.dto.AddPlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
@@ -13,21 +15,27 @@ import com.trajetto.backend.itinerary.dto.RatingRequestDTO;
 import com.trajetto.backend.itinerary.dto.TravelPace;
 import com.trajetto.backend.itinerary.model.ItineraryModel;
 import com.trajetto.backend.itinerary.model.PlaceModel;
+import com.trajetto.backend.itinerary.schedule.OpeningHours;
+import com.trajetto.backend.itinerary.schedule.OpeningHours.Status;
 import com.trajetto.backend.exception.ForbiddenOperationException;
+import com.trajetto.backend.exception.InvalidRequestException;
 import com.trajetto.backend.exception.ResourceNotFoundException;
 import com.trajetto.backend.itinerary.repository.ItineraryRepository;
+import com.trajetto.backend.itinerary.repository.PlaceRepository;
 import com.trajetto.backend.user.model.UserModel;
 import com.trajetto.backend.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
 import java.util.regex.Pattern;
@@ -45,6 +53,15 @@ public class ItineraryService {
 
     private static final LocalTime EVENING = LocalTime.of(20, 0);
 
+    /** Tempo de visita que o roteiro reserva em cada parada; o lugar precisa estar aberto o tempo todo. */
+    static final Duration VISIT_LENGTH = Duration.ofHours(1);
+
+    /** Quantos lugares da lista geral entram na busca quando nenhum dos escolhidos esta aberto no horario. */
+    private static final int RESERVE_SIZE = 40;
+
+    private static final LocalTime LAST_ADDED_TIME = LocalTime.of(22, 0);
+    private static final Duration GAP_BETWEEN_STOPS = Duration.ofMinutes(90);
+
     @Autowired
     private ItineraryRepository itineraryRepository;
 
@@ -53,6 +70,9 @@ public class ItineraryService {
 
     @Autowired
     private RomePlacesLoader romePlacesLoader;
+
+    @Autowired
+    private PlaceRepository placeRepository;
 
     @Transactional
     public ItineraryModel createItineraryMock(Long userId) {
@@ -172,19 +192,23 @@ public class ItineraryService {
         for (int day = 0; day < days; day++) {
             double curLat = req.getStartLatitude();
             double curLng = req.getStartLongitude();
+            LocalDate date = startDate.plusDays(day);
             for (LocalTime time : schedule.get(day)) {
-                List<RomePlace> pool = !time.isBefore(EVENING) && !eveningPool.isEmpty() ? eveningPool : dayPool;
-                if (pool.isEmpty()) continue;
-                double finalCurLat = curLat;
-                double finalCurLng = curLng;
-                RomePlace nearest = pool.stream()
-                        .min(Comparator.comparingDouble(p ->
-                                haversineKm(finalCurLat, finalCurLng, p.latitude(), p.longitude())))
-                        .get();
-                ordered.add(new DayStop(nearest, startDate.plusDays(day), time));
-                pool.remove(nearest);
-                curLat = nearest.latitude();
-                curLng = nearest.longitude();
+                boolean evening = !time.isBefore(EVENING);
+                List<RomePlace> pool = evening && !eveningPool.isEmpty() ? eveningPool : dayPool;
+                // Um museu fechado as segundas nao entra na segunda: entre os ja escolhidos, vale o
+                // mais perto que esteja aberto no horario; se nenhum estiver, busca outro na lista geral.
+                Optional<RomePlace> next = nearestOpen(pool, curLat, curLng, date, time);
+                if (next.isPresent()) {
+                    pool.remove(next.get());
+                } else {
+                    next = nearestOpen(reserve(ranked, chosen, evening), curLat, curLng, date, time);
+                    next.ifPresent(place -> markChosen(place, chosen));
+                }
+                if (next.isEmpty()) continue;
+                ordered.add(new DayStop(next.get(), date, time));
+                curLat = next.get().latitude();
+                curLng = next.get().longitude();
             }
         }
 
@@ -231,11 +255,34 @@ public class ItineraryService {
         List<RomePlace> picked = new ArrayList<>();
         for (RomePlace place : ranked) {
             if (picked.size() == limit) break;
-            boolean repeated = !chosen.add(PlaceXid.of(place.name()))
-                    | (!place.wikidata().isBlank() && !chosen.add(place.wikidata()));
-            if (!repeated) picked.add(place);
+            if (markChosen(place, chosen)) picked.add(place);
         }
         return picked;
+    }
+
+    /** Marca o lugar como usado no roteiro; devolve {@code false} se ele (ou o mesmo lugar com outro nome) ja estava. */
+    private boolean markChosen(RomePlace place, Set<String> chosen) {
+        boolean repeated = chosen.contains(PlaceXid.of(place.name()))
+                || (!place.wikidata().isBlank() && chosen.contains(place.wikidata()));
+        if (repeated) return false;
+        chosen.add(PlaceXid.of(place.name()));
+        if (!place.wikidata().isBlank()) chosen.add(place.wikidata());
+        return true;
+    }
+
+    private List<RomePlace> reserve(List<RomePlace> ranked, Set<String> chosen, boolean evening) {
+        return ranked.stream()
+                .filter(place -> !evening || isEveningPlace(place))
+                .filter(place -> !chosen.contains(PlaceXid.of(place.name()))
+                        && (place.wikidata().isBlank() || !chosen.contains(place.wikidata())))
+                .limit(RESERVE_SIZE)
+                .toList();
+    }
+
+    private Optional<RomePlace> nearestOpen(List<RomePlace> pool, double lat, double lng, LocalDate date, LocalTime time) {
+        return pool.stream()
+                .filter(place -> OpeningHours.statusAt(place.openingHours(), date, time, VISIT_LENGTH) != Status.CLOSED)
+                .min(Comparator.comparingDouble(place -> haversineKm(lat, lng, place.latitude(), place.longitude())));
     }
 
     private boolean isEveningPlace(RomePlace place) {
@@ -358,6 +405,140 @@ public class ItineraryService {
         return toDTO(itineraryRepository.save(itinerary));
     }
 
+    /** Tira uma parada do roteiro; as que vem depois sobem uma posicao. */
+    @Transactional
+    public ItineraryResponseDTO removePlace(Long itineraryId, Integer orderIndex, Long userId) {
+        ItineraryModel itinerary = ownedItinerary(itineraryId, userId);
+        PlaceModel place = placeAt(itinerary, orderIndex);
+        itinerary.getPlaces().remove(place);
+        placeRepository.delete(place);
+        placeRepository.flush();
+        return toDTO(renumber(itinerary));
+    }
+
+    /**
+     * Troca a parada de lugar com a vizinha do mesmo dia. Os horarios ficam onde estavam (o das
+     * 9h continua sendo o das 9h); quem muda e o lugar visitado em cada horario.
+     */
+    @Transactional
+    public ItineraryResponseDTO movePlace(Long itineraryId, Integer orderIndex, String direction, Long userId) {
+        ItineraryModel itinerary = ownedItinerary(itineraryId, userId);
+        PlaceModel place = placeAt(itinerary, orderIndex);
+        int step;
+        if ("UP".equalsIgnoreCase(direction)) step = -1;
+        else if ("DOWN".equalsIgnoreCase(direction)) step = 1;
+        else throw new InvalidRequestException("A direção deve ser UP ou DOWN.");
+
+        List<PlaceModel> sameDay = byVisitOrder(itinerary).stream()
+                .filter(p -> visitDate(p).equals(visitDate(place)))
+                .toList();
+        int position = sameDay.indexOf(place);
+        int target = position + step;
+        if (target < 0 || target >= sameDay.size()) {
+            throw new InvalidRequestException("Esta parada já está no " + (step < 0 ? "início" : "fim") + " do dia.");
+        }
+        PlaceModel neighbor = sameDay.get(target);
+        LocalTime time = place.getEstimatedVisitTime();
+        place.setEstimatedVisitTime(neighbor.getEstimatedVisitTime());
+        neighbor.setEstimatedVisitTime(time);
+        return toDTO(renumber(itinerary));
+    }
+
+    /**
+     * Inclui um lugar escolhido pelo usuario (por exemplo, um favorito) num dia do roteiro. Sem
+     * horario informado, ele entra 1h30 depois da ultima parada do dia. Os dados que o catalogo
+     * tem e o pedido nao (horario de funcionamento, entrada paga) sao completados pelo catalogo.
+     */
+    @Transactional
+    public ItineraryResponseDTO addPlace(Long itineraryId, AddPlaceRequestDTO req, Long userId) {
+        ItineraryModel itinerary = ownedItinerary(itineraryId, userId);
+        LocalDate date = req.getVisitDate() != null ? req.getVisitDate() : itinerary.getStartDate();
+        LocalDate lastDay = itinerary.getEndDate() != null ? itinerary.getEndDate() : itinerary.getStartDate();
+        if (date.isBefore(itinerary.getStartDate()) || date.isAfter(lastDay)) {
+            throw new InvalidRequestException("O dia escolhido está fora do período do roteiro.");
+        }
+
+        LocalTime time = req.getEstimatedVisitTime() != null
+                ? LocalTime.parse(req.getEstimatedVisitTime())
+                : nextFreeTime(itinerary, date);
+
+        Optional<RomePlace> catalog = romePlacesLoader.getPlaces().stream()
+                .filter(rp -> PlaceXid.of(rp.name()).equals(req.getXid()) || rp.name().equalsIgnoreCase(req.getName()))
+                .findFirst();
+
+        PlaceModel place = new PlaceModel();
+        place.setXid(req.getXid() != null ? req.getXid() : PlaceXid.of(req.getName()));
+        place.setName(req.getName());
+        place.setAddress(req.getAddress());
+        place.setLatitude(req.getLatitude());
+        place.setLongitude(req.getLongitude());
+        place.setCategory(req.getCategory() != null ? req.getCategory()
+                : catalog.map(RomePlace::category).filter(c -> !c.isBlank()).orElse(null));
+        place.setOpeningHours(catalog.map(RomePlace::openingHours).filter(h -> !h.isBlank()).orElse(null));
+        place.setFee(catalog.map(RomePlace::fee).filter(f -> !f.isBlank()).orElse(null));
+        place.setVisitDate(date);
+        place.setEstimatedVisitTime(time);
+        place.setOrderIndex(itinerary.getPlaces().stream().mapToInt(PlaceModel::getOrderIndex).max().orElse(-1) + 1);
+        place.setItinerary(itinerary);
+        itinerary.getPlaces().add(place);
+        itineraryRepository.saveAndFlush(itinerary);
+        return toDTO(renumber(itinerary));
+    }
+
+    private LocalTime nextFreeTime(ItineraryModel itinerary, LocalDate date) {
+        LocalTime last = itinerary.getPlaces().stream()
+                .filter(p -> visitDate(p).equals(date) && p.getEstimatedVisitTime() != null)
+                .map(PlaceModel::getEstimatedVisitTime)
+                .max(Comparator.naturalOrder())
+                .orElse(null);
+        if (last == null) return LocalTime.of(10, 0);
+        LocalTime next = last.plus(GAP_BETWEEN_STOPS);
+        return next.isBefore(last) || next.isAfter(LAST_ADDED_TIME) ? LAST_ADDED_TIME : next;
+    }
+
+    private ItineraryModel ownedItinerary(Long itineraryId, Long userId) {
+        ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
+                .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
+        if (!itinerary.getUser().getId().equals(userId)) {
+            throw new ForbiddenOperationException("Este roteiro pertence a outro usuário.");
+        }
+        return itinerary;
+    }
+
+    private PlaceModel placeAt(ItineraryModel itinerary, Integer orderIndex) {
+        return itinerary.getPlaces().stream()
+                .filter(p -> p.getOrderIndex().equals(orderIndex))
+                .findFirst()
+                .orElseThrow(() -> new ResourceNotFoundException("Local de índice " + orderIndex + " não encontrado no roteiro."));
+    }
+
+    private LocalDate visitDate(PlaceModel place) {
+        return place.getVisitDate() != null ? place.getVisitDate() : place.getItinerary().getStartDate();
+    }
+
+    private List<PlaceModel> byVisitOrder(ItineraryModel itinerary) {
+        return itinerary.getPlaces().stream()
+                .sorted(Comparator.comparing(this::visitDate)
+                        .thenComparing(PlaceModel::getEstimatedVisitTime, Comparator.nullsLast(Comparator.naturalOrder()))
+                        .thenComparing(PlaceModel::getOrderIndex))
+                .toList();
+    }
+
+    /**
+     * Refaz as posicoes 0..n-1 na ordem de visita (dia, depois horario). O banco nao aceita duas
+     * paradas com a mesma posicao no roteiro, entao todas passam antes por posicoes livres.
+     */
+    private ItineraryModel renumber(ItineraryModel itinerary) {
+        List<PlaceModel> ordered = byVisitOrder(itinerary);
+        int offset = ordered.stream().mapToInt(PlaceModel::getOrderIndex).max().orElse(0) + 1;
+        ordered.forEach(p -> p.setOrderIndex(p.getOrderIndex() + offset));
+        itineraryRepository.saveAndFlush(itinerary);
+        for (int i = 0; i < ordered.size(); i++) ordered.get(i).setOrderIndex(i);
+        ItineraryModel saved = itineraryRepository.saveAndFlush(itinerary);
+        saved.setPlaces(new ArrayList<>(ordered));
+        return saved;
+    }
+
     public void deleteItinerary(Long itineraryId, Long userId) {
         ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
                 .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
@@ -400,6 +581,16 @@ public class ItineraryService {
         dto.setFee(model.getFee());
         dto.setNote(model.getNote());
         dto.setVisitDate(model.getVisitDate());
+        dto.setOpenAtVisit(openAtVisit(model));
+        dto.setBookingUrl(BookingLinks.forPlace(model.getName()));
         return dto;
+    }
+
+    private Boolean openAtVisit(PlaceModel model) {
+        if (model.getEstimatedVisitTime() == null) return null;
+        LocalDate date = model.getVisitDate() != null ? model.getVisitDate() : model.getItinerary().getStartDate();
+        if (date == null) return null;
+        Status status = OpeningHours.statusAt(model.getOpeningHours(), date, model.getEstimatedVisitTime(), VISIT_LENGTH);
+        return status == Status.UNKNOWN ? null : status == Status.OPEN;
     }
 }

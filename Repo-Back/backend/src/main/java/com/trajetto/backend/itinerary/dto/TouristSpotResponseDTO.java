@@ -7,8 +7,9 @@ import java.util.List;
  *
  * <p>Os campos sao os mesmos que {@code GET /places} ja devolvia -- inclusive
  * texto vazio, e nao {@code null}, para informacao que o ponto nao tem --, entao
- * o aplicativo nao precisa mudar. O unico acrescimo e {@code distanceMeters},
- * calculado pelo banco quando a busca informa um ponto de referencia.</p>
+ * o aplicativo nao precisa mudar. Os acrescimos sao {@code distanceMeters},
+ * calculado pelo banco quando a busca informa um ponto de referencia, e
+ * {@code bookingUrl}, o site oficial de reserva das atracoes que exigem uma.</p>
  */
 public record TouristSpotResponseDTO(
         String name,
@@ -24,5 +25,6 @@ public record TouristSpotResponseDTO(
         String wikidata,
         String wikipedia,
         String wheelchair,
-        Double distanceMeters
+        Double distanceMeters,
+        String bookingUrl
 ) {}

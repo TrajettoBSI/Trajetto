@@ -20,4 +20,10 @@ public class PlaceResponseDTO {
     private String category;
     private String fee;
     private String note;
+
+    /** Aberto no horario marcado para a visita? {@code null} quando o horario do lugar nao permite afirmar. */
+    private Boolean openAtVisit;
+
+    /** Site oficial de reserva, quando a atracao exige reservar antes. */
+    private String bookingUrl;
 }

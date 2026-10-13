@@ -1,5 +1,6 @@
 package com.trajetto.backend.itinerary.controller;
 
+import com.trajetto.backend.itinerary.dto.AddPlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
@@ -115,6 +116,37 @@ public class ItineraryController {
             @PathVariable Integer orderIndex,
             @Valid @RequestBody NoteRequestDTO req) {
         return ResponseEntity.ok(itineraryService.updateNote(itineraryId, orderIndex, requireAuthenticated(userToken).getId(), req));
+    }
+
+    @Operation(summary = "Inclui um lugar (por exemplo, um favorito) num dia do roteiro")
+    @SecurityRequirement(name = "AuthServer")
+    @PostMapping("/{itineraryId}/place")
+    public ResponseEntity<ItineraryResponseDTO> addPlace(
+            @AuthenticationPrincipal UserToken userToken,
+            @PathVariable Long itineraryId,
+            @Valid @RequestBody AddPlaceRequestDTO req) {
+        return ResponseEntity.ok(itineraryService.addPlace(itineraryId, req, requireAuthenticated(userToken).getId()));
+    }
+
+    @Operation(summary = "Tira uma parada do roteiro")
+    @SecurityRequirement(name = "AuthServer")
+    @DeleteMapping("/{itineraryId}/place/{orderIndex}")
+    public ResponseEntity<ItineraryResponseDTO> removePlace(
+            @AuthenticationPrincipal UserToken userToken,
+            @PathVariable Long itineraryId,
+            @PathVariable Integer orderIndex) {
+        return ResponseEntity.ok(itineraryService.removePlace(itineraryId, orderIndex, requireAuthenticated(userToken).getId()));
+    }
+
+    @Operation(summary = "Troca a parada de horario com a anterior (UP) ou a seguinte (DOWN) do mesmo dia")
+    @SecurityRequirement(name = "AuthServer")
+    @PatchMapping("/{itineraryId}/place/{orderIndex}/move")
+    public ResponseEntity<ItineraryResponseDTO> movePlace(
+            @AuthenticationPrincipal UserToken userToken,
+            @PathVariable Long itineraryId,
+            @PathVariable Integer orderIndex,
+            @RequestParam String direction) {
+        return ResponseEntity.ok(itineraryService.movePlace(itineraryId, orderIndex, direction, requireAuthenticated(userToken).getId()));
     }
 
     @DeleteMapping("/{itineraryId}/user/{userId}")
