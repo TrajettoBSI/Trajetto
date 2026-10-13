@@ -6,6 +6,7 @@ import MapView, { Marker } from 'react-native-maps';
 import CustomInput from '@/components/CustomInput';
 import { useColors } from '@/src/theme';
 import NoItineraryEmptyState from '@/src/pages/tabs/shared/components/NoItineraryEmptyState/NoItineraryEmptyState';
+import DaySelector from '@/src/pages/tabs/shared/components/DaySelector/DaySelector';
 import { AsyncBoundary } from '@/src/components/feedback';
 import { useMapa } from './hooks/useMapa';
 import { styles } from './styles/styles';
@@ -32,6 +33,9 @@ export default function Mapa() {
     region,
     segments,
     points,
+    days,
+    currentDay,
+    selectDay,
     mapRef,
     pulseStyle,
     firstUpcomingIdx,
@@ -168,6 +172,13 @@ export default function Mapa() {
                   </TouchableOpacity>
                 </View>
               }
+            />
+
+            <DaySelector
+              days={days}
+              selectedDate={currentDay?.date ?? null}
+              onSelect={selectDay}
+              style={s.daySelector}
             />
 
             {currentSegIdx >= 0 && firstUpcomingIdx < points.length && (

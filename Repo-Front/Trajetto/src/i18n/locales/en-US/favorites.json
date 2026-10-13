@@ -1,0 +1,9 @@
+{
+  "backLabel": "Profile",
+  "title": "My favorites",
+  "subtitle": "The places you saved to visit",
+  "loadingText": "Loading your favorites...",
+  "emptyTitle": "No favorites yet",
+  "emptyText": "Tap the heart on a place's page to save it here.",
+  "emptyAction": "Explore places"
+}

@@ -1,0 +1,32 @@
+{
+  "categories": {
+    "attraction": "Atração",
+    "restaurant": "Restaurante",
+    "museum": "Museu",
+    "historic_archaeological_site": "Sítio arqueológico",
+    "park": "Parque",
+    "cafe": "Café",
+    "artwork": "Obra de arte",
+    "ice_cream": "Sorveteria",
+    "historic_church": "Igreja histórica",
+    "viewpoint": "Mirante",
+    "historic_monument": "Monumento histórico",
+    "pub": "Pub",
+    "marketplace": "Mercado",
+    "garden": "Jardim",
+    "historic_ruins": "Ruínas",
+    "bar": "Bar",
+    "gallery": "Galeria",
+    "historic_fort": "Forte histórico",
+    "historic_castle": "Castelo",
+    "historic_citywalls": "Muralhas da cidade",
+    "theme_park": "Parque temático",
+    "historic_temple": "Templo histórico",
+    "historic_aqueduct": "Aqueduto",
+    "nature_reserve": "Reserva natural",
+    "zoo": "Zoológico",
+    "historic_villa": "Vila histórica",
+    "historic_tower": "Torre histórica",
+    "historic_monastery": "Mosteiro"
+  }
+}

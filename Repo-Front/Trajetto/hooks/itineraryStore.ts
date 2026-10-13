@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { ItineraryService } from '../services';
+import { ItineraryService, TravelPace } from '../services';
 import { getErrorMessage } from '../utils/apiError';
 
 export interface Places {
@@ -7,11 +7,14 @@ export interface Places {
   address: string;
   latitude: number;
   longitude: number;
+  visitDate?: string | null;
   estimatedVisitTime: string;
   orderIndex: number;
   openingHours?: string | null;
   category?: string | null;
   fee?: string | null;
+  xid?: string | null;
+  note?: string | null;
 }
 
 export interface Itinerary {
@@ -34,17 +37,20 @@ type ItineraryStore = {
   error: string | null;
   highlightedPlaceIndex: number | null;
   focusedMapPlaceIndex: number | null;
+  selectedDay: string | null;
   fetchItinerary: (userId: number) => Promise<void>;
   fetchAllItineraries: (userId: number) => Promise<void>;
-  generateItinerary: (userId: number, startLat: number, startLng: number) => Promise<Itinerary>;
+  generateItinerary: (userId: number, startLat: number, startLng: number, startDate: string, days: number, pace: TravelPace) => Promise<Itinerary>;
   acceptGeneratedItinerary: (itinerary: Itinerary) => void;
   activateItinerary: (itineraryId: number, userId: number) => Promise<void>;
   deleteItinerary: (itineraryId: number, userId: number) => Promise<void>;
   rateItinerary: (itineraryId: number, rating: number | null, ratingDescription: string | null) => Promise<void>;
   updateDate: (itineraryId: number, date: string | null) => Promise<void>;
   replacePlace: (orderIndex: number, newPlace: Places) => Promise<void>;
+  updateNote: (orderIndex: number, note: string | null) => Promise<void>;
   setHighlightedPlace: (index: number | null) => void;
   setFocusedMapPlace: (index: number | null) => void;
+  setSelectedDay: (date: string | null) => void;
 };
 
 export const useItineraryStore = create<ItineraryStore>((set, get) => ({
@@ -54,6 +60,7 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
   error: null,
   highlightedPlaceIndex: null,
   focusedMapPlaceIndex: null,
+  selectedDay: null,
 
   fetchItinerary: async (userId: number) => {
     try {
@@ -78,20 +85,21 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
     }
   },
 
-  generateItinerary: async (userId: number, startLat: number, startLng: number) => {
-    const data = await ItineraryService.generateItinerary(userId, startLat, startLng);
+  generateItinerary: async (userId, startLat, startLng, startDate, days, pace) => {
+    const data = await ItineraryService.generateItinerary(userId, startLat, startLng, startDate, days, pace);
     return data as Itinerary;
   },
 
   acceptGeneratedItinerary: (itinerary: Itinerary) => {
     const prev = get().itineraries.map(i => ({ ...i, active: false }));
-    set({ itinerary, itineraries: [itinerary, ...prev] });
+    set({ itinerary, itineraries: [itinerary, ...prev], selectedDay: null });
   },
 
   activateItinerary: async (itineraryId: number, userId: number) => {
     const activated = await ItineraryService.activateItinerary(itineraryId, userId);
     set(state => ({
       itinerary: activated,
+      selectedDay: null,
       itineraries: state.itineraries.map(i => ({ ...i, active: i.id === itineraryId })),
     }));
   },
@@ -134,6 +142,17 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
     }));
   },
 
+  updateNote: async (orderIndex, note) => {
+    const { itinerary } = get();
+    if (!itinerary) return;
+    const updated = await ItineraryService.updateNote(itinerary.id, orderIndex, note);
+    set(state => ({
+      itinerary: state.itinerary?.id === updated.id ? updated : state.itinerary,
+      itineraries: state.itineraries.map(i => i.id === updated.id ? updated : i),
+    }));
+  },
+
   setHighlightedPlace: (index) => set({ highlightedPlaceIndex: index }),
   setFocusedMapPlace: (index) => set({ focusedMapPlaceIndex: index }),
+  setSelectedDay: (date) => set({ selectedDay: date }),
 }));

@@ -20,6 +20,7 @@ export const styles = (colors: AppColors) =>
     headerDates: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.white, marginBottom: 4 },
     headerHoursRow: { flexDirection: 'row', alignItems: 'center', gap: 5, marginBottom: 14 },
     headerHours: { fontSize: 14, color: colors.onPrimaryFaint60 },
+    statsRow: { flexDirection: 'row', gap: 32 },
     stat: { alignItems: 'flex-start' },
     statValue: { fontSize: 22, fontFamily: 'Inter-Bold', color: colors.white, marginBottom: 2 },
     statLabel: { fontSize: 12, color: colors.onPrimaryFaint60 },

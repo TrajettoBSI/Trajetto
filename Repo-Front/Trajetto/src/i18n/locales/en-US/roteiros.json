@@ -30,7 +30,8 @@
     "progressPercent": "{{percent}}%",
     "progressDone": "done",
     "openButton": "Open Itinerary",
-    "deleteButton": "Delete"
+    "deleteButton": "Delete",
+    "dayOf": "Day {{number}} of {{total}}"
   },
   "inactiveRow": {
     "stopsAndDate": "{{stops}} stops · {{date}}",
@@ -83,8 +84,28 @@
     "configureTitle": "New Itinerary",
     "generatedTitle": "Generated Itinerary",
     "destinyLabel": "DESTINY",
+    "startDateLabel": "START DATE",
+    "pickStartDate": "Choose start date",
     "durationLabel": "DURATION",
-    "durationValue": "1 day",
+    "daysCount_one": "{{count}} day",
+    "daysCount_other": "{{count}} days",
+    "lessDays": "One day less",
+    "moreDays": "One more day",
+    "paceLabel": "TRAVEL PACE",
+    "paces": {
+      "INTENSO": {
+        "title": "Every day packed",
+        "description": "Up to 7 stops a day, from 9am to 9pm"
+      },
+      "EQUILIBRADO": {
+        "title": "Some days packed",
+        "description": "Alternates packed days with 4-stop days and a free morning or afternoon"
+      },
+      "LEVE": {
+        "title": "Light, no rush",
+        "description": "Just a few stops a day, starting at 10am"
+      }
+    },
     "originLabel": "STARTING POINT",
     "originHint": "Enter your hotel or address in Rome",
     "originPlaceholder": "Ex: Via Veneto 45, Rome",
@@ -92,7 +113,7 @@
     "generateButton": "Generate Itinerary",
     "loadingText": "Creating your itinerary...",
     "summaryTitle": "Rome, Italy",
-    "summaryMeta": "{{stops}} stops · {{origin}}",
+    "summaryMeta": "{{stops}} stops · {{days}} · {{origin}}",
     "regenerate": "Regenerate",
     "accept": "Accept",
     "genericError": "Could not generate the itinerary. Try again.",

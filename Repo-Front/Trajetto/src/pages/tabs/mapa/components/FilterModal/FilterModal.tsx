@@ -2,7 +2,7 @@ import React from 'react';
 import { ScrollView, Switch, Text, TouchableOpacity, View, Modal } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useTranslation } from 'react-i18next';
-import { categoryIcon } from '@/src/helpers/categoryIcon';
+import { categoryIcon, categoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
 import { useColors } from '@/src/theme';
 import { DISTANCE_OPTIONS } from '../../data/distanceOptions';
 import { formatDistance } from '../../mapaFormat';
@@ -73,7 +73,7 @@ export default function FilterModal({
                     onPress={() => setTempCategory(cat)}
                   >
                     <Text style={[s.filterChipText, tempCategory === cat && s.filterChipTextActive]}>
-                      {cat ? `${categoryIcon(cat)} ${cat}` : t('mapa:filterModal.allCategories')}
+                      {cat ? `${categoryIcon(cat)} ${categoryLabel(cat)}` : t('mapa:filterModal.allCategories')}
                     </Text>
                   </TouchableOpacity>
                 ))}
@@ -97,7 +97,7 @@ export default function FilterModal({
                     onPress={() => setTempProfile(p)}
                   >
                     <Text style={[s.filterChipText, tempProfile === p && s.filterChipTextActive]}>
-                      {p || t('mapa:filterModal.allProfiles')}
+                      {p ? profileLabel(p) : t('mapa:filterModal.allProfiles')}
                     </Text>
                   </TouchableOpacity>
                 ))}

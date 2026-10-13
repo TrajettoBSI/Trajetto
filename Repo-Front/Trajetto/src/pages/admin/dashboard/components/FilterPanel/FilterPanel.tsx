@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { FilterOptions } from '@/services';
 import { useColors } from '@/src/theme';
 import OptionPickerModal, { PickerOption } from '@/src/components/OptionPickerModal/OptionPickerModal';
+import { categoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
 import { DashboardFilter, PERIODOS, PeriodoId } from '../../dashboardFilter';
 import { styles } from './styles';
 
@@ -61,9 +62,13 @@ export default function FilterPanel({
   const todas = t('dashboard.filters.allFemale');
 
   /** A opção que desfaz a escolha aparece sempre no topo de cada lista. */
-  const comOpcaoTodos = (valores: string[], rotuloVazio: string): PickerOption[] => [
+  const comOpcaoTodos = (
+    valores: string[],
+    rotuloVazio: string,
+    rotulo: (valor: string) => string = (valor) => valor,
+  ): PickerOption[] => [
     { value: null, label: rotuloVazio },
-    ...valores.map((valor) => ({ value: valor, label: valor })),
+    ...valores.map((valor) => ({ value: valor, label: rotulo(valor) })),
   ];
 
   const campos: Record<CampoId, CampoDoFiltro> = {
@@ -78,10 +83,10 @@ export default function FilterPanel({
     },
     profile: {
       icone: 'person-outline',
-      valor: filtro.profile ?? todos,
+      valor: filtro.profile ? profileLabel(filtro.profile) : todos,
       ativo: filtro.profile !== null,
       titulo: t('dashboard.filters.selectProfile'),
-      opcoes: comOpcaoTodos(opcoes.profiles, todos),
+      opcoes: comOpcaoTodos(opcoes.profiles, todos, profileLabel),
       escolhido: filtro.profile,
       escolher: (valor: string | null) => onAlterar({ profile: valor }),
     },
@@ -96,10 +101,10 @@ export default function FilterPanel({
     },
     category: {
       icone: 'pricetag-outline',
-      valor: filtro.category ?? todas,
+      valor: filtro.category ? categoryLabel(filtro.category) : todas,
       ativo: filtro.category !== null,
       titulo: t('dashboard.filters.selectCategory'),
-      opcoes: comOpcaoTodos(opcoes.categories, todas),
+      opcoes: comOpcaoTodos(opcoes.categories, todas, categoryLabel),
       escolhido: filtro.category,
       escolher: (valor: string | null) => onAlterar({ category: valor }),
     },

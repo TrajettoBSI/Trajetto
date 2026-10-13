@@ -1,13 +1,16 @@
 package com.trajetto.backend.itinerary.service;
 
+import com.trajetto.backend.itinerary.data.PlaceXid;
 import com.trajetto.backend.itinerary.data.RomePlacesLoader;
 import com.trajetto.backend.itinerary.data.RomePlacesLoader.RomePlace;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
+import com.trajetto.backend.itinerary.dto.NoteRequestDTO;
 import com.trajetto.backend.itinerary.dto.PlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.PlaceResponseDTO;
 import com.trajetto.backend.itinerary.dto.RatingRequestDTO;
+import com.trajetto.backend.itinerary.dto.TravelPace;
 import com.trajetto.backend.itinerary.model.ItineraryModel;
 import com.trajetto.backend.itinerary.model.PlaceModel;
 import com.trajetto.backend.exception.ForbiddenOperationException;
@@ -24,11 +27,23 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 @Service
 public class ItineraryService {
+
+    private static final Set<String> MEAL_CATEGORIES = Set.of("restaurant", "cafe", "ice_cream");
+
+    private static final Set<String> NOT_FOR_EVENING = Set.of("historic_archaeological_site", "historic_ruins", "marketplace");
+
+    private static final Pattern EVENING_NAME = Pattern.compile("^(Piazza|Piazzale|Fontana|Scalinata|Ponte|Campo)\\b");
+
+    private static final LocalTime EVENING = LocalTime.of(20, 0);
 
     @Autowired
     private ItineraryRepository itineraryRepository;
@@ -123,41 +138,56 @@ public class ItineraryService {
 
         Random random = new Random();
 
-        // Score each POI
         record ScoredPlace(RomePlace place, double score) {}
 
-        List<ScoredPlace> scored = romePlacesLoader.getPlaces().stream().map(place -> {
-            double profileScore = hasProfile && place.profiles().contains(profile) ? 3.0 : 0.0;
-            double randomScore = random.nextDouble() * 2.0;
+        List<RomePlace> candidates = romePlacesLoader.getPlaces().stream()
+                .filter(place -> !MEAL_CATEGORIES.contains(place.category()))
+                .toList();
+        double maxPopularity = Math.log1p(candidates.stream().mapToInt(RomePlace::popularity).max().orElse(0));
+
+        List<ScoredPlace> scored = candidates.stream().map(place -> {
+            double popularityScore = maxPopularity == 0 ? 0 : 6.0 * Math.log1p(place.popularity()) / maxPopularity;
+            double profileScore = hasProfile && place.profiles().contains(profile) ? 2.0 : 0.0;
+            double randomScore = random.nextDouble() * 0.5;
             double distKm = haversineKm(req.getStartLatitude(), req.getStartLongitude(),
                     place.latitude(), place.longitude());
-            double score = profileScore + randomScore - (distKm * 0.15);
+            double score = popularityScore + profileScore + randomScore - (distKm * 0.15);
             return new ScoredPlace(place, score);
         }).sorted(Comparator.comparingDouble(ScoredPlace::score).reversed())
                 .collect(Collectors.toList());
 
-        // Pick top 7
-        List<RomePlace> selected = scored.stream()
-                .limit(7)
-                .map(ScoredPlace::place)
-                .collect(Collectors.toList());
+        int days = req.getDays() == null ? 1 : req.getDays();
+        LocalDate startDate = req.getStartDate() == null ? LocalDate.now() : req.getStartDate();
 
-        // Order selected by nearest-neighbor from start
-        List<RomePlace> ordered = new ArrayList<>();
-        double curLat = req.getStartLatitude();
-        double curLng = req.getStartLongitude();
-        List<RomePlace> remaining = new ArrayList<>(selected);
-        while (!remaining.isEmpty()) {
-            double finalCurLat = curLat;
-            double finalCurLng = curLng;
-            RomePlace nearest = remaining.stream()
-                    .min(Comparator.comparingDouble(p ->
-                            haversineKm(finalCurLat, finalCurLng, p.latitude(), p.longitude())))
-                    .get();
-            ordered.add(nearest);
-            remaining.remove(nearest);
-            curLat = nearest.latitude();
-            curLng = nearest.longitude();
+        TravelPace pace = req.getPace() == null ? TravelPace.INTENSO : req.getPace();
+        List<List<LocalTime>> schedule = IntStream.range(0, days).mapToObj(pace::visitTimes).toList();
+        long eveningSlots = schedule.stream().flatMap(List::stream).filter(t -> !t.isBefore(EVENING)).count();
+        long totalSlots = schedule.stream().mapToLong(List::size).sum();
+
+        List<RomePlace> ranked = scored.stream().map(ScoredPlace::place).toList();
+        Set<String> chosen = new HashSet<>();
+        List<RomePlace> eveningPool = pick(ranked.stream().filter(this::isEveningPlace).toList(), eveningSlots, chosen);
+        List<RomePlace> dayPool = pick(ranked, totalSlots - eveningSlots, chosen);
+
+        record DayStop(RomePlace place, LocalDate date, LocalTime time) {}
+        List<DayStop> ordered = new ArrayList<>();
+        for (int day = 0; day < days; day++) {
+            double curLat = req.getStartLatitude();
+            double curLng = req.getStartLongitude();
+            for (LocalTime time : schedule.get(day)) {
+                List<RomePlace> pool = !time.isBefore(EVENING) && !eveningPool.isEmpty() ? eveningPool : dayPool;
+                if (pool.isEmpty()) continue;
+                double finalCurLat = curLat;
+                double finalCurLng = curLng;
+                RomePlace nearest = pool.stream()
+                        .min(Comparator.comparingDouble(p ->
+                                haversineKm(finalCurLat, finalCurLng, p.latitude(), p.longitude())))
+                        .get();
+                ordered.add(new DayStop(nearest, startDate.plusDays(day), time));
+                pool.remove(nearest);
+                curLat = nearest.latitude();
+                curLng = nearest.longitude();
+            }
         }
 
         // Deactivate current active itineraries
@@ -166,16 +196,9 @@ public class ItineraryService {
             itineraryRepository.save(old);
         });
 
-        // Build and save new itinerary
-        LocalTime[] times = {
-                LocalTime.of(9, 0), LocalTime.of(10, 30), LocalTime.of(12, 0),
-                LocalTime.of(14, 0), LocalTime.of(15, 30), LocalTime.of(17, 0),
-                LocalTime.of(21, 0)
-        };
-
         ItineraryModel itinerary = new ItineraryModel();
-        itinerary.setStartDate(LocalDate.now());
-        itinerary.setEndDate(LocalDate.now());
+        itinerary.setStartDate(startDate);
+        itinerary.setEndDate(startDate.plusDays(days - 1L));
         itinerary.setActive(true);
         itinerary.setUser(user);
         itinerary.setOriginLatitude(req.getStartLatitude());
@@ -183,14 +206,15 @@ public class ItineraryService {
 
         List<PlaceModel> places = new ArrayList<>();
         for (int i = 0; i < ordered.size(); i++) {
-            RomePlace rp = ordered.get(i);
+            RomePlace rp = ordered.get(i).place();
             PlaceModel p = new PlaceModel();
-            p.setXid("osm_" + rp.name().toLowerCase().replaceAll("[^a-z0-9]", "_"));
+            p.setXid(PlaceXid.of(rp.name()));
             p.setName(rp.name());
             p.setAddress(rp.address());
             p.setLatitude(rp.latitude());
             p.setLongitude(rp.longitude());
-            p.setEstimatedVisitTime(times[i]);
+            p.setVisitDate(ordered.get(i).date());
+            p.setEstimatedVisitTime(ordered.get(i).time());
             p.setOrderIndex(i);
             p.setOpeningHours(rp.openingHours().isBlank() ? null : rp.openingHours());
             p.setCategory(rp.category().isBlank() ? null : rp.category());
@@ -201,6 +225,22 @@ public class ItineraryService {
         itinerary.setPlaces(places);
 
         return toDTO(itineraryRepository.save(itinerary));
+    }
+
+    private List<RomePlace> pick(List<RomePlace> ranked, long limit, Set<String> chosen) {
+        List<RomePlace> picked = new ArrayList<>();
+        for (RomePlace place : ranked) {
+            if (picked.size() == limit) break;
+            boolean repeated = !chosen.add(PlaceXid.of(place.name()))
+                    | (!place.wikidata().isBlank() && !chosen.add(place.wikidata()));
+            if (!repeated) picked.add(place);
+        }
+        return picked;
+    }
+
+    private boolean isEveningPlace(RomePlace place) {
+        return !NOT_FOR_EVENING.contains(place.category())
+                && ("viewpoint".equals(place.category()) || EVENING_NAME.matcher(place.name()).find());
     }
 
     private double haversineKm(double lat1, double lon1, double lat2, double lon2) {
@@ -291,6 +331,24 @@ public class ItineraryService {
         return toDTO(itineraryRepository.save(itinerary));
     }
 
+    public ItineraryResponseDTO updateNote(Long itineraryId, Integer orderIndex, Long userId, NoteRequestDTO req) {
+        ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
+                .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
+        if (!itinerary.getUser().getId().equals(userId)) {
+            throw new ForbiddenOperationException("Este roteiro pertence a outro usuário.");
+        }
+
+        PlaceModel place = itinerary.getPlaces().stream()
+                .filter(p -> p.getOrderIndex().equals(orderIndex))
+                .findFirst()
+                .orElseThrow(() -> new ResourceNotFoundException("Local de índice " + orderIndex + " não encontrado no roteiro."));
+
+        String note = req.getNote();
+        place.setNote(note == null || note.isBlank() ? null : note.trim());
+
+        return toDTO(itineraryRepository.save(itinerary));
+    }
+
     public void deleteItinerary(Long itineraryId, Long userId) {
         ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
                 .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
@@ -331,6 +389,8 @@ public class ItineraryService {
         dto.setOpeningHours(model.getOpeningHours());
         dto.setCategory(model.getCategory());
         dto.setFee(model.getFee());
+        dto.setNote(model.getNote());
+        dto.setVisitDate(model.getVisitDate());
         return dto;
     }
 }

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { PlacesFilter } from '@/services';
 import { useColors } from '@/src/theme';
 import { formatDistance } from '../../mapaFormat';
+import { categoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
 import { styles } from './styles';
 
 type ActiveFilterChipsProps = {
@@ -19,7 +20,7 @@ export default function ActiveFilterChips({ activeFilter, onRemove }: ActiveFilt
     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={s.chipsRow} keyboardShouldPersistTaps="handled">
       {activeFilter.category && (
         <View style={s.chip}>
-          <Text style={s.chipText}>📍 {activeFilter.category}</Text>
+          <Text style={s.chipText}>📍 {categoryLabel(activeFilter.category)}</Text>
           <TouchableOpacity onPress={() => onRemove({ category: undefined })}>
             <Text style={s.chipClose}>✕</Text>
           </TouchableOpacity>
@@ -43,7 +44,7 @@ export default function ActiveFilterChips({ activeFilter, onRemove }: ActiveFilt
       )}
       {activeFilter.profile && (
         <View style={s.chip}>
-          <Text style={s.chipText}>👤 {activeFilter.profile}</Text>
+          <Text style={s.chipText}>👤 {profileLabel(activeFilter.profile)}</Text>
           <TouchableOpacity onPress={() => onRemove({ profile: undefined })}>
             <Text style={s.chipClose}>✕</Text>
           </TouchableOpacity>

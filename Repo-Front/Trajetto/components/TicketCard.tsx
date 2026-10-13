@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
+import { categoryLabel } from '@/src/helpers/categoryIcon';
 
 function categoryIcon(category: string): string {
     const c = (category || '').toLowerCase();
@@ -31,6 +32,7 @@ interface TicketCardProps {
         fee?: string | null;
         openingHours?: string | null;
         orderIndex: number;
+        note?: string | null;
     };
     idx: number;
     color: string;
@@ -40,10 +42,11 @@ interface TicketCardProps {
     onPress: () => void;
     onInfoPress: () => void;
     onSwitchPress: () => void;
+    onNotePress: () => void;
 }
 
 export function TicketCard({
-    place, idx, color, isPast, isHighlighted, isLast, onPress, onInfoPress, onSwitchPress,
+    place, idx, color, isPast, isHighlighted, isLast, onPress, onInfoPress, onSwitchPress, onNotePress,
 }: TicketCardProps) {
     const { t } = useTranslation('itinerario');
     return (
@@ -112,7 +115,7 @@ export function TicketCard({
                     {place.category ? (
                         <View style={[ticketStyles.badge, { backgroundColor: isPast ? '#e8eaed' : `${color}18` }]}>
                             <Text style={[ticketStyles.badgeText, { color: isPast ? '#9aa4b2' : color }]}>
-                                {place.category.charAt(0).toUpperCase() + place.category.slice(1)}
+                                {categoryLabel(place.category)}
                             </Text>
                         </View>
                     ) : null}
@@ -126,6 +129,25 @@ export function TicketCard({
                         </View>
                     ) : null}
                 </View>
+
+                <TouchableOpacity
+                    style={[ticketStyles.noteBox, place.note ? ticketStyles.noteBoxFilled : null]}
+                    onPress={onNotePress}
+                    accessibilityRole="button"
+                    accessibilityLabel={place.note ? t('ticketCard.editNote') : t('ticketCard.addNote')}
+                >
+                    <Ionicons
+                        name={place.note ? 'document-text-outline' : 'add-circle-outline'}
+                        size={15}
+                        color={place.note ? '#7a5b00' : '#8a9ab0'}
+                    />
+                    <Text
+                        style={[ticketStyles.noteText, place.note ? ticketStyles.noteTextFilled : null]}
+                        numberOfLines={3}
+                    >
+                        {place.note || t('ticketCard.addNote')}
+                    </Text>
+                </TouchableOpacity>
             </View>
 
             {/* Rodapé do ticket */}
@@ -270,6 +292,25 @@ const ticketStyles = StyleSheet.create({
         paddingVertical: 4,
     },
     freeBadgeText: { fontSize: 11, fontWeight: '600', color: '#15803d' },
+    noteBox: {
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        gap: 6,
+        marginTop: 12,
+        paddingVertical: 8,
+        paddingHorizontal: 10,
+        borderRadius: 10,
+        borderWidth: 1,
+        borderStyle: 'dashed',
+        borderColor: '#d1d8e0',
+    },
+    noteBoxFilled: {
+        borderStyle: 'solid',
+        borderColor: '#f5e2a8',
+        backgroundColor: '#fffbeb',
+    },
+    noteText: { flex: 1, fontSize: 12, color: '#8a9ab0', lineHeight: 17 },
+    noteTextFilled: { color: '#5c4a12' },
     footer: {
         flexDirection: 'row',
         borderTopWidth: 1,

@@ -6,11 +6,13 @@ import { useTranslation } from 'react-i18next';
 import MapView, { Marker, PROVIDER_DEFAULT } from 'react-native-maps';
 import { Ionicons } from '@expo/vector-icons';
 import StarRating from '@/components/Rating';
+import { categoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
 import RatingForm from '@/src/components/rating/RatingForm/RatingForm';
 import ReviewItem from '@/src/components/rating/ReviewItem/ReviewItem';
 import { useColors } from '@/src/theme';
 import { useSpotDetail } from './hooks/useSpotDetail';
 import { useSpotRating } from './hooks/useSpotRating';
+import { useSpotFavorite } from './hooks/useSpotFavorite';
 import { formatCar, formatDistance, formatWalk } from './spotFormat';
 import InfoRow from './components/InfoRow/InfoRow';
 import { styles } from './styles/styles';
@@ -27,6 +29,7 @@ export default function SpotDetail() {
     ratingData, ratingValue, setRatingValue, comment, setComment,
     saveRating, startEditRating, deleteRating,
   } = useSpotRating(spot.xid);
+  const { isFavorite, savingFavorite, toggleFavorite } = useSpotFavorite(spot);
 
   const wikipediaTitle = spot.wikipedia?.split(':')[1]?.replace(/_/g, ' ') ?? spot.wikipedia;
 
@@ -40,6 +43,16 @@ export default function SpotDetail() {
             </TouchableOpacity>
             <Text style={s.headerText}>{backLabel}</Text>
           </View>
+          <TouchableOpacity
+            onPress={toggleFavorite}
+            disabled={savingFavorite}
+            style={s.headerFavoriteBtn}
+            activeOpacity={0.7}
+            accessibilityRole="button"
+            accessibilityLabel={isFavorite ? t('favorite.remove') : t('favorite.add')}
+          >
+            <Ionicons name={isFavorite ? 'heart' : 'heart-outline'} size={26} color={colors.white} />
+          </TouchableOpacity>
         </View>
       </View>
       <ScrollView contentContainerStyle={s.container} showsVerticalScrollIndicator={false}>
@@ -49,14 +62,14 @@ export default function SpotDetail() {
             <Marker
               coordinate={{ latitude: spot.latitude, longitude: spot.longitude }}
               title={spot.name}
-              description={spot.category}
+              description={categoryLabel(spot.category)}
             />
           </MapView>
         </View>
 
         <View style={s.badgeRow}>
           <View style={s.badgePill}>
-            <Text style={s.badgePillText}>{spot.category}</Text>
+            <Text style={s.badgePillText}>{categoryLabel(spot.category)}</Text>
           </View>
           {spot.fee === 'no' && (
             <View style={s.badgePill}>
@@ -189,7 +202,7 @@ export default function SpotDetail() {
             <View style={s.badgeRow}>
               {spot.profiles.map((p, i) => (
                 <View key={i} style={s.badgePill}>
-                  <Text style={s.badgePillText}>{p}</Text>
+                  <Text style={s.badgePillText}>{profileLabel(p)}</Text>
                 </View>
               ))}
             </View>

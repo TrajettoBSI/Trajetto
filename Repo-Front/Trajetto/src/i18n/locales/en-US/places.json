@@ -1,0 +1,32 @@
+{
+  "categories": {
+    "attraction": "Attraction",
+    "restaurant": "Restaurant",
+    "museum": "Museum",
+    "historic_archaeological_site": "Archaeological site",
+    "park": "Park",
+    "cafe": "Café",
+    "artwork": "Artwork",
+    "ice_cream": "Ice cream shop",
+    "historic_church": "Historic church",
+    "viewpoint": "Viewpoint",
+    "historic_monument": "Historic monument",
+    "pub": "Pub",
+    "marketplace": "Market",
+    "garden": "Garden",
+    "historic_ruins": "Ruins",
+    "bar": "Bar",
+    "gallery": "Gallery",
+    "historic_fort": "Historic fort",
+    "historic_castle": "Castle",
+    "historic_citywalls": "City walls",
+    "theme_park": "Theme park",
+    "historic_temple": "Historic temple",
+    "historic_aqueduct": "Aqueduct",
+    "nature_reserve": "Nature reserve",
+    "zoo": "Zoo",
+    "historic_villa": "Historic villa",
+    "historic_tower": "Historic tower",
+    "historic_monastery": "Monastery"
+  }
+}

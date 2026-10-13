@@ -70,4 +70,5 @@ export const styles = (colors: AppColors) =>
     headerLeft: { flexDirection: 'row', alignItems: 'center', zIndex: 10 },
     headerBackBtn: { paddingVertical: 4, paddingRight: 8, marginLeft: -12 },
     headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.white },
+    headerFavoriteBtn: { marginLeft: 'auto', padding: 6, marginRight: -6 },
   });

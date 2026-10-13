@@ -2,12 +2,18 @@ package com.trajetto.backend.itinerary.dto;
 
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
+
+import java.time.LocalDate;
 
 @Data
 public class
 GenerateItineraryRequestDTO {
+
+    public static final int MAX_DAYS = 7;
 
     @NotNull(message = "O usuário do roteiro é obrigatório")
     private Long userId;
@@ -19,4 +25,12 @@ GenerateItineraryRequestDTO {
     @DecimalMin(value = "-180.0", message = "A longitude de origem deve estar entre -180 e 180")
     @DecimalMax(value = "180.0", message = "A longitude de origem deve estar entre -180 e 180")
     private double startLongitude;
+
+    private LocalDate startDate;
+
+    @Min(value = 1, message = "O roteiro deve ter pelo menos 1 dia")
+    @Max(value = MAX_DAYS, message = "O roteiro pode ter no máximo " + MAX_DAYS + " dias")
+    private Integer days;
+
+    private TravelPace pace;
 }

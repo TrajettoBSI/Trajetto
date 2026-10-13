@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 
 @Getter
@@ -33,6 +34,9 @@ public class PlaceModel {
     @Column(name = "longitude")
     private Double longitude;
 
+    @Column(name = "visit_date")
+    private LocalDate visitDate;
+
     @Column(name = "estimated_visit_time")
     private LocalTime estimatedVisitTime;
 
@@ -47,6 +51,9 @@ public class PlaceModel {
 
     @Column(name = "fee")
     private String fee;
+
+    @Column(name = "note", length = 1000)
+    private String note;
 
     /** Toda parada pertence a um roteiro; a coluna e NOT NULL desde a migracao V6. */
     @ManyToOne

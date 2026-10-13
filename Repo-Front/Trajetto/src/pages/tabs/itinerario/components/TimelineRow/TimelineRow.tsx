@@ -16,10 +16,11 @@ type TimelineRowProps = {
   onSwitchPress: () => void;
   onPress: () => void;
   onInfoPress: () => void;
+  onNotePress: () => void;
 };
 
 export default function TimelineRow({
-  place, idx, color, isPast, isLast, isHighlighted, onLayout, onSwitchPress, onPress, onInfoPress,
+  place, idx, color, isPast, isLast, isHighlighted, onLayout, onSwitchPress, onPress, onInfoPress, onNotePress,
 }: TimelineRowProps) {
   const s = styles(useColors());
 
@@ -40,6 +41,7 @@ export default function TimelineRow({
         onPress={onPress}
         onInfoPress={onInfoPress}
         onSwitchPress={onSwitchPress}
+        onNotePress={onNotePress}
       />
     </View>
   );
