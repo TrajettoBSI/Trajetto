@@ -62,6 +62,8 @@ jobs:
           DB_USERNAME: root
           DB_PASSWORD: test
           ORS_API_KEY: ci-dummy-key
+          JWT_SECRET: ci-jwt-secret-only-for-tests-0123456789abcdef
+          ADMIN_PASSWORD: ci-admin-password
         run: ./mvnw -B clean verify
 
       - name: Coverage summary

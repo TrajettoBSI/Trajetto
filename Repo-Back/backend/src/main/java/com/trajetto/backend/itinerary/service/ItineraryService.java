@@ -293,24 +293,33 @@ public class ItineraryService {
         return toDTO(itineraryRepository.saveAndFlush(target));
     }
 
-    public ItineraryResponseDTO updateRating(Long itineraryId, RatingRequestDTO req) {
+    public ItineraryResponseDTO updateRating(Long itineraryId, Long userId, RatingRequestDTO req) {
         ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
                 .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
+        if (!itinerary.getUser().getId().equals(userId)) {
+            throw new ForbiddenOperationException("Este roteiro pertence a outro usuário.");
+        }
         itinerary.setRating(req.getRating());
         itinerary.setRatingDescription(req.getRatingDescription());
         return toDTO(itineraryRepository.save(itinerary));
     }
 
-    public ItineraryResponseDTO updateDate(Long itineraryId, DateRequestDTO req) {
+    public ItineraryResponseDTO updateDate(Long itineraryId, Long userId, DateRequestDTO req) {
         ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
                 .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
+        if (!itinerary.getUser().getId().equals(userId)) {
+            throw new ForbiddenOperationException("Este roteiro pertence a outro usuário.");
+        }
         itinerary.setDate(req.getDate());
         return toDTO(itineraryRepository.save(itinerary));
     }
 
-    public ItineraryResponseDTO replacePlace(Long itineraryId, Integer orderIndex, PlaceRequestDTO req) {
+    public ItineraryResponseDTO replacePlace(Long itineraryId, Integer orderIndex, Long userId, PlaceRequestDTO req) {
         ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
                 .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
+        if (!itinerary.getUser().getId().equals(userId)) {
+            throw new ForbiddenOperationException("Este roteiro pertence a outro usuário.");
+        }
 
         PlaceModel place = itinerary.getPlaces().stream()
                 .filter(p -> p.getOrderIndex().equals(orderIndex))

@@ -71,6 +71,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST, "/user/password/reset").permitAll()
                         .requestMatchers(HttpMethod.POST, "/user/create").permitAll()
                         .requestMatchers(HttpMethod.POST, "/user/verify").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/user/verify/resend").permitAll()
                         .requestMatchers(HttpMethod.GET, "/user/me").authenticated()
                         .requestMatchers(HttpMethod.PUT, "/user/me").authenticated()
                         .requestMatchers(HttpMethod.POST, "/user/me/picture").authenticated()

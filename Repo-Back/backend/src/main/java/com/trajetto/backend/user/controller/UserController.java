@@ -3,12 +3,10 @@ package com.trajetto.backend.user.controller;
 import com.trajetto.backend.exception.ApiErrorCode;
 import com.trajetto.backend.exception.ApiException;
 import com.trajetto.backend.exception.InvalidRequestException;
-import com.trajetto.backend.exception.ResourceNotFoundException;
 import com.trajetto.backend.security.UserToken;
 import com.trajetto.backend.user.dto.*;
 import com.trajetto.backend.user.facade.UserFacade;
 import com.trajetto.backend.user.model.UserModel;
-import com.trajetto.backend.user.repository.UserRepository;
 import com.trajetto.backend.user.service.UserService;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.annotation.security.PermitAll;
@@ -47,9 +45,6 @@ public class UserController {
 
     @Autowired
     private UserFacade userFacade;
-
-    @Autowired
-    private UserRepository userRepository;
 
     @SecurityRequirement(name = "AuthServer")
     @PreAuthorize("hasRole('ADMIN')")
@@ -132,20 +127,15 @@ public class UserController {
     @PermitAll
     @PostMapping("/verify")
     public ResponseEntity<MessageResponse> verifyEmail(@RequestParam String email, @RequestParam String code) {
-        UserModel user = userRepository.findByEmail(email);
-        if (user == null) {
-            throw new ResourceNotFoundException("Nenhuma conta encontrada para o e-mail informado.");
-        }
-
-        if (!code.equals(user.getVerificationCode())) {
-            throw new InvalidRequestException("Código de verificação inválido.");
-        }
-
-        user.setVerified(true);
-        user.setVerificationCode(null);
-        userRepository.save(user);
-
+        userService.verifyEmail(email, code);
         return ResponseEntity.ok(new MessageResponse("E-mail verificado com sucesso."));
+    }
+
+    @PermitAll
+    @PostMapping("/verify/resend")
+    public ResponseEntity<MessageResponse> resendVerificationCode(@RequestParam String email) {
+        userService.resendVerificationCode(email);
+        return ResponseEntity.ok(new MessageResponse("Enviamos um novo código para o seu e-mail."));
     }
 
 //    @SecurityRequirement(name = "AuthServer")

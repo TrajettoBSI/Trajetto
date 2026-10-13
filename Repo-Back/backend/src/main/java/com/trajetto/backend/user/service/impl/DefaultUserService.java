@@ -24,10 +24,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
+import java.security.SecureRandom;
+import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import java.util.Random; // NOVO IMPORT
 
 @Service
 @AllArgsConstructor
@@ -41,6 +42,9 @@ public class DefaultUserService implements UserService {
     private final ModelMapper modelMapper;
 
     // NOVO: Injetado automaticamente pelo @AllArgsConstructor
+    private static final long VERIFICATION_CODE_MINUTES = 10;
+    private static final SecureRandom RANDOM = new SecureRandom();
+
     private final JavaMailSender mailSender;
 
     @Override
@@ -77,9 +81,50 @@ public class DefaultUserService implements UserService {
         userModel.setEmail(email);
         userModel.setPassword(passwordEncoder.encode(userModel.getPassword()));
 
-        String code = String.format("%06d", new Random().nextInt(999999));
-        userModel.setVerificationCode(code);
         userModel.setVerified(false);
+        return Collections.singletonList(issueVerificationCode(userModel));
+    }
+
+    @Override
+    public void verifyEmail(String email, String code) {
+        UserModel user = findPendingByEmail(email);
+        if (user.isVerified()) return;
+
+        if (code == null || !code.equals(user.getVerificationCode())) {
+            throw new InvalidRequestException("Código de verificação inválido.");
+        }
+        LocalDateTime expiresAt = user.getVerificationCodeExpiresAt();
+        if (expiresAt != null && LocalDateTime.now().isAfter(expiresAt)) {
+            throw new InvalidRequestException("Este código expirou. Peça um novo código.");
+        }
+
+        user.setVerified(true);
+        user.setVerificationCode(null);
+        user.setVerificationCodeExpiresAt(null);
+        userRepository.save(user);
+    }
+
+    @Override
+    public void resendVerificationCode(String email) {
+        UserModel user = findPendingByEmail(email);
+        if (user.isVerified()) {
+            throw new ResourceConflictException("Este e-mail já foi verificado. Faça login.");
+        }
+        issueVerificationCode(user);
+    }
+
+    private UserModel findPendingByEmail(String email) {
+        UserModel user = email == null ? null : userRepository.findByEmail(email.trim().toLowerCase());
+        if (user == null) {
+            throw new ResourceNotFoundException("Nenhuma conta encontrada para o e-mail informado.");
+        }
+        return user;
+    }
+
+    private UserModel issueVerificationCode(UserModel userModel) {
+        String code = String.format("%06d", RANDOM.nextInt(1_000_000));
+        userModel.setVerificationCode(code);
+        userModel.setVerificationCodeExpiresAt(LocalDateTime.now().plusMinutes(VERIFICATION_CODE_MINUTES));
 
         UserModel saved = userRepository.save(userModel);
 
@@ -92,7 +137,7 @@ public class DefaultUserService implements UserService {
                         "━━━━━━━━━━━━━━━━━━━━━━\n" +
                         " CÓDIGO DE VERIFICAÇÃO: " + code + "\n" +
                         "━━━━━━━━━━━━━━━━━━━━━━\n\n" +
-                        "Este código é válido pelos próximos 10 minutos.\n\n" +
+                        "Este código é válido pelos próximos " + VERIFICATION_CODE_MINUTES + " minutos.\n\n" +
                         "Insira este código no aplicativo para concluir a verificação da sua conta.\n\n" +
                         "Se você não criou uma conta no Trajetto, pode ignorar este e-mail.\n\n" +
                         "Stay safe,\n" +
@@ -107,7 +152,7 @@ public class DefaultUserService implements UserService {
                     "Não foi possível enviar o e-mail de verificação. Tente novamente em instantes.", e);
         }
 
-        return Collections.singletonList(saved);
+        return saved;
     }
 
     @Override

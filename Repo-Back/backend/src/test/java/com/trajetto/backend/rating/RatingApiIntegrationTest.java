@@ -96,4 +96,30 @@ class RatingApiIntegrationTest extends ApiIntegrationTest {
                         .param("userId", String.valueOf(ana.getId())).param("rating", "3"))
                 .andExpect(status().isNotFound());
     }
+
+    @Test
+    @DisplayName("O autor da avaliacao vem do token: nome do cadastro e userId alheio recusado")
+    void autorVemDoToken() throws Exception {
+        UserModel ana = usuario(false);
+        UserModel bia = usuario(false);
+
+        Map<String, Object> alheio = Map.of("placeId", XID, "userId", ana.getId(), "rating", 1);
+        mvc.perform(json(comToken(post("/api/ratings"), bia), alheio))
+                .andExpect(status().isForbidden());
+
+        Map<String, Object> semUsuario = Map.of("placeId", XID, "userName", "Nome Falso", "rating", 4);
+        long id = corpo(mvc.perform(json(comToken(post("/api/ratings"), bia), semUsuario))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.userId").value(bia.getId()))
+                .andExpect(jsonPath("$.userName").value("Teste Api"))
+                .andReturn()).get("id").asLong();
+
+        mvc.perform(comToken(put("/api/ratings/" + id), bia).param("rating", "5"))
+                .andExpect(status().isOk());
+        mvc.perform(comToken(put("/api/ratings/" + id), bia)
+                        .param("userId", String.valueOf(ana.getId())).param("rating", "2"))
+                .andExpect(status().isForbidden());
+        mvc.perform(delete("/api/ratings/" + id)).andExpect(status().isUnauthorized());
+        mvc.perform(comToken(delete("/api/ratings/" + id), bia)).andExpect(status().isNoContent());
+    }
 }

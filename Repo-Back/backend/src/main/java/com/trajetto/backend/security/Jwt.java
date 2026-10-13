@@ -8,12 +8,15 @@ import io.jsonwebtoken.jackson.io.JacksonDeserializer;
 import io.jsonwebtoken.jackson.io.JacksonSerializer;
 import io.jsonwebtoken.security.Keys;
 import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
+import javax.crypto.SecretKey;
+import java.nio.charset.StandardCharsets;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.util.Date;
@@ -22,7 +25,6 @@ import java.util.Map;
 
 @Configuration
 public class Jwt {
-    public static final String SECRET = "0e5582adfb7fa6bb770815f3c6b3534d311bd5fe";
     public static final long EXPIRE_HOURS = 48L;
     public static final String ISSUER = "PUCPR AuthServer";
     public static final String USER_FIELD = "UserToken";
@@ -33,7 +35,7 @@ public class Jwt {
 
         return Jwts.builder()
                 .json(new JacksonSerializer<>())
-                .signWith(Keys.hmacShaKeyFor(SECRET.getBytes()))
+                .signWith(key)
                 .issuedAt(new Date())
                 .expiration(new Date(System.currentTimeMillis() +( EXPIRE_HOURS * 3600 * 1000)))
                 .issuer(ISSUER)
@@ -65,7 +67,7 @@ public class Jwt {
         try {
             JwtParser parser = Jwts.parser()
                     .json(new JacksonDeserializer<>(Map.of(USER_FIELD, UserToken.class)))
-                    .verifyWith(Keys.hmacShaKeyFor(SECRET.getBytes()))
+                    .verifyWith(key)
                     .build();
 
             Jws<Claims> jwt = parser.parseSignedClaims(token);
@@ -94,7 +96,13 @@ public class Jwt {
         }
     }
 
-    public Jwt() {
+    private final SecretKey key;
+
+    public Jwt(@Value("${jwt.secret}") String secret) {
+        if (secret == null || secret.getBytes(StandardCharsets.UTF_8).length < 32) {
+            throw new IllegalStateException("jwt.secret precisa ter pelo menos 32 caracteres (defina JWT_SECRET).");
+        }
+        this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
     }
 
     public static ZonedDateTime utcNow() {

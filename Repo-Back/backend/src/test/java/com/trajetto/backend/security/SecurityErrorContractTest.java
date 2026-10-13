@@ -42,7 +42,9 @@ class SecurityErrorContractTest {
 
     private final ObjectMapper objectMapper = Jackson2ObjectMapperBuilder.json().build();
     private final ApiErrorResponseWriter responseWriter = new ApiErrorResponseWriter(objectMapper);
-    private final JwtTokenFilter filter = new JwtTokenFilter(new Jwt());
+    private static final String SECRET = "segredo-de-teste-com-pelo-menos-32-caracteres";
+
+    private final JwtTokenFilter filter = new JwtTokenFilter(new Jwt(SECRET));
     private final JsonAuthenticationEntryPoint entryPoint = new JsonAuthenticationEntryPoint(responseWriter);
     private final JsonAccessDeniedHandler accessDeniedHandler = new JsonAccessDeniedHandler(responseWriter);
 
@@ -226,7 +228,7 @@ class SecurityErrorContractTest {
     private String token(UnaryOperator<JwtBuilder> customizer) {
         JwtBuilder builder = Jwts.builder()
                 .json(new JacksonSerializer<>())
-                .signWith(Keys.hmacShaKeyFor(Jwt.SECRET.getBytes()))
+                .signWith(Keys.hmacShaKeyFor(SECRET.getBytes()))
                 .subject("1")
                 .issuedAt(new Date())
                 .claim(Jwt.USER_FIELD, new UserToken(1L, "Ana"));

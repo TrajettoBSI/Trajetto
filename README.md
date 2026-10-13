@@ -180,6 +180,13 @@ cd Repo-Back/backend
 
 Certifique-se de ter o MySQL rodando e as credenciais configuradas em `src/main/resources/secrets.properties`.
 
+Nenhum segredo fica no repositório. Copie `src/main/resources/secrets.properties.example`
+para `secrets.properties` (ignorado pelo git) e preencha: senha do banco (`DB_PASSWORD`),
+e-mail que envia os códigos (`MAIL_USERNAME`/`MAIL_PASSWORD`, senha de app do Gmail),
+chave do token (`JWT_SECRET`, 32+ caracteres; gere com `openssl rand -hex 32`),
+senha do admin inicial (`ADMIN_PASSWORD`) e a chave do OpenRouteService (`ors.api.key`).
+Cada chave também pode vir de uma variável de ambiente com o mesmo nome.
+
 ## O servidor iniciará em
 ```
 http://localhost:8080

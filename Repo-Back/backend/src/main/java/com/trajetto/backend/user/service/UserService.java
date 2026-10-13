@@ -15,6 +15,10 @@ public interface UserService {
 
     List<UserModel> createUser(UserModel userModel);
 
+    void verifyEmail(String email, String code);
+
+    void resendVerificationCode(String email);
+
     UserModel updateUser(UserModel target);
 
     void deleteUser(Long id);
