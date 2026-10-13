@@ -77,6 +77,8 @@ export default function Explore() {
             style={[s.filterBtn, activeFilters > 0 && s.filterBtnActive]}
             onPress={openFilter}
             activeOpacity={0.8}
+            accessibilityRole="button"
+            accessibilityLabel={t('explore:filterModalTitle')}
           >
             <Ionicons name="filter" size={20} color={activeFilters > 0 ? colors.primary : colors.gray400} />
             {activeFilters > 0 && (

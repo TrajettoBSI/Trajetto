@@ -64,6 +64,8 @@ export default function InactiveItineraryRow({
               onPress={onDelete}
               disabled={deleting}
               activeOpacity={0.8}
+              accessibilityRole="button"
+              accessibilityLabel={t('activeCard.deleteButton')}
             >
               {deleting
                 ? <ActivityIndicator size="small" color={colors.error} />

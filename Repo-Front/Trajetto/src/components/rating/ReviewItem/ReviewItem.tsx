@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import { Rating } from '@/services';
 import StarRating from '@/components/Rating';
 import { useColors } from '@/src/theme';
@@ -15,6 +16,7 @@ type ReviewItemProps = {
 };
 
 export default function ReviewItem({ review, displayName, isMine, onEdit, onDelete }: ReviewItemProps) {
+  const { t } = useTranslation('spotDetail');
   const colors = useColors();
   const s = styles(colors);
 
@@ -30,10 +32,10 @@ export default function ReviewItem({ review, displayName, isMine, onEdit, onDele
         </View>
         {isMine && (
           <View style={s.reviewActions}>
-            <TouchableOpacity onPress={onEdit}>
+            <TouchableOpacity onPress={onEdit} accessibilityRole="button" accessibilityLabel={t('rating.edit')}>
               <Ionicons name="pencil-outline" size={18} color={colors.gray500} />
             </TouchableOpacity>
-            <TouchableOpacity onPress={onDelete}>
+            <TouchableOpacity onPress={onDelete} accessibilityRole="button" accessibilityLabel={t('rating.delete')}>
               <Ionicons name="trash-outline" size={18} color={colors.error} />
             </TouchableOpacity>
           </View>

@@ -1,0 +1,33 @@
+module.exports = {
+  preset: 'jest-expo',
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.tsx'],
+  moduleNameMapper: {
+    '\\.svg$': '<rootDir>/tests/mocks/svgMock.tsx',
+    '^@/(.*)$': '<rootDir>/$1',
+    '^expo-modules-core$': '<rootDir>/node_modules/expo/node_modules/expo-modules-core',
+    '^expo-modules-core/(.*)$': '<rootDir>/node_modules/expo/node_modules/expo-modules-core/$1',
+  },
+  testMatch: ['<rootDir>/tests/unit/**/*.test.ts', '<rootDir>/tests/unit/**/*.test.tsx'],
+  collectCoverageFrom: [
+    'app/**/*.{ts,tsx}',
+    'components/**/*.{ts,tsx}',
+    'constants/**/*.{ts,tsx}',
+    'context/**/*.{ts,tsx}',
+    'data/**/*.{ts,tsx}',
+    'hooks/**/*.{ts,tsx}',
+    'services/**/*.{ts,tsx}',
+    'src/**/*.{ts,tsx}',
+    'utils/**/*.{ts,tsx}',
+    '!**/*.d.ts',
+    '!components/hello-wave.tsx',
+    '!components/parallax-scroll-view.tsx',
+    '!components/external-link.tsx',
+    '!components/ui/collapsible.tsx',
+    '!components/RegisterIllustration.tsx',
+    '!components/TrajettoLogo.tsx',
+  ],
+  coverageReporters: ['text-summary', 'html', 'lcov', 'json-summary'],
+  coverageThreshold: {
+    global: { statements: 75, lines: 75, functions: 75, branches: 60 },
+  },
+};
