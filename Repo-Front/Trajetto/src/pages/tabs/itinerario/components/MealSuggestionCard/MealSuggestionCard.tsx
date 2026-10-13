@@ -4,14 +4,14 @@ import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { NearbyPlace } from '@/services';
 import { useColors } from '@/src/theme';
-import { formatTime } from '@/src/i18n/format';
+import { formatDistance as formatarDistancia, formatTime } from '@/src/i18n/format';
 import { MealSuggestion } from '../../hooks/useMealSuggestions';
 import { styles } from './styles';
 
 const MEAL_ICON = { breakfast: '☕', lunch: '🍝', dinner: '🍷' } as const;
 
 const formatDistance = (meters?: number | null) =>
-  meters == null ? '' : meters < 1000 ? `${Math.round(meters / 10) * 10} m` : `${(meters / 1000).toFixed(1)} km`;
+  meters == null ? '' : formatarDistancia(meters < 1000 ? Math.round(meters / 10) * 10 : meters);
 
 type MealSuggestionCardProps = {
   suggestion: MealSuggestion;

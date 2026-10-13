@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { countryLabel } from '@/src/i18n/countries';
 import { Ionicons } from '@expo/vector-icons';
 import { User } from '@/types/user';
 import { useColors } from '@/src/theme';
@@ -26,7 +27,7 @@ export default function UserCard({ user, onEdit, onDelete }: UserCardProps) {
         <View style={s.cardInfo}>
           <Text style={s.cardName}>{user.firstName} {user.lastName}</Text>
           <Text style={s.cardEmail}>{user.email}</Text>
-          <Text style={s.cardMeta}>{user.country}{user.telephone ? ` · ${user.telephone}` : ''}</Text>
+          <Text style={s.cardMeta}>{countryLabel(user.country)}{user.telephone ? ` · ${user.telephone}` : ''}</Text>
           <View style={[s.roleBadge, user.isAdmin && s.roleBadgeAdmin]}>
             <Text style={[s.roleBadgeText, user.isAdmin && s.roleBadgeTextAdmin]}>
               {user.isAdmin ? t('userList.roleAdmin') : t('userList.roleUser')}

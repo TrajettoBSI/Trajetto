@@ -108,7 +108,7 @@ describe('detalhe do local', () => {
     expect(screen.getByText('Atração')).toBeTruthy();
     expect(screen.getByText('Explorador Cultural')).toBeTruthy();
     expect(screen.getByText('Mapa')).toBeTruthy();
-    expect(await screen.findByText('4.5')).toBeTruthy();
+    expect(await screen.findByText('4,5')).toBeTruthy();
 
     await fireEvent.press(screen.getByText('Rotas'));
     await fireEvent.press(screen.getByText('Ligar'));

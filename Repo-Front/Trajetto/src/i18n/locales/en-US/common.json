@@ -54,5 +54,10 @@
     "light": "Light",
     "dark": "Dark",
     "highContrast": "High contrast"
+  },
+  "selectCountry": "Select your country",
+  "modal": {
+    "title": "This is a modal",
+    "goHome": "Go to home screen"
   }
 }

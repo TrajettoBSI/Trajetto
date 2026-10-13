@@ -3,6 +3,7 @@ import { ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, Text, To
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
+import { countryLabel } from '@/src/i18n/countries';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomInput from '@/components/CustomInput';
 import CountryPickerModal from '@/src/components/CountryPickerModal/CountryPickerModal';
@@ -129,7 +130,7 @@ export default function Profile() {
               activeOpacity={0.7}
             >
               <Text style={country ? s.dropdownValue : s.dropdownPlaceholder}>
-                {country || t('countryPlaceholder')}
+                {countryLabel(country) || t('countryPlaceholder')}
               </Text>
               <Text style={s.dropdownChevron}>▼</Text>
             </TouchableOpacity>

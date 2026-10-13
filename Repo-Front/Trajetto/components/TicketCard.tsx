@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { categoryLabel } from '@/src/helpers/categoryIcon';
 import { AppColors, useColors } from '@/src/theme';
+import { formatOpeningHours, formatTime } from '@/src/i18n/format';
 
 function categoryIcon(category: string): string {
     const c = (category || '').toLowerCase();
@@ -22,7 +23,6 @@ function categoryIcon(category: string): string {
     return '📍';
 }
 
-const formatTime = (time: string) => time?.slice(0, 5) ?? '';
 
 interface TicketCardProps {
     place: {
@@ -109,7 +109,7 @@ export function TicketCard({
                     <View style={ticketStyles.addressRow}>
                         <Ionicons name="time-outline" size={13} color={isPast ? colors.textFaintBlue : colors.textSubtle} />
                         <Text style={[ticketStyles.addressText, isPast && { color: colors.textFaintBlue }]} numberOfLines={1}>
-                            {place.openingHours}
+                            {formatOpeningHours(place.openingHours)}
                         </Text>
                     </View>
                 ) : null}

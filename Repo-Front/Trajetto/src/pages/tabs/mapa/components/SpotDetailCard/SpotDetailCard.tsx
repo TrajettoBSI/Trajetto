@@ -6,6 +6,7 @@ import { Place } from '@/services';
 import { categoryIcon, categoryLabel } from '@/src/helpers/categoryIcon';
 import { useColors } from '@/src/theme';
 import { formatCarTime, formatDistance, formatWalkTime, resolveTodayHours } from '../../mapaFormat';
+import { formatTime } from '@/src/i18n/format';
 import { styles } from './styles';
 
 type SpotDetailCardProps = {
@@ -39,10 +40,10 @@ export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDe
       </View>
 
       {todayHours.kind === 'open' && (
-        <Text style={s.spotCardDetail}>🕐 {t('spotDetailCard.openUntil', { time: todayHours.closesAt })}</Text>
+        <Text style={s.spotCardDetail}>🕐 {t('spotDetailCard.openUntil', { time: formatTime(todayHours.closesAt) })}</Text>
       )}
       {todayHours.kind === 'beforeOpening' && (
-        <Text style={s.spotCardDetail}>🕐 {t('spotDetailCard.opensAt', { time: todayHours.opensAt })}</Text>
+        <Text style={s.spotCardDetail}>🕐 {t('spotDetailCard.opensAt', { time: formatTime(todayHours.opensAt) })}</Text>
       )}
       {todayHours.kind === 'closed' && (
         <Text style={[s.spotCardDetail, s.closedText]}>🕐 {t('spotDetailCard.closedToday')}</Text>

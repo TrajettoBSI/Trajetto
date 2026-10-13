@@ -1,6 +1,7 @@
 import React from 'react';
 import { ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { countryLabel } from '@/src/i18n/countries';
 import CustomInput from '@/components/CustomInput';
 import CountryPickerModal from '@/src/components/CountryPickerModal/CountryPickerModal';
 import { useColors } from '@/src/theme';
@@ -98,7 +99,7 @@ export default function UserDetail() {
             <Text style={s.fieldLabel}>{t('userDetail.countryLabel')}</Text>
             <TouchableOpacity style={s.dropdownTrigger} onPress={openCountries} activeOpacity={0.7}>
               <Text style={country ? s.dropdownValue : s.dropdownPlaceholder}>
-                {country || t('userDetail.countryPlaceholder')}
+                {countryLabel(country) || t('userDetail.countryPlaceholder')}
               </Text>
               <Text style={s.dropdownChevron}>▼</Text>
             </TouchableOpacity>

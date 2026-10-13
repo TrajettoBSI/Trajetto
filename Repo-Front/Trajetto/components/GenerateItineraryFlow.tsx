@@ -29,7 +29,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { AppColors, useColors } from '../src/theme';
 import { addDays, groupByDay, toIsoDate } from '../src/domain/itinerary/itineraryDays';
 import { freePeriod } from '../src/domain/itinerary/freePeriod';
-import { formatDate, formatWeekday, formatWeekdayDayMonth } from '../src/i18n/format';
+import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth } from '../src/i18n/format';
 
 const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
 
@@ -601,7 +601,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                             {place.estimatedVisitTime ? (
                               <View style={[styles.timeBadge, { backgroundColor: color + '18', borderColor: color + '50' }]}>
                                 <Text style={[styles.timeBadgeText, { color }]}>
-                                  {place.estimatedVisitTime.slice(0, 5)}
+                                  {formatTime(place.estimatedVisitTime)}
                                 </Text>
                               </View>
                             ) : null}

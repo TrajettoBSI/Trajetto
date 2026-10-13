@@ -54,5 +54,10 @@
     "light": "Claro",
     "dark": "Oscuro",
     "highContrast": "Alto contraste"
+  },
+  "selectCountry": "Selecciona tu país",
+  "modal": {
+    "title": "Esta es una ventana",
+    "goHome": "Ir al inicio"
   }
 }

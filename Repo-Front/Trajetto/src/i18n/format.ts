@@ -54,3 +54,42 @@ export function formatPercent(value: number, locale = activeLocale()): string {
 export function formatCurrency(amount: number, currency: string, locale = activeLocale()): string {
   return new Intl.NumberFormat(locale, { style: 'currency', currency }).format(amount);
 }
+
+/** Numero com casas decimais fixas no formato do locale ativo (ex: 4,5 em pt-BR, 4.5 em en-US). */
+export function formatDecimal(value: number, fractionDigits = 1, locale = activeLocale()): string {
+  return new Intl.NumberFormat(locale, {
+    minimumFractionDigits: fractionDigits,
+    maximumFractionDigits: fractionDigits,
+  }).format(value);
+}
+
+/** Distancia em metros ou quilometros, com o separador decimal do locale ativo. */
+export function formatDistance(meters: number, locale = activeLocale()): string {
+  if (meters < 1000) return `${formatNumber(Math.round(meters), locale)} m`;
+  return `${formatDecimal(meters / 1000, 1, locale)} km`;
+}
+
+const OSM_WEEKDAYS = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+const OSM_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+/**
+ * Horario de funcionamento no padrao do OpenStreetMap ("Mo-Fr 09:00-18:00; Dec 25 off"),
+ * com dias, meses, horas e "off" no idioma ativo.
+ */
+export function formatOpeningHours(raw: string | null | undefined, locale = activeLocale()): string {
+  if (!raw) return '';
+  const weekday = new Intl.DateTimeFormat(locale, { weekday: 'short' });
+  const dayMonth = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short' });
+  const month = new Intl.DateTimeFormat(locale, { month: 'short' });
+  const months = OSM_MONTHS.join('|');
+  const days = OSM_WEEKDAYS.join('|');
+
+  return raw
+    .replace(new RegExp(String.raw`\b(${months})\s+(\d{1,2})\b`, 'g'), (_, m: string, d: string) =>
+      dayMonth.format(new Date(2024, OSM_MONTHS.indexOf(m), Number(d))))
+    .replace(new RegExp(String.raw`\b(${months})\b`, 'g'), (m: string) => month.format(new Date(2024, OSM_MONTHS.indexOf(m), 1)))
+    .replace(new RegExp(String.raw`\b(${days})\b`, 'g'), (d: string) =>
+      weekday.format(new Date(2024, 0, 1 + OSM_WEEKDAYS.indexOf(d))))
+    .replace(/\b(\d{1,2}:\d{2})\b/g, (t: string) => formatTime(t, locale))
+    .replace(/\boff\b/gi, i18n.t('spotDetail:closed', { lng: locale }));
+}

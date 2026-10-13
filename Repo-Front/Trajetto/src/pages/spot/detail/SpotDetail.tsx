@@ -14,6 +14,7 @@ import { useSpotDetail } from './hooks/useSpotDetail';
 import { useSpotRating } from './hooks/useSpotRating';
 import { useSpotFavorite } from './hooks/useSpotFavorite';
 import { formatCar, formatDistance, formatWalk } from './spotFormat';
+import { formatDecimal, formatOpeningHours } from '@/src/i18n/format';
 import InfoRow from './components/InfoRow/InfoRow';
 import { styles } from './styles/styles';
 
@@ -122,7 +123,7 @@ export default function SpotDetail() {
               <TouchableOpacity style={s.ratingSummaryRow} onPress={() => setIsRatingOpen(!isRatingOpen)} activeOpacity={0.8}>
                 <View style={s.ratingAverageRow}>
                   <Ionicons name="star" size={16} color="#f5b301" />
-                  <Text style={s.ratingAverage}>{ratingData?.average?.toFixed(1) ?? '0.0'}</Text>
+                  <Text style={s.ratingAverage}>{formatDecimal(ratingData?.average ?? 0)}</Text>
                 </View>
                 <StarRating value={ratingData?.average ?? 0} size={18} onChange={() => {}} readonly />
                 <Text style={s.ratingCount}>{t('rating.visitedCount', { count: ratingData?.count ?? 0 })}</Text>
@@ -185,10 +186,10 @@ export default function SpotDetail() {
               {hours.map((h, i) => (
                 <View key={i} style={[s.hourRow, i < hours.length - 1 && s.hourRowBorder]}>
                   <Text style={[s.hourPeriod, h.isToday && s.hourTextToday, h.closed && s.hourTextClosed]}>
-                    {h.period}{h.isToday ? ` · ${t('today')}` : ''}
+                    {formatOpeningHours(h.period)}{h.isToday ? ` · ${t('today')}` : ''}
                   </Text>
                   <Text style={[s.hourValue, h.isToday && s.hourTextToday, h.closed && s.hourTextClosed]}>
-                    {h.closed ? t('closed') : h.hours}
+                    {h.closed ? t('closed') : formatOpeningHours(h.hours)}
                   </Text>
                 </View>
               ))}

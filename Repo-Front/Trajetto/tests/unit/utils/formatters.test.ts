@@ -21,7 +21,7 @@ describe('distancias e tempos do mapa', () => {
     expect(m).toBeGreaterThan(1000);
     expect(m).toBeLessThan(2000);
     expect(formatDistance(850.4)).toBe('850 m');
-    expect(formatDistance(1500)).toBe('1.5 km');
+    expect(formatDistance(1500)).toBe('1,5 km');
     expect(formatWalkTime(800)).toBe('10 min');
     expect(formatWalkTime(80 * 90)).toBe('1h 30min');
     expect(formatWalkTime(80 * 60 * 30)).toBe('1d 6h');
@@ -29,7 +29,7 @@ describe('distancias e tempos do mapa', () => {
     expect(formatCarTime(5000)).toBe('10 min');
     expect(formatCarTime(500 * 75)).toBe('1h 15min');
     expect(spot.formatDistance(500)).toBe('500 m');
-    expect(spot.formatDistance(2500)).toBe('2.5 km');
+    expect(spot.formatDistance(2500)).toBe('2,5 km');
     expect(spot.formatWalk(800)).toBe('10 min');
     expect(spot.formatWalk(80 * 75)).toBe('1h 15min');
     expect(spot.formatCar(100)).toBe('< 1 min');
