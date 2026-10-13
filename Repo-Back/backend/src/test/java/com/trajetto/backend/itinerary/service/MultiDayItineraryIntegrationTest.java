@@ -3,6 +3,7 @@ package com.trajetto.backend.itinerary.service;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
 import com.trajetto.backend.itinerary.dto.PlaceResponseDTO;
+import com.trajetto.backend.itinerary.dto.TravelPace;
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -82,5 +83,40 @@ class MultiDayItineraryIntegrationTest {
         assertEquals(LocalDate.now(), roteiro.getEndDate());
         assertEquals(7, roteiro.getPlaces().size());
         assertTrue(roteiro.getPlaces().stream().allMatch(p -> LocalDate.now().equals(p.getVisitDate())));
+    }
+
+    private Map<LocalDate, Long> paradasPorDia(TravelPace ritmo, int dias) {
+        GenerateItineraryRequestDTO req = pedido(INICIO, dias);
+        req.setPace(ritmo);
+        ItineraryResponseDTO roteiro = itineraryService.generateItinerary(req);
+        assertEquals(INICIO.plusDays(dias - 1L), roteiro.getEndDate());
+        return roteiro.getPlaces().stream()
+                .collect(Collectors.groupingBy(PlaceResponseDTO::getVisitDate, Collectors.counting()));
+    }
+
+    @Test
+    @DisplayName("Metade cheios, metade livres: alterna dia de 7 paradas e dia sem paradas")
+    void metadeCheiosMetadeLivres() {
+        Map<LocalDate, Long> porDia = paradasPorDia(TravelPace.METADE_LIVRE, 4);
+
+        assertEquals(Map.of(INICIO, 7L, INICIO.plusDays(2), 7L), porDia);
+    }
+
+    @Test
+    @DisplayName("Alguns dias cheios: alterna dia de 7 paradas e dia de 5")
+    void algunsDiasCheios() {
+        assertEquals(Map.of(INICIO, 7L, INICIO.plusDays(1), 5L, INICIO.plusDays(2), 7L),
+                paradasPorDia(TravelPace.EQUILIBRADO, 3));
+    }
+
+    @Test
+    @DisplayName("Roteiro leve: 4 paradas por dia, comecando as 10h")
+    void roteiroLeve() {
+        GenerateItineraryRequestDTO req = pedido(INICIO, 2);
+        req.setPace(TravelPace.LEVE);
+        ItineraryResponseDTO roteiro = itineraryService.generateItinerary(req);
+
+        assertEquals(8, roteiro.getPlaces().size());
+        assertTrue(roteiro.getPlaces().stream().noneMatch(p -> p.getEstimatedVisitTime().isBefore(LocalTime.of(10, 0))));
     }
 }

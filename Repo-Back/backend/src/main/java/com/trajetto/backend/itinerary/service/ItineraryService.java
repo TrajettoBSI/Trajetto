@@ -10,6 +10,7 @@ import com.trajetto.backend.itinerary.dto.NoteRequestDTO;
 import com.trajetto.backend.itinerary.dto.PlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.PlaceResponseDTO;
 import com.trajetto.backend.itinerary.dto.RatingRequestDTO;
+import com.trajetto.backend.itinerary.dto.TravelPace;
 import com.trajetto.backend.itinerary.model.ItineraryModel;
 import com.trajetto.backend.itinerary.model.PlaceModel;
 import com.trajetto.backend.exception.ForbiddenOperationException;
@@ -24,7 +25,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.HashSet;
@@ -32,11 +32,10 @@ import java.util.Random;
 import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 @Service
 public class ItineraryService {
-
-    private static final int PLACES_PER_DAY = 7;
 
     private static final Set<String> MEAL_CATEGORIES = Set.of("restaurant", "cafe", "ice_cream");
 
@@ -45,12 +44,6 @@ public class ItineraryService {
     private static final Pattern EVENING_NAME = Pattern.compile("^(Piazza|Piazzale|Fontana|Scalinata|Ponte|Campo)\\b");
 
     private static final LocalTime EVENING = LocalTime.of(20, 0);
-
-    private static final LocalTime[] VISIT_TIMES = {
-            LocalTime.of(9, 0), LocalTime.of(10, 30), LocalTime.of(12, 0),
-            LocalTime.of(14, 0), LocalTime.of(15, 30), LocalTime.of(17, 0),
-            LocalTime.of(21, 0)
-    };
 
     @Autowired
     private ItineraryRepository itineraryRepository;
@@ -166,20 +159,23 @@ public class ItineraryService {
         int days = req.getDays() == null ? 1 : req.getDays();
         LocalDate startDate = req.getStartDate() == null ? LocalDate.now() : req.getStartDate();
 
+        TravelPace pace = req.getPace() == null ? TravelPace.INTENSO : req.getPace();
+        List<List<LocalTime>> schedule = IntStream.range(0, days).mapToObj(pace::visitTimes).toList();
+        long eveningSlots = schedule.stream().flatMap(List::stream).filter(t -> !t.isBefore(EVENING)).count();
+        long totalSlots = schedule.stream().mapToLong(List::size).sum();
+
         List<RomePlace> ranked = scored.stream().map(ScoredPlace::place).toList();
-        long eveningSlots = Arrays.stream(VISIT_TIMES).filter(t -> !t.isBefore(EVENING)).count();
         Set<String> chosen = new HashSet<>();
-        List<RomePlace> eveningPool = pick(ranked.stream().filter(this::isEveningPlace).toList(),
-                eveningSlots * days, chosen);
-        List<RomePlace> dayPool = pick(ranked, (PLACES_PER_DAY - eveningSlots) * days, chosen);
+        List<RomePlace> eveningPool = pick(ranked.stream().filter(this::isEveningPlace).toList(), eveningSlots, chosen);
+        List<RomePlace> dayPool = pick(ranked, totalSlots - eveningSlots, chosen);
 
         record DayStop(RomePlace place, LocalDate date, LocalTime time) {}
         List<DayStop> ordered = new ArrayList<>();
         for (int day = 0; day < days; day++) {
             double curLat = req.getStartLatitude();
             double curLng = req.getStartLongitude();
-            for (int slot = 0; slot < PLACES_PER_DAY; slot++) {
-                List<RomePlace> pool = !VISIT_TIMES[slot].isBefore(EVENING) && !eveningPool.isEmpty() ? eveningPool : dayPool;
+            for (LocalTime time : schedule.get(day)) {
+                List<RomePlace> pool = !time.isBefore(EVENING) && !eveningPool.isEmpty() ? eveningPool : dayPool;
                 if (pool.isEmpty()) continue;
                 double finalCurLat = curLat;
                 double finalCurLng = curLng;
@@ -187,7 +183,7 @@ public class ItineraryService {
                         .min(Comparator.comparingDouble(p ->
                                 haversineKm(finalCurLat, finalCurLng, p.latitude(), p.longitude())))
                         .get();
-                ordered.add(new DayStop(nearest, startDate.plusDays(day), VISIT_TIMES[slot]));
+                ordered.add(new DayStop(nearest, startDate.plusDays(day), time));
                 pool.remove(nearest);
                 curLat = nearest.latitude();
                 curLng = nearest.longitude();
