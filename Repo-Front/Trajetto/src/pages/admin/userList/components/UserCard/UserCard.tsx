@@ -38,7 +38,7 @@ export default function UserCard({ user, onEdit, onDelete }: UserCardProps) {
         <TouchableOpacity style={s.editBtn} onPress={onEdit} activeOpacity={0.8}>
           <Text style={s.editBtnText}>{t('userList.edit')}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={s.deleteBtn} onPress={onDelete} activeOpacity={0.8}>
+        <TouchableOpacity style={s.deleteBtn} onPress={onDelete} activeOpacity={0.8} accessibilityRole="button" accessibilityLabel={t('common:delete')}>
           <Ionicons name="trash-outline" size={18} color={colors.error} />
         </TouchableOpacity>
       </View>

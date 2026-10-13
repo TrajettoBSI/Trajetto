@@ -1,4 +1,3 @@
-import { AxiosError } from 'axios';
 import i18n from '@/src/i18n';
 import {
   bearing, countActiveFilters, formatCarTime, formatDistance, formatWalkTime, haversineMeters,
@@ -14,7 +13,7 @@ import { isEmpty, resolveFeedbackStatus } from '@/src/components/feedback/feedba
 import { contarCriteriosAtivos, FILTRO_VAZIO, intervaloDoPeriodo, paraConsulta, saneado } from '@/src/pages/admin/dashboard/dashboardFilter';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { isSupportedLanguage } from '@/src/i18n/languages';
-import { apiError } from '../../helpers';
+import { apiError, networkError, rawResponseError } from '../../helpers';
 
 describe('distancias e tempos do mapa', () => {
   it('calcula distancia, formata e estima a pe e de carro', () => {
@@ -146,9 +145,8 @@ describe('contrato de erro da API', () => {
   });
 
   it('trata falta de rede, texto puro e erros que nao sao da API', () => {
-    expect(getErrorMessage(new AxiosError('Network Error'))).toBe(i18n.t('common:networkError'));
-    const texto = new AxiosError('x', '500', undefined, undefined, { status: 500, data: 'Servidor caiu' } as never);
-    expect(getErrorMessage(texto)).toBe('Servidor caiu');
+    expect(getErrorMessage(networkError())).toBe(i18n.t('common:networkError'));
+    expect(getErrorMessage(rawResponseError(500, 'Servidor caiu'))).toBe('Servidor caiu');
     expect(getErrorMessage(new Error('qualquer'), 'padrao')).toBe('padrao');
     expect(getErrorStatus(new Error('x'))).toBeNull();
     expect(getFieldErrors(new Error('x'))).toEqual({});
@@ -157,7 +155,7 @@ describe('contrato de erro da API', () => {
   it('reconhece quando a sessao deixou de valer', () => {
     expect(isSessionError(apiError(401, 'SESSION_EXPIRED', 'Expirou'))).toBe(true);
     expect(isSessionError(apiError(401, 'INVALID_CREDENTIALS', 'Senha errada'))).toBe(false);
-    expect(isSessionError(new AxiosError('x', '401', undefined, undefined, { status: 401, data: '' } as never))).toBe(true);
+    expect(isSessionError(rawResponseError(401, ''))).toBe(true);
   });
 });
 

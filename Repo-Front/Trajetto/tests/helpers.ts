@@ -14,3 +14,7 @@ export function apiError(status: number, code: string, message: string, details?
 export function networkError() {
   return new AxiosError('Network Error', AxiosError.ERR_NETWORK);
 }
+
+export function rawResponseError(status: number, data: unknown) {
+  return new AxiosError('x', String(status), undefined, undefined, { status, data } as AxiosResponse);
+}

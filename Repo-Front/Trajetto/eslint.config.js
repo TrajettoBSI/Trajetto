@@ -39,4 +39,15 @@ module.exports = defineConfig([
       'no-restricted-imports': ['error', CAMADA_DE_SERVICOS],
     },
   },
+  {
+    // Os testes da propria camada de servicos simulam o cliente HTTP, e o auxiliar de teste
+    // monta erros no mesmo formato que o servidor devolve - como a pasta services/ ja pode.
+    files: ['tests/unit/services/**/*.{ts,tsx}', 'tests/helpers.ts'],
+    rules: { 'no-restricted-imports': 'off' },
+  },
+  {
+    // jest.mock exige require() dentro da fabrica do mock.
+    files: ['jest.setup.tsx', 'tests/**/*.{ts,tsx}'],
+    rules: { '@typescript-eslint/no-require-imports': 'off' },
+  },
 ]);

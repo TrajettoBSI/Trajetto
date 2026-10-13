@@ -7,7 +7,9 @@ import { Itinerary, useItineraryStore } from '@/hooks/itineraryStore';
 import { mockRouter } from '../../mocks/expoRouter';
 import { networkError } from '../../helpers';
 
-jest.mock('@/context/AuthContext', () => ({ useAuth: () => ({ user: { id: 1 } }) }));
+jest.mock('@/src/pages/tabs/mapa/components/AnimatedDashedPolyline/AnimatedDashedPolyline', () => () => null);
+const mockAuth = { user: { id: 1 } };
+jest.mock('@/context/AuthContext', () => ({ useAuth: () => mockAuth }));
 jest.mock('@/services', () => ({
   ItineraryService: { getItinerary: jest.fn() },
   placesService: { getAll: jest.fn(), getCategories: jest.fn(), getProfiles: jest.fn() },
@@ -23,12 +25,12 @@ const parada = (orderIndex: number, name: string, time: string, visitDate: strin
 });
 
 const roteiro: Itinerary = {
-  id: 7, active: true, startDate: '2000-01-01', endDate: '2099-01-02', originLatitude: 41.9, originLongitude: 12.47,
+  id: 7, active: true, startDate: '2000-01-01', endDate: '2000-01-02', originLatitude: 41.9, originLongitude: 12.47,
   places: [
     parada(0, 'Fontana di Trevi', '09:00:00', '2000-01-01'),
     parada(1, 'Pantheon', '12:00:00', '2000-01-01'),
-    parada(2, 'Colosseo', '09:00:00', '2099-01-02'),
-    parada(3, 'Foro', '12:00:00', '2099-01-02'),
+    parada(2, 'Colosseo', '09:00:00', '2000-01-02'),
+    parada(3, 'Foro', '12:00:00', '2000-01-02'),
   ],
 };
 
@@ -48,18 +50,18 @@ beforeEach(() => {
 });
 
 describe('mapa do roteiro', () => {
-  it('mostra os pinos do dia, calcula os trechos e troca de dia', async () => {
+  it('abre no dia certo, calcula os trechos e troca de dia', async () => {
     await render(<Mapa />);
 
-    expect(screen.getByText('1. Fontana di Tre…')).toBeTruthy();
+    expect(screen.getByText(/Colosseo/)).toBeTruthy();
     expect(screen.getAllByText('visitado ✓').length).toBe(2);
     await waitFor(() => expect(rotas.getRoute).toHaveBeenCalledTimes(2));
 
-    await fireEvent.press(screen.getByText('Dia 2'));
-    expect(await screen.findByText('1. Colosseo')).toBeTruthy();
-    expect(screen.getAllByText('ver detalhes ↗').length).toBe(2);
+    await fireEvent.press(screen.getByText('Dia 1'));
+    expect(await screen.findByText(/Fontana di Tre…/)).toBeTruthy();
+    expect(screen.queryByText(/Colosseo/)).toBeNull();
 
-    await fireEvent.press(screen.getByText('1. Colosseo'));
+    await fireEvent.press(screen.getByText(/Fontana di Tre…/));
     expect(mockRouter.push).toHaveBeenCalledWith(expect.objectContaining({ pathname: '/SpotDetailScreen' }));
   });
 
@@ -107,10 +109,13 @@ describe('mapa do roteiro', () => {
     expect(screen.getByText('📏 500 m')).toBeTruthy();
 
     const fecharChips = () => screen.getAllByText('✕');
-    while (fecharChips().length > 1) await fireEvent.press(fecharChips().at(-1)!);
+    for (let i = 0; i < 4; i++) await fireEvent.press(fecharChips().at(-1)!);
+    expect(screen.queryByText('📏 500 m')).toBeNull();
+    expect(screen.getByText('📍 Museu')).toBeTruthy();
 
     await fireEvent.press(screen.getByLabelText('Filtros'));
     await fireEvent.press(screen.getByText('Limpar tudo'));
+    await waitFor(() => expect(screen.queryByText('📍 Museu')).toBeNull());
     await fireEvent.press(screen.getByLabelText('Filtros'));
     await fireEvent.press(screen.getByText('Cancelar'));
   });
