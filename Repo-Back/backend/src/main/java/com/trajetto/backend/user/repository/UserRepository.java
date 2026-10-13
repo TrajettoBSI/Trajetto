@@ -22,7 +22,7 @@ public interface UserRepository extends JpaRepository<UserModel,Long> {
     long countByIsAdmin(boolean isAdmin);
 
     @Transactional
-    @Modifying
+    @Modifying(clearAutomatically = true)
     @Query("UPDATE UserModel u SET u.isAdmin = :isAdmin WHERE u.id = :id")
     void updateUserRole(@Param("id") Long id, @Param("isAdmin") boolean isAdmin);
 }
