@@ -18,6 +18,8 @@ import TimelineRow from './components/TimelineRow/TimelineRow';
 import AlternativesModal from './components/AlternativesModal/AlternativesModal';
 import NoteModal from './components/NoteModal/NoteModal';
 import MealSuggestionCard from './components/MealSuggestionCard/MealSuggestionCard';
+import FreePeriodCard from './components/FreePeriodCard/FreePeriodCard';
+import { freePeriod } from '@/src/domain/itinerary/freePeriod';
 
 const TAB_BAR_SPACE = 64 + 4 + 24;
 
@@ -74,6 +76,7 @@ export default function Itinerario() {
     >
       {(roteiro) => {
         const sorted = dayPlaces;
+        const free = freePeriod(sorted);
 
         return (
           <View style={s.safe}>
@@ -118,14 +121,6 @@ export default function Itinerario() {
                   : t('sectionLabel')}
               </Text>
 
-              {sorted.length === 0 && (
-                <View style={s.freeDay}>
-                  <Text style={s.freeDayIcon}>🌿</Text>
-                  <Text style={s.freeDayTitle}>{t('freeDay.title')}</Text>
-                  <Text style={s.freeDayText}>{t('freeDay.text')}</Text>
-                </View>
-              )}
-
               <View style={s.timeline}>
                 {sorted.map((place, idx) => {
                   const isPast = isPlacePast(placeDate(roteiro.startDate, place), place.estimatedVisitTime);
@@ -135,6 +130,7 @@ export default function Itinerario() {
 
                   return (
                     <React.Fragment key={`${place.name}-${place.orderIndex}`}>
+                    {free?.insertAt === idx && <FreePeriodCard period={free.period} />}
                     {mealSuggestions.filter((m) => m.insertAt === idx).map((m) => (
                       <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} onRetry={retryMealSuggestions} />
                     ))}
@@ -157,6 +153,7 @@ export default function Itinerario() {
                     </React.Fragment>
                   );
                 })}
+                {free?.insertAt === sorted.length && <FreePeriodCard period={free.period} />}
                 {mealSuggestions.filter((m) => m.insertAt === sorted.length).map((m) => (
                   <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} onRetry={retryMealSuggestions} />
                 ))}

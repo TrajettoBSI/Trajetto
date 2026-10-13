@@ -62,8 +62,14 @@
     "loadError": "Could not load the suggestions.",
     "retry": "Try again"
   },
-  "freeDay": {
-    "title": "Free day",
-    "text": "Nothing planned for this day. Take the chance to rest or explore the city at your own pace."
+  "freePeriod": {
+    "morning": {
+      "title": "Free morning",
+      "text": "Start the day slowly: today's itinerary begins in the afternoon."
+    },
+    "afternoon": {
+      "title": "Free afternoon",
+      "text": "After lunch, the afternoon is yours to rest or explore at your own pace."
+    }
   }
 }

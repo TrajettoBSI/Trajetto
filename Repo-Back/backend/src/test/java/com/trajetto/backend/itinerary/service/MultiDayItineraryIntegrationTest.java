@@ -85,28 +85,26 @@ class MultiDayItineraryIntegrationTest {
         assertTrue(roteiro.getPlaces().stream().allMatch(p -> LocalDate.now().equals(p.getVisitDate())));
     }
 
-    private Map<LocalDate, Long> paradasPorDia(TravelPace ritmo, int dias) {
-        GenerateItineraryRequestDTO req = pedido(INICIO, dias);
-        req.setPace(ritmo);
-        ItineraryResponseDTO roteiro = itineraryService.generateItinerary(req);
-        assertEquals(INICIO.plusDays(dias - 1L), roteiro.getEndDate());
-        return roteiro.getPlaces().stream()
-                .collect(Collectors.groupingBy(PlaceResponseDTO::getVisitDate, Collectors.counting()));
-    }
 
     @Test
-    @DisplayName("Metade cheios, metade livres: alterna dia de 7 paradas e dia sem paradas")
-    void metadeCheiosMetadeLivres() {
-        Map<LocalDate, Long> porDia = paradasPorDia(TravelPace.METADE_LIVRE, 4);
-
-        assertEquals(Map.of(INICIO, 7L, INICIO.plusDays(2), 7L), porDia);
-    }
-
-    @Test
-    @DisplayName("Alguns dias cheios: alterna dia de 7 paradas e dia de 5")
+    @DisplayName("Alguns dias cheios: alterna dia de 7 paradas e dia de 4, com a tarde ou a manha livre")
     void algunsDiasCheios() {
-        assertEquals(Map.of(INICIO, 7L, INICIO.plusDays(1), 5L, INICIO.plusDays(2), 7L),
-                paradasPorDia(TravelPace.EQUILIBRADO, 3));
+        GenerateItineraryRequestDTO req = pedido(INICIO, 4);
+        req.setPace(TravelPace.EQUILIBRADO);
+        Map<LocalDate, List<PlaceResponseDTO>> porDia = itineraryService.generateItinerary(req).getPlaces().stream()
+                .collect(Collectors.groupingBy(PlaceResponseDTO::getVisitDate));
+
+        assertEquals(7, porDia.get(INICIO).size());
+        assertEquals(4, porDia.get(INICIO.plusDays(1)).size());
+        assertEquals(7, porDia.get(INICIO.plusDays(2)).size());
+        assertEquals(4, porDia.get(INICIO.plusDays(3)).size());
+
+        LocalTime meioDia = LocalTime.of(12, 0);
+        LocalTime noite = LocalTime.of(20, 0);
+        assertTrue(porDia.get(INICIO.plusDays(1)).stream().map(PlaceResponseDTO::getEstimatedVisitTime)
+                .noneMatch(t -> t.isAfter(meioDia) && t.isBefore(noite)), "tarde livre");
+        assertTrue(porDia.get(INICIO.plusDays(3)).stream().map(PlaceResponseDTO::getEstimatedVisitTime)
+                .noneMatch(t -> t.isBefore(meioDia)), "manha livre");
     }
 
     @Test

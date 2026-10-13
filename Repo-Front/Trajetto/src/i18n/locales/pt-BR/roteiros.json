@@ -99,11 +99,7 @@
       },
       "EQUILIBRADO": {
         "title": "Alguns dias cheios",
-        "description": "Alterna dias cheios com dias mais tranquilos"
-      },
-      "METADE_LIVRE": {
-        "title": "Metade cheios, metade livres",
-        "description": "Um dia cheio, um dia livre para descansar"
+        "description": "Alterna dias cheios com dias de 4 paradas e a manhã ou a tarde livre"
       },
       "LEVE": {
         "title": "Roteiro leve, sem pressa",

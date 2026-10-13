@@ -1,6 +1,6 @@
 import { api } from './api';
 
-export type TravelPace = 'INTENSO' | 'EQUILIBRADO' | 'METADE_LIVRE' | 'LEVE';
+export type TravelPace = 'INTENSO' | 'EQUILIBRADO' | 'LEVE';
 
 export class ItineraryService {
     static async getItinerary(userId: number) {

@@ -26,13 +26,6 @@ export const styles = (colors: AppColors) =>
       letterSpacing: 0.8, textTransform: 'uppercase', marginBottom: 6,
     },
     timeline: { marginTop: 6 },
-    freeDay: {
-      alignItems: 'center', padding: 24, marginTop: 6, borderRadius: 16,
-      backgroundColor: colors.white, borderWidth: 1, borderStyle: 'dashed', borderColor: colors.border,
-    },
-    freeDayIcon: { fontSize: 32, marginBottom: 8 },
-    freeDayTitle: { fontSize: 16, fontFamily: 'Inter-Bold', color: colors.gray900, marginBottom: 4 },
-    freeDayText: { fontSize: 13, color: colors.gray500, textAlign: 'center', lineHeight: 19 },
     daySelector: { marginBottom: 16, flexGrow: 0 },
 
     btnExport: {

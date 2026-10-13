@@ -99,11 +99,7 @@
       },
       "EQUILIBRADO": {
         "title": "Algunos días completos",
-        "description": "Alterna días completos con días más tranquilos"
-      },
-      "METADE_LIVRE": {
-        "title": "Mitad completos, mitad libres",
-        "description": "Un día completo, un día libre para descansar"
+        "description": "Alterna días completos con días de 4 paradas y la mañana o la tarde libre"
       },
       "LEVE": {
         "title": "Itinerario ligero, sin prisa",

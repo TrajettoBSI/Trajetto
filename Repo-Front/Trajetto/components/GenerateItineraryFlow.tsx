@@ -28,6 +28,7 @@ import CustomInput from './CustomInput';
 import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../src/theme';
 import { addDays, groupByDay, toIsoDate } from '../src/domain/itinerary/itineraryDays';
+import { freePeriod } from '../src/domain/itinerary/freePeriod';
 import { formatDate, formatWeekday, formatWeekdayDayMonth } from '../src/i18n/format';
 
 const PRIMARY = colors.primary;
@@ -40,7 +41,6 @@ const MAX_DAYS = 7;
 const PACES: { id: TravelPace; icon: string; multiDayOnly: boolean }[] = [
   { id: 'INTENSO', icon: '🔥', multiDayOnly: false },
   { id: 'EQUILIBRADO', icon: '⚖️', multiDayOnly: true },
-  { id: 'METADE_LIVRE', icon: '🌗', multiDayOnly: true },
   { id: 'LEVE', icon: '🌿', multiDayOnly: false },
 ];
 
@@ -578,11 +578,6 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                   {t('itinerario:daySelector.day', { number: day.number })} - {formatWeekdayDayMonth(day.date)}
                 </Text>
               )}
-              {day.places.length === 0 ? (
-                <View style={styles.previewFreeDay}>
-                  <Text style={styles.previewFreeDayText}>🌿 {t('itinerario:freeDay.title')}</Text>
-                </View>
-              ) : (
               <View style={styles.previewList}>
                 {day.places.map((place, idx) => {
                   const color = STOP_COLORS[idx % STOP_COLORS.length];
@@ -616,8 +611,12 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     </View>
                   );
                 })}
+                {freePeriod(day.places) && (
+                  <Text style={styles.previewFreePeriod}>
+                    🌿 {t(`itinerario:freePeriod.${freePeriod(day.places)!.period}.title`)}
+                  </Text>
+                )}
               </View>
-              )}
               </View>
               ))}
 
@@ -752,14 +751,7 @@ const styles = StyleSheet.create({
   paceTitle: { fontSize: Platform.OS === 'ios' ? 15 : 17, fontWeight: '700', color: '#1a1a1a' },
   paceTitleActive: { color: PRIMARY },
   paceDescription: { fontSize: Platform.OS === 'ios' ? 12 : 14, color: '#8a9ab0', marginTop: 2 },
-  previewFreeDay: {
-    backgroundColor: '#fff',
-    borderRadius: 18,
-    padding: 16,
-    marginBottom: 24,
-    alignItems: 'center',
-  },
-  previewFreeDayText: { fontSize: 14, fontWeight: '600', color: '#8a9ab0' },
+  previewFreePeriod: { fontSize: 13, fontWeight: '600', color: '#2e7d32', paddingVertical: 10 },
   previewDayLabel: {
     fontSize: 12,
     fontWeight: '700',

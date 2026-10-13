@@ -99,11 +99,7 @@
       },
       "EQUILIBRADO": {
         "title": "Some days packed",
-        "description": "Alternates packed days with calmer ones"
-      },
-      "METADE_LIVRE": {
-        "title": "Half packed, half free",
-        "description": "One packed day, one free day to rest"
+        "description": "Alternates packed days with 4-stop days and a free morning or afternoon"
       },
       "LEVE": {
         "title": "Light, no rush",

@@ -62,8 +62,14 @@
     "loadError": "Não foi possível carregar as sugestões.",
     "retry": "Tentar de novo"
   },
-  "freeDay": {
-    "title": "Dia livre",
-    "text": "Nada programado para este dia. Aproveite para descansar ou explorar a cidade sem pressa."
+  "freePeriod": {
+    "morning": {
+      "title": "Manhã livre",
+      "text": "Comece o dia sem pressa: o roteiro de hoje começa à tarde."
+    },
+    "afternoon": {
+      "title": "Tarde livre",
+      "text": "Depois do almoço, a tarde é sua para descansar ou explorar sem pressa."
+    }
   }
 }

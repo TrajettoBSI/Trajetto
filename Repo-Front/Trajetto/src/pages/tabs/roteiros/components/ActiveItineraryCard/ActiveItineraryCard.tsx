@@ -23,7 +23,7 @@ type ActiveItineraryCardProps = {
 export default function ActiveItineraryCard({
   itinerary, selectMode, selected, deleting, onPress, onLongPress, onDelete,
 }: ActiveItineraryCardProps) {
-  const { t } = useTranslation(['roteiros', 'itinerario']);
+  const { t } = useTranslation('roteiros');
   const colors = useColors();
   const s = styles(colors);
 
@@ -87,10 +87,6 @@ export default function ActiveItineraryCard({
         <Text style={s.dayLabel}>
           {t('activeCard.dayOf', { number: shownDay.number, total: itineraryDays.length })}
         </Text>
-      )}
-
-      {!selectMode && shownDay && shownPlaces.length === 0 && (
-        <Text style={s.freeDayText}>{t('itinerario:freeDay.title')}</Text>
       )}
 
       {!selectMode && (
