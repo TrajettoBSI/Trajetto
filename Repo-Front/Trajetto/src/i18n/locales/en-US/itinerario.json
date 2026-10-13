@@ -3,6 +3,7 @@
   "sectionLabel": "ITINERARY STOPS",
   "daySectionLabel": "STOPS OF DAY {{number}} OF {{total}}",
   "exportPdf": "Export as PDF",
+  "exportPdfShort": "PDF",
   "headerCard": {
     "period": "Period",
     "stops": "Stops",

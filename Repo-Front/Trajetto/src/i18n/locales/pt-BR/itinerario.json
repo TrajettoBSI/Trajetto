@@ -3,6 +3,7 @@
   "sectionLabel": "PARADAS DO ROTEIRO",
   "daySectionLabel": "PARADAS DO DIA {{number}} DE {{total}}",
   "exportPdf": "Exportar em PDF",
+  "exportPdfShort": "PDF",
   "headerCard": {
     "period": "Período",
     "stops": "Paradas",

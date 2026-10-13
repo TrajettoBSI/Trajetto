@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -17,6 +17,9 @@ import ItineraryHeaderCard from './components/ItineraryHeaderCard/ItineraryHeade
 import TimelineRow from './components/TimelineRow/TimelineRow';
 import AlternativesModal from './components/AlternativesModal/AlternativesModal';
 import NoteModal from './components/NoteModal/NoteModal';
+
+// A barra de abas flutua sobre o conteudo (64 de altura, 4 acima da area segura).
+const TAB_BAR_SPACE = 64 + 4 + 24;
 
 export default function Itinerario() {
   const { t } = useTranslation('itinerario');
@@ -73,11 +76,21 @@ export default function Itinerario() {
           <View style={s.safe}>
             <View style={[s.headerBar, { paddingTop: insets.top + 12 }]}>
               <Text style={s.headerBarTitle}>Trajetto</Text>
+              <TouchableOpacity
+                style={s.headerExportBtn}
+                onPress={handleExportPDF}
+                activeOpacity={0.8}
+                accessibilityRole="button"
+                accessibilityLabel={t('exportPdf')}
+              >
+                <Ionicons name="download-outline" size={18} color={colors.white} />
+                <Text style={s.headerExportText}>{t('exportPdfShort')}</Text>
+              </TouchableOpacity>
             </View>
             <ScrollView
               ref={scrollRef}
               style={s.container}
-              contentContainerStyle={s.content}
+              contentContainerStyle={[s.content, { paddingBottom: insets.bottom + TAB_BAR_SPACE }]}
               showsVerticalScrollIndicator={false}
             >
               <ItineraryHeaderCard
