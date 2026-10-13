@@ -9,6 +9,7 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
@@ -19,12 +20,15 @@ import java.util.Map;
 @Service
 public class RouteService {
 
-    @Value("${ors.api.key}")
-    private String apiKey;
+    private final RestTemplate restTemplate;
+    private final String apiKey;
 
+    public RouteService(RestTemplateBuilder restTemplateBuilder, @Value("${ors.api.key}") String apiKey) {
+        this.restTemplate = restTemplateBuilder.build();
+        this.apiKey = apiKey;
+    }
 
     public Map<String, Object> getRoute(RouteRequestDTO request) {
-        RestTemplate restTemplate = new RestTemplate();
         String url = "https://api.openrouteservice.org/v2/directions/driving-car";
 
         List<List<Double>> coordinates =  new ArrayList<>();
@@ -40,14 +44,11 @@ public class RouteService {
         coordinates.add(List.of(request.destination.lng, request.destination.lat));
 
         Map<String, Object> body = new HashMap<>();
-        System.out.println("BODY: " + body);
 
         body.put("coordinates", coordinates);
-        System.out.println("ANTES DO ORS");
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", apiKey);
         headers.setContentType(MediaType.APPLICATION_JSON);
-        System.out.println("DEPOIS DO ORS");
 
         HttpEntity<Map<String, Object>> entity = new HttpEntity<>(body, headers);
 

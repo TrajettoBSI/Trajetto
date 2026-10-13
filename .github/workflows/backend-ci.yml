@@ -63,3 +63,30 @@ jobs:
           DB_PASSWORD: test
           ORS_API_KEY: ci-dummy-key
         run: ./mvnw -B clean verify
+
+      - name: Coverage summary
+        if: always()
+        run: |
+          if [ ! -f target/site/jacoco/jacoco.csv ]; then exit 0; fi
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import csv
+          rows = list(csv.DictReader(open('target/site/jacoco/jacoco.csv')))
+          print('## Cobertura de testes do backend (JaCoCo)')
+          print()
+          print('| Metrica | Cobertura | Cobertos / total |')
+          print('|---|---|---|')
+          for nome, chave in [('Linhas', 'LINE'), ('Instrucoes', 'INSTRUCTION'), ('Desvios (branches)', 'BRANCH'), ('Metodos', 'METHOD')]:
+              perdidos = sum(int(r[chave + '_MISSED']) for r in rows)
+              cobertos = sum(int(r[chave + '_COVERED']) for r in rows)
+              print(f'| {nome} | {cobertos / (perdidos + cobertos) * 100:.1f}% | {cobertos} / {perdidos + cobertos} |')
+          print()
+          print('Minimo exigido pelo build: 75% de linhas e de instrucoes.')
+          PY
+
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-cobertura-jacoco
+          path: Repo-Back/backend/target/site/jacoco/
+          if-no-files-found: ignore

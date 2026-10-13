@@ -54,15 +54,12 @@ public class ItineraryService {
     @Autowired
     private RomePlacesLoader romePlacesLoader;
 
+    @Transactional
     public ItineraryModel createItineraryMock(Long userId) {
         UserModel user = userRepository.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException("Usuário", userId));
 
-        List<ItineraryModel> activeItineraries = itineraryRepository.findByUserAndActiveTrue(user);
-        for (ItineraryModel old : activeItineraries) {
-            old.setActive(false);
-            itineraryRepository.save(old);
-        }
+        deactivateActiveItineraries(user);
 
         ItineraryModel itinerary = new ItineraryModel();
         itinerary.setStartDate(LocalDate.now());
@@ -129,6 +126,7 @@ public class ItineraryService {
         return null;
     }
 
+    @Transactional
     public ItineraryResponseDTO generateItinerary(GenerateItineraryRequestDTO req) {
         UserModel user = userRepository.findById(req.getUserId())
                 .orElseThrow(() -> new ResourceNotFoundException("Usuário", req.getUserId()));
@@ -190,11 +188,7 @@ public class ItineraryService {
             }
         }
 
-        // Deactivate current active itineraries
-        itineraryRepository.findByUserAndActiveTrue(user).forEach(old -> {
-            old.setActive(false);
-            itineraryRepository.save(old);
-        });
+        deactivateActiveItineraries(user);
 
         ItineraryModel itinerary = new ItineraryModel();
         itinerary.setStartDate(startDate);
@@ -225,6 +219,12 @@ public class ItineraryService {
         itinerary.setPlaces(places);
 
         return toDTO(itineraryRepository.save(itinerary));
+    }
+
+    private void deactivateActiveItineraries(UserModel user) {
+        List<ItineraryModel> ativos = itineraryRepository.findByUserAndActiveTrue(user);
+        ativos.forEach(it -> it.setActive(false));
+        itineraryRepository.saveAllAndFlush(ativos);
     }
 
     private List<RomePlace> pick(List<RomePlace> ranked, long limit, Set<String> chosen) {
