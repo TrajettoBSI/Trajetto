@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, Text, TouchableOpacity, View } from 'react-native';
 import { Place } from '@/services';
-import { categoryIcon } from '@/src/helpers/categoryIcon';
+import { categoryIcon, categoryLabel } from '@/src/helpers/categoryIcon';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
@@ -24,7 +24,7 @@ export default function SuggestionsList({ suggestions, onSelect }: SuggestionsLi
             <Text style={s.suggestionEmoji}>{categoryIcon(item.category)}</Text>
             <View style={s.suggestionText}>
               <Text style={s.suggestionName} numberOfLines={1}>{item.name}</Text>
-              <Text style={s.suggestionCategory}>{item.category}{item.fee === 'no' ? ' · 🆓' : item.fee === 'yes' ? ' · 💰' : ''}</Text>
+              <Text style={s.suggestionCategory}>{categoryLabel(item.category)}{item.fee === 'no' ? ' · 🆓' : item.fee === 'yes' ? ' · 💰' : ''}</Text>
             </View>
             <Text style={s.suggestionArrow}>↗</Text>
           </TouchableOpacity>

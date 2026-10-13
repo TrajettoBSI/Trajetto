@@ -12,7 +12,7 @@ import CustomInput from '@/components/CustomInput';
 import { useColors } from '@/src/theme';
 import { AsyncBoundary } from '@/src/components/feedback';
 import { useExplore } from './hooks/useExplore';
-import { categoryIcon, formatCategoryLabel } from '@/src/helpers/categoryIcon';
+import { categoryIcon, categoryLabel } from '@/src/helpers/categoryIcon';
 import SpotCard from './components/SpotCard/SpotCard';
 import { styles } from './styles/styles';
 
@@ -90,7 +90,7 @@ export default function Explore() {
         {selectedCategory ? (
           <View style={s.activeFilterRow}>
             <View style={s.activeFilterChip}>
-              <Text style={s.activeFilterText}>{formatCategoryLabel(selectedCategory)}</Text>
+              <Text style={s.activeFilterText}>{categoryLabel(selectedCategory)}</Text>
               <TouchableOpacity onPress={handleClearFilter}>
                 <Text style={s.activeFilterClose}>✕</Text>
               </TouchableOpacity>
@@ -101,7 +101,7 @@ export default function Explore() {
         {searched && !loading && !error && (
           <Text style={s.resultsLabel}>
             {t('explore:resultsCount', { count: spots?.length ?? 0 })}
-            {selectedCategory ? t('explore:resultsInCategory', { category: formatCategoryLabel(selectedCategory) }) : ''}
+            {selectedCategory ? t('explore:resultsInCategory', { category: categoryLabel(selectedCategory) }) : ''}
           </Text>
         )}
 
@@ -167,7 +167,7 @@ export default function Explore() {
                     <Text style={s.categoryIconEmoji}>{categoryIcon(cat)}</Text>
                   </View>
                   <Text style={[s.categoryItemText, tempCategory === cat && s.categoryItemTextSelected]}>
-                    {formatCategoryLabel(cat)}
+                    {categoryLabel(cat)}
                   </Text>
                   {tempCategory === cat && <Ionicons name="checkmark" size={20} color={colors.primary} />}
                 </TouchableOpacity>

@@ -8,6 +8,7 @@ import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
 import { formatDate, formatTime } from '@/src/i18n/format';
 import { groupByDay } from '@/src/domain/itinerary/itineraryDays';
+import { categoryLabel } from '@/src/helpers/categoryIcon';
 import { adminAccent } from '@/src/theme';
 
 const PDF_PRIMARY = adminAccent.primary;
@@ -31,7 +32,7 @@ function buildItineraryHtml(itinerary: Itinerary) {
           <h3 style="margin: 0 0 8px 0; color: #1a1a1a; font-size: 18px;">${index + 1}. ${place.name}</h3>
           <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕒 ${t('estimatedTime')}</strong> ${formatTime(place.estimatedVisitTime)}</p>
           <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>📍 ${t('address')}</strong> ${place.address}</p>
-          ${place.category ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🏷️ ${t('category')}</strong> ${place.category}</p>` : ''}
+          ${place.category ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🏷️ ${t('category')}</strong> ${categoryLabel(place.category)}</p>` : ''}
           ${place.openingHours ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕐 ${t('openingHours')}</strong> ${place.openingHours}</p>` : ''}
           ${place.note ? `<p style="margin: 8px 0 0 0; font-size: 14px; color: #5c4a12; white-space: pre-wrap;"><strong>📝 ${t('note')}</strong> ${escapeHtml(place.note)}</p>` : ''}
         </div>
