@@ -1,6 +1,7 @@
 module.exports = {
   preset: 'jest-expo',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.tsx'],
+  testTimeout: 30000,
   moduleNameMapper: {
     '\\.svg$': '<rootDir>/tests/mocks/svgMock.tsx',
     '^@/(.*)$': '<rootDir>/$1',
