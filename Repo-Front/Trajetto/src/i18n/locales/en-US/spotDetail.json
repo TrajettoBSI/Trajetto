@@ -42,7 +42,9 @@
     "saveError": "Could not save the rating.",
     "deleteConfirm": "Are you sure?",
     "deleteTitle": "Delete rating",
-    "deleteError": "Could not delete the rating."
+    "deleteError": "Could not delete the rating.",
+    "edit": "Edit review",
+    "delete": "Delete review"
   },
   "favorite": {
     "add": "Add to favorites",

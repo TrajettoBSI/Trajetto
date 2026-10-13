@@ -42,7 +42,9 @@
     "saveError": "Não foi possível salvar a avaliação.",
     "deleteConfirm": "Tem certeza?",
     "deleteTitle": "Excluir avaliação",
-    "deleteError": "Não foi possível excluir a avaliação."
+    "deleteError": "Não foi possível excluir a avaliação.",
+    "edit": "Editar avaliação",
+    "delete": "Excluir avaliação"
   },
   "favorite": {
     "add": "Adicionar aos favoritos",

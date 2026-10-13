@@ -45,5 +45,7 @@
       "message": "We found nothing to show right now.",
       "action": "Refresh"
     }
-  }
+  },
+  "stars_one": "{{count}} star",
+  "stars_other": "{{count}} stars"
 }

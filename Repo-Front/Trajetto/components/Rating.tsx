@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, TouchableOpacity, StyleSheet } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 
 type Props = {
@@ -17,6 +18,7 @@ export default function StarRating({
   color = '#f5b301',
   readonly = false,
 }: Props) {
+  const { t } = useTranslation('common');
   const [rating, setRating] = useState(value);
   const [valueAnterior, setValueAnterior] = useState(value);
 
@@ -42,6 +44,9 @@ export default function StarRating({
             key={index}
             onPress={() => handlePress(index)}
             activeOpacity={readonly ? 1 : 0.7}
+            disabled={readonly}
+            accessibilityRole="button"
+            accessibilityLabel={t('stars', { count: index + 1 })}
           >
             <IconSymbol
               name={filled ? 'star.fill' : 'star'}

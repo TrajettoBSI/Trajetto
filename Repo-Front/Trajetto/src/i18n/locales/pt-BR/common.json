@@ -45,5 +45,7 @@
       "message": "Não encontramos nada para mostrar neste momento.",
       "action": "Atualizar"
     }
-  }
+  },
+  "stars_one": "{{count}} estrela",
+  "stars_other": "{{count}} estrelas"
 }
