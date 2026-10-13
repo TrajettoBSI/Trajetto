@@ -13,5 +13,5 @@ export const styles = (colors: AppColors) =>
       padding: 10, fontSize: 13, minHeight: 60, textAlignVertical: 'top', backgroundColor: colors.white,
     },
     ratingButton: { backgroundColor: colors.primary, paddingVertical: 10, borderRadius: 10, alignItems: 'center' },
-    ratingButtonText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 13 },
+    ratingButtonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 13 },
   });

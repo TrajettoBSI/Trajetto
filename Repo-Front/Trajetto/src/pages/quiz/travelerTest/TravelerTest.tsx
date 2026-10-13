@@ -32,7 +32,7 @@ export default function TravelerTest() {
 
         {fromProfile && (
           <View style={s.retakeBadge}>
-            <Ionicons name="sync" size={16} color={colors.white} />
+            <Ionicons name="sync" size={16} color={colors.onPrimary} />
             <Text style={s.retakeBadgeText}>{t('travelerTest.retaking')}</Text>
           </View>
         )}
@@ -56,7 +56,7 @@ export default function TravelerTest() {
           activeOpacity={0.75}
         >
           {skipping ? (
-            <ActivityIndicator color={colors.white} size="small" />
+            <ActivityIndicator color={colors.onPrimary} size="small" />
           ) : (
             <Text style={s.secondaryButtonText}>
               {fromProfile ? t('travelerTest.cancel') : t('travelerTest.skip')}

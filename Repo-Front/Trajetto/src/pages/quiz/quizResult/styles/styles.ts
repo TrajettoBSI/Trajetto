@@ -31,7 +31,7 @@ export const styles = (colors: AppColors) =>
     profileName: {
       fontSize: 26,
       fontFamily: 'Inter-Bold',
-      color: colors.white,
+      color: colors.onPrimary,
       textAlign: 'center',
       letterSpacing: 1,
     },
@@ -71,7 +71,7 @@ export const styles = (colors: AppColors) =>
       padding: 16,
       marginTop: 4,
     },
-    backButtonText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 16 },
+    backButtonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 16 },
 
     errorText: { textAlign: 'center', marginTop: 40, fontSize: 16, color: colors.gray600 },
   });

@@ -12,7 +12,7 @@ export const styles = (colors: AppColors) =>
     title: {
       fontSize: 15,
       fontFamily: 'Inter-Bold',
-      color: colors.white,
+      color: colors.onPrimary,
       marginBottom: 12,
     },
     inputWrapper: {

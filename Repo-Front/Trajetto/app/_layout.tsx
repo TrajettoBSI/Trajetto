@@ -11,7 +11,7 @@ import { Righteous_400Regular } from '@expo-google-fonts/righteous';
 import { FugazOne_400Regular } from '@expo-google-fonts/fugaz-one';
 
 import '@/src/i18n';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import { ThemeProvider as AppThemeProvider, useTheme } from '@/src/theme';
 import { AuthProvider, useAuth } from '../context/AuthContext';
 
 (Text as any).defaultProps = (Text as any).defaultProps || {};
@@ -27,7 +27,7 @@ SplashScreen.preventAutoHideAsync();
 
 function RootLayoutNav() {
   const { t } = useTranslation(['admin', 'resetPassword']);
-  const colorScheme = useColorScheme();
+  const { scheme } = useTheme();
   const [fontsLoaded, fontError] = useFonts({
     'Inter': Inter_400Regular,
     'Inter-Medium': Inter_500Medium,
@@ -87,7 +87,7 @@ function RootLayoutNav() {
   if (!fontsLoaded && !fontError) return null;
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <ThemeProvider value={scheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false, headerBackTitle: '' }} />
         <Stack.Screen name="LoginScreen" options={{ headerShown: false }} />
@@ -109,7 +109,7 @@ function RootLayoutNav() {
         <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
         <Stack.Screen name="AdminPanelScreen" options={{ headerShown: false }} />
       </Stack>
-      <StatusBar style="auto" />
+      <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
     </ThemeProvider>
   );
 }
@@ -117,9 +117,11 @@ function RootLayoutNav() {
 export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <AuthProvider>
-        <RootLayoutNav />
-      </AuthProvider>
+      <AppThemeProvider>
+        <AuthProvider>
+          <RootLayoutNav />
+        </AuthProvider>
+      </AppThemeProvider>
     </GestureHandlerRootView>
   );
 }

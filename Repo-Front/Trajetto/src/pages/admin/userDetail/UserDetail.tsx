@@ -130,7 +130,7 @@ export default function UserDetail() {
 
         <TouchableOpacity style={s.saveButton} onPress={handleUpdate} disabled={loading} activeOpacity={0.85}>
           {loading
-            ? <ActivityIndicator size="small" color={colors.white} />
+            ? <ActivityIndicator size="small" color={colors.onPrimary} />
             : <Text style={s.saveButtonText}>{t('userDetail.save')}</Text>
           }
         </TouchableOpacity>

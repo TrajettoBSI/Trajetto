@@ -165,14 +165,14 @@ export default function FilterPanel({
           })}
         </ScrollView>
         <LinearGradient
-          colors={[colors.white, 'rgba(255,255,255,0)']}
+          colors={[colors.white, colors.surfaceTransparent]}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 0 }}
           style={[s.scrollFade, s.scrollFadeLeft]}
           pointerEvents="none"
         />
         <LinearGradient
-          colors={['rgba(255,255,255,0)', colors.white]}
+          colors={[colors.surfaceTransparent, colors.white]}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 0 }}
           style={[s.scrollFade, s.scrollFadeRight]}

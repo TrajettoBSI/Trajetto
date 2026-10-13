@@ -15,7 +15,7 @@ export const styles = (colors: AppColors) =>
     strength: { marginTop: 0, marginBottom: 16 },
     loginBtn: { backgroundColor: colors.primaryDark, borderRadius: 12, padding: 16, alignItems: 'center', marginTop: 8, shadowColor: colors.primaryDark, shadowOpacity: 0.35, shadowRadius: 8, shadowOffset: { width: 0, height: 4 }, elevation: 5 },
     loginBtnDisabled: { opacity: 0.6 },
-    loginBtnText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 16 },
+    loginBtnText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 16 },
     registerRow: { flexDirection: 'row', justifyContent: 'center', marginTop: 24 },
     registerLink: { fontSize: 14, color: colors.primaryDark, fontFamily: 'Inter-Bold' },
   });

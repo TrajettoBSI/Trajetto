@@ -2,6 +2,7 @@ import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/context/AuthContext';
 import { useLanguageSwitcher } from '@/src/components/LanguageSwitcher/hooks/useLanguageSwitcher';
+import { useThemeSwitcher } from '@/src/components/ThemeSwitcher/useThemeSwitcher';
 import { MenuItemProps } from '@/src/components/MenuItem/MenuItem';
 
 export type MenuSection = {
@@ -14,6 +15,7 @@ export function usePerfil() {
   const { user, logout } = useAuth();
   const router = useRouter();
   const { open, setOpen, current, select } = useLanguageSwitcher();
+  const themePicker = useThemeSwitcher();
 
   const menuSections: MenuSection[] = [
     {
@@ -34,6 +36,12 @@ export function usePerfil() {
           label: t('menu.language'),
           value: current.label,
           onPress: () => setOpen(true),
+        },
+        {
+          icon: 'contrast-outline',
+          label: themePicker.title,
+          value: themePicker.currentLabel,
+          onPress: () => themePicker.setOpen(true),
         },
       ],
     },
@@ -75,5 +83,6 @@ export function usePerfil() {
     router,
     menuSections,
     languagePicker: { open, setOpen, current, select },
+    themePicker,
   };
 }

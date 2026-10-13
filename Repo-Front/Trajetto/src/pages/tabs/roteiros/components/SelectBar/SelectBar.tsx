@@ -27,7 +27,7 @@ export default function SelectBar({ count, bulkDeleting, onBulkDelete }: SelectB
         activeOpacity={0.85}
       >
         {bulkDeleting
-          ? <ActivityIndicator size="small" color={colors.white} />
+          ? <ActivityIndicator size="small" color={colors.onPrimary} />
           : <Text style={s.bulkDeleteBtnText}>{t('selectBar.delete', { count })}</Text>
         }
       </TouchableOpacity>

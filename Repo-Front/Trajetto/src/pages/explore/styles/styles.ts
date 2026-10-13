@@ -36,7 +36,7 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center',
       justifyContent: 'center',
     },
-    filterBadgeText: { color: colors.white, fontSize: 10, fontFamily: 'Inter-Bold' },
+    filterBadgeText: { color: colors.onPrimary, fontSize: 10, fontFamily: 'Inter-Bold' },
 
     activeFilterRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 8 },
     activeFilterChip: {
@@ -100,11 +100,11 @@ export const styles = (colors: AppColors) =>
     },
     clearFilterBtnText: { color: colors.gray500, fontFamily: 'Inter-Medium', fontSize: 15 },
     applyBtn: { flex: 2, backgroundColor: colors.primary, borderRadius: 12, paddingVertical: 14, alignItems: 'center' },
-    applyBtnText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 15 },
+    applyBtnText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 15 },
 
     headerWrapper: { paddingHorizontal: 24, backgroundColor: colors.primary },
     headerRow: { flexDirection: 'row', alignItems: 'center', position: 'relative', height: 56 },
     headerLeft: { flexDirection: 'row', alignItems: 'center', zIndex: 10 },
     headerBackBtn: { paddingVertical: 4, paddingRight: 8, marginLeft: -12 },
-    headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.white },
+    headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.onPrimary },
   });

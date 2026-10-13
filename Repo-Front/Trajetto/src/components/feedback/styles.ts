@@ -50,5 +50,5 @@ export const styles = (colors: AppColors) =>
       paddingHorizontal: 24,
       paddingVertical: 12,
     },
-    actionText: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.white },
+    actionText: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.onPrimary },
   });

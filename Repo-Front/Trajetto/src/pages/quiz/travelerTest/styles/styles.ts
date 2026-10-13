@@ -51,12 +51,12 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center',
       gap: 6,
     },
-    retakeBadgeText: { color: colors.white, fontSize: 13, fontFamily: 'Inter-Medium' },
+    retakeBadgeText: { color: colors.onPrimary, fontSize: 13, fontFamily: 'Inter-Medium' },
     textBlock: { alignSelf: 'stretch' },
     title: {
       fontSize: 28,
       fontFamily: 'Inter-Bold',
-      color: colors.white,
+      color: colors.onPrimary,
       marginBottom: 12,
     },
     subtitle: {
@@ -84,5 +84,5 @@ export const styles = (colors: AppColors) =>
       minHeight: 52,
       justifyContent: 'center',
     },
-    secondaryButtonText: { color: colors.white, fontSize: 16 },
+    secondaryButtonText: { color: colors.onPrimary, fontSize: 16 },
   });

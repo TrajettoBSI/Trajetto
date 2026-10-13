@@ -36,7 +36,7 @@ export const styles = (colors: AppColors) =>
     brand: {
       fontSize: 30,
       fontFamily: 'FugazOne',
-      color: colors.white,
+      color: colors.onPrimary,
     },
     card: {
       flex: 1,

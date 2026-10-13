@@ -10,5 +10,5 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center', justifyContent: 'center',
     },
     checkboxSelected: { backgroundColor: colors.primary, borderColor: colors.primary },
-    checkmark: { color: colors.white, fontSize: 14, fontFamily: 'Inter-Bold' },
+    checkmark: { color: colors.onPrimary, fontSize: 14, fontFamily: 'Inter-Bold' },
   });

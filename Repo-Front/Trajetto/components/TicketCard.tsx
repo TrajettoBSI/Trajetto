@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { categoryLabel } from '@/src/helpers/categoryIcon';
+import { AppColors, useColors } from '@/src/theme';
 
 function categoryIcon(category: string): string {
     const c = (category || '').toLowerCase();
@@ -49,6 +50,8 @@ export function TicketCard({
     place, idx, color, isPast, isHighlighted, isLast, onPress, onInfoPress, onSwitchPress, onNotePress,
 }: TicketCardProps) {
     const { t } = useTranslation('itinerario');
+    const colors = useColors();
+    const ticketStyles = getTicketStyles(colors);
     return (
         <TouchableOpacity
             style={[
@@ -62,7 +65,7 @@ export function TicketCard({
         >
           <View style={ticketStyles.ticketInner}>
             {/* Cabeçalho colorido */}
-            <View style={[ticketStyles.header, { backgroundColor: isPast ? '#9aa4b2' : color }]}>
+            <View style={[ticketStyles.header, { backgroundColor: isPast ? colors.timelineDotPast : color }]}>
                 <View style={ticketStyles.headerLeft}>
                     <Text style={ticketStyles.stopLabel}>{t('ticketCard.stopLabel')}</Text>
                     <Text style={ticketStyles.stopNumber}>{String(idx + 1).padStart(2, '0')}</Text>
@@ -83,7 +86,7 @@ export function TicketCard({
                 <View style={ticketStyles.notchLeft} />
                 <View style={ticketStyles.dashes}>
                     {Array.from({ length: 22 }).map((_, i) => (
-                        <View key={i} style={[ticketStyles.dash, { backgroundColor: isPast ? '#d1d8e0' : `${color}55` }]} />
+                        <View key={i} style={[ticketStyles.dash, { backgroundColor: isPast ? colors.borderMuted : `${color}55` }]} />
                     ))}
                 </View>
                 <View style={ticketStyles.notchRight} />
@@ -91,21 +94,21 @@ export function TicketCard({
 
             {/* Corpo do ticket */}
             <View style={ticketStyles.body}>
-                <Text style={[ticketStyles.placeName, isPast && { color: '#9aa4b2' }]} numberOfLines={2}>
+                <Text style={[ticketStyles.placeName, isPast && { color: colors.timelineDotPast }]} numberOfLines={2}>
                     {place.name}
                 </Text>
 
                 <View style={ticketStyles.addressRow}>
-                    <Ionicons name="location-outline" size={13} color={isPast ? '#b0bac6' : '#8a9ab0'} />
-                    <Text style={[ticketStyles.addressText, isPast && { color: '#b0bac6' }]} numberOfLines={1}>
+                    <Ionicons name="location-outline" size={13} color={isPast ? colors.textFaintBlue : colors.textSubtle} />
+                    <Text style={[ticketStyles.addressText, isPast && { color: colors.textFaintBlue }]} numberOfLines={1}>
                         {place.address}
                     </Text>
                 </View>
 
                 {place.openingHours ? (
                     <View style={ticketStyles.addressRow}>
-                        <Ionicons name="time-outline" size={13} color={isPast ? '#b0bac6' : '#8a9ab0'} />
-                        <Text style={[ticketStyles.addressText, isPast && { color: '#b0bac6' }]} numberOfLines={1}>
+                        <Ionicons name="time-outline" size={13} color={isPast ? colors.textFaintBlue : colors.textSubtle} />
+                        <Text style={[ticketStyles.addressText, isPast && { color: colors.textFaintBlue }]} numberOfLines={1}>
                             {place.openingHours}
                         </Text>
                     </View>
@@ -113,8 +116,8 @@ export function TicketCard({
 
                 <View style={ticketStyles.tagsRow}>
                     {place.category ? (
-                        <View style={[ticketStyles.badge, { backgroundColor: isPast ? '#e8eaed' : `${color}18` }]}>
-                            <Text style={[ticketStyles.badgeText, { color: isPast ? '#9aa4b2' : color }]}>
+                        <View style={[ticketStyles.badge, { backgroundColor: isPast ? colors.pinBgPast : `${color}18` }]}>
+                            <Text style={[ticketStyles.badgeText, { color: isPast ? colors.timelineDotPast : color }]}>
                                 {categoryLabel(place.category)}
                             </Text>
                         </View>
@@ -139,7 +142,7 @@ export function TicketCard({
                     <Ionicons
                         name={place.note ? 'document-text-outline' : 'add-circle-outline'}
                         size={15}
-                        color={place.note ? '#7a5b00' : '#8a9ab0'}
+                        color={place.note ? colors.warningBannerArrow : colors.textSubtle}
                     />
                     <Text
                         style={[ticketStyles.noteText, place.note ? ticketStyles.noteTextFilled : null]}
@@ -159,7 +162,7 @@ export function TicketCard({
                     <Text style={ticketStyles.aboutBtnText}>{t('ticketCard.about')}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    style={[ticketStyles.switchBtn, { backgroundColor: isPast ? '#c8d0da' : color }]}
+                    style={[ticketStyles.switchBtn, { backgroundColor: isPast ? colors.pinBorderPast : color }]}
                     onPress={onSwitchPress}
                     disabled={isPast}
                 >
@@ -171,12 +174,12 @@ export function TicketCard({
     );
 }
 
-const ticketStyles = StyleSheet.create({
+const getTicketStyles = (colors: AppColors) => StyleSheet.create({
     ticket: {
         flex: 1,
         borderRadius: 16,
         marginBottom: 12,
-        shadowColor: '#000',
+        shadowColor: colors.shadow,
         shadowOpacity: 0.08,
         shadowRadius: 8,
         shadowOffset: { width: 0, height: 3 },
@@ -187,7 +190,7 @@ const ticketStyles = StyleSheet.create({
     ticketInner: {
         borderRadius: 16,
         overflow: 'hidden',
-        backgroundColor: '#fff',
+        backgroundColor: colors.white,
     },
     pastTicket: {
         opacity: 0.55,
@@ -203,10 +206,10 @@ const ticketStyles = StyleSheet.create({
     headerLeft: { flex: 1 },
     headerCenter: { alignItems: 'center', paddingHorizontal: 12 },
     headerRight: { flex: 1, alignItems: 'flex-end' },
-    stopLabel: { fontSize: 9, fontWeight: '700', color: 'rgba(255,255,255,0.7)', letterSpacing: 1 },
-    stopNumber: { fontSize: 22, fontWeight: '900', color: '#fff', letterSpacing: -0.5 },
-    timeLabel: { fontSize: 9, fontWeight: '700', color: 'rgba(255,255,255,0.7)', letterSpacing: 1 },
-    timeValue: { fontSize: 18, fontWeight: '800', color: '#fff' },
+    stopLabel: { fontSize: 9, fontWeight: '700', color: colors.onPrimaryFaint70, letterSpacing: 1 },
+    stopNumber: { fontSize: 22, fontWeight: '900', color: colors.onPrimary, letterSpacing: -0.5 },
+    timeLabel: { fontSize: 9, fontWeight: '700', color: colors.onPrimaryFaint70, letterSpacing: 1 },
+    timeValue: { fontSize: 18, fontWeight: '800', color: colors.onPrimary },
     categoryEmoji: { fontSize: 28 },
 
 
@@ -222,14 +225,14 @@ const ticketStyles = StyleSheet.create({
         height: 30,
         borderRadius: 20,
         marginLeft: -9,
-        backgroundColor: '#F6F8FC',
+        backgroundColor: colors.backgroundMuted,
     },
     notchRight: {
         width: 30,
         height: 30,
         borderRadius: 20,
         marginRight: -9,
-        backgroundColor: '#F6F8FC',
+        backgroundColor: colors.backgroundMuted,
     },
     dashes: {
         flex: 1,
@@ -253,7 +256,7 @@ const ticketStyles = StyleSheet.create({
     placeName: {
         fontSize: 16,
         fontWeight: '800',
-        color: '#1a1a1a',
+        color: colors.text,
         marginBottom: 6,
         letterSpacing: -0.3,
         lineHeight: 22,
@@ -266,7 +269,7 @@ const ticketStyles = StyleSheet.create({
     },
     addressText: {
         fontSize: 12,
-        color: '#8a9ab0',
+        color: colors.textSubtle,
         flex: 1,
         lineHeight: 17,
     },
@@ -279,19 +282,19 @@ const ticketStyles = StyleSheet.create({
     },
     badgeText: { fontSize: 11, fontWeight: '700' },
     feeBadge: {
-        backgroundColor: '#fff7ed',
+        backgroundColor: colors.warningSurface,
         borderRadius: 20,
         paddingHorizontal: 10,
         paddingVertical: 4,
     },
-    feeBadgeText: { fontSize: 11, fontWeight: '600', color: '#c2410c' },
+    feeBadgeText: { fontSize: 11, fontWeight: '600', color: colors.feeTextOrange },
     freeBadge: {
-        backgroundColor: '#f0fdf4',
+        backgroundColor: colors.successSurface,
         borderRadius: 20,
         paddingHorizontal: 10,
         paddingVertical: 4,
     },
-    freeBadgeText: { fontSize: 11, fontWeight: '600', color: '#15803d' },
+    freeBadgeText: { fontSize: 11, fontWeight: '600', color: colors.successText },
     noteBox: {
         flexDirection: 'row',
         alignItems: 'flex-start',
@@ -302,35 +305,35 @@ const ticketStyles = StyleSheet.create({
         borderRadius: 10,
         borderWidth: 1,
         borderStyle: 'dashed',
-        borderColor: '#d1d8e0',
+        borderColor: colors.borderMuted,
     },
     noteBoxFilled: {
         borderStyle: 'solid',
-        borderColor: '#f5e2a8',
-        backgroundColor: '#fffbeb',
+        borderColor: colors.warningBannerBorder,
+        backgroundColor: colors.warningBannerBg,
     },
-    noteText: { flex: 1, fontSize: 12, color: '#8a9ab0', lineHeight: 17 },
-    noteTextFilled: { color: '#5c4a12' },
+    noteText: { flex: 1, fontSize: 12, color: colors.textSubtle, lineHeight: 17 },
+    noteTextFilled: { color: colors.warningBannerText },
     footer: {
         flexDirection: 'row',
         borderTopWidth: 1,
-        borderTopColor: '#f0f2f5',
+        borderTopColor: colors.divider,
     },
     aboutBtn: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 16,
-        backgroundColor: '#fff',
+        backgroundColor: colors.white,
     },
-    aboutBtnText: { fontSize: 15, fontWeight: '700', color: '#1a1a1a' },
+    aboutBtnText: { fontSize: 15, fontWeight: '700', color: colors.text },
     switchBtn: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 16,
     },
-    switchBtnText: { fontSize: 15, fontWeight: '700', color: '#fff' },
+    switchBtnText: { fontSize: 15, fontWeight: '700', color: colors.onPrimary },
 
     // ── Ícone mapa (canto) ──
     mapCorner: {

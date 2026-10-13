@@ -39,7 +39,7 @@ export default function SpotDetail() {
         <View style={s.headerRow}>
           <View style={s.headerLeft}>
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
-              <Ionicons name="chevron-back" size={32} color={colors.white} />
+              <Ionicons name="chevron-back" size={32} color={colors.onPrimary} />
             </TouchableOpacity>
             <Text style={s.headerText}>{backLabel}</Text>
           </View>
@@ -51,7 +51,7 @@ export default function SpotDetail() {
             accessibilityRole="button"
             accessibilityLabel={isFavorite ? t('favorite.remove') : t('favorite.add')}
           >
-            <Ionicons name={isFavorite ? 'heart' : 'heart-outline'} size={26} color={colors.white} />
+            <Ionicons name={isFavorite ? 'heart' : 'heart-outline'} size={26} color={colors.onPrimary} />
           </TouchableOpacity>
         </View>
       </View>

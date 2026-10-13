@@ -10,7 +10,7 @@ export const styles = (colors: AppColors) =>
     headerRow: { flexDirection: 'row', alignItems: 'center', position: 'relative', height: 56 },
     headerLeft: { flexDirection: 'row', alignItems: 'center', zIndex: 10 },
     headerBackBtn: { paddingVertical: 4, paddingRight: 8, marginLeft: -12 },
-    headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.white },
+    headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.onPrimary },
 
     section: { paddingHorizontal: 20, marginBottom: 8 },
     sectionTitle: {

@@ -47,5 +47,12 @@
     }
   },
   "stars_one": "{{count}} estrela",
-  "stars_other": "{{count}} estrelas"
+  "stars_other": "{{count}} estrelas",
+  "theme": {
+    "title": "Tema",
+    "system": "Padrão do sistema",
+    "light": "Claro",
+    "dark": "Escuro",
+    "highContrast": "Alto contraste"
+  }
 }

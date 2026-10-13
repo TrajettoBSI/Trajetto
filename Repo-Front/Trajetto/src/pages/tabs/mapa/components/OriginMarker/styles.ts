@@ -10,5 +10,5 @@ export const styles = (colors: AppColors) =>
       shadowColor: colors.shadow, shadowOpacity: 0.25, shadowRadius: 4, elevation: 5,
     },
     originLabel: { backgroundColor: colors.primary, borderRadius: 8, paddingHorizontal: 8, paddingVertical: 3 },
-    originLabelText: { color: colors.white, fontSize: 10, fontFamily: 'Inter-Bold', letterSpacing: 0.5 },
+    originLabelText: { color: colors.onPrimary, fontSize: 10, fontFamily: 'Inter-Bold', letterSpacing: 0.5 },
   });

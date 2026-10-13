@@ -24,7 +24,7 @@ export default function ForgotPassword() {
         <View style={s.headerRow}>
           <View style={s.headerLeft}>
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
-              <Ionicons name="chevron-back" size={32} color={colors.white} />
+              <Ionicons name="chevron-back" size={32} color={colors.onPrimary} />
             </TouchableOpacity>
             <Text style={s.headerText}>{t('headerTitle')}</Text>
           </View>

@@ -26,12 +26,11 @@ import { Itinerary, useItineraryStore } from '../hooks/itineraryStore';
 import CustomButton from './CustomButton';
 import CustomInput from './CustomInput';
 import { Ionicons } from '@expo/vector-icons';
-import { colors } from '../src/theme';
+import { AppColors, useColors } from '../src/theme';
 import { addDays, groupByDay, toIsoDate } from '../src/domain/itinerary/itineraryDays';
 import { freePeriod } from '../src/domain/itinerary/freePeriod';
 import { formatDate, formatWeekday, formatWeekdayDayMonth } from '../src/i18n/format';
 
-const PRIMARY = colors.primary;
 const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
 
 type Step = 'config' | 'loading' | 'preview';
@@ -62,6 +61,8 @@ const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 
 function OrbitLoader() {
+  const colors = useColors();
+  const loaderStyles = getLoaderStyles(colors);
   // Two separate values: ball uses native driver, arc (SVG prop) cannot
   const [ballRot] = useState(() => new Animated.Value(0));
   const [arcProg] = useState(() => new Animated.Value(0));
@@ -97,7 +98,7 @@ function OrbitLoader() {
       <Svg width={SIZE} height={SIZE} style={{ position: 'absolute' }}>
         <AnimatedCircle
           cx={CENTER} cy={CENTER} r={RADIUS}
-          stroke={PRIMARY} strokeWidth={3} fill="none"
+          stroke={colors.primary} strokeWidth={3} fill="none"
           strokeDasharray={CIRCUMFERENCE}
           strokeDashoffset={dashOffset}
           strokeLinecap="round"
@@ -112,7 +113,7 @@ function OrbitLoader() {
   );
 }
 
-const loaderStyles = StyleSheet.create({
+const getLoaderStyles = (colors: AppColors) => StyleSheet.create({
   container: { width: SIZE, height: SIZE, alignItems: 'center', justifyContent: 'center' },
   arm: {
     position: 'absolute',
@@ -124,10 +125,10 @@ const loaderStyles = StyleSheet.create({
     width: BALL_R * 2,
     height: BALL_R * 2,
     borderRadius: BALL_R,
-    backgroundColor: PRIMARY,
+    backgroundColor: colors.primary,
     top: CENTER - BALL_R - RADIUS,
     left: CENTER - BALL_R,
-    shadowColor: PRIMARY,
+    shadowColor: colors.primary,
     shadowOpacity: 0.5,
     shadowRadius: 6,
     elevation: 5,
@@ -137,6 +138,8 @@ const loaderStyles = StyleSheet.create({
 // ── Main component ───────────────────────────────────────────────────────────
 export default function GenerateItineraryFlow({ visible, initialPlace, onAccept, onClose }: Props) {
   const { t } = useTranslation(['roteiros', 'common', 'itinerario']);
+  const colors = useColors();
+  const styles = getStyles(colors);
   const { user } = useAuth();
   const { generateItinerary, acceptGeneratedItinerary } = useItineraryStore();
 
@@ -351,7 +354,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               <View style={styles.card}>
                 <Text style={styles.cardLabel}>{t('roteiros:generateFlow.destinyLabel')}</Text>
                 <View style={styles.fakeSearchBoxDisabled}>
-                  <Ionicons name="location" size={20} color="#8a9ab0" style={styles.inputIcon} />
+                  <Ionicons name="location" size={20} color={colors.textSubtle} style={styles.inputIcon} />
                   <Text style={styles.fakeSearchTextFilled}>
                     {t('roteiros:destinations.rome')}, {t('roteiros:destinations.italy')}
                   </Text>
@@ -383,10 +386,10 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                         selectedPlace ? styles.inputRowSelected : null,
                         (suggestions.length > 0 && !selectedPlace) && { borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }
                       ]}
-                      leftIcon={<Ionicons name="search" size={20} color="#8a9ab0" style={styles.inputIcon} />}
+                      leftIcon={<Ionicons name="search" size={20} color={colors.textSubtle} style={styles.inputIcon} />}
                       rightElement={
                         searching ? (
-                          <ActivityIndicator size="small" color={PRIMARY} />
+                          <ActivityIndicator size="small" color={colors.primary} />
                         ) : addressInput.length > 0 ? (
                           <TouchableOpacity onPress={handleClearInput} style={styles.clearBtn}>
                             <Text style={styles.clearBtnText}>✕</Text>
@@ -405,7 +408,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                           style={[styles.suggestionItem, idx < suggestions.length - 1 && styles.suggestionDivider]}
                           onPress={() => handleSelectSuggestion(item)}
                         >
-                          <Ionicons name="location" size={22} color="#8a9ab0"/>
+                          <Ionicons name="location" size={22} color={colors.textSubtle}/>
                           <View style={{ flex: 1 }}>
                             <Text style={styles.suggestionPrimary} numberOfLines={1}>{item.shortName}</Text>
                             <Text style={styles.suggestionSecondary} numberOfLines={1}>
@@ -425,7 +428,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 {/* Endereço confirmado */}
                 {selectedPlace && (
                   <View style={styles.resolvedBox}>
-                    <Ionicons name="checkmark-circle" size={20} color="#2e7d32" style={styles.resolvedIcon} />
+                    <Ionicons name="checkmark-circle" size={20} color={colors.successText} style={styles.resolvedIcon} />
                     <Text style={styles.resolvedText} numberOfLines={2}>
                       {selectedPlace.displayName.split(',').slice(0, 3).join(',')}
                     </Text>
@@ -448,10 +451,10 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                   accessibilityRole="button"
                   accessibilityLabel={t('roteiros:generateFlow.pickStartDate')}
                 >
-                  <Ionicons name="calendar-outline" size={20} color={PRIMARY} />
+                  <Ionicons name="calendar-outline" size={20} color={colors.primary} />
                   <Text style={styles.dateFieldText}>{formatDate(startDate)}</Text>
                   <Text style={styles.dateFieldWeekday}>{formatWeekday(startDate)}</Text>
-                  <Ionicons name={showIosCalendar ? 'chevron-up' : 'chevron-down'} size={18} color="#8a9ab0" />
+                  <Ionicons name={showIosCalendar ? 'chevron-up' : 'chevron-down'} size={18} color={colors.textSubtle} />
                 </TouchableOpacity>
                 {Platform.OS === 'ios' && showIosCalendar && (
                   <DateTimePicker
@@ -460,7 +463,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     display="inline"
                     minimumDate={new Date()}
                     onChange={handlePickDate}
-                    accentColor={PRIMARY}
+                    accentColor={colors.primary}
                     themeVariant="light"
                   />
                 )}
@@ -475,7 +478,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     disabled={days <= 1}
                     accessibilityLabel={t('roteiros:generateFlow.lessDays')}
                   >
-                    <Ionicons name="remove" size={22} color={PRIMARY} />
+                    <Ionicons name="remove" size={22} color={colors.primary} />
                   </TouchableOpacity>
                   <Text style={styles.durationValue}>{t('roteiros:generateFlow.daysCount', { count: days })}</Text>
                   <TouchableOpacity
@@ -484,7 +487,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     disabled={days >= MAX_DAYS}
                     accessibilityLabel={t('roteiros:generateFlow.moreDays')}
                   >
-                    <Ionicons name="add" size={22} color={PRIMARY} />
+                    <Ionicons name="add" size={22} color={colors.primary} />
                   </TouchableOpacity>
                 </View>
                 <Text style={styles.periodText}>
@@ -517,7 +520,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                       <Ionicons
                         name={active ? 'radio-button-on' : 'radio-button-off'}
                         size={22}
-                        color={active ? PRIMARY : '#c3ccd8'}
+                        color={active ? colors.primary : colors.borderMuted}
                       />
                     </TouchableOpacity>
                   );
@@ -556,7 +559,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               {/* Resumo */}
               <View style={styles.summaryCard}>
                 <View style={{flexDirection: 'row', alignItems: 'center', gap: 6}}>
-                  <Ionicons name="location" size={18} color="white" style={{marginBottom: 5}}/>
+                  <Ionicons name="location" size={18} color={colors.onPrimary} style={{marginBottom: 5}}/>
                   <Text style={[styles.summaryTitle]}>
                   {t('roteiros:generateFlow.summaryTitle')}
                   </Text>
@@ -648,29 +651,29 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   );
 }
 
-const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#F6F8FC' },
+const getStyles = (colors: AppColors) => StyleSheet.create({
+  container: { flex: 1, backgroundColor: colors.backgroundMuted },
 
   header: {
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
     paddingTop: Platform.OS === 'ios' ? 20 : 16,
     paddingBottom: 16,
     paddingHorizontal: 24,
   },
   headerTopRow: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' },
-  headerTitle: { fontSize: Platform.OS === 'ios' ? 20 : 26, fontWeight: 'bold', color: '#1a1a1a' },
-  headerCounter: { fontSize: 13, color: '#8a9ab0', marginTop: 2 },
+  headerTitle: { fontSize: Platform.OS === 'ios' ? 20 : 26, fontWeight: 'bold', color: colors.text },
+  headerCounter: { fontSize: 13, color: colors.textSubtle, marginTop: 2 },
   closeBtn: { padding: 4 },
-  closeBtnText: { fontSize: 18, color: '#8a9ab0' },
-  progressTrack: { height: 4, backgroundColor: '#e2e8f0', borderRadius: 2, overflow: 'hidden', marginTop: 16 },
-  progressFill: { height: '100%', backgroundColor: PRIMARY, borderRadius: 2 },
+  closeBtnText: { fontSize: 18, color: colors.textSubtle },
+  progressTrack: { height: 4, backgroundColor: colors.border, borderRadius: 2, overflow: 'hidden', marginTop: 16 },
+  progressFill: { height: '100%', backgroundColor: colors.primary, borderRadius: 2 },
 
   content: { padding: 24, paddingBottom: 80 },
 
   feedback: { marginTop: 18 },
 
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
     borderRadius: 16,
     padding: 16,
     marginBottom: 16,
@@ -678,20 +681,20 @@ const styles = StyleSheet.create({
   cardLabel: {
     fontSize: Platform.OS === 'ios' ? 11 : 16,
     fontWeight: '700',
-    color: '#8a9ab0',
+    color: colors.textSubtle,
     letterSpacing: 0.8,
     textTransform: 'uppercase',
     marginBottom: 12,
   },
-  hint: { fontSize: Platform.OS === 'ios' ? 13 : 18, color: '#8a9ab0', marginBottom: 10, marginTop: -6 },
+  hint: { fontSize: Platform.OS === 'ios' ? 13 : 18, color: colors.textSubtle, marginBottom: 10, marginTop: -6 },
 
   fakeSearchBox: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
     borderRadius: 14,
     paddingHorizontal: 16,
-    shadowColor: '#000',
+    shadowColor: colors.shadow,
     shadowOpacity: 0.15,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 2 },
@@ -700,62 +703,62 @@ const styles = StyleSheet.create({
   fakeSearchBoxDisabled: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#F6F8FC',
+    backgroundColor: colors.backgroundMuted,
     borderRadius: 14,
     paddingHorizontal: 16,
   },
-  fakeSearchTextFilled: { fontSize: Platform.OS === 'ios' ? 15 : 18, color: '#4a5568', fontWeight: '600', paddingVertical: 9 },
+  fakeSearchTextFilled: { fontSize: Platform.OS === 'ios' ? 15 : 18, color: colors.textMuted, fontWeight: '600', paddingVertical: 9 },
 
-  durationValue: { fontSize: Platform.OS === 'ios' ? 18 : 22, fontWeight: 'bold', color: '#1a1a1a', minWidth: 90, textAlign: 'center' },
+  durationValue: { fontSize: Platform.OS === 'ios' ? 18 : 22, fontWeight: 'bold', color: colors.text, minWidth: 90, textAlign: 'center' },
   stepperRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 20 },
   stepperBtn: {
     width: 44,
     height: 44,
     borderRadius: 22,
     borderWidth: 1.5,
-    borderColor: '#e2e8f0',
+    borderColor: colors.border,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
   },
   stepperBtnDisabled: { opacity: 0.35 },
-  periodText: { fontSize: 13, color: '#8a9ab0', textAlign: 'center', marginTop: 10 },
+  periodText: { fontSize: 13, color: colors.textSubtle, textAlign: 'center', marginTop: 10 },
   dateField: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
-    backgroundColor: '#F6F8FC',
+    backgroundColor: colors.backgroundMuted,
     borderRadius: 14,
     borderWidth: 1.5,
-    borderColor: '#e2e8f0',
+    borderColor: colors.border,
     paddingHorizontal: 16,
     paddingVertical: 12,
   },
-  dateFieldOpen: { borderColor: PRIMARY },
-  dateFieldText: { flex: 1, fontSize: Platform.OS === 'ios' ? 16 : 18, fontWeight: '600', color: '#1a1a1a' },
-  dateFieldWeekday: { fontSize: 13, color: '#8a9ab0', textTransform: 'capitalize' },
+  dateFieldOpen: { borderColor: colors.primary },
+  dateFieldText: { flex: 1, fontSize: Platform.OS === 'ios' ? 16 : 18, fontWeight: '600', color: colors.text },
+  dateFieldWeekday: { fontSize: 13, color: colors.textSubtle, textTransform: 'capitalize' },
   paceOption: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
     borderRadius: 14,
     borderWidth: 1.5,
-    borderColor: '#e2e8f0',
+    borderColor: colors.border,
     padding: 12,
     marginBottom: 8,
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
   },
-  paceOptionActive: { borderColor: PRIMARY, backgroundColor: '#F6F8FC' },
+  paceOptionActive: { borderColor: colors.primary, backgroundColor: colors.backgroundMuted },
   paceIcon: { fontSize: 22 },
   paceTextBox: { flex: 1 },
-  paceTitle: { fontSize: Platform.OS === 'ios' ? 15 : 17, fontWeight: '700', color: '#1a1a1a' },
-  paceTitleActive: { color: PRIMARY },
-  paceDescription: { fontSize: Platform.OS === 'ios' ? 12 : 14, color: '#8a9ab0', marginTop: 2 },
-  previewFreePeriod: { fontSize: 13, fontWeight: '600', color: '#2e7d32', paddingVertical: 10 },
+  paceTitle: { fontSize: Platform.OS === 'ios' ? 15 : 17, fontWeight: '700', color: colors.text },
+  paceTitleActive: { color: colors.primary },
+  paceDescription: { fontSize: Platform.OS === 'ios' ? 12 : 14, color: colors.textSubtle, marginTop: 2 },
+  previewFreePeriod: { fontSize: 13, fontWeight: '600', color: colors.successText, paddingVertical: 10 },
   previewDayLabel: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#8a9ab0',
+    color: colors.textSubtle,
     letterSpacing: 0.8,
     textTransform: 'uppercase',
     marginBottom: 8,
@@ -763,51 +766,51 @@ const styles = StyleSheet.create({
 
   chipRow: { flexDirection: 'row', gap: 10, marginTop: 12, marginBottom: 4 },
   chip: {
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
     borderRadius: 16,
     paddingHorizontal: 14,
     paddingVertical: 8,
-    shadowColor: '#000',
+    shadowColor: colors.shadow,
     shadowOpacity: 0.12,
     shadowRadius: 4,
     shadowOffset: { width: 0, height: 1 },
     elevation: 1,
   },
-  chipText: { fontWeight: '700', fontSize: Platform.OS === 'ios' ? 12 : 18, color: '#1a1a1a' },
+  chipText: { fontWeight: '700', fontSize: Platform.OS === 'ios' ? 12 : 18, color: colors.text },
 
   autocompleteWrapper: { marginBottom: 0 },
   inputRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
     borderWidth: 1.5,
-    borderColor: '#e2e8f0',
+    borderColor: colors.border,
     borderRadius: 14,
     paddingHorizontal: 12,
   },
-  inputRowSelected: { borderColor: '#43a047' },
+  inputRowSelected: { borderColor: colors.successStrong },
   inputIcon: { marginRight: 8 },
   addressInput: {
     flex: 1,
     paddingVertical: 9,
     fontSize: Platform.OS === 'ios' ? 16 : 18,
-    color: '#1a1a1a',
+    color: colors.text,
   },
   clearBtn: { padding: 8 },
-  clearBtnText: { fontSize: 14, color: '#aab', fontWeight: '600' },
+  clearBtnText: { fontSize: 14, color: colors.placeholder, fontWeight: '600' },
 
   suggestionsBox: {
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
     borderBottomLeftRadius: 14,
     borderBottomRightRadius: 14,
     borderTopLeftRadius: 0,
     borderTopRightRadius: 0,
     borderWidth: 1,
     borderTopWidth: 0,
-    borderColor: '#e2e8f0',
+    borderColor: colors.border,
     marginTop: 0,
     marginBottom: 16,
-    shadowColor: '#000',
+    shadowColor: colors.shadow,
     shadowOpacity: 0.1,
     shadowRadius: 10,
     shadowOffset: { width: 0, height: 4 },
@@ -822,34 +825,34 @@ const styles = StyleSheet.create({
   },
   suggestionDivider: {
     borderBottomWidth: 1,
-    borderBottomColor: '#f0f4f8',
+    borderBottomColor: colors.dividerSoft,
   },
-  suggestionPrimary: { fontSize: Platform.OS === 'ios' ? 14 : 22, fontWeight: '600', color: '#1a1a1a', marginBottom: 2 },
-  suggestionSecondary: { fontSize: Platform.OS === 'ios' ? 12 : 16, color: '#8a9ab0' },
+  suggestionPrimary: { fontSize: Platform.OS === 'ios' ? 14 : 22, fontWeight: '600', color: colors.text, marginBottom: 2 },
+  suggestionSecondary: { fontSize: Platform.OS === 'ios' ? 12 : 16, color: colors.textSubtle },
 
   resolvedBox: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    backgroundColor: '#e8f5e9',
+    backgroundColor: colors.activeBadgeSurface,
     borderRadius: 12,
     padding: 12,
     gap: 8,
     marginTop: 12,
     marginBottom: 8,
     borderWidth: 1,
-    borderColor: '#c8e6c9',
+    borderColor: colors.activeBadgeSurface,
   },
   resolvedIcon: { marginTop: -1 },
-  resolvedText: { flex: 1, fontSize: 13, color: '#2e7d32', lineHeight: 18 },
-  searchMessage: { fontSize: 13, color: '#8a5a00', lineHeight: 18, marginTop: 10 },
+  resolvedText: { flex: 1, fontSize: 13, color: colors.successText, lineHeight: 18 },
+  searchMessage: { fontSize: 13, color: colors.warningBannerText, lineHeight: 18, marginTop: 10 },
 
   generateBtn: {
-    backgroundColor: PRIMARY,
+    backgroundColor: colors.primary,
     borderRadius: 14,
     padding: 16,
     alignItems: 'center',
     marginTop: 28,
-    shadowColor: PRIMARY,
+    shadowColor: colors.primary,
     shadowOpacity: 0.3,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 4 },
@@ -857,29 +860,29 @@ const styles = StyleSheet.create({
     width: '80%', alignSelf: 'center', minHeight: 55,
   },
   generateBtnDisabled: { opacity: 0.45, shadowOpacity: 0 },
-  generateBtnText: { color: '#fff', fontWeight: 'bold', fontSize: 16 },
+  generateBtnText: { color: colors.onPrimary, fontWeight: 'bold', fontSize: 16 },
 
   // Loading
   loadingContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 28 },
-  loadingText: { fontSize: 16, color: '#8a9ab0', fontWeight: '500' },
+  loadingText: { fontSize: 16, color: colors.textSubtle, fontWeight: '500' },
 
   // Preview
   summaryCard: {
-    backgroundColor: PRIMARY,
+    backgroundColor: colors.primary,
     borderRadius: 16,
     padding: 18,
     marginBottom: 18,
   },
-  summaryTitle: { fontSize: 16, fontWeight: '700', color: '#fff', marginBottom: 4 },
-  summaryMeta: { fontSize: 13, color: 'rgba(255,255,255,0.7)' },
+  summaryTitle: { fontSize: 16, fontWeight: '700', color: colors.onPrimary, marginBottom: 4 },
+  summaryMeta: { fontSize: 13, color: colors.onPrimaryFaint70 },
 
   previewList: {
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
     borderRadius: 18,
     paddingVertical: 8,
     paddingHorizontal: 16,
     marginBottom: 24,
-    shadowColor: '#000',
+    shadowColor: colors.shadow,
     shadowOpacity: 0.06,
     shadowRadius: 8,
     elevation: 3,
@@ -906,11 +909,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  previewIndexText: { color: '#fff', fontWeight: 'bold', fontSize: 13 },
+  previewIndexText: { color: colors.onPrimary, fontWeight: 'bold', fontSize: 13 },
   previewItemContent: { flex: 1, paddingBottom: 4 },
   previewItemRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 8, marginBottom: 3 },
-  previewPlaceName: { flex: 1, fontSize: 14, fontWeight: '700', color: '#1a1a1a', lineHeight: 20 },
-  previewPlaceAddr: { fontSize: 12, color: '#8a9ab0' },
+  previewPlaceName: { flex: 1, fontSize: 14, fontWeight: '700', color: colors.text, lineHeight: 20 },
+  previewPlaceAddr: { fontSize: 12, color: colors.textSubtle },
   timeBadge: {
     borderRadius: 8,
     borderWidth: 1,
@@ -928,22 +931,22 @@ const styles = StyleSheet.create({
     minHeight: 52,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
   },
-  regenBtnText: { fontSize: 16, fontWeight: 'bold', color: '#1a1a1a' },
+  regenBtnText: { fontSize: 16, fontWeight: 'bold', color: colors.text },
   acceptBtn: {
     flex: 1.3,
-    backgroundColor: PRIMARY,
+    backgroundColor: colors.primary,
     borderRadius: 12,
     padding: 16,
     minHeight: 52,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: PRIMARY,
+    shadowColor: colors.primary,
     shadowOpacity: 0.35,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 4 },
     elevation: 5,
   },
-  acceptBtnText: { fontSize: 16, fontWeight: 'bold', color: '#fff' },
+  acceptBtnText: { fontSize: 16, fontWeight: 'bold', color: colors.onPrimary },
 });

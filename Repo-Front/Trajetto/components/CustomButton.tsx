@@ -43,7 +43,7 @@ export default function CustomButton({
       activeOpacity={0.85}
     >
       {loading ? (
-        <ActivityIndicator color={colors.white} />
+        <ActivityIndicator color={colors.onPrimary} />
       ) : (
         <View style={buttonStyles.content}>
           {icon ? (
@@ -75,5 +75,5 @@ const getStyles = (colors: ReturnType<typeof useColors>) => StyleSheet.create({
   buttonDisabled: { opacity: 0.6 },
   content: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   icon: { fontSize: 22 },
-  buttonText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: Platform.OS === 'ios' ? 16 : 22 },
+  buttonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: Platform.OS === 'ios' ? 16 : 22 },
 });

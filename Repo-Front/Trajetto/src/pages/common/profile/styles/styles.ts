@@ -34,10 +34,10 @@ export const styles = (colors: AppColors) =>
     dropdownPlaceholder: { fontSize: 15, color: colors.gray400, flex: 1 },
     dropdownChevron: { fontSize: 10, color: colors.gray400, marginLeft: 8 },
     saveButton: { backgroundColor: colors.primary, borderRadius: 14, paddingVertical: 15, alignItems: 'center', shadowColor: colors.primary, shadowOpacity: 0.3, shadowRadius: 8, shadowOffset: { width: 0, height: 4 }, elevation: 5, marginTop: 15, marginBottom: 16, minHeight: 50, justifyContent: 'center' },
-    saveButtonText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 16 },
+    saveButtonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 16 },
     headerWrapper: { paddingHorizontal: 24, backgroundColor: colors.primary },
     headerRow: { flexDirection: 'row', alignItems: 'center', position: 'relative', height: 56 },
     headerLeft: { flexDirection: 'row', alignItems: 'center', zIndex: 10 },
     headerBackBtn: { paddingVertical: 4, paddingRight: 8, marginLeft: -12 },
-    headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.white },
+    headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.onPrimary },
   });

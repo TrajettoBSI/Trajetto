@@ -18,7 +18,7 @@ function TabIcon({ focused, color, colors, outlineName, filledName }: {
         backgroundColor: colors.primary,
         alignItems: 'center', justifyContent: 'center',
       }}>
-        <Ionicons size={18} name={filledName} color={colors.white} />
+        <Ionicons size={18} name={filledName} color={colors.onPrimary} />
       </View>
     );
   }

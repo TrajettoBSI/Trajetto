@@ -100,10 +100,10 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center',
     },
     nextButtonDisabled: { backgroundColor: colors.primaryDisabled },
-    nextButtonText: { color: colors.white, fontFamily: 'Inter-Bold', fontSize: 16 },
+    nextButtonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 16 },
     headerWrapper: { paddingHorizontal: 24, backgroundColor: colors.primary, marginBottom: 20 },
     headerRow: { flexDirection: 'row', alignItems: 'center', position: 'relative', height: 56 },
     headerLeft: { flexDirection: 'row', alignItems: 'center', zIndex: 10 },
     headerBackBtn: { paddingVertical: 4, paddingRight: 8, marginLeft: -12 },
-    headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.white },
+    headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.onPrimary },
   });
