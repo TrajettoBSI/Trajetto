@@ -41,6 +41,11 @@ export const authService = {
     await api.post('/user/verify', null, { params: { email, code } });
   },
 
+  /** Envia um novo código de verificação; o anterior deixa de valer. */
+  resendVerificationCode: async (email: string): Promise<void> => {
+    await api.post('/user/verify/resend', null, { params: { email } });
+  },
+
   /** Pede o envio do código de redefinição de senha para o e-mail informado. */
   requestPasswordCode: async (email: string): Promise<void> => {
     await api.post('/user/password/forgot', { email: normalizeEmail(email) });

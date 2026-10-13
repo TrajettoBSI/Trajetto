@@ -6,5 +6,9 @@
   "codeTooShortMessage": "Digite os 6 dígitos do código.",
   "successTitle": "Sucesso",
   "successMessage": "Conta verificada! Você já pode fazer login.",
-  "verifyError": "Código inválido. Tente novamente."
+  "verifyError": "Código inválido. Tente novamente.",
+  "resend": "Não recebeu? Reenviar código",
+  "resendIn": "Reenviar código em {{seconds}}s",
+  "resendSuccess": "Enviamos um novo código para o seu e-mail.",
+  "resendError": "Não foi possível reenviar o código."
 }

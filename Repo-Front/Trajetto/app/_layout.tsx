@@ -106,7 +106,6 @@ function RootLayoutNav() {
         <Stack.Screen name="ExploreScreen" options={{ headerShown: false }} />
         <Stack.Screen name="SpotDetailScreen" options={{ headerShown: false }} />
         <Stack.Screen name="FavoritesScreen" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
         <Stack.Screen name="AdminPanelScreen" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />

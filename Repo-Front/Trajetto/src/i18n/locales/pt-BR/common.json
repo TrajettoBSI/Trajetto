@@ -55,9 +55,5 @@
     "dark": "Escuro",
     "highContrast": "Alto contraste"
   },
-  "selectCountry": "Selecione o país",
-  "modal": {
-    "title": "Esta é uma janela",
-    "goHome": "Ir para o início"
-  }
+  "selectCountry": "Selecione o país"
 }

@@ -177,7 +177,7 @@ describe('perfil do administrador', () => {
     await render(<AdminProfile />);
 
     expect(screen.getByText('Admin Geral')).toBeTruthy();
-    await fireEvent.press(screen.getByText('Notificações'));
+    expect(screen.queryByText('Notificações')).toBeNull();
     await fireEvent.press(screen.getByText('Idioma'));
     await fireEvent.press(screen.getByText('Español'));
     await waitFor(() => expect(i18n.language).toBe('es-ES'));

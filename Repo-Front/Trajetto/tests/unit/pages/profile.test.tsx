@@ -87,7 +87,7 @@ describe('menu do perfil', () => {
     await fireEvent.press(screen.getByText('Meus favoritos'));
     await fireEvent.press(screen.getByText('Refazer o teste de viajante'));
     await fireEvent.press(screen.getByText('Explorar destinos'));
-    await fireEvent.press(screen.getByText('Notificações'));
+    expect(screen.queryByText('Notificações')).toBeNull();
 
     expect(mockRouter.push.mock.calls.map((c) => c[0])).toEqual([
       '/ProfileScreen', '/FavoritesScreen', '/TravelerTestScreen?source=profile', '/ExploreScreen',

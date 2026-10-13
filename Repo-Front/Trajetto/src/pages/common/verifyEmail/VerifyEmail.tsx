@@ -16,7 +16,9 @@ export default function VerifyEmail() {
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
-  const { email, code, loading, error, handleVerify, handleChangeCode } = useVerifyEmail();
+  const {
+    email, code, loading, error, handleVerify, handleChangeCode, resending, cooldown, handleResend,
+  } = useVerifyEmail();
 
   return (
     <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
@@ -63,6 +65,18 @@ export default function VerifyEmail() {
               />
 
               <CustomButton title={t('submit')} onPress={() => handleVerify()} loading={loading} />
+
+              <TouchableOpacity
+                onPress={handleResend}
+                disabled={resending || cooldown > 0}
+                style={s.resendBtn}
+                accessibilityRole="button"
+                accessibilityState={{ disabled: resending || cooldown > 0 }}
+              >
+                <Text style={[s.resendText, (resending || cooldown > 0) && s.resendTextDisabled]}>
+                  {cooldown > 0 ? t('resendIn', { seconds: cooldown }) : t('resend')}
+                </Text>
+              </TouchableOpacity>
             </View>
           </TouchableWithoutFeedback>
         </View>

@@ -4,7 +4,6 @@
   "profile": {
     "headerTitle": "Profile",
     "accountSection": "Account",
-    "notifications": "Notifications",
     "language": "Language",
     "logout": "Log out"
   },

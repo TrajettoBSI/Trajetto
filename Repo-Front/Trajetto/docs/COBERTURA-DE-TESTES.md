@@ -46,10 +46,8 @@ arquitetura).
 | `utils` | 99,1% | 98,6% | 100,0% | 93,9% |
 
 Entra na medição todo o código do app: rotas (`app/`), componentes, telas, hooks, serviços,
-domínio, contexto, dados, tema e utilitários. Ficam de fora só seis arquivos que sobraram do
-modelo inicial do Expo e não são importados em lugar nenhum (`hello-wave`,
-`parallax-scroll-view`, `external-link`, `ui/collapsible`, `RegisterIllustration` e
-`TrajettoLogo`), listados em `collectCoverageFrom`.
+domínio, contexto, dados, tema e utilitários, sem exceções: as sobras do modelo inicial do
+Expo foram apagadas do projeto.
 
 ## O que os testes cobrem
 
