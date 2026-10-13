@@ -17,6 +17,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Svg, { Circle } from 'react-native-svg';
 import { useTranslation } from 'react-i18next';
 import * as Location from 'expo-location';
+import DateTimePicker, { DateTimePickerAndroid, DateTimePickerEvent } from '@react-native-community/datetimepicker';
 import { useAuth } from '../context/AuthContext';
 import { PlaceSuggestion, searchAddresses } from '../services';
 import { getErrorMessage } from '../utils/apiError';
@@ -27,7 +28,7 @@ import CustomInput from './CustomInput';
 import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../src/theme';
 import { addDays, groupByDay, toIsoDate } from '../src/domain/itinerary/itineraryDays';
-import { formatWeekdayDayMonth } from '../src/i18n/format';
+import { formatDate, formatWeekday, formatWeekdayDayMonth } from '../src/i18n/format';
 
 const PRIMARY = colors.primary;
 const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
@@ -35,7 +36,8 @@ const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1A
 type Step = 'config' | 'loading' | 'preview';
 
 const MAX_DAYS = 7;
-const START_DATE_OPTIONS = 30;
+
+const fromIsoDate = (iso: string) => new Date(`${iso}T00:00:00`);
 
 type Props = {
   visible: boolean;
@@ -141,6 +143,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   const [generatedItinerary, setGeneratedItinerary] = useState<Itinerary | null>(null);
   const [startDate, setStartDate] = useState(() => toIsoDate(new Date()));
   const [days, setDays] = useState(1);
+  const [showIosCalendar, setShowIosCalendar] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scrollViewRef = useRef<ScrollView>(null);
   const inputLayoutY = useRef<number>(0);
@@ -158,12 +161,30 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
       setGeneratedItinerary(null);
       setStartDate(toIsoDate(new Date()));
       setDays(1);
+      setShowIosCalendar(false);
     }
   }
 
-  const today = toIsoDate(new Date());
-  const startDateOptions = Array.from({ length: START_DATE_OPTIONS }, (_, i) => addDays(today, i));
   const endDate = addDays(startDate, days - 1);
+
+  const handlePickDate = (event: DateTimePickerEvent, date?: Date) => {
+    if (Platform.OS === 'ios') setShowIosCalendar(false);
+    if (event.type === 'set' && date) setStartDate(toIsoDate(date));
+  };
+
+  const openCalendar = () => {
+    Keyboard.dismiss();
+    if (Platform.OS === 'android') {
+      DateTimePickerAndroid.open({
+        value: fromIsoDate(startDate),
+        mode: 'date',
+        minimumDate: new Date(),
+        onChange: handlePickDate,
+      });
+    } else {
+      setShowIosCalendar(v => !v);
+    }
+  };
 
   const handleInputChange = (text: string) => {
     // Selecionar uma sugestao atualiza o value do input controlado, o que pode ecoar
@@ -409,23 +430,29 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
               <View style={styles.card}>
                 <Text style={styles.cardLabel}>{t('roteiros:generateFlow.startDateLabel')}</Text>
-                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.dateRow}>
-                  {startDateOptions.map((date) => {
-                    const active = date === startDate;
-                    return (
-                      <TouchableOpacity
-                        key={date}
-                        style={[styles.dateChip, active && styles.dateChipActive]}
-                        onPress={() => setStartDate(date)}
-                        activeOpacity={0.8}
-                      >
-                        <Text style={[styles.dateChipText, active && styles.dateChipTextActive]}>
-                          {formatWeekdayDayMonth(date)}
-                        </Text>
-                      </TouchableOpacity>
-                    );
-                  })}
-                </ScrollView>
+                <TouchableOpacity
+                  style={[styles.dateField, showIosCalendar && styles.dateFieldOpen]}
+                  onPress={openCalendar}
+                  activeOpacity={0.8}
+                  accessibilityRole="button"
+                  accessibilityLabel={t('roteiros:generateFlow.pickStartDate')}
+                >
+                  <Ionicons name="calendar-outline" size={20} color={PRIMARY} />
+                  <Text style={styles.dateFieldText}>{formatDate(startDate)}</Text>
+                  <Text style={styles.dateFieldWeekday}>{formatWeekday(startDate)}</Text>
+                  <Ionicons name={showIosCalendar ? 'chevron-up' : 'chevron-down'} size={18} color="#8a9ab0" />
+                </TouchableOpacity>
+                {Platform.OS === 'ios' && showIosCalendar && (
+                  <DateTimePicker
+                    value={fromIsoDate(startDate)}
+                    mode="date"
+                    display="inline"
+                    minimumDate={new Date()}
+                    onChange={handlePickDate}
+                    accentColor={PRIMARY}
+                    themeVariant="light"
+                  />
+                )}
               </View>
 
               <View style={styles.card}>
@@ -647,18 +674,20 @@ const styles = StyleSheet.create({
   },
   stepperBtnDisabled: { opacity: 0.35 },
   periodText: { fontSize: 13, color: '#8a9ab0', textAlign: 'center', marginTop: 10 },
-  dateRow: { gap: 8 },
-  dateChip: {
-    borderRadius: 12,
+  dateField: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    backgroundColor: '#F6F8FC',
+    borderRadius: 14,
     borderWidth: 1.5,
     borderColor: '#e2e8f0',
-    paddingHorizontal: 12,
-    paddingVertical: 8,
-    backgroundColor: '#fff',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
   },
-  dateChipActive: { backgroundColor: PRIMARY, borderColor: PRIMARY },
-  dateChipText: { fontSize: 13, fontWeight: '600', color: '#1a1a1a' },
-  dateChipTextActive: { color: '#fff' },
+  dateFieldOpen: { borderColor: PRIMARY },
+  dateFieldText: { flex: 1, fontSize: Platform.OS === 'ios' ? 16 : 18, fontWeight: '600', color: '#1a1a1a' },
+  dateFieldWeekday: { fontSize: 13, color: '#8a9ab0', textTransform: 'capitalize' },
   previewDayLabel: {
     fontSize: 12,
     fontWeight: '700',

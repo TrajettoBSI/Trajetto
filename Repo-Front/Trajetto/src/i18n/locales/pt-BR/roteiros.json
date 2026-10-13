@@ -85,6 +85,7 @@
     "generatedTitle": "Roteiro Gerado",
     "destinyLabel": "DESTINO",
     "startDateLabel": "DATA DE INÍCIO",
+    "pickStartDate": "Escolher data de início",
     "durationLabel": "DURAÇÃO",
     "daysCount_one": "{{count}} dia",
     "daysCount_other": "{{count}} dias",

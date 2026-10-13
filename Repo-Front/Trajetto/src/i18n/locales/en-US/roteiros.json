@@ -85,6 +85,7 @@
     "generatedTitle": "Generated Itinerary",
     "destinyLabel": "DESTINY",
     "startDateLabel": "START DATE",
+    "pickStartDate": "Choose start date",
     "durationLabel": "DURATION",
     "daysCount_one": "{{count}} day",
     "daysCount_other": "{{count}} days",

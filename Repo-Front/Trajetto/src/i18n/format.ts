@@ -11,6 +11,13 @@ export function formatDate(date: string | Date, locale = activeLocale()): string
   return new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(d);
 }
 
+/** Dia da semana por extenso, ex: "segunda-feira". `date` em ISO (YYYY-MM-DD). */
+export function formatWeekday(date: string, locale = activeLocale()): string {
+  const d = new Date(`${date}T00:00:00`);
+  if (Number.isNaN(d.getTime())) return '';
+  return new Intl.DateTimeFormat(locale, { weekday: 'long' }).format(d);
+}
+
 /** Dia da semana abreviado e dia/mes, ex: "seg., 13/10". `date` em ISO (YYYY-MM-DD). */
 export function formatWeekdayDayMonth(date: string, locale = activeLocale()): string {
   const d = new Date(`${date}T00:00:00`);
