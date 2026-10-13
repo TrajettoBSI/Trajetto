@@ -6,8 +6,8 @@ export class ItineraryService {
         return response.data;
     }
 
-    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number) {
-        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude });
+    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number, startDate: string, days: number) {
+        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude, startDate, days });
         return response.data;
     }
 

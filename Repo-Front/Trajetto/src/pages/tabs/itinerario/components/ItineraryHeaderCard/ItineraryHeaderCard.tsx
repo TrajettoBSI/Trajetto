@@ -10,11 +10,12 @@ type ItineraryHeaderCardProps = {
   startDate: string;
   endDate: string;
   stopsCount: number;
+  daysCount: number;
   startTime?: string;
   endTime?: string;
 };
 
-export default function ItineraryHeaderCard({ startDate, endDate, stopsCount, startTime, endTime }: ItineraryHeaderCardProps) {
+export default function ItineraryHeaderCard({ startDate, endDate, stopsCount, daysCount, startTime, endTime }: ItineraryHeaderCardProps) {
   const { t } = useTranslation('itinerario');
   const colors = useColors();
   const s = styles(colors);
@@ -40,9 +41,17 @@ export default function ItineraryHeaderCard({ startDate, endDate, stopsCount, st
           </Text>
         </View>
       )}
-      <View style={s.stat}>
-        <Text style={s.statValue}>{stopsCount}</Text>
-        <Text style={s.statLabel}>{t('headerCard.stops')}</Text>
+      <View style={s.statsRow}>
+        <View style={s.stat}>
+          <Text style={s.statValue}>{stopsCount}</Text>
+          <Text style={s.statLabel}>{t('headerCard.stops')}</Text>
+        </View>
+        {daysCount > 1 && (
+          <View style={s.stat}>
+            <Text style={s.statValue}>{daysCount}</Text>
+            <Text style={s.statLabel}>{t('headerCard.days')}</Text>
+          </View>
+        )}
       </View>
     </View>
   );

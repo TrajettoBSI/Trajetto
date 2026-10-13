@@ -1,11 +1,13 @@
 {
   "loadingText": "Loading itinerary...",
   "sectionLabel": "ITINERARY STOPS",
+  "daySectionLabel": "STOPS OF DAY {{number}} OF {{total}}",
   "exportPdf": "Export as PDF",
   "headerCard": {
     "period": "Period",
     "stops": "Stops",
-    "active": "Active"
+    "active": "Active",
+    "days": "Days"
   },
   "alternativesModal": {
     "title": "Change place",
@@ -47,5 +49,8 @@
     "save": "Save note",
     "cancel": "Cancel",
     "saveError": "Could not save the note."
+  },
+  "daySelector": {
+    "day": "Day {{number}}"
   }
 }

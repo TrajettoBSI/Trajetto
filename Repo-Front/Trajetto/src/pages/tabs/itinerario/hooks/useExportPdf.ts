@@ -7,6 +7,7 @@ import { Itinerary } from '@/hooks/itineraryStore';
 import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
 import { formatDate, formatTime } from '@/src/i18n/format';
+import { groupByDay } from '@/src/domain/itinerary/itineraryDays';
 import { adminAccent } from '@/src/theme';
 
 const PDF_PRIMARY = adminAccent.primary;
@@ -17,19 +18,25 @@ const escapeHtml = (text: string) =>
 function buildItineraryHtml(itinerary: Itinerary) {
   const t = (key: string) => i18n.t(`itinerario:exportPdfDoc.${key}`);
   const sortedPlaces = [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex);
+  const days = groupByDay(itinerary.startDate, itinerary.places);
 
   let placesHtml = '';
-  sortedPlaces.forEach((place, index) => {
-    placesHtml += `
-      <div style="margin-bottom: 20px; padding: 15px; border-left: 5px solid ${PDF_PRIMARY}; background-color: #f8fafc; border-radius: 4px;">
-        <h3 style="margin: 0 0 8px 0; color: #1a1a1a; font-size: 18px;">${index + 1}. ${place.name}</h3>
-        <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕒 ${t('estimatedTime')}</strong> ${formatTime(place.estimatedVisitTime)}</p>
-        <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>📍 ${t('address')}</strong> ${place.address}</p>
-        ${place.category ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🏷️ ${t('category')}</strong> ${place.category}</p>` : ''}
-        ${place.openingHours ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕐 ${t('openingHours')}</strong> ${place.openingHours}</p>` : ''}
-        ${place.note ? `<p style="margin: 8px 0 0 0; font-size: 14px; color: #5c4a12; white-space: pre-wrap;"><strong>📝 ${t('note')}</strong> ${escapeHtml(place.note)}</p>` : ''}
-      </div>
-    `;
+  days.forEach((day) => {
+    if (days.length > 1) {
+      placesHtml += `<h3 style="color: ${PDF_PRIMARY}; margin: 28px 0 12px 0;">${i18n.t('itinerario:daySelector.day', { number: day.number })} - ${formatDate(day.date)}</h3>`;
+    }
+    day.places.forEach((place, index) => {
+      placesHtml += `
+        <div style="margin-bottom: 20px; padding: 15px; border-left: 5px solid ${PDF_PRIMARY}; background-color: #f8fafc; border-radius: 4px;">
+          <h3 style="margin: 0 0 8px 0; color: #1a1a1a; font-size: 18px;">${index + 1}. ${place.name}</h3>
+          <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕒 ${t('estimatedTime')}</strong> ${formatTime(place.estimatedVisitTime)}</p>
+          <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>📍 ${t('address')}</strong> ${place.address}</p>
+          ${place.category ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🏷️ ${t('category')}</strong> ${place.category}</p>` : ''}
+          ${place.openingHours ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕐 ${t('openingHours')}</strong> ${place.openingHours}</p>` : ''}
+          ${place.note ? `<p style="margin: 8px 0 0 0; font-size: 14px; color: #5c4a12; white-space: pre-wrap;"><strong>📝 ${t('note')}</strong> ${escapeHtml(place.note)}</p>` : ''}
+        </div>
+      `;
+    });
   });
 
   return `

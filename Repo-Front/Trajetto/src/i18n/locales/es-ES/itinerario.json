@@ -1,11 +1,13 @@
 {
   "loadingText": "Cargando itinerario...",
   "sectionLabel": "PARADAS DEL ITINERARIO",
+  "daySectionLabel": "PARADAS DEL DÍA {{number}} DE {{total}}",
   "exportPdf": "Exportar como PDF",
   "headerCard": {
     "period": "Período",
     "stops": "Paradas",
-    "active": "Activo"
+    "active": "Activo",
+    "days": "Días"
   },
   "alternativesModal": {
     "title": "Cambiar lugar",
@@ -47,5 +49,8 @@
     "save": "Guardar nota",
     "cancel": "Cancelar",
     "saveError": "No se pudo guardar la nota."
+  },
+  "daySelector": {
+    "day": "Día {{number}}"
   }
 }

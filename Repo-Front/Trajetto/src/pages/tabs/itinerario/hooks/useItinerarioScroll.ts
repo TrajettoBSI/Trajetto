@@ -1,21 +1,28 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { ScrollView } from 'react-native';
 import { useFocusEffect } from 'expo-router';
-import { Itinerary, useItineraryStore } from '@/hooks/itineraryStore';
+import { Places, useItineraryStore } from '@/hooks/itineraryStore';
 import { isPlacePast } from '@/app/utils/isPlacePast';
+import { placeDate } from '@/src/domain/itinerary/itineraryDays';
 
-export function useItinerarioScroll(itinerary: Itinerary | null) {
+export function useItinerarioScroll(places: Places[], startDate: string | undefined) {
   const { highlightedPlaceIndex, setHighlightedPlace } = useItineraryStore();
   const [layoutReady, setLayoutReady] = useState(false);
+  const [placesAnteriores, setPlacesAnteriores] = useState(places);
   const scrollRef = useRef<ScrollView>(null);
-  const cardOffsets = useRef<number[]>([]);
+  const cardOffsets = useRef<Record<number, number>>({});
 
-  const registerCardOffset = (idx: number, y: number, total: number) => {
-    cardOffsets.current[idx] = y;
-    if (cardOffsets.current.length === total) setLayoutReady(true);
+  if (places !== placesAnteriores) {
+    setPlacesAnteriores(places);
+    setLayoutReady(false);
+  }
+
+  const registerCardOffset = (orderIndex: number, y: number) => {
+    cardOffsets.current[orderIndex] = y;
+    if (places.every((p) => cardOffsets.current[p.orderIndex] !== undefined)) setLayoutReady(true);
   };
 
-  // Rola ate o card destacado ao voltar do mapa
+  // Rola ate o card destacado ao voltar do mapa ou depois de trocar uma parada
   useEffect(() => {
     if (highlightedPlaceIndex === null) return;
     const offset = cardOffsets.current[highlightedPlaceIndex];
@@ -30,21 +37,19 @@ export function useItinerarioScroll(itinerary: Itinerary | null) {
 
   useFocusEffect(
     useCallback(() => {
-      if (!layoutReady) return;
-      if (!itinerary?.places?.length) return;
+      if (!layoutReady || !startDate || !places.length) return;
 
-      const sorted = [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex);
-      const firstUpcomingIndex = sorted.findIndex(
-        (place) => !isPlacePast(itinerary.startDate, place.estimatedVisitTime)
+      const firstUpcoming = places.find(
+        (place) => !isPlacePast(placeDate(startDate, place), place.estimatedVisitTime)
       );
-      if (firstUpcomingIndex === -1) return;
+      if (!firstUpcoming) return;
 
       requestAnimationFrame(() => {
-        const offset = cardOffsets.current[firstUpcomingIndex];
+        const offset = cardOffsets.current[firstUpcoming.orderIndex];
         if (offset == null) return;
         scrollRef.current?.scrollTo({ y: Math.max(0, offset - 100), animated: true });
       });
-    }, [layoutReady, itinerary])
+    }, [layoutReady, places, startDate])
   );
 
   return { scrollRef, highlightedPlaceIndex, registerCardOffset };

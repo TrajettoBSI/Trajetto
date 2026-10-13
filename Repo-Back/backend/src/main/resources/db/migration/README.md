@@ -62,6 +62,7 @@ que ainda não foram executados naquele banco. O controle fica na tabela
 | `V11` | Remove `tourist_spots` e `tourist_spot_profiles`: o catálogo de pontos turísticos migrou para uma coleção MongoDB (`tourist_spots`, com os perfis embutidos e índice `2dsphere`). Pula de `V8` para `V11` porque `V9`/`V10` já estão em uso por outra branch (`teste_def`, `tipo_item`) neste mesmo banco local. |
 | `V12` | `favorite_places`, os locais favoritos de cada usuário (OB05.1, RF08): um local favoritado uma vez só por usuário (`UNIQUE`), favoritos apagados junto com o usuário (`ON DELETE CASCADE`) e o recorte do local que a lista exibe, já que o catálogo mora no MongoDB. |
 | `V13` | Coluna `note` em `places`: a anotação pessoal que o usuário registra em cada parada do roteiro (OB05.3, RF10). Pertence à parada, não ao local do catálogo, e sai junto com o roteiro. |
+| `V14` | Coluna `visit_date` em `places`: o dia da viagem em que cada parada acontece, para o roteiro de vários dias. As paradas que já existiam recebem o `start_date` do próprio roteiro. |
 
 A `V2` limpa duplicatas antes de criar cada `UNIQUE`: e-mail repetido faz a
 conta mais antiga manter o endereço e as demais receberem o sufixo

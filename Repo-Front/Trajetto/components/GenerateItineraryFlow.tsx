@@ -26,11 +26,16 @@ import CustomButton from './CustomButton';
 import CustomInput from './CustomInput';
 import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../src/theme';
+import { addDays, groupByDay, toIsoDate } from '../src/domain/itinerary/itineraryDays';
+import { formatWeekdayDayMonth } from '../src/i18n/format';
 
 const PRIMARY = colors.primary;
 const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
 
 type Step = 'config' | 'loading' | 'preview';
+
+const MAX_DAYS = 7;
+const START_DATE_OPTIONS = 30;
 
 type Props = {
   visible: boolean;
@@ -122,7 +127,7 @@ const loaderStyles = StyleSheet.create({
 
 // ── Main component ───────────────────────────────────────────────────────────
 export default function GenerateItineraryFlow({ visible, initialPlace, onAccept, onClose }: Props) {
-  const { t } = useTranslation(['roteiros', 'common']);
+  const { t } = useTranslation(['roteiros', 'common', 'itinerario']);
   const { user } = useAuth();
   const { generateItinerary, acceptGeneratedItinerary } = useItineraryStore();
 
@@ -134,6 +139,8 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   const [searchMessage, setSearchMessage] = useState('');
   const [selectedPlace, setSelectedPlace] = useState<PlaceSuggestion | null>(null);
   const [generatedItinerary, setGeneratedItinerary] = useState<Itinerary | null>(null);
+  const [startDate, setStartDate] = useState(() => toIsoDate(new Date()));
+  const [days, setDays] = useState(1);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scrollViewRef = useRef<ScrollView>(null);
   const inputLayoutY = useRef<number>(0);
@@ -149,8 +156,14 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
       setSuggestions([]);
       setSelectedPlace(null);
       setGeneratedItinerary(null);
+      setStartDate(toIsoDate(new Date()));
+      setDays(1);
     }
   }
+
+  const today = toIsoDate(new Date());
+  const startDateOptions = Array.from({ length: START_DATE_OPTIONS }, (_, i) => addDays(today, i));
+  const endDate = addDays(startDate, days - 1);
 
   const handleInputChange = (text: string) => {
     // Selecionar uma sugestao atualiza o value do input controlado, o que pode ecoar
@@ -226,7 +239,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
   const runGenerate = async () => {
     const start = Date.now();
-    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng);
+    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days);
     const elapsed = Date.now() - start;
     const remaining = 2000 - elapsed;
     if (remaining > 0) await new Promise(r => setTimeout(r, remaining));
@@ -394,10 +407,53 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 </View>
               </View>
 
-              {/* Duração */}
+              <View style={styles.card}>
+                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.startDateLabel')}</Text>
+                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.dateRow}>
+                  {startDateOptions.map((date) => {
+                    const active = date === startDate;
+                    return (
+                      <TouchableOpacity
+                        key={date}
+                        style={[styles.dateChip, active && styles.dateChipActive]}
+                        onPress={() => setStartDate(date)}
+                        activeOpacity={0.8}
+                      >
+                        <Text style={[styles.dateChipText, active && styles.dateChipTextActive]}>
+                          {formatWeekdayDayMonth(date)}
+                        </Text>
+                      </TouchableOpacity>
+                    );
+                  })}
+                </ScrollView>
+              </View>
+
               <View style={styles.card}>
                 <Text style={styles.cardLabel}>{t('roteiros:generateFlow.durationLabel')}</Text>
-                <Text style={styles.durationValue}>{t('roteiros:generateFlow.durationValue')}</Text>
+                <View style={styles.stepperRow}>
+                  <TouchableOpacity
+                    style={[styles.stepperBtn, days <= 1 && styles.stepperBtnDisabled]}
+                    onPress={() => setDays(d => Math.max(1, d - 1))}
+                    disabled={days <= 1}
+                    accessibilityLabel={t('roteiros:generateFlow.lessDays')}
+                  >
+                    <Ionicons name="remove" size={22} color={PRIMARY} />
+                  </TouchableOpacity>
+                  <Text style={styles.durationValue}>{t('roteiros:generateFlow.daysCount', { count: days })}</Text>
+                  <TouchableOpacity
+                    style={[styles.stepperBtn, days >= MAX_DAYS && styles.stepperBtnDisabled]}
+                    onPress={() => setDays(d => Math.min(MAX_DAYS, d + 1))}
+                    disabled={days >= MAX_DAYS}
+                    accessibilityLabel={t('roteiros:generateFlow.moreDays')}
+                  >
+                    <Ionicons name="add" size={22} color={PRIMARY} />
+                  </TouchableOpacity>
+                </View>
+                <Text style={styles.periodText}>
+                  {days > 1
+                    ? `${formatWeekdayDayMonth(startDate)} -> ${formatWeekdayDayMonth(endDate)}`
+                    : formatWeekdayDayMonth(startDate)}
+                </Text>
               </View>
 
               {erro ? (
@@ -438,15 +494,26 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                   </Text>
                   </View>
                 <Text style={styles.summaryMeta}>
-                  {t('roteiros:generateFlow.summaryMeta', { stops: generatedItinerary.places.length, origin: selectedPlace?.shortName ?? '' })}
+                  {t('roteiros:generateFlow.summaryMeta', {
+                    stops: generatedItinerary.places.length,
+                    days: t('roteiros:generateFlow.daysCount', { count: groupByDay(generatedItinerary.startDate, generatedItinerary.places).length }),
+                    origin: selectedPlace?.shortName ?? '',
+                  })}
                 </Text>
               </View>
 
               {/* Lista completa de lugares */}
+              {groupByDay(generatedItinerary.startDate, generatedItinerary.places).map((day, _dayIdx, allDays) => (
+              <View key={day.date}>
+              {allDays.length > 1 && (
+                <Text style={styles.previewDayLabel}>
+                  {t('itinerario:daySelector.day', { number: day.number })} - {formatWeekdayDayMonth(day.date)}
+                </Text>
+              )}
               <View style={styles.previewList}>
-                {generatedItinerary.places.map((place, idx) => {
+                {day.places.map((place, idx) => {
                   const color = STOP_COLORS[idx % STOP_COLORS.length];
-                  const isLast = idx === generatedItinerary.places.length - 1;
+                  const isLast = idx === day.places.length - 1;
                   return (
                     <View key={idx}>
                       <View style={styles.previewItem}>
@@ -477,6 +544,8 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                   );
                 })}
               </View>
+              </View>
+              ))}
 
               {erro ? (
                 <FeedbackState
@@ -564,7 +633,40 @@ const styles = StyleSheet.create({
   },
   fakeSearchTextFilled: { fontSize: Platform.OS === 'ios' ? 15 : 18, color: '#4a5568', fontWeight: '600', paddingVertical: 9 },
 
-  durationValue: { fontSize: Platform.OS === 'ios' ? 18 : 22, fontWeight: 'bold', color: '#1a1a1a' },
+  durationValue: { fontSize: Platform.OS === 'ios' ? 18 : 22, fontWeight: 'bold', color: '#1a1a1a', minWidth: 90, textAlign: 'center' },
+  stepperRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 20 },
+  stepperBtn: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    borderWidth: 1.5,
+    borderColor: '#e2e8f0',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#fff',
+  },
+  stepperBtnDisabled: { opacity: 0.35 },
+  periodText: { fontSize: 13, color: '#8a9ab0', textAlign: 'center', marginTop: 10 },
+  dateRow: { gap: 8 },
+  dateChip: {
+    borderRadius: 12,
+    borderWidth: 1.5,
+    borderColor: '#e2e8f0',
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    backgroundColor: '#fff',
+  },
+  dateChipActive: { backgroundColor: PRIMARY, borderColor: PRIMARY },
+  dateChipText: { fontSize: 13, fontWeight: '600', color: '#1a1a1a' },
+  dateChipTextActive: { color: '#fff' },
+  previewDayLabel: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: '#8a9ab0',
+    letterSpacing: 0.8,
+    textTransform: 'uppercase',
+    marginBottom: 8,
+  },
 
   chipRow: { flexDirection: 'row', gap: 10, marginTop: 12, marginBottom: 4 },
   chip: {

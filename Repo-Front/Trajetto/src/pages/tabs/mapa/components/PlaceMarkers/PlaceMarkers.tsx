@@ -6,6 +6,7 @@ import Animated from 'react-native-reanimated';
 import { useTranslation } from 'react-i18next';
 import { PLACE_COLORS } from '@/constants/placeColors';
 import { isPlacePast } from '@/app/utils/isPlacePast';
+import { placeDate } from '@/src/domain/itinerary/itineraryDays';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
@@ -25,7 +26,7 @@ export default function PlaceMarkers({ points, startDate, firstUpcomingIdx, puls
   return (
     <>
       {points.map((point, index) => {
-        const isPast = isPlacePast(startDate, point.estimatedVisitTime);
+        const isPast = isPlacePast(placeDate(startDate, point), point.estimatedVisitTime);
         const isNext = index === firstUpcomingIdx;
         const color = isPast ? colors.timelineDotPast : PLACE_COLORS[index % PLACE_COLORS.length];
         return (

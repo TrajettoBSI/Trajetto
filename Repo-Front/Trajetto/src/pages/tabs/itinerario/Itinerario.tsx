@@ -9,6 +9,8 @@ import { isPlacePast } from '@/app/utils/isPlacePast';
 import { useColors } from '@/src/theme';
 import { AsyncBoundary } from '@/src/components/feedback';
 import NoItineraryEmptyState from '@/src/pages/tabs/shared/components/NoItineraryEmptyState/NoItineraryEmptyState';
+import DaySelector from '@/src/pages/tabs/shared/components/DaySelector/DaySelector';
+import { placeDate } from '@/src/domain/itinerary/itineraryDays';
 import { useItinerario } from './hooks/useItinerario';
 import { styles } from './styles/styles';
 import ItineraryHeaderCard from './components/ItineraryHeaderCard/ItineraryHeaderCard';
@@ -28,6 +30,10 @@ export default function Itinerario() {
     error,
     reload,
     setFocusedMapPlace,
+    days,
+    currentDay,
+    dayPlaces,
+    selectDay,
     scrollRef,
     highlightedPlaceIndex,
     registerCardOffset,
@@ -61,7 +67,7 @@ export default function Itinerario() {
       renderEmpty={() => <NoItineraryEmptyState destIndex={destIndex} title="Trajetto" />}
     >
       {(roteiro) => {
-        const sorted = [...roteiro.places].sort((a, b) => a.orderIndex - b.orderIndex);
+        const sorted = dayPlaces;
 
         return (
           <View style={s.safe}>
@@ -77,19 +83,31 @@ export default function Itinerario() {
               <ItineraryHeaderCard
                 startDate={roteiro.startDate}
                 endDate={roteiro.endDate}
-                stopsCount={sorted.length}
+                stopsCount={roteiro.places.length}
+                daysCount={days.length}
                 startTime={sorted[0]?.estimatedVisitTime}
                 endTime={sorted[sorted.length - 1]?.estimatedVisitTime}
               />
 
-              <Text style={s.sectionLabel}>{t('sectionLabel')}</Text>
+              <DaySelector
+                days={days}
+                selectedDate={currentDay?.date ?? null}
+                onSelect={selectDay}
+                style={s.daySelector}
+              />
+
+              <Text style={s.sectionLabel}>
+                {days.length > 1 && currentDay
+                  ? t('daySectionLabel', { number: currentDay.number, total: days.length })
+                  : t('sectionLabel')}
+              </Text>
 
               <View style={s.timeline}>
                 {sorted.map((place, idx) => {
-                  const isPast = isPlacePast(roteiro.startDate, place.estimatedVisitTime);
+                  const isPast = isPlacePast(placeDate(roteiro.startDate, place), place.estimatedVisitTime);
                   const color = PLACE_COLORS[idx % PLACE_COLORS.length];
                   const isLast = idx === sorted.length - 1;
-                  const isHighlighted = highlightedPlaceIndex === idx;
+                  const isHighlighted = highlightedPlaceIndex === place.orderIndex;
 
                   return (
                     <TimelineRow
@@ -100,7 +118,7 @@ export default function Itinerario() {
                       isPast={isPast}
                       isLast={isLast}
                       isHighlighted={isHighlighted}
-                      onLayout={(e) => registerCardOffset(idx, e.nativeEvent.layout.y, sorted.length)}
+                      onLayout={(e) => registerCardOffset(place.orderIndex, e.nativeEvent.layout.y)}
                       onSwitchPress={() => handleSwipeLeft(place)}
                       onPress={() => {
                         setFocusedMapPlace(idx);

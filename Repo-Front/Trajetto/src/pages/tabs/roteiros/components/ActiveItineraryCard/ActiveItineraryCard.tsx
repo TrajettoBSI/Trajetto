@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Itinerary } from '@/hooks/itineraryStore';
 import { useColors } from '@/src/theme';
 import { isPlacePast } from '@/app/utils/isPlacePast';
+import { groupByDay, placeDate, resolveDay, toIsoDate } from '@/src/domain/itinerary/itineraryDays';
 import { formatDate, formatTime } from '@/src/i18n/format';
 import Checkbox from '../Checkbox/Checkbox';
 import { styles } from './styles';
@@ -32,7 +33,11 @@ export default function ActiveItineraryCard({
   ) + 1;
 
   const places = itinerary.places ?? [];
-  const doneCount = places.filter((p) => isPlacePast(itinerary.startDate, p.estimatedVisitTime)).length;
+  const doneCount = places.filter((p) => isPlacePast(placeDate(itinerary.startDate, p), p.estimatedVisitTime)).length;
+  const itineraryDays = groupByDay(itinerary.startDate, places);
+  const todayDate = resolveDay(itineraryDays.map((d) => d.date), null, toIsoDate(new Date()));
+  const shownDay = itineraryDays.find((d) => d.date === todayDate);
+  const shownPlaces = shownDay?.places ?? [];
   const progress = places.length > 0 ? Math.round((doneCount / places.length) * 100) : 0;
 
   return (
@@ -78,18 +83,22 @@ export default function ActiveItineraryCard({
         <View style={[s.progressFill, { width: `${progress}%` }]} />
       </View>
 
+      {!selectMode && itineraryDays.length > 1 && shownDay && (
+        <Text style={s.dayLabel}>
+          {t('activeCard.dayOf', { number: shownDay.number, total: itineraryDays.length })}
+        </Text>
+      )}
+
       {!selectMode && (
         <View style={s.timeline}>
-          {places
-            .slice()
-            .sort((a, b) => a.orderIndex - b.orderIndex)
+          {shownPlaces
             .map((place, idx) => {
-              const isPast = isPlacePast(itinerary.startDate, place.estimatedVisitTime);
+              const isPast = isPlacePast(placeDate(itinerary.startDate, place), place.estimatedVisitTime);
               return (
                 <View key={idx} style={s.timelineItem}>
                   <View style={s.timelineLeft}>
                     <View style={[s.timelineDot, isPast ? s.timelineDotPast : (idx === 0 ? s.timelineDotFirst : s.timelineDotNext)]} />
-                    {idx < places.length - 1 && <View style={s.timelineLine} />}
+                    {idx < shownPlaces.length - 1 && <View style={s.timelineLine} />}
                   </View>
                   <View style={[s.timelineContent, isPast && s.timelineContentPast]}>
                     <Text style={s.timelineTime}>{formatTime(place.estimatedVisitTime)}</Text>

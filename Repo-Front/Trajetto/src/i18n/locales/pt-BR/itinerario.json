@@ -1,11 +1,13 @@
 {
   "loadingText": "Carregando itinerário...",
   "sectionLabel": "PARADAS DO ROTEIRO",
+  "daySectionLabel": "PARADAS DO DIA {{number}} DE {{total}}",
   "exportPdf": "Exportar em PDF",
   "headerCard": {
     "period": "Período",
     "stops": "Paradas",
-    "active": "Ativo"
+    "active": "Ativo",
+    "days": "Dias"
   },
   "alternativesModal": {
     "title": "Trocar lugar",
@@ -47,5 +49,8 @@
     "save": "Salvar anotação",
     "cancel": "Cancelar",
     "saveError": "Não foi possível salvar a anotação."
+  },
+  "daySelector": {
+    "day": "Dia {{number}}"
   }
 }

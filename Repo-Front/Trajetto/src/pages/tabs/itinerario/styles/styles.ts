@@ -17,6 +17,7 @@ export const styles = (colors: AppColors) =>
       letterSpacing: 0.8, textTransform: 'uppercase', marginBottom: 6,
     },
     timeline: { marginTop: 6 },
+    daySelector: { marginBottom: 16, flexGrow: 0 },
 
     btnExport: {
       marginTop: 24,

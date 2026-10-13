@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 
 @Getter
@@ -32,6 +33,10 @@ public class PlaceModel {
 
     @Column(name = "longitude")
     private Double longitude;
+
+    /** Dia da viagem em que a parada acontece (migracao V14). */
+    @Column(name = "visit_date")
+    private LocalDate visitDate;
 
     @Column(name = "estimated_visit_time")
     private LocalTime estimatedVisitTime;

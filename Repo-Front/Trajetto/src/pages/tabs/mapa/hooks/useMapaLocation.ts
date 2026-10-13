@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'expo-router';
 import * as Location from 'expo-location';
 import MapView from 'react-native-maps';
@@ -8,6 +8,8 @@ import { useAuth } from '@/context/AuthContext';
 import { useItineraryStore } from '@/hooks/itineraryStore';
 import { RouteService } from '@/services';
 import { isPlacePast } from '@/app/utils/isPlacePast';
+import { placeDate } from '@/src/domain/itinerary/itineraryDays';
+import { useItineraryDay } from '@/src/pages/tabs/shared/hooks/useItineraryDay';
 import { LatLng, Region } from '../mapaFormat';
 
 export function useMapaLocation() {
@@ -21,12 +23,8 @@ export function useMapaLocation() {
   const userId = user?.id;
   const [region, setRegion] = useState<Region | undefined>(undefined);
   const [segments, setSegments] = useState<LatLng[][]>([]);
-  const points = useMemo<any[]>(
-    () => (itinerary?.places?.length
-      ? [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex)
-      : []),
-    [itinerary],
-  );
+  const { days, currentDay, dayPlaces, selectDay } = useItineraryDay(itinerary);
+  const points: any[] = dayPlaces;
   const [userLocation, setUserLocation] = useState<LatLng | null>(null);
   const mapRef = useRef<MapView>(null);
   const isFocusingPin = useRef(false);
@@ -63,9 +61,12 @@ export function useMapaLocation() {
     if (!itinerary) fetchItinerary(user.id);
   }, [user, itinerary, fetchItinerary]);
 
+  const originLatitude = itinerary?.originLatitude;
+  const originLongitude = itinerary?.originLongitude;
+
   useEffect(() => {
-    if (!itinerary?.places?.length) return;
-    const sorted = [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex);
+    if (!dayPlaces.length) return;
+    const sorted = dayPlaces;
 
     let cancelled = false;
 
@@ -79,9 +80,9 @@ export function useMapaLocation() {
       }
 
       const pairs: [{ lat: number; lng: number }, { lat: number; lng: number }][] = [];
-      if (itinerary.originLatitude != null) {
+      if (originLatitude != null) {
         pairs.push([
-          { lat: itinerary.originLatitude, lng: itinerary.originLongitude! },
+          { lat: originLatitude, lng: originLongitude! },
           { lat: sorted[0].latitude, lng: sorted[0].longitude },
         ]);
       }
@@ -104,13 +105,11 @@ export function useMapaLocation() {
     })();
 
     return () => { cancelled = true; };
-  }, [itinerary]);
+  }, [dayPlaces, originLatitude, originLongitude]);
 
-  const sorted = itinerary?.places
-    ? [...itinerary.places].sort((a, b) => a.orderIndex - b.orderIndex)
-    : [];
+  const sorted = dayPlaces;
   const firstUpcomingIdx = itinerary
-    ? sorted.findIndex((p) => !isPlacePast(itinerary.startDate, p.estimatedVisitTime))
+    ? sorted.findIndex((p) => !isPlacePast(placeDate(itinerary.startDate, p), p.estimatedVisitTime))
     : 0;
   const hasOriginSeg = itinerary?.originLatitude != null;
   const currentSegIdx = hasOriginSeg
@@ -154,6 +153,9 @@ export function useMapaLocation() {
     mapRef,
     pulseStyle,
     sorted,
+    days,
+    currentDay,
+    selectDay,
     firstUpcomingIdx,
     hasOriginSeg,
     currentSegIdx,
