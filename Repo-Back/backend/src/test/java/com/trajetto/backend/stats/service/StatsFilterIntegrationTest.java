@@ -1,5 +1,9 @@
 package com.trajetto.backend.stats.service;
 
+import com.trajetto.backend.itinerary.repository.PlaceRepository;
+import com.trajetto.backend.itinerary.model.PlaceModel;
+import com.trajetto.backend.rating.model.RatingDocument;
+import com.trajetto.backend.rating.repository.RatingMongoRepository;
 import com.trajetto.backend.stats.dto.CategoryCountDTO;
 import com.trajetto.backend.stats.dto.FilterOptionsDTO;
 import com.trajetto.backend.stats.dto.ItinerariesPerUserPanelDTO;
@@ -8,7 +12,10 @@ import com.trajetto.backend.stats.dto.MostVisitedPlaceDTO;
 import com.trajetto.backend.stats.dto.ProfileCountDTO;
 import com.trajetto.backend.stats.dto.StatsFilter;
 import com.trajetto.backend.stats.dto.TopRatedPlaceDTO;
+import com.trajetto.backend.user.model.UserModel;
+import com.trajetto.backend.user.repository.UserRepository;
 import jakarta.persistence.EntityManager;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -17,6 +24,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -69,8 +80,30 @@ class StatsFilterIntegrationTest {
     @Autowired
     private EntityManager em;
 
+    @Autowired
+    private RatingMongoRepository ratingMongoRepository;
+
+    @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    private PlaceRepository placeRepository;
+
+    /**
+     * Avaliacoes do seed sao espelhadas aqui a mao (ver {@link #avaliacao}), nao
+     * pelo {@code RatingService} -- e o Mongo nao entra no rollback do
+     * {@code @Transactional} do MySQL, entao precisa de limpeza explicita.
+     */
+    private final List<String> idsEspelhadosNoMongo = new ArrayList<>();
+
     private void sql(String comando) {
         em.createNativeQuery(comando).executeUpdate();
+    }
+
+    @AfterEach
+    void limparEspelhoNoMongo() {
+        ratingMongoRepository.deleteAllById(idsEspelhadosNoMongo);
+        idsEspelhadosNoMongo.clear();
     }
 
     private void usuario(long code, String nome, String perfil, String nascimento) {
@@ -92,6 +125,37 @@ class StatsFilterIntegrationTest {
     private void avaliacao(long usuario, String xid, int nota, String comentario, String quando) {
         sql("INSERT INTO RatingModel (userId, touristSpotXid, rating, comment, createdAt) "
                 + "VALUES (" + usuario + ", '" + xid + "', " + nota + ", '" + comentario + "', '" + quando + "')");
+
+        long id = ((Number) em.createNativeQuery("SELECT LAST_INSERT_ID()").getSingleResult()).longValue();
+        espelharNoMongoParaOTeste(id, usuario, xid, nota, comentario, quando);
+    }
+
+    /**
+     * O seed grava a avaliacao direto via SQL (pra controlar o createdAt em
+     * 2090), passando longe do {@code RatingService} -- o unico lugar que
+     * espelha no Mongo em producao. Sem isso o ranking (que agora le so do
+     * Mongo) nunca enxergaria essas avaliacoes. Reproduz aqui o mesmo retrato
+     * que {@code RatingService#espelharNoMongo} grava.
+     */
+    private void espelharNoMongoParaOTeste(long id, long usuarioId, String xid, int nota, String comentario, String quando) {
+        UserModel usuarioModel = userRepository.findById(usuarioId).orElseThrow();
+        PlaceModel local = placeRepository.findFirstByXid(xid).orElseThrow();
+
+        RatingDocument doc = new RatingDocument();
+        doc.setId(String.valueOf(id));
+        doc.setTouristSpotXid(xid);
+        doc.setTouristSpotName(local.getName());
+        doc.setTouristSpotCategory(local.getCategory());
+        doc.setUserId(usuarioId);
+        doc.setUserProfile(usuarioModel.getTravelerProfile());
+        doc.setUserCountry(usuarioModel.getCountry());
+        doc.setRating(nota);
+        doc.setComment(comentario);
+        doc.setCreatedAt(LocalDateTime.parse(quando, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
+                .atZone(ZoneId.systemDefault()).toInstant());
+
+        ratingMongoRepository.save(doc);
+        idsEspelhadosNoMongo.add(doc.getId());
     }
 
     @BeforeEach
