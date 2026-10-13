@@ -20,12 +20,6 @@ module.exports = {
     'src/**/*.{ts,tsx}',
     'utils/**/*.{ts,tsx}',
     '!**/*.d.ts',
-    '!components/hello-wave.tsx',
-    '!components/parallax-scroll-view.tsx',
-    '!components/external-link.tsx',
-    '!components/ui/collapsible.tsx',
-    '!components/RegisterIllustration.tsx',
-    '!components/TrajettoLogo.tsx',
   ],
   coverageReporters: ['text-summary', 'html', 'lcov', 'json-summary'],
   coverageThreshold: {

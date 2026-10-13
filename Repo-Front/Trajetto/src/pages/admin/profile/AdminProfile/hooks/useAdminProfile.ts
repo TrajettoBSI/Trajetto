@@ -22,11 +22,6 @@ export function useAdminProfile() {
       title: t('profile.accountSection'),
       items: [
         {
-          icon: 'notifications-outline',
-          label: t('profile.notifications'),
-          onPress: () => {},
-        },
-        {
           icon: 'language-outline',
           label: t('profile.language'),
           value: current.label,

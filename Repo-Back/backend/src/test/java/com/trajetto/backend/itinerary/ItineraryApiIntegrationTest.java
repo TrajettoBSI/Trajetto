@@ -49,12 +49,12 @@ class ItineraryApiIntegrationTest extends ApiIntegrationTest {
     }
 
     @Test
-    @DisplayName("Sem roteiro ativo, o ativo responde 204; usuario inexistente responde 404")
+    @DisplayName("Sem roteiro ativo, o ativo responde 204; pedir o de outro id responde 403")
     void semRoteiro() throws Exception {
         UserModel user = usuario(false);
 
         mvc.perform(comToken(get("/itinerary/active/" + user.getId()), user)).andExpect(status().isNoContent());
-        mvc.perform(comToken(get("/itinerary/active/999999999"), user)).andExpect(status().isNotFound());
+        mvc.perform(comToken(get("/itinerary/active/999999999"), user)).andExpect(status().isForbidden());
     }
 
     @Test
@@ -139,6 +139,42 @@ class ItineraryApiIntegrationTest extends ApiIntegrationTest {
                 .andExpect(status().isForbidden());
         mvc.perform(json(patch("/itinerary/" + id + "/place/" + posicao + "/note"), Map.of("note", "Sem login")))
                 .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    @DisplayName("O dono do roteiro vem do token: outro usuario nao le, nao gera e nao altera roteiro alheio")
+    void donoVemDoToken() throws Exception {
+        UserModel user = usuario(false);
+        UserModel outro = usuario(false);
+        long id = gerar(user).get("id").asLong();
+
+        mvc.perform(comToken(get("/itinerary/active/" + user.getId()), outro)).andExpect(status().isForbidden());
+        mvc.perform(comToken(get("/itinerary/all/" + user.getId()), outro)).andExpect(status().isForbidden());
+        mvc.perform(comToken(post("/itinerary/mock/" + user.getId()), outro)).andExpect(status().isForbidden());
+        mvc.perform(comToken(patch("/itinerary/" + id + "/activate/" + user.getId()), outro)).andExpect(status().isForbidden());
+        mvc.perform(comToken(delete("/itinerary/" + id + "/user/" + user.getId()), outro)).andExpect(status().isForbidden());
+        mvc.perform(json(comToken(patch("/itinerary/" + id + "/rating"), outro), Map.of("rating", 1)))
+                .andExpect(status().isForbidden());
+        mvc.perform(json(comToken(patch("/itinerary/" + id + "/date"), outro), Map.of("date", "2026-11-10")))
+                .andExpect(status().isForbidden());
+        Map<String, Object> parada = Map.of("name", "Intruso", "address", "Via, 1", "latitude", 41.9, "longitude", 12.48);
+        mvc.perform(json(comToken(patch("/itinerary/" + id + "/place/0"), outro), parada))
+                .andExpect(status().isForbidden());
+        mvc.perform(get("/itinerary/active/" + user.getId())).andExpect(status().isUnauthorized());
+
+        Map<String, Object> body = new HashMap<>();
+        body.put("userId", user.getId());
+        body.put("startLatitude", 41.8902);
+        body.put("startLongitude", 12.4922);
+        body.put("startDate", "2026-11-10");
+        body.put("days", 1);
+        body.put("pace", "LEVE");
+        mvc.perform(json(comToken(post("/itinerary/generate"), outro), body)).andExpect(status().isForbidden());
+
+        body.remove("userId");
+        mvc.perform(json(comToken(post("/itinerary/generate"), outro), body)).andExpect(status().isOk());
+        mvc.perform(comToken(get("/itinerary/all/" + outro.getId()), outro))
+                .andExpect(jsonPath("$.length()").value(1));
     }
 
     @Test

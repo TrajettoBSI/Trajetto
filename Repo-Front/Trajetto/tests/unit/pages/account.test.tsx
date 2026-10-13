@@ -1,6 +1,6 @@
 import React from 'react';
 import { Alert, AlertButton } from 'react-native';
-import { fireEvent, render, screen, waitFor } from '@testing-library/react-native';
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import Register from '@/src/pages/common/register/Register';
 import VerifyEmail from '@/src/pages/common/verifyEmail/VerifyEmail';
 import ForgotPassword from '@/src/pages/common/forgotPassword/ForgotPassword';
@@ -12,7 +12,7 @@ import { apiError } from '../../helpers';
 const mockRegister = jest.fn();
 jest.mock('@/context/AuthContext', () => ({ useAuth: () => ({ register: mockRegister }) }));
 jest.mock('@/services', () => ({
-  authService: { verifyEmail: jest.fn(), requestPasswordCode: jest.fn(), resetPassword: jest.fn() },
+  authService: { verifyEmail: jest.fn(), resendVerificationCode: jest.fn(), requestPasswordCode: jest.fn(), resetPassword: jest.fn() },
 }));
 
 const auth = authService as unknown as Record<string, jest.Mock>;
@@ -111,6 +111,33 @@ describe('verificacao de e-mail', () => {
     await fireEvent.changeText(screen.getByDisplayValue(''), '999999');
 
     expect(await screen.findByText('Código de verificação inválido.')).toBeTruthy();
+  });
+
+  it('reenvia o codigo e espera um minuto antes de permitir outro reenvio', async () => {
+    jest.useFakeTimers();
+    auth.resendVerificationCode.mockResolvedValue(undefined);
+    await render(<VerifyEmail />);
+
+    await fireEvent.press(screen.getByText('Não recebeu? Reenviar código'));
+    expect(auth.resendVerificationCode).toHaveBeenCalledWith('ana@trajetto.com');
+    expect(await screen.findByText('Reenviar código em 60s')).toBeTruthy();
+
+    await fireEvent.press(screen.getByText('Reenviar código em 60s'));
+    expect(auth.resendVerificationCode).toHaveBeenCalledTimes(1);
+
+    for (let i = 0; i < 60; i += 1) {
+      await act(async () => { jest.advanceTimersByTime(1000); });
+    }
+    expect(screen.getByText('Não recebeu? Reenviar código')).toBeTruthy();
+    jest.useRealTimers();
+  });
+
+  it('mostra o erro quando o reenvio falha', async () => {
+    auth.resendVerificationCode.mockRejectedValue(apiError(409, 'CONFLICT', 'Este e-mail já foi verificado. Faça login.'));
+    await render(<VerifyEmail />);
+    await fireEvent.press(screen.getByText('Não recebeu? Reenviar código'));
+
+    expect(await screen.findByText('Este e-mail já foi verificado. Faça login.')).toBeTruthy();
   });
 });
 

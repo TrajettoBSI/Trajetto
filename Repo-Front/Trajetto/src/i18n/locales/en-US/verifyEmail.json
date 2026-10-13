@@ -6,5 +6,9 @@
   "codeTooShortMessage": "Enter the 6-digit code.",
   "successTitle": "Success",
   "successMessage": "Account verified! You can now log in.",
-  "verifyError": "Invalid code. Please try again."
+  "verifyError": "Invalid code. Please try again.",
+  "resend": "Didn't get it? Resend code",
+  "resendIn": "Resend code in {{seconds}}s",
+  "resendSuccess": "We've sent a new code to your email.",
+  "resendError": "Couldn't resend the code."
 }

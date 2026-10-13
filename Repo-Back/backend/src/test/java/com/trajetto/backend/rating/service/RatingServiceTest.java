@@ -64,11 +64,13 @@ class RatingServiceTest {
         when(placeRepository.findFirstByXid("X1")).thenReturn(Optional.of(local));
 
         UserModel usuario = new UserModel();
+        usuario.setFirstName("Maria");
+        usuario.setLastName("Souza");
         usuario.setTravelerProfile("CULTURAL");
         usuario.setCountry("Brasil");
         when(userRepository.findById(7L)).thenReturn(Optional.of(usuario));
 
-        service().createRating("X1", 7L, "Maria", 5, "Muito bom");
+        service().createRating("X1", 7L, 5, "Muito bom");
 
         ArgumentCaptor<RatingDocument> captor = ArgumentCaptor.forClass(RatingDocument.class);
         verify(ratingMongoRepository).save(captor.capture());
@@ -82,6 +84,7 @@ class RatingServiceTest {
         assertEquals("Brasil", doc.getUserCountry());
         assertEquals(5, doc.getRating());
         assertEquals("Muito bom", doc.getComment());
+        assertEquals("Maria Souza", doc.getUserName());
     }
 
     @Test
@@ -90,9 +93,9 @@ class RatingServiceTest {
         when(ratingRepository.findByTouristSpotXidAndUserId(any(), anyLong())).thenReturn(Optional.empty());
         stubSalvarComId(ratingRepository, 1L);
         when(placeRepository.findFirstByXid("X9")).thenReturn(Optional.empty());
-        when(userRepository.findById(7L)).thenReturn(Optional.empty());
+        when(userRepository.findById(7L)).thenReturn(Optional.of(new UserModel()));
 
-        service().createRating("X9", 7L, "Maria", 4, null);
+        service().createRating("X9", 7L, 4, null);
 
         ArgumentCaptor<RatingDocument> captor = ArgumentCaptor.forClass(RatingDocument.class);
         verify(ratingMongoRepository).save(captor.capture());
@@ -114,7 +117,7 @@ class RatingServiceTest {
         usuario.setCountry("");
         when(userRepository.findById(7L)).thenReturn(Optional.of(usuario));
 
-        service().createRating("X1", 7L, "Maria", 3, "");
+        service().createRating("X1", 7L, 3, "");
 
         ArgumentCaptor<RatingDocument> captor = ArgumentCaptor.forClass(RatingDocument.class);
         verify(ratingMongoRepository).save(captor.capture());

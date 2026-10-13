@@ -2,6 +2,7 @@ package com.trajetto.backend.user.model;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
@@ -58,6 +59,9 @@ public class UserModel {
 
     @Column(name = "verification_code")
     private String verificationCode;
+
+    @Column(name = "verification_code_expires_at")
+    private LocalDateTime verificationCodeExpiresAt;
 
 //    @Column(name = "cpf", nullable = false, unique = true)
 //    private String cpf;

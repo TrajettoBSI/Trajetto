@@ -44,6 +44,7 @@ describe('authService', () => {
     await authService.register({ firstName: 'Ana' } as never);
     await authService.logout();
     await authService.verifyEmail('a@b.com', '123456');
+    await authService.resendVerificationCode('a@b.com');
     await authService.requestPasswordCode('  Ana@B.com ');
     await authService.resetPassword({ email: 'Ana@B.com', code: '1', newPassword: 'n' });
 
@@ -52,6 +53,7 @@ describe('authService', () => {
       ['/user/create', { firstName: 'Ana' }],
       ['/user/logout'],
       ['/user/verify', null, { params: { email: 'a@b.com', code: '123456' } }],
+      ['/user/verify/resend', null, { params: { email: 'a@b.com' } }],
       ['/user/password/forgot', { email: 'ana@b.com' }],
       ['/user/password/reset', { email: 'ana@b.com', code: '1', newPassword: 'n' }],
     ]);

@@ -27,11 +27,6 @@ export function usePerfil() {
           onPress: () => router.push('/ProfileScreen'),
         },
         {
-          icon: 'notifications-outline',
-          label: t('menu.notifications'),
-          onPress: () => {},
-        },
-        {
           icon: 'language-outline',
           label: t('menu.language'),
           value: current.label,

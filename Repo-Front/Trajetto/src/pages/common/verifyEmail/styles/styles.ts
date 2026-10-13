@@ -28,4 +28,7 @@ export const styles = (colors: AppColors) =>
     title: { fontSize: 26, fontFamily: 'Inter-Bold', marginBottom: 10, color: colors.primary, textAlign: 'center' },
     subtitle: { fontSize: 15, color: colors.gray600, marginBottom: 36, textAlign: 'center', lineHeight: 22 },
     emailHighlight: { color: colors.gray800, fontFamily: 'Inter-Medium' },
+    resendBtn: { marginTop: 20, alignItems: 'center', padding: 8 },
+    resendText: { fontSize: 14, fontFamily: 'Inter-Medium', color: colors.primary },
+    resendTextDisabled: { color: colors.textMuted },
   });

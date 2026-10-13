@@ -44,7 +44,9 @@ public class RatingService {
                 .orElse(0.0);
     }
 
-    public RatingModel createRating(String touristSpotXid, Long userId, String userName, int ratingValue, String comment) {
+    public RatingModel createRating(String touristSpotXid, Long userId, int ratingValue, String comment) {
+        UserModel autor = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuário", userId));
 
         ratingRepository.findByTouristSpotXidAndUserId(touristSpotXid, userId)
                 .ifPresent(existing -> {
@@ -53,7 +55,7 @@ public class RatingService {
 
         RatingModel rating = new RatingModel();
         rating.setTouristSpotXid(touristSpotXid);
-        rating.setUserName(userName);
+        rating.setUserName((autor.getFirstName() + " " + autor.getLastName()).trim());
         rating.setUserId(userId);
         rating.setRating(ratingValue);
         rating.setComment(comment);

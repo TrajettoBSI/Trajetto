@@ -4,7 +4,6 @@ import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -15,7 +14,7 @@ GenerateItineraryRequestDTO {
 
     public static final int MAX_DAYS = 7;
 
-    @NotNull(message = "O usuário do roteiro é obrigatório")
+    /** Preenchido pelo controller com o usuário do token; se o cliente enviar, precisa ser o mesmo. */
     private Long userId;
 
     @DecimalMin(value = "-90.0", message = "A latitude de origem deve estar entre -90 e 90")

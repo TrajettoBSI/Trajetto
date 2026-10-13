@@ -8,11 +8,13 @@ import org.junit.jupiter.api.Test;
 import org.springframework.mail.MailSendException;
 import org.springframework.mail.SimpleMailMessage;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
@@ -117,6 +119,35 @@ class UserApiIntegrationTest extends ApiIntegrationTest {
         UserModel verificado = userRepository.findByEmail(user.getEmail());
         assertTrue(verificado.isVerified());
         assertNull(verificado.getVerificationCode());
+    }
+
+    @Test
+    @DisplayName("Codigo de verificacao vencido e recusado; o reenvio gera outro codigo valido")
+    void codigoVencidoEReenvio() throws Exception {
+        UserModel user = usuario(false);
+        user.setVerified(false);
+        user.setVerificationCode("123456");
+        user.setVerificationCodeExpiresAt(LocalDateTime.now().minusMinutes(1));
+        userRepository.saveAndFlush(user);
+
+        mvc.perform(post("/user/verify").param("email", user.getEmail()).param("code", "123456"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.message").value("Este código expirou. Peça um novo código."));
+
+        mvc.perform(post("/user/verify/resend").param("email", user.getEmail().toUpperCase()))
+                .andExpect(status().isOk());
+        verify(mailSender).send(any(SimpleMailMessage.class));
+
+        UserModel reenviado = userRepository.findByEmail(user.getEmail());
+        assertNotEquals("123456", reenviado.getVerificationCode());
+        assertTrue(reenviado.getVerificationCodeExpiresAt().isAfter(LocalDateTime.now().plusMinutes(9)));
+
+        mvc.perform(post("/user/verify").param("email", user.getEmail()).param("code", reenviado.getVerificationCode()))
+                .andExpect(status().isOk());
+        mvc.perform(post("/user/verify/resend").param("email", user.getEmail()))
+                .andExpect(status().isConflict());
+        mvc.perform(post("/user/verify/resend").param("email", "ninguem@trajetto.local"))
+                .andExpect(status().isNotFound());
     }
 
     @Test
