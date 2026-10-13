@@ -137,30 +137,34 @@ export default function Roteiros() {
         )}
 
         <AsyncBoundary
-          state={{ loading, error, data: itinerary }}
+          state={{ loading, error, data: itineraries }}
           onRetry={reload}
           error={{ message: error ?? undefined }}
           style={s.centerState}
           loading={{ title: t('loadingItineraries'), message: '' }}
           renderEmpty={() => <EmptyState destIndex={destIndex} onCreate={() => openGenerate()} />}
         >
-          {(roteiroAtivo) => (
+          {() => (
           <>
-            <Text style={s.sectionLabel}>{t('activeSectionLabel')}</Text>
+            {itinerary && (
+              <>
+                <Text style={s.sectionLabel}>{t('activeSectionLabel')}</Text>
 
-            <ActiveItineraryCard
-              itinerary={roteiroAtivo}
-              selectMode={selectMode}
-              selected={selectedIds.has(roteiroAtivo.id)}
-              deleting={deleting === roteiroAtivo.id}
-              onPress={() => selectMode ? toggleSelect(roteiroAtivo.id) : router.push('/itinerario')}
-              onLongPress={() => !selectMode && enterSelectMode(roteiroAtivo.id)}
-              onDelete={() => handleDelete(roteiroAtivo.id)}
-            />
+                <ActiveItineraryCard
+                  itinerary={itinerary}
+                  selectMode={selectMode}
+                  selected={selectedIds.has(itinerary.id)}
+                  deleting={deleting === itinerary.id}
+                  onPress={() => selectMode ? toggleSelect(itinerary.id) : router.push('/itinerario')}
+                  onLongPress={() => !selectMode && enterSelectMode(itinerary.id)}
+                  onDelete={() => handleDelete(itinerary.id)}
+                />
+              </>
+            )}
 
             {inactiveItineraries.length > 0 && (
               <>
-                <Text style={[s.sectionLabel, s.sectionLabelSpaced]}>{t('otherSectionLabel')}</Text>
+                <Text style={[s.sectionLabel, itinerary && s.sectionLabelSpaced]}>{t('otherSectionLabel')}</Text>
                 {visibleInactiveItineraries.map((item) => (
                   <InactiveItineraryRow
                     key={item.id}
@@ -190,7 +194,7 @@ export default function Roteiros() {
           )}
         </AsyncBoundary>
 
-        {!selectMode && itinerary && (
+        {!selectMode && itineraries.length > 0 && (
           <View style={s.generateSection}>
             <Text style={s.generateLabel}>{t('generate.wantNew')}</Text>
             <CustomButton
