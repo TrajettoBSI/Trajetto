@@ -2,13 +2,14 @@ import { useCallback } from 'react';
 import { useRouter } from 'expo-router';
 import { useAuth } from '@/context/AuthContext';
 import { useItineraryStore, Places } from '@/hooks/itineraryStore';
-import { placesService } from '@/services';
+import { NearbyPlace, placesService } from '@/services';
 import { useDestinationCarousel } from '@/src/pages/tabs/shared/hooks/useDestinationCarousel';
 import { useItineraryDay } from '@/src/pages/tabs/shared/hooks/useItineraryDay';
 import { useAlternatives } from './useAlternatives';
 import { useExportPdf } from './useExportPdf';
 import { useItinerarioScroll } from './useItinerarioScroll';
 import { useItineraryNote } from './useItineraryNote';
+import { useMealSuggestions } from './useMealSuggestions';
 
 export function useItinerario() {
   const router = useRouter();
@@ -26,6 +27,11 @@ export function useItinerario() {
   const note = useItineraryNote();
   const { days, currentDay, dayPlaces, selectDay } = useItineraryDay(itinerary);
   const { scrollRef, highlightedPlaceIndex, registerCardOffset } = useItinerarioScroll(dayPlaces, itinerary?.startDate);
+  const mealSuggestions = useMealSuggestions(dayPlaces);
+
+  const openMealPlace = useCallback((place: NearbyPlace) => {
+    router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(place), origin: 'itinerario' } });
+  }, [router]);
 
   // O roteiro guarda so um recorte do lugar (sem telefone, site, etc.), mas carrega o xid
   // original (usado pra avaliacao). Busca o registro completo pra tela ficar igual a quando
@@ -61,6 +67,8 @@ export function useItinerario() {
     ...alternatives,
     ...note,
     openSpotDetail,
+    mealSuggestions,
+    openMealPlace,
     handleExportPDF: () => handleExportPDF(itinerary),
   };
 }

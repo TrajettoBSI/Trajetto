@@ -53,5 +53,11 @@
   },
   "daySelector": {
     "day": "Day {{number}}"
+  },
+  "meals": {
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "near": "Suggestions near {{name}}"
   }
 }
