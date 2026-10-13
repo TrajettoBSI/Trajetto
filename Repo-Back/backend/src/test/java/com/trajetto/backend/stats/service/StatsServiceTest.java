@@ -16,7 +16,7 @@ import com.trajetto.backend.stats.dto.TopRatedPlaceDTO;
 import com.trajetto.backend.stats.repository.ItineraryOverviewStatsRepository;
 import com.trajetto.backend.stats.repository.ItineraryStatsRepository;
 import com.trajetto.backend.stats.repository.PlaceStatsRepository;
-import com.trajetto.backend.stats.repository.RatingStatsRepository;
+import com.trajetto.backend.stats.repository.RatingMongoStatsRepository;
 import com.trajetto.backend.stats.repository.UserOverviewStatsRepository;
 import com.trajetto.backend.stats.repository.UserStatsRepository;
 import org.junit.jupiter.api.DisplayName;
@@ -64,12 +64,12 @@ class StatsServiceTest {
     @Mock private ItineraryOverviewStatsRepository itineraryOverviewStatsRepository;
     @Mock private ItineraryStatsRepository itineraryStatsRepository;
     @Mock private PlaceStatsRepository placeStatsRepository;
-    @Mock private RatingStatsRepository ratingStatsRepository;
+    @Mock private RatingMongoStatsRepository ratingMongoStatsRepository;
 
     private StatsService service() {
         return new StatsService(userOverviewStatsRepository, userStatsRepository,
                 itineraryOverviewStatsRepository, itineraryStatsRepository,
-                placeStatsRepository, ratingStatsRepository);
+                placeStatsRepository, ratingMongoStatsRepository);
     }
 
     @Test
@@ -191,12 +191,12 @@ class StatsServiceTest {
     }
 
     @Test
-    @DisplayName("Rankings de lugares leem média e contagem sem depender do tipo numérico do driver")
+    @DisplayName("Rankings de lugares repassam o que a agregacao do Mongo calculou, sem refazer conta nenhuma")
     void rankingsDeLugares() {
-        when(ratingStatsRepository.findTopRated(any(), any(), any(), any(), any())).thenReturn(List.<Object[]>of(
-                new Object[]{"Coliseu", "X1", new BigDecimal("4.5"), 12L}));
-        when(ratingStatsRepository.findMostCommented(any(), any(), any(), any(), any())).thenReturn(List.<Object[]>of(
-                new Object[]{"Coliseu", "X1", 12L}));
+        when(ratingMongoStatsRepository.findTopRated(any(), any(), any(), any(), any()))
+                .thenReturn(List.of(new TopRatedPlaceDTO("Coliseu", "X1", 4.5, 12)));
+        when(ratingMongoStatsRepository.findMostCommented(any(), any(), any(), any(), any()))
+                .thenReturn(List.of(new MostCommentedPlaceDTO("Coliseu", "X1", 12)));
 
         StatsService service = service();
 
@@ -204,16 +204,6 @@ class StatsServiceTest {
                 service.getTopRatedPlaces(SEM_RECORTE));
         assertEquals(List.of(new MostCommentedPlaceDTO("Coliseu", "X1", 12)),
                 service.getMostCommentedPlaces(SEM_RECORTE));
-    }
-
-    @Test
-    @DisplayName("Lugar sem nome cadastrado cai no xid, como o painel já fazia")
-    void lugarSemNomeUsaOXid() {
-        when(ratingStatsRepository.findMostCommented(any(), any(), any(), any(), any())).thenReturn(List.<Object[]>of(
-                new Object[]{"X9", "X9", 2L}));
-
-        assertEquals(List.of(new MostCommentedPlaceDTO("X9", "X9", 2)),
-                service().getMostCommentedPlaces(SEM_RECORTE));
     }
 
     // ─── O recorte chega à consulta ────────────────────────────────────────

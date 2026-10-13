@@ -4,7 +4,7 @@ import com.trajetto.backend.stats.dto.*;
 import com.trajetto.backend.stats.repository.ItineraryOverviewStatsRepository;
 import com.trajetto.backend.stats.repository.ItineraryStatsRepository;
 import com.trajetto.backend.stats.repository.PlaceStatsRepository;
-import com.trajetto.backend.stats.repository.RatingStatsRepository;
+import com.trajetto.backend.stats.repository.RatingMongoStatsRepository;
 import com.trajetto.backend.stats.repository.UserOverviewStatsRepository;
 import com.trajetto.backend.stats.repository.UserStatsRepository;
 import lombok.RequiredArgsConstructor;
@@ -51,7 +51,7 @@ public class StatsService {
     private final ItineraryOverviewStatsRepository itineraryOverviewStatsRepository;
     private final ItineraryStatsRepository itineraryStatsRepository;
     private final PlaceStatsRepository placeStatsRepository;
-    private final RatingStatsRepository ratingStatsRepository;
+    private final RatingMongoStatsRepository ratingMongoStatsRepository;
 
     // ─── Usuários ──────────────────────────────────────────────────────────
 
@@ -154,24 +154,13 @@ public class StatsService {
     // ─── Avaliações ────────────────────────────────────────────────────────
 
     public List<TopRatedPlaceDTO> getTopRatedPlaces(StatsFilter filtro) {
-        return ratingStatsRepository.findTopRated(
-                        filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category()).stream()
-                .map(linha -> new TopRatedPlaceDTO(
-                        (String) linha[0],
-                        (String) linha[1],
-                        asDouble(linha[2]),
-                        asLong(linha[3])))
-                .toList();
+        return ratingMongoStatsRepository.findTopRated(
+                filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category());
     }
 
     public List<MostCommentedPlaceDTO> getMostCommentedPlaces(StatsFilter filtro) {
-        return ratingStatsRepository.findMostCommented(
-                        filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category()).stream()
-                .map(linha -> new MostCommentedPlaceDTO(
-                        (String) linha[0],
-                        (String) linha[1],
-                        asLong(linha[2])))
-                .toList();
+        return ratingMongoStatsRepository.findMostCommented(
+                filtro.from(), filtro.to(), filtro.profile(), filtro.country(), filtro.category());
     }
 
     // ─── Opções dos filtros ────────────────────────────────────────────────
@@ -208,9 +197,5 @@ public class StatsService {
      */
     static long asLong(Object valor) {
         return valor == null ? 0L : ((Number) valor).longValue();
-    }
-
-    static double asDouble(Object valor) {
-        return valor == null ? 0d : ((Number) valor).doubleValue();
     }
 }
