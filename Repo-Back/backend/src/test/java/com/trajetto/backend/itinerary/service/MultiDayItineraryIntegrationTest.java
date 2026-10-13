@@ -20,9 +20,6 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * O roteiro e gerado para todos os dias escolhidos, e nao so para o primeiro.
- */
 @SpringBootTest
 @Transactional
 class MultiDayItineraryIntegrationTest {

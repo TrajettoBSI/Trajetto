@@ -24,9 +24,7 @@ export function useFavorites() {
       const results = await placesService.getAll({ search: favorite.name });
       const fullMatch = results.find((p) => p.name === favorite.name);
       if (fullMatch) spot = { ...fullMatch, xid: favorite.xid };
-    } catch {
-      // mantem o recorte salvo no favorito
-    }
+    } catch {}
     router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(spot), origin: 'favoritos' } });
   }, [router]);
 

@@ -26,10 +26,8 @@ GenerateItineraryRequestDTO {
     @DecimalMax(value = "180.0", message = "A longitude de origem deve estar entre -180 e 180")
     private double startLongitude;
 
-    // Nulo é permitido: o roteiro começa hoje, como antes de a data ser escolhida.
     private LocalDate startDate;
 
-    // Nulo é permitido: roteiro de um dia, como antes de a duração ser escolhida.
     @Min(value = 1, message = "O roteiro deve ter pelo menos 1 dia")
     @Max(value = MAX_DAYS, message = "O roteiro pode ter no máximo " + MAX_DAYS + " dias")
     private Integer days;

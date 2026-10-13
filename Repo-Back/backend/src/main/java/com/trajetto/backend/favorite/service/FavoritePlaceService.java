@@ -15,16 +15,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
 
-/**
- * Locais favoritos do usuario (RF08).
- *
- * <p>Marcar e desmarcar sao idempotentes: marcar um local que ja e favorito
- * devolve o favorito existente, e desmarcar um local que nao e favorito nao
- * falha. Assim um toque repetido no app, ou uma nova tentativa depois de
- * uma falha de rede, nunca deixa o usuario num estado diferente do que ele
- * pediu. A unicidade por usuario e local tambem e garantida pelo banco
- * ({@code uk_favorite_places_user_place}, migracao V12).</p>
- */
 @Service
 @RequiredArgsConstructor
 public class FavoritePlaceService {

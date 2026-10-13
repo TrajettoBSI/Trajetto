@@ -17,9 +17,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * OB05.1 — os favoritos ficam no banco, por usuario, e marcar/desmarcar e idempotente.
- */
 @SpringBootTest
 @Transactional
 class FavoritePlaceServiceIntegrationTest {

@@ -34,7 +34,6 @@ public class PlaceModel {
     @Column(name = "longitude")
     private Double longitude;
 
-    /** Dia da viagem em que a parada acontece (migracao V14). */
     @Column(name = "visit_date")
     private LocalDate visitDate;
 
@@ -53,7 +52,6 @@ public class PlaceModel {
     @Column(name = "fee")
     private String fee;
 
-    /** Anotacao pessoal do usuario sobre esta parada (migracao V13). */
     @Column(name = "note", length = 1000)
     private String note;
 

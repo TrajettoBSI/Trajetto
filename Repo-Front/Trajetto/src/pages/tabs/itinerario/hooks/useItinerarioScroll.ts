@@ -22,7 +22,7 @@ export function useItinerarioScroll(places: Places[], startDate: string | undefi
     if (places.every((p) => cardOffsets.current[p.orderIndex] !== undefined)) setLayoutReady(true);
   };
 
-  // Rola ate o card destacado ao voltar do mapa ou depois de trocar uma parada
+  // Rola ate o card destacado ao voltar do mapa
   useEffect(() => {
     if (highlightedPlaceIndex === null) return;
     const offset = cardOffsets.current[highlightedPlaceIndex];

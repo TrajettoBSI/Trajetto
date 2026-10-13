@@ -8,13 +8,6 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
-/**
- * Local marcado como favorito por um usuario (migracao V12).
- *
- * <p>Guarda o recorte do local que a lista de favoritos exibe, porque o
- * catalogo fica no MongoDB e nao tem chave estavel; o {@code xid} e o mesmo
- * que roteiros e avaliacoes usam para o local.</p>
- */
 @Getter
 @Setter
 @NoArgsConstructor

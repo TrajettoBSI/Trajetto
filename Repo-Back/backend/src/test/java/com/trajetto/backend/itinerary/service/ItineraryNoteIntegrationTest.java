@@ -15,9 +15,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-/**
- * OB05.3 — a anotacao de uma parada fica no banco e volta nas leituras seguintes do roteiro.
- */
 @SpringBootTest
 @Transactional
 class ItineraryNoteIntegrationTest {

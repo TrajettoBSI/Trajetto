@@ -18,7 +18,6 @@ import TimelineRow from './components/TimelineRow/TimelineRow';
 import AlternativesModal from './components/AlternativesModal/AlternativesModal';
 import NoteModal from './components/NoteModal/NoteModal';
 
-// A barra de abas flutua sobre o conteudo (64 de altura, 4 acima da area segura).
 const TAB_BAR_SPACE = 64 + 4 + 24;
 
 export default function Itinerario() {

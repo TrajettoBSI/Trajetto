@@ -18,13 +18,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * Locais favoritos do usuario autenticado (OB05.1, RF08).
- *
- * <p>O dono dos favoritos e sempre quem esta no token: nenhum endpoint
- * recebe o usuario por parametro, entao nao ha como ler ou alterar os
- * favoritos de outra pessoa.</p>
- */
 @Tag(name = "Favoritos", description = "Marcar, desmarcar e listar os locais favoritos do usuario autenticado")
 @RestController
 @RequestMapping("/favorites")

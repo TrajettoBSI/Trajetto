@@ -149,14 +149,11 @@ public class ItineraryService {
         int days = req.getDays() == null ? 1 : req.getDays();
         LocalDate startDate = req.getStartDate() == null ? LocalDate.now() : req.getStartDate();
 
-        // Pick the best PLACES_PER_DAY places for each day of the trip
         List<RomePlace> pool = scored.stream()
                 .limit((long) PLACES_PER_DAY * days)
                 .map(ScoredPlace::place)
                 .collect(Collectors.toList());
 
-        // Each day starts again from the origin (where the traveler is staying) and
-        // takes the nearest places still in the pool, so every day stays geographically close.
         record DayStop(RomePlace place, LocalDate date, LocalTime time) {}
         List<DayStop> ordered = new ArrayList<>();
         for (int day = 0; day < days && !pool.isEmpty(); day++) {
@@ -301,13 +298,6 @@ public class ItineraryService {
         return toDTO(itineraryRepository.save(itinerary));
     }
 
-    /**
-     * Grava a anotacao pessoal do usuario numa parada do roteiro (RF10).
-     *
-     * <p>So o dono do roteiro anota. Texto em branco remove a anotacao, para
-     * que o banco guarde {@code NULL} -- e nao uma string vazia -- quando a
-     * parada nao tem observacao.</p>
-     */
     public ItineraryResponseDTO updateNote(Long itineraryId, Integer orderIndex, Long userId, NoteRequestDTO req) {
         ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
                 .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
