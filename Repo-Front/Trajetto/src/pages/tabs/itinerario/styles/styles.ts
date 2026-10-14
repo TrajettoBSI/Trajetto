@@ -14,6 +14,10 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.glassSurface, borderWidth: 1, borderColor: colors.glassBorder,
     },
     headerExportText: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.onPrimary },
+    headerActions: { flexDirection: 'row', gap: 8 },
+    headerEditActive: { backgroundColor: colors.white, borderColor: colors.white },
+    headerEditActiveText: { color: colors.primary },
+    editHint: { fontSize: 13, color: colors.textMuted, marginBottom: 10, lineHeight: 18 },
     headerBarTitle: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.onPrimary },
     container: { flex: 1, backgroundColor: colors.backgroundMuted },
     content: { padding: 20 },
@@ -30,5 +34,8 @@ export const styles = (colors: AppColors) =>
 
     btnExport: {
       marginTop: 24,
+    },
+    btnAdd: {
+      marginTop: 16,
     },
   });

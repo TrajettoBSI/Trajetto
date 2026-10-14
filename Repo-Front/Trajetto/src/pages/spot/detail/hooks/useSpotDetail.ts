@@ -24,6 +24,7 @@ export type SpotDetailData = {
   backLabel: string;
   openMaps: () => void;
   openWebsite: () => void;
+  openBooking: () => void;
   callPhone: () => void;
   openWikipedia: () => void;
 };
@@ -60,6 +61,10 @@ export function useSpotDetail(): SpotDetailData {
     if (spot.website) Linking.openURL(spot.website).catch(() => {});
   };
 
+  const openBooking = () => {
+    if (spot.bookingUrl) Linking.openURL(spot.bookingUrl).catch(() => {});
+  };
+
   const callPhone = () => {
     if (!spot.phone) return;
     const number = spot.phone.replace(/[^\d+]/g, '');
@@ -91,6 +96,7 @@ export function useSpotDetail(): SpotDetailData {
     backLabel,
     openMaps,
     openWebsite,
+    openBooking,
     callPhone,
     openWikipedia,
   };

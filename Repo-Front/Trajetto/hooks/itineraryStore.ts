@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { ItineraryService, TravelPace } from '../services';
+import { AddPlaceRequest, ItineraryService, TravelPace } from '../services';
 import { getErrorMessage } from '../utils/apiError';
 
 export interface Places {
@@ -15,6 +15,8 @@ export interface Places {
   fee?: string | null;
   xid?: string | null;
   note?: string | null;
+  openAtVisit?: boolean | null;
+  bookingUrl?: string | null;
 }
 
 export interface Itinerary {
@@ -48,10 +50,20 @@ type ItineraryStore = {
   updateDate: (itineraryId: number, date: string | null) => Promise<void>;
   replacePlace: (orderIndex: number, newPlace: Places) => Promise<void>;
   updateNote: (orderIndex: number, note: string | null) => Promise<void>;
+  addPlace: (place: AddPlaceRequest) => Promise<void>;
+  removePlace: (orderIndex: number) => Promise<void>;
+  movePlace: (orderIndex: number, direction: 'UP' | 'DOWN') => Promise<void>;
   setHighlightedPlace: (index: number | null) => void;
   setFocusedMapPlace: (index: number | null) => void;
   setSelectedDay: (date: string | null) => void;
 };
+
+type SetState = (fn: (state: ItineraryStore) => Partial<ItineraryStore>) => void;
+
+const applyUpdate = (set: SetState, updated: Itinerary) => set((state) => ({
+  itinerary: state.itinerary?.id === updated.id ? updated : state.itinerary,
+  itineraries: state.itineraries.map((i) => (i.id === updated.id ? updated : i)),
+}));
 
 export const useItineraryStore = create<ItineraryStore>((set, get) => ({
   itinerary: null,
@@ -150,6 +162,24 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
       itinerary: state.itinerary?.id === updated.id ? updated : state.itinerary,
       itineraries: state.itineraries.map(i => i.id === updated.id ? updated : i),
     }));
+  },
+
+  addPlace: async (place) => {
+    const { itinerary } = get();
+    if (!itinerary) return;
+    applyUpdate(set, await ItineraryService.addPlace(itinerary.id, place));
+  },
+
+  removePlace: async (orderIndex) => {
+    const { itinerary } = get();
+    if (!itinerary) return;
+    applyUpdate(set, await ItineraryService.removePlace(itinerary.id, orderIndex));
+  },
+
+  movePlace: async (orderIndex, direction) => {
+    const { itinerary } = get();
+    if (!itinerary) return;
+    applyUpdate(set, await ItineraryService.movePlace(itinerary.id, orderIndex, direction));
   },
 
   setHighlightedPlace: (index) => set({ highlightedPlaceIndex: index }),

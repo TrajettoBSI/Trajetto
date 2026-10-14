@@ -50,5 +50,9 @@
     "add": "Add to favorites",
     "remove": "Remove from favorites",
     "error": "Could not update your favorites."
+  },
+  "booking": {
+    "title": "Book ahead",
+    "text": "Tickets often sell out. Buy them on the official website before you go."
   }
 }

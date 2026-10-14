@@ -104,6 +104,9 @@ describe('ItineraryService', () => {
     await ItineraryService.updateDate(5, '2026-11-10');
     await ItineraryService.updateNote(5, 2, 'nota');
     await ItineraryService.replacePlace(5, 2, { name: 'X' } as never);
+    await ItineraryService.addPlace(5, { name: 'Y', latitude: 1, longitude: 2, visitDate: '2026-11-10' });
+    await ItineraryService.removePlace(5, 3);
+    await ItineraryService.movePlace(5, 1, 'DOWN');
 
     expect(mockedApi.get.mock.calls).toEqual([['/itinerary/active/1'], ['/itinerary/all/1']]);
     expect(mockedApi.post).toHaveBeenCalledWith('/itinerary/generate', {
@@ -111,8 +114,12 @@ describe('ItineraryService', () => {
     });
     expect(mockedApi.patch.mock.calls.map((c) => c[0])).toEqual([
       '/itinerary/5/activate/1', '/itinerary/5/rating', '/itinerary/5/date', '/itinerary/5/place/2/note', '/itinerary/5/place/2',
+      '/itinerary/5/place/1/move',
     ]);
+    expect(mockedApi.patch).toHaveBeenLastCalledWith('/itinerary/5/place/1/move', null, { params: { direction: 'DOWN' } });
+    expect(mockedApi.post).toHaveBeenLastCalledWith('/itinerary/5/place', { name: 'Y', latitude: 1, longitude: 2, visitDate: '2026-11-10' });
     expect(mockedApi.delete).toHaveBeenCalledWith('/itinerary/5/user/1');
+    expect(mockedApi.delete).toHaveBeenCalledWith('/itinerary/5/place/3');
   });
 });
 
@@ -145,11 +152,15 @@ describe('servicos de lugares, favoritos, avaliacoes e rotas', () => {
     await RatingService.update(3, { userId: 1, rating: 4, comment: 'ok' });
     await RatingService.delete(3, 1);
     await RouteService.getRoute({ origin: {}, destination: {} });
+    await RouteService.getDirections({ lat: 1, lng: 2 }, { lat: 3, lng: 4 }, 'pt', 10);
     await searchByCity('Roma');
 
     expect(mockedApi.delete).toHaveBeenCalledWith('/favorites/osm_colosseo');
     expect(mockedApi.put).toHaveBeenCalledWith('/api/ratings/3', null, { params: { userId: 1, rating: 4, comment: 'ok' } });
     expect(mockedApi.post).toHaveBeenCalledWith('/route', { origin: {}, destination: {} });
+    expect(mockedApi.post).toHaveBeenCalledWith('/route/directions', {
+      origin: { lat: 1, lng: 2 }, destination: { lat: 3, lng: 4 }, language: 'pt', hour: 10,
+    });
     expect(mockedApi.get).toHaveBeenCalledWith('/api/tourist-spots', { params: { city: 'Roma', radius: 10000 } });
   });
 

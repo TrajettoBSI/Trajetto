@@ -116,6 +116,17 @@ describe('detalhe do local', () => {
     expect(Linking.openURL).toHaveBeenCalledWith('https://www.google.com/maps/dir/?api=1&destination=41.89,12.49');
     expect(Linking.openURL).toHaveBeenCalledWith('tel:+390639967700');
     expect(Linking.openURL).toHaveBeenCalledWith('https://colosseo.it');
+    expect(screen.queryByText('Reserve com antecedência')).toBeNull();
+  });
+
+  it('atracao que exige reserva mostra o aviso com o site oficial', async () => {
+    ratings.getSummary.mockResolvedValue({ average: 0, count: 0 });
+    ratings.getByPlace.mockResolvedValue([]);
+    await abrir({ ...coliseu, xid: 'osm_colosseo', bookingUrl: 'https://ticketing.colosseo.it/' });
+
+    expect(screen.getByText(/A entrada costuma esgotar/)).toBeTruthy();
+    await fireEvent.press(screen.getByText('Reserve com antecedência'));
+    expect(Linking.openURL).toHaveBeenCalledWith('https://ticketing.colosseo.it/');
   });
 
   it('avalia o local, edita e exclui a propria avaliacao', async () => {

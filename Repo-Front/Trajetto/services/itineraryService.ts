@@ -2,6 +2,17 @@ import { api } from './api';
 
 export type TravelPace = 'INTENSO' | 'EQUILIBRADO' | 'LEVE';
 
+export type AddPlaceRequest = {
+    xid?: string | null;
+    name: string;
+    address?: string | null;
+    latitude: number;
+    longitude: number;
+    category?: string | null;
+    visitDate?: string | null;
+    estimatedVisitTime?: string | null;
+};
+
 export class ItineraryService {
     static async getItinerary(userId: number) {
         const response = await api.get(`/itinerary/active/${userId}`);
@@ -48,6 +59,21 @@ export class ItineraryService {
         category?: string | null; fee?: string | null;
     }) {
         const response = await api.patch(`/itinerary/${itineraryId}/place/${orderIndex}`, place);
+        return response.data;
+    }
+
+    static async addPlace(itineraryId: number, place: AddPlaceRequest) {
+        const response = await api.post(`/itinerary/${itineraryId}/place`, place);
+        return response.data;
+    }
+
+    static async removePlace(itineraryId: number, orderIndex: number) {
+        const response = await api.delete(`/itinerary/${itineraryId}/place/${orderIndex}`);
+        return response.data;
+    }
+
+    static async movePlace(itineraryId: number, orderIndex: number, direction: 'UP' | 'DOWN') {
+        const response = await api.patch(`/itinerary/${itineraryId}/place/${orderIndex}/move`, null, { params: { direction } });
         return response.data;
     }
 }

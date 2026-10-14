@@ -50,5 +50,9 @@
     "add": "Adicionar aos favoritos",
     "remove": "Remover dos favoritos",
     "error": "Não foi possível atualizar seus favoritos."
+  },
+  "booking": {
+    "title": "Reserve com antecedência",
+    "text": "A entrada costuma esgotar. Compre no site oficial antes de ir."
   }
 }

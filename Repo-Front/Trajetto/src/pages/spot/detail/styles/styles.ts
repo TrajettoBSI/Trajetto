@@ -17,6 +17,13 @@ export const styles = (colors: AppColors) =>
     badgeRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginHorizontal: 16, marginBottom: 12 },
     badgePill: { backgroundColor: colors.gray200, borderRadius: 20, paddingHorizontal: 12, paddingVertical: 6 },
     badgePillText: { fontSize: 13, color: colors.gray700, fontFamily: 'Inter-Medium' },
+    bookingBanner: {
+      flexDirection: 'row', alignItems: 'center', gap: 12, marginHorizontal: 16, marginBottom: 16, padding: 14,
+      borderRadius: 14, backgroundColor: colors.warningBannerBg, borderWidth: 1, borderColor: colors.warningBannerBorder,
+    },
+    bookingTextBox: { flex: 1 },
+    bookingTitle: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.warningBannerText },
+    bookingText: { fontSize: 13, color: colors.warningBannerText, marginTop: 2 },
 
     name: { fontSize: 24, fontFamily: 'Inter-Bold', color: colors.gray900, marginHorizontal: 16, marginBottom: 4, lineHeight: 30 },
     subtitleLine: { fontSize: 13, color: colors.gray500, marginHorizontal: 16, marginBottom: 16 },

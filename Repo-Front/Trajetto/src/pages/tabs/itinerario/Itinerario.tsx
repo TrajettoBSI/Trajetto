@@ -19,6 +19,7 @@ import AlternativesModal from './components/AlternativesModal/AlternativesModal'
 import NoteModal from './components/NoteModal/NoteModal';
 import MealSuggestionCard from './components/MealSuggestionCard/MealSuggestionCard';
 import FreePeriodCard from './components/FreePeriodCard/FreePeriodCard';
+import OptionPickerModal from '@/src/components/OptionPickerModal/OptionPickerModal';
 import { freePeriod } from '@/src/domain/itinerary/freePeriod';
 
 const TAB_BAR_SPACE = 64 + 4 + 24;
@@ -63,6 +64,7 @@ export default function Itinerario() {
     openNote,
     closeNote,
     saveNote,
+    edit,
   } = useItinerario();
 
   return (
@@ -82,16 +84,30 @@ export default function Itinerario() {
           <View style={s.safe}>
             <View style={[s.headerBar, { paddingTop: insets.top + 12 }]}>
               <Text style={s.headerBarTitle}>Trajetto</Text>
-              <TouchableOpacity
-                style={s.headerExportBtn}
-                onPress={handleExportPDF}
-                activeOpacity={0.8}
-                accessibilityRole="button"
-                accessibilityLabel={t('exportPdf')}
-              >
-                <Ionicons name="download-outline" size={18} color={colors.onPrimary} />
-                <Text style={s.headerExportText}>{t('exportPdfShort')}</Text>
-              </TouchableOpacity>
+              <View style={s.headerActions}>
+                <TouchableOpacity
+                  style={[s.headerExportBtn, edit.editing && s.headerEditActive]}
+                  onPress={edit.toggleEditing}
+                  activeOpacity={0.8}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: edit.editing }}
+                >
+                  <Ionicons name={edit.editing ? 'checkmark' : 'create-outline'} size={18} color={edit.editing ? colors.primary : colors.onPrimary} />
+                  <Text style={[s.headerExportText, edit.editing && s.headerEditActiveText]}>
+                    {edit.editing ? t('edit.done') : t('edit.start')}
+                  </Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={s.headerExportBtn}
+                  onPress={handleExportPDF}
+                  activeOpacity={0.8}
+                  accessibilityRole="button"
+                  accessibilityLabel={t('exportPdf')}
+                >
+                  <Ionicons name="download-outline" size={18} color={colors.onPrimary} />
+                  <Text style={s.headerExportText}>{t('exportPdfShort')}</Text>
+                </TouchableOpacity>
+              </View>
             </View>
             <ScrollView
               ref={scrollRef}
@@ -121,6 +137,8 @@ export default function Itinerario() {
                   : t('sectionLabel')}
               </Text>
 
+              {edit.editing && <Text style={s.editHint}>{t('edit.hint')}</Text>}
+
               <View style={s.timeline}>
                 {sorted.map((place, idx) => {
                   const isPast = isPlacePast(placeDate(roteiro.startDate, place), place.estimatedVisitTime);
@@ -149,6 +167,14 @@ export default function Itinerario() {
                       }}
                       onInfoPress={() => openSpotDetail(place)}
                       onNotePress={() => openNote(place)}
+                      edit={edit.editing ? {
+                        canMoveUp: idx > 0,
+                        canMoveDown: !isLast,
+                        disabled: edit.busy,
+                        onMoveUp: () => edit.moveUp(place),
+                        onMoveDown: () => edit.moveDown(place),
+                        onRemove: () => edit.confirmRemove(place),
+                      } : null}
                     />
                     </React.Fragment>
                   );
@@ -158,6 +184,16 @@ export default function Itinerario() {
                   <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} onRetry={retryMealSuggestions} />
                 ))}
               </View>
+
+              {edit.editing && (
+                <CustomButton
+                  title={t('edit.addFavorite')}
+                  onPress={edit.openFavorites}
+                  loading={edit.busy}
+                  icon={<Ionicons name="heart-outline" size={20} color={colors.onPrimary} />}
+                  style={s.btnAdd}
+                />
+              )}
 
               <CustomButton
                 title={t('exportPdf')}
@@ -174,6 +210,16 @@ export default function Itinerario() {
               loading={loadingAlts}
               onSelect={handleSelectAlternative}
               onCancel={handleCancelAlt}
+            />
+
+            <OptionPickerModal
+              visible={edit.showFavorites}
+              title={t('edit.favoritesTitle')}
+              options={edit.favoriteOptions}
+              selected={null}
+              onSelect={edit.addFavorite}
+              onClose={edit.closeFavorites}
+              emptyText={edit.loadingFavorites ? '' : t('edit.favoritesEmpty')}
             />
 
             <NoteModal

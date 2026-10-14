@@ -26,7 +26,10 @@
     "about": "Sobre",
     "switch": "Trocar",
     "addNote": "Adicionar anotação",
-    "editNote": "Editar anotação"
+    "editNote": "Editar anotação",
+    "closedAtVisit": "Fechado neste horário. Troque o horário ou a parada.",
+    "booking": "Reserve com antecedência no site oficial",
+    "bookingHint": "Abre o site oficial de reserva"
   },
   "exportPdfDoc": {
     "estimatedTime": "Horário Estimado:",
@@ -71,5 +74,21 @@
       "title": "Tarde livre",
       "text": "Depois do almoço, a tarde é sua para descansar ou explorar sem pressa."
     }
+  },
+  "edit": {
+    "start": "Editar",
+    "done": "Concluir",
+    "addFavorite": "Adicionar dos favoritos",
+    "favoritesTitle": "Escolha um favorito",
+    "favoritesEmpty": "Você ainda não tem lugares favoritos.",
+    "remove": "Remover",
+    "removeTitle": "Remover parada",
+    "removeMessage": "Tirar \"{{name}}\" do roteiro?",
+    "removeLabel": "Remover {{name}}",
+    "moveUp": "Mover {{name}} para cima",
+    "moveDown": "Mover {{name}} para baixo",
+    "cancel": "Cancelar",
+    "error": "Não foi possível alterar o roteiro.",
+    "hint": "Use as setas para mudar a ordem das paradas do dia. Os horários continuam os mesmos."
   }
 }

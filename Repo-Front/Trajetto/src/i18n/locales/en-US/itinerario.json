@@ -26,7 +26,10 @@
     "about": "About",
     "switch": "Switch",
     "addNote": "Add a note",
-    "editNote": "Edit note"
+    "editNote": "Edit note",
+    "closedAtVisit": "Closed at this time. Change the time or the stop.",
+    "booking": "Book ahead on the official website",
+    "bookingHint": "Opens the official booking website"
   },
   "exportPdfDoc": {
     "estimatedTime": "Estimated Time:",
@@ -71,5 +74,21 @@
       "title": "Free afternoon",
       "text": "After lunch, the afternoon is yours to rest or explore at your own pace."
     }
+  },
+  "edit": {
+    "start": "Edit",
+    "done": "Done",
+    "addFavorite": "Add from favorites",
+    "favoritesTitle": "Choose a favorite",
+    "favoritesEmpty": "You don't have favorite places yet.",
+    "remove": "Remove",
+    "removeTitle": "Remove stop",
+    "removeMessage": "Remove \"{{name}}\" from the itinerary?",
+    "removeLabel": "Remove {{name}}",
+    "moveUp": "Move {{name}} up",
+    "moveDown": "Move {{name}} down",
+    "cancel": "Cancel",
+    "error": "Couldn't change the itinerary.",
+    "hint": "Use the arrows to reorder the day's stops. The times stay the same."
   }
 }

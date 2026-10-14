@@ -15,6 +15,8 @@ jest.mock('react-native-maps', () => require('./tests/mocks/reactNativeMaps'));
 jest.mock('expo-location', () => ({
   requestForegroundPermissionsAsync: jest.fn(async () => ({ status: 'granted' })),
   getCurrentPositionAsync: jest.fn(async () => ({ coords: { latitude: 41.9009, longitude: 12.4833 } })),
+  watchPositionAsync: jest.fn(async () => ({ remove: jest.fn() })),
+  Accuracy: { Balanced: 3 },
 }));
 
 jest.mock('@react-native-community/datetimepicker', () => {

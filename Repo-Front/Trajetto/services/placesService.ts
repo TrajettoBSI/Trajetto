@@ -14,6 +14,8 @@ export interface Place {
   wikidata?: string;
   wikipedia?: string;
   wheelchair?: string;
+  /** Site oficial de reserva, quando a atracao exige reservar antes. */
+  bookingUrl?: string | null;
 }
 
 export type NearbyPlace = Place & { distanceMeters?: number | null };

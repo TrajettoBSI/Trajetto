@@ -18,4 +18,10 @@ export const styles = (colors: AppColors) =>
     filterBtnActive: { backgroundColor: colors.primarySurface },
     filterBadge: { position: 'absolute', top: -4, right: -4, backgroundColor: colors.primary, borderRadius: 8, width: 16, height: 16, alignItems: 'center', justifyContent: 'center' },
     filterBadgeText: { color: colors.onPrimary, fontSize: 10, fontFamily: 'Inter-Bold' },
+    startBtn: {
+      position: 'absolute', alignSelf: 'center', flexDirection: 'row', alignItems: 'center', gap: 8,
+      backgroundColor: colors.primary, paddingHorizontal: 28, paddingVertical: 14, borderRadius: 28, zIndex: 25,
+      shadowColor: colors.shadow, shadowOpacity: 0.25, shadowRadius: 10, shadowOffset: { width: 0, height: 4 }, elevation: 8,
+    },
+    startBtnText: { color: colors.onPrimary, fontSize: 16, fontFamily: 'Inter-Bold' },
   });

@@ -7,6 +7,7 @@ jest.mock('@/services', () => ({
   ItineraryService: {
     getItinerary: jest.fn(), getAllItineraries: jest.fn(), generateItinerary: jest.fn(), activateItinerary: jest.fn(),
     deleteItinerary: jest.fn(), rateItinerary: jest.fn(), updateDate: jest.fn(), replacePlace: jest.fn(), updateNote: jest.fn(),
+    addPlace: jest.fn(), removePlace: jest.fn(), movePlace: jest.fn(),
   },
   favoriteService: { list: jest.fn(), mark: jest.fn(), unmark: jest.fn() },
 }));
@@ -87,6 +88,33 @@ describe('estado do roteiro', () => {
     await useItineraryStore.getState().replacePlace(0, roteiro(1).places[0]);
     await useItineraryStore.getState().updateNote(0, null);
     expect(svc.replacePlace).toHaveBeenCalledTimes(1);
+  });
+
+  it('inclui, tira e reordena paradas no roteiro da tela e na lista', async () => {
+    const comDuas = { ...roteiro(1), places: [...roteiro(1).places, { ...roteiro(1).places[0], name: 'Pantheon', orderIndex: 1 }] };
+    useItineraryStore.setState({ itineraries: [roteiro(1), roteiro(2, false)], itinerary: roteiro(1) });
+    svc.addPlace.mockResolvedValue(comDuas);
+    svc.movePlace.mockResolvedValue(comDuas);
+    svc.removePlace.mockResolvedValue(roteiro(1));
+
+    await useItineraryStore.getState().addPlace({ name: 'Pantheon', latitude: 1, longitude: 2 });
+    expect(useItineraryStore.getState().itinerary?.places).toHaveLength(2);
+    expect(useItineraryStore.getState().itineraries[0].places).toHaveLength(2);
+    expect(useItineraryStore.getState().itineraries[1].places).toHaveLength(1);
+
+    await useItineraryStore.getState().movePlace(1, 'UP');
+    expect(svc.movePlace).toHaveBeenCalledWith(1, 1, 'UP');
+    await useItineraryStore.getState().removePlace(1);
+    expect(svc.removePlace).toHaveBeenCalledWith(1, 1);
+    expect(useItineraryStore.getState().itinerary?.places).toHaveLength(1);
+
+    useItineraryStore.setState({ itinerary: null });
+    await useItineraryStore.getState().addPlace({ name: 'X', latitude: 1, longitude: 2 });
+    await useItineraryStore.getState().removePlace(0);
+    await useItineraryStore.getState().movePlace(0, 'DOWN');
+    expect(svc.addPlace).toHaveBeenCalledTimes(1);
+    expect(svc.removePlace).toHaveBeenCalledTimes(1);
+    expect(svc.movePlace).toHaveBeenCalledTimes(1);
   });
 
   it('guarda destaque, foco no mapa e dia selecionado', () => {

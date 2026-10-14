@@ -1,5 +1,6 @@
 import React from 'react';
 import polyline from '@mapbox/polyline';
+import { Linking } from 'react-native';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import Mapa from '@/src/pages/tabs/mapa/Mapa';
 import { ItineraryService, placesService, RouteService } from '@/services';
@@ -13,7 +14,7 @@ jest.mock('@/context/AuthContext', () => ({ useAuth: () => mockAuth }));
 jest.mock('@/services', () => ({
   ItineraryService: { getItinerary: jest.fn() },
   placesService: { getAll: jest.fn(), getCategories: jest.fn(), getProfiles: jest.fn() },
-  RouteService: { getRoute: jest.fn() },
+  RouteService: { getRoute: jest.fn(), getDirections: jest.fn() },
 }));
 
 const itin = ItineraryService as unknown as Record<string, jest.Mock>;
@@ -127,5 +128,70 @@ describe('mapa do roteiro', () => {
 
     expect(await screen.findByText('Criar Roteiro')).toBeTruthy();
     expect(itin.getItinerary).toHaveBeenCalledWith(1);
+  });
+
+  describe('navegacao pelo dia', () => {
+    const opcao = (mode: string, distance: number, duration: number, extra = {}) => ({
+      mode, distance, duration, estimated: false, geometry: polyline.encode([[41.9, 12.47], [41.91, 12.48]]), steps: [], ...extra,
+    });
+    const trecho = {
+      walking: opcao('WALK', 2400, 1800, { steps: [
+        { instruction: 'Siga para o norte na Via del Corso', distance: 300, duration: 216 },
+        { instruction: 'Chegue ao destino', distance: 0, duration: 0 },
+      ] }),
+      driving: opcao('CAR', 3000, 480),
+      transit: opcao('TRANSIT', 3000, 1200, { estimated: true, geometry: null }),
+      recommended: 'TRANSIT',
+    };
+
+    it('inicia na proxima parada, mostra os modos com o recomendado e avanca ate concluir o dia', async () => {
+      rotas.getDirections.mockResolvedValue(trecho);
+      const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(true);
+      await render(<Mapa />);
+
+      await fireEvent.press(screen.getByText('Iniciar'));
+      expect(await screen.findByText('Parada 1 de 2')).toBeTruthy();
+      expect(screen.getByText('Saindo de: sua localização')).toBeTruthy();
+      expect(rotas.getDirections).toHaveBeenCalledWith(
+        { lat: 41.9009, lng: 12.4833 }, { lat: 41.92, lng: 12.48 }, 'pt', expect.any(Number),
+      );
+      expect(screen.getByText('Melhor')).toBeTruthy();
+      expect(screen.getByText('~20 min')).toBeTruthy();
+      expect(screen.getByText('A pé passa de 20 minutos: metrô ou ônibus compensa.')).toBeTruthy();
+      expect(screen.getByText(/Tempo estimado. Toque em "Abrir no Maps"/)).toBeTruthy();
+
+      await fireEvent.press(screen.getByLabelText('A pé'));
+      expect(screen.getByText('Siga para o norte na Via del Corso')).toBeTruthy();
+      expect(screen.getAllByText('30 min')).toHaveLength(2);
+
+      await fireEvent.press(screen.getByText('Abrir no Maps'));
+      expect(abrir).toHaveBeenCalledWith(expect.stringContaining('travelmode=walking'));
+
+      await fireEvent.press(screen.getByText('Cheguei · próxima'));
+      expect(await screen.findByText('Parada 2 de 2')).toBeTruthy();
+      await fireEvent.press(await screen.findByText('Cheguei · concluir'));
+      expect(screen.getByText('Roteiro do dia concluído!')).toBeTruthy();
+
+      await fireEvent.press(screen.getByText('Encerrar'));
+      expect(screen.getByText('Iniciar')).toBeTruthy();
+    });
+
+    it('longe de Roma parte da parada anterior; com erro deixa tentar de novo', async () => {
+      const Location = jest.requireMock('expo-location');
+      Location.getCurrentPositionAsync.mockResolvedValueOnce({ coords: { latitude: -25.43, longitude: -49.27 } });
+      rotas.getDirections.mockRejectedValueOnce(networkError()).mockResolvedValue({ ...trecho, transit: null, recommended: 'WALK' });
+      await render(<Mapa />);
+
+      await fireEvent.press(screen.getByText('Iniciar'));
+      expect(await screen.findByText(/Não foi possível conectar/)).toBeTruthy();
+      expect(screen.getByText('Saindo de: ponto de partida')).toBeTruthy();
+
+      await fireEvent.press(screen.getByText('Tentar novamente'));
+      expect(await screen.findByText('É perto: ir a pé é o mais simples e você aproveita o caminho.')).toBeTruthy();
+      expect(screen.queryByLabelText('Metrô/ônibus')).toBeNull();
+
+      await fireEvent.press(screen.getByText('Cheguei · próxima'));
+      expect(await screen.findByText('Saindo de: Colosseo')).toBeTruthy();
+    });
   });
 });

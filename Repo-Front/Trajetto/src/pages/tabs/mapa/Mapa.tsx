@@ -2,7 +2,7 @@ import React from 'react';
 import { ActivityIndicator, Keyboard, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
-import MapView, { Marker } from 'react-native-maps';
+import MapView, { Marker, Polyline } from 'react-native-maps';
 import CustomInput from '@/components/CustomInput';
 import { useColors } from '@/src/theme';
 import NoItineraryEmptyState from '@/src/pages/tabs/shared/components/NoItineraryEmptyState/NoItineraryEmptyState';
@@ -19,11 +19,14 @@ import ActiveFilterChips from './components/ActiveFilterChips/ActiveFilterChips'
 import SuggestionsList from './components/SuggestionsList/SuggestionsList';
 import SpotDetailCard from './components/SpotDetailCard/SpotDetailCard';
 import FilterModal from './components/FilterModal/FilterModal';
+import NavigationPanel from './components/NavigationPanel/NavigationPanel';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function Mapa() {
   const { t } = useTranslation(['mapa', 'common']);
   const colors = useColors();
   const s = styles(colors);
+  const insets = useSafeAreaInsets();
   const {
     destIndex,
     itinerary,
@@ -73,6 +76,7 @@ export default function Mapa() {
     handleClearAllFilters,
     removeFilter,
     spotDistance,
+    navigation,
   } = useMapa();
 
   return (
@@ -136,6 +140,10 @@ export default function Mapa() {
             />
 
             {selectedSpot && <SearchPin spot={selectedSpot} />}
+
+            {navigation.active && navigation.routeCoords.length > 1 && (
+              <Polyline coordinates={navigation.routeCoords} strokeColor={colors.success} strokeWidth={6} zIndex={10} />
+            )}
           </MapView>
 
           <View style={s.searchWrapper}>
@@ -197,6 +205,20 @@ export default function Mapa() {
               <SuggestionsList suggestions={suggestions} onSelect={handleSelectSuggestion} />
             )}
           </View>
+
+          {!navigation.active && !selectedSpot && points.length > 0 && (
+            <TouchableOpacity
+              style={[s.startBtn, { bottom: insets.bottom + 100 }]}
+              onPress={navigation.startNavigation}
+              activeOpacity={0.85}
+              accessibilityRole="button"
+            >
+              <Ionicons name="navigate" size={20} color={colors.onPrimary} />
+              <Text style={s.startBtnText}>{t('navigation.start')}</Text>
+            </TouchableOpacity>
+          )}
+
+          {navigation.active && <NavigationPanel nav={navigation} bottomInset={insets.bottom + 80} />}
 
           {selectedSpot && (
             <SpotDetailCard

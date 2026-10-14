@@ -41,5 +41,34 @@
     "closedToday": "Closed today",
     "viewFullDetails": "View full details →"
   },
-  "loadingText": "Loading your itinerary map..."
+  "loadingText": "Loading your itinerary map...",
+  "navigation": {
+    "start": "Start",
+    "close": "End",
+    "legLabel": "Stop {{number}} of {{total}}",
+    "from": "From: {{place}}",
+    "fromYou": "your location",
+    "fromStart": "starting point",
+    "loading": "Finding the way...",
+    "error": "Couldn't calculate the route.",
+    "arrival": "arrive {{time}}",
+    "recommended": "Best",
+    "mode": {
+      "WALK": "Walk",
+      "TRANSIT": "Metro/bus",
+      "CAR": "Car/Uber"
+    },
+    "reason": {
+      "WALK": "It's close: walking is easiest and you enjoy the way.",
+      "TRANSIT": "Walking takes over 20 minutes: metro or bus is worth it.",
+      "CAR": "Too far or late at night: take a car, taxi or Uber."
+    },
+    "transitNote": "Estimated time. Tap \"Open in Maps\" to see lines and times.",
+    "estimateNote": "Time estimated from distance, without street-by-street directions.",
+    "openMaps": "Open in Maps",
+    "arrived": "Arrived · next",
+    "finish": "Arrived · finish",
+    "finishedTitle": "Today's itinerary done!",
+    "finishedText": "You've been to all of today's stops."
+  }
 }

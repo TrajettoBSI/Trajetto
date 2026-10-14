@@ -1,12 +1,13 @@
 import React from 'react';
-import { Alert, Platform } from 'react-native';
+import { Alert, Linking, Platform } from 'react-native';
 import * as Print from 'expo-print';
 import * as Sharing from 'expo-sharing';
 import * as FileSystem from 'expo-file-system';
-import { fireEvent, render, screen, waitFor } from '@testing-library/react-native';
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import Itinerario from '@/src/pages/tabs/itinerario/Itinerario';
-import { ItineraryService, placesService } from '@/services';
+import { favoriteService, ItineraryService, placesService } from '@/services';
 import { Itinerary, useItineraryStore } from '@/hooks/itineraryStore';
+import { useFavoritesStore } from '@/hooks/favoritesStore';
 import { mockRouter } from '../../mocks/expoRouter';
 import { apiError, networkError } from '../../helpers';
 
@@ -14,8 +15,12 @@ jest.mock('@/context/AuthContext', () => ({
   useAuth: () => ({ user: { id: 1, firstName: 'Ana', travelerProfile: 'CULTURAL' } }),
 }));
 jest.mock('@/services', () => ({
-  ItineraryService: { getAllItineraries: jest.fn(), replacePlace: jest.fn(), updateNote: jest.fn() },
+  ItineraryService: {
+    getAllItineraries: jest.fn(), replacePlace: jest.fn(), updateNote: jest.fn(),
+    addPlace: jest.fn(), removePlace: jest.fn(), movePlace: jest.fn(),
+  },
   placesService: { getAll: jest.fn(), nearby: jest.fn() },
+  favoriteService: { list: jest.fn() },
 }));
 jest.mock('expo-print', () => ({ printToFileAsync: jest.fn() }));
 jest.mock('expo-sharing', () => ({ shareAsync: jest.fn() }));
@@ -30,6 +35,7 @@ jest.mock('expo-file-system', () => ({
 
 const svc = ItineraryService as unknown as Record<string, jest.Mock>;
 const places = placesService as unknown as Record<string, jest.Mock>;
+const fav = favoriteService as unknown as Record<string, jest.Mock>;
 
 const parada = (orderIndex: number, name: string, time: string, visitDate: string, extra = {}) => ({
   name, address: `${name}, Roma`, latitude: 41.9, longitude: 12.48, estimatedVisitTime: time, orderIndex, visitDate,
@@ -40,8 +46,8 @@ const roteiro: Itinerary = {
   id: 7, active: true, startDate: '2099-11-10', endDate: '2099-11-11',
   places: [
     parada(0, 'Fontana di Trevi', '09:00:00', '2099-11-10', { note: 'Jogar uma moeda' }),
-    parada(1, 'Pantheon', '12:00:00', '2099-11-10', { fee: 'yes' }),
-    parada(2, 'Colosseo', '14:00:00', '2099-11-10'),
+    parada(1, 'Pantheon', '12:00:00', '2099-11-10', { fee: 'yes', bookingUrl: 'https://www.pantheonroma.com/' }),
+    parada(2, 'Colosseo', '14:00:00', '2099-11-10', { openAtVisit: false }),
     parada(3, 'Piazza Navona', '21:00:00', '2099-11-10'),
     parada(4, 'Musei Vaticani', '09:00:00', '2099-11-11', { category: 'museum' }),
     parada(5, 'Castel Sant\'Angelo', '12:00:00', '2099-11-11'),
@@ -54,6 +60,7 @@ beforeEach(() => {
   jest.clearAllMocks();
   jest.spyOn(Alert, 'alert').mockImplementation(() => undefined);
   places.nearby.mockResolvedValue([cafe]);
+  useFavoritesStore.setState({ ownerId: null, favorites: null, loading: false, error: null });
   useItineraryStore.setState({
     itinerary: roteiro, itineraries: [roteiro], loading: false, error: null, selectedDay: null,
     highlightedPlaceIndex: null, focusedMapPlaceIndex: null,
@@ -188,5 +195,66 @@ describe('itinerario', () => {
     await render(<Itinerario />);
     await fireEvent.press(screen.getByText('Tentar novamente'));
     expect(await screen.findByText('Fontana di Trevi')).toBeTruthy();
+  });
+
+  it('avisa da reserva com o link oficial e de parada marcada num horario fechado', async () => {
+    const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(true);
+    await render(<Itinerario />);
+
+    expect(screen.getByText('Fechado neste horário. Troque o horário ou a parada.')).toBeTruthy();
+    await fireEvent.press(screen.getByText('Reserve com antecedência no site oficial'));
+    expect(abrir).toHaveBeenCalledWith('https://www.pantheonroma.com/');
+  });
+
+  it('no modo de edicao muda a ordem, remove com confirmacao e inclui um favorito no dia', async () => {
+    fav.list.mockResolvedValue([
+      { id: 1, xid: 'osm_galleria_borghese', name: 'Galleria Borghese', address: 'Piazzale', category: 'museum', latitude: 41.91, longitude: 12.49, createdAt: '' },
+    ]);
+    const trocado = { ...roteiro, places: roteiro.places.map((p) => (p.orderIndex === 0 ? { ...p, name: 'Primeira Nova' } : p)) };
+    svc.movePlace.mockResolvedValue(trocado);
+    svc.removePlace.mockResolvedValue({ ...roteiro, places: roteiro.places.filter((p) => p.orderIndex !== 1) });
+    svc.addPlace.mockRejectedValueOnce(apiError(400, 'INVALID_PARAMETER', 'O dia escolhido está fora do período do roteiro.'))
+      .mockResolvedValue({ ...roteiro, places: [...roteiro.places, parada(6, 'Galleria Borghese', '22:00:00', '2099-11-10')] });
+    await render(<Itinerario />);
+
+    expect(screen.queryByLabelText('Mover Pantheon para cima')).toBeNull();
+    await fireEvent.press(screen.getByText('Editar'));
+    expect(screen.getByText(/Use as setas/)).toBeTruthy();
+
+    await fireEvent.press(screen.getByLabelText('Mover Pantheon para cima'));
+    await waitFor(() => expect(svc.movePlace).toHaveBeenCalledWith(7, 1, 'UP'));
+    expect(await screen.findByText('Primeira Nova')).toBeTruthy();
+    await fireEvent.press(screen.getByLabelText('Mover Colosseo para baixo'));
+    await waitFor(() => expect(svc.movePlace).toHaveBeenLastCalledWith(7, 2, 'DOWN'));
+
+    await fireEvent.press(screen.getByLabelText('Remover Pantheon'));
+    const [titulo, , botoes] = (Alert.alert as jest.Mock).mock.calls.at(-1);
+    expect(titulo).toBe('Remover parada');
+    await act(async () => { await botoes[1].onPress(); });
+    await waitFor(() => expect(svc.removePlace).toHaveBeenCalledWith(7, 1));
+    await waitFor(() => expect(screen.queryByText('Pantheon')).toBeNull());
+
+    await fireEvent.press(screen.getByText('Adicionar dos favoritos'));
+    await fireEvent.press(await screen.findByText('Galleria Borghese'));
+    await waitFor(() => expect(Alert.alert).toHaveBeenLastCalledWith('Trajetto', 'O dia escolhido está fora do período do roteiro.', undefined));
+
+    await fireEvent.press(screen.getByText('Adicionar dos favoritos'));
+    await fireEvent.press(await screen.findByText('Galleria Borghese'));
+    await waitFor(() => expect(svc.addPlace).toHaveBeenLastCalledWith(7, expect.objectContaining({
+      xid: 'osm_galleria_borghese', name: 'Galleria Borghese', visitDate: '2099-11-10',
+    })));
+    expect(await screen.findByText('Galleria Borghese')).toBeTruthy();
+
+    await fireEvent.press(screen.getByText('Concluir'));
+    expect(screen.queryByText('Adicionar dos favoritos')).toBeNull();
+  });
+
+  it('sem favoritos, a lista avisa que ainda nao ha nenhum', async () => {
+    fav.list.mockResolvedValue([]);
+    await render(<Itinerario />);
+
+    await fireEvent.press(screen.getByText('Editar'));
+    await fireEvent.press(screen.getByText('Adicionar dos favoritos'));
+    expect(await screen.findByText('Você ainda não tem lugares favoritos.')).toBeTruthy();
   });
 });

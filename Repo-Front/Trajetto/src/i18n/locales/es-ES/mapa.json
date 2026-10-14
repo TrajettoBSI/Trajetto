@@ -41,5 +41,34 @@
     "closedToday": "Cerrado hoy",
     "viewFullDetails": "Ver detalles completos →"
   },
-  "loadingText": "Cargando el mapa de tu itinerario..."
+  "loadingText": "Cargando el mapa de tu itinerario...",
+  "navigation": {
+    "start": "Iniciar",
+    "close": "Terminar",
+    "legLabel": "Parada {{number}} de {{total}}",
+    "from": "Saliendo de: {{place}}",
+    "fromYou": "tu ubicación",
+    "fromStart": "punto de partida",
+    "loading": "Calculando el camino...",
+    "error": "No fue posible calcular el camino.",
+    "arrival": "llegada {{time}}",
+    "recommended": "Mejor",
+    "mode": {
+      "WALK": "A pie",
+      "TRANSIT": "Metro/bus",
+      "CAR": "Coche/Uber"
+    },
+    "reason": {
+      "WALK": "Está cerca: ir a pie es lo más simple y disfrutas el camino.",
+      "TRANSIT": "A pie son más de 20 minutos: compensa el metro o el bus.",
+      "CAR": "Demasiado lejos o muy tarde: ve en coche, taxi o Uber."
+    },
+    "transitNote": "Tiempo estimado. Toca \"Abrir en Maps\" para ver líneas y horarios.",
+    "estimateNote": "Tiempo estimado por la distancia, sin el camino calle por calle.",
+    "openMaps": "Abrir en Maps",
+    "arrived": "Llegué · siguiente",
+    "finish": "Llegué · terminar",
+    "finishedTitle": "¡Itinerario del día completado!",
+    "finishedText": "Pasaste por todas las paradas de hoy."
+  }
 }

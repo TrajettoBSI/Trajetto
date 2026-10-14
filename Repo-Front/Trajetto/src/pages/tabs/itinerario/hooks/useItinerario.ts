@@ -10,6 +10,7 @@ import { useExportPdf } from './useExportPdf';
 import { useItinerarioScroll } from './useItinerarioScroll';
 import { useItineraryNote } from './useItineraryNote';
 import { useMealSuggestions } from './useMealSuggestions';
+import { useItineraryEdit } from './useItineraryEdit';
 
 export function useItinerario() {
   const router = useRouter();
@@ -28,6 +29,7 @@ export function useItinerario() {
   const { days, currentDay, dayPlaces, selectDay } = useItineraryDay(itinerary);
   const { scrollRef, highlightedPlaceIndex, registerCardOffset } = useItinerarioScroll(dayPlaces, itinerary?.startDate);
   const { mealSuggestions, retryMealSuggestions } = useMealSuggestions(dayPlaces);
+  const edit = useItineraryEdit(currentDay?.date ?? null);
 
   const openMealPlace = useCallback((place: NearbyPlace) => {
     router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(place), origin: 'itinerario' } });
@@ -70,6 +72,7 @@ export function useItinerario() {
     mealSuggestions,
     retryMealSuggestions,
     openMealPlace,
+    edit,
     handleExportPDF: () => handleExportPDF(itinerary),
   };
 }

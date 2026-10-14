@@ -16,7 +16,7 @@ export { placesService } from './placesService';
 export type { NearbyPlace, Place, PlacesFilter } from './placesService';
 
 export { ItineraryService } from './itineraryService';
-export type { TravelPace } from './itineraryService';
+export type { AddPlaceRequest, TravelPace } from './itineraryService';
 
 export { favoriteService } from './favoriteService';
 export type { FavoritePlace, FavoritePlaceRequest } from './favoriteService';
@@ -25,6 +25,7 @@ export { RatingService } from './ratingService';
 export type { CreateRatingRequest, Rating, RatingSummary } from './ratingService';
 
 export { RouteService } from './routeService';
+export type { Coordinate, Directions, DirectionsOption, DirectionsStep, TravelMode } from './routeService';
 
 export { statsService } from './statsService';
 export type {

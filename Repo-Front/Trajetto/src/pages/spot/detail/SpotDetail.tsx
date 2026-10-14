@@ -24,7 +24,7 @@ export default function SpotDetail() {
   const router = useRouter();
   const colors = useColors();
   const s = styles(colors);
-  const { spot, distance, region, hours, openNow, wc, backLabel, openMaps, openWebsite, callPhone, openWikipedia } = useSpotDetail();
+  const { spot, distance, region, hours, openNow, wc, backLabel, openMaps, openWebsite, openBooking, callPhone, openWikipedia } = useSpotDetail();
   const {
     user, commentInputRef, allRatings, isRatingOpen, setIsRatingOpen,
     ratingData, ratingValue, setRatingValue, comment, setComment,
@@ -115,6 +115,22 @@ export default function SpotDetail() {
             </TouchableOpacity>
           ) : null}
         </View>
+
+        {spot.bookingUrl ? (
+          <TouchableOpacity
+            style={s.bookingBanner}
+            onPress={openBooking}
+            activeOpacity={0.8}
+            accessibilityRole="link"
+          >
+            <Ionicons name="ticket-outline" size={20} color={colors.warningBannerText} />
+            <View style={s.bookingTextBox}>
+              <Text style={s.bookingTitle}>{t('booking.title')}</Text>
+              <Text style={s.bookingText}>{t('booking.text')}</Text>
+            </View>
+            <Ionicons name="open-outline" size={18} color={colors.warningBannerText} />
+          </TouchableOpacity>
+        ) : null}
 
         {spot.xid && (
           <>

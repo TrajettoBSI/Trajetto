@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { Linking, View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { categoryLabel } from '@/src/helpers/categoryIcon';
@@ -34,6 +34,8 @@ interface TicketCardProps {
         openingHours?: string | null;
         orderIndex: number;
         note?: string | null;
+        openAtVisit?: boolean | null;
+        bookingUrl?: string | null;
     };
     idx: number;
     color: string;
@@ -133,6 +135,26 @@ export function TicketCard({
                     ) : null}
                 </View>
 
+                {place.openAtVisit === false && !isPast ? (
+                    <View style={ticketStyles.closedRow}>
+                        <Ionicons name="alert-circle-outline" size={15} color={colors.errorText} />
+                        <Text style={ticketStyles.closedText}>{t('ticketCard.closedAtVisit')}</Text>
+                    </View>
+                ) : null}
+
+                {place.bookingUrl ? (
+                    <TouchableOpacity
+                        style={ticketStyles.bookingRow}
+                        onPress={() => Linking.openURL(place.bookingUrl!).catch(() => {})}
+                        accessibilityRole="link"
+                        accessibilityHint={t('ticketCard.bookingHint')}
+                    >
+                        <Ionicons name="ticket-outline" size={15} color={colors.warningBannerText} />
+                        <Text style={ticketStyles.bookingText}>{t('ticketCard.booking')}</Text>
+                        <Ionicons name="open-outline" size={14} color={colors.warningBannerText} />
+                    </TouchableOpacity>
+                ) : null}
+
                 <TouchableOpacity
                     style={[ticketStyles.noteBox, place.note ? ticketStyles.noteBoxFilled : null]}
                     onPress={onNotePress}
@@ -195,6 +217,32 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
     pastTicket: {
         opacity: 0.55,
     },
+    closedRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        marginTop: 10,
+        paddingHorizontal: 10,
+        paddingVertical: 8,
+        borderRadius: 10,
+        backgroundColor: colors.dangerSurface,
+        borderWidth: 1,
+        borderColor: colors.dangerBorder,
+    },
+    closedText: { flex: 1, fontSize: 12, fontWeight: '700', color: colors.errorText },
+    bookingRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        marginTop: 10,
+        paddingHorizontal: 10,
+        paddingVertical: 8,
+        borderRadius: 10,
+        backgroundColor: colors.warningBannerBg,
+        borderWidth: 1,
+        borderColor: colors.warningBannerBorder,
+    },
+    bookingText: { flex: 1, fontSize: 12, fontWeight: '700', color: colors.warningBannerText },
 
     // ── Cabeçalho ──
     header: {
