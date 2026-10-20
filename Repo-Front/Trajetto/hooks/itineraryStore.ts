@@ -42,7 +42,7 @@ type ItineraryStore = {
   selectedDay: string | null;
   fetchItinerary: (userId: number) => Promise<void>;
   fetchAllItineraries: (userId: number) => Promise<void>;
-  generateItinerary: (userId: number, startLat: number, startLng: number, startDate: string, days: number, pace: TravelPace) => Promise<Itinerary>;
+  generateItinerary: (userId: number, startLat: number, startLng: number, startDate: string, days: number, pace: TravelPace, city?: string) => Promise<Itinerary>;
   acceptGeneratedItinerary: (itinerary: Itinerary) => void;
   activateItinerary: (itineraryId: number, userId: number) => Promise<void>;
   deleteItinerary: (itineraryId: number, userId: number) => Promise<void>;
@@ -97,8 +97,8 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
     }
   },
 
-  generateItinerary: async (userId, startLat, startLng, startDate, days, pace) => {
-    const data = await ItineraryService.generateItinerary(userId, startLat, startLng, startDate, days, pace);
+  generateItinerary: async (userId, startLat, startLng, startDate, days, pace, city) => {
+    const data = await ItineraryService.generateItinerary(userId, startLat, startLng, startDate, days, pace, city);
     return data as Itinerary;
   },
 

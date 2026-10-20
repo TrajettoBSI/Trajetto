@@ -3,7 +3,7 @@ import { Alert, AlertButton } from 'react-native';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import Roteiros from '@/src/pages/tabs/roteiros/Roteiros';
 import GenerateItineraryFlow from '@/components/GenerateItineraryFlow';
-import { ItineraryService, searchAddresses } from '@/services';
+import { cityService, ItineraryService, searchAddresses } from '@/services';
 import { Itinerary, useItineraryStore } from '@/hooks/itineraryStore';
 import { mockRouter, setMockParams } from '../../mocks/expoRouter';
 import { apiError, networkError } from '../../helpers';
@@ -16,7 +16,12 @@ jest.mock('@/services', () => ({
     activateItinerary: jest.fn(), deleteItinerary: jest.fn(),
   },
   searchAddresses: jest.fn(),
+  cityService: { getCities: jest.fn() },
 }));
+
+const ROMA = { slug: 'roma', name: 'Roma', country: 'IT', latitude: 41.9028, longitude: 12.4964, spots: 807 };
+const PARIS = { slug: 'paris', name: 'Paris', country: 'FR', latitude: 48.8566, longitude: 2.3522, spots: 862 };
+const cidades = cityService.getCities as jest.Mock;
 
 const svc = ItineraryService as unknown as Record<string, jest.Mock>;
 const buscar = searchAddresses as jest.Mock;
@@ -38,6 +43,7 @@ const tocarNoBotao = (texto: string) => {
 };
 
 beforeEach(() => {
+  cidades.mockResolvedValue([ROMA, PARIS]);
   jest.clearAllMocks();
   mockUser = { id: 1, firstName: 'Ana', lastName: 'Souza', isAdmin: false };
   jest.spyOn(Alert, 'alert').mockImplementation(() => undefined);
@@ -157,9 +163,16 @@ describe('gerar roteiro', () => {
     return { onAccept, onClose };
   };
 
+  const escolherCidade = async (rotulo = 'Roma, Itália') => {
+    await fireEvent.press(await screen.findByLabelText('Escolha a cidade'));
+    await fireEvent.press(await screen.findByText(rotulo));
+  };
+
+  const ENDERECO = 'Ex: nome do hotel ou rua e número';
+
   const escolherEndereco = async () => {
     buscar.mockResolvedValue([sugestao]);
-    await fireEvent.changeText(screen.getByPlaceholderText('Ex: Via Veneto 45, Roma'), 'veneto');
+    await fireEvent.changeText(screen.getByPlaceholderText(ENDERECO), 'veneto');
     await fireEvent.press(await screen.findByText('Via Veneto 45', {}, { timeout: 2000 }));
   };
 
@@ -167,6 +180,7 @@ describe('gerar roteiro', () => {
     svc.generateItinerary.mockResolvedValue(gerado);
     const { onAccept } = await abrir();
 
+    await escolherCidade();
     await escolherEndereco();
     await fireEvent.press(screen.getByLabelText('Escolher data de início'));
     await fireEvent.press(screen.getByTestId('date-picker'));
@@ -178,7 +192,8 @@ describe('gerar roteiro', () => {
     await fireEvent.press(screen.getByText('Gerar Roteiro'));
 
     expect(await screen.findByText('Roteiro Gerado', {}, { timeout: 4000 })).toBeTruthy();
-    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 41.9, 12.48, '2026-11-20', 2, 'LEVE');
+    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 41.9, 12.48, '2026-11-20', 2, 'LEVE', 'roma');
+    expect(buscar).toHaveBeenCalledWith('veneto', ROMA);
     expect(screen.getByText('Colosseo')).toBeTruthy();
 
     await fireEvent.press(screen.getByText('Aceitar'));
@@ -189,6 +204,7 @@ describe('gerar roteiro', () => {
   it('mostra o erro ao gerar e permite gerar de novo', async () => {
     svc.generateItinerary.mockRejectedValueOnce(networkError()).mockResolvedValue(gerado);
     await abrir();
+    await escolherCidade();
     await escolherEndereco();
 
     await fireEvent.press(screen.getByText('Gerar Roteiro'));
@@ -202,21 +218,57 @@ describe('gerar roteiro', () => {
 
   it('usa a localizacao atual, limpa o campo e avisa quando nada e encontrado', async () => {
     const { onClose } = await abrir();
+    await escolherCidade();
 
     await fireEvent.press(screen.getByText('Localização atual'));
     expect((await screen.findAllByText('Localização atual')).length).toBeGreaterThan(1);
 
     await fireEvent.press(screen.getAllByText('✕').at(-1)!);
     buscar.mockResolvedValue([]);
-    await fireEvent.changeText(screen.getByPlaceholderText('Ex: Via Veneto 45, Roma'), 'zzzz');
+    await fireEvent.changeText(screen.getByPlaceholderText(ENDERECO), 'zzzz');
     expect(await screen.findByText(/Nenhum endereço encontrado/, {}, { timeout: 2000 })).toBeTruthy();
 
     buscar.mockRejectedValue(networkError());
-    await fireEvent.changeText(screen.getByPlaceholderText('Ex: Via Veneto 45, Roma'), 'yyyy');
+    await fireEvent.changeText(screen.getByPlaceholderText(ENDERECO), 'yyyy');
     expect(await screen.findByText(/Não foi possível conectar/, {}, { timeout: 2000 })).toBeTruthy();
 
-    await fireEvent.changeText(screen.getByPlaceholderText('Ex: Via Veneto 45, Roma'), 'ab');
+    await fireEvent.changeText(screen.getByPlaceholderText(ENDERECO), 'ab');
     await fireEvent.press(screen.getAllByText('✕')[0]);
     expect(onClose).toHaveBeenCalled();
   }, 15000);
+
+  it('sem cidade escolhida nao da para buscar a partida nem gerar', async () => {
+    await abrir();
+    expect(await screen.findByText('Escolha o destino primeiro')).toBeTruthy();
+    expect(screen.queryByPlaceholderText(ENDERECO)).toBeNull();
+    await fireEvent.press(screen.getByText('Gerar Roteiro'));
+    expect(svc.generateItinerary).not.toHaveBeenCalled();
+  });
+
+  it('trocar de cidade descarta a partida, e o centro da cidade serve de partida', async () => {
+    svc.generateItinerary.mockResolvedValue(gerado);
+    await abrir();
+    await escolherCidade();
+    await escolherEndereco();
+    expect(screen.getByText(/Via Veneto 45, Ludovisi/)).toBeTruthy();
+
+    await fireEvent.press(screen.getByLabelText('Escolha a cidade'));
+    await fireEvent.press(await screen.findByText('Paris, França'));
+    expect(screen.queryByText(/Via Veneto 45, Ludovisi/)).toBeNull();
+    expect(screen.getByText('Digite seu hotel ou endereço em Paris')).toBeTruthy();
+
+    await fireEvent.press(screen.getByText('Centro da cidade'));
+    await fireEvent.press(screen.getByText('Gerar Roteiro'));
+    expect(await screen.findByText('Roteiro Gerado', {}, { timeout: 4000 })).toBeTruthy();
+    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 48.8566, 2.3522, expect.any(String), 1, 'INTENSO', 'paris');
+    expect(screen.getByText('Paris, França')).toBeTruthy();
+  }, 15000);
+
+  it('avisa quando as cidades nao carregam e tenta de novo ao tocar', async () => {
+    cidades.mockRejectedValueOnce(networkError());
+    await abrir();
+    await fireEvent.press(await screen.findByText(/Não foi possível carregar as cidades/));
+    await escolherCidade('Paris, França');
+    expect(screen.getByText('Digite seu hotel ou endereço em Paris')).toBeTruthy();
+  });
 });

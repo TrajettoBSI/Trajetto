@@ -47,9 +47,8 @@
         ],
         "latitude": 48.8493342,
         "longitude": 2.335397,
-        "wikidata": "Q11573",
         "wikipedia": "en:Metre",
-        "popularity": 186
+        "popularity": 0
       }
     },
     {
@@ -6738,9 +6737,8 @@
         ],
         "latitude": 48.8209183,
         "longitude": 2.4498561,
-        "wikidata": "Q3274562",
         "wikipedia": "fr:Ourasi",
-        "popularity": 8
+        "popularity": 0
       }
     },
     {
@@ -7503,10 +7501,9 @@
         ],
         "latitude": 48.8424428,
         "longitude": 2.3294481,
-        "wikidata": "Q2770535",
         "wikipedia": "fr:Monument à Balzac",
         "wheelchair": "yes",
-        "popularity": 7
+        "popularity": 0
       }
     },
     {
@@ -7575,9 +7572,8 @@
         ],
         "latitude": 48.8532677,
         "longitude": 2.3478864,
-        "wikidata": "Q7934019",
         "wikipedia": "fr:Notre-Dame de Paris (statue)",
-        "popularity": 7
+        "popularity": 0
       }
     },
     {
@@ -15181,8 +15177,7 @@
         ],
         "latitude": 48.863021,
         "longitude": 2.3131464,
-        "wikidata": "Q58729635",
-        "popularity": 2
+        "popularity": 0
       }
     },
     {
@@ -15203,8 +15198,7 @@
         ],
         "latitude": 48.8630304,
         "longitude": 2.3138099,
-        "wikidata": "Q58806704",
-        "popularity": 2
+        "popularity": 0
       }
     },
     {
@@ -15273,8 +15267,7 @@
         ],
         "latitude": 48.8252635,
         "longitude": 2.2317077,
-        "wikidata": "Q56717881",
-        "popularity": 2
+        "popularity": 0
       }
     },
     {

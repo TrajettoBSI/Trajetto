@@ -107,16 +107,37 @@
       }
     },
     "originLabel": "PUNTO DE PARTIDA",
-    "originHint": "Ingresa tu hotel o dirección en Roma",
-    "originPlaceholder": "Ej: Via Veneto 45, Roma",
+    "originHint": "Escribe tu hotel o dirección en {{city}}",
+    "originPlaceholder": "Ej.: nombre del hotel o calle y número",
     "currentLocationLabel": "Ubicación actual",
     "generateButton": "Generar Itinerario",
     "loadingText": "Creando tu itinerario...",
-    "summaryTitle": "Roma, Italia",
     "summaryMeta": "{{stops}} paradas · {{days}} · {{origin}}",
     "regenerate": "Regenerar",
     "accept": "Aceptar",
     "genericError": "No se pudo generar el itinerario. Inténtalo de nuevo.",
-    "addressNotFound": "No se encontró ninguna dirección. Prueba a incluir el número o el barrio."
+    "addressNotFound": "No se encontró ninguna dirección. Prueba a incluir el número o el barrio.",
+    "pickCity": "Elige la ciudad",
+    "cityPickerTitle": "¿A dónde vas?",
+    "citiesError": "No se pudieron cargar las ciudades. Toca para intentarlo de nuevo.",
+    "originNeedsCity": "Elige el destino primero",
+    "cityCenterChip": "Centro de la ciudad",
+    "cityCenterLabel": "Centro de {{city}}"
+  },
+  "cities": {
+    "roma": "Roma",
+    "curitiba": "Curitiba",
+    "paris": "Paris",
+    "toquio": "Tokio",
+    "nova-york": "Nueva York",
+    "rio-de-janeiro": "Río de Janeiro",
+    "sao-paulo": "São Paulo",
+    "lisboa": "Lisboa",
+    "buenos-aires": "Buenos Aires",
+    "barcelona": "Barcelona",
+    "londres": "Londres",
+    "florenca": "Florencia",
+    "kyoto": "Kioto",
+    "cidade-do-mexico": "Ciudad de México"
   }
 }

@@ -1,5 +1,7 @@
 package com.trajetto.backend.itinerary.service;
 
+import com.trajetto.backend.exception.InvalidRequestException;
+import com.trajetto.backend.itinerary.data.CityCatalog;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
 import com.trajetto.backend.itinerary.dto.PlaceResponseDTO;
@@ -19,6 +21,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
@@ -33,6 +36,9 @@ class MultiDayItineraryIntegrationTest {
 
     @Autowired
     private EntityManager em;
+
+    @Autowired
+    private CityCatalog cityCatalog;
 
     @BeforeEach
     void seed() {
@@ -116,5 +122,26 @@ class MultiDayItineraryIntegrationTest {
 
         assertEquals(8, roteiro.getPlaces().size());
         assertTrue(roteiro.getPlaces().stream().noneMatch(p -> p.getEstimatedVisitTime().isBefore(LocalTime.of(10, 0))));
+    }
+
+    @Test
+    @DisplayName("Com a cidade escolhida no app, todas as paradas sao dela, mesmo partindo de longe")
+    void roteiroNaCidadeEscolhida() {
+        GenerateItineraryRequestDTO req = pedido(INICIO, 1);
+        req.setCity("paris");
+        ItineraryResponseDTO roteiro = itineraryService.generateItinerary(req);
+
+        CityCatalog.City paris = cityCatalog.city("paris").orElseThrow();
+        List<String> nomesDeParis = cityCatalog.placesOf(paris).stream().map(CityCatalog.CatalogPlace::name).toList();
+        assertTrue(!roteiro.getPlaces().isEmpty());
+        assertTrue(roteiro.getPlaces().stream().allMatch(p -> nomesDeParis.contains(p.getName())));
+    }
+
+    @Test
+    @DisplayName("Cidade fora do catalogo e recusada")
+    void cidadeDesconhecida() {
+        GenerateItineraryRequestDTO req = pedido(INICIO, 1);
+        req.setCity("atlantida");
+        assertThrows(InvalidRequestException.class, () -> itineraryService.generateItinerary(req));
     }
 }

@@ -79,5 +79,152 @@
       "new_american",
       "seafood"
     ]
+  },
+  {
+    "slug": "rio-de-janeiro",
+    "name": "Rio de Janeiro",
+    "country": "BR",
+    "latitude": -22.9068,
+    "longitude": -43.1729,
+    "radiusKm": 18,
+    "timezone": "America/Sao_Paulo",
+    "localCuisine": [
+      "brazilian",
+      "regional",
+      "barbecue",
+      "steak_house",
+      "churrasco",
+      "seafood"
+    ]
+  },
+  {
+    "slug": "sao-paulo",
+    "name": "São Paulo",
+    "country": "BR",
+    "latitude": -23.5505,
+    "longitude": -46.6333,
+    "radiusKm": 15,
+    "timezone": "America/Sao_Paulo",
+    "localCuisine": [
+      "brazilian",
+      "regional",
+      "barbecue",
+      "steak_house",
+      "churrasco",
+      "seafood"
+    ]
+  },
+  {
+    "slug": "lisboa",
+    "name": "Lisboa",
+    "country": "PT",
+    "latitude": 38.7223,
+    "longitude": -9.1393,
+    "radiusKm": 10,
+    "timezone": "Europe/Lisbon",
+    "localCuisine": [
+      "portuguese",
+      "regional",
+      "local",
+      "seafood"
+    ]
+  },
+  {
+    "slug": "buenos-aires",
+    "name": "Buenos Aires",
+    "country": "AR",
+    "latitude": -34.6037,
+    "longitude": -58.3816,
+    "radiusKm": 12,
+    "timezone": "America/Argentina/Buenos_Aires",
+    "localCuisine": [
+      "argentinian",
+      "argentine",
+      "steak_house",
+      "parrilla",
+      "regional"
+    ]
+  },
+  {
+    "slug": "barcelona",
+    "name": "Barcelona",
+    "country": "ES",
+    "latitude": 41.3874,
+    "longitude": 2.1686,
+    "radiusKm": 10,
+    "timezone": "Europe/Madrid",
+    "localCuisine": [
+      "catalan",
+      "spanish",
+      "tapas",
+      "mediterranean",
+      "regional"
+    ]
+  },
+  {
+    "slug": "londres",
+    "name": "Londres",
+    "country": "GB",
+    "latitude": 51.5072,
+    "longitude": -0.1276,
+    "radiusKm": 15,
+    "timezone": "Europe/London",
+    "localCuisine": [
+      "british",
+      "english",
+      "fish_and_chips",
+      "modern_british"
+    ]
+  },
+  {
+    "slug": "florenca",
+    "name": "Florença",
+    "country": "IT",
+    "latitude": 43.7696,
+    "longitude": 11.2558,
+    "radiusKm": 8,
+    "timezone": "Europe/Rome",
+    "localCuisine": [
+      "italian",
+      "tuscan",
+      "regional",
+      "local",
+      "steak_house"
+    ]
+  },
+  {
+    "slug": "kyoto",
+    "name": "Kyoto",
+    "country": "JP",
+    "latitude": 35.0116,
+    "longitude": 135.7681,
+    "radiusKm": 10,
+    "timezone": "Asia/Tokyo",
+    "localCuisine": [
+      "japanese",
+      "sushi",
+      "ramen",
+      "tempura",
+      "udon",
+      "soba",
+      "kaiseki",
+      "tofu"
+    ],
+    "preferEnglishName": true
+  },
+  {
+    "slug": "cidade-do-mexico",
+    "name": "Cidade do México",
+    "country": "MX",
+    "latitude": 19.4326,
+    "longitude": -99.1332,
+    "radiusKm": 15,
+    "timezone": "America/Mexico_City",
+    "localCuisine": [
+      "mexican",
+      "regional",
+      "tacos",
+      "local"
+    ]
   }
 ]

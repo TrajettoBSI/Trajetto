@@ -27,6 +27,7 @@ de subir -- foi assim que o catalogo de Roma foi curado.
 
 Uso, a partir de Repo-Back/backend:
     python scripts/gera_catalogo_cidade.py curitiba
+    python scripts/gera_catalogo_cidade.py --revisar curitiba   # so refaz Wikidata e popularidade
 """
 import http.client
 import json
@@ -79,6 +80,8 @@ PERFIS = {
 PERFIS_HISTORICO = ['CULTURAL', 'SOLITARIO']
 
 COMIDA = {'restaurant', 'cafe', 'bar', 'pub', 'ice_cream'}
+# Categorias em que o codigo do Wikidata costuma ser o do tema retratado, nao o da obra.
+OBRAS = {'artwork', 'historic_monument'}
 TETO_COMIDA = {'restaurant': 120, 'cafe': 40, 'bar': 10, 'pub': 20, 'ice_cream': 25}
 TETO_RESTANTE = 650
 # Cidade grande tem centenas de igrejas com Wikidata; sem teto elas tomam o catalogo.
@@ -226,13 +229,15 @@ def para_feature(elemento, cidade):
 def qids_que_nao_sao_o_lugar(features):
     """
     Codigos do Wikidata que nao descrevem o proprio ponto: uma pessoa (Q5), um tipo
-    de coisa (tem "subclasse de", P279 -- como o modelo de aviao) ou um lugar com
-    coordenadas a mais de 5 km do ponto do OSM.
+    de coisa (tem "subclasse de", P279 -- como o modelo de aviao), um lugar com
+    coordenadas a mais de 5 km do ponto do OSM, ou -- em estatuas e monumentos --
+    um item sem coordenadas, que e o tema retratado (o deus Tritao, a Marinha).
     """
     pontos = {f['properties']['wikidata']: f['properties'] for f in features
               if f['properties'].get('wikidata', '').startswith('Q')}
     qids = sorted(pontos)
     errados = set()
+    com_coordenadas = set()
     for i in range(0, len(qids), 150):
         valores = ' '.join(f'wd:{q}' for q in qids[i:i + 150])
         query = (f'SELECT ?item ?humano ?classe ?coord WHERE {{ VALUES ?item {{ {valores} }} '
@@ -249,11 +254,14 @@ def qids_que_nao_sao_o_lugar(features):
             if 'humano' in b or 'classe' in b:
                 errados.add(qid)
             elif 'coord' in b:
+                com_coordenadas.add(qid)
                 lon, lat = map(float, b['coord']['value'][len('Point('):-1].split())
                 p = pontos[qid]
                 if distancia_km(lat, lon, p['latitude'], p['longitude']) > 5:
                     errados.add(qid)
         time.sleep(1)
+    errados |= {q for q, p in pontos.items()
+                if p['category'] in OBRAS and q not in com_coordenadas}
     return errados
 
 
@@ -309,11 +317,26 @@ def seleciona(features):
     return escolhidos
 
 
+def revisa(cidade):
+    """Reaplica a checagem do Wikidata e a popularidade num arquivo ja gerado, sem consultar o OSM."""
+    arquivo = DADOS / 'cities' / f'{cidade["slug"]}.geojson'
+    catalogo = json.loads(arquivo.read_text(encoding='utf-8'))
+    descarta_wikidata_errado(catalogo['features'])
+    aplica_popularidade([f['properties'] for f in catalogo['features']])
+    arquivo.write_text(json.dumps(catalogo, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
+
+
 def main():
-    if len(sys.argv) != 2:
+    args = sys.argv[1:]
+    revisar = '--revisar' in args
+    args = [a for a in args if a != '--revisar']
+    if len(args) != 1:
         sys.exit(__doc__)
     sys.stdout.reconfigure(encoding='utf-8')
-    cidade = carrega_cidade(sys.argv[1])
+    cidade = carrega_cidade(args[0])
+    if revisar:
+        revisa(cidade)
+        return
 
     print(f'Consultando o OpenStreetMap ({cidade["name"]}, raio de {cidade["radiusKm"]} km)...')
     elementos = consulta_overpass(cidade)

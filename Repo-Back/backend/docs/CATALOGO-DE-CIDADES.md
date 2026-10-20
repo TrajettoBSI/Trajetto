@@ -19,11 +19,13 @@ Na inicialização, o `CityCatalog` lê o manifesto e todos os arquivos, e o
 
 ## Como o roteiro escolhe a cidade
 
-`ItineraryService.generateItinerary` usa a cidade do manifesto mais próxima do
-ponto de partida (`CityCatalog.nearestCity`) e só sorteia pontos dela. O fuso
-dessa cidade também é o que o `DirectionsService` usa para saber se é
-madrugada. `GET /cities` lista as cidades, com o centro e quantos pontos têm,
-para o app montar o seletor de destino.
+No app, o destino é escolhido num seletor alimentado por `GET /cities`, e o
+pedido de geração leva o `city` escolhido; a busca do ponto de partida fica
+presa à região dessa cidade. Sem `city` no pedido, `ItineraryService` usa a
+cidade do manifesto mais próxima do ponto de partida (`CityCatalog.nearestCity`).
+Em qualquer caso, só sorteia pontos dela. O fuso
+da cidade mais próxima é o que o `DirectionsService` usa para saber se é
+madrugada.
 
 ## Adicionando uma cidade
 
@@ -46,8 +48,17 @@ para o app montar o seletor de destino.
 4. Rode os testes: `CityCatalogTest` confere que todo ponto está dentro do
    raio da sua cidade e que o fuso é válido.
 
-Para recalcular só a popularidade (sem baixar tudo de novo):
+Para refazer só a checagem do Wikidata e a popularidade num arquivo já
+revisado à mão (sem baixar do OSM de novo):
+`python scripts/gera_catalogo_cidade.py --revisar <slug>`. Só a popularidade:
 `python scripts/atualiza_popularidade.py [slug]`.
+
+## Cidades atendidas
+
+Roma (curada à mão), Florença, Paris, Londres, Lisboa, Barcelona, Nova York,
+Cidade do México, Buenos Aires, Rio de Janeiro, São Paulo, Curitiba, Tóquio e
+Kyoto. As geradas pelo script ainda pedem a revisão do passo 3 — por exemplo,
+"Santos FC Business Center" no topo de São Paulo herda a popularidade do clube.
 
 ## O que ainda é específico de Roma
 

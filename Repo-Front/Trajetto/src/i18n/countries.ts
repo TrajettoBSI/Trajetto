@@ -72,7 +72,7 @@ export const COUNTRY_TRANSLATIONS: Record<string, [code: string, enUS: string, e
   "Fiji": ["FJ", "Fiji", "Fiyi"],
   "Filipinas": ["PH", "Philippines", "Filipinas"],
   "Finlândia": ["FI", "Finland", "Finlandia"],
-  "França": ["FX", "France", "Francia"],
+  "França": ["FR", "France", "Francia"],
   "Gabão": ["GA", "Gabon", "Gabón"],
   "Gâmbia": ["GM", "Gambia", "Gambia"],
   "Gana": ["GH", "Ghana", "Ghana"],
@@ -151,6 +151,7 @@ export const COUNTRY_TRANSLATIONS: Record<string, [code: string, enUS: string, e
   "Portugal": ["PT", "Portugal", "Portugal"],
   "Quênia": ["KE", "Kenya", "Kenia"],
   "Quirguistão": ["KG", "Kyrgyzstan", "Kirguistán"],
+  "Reino Unido": ["GB", "United Kingdom", "Reino Unido"],
   "República Centro-Africana": ["CF", "Central African Republic", "República Centroafricana"],
   "República Checa": ["CZ", "Czechia", "Chequia"],
   "República Dominicana": ["DO", "Dominican Republic", "República Dominicana"],
@@ -201,6 +202,14 @@ export const COUNTRY_TRANSLATIONS: Record<string, [code: string, enUS: string, e
 };
 
 const LANGUAGE_INDEX: Record<string, 1 | 2> = { 'en-US': 1, 'es-ES': 2 };
+
+/** Nome do pais a partir do codigo ISO (IT, FR...), no idioma informado; sem traducao, o proprio codigo. */
+export function countryLabelFromCode(code: string, language: string = i18n.language): string {
+  const entry = Object.entries(COUNTRY_TRANSLATIONS).find(([, [iso]]) => iso === code.toUpperCase());
+  if (!entry) return code;
+  const index = LANGUAGE_INDEX[language];
+  return index ? entry[1][index] : entry[0];
+}
 
 /** Nome do pais no idioma informado. O valor gravado (em portugues) continua sendo a referencia. */
 export function countryLabel(country: string | null | undefined, language: string = i18n.language): string {

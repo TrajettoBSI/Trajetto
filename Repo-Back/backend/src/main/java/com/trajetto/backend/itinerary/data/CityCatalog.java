@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Catalogo curado de pontos turisticos, uma cidade por arquivo.
@@ -127,6 +128,10 @@ public class CityCatalog {
     /** Todos os pontos, cidade a cidade, na ordem do manifesto e de cada arquivo. */
     public List<CatalogPlace> getPlaces() {
         return places;
+    }
+
+    public Optional<City> city(String slug) {
+        return cities.stream().filter(c -> c.slug().equals(slug)).findFirst();
     }
 
     public List<CatalogPlace> placesOf(City city) {

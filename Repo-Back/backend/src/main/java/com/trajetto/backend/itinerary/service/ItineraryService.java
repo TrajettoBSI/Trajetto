@@ -160,8 +160,11 @@ public class ItineraryService {
 
         record ScoredPlace(CatalogPlace place, double score) {}
 
-        // O roteiro sai da cidade do catalogo mais perto do ponto de partida.
-        CityCatalog.City city = cityCatalog.nearestCity(req.getStartLatitude(), req.getStartLongitude());
+        // A cidade escolhida no app; sem escolha, a do catalogo mais perto do ponto de partida.
+        CityCatalog.City city = req.getCity() == null || req.getCity().isBlank()
+                ? cityCatalog.nearestCity(req.getStartLatitude(), req.getStartLongitude())
+                : cityCatalog.city(req.getCity())
+                        .orElseThrow(() -> new InvalidRequestException("Cidade não atendida: " + req.getCity()));
         List<CatalogPlace> candidates = cityCatalog.placesOf(city).stream()
                 .filter(place -> !MEAL_CATEGORIES.contains(place.category()))
                 .toList();
