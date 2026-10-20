@@ -1,7 +1,7 @@
 import i18n from '@/src/i18n';
 import {
   bearing, countActiveFilters, formatCarTime, formatDistance, formatWalkTime, haversineMeters,
-  interpolateAlongPath, resolveTodayHours,
+  interpolateAlongPath, resolveTodayHours, splitRoute,
 } from '@/src/pages/tabs/mapa/mapaFormat';
 import * as spot from '@/src/pages/spot/detail/spotFormat';
 import { categoryIcon, categoryLabel, formatCategoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
@@ -206,5 +206,23 @@ describe('placeName', () => {
   it('sem traducao, fica o nome original', () => {
     expect(placeName({ name: 'Café de Flore' }, 'en-US')).toBe('Café de Flore');
     expect(placeName({ name: 'Café de Flore', names: { pt: 'Café de Flore' } }, 'es-ES')).toBe('Café de Flore');
+  });
+});
+
+describe('splitRoute', () => {
+  const a = { latitude: 0, longitude: 0 };
+  const b = { latitude: 0, longitude: 1 };
+  const c = { latitude: 0, longitude: 2 };
+  const meio = { latitude: 0.1, longitude: 0.5 };
+  const rota = [a, meio, b, c];
+
+  it('separa a rota do dia nos trechos entre as paradas', () => {
+    expect(splitRoute([a, b, c], rota, [0, 2, 3])).toEqual([[a, meio, b], [b, c]]);
+  });
+
+  it('sem a posicao das paradas, cada trecho vira linha reta', () => {
+    expect(splitRoute([a, b, c], rota, undefined)).toEqual([[a, b], [b, c]]);
+    expect(splitRoute([a, b, c], null)).toEqual([[a, b], [b, c]]);
+    expect(splitRoute([a, b, c], rota, [0, 3])).toEqual([[a, b], [b, c]]);
   });
 });

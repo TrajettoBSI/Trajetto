@@ -8,20 +8,36 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestClientException;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 @Service
 public class RouteService {
 
+    /** Rotas guardadas: o mapa pede a mesma rota toda vez que abre o dia. */
+    private static final int CACHE_SIZE = 500;
+
     private final RestTemplate restTemplate;
     private final String apiKey;
+
+    /*
+     * A chave gratuita do OpenRouteService aceita cerca de 40 rotas por minuto; sem
+     * guardar, quem navega entre os dias do roteiro estoura o limite em segundos.
+     */
+    private final Map<List<List<Double>>, Map<String, Object>> cache = new LinkedHashMap<>(16, 0.75f, true) {
+        @Override
+        protected boolean removeEldestEntry(Map.Entry<List<List<Double>>, Map<String, Object>> eldest) {
+            return size() > CACHE_SIZE;
+        }
+    };
 
     public RouteService(RestTemplateBuilder restTemplateBuilder, @Value("${ors.api.key}") String apiKey) {
         this.restTemplate = restTemplateBuilder.build();
@@ -43,6 +59,13 @@ public class RouteService {
 
         coordinates.add(List.of(request.destination.lng, request.destination.lat));
 
+        synchronized (cache) {
+            Map<String, Object> cached = cache.get(coordinates);
+            if (cached != null) {
+                return cached;
+            }
+        }
+
         Map<String, Object> body = new HashMap<>();
 
         body.put("coordinates", coordinates);
@@ -60,6 +83,10 @@ public class RouteService {
                     entity,
                     new ParameterizedTypeReference<Map<String, Object>>() {}
             );
+        } catch (HttpClientErrorException.TooManyRequests e) {
+            // Sem a causa: o limite da chave nao e defeito, e o stack trace so polui o log.
+            throw new ApiException(ApiErrorCode.EXTERNAL_SERVICE_ERROR,
+                    "O serviço de rotas atingiu o limite de consultas; tente de novo em instantes.");
         } catch (RestClientException e) {
             throw new ApiException(ApiErrorCode.EXTERNAL_SERVICE_ERROR,
                     "Não foi possível calcular a rota no momento.", e);
@@ -84,7 +111,13 @@ public class RouteService {
         result.put("geometry", route.get("geometry"));
         result.put("distance", summary.get("distance"));
         result.put("duration", summary.get("duration"));
+        // Posicao de cada ponto pedido na geometria: com ela o app separa os trechos
+        // entre as paradas de uma rota pedida de uma vez so.
+        result.put("wayPoints", route.get("way_points"));
 
+        synchronized (cache) {
+            cache.put(coordinates, result);
+        }
         return result;
     }
 }

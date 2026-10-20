@@ -17,6 +17,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
@@ -102,6 +103,9 @@ public class DirectionsService {
             Map<String, Object> response = restTemplate.exchange(ORS_URL + profile, HttpMethod.POST,
                     new HttpEntity<>(body, headers), new ParameterizedTypeReference<Map<String, Object>>() {}).getBody();
             return parse(mode, response);
+        } catch (HttpClientErrorException.TooManyRequests e) {
+            logger.warn("Limite de consultas do OpenRouteService atingido (rota {}); usando estimativa", profile);
+            return new Option(mode, fallbackDistance, fallbackExtra + fallbackDistance / fallbackSpeed, true, null, List.of());
         } catch (RestClientException | ClassCastException | NullPointerException | IndexOutOfBoundsException e) {
             logger.warn("Rota {} indisponível no OpenRouteService; usando estimativa", profile, e);
             return new Option(mode, fallbackDistance, fallbackExtra + fallbackDistance / fallbackSpeed, true, null, List.of());

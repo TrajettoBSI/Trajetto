@@ -10,7 +10,7 @@ import { RouteService } from '@/services';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { placeDate } from '@/src/domain/itinerary/itineraryDays';
 import { useItineraryDay } from '@/src/pages/tabs/shared/hooks/useItineraryDay';
-import { LatLng, Region } from '../mapaFormat';
+import { LatLng, Region, splitRoute } from '../mapaFormat';
 
 export function useMapaLocation() {
   const { user } = useAuth();
@@ -79,27 +79,29 @@ export function useMapaLocation() {
         }));
       }
 
-      const pairs: [{ lat: number; lng: number }, { lat: number; lng: number }][] = [];
-      if (originLatitude != null) {
-        pairs.push([
-          { lat: originLatitude, lng: originLongitude! },
-          { lat: sorted[0].latitude, lng: sorted[0].longitude },
-        ]);
+      const stops: LatLng[] = [
+        ...(originLatitude != null ? [{ latitude: originLatitude, longitude: originLongitude! }] : []),
+        ...sorted.map((p: any) => ({ latitude: p.latitude, longitude: p.longitude })),
+      ];
+      if (stops.length < 2) {
+        if (!cancelled) setSegments([]);
+        return;
       }
-      sorted.slice(0, -1).forEach((place: any, i: number) => {
-        pairs.push([
-          { lat: place.latitude, lng: place.longitude },
-          { lat: sorted[i + 1].latitude, lng: sorted[i + 1].longitude },
-        ]);
-      });
 
-      const result = await Promise.all(
-        pairs.map(([orig, dest]) =>
-          RouteService.getRoute({ origin: orig, destination: dest, waypoints: [] })
-            .then((data) => polyline.decode(data.geometry).map(([lat, lng]: number[]) => ({ latitude: lat, longitude: lng })))
-            .catch(() => [{ latitude: orig.lat, longitude: orig.lng }, { latitude: dest.lat, longitude: dest.lng }])
-        )
-      );
+      // Uma rota so para o dia inteiro, com as paradas no meio: um pedido por trecho
+      // estourava o limite de consultas do OpenRouteService.
+      const toCoord = (s: LatLng) => ({ lat: s.latitude, lng: s.longitude });
+      const result = await RouteService.getRoute({
+        origin: toCoord(stops[0]),
+        destination: toCoord(stops[stops.length - 1]),
+        waypoints: stops.slice(1, -1).map(toCoord),
+      })
+        .then((data) => splitRoute(
+          stops,
+          polyline.decode(data.geometry).map(([lat, lng]: number[]) => ({ latitude: lat, longitude: lng })),
+          data.wayPoints,
+        ))
+        .catch(() => splitRoute(stops, null));
 
       if (!cancelled) setSegments(result);
     })();
