@@ -22829,6 +22829,2074 @@
         "website": "http://gelateriaverde.com",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2072776,
+          38.69385
+        ]
+      },
+      "properties": {
+        "name": "ZeroZero Belém",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.69385,
+        "longitude": -9.2072776,
+        "address": "Avenida de Brasília",
+        "opening_hours": "Mo-Su 12:00-24:00",
+        "phone": "+351 210364245",
+        "wheelchair": "yes",
+        "cuisine": "italian;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2145416,
+          38.69511
+        ]
+      },
+      "properties": {
+        "name": "Nune’s Real Marisqueira",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.69511,
+        "longitude": -9.2145416,
+        "address": "Rua Bartolomeu Dias, 172 E - F, Lisboa (Belém)",
+        "opening_hours": "Tu-Su 12:00-00:00",
+        "phone": "+351 213 019 899",
+        "cuisine": "regional;seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2190655,
+          38.6976188
+        ]
+      },
+      "properties": {
+        "name": "Vintequatro",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6976188,
+        "longitude": -9.2190655,
+        "address": "Rua Duarte Pacheco Pereira, 24A, Belém",
+        "opening_hours": "Mon-Sun 12:00-15:00 19:00-22:30",
+        "phone": "+351213011100",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2137276,
+          38.6951616
+        ]
+      },
+      "properties": {
+        "name": "Casual Lounge Caffe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6951616,
+        "longitude": -9.2137276,
+        "address": "Rua Bartolomeu Dias, 148 B, Lisboa (Belém)",
+        "opening_hours": "Tu-Fr 12:00-02:00;Sa 15:00-02:00;Su 15:00-00:00",
+        "phone": "+351 21 301 9024",
+        "website": "https://www.casuallounge.com/",
+        "cuisine": "coffee;cocktail;wine",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.218618,
+          38.6983756
+        ]
+      },
+      "properties": {
+        "name": "Madalen AS",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6983756,
+        "longitude": -9.218618,
+        "address": "Rua Duarte Pacheco Pereira, 9B, Belem",
+        "opening_hours": "Mon-Fri 10:00-19:00 // Sat 10:00-13:00",
+        "phone": "+351213011670",
+        "cuisine": "takeaway;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2054979,
+          38.6994618
+        ]
+      },
+      "properties": {
+        "name": "La Fóllia de Bélem",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6994618,
+        "longitude": -9.2054979,
+        "address": "Rua dos Jerónimos, 18, Lisboa",
+        "opening_hours": "Mo-Su 12:30-15:00 19:00-22:00",
+        "phone": "+351 21 5881217",
+        "wheelchair": "yes",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2054078,
+          38.6992775
+        ]
+      },
+      "properties": {
+        "name": "BELEM KEBAB & PIZZARIA",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6992775,
+        "longitude": -9.2054078,
+        "address": "Rua dos Jerónimos, 16, Lisboa",
+        "opening_hours": "Mo-Su 07:00-00:00",
+        "phone": "+351 920 562 344",
+        "cuisine": "pizza;kebab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2036756,
+          38.6975196
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6975196,
+        "longitude": -9.2036756,
+        "address": "Rua de Belém, 110, Lisboa",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+351 211 147 602",
+        "website": "https://www.starbucks.pt/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2088836,
+          38.6969988
+        ]
+      },
+      "properties": {
+        "name": "Cafetaria Navy Museum",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6969988,
+        "longitude": -9.2088836,
+        "address": "Praça do Império, Lisboa",
+        "opening_hours": "Mo-Su 10:00-17:00",
+        "phone": "+351 21 097 7387",
+        "website": "https://www.facebook.com/cafetariamuseumarinha",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1816259,
+          38.7009301
+        ]
+      },
+      "properties": {
+        "name": "O Lutador",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7009301,
+        "longitude": -9.1816259,
+        "address": "Rua da Junqueira, 1 C-D",
+        "opening_hours": "Mo-Sa 09:00-24:00; Su off",
+        "website": "https://restauranteolutador.pt/",
+        "cuisine": "coffee_shop;regional;seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1753154,
+          38.7032101
+        ]
+      },
+      "properties": {
+        "name": "Pausa - La Salumeria di Ruvida",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7032101,
+        "longitude": -9.1753154,
+        "opening_hours": "Mo off; Tu-Th 12:30-15:00,19:00-22:00; Fr-Sa 12:30-15:00,19:00-23:00; Su 12:30-17:00",
+        "website": "https://pausadiruvida.com/",
+        "wheelchair": "limited",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1755082,
+          38.7041257
+        ]
+      },
+      "properties": {
+        "name": "Pingo Doce",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7041257,
+        "longitude": -9.1755082,
+        "address": "Rua Cascais, 43, Lisboa",
+        "opening_hours": "Mo-Su,PH 08:00-21:00",
+        "website": "https://www.pingodoce.pt/lojas/alcantara/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2022684,
+          38.69431
+        ]
+      },
+      "properties": {
+        "name": "Clube Naval de Lisboa",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.69431,
+        "longitude": -9.2022684,
+        "address": "Avenida de Brasilia, 1400, Lisboa (Belém)",
+        "opening_hours": "We-Mo 12:00-22:00",
+        "phone": "+351 21 363 6014",
+        "website": "https://restaurantedoclubenavaldelisboa.pt/en_GB/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.0968571,
+          38.7692931
+        ]
+      },
+      "properties": {
+        "name": "Quanjude",
+        "name_en": "Quanjude Roast Duck",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7692931,
+        "longitude": -9.0968571,
+        "address": "Rua do Pólo Norte, 1.06 2.1B",
+        "opening_hours": "Mo-Sa 12:00-15:00,19:00-23:00; Su 12:00-15:00,19:00-23:00",
+        "phone": "+351 967 160 008",
+        "wheelchair": "no",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.0924564,
+          38.7710497
+        ]
+      },
+      "properties": {
+        "name": "Senhor Peixe",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7710497,
+        "longitude": -9.0924564,
+        "address": "Rua da Pimenta, 35",
+        "opening_hours": "Su 12:00-15:30; Tu-Sa 12:00-15:30, 19:00-22:30",
+        "phone": "+351 21 895 5892",
+        "website": "http://www.senhorpeixe.pt",
+        "wheelchair": "yes",
+        "cuisine": "fish;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.0923434,
+          38.7718966
+        ]
+      },
+      "properties": {
+        "name": "Zhang Lala",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7718966,
+        "longitude": -9.0923434,
+        "address": "Rua da Pimenta, 63, Lisboa",
+        "opening_hours": "Mo-Su 12:00-15:30,18:00-22:30",
+        "phone": "+351 920 131 948",
+        "wheelchair": "yes",
+        "cuisine": "ramen",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.0957404,
+          38.7688505
+        ]
+      },
+      "properties": {
+        "name": "MexTuga - Oriente",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7688505,
+        "longitude": -9.0957404,
+        "address": "Alameda dos Oceanos, 27, Lisboa",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+351 218947018",
+        "wheelchair": "no",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1013634,
+          38.7713616
+        ]
+      },
+      "properties": {
+        "name": "Niquibelo",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7713616,
+        "longitude": -9.1013634,
+        "address": "Rua Padre Joaquim Alves Correia, Lote 4, Parque das Nações",
+        "opening_hours": "Mo-Su 07:00-18:30",
+        "phone": "+351 964 206 384",
+        "cuisine": "coffee_shop;cake;sandwich;dessert;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1674705,
+          38.7047095
+        ]
+      },
+      "properties": {
+        "name": "Bloom Bistro Cocktails",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7047095,
+        "longitude": -9.1674705,
+        "address": "Calçada da Pampulha, 42, Lisboa",
+        "opening_hours": "Tu-Sa 09:00-22:00; Su-Mo 9:00-16:00",
+        "phone": "+351 935 331 844",
+        "website": "https://bloom.com.pt/",
+        "cuisine": "coffee_shop;bistro;breakfast;brunch;tapas",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.154145,
+          38.7090886
+        ]
+      },
+      "properties": {
+        "name": "A Flor da Selva",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7090886,
+        "longitude": -9.154145,
+        "address": "Travessa do Pasteleiro, 32",
+        "opening_hours": "Mo-Fr 09:00-13:00,14:00-18:00",
+        "phone": "+351213965384",
+        "website": "https://flordaselva.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.092772,
+          38.7750335
+        ]
+      },
+      "properties": {
+        "name": "Miss Saigon",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7750335,
+        "longitude": -9.092772,
+        "address": "Avenida da Boa Esperança, 4C, Lisboa",
+        "opening_hours": "Mo-Fr 12:00-16:00",
+        "phone": "+351210996589",
+        "website": "https://www.miss-saigon.pt/",
+        "wheelchair": "limited",
+        "cuisine": "fusion",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.0945021,
+          38.7772119
+        ]
+      },
+      "properties": {
+        "name": "DOM KEBAB GRILL",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7772119,
+        "longitude": -9.0945021,
+        "address": "Rua da Ilha dos Amores, lote B, Parque das Nações",
+        "opening_hours": "11:00-23:00",
+        "phone": "+351 21 896 1096",
+        "wheelchair": "yes",
+        "cuisine": "international;kebab;grill;pizza;hamburger;salad",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.0949953,
+          38.7793002
+        ]
+      },
+      "properties": {
+        "name": "Roma",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7793002,
+        "longitude": -9.0949953,
+        "address": "Alameda dos Oceanos, 98 A",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+351 918 165 204",
+        "wheelchair": "yes",
+        "cuisine": "portuguese;local;coffee_shop;regional;breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.190318,
+          38.6996741
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Dois e Dois",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6996741,
+        "longitude": -9.190318,
+        "address": "Calçada da Boa Hora, 11",
+        "opening_hours": "Mo-We,Fr 10:00-22:00; Th,Su off; Sa 10:00-15:00",
+        "phone": "+351 21 363 0774",
+        "wheelchair": "limited",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1981643,
+          38.7034392
+        ]
+      },
+      "properties": {
+        "name": "Cantinho Doce",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7034392,
+        "longitude": -9.1981643,
+        "address": "Travessa da Boa Hora à Ajuda, 53, Lisboa",
+        "opening_hours": "Mo-Fr 07:00-18:00; Sa,Su 07:00-13:00",
+        "phone": "+351 965 063 856",
+        "cuisine": "coffee_shop;tosta;pastry",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1704633,
+          38.6764552
+        ]
+      },
+      "properties": {
+        "name": "Damasqino Terrace",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6764552,
+        "longitude": -9.1704633,
+        "address": "Avenida Cristo Rei",
+        "opening_hours": "Mo-Su 11:00-01:00",
+        "phone": "+351 939 126 743",
+        "website": "http://damasqinoterrace.pt",
+        "cuisine": "syrian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1628122,
+          38.6780164
+        ]
+      },
+      "properties": {
+        "name": "Pérola do Cristo Rei",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6780164,
+        "longitude": -9.1628122,
+        "address": "Rua dos Espatatários, 18, Almada",
+        "opening_hours": "Mo, We-Sa 12:00-22:00; Tu, Su 12:00-15:00",
+        "phone": "+351 21 276 1765",
+        "website": "https://restaurante-perola-do-cristo-rei.negocio.site",
+        "cuisine": "churrasqueira",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1618596,
+          38.6783081
+        ]
+      },
+      "properties": {
+        "name": "Chamó Frango",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6783081,
+        "longitude": -9.1618596,
+        "address": "Rua dos Espatatários, Almada",
+        "opening_hours": "Mo-Sa 08:00-18:00",
+        "phone": "+351 21 275 7426",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1125358,
+          38.7257391
+        ]
+      },
+      "properties": {
+        "name": "O caçador",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7257391,
+        "longitude": -9.1125358,
+        "address": "Rua de Xabregas, 81, Beato",
+        "opening_hours": "Mo-Su 07:00-22:00, Sa closed",
+        "phone": "+351 21 812 1251",
+        "cuisine": "portuguese;cervejaria",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1123697,
+          38.7259029
+        ]
+      },
+      "properties": {
+        "name": "O germano",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7259029,
+        "longitude": -9.1123697,
+        "address": "Rua de Xabregas, 71, Beato",
+        "opening_hours": "Mo-Sa 12:00-15:00, Su closed",
+        "phone": "+351 21 868 1709",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1234795,
+          38.7190566
+        ]
+      },
+      "properties": {
+        "name": "Casa Mocambo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7190566,
+        "longitude": -9.1234795,
+        "address": "Rua do Vale de Santo António, 122A",
+        "opening_hours": "Mo-Fr 18:00-24:00; Sa-Su 12:00-16:00, 18:00-24:00",
+        "phone": "+351 912 509 906",
+        "website": "http://casamocambo.eatbu.com",
+        "cuisine": "african",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1098617,
+          38.7277934
+        ]
+      },
+      "properties": {
+        "name": "Leitaria Tejo",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7277934,
+        "longitude": -9.1098617,
+        "address": "Rua de Xabregas, 21,23,25, Beato",
+        "opening_hours": "mo-fr 07:00-19:00 sa 07:00-15:30 su closed",
+        "phone": "2188681945",
+        "cuisine": "pastry;snack_bar",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1099765,
+          38.7280406
+        ]
+      },
+      "properties": {
+        "name": "Cafetaria de Xabregas",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7280406,
+        "longitude": -9.1099765,
+        "address": "Rua de Xabregas, 20, Penha de França",
+        "opening_hours": "Mo-Fr 07:00-19:00",
+        "phone": "+351 21 868 4554",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.210612,
+          38.6966256
+        ]
+      },
+      "properties": {
+        "name": "Focacceria BM - Bread Maniacs",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6966256,
+        "longitude": -9.210612,
+        "address": "Rua Dom Lourenço d'Almeida, 3A",
+        "opening_hours": "Tu-Su 12:00-22:00",
+        "website": "https://www.focacceriabm.pt/",
+        "wheelchair": "limited",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1817352,
+          38.705578
+        ]
+      },
+      "properties": {
+        "name": "Ricco Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.705578,
+        "longitude": -9.1817352,
+        "address": "Rua da Indústria, 50A, Lisboa",
+        "opening_hours": "We,Th 19:00-22:00; Fr-Sa 12:00-15:00,18:00-23:00; Su 12:00-15:00,18:00-22:00",
+        "phone": "+351 910287500",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1804785,
+          38.7054663
+        ]
+      },
+      "properties": {
+        "name": "Solar dos Nunes",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7054663,
+        "longitude": -9.1804785,
+        "address": "Rua dos Lusíadas, 354",
+        "opening_hours": "Mo-Sa 12:00-15:00, 19:00-01:00",
+        "phone": "+351 21 364 7359",
+        "website": "https://www.solardosnunes.net/",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.196421,
+          38.7035852
+        ]
+      },
+      "properties": {
+        "name": "O Caçador",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7035852,
+        "longitude": -9.196421,
+        "address": "Travessa da Boa Hora à Ajuda, 26, Lisboa",
+        "opening_hours": "Mo-Sa 08:00-22:00",
+        "phone": "+351 21 363 4673",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1983219,
+          38.6975221
+        ]
+      },
+      "properties": {
+        "name": "O Prado",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6975221,
+        "longitude": -9.1983219,
+        "address": "Rua da Junqueira, 472",
+        "opening_hours": "Mo-Sa 09:00-00:00",
+        "phone": "+351 21 364 2412",
+        "website": "oprado.pt",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2023781,
+          38.696938
+        ]
+      },
+      "properties": {
+        "name": "O Caniço",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.696938,
+        "longitude": -9.2023781,
+        "address": "Rua Vieira Portuense, 30, Lisboa",
+        "opening_hours": "Tu-Su 12:00-16:00",
+        "phone": "+351213630593",
+        "cuisine": "regional;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.17693,
+          38.7879248
+        ]
+      },
+      "properties": {
+        "name": "Tikka Boti Halal",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7879248,
+        "longitude": -9.17693,
+        "address": "R. dos Bombeiros Voluntários, 27, Odivelas",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+351 920 010 350",
+        "website": "https://www.tikkabotihalal.pt/",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1927055,
+          38.7918357
+        ]
+      },
+      "properties": {
+        "name": "Taberna do Xico",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7918357,
+        "longitude": -9.1927055,
+        "address": "Praça de Portugal, Odivelas",
+        "opening_hours": "Mo-Sa 12:00-15:00,19:00-23:00; Su 12:00-15:00",
+        "phone": "+351 969 618 648",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1776131,
+          38.8003322
+        ]
+      },
+      "properties": {
+        "name": "Xin",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.8003322,
+        "longitude": -9.1776131,
+        "address": "Rua Vieira da Silva, 2 Loja Direita",
+        "opening_hours": "We-Mo 11:00-15:00,19:00-23:00",
+        "phone": "+351218261185",
+        "website": "https://restaurantexin.wix.com/cozinhaoriental",
+        "cuisine": "korean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1754518,
+          38.7961743
+        ]
+      },
+      "properties": {
+        "name": "Pastelaria Belo",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7961743,
+        "longitude": -9.1754518,
+        "opening_hours": "PH,Mo-Su 06:00-20:00",
+        "phone": "+351219318079",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1993322,
+          38.7039768
+        ]
+      },
+      "properties": {
+        "name": "Pastelaria Outra Opção- Fabrico Próprio",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7039768,
+        "longitude": -9.1993322,
+        "address": "Calçada da Ajuda, 180-182, Lisboa",
+        "opening_hours": "Mo-Sa 07:00-19:00",
+        "phone": "+351 21 409 8136",
+        "cuisine": "coffee_shop;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1063923,
+          38.7322426
+        ]
+      },
+      "properties": {
+        "name": "A Casa do Bacalhau",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7322426,
+        "longitude": -9.1063923,
+        "address": "Rua do Grilo, 50/54, Beato",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+351 21 862 0000",
+        "website": "https://www.acasadobacalhau.com/",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1029122,
+          38.7401334
+        ]
+      },
+      "properties": {
+        "name": "LIV BEATO",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7401334,
+        "longitude": -9.1029122,
+        "address": "Rua do Açúcar, 54, Beato",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "phone": "+351 968 811 539",
+        "website": "https://restauranteromanus.pt/",
+        "cuisine": "cafe;brunch;grelhados_no_carvão",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2090403,
+          38.7074537
+        ]
+      },
+      "properties": {
+        "name": "Pizza Hut",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7074537,
+        "longitude": -9.2090403,
+        "address": "Rua Alda Nogueira, 6, Lisboa",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+351 222 444 222",
+        "website": "https://www.pizzahut.pt/restaurantes/restelo/",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.208462,
+          38.7105124
+        ]
+      },
+      "properties": {
+        "name": "Graça Araújo Bolos e Chocolate",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7105124,
+        "longitude": -9.208462,
+        "address": "Rua Dom Jorge da Costa, 10A, Belém",
+        "opening_hours": "Mo-Sa 11:00-19:00, Su 11:00-14:00",
+        "phone": "+351 919 031 566",
+        "website": "https://www.gracaaraujo.com/",
+        "cuisine": "cake",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1472958,
+          38.6848404
+        ]
+      },
+      "properties": {
+        "name": "O Canecão",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6848404,
+        "longitude": -9.1472958,
+        "address": "Avenida 25 de Abril de 1974, 3A, Almada",
+        "opening_hours": "Tu-Su 09:00-22:00",
+        "phone": "+351 21 274 0776",
+        "website": "https://www.facebook.com/RestauranteoCanecao/",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1587908,
+          38.6827826
+        ]
+      },
+      "properties": {
+        "name": "Kalamata Espírito Mediterrânico",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6827826,
+        "longitude": -9.1587908,
+        "address": "Rua Augusto Maria da Silveira, 24, Almada",
+        "opening_hours": "Closed at Tuesday's",
+        "phone": "+351212901423",
+        "cuisine": "mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1533638,
+          38.681965
+        ]
+      },
+      "properties": {
+        "name": "Veg-e-tal",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.681965,
+        "longitude": -9.1533638,
+        "address": "Avenida Dom Afonso Henriques, 8 A",
+        "opening_hours": "Mo-Sa 10:00-19:00",
+        "phone": "+351212745784",
+        "website": "https://vegetal.pt/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1484448,
+          38.6839541
+        ]
+      },
+      "properties": {
+        "name": "13 Amoras",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6839541,
+        "longitude": -9.1484448,
+        "address": "Rua António Nobre, 2A, Almada",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "website": "https://www.facebook.com/13-Amoras-100068963749160/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1810366,
+          38.7450856
+        ]
+      },
+      "properties": {
+        "name": "O Pastelinho de Benfica",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7450856,
+        "longitude": -9.1810366,
+        "address": "Estrada de Benfica, 393/393 A, Lisboa",
+        "opening_hours": "Tu 12:00-14:00, We-Mo 07:30-22:00",
+        "phone": "+351217789473",
+        "website": "https://opastelinhodebenfica.eatbu.com/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1759896,
+          38.754704
+        ]
+      },
+      "properties": {
+        "name": "Luz Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.754704,
+        "longitude": -9.1759896,
+        "address": "Estrada da Luz, 165D, Lisboa",
+        "opening_hours": "Mo-Su 09:30-22:00",
+        "phone": "+351 21 726 3351",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1996062,
+          38.703492
+        ]
+      },
+      "properties": {
+        "name": "Di Amici by Pizza em Casa",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.703492,
+        "longitude": -9.1996062,
+        "address": "Calçada da Ajuda, 111, Lisboa",
+        "opening_hours": "Tu-Su 12:00-15:00, 19:00-23:00",
+        "phone": "+351 21 808 9020",
+        "website": "https://diamici.pt/ementas.html",
+        "cuisine": "pizza;italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.0947081,
+          38.7829596
+        ]
+      },
+      "properties": {
+        "name": "Taste Indian Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7829596,
+        "longitude": -9.0947081,
+        "address": "Terreiro dos Corvos, Lisboa",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "phone": "+351 960 480 888",
+        "wheelchair": "yes",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.102219,
+          38.7779397
+        ]
+      },
+      "properties": {
+        "name": "Portela Cafés",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7779397,
+        "longitude": -9.102219,
+        "address": "Avenida de Moscavide, 47, Moscavide",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "phone": "+351 219 447 868",
+        "website": "https://www.portelacafes.pt/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.0989421,
+          38.792581
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria Forneria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.792581,
+        "longitude": -9.0989421,
+        "address": "Via do Oriente, 16",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+351 218 039 954",
+        "website": "https://www.pizzariaforneria.pt/",
+        "wheelchair": "yes",
+        "cuisine": "pizza;italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1065272,
+          38.7924974
+        ]
+      },
+      "properties": {
+        "name": "Fomix",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7924974,
+        "longitude": -9.1065272,
+        "address": "Avenida Maria Luísa Braancamp, 20A",
+        "opening_hours": "Mo-Su 12:00-01:00",
+        "phone": "+351 920 741 366",
+        "cuisine": "burger;kebab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1628695,
+          38.7801728
+        ]
+      },
+      "properties": {
+        "name": "Os Compadres",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7801728,
+        "longitude": -9.1628695,
+        "address": "Estrada do Desvio, 28, Lisboa",
+        "opening_hours": "We-Su 12:00-15:00 18:30-22:00",
+        "phone": "+351963754159",
+        "website": "https://restauranteoscompadres.net/",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1710623,
+          38.7690257
+        ]
+      },
+      "properties": {
+        "name": "Kasa Mia",
+        "name_en": "Pizzaria Kasa Mia",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7690257,
+        "longitude": -9.1710623,
+        "address": "Rua Fernando Lopes Graça, 19J",
+        "opening_hours": "Tu-Su 12:00-23:00",
+        "phone": "+351 21 248 2622",
+        "cuisine": "italian;italian_pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160741,
+          38.772523
+        ]
+      },
+      "properties": {
+        "name": "O Trenó",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.772523,
+        "longitude": -9.160741,
+        "address": "Alameda das Linhas de Torres, 250, Lisboa",
+        "opening_hours": "Mo-Su 07:00-20:00",
+        "phone": "+351217588014",
+        "wheelchair": "no",
+        "cuisine": "pastry;sandwich;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1996577,
+          38.7031552
+        ]
+      },
+      "properties": {
+        "name": "Paraiso Violeta",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7031552,
+        "longitude": -9.1996577,
+        "address": "Calçada da Ajuda, 79, Lisboa",
+        "opening_hours": "Mo-Sa 08:00-23:30 , Su 08:00-17:00",
+        "phone": "+351 21 364 8847",
+        "website": "https://www.facebook.com/profile.php?id=100063757071804",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1826082,
+          38.7023842
+        ]
+      },
+      "properties": {
+        "name": "Londrina Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7023842,
+        "longitude": -9.1826082,
+        "address": "Rua Gil Vicente, 2A",
+        "opening_hours": "Mo-Sa 08:00-20:00; Su off",
+        "phone": "+351 934 632 163",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2072129,
+          38.6766805
+        ]
+      },
+      "properties": {
+        "name": "Maré Viva",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6766805,
+        "longitude": -9.2072129,
+        "opening_hours": "We-Mo 12:00-22:30",
+        "website": "https://restaurantemareviva.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2283378,
+          38.6989501
+        ]
+      },
+      "properties": {
+        "name": "Petit d'Algés",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6989501,
+        "longitude": -9.2283378,
+        "address": "Rua Major Afonso Palla, 32",
+        "opening_hours": "Mo-Su 12:00-16:00, 19:00-22:30",
+        "phone": "+351 21 411 2049",
+        "wheelchair": "no",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2284273,
+          38.6989608
+        ]
+      },
+      "properties": {
+        "name": "Churrasqueira Havaneza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6989608,
+        "longitude": -9.2284273,
+        "address": "Rua Major Afonso Palla, 40",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "phone": "+351 21 411 6156",
+        "wheelchair": "no",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1568697,
+          38.8068787
+        ]
+      },
+      "properties": {
+        "name": "Go Chef",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.8068787,
+        "longitude": -9.1568697,
+        "address": "Rua Almirante Gago Coutinho, 98, Flamenga",
+        "opening_hours": "Mo-Su 12:00-15:00,19:00-23:00",
+        "phone": "+351 933 361 616",
+        "website": "https://gocheflisboa.eatbu.com/",
+        "wheelchair": "yes",
+        "cuisine": "chinese;sushi;seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1577709,
+          38.8032736
+        ]
+      },
+      "properties": {
+        "name": "Chafariz",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.8032736,
+        "longitude": -9.1577709,
+        "address": "Rua Luís de Camões, 2, Póvoa de Santo Adrião",
+        "opening_hours": "Mo-Sa 07:00-01:00",
+        "phone": "+351 219 387 444",
+        "website": "https://www.facebook.com/Restaurante-Chafariz-218917962199328/",
+        "cuisine": "barbecue;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1197755,
+          38.7386302
+        ]
+      },
+      "properties": {
+        "name": "Tutaskinho´s",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7386302,
+        "longitude": -9.1197755,
+        "opening_hours": "We-Mo 15:00-02:00",
+        "phone": "+351 917 188 722",
+        "cuisine": "tapas",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.122416,
+          38.73806
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Churrasqueira Tradições Gourmet 2",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.73806,
+        "longitude": -9.122416,
+        "opening_hours": "Tu-Su 10:00-12:00",
+        "phone": "+351 21 408 4771",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1289355,
+          38.737098
+        ]
+      },
+      "properties": {
+        "name": "Moment Brunch Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.737098,
+        "longitude": -9.1289355,
+        "address": "Rua Barão de Sabrosa, 163-C",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "phone": "+351 9218 132 590",
+        "website": "https://momentbrunchcafe.eu/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1310553,
+          38.7378566
+        ]
+      },
+      "properties": {
+        "name": "Mercearia do Abade",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7378566,
+        "longitude": -9.1310553,
+        "address": "Rua Abade Faria, 2",
+        "opening_hours": "Mo-Sa 08:30-20:00",
+        "website": "https://mercearia-do-abade.eatbu.com",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1670709,
+          38.6776464
+        ]
+      },
+      "properties": {
+        "name": "Leitaria",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6776464,
+        "longitude": -9.1670709,
+        "address": "Avenida Cristo Rei, Almada",
+        "opening_hours": "Mo-Sa 08:00-22:00",
+        "cuisine": "snack_bar",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1685842,
+          38.671727
+        ]
+      },
+      "properties": {
+        "name": "Pastelaria Diabruras Pragal",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.671727,
+        "longitude": -9.1685842,
+        "address": "Rua de Manuel Parada, 13A, Almada",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "cuisine": "pastelaria",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.207486,
+          38.7271138
+        ]
+      },
+      "properties": {
+        "name": "Monsantos Open Air",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7271138,
+        "longitude": -9.207486,
+        "address": "Estrada da Circunvalação, Lisboa",
+        "phone": "+351 915865148",
+        "website": "https://www.monsantosopenair.pt/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1903056,
+          38.7167239
+        ]
+      },
+      "properties": {
+        "name": "Ruck ClubHouse",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7167239,
+        "longitude": -9.1903056,
+        "website": "https://www.facebook.com/pages/category/Bar---Grill/Ruck-ClubHouse-915605921833768/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1892403,
+          38.7163822
+        ]
+      },
+      "properties": {
+        "name": "A Pateira",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7163822,
+        "longitude": -9.1892403,
+        "website": "https://www.facebook.com/apateira/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1979329,
+          38.7146261
+        ]
+      },
+      "properties": {
+        "name": "Monsanto Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7146261,
+        "longitude": -9.1979329,
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.20591,
+          38.6693939
+        ]
+      },
+      "properties": {
+        "name": "Café Charcutaria Onofre",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.6693939,
+        "longitude": -9.20591,
+        "opening_hours": "off",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.151907,
+          38.7937436
+        ]
+      },
+      "properties": {
+        "name": "O Matos",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7937436,
+        "longitude": -9.151907,
+        "address": "Estrada Militar, Santa Clara",
+        "cuisine": "coffee_shop;cake;juice",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1509113,
+          38.7925467
+        ]
+      },
+      "properties": {
+        "name": "Onda de Princesas",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7925467,
+        "longitude": -9.1509113,
+        "address": "Estrada Militar, Santa Clara",
+        "cuisine": "coffee_shop;cake;juice;pão_quente",
+        "popularity": 0
+      }
     }
   ]
 }

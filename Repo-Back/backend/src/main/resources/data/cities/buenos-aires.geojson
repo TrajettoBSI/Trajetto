@@ -19359,6 +19359,2242 @@
         "phone": "4529-5399",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3748639,
+          -34.6380799
+        ]
+      },
+      "properties": {
+        "name": "Café Martínez",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6380799,
+        "longitude": -58.3748639,
+        "address": "Avenida Manuel A. Montes de Oca, 855, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Fr 07:00-22:00; Sa,Su 08:00-22:00",
+        "phone": "+54 11 4301-2271",
+        "website": "https://www.cafemartinez.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4244538,
+          -34.6593619
+        ]
+      },
+      "properties": {
+        "name": "Lions Bar Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6593619,
+        "longitude": -58.4244538,
+        "address": "Charrúa & Berón de Astrada, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "phone": "+54 11 4918 9812",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4060026,
+          -34.6370416
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6370416,
+        "longitude": -58.4060026,
+        "address": "Avenida Caseros, 3017, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa,Su 08:00-20:00",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3914341,
+          -34.6202915
+        ]
+      },
+      "properties": {
+        "name": "Café Martínez",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6202915,
+        "longitude": -58.3914341,
+        "address": "Carlos Calvo, 1002, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 07:30-21:30",
+        "phone": "+54 11 4600-1427",
+        "website": "https://www.cafemartinez.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3647946,
+          -34.6011625
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6011625,
+        "longitude": -58.3647946,
+        "address": "Olga Cossetini, 301, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Th 07:00-22:00; Fr 07:00-23:00; Sa 08:00-01:30; Su 09:00-22:00",
+        "phone": "+54 11 5530-7324",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3671761,
+          -34.6014089
+        ]
+      },
+      "properties": {
+        "name": "Le Pain Quotidien",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6014089,
+        "longitude": -58.3671761,
+        "address": "Avenida Alicia Moreau de Justo, 246, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "PH Mo-Su 09:00-21:00",
+        "phone": "+54 11 4313-0332",
+        "website": "http://www.lepainquotidien.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4567029,
+          -34.5606888
+        ]
+      },
+      "properties": {
+        "name": "1810",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5606888,
+        "longitude": -58.4567029,
+        "address": "Mendoza, 2320, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "11:00-16:00,19:00-24:00",
+        "phone": "+54 11 4784-0025",
+        "website": "http://www.1810cocinaregional.com",
+        "wheelchair": "yes",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4568353,
+          -34.5622335
+        ]
+      },
+      "properties": {
+        "name": "Accademia Della Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5622335,
+        "longitude": -58.4568353,
+        "address": "Avenida Cabildo, 2088, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Th 07:00-01:00; Fr,Sa 07:00-02:00",
+        "phone": "+54 11 5786-0330",
+        "wheelchair": "yes",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4622139,
+          -34.5554588
+        ]
+      },
+      "properties": {
+        "name": "La Farola de Nuñez",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5554588,
+        "longitude": -58.4622139,
+        "address": "Avenida Cabildo, 2899, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Th,Su 06:00-01:00; Fr-Sa 06:00-02:00",
+        "phone": "+54 11 4786-1565",
+        "wheelchair": "limited",
+        "cuisine": "pizza;pasta;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4527489,
+          -34.5624005
+        ]
+      },
+      "properties": {
+        "name": "Le Pain Quotidien",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5624005,
+        "longitude": -58.4527489,
+        "address": "Mariscal Antonio José de Sucre, 2151, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Fr 08:00-21:00; Sa,Su 09:00-21:00",
+        "phone": "+54 11 4788-4738",
+        "website": "http://www.lepainquotidien.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4557571,
+          -34.5646632
+        ]
+      },
+      "properties": {
+        "name": "Caffe Nascosto",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5646632,
+        "longitude": -58.4557571,
+        "address": "Ciudad de la Paz, 1883, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Sa 08:00-20:00; Su off",
+        "phone": "+541147864409",
+        "website": "caffenascosto.com",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3641095,
+          -34.6065055
+        ]
+      },
+      "properties": {
+        "name": "Carletto",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6065055,
+        "longitude": -58.3641095,
+        "address": "Olga Cossetini, 791, Ciudad Autónoma de Buenos Aires",
+        "phone": "+54 11 4515-0707",
+        "website": "https://www.carlettoweb.com.ar/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3624959,
+          -34.6106599
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6106599,
+        "longitude": -58.3624959,
+        "address": "Juana Manso, 1107, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Th 08:00-22:00; Fr 08:00-23:00; Sa 09:00-24:00; Su 09:00-23:00",
+        "phone": "+54 11 5530-7322",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3633935,
+          -34.6111971
+        ]
+      },
+      "properties": {
+        "name": "Ol'days",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6111971,
+        "longitude": -58.3633935,
+        "address": "Olga Cossettini, 1182, Ciudad Autónoma de Buenos Aires",
+        "website": "https://www.facebook.com/oldayscoffee",
+        "cuisine": "organic",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4542725,
+          -34.6820663
+        ]
+      },
+      "properties": {
+        "name": "Resto Golf",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6820663,
+        "longitude": -58.4542725,
+        "address": "Avenida Coronel Roca, 5025, Ciudad Autónoma de Buenos Aires",
+        "phone": "+54 11 4604-1717",
+        "cuisine": "regional;pizza;steak_house;international;burger;coffee_shop;sandwich;chicken;ice_cream;american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.458126,
+          -34.6749517
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6749517,
+        "longitude": -58.458126,
+        "address": "Avenida General Francisco Fernández de La Cruz, 4602, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.458502,
+          -34.6754131
+        ]
+      },
+      "properties": {
+        "name": "Havanna",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6754131,
+        "longitude": -58.458502,
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "phone": "+54 11 4604 0683",
+        "website": "http://www.havanna.com.ar/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4763122,
+          -34.57111
+        ]
+      },
+      "properties": {
+        "name": "Lumiere",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.57111,
+        "longitude": -58.4763122,
+        "address": "Donado, 2287, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Sa 12:00-sunset+",
+        "phone": "+54 11 2072-9294",
+        "wheelchair": "yes",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4739718,
+          -34.5734837
+        ]
+      },
+      "properties": {
+        "name": "MarSushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5734837,
+        "longitude": -58.4739718,
+        "address": "Echeverría, 4257, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Tu-Fr 12:00-15:00,18:00-24:00; Sa,Su 18:00-24:00",
+        "phone": "+54 11 2008-2191",
+        "website": "http://www.marsushi.com.ar/",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4737477,
+          -34.573929
+        ]
+      },
+      "properties": {
+        "name": "Bruxx",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.573929,
+        "longitude": -58.4737477,
+        "address": "Donado, 1971, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-We,Su 18:00-01:00; Th-Sa 18:00-02:00",
+        "phone": "+54 11 3705-7242",
+        "cuisine": "burger;american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4633815,
+          -34.5661281
+        ]
+      },
+      "properties": {
+        "name": "Café Martínez",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5661281,
+        "longitude": -58.4633815,
+        "address": "Juramento, 3102, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Fr 07:45-20:00; Sa,Su 08:30-21:00",
+        "phone": "+54 11 4576-9510",
+        "website": "https://www.cafemartinez.com/",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4594726,
+          -34.5728802
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5728802,
+        "longitude": -58.4594726,
+        "address": "Avenida Elcano, 3179, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 08:00-21:00",
+        "phone": "+54 11 4554-7122",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4403305,
+          -34.6137869
+        ]
+      },
+      "properties": {
+        "name": "El Jardín",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6137869,
+        "longitude": -58.4403305,
+        "address": "Doctor Juan Felipe Aranguren, 614, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "20:00-24:00",
+        "phone": "+54 11 4901-9999;+54 11 4901-7000",
+        "wheelchair": "no",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4448077,
+          -34.608053
+        ]
+      },
+      "properties": {
+        "name": "Antonino",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.608053,
+        "longitude": -58.4448077,
+        "address": "Avenida Díaz Vélez, 5600, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 07:00-23:59",
+        "phone": "+54 11 4958-3908",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4412277,
+          -34.6090525
+        ]
+      },
+      "properties": {
+        "name": "Teglia",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6090525,
+        "longitude": -58.4412277,
+        "address": "Hidalgo, 889, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Th 19:00-00:00; Fr-Su 12:00-16:00, 19:00-00:00",
+        "phone": "+54 11 4982-0398",
+        "website": "http://www.teglia.com.ar",
+        "cuisine": "pizza;empanada;pasta;salad;bread",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4386488,
+          -34.5996401
+        ]
+      },
+      "properties": {
+        "name": "Café Martínez",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5996401,
+        "longitude": -58.4386488,
+        "address": "Avenida Raúl Scalabrini Ortiz, 306, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Sa 08:00-20:30; Su 09:30-20:30",
+        "phone": "+54 11 4854-3341",
+        "website": "https://www.cafemartinez.com/",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4457573,
+          -34.6068937
+        ]
+      },
+      "properties": {
+        "name": "Tienda de Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6068937,
+        "longitude": -58.4457573,
+        "address": "Avenida Doctor Honorio Pueyrredón, 1121, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "+541148546760",
+        "website": "https://www.tiendadecafe.com.ar/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3649101,
+          -34.6213018
+        ]
+      },
+      "properties": {
+        "name": "Gourmet Porteño",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6213018,
+        "longitude": -58.3649101,
+        "website": "http://www.gourmetporteno.com.ar",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3610407,
+          -34.62502
+        ]
+      },
+      "properties": {
+        "name": "Le Pain Quotidien",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.62502,
+        "longitude": -58.3610407,
+        "address": "Avenida Don Pedro de Mendoza, 90, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 06:00-20:00",
+        "phone": "+54 9 11 5167-7700",
+        "website": "https://www.lepainquotidien.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4694819,
+          -34.6359681
+        ]
+      },
+      "properties": {
+        "name": "Sombrero Chino",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6359681,
+        "longitude": -58.4694819,
+        "address": "Avenida Directorio, 3043",
+        "opening_hours": "Mo-Su 11:30-15:30, 19:00-23:30",
+        "phone": "+54 11 4547 1793",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4547483,
+          -34.626064
+        ]
+      },
+      "properties": {
+        "name": "La Juvenil",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.626064,
+        "longitude": -58.4547483,
+        "address": "Avenida Rivadavia, 6262, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Jan-Feb: Tu-Sa 09:00-13:30,16:30-20:30; Mar-Dec: Mo 09:00-13:30,15:30-20:30; Tu-Sa 08:00-13:30,15:30-20:30; Su 08:00-13:30",
+        "phone": "+54 11 4631-1111",
+        "website": "https://www.lajuvenilpastas.com.ar/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4576671,
+          -34.6215787
+        ]
+      },
+      "properties": {
+        "name": "La Casona de Flores",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6215787,
+        "longitude": -58.4576671,
+        "address": "Avenida Avellaneda, 1899, Ciudad Autónoma de Buenos Aires",
+        "phone": "+54 11 4632-1060",
+        "website": "http://bloglacasonadeflores.blogspot.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4552817,
+          -34.631955
+        ]
+      },
+      "properties": {
+        "name": "Café Martínez",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.631955,
+        "longitude": -58.4552817,
+        "address": "Lautaro, 402, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Fr 08:00-20:30; Sa,Su 09:00-20:30",
+        "phone": "+54 11 4632-7727",
+        "website": "https://www.cafemartinez.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.465482,
+          -34.6294324
+        ]
+      },
+      "properties": {
+        "name": "Café Martínez",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6294324,
+        "longitude": -58.465482,
+        "address": "Avenida Rivadavia, 7099",
+        "opening_hours": "07:30-20:30",
+        "website": "https://cafemartinez.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4207825,
+          -34.56973
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.56973,
+        "longitude": -58.4207825,
+        "address": "Avenida Del Libertador, 3883, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa 08:00-21:00; Su 09:00-21:00",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4231364,
+          -34.5748152
+        ]
+      },
+      "properties": {
+        "name": "Tea Connection",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5748152,
+        "longitude": -58.4231364,
+        "address": "Sinclair, 3027, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Th 07:30-00:00; Fr-Sa 09:00-01:00; Su 09:00-24:00",
+        "phone": "+54 11 4776-6410",
+        "website": "https://www.teaconnection.com.ar/",
+        "cuisine": "teahouse",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3652796,
+          -34.6164562
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6164562,
+        "longitude": -58.3652796,
+        "address": "Avenida Alicia Moreau de Justo, 1604, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Sa 09:00-21:00",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4417601,
+          -34.5943794
+        ]
+      },
+      "properties": {
+        "name": "La Crespo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5943794,
+        "longitude": -58.4417601,
+        "address": "Thames, 612, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Tu-Fr 11:30-20:00, Sa-Su 11:30-18:00",
+        "phone": "+54 11 4856-9770",
+        "website": "https://www.lacrespo.com/",
+        "cuisine": "european;israeli;eastern_european",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4453892,
+          -34.5894078
+        ]
+      },
+      "properties": {
+        "name": "Anchoita",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5894078,
+        "longitude": -58.4453892,
+        "address": "Juan Ramírez de Velasco, 1520, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Tu-Sa 20:00-01:00",
+        "phone": "+54 11 4854-9334",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4475844,
+          -34.5919087
+        ]
+      },
+      "properties": {
+        "name": "La Farola de Dorrego",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5919087,
+        "longitude": -58.4475844,
+        "opening_hours": "Mo-Fr 07:00-01:00",
+        "website": "https://lafaroladorrego.com/",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.452616,
+          -34.5864275
+        ]
+      },
+      "properties": {
+        "name": "Café del Ciclista",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5864275,
+        "longitude": -58.452616,
+        "address": "Avenida Forest, 455, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "phone": "+5491164874345",
+        "website": "https://www.instagram.com/cafedelciclista/",
+        "cuisine": "coffee_shop;cake;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4500283,
+          -34.5868893
+        ]
+      },
+      "properties": {
+        "name": "Cuervo Café Chacarita",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5868893,
+        "longitude": -58.4500283,
+        "address": "Av. Jorge Newbery, 3898, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Tu-Su 08:00-20:00",
+        "website": "https://cuervocafe.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4843873,
+          -34.6528893
+        ]
+      },
+      "properties": {
+        "name": "POLLOS CAMPEON",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6528893,
+        "longitude": -58.4843873,
+        "address": "Avenida San Juan Bautista de Lasalle, 1726, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 19:00-23:00",
+        "phone": "+54 11 6367-9514",
+        "cuisine": "international;PERU",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4403874,
+          -34.6267055
+        ]
+      },
+      "properties": {
+        "name": "SushiClub",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6267055,
+        "longitude": -58.4403874,
+        "address": "Avenida Pedro Goyena, 878, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Su-We 12:00-01:00; Th 12:00-01:30; Fr,Sa 12:00-02:00",
+        "website": "https://www.sushiclub.com.ar/",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4415374,
+          -34.6249508
+        ]
+      },
+      "properties": {
+        "name": "Fabric Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6249508,
+        "longitude": -58.4415374,
+        "address": "Valle, 985, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Fr 12:00-24:00, Sa,Su 12:00-00:30",
+        "phone": "+54 11 4040 9603",
+        "website": "https://www.fabricsushi.com.ar/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4434997,
+          -34.6253734
+        ]
+      },
+      "properties": {
+        "name": "Salve Cocina",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6253734,
+        "longitude": -58.4434997,
+        "address": "Emilio Mitre, 301, Ciudad Autónoma de Buenos Aires",
+        "phone": "+54 11 3888 0056",
+        "website": "https://www.salvecocina.com.ar/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.435978,
+          -34.6348303
+        ]
+      },
+      "properties": {
+        "name": "Café Martínez",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6348303,
+        "longitude": -58.435978,
+        "address": "Avenida Asamblea, 824, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 07:30-21:00",
+        "phone": "+54 11 4925-8882",
+        "website": "https://www.cafemartinez.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4461246,
+          -34.626079
+        ]
+      },
+      "properties": {
+        "name": "Café Martínez",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.626079,
+        "longitude": -58.4461246,
+        "address": "Hortiguera, 309, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+54 11 4988-0451",
+        "website": "https://www.cafemartinez.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4357246,
+          -34.5700502
+        ]
+      },
+      "properties": {
+        "name": "Cantegril",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5700502,
+        "longitude": -58.4357246,
+        "address": "Avenida Luis María Campos, 701, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 07:00-24:00",
+        "phone": "+54 11 4771-2201",
+        "wheelchair": "yes",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4309065,
+          -34.5724629
+        ]
+      },
+      "properties": {
+        "name": "SushiClub",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5724629,
+        "longitude": -58.4309065,
+        "address": "Báez, 268, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Su-We 12:00-01:00; Th 12:00-01:30; Fr,Sa 12:00-02:00",
+        "website": "https://www.sushiclub.com.ar/",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4324175,
+          -34.5656003
+        ]
+      },
+      "properties": {
+        "name": "Kansas",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5656003,
+        "longitude": -58.4324175,
+        "address": "Avenida Del Libertador, 4625, Ciudad Autónoma de Buenos Aires",
+        "phone": "+54 11 4776-4100",
+        "website": "http://www.kansasgrill.com",
+        "cuisine": "steak_house;barbecue;argentinian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4366932,
+          -34.5677712
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5677712,
+        "longitude": -58.4366932,
+        "address": "Maure, 1818, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa 08:00-21:00; Su 09:00-21:00",
+        "phone": "+54 11 5788-0585",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4726363,
+          -34.5427415
+        ]
+      },
+      "properties": {
+        "name": "Marcelona Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5427415,
+        "longitude": -58.4726363,
+        "address": "Avenida Cabildo, 4513, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Sa 11:00-15:00,19:00-23:00; Su 07:00-23:00",
+        "phone": "+54 11 4704-9097",
+        "website": "http://www.marcelona.com.ar",
+        "cuisine": "pizza;empanada",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4602233,
+          -34.5480468
+        ]
+      },
+      "properties": {
+        "name": "Amina",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5480468,
+        "longitude": -58.4602233,
+        "address": "Manuela Pedraza, 1741",
+        "opening_hours": "Mo-Fr 20:00-01:00",
+        "website": "https://www.aminabsas.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4700078,
+          -34.5471272
+        ]
+      },
+      "properties": {
+        "name": "La Continental",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5471272,
+        "longitude": -58.4700078,
+        "address": "Avenida Cabildo, 3990",
+        "opening_hours": "07:00-13:00",
+        "website": "https://www.lacontinental.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.46746,
+          -34.5335423
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5335423,
+        "longitude": -58.46746,
+        "address": "Avenida del Libertador, 101, Vicente López",
+        "opening_hours": "Mo-Fr 08:00-21:00; Sa,Su 09:00-21:00",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4636744,
+          -34.5465981
+        ]
+      },
+      "properties": {
+        "name": "BUNA Cafe de Especialidad",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5465981,
+        "longitude": -58.4636744,
+        "address": "Crisólogo Larralde, 1959, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Sa 07:30-20:00",
+        "phone": "+541130771959",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4851869,
+          -34.5533629
+        ]
+      },
+      "properties": {
+        "name": "Rusvel",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5533629,
+        "longitude": -58.4851869,
+        "address": "Paroissien, 4001",
+        "opening_hours": "We-Th 18:00-23:00; Fr-Su 13:00-23:00; Mo-Tu 13:00-17:00",
+        "phone": "+54 11 6552 4894",
+        "cuisine": "hot_dog",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4878114,
+          -34.545856
+        ]
+      },
+      "properties": {
+        "name": "Tucson",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.545856,
+        "longitude": -58.4878114,
+        "website": "https://www.tucsonrestaurante.com.ar",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4885486,
+          -34.5460471
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5460471,
+        "longitude": -58.4885486,
+        "address": "Vedia, 3626, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Th,Su 10:00-24:00; Fr,Sa 10:00-02:00",
+        "phone": "+54 11 5777-9501",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4882128,
+          -34.5456385
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5456385,
+        "longitude": -58.4882128,
+        "address": "Vedia, 3626, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Th,Su 10:00-24:00; Fr,Sa 10:00-02:00",
+        "phone": "+54 11 5777-9501",
+        "website": "https://www.starbucks.com.ar/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4568727,
+          -34.6200086
+        ]
+      },
+      "properties": {
+        "name": "Pekín",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6200086,
+        "longitude": -58.4568727,
+        "address": "Aranguren, 1803, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Sa 11:30-15:30, 19:30-23:30; Su 11:30-15:30",
+        "phone": "+54 11 4633-7290",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.440914,
+          -34.621163
+        ]
+      },
+      "properties": {
+        "name": "Parrilla Caballito",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.621163,
+        "longitude": -58.440914,
+        "address": "Del Barco Centenera, 138, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 12:00-22:00",
+        "phone": "+54 11 4901-1972",
+        "cuisine": "friture;steak_house;argentinian;grill",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4407217,
+          -34.6139497
+        ]
+      },
+      "properties": {
+        "name": "Eddie",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6139497,
+        "longitude": -58.4407217,
+        "address": "Avenida Doctor Honorio Pueyrredón, 499, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Tu-Th 08:00-01:00; Fr-Sa 08:00-03:00; Su 08:00-01:00",
+        "phone": "+54 11 2108-9140",
+        "website": "https://www.eddie.com.ar/",
+        "cuisine": "coffee_shop;burger;pizza;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4946713,
+          -34.5664175
+        ]
+      },
+      "properties": {
+        "name": "Urbano",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5664175,
+        "longitude": -58.4946713,
+        "address": "Avenida Triunvirato, 5700, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-We 11:30-15:30,19:30-23:30; Th 11:30-15:30,19:30-23:45; Fr-Sa 11:30-15:30,19:30-00:30; Su 19:30-23:30",
+        "phone": "+54 11 4543-7596",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.494117,
+          -34.5546919
+        ]
+      },
+      "properties": {
+        "name": "Cima",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5546919,
+        "longitude": -58.494117,
+        "address": "Miller, 4312, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Sa 09:00-20:00; Su 10:00-20:00",
+        "website": "https://www.cimacafeclub.com",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4667349,
+          -34.5386039
+        ]
+      },
+      "properties": {
+        "name": "La Madonnina",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5386039,
+        "longitude": -58.4667349,
+        "address": "11 de Septiembre de 1888, 4540",
+        "phone": "+54 11 4703-3490",
+        "website": "https://lamadonninaresto.com.ar",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4677085,
+          -34.5329507
+        ]
+      },
+      "properties": {
+        "name": "Kansas",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5329507,
+        "longitude": -58.4677085,
+        "address": "Avenida del Libertador, 105, Vicente López",
+        "website": "http://kansasgrill.com/",
+        "cuisine": "american;grill",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4736273,
+          -34.5504584
+        ]
+      },
+      "properties": {
+        "name": "La Buena Cocina",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5504584,
+        "longitude": -58.4736273,
+        "address": "Crámer, 3702",
+        "opening_hours": "08:00-23:00",
+        "website": "https://www.labuenacocina.net",
+        "wheelchair": "limited",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4732449,
+          -34.5495856
+        ]
+      },
+      "properties": {
+        "name": "Jornal",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5495856,
+        "longitude": -58.4732449,
+        "address": "Avenida García del Río, 2802, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "08:00-21:00",
+        "website": "https://www.jornal.com.ar",
+        "wheelchair": "yes",
+        "cuisine": "pizza;coffee_shop;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4718292,
+          -34.6681871
+        ]
+      },
+      "properties": {
+        "name": "Il Ritorno",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6681871,
+        "longitude": -58.4718292,
+        "address": "Zelarrayán, 4898, Ciudad Autónoma de Buenos Aires",
+        "phone": "+54 11 4602-6107",
+        "wheelchair": "no",
+        "cuisine": "pizza;regional;empanada;tapas;chicken",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4705931,
+          -34.6655257
+        ]
+      },
+      "properties": {
+        "name": "Los Hermanos",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6655257,
+        "longitude": -58.4705931,
+        "address": "Guardia Nacional, 3111, Ciudad Autónoma de Buenos Aires",
+        "phone": "+54 11 4602-9663",
+        "cuisine": "regional;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4710955,
+          -34.6674879
+        ]
+      },
+      "properties": {
+        "name": "Los Amigos",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6674879,
+        "longitude": -58.4710955,
+        "address": "Araujo, 3304, Ciudad Autónoma de Buenos Aires",
+        "phone": "+54 11 4638-1696",
+        "cuisine": "regional;pizza;burger;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4413846,
+          -34.5819771
+        ]
+      },
+      "properties": {
+        "name": "Casa Munay",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5819771,
+        "longitude": -58.4413846,
+        "address": "Gorriti, 5996, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "We-Mo 09:00-23:00",
+        "phone": "+54 9 11 5243-9235",
+        "website": "https://casamunay.com",
+        "cuisine": "breakfast;coffee_shop;diner;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4377394,
+          -34.5817206
+        ]
+      },
+      "properties": {
+        "name": "Grappa Cantina",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5817206,
+        "longitude": -58.4377394,
+        "address": "El Salvador, 5802, Ciudad Aurónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 19:30-00:30",
+        "phone": "+5491122994936",
+        "website": "https://www.instagram.com/grappacantina/",
+        "cuisine": "pizza;coffee_shop;italian;pasta",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4375975,
+          -34.58058
+        ]
+      },
+      "properties": {
+        "name": "Siamo Nel Forno",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.58058,
+        "longitude": -58.4375975,
+        "address": "Costa Rica, 5886, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Tu-Th 20:00-00:00; Fr-Sa 20:00-01:00; Su 19:00-22:00",
+        "phone": "+54 11 2326-4829",
+        "website": "https://www.facebook.com/Siamo-Nel-Forno-108065175897230/",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4405237,
+          -34.5793046
+        ]
+      },
+      "properties": {
+        "name": "Nucha",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5793046,
+        "longitude": -58.4405237,
+        "address": "Dorrego, 1989, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 08:00-20:30",
+        "phone": "+54 11 5263-8187",
+        "website": "https://www.nucha.com.ar/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4160805,
+          -34.651023
+        ]
+      },
+      "properties": {
+        "name": "Speed",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.651023,
+        "longitude": -58.4160805,
+        "address": "Avenida Sáenz, Ciudad Autónoma de Buenos Aires",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4037535,
+          -34.6493627
+        ]
+      },
+      "properties": {
+        "name": "El Bestia",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6493627,
+        "longitude": -58.4037535,
+        "address": "Iguazú, Ciudad Autónoma de Buenos Aires",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4161136,
+          -34.6524195
+        ]
+      },
+      "properties": {
+        "name": "La Continental",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6524195,
+        "longitude": -58.4161136,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4323995,
+          -34.5443427
+        ]
+      },
+      "properties": {
+        "name": "Ribs Al Río — Patio Costanera Norte",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5443427,
+        "longitude": -58.4323995,
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4312739,
+          -34.5460647
+        ]
+      },
+      "properties": {
+        "name": "Fabric Dragón Blanco",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5460647,
+        "longitude": -58.4312739,
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4351049,
+          -34.5425766
+        ]
+      },
+      "properties": {
+        "name": "Espacio García",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5425766,
+        "longitude": -58.4351049,
+        "address": "Avenida Costanera Rafael Obligado, 6745",
+        "opening_hours": "Tu-Su 09:00-20:30",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4334479,
+          -34.5437094
+        ]
+      },
+      "properties": {
+        "name": "Costa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5437094,
+        "longitude": -58.4334479,
+        "address": "Avenida Costanera Rafael Obligado, 7070",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4368379,
+          -34.5531976
+        ]
+      },
+      "properties": {
+        "name": "Sucre Restorán",
+        "name_en": "Sucre Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5531976,
+        "longitude": -58.4368379,
+        "address": "Mariscal Antonio José de Sucre, 676, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Su 12:00-16:00",
+        "cuisine": "argentinian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4418005,
+          -34.6659237
+        ]
+      },
+      "properties": {
+        "name": "Distinto's Beer & Burger",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6659237,
+        "longitude": -58.4418005,
+        "address": "Avenida Mariano Acosta, 3620, Ciudad Autónoma de Buenos Aires",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4399789,
+          -34.6656416
+        ]
+      },
+      "properties": {
+        "name": "La Parrillita de Roca",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6656416,
+        "longitude": -58.4399789,
+        "address": "Avenida Intendente Francisco Rabanal, Ciudad Autónoma de Buenos Aires",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4443395,
+          -34.6639044
+        ]
+      },
+      "properties": {
+        "name": "Pizzería \"La Gran Vía\"",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6639044,
+        "longitude": -58.4443395,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4660537,
+          -34.6451849
+        ]
+      },
+      "properties": {
+        "name": "Alessandro",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6451849,
+        "longitude": -58.4660537,
+        "address": "Pergamino, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Sa 09:00-24:00; Su 12:00-24:00",
+        "cuisine": "coffee_shop;ice_cream",
+        "popularity": 0
+      }
     }
   ]
 }

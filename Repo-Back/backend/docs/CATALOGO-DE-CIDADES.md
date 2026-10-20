@@ -79,6 +79,11 @@ Sem baixar do OSM de novo:
 Wikidata, a popularidade e os perfis; `--perfis <slug>` refaz só os perfis;
 `--recintos <slug>` refaz só os recintos (uma consulta pequena ao Overpass).
 `--nomes <slug>` refaz só os nomes traduzidos.
+`--comida <slug>` completa a comida perto das atrações: o app sugere café e
+restaurante a até 1,2 km (depois 2,5 km) de cada parada, e o catálogo só trazia
+comida do centro — a Torre de Belém e as pirâmides ficavam sem sugestão de refeição.
+Cada uma das 150 atrações mais populares sem restaurante ou café por perto ganha
+até 3 restaurantes e 2 cafés do OSM em volta dela.
 
 ## Nomes no idioma do usuário
 

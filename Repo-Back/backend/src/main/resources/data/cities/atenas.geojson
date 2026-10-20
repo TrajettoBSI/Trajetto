@@ -16636,6 +16636,1294 @@
         "wheelchair": "no",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7042449,
+          38.0005351
+        ]
+      },
+      "properties": {
+        "name": "Mikel",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0005351,
+        "longitude": 23.7042449,
+        "opening_hours": "Mo-Su 06:00-21:00",
+        "website": "https://mikelcoffee.com",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7114917,
+          37.9962489
+        ]
+      },
+      "properties": {
+        "name": "Coffee Island",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9962489,
+        "longitude": 23.7114917,
+        "address": "Λένορμαν, 165, Αθήνα",
+        "phone": "+30 21 0514 4900",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.637289,
+          38.012026
+        ]
+      },
+      "properties": {
+        "name": "Giorti",
+        "name_en": "Γιορτή",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.012026,
+        "longitude": 23.637289,
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6473811,
+          38.0158455
+        ]
+      },
+      "properties": {
+        "name": "Cactus Coffee & Bar",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0158455,
+        "longitude": 23.6473811,
+        "address": "Ναπολέοντος Σουκαντζίδη, 27B",
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa-Su 07:00-22:00",
+        "phone": "+30 21 1267 4047",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7922565,
+          38.0341281
+        ]
+      },
+      "properties": {
+        "name": "Wagamama",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0341281,
+        "longitude": 23.7922565,
+        "opening_hours": "Mo-Fr 12:30-22:30; Sa 12:00-22:30; Su 12:30-18:00",
+        "phone": "+302106836842",
+        "website": "https://wagamama.com.gr/",
+        "cuisine": "asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.774713,
+          38.0416994
+        ]
+      },
+      "properties": {
+        "name": "Natuar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0416994,
+        "longitude": 23.774713,
+        "address": "Μαρίνου Αντύπα, 90, Νέο Ηράκλειο",
+        "opening_hours": "Mo-Fr 07:30-20:00; Sa-Su 10:00-19:00",
+        "cuisine": "brunch;juice",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7737953,
+          38.0370795
+        ]
+      },
+      "properties": {
+        "name": "la place",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0370795,
+        "longitude": 23.7737953,
+        "address": "Κύμης, 32, Καλογρέζα",
+        "opening_hours": "24/7",
+        "cuisine": "coffee_shop;crepe",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7894834,
+          38.0446559
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0446559,
+        "longitude": 23.7894834,
+        "opening_hours": "Mo-Fr 10:00-21:00; Sa 10:00-20:00; Su off",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7975215,
+          38.0351606
+        ]
+      },
+      "properties": {
+        "name": "Lune",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0351606,
+        "longitude": 23.7975215,
+        "address": "Κηφισίας, 10-12",
+        "opening_hours": "Mo-Fr 07:00-18:00",
+        "phone": "+30 21 0681 2011",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6500423,
+          37.9393932
+        ]
+      },
+      "properties": {
+        "name": "Belle Amie",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9393932,
+        "longitude": 23.6500423,
+        "address": "Αγγέλου Μεταξά, 11, Πειραιάς",
+        "opening_hours": "Mo-Su 09:00-02:00",
+        "phone": "+302104175740",
+        "website": "https://www.belleamie.gr/",
+        "wheelchair": "no",
+        "cuisine": "greek",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6613708,
+          37.9443529
+        ]
+      },
+      "properties": {
+        "name": "Ο Οντάς",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9443529,
+        "longitude": 23.6613708,
+        "address": "Δημοσθένους Ομηρίδου Σκυλίτση, 76, Πειραιάς",
+        "opening_hours": "Tu-Su 13:00-00:30",
+        "phone": "+302104220459",
+        "wheelchair": "no",
+        "cuisine": "kebab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6517641,
+          37.9404837
+        ]
+      },
+      "properties": {
+        "name": "Biga Pizzeria (takeaway only)",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9404837,
+        "longitude": 23.6517641,
+        "address": "Βασιλέως Γεωργίου Β', 19",
+        "opening_hours": "Tu-Su 16:00-00:00",
+        "phone": "+30 21 0422 2545",
+        "cuisine": "italian;pasta;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6491925,
+          37.9398229
+        ]
+      },
+      "properties": {
+        "name": "Gazi College",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9398229,
+        "longitude": 23.6491925,
+        "address": "Γρηγορίου Λαμπράκη, 117, Πειραιάς",
+        "opening_hours": "Su-Fr 08:00-00:00; Sa 08:00-01:00",
+        "phone": "+30 21 0410 0612",
+        "website": "https://gazicollege.gr",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6482886,
+          37.9431077
+        ]
+      },
+      "properties": {
+        "name": "Coffee Island",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9431077,
+        "longitude": 23.6482886,
+        "address": "Agiou Konstantinou, 15",
+        "opening_hours": "Mo-Sa 05:30-21:00; Su 07:00-21:00",
+        "phone": "+30 21 6002 8527",
+        "website": "https://coffeeisland.gr",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7107053,
+          37.9909971
+        ]
+      },
+      "properties": {
+        "name": "Pizza Academy",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9909971,
+        "longitude": 23.7107053,
+        "address": "Πλάτωνος, 95",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7114227,
+          37.9833858
+        ]
+      },
+      "properties": {
+        "name": "Εις το παυσίλυπον",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9833858,
+        "longitude": 23.7114227,
+        "address": "Κορυτσάς, 19",
+        "phone": "+30 21 14094469",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7082273,
+          37.9801281
+        ]
+      },
+      "properties": {
+        "name": "Pizza Fan",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9801281,
+        "longitude": 23.7082273,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6897753,
+          37.9282798
+        ]
+      },
+      "properties": {
+        "name": "The Sushi Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9282798,
+        "longitude": 23.6897753,
+        "address": "Άτλαντος, 1, Παλαιό Φάληρο",
+        "opening_hours": "Mo-Fr 18:30-00:30, Sa-Su 12:30-00:30",
+        "phone": "+302109802111",
+        "website": "https://www.thesushibar.gr/",
+        "wheelchair": "no",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6934215,
+          37.9284302
+        ]
+      },
+      "properties": {
+        "name": "To Faliraki",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9284302,
+        "longitude": 23.6934215,
+        "address": "Αφροδίτης, 43",
+        "opening_hours": "12:00-24:00",
+        "phone": "+30 21 0988 5149; +30 21 0981 5034",
+        "wheelchair": "limited",
+        "cuisine": "greek",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6849253,
+          37.9435181
+        ]
+      },
+      "properties": {
+        "name": "Raki Meze",
+        "name_en": "Ρακί Μεζέ",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9435181,
+        "longitude": 23.6849253,
+        "address": "Ελευθερίου Βενιζέλου, 334, Καλλιθέα",
+        "opening_hours": "Mo-Su 13:00-01:00",
+        "phone": "+302109429027",
+        "website": "http://rakimeze.gr/",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6931796,
+          37.9427653
+        ]
+      },
+      "properties": {
+        "name": "Park Kiosk",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9427653,
+        "longitude": 23.6931796,
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6861046,
+          37.9442718
+        ]
+      },
+      "properties": {
+        "name": "Coffee Berry",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9442718,
+        "longitude": 23.6861046,
+        "address": "Ελευθερίου Βενιζέλου, 367, Καλλιθέα",
+        "phone": "+30 210 9480488",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6426905,
+          37.9398252
+        ]
+      },
+      "properties": {
+        "name": "Kebab & Curry",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9398252,
+        "longitude": 23.6426905,
+        "address": "Σκουζέ, 14, Πειραιάς",
+        "opening_hours": "12:00-23:30",
+        "phone": "+302104285937",
+        "website": "https://kebabandcurry.gr/",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6414309,
+          37.9350298
+        ]
+      },
+      "properties": {
+        "name": "Μπαρμπαδήμος",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9350298,
+        "longitude": 23.6414309,
+        "address": "Γεωργίου Θεοτόκη, 2",
+        "opening_hours": "Tu-Su 12:30-02:00",
+        "phone": "+30 21 04528500",
+        "cuisine": "kebab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6421879,
+          37.9412666
+        ]
+      },
+      "properties": {
+        "name": "Coffee Berry",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9412666,
+        "longitude": 23.6421879,
+        "address": "Ακτή Μιαούλη, 31, Πειραιάς",
+        "opening_hours": "Mo-Fr 06:00-18:00; Sa 06:00-14:00; Su off",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6475107,
+          37.940924
+        ]
+      },
+      "properties": {
+        "name": "Healthy harmony",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 37.940924,
+        "longitude": 23.6475107,
+        "address": "Πραξιτέλους, 156-158, Πειραιάς",
+        "opening_hours": "Mo-Fr 08:30-17:30",
+        "phone": "+302104100201",
+        "website": "https://healthyharmony.gr",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6403793,
+          37.9383738
+        ]
+      },
+      "properties": {
+        "name": "Sushi Rolls",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9383738,
+        "longitude": 23.6403793,
+        "address": "Αγίου Νικολάου, 3, Πειραιάς",
+        "opening_hours": "Mo-Th 12:30-23:15; Fr 12:30-23:45; Sa 14:00-23:45; Su off",
+        "phone": "+302104284439",
+        "website": "https://sushirolls.gr",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6449356,
+          37.9477822
+        ]
+      },
+      "properties": {
+        "name": "Τεχνών Γεύσεις",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9477822,
+        "longitude": 23.6449356,
+        "address": "Κέκροπος, 1, Πειραιάς",
+        "opening_hours": "Mo-Fr",
+        "phone": "+30 2102461267",
+        "cuisine": "greek",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.640007,
+          37.9548527
+        ]
+      },
+      "properties": {
+        "name": "Pizza Fan",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9548527,
+        "longitude": 23.640007,
+        "address": "Αιτωλικού, 72, Πειραιάς",
+        "opening_hours": "Mo-Su 12:00-00:30",
+        "phone": "+302104630182",
+        "website": "https://www.pizzafan.gr/",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6501296,
+          37.9398008
+        ]
+      },
+      "properties": {
+        "name": "Ελλαδικόν",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9398008,
+        "longitude": 23.6501296,
+        "address": "Σωτήρος Διός, 52",
+        "opening_hours": "Mo-Su 11:30-01:00",
+        "phone": "+30 21 0417 7012",
+        "cuisine": "greek",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7752901,
+          37.9932954
+        ]
+      },
+      "properties": {
+        "name": "P3 Katechaki",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9932954,
+        "longitude": 23.7752901,
+        "address": "Katechaki, 1",
+        "opening_hours": "Mo-Su 17:00-00:45",
+        "phone": "+302106910079",
+        "website": "https://p3pizza.gr/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7652561,
+          37.9893614
+        ]
+      },
+      "properties": {
+        "name": "Το Σπιτικό Φαγητό",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9893614,
+        "longitude": 23.7652561,
+        "opening_hours": "Mo-Sa 11:00 - 18:00",
+        "cuisine": "greek;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7679442,
+          37.9884859
+        ]
+      },
+      "properties": {
+        "name": "Πιπεράκιας",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9884859,
+        "longitude": 23.7679442,
+        "opening_hours": "Mo-Fr 10:00-01:00, Sa,Su 17:00-00:30",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7754196,
+          37.9932236
+        ]
+      },
+      "properties": {
+        "name": "Mikel",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9932236,
+        "longitude": 23.7754196,
+        "address": "Κατεχάκη, 1, Αθήνα",
+        "opening_hours": "05:00-23:00",
+        "phone": "+30 21 0691 5990",
+        "website": "http://www.mikelcc.gr/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7735006,
+          37.9946931
+        ]
+      },
+      "properties": {
+        "name": "iL Festino",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9946931,
+        "longitude": 23.7735006,
+        "address": "Κατεχάκη, 37Α, Αθήνα",
+        "opening_hours": "06:00 - 20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7722429,
+          37.9464482
+        ]
+      },
+      "properties": {
+        "name": "Τα Κατσικάκια",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9464482,
+        "longitude": 23.7722429,
+        "cuisine": "greek",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.760471,
+          38.0327865
+        ]
+      },
+      "properties": {
+        "name": "ΓΕΥΣΗ & ΟΥΣΙΑ",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0327865,
+        "longitude": 23.760471,
+        "address": "Πλατεία Αγ. Ευσταθίου, 2, Νέα Ιωνία",
+        "opening_hours": "Mo-Su 12:00-02:00",
+        "phone": "+30 21027945000",
+        "cuisine": "greek;souvlaki",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7682192,
+          38.0367194
+        ]
+      },
+      "properties": {
+        "name": "Η Γειτονιά",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0367194,
+        "longitude": 23.7682192,
+        "address": "Ακρίτων, 27",
+        "opening_hours": "12:00 - 01:00",
+        "wheelchair": "yes",
+        "cuisine": "greek",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7594792,
+          38.0310286
+        ]
+      },
+      "properties": {
+        "name": "Καραβίδας",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0310286,
+        "longitude": 23.7594792,
+        "address": "Δεμιρδεσίου, 89, Νέα Ιωνία",
+        "opening_hours": "Mo-Fr 14:30-01:00; Sa 12:00-01:00; Su 12:00-18:30",
+        "phone": "+302102714585",
+        "website": "https://karavidas.gr/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7672645,
+          38.0297279
+        ]
+      },
+      "properties": {
+        "name": "Green Park",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0297279,
+        "longitude": 23.7672645,
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7573477,
+          38.0214984
+        ]
+      },
+      "properties": {
+        "name": "Divadi",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0214984,
+        "longitude": 23.7573477,
+        "opening_hours": "Mo off",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7992321,
+          38.0175926
+        ]
+      },
+      "properties": {
+        "name": "Ο Ελληνάρας",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0175926,
+        "longitude": 23.7992321,
+        "address": "Κωνσταντίνου Παλαιολόγου, 63",
+        "opening_hours": "Mo-Sa 12:30-00:30",
+        "phone": "+302106811211",
+        "website": "https://oellinaras.gr/",
+        "cuisine": "greek",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7987093,
+          38.021764
+        ]
+      },
+      "properties": {
+        "name": "Piatsa Kalamaki",
+        "name_en": "Πιάτσα Καλαμάκι",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.021764,
+        "longitude": 23.7987093,
+        "address": "Πλ. Ελευθερωτών, 7, Χαλάνδρι",
+        "opening_hours": "Su-Th 12:00-02:00; Fr-Sa 12:00-03:00",
+        "phone": "+30 2106801555",
+        "website": "https://piatsakalamaki.gr",
+        "cuisine": "burger;greek;grill;kebab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7973238,
+          38.0221257
+        ]
+      },
+      "properties": {
+        "name": "Το Σουβλάκι του Χαλανδρίου Express",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0221257,
+        "longitude": 23.7973238,
+        "address": "Κολοκοτρώνη, 26",
+        "opening_hours": "Su-We 12:00-01:00; Th 12:00-02:00; Fr-Sa 12:00-03:00",
+        "website": "https://souvlakichalandriou.gr",
+        "wheelchair": "limited",
+        "cuisine": "souvlaki",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7972564,
+          38.0219885
+        ]
+      },
+      "properties": {
+        "name": "Mikel",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0219885,
+        "longitude": 23.7972564,
+        "address": "Βασιλέως Γεωργίου Β', 2, Χαλάνδρι",
+        "opening_hours": "Mo-Sa 06:00-23:00; Su 07:00-23:00",
+        "phone": "+30 21 0683 5956",
+        "website": "http://mikelcc.gr",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8027405,
+          38.0209826
+        ]
+      },
+      "properties": {
+        "name": "Το Βαζάκι juice bar",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0209826,
+        "longitude": 23.8027405,
+        "opening_hours": "Mo-Fr 08:30-18:00; Sa 10:00-18:00; Su 10:00-17:00",
+        "phone": "+302106800067",
+        "website": "https://tobazaki.com/",
+        "wheelchair": "limited",
+        "cuisine": "juice;sandwich;pastry;soup;salad",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7313527,
+          38.0605481
+        ]
+      },
+      "properties": {
+        "name": "El Mejor",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0605481,
+        "longitude": 23.7313527,
+        "address": "Δημοκρατίας, 230, Αχαρναί",
+        "phone": "+302102314048",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7761607,
+          38.0047002
+        ]
+      },
+      "properties": {
+        "name": "ETIEN PIZZA BAR",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0047002,
+        "longitude": 23.7761607,
+        "address": "Σολωμού, 1, Νέο Ψυχικό",
+        "opening_hours": "Mo-Su 12:00-24:00",
+        "phone": "+302106777738",
+        "website": "WWWW.ETIENPIZZABAR.COM",
+        "cuisine": "pizza;italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7765832,
+          38.004383
+        ]
+      },
+      "properties": {
+        "name": "The Burger Joint",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.004383,
+        "longitude": 23.7765832,
+        "address": "Σολωμού, 4, Νέο Ψυχικό",
+        "opening_hours": "12:00-01:00",
+        "phone": "+302106712522",
+        "website": "https://theburgerjoint.gr",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7662708,
+          38.0057101
+        ]
+      },
+      "properties": {
+        "name": "La Piazzetta",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0057101,
+        "longitude": 23.7662708,
+        "address": "28ης Οκτωβρίου, 4, Ψυχικό",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7759117,
+          38.0048742
+        ]
+      },
+      "properties": {
+        "name": "Papillon Bistrot Athens",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 38.0048742,
+        "longitude": 23.7759117,
+        "address": "Ολυμπιονικών, 242, Νέο Ψυχικό",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "phone": "+302106744441",
+        "website": "WWW.PAPILLONBISTROT.COM",
+        "wheelchair": "yes",
+        "cuisine": "italian;french;american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7717659,
+          37.9998842
+        ]
+      },
+      "properties": {
+        "name": "Worship coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 37.9998842,
+        "longitude": 23.7717659,
+        "address": "Βεάκη, 1",
+        "opening_hours": "06:00-20:00",
+        "phone": "+30 21 2121 2180",
+        "website": "https://worshipcoffee.gr/",
+        "popularity": 0
+      }
     }
   ]
 }

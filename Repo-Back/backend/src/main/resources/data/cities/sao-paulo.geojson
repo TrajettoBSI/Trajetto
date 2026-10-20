@@ -18128,6 +18128,1936 @@
         "website": "https://baciodilatte.com.br/",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6612913,
+          -23.5445841
+        ]
+      },
+      "properties": {
+        "name": "nou",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5445841,
+        "longitude": -46.6612913,
+        "address": "Rua Armando Alvares Penteado, 12, São Paulo",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+55 11 3562-8003",
+        "website": "https://nou.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6716229,
+          -23.5422847
+        ]
+      },
+      "properties": {
+        "name": "Hobby Hamburger",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5422847,
+        "longitude": -46.6716229,
+        "address": "Rua Cardoso de Almeida, 1393, São Paulo",
+        "phone": "+55 11 3862-2772;+55 11 3673-0360",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.660871,
+          -23.5360168
+        ]
+      },
+      "properties": {
+        "name": "La Braciera Pizza Napoletana - Higienópolis",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5360168,
+        "longitude": -46.660871,
+        "address": "Rua Conselheiro Brotero, 1120;1114, São Paulo",
+        "phone": "+55 11 3662 6121",
+        "website": "https://labraciera.com.br/",
+        "cuisine": "pizza;italian;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6946546,
+          -23.6093664
+        ]
+      },
+      "properties": {
+        "name": "Barakah Cozinha Árabe",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6093664,
+        "longitude": -46.6946546,
+        "address": "Av. Engenheiro Luís Carlos Berrini, 1458, São Paulo",
+        "phone": "+55 11 94134-7452",
+        "cuisine": "middle_eastern;arab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7040457,
+          -23.6156629
+        ]
+      },
+      "properties": {
+        "name": "Chef Benon",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6156629,
+        "longitude": -46.7040457,
+        "address": "Rua Luiz Gonzaga de Azevedo Neto, 201, São Paulo",
+        "phone": "+55 11 3758 3565",
+        "website": "https://chefbenon.com.br/",
+        "cuisine": "arab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7063616,
+          -23.611611
+        ]
+      },
+      "properties": {
+        "name": "A Pizzaria Gourmet",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.611611,
+        "longitude": -46.7063616,
+        "address": "Rua Americo Alves Pereira Filho, 461, São Paulo",
+        "phone": "+55 11 3758-4153",
+        "website": "https://www.apizzaria.com.br/",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6945316,
+          -23.608718
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.608718,
+        "longitude": -46.6945316,
+        "address": "Avenida Engenheiro Luís Carlos Berrini, 1376, São Paulo",
+        "opening_hours": "Mo-Fr 07:00-21:00",
+        "phone": "0800 777 8252",
+        "website": "https://www.starbucks.com.br/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6939278,
+          -23.6114126
+        ]
+      },
+      "properties": {
+        "name": "Sterna Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6114126,
+        "longitude": -46.6939278,
+        "address": "Rua Samuel Morse, 74",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "phone": "+55 11 5102-3552",
+        "website": "http://sternacafe.com.br",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6452266,
+          -23.5880026
+        ]
+      },
+      "properties": {
+        "name": "Luz da Villa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5880026,
+        "longitude": -46.6452266,
+        "address": "Rua Áurea, 422",
+        "website": "http://luzdavilla.com.br",
+        "cuisine": "cake;coffee_shop;pasta;brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6709958,
+          -23.6379386
+        ]
+      },
+      "properties": {
+        "name": "Shinsei",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6379386,
+        "longitude": -46.6709958,
+        "phone": "+55 11 5031 7066",
+        "wheelchair": "no",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6690404,
+          -23.6486795
+        ]
+      },
+      "properties": {
+        "name": "Vittelis | Restaurante Contemporâneo",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6486795,
+        "longitude": -46.6690404,
+        "address": "Av. Mascote, 717, São Paulo",
+        "website": "https://www.instagram.com/vittelisrestaurante/",
+        "cuisine": "regional;italian;french;arab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6591728,
+          -23.5721398
+        ]
+      },
+      "properties": {
+        "name": "Good Market",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5721398,
+        "longitude": -46.6591728,
+        "address": "Rua Guarará, 385, São Paulo",
+        "website": "http://agoodmarket.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7329393,
+          -23.5565773
+        ]
+      },
+      "properties": {
+        "name": "Lanchonete do Biênio",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5565773,
+        "longitude": -46.7329393,
+        "phone": "+55 11 3091-5696",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6409223,
+          -23.636863
+        ]
+      },
+      "properties": {
+        "name": "Fiorino - Buffet com Grill e Rodízio Pizza Jantar",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.636863,
+        "longitude": -46.6409223,
+        "address": "Avenida Engenheiro Armando de Arruda Pereira, 1071, São Paulo",
+        "opening_hours": "Mo 10:00-15:00; Tu-Th 10:00-22:00; Fr-Sa 10:00-23:00; Su 10:00-16:00",
+        "phone": "+55 11 5011 9947",
+        "website": "https://www.fiorinogrill.com.br/",
+        "wheelchair": "yes",
+        "cuisine": "pizza;steak_house;grill;pasta;chicken;salad;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.643587,
+          -23.6385141
+        ]
+      },
+      "properties": {
+        "name": "Gaspare Confeitaria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6385141,
+        "longitude": -46.643587,
+        "address": "Rua dos Curupiás, 230, São Paulo",
+        "phone": "+55 11 96863 7240",
+        "website": "https://www.ifood.com.br/delivery/sao-paulo-sp/gaspare-confeitaria-jabaquara/dafb3c6d-28b1-4f91-bcdb-c6ecb66f8902?utm_medium=ReserveGoogle",
+        "cuisine": "dessert;chocolate;cake",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7107867,
+          -23.6026944
+        ]
+      },
+      "properties": {
+        "name": "Salão de Chá",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6026944,
+        "longitude": -46.7107867,
+        "website": "https://www.fundacaooscaramericano.org.br/",
+        "fee": "no",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7196913,
+          -23.5867483
+        ]
+      },
+      "properties": {
+        "name": "Nakato Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5867483,
+        "longitude": -46.7196913,
+        "address": "Rua Doutor Clóvis de Oliveira, 193",
+        "opening_hours": "Mo-Th 12:00-15:00,19:00-23:00; Fr 12:00-15:00,19:00-00:00; Sa 12:00-16:00,19:00-00:00; Su 12:00-16:00,19:00-23:00",
+        "phone": "+55 11 2615-6999",
+        "website": "https://www.nakato.com.br",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7198914,
+          -23.5891332
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria 5 Pizzas",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5891332,
+        "longitude": -46.7198914,
+        "address": "Rua Dom Armando Lombardi, 432",
+        "opening_hours": "Mo-Su 18:00-23:00",
+        "phone": "+55 11 3721-9147",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7169941,
+          -23.5893172
+        ]
+      },
+      "properties": {
+        "name": "Dona Manjerico",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5893172,
+        "longitude": -46.7169941,
+        "address": "Rua José Jannarelli, 547",
+        "opening_hours": "Mo-Fr 10:00-17:00; Sa 10:00-15:00; Su off",
+        "phone": "+55 11 991826172",
+        "website": "https://www.donamanjerico.com.br/",
+        "cuisine": "pie",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7137196,
+          -23.6128742
+        ]
+      },
+      "properties": {
+        "name": "Fazenda Churrascada",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6128742,
+        "longitude": -46.7137196,
+        "address": "Avenida Morumbi, 5594",
+        "opening_hours": "Mo-Tu 12:00-22:00; We-Fr 12:00-23:00; Sa 11:00-23:00; Su 11:00-21:00",
+        "phone": "+55 11 2649-4388",
+        "website": "https://www.fazendachurrascada.com.br/",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6446511,
+          -23.5232664
+        ]
+      },
+      "properties": {
+        "name": "Meninos da Vila de Ibepetum",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5232664,
+        "longitude": -46.6446511,
+        "address": "Rua dos Italianos, 777, São Paulo",
+        "phone": "+55 11 3337-1866",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6204173,
+          -23.4993778
+        ]
+      },
+      "properties": {
+        "name": "La Braciera Pizza Napoletana - Santana",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.4993778,
+        "longitude": -46.6204173,
+        "address": "Rua Conselheiro Saraiva, 664, São Paulo",
+        "phone": "+55 11 2976 3006",
+        "website": "https://labraciera.com.br/",
+        "cuisine": "pizza;italian;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6295526,
+          -23.5023907
+        ]
+      },
+      "properties": {
+        "name": "Vit's Restaurante e Pizzaria",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5023907,
+        "longitude": -46.6295526,
+        "address": "Rua Doutor César, 327, São Paulo",
+        "phone": "+55 11 2972 3613",
+        "website": "https://vitsrestaurante.ccmpedidoonline.com.br/",
+        "cuisine": "pizza;brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.62416,
+          -23.4999844
+        ]
+      },
+      "properties": {
+        "name": "Villa do kilo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.4999844,
+        "longitude": -46.62416,
+        "address": "Rua Doutor Olavo Egídio, 160, São Paulo",
+        "phone": "+55 11 2373-5795",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6171467,
+          -23.549176
+        ]
+      },
+      "properties": {
+        "name": "Shawarma Class One",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.549176,
+        "longitude": -46.6171467,
+        "address": "Rua Coronel Mursa, 92",
+        "opening_hours": "Tu-Su 11:00-23:00",
+        "phone": "+55 11 95583 2271",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6322173,
+          -23.5487487
+        ]
+      },
+      "properties": {
+        "name": "Piero Pasta e Café",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5487487,
+        "longitude": -46.6322173,
+        "address": "Rua Roberto Simonsen, 122, São Paulo",
+        "website": "http://pieropastaecafe.com.br",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7206529,
+          -23.5729695
+        ]
+      },
+      "properties": {
+        "name": "Jararacas",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5729695,
+        "longitude": -46.7206529,
+        "address": "Rua Santanésia, 216, São Paulo",
+        "opening_hours": "Mo-Th 11:00-18:00; Fr-Sa 11:00-23:45",
+        "phone": "+55 11 23590742",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7147403,
+          -23.569659
+        ]
+      },
+      "properties": {
+        "name": "Clube do Churrasco",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.569659,
+        "longitude": -46.7147403,
+        "address": "Avenida Vital Brasil, 1111, São Paulo",
+        "phone": "+55 11 3726-6239",
+        "wheelchair": "limited",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7068593,
+          -23.5756341
+        ]
+      },
+      "properties": {
+        "name": "Tordilho Churrascaria",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5756341,
+        "longitude": -46.7068593,
+        "address": "Avenida Professor Francisco Morato, 437, São Paulo",
+        "phone": "+55 11 3721 3757",
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.700724,
+          -23.5674734
+        ]
+      },
+      "properties": {
+        "name": "Cubo Smoked BBQ",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5674734,
+        "longitude": -46.700724,
+        "address": "Rua Capri, 58, São Paulo",
+        "opening_hours": "Mo-Sa 12:00-22:00",
+        "phone": "+55 11 3032-5664",
+        "website": "https://www.cubobbq.com.br/",
+        "wheelchair": "yes",
+        "cuisine": "burger;american;brazilian;bbq;tex-mex",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6978861,
+          -23.5613621
+        ]
+      },
+      "properties": {
+        "name": "NOU",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5613621,
+        "longitude": -46.6978861,
+        "address": "Rua Ferreira de Araújo, 419, São Paulo",
+        "opening_hours": "Mo-Fr 12:00-15:00,19:30-24:00; Sa-Su 12:00-24:00",
+        "phone": "+55 11 2609-6939",
+        "website": "https://nou.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6994476,
+          -23.6271579
+        ]
+      },
+      "properties": {
+        "name": "Morumbi Charme Bar & Restaurante",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6271579,
+        "longitude": -46.6994476,
+        "address": "Rua Henri Dunant, 916, São Paulo",
+        "opening_hours": "Mo-Fr 06:00-22:00; Sa 08:00-17:00",
+        "phone": "+55 11 2639 4210",
+        "fee": "yes",
+        "wheelchair": "yes",
+        "cuisine": "brazilian;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6912728,
+          -23.62533
+        ]
+      },
+      "properties": {
+        "name": "Restaurante e Espetinho Segredo Caseiro",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.62533,
+        "longitude": -46.6912728,
+        "address": "Rua Madressilva, 11, São Paulo",
+        "opening_hours": "Mo-Fr 11:30-03:00",
+        "phone": "+55 11 5049-2038",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6962547,
+          -23.6366332
+        ]
+      },
+      "properties": {
+        "name": "Regis e Freitas",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6366332,
+        "longitude": -46.6962547,
+        "address": "Avenida Santo Amaro, 6368, São Paulo",
+        "phone": "+55 11 5183 4219",
+        "cuisine": "comercial",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6802573,
+          -23.5920639
+        ]
+      },
+      "properties": {
+        "name": "Ça-va Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5920639,
+        "longitude": -46.6802573,
+        "address": "Avenida Brigadeiro Faria Lima, 4055, São Paulo",
+        "opening_hours": "Mo-Sa 07:00-19:00; Su 08:00-17:00",
+        "phone": "+55 11 99729 8418",
+        "cuisine": "breakfast;pastry",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6873179,
+          -23.5945563
+        ]
+      },
+      "properties": {
+        "name": "Go Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5945563,
+        "longitude": -46.6873179,
+        "address": "Rua do Rocio, 351, São Paulo",
+        "phone": "+55 11 97424 2020",
+        "website": "https://gocoffee.com.br/",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7119353,
+          -23.6365299
+        ]
+      },
+      "properties": {
+        "name": "The Donuts",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6365299,
+        "longitude": -46.7119353,
+        "address": "Avenida João Carlos da Silva Borges, 895, São Paulo",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "phone": "+55 11 97496 2189",
+        "website": "https://thedonuts.com.br/",
+        "cuisine": "donut",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7158061,
+          -23.6329603
+        ]
+      },
+      "properties": {
+        "name": "Urbanity Coffee and Bread",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6329603,
+        "longitude": -46.7158061,
+        "address": "Rua Luís Correia de Melo, 92, loja 2, São Paulo",
+        "phone": "+55 11 91551-2919",
+        "website": "https://urbanitycoffee.com.br/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6396934,
+          -23.5035782
+        ]
+      },
+      "properties": {
+        "name": "Pizzeria Marco Luccio",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5035782,
+        "longitude": -46.6396934,
+        "address": "Avenida Bráz Leme, 2145, São Paulo",
+        "website": "http://www.pizzeriamarcoluccio.com.br",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.5390401,
+          -23.5148776
+        ]
+      },
+      "properties": {
+        "name": "Panelão do Norte",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5148776,
+        "longitude": -46.5390401,
+        "address": "Rua Namaxi, 155, São Paulo",
+        "phone": "+55 11 2647-7805",
+        "website": "http://www.panelaodonorte.com.br",
+        "cuisine": "brazilian;feijoada;nordestina",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.702994,
+          -23.6441954
+        ]
+      },
+      "properties": {
+        "name": "Ma-Q-Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6441954,
+        "longitude": -46.702994,
+        "address": "Rua Armando Barroso, 42, São Paulo",
+        "phone": "+551155238193",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7000252,
+          -23.6447335
+        ]
+      },
+      "properties": {
+        "name": "Café do Ponto",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6447335,
+        "longitude": -46.7000252,
+        "address": "Avenida Adolfo Pinheiro, 1010, São Paulo",
+        "opening_hours": "Mo-Su 07:00-19:00",
+        "phone": "+55 11 5522 3590",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7182191,
+          -23.5330539
+        ]
+      },
+      "properties": {
+        "name": "Quintal do Espeto",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5330539,
+        "longitude": -46.7182191,
+        "address": "Rua Doutor José Elias, 547, São Paulo",
+        "phone": "+55 11 5095-6565",
+        "website": "https://quintaldoespeto.com.br/",
+        "fee": "yes",
+        "wheelchair": "designated",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7170237,
+          -23.5315897
+        ]
+      },
+      "properties": {
+        "name": "Tutto Buona",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5315897,
+        "longitude": -46.7170237,
+        "address": "Rua Doutor José Elias, 324, São Paulo",
+        "phone": "+55 11 4801-3600",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6503523,
+          -23.5824302
+        ]
+      },
+      "properties": {
+        "name": "Yucafé",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5824302,
+        "longitude": -46.6503523,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6112362,
+          -23.5854987
+        ]
+      },
+      "properties": {
+        "name": "Foodpark",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5854987,
+        "longitude": -46.6112362,
+        "address": "Avenida Nazaré, São Paulo",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6107041,
+          -23.5899699
+        ]
+      },
+      "properties": {
+        "name": "Pizza Hut",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5899699,
+        "longitude": -46.6107041,
+        "address": "Avenida Nazaré, 666, São Paulo",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6114815,
+          -23.5791039
+        ]
+      },
+      "properties": {
+        "name": "Sushi Nodawa",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5791039,
+        "longitude": -46.6114815,
+        "address": "Avenida Doutor Ricardo Jafet, 25, São Paulo",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6187484,
+          -23.5888636
+        ]
+      },
+      "properties": {
+        "name": "Rei do Mate",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5888636,
+        "longitude": -46.6187484,
+        "cuisine": "tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6514131,
+          -23.6767559
+        ]
+      },
+      "properties": {
+        "name": "Cantinho Caseiro",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6767559,
+        "longitude": -46.6514131,
+        "address": "Rua Nestor Sampaio Penteado, 143, São Paulo",
+        "opening_hours": "11:00-14:00",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6476689,
+          -23.6844423
+        ]
+      },
+      "properties": {
+        "name": "Recanto Nordestino | Bar & Restaurante",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6844423,
+        "longitude": -46.6476689,
+        "address": "Rua Domênico Aníbal, 54, São Paulo",
+        "phone": "+55 11 95845 0983",
+        "website": "http://wa.me/5511958450983",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.725622,
+          -23.5633979
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Universitário da Química",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5633979,
+        "longitude": -46.725622,
+        "opening_hours": "Mo-Fr 11:00-14:00, 17:30-19:45; Su 17:30-19:45; PH Sa off",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7329975,
+          -23.556196
+        ]
+      },
+      "properties": {
+        "name": "O Triedro",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.556196,
+        "longitude": -46.7329975,
+        "opening_hours": "Mo-Fr 07:00-19:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7207005,
+          -23.5621662
+        ]
+      },
+      "properties": {
+        "name": "Dôki Dôki",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5621662,
+        "longitude": -46.7207005,
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7056742,
+          -23.6009812
+        ]
+      },
+      "properties": {
+        "name": "Peixe ao Cubo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6009812,
+        "longitude": -46.7056742,
+        "cuisine": "japanese;hawaiian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6254581,
+          -23.6334281
+        ]
+      },
+      "properties": {
+        "name": "Presto Pizzaria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6334281,
+        "longitude": -46.6254581,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7249843,
+          -23.5856535
+        ]
+      },
+      "properties": {
+        "name": "Havanna",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5856535,
+        "longitude": -46.7249843,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7211447,
+          -23.5939624
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5939624,
+        "longitude": -46.7211447,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7356137,
+          -23.5606556
+        ]
+      },
+      "properties": {
+        "name": "Restaurante universitário Física",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5606556,
+        "longitude": -46.7356137,
+        "opening_hours": "Mo-Fr 11:15-14:15, 17:30-19:45; PH Sa-Su off",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.743407,
+          -23.5663568
+        ]
+      },
+      "properties": {
+        "name": "K2 Temakeria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5663568,
+        "longitude": -46.743407,
+        "address": "Avenida Corifeu de Azevedo Marques, São Paulo",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6807075,
+          -23.5813846
+        ]
+      },
+      "properties": {
+        "name": "Santo Grão Itaim",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5813846,
+        "longitude": -46.6807075,
+        "address": "Rua Jerônimo da Veiga, 179, São Paulo",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.676517,
+          -23.5824215
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5824215,
+        "longitude": -46.676517,
+        "address": "Rua Jesuíno Arruda, São Paulo",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6546907,
+          -23.5135921
+        ]
+      },
+      "properties": {
+        "name": "Casa do Pão de Queijo",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5135921,
+        "longitude": -46.6546907,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6488628,
+          -23.5077131
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5077131,
+        "longitude": -46.6488628,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6153159,
+          -23.5381295
+        ]
+      },
+      "properties": {
+        "name": "Cafeteria da Maria",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5381295,
+        "longitude": -46.6153159,
+        "address": "Rua Casimiro de Abreu, 192, São Paulo",
+        "opening_hours": "Mo-Fr 08:00-18:00; Sa 08:00-12:00",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6103848,
+          -23.531687
+        ]
+      },
+      "properties": {
+        "name": "Café Fox",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.531687,
+        "longitude": -46.6103848,
+        "address": "Rua Rio Bonito, 662, São Paulo",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.5148848,
+          -23.4969223
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria Boa Noite",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.4969223,
+        "longitude": -46.5148848,
+        "opening_hours": "18:00- 00:00",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.519454,
+          -23.498548
+        ]
+      },
+      "properties": {
+        "name": "Costelaria",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.498548,
+        "longitude": -46.519454,
+        "address": "Avenida Doutor Assis Ribeiro, 3638, São Paulo",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6162927,
+          -23.532587
+        ]
+      },
+      "properties": {
+        "name": "Paramax",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.532587,
+        "longitude": -46.6162927,
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6320426,
+          -23.5490833
+        ]
+      },
+      "properties": {
+        "name": "Grão do Pátio",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5490833,
+        "longitude": -46.6320426,
+        "address": "R. Roberto Simonsen, 88, São Paulo",
+        "opening_hours": "Mo-Fr 07:30-16:30",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7001915,
+          -23.5676198
+        ]
+      },
+      "properties": {
+        "name": "Grão Expresso",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5676198,
+        "longitude": -46.7001915,
+        "address": "Rua Eugênio de Medeiros, 416, São Paulo",
+        "cuisine": "coffee_shop;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6965857,
+          -23.6367794
+        ]
+      },
+      "properties": {
+        "name": "Kopenhagen",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6367794,
+        "longitude": -46.6965857,
+        "opening_hours": "Mo-Sa 09:00-21:00; Su 11:00-20:00; PH 11:00-20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6355736,
+          -23.4897724
+        ]
+      },
+      "properties": {
+        "name": "Tudo Bom",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.4897724,
+        "longitude": -46.6355736,
+        "address": "Rua Conselheiro Moreira de Barros, 1390, São Paulo",
+        "cuisine": "sandwich;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6516818,
+          -23.6521832
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria Gomes",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6521832,
+        "longitude": -46.6516818,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.5952464,
+          -23.5502027
+        ]
+      },
+      "properties": {
+        "name": "Embelezaria",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5502027,
+        "longitude": -46.5952464,
+        "address": "Avenida Cassandoca, 103, São Paulo",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7175095,
+          -23.6276438
+        ]
+      },
+      "properties": {
+        "name": "Baby Beef Steakhouse",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6276438,
+        "longitude": -46.7175095,
+        "address": "Av. Major Sylvio de Magalhães Padilha, 16671",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7287205,
+          -23.6324539
+        ]
+      },
+      "properties": {
+        "name": "Mana Poke",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6324539,
+        "longitude": -46.7287205,
+        "cuisine": "poke",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7320085,
+          -23.6291107
+        ]
+      },
+      "properties": {
+        "name": "CUCINA",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.6291107,
+        "longitude": -46.7320085,
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7370578,
+          -23.5486547
+        ]
+      },
+      "properties": {
+        "name": "Churrascaria Rodizio",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5486547,
+        "longitude": -46.7370578,
+        "address": "Avenida Jaguaré, 1600, São Paulo",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7423133,
+          -23.54736
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria martinelly's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.54736,
+        "longitude": -46.7423133,
+        "address": "Rua Três Arapongas, São Paulo",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6234802,
+          -23.5168203
+        ]
+      },
+      "properties": {
+        "name": "Casa do Pão de Queijo",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5168203,
+        "longitude": -46.6234802,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
     }
   ]
 }

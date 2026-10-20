@@ -24894,6 +24894,1929 @@
         "phone": "+1-212-213-3868",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.959241,
+          40.6764339
+        ]
+      },
+      "properties": {
+        "name": "Neptune Diner II",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6764339,
+        "longitude": -73.959241,
+        "address": "Classon Avenue, 699, Brooklyn",
+        "opening_hours": "24/7",
+        "phone": "+1-718-623-1111",
+        "wheelchair": "yes",
+        "cuisine": "diner",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9716118,
+          40.6790513
+        ]
+      },
+      "properties": {
+        "name": "Gertrude's",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6790513,
+        "longitude": -73.9716118,
+        "address": "Carlton Avenue, 605, Brooklyn",
+        "opening_hours": "Mo,We-Fr 17:00-22:00; Sa-Su 09:30-15:00,17:00-23:00",
+        "phone": "+1-718-269-0043",
+        "website": "https://www.gertrudes.nyc",
+        "wheelchair": "yes",
+        "cuisine": "american;jewish;seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9633157,
+          40.6744702
+        ]
+      },
+      "properties": {
+        "name": "Tom's Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6744702,
+        "longitude": -73.9633157,
+        "address": "Washington Avenue, 782",
+        "opening_hours": "Mo-Fr 08:00-15:00; Sa-Su 08:00-17:00",
+        "phone": "+1-718-636-9738",
+        "website": "https://tomsbrooklyn.com/",
+        "cuisine": "brunch",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9591329,
+          40.6770202
+        ]
+      },
+      "properties": {
+        "name": "Dark Necessity",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6770202,
+        "longitude": -73.9591329,
+        "address": "Classon Avenue, 679, Brooklyn",
+        "opening_hours": "Mo-Fr 07:00-16:30; Sa-Su 07:30-16:00",
+        "phone": "+1-917-757-8180",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9716825,
+          40.676481
+        ]
+      },
+      "properties": {
+        "name": "Hungry Ghost",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.676481,
+        "longitude": -73.9716825,
+        "address": "Sterling Place, 183, Brooklyn",
+        "opening_hours": "Mo-Su 07:00-17:00",
+        "phone": "+1-718-783-7375",
+        "website": "https://www.hungryghostcoffee.com/location/hungry-ghost-sterling-place/",
+        "wheelchair": "no",
+        "cuisine": "breakfast;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8850148,
+          40.8569904
+        ]
+      },
+      "properties": {
+        "name": "Nike's Pizzeria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8569904,
+        "longitude": -73.8850148,
+        "address": "East 189th Street, 625",
+        "opening_hours": "Mo-Sa 12:00-04:00; Su 12:00-21:30",
+        "phone": "+1-347-297-2132",
+        "website": "http://nikespizzanyc.com/",
+        "wheelchair": "yes",
+        "cuisine": "pizza;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8857346,
+          40.8573556
+        ]
+      },
+      "properties": {
+        "name": "Clinton Hall",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8573556,
+        "longitude": -73.8857346,
+        "address": "East 189th Street, 601",
+        "opening_hours": "Su 12:00-00:00; Mo-We 16:00-00:00; Th, Fr 16:00-02:00; Sa 12:00-02:00",
+        "phone": "+1-718-220-6400",
+        "website": "https://clintonhallny.com/locations/bronx/",
+        "wheelchair": "yes",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8862534,
+          40.8573174
+        ]
+      },
+      "properties": {
+        "name": "Michaelangelo's Little Italy",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8573174,
+        "longitude": -73.8862534,
+        "address": "Arthur Avenue, 2477",
+        "opening_hours": "Mo-Th, Su 11:00-21:30; Fr, Sa 11:00-22:00",
+        "phone": "+1-718-220-8455",
+        "website": "https://michaelangelosnyc.com/",
+        "wheelchair": "yes",
+        "cuisine": "italian;pizza;pasta",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8544967,
+          40.7421104
+        ]
+      },
+      "properties": {
+        "name": "Double Chinese Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7421104,
+        "longitude": -73.8544967,
+        "address": "108th Street, 53-16",
+        "opening_hours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-24:00; Su 12:00-23:00",
+        "phone": "+1 718-592-7361; +1 718-760-1021",
+        "wheelchair": "no",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8531753,
+          40.740238
+        ]
+      },
+      "properties": {
+        "name": "Empanadas Cafe",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.740238,
+        "longitude": -73.8531753,
+        "address": "Van Doren Street, 56-27",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "phone": "+1-718-592-7288",
+        "website": "https://empanadascafe.com/",
+        "cuisine": "coffee_shop;spanish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8488418,
+          40.7319523
+        ]
+      },
+      "properties": {
+        "name": "Cho-Sen Garden",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7319523,
+        "longitude": -73.8488418,
+        "address": "108th Street, 64-43",
+        "opening_hours": "Mo-Th 12:00-22:00, Sa (sunset+01:00)-22:00, Su 12:00-22:00",
+        "phone": "+1-718-275-1300",
+        "website": "https://www.chosengarden.com/Garden.html",
+        "cuisine": "asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8502527,
+          40.733829
+        ]
+      },
+      "properties": {
+        "name": "Tangscape",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.733829,
+        "longitude": -73.8502527,
+        "address": "108th Street, 63-44",
+        "opening_hours": "Mo-Su 08:00-21:00",
+        "phone": "+1-929-825-8380",
+        "website": "https://www.tangscapeny.com/",
+        "cuisine": "pastry;bubble_tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.982063,
+          40.6660878
+        ]
+      },
+      "properties": {
+        "name": "Indian Spice",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6660878,
+        "longitude": -73.982063,
+        "address": "7th Avenue, 351, Brooklyn",
+        "opening_hours": "Mo-Th 12:00-22:00, Fr-Sa 12:00-22:30, Su 12:00-22:00",
+        "phone": "+1-718-768-7777",
+        "website": "https://indianspicenewyork.site/",
+        "wheelchair": "yes",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9804983,
+          40.66795
+        ]
+      },
+      "properties": {
+        "name": "Purity Diner",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.66795,
+        "longitude": -73.9804983,
+        "address": "7th Avenue, 289",
+        "opening_hours": "Mo-Sa 08:00-22:00; Su 08:00-16:00",
+        "phone": "+1-718-840-0881",
+        "wheelchair": "yes",
+        "cuisine": "diner",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9788529,
+          40.6703951
+        ]
+      },
+      "properties": {
+        "name": "Burger Village",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6703951,
+        "longitude": -73.9788529,
+        "address": "7th Avenue, 222, Brooklyn",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "phone": "+1-718-499-4165",
+        "website": "https://www.burgervillage.com/brooklyn",
+        "wheelchair": "yes",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.984318,
+          40.6633723
+        ]
+      },
+      "properties": {
+        "name": "Couleur Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6633723,
+        "longitude": -73.984318,
+        "address": "7th Avenue, 435",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "phone": "+1-718-788-6600",
+        "website": "https://couleurcafeny.com",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop;crepe",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9806686,
+          40.6637848
+        ]
+      },
+      "properties": {
+        "name": "Zatar",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6637848,
+        "longitude": -73.9806686,
+        "address": "8th Avenue, 1201",
+        "opening_hours": "Mo-Fr 07:00-22:00; Sa-Su 08:00-22:00",
+        "phone": "+1-929-252-1287",
+        "website": "https://zatar.nyc",
+        "cuisine": "middle_eastern",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9445189,
+          40.8086285
+        ]
+      },
+      "properties": {
+        "name": "Sylvia's Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8086285,
+        "longitude": -73.9445189,
+        "address": "Malcolm X Boulevard, 328, New York",
+        "opening_hours": "Mo-Tu 11:00-22:30;We-Sa 09:00-22:30;Su 11:00-20:00",
+        "phone": "+1 212 996-0660",
+        "website": "https://sylviasrestaurant.com/",
+        "wikidata": "Q7660869",
+        "wikipedia": "en:Sylvia's Restaurant of Harlem",
+        "cuisine": "american;regional;seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9543835,
+          40.8041913
+        ]
+      },
+      "properties": {
+        "name": "Pikine",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8041913,
+        "longitude": -73.9543835,
+        "address": "West 116th Street, 243",
+        "opening_hours": "12:00-24:00",
+        "phone": "+1 646-922-7015",
+        "website": "pikinerestaurantny.com",
+        "wheelchair": "yes",
+        "cuisine": "senegalese;african",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9464042,
+          40.8111327
+        ]
+      },
+      "properties": {
+        "name": "Harlem Breakfast Club",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8111327,
+        "longitude": -73.9464042,
+        "address": "Adam Clayton Powell Jr. Boulevard, 2167, New York",
+        "opening_hours": "Tu-Sa 07:00-15:00; Su 07:00-14:00",
+        "phone": "+1-646-930-2006",
+        "website": "https://harlembreakfastclub.co",
+        "cuisine": "breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9434239,
+          40.8100914
+        ]
+      },
+      "properties": {
+        "name": "Harlem Poke",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8100914,
+        "longitude": -73.9434239,
+        "address": "Malcolm X Boulevard, 370, New York",
+        "opening_hours": "11:00-20:00",
+        "phone": "+1-212-678-0301",
+        "website": "https://www.harlempoke.com/",
+        "cuisine": "poke",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9431823,
+          40.810011
+        ]
+      },
+      "properties": {
+        "name": "787 Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.810011,
+        "longitude": -73.9431823,
+        "address": "West 129th Street, 60, New York",
+        "opening_hours": "08:00-17:00",
+        "phone": "+1-917-261-2894",
+        "website": "https://www.787coffee.com/best-coffee-shop-in-new-york",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9283593,
+          40.8666758
+        ]
+      },
+      "properties": {
+        "name": "Seawalk Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8666758,
+        "longitude": -73.9283593,
+        "address": "Dyckman Street, 261",
+        "opening_hours": "Mo-We, Su 12:00-00:00; Th-Sa 12:00-02:00",
+        "phone": "+1-212-568-9014",
+        "website": "https://seawalkrestaurant.com/",
+        "wheelchair": "yes",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9282148,
+          40.8665532
+        ]
+      },
+      "properties": {
+        "name": "Pat'e Palo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8665532,
+        "longitude": -73.9282148,
+        "address": "Dyckman Street, 251",
+        "opening_hours": "Mo-Fr 15:00-04:00; Sa, Su 12:00-04:00",
+        "phone": "+1-646-918-6242",
+        "wheelchair": "yes",
+        "cuisine": "latin_american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9277496,
+          40.8661804
+        ]
+      },
+      "properties": {
+        "name": "MamaSushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8661804,
+        "longitude": -73.9277496,
+        "address": "Dyckman Street, 237",
+        "opening_hours": "Mo, We 13:00-00:00; Tu, Th, Su 13:00-01:00; Fr, Sa 13:00-02:00",
+        "phone": "+1-212-567-2450",
+        "website": "https://mamasushi.com/",
+        "wheelchair": "yes",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9272044,
+          40.8657529
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8657529,
+        "longitude": -73.9272044,
+        "address": "Broadway, 4761, New York",
+        "opening_hours": "Mo-Th 06:00-21:30; Fr 05:30-22:30; Sa 06:00-22:00; Su 06:00-22:30",
+        "phone": "+1 212-304-3632",
+        "website": "https://www.starbucks.com/store-locator/store/1006441/broadway-dyckman-4761-broadway-new-york-ny-100344935-us",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9377338,
+          40.8551748
+        ]
+      },
+      "properties": {
+        "name": "Buunni",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8551748,
+        "longitude": -73.9377338,
+        "address": "Pinehurst Avenue, 213",
+        "opening_hours": "Mo-Fr 07:00-18:00; Sa-Su 08:00-18:00",
+        "website": "https://www.buunnicoffee.com/",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8862622,
+          40.8576278
+        ]
+      },
+      "properties": {
+        "name": "Howl at the Moon",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8576278,
+        "longitude": -73.8862622,
+        "address": "East 189th Street, 585",
+        "opening_hours": "Mo-Th 11:00-23:00; Fr, Sa 11:00-01:00; Su 11:00-22:00",
+        "phone": "+1-718-561-7694",
+        "wheelchair": "yes",
+        "cuisine": "pasta;nachos;wings",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9586359,
+          40.6692616
+        ]
+      },
+      "properties": {
+        "name": "Joe & Sal's Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6692616,
+        "longitude": -73.9586359,
+        "address": "Franklin Avenue, 842, Brooklyn",
+        "opening_hours": "Mo-Th 11:00-22:00; Fr-Sa 10:00-22:00; Su 12:00-22:00",
+        "phone": "+1-718-484-8732",
+        "website": "https://www.joeandsalspizza.com",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9579262,
+          40.67121
+        ]
+      },
+      "properties": {
+        "name": "Aita Trattoria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.67121,
+        "longitude": -73.9579262,
+        "address": "Franklin Avenue, 798",
+        "opening_hours": "Mo-Th 17:00-21:30; Fr 17:00-22:00; Sa 10:30-16:00,17:00-22:00; Su 10:30-16:00,17:00-21:00",
+        "phone": "+1-917-966-2670",
+        "website": "https://www.aitatrattoria.com",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9482267,
+          40.7898312
+        ]
+      },
+      "properties": {
+        "name": "Frenchy Cafe",
+        "name_en": "Frenchy Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7898312,
+        "longitude": -73.9482267,
+        "address": "East 102nd Street, 129, New York",
+        "opening_hours": "Mo-Fr 07:00-17:00; Sa 08:00-17:00",
+        "phone": "+1 646-891-0088",
+        "website": "https://frenchycoffeenyc.com/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop;french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.947159,
+          40.7845374
+        ]
+      },
+      "properties": {
+        "name": "Perk Kafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7845374,
+        "longitude": -73.947159,
+        "address": "2nd Avenue, 1867",
+        "opening_hours": "Mo-Fr 07:00-16:00; Sa, Su 08:00-16:00",
+        "phone": "+1 646-678-4272",
+        "website": "https://www.perkkafe.com/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8593107,
+          40.7459353
+        ]
+      },
+      "properties": {
+        "name": "Tortilleria Nixtamal",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7459353,
+        "longitude": -73.8593107,
+        "address": "47th Avenue, 104-05, Corona",
+        "opening_hours": "Mo-We 11:00-19:00; Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 11:00-21:00",
+        "website": "https://www.tortillerianixtamal.com/",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9870618,
+          40.6874914
+        ]
+      },
+      "properties": {
+        "name": "Mile End Delicatessen",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6874914,
+        "longitude": -73.9870618,
+        "address": "Hoyt Street, 97A",
+        "opening_hours": "Mo-Fr 08:00-21:00; Sa-Su 09:00-21:00",
+        "phone": "+1-718-852-7510",
+        "website": "https://www.mileenddeli.com",
+        "wikidata": "Q23091938",
+        "wheelchair": "no",
+        "cuisine": "sandwich;breakfast;canadian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9819662,
+          40.6901926
+        ]
+      },
+      "properties": {
+        "name": "Junior's",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6901926,
+        "longitude": -73.9819662,
+        "address": "Flatbush Avenue Extension, 386",
+        "opening_hours": "Mo-Th 06:30-24:00; Fr-Sa 06:30-01:00; Su 06:30-24:00",
+        "phone": "+1-718-852-5257",
+        "website": "https://www.juniorscheesecake.com/blog/restaurants/brooklyn/",
+        "wikidata": "Q4984555",
+        "wikipedia": "en:Junior's",
+        "wheelchair": "yes",
+        "cuisine": "american;breakfast;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9885461,
+          40.6924317
+        ]
+      },
+      "properties": {
+        "name": "CAVA",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6924317,
+        "longitude": -73.9885461,
+        "address": "Adams Street, 345",
+        "opening_hours": "Mo-Su 10:45-22:00",
+        "phone": "+1-929-296-7809",
+        "website": "https://cava.com",
+        "wheelchair": "yes",
+        "cuisine": "mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9909614,
+          40.6862203
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6862203,
+        "longitude": -73.9909614,
+        "address": "Smith Street, 164, Brooklyn",
+        "opening_hours": "Mo-Fr 05:30-19:00; Sa-Su 06:00-19:00",
+        "phone": "+1 718-422-0178",
+        "website": "https://www.starbucks.com/store-locator/store/17069/smith-st-wyckoff-st-164-smith-street-brooklyn-ny-112016303-us",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9919462,
+          40.6847629
+        ]
+      },
+      "properties": {
+        "name": "Smith St. Bagels",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6847629,
+        "longitude": -73.9919462,
+        "address": "Smith Street, 202",
+        "opening_hours": "24/7",
+        "phone": "+1 347-341-8192",
+        "website": "https://smithstreetbagelsny.com/",
+        "wheelchair": "yes",
+        "cuisine": "bagel;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9267811,
+          40.8260453
+        ]
+      },
+      "properties": {
+        "name": "Clubhouse Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8260453,
+        "longitude": -73.9267811,
+        "address": "River Avenue, 812, Bronx",
+        "opening_hours": "Mo-Fr 07:00-18:00; Sa-Su 08:00-17:00",
+        "phone": "+1 718-404-9281",
+        "website": "https://clubhousecafebx.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9201009,
+          40.8327788
+        ]
+      },
+      "properties": {
+        "name": "Caffeine on The Concourse",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8327788,
+        "longitude": -73.9201009,
+        "address": "Grand Concourse, 1125, Bronx",
+        "opening_hours": "Sa 10:00-14:00",
+        "website": "https://andrewfreedmanhome.org/",
+        "cuisine": "coffee_shop;bakery",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9434171,
+          40.8262841
+        ]
+      },
+      "properties": {
+        "name": "Tsion Cafe",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8262841,
+        "longitude": -73.9434171,
+        "address": "Saint Nicholas Avenue, 763",
+        "opening_hours": "Sa 10:00-23:30; Su 10:00-22:00; Tu, We 11:59-22:00; Th, Fr 11:59-23:30",
+        "phone": "+1-212-234-2070",
+        "cuisine": "ethiopian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9429665,
+          40.8217176
+        ]
+      },
+      "properties": {
+        "name": "Jacob Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8217176,
+        "longitude": -73.9429665,
+        "address": "Frederick Douglas Boulevard, 2695",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "phone": "+1-212-866-3663",
+        "website": "https://www.jacobrestaurant.com/",
+        "cuisine": "soul_food",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9442969,
+          40.8236682
+        ]
+      },
+      "properties": {
+        "name": "Taqueria El Chiltepin 3",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8236682,
+        "longitude": -73.9442969,
+        "opening_hours": "Mo-Su 10:00-23:59",
+        "phone": "+1-212-283-2100",
+        "website": "https://www.taqueriaelchiltepin3.com",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9426474,
+          40.8233265
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8233265,
+        "longitude": -73.9426474,
+        "address": "West 145th Street, 301, New York",
+        "opening_hours": "Mo-Fr 05:30-21:00; Sa, Su 06:00-21:00",
+        "phone": "+1 212-690-7835",
+        "website": "https://www.starbucks.com/store-locator/store/18230/145th-bradhurst-301-w-145th-st-new-york-ny-100393159-us",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9843598,
+          40.6869246
+        ]
+      },
+      "properties": {
+        "name": "Bacchus",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6869246,
+        "longitude": -73.9843598,
+        "address": "Atlantic Avenue, 409-411, Brooklyn",
+        "opening_hours": "Mo-Th 17:00-22:30; Fr 17:00-23:00; Sa 10:30-16:00,17:00-23:00; Su 10:30-16:00,17:00-22:30",
+        "phone": "+1-718-852-1572",
+        "website": "https://bacchusbistro.com/",
+        "wheelchair": "yes",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9274671,
+          40.8659316
+        ]
+      },
+      "properties": {
+        "name": "Papasito",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8659316,
+        "longitude": -73.9274671,
+        "address": "Dyckman Street, 223",
+        "opening_hours": "Mo-We 16:00-24:00; Th 14:00-01:00; Fr,Sa 14:00-04:00; Su 11:00-02:00",
+        "phone": "+1-212-544-0001",
+        "website": "https://papasitony.com/",
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9847174,
+          40.6668505
+        ]
+      },
+      "properties": {
+        "name": "Bar Toto",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6668505,
+        "longitude": -73.9847174,
+        "address": "11th Street, 411",
+        "opening_hours": "Mo-Th 12:00-22:30; Fr 12:00-24:00; Sa 11:00-24:00; Su 11:00-22:30",
+        "phone": "+1-718-768-4698",
+        "website": "https://www.bartoto.com/",
+        "wheelchair": "limited",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9864585,
+          40.6647746
+        ]
+      },
+      "properties": {
+        "name": "OS Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6647746,
+        "longitude": -73.9864585,
+        "address": "6th Avenue, 535",
+        "opening_hours": "Mo-Fr 07:30-18:00; Sa-Su 08:00-18:00",
+        "phone": "+1-347-213-4365",
+        "website": "https://www.oscafebrooklyn.com",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop;breakfast;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9537637,
+          40.8203184
+        ]
+      },
+      "properties": {
+        "name": "Chinelos II",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8203184,
+        "longitude": -73.9537637,
+        "address": "West 136th Street, 530, New York",
+        "opening_hours": "Mo-We 11:00-24:00; Th-Sa 11:00-25:00; Su 11:00-24:00",
+        "phone": "+1-212-690-6077",
+        "website": "https://www.orderchinelosrestaurant.com/",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9465284,
+          40.8162289
+        ]
+      },
+      "properties": {
+        "name": "A Taste of Seafood",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8162289,
+        "longitude": -73.9465284,
+        "address": "Frederick Douglas Boulevard, 2530",
+        "opening_hours": "Tu-Th 11:00-21:00; Fr 11:00-22:00; Sa 12:00-22:00",
+        "phone": "+1-212-866-0275",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9585099,
+          40.8167277
+        ]
+      },
+      "properties": {
+        "name": "Dear Mama",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8167277,
+        "longitude": -73.9585099,
+        "address": "West 129th Street, 611, New York",
+        "opening_hours": "Mo-Su 07:00-19:00",
+        "phone": "+1-716-727-2854",
+        "website": "https://www.dearmamacoffee.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9503433,
+          40.6731963
+        ]
+      },
+      "properties": {
+        "name": "Sabor Azteca",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6731963,
+        "longitude": -73.9503433,
+        "address": "Nostrand Avenue, 742, Brooklyn",
+        "opening_hours": "Mo-Sa 07:00-20:00, Su 07:00-19:00",
+        "phone": "+1-347-365-7942",
+        "cuisine": "mexican;sandwich;breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9504213,
+          40.6722793
+        ]
+      },
+      "properties": {
+        "name": "Gee's Caribbean Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6722793,
+        "longitude": -73.9504213,
+        "address": "Nostrand Avenue, 770, Brooklyn",
+        "opening_hours": "Mo-Fr 11:00-21:00; Sa 11:00-22:00; Su 11:00-20:00",
+        "phone": "+1-347-830-7897",
+        "website": "https://rotibrooklyn.com",
+        "cuisine": "caribbean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.949825,
+          40.6786637
+        ]
+      },
+      "properties": {
+        "name": "Footprints",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6786637,
+        "longitude": -73.949825,
+        "address": "Nostrand Avenue, 584",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+1-917-477-4857",
+        "cuisine": "jamaican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9497883,
+          40.6759285
+        ]
+      },
+      "properties": {
+        "name": "Rosalia's Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6759285,
+        "longitude": -73.9497883,
+        "address": "Nostrand Avenue, 615",
+        "opening_hours": "Mo-Sa 06:00-18:00; Su 06:00-16:00",
+        "phone": "+1-718-758-4640",
+        "website": "https://coffeeshopbrooklyn.com",
+        "wheelchair": "yes",
+        "cuisine": "diner;pancake;american;sandwich;breakfast;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9498314,
+          40.6808601
+        ]
+      },
+      "properties": {
+        "name": "Brooklyn Tea",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6808601,
+        "longitude": -73.9498314,
+        "address": "Nostrand Avenue, 524",
+        "opening_hours": "Mo-Th 07:00-19:00; Fr-Sa 07:00-19:30; Su 08:00-19:00",
+        "phone": "+1-347-240-4281",
+        "website": "https://brooklyntea.com/pages/brooklyn-tearoom",
+        "cuisine": "tea;breakfast;pastry;soup",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9538492,
+          40.7430058
+        ]
+      },
+      "properties": {
+        "name": "Yumpling",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7430058,
+        "longitude": -73.9538492,
+        "address": "Vernon Boulevard, 49-11",
+        "opening_hours": "We-Su 11:30-20:00",
+        "phone": "+1 718-713-1839",
+        "website": "https://yumpling.com/",
+        "wheelchair": "yes",
+        "cuisine": "taiwanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.945811,
+          40.7460771
+        ]
+      },
+      "properties": {
+        "name": "Court Square Diner",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7460771,
+        "longitude": -73.945811,
+        "address": "23rd Street, 45-30",
+        "opening_hours": "24/7",
+        "phone": "+1 718-392-1222",
+        "website": "https://courtsquarediner.com/",
+        "cuisine": "diner",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9453583,
+          40.7457517
+        ]
+      },
+      "properties": {
+        "name": "Heng Thai",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7457517,
+        "longitude": -73.9453583,
+        "address": "Jackson Avenue, 23-06",
+        "opening_hours": "Mo-Fr 11:00-15:30, 16:30-21:30; Sa, Su 16:00-21:30",
+        "phone": "+1 718-706-0999",
+        "website": "https://hengthailongislandcity.com",
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9454944,
+          40.747529
+        ]
+      },
+      "properties": {
+        "name": "Café Coco",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.747529,
+        "longitude": -73.9454944,
+        "address": "44th Drive, 21-52",
+        "opening_hours": "Tu-Fr 07:30-16:30; Sa-Su 08:30-17:30",
+        "phone": "+1 347-612-4242",
+        "website": "https://www.cafe-coco.com/",
+        "cuisine": "american;breakfast;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9418041,
+          40.747162
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.747162,
+        "longitude": -73.9418041,
+        "address": "Jackson Avenue, 26-14, Long Island City",
+        "opening_hours": "Mo-Su 05:30-20:30",
+        "phone": "+1 347-533-2101",
+        "website": "https://www.starbucks.com/store-locator/store/1019098/26-14-jackson-ave-26-14-jackson-ave-long-island-city-ny-111012904-us",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.918421,
+          40.8727992
+        ]
+      },
+      "properties": {
+        "name": "The Inwood Farm",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8727992,
+        "longitude": -73.918421,
+        "address": "West 218th Street, 600, New York",
+        "opening_hours": "Mo-Fr 07:00-22:30; Sa 07:00-23:00; Su 08:00-22:00",
+        "phone": "+1-212-942-7451",
+        "website": "https://www.theinwoodfarm.com/",
+        "wheelchair": "yes",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9158442,
+          40.8690737
+        ]
+      },
+      "properties": {
+        "name": "Cafe Tabaco and Ron",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8690737,
+        "longitude": -73.9158442,
+        "address": "West 214th Street, 501",
+        "opening_hours": "Mo-Sa 17:00-02:00; Su 11:00-02:00",
+        "phone": "+1-212-567-7179",
+        "website": "http://cafetabacoyron.nyc/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0053292,
+          40.7515815
+        ]
+      },
+      "properties": {
+        "name": "La Colombe Coffee Roasters",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7515815,
+        "longitude": -74.0053292,
+        "address": "West 27th Street, 601, New York",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa,Su 08:00-19:00",
+        "phone": "+1-646-885-0677",
+        "website": "https://www.lacolombe.com",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0022171,
+          40.7543433
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7543433,
+        "longitude": -74.0022171,
+        "address": "Hudson Yards, 34, New York",
+        "opening_hours": "Mo-Su 05:30-22:30",
+        "phone": "+1 917-764-2042",
+        "website": "https://www.starbucks.com/store-locator/store/1032273/35-hudson-yards-34-hudson-yards-b-new-york-ny-100012170-us",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.889002,
+          40.85355
+        ]
+      },
+      "properties": {
+        "name": "Prince coffee house",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.85355,
+        "longitude": -73.889002,
+        "address": "Crescent Avenue, 591",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8885636,
+          40.8546158
+        ]
+      },
+      "properties": {
+        "name": "Morrone Pastry Shop & Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8546158,
+        "longitude": -73.8885636,
+        "address": "Arthur Avenue, 2349",
+        "phone": "+1-718-733-0424",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8546689,
+          40.7424296
+        ]
+      },
+      "properties": {
+        "name": "Corona Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7424296,
+        "longitude": -73.8546689,
+        "address": "108th Street, 53-06",
+        "phone": "+1 347-476-4980",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8471999,
+          40.7489327
+        ]
+      },
+      "properties": {
+        "name": "Dobel Tequila Club",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7489327,
+        "longitude": -73.8471999,
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0184224,
+          40.6892365
+        ]
+      },
+      "properties": {
+        "name": "Joe Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.6892365,
+        "longitude": -74.0184224,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8861368,
+          40.8612815
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8612815,
+        "longitude": -73.8861368,
+        "address": "East Fordham Road, 441, Bronx",
+        "phone": "+1 718-817-0939",
+        "website": "https://www.starbucks.com/store-locator/store/1019497/fordham-university-rose-hill-441-e-fordham-rd-bronx-ny-10458-us",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8881361,
+          40.8557102
+        ]
+      },
+      "properties": {
+        "name": "Gino's Pastry Shop & Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8557102,
+        "longitude": -73.8881361,
+        "phone": "+1-718-584-3558",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8598778,
+          40.7460474
+        ]
+      },
+      "properties": {
+        "name": "Mama's Backyard Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7460474,
+        "longitude": -73.8598778,
+        "address": "104th Street, 46-10",
+        "phone": "+1-718-565-9104",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9260199,
+          40.8285243
+        ]
+      },
+      "properties": {
+        "name": "Hard Rock Cafe",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 40.8285243,
+        "longitude": -73.9260199,
+        "cuisine": "american",
+        "popularity": 0
+      }
     }
   ]
 }

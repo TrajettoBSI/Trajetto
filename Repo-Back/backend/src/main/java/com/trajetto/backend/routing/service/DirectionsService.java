@@ -95,7 +95,9 @@ public class DirectionsService {
                             List.of(req.origin.lng, req.origin.lat),
                             List.of(req.destination.lng, req.destination.lat)),
                     "instructions", true,
-                    "language", language);
+                    "language", language,
+                    // Sem limite para achar a rua mais proxima (ver RouteService).
+                    "radiuses", List.of(-1, -1));
             HttpHeaders headers = new HttpHeaders();
             headers.set("Authorization", apiKey);
             headers.setContentType(MediaType.APPLICATION_JSON);
@@ -103,8 +105,10 @@ public class DirectionsService {
             Map<String, Object> response = restTemplate.exchange(ORS_URL + profile, HttpMethod.POST,
                     new HttpEntity<>(body, headers), new ParameterizedTypeReference<Map<String, Object>>() {}).getBody();
             return parse(mode, response);
-        } catch (HttpClientErrorException.TooManyRequests e) {
-            logger.warn("Limite de consultas do OpenRouteService atingido (rota {}); usando estimativa", profile);
+        } catch (HttpClientErrorException.TooManyRequests | HttpClientErrorException.Forbidden e) {
+            // 429: limite por minuto; 403: cota do dia da chave gratuita.
+            logger.warn("Limite de consultas do OpenRouteService atingido (rota {}): {}; usando estimativa",
+                    profile, e.getResponseBodyAsString().strip());
             return new Option(mode, fallbackDistance, fallbackExtra + fallbackDistance / fallbackSpeed, true, null, List.of());
         } catch (RestClientException | ClassCastException | NullPointerException | IndexOutOfBoundsException e) {
             logger.warn("Rota {} indisponível no OpenRouteService; usando estimativa", profile, e);

@@ -23730,6 +23730,4142 @@
         "wheelchair": "no",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7746823,
+          35.7121789
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー 上野の森さくらテラス店",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7121789,
+        "longitude": 139.7746823,
+        "address": "上野公園通り, １一５４",
+        "opening_hours": "Mo-Sa 07:00-23:00; Su 07:00-22:00",
+        "phone": "03-5826-4880",
+        "website": "https://shop.tullys.co.jp/detail/1000784",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7740387,
+          35.7161948
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7161948,
+        "longitude": 139.7740387,
+        "opening_hours": "Mo-Su 08:00-21:00",
+        "phone": "+81 3-5834-1630",
+        "website": "https://www.starbucks.co.jp/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7724415,
+          35.6273031
+        ]
+      },
+      "properties": {
+        "name": "The Oven - American Buffet",
+        "name_en": "The Oven アクアシティお台場店 - アメリカン",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6273031,
+        "longitude": 139.7724415,
+        "opening_hours": "Mo-Fr 11:00-14:30, 17:00-21:00; Sa-Su 11:00-16:00, 17:00-21:30",
+        "website": "https://americanhouse.co.jp/shop/the-oven-aqua-city-odaiba/",
+        "cuisine": "american;buffet",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7728544,
+          35.6275115
+        ]
+      },
+      "properties": {
+        "name": "Indian Restaurant Mumbai + Tandoori Grill",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6275115,
+        "longitude": 139.7728544,
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "website": "https://mumbai-odaiba.com",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7755362,
+          35.6287973
+        ]
+      },
+      "properties": {
+        "name": "築地玉寿司",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6287973,
+        "longitude": 139.7755362,
+        "opening_hours": "Mo-Sa 17:00-23:00; Su 11:00-23:00",
+        "phone": "+81 3-3599-6556",
+        "website": "https://www.tamasushi.co.jp/shop/daiba_duex/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7617805,
+          35.6861739
+        ]
+      },
+      "properties": {
+        "name": "Moyan Curry",
+        "name_en": "もうやんカレー",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6861739,
+        "longitude": 139.7617805,
+        "opening_hours": "Mo-Sa 11:30-15:00, 18:00-23:00",
+        "website": "https://www.moyan.jp/otemachi/",
+        "wheelchair": "yes",
+        "cuisine": "curry",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7535731,
+          35.6940043
+        ]
+      },
+      "properties": {
+        "name": "Chiyoda City Hall Cafeteria",
+        "name_en": "千代田区役所 食堂",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6940043,
+        "longitude": 139.7535731,
+        "opening_hours": "Mo-Fr 08:00-14:30,17:00-20:00",
+        "website": "https://www.city.chiyoda.lg.jp/koho/kuse/gaiyo/annaizu/floor10.html",
+        "wheelchair": "yes",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7431012,
+          35.6922854
+        ]
+      },
+      "properties": {
+        "name": "上海庭",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6922854,
+        "longitude": 139.7431012,
+        "opening_hours": "Mo-Su 11:00-15:00,17:00-23:30",
+        "phone": "+81 3-5215-5659",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8869949,
+          35.6336354
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー イクスピアリ店",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6336354,
+        "longitude": 139.8869949,
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "047-316-5266",
+        "website": "https://shop.tullys.co.jp/detail/1000472",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8858042,
+          35.6347639
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6347639,
+        "longitude": 139.8858042,
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+81-47-3055728",
+        "website": "https://www.starbucks.co.jp/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7660669,
+          35.7112349
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7112349,
+        "longitude": 139.7660669,
+        "opening_hours": "Mo-Su 07:00-20:00",
+        "phone": "+81 3-5842-2166",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7979484,
+          35.7119421
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7119421,
+        "longitude": 139.7979484,
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+81 3-5828-1318",
+        "website": "https://www.starbucks.co.jp/",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7980828,
+          35.7117545
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7117545,
+        "longitude": 139.7980828,
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "phone": "+81 3-5806-0668",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6781176,
+          35.6642276
+        ]
+      },
+      "properties": {
+        "name": "鮨 ふじわら",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6642276,
+        "longitude": 139.6781176,
+        "opening_hours": "17:00-23:00; Mo off",
+        "phone": "+81 3-6804-9054",
+        "website": "https://sushifujiwara.com/access/",
+        "cuisine": "sushi;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681325,
+          35.669676
+        ]
+      },
+      "properties": {
+        "name": "CoCo ICHIBANYA",
+        "name_en": "CoCo壱番屋",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.669676,
+        "longitude": 139.681325,
+        "opening_hours": "Mo-Su 11:00-01:00",
+        "phone": "+81-3-34600551",
+        "website": "https://www.ichibanya.co.jp/",
+        "cuisine": "curry;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6785021,
+          35.6640165
+        ]
+      },
+      "properties": {
+        "name": "Senrigan",
+        "name_en": "千里眼",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6640165,
+        "longitude": 139.6785021,
+        "opening_hours": "11:00-15:00, 17:00-21:00; We off",
+        "phone": "+81-3-3481-5773",
+        "website": "https://senrigaaan.com/",
+        "cuisine": "ramen",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6678168,
+          35.6735944
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6735944,
+        "longitude": 139.6678168,
+        "opening_hours": "Mo-Sa 07:00-22:00; Su,PH 07:30-21:00",
+        "phone": "+81 3-5738-8061",
+        "website": "https://www.doutor.co.jp/dcs/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680882,
+          35.6696294
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6696294,
+        "longitude": 139.680882,
+        "opening_hours": "Mo-Su 07:00-22:30",
+        "phone": "+81 3-5452-1060",
+        "website": "https://www.starbucks.co.jp/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7838745,
+          35.7202608
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7202608,
+        "longitude": 139.7838745,
+        "opening_hours": "Mo-Fr 07:30-21:00; Sa 07:30-20:00; Su,PH 08:00-20:00",
+        "phone": "+81 3-3876-3900",
+        "website": "https://www.doutor.co.jp/dcs/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7934619,
+          35.7225745
+        ]
+      },
+      "properties": {
+        "name": "fuku-cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7225745,
+        "longitude": 139.7934619,
+        "opening_hours": "Th-Mo 10:00-17:00",
+        "phone": "+81-3-3875-0588",
+        "website": "https://fukucafe.tokyo",
+        "cuisine": "pancake;breakfast;coffee_shop;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7329488,
+          35.6627158
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6627158,
+        "longitude": 139.7329488,
+        "opening_hours": "Mo-Fr 07:00-23:00; Sa 08:00-23:00; Su,PH 08:00-22:00",
+        "phone": "+81 3-5785-1510",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7396118,
+          35.6646353
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6646353,
+        "longitude": 139.7396118,
+        "opening_hours": "Mo-Fr 07:00-22:00; Sa,Su,PH 08:00-20:00",
+        "phone": "+81 3-3589-3102",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7248591,
+          35.714818
+        ]
+      },
+      "properties": {
+        "name": "lecker maul",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.714818,
+        "longitude": 139.7248591,
+        "opening_hours": "Mo-Tu, Fr 17:30-22:00; Sa-Su 11:30-15:00, 17:30-22:00",
+        "phone": "+81363041225",
+        "website": "https://www.leckermaul.jp/",
+        "cuisine": "german",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7282659,
+          35.7180324
+        ]
+      },
+      "properties": {
+        "name": "中華料理　斉味斎",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7180324,
+        "longitude": 139.7282659,
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "03-6681-4746",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7281158,
+          35.7184244
+        ]
+      },
+      "properties": {
+        "name": "お好み焼　花子　護国寺店",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7184244,
+        "longitude": 139.7281158,
+        "opening_hours": "Mo-Fr 11:30-14:30, 17:00-23:00; Sa-Su 11:30-14:30, 17:00-22:00",
+        "phone": "+8103-3941-9888",
+        "website": "https://www.okonomi-hanako.com/gokokuzi.html",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7309819,
+          35.7099047
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7099047,
+        "longitude": 139.7309819,
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa 07:00-20:00; Su,PH 08:00-20:00",
+        "phone": "+81 3-5229-4012",
+        "website": "https://www.doutor.co.jp/dcs/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.724253,
+          35.7080631
+        ]
+      },
+      "properties": {
+        "name": "Akha Ama Coffee Roasters",
+        "name_en": "アカアマコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7080631,
+        "longitude": 139.724253,
+        "opening_hours": "We-Su 08:00-17:00",
+        "phone": "03-6280-8755",
+        "website": "https://akhaama.jp/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5790177,
+          35.7039427
+        ]
+      },
+      "properties": {
+        "name": "Steak House Satou",
+        "name_en": "ステーキハウスSATOU",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7039427,
+        "longitude": 139.5790177,
+        "opening_hours": "17:00+",
+        "phone": "+81 42-221-6464",
+        "website": "https://www.shop-satou.com/shop/kichijouji1/index.html",
+        "wheelchair": "no",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5786931,
+          35.7025862
+        ]
+      },
+      "properties": {
+        "name": "Budoka",
+        "name_en": "武道家",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7025862,
+        "longitude": 139.5786931,
+        "opening_hours": "11:00-02:00",
+        "phone": "+81-422-72-7099",
+        "cuisine": "ramen",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5811587,
+          35.7014283
+        ]
+      },
+      "properties": {
+        "name": "TONY'S",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7014283,
+        "longitude": 139.5811587,
+        "opening_hours": "11:30-21:30",
+        "phone": "0422-49-1021",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5789553,
+          35.7033031
+        ]
+      },
+      "properties": {
+        "name": "Saint Marc Cafe",
+        "name_en": "サンマルクカフェ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7033031,
+        "longitude": 139.5789553,
+        "opening_hours": "Mo-Su 07:00-22:30",
+        "phone": "+81 422-23-7309",
+        "website": "http://www.saint-marc-hd.com/cafe/",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5786859,
+          35.7046375
+        ]
+      },
+      "properties": {
+        "name": "Saint Marc Cafe",
+        "name_en": "サンマルクカフェ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7046375,
+        "longitude": 139.5786859,
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+81 422-29-1309",
+        "website": "http://www.saint-marc-hd.com/cafe/",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7045566,
+          35.6937596
+        ]
+      },
+      "properties": {
+        "name": "RAMEN NAGI",
+        "name_en": "すごい煮干ラーメン凪 新宿ゴールデン街店本館",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6937596,
+        "longitude": 139.7045566,
+        "address": "新宿ゴールデン街 G2通り, １丁目１一１０, 新宿区",
+        "opening_hours": "24/7",
+        "phone": "03-3205-1925",
+        "website": "https://n-nagi.com/",
+        "wheelchair": "no",
+        "cuisine": "ramen",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7043452,
+          35.681024
+        ]
+      },
+      "properties": {
+        "name": "Marger Burger",
+        "name_en": "マーガーバーガー",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.681024,
+        "longitude": 139.7043452,
+        "address": "明治通り, ４丁目２６ー３",
+        "opening_hours": "Mo-Fr 11:00-19:00; Sa 11:00-15:00",
+        "phone": "080-4090-1811",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7039457,
+          35.6932254
+        ]
+      },
+      "properties": {
+        "name": "Saizeriya",
+        "name_en": "サイゼリヤ",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6932254,
+        "longitude": 139.7039457,
+        "opening_hours": "10:30-23:00",
+        "phone": "03-5155-9371",
+        "website": "https://shop.saizeriya.co.jp/sz_restaurant/spot/detail?code=0931",
+        "wheelchair": "no",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5767135,
+          35.7059993
+        ]
+      },
+      "properties": {
+        "name": "Crayon House",
+        "name_en": "クレヨンハウス",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7059993,
+        "longitude": 139.5767135,
+        "opening_hours": "Mo-Su 11:00-21:00",
+        "phone": "+81-422-27-1377",
+        "website": "https://www.crayonhouse.co.jp/shop/pages/tk01.aspx",
+        "wheelchair": "yes",
+        "cuisine": "japanese;asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5813505,
+          35.7031238
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7031238,
+        "longitude": 139.5813505,
+        "opening_hours": "Mo-Su 07:30-22:00",
+        "phone": "+81-422-222247",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8276929,
+          35.6461169
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー Expressりんかい線新木場駅店",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6461169,
+        "longitude": 139.8276929,
+        "opening_hours": "Mo-Fr 07:30-20:00; Sa-Su 08:00-19:00",
+        "phone": "090-3656-3867",
+        "website": "https://shop.tullys.co.jp/detail/1003343",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8265318,
+          35.6458672
+        ]
+      },
+      "properties": {
+        "name": "ST.MARC CAFÉ",
+        "name_en": "サンマルクカフェ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6458672,
+        "longitude": 139.8265318,
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+81 3-5534-0309",
+        "website": "http://www.saint-marc-hd.com/cafe/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.685433,
+          35.6809149
+        ]
+      },
+      "properties": {
+        "name": "CoCo ICHIBANYA",
+        "name_en": "CoCo壱番屋",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6809149,
+        "longitude": 139.685433,
+        "opening_hours": "Mo-Su 11:00-01:00",
+        "phone": "+81-3-53338283",
+        "website": "https://www.ichibanya.co.jp/",
+        "wheelchair": "no",
+        "cuisine": "curry;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6829274,
+          35.6837909
+        ]
+      },
+      "properties": {
+        "name": "焼肉 飛鳥",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6837909,
+        "longitude": 139.6829274,
+        "opening_hours": "17:00-21:00; Su,PH off; We off",
+        "phone": "+81-3-3376-2204",
+        "website": "http://yakinikuaska.web.fc2.com/",
+        "cuisine": "barbecue;korean;yakiniku",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.682001,
+          35.6821167
+        ]
+      },
+      "properties": {
+        "name": "Asian Palm Shibuya Honmachi",
+        "name_en": "アジアンパーム渋谷本町",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6821167,
+        "longitude": 139.682001,
+        "opening_hours": "11:00-14:30,17:30-01:00",
+        "phone": "+81-3-3372-9050",
+        "website": "https://www.asianpalm.tokyo/",
+        "cuisine": "curry;indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8734968,
+          35.6628396
+        ]
+      },
+      "properties": {
+        "name": "Gusto",
+        "name_en": "ガスト",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6628396,
+        "longitude": 139.8734968,
+        "opening_hours": "Mo-Su 00:00-03:00,07:00-24:00",
+        "phone": "0356678188",
+        "cuisine": "western;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8718146,
+          35.6629107
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6629107,
+        "longitude": 139.8718146,
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa 07:30-21:00; Su,PH 08:00-20:00",
+        "phone": "+81 3-3680-3026",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7368295,
+          35.6555641
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6555641,
+        "longitude": 139.7368295,
+        "opening_hours": "Mo-Sa 07:30-21:30; Su,PH 07:30-21:00",
+        "phone": "+81 3-5545-1567",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7628476,
+          35.7246553
+        ]
+      },
+      "properties": {
+        "name": "Saint Marc Cafe",
+        "name_en": "サンマルクカフェ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7246553,
+        "longitude": 139.7628476,
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+81 3-5815-5309",
+        "website": "http://www.saint-marc-hd.com/cafe/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7455812,
+          35.7262851
+        ]
+      },
+      "properties": {
+        "name": "喜三郎農場",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7262851,
+        "longitude": 139.7455812,
+        "opening_hours": "Mo-Fr 11:00-14:30,17:00-22:00; Sa,Su 11:00-16:00,17:00-22:00",
+        "phone": "+81339433746",
+        "website": "https://www.kisaburou-sengoku.com/",
+        "cuisine": "japanese;egg",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7362944,
+          35.7171376
+        ]
+      },
+      "properties": {
+        "name": "INDIAN RESTAURANT PANAS",
+        "name_en": "パナス",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7171376,
+        "longitude": 139.7362944,
+        "opening_hours": "Mo-Su 11:00-15:00, 17:00-23:00",
+        "phone": "0339473035",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7342394,
+          35.7196014
+        ]
+      },
+      "properties": {
+        "name": "Hananoren",
+        "name_en": "生粋 花のれん",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7196014,
+        "longitude": 139.7342394,
+        "opening_hours": "Mo-We, Fr-Sa 11:30-15:00, 17:00-21:00; Su 11:30-15:00, 17:00-22:00",
+        "phone": "+81 3-5981-5592",
+        "cuisine": "ramen",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7364835,
+          35.7175628
+        ]
+      },
+      "properties": {
+        "name": "Saint Marc Cafe",
+        "name_en": "サンマルクカフェ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7175628,
+        "longitude": 139.7364835,
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+81 3-5940-5309",
+        "website": "http://www.saint-marc-hd.com/cafe/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7331207,
+          35.7199121
+        ]
+      },
+      "properties": {
+        "name": "シアトルエスプレスカフェ お茶の水女子大学",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7199121,
+        "longitude": 139.7331207,
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "phone": "+81-3-6304-1920",
+        "website": "https://seattlecoffee.co.jp/",
+        "cuisine": "coffee_shop;brunch;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6347189,
+          35.6267835
+        ]
+      },
+      "properties": {
+        "name": "CoCo ICHIBANYA",
+        "name_en": "CoCo壱番屋",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6267835,
+        "longitude": 139.6347189,
+        "opening_hours": "Mo-Su 11:00-23:30",
+        "phone": "+81-3-54917286",
+        "website": "https://www.ichibanya.co.jp/",
+        "cuisine": "curry;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6442063,
+          35.6318294
+        ]
+      },
+      "properties": {
+        "name": "Gonpachi Sakura-Shinmachi",
+        "name_en": "権八 桜新町",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6318294,
+        "longitude": 139.6442063,
+        "opening_hours": "Mo-Fr 17:00-00:00; Sa 11:30-00:00",
+        "phone": "+81 3-5451-3300",
+        "website": "https://www.gonpachi.jp/sakurashinmachi/?lang=ja",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6442122,
+          35.6317646
+        ]
+      },
+      "properties": {
+        "name": "Cafe La Boheme Sakura-Shinmachi",
+        "name_en": "カフェ ラ・ボエム 桜新町",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6317646,
+        "longitude": 139.6442122,
+        "opening_hours": "Mo-Su 11:00-03:00",
+        "phone": "+81 3-5426-0922",
+        "website": "https://www.boheme.jp/sakurashinmachi/?lang=ja",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6449521,
+          35.6318651
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6318651,
+        "longitude": 139.6449521,
+        "opening_hours": "Mo-Su 07:30-22:00",
+        "phone": "+81 3-5426-0133",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6433055,
+          35.6406207
+        ]
+      },
+      "properties": {
+        "name": "Speed Star Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6406207,
+        "longitude": 139.6433055,
+        "opening_hours": "Mo,Tu,Th,Fr,Sa 08:30-20:00; Su 08:00-19:00",
+        "phone": "+81-3-6432-6362",
+        "website": "facebook.com/speedstar",
+        "cuisine": "japanese;breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.727987,
+          35.7188013
+        ]
+      },
+      "properties": {
+        "name": "韓国家庭料理　つつむ",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7188013,
+        "longitude": 139.727987,
+        "opening_hours": "Mo-Fr 11:00-15:00,17:00-22:30; Sa 17:00-22:30",
+        "phone": "050-3562-0419",
+        "cuisine": "korean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8012805,
+          35.713497
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.713497,
+        "longitude": 139.8012805,
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "+81 3-5246-4320",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7480006,
+          35.7358251
+        ]
+      },
+      "properties": {
+        "name": "Organic Bar Nourish",
+        "name_en": "自然野菜レストラン 駒込 ナーリッシュ",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7358251,
+        "longitude": 139.7480006,
+        "opening_hours": "Mo-Su 11:30-14:30; Fr-Sa 18:00-22:00",
+        "phone": "+81339448300",
+        "website": "https://k-nourish.tokyo/",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7339524,
+          35.6443465
+        ]
+      },
+      "properties": {
+        "name": "Saizeriya",
+        "name_en": "サイゼリヤ",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6443465,
+        "longitude": 139.7339524,
+        "opening_hours": "Mo-Su,PH 10:00-23:00",
+        "phone": "+81 3 5795 3160",
+        "website": "https://www.saizeriya.co.jp/restaurant/shop_detail.php?cd=0852",
+        "wheelchair": "yes",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7329308,
+          35.6469884
+        ]
+      },
+      "properties": {
+        "name": "Mimoza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6469884,
+        "longitude": 139.7329308,
+        "opening_hours": "Tu-Th 16:30-21:00; Fr-Sa 11:00-14:00,17:00-21:00",
+        "phone": "+81-70-8900-5274",
+        "website": "https://sicil-catering-mimoza-shirokane.business.site/",
+        "wheelchair": "limited",
+        "cuisine": "rotisserie",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7385428,
+          35.6386957
+        ]
+      },
+      "properties": {
+        "name": "ピルニー ピヤーク トウキョウ",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6386957,
+        "longitude": 139.7385428,
+        "opening_hours": "Tu-Fr 18:00-23:00; Sa 14:00-22:30",
+        "phone": "+81368269186",
+        "cuisine": "czech",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7478482,
+          35.64019
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.64019,
+        "longitude": 139.7478482,
+        "opening_hours": "Mo-Fr 07:30-20:00; Sa-Su,PH 09:00-18:30",
+        "phone": "+81 3-5419-1333",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7341653,
+          35.6443257
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6443257,
+        "longitude": 139.7341653,
+        "opening_hours": "Mo-Fr 07:00-22:00; Sa-Su,PH 08:00-21:00",
+        "phone": "+81 3-5789-3124",
+        "website": "https://www.starbucks.co.jp/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7160394,
+          35.6342631
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6342631,
+        "longitude": 139.7160394,
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+81 3-6408-8441",
+        "website": "https://www.starbucks.co.jp/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7157098,
+          35.6331752
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6331752,
+        "longitude": 139.7157098,
+        "opening_hours": "Mo-Fr 07:30-22:00; Sa 08:00-22:30; Su,PH 09:00-22:30",
+        "phone": "03-5719-2117",
+        "website": "https://www.tullys.co.jp/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8153911,
+          35.6747554
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6747554,
+        "longitude": 139.8153911,
+        "opening_hours": "Mo-Fr 08:00-21:00; Sa-Su,PH 09:00-21:00",
+        "phone": "+81 3-5653-7580",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.816389,
+          35.6744647
+        ]
+      },
+      "properties": {
+        "name": "CAFE VELOCE",
+        "name_en": "カフェ・ベローチェ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6744647,
+        "longitude": 139.816389,
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "phone": "+81-3-3699-8475",
+        "website": "https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7135248,
+          35.646978
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.646978,
+        "longitude": 139.7135248,
+        "opening_hours": "Mo-Fr 07:30-21:00; Sa-Su,PH 08:00-20:00",
+        "phone": "+81 3-5422-9121",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709882,
+          35.6472145
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6472145,
+        "longitude": 139.709882,
+        "opening_hours": "Mo-Su 07:00-22:30",
+        "phone": "+81 3-5475-8402",
+        "website": "https://www.starbucks.co.jp/",
+        "wikidata": "Q108809906",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7496196,
+          35.7034362
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7034362,
+        "longitude": 139.7496196,
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa,Su,PH 08:00-20:00",
+        "phone": "+81 3-5802-3901",
+        "website": "https://www.starbucks.co.jp/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7526672,
+          35.7068651
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7068651,
+        "longitude": 139.7526672,
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+81 3-3868-8061",
+        "website": "https://www.starbucks.co.jp/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6385644,
+          35.6510353
+        ]
+      },
+      "properties": {
+        "name": "IngoBingo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6510353,
+        "longitude": 139.6385644,
+        "opening_hours": "Tu-We, Fr 18:00-23:00; Sa-Su 15:00-23:00",
+        "phone": "+8135401535",
+        "website": "https://ingobingo.jp",
+        "cuisine": "german",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6526028,
+          35.6554352
+        ]
+      },
+      "properties": {
+        "name": "Prabesh",
+        "name_en": "パラベッシュ",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6554352,
+        "longitude": 139.6526028,
+        "opening_hours": "11:00-15:00,17:00-02:00",
+        "phone": "03-3439-6110",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.636254,
+          35.6497604
+        ]
+      },
+      "properties": {
+        "name": "萬来",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6497604,
+        "longitude": 139.636254,
+        "opening_hours": "11:30-22:30; We off",
+        "phone": "3420-6626",
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6471993,
+          35.6537715
+        ]
+      },
+      "properties": {
+        "name": "Saint Marc Cafe",
+        "name_en": "サンマルクカフェ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6537715,
+        "longitude": 139.6471993,
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+81-3-54264309",
+        "website": "http://www.saint-marc-hd.com/cafe/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6361289,
+          35.651668
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.651668,
+        "longitude": 139.6361289,
+        "opening_hours": "Mo-Su 07:30-22:00",
+        "phone": "+81 3-5426-3445",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7049824,
+          35.5852502
+        ]
+      },
+      "properties": {
+        "name": "Jonathan's",
+        "name_en": "ジョナサン",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.5852502,
+        "longitude": 139.7049824,
+        "opening_hours": "Mo-Su 07:00-03:00",
+        "phone": "+81-3-5742-7186",
+        "cuisine": "italian;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7357699,
+          35.7539218
+        ]
+      },
+      "properties": {
+        "name": "Rocco's New York Style Pizza Tokyo",
+        "name_en": "ラッコズ ニューヨークスタイルピザ東京",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7539218,
+        "longitude": 139.7357699,
+        "opening_hours": "Tu-Fr 11:00-14:00,17:00-21:00; Sa 11:00-21:00; Su 11:00-20:00; Mo off",
+        "phone": "+81 3-3906-9710",
+        "wheelchair": "no",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7420086,
+          35.7460041
+        ]
+      },
+      "properties": {
+        "name": "Enomoto Hamburg Laboratory",
+        "name_en": "榎本ハンバーグ研究所",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7460041,
+        "longitude": 139.7420086,
+        "opening_hours": "Mo-Fr 11:30-15:00,18:00-21:30; Sa-Su 11:00-15:30,18:00-21:30",
+        "phone": "+81-3-3910-7020",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7377658,
+          35.7541737
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7541737,
+        "longitude": 139.7377658,
+        "opening_hours": "Mo-Fr 07:00-22:00; Sa-Su,PH 08:00-22:00",
+        "phone": "+81 3-3911-7891",
+        "website": "https://www.starbucks.co.jp/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7385915,
+          35.752984
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.752984,
+        "longitude": 139.7385915,
+        "opening_hours": "Mo-Fr 06:30-22:00; Sa-Su,PH 07:00-22:00",
+        "phone": "+81 3-5902-7441",
+        "website": "https://www.doutor.co.jp/dcs/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7909712,
+          35.631246
+        ]
+      },
+      "properties": {
+        "name": "Nirvanam",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.631246,
+        "longitude": 139.7909712,
+        "opening_hours": "Mo-Su 11:15-14:30, 18:00-22:00",
+        "website": "https://nirvanam.jp",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7947208,
+          35.6339246
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー がん研有明病院店",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6339246,
+        "longitude": 139.7947208,
+        "opening_hours": "Mo-Fr 07:30-18:00",
+        "phone": "03-6380-7313",
+        "website": "https://shop.tullys.co.jp/detail/1000451",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7936381,
+          35.6297021
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー 東京ビッグサイト店",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6297021,
+        "longitude": 139.7936381,
+        "opening_hours": "Mo-Su 08:00-19:00",
+        "phone": "03-3527-5086",
+        "website": "https://shop.tullys.co.jp/detail/1000627",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6062556,
+          35.7405949
+        ]
+      },
+      "properties": {
+        "name": "Nakayashiki",
+        "name_en": "なかやしき",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7405949,
+        "longitude": 139.6062556,
+        "opening_hours": "Th-Tu 11:30-14:30",
+        "phone": "0339041028",
+        "website": "http://www.soba-nakayashiki.com/",
+        "cuisine": "soba",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6046999,
+          35.7438301
+        ]
+      },
+      "properties": {
+        "name": "麺処 井の庄",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7438301,
+        "longitude": 139.6046999,
+        "opening_hours": "Mo-Fr 10:00-15:30,17:00-23:00; Sa-Su,PH 10:00-23:00",
+        "phone": "+81 3 3997 1631",
+        "website": "https://inosho.men/",
+        "cuisine": "ramen",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6061707,
+          35.7430207
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7430207,
+        "longitude": 139.6061707,
+        "opening_hours": "Mo-Fr 07:30-21:00; Sa-Su,PH 08:00-21:00",
+        "phone": "+81 3-5372-5351",
+        "website": "https://www.doutor.co.jp/dcs/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6365494,
+          35.6260213
+        ]
+      },
+      "properties": {
+        "name": "PIZZERIA MAR-DE NAPOLI",
+        "name_en": "ピッツェリア・マルデナポリ 世田谷本店",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6260213,
+        "longitude": 139.6365494,
+        "opening_hours": "Mo-Sa 11:00-24:00",
+        "phone": "+81 3 3707 0511",
+        "website": "http://www.mar-denapoli.com/smart/store/setagaya.html",
+        "cuisine": "pizza;italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6522135,
+          35.6214747
+        ]
+      },
+      "properties": {
+        "name": "Hanaya Yohei",
+        "name_en": "華屋与兵衛",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6214747,
+        "longitude": 139.6522135,
+        "opening_hours": "10:30-00:30",
+        "phone": "03-5706-8783",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6443932,
+          35.631481
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.631481,
+        "longitude": 139.6443932,
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa-Su,PH 08:00-20:00",
+        "phone": "+81 3-5426-5641",
+        "website": "https://www.doutor.co.jp/dcs/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.659063,
+          35.6317483
+        ]
+      },
+      "properties": {
+        "name": "Yayoiken",
+        "name_en": "やよい軒",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6317483,
+        "longitude": 139.659063,
+        "opening_hours": "Mo-Su,PH 10:00-24:00",
+        "phone": "+81 354315131",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6591152,
+          35.6322184
+        ]
+      },
+      "properties": {
+        "name": "CoCo ICHIBANYA",
+        "name_en": "CoCo壱番屋",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6322184,
+        "longitude": 139.6591152,
+        "opening_hours": "Mo-Su 11:00-24:00",
+        "phone": "+81-3-57796199",
+        "website": "https://www.ichibanya.co.jp/",
+        "cuisine": "curry;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6599258,
+          35.6338417
+        ]
+      },
+      "properties": {
+        "name": "地理系ブックカフェ空想地図",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6338417,
+        "longitude": 139.6599258,
+        "opening_hours": "Tu-Sa 11:00-21:00; Su 11:00-20:00",
+        "phone": "+81 3-6450-7085",
+        "website": "https://chirikeibookcafe-kuusouchizu.owst.jp",
+        "wheelchair": "no",
+        "cuisine": "カフェメニュー;coffee_shop;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6618474,
+          35.633339
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.633339,
+        "longitude": 139.6618474,
+        "opening_hours": "Mo-Fr 07:00-21:30; Sa-Su,PH 07:30-21:00",
+        "phone": "+81 3-5712-2524",
+        "website": "https://www.doutor.co.jp/dcs/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6189838,
+          35.6363904
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6363904,
+        "longitude": 139.6189838,
+        "opening_hours": "Mo-Su 08:30-20:00",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6264765,
+          35.6264063
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6264063,
+        "longitude": 139.6264765,
+        "opening_hours": "Mo-Su 06:00-02:00",
+        "phone": "+81 3-5491-4086",
+        "website": "https://www.starbucks.co.jp/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8716714,
+          35.7655049
+        ]
+      },
+      "properties": {
+        "name": "BICYCLE COFFEE TOKYO Cafe & Roastery",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7655049,
+        "longitude": 139.8716714,
+        "opening_hours": "Th-Fr 12:00-17:00; Sa-Su 10:00-17:00",
+        "phone": "+81-3-5648-3658",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7964561,
+          35.6711493
+        ]
+      },
+      "properties": {
+        "name": "Shosuke",
+        "name_en": "庄助",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6711493,
+        "longitude": 139.7964561,
+        "opening_hours": "17:30-23:00; Sa-Su,PH off",
+        "phone": "+81-3-3643-9648",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7956608,
+          35.6731842
+        ]
+      },
+      "properties": {
+        "name": "いたり家",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6731842,
+        "longitude": 139.7956608,
+        "opening_hours": "Mo-Su 11:00-20:00",
+        "phone": "+81336301109",
+        "website": "https://italiya.co.jp/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7984387,
+          35.6764803
+        ]
+      },
+      "properties": {
+        "name": "たまキャアノ",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6764803,
+        "longitude": 139.7984387,
+        "opening_hours": "Tu-Sa 18:00-23:00; PH off",
+        "phone": "+81 3 3641 1542",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8038257,
+          35.6661885
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6661885,
+        "longitude": 139.8038257,
+        "opening_hours": "Mo-Fr 07:00-23:00; Sa,Su,PH 08:00-23:00",
+        "phone": "+81 3-5606-2791",
+        "website": "https://www.starbucks.co.jp/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7961232,
+          35.6729438
+        ]
+      },
+      "properties": {
+        "name": "Padhinton Café",
+        "name_en": "パディントン",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6729438,
+        "longitude": 139.7961232,
+        "opening_hours": "Th-Sa 11:00-19:00; Sa,PH 11:00-18:00; Su,Mo off",
+        "phone": "+81-3-5620-2701",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7377955,
+          35.6799431
+        ]
+      },
+      "properties": {
+        "name": "La Maison Kioi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6799431,
+        "longitude": 139.7377955,
+        "opening_hours": "11:00-14:00, 17:30-21:00",
+        "phone": "+81 3-6261-1153",
+        "website": "https://akasakaprince.com/lamaisonkioi/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.657138,
+          35.6930037
+        ]
+      },
+      "properties": {
+        "name": "杉並まん月",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6930037,
+        "longitude": 139.657138,
+        "opening_hours": "Mo-Fr 11:30-14:00,18:00-23:00; Sa 11:30-23:00; Su,PH 11:30-22:00; Th off",
+        "phone": "+81-3-3381-2770",
+        "website": "http://www18.ocn.ne.jp/~mangetsu/",
+        "cuisine": "noodle",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6588642,
+          35.6980861
+        ]
+      },
+      "properties": {
+        "name": "Osaka Ohsho",
+        "name_en": "大阪王将",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6980861,
+        "longitude": 139.6588642,
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+81 3 6383 1404",
+        "website": "https://www.osaka-ohsho.com/store/detail.php?area=tokyo&id=higashi_koenji",
+        "cuisine": "japanese;chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6488539,
+          35.697681
+        ]
+      },
+      "properties": {
+        "name": "Ramen Nagaya",
+        "name_en": "のど黒らぁ麺 永屋",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.697681,
+        "longitude": 139.6488539,
+        "opening_hours": "10:00-16:00; Sa 10:00-23:00; We,PH off",
+        "phone": "+81-50-8885-7544",
+        "website": "https://nodoguroramen-nagaya.on.omisenomikata.jp/",
+        "cuisine": "ramen",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6580671,
+          35.6981856
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6981856,
+        "longitude": 139.6580671,
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa 08:00-21:00; Su,PH 08:00-20:00",
+        "phone": "+81 3-3316-0516",
+        "website": "https://www.doutor.co.jp/dcs/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.647705,
+          35.6976453
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6976453,
+        "longitude": 139.647705,
+        "opening_hours": "Mo-Sa 07:30-21:00; Su,PH 08:00-21:00",
+        "phone": "+81 3-3311-1285",
+        "website": "http://www.doutor.co.jp/dcs/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6287153,
+          35.6120769
+        ]
+      },
+      "properties": {
+        "name": "bairan",
+        "name_en": "梅蘭",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6120769,
+        "longitude": 139.6287153,
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+81 3-6805-6852",
+        "website": "https://www.bairan.jp/",
+        "wheelchair": "yes",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.625765,
+          35.6133462
+        ]
+      },
+      "properties": {
+        "name": "Lemaghreb Moroccan Restaurant",
+        "name_en": "ルマグレブ モロッコレストラン",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6133462,
+        "longitude": 139.625765,
+        "opening_hours": "Tu-Su 11:30-23:00",
+        "phone": "+81 3 3709 2664",
+        "website": "http://Lemaghreb.jp",
+        "wheelchair": "no",
+        "cuisine": "moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.625211,
+          35.613185
+        ]
+      },
+      "properties": {
+        "name": "bistro oeuf oeuf",
+        "name_en": "ビストロ ウフ ウフ",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.613185,
+        "longitude": 139.625211,
+        "opening_hours": "Tu-Fr 12:00-14:00,18:00-22:00;Sa 12:00-14:30,18:00-22:00;Su 12:00-14:30,18:00-21:00",
+        "phone": "+81 3-5717-3585",
+        "website": "http://www.oeuf-oeuf.jp",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6294185,
+          35.6113047
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6113047,
+        "longitude": 139.6294185,
+        "opening_hours": "Mo 07:00-22:30; Tu-Su 07:00-21:00",
+        "phone": "+81-3-5491-8544",
+        "website": "https://store.starbucks.co.jp/detail-2067/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6329327,
+          35.6072985
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6072985,
+        "longitude": 139.6329327,
+        "opening_hours": "07:00-21:00",
+        "phone": "+81-3-5797-5505",
+        "website": "https://store.starbucks.co.jp/detail-1138/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8193275,
+          35.7252496
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7252496,
+        "longitude": 139.8193275,
+        "opening_hours": "Mo-Fr 07:30-21:00; Sa-Su,PH 08:00-20:00",
+        "phone": "+81-3-36191955",
+        "website": "http://www.doutor.co.jp/dcs/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8179247,
+          35.7175616
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7175616,
+        "longitude": 139.8179247,
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "phone": "+81-3-36178302",
+        "website": "http://www.doutor.co.jp/dcs/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8654816,
+          35.7855341
+        ]
+      },
+      "properties": {
+        "name": "Komeda's Coffee",
+        "name_en": "コメダ珈琲店",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7855341,
+        "longitude": 139.8654816,
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+81-3-58763988",
+        "website": "https://www.komeda.co.jp/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8814231,
+          35.7821097
+        ]
+      },
+      "properties": {
+        "name": "CAFE TO HEN",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7821097,
+        "longitude": 139.8814231,
+        "opening_hours": "Sa-Tu 10:30-17:00",
+        "phone": "+81 48-959-9730",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7373857,
+          35.6276453
+        ]
+      },
+      "properties": {
+        "name": "Tsubame Grill",
+        "name_en": "つばめグリル",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6276453,
+        "longitude": 139.7373857,
+        "opening_hours": "Mo-Su 11:30-22:30",
+        "phone": "03-3441-0121",
+        "website": "https://www.tsubame-grill.co.jp/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7411679,
+          35.6301164
+        ]
+      },
+      "properties": {
+        "name": "Doutor Coffee Shop",
+        "name_en": "ドトールコーヒーショップ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6301164,
+        "longitude": 139.7411679,
+        "opening_hours": "Mo-Fr 06:45-21:00; Sa 07:30-20:00; Su,PH 08:00-20:00",
+        "phone": "03-5460-6133",
+        "website": "https://www.doutor.co.jp/dcs/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.719722,
+          35.711254
+        ]
+      },
+      "properties": {
+        "name": "NE'Co",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.711254,
+        "longitude": 139.719722,
+        "opening_hours": "Mo-Su 11:30-15:00,17:30-23:00",
+        "phone": "81 362739207",
+        "website": "http://neco-w.com",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7522887,
+          35.7481676
+        ]
+      },
+      "properties": {
+        "name": "Yakiniku Anrakutei",
+        "name_en": "焼肉　安楽亭",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7481676,
+        "longitude": 139.7522887,
+        "opening_hours": "Mo-Th 11:00-22:20; Fr-Su 11:00-23:20",
+        "phone": "+81 3 3895 1129",
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.721764,
+          35.6504765
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6504765,
+        "longitude": 139.721764,
+        "opening_hours": "Mo-Sa 07:00-22:00; Sa,PH 07:00-21:30",
+        "phone": "+81 3-3473-8720",
+        "website": "https://www.starbucks.co.jp/",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7170534,
+          35.6714791
+        ]
+      },
+      "properties": {
+        "name": "CAFE VELOCE",
+        "name_en": "カフェ・ベローチェ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6714791,
+        "longitude": 139.7170534,
+        "opening_hours": "07:00-21:00",
+        "phone": "+81 3-3408-0664",
+        "website": "https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7173347,
+          35.6700454
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "スターバックス",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6700454,
+        "longitude": 139.7173347,
+        "opening_hours": "Mo-Fr 07:00-22:00; Sa 08:00-22:00; Su,PH 08:00-21:00",
+        "phone": "+81-3-54103363",
+        "website": "https://www.starbucks.co.jp/",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7163958,
+          35.7095758
+        ]
+      },
+      "properties": {
+        "name": "Yahatazushi",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7095758,
+        "longitude": 139.7163958,
+        "opening_hours": "Mo-Sa 11:50-13:20, 17:00-21:30",
+        "phone": "+81332031634",
+        "website": "https://yahatazushi.com/",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7313071,
+          35.6741937
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6741937,
+        "longitude": 139.7313071,
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa-Su,PH off",
+        "phone": "+81 3-5114-0133",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7357028,
+          35.6795605
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6795605,
+        "longitude": 139.7357028,
+        "opening_hours": "Mo-Fr 07:30-20:00; Sa,Su,PH 09:00-18:00",
+        "phone": "+81 3-3221-0531",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7484852,
+          35.5813752
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.5813752,
+        "longitude": 139.7484852,
+        "opening_hours": "Mo-Fr 07:30-19:00; Sa-Su,PH 08:00-19:00",
+        "phone": "+81 3-5753-6363",
+        "website": "https://www.tullys.co.jp/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7185192,
+          35.6994664
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6994664,
+        "longitude": 139.7185192,
+        "opening_hours": "Mo-Fr 07:30-21:00; Sa 08:00-20:00; Su,PH 08:00-19:00",
+        "phone": "+81 3-5155-2668",
+        "website": "https://www.tullys.co.jp/",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7162493,
+          35.7018817
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー 国立国際医療センター店",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7018817,
+        "longitude": 139.7162493,
+        "opening_hours": "Mo-Fr 07:30-18:00",
+        "phone": "03-6457-3357",
+        "website": "https://shop.tullys.co.jp/detail/1000845",
+        "wikidata": "Q11316408",
+        "wikipedia": "ja:タリーズコーヒージャパン",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7714382,
+          35.7282699
+        ]
+      },
+      "properties": {
+        "name": "EXCELSIOR CAFE",
+        "name_en": "エクセルシオール カフェ",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7282699,
+        "longitude": 139.7714382,
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+81-3-38030373",
+        "website": "http://www.excelsiorcaffe.com/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7710697,
+          35.7293976
+        ]
+      },
+      "properties": {
+        "name": "Tully's Coffee",
+        "name_en": "タリーズコーヒー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7293976,
+        "longitude": 139.7710697,
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+81 3-5604-3052",
+        "website": "https://www.tullys.co.jp/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8812049,
+          35.6345043
+        ]
+      },
+      "properties": {
+        "name": "Blue Bayou Restaurant",
+        "name_en": "ブルーバイユー・レストラン Blue Bayou Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6345043,
+        "longitude": 139.8812049,
+        "wikidata": "Q4928862",
+        "wikipedia": "ja:ブルーバイユー・レストラン",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8820402,
+          35.6319879
+        ]
+      },
+      "properties": {
+        "name": "Captain Hook's Galley",
+        "name_en": "キャプテンフックス・ギャレー",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6319879,
+        "longitude": 139.8820402,
+        "website": "https://www.tokyodisneyresort.co.jp/tdl/fl/rst_captain.html",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8829207,
+          35.6325932
+        ]
+      },
+      "properties": {
+        "name": "Hungry Bear Restaurant",
+        "name_en": "ハングリー ベア レストラン",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6325932,
+        "longitude": 139.8829207,
+        "website": "https://www.tokyodisneyresort.jp/tdl/restaurant/detail/338/",
+        "cuisine": "curry",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8842768,
+          35.6266836
+        ]
+      },
+      "properties": {
+        "name": "Vulcania Restaurant",
+        "name_en": "ヴォルケイニア・レストラン",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6266836,
+        "longitude": 139.8842768,
+        "website": "https://www.tokyodisneyresort.jp/en/tds/restaurant/detail/418/",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8833485,
+          35.6253941
+        ]
+      },
+      "properties": {
+        "name": "Horizon Bay Restaurant",
+        "name_en": "ホライズンベイ・レストラン",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6253941,
+        "longitude": 139.8833485,
+        "website": "https://www.tokyodisneyresort.jp/restaurant/detail/str_id:HZB/",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8717218,
+          35.6490057
+        ]
+      },
+      "properties": {
+        "name": "Royal Host",
+        "name_en": "ロイヤルホスト",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6490057,
+        "longitude": 139.8717218,
+        "cuisine": "japanese;italian;french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8251473,
+          35.6447084
+        ]
+      },
+      "properties": {
+        "name": "木場考",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6447084,
+        "longitude": 139.8251473,
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8185479,
+          35.6575206
+        ]
+      },
+      "properties": {
+        "name": "sushimaru",
+        "name_en": "すし丸",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6575206,
+        "longitude": 139.8185479,
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8178261,
+          35.6570976
+        ]
+      },
+      "properties": {
+        "name": "Uotami",
+        "name_en": "魚民",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6570976,
+        "longitude": 139.8178261,
+        "phone": "03-5635-2688",
+        "website": "https://ga16286.gorp.jp/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8792232,
+          35.6310452
+        ]
+      },
+      "properties": {
+        "name": "La Taverne de Gaston",
+        "name_en": "ラ・タベルヌ・ド・ガストン",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6310452,
+        "longitude": 139.8792232,
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7001225,
+          35.5786121
+        ]
+      },
+      "properties": {
+        "name": "Musashi No Mori Coffee",
+        "name_en": "むさしの森珈琲",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.5786121,
+        "longitude": 139.7001225,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7060923,
+          35.5865992
+        ]
+      },
+      "properties": {
+        "name": "ロゼンダー",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 35.5865992,
+        "longitude": 139.7060923,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7348517,
+          35.5255052
+        ]
+      },
+      "properties": {
+        "name": "Gusto",
+        "name_en": "ガスト",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.5255052,
+        "longitude": 139.7348517,
+        "opening_hours": "24/7",
+        "cuisine": "western;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7418296,
+          35.536479
+        ]
+      },
+      "properties": {
+        "name": "ミネルバ",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.536479,
+        "longitude": 139.7418296,
+        "opening_hours": "Mo-Fr 11:00-15:00",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.730456,
+          35.533954
+        ]
+      },
+      "properties": {
+        "name": "Hayama",
+        "name_en": "そば膳はやま",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.533954,
+        "longitude": 139.730456,
+        "wheelchair": "yes",
+        "cuisine": "soba",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6284437,
+          35.6324109
+        ]
+      },
+      "properties": {
+        "name": "新月庵",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6324109,
+        "longitude": 139.6284437,
+        "phone": "3700-6704",
+        "cuisine": "soba",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6320601,
+          35.6268677
+        ]
+      },
+      "properties": {
+        "name": "Yakiniku restaurant Fukuju Yoga",
+        "name_en": "焼肉名菜 福寿 用賀店",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6268677,
+        "longitude": 139.6320601,
+        "phone": "050-5266-0381",
+        "website": "https://fukuju-yoga.com/",
+        "cuisine": "yakiniku;korean;焼肉",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6239242,
+          35.6338955
+        ]
+      },
+      "properties": {
+        "name": "Denny's",
+        "name_en": "デニーズ",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6338955,
+        "longitude": 139.6239242,
+        "cuisine": "western;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8778809,
+          35.752664
+        ]
+      },
+      "properties": {
+        "name": "jonathan's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.752664,
+        "longitude": 139.8778809,
+        "opening_hours": "07:00-24:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8772939,
+          35.7580425
+        ]
+      },
+      "properties": {
+        "name": "Yabutyu",
+        "name_en": "やぶ忠",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7580425,
+        "longitude": 139.8772939,
+        "cuisine": "soba",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8772454,
+          35.7581472
+        ]
+      },
+      "properties": {
+        "name": "Kawachiya",
+        "name_en": "川千屋",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7581472,
+        "longitude": 139.8772454,
+        "cuisine": "fish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8789749,
+          35.7849476
+        ]
+      },
+      "properties": {
+        "name": "ひろ寿司",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7849476,
+        "longitude": 139.8789749,
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8814789,
+          35.7843052
+        ]
+      },
+      "properties": {
+        "name": "Marufuku",
+        "name_en": "丸福",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7843052,
+        "longitude": 139.8814789,
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.882825,
+          35.7894817
+        ]
+      },
+      "properties": {
+        "name": "Gusto",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7894817,
+        "longitude": 139.882825,
+        "cuisine": "international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6337709,
+          35.6288784
+        ]
+      },
+      "properties": {
+        "name": "再来軒",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6288784,
+        "longitude": 139.6337709,
+        "opening_hours": "Sa 11:30-14:00",
+        "cuisine": "ramen",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7479843,
+          35.5808141
+        ]
+      },
+      "properties": {
+        "name": "根津そば みとう庵",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.5808141,
+        "longitude": 139.7479843,
+        "phone": "+81 3 5493 3030",
+        "cuisine": "japanese;soba",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7447476,
+          35.5969823
+        ]
+      },
+      "properties": {
+        "name": "Saizeriya",
+        "name_en": "サイゼリヤ",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.5969823,
+        "longitude": 139.7447476,
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7398008,
+          35.5965786
+        ]
+      },
+      "properties": {
+        "name": "井乃上",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.5965786,
+        "longitude": 139.7398008,
+        "cuisine": "noodle;soba",
+        "popularity": 0
+      }
     }
   ]
 }

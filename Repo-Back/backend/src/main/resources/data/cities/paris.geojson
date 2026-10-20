@@ -25088,6 +25088,2059 @@
         "website": "https://angiolo.com",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2944968,
+          48.8581328
+        ]
+      },
+      "properties": {
+        "name": "Le Jules Verne",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8581328,
+        "longitude": 2.2944968,
+        "address": "Avenue Gustave Eiffel",
+        "opening_hours": "12:00-13:45,19:00-21:00",
+        "website": "https://www.lejulesverne-paris.com",
+        "wikidata": "Q3223818",
+        "wheelchair": "yes",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2985572,
+          48.861112
+        ]
+      },
+      "properties": {
+        "name": "Les Ombres",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.861112,
+        "longitude": 2.2985572,
+        "address": "Quai Branly, 27, Paris",
+        "opening_hours": "12:00-14:00, 19:00-22:00",
+        "phone": "+33 1 47 53 68 00",
+        "website": "https://www.lesombres-restaurant.com/",
+        "wheelchair": "yes",
+        "cuisine": "brasserie;french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2922548,
+          48.8514176
+        ]
+      },
+      "properties": {
+        "name": "La Cantine du Troquet",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8514176,
+        "longitude": 2.2922548,
+        "address": "Boulevard de Grenelle, 53, Paris",
+        "opening_hours": "Mo-Fr 08:00-23:00;Sa-Su 09:00-23:00",
+        "phone": "+33 1 45 75 98 00",
+        "website": "https://www.lacantinedutroquet.com/",
+        "wheelchair": "limited",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3872306,
+          48.8626607
+        ]
+      },
+      "properties": {
+        "name": "Batistou",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8626607,
+        "longitude": 2.3872306,
+        "address": "Boulevard de Ménilmontant, 65",
+        "opening_hours": "Mo-Su 08:00-01:00",
+        "phone": "+33 1 40 21 13 35",
+        "website": "https://www.batistou-paris.com/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3993172,
+          48.8647574
+        ]
+      },
+      "properties": {
+        "name": "Charlotte",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8647574,
+        "longitude": 2.3993172,
+        "address": "Rue Belgrand, 4, Paris",
+        "opening_hours": "Su-Sa 07:00-02:00",
+        "phone": "+33143490593",
+        "website": "http://www.lacollinegambetta.com",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3561165,
+          48.9317896
+        ]
+      },
+      "properties": {
+        "name": "La petite fille de Tan Chau",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.9317896,
+        "longitude": 2.3561165,
+        "address": "Rue Gabriel Péri, 20",
+        "opening_hours": "Mo-Fr 11:30-14:30",
+        "phone": "+33984 49 37 94",
+        "wheelchair": "no",
+        "cuisine": "asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346825,
+          48.9392973
+        ]
+      },
+      "properties": {
+        "name": "Restaurant K'ribbean Paradise",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.9392973,
+        "longitude": 2.346825,
+        "address": "Rue Paul Éluard, 35",
+        "opening_hours": "Mo-Sa 12:00-23:00",
+        "phone": "+33 9 51 76 85 31",
+        "website": "https://www.facebook.com/profile.php?id=100063492163584",
+        "wheelchair": "yes",
+        "cuisine": "haitian;creole",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3578489,
+          48.9339849
+        ]
+      },
+      "properties": {
+        "name": "O'Grand Breton",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.9339849,
+        "longitude": 2.3578489,
+        "address": "Rue de la Légion d'Honneur, 18, Saint-Denis",
+        "opening_hours": "Mo-Fr 09:00-14:00; Th-Sa 19:00-22:00",
+        "phone": "+33 1 48 20 11 58",
+        "website": "https://www.ograndbreton.com",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3510255,
+          48.936397
+        ]
+      },
+      "properties": {
+        "name": "Le Coq Hardy",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.936397,
+        "longitude": 2.3510255,
+        "opening_hours": "Mo-Fr 06:30-22:30; Sa 08:00-22:30",
+        "phone": "+33 1 48 20 05 73",
+        "website": "https://www.facebook.com/brasserie.lecoqhardy",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3176093,
+          48.8581182
+        ]
+      },
+      "properties": {
+        "name": "Club des Poètes",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8581182,
+        "longitude": 2.3176093,
+        "address": "Rue de Bourgogne, 30",
+        "opening_hours": "Tu 19:00-01:00; We 19:00-01:00; Th 19:00-01:00; Fr 19:00-01:00; Sa 19:00-01:00",
+        "phone": "+33 1 47 05 06 03",
+        "website": "http://www.poesie.net",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3097147,
+          48.8602539
+        ]
+      },
+      "properties": {
+        "name": "Restaurant David Toutain",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8602539,
+        "longitude": 2.3097147,
+        "address": "Rue Surcouf, 29, Paris",
+        "opening_hours": "Tu-Fr 12:00-14:30, 20:00-22:00; Mo 12:30-14:30, 20:00-22:00",
+        "phone": "+33 1 45 50 11 10",
+        "wikidata": "Q125700713",
+        "cuisine": "fine_dining",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3172656,
+          48.8518255
+        ]
+      },
+      "properties": {
+        "name": "Le Café d’Ithaque",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8518255,
+        "longitude": 2.3172656,
+        "address": "Rue Barbet de Jouy, 37, Paris",
+        "opening_hours": "Mo-Fr 07:30-23:00; Sa 10:00-23:00; Su 10:00-17:00",
+        "phone": "+33 1 40 67 10 99",
+        "website": "https://www.le-cafe-d-ithaque.com",
+        "wheelchair": "limited",
+        "cuisine": "mediterranean;french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2360823,
+          48.8916862
+        ]
+      },
+      "properties": {
+        "name": "Jour",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8916862,
+        "longitude": 2.2360823,
+        "address": "Passage de l'Arche, 2, Puteaux",
+        "opening_hours": "Mo-Fr 08:00-15:30",
+        "phone": "+33 1 46 98 09 52",
+        "website": "https://jour.fr/restaurant/jour-la-defense/",
+        "wheelchair": "limited",
+        "cuisine": "salad",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2382849,
+          48.8928306
+        ]
+      },
+      "properties": {
+        "name": "Muses La Défense",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8928306,
+        "longitude": 2.2382849,
+        "address": "2 Pl. de la Défense, Paris",
+        "opening_hours": "Mo-Fr 08:00-00:00; Sa-Su 12:00-00:00",
+        "phone": "+33 1 46 92 10 35",
+        "website": "https://www.muses-ladefense.com/",
+        "wheelchair": "yes",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2395206,
+          48.892149
+        ]
+      },
+      "properties": {
+        "name": "Matsuri",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.892149,
+        "longitude": 2.2395206,
+        "address": "Parvis de la Défense, 2, Puteaux",
+        "opening_hours": "Mo-Fr 11:45-15:00",
+        "phone": "+33 9 70 84 51 15",
+        "website": "https://www.matsuri.fr/nos-restaurants/paris-defense-cnit",
+        "wheelchair": "yes",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2436914,
+          48.890698
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.890698,
+        "longitude": 2.2436914,
+        "address": "Esplanade du Général de Gaulle, 88",
+        "opening_hours": "Mo,Su 09:30-21:00; Tu-Fr 07:30-20:00; Sa 11:00-18:30",
+        "phone": "+33 1 47 44 92 33",
+        "website": "https://www.starbucks.fr/store-locator/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2366876,
+          48.8912264
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8912264,
+        "longitude": 2.2366876,
+        "address": "Le Parvis de la Defense, Puteaux",
+        "opening_hours": "Mo-Th 08:30-21:00; Fr 08:30-22:00; Sa 09:00-22:00; Su 09:00-21:00",
+        "phone": "+33 1 47 74 93 64",
+        "website": "https://www.starbucks.co.uk/store-locator/12518-100676/4-temps-dome",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.250699,
+          48.8639757
+        ]
+      },
+      "properties": {
+        "name": "Le Pré Catelan",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8639757,
+        "longitude": 2.250699,
+        "address": "Route de la Grande Cascade, Paris",
+        "opening_hours": "We-Sa 12:00-12:45,19:00-20:45",
+        "phone": "+33 1 44 14 41 14",
+        "website": "https://leprecatelan.paris/le-restaurant-du-precatelan",
+        "wikidata": "Q3226046",
+        "wikipedia": "fr:Le Pré Catelan",
+        "cuisine": "fine_dining",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2501781,
+          48.8639398
+        ]
+      },
+      "properties": {
+        "name": "La Ferme du Pré",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8639398,
+        "longitude": 2.2501781,
+        "address": "Route de la Grande Cascade, Paris",
+        "opening_hours": "We-Su 12:00-13:45,19:00-20:45",
+        "phone": "+33 1 44 14 41 40",
+        "website": "https://leprecatelan.paris/bistrot-la-ferme-du-pre",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2602856,
+          48.8635574
+        ]
+      },
+      "properties": {
+        "name": "Le Chalet des Iles",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8635574,
+        "longitude": 2.2602856,
+        "opening_hours": "Mo-Su 00:00-01:30,12:00-24:00",
+        "website": "https://www.chalet-des-iles.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2603455,
+          48.8634853
+        ]
+      },
+      "properties": {
+        "name": "Le Chalet des Îles",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8634853,
+        "longitude": 2.2603455,
+        "opening_hours": "Mo-Sa 12:00-14:30, 19:30-22:30; Su 12:00-15:00, 19:30-22:30",
+        "phone": "+33 1 42 88 04 69",
+        "website": "https://chalet-des-iles.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4330345,
+          48.8417447
+        ]
+      },
+      "properties": {
+        "name": "Olympe Sports Café",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8417447,
+        "longitude": 2.4330345,
+        "address": "Avenue du Général de Gaulle, 46",
+        "opening_hours": "Mo 12:00-14:30; Tu-Fr 12:00-14:30,19:00-02:00; Sa 19:00-02:00",
+        "phone": "+33 1 43 28 05 27",
+        "website": "https://olympe-sport-cafe.eatbu.com/",
+        "wheelchair": "no",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4445626,
+          48.8375705
+        ]
+      },
+      "properties": {
+        "name": "Les Magnolias",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8375705,
+        "longitude": 2.4445626,
+        "address": "Route de la Pyramide, Paris",
+        "opening_hours": "Mo-Su 09:30-19:30",
+        "phone": "+33 1 43 74 78 22",
+        "website": "http://www.restaurant-lesmagnolias-paris.com/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4439548,
+          48.8395574
+        ]
+      },
+      "properties": {
+        "name": "Le Bosquet",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8395574,
+        "longitude": 2.4439548,
+        "address": "Route de la Pyramide, Paris",
+        "opening_hours": "Mo-Su 10:00-19:30",
+        "phone": "+33 1 43 28 87 15",
+        "website": "https://lebosquetparcfloral.fr",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3379696,
+          48.8416121
+        ]
+      },
+      "properties": {
+        "name": "Le gamin de Paris",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8416121,
+        "longitude": 2.3379696,
+        "address": "Boulevard Saint-Michel, 139, Paris",
+        "opening_hours": "Mo-Sa 08:00-23:00",
+        "phone": "+33 1 43 54 48 11",
+        "wheelchair": "limited",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3276711,
+          48.8318731
+        ]
+      },
+      "properties": {
+        "name": "AKA coffee shop",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8318731,
+        "longitude": 2.3276711,
+        "address": "Rue Mouton Duvernet, 25",
+        "opening_hours": "Tu-Fr 08:00-17:00; Sa 09:00-18:00; Su 09:30-17:00",
+        "phone": "+33 1 88 61 68 28",
+        "website": "https://www.instagram.com/aka_coffeeshop",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4381732,
+          48.8447832
+        ]
+      },
+      "properties": {
+        "name": "La Table des Troys",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8447832,
+        "longitude": 2.4381732,
+        "address": "Avenue de Paris, 2 bis, Vincennes",
+        "opening_hours": "Mo-Th 12:00-14:45,19:00-22:30; Fr 12:00-14:45,19:00-23:00; Sa 12:00-15:00,19:00-23:00; Su 12:00-22:00",
+        "phone": "+33 1 43 28 26 36",
+        "website": "https://www.la-table-des-troys.com/",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4381022,
+          48.8462896
+        ]
+      },
+      "properties": {
+        "name": "L'Armorique",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8462896,
+        "longitude": 2.4381022,
+        "address": "Rue Raymond du Temple, 19",
+        "opening_hours": "Tu-Fr 12:00-14:00,19:00-24:00",
+        "phone": "+33 1 43 65 99 82",
+        "wheelchair": "no",
+        "cuisine": "crepe",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4348051,
+          48.8457537
+        ]
+      },
+      "properties": {
+        "name": "Maison Victoria",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8457537,
+        "longitude": 2.4348051,
+        "opening_hours": "Tu-Su 09:00-18:00",
+        "phone": "+33 6 95 34 02 38",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4400598,
+          48.8446352
+        ]
+      },
+      "properties": {
+        "name": "Les Officiers",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8446352,
+        "longitude": 2.4400598,
+        "address": "Avenue de Nogent, 3",
+        "opening_hours": "08:00-23:00",
+        "website": "https://lesofficiers.fr/",
+        "wheelchair": "yes",
+        "cuisine": "regional;pizza;burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2731279,
+          48.8575047
+        ]
+      },
+      "properties": {
+        "name": "Alba Ristorante",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8575047,
+        "longitude": 2.2731279,
+        "address": "Avenue Mozart, 12, Paris",
+        "opening_hours": "Mo-Su 10:00-15:00,19:00-23:00",
+        "phone": "+33 1 45 27 62 45",
+        "website": "https://albaristorante.fr",
+        "wheelchair": "no",
+        "cuisine": "italian_pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2744062,
+          48.8576861
+        ]
+      },
+      "properties": {
+        "name": "Chez Tony",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8576861,
+        "longitude": 2.2744062,
+        "address": "Rue Bois-le-Vent, 34, Paris",
+        "opening_hours": "Mo-Sa 12:00-14:30,19:00-22:00",
+        "phone": "+33 1 42 88 21 56",
+        "website": "https://cheztony.fr/qr/menu/",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2746096,
+          48.857575
+        ]
+      },
+      "properties": {
+        "name": "Le Bois le Vent",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.857575,
+        "longitude": 2.2746096,
+        "address": "Rue de Boulainvilliers, 59, Parls",
+        "opening_hours": "Tu-Su 12:00-14:30,19:00-22:30",
+        "phone": "+33 1 45 27 62 23",
+        "website": "https://boislevent.com",
+        "wheelchair": "no",
+        "cuisine": "lebanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2759784,
+          48.8529406
+        ]
+      },
+      "properties": {
+        "name": "Café À la Fontaine",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8529406,
+        "longitude": 2.2759784,
+        "address": "Rue de Boulainvilliers, 12, Paris",
+        "opening_hours": "Mo-Fr 07:30-23:59; Sa-Su 08:30-23:59",
+        "phone": "+33 1 42 88 21 84",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2750815,
+          48.8575066
+        ]
+      },
+      "properties": {
+        "name": "Hana",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8575066,
+        "longitude": 2.2750815,
+        "opening_hours": "Mo-Sa 11:00-20:00",
+        "phone": "+33 9 83 63 00 12",
+        "website": "https://www.hanabentoparis.com/passy/",
+        "wheelchair": "yes",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3839029,
+          48.8909699
+        ]
+      },
+      "properties": {
+        "name": "Les Bancs Publics",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8909699,
+        "longitude": 2.3839029,
+        "address": "Rue de Nantes, 2",
+        "opening_hours": "Mo-Fr 08:00-02:00; Sa 09:00-02:00; Su 09:00-20:00",
+        "phone": "+33980763671",
+        "wheelchair": "limited",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3839366,
+          48.8893349
+        ]
+      },
+      "properties": {
+        "name": "La Cantine Bretonne",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8893349,
+        "longitude": 2.3839366,
+        "address": "Rue de l'Ourcq, 22-bis",
+        "opening_hours": "Mo-Su 08:00-01:00",
+        "phone": "+33142008609",
+        "website": "https://lacantinebretonne.com",
+        "wheelchair": "yes",
+        "cuisine": "crepe;pancake;savory_pancakes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3868767,
+          48.887355
+        ]
+      },
+      "properties": {
+        "name": "Aux Arts & Sciences Réunis",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.887355,
+        "longitude": 2.3868767,
+        "address": "Avenue Jean Jaurès, 161, Paris",
+        "opening_hours": "Mo-Su 06:30-01:00",
+        "phone": "+33 1 42 40 53 18",
+        "wheelchair": "yes",
+        "cuisine": "french;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2598555,
+          48.8837498
+        ]
+      },
+      "properties": {
+        "name": "L'Atelier",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8837498,
+        "longitude": 2.2598555,
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+33 1 86 04 30 62",
+        "website": "https://www.artisancrepier.com/restaurants/neuilly-sur-seine-2/",
+        "wheelchair": "yes",
+        "cuisine": "crepe",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2655818,
+          48.8840476
+        ]
+      },
+      "properties": {
+        "name": "Gruppimo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8840476,
+        "longitude": 2.2655818,
+        "address": "Rue des Huissiers, 3",
+        "opening_hours": "Mo-Su 12:00-14:30, 19:30-00:00",
+        "phone": "+33147228724",
+        "cuisine": "pasta;italian_pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2626914,
+          48.8844162
+        ]
+      },
+      "properties": {
+        "name": "Doki Doki",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8844162,
+        "longitude": 2.2626914,
+        "address": "Avenue Charles de Gaulle, 156",
+        "opening_hours": "Mo-Su 12:00-15:00,19:00-22:30; Sa,Su 12:00-22:30",
+        "phone": "+331 80 88 07 20",
+        "website": "https://dokidoki-handroll.com/en/lp-neuilly/",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4382513,
+          48.9482195
+        ]
+      },
+      "properties": {
+        "name": "Baber",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.9482195,
+        "longitude": 2.4382513,
+        "address": "Avenue du 8 Mai 1945, 142",
+        "opening_hours": "Mo-Su 12:00-14:00; Mo-Su 19:00-23:00",
+        "phone": "+33149478505",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4454415,
+          48.9419191
+        ]
+      },
+      "properties": {
+        "name": "City Galaxy",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.9419191,
+        "longitude": 2.4454415,
+        "address": "Avenue Charles Floquet, 192, Le Blanc-Mesnil",
+        "opening_hours": "Mo-Fr 11:50-14:30, 19:00-23:00; Sa 11:45-15:00, 18:30-23:00; Su 11:45-15:00, 19:00-23:00",
+        "phone": "+33 1 86 04 92 41",
+        "website": "https://citygalaxy.wok-grill.fr/fr/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2875892,
+          48.8639328
+        ]
+      },
+      "properties": {
+        "name": "Mokus L'Ecureuil",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8639328,
+        "longitude": 2.2875892,
+        "address": "Avenue Kléber, 116",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+33 1 42 56 23 56",
+        "website": "https://www.restaurantmokus.fr/",
+        "wheelchair": "limited",
+        "cuisine": "italian_pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2851174,
+          48.8645892
+        ]
+      },
+      "properties": {
+        "name": "L'Esprit Nouveau",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8645892,
+        "longitude": 2.2851174,
+        "address": "Avenue d'Eylau, 16, Paris",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+33 1 45 50 50 92",
+        "website": "https://www.canopypariseiffeltower.com/",
+        "wikidata": "Q140052998",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28319,
+          48.8590529
+        ]
+      },
+      "properties": {
+        "name": "La Petite Tour",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8590529,
+        "longitude": 2.28319,
+        "address": "Rue de la Tour, 11",
+        "opening_hours": "Mo-Fr 12:00-14:00,19:00-22:00",
+        "phone": "+33145200931",
+        "wheelchair": "limited",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3769431,
+          48.829903
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.829903,
+        "longitude": 2.3769431,
+        "address": "Avenue de France, 107, Paris",
+        "opening_hours": "Mo-Fr 07:30-20:00; Sa 09:00-20:00; Su 09:00-19:00",
+        "phone": "+33 1 53 61 94 80",
+        "website": "https://www.starbucks.fr/store-locator/13191-98305",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3860874,
+          48.8338689
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8338689,
+        "longitude": 2.3860874,
+        "opening_hours": "Mo-Fr 07:30-21:00; Sa 08:00-21:00; Su 08:30-21:00",
+        "phone": "+33 1 43 45 04 56",
+        "website": "https://www.starbucks.fr/store-locator/12499-99318",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4085703,
+          48.8246134
+        ]
+      },
+      "properties": {
+        "name": "Bistrot de Charenton",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8246134,
+        "longitude": 2.4085703,
+        "address": "Rue de Paris, 123, Charenton-le-Pont",
+        "opening_hours": "Tu-Sa",
+        "phone": "+33 1 43 96 09 09",
+        "website": "https://www.bistrotdecharenton.fr/",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4066625,
+          48.8258219
+        ]
+      },
+      "properties": {
+        "name": "Folie Liberté",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8258219,
+        "longitude": 2.4066625,
+        "address": "Rue de Paris, 137, Charenton-le-Pont",
+        "opening_hours": "Mo-Fr 06:00-23:00; Sa 08:00-23:00",
+        "phone": "+33 9 81 03 37 25",
+        "cuisine": "pizza;tapas;french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4083895,
+          48.839416
+        ]
+      },
+      "properties": {
+        "name": "Pizza Hut",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.839416,
+        "longitude": 2.4083895,
+        "opening_hours": "11:30-23:00",
+        "phone": "+33 1 43 41 01 30",
+        "website": "https://www.pizzahut.fr/huts/paris-12eme-bel-air-174",
+        "wheelchair": "yes",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417397,
+          48.8398291
+        ]
+      },
+      "properties": {
+        "name": "La Canopée",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8398291,
+        "longitude": 2.417397,
+        "address": "Avenue du Général de Gaulle, 82, Saint-Mandé",
+        "opening_hours": "Tu-Sa 09:30-19:30; Fr 08:30-19:30",
+        "website": "https://canopee-saint-mande.fr/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.409096,
+          48.8352382
+        ]
+      },
+      "properties": {
+        "name": "Café du Palais",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8352382,
+        "longitude": 2.409096,
+        "opening_hours": "Mo off; Tu-Fr 10:00-17:00; Sa-Su 10:00-18:30",
+        "website": "https://www.palais-portedoree.fr/informations-pratiques/le-cafe-du-palais-de-la-porte-doree",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3300366,
+          48.8219925
+        ]
+      },
+      "properties": {
+        "name": "Le Miami",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8219925,
+        "longitude": 2.3300366,
+        "address": "Rue Émile Faguet, 2, Paris",
+        "opening_hours": "Mo-Th 18:00-02:00; Fr-Su 15:00-04:00",
+        "phone": "+33 9 50 98 78 21",
+        "website": "https://lemiami.eatbu.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3358712,
+          48.824057
+        ]
+      },
+      "properties": {
+        "name": "Café Chinchin",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.824057,
+        "longitude": 2.3358712,
+        "opening_hours": "Mo-Su 07:00-02:00",
+        "phone": "+33 1 45 89 25 06",
+        "website": "https://www.restaurantchinchin.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3146419,
+          48.8739933
+        ]
+      },
+      "properties": {
+        "name": "La Tribune",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8739933,
+        "longitude": 2.3146419,
+        "address": "Avenue Percier, 6",
+        "opening_hours": "Mo-Fr 07:00-23:00",
+        "phone": "+33 1 45 61 92 61",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3012252,
+          48.8766089
+        ]
+      },
+      "properties": {
+        "name": "Do Ré Mi",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8766089,
+        "longitude": 2.3012252,
+        "address": "Avenue Hoche, 18, Paris",
+        "opening_hours": "07:00-02:00",
+        "phone": "+331 45 61 06 35",
+        "website": "https://www.ledoremiparis.fr/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2797415,
+          48.8562869
+        ]
+      },
+      "properties": {
+        "name": "Huîtres et Saumons de Passy",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8562869,
+        "longitude": 2.2797415,
+        "address": "Rue de l'Annonciation, 17, Paris",
+        "opening_hours": "Tu-Sa 10:00-12:00,15:00-18:00",
+        "phone": "+33 1 42 88 19 64",
+        "website": "https://huitres-et-saumons-de-passy.fr/",
+        "wheelchair": "no",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2772323,
+          48.8518535
+        ]
+      },
+      "properties": {
+        "name": "Alfredo Positano",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8518535,
+        "longitude": 2.2772323,
+        "address": "Rue de Boulainvilliers, 7 bis, Paris",
+        "opening_hours": "12:00-14:30;19:00-22:30",
+        "phone": "+33 1 46 51 93 54",
+        "wheelchair": "yes",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2756096,
+          48.8529573
+        ]
+      },
+      "properties": {
+        "name": "Akita 16",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8529573,
+        "longitude": 2.2756096,
+        "address": "Rue de l'Assomption, 1, Paris",
+        "opening_hours": "Mo-Sa 11:00-22:30",
+        "phone": "+33 1 45 27 32 11",
+        "website": "https://akita16.agencedigi.com/",
+        "wheelchair": "yes",
+        "cuisine": "asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4019361,
+          48.8929244
+        ]
+      },
+      "properties": {
+        "name": "Pizza Delizia",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8929244,
+        "longitude": 2.4019361,
+        "address": "Rue Hoche, 26, Pantin",
+        "opening_hours": "Mo-Sa 12:00-14:30,19:00-09:30",
+        "phone": "+33 1 48 40 87 00",
+        "wheelchair": "limited",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4018553,
+          48.8952776
+        ]
+      },
+      "properties": {
+        "name": "Cabas",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8952776,
+        "longitude": 2.4018553,
+        "address": "Rue Victor Hugo, 6, Pantin",
+        "opening_hours": "Mo-Fr 12:00-14:30, 17:30-22:00",
+        "phone": "+33 1 80 89 28 10",
+        "website": "https://reservation.laddition.com/booking/Réservation%20Restaurant%20CABAS#/date",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2810153,
+          48.8416803
+        ]
+      },
+      "properties": {
+        "name": "Maison Didon",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8416803,
+        "longitude": 2.2810153,
+        "address": "Rue Saint-Charles, 166",
+        "opening_hours": "Tu-Th, Su 12:00-22:00; Fr, Sa 12:00-23:00",
+        "phone": "+33 1 86 04 07 76",
+        "wheelchair": "yes",
+        "cuisine": "arab;mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2665703,
+          48.8413823
+        ]
+      },
+      "properties": {
+        "name": "Big Bowl Ramen",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8413823,
+        "longitude": 2.2665703,
+        "address": "Avenue de Versailles, 159",
+        "opening_hours": "Mo-Sa 12:00-14:30, 19:00-22:30",
+        "phone": "+33146475143",
+        "website": "https://bigbowlramen.com/fr/",
+        "wheelchair": "no",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2832261,
+          48.8429083
+        ]
+      },
+      "properties": {
+        "name": "Ichiban",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8429083,
+        "longitude": 2.2832261,
+        "address": "Rue Lacordaire, 28",
+        "opening_hours": "Mo-Sa 11:30-14:30,18:30-22:30; Su 18:30-22:30",
+        "phone": "+33 1 40 58 19 28",
+        "website": "http://ichiban75015.fr/",
+        "wheelchair": "no",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278603,
+          48.8358112
+        ]
+      },
+      "properties": {
+        "name": "Café Le PC",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8358112,
+        "longitude": 2.278603,
+        "address": "Boulevard Victor, 12, Paris",
+        "opening_hours": "Mo-Fr 07:00-21:00",
+        "phone": "+33 1 45 01 28 03",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2836366,
+          48.8477753
+        ]
+      },
+      "properties": {
+        "name": "Joe & The Juice",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8477753,
+        "longitude": 2.2836366,
+        "address": "Rue Linois, 32, Paris",
+        "opening_hours": "Mo-Sa 08:00-21:00; Su 09:00-21:00",
+        "phone": "+33 1 59 20 04 88",
+        "website": "https://www.joejuice.com/store/1032",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3024793,
+          48.8678457
+        ]
+      },
+      "properties": {
+        "name": "Joe & The Juice",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8678457,
+        "longitude": 2.3024793,
+        "address": "Rue Marbeuf, 11, Paris",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "phone": "+33159200488",
+        "website": "https://www.joejuice.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3059809,
+          48.8594813
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8594813,
+        "longitude": 2.3059809,
+        "opening_hours": "Mo-Th 07:30-20:00; Fr 07:30-20:30; Sa 08:00-20:30; Su 08:00-20:00",
+        "phone": "+33 1 45 51 12 57",
+        "website": "https://www.starbucks.fr/store-locator/13115-115584",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2402672,
+          48.8797685
+        ]
+      },
+      "properties": {
+        "name": "Piccolino Ristorante",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8797685,
+        "longitude": 2.2402672,
+        "address": "Boulevard Richard Wallace, 30, Puteaux",
+        "opening_hours": "Mo-Su 11:45-15:00,18:30-23:00",
+        "phone": "+33 9 51 54 47 10",
+        "website": "https://www.piccolino-ristorante.fr/",
+        "wheelchair": "limited",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2616333,
+          48.8388878
+        ]
+      },
+      "properties": {
+        "name": "Happy Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8388878,
+        "longitude": 2.2616333,
+        "address": "Rue Le Marois, 19",
+        "opening_hours": "Mo-Fr 11:00-14:30,18:00-22:30",
+        "phone": "+33 9 83 96 24 79; +33 6 18 86 66 22",
+        "wheelchair": "limited",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2413857,
+          48.8394485
+        ]
+      },
+      "properties": {
+        "name": "La Table de Flo",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8394485,
+        "longitude": 2.2413857,
+        "address": "Route de la Reine, 65, Boulogne-Billancourt",
+        "opening_hours": "Tu-Sa 12:00-15:00,19:00-23:30",
+        "phone": "+33 1 49 09 09 73",
+        "website": "https://latabledeflo-boulogne.com/",
+        "wheelchair": "limited",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2387022,
+          48.8461985
+        ]
+      },
+      "properties": {
+        "name": "Cusuaka Cafés - Boulogne Nord",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8461985,
+        "longitude": 2.2387022,
+        "address": "Rue Fessart, 4, Boulogne-Billancourt",
+        "opening_hours": "Mo-Sa 08:30-17:30",
+        "phone": "+33650834607",
+        "website": "https://cusuaka.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2590551,
+          48.8454462
+        ]
+      },
+      "properties": {
+        "name": "Le Viaduc d'Auteuil",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8454462,
+        "longitude": 2.2590551,
+        "address": "Rue Molitor, 52, Paris",
+        "opening_hours": "Mo-Fr 06:30-22:00; Sa-Su 07:30-22:00",
+        "phone": "+33 1 46 51 48 57",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3803763,
+          48.872403
+        ]
+      },
+      "properties": {
+        "name": "Bambin",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.872403,
+        "longitude": 2.3803763,
+        "address": "Rue de Tourtille, 40, Paris",
+        "opening_hours": "We,Th 08:30-17:30; Fr 08:30-20:00; Sa,Su 09:30-17:30",
+        "phone": "+33685871841",
+        "website": "https://bambin-coffeeshop.fr",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380435,
+          48.8721001
+        ]
+      },
+      "properties": {
+        "name": "La tablerie",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8721001,
+        "longitude": 2.380435,
+        "address": "Rue de Tourtille, 39 bis",
+        "opening_hours": "We-Sa 12:00-14:30, We 19:00-22:00",
+        "phone": "+33 6 25 30 00 84",
+        "website": "https://www.unitedbelleville.com/tablerie",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.273636,
+          48.883195
+        ]
+      },
+      "properties": {
+        "name": "Le Winston",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.883195,
+        "longitude": 2.273636,
+        "address": "Avenue du Roule, 91, Neuilly-sur-Seine",
+        "opening_hours": "Mo-Fr 07:30-22:00; Sa 08:00-20:00",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266577,
+          48.878413
+        ]
+      },
+      "properties": {
+        "name": "Le Kiosque Churros",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.878413,
+        "longitude": 2.266577,
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.437489,
+          48.9473699
+        ]
+      },
+      "properties": {
+        "name": "Café du Nord",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.9473699,
+        "longitude": 2.437489,
+        "cuisine": "french",
+        "popularity": 0
+      }
     }
   ]
 }

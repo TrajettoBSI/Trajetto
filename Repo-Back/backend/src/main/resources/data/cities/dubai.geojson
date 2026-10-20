@@ -5864,6 +5864,2657 @@
         "website": "https://www.fairmont.com/palm-dubai/dining/cigar-room/",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1958621,
+          25.1177105
+        ]
+      },
+      "properties": {
+        "name": "Jamaica Blue",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1177105,
+        "longitude": 55.1958621,
+        "address": "Al Barsha Road, دبي",
+        "opening_hours": "24/7",
+        "website": "https://www.jamaicablue.ae/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2026242,
+          25.119085
+        ]
+      },
+      "properties": {
+        "name": "% Arabica",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.119085,
+        "longitude": 55.2026242,
+        "opening_hours": "Mo-Su 08:00-01:00",
+        "phone": "+971 4 329 2200",
+        "website": "https://www.arabicacoffee.ae/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2942323,
+          25.2337122
+        ]
+      },
+      "properties": {
+        "name": "Grandiosa Pizza - Wasl Park Gate",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2337122,
+        "longitude": 55.2942323,
+        "address": "Zabeel, Tower C, Park Gate Residences",
+        "opening_hours": "07:00-24:00",
+        "phone": "+971 489 2 3467",
+        "website": "https://grandiosa.ae",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3067297,
+          25.2387904
+        ]
+      },
+      "properties": {
+        "name": "Cozy Cabana Cafe-Oud Metha",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2387904,
+        "longitude": 55.3067297,
+        "address": "umm hurair, uod metha",
+        "opening_hours": "24/7",
+        "phone": "00971-4-3377 997",
+        "cuisine": "pizza;burger;italian;coffee_shop;sandwich;buffet;kebab;chicken;pasta;ice_cream",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3036305,
+          25.2428233
+        ]
+      },
+      "properties": {
+        "name": "Sangeetha Vegetarian Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2428233,
+        "longitude": 55.3036305,
+        "address": "29A Street, دبي",
+        "opening_hours": "07:30-11:00,13:30-15:30,17:00-23:30",
+        "phone": "+971 4 336 7111",
+        "website": "https://sangeethavegrestaurants.com/",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1311996,
+          25.0764952
+        ]
+      },
+      "properties": {
+        "name": "Awani",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0764952,
+        "longitude": 55.1311996,
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "phone": "+97144248082",
+        "website": "https://www.awani.ae/",
+        "wheelchair": "yes",
+        "cuisine": "lebanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1278556,
+          25.073006
+        ]
+      },
+      "properties": {
+        "name": "The Maine Oyster Bar and Grill",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.073006,
+        "longitude": 55.1278556,
+        "address": "Ground Floor, The DoubleTree by Hilton, دبي",
+        "opening_hours": "Mo-Su 12:00-00:00",
+        "phone": "+971 4 457 6719",
+        "website": "https://themaine.ae/",
+        "cuisine": "seafood;bar_and_grill",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1337988,
+          25.0789395
+        ]
+      },
+      "properties": {
+        "name": "Marbar Rooftop Tapas Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0789395,
+        "longitude": 55.1337988,
+        "address": "The Walk at Jumeirah Beach Residence, Tower A, Dubai",
+        "opening_hours": "Mon-Sun 17:00-01:00",
+        "phone": "+971 4 318 2319",
+        "website": "https://www.jbr-restaurants.com/marbar",
+        "cuisine": "tapas;spanish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1339221,
+          25.0787775
+        ]
+      },
+      "properties": {
+        "name": "% Arabica",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0787775,
+        "longitude": 55.1339221,
+        "opening_hours": "Mo-Su 00:00-00:00",
+        "phone": "+971 56 515 6483",
+        "website": "https://www.arabicacoffee.ae",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1331334,
+          25.0780971
+        ]
+      },
+      "properties": {
+        "name": "Bake My Day",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0780971,
+        "longitude": 55.1331334,
+        "opening_hours": "Mo-Su 07:00-24:00",
+        "phone": "+97142437023",
+        "website": "https://bakemyday.ae/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2332687,
+          25.0614415
+        ]
+      },
+      "properties": {
+        "name": "Popolare Positano",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0614415,
+        "longitude": 55.2332687,
+        "address": "Resortz by Danube Arjan, 14",
+        "opening_hours": "Mo-Su 11:00-00:00",
+        "phone": "04 587 2933",
+        "website": "https://popolare-positano.glide.page/",
+        "cuisine": "italian;italian_pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2379182,
+          25.0618531
+        ]
+      },
+      "properties": {
+        "name": "Thai Taste",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0618531,
+        "longitude": 55.2379182,
+        "opening_hours": "11:00-23:30",
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.242208,
+          25.0603756
+        ]
+      },
+      "properties": {
+        "name": "Pitfire Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0603756,
+        "longitude": 55.242208,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2383168,
+          25.0618517
+        ]
+      },
+      "properties": {
+        "name": "Special Napoleon",
+        "name_en": "نابليون خاص",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0618517,
+        "longitude": 55.2383168,
+        "address": "Arjan-Dubailand - Al Barsha South - Dubai , Al Sayyah Residence Block D",
+        "opening_hours": "Su-Sa 09:00-21:00",
+        "phone": "+97144510621",
+        "website": "https://specialnapoleon.ae/",
+        "cuisine": "cake",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2454373,
+          25.0694291
+        ]
+      },
+      "properties": {
+        "name": "The Sugar Artistry",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0694291,
+        "longitude": 55.2454373,
+        "opening_hours": "Tu-Su 07:30-22:00",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2939395,
+          25.2568907
+        ]
+      },
+      "properties": {
+        "name": "Swadesh Pure Vegetarian Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2568907,
+        "longitude": 55.2939395,
+        "address": "AL Rolla Street",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+971 4 3300024",
+        "wheelchair": "limited",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2970304,
+          25.2622491
+        ]
+      },
+      "properties": {
+        "name": "Mumbai Masti Juice Centre",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2622491,
+        "longitude": 55.2970304,
+        "address": "شارع الفهيدي, دبي",
+        "opening_hours": "Sa-Th 08:00-02:00; Fr 16:00-02:00",
+        "phone": "+97143867655",
+        "website": "https://www.mumbaimastijuicecenter.com/",
+        "cuisine": "juices",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2936589,
+          25.2640773
+        ]
+      },
+      "properties": {
+        "name": "Ghantoot Star",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2640773,
+        "longitude": 55.2936589,
+        "address": "شارع 34",
+        "opening_hours": "Mo-Su 10:00-02:00",
+        "phone": "0506415991;043271147",
+        "cuisine": "chinese;indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3004631,
+          25.2723783
+        ]
+      },
+      "properties": {
+        "name": "Biggy",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2723783,
+        "longitude": 55.3004631,
+        "address": "25b شارع, 11",
+        "opening_hours": "Mo-Su 11:00-01:00",
+        "phone": "+971 4 226 8700;+971 50 247 8831;+971 50 307 8404;+971 56 102 3553",
+        "website": "https://biggyafricanrestaurant.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3010908,
+          25.2566715
+        ]
+      },
+      "properties": {
+        "name": "Zaharat Al Sharq",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2566715,
+        "longitude": 55.3010908,
+        "opening_hours": "Fr 10:00-24:00;Mo-Th,Sa-Su 09:30-24:00",
+        "phone": "+971 4 349 9510;+971 52 784 3600",
+        "website": "http://yorkvivant.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2948937,
+          25.2616908
+        ]
+      },
+      "properties": {
+        "name": "Bhavna",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2616908,
+        "longitude": 55.2948937,
+        "address": "25C Street, 28, دبي",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+971 4 353 0707",
+        "cuisine": "Gujarati_Thali",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3017358,
+          25.2739975
+        ]
+      },
+      "properties": {
+        "name": "Bombay Naan Cafeteria LLC",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2739975,
+        "longitude": 55.3017358,
+        "address": "Shop No. 4, Al Dhagaya Street, Al Sabkha Road, Deira, Dubai",
+        "opening_hours": "Mo-Su 12:00-15:00, 17:00-01:00",
+        "phone": "048824240",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.300895,
+          25.2744259
+        ]
+      },
+      "properties": {
+        "name": "Amba",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2744259,
+        "longitude": 55.300895,
+        "opening_hours": "Mo-Su 09:00-00:00",
+        "phone": "+971 4 234 2508;+971 54 255 2669;+971 54 266 2559",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3773393,
+          25.1217393
+        ]
+      },
+      "properties": {
+        "name": "Kulcha King",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1217393,
+        "longitude": 55.3773393,
+        "address": "60 Street, 47/3, دبي",
+        "opening_hours": "Mo-Su 11:30-24:00",
+        "phone": "+971 565333766",
+        "website": "https://www.kulchaking.com",
+        "wheelchair": "yes",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3757435,
+          25.1204444
+        ]
+      },
+      "properties": {
+        "name": "GoThai",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1204444,
+        "longitude": 55.3757435,
+        "address": "66 Street, 47/5, دبي",
+        "opening_hours": "Mo-Su 11:00-01:00",
+        "phone": "+971 523141441",
+        "website": "https://gothai.ae",
+        "wheelchair": "yes",
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3776421,
+          25.1195943
+        ]
+      },
+      "properties": {
+        "name": "One Byte",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1195943,
+        "longitude": 55.3776421,
+        "address": "66 Street, A5, دبي",
+        "opening_hours": "Mo-Sa 07:00-22:00",
+        "phone": "+97143712888",
+        "website": "https://onebytecafe.wixsite.com/dubai",
+        "wheelchair": "yes",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3776831,
+          25.1189788
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "ستاربكس",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1189788,
+        "longitude": 55.3776831,
+        "address": "66 Street, A2, دبي",
+        "opening_hours": "Mo-Su 07:00-01:00",
+        "phone": "+97143895053",
+        "website": "https://www.starbucks.ae/en/menu",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3192727,
+          25.2659929
+        ]
+      },
+      "properties": {
+        "name": "PITA Restaurant",
+        "name_en": "PITA",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2659929,
+        "longitude": 55.3192727,
+        "address": "شارع الرقة, 19",
+        "opening_hours": "Mo-Su 07:30-23:55",
+        "phone": "042941060",
+        "cuisine": "filipino",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3214834,
+          25.2675454
+        ]
+      },
+      "properties": {
+        "name": "Kabab Erbil Iraqi Restaurant Al Muraqqabat",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2675454,
+        "longitude": 55.3214834,
+        "address": "شارع المرقبات, 10, ديرة",
+        "opening_hours": "Sa-Th 11:00-24:00; Fr 13:00-01:00",
+        "phone": "+971 4 272 0843",
+        "website": "https://kababerbil.ae",
+        "cuisine": "iraqi;kebab;breakfast;fish;arab;middle_eastern",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3280173,
+          25.2546724
+        ]
+      },
+      "properties": {
+        "name": "Super Bowl",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2546724,
+        "longitude": 55.3280173,
+        "opening_hours": "Mo-Su,PH 11:59-23:30",
+        "wheelchair": "limited",
+        "cuisine": "asian;chicken;chinese;ramen;sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3288718,
+          25.2645806
+        ]
+      },
+      "properties": {
+        "name": "Awtar Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2645806,
+        "longitude": 55.3288718,
+        "opening_hours": "Mo-Su 10:00-02:00",
+        "phone": "+971 4 345 7107;+971 55 112 7602",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3218731,
+          25.2581227
+        ]
+      },
+      "properties": {
+        "name": "Green Tower",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2581227,
+        "longitude": 55.3218731,
+        "phone": "04 336 3692",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2938988,
+          25.2618508
+        ]
+      },
+      "properties": {
+        "name": "Foodie Express",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2618508,
+        "longitude": 55.2938988,
+        "address": "Tahira Restauran, Opp, Meena Bazaar",
+        "opening_hours": "Mo-Su 10:00-24:00",
+        "phone": "+971-50-5574566",
+        "cuisine": "indian;snacks;chinese;sandwich;lassi;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3144403,
+          25.2457199
+        ]
+      },
+      "properties": {
+        "name": "Hyu Korean Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2457199,
+        "longitude": 55.3144403,
+        "address": "Oud Metha Road",
+        "opening_hours": "Mo-Su 11:00-15:00, 18:00-23:00",
+        "phone": "+97143344294",
+        "cuisine": "korean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3243028,
+          25.2346509
+        ]
+      },
+      "properties": {
+        "name": "La Tablita",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2346509,
+        "longitude": 55.3243028,
+        "address": "Oud Metha Road",
+        "opening_hours": "Mo-Su 18:00-02:00",
+        "wheelchair": "limited",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3107066,
+          25.2442898
+        ]
+      },
+      "properties": {
+        "name": "Adhi Raat Cafe & Lounge",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2442898,
+        "longitude": 55.3107066,
+        "address": "Umm Hurair Road Al Karama;طريق أم هرير, 64, Dubai;Al Karama",
+        "opening_hours": "Mo-Su 12:00PM-05:00AM",
+        "phone": "+971501636906",
+        "website": "https://www.adhiraatcafe.com",
+        "cuisine": "pizza;coffee_shop;chicken;burger;sandwich;international;pakistani;continental;sheesha",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3093233,
+          25.2412728
+        ]
+      },
+      "properties": {
+        "name": "Cafe & Lounge 88",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2412728,
+        "longitude": 55.3093233,
+        "address": "319-2 Street, 25, دبي",
+        "opening_hours": "Mo-Su 09:30-03:00",
+        "phone": "+97148920021",
+        "website": "https://cafe88.ae/",
+        "cuisine": "pizza;burger;coffee_shop;sandwich;chicken;american;ice_cream;seafood;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3119507,
+          25.2569599
+        ]
+      },
+      "properties": {
+        "name": "Doors Freestyle Grill",
+        "name_en": "دورز فريستايل غرل",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2569599,
+        "longitude": 55.3119507,
+        "address": "شارع السيف, 8/5, دبي",
+        "opening_hours": "Mo-Su 13:00-01:00",
+        "phone": "+971 50 700 0375",
+        "website": "https://www.doorsdubai.com/",
+        "wheelchair": "limited",
+        "cuisine": "turkish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3092405,
+          25.2658739
+        ]
+      },
+      "properties": {
+        "name": "Danial Star Restaurant",
+        "name_en": "Daniel Star Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2658739,
+        "longitude": 55.3092405,
+        "opening_hours": "Mo-Su 12:00-24:00",
+        "phone": "+971502434958",
+        "wheelchair": "yes",
+        "cuisine": "buffet;regional;all_you_can_eat;brunch",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3057457,
+          25.2680848
+        ]
+      },
+      "properties": {
+        "name": "Tavolino Pizza and Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2680848,
+        "longitude": 55.3057457,
+        "address": "Baniyas Square",
+        "phone": "97142229921",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3234579,
+          25.2645043
+        ]
+      },
+      "properties": {
+        "name": "Off Road Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2645043,
+        "longitude": 55.3234579,
+        "address": "Street 26b",
+        "cuisine": "filipino",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.297099,
+          25.269805
+        ]
+      },
+      "properties": {
+        "name": "MAMAS",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.269805,
+        "longitude": 55.297099,
+        "address": "سوق الذهب, 1",
+        "phone": "0553308012",
+        "cuisine": "american;arab;breakfast;burger;diner;indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2422378,
+          25.0604649
+        ]
+      },
+      "properties": {
+        "name": "Goodies",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0604649,
+        "longitude": 55.2422378,
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1770058,
+          25.1011301
+        ]
+      },
+      "properties": {
+        "name": "Seven Stones",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1011301,
+        "longitude": 55.1770058,
+        "opening_hours": "PH,Mo-Su 00:00-24:00",
+        "phone": "+971 52 369 7870",
+        "wheelchair": "yes",
+        "cuisine": "asian;indian;fast_food",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1727146,
+          25.0950741
+        ]
+      },
+      "properties": {
+        "name": "25- Degrees North",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0950741,
+        "longitude": 55.1727146,
+        "address": "Ground Floor, Damac Executive Heights, Barsha Heights, Dubai, دبي",
+        "opening_hours": "All week, 12-3 PM and 6:30-11 PM",
+        "phone": "+971 4 4551646",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.170841,
+          25.0976323
+        ]
+      },
+      "properties": {
+        "name": "Hot n Spicy",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0976323,
+        "longitude": 55.170841,
+        "address": "Abdullah Omran Taryam St., Shop No. 2",
+        "opening_hours": "Mo, Tu, We, Su 11:00-01:00; Th 11:00-02:00; Fr 09:00-12:00,13:00-02:00; Sa 09:00-02:00",
+        "phone": "+971 4 368 8508;+971 800 467467",
+        "website": "https://www.hotnspicy.ae/",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1733133,
+          25.0968623
+        ]
+      },
+      "properties": {
+        "name": "Sky Hookah 24",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0968623,
+        "longitude": 55.1733133,
+        "opening_hours": "Mo-Su 12:00-04:00",
+        "phone": "+971 4 565 0424;+971 52 299 7129",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1797913,
+          25.0977382
+        ]
+      },
+      "properties": {
+        "name": "Costa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0977382,
+        "longitude": 55.1797913,
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1661678,
+          25.104141
+        ]
+      },
+      "properties": {
+        "name": "Goose & Gander",
+        "name_en": "Goose & Gander Pub",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.104141,
+        "longitude": 55.1661678,
+        "address": "Al Safouh Second - Holiday Inn Express Dubai Internet City, Dubai",
+        "opening_hours": "12:30 PM - 2 AM",
+        "phone": "+971503188117",
+        "website": "https://www.gooseandgander.me/",
+        "cuisine": "british",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1839099,
+          25.1083975
+        ]
+      },
+      "properties": {
+        "name": "Green Land Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1083975,
+        "longitude": 55.1839099,
+        "opening_hours": "24/7",
+        "website": "https://gcruae.com/",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1683881,
+          25.1024392
+        ]
+      },
+      "properties": {
+        "name": "Boon Coffee Roasters",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1024392,
+        "longitude": 55.1683881,
+        "address": "Al Falak Street",
+        "opening_hours": "Sa-Su 08:00-17:00; Mo-Fr 07:00-20:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1341356,
+          25.0786212
+        ]
+      },
+      "properties": {
+        "name": "Villa Verona",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0786212,
+        "longitude": 55.1341356,
+        "address": "The Walk at Jumeirah Beach Residence, Tower A, Dubai",
+        "opening_hours": "Mon-Fri 12:30 - 23:00; Sat-Sun 12:30-16:00; 18:30-22:30",
+        "phone": "+971 4 318 2319",
+        "website": "https://www.jbr-restaurants.com/villa-verona",
+        "cuisine": "italian;seafood;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1368064,
+          25.0740874
+        ]
+      },
+      "properties": {
+        "name": "Perfetto Pizzeria Restaurant",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0740874,
+        "longitude": 55.1368064,
+        "address": "Al Hubob Street, 6/1, دبي",
+        "opening_hours": "Mo-Su 08:00-02:00",
+        "phone": "+971 4 434 0444;+971 50 915 5020",
+        "website": "https://www.zomato.com/dubai/perfetto-pizzeria-dubai-marina/order",
+        "wheelchair": "limited",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1397898,
+          25.0693053
+        ]
+      },
+      "properties": {
+        "name": "Golositalia JLT",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0693053,
+        "longitude": 55.1397898,
+        "address": "JLT Cluster C, C6.A, Dubai",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+971 4 443 4955",
+        "website": "https://golositalia.ae/",
+        "cuisine": "italian;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3310303,
+          25.2456858
+        ]
+      },
+      "properties": {
+        "name": "Casa De Tapas",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2456858,
+        "longitude": 55.3310303,
+        "phone": "044161800",
+        "cuisine": "spanish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.333505,
+          25.2415829
+        ]
+      },
+      "properties": {
+        "name": "Legends",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2415829,
+        "longitude": 55.333505,
+        "website": "https://www.dubaigolf.com/dubai-creek-golf-yacht-club/indulge/legends.aspx",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3217126,
+          25.2579905
+        ]
+      },
+      "properties": {
+        "name": "Green Tower Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2579905,
+        "longitude": 55.3217126,
+        "address": "Green Tower Building, Deira",
+        "phone": "+971 43363692",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2985257,
+          25.273498
+        ]
+      },
+      "properties": {
+        "name": "Sharda Vegetarian Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.273498,
+        "longitude": 55.2985257,
+        "address": "Gold Souq, 8",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "phone": "+971 4 2342399",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3013107,
+          25.2652196
+        ]
+      },
+      "properties": {
+        "name": "Wokyo Noodle Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2652196,
+        "longitude": 55.3013107,
+        "opening_hours": "Mo-Su 11:00-21:45",
+        "phone": "+97145545371",
+        "website": "https://www.wokyo.com/",
+        "cuisine": "noodle",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3118062,
+          25.273746
+        ]
+      },
+      "properties": {
+        "name": "Pak Darbar Restaurant",
+        "name_en": "Pak Darbar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.273746,
+        "longitude": 55.3118062,
+        "address": "31a Street",
+        "opening_hours": "Mo-Su 04:00-02:00",
+        "phone": "+971 4 229 8856",
+        "website": "https://pak-darbar.business.site/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1465119,
+          25.1055242
+        ]
+      },
+      "properties": {
+        "name": "Trader Vic's Palm Jumeirah",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1055242,
+        "longitude": 55.1465119,
+        "address": "Lobby Level, Palm West Beach, دبي",
+        "opening_hours": "Su-Th 17:00-01:00, Fr,Sa 17:00-02:00",
+        "phone": "+971 4 230 0050",
+        "website": "https://tradervicspalm.com/",
+        "wheelchair": "yes",
+        "cuisine": "international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1423538,
+          25.1147445
+        ]
+      },
+      "properties": {
+        "name": "Karaf by Bahce - The Palm",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1147445,
+        "longitude": 55.1423538,
+        "address": "Club Vista Mare - Palm Jumeirah - Dubai, dubai",
+        "opening_hours": "Mo-Su 11:00-01:00",
+        "phone": "+971 58 127 6633",
+        "website": "https://www.karaf.ae/",
+        "cuisine": "turkish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1426337,
+          25.1151736
+        ]
+      },
+      "properties": {
+        "name": "Ibn AlBahr",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1151736,
+        "longitude": 55.1426337,
+        "address": "Club Vista Mare",
+        "opening_hours": "Mo-Su 08:30-02:00",
+        "phone": "+971 4 553 9575",
+        "website": "https://www.ibnalbahr.me/",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2153229,
+          25.052038
+        ]
+      },
+      "properties": {
+        "name": "Lokmat Baladna",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.052038,
+        "longitude": 55.2153229,
+        "opening_hours": "Mo-Su 11:00-24:00",
+        "phone": "+971 4 277 1107;+971 52 397 8092",
+        "website": "https://lokmatbaladna.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2141653,
+          25.0526342
+        ]
+      },
+      "properties": {
+        "name": "Tandoori Junction",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0526342,
+        "longitude": 55.2141653,
+        "opening_hours": "Mo-Su 10:00-00:00",
+        "phone": "+971 4 566 0185",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.21292,
+          25.059625
+        ]
+      },
+      "properties": {
+        "name": "Rickys",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.059625,
+        "longitude": 55.21292,
+        "opening_hours": "Mo-Su 07:30-00:00",
+        "phone": "+971 4 514 7066;+971 54 339 2616",
+        "website": "https://rickysrestaurant.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2111118,
+          25.0476446
+        ]
+      },
+      "properties": {
+        "name": "Village hangout Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0476446,
+        "longitude": 55.2111118,
+        "address": "شارع 12, Shop 6 Reef Residence, Dubai",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "phone": "+971 567467645",
+        "website": "https://www.villagehangoutcafe.com/",
+        "cuisine": "breakfast;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3193263,
+          25.229304
+        ]
+      },
+      "properties": {
+        "name": "Khan Murjan Restaurant",
+        "name_en": "Khan Murjan",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 25.229304,
+        "longitude": 55.3193263,
+        "opening_hours": "Mo-Su,PH 10:00-02:00",
+        "website": "https://www.wafigourmet.com",
+        "wheelchair": "limited",
+        "cuisine": "arab;greek;grill;kebab;moroccan;persian;tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.325405,
+          25.229654
+        ]
+      },
+      "properties": {
+        "name": "Gothai Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.229654,
+        "longitude": 55.325405,
+        "opening_hours": "Mo-We,Su 11:00-23:00;Th-Sa 11:00-00:00",
+        "phone": "+971 4 583 6942;+971 55 171 4574",
+        "website": "https://www.gothai.ae/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3115694,
+          25.2341313
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "ستاربكس",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2341313,
+        "longitude": 55.3115694,
+        "opening_hours": "24/7",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3071079,
+          25.2310045
+        ]
+      },
+      "properties": {
+        "name": "Les Floralies Dubai - Za'abeel 1",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2310045,
+        "longitude": 55.3071079,
+        "opening_hours": "Su-Th 06:00-21:00; Fr-Sa 09:30-21:30",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1184839,
+          25.1315143
+        ]
+      },
+      "properties": {
+        "name": "En Fuengo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1315143,
+        "longitude": 55.1184839,
+        "opening_hours": "Mo off; Tu 17:00-23:00; We-Su 12:00-23:00",
+        "phone": "+97144262626",
+        "website": "https://www.atlantis.com/dubai/dining/en-fuego",
+        "cuisine": "latin_american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1188481,
+          25.1318205
+        ]
+      },
+      "properties": {
+        "name": "Wavehouse",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1318205,
+        "longitude": 55.1188481,
+        "opening_hours": "Sa-Th 12:00+",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1186714,
+          25.13191
+        ]
+      },
+      "properties": {
+        "name": "Gordon Ramsay's Bread Street Kitchen & Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.13191,
+        "longitude": 55.1186714,
+        "opening_hours": "Mo-Su 12:00-00:00",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1184908,
+          25.1322662
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "ستاربكس",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1322662,
+        "longitude": 55.1184908,
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2870229,
+          25.257371
+        ]
+      },
+      "properties": {
+        "name": "Indian Coffee House Restaurant",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.257371,
+        "longitude": 55.2870229,
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3976581,
+          25.2272777
+        ]
+      },
+      "properties": {
+        "name": "Aghadeer Restaurant and Cafeteria",
+        "name_en": "مطعم وكافيتريا اغادير",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2272777,
+        "longitude": 55.3976581,
+        "address": "51b شارع",
+        "opening_hours": "Mo-Su 07:00-03:00",
+        "phone": "0097142851565",
+        "cuisine": "arab;burger;chinese;indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3039186,
+          25.2514674
+        ]
+      },
+      "properties": {
+        "name": "Kathhiyawadi Thali Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2514674,
+        "longitude": 55.3039186,
+        "address": "4a Street, Al Kifaf building B block, دبي",
+        "opening_hours": "Mo-Su 11:45-15:30,19:00-23:00",
+        "phone": "+97142503744",
+        "website": "https://www.kathhiyawadithali.com/",
+        "wheelchair": "yes",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3035016,
+          25.2545639
+        ]
+      },
+      "properties": {
+        "name": "Tim Hortons",
+        "name_en": "تيم هورتونز",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2545639,
+        "longitude": 55.3035016,
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2162847,
+          25.0654285
+        ]
+      },
+      "properties": {
+        "name": "Tim Hortons",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0654285,
+        "longitude": 55.2162847,
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2181944,
+          25.0659495
+        ]
+      },
+      "properties": {
+        "name": "Pronto",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0659495,
+        "longitude": 55.2181944,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1407703,
+          25.0861442
+        ]
+      },
+      "properties": {
+        "name": "Grand Grill Steakhouse",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0861442,
+        "longitude": 55.1407703,
+        "address": "King Salman Bin Abdulaziz Al Saud St, Habtoor Grand Beach Resort - Lobby Level, Dubai Marina - Dubai",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+97150 150 6870",
+        "website": "https://www.thegrandgrillsteakhouse.com/",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1411419,
+          25.0838424
+        ]
+      },
+      "properties": {
+        "name": "Pechka Cafe and Bakery",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0838424,
+        "longitude": 55.1411419,
+        "address": "Trident Grand Residence Marsa Dubai, G05, Dubai Marina",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "phone": "052 748 9823",
+        "website": "https://pechka.ae/",
+        "cuisine": "russian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1413105,
+          25.081794
+        ]
+      },
+      "properties": {
+        "name": "Just Falafel",
+        "name_en": "@Falafel",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.081794,
+        "longitude": 55.1413105,
+        "address": "King Salman bin Abdulaziz Al Saud Street",
+        "opening_hours": "Mo-Su 09:00-01:00",
+        "phone": "+971 55 501 8345",
+        "website": "https://www.atfalafel.com/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1375564,
+          25.0809152
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0809152,
+        "longitude": 55.1375564,
+        "address": "Al Mamsha Street",
+        "opening_hours": "24/7",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1377401,
+          25.0909927
+        ]
+      },
+      "properties": {
+        "name": "EQUALIZE Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0909927,
+        "longitude": 55.1377401,
+        "phone": "+971566887010",
+        "website": "https://www.equalizecafe.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3753503,
+          25.11146
+        ]
+      },
+      "properties": {
+        "name": "Barbeque Nation",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.11146,
+        "longitude": 55.3753503,
+        "address": "92 Street, 53, دبي",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+97148723613",
+        "website": "https://www.barbequenation.com/",
+        "wheelchair": "yes",
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3751865,
+          25.111189
+        ]
+      },
+      "properties": {
+        "name": "The Bhukkad Cafe",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.111189,
+        "longitude": 55.3751865,
+        "address": "92 Street, 53, دبي",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+97143499957",
+        "website": "https://www.thebhukkadcafe.com/",
+        "wheelchair": "yes",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3746421,
+          25.1116411
+        ]
+      },
+      "properties": {
+        "name": "Yuchi",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.1116411,
+        "longitude": 55.3746421,
+        "opening_hours": "Mo-Su 10:00-12:00",
+        "wheelchair": "limited",
+        "cuisine": "cake;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3369489,
+          25.2254105
+        ]
+      },
+      "properties": {
+        "name": "Levante",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2254105,
+        "longitude": 55.3369489,
+        "address": "5 St. Jaddaf Waterfront, Al Jaddaf, Shop #1, Dubai",
+        "opening_hours": "Mo-Su 07:00-00:00",
+        "phone": "+971 4 241 2288",
+        "website": "https://artoflevante.ae",
+        "cuisine": "coffee_shop;flowers;chocolates;gifting",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3381529,
+          25.2268389
+        ]
+      },
+      "properties": {
+        "name": "BistroLounge",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2268389,
+        "longitude": 55.3381529,
+        "opening_hours": "24/7",
+        "phone": "+971 4 574 3900",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3416706,
+          25.227196
+        ]
+      },
+      "properties": {
+        "name": "Amalfi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.227196,
+        "longitude": 55.3416706,
+        "opening_hours": "Mo-Su 12:00-18:00",
+        "website": "https://www.palazzoversace.ae/restaurants-and-bars/amalfi",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.380261,
+          25.2136183
+        ]
+      },
+      "properties": {
+        "name": "Maraheb",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2136183,
+        "longitude": 55.380261,
+        "address": "Al Rebat Street",
+        "cuisine": "yemeni",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3834655,
+          25.2279968
+        ]
+      },
+      "properties": {
+        "name": "Pizza Hut",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2279968,
+        "longitude": 55.3834655,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3931053,
+          25.2234393
+        ]
+      },
+      "properties": {
+        "name": "Rashidiya Clinic Cafeteria",
+        "name_en": "كافتيريا عيادة الراشدية",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2234393,
+        "longitude": 55.3931053,
+        "address": "44 Street",
+        "phone": "+971 4 285 6363",
+        "cuisine": "burger;coffee_shop;tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3861711,
+          25.2323351
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "ستاربكس",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2323351,
+        "longitude": 55.3861711,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.408201,
+          25.216513
+        ]
+      },
+      "properties": {
+        "name": "L’eto",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.216513,
+        "longitude": 55.408201,
+        "opening_hours": "Fr-Su 08:00-24:00; Mo-Th 08:00-23:00",
+        "phone": "+971 4 238 2130",
+        "website": "https://letocaffe.com",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.408696,
+          25.216459
+        ]
+      },
+      "properties": {
+        "name": "Leila",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.216459,
+        "longitude": 55.408696,
+        "opening_hours": "Mo-We,Su 10:00-24:00;Th-Sa 10:00-01:00",
+        "phone": "+971 4 251 5161;+971 600 505058",
+        "website": "https://leilarestaurant.ae/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.408371,
+          25.215022
+        ]
+      },
+      "properties": {
+        "name": "% Arabica",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.215022,
+        "longitude": 55.408371,
+        "opening_hours": "Mo-Fr 08:00-23:00; Sa-Su 08:00-24:00",
+        "phone": "+971 4 330 2276",
+        "website": "https://www.arabicacoffee.ae/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.408355,
+          25.2145753
+        ]
+      },
+      "properties": {
+        "name": "La Brioche",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2145753,
+        "longitude": 55.408355,
+        "opening_hours": "Mo-Su 08:00-23:30",
+        "phone": "+971 4 251 5515",
+        "website": "https://www.labriocheuae.com",
+        "wheelchair": "limited",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3046968,
+          25.2483506
+        ]
+      },
+      "properties": {
+        "name": "Eric's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2483506,
+        "longitude": 55.3046968,
+        "address": "10b شارع, 14, دبي",
+        "opening_hours": "Mo-Su 11:30-15:45,18:30-23:45",
+        "phone": "+971 4 396 4447;+971 4 396 5080",
+        "cuisine": "african",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2893105,
+          25.2499674
+        ]
+      },
+      "properties": {
+        "name": "Filli",
+        "name_en": "فيلي",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.2499674,
+        "longitude": 55.2893105,
+        "opening_hours": "Mo-Su 07:30-24:00,00:00-04:00",
+        "website": "https://fillicafe.com/stores/uae/dubai/al-mankhool",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3073241,
+          25.0688576
+        ]
+      },
+      "properties": {
+        "name": "Naseem Beirut",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0688576,
+        "longitude": 55.3073241,
+        "wheelchair": "yes",
+        "cuisine": "lebanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3072525,
+          25.0689793
+        ]
+      },
+      "properties": {
+        "name": "Taksim",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0689793,
+        "longitude": 55.3072525,
+        "wheelchair": "yes",
+        "cuisine": "turkish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3075578,
+          25.0692109
+        ]
+      },
+      "properties": {
+        "name": "Grand Dhaba",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0692109,
+        "longitude": 55.3075578,
+        "wheelchair": "yes",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3026089,
+          25.065911
+        ]
+      },
+      "properties": {
+        "name": "La Brioche",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 25.065911,
+        "longitude": 55.3026089,
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "phone": "+971 4 576 2896",
+        "website": "https://www.labriocheuae.com",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3602109,
+          25.0705682
+        ]
+      },
+      "properties": {
+        "name": "Subway",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 25.0705682,
+        "longitude": 55.3602109,
+        "cuisine": "sandwich",
+        "popularity": 0
+      }
     }
   ]
 }

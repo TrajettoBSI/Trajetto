@@ -2230,6 +2230,28 @@
         "phone": "+212 5 24 44 97 42",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9868231,
+          31.5924594
+        ]
+      },
+      "properties": {
+        "name": "Pizza Amore Italiano",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.5924594,
+        "longitude": -7.9868231,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
     }
   ]
 }

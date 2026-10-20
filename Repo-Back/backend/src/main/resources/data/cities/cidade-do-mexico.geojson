@@ -13706,6 +13706,3009 @@
         "website": "https://www.heladoscarmela.com/",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2448582,
+          19.4559988
+        ]
+      },
+      "properties": {
+        "name": "Bombón",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4559988,
+        "longitude": -99.2448582,
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2432368,
+          19.4530196
+        ]
+      },
+      "properties": {
+        "name": "Centernario",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4530196,
+        "longitude": -99.2432368,
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1596631,
+          19.3004314
+        ]
+      },
+      "properties": {
+        "name": "Mesón de Sancho",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3004314,
+        "longitude": -99.1596631,
+        "address": "Boulevard Adolfo Ruiz Cortines",
+        "opening_hours": "Mo-Fr 10:00-19:00",
+        "cuisine": "breakfast;coffee_shop;mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1595603,
+          19.3546564
+        ]
+      },
+      "properties": {
+        "name": "La Talavera",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3546564,
+        "longitude": -99.1595603,
+        "address": "Calle Valentín Gómez Farías, 117, Ciudad de México",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "phone": "015556591939",
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1586713,
+          19.3537122
+        ]
+      },
+      "properties": {
+        "name": "480º Pizza Lounge",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3537122,
+        "longitude": -99.1586713,
+        "address": "Calle Xicoténcatl, 258, Ciudad de México",
+        "opening_hours": "Mo-Su 12:30-21:30",
+        "phone": "+525559901497",
+        "website": "https://www.480grados.com",
+        "wheelchair": "limited",
+        "cuisine": "pizza;italian_pizza;pasta;salad;brunch",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1712134,
+          19.3496877
+        ]
+      },
+      "properties": {
+        "name": "Mesón Antigua Santa Catarina",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3496877,
+        "longitude": -99.1712134,
+        "address": "Jardín Santa Catarina, 6, México D.F.",
+        "opening_hours": "9:00-23:00",
+        "phone": "(+52-55)5659-3003",
+        "wheelchair": "limited",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1698949,
+          19.3493355
+        ]
+      },
+      "properties": {
+        "name": "Cocoa Coyoacán II",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3493355,
+        "longitude": -99.1698949,
+        "address": "Venustiano Carranza, 291, Mexico City",
+        "opening_hours": "Mo-We 07:30-20:30; Sa 07:30-20:00",
+        "phone": "01 55 5554 6528",
+        "cuisine": "cafe;bakery",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1694442,
+          19.3481673
+        ]
+      },
+      "properties": {
+        "name": "Café Ruta de la Seda",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3481673,
+        "longitude": -99.1694442,
+        "address": "Aurora, 1 Bis",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+525538694888",
+        "website": "https://www.caferutadelaseda.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1906302,
+          19.4094812
+        ]
+      },
+      "properties": {
+        "name": "Pizza del Perro Negro",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4094812,
+        "longitude": -99.1906302,
+        "address": "Avenida Parque Lira, 48, Ciudad de México",
+        "opening_hours": "Mo-Su 02:00-22:00",
+        "phone": "+52 55 535 17401",
+        "website": "https://www.muertealapizzafalsa.com/",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.196552,
+          19.4049439
+        ]
+      },
+      "properties": {
+        "name": "Casa Merlos",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4049439,
+        "longitude": -99.196552,
+        "address": "General Victoriano Cepeda, 80",
+        "opening_hours": "Th-Su 13:00-18:00",
+        "website": "https://casamerlos.com/",
+        "cuisine": "poblana;mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1968394,
+          19.4046651
+        ]
+      },
+      "properties": {
+        "name": "Guisando Ando",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4046651,
+        "longitude": -99.1968394,
+        "address": "Calle Ex Arzobispado, 27B",
+        "opening_hours": "Mo-Fr 10:00-17:00",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1850527,
+          19.403375
+        ]
+      },
+      "properties": {
+        "name": "Anversa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.403375,
+        "longitude": -99.1850527,
+        "address": "Calle José Marti, 38",
+        "opening_hours": "Mo-Sa 09:00-21:00",
+        "phone": "+52 55 5035 8748",
+        "website": "https://www.sindelantal.mx/delivery/miguel-hidalgo-df/anversa-sucursal-tacubaya-escandon",
+        "cuisine": "mexican;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1968254,
+          19.404473
+        ]
+      },
+      "properties": {
+        "name": "El Greenkón",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.404473,
+        "longitude": -99.1968254,
+        "address": "Calle Ex Arzobispado, 31B",
+        "opening_hours": "Mo-Fr 12:30-17:00",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.122713,
+          19.4803481
+        ]
+      },
+      "properties": {
+        "name": "Pozoleria Jalisco",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4803481,
+        "longitude": -99.122713,
+        "address": "Avenida la Fortuna, 100",
+        "opening_hours": "Mo-Sa 10:00-23:00; Su 10:00-22:00",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1179856,
+          19.4759069
+        ]
+      },
+      "properties": {
+        "name": "Restaurante del Río",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4759069,
+        "longitude": -99.1179856,
+        "address": "Avenida Joyas",
+        "opening_hours": "Mo-Fr 13:00-21:00; Sa 09:00-21:00; Su 09:00-22:00",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1185182,
+          19.4806893
+        ]
+      },
+      "properties": {
+        "name": "Toks",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4806893,
+        "longitude": -99.1185182,
+        "address": "Calzada de Guadalupe, 679, CDMX",
+        "website": "https://www.toks.com.mx/",
+        "wheelchair": "no",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1265585,
+          19.4788696
+        ]
+      },
+      "properties": {
+        "name": "Esponjoso",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4788696,
+        "longitude": -99.1265585,
+        "address": "Calle Río Blanco, 152",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1250996,
+          19.4873845
+        ]
+      },
+      "properties": {
+        "name": "Sanborns Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4873845,
+        "longitude": -99.1250996,
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1553317,
+          19.4480528
+        ]
+      },
+      "properties": {
+        "name": "banúsach",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4480528,
+        "longitude": -99.1553317,
+        "address": "Calle Dr. Enrique González Martínez, Ciudad de México",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1558293,
+          19.4503572
+        ]
+      },
+      "properties": {
+        "name": "MojiGato Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4503572,
+        "longitude": -99.1558293,
+        "address": "Prolongación de Manuel Carpio, 92, Ciudad de México",
+        "opening_hours": "PH,We-Mo 10:00-22:00+",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1196347,
+          19.4908275
+        ]
+      },
+      "properties": {
+        "name": "Toks",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4908275,
+        "longitude": -99.1196347,
+        "address": "Calzada de los Misterios, 62",
+        "website": "https://www.toks.com.mx/",
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1244363,
+          19.4878393
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4878393,
+        "longitude": -99.1244363,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1858381,
+          19.4128628
+        ]
+      },
+      "properties": {
+        "name": "Govinda's Comedor Vegetariano Haré Krishna",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4128628,
+        "longitude": -99.1858381,
+        "address": "Calle Gobernador Tiburcio Montiel, 45",
+        "opening_hours": "Mo-We 08:30-19:00; Th-Su 08:30-21:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1998293,
+          19.4172258
+        ]
+      },
+      "properties": {
+        "name": "Elago",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4172258,
+        "longitude": -99.1998293,
+        "opening_hours": "Mo-Th 07:30-23:00;Fr-Sa 07:30-23:45;Su 10:00-16:30",
+        "phone": "+52 55 159585",
+        "website": "https://lago.com.mx/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1848598,
+          19.4112216
+        ]
+      },
+      "properties": {
+        "name": "Cleotilde",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4112216,
+        "longitude": -99.1848598,
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.195911,
+          19.416059
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.416059,
+        "longitude": -99.195911,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1963121,
+          19.4273881
+        ]
+      },
+      "properties": {
+        "name": "El Bajío",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4273881,
+        "longitude": -99.1963121,
+        "address": "Alejandro Dumas, 7, Ciudad de México",
+        "opening_hours": "Mo-Sa 08:00-23:00; Su 09:00-22:00",
+        "website": "https://restauranteelbajio.com.mx/",
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1974395,
+          19.4284605
+        ]
+      },
+      "properties": {
+        "name": "Centanni Ristorante Vivo Polanco",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4284605,
+        "longitude": -99.1974395,
+        "address": "Calle Julio Verne, 38, Ciudad de México",
+        "opening_hours": "Mo-Su 13:00-02:00",
+        "phone": "+525526660450",
+        "website": "https://centanni.com.mx/",
+        "cuisine": "pizza;italian;pasta;steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1958082,
+          19.4304543
+        ]
+      },
+      "properties": {
+        "name": "Cafebrería El Péndulo",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4304543,
+        "longitude": -99.1958082,
+        "address": "Calle Alejandro Dumas, 81, Ciudad de México",
+        "opening_hours": "Mo-Sa 08:00-23:00; Su 09:00-22:00",
+        "phone": "+52 55 5280 4111",
+        "website": "http://www.pendulo.com",
+        "cuisine": "breakfast;chicken;coffee_shop;mexican;sandwich;tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.193987,
+          19.4285653
+        ]
+      },
+      "properties": {
+        "name": "Biscottino",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4285653,
+        "longitude": -99.193987,
+        "address": "Avenida Luis Gonzaga Urbina, 4",
+        "opening_hours": "Mo-Th 07:00-20:00; Fr 07:00-18:00; Su 08:00-20:00",
+        "phone": "+52 55 5280 2155",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1925629,
+          19.4282896
+        ]
+      },
+      "properties": {
+        "name": "Baia Café",
+        "name_en": "Baia Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4282896,
+        "longitude": -99.1925629,
+        "address": "Avenida Campos Elíseos, 199",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa-Su 08:30-18:30",
+        "website": "https://baiacafe.com/",
+        "cuisine": "cake;coffee_shop;mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1333434,
+          19.3224823
+        ]
+      },
+      "properties": {
+        "name": "Toks Miramontes",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3224823,
+        "longitude": -99.1333434,
+        "address": "Avenida Canal de Miramontes, 2600,Colonia Ex Hacienda de San Antonio Coapa, Coyoacan ,CDMX",
+        "website": "https://www.toks.com.mx/",
+        "wheelchair": "yes",
+        "cuisine": "international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1345445,
+          19.323008
+        ]
+      },
+      "properties": {
+        "name": "Spiritello Trattoria Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.323008,
+        "longitude": -99.1345445,
+        "address": "Calle Castor, 3",
+        "website": "http://www.spiritello.com.mx",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1434606,
+          19.3244367
+        ]
+      },
+      "properties": {
+        "name": "Cochitlán",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3244367,
+        "longitude": -99.1434606,
+        "cuisine": "mexican;yucateca",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.150996,
+          19.3225795
+        ]
+      },
+      "properties": {
+        "name": "gato cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3225795,
+        "longitude": -99.150996,
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1418582,
+          19.3276102
+        ]
+      },
+      "properties": {
+        "name": "Café Literario",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3276102,
+        "longitude": -99.1418582,
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.150401,
+          19.3514821
+        ]
+      },
+      "properties": {
+        "name": "¡A darle! que es taco vegano",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3514821,
+        "longitude": -99.150401,
+        "address": "Calle Héroes del 47, 127",
+        "opening_hours": "Mo-Fr 13:30-22:00; Sa 18:00-22:00; Su off",
+        "phone": "+52 55 7650 4744",
+        "wheelchair": "limited",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1636498,
+          19.3514814
+        ]
+      },
+      "properties": {
+        "name": "El Mundo del Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3514814,
+        "longitude": -99.1636498,
+        "address": "Calle Centenario, 33, Ciudad de México",
+        "opening_hours": "07:00-23:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1650816,
+          19.3524842
+        ]
+      },
+      "properties": {
+        "name": "Cafetería Azul de Coyoacán",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3524842,
+        "longitude": -99.1650816,
+        "address": "Calle Vicente Guerrero",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1685637,
+          19.3562913
+        ]
+      },
+      "properties": {
+        "name": "Sushi-itto Coyoacán",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3562913,
+        "longitude": -99.1685637,
+        "address": "Avenida México, 5",
+        "opening_hours": "Mo-Th 13:00-23:00;Fr-Sa 13:00-00:00;Su 13:00-22:00",
+        "phone": "+52 55 55545735; +52 55 55545739",
+        "website": "https://www.sushi-itto.com.mx/",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1698111,
+          19.3451559
+        ]
+      },
+      "properties": {
+        "name": "Haru Maki",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3451559,
+        "longitude": -99.1698111,
+        "address": "Avenida Miguel Ángel de Quevedo, 499",
+        "opening_hours": "Mo-Sa 13:30-23:00; Su 13:00-20:00",
+        "phone": "+52 55 55546454",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1718787,
+          19.3510273
+        ]
+      },
+      "properties": {
+        "name": "Cuhtli",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3510273,
+        "longitude": -99.1718787,
+        "address": "Avenida Guillermo Pérez Valenzuela, 90",
+        "opening_hours": "Mo-Fr 09:00-19:30; Su 09:00-15:00; Sa 09:00-17:00",
+        "phone": "55 6387 3007",
+        "cuisine": "breakfast;coffee_shop;sandwich;tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0944981,
+          19.4589337
+        ]
+      },
+      "properties": {
+        "name": "La Ario Mansión 2",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4589337,
+        "longitude": -99.0944981,
+        "phone": "+51 960432283",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0844095,
+          19.4655714
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4655714,
+        "longitude": -99.0844095,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1268141,
+          19.4302462
+        ]
+      },
+      "properties": {
+        "name": "Café Equis \"La Casa Del Café\"",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4302462,
+        "longitude": -99.1268141,
+        "address": "Calle Roldán, 16",
+        "opening_hours": "Mo-Sa 10:00-14:00, 14:30-17:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1166158,
+          19.4194904
+        ]
+      },
+      "properties": {
+        "name": "La Ocurrencia Helados a la plancha",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4194904,
+        "longitude": -99.1166158,
+        "address": "Sur 105, 1407, Venustiano Carranza",
+        "opening_hours": "14:00-22:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1402466,
+          19.4559386
+        ]
+      },
+      "properties": {
+        "name": "La Terraza de los Amigos",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4559386,
+        "longitude": -99.1402466,
+        "address": "Calle Lerdo, Ciudad de México",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1442626,
+          19.4678747
+        ]
+      },
+      "properties": {
+        "name": "Bisquets Obregón",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4678747,
+        "longitude": -99.1442626,
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1381624,
+          19.4615248
+        ]
+      },
+      "properties": {
+        "name": "Tortas Baldomero",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4615248,
+        "longitude": -99.1381624,
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1445536,
+          19.4681025
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4681025,
+        "longitude": -99.1445536,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2058014,
+          19.5042123
+        ]
+      },
+      "properties": {
+        "name": "Toks",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.5042123,
+        "longitude": -99.2058014,
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1644566,
+          19.3609516
+        ]
+      },
+      "properties": {
+        "name": "La Chicha",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3609516,
+        "longitude": -99.1644566,
+        "address": "San Felipe",
+        "opening_hours": "Mo 14:00 - 22:00; Tu-Su 09:00 - 23:00",
+        "wheelchair": "yes",
+        "cuisine": "gastropub",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1722996,
+          19.3453094
+        ]
+      },
+      "properties": {
+        "name": "Toks",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3453094,
+        "longitude": -99.1722996,
+        "address": "Avenida Miguel Ángel de Quevedo, 443",
+        "phone": "+52 55 56591704",
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2053662,
+          19.4364288
+        ]
+      },
+      "properties": {
+        "name": "Paradiso Gourmet",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4364288,
+        "longitude": -99.2053662,
+        "address": "Homero, 1513, Ciudad de México",
+        "opening_hours": "Mo-We 07:00-18:00, Th-Fr 07:00-23:00; Sa 09:00-24:00; Su 09:00-18:00",
+        "phone": "+52 55 5280 5902",
+        "wheelchair": "no",
+        "cuisine": "international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1972918,
+          19.4309866
+        ]
+      },
+      "properties": {
+        "name": "El Polanquito",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4309866,
+        "longitude": -99.1972918,
+        "address": "Oscar Wilde, 21",
+        "opening_hours": "Mo-Fr 08:00-17:30; Sa-Su off",
+        "phone": "+52 55 4633 5745",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1811786,
+          19.3770703
+        ]
+      },
+      "properties": {
+        "name": "Vecchio Fascino",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3770703,
+        "longitude": -99.1811786,
+        "address": "Millet, 78, Extremadura Insurgentes",
+        "opening_hours": "We-Su 02:00-11:00",
+        "phone": "01 55 5598 8120",
+        "cuisine": "italian_pizza;italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.179864,
+          19.3819791
+        ]
+      },
+      "properties": {
+        "name": "Taquería El Huequito",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3819791,
+        "longitude": -99.179864,
+        "opening_hours": "Mo-Su 09:00-04:00",
+        "phone": "5598-9027",
+        "website": "https://www.elhuequito.com.mx/",
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1758814,
+          19.3727619
+        ]
+      },
+      "properties": {
+        "name": "Sanborns Cafe",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3727619,
+        "longitude": -99.1758814,
+        "address": "San Francisco, 1621, México",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "wheelchair": "yes",
+        "cuisine": "mexican;international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.175602,
+          19.3778447
+        ]
+      },
+      "properties": {
+        "name": "La Caravana - Juegos de Mesa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3778447,
+        "longitude": -99.175602,
+        "address": "Calle Fresas, 59, México",
+        "opening_hours": "Mo-Su 15:00-22:00",
+        "phone": "+52 55 5088 9954",
+        "website": "https://www.facebook.com/LaCaravanaJuegosCDMX/",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1770297,
+          19.3862741
+        ]
+      },
+      "properties": {
+        "name": "Chiandoni",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3862741,
+        "longitude": -99.1770297,
+        "address": "Calle Pennsylvania, 255, Ciudad de México",
+        "opening_hours": "Mo-Su 11:00-21:00",
+        "phone": "5575920839",
+        "website": "https://m.facebook.com/Chiandoni-oficial-305938346257345/",
+        "cuisine": "ice_cream;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2035082,
+          19.4393668
+        ]
+      },
+      "properties": {
+        "name": "Erawan",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4393668,
+        "longitude": -99.2035082,
+        "address": "Av Ejercito Nacional, 843, Ciudad de México",
+        "opening_hours": "Mo-We 13:00-23:00; Th-Sa 13:00-02:00; Su 13:00-18:00",
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1975157,
+          19.4454092
+        ]
+      },
+      "properties": {
+        "name": "Tacos, gorditas Vane",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4454092,
+        "longitude": -99.1975157,
+        "address": "Calle Norte 4",
+        "opening_hours": "Mo-Sa 09:00-17:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2038086,
+          19.4415205
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4415205,
+        "longitude": -99.2038086,
+        "address": "Calle Lago Zurich, 243, Ciudad de México",
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1935627,
+          19.4409104
+        ]
+      },
+      "properties": {
+        "name": "Chez Vous #Timecafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4409104,
+        "longitude": -99.1935627,
+        "address": "Boulevard Miguel de Cervantes Saavedra, 41",
+        "opening_hours": "Su-Th 07:30-21:30; Fr-Sa 07:30-22:00",
+        "phone": "+52 55 7911 7544",
+        "website": "https://chezvoustimecafe.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1891494,
+          19.3469956
+        ]
+      },
+      "properties": {
+        "name": "Tagers",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3469956,
+        "longitude": -99.1891494,
+        "address": "Avenida de la Paz, 40, Mexico City",
+        "opening_hours": "Mo-Th 08:00-23:00 Fr-Sa 08:00-23:00 Su 08:00-21:00",
+        "phone": "+522212816591",
+        "website": "https://tagers.com",
+        "wheelchair": "yes",
+        "cuisine": "brunch;breakfast;diner;tea;mexican;pasta;barbecue;juice",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1893478,
+          19.3464043
+        ]
+      },
+      "properties": {
+        "name": "Cluny",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3464043,
+        "longitude": -99.1893478,
+        "address": "Avenida de La Paz, 57",
+        "opening_hours": "Mo-Sa 12:30-00:00; Su 12:30-23:00",
+        "phone": "+52 55 55507350; +52 55 55507359; +52 55 56163582",
+        "website": "https://www.cluny.com.mx/",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1892183,
+          19.3516882
+        ]
+      },
+      "properties": {
+        "name": "Tandoor San Angel",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3516882,
+        "longitude": -99.1892183,
+        "address": "Calle Río de San Ángel, 86B",
+        "opening_hours": "Mo-Sa 13:00-22:00; Su 13:00-19:30",
+        "phone": "55 9016 0880",
+        "website": "https://tandoor.com.mx/",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.193496,
+          19.3417739
+        ]
+      },
+      "properties": {
+        "name": "Cheesecake Delivery Jardín San Ángel",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3417739,
+        "longitude": -99.193496,
+        "address": "Calle Arteaga, 32, Ciudad de México",
+        "opening_hours": "Mo-Sa 14:00-21:00",
+        "phone": "+52 56 1174 6078",
+        "website": "https://www.facebook.com/profile.php?id=100063241028401",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1829018,
+          19.3473452
+        ]
+      },
+      "properties": {
+        "name": "La Victoria",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3473452,
+        "longitude": -99.1829018,
+        "address": "Avenida Miguel Ángel de Quevedo, 109",
+        "opening_hours": "Mo-Su 06:00-23:30",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1926531,
+          19.4281904
+        ]
+      },
+      "properties": {
+        "name": "Cebichería Agua & Sal",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4281904,
+        "longitude": -99.1926531,
+        "address": "Avenida Campos Elíseos, 199 A, Ciudad de México",
+        "opening_hours": "Mo-Sa 12:00-22:00; Su 12:00-18:00",
+        "cuisine": "fish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1921006,
+          19.4284332
+        ]
+      },
+      "properties": {
+        "name": "Debbie & Peponne - Healthy Food & Bakery",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4284332,
+        "longitude": -99.1921006,
+        "address": "Campos Elíseos, 189, Ciudad de México",
+        "opening_hours": "Mo-Sa 08:00-23:00; Su 08:00-20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1897829,
+          19.3398506
+        ]
+      },
+      "properties": {
+        "name": "La Casa de Toño Insurgentes Sur",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3398506,
+        "longitude": -99.1897829,
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "phone": "+525556589765",
+        "website": "https://m.lacasadetono.com.mx/",
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1835747,
+          19.3363609
+        ]
+      },
+      "properties": {
+        "name": "Café Papalotl",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3363609,
+        "longitude": -99.1835747,
+        "opening_hours": "Mo-Fr 8:00-19:00; Sa 9:00-17:00",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1773798,
+          19.3357629
+        ]
+      },
+      "properties": {
+        "name": "Los 3 poblanos",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3357629,
+        "longitude": -99.1773798,
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "website": "http://www.lostrespoblanos.com.mx",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1806755,
+          19.3352459
+        ]
+      },
+      "properties": {
+        "name": "Café Rébora",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3352459,
+        "longitude": -99.1806755,
+        "address": "Odontología, 69 B, Ciudad de México",
+        "opening_hours": "Mo-Fr 7:00-21:30; Sa 8:00-16:30",
+        "website": "https://www.facebook.com/Caf%C3%A9-R%C3%A9bora-376597155838214/?fref=ts",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1615348,
+          19.3779779
+        ]
+      },
+      "properties": {
+        "name": "Deigo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3779779,
+        "longitude": -99.1615348,
+        "address": "José Enrique Pestalozzi, 1238",
+        "opening_hours": "Tu-Sa 13:00-22:00;Su 13:00-19:00",
+        "phone": "+52 55 56056317",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1610552,
+          19.3792987
+        ]
+      },
+      "properties": {
+        "name": "Nanaya",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3792987,
+        "longitude": -99.1610552,
+        "address": "Matías Romero, 1166 C",
+        "opening_hours": "Mo-Su 11:30-21:30",
+        "phone": "01 55 5601 6989",
+        "website": "https://www.sindelantal.mx/ciudad-de-mexico/nanaya-sushi-1784/",
+        "cuisine": "japanese;sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1574834,
+          19.3813562
+        ]
+      },
+      "properties": {
+        "name": "Kolobok",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3813562,
+        "longitude": -99.1574834,
+        "address": "Avenida Universidad, 538, Distrito Federal",
+        "opening_hours": "Mo-Su 11:00-20:00",
+        "phone": "+52 55 56044091",
+        "website": "https://www.kolobok.com.mx/",
+        "cuisine": "Russian_food",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1556192,
+          19.3738739
+        ]
+      },
+      "properties": {
+        "name": "El Patio Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3738739,
+        "longitude": -99.1556192,
+        "address": "Calle Petén, 680, Ciudad de México",
+        "opening_hours": "Mo-Fr 08:00-21:30; Sa-Su 09:30-21:30",
+        "phone": "+52 55 4633 3542",
+        "cuisine": "sandwich;breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.159647,
+          19.3740569
+        ]
+      },
+      "properties": {
+        "name": "XĀLOH",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3740569,
+        "longitude": -99.159647,
+        "opening_hours": "Mo-Fr 07:00-22:00; Sa-Su 09:00-20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.189775,
+          19.4735184
+        ]
+      },
+      "properties": {
+        "name": "Rebel Wings",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4735184,
+        "longitude": -99.189775,
+        "wheelchair": "yes",
+        "cuisine": "burger;wings;wine",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1881881,
+          19.469869
+        ]
+      },
+      "properties": {
+        "name": "Toks Invierno",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.469869,
+        "longitude": -99.1881881,
+        "address": "Av Invierno 17 ,Ciudad de México, Ángel Zimbron, Azcapotzcalo,CDMX.",
+        "website": "https://www.toks.com.mx/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1930203,
+          19.4714188
+        ]
+      },
+      "properties": {
+        "name": "Chili's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4714188,
+        "longitude": -99.1930203,
+        "cuisine": "tex-mex",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1263299,
+          19.4768738
+        ]
+      },
+      "properties": {
+        "name": "Cafeteria el Parque",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4768738,
+        "longitude": -99.1263299,
+        "address": "Avenida Rómulo Escobar Zerman, 197",
+        "opening_hours": "Mo-Tu, Th-Fr 14:00-22:00; Sa-Su 10:00-22:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.123674,
+          19.4739215
+        ]
+      },
+      "properties": {
+        "name": "Churros Don Fede",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4739215,
+        "longitude": -99.123674,
+        "address": "Avenida Victoria Oriente, Gustavo A.Madero",
+        "opening_hours": "4:00 p.m. a 9:00 p.m.",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1833922,
+          19.3302267
+        ]
+      },
+      "properties": {
+        "name": "La Terraza Ingeniería",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3302267,
+        "longitude": -99.1833922,
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.197449,
+          19.3345001
+        ]
+      },
+      "properties": {
+        "name": "La Terraza del Investigador",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3345001,
+        "longitude": -99.197449,
+        "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-14:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1455794,
+          19.4435395
+        ]
+      },
+      "properties": {
+        "name": "Café Chingón",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4435395,
+        "longitude": -99.1455794,
+        "address": "Calle Francisco Zarco, 132",
+        "phone": "5568595571",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1422978,
+          19.4406188
+        ]
+      },
+      "properties": {
+        "name": "Tim Hortons",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4406188,
+        "longitude": -99.1422978,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1862224,
+          19.3863121
+        ]
+      },
+      "properties": {
+        "name": "Villa Casona San Pedro de los Pinos",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3863121,
+        "longitude": -99.1862224,
+        "address": "Calle 25, 3, Ciudad de México",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "+525555988130",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1902616,
+          19.3762872
+        ]
+      },
+      "properties": {
+        "name": "Casa González Exquisita Pancita",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3762872,
+        "longitude": -99.1902616,
+        "opening_hours": "Sa-Su 13:00-18:30,13:00-18:30,09:00-17:00; PH closed",
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.186782,
+          19.3922731
+        ]
+      },
+      "properties": {
+        "name": "Libreria del Ermitaño",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3922731,
+        "longitude": -99.186782,
+        "opening_hours": "Mo-Fr 09:00-21:00; Sa, Su 12:00-21:00",
+        "phone": "+52 55 6721 0496",
+        "website": "http://edicionesdelermitano.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1864586,
+          19.3838697
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3838697,
+        "longitude": -99.1864586,
+        "address": "Avenida Revolución, 702, México",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.124156,
+          19.3043942
+        ]
+      },
+      "properties": {
+        "name": "La Mansión Villa Coapa",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3043942,
+        "longitude": -99.124156,
+        "address": "Avenida Canal de Miramontes, 3048, Coyoacán,CDMX",
+        "opening_hours": "07:00-23:00",
+        "cuisine": "argentinian;mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1250062,
+          19.3062034
+        ]
+      },
+      "properties": {
+        "name": "La Casa de Toño",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3062034,
+        "longitude": -99.1250062,
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1249591,
+          19.304472
+        ]
+      },
+      "properties": {
+        "name": "Toks",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.304472,
+        "longitude": -99.1249591,
+        "address": "Calzada del Hueso 503,Colonia Fraccionamiento los Girasoles, 04920, Coyoacán,CDMX",
+        "website": "https://www.toks.com.mx/",
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1324548,
+          19.306801
+        ]
+      },
+      "properties": {
+        "name": "El caldero de las brujxs",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.306801,
+        "longitude": -99.1324548,
+        "address": "Avenida División del Norte",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0418435,
+          19.4843003
+        ]
+      },
+      "properties": {
+        "name": "El mero mero Cevichero",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4843003,
+        "longitude": -99.0418435,
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0550407,
+          19.4702152
+        ]
+      },
+      "properties": {
+        "name": "La Casa de Toño",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4702152,
+        "longitude": -99.0550407,
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.054732,
+          19.4714237
+        ]
+      },
+      "properties": {
+        "name": "Los Bisquets de Obregón",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4714237,
+        "longitude": -99.054732,
+        "website": "https://bisquetsobregon.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0681564,
+          19.3476097
+        ]
+      },
+      "properties": {
+        "name": "Vips",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3476097,
+        "longitude": -99.0681564,
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0609467,
+          19.3381959
+        ]
+      },
+      "properties": {
+        "name": "Taquería \"La tapatía\"",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3381959,
+        "longitude": -99.0609467,
+        "address": "Av. Centauro del norte",
+        "phone": "56 3480 9384",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0692192,
+          19.345172
+        ]
+      },
+      "properties": {
+        "name": "Taqueria Luis Enrique",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.345172,
+        "longitude": -99.0692192,
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0582217,
+          19.3426254
+        ]
+      },
+      "properties": {
+        "name": "La mina del café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3426254,
+        "longitude": -99.0582217,
+        "address": "Calle Nardo",
+        "opening_hours": "Tu-Su 15:00-22:00",
+        "phone": "55 4878 4206",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0743215,
+          19.3509503
+        ]
+      },
+      "properties": {
+        "name": "Café China III",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3509503,
+        "longitude": -99.0743215,
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1199963,
+          19.4136732
+        ]
+      },
+      "properties": {
+        "name": "Bios Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4136732,
+        "longitude": -99.1199963,
+        "address": "Topolobampo, Venustiano Carranza",
+        "opening_hours": "17:00-22:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1171619,
+          19.4168631
+        ]
+      },
+      "properties": {
+        "name": "El Principio Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4168631,
+        "longitude": -99.1171619,
+        "address": "Lorenzo Boturini, 4358, Venustiano Carranza",
+        "opening_hours": "09:00-00:30",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.159734,
+          19.4509428
+        ]
+      },
+      "properties": {
+        "name": "Bello Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4509428,
+        "longitude": -99.159734,
+        "address": "Calle Sabino, 158, Ciudad de México",
+        "opening_hours": "09:00-22:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1849662,
+          19.3136657
+        ]
+      },
+      "properties": {
+        "name": "Tierra de Iyari",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3136657,
+        "longitude": -99.1849662,
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1757171,
+          19.3214829
+        ]
+      },
+      "properties": {
+        "name": "Café Punta del Cielo",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3214829,
+        "longitude": -99.1757171,
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1828829,
+          19.3272612
+        ]
+      },
+      "properties": {
+        "name": "Don Rata",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3272612,
+        "longitude": -99.1828829,
+        "address": "Circuito Exterior, Mexico City",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1764928,
+          19.3326674
+        ]
+      },
+      "properties": {
+        "name": "Cooperativa Las 400 voces",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3326674,
+        "longitude": -99.1764928,
+        "address": "Calle Alfonso Pruneda, 24, CDMX",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "website": "https://www.facebook.com/las400voces/",
+        "cuisine": "coffee_shop;mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0367024,
+          19.382338
+        ]
+      },
+      "properties": {
+        "name": "La parrilla del oso",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.382338,
+        "longitude": -99.0367024,
+        "address": "retorno 1 de san luis potosí, 31, Ciudad de México",
+        "opening_hours": "18:00 - 24:00",
+        "phone": "5638113450",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0355704,
+          19.3878323
+        ]
+      },
+      "properties": {
+        "name": "La Parrilla Vikinga",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3878323,
+        "longitude": -99.0355704,
+        "opening_hours": "Mo-Su 13:00-23:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0409312,
+          19.3887645
+        ]
+      },
+      "properties": {
+        "name": "Toks",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3887645,
+        "longitude": -99.0409312,
+        "address": "Calz.Ignacio Zaragoza, 1886,Iztapalapa , Juan Escutia, CDMX",
+        "website": "https://www.toks.com.mx/",
+        "wheelchair": "yes",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1401986,
+          19.363037
+        ]
+      },
+      "properties": {
+        "name": "hAMBURGUESAS mATIAS",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.363037,
+        "longitude": -99.1401986,
+        "address": "Miravalle, 714, Ciudad de México",
+        "opening_hours": "Th-Sa 19:00-23:00",
+        "phone": "5536576792",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1413486,
+          19.3630471
+        ]
+      },
+      "properties": {
+        "name": "La mESILLA",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3630471,
+        "longitude": -99.1413486,
+        "address": "Calle Miraflores, Republicas y, Ciudad de México",
+        "opening_hours": "Mo-Sa 08:00-20:00; Su 09:00-17:00",
+        "phone": "5549831530",
+        "cuisine": "bread",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1419866,
+          19.3614513
+        ]
+      },
+      "properties": {
+        "name": "Fonda El Anfritrión",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3614513,
+        "longitude": -99.1419866,
+        "address": "Avenida Pirineos, 43, Mexico",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "phone": "5585023536",
+        "website": "https://elanfitrionparallevar.com/",
+        "cuisine": "international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1390439,
+          19.3620919
+        ]
+      },
+      "properties": {
+        "name": "Tkfé",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3620919,
+        "longitude": -99.1390439,
+        "address": "Avenida Presidente Plutarco Elías Calles, 1851, Ciudad de México",
+        "opening_hours": "Mo-Sa 10:00-22:00",
+        "phone": "5585022778",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1405634,
+          19.3626834
+        ]
+      },
+      "properties": {
+        "name": "El Café Shabo",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3626834,
+        "longitude": -99.1405634,
+        "address": "Avenida Repúblicas, 30, Ciudad de México",
+        "opening_hours": "Mo-Su 08:00-21:00",
+        "phone": "5532031134",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1171567,
+          19.4176008
+        ]
+      },
+      "properties": {
+        "name": "Huraches la Escondida",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4176008,
+        "longitude": -99.1171567,
+        "address": "Cucurpe, 1602, Venustiano Carranza",
+        "opening_hours": "09:00-22:30",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1155218,
+          19.4187166
+        ]
+      },
+      "properties": {
+        "name": "Tacos \"De aqui soy Mexico\"",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4187166,
+        "longitude": -99.1155218,
+        "address": "Prolongación Lucas Alamán, 4505, Venustiano Carranza",
+        "opening_hours": "08:00-18:00",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1157682,
+          19.4178578
+        ]
+      },
+      "properties": {
+        "name": "Super Flautas y Chelas \"La Terraza\"",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4178578,
+        "longitude": -99.1157682,
+        "address": "Calz. Zoquipa, 456, Venustiano Carranza",
+        "opening_hours": "10:00-19:00",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1912073,
+          19.3448162
+        ]
+      },
+      "properties": {
+        "name": "Sólo Dios",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.3448162,
+        "longitude": -99.1912073,
+        "opening_hours": "08:00-20:00",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1305206,
+          19.4354728
+        ]
+      },
+      "properties": {
+        "name": "Pepita Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4354728,
+        "longitude": -99.1305206,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
     }
   ]
 }

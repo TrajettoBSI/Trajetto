@@ -23942,6 +23942,2045 @@
         "website": "http://www.gelateriagiovanni.com",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1203336,
+          41.3771219
+        ]
+      },
+      "properties": {
+        "name": "Híbrid Cafè Restaurant",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3771219,
+        "longitude": 2.1203336,
+        "address": "Travessera de les Corts, 38",
+        "opening_hours": "Mo-Fr 08:30-19:00; Sa 08:30-18:00",
+        "phone": "+34 931 14 32 04",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1243567,
+          41.3863926
+        ]
+      },
+      "properties": {
+        "name": "Santagloria",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3863926,
+        "longitude": 2.1243567,
+        "address": "Carrer de Sabino Arana, 48, Barcelona",
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa 07:00-15:00; Su 08:00-15:00",
+        "phone": "+34 93 491 37 08",
+        "website": "https://www.santagloria.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1188352,
+          41.4213987
+        ]
+      },
+      "properties": {
+        "name": "Restaurant Masia Tibidabo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4213987,
+        "longitude": 2.1188352,
+        "address": "Plaça del Tibidabo, 3-4, Barcelona",
+        "phone": "+34 93 409 2024",
+        "website": "https://tibidabo.cat/ca/masiatibidabo",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1650214,
+          41.3718512
+        ]
+      },
+      "properties": {
+        "name": "Mango and Caoba",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3718512,
+        "longitude": 2.1650214,
+        "address": "Carrer de Salvà, 72",
+        "opening_hours": "Tu-Su 11:00-23:00",
+        "website": "https://www.instagram.com/p/DGDrx4PNHf5/",
+        "wheelchair": "no",
+        "cuisine": "brazilian;burger;international;mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1623201,
+          41.3725975
+        ]
+      },
+      "properties": {
+        "name": "Soul Argento",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3725975,
+        "longitude": 2.1623201,
+        "address": "Plaça del Sortidor, 3, Barcelona",
+        "opening_hours": "Mo-Su 10:00-00:00",
+        "phone": "+34 685068663",
+        "cuisine": "regional;argentinian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1612801,
+          41.3723646
+        ]
+      },
+      "properties": {
+        "name": "De Paula: l'hamburgueseria del Poble Sec",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3723646,
+        "longitude": 2.1612801,
+        "address": "Carrer de la Creu dels Molers, 65",
+        "opening_hours": "Th-Fr 13:00-16:15, 20:00-00:00; Mo-Tu 13:00-16:15, 20:00-23:30; We 13:00-16:15; Sa 13:00-16:30, 20:00-00:00",
+        "phone": "+34931646980",
+        "website": "https://www.depaula.cat/",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1636857,
+          41.3737594
+        ]
+      },
+      "properties": {
+        "name": "Syra Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3737594,
+        "longitude": 2.1636857,
+        "address": "Carrer de Margarit, 17",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa-Su 08:00-20:00",
+        "website": "https://syra.coffee/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1642659,
+          41.3738687
+        ]
+      },
+      "properties": {
+        "name": "Billy brunch & garden",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3738687,
+        "longitude": 2.1642659,
+        "opening_hours": "Mo-Su 09:30-17:00",
+        "website": "https://billybrunch.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1342912,
+          41.4133176
+        ]
+      },
+      "properties": {
+        "name": "Asador de Aranda",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4133176,
+        "longitude": 2.1342912,
+        "address": "Avinguda del Tibidabo, 31",
+        "opening_hours": "Mo-Su 13:00-16:30, 20:00-23:30",
+        "phone": "+34 934 17 01 15",
+        "website": "https://www.asadordearanda.net/ca/content/barcelona-tibidabo",
+        "wikidata": "Q11912788",
+        "wikipedia": "ca:Casa Roviralta",
+        "cuisine": "spanish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1319129,
+          41.4160323
+        ]
+      },
+      "properties": {
+        "name": "Mirablau",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4160323,
+        "longitude": 2.1319129,
+        "address": "Plaça del Doctor Andreu, Barcelona",
+        "opening_hours": "Mo-We 11:00-03:30; Th 11:00-04:30; Fr-Sa 10:00-05:00; Su 10:00-02:30",
+        "phone": "+34 93 418 58 79",
+        "website": "http://www.mirablaubcn.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1394773,
+          41.3623335
+        ]
+      },
+      "properties": {
+        "name": "La Suerte - Ramen Sushi Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3623335,
+        "longitude": 2.1394773,
+        "address": "Carrer de la Mare de Déu de Port, 347, Barcelona",
+        "opening_hours": "Tu-Su, PH 10:30-23:00",
+        "phone": "+34 934187982",
+        "website": "https://lasuerteasiatica.com/",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1553225,
+          41.3724012
+        ]
+      },
+      "properties": {
+        "name": "Il Golfo di Napli",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3724012,
+        "longitude": 2.1553225,
+        "address": "Carrer de Lleida, 38, Barcelona",
+        "opening_hours": "Mo-Sa 13:00-16:00,20:00-23:55",
+        "phone": "+34934234543",
+        "website": "https://www.ilgolfodinapoli.com",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1555635,
+          41.3724648
+        ]
+      },
+      "properties": {
+        "name": "Veganashi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3724648,
+        "longitude": 2.1555635,
+        "address": "Carrer de Lleida, 33, Barcelona",
+        "opening_hours": "Mo-Su 13:00-16:00, 20:00-23:00",
+        "phone": "+34 640 83 68 52",
+        "website": "https://www.veganashi.es",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1562024,
+          41.3734375
+        ]
+      },
+      "properties": {
+        "name": "Salvadiscos",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3734375,
+        "longitude": 2.1562024,
+        "website": "https://www.salvadiscos.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1373289,
+          41.4100648
+        ]
+      },
+      "properties": {
+        "name": "Buenas Migas",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4100648,
+        "longitude": 2.1373289,
+        "address": "Carrer de Balmes, 470, Barcelona",
+        "opening_hours": "Mo-Fr 08:00-23:00; Sa-Su 09:00-23:00",
+        "phone": "+34 930 02 34 49",
+        "website": "http://www.buenasmigas.com",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1335324,
+          41.4033319
+        ]
+      },
+      "properties": {
+        "name": "Cafe Dore",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4033319,
+        "longitude": 2.1335324,
+        "address": "Carrer de Mandri, 35, Barcelona",
+        "phone": "+34932110745",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1623313,
+          41.3720265
+        ]
+      },
+      "properties": {
+        "name": "Lof bakery",
+        "name_en": "Lof bakery (gluten free)",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3720265,
+        "longitude": 2.1623313,
+        "address": "Carrer de Blasco de Garay, 59",
+        "website": "https://thelofbakery.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1413017,
+          41.4322173
+        ]
+      },
+      "properties": {
+        "name": "La Terrasseta de Montbau",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4322173,
+        "longitude": 2.1413017,
+        "address": "Carrer de Roig i Solé, 31, Barcelona",
+        "opening_hours": "Tu-Th 09:00-22:30; Fr 09:00-24:00; Sa 10:00-24:00; Su 10:00-16:30; Mo off",
+        "phone": "+34676278766",
+        "cuisine": "tapas;burger;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1474229,
+          41.4306168
+        ]
+      },
+      "properties": {
+        "name": "Els Mistos",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4306168,
+        "longitude": 2.1474229,
+        "address": "Carrer de Juan de Mena, 1-3, Barcelona",
+        "opening_hours": "Tu-Su 13:00-16:00, 20:00-23:00",
+        "phone": "+34934282137",
+        "website": "https://elsmistos.com",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1524833,
+          41.4362503
+        ]
+      },
+      "properties": {
+        "name": "Can Cortada",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4362503,
+        "longitude": 2.1524833,
+        "address": "Avinguda de l'Estatut de Catalunya",
+        "phone": "+34 934 27 23 15",
+        "website": "https://www.gruptravi.com/",
+        "wikidata": "Q17590133",
+        "wikipedia": "ca:Can Cortada (Barcelona)",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2106527,
+          41.407253
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Sol",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.407253,
+        "longitude": 2.2106527,
+        "address": "Carrer de Llull, 338, Barcelona",
+        "opening_hours": "Mo-Su 11:30-16:30,19:30-24:00",
+        "phone": "+34 933 07 29 96",
+        "wheelchair": "yes",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2122833,
+          41.4016194
+        ]
+      },
+      "properties": {
+        "name": "La Malandrina 3",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4016194,
+        "longitude": 2.2122833,
+        "address": "Carrer de Bac de Roda, 38",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+34 937825785",
+        "cuisine": "argentinian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2045648,
+          41.3983358
+        ]
+      },
+      "properties": {
+        "name": "Blu Bar",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3983358,
+        "longitude": 2.2045648,
+        "address": "Rambla del Poblenou, 11, Barcelona",
+        "opening_hours": "Su-Th 12:00-00:00; Fr-Sa 12:00-02:00",
+        "phone": "+34 932 21 09 71",
+        "website": "https://blubar.es/",
+        "cuisine": "italian;tapas;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2058638,
+          41.4004191
+        ]
+      },
+      "properties": {
+        "name": "Zero Barcelona Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4004191,
+        "longitude": 2.2058638,
+        "address": "Carrer de l'Amistat, 21, Barcelona",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "website": "https://zerohostels.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2045093,
+          41.3992322
+        ]
+      },
+      "properties": {
+        "name": "Syra Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3992322,
+        "longitude": 2.2045093,
+        "address": "Carrer del Doctor Trueta, 232",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa-Su 08:00-20:00",
+        "website": "https://syra.coffee/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.205339,
+          41.3935502
+        ]
+      },
+      "properties": {
+        "name": "Escribà",
+        "name_en": "Xiringuito Escriba",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3935502,
+        "longitude": 2.205339,
+        "address": "Avinguda del Litoral, 62",
+        "opening_hours": "Mo-Su 12:00-00:00",
+        "phone": "+34 932 210 729",
+        "website": "https://www.xiringuitoescriba.com/",
+        "cuisine": "mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1215555,
+          41.3936746
+        ]
+      },
+      "properties": {
+        "name": "Sando's Hanaka",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3936746,
+        "longitude": 2.1215555,
+        "address": "Carrer d'Eduardo Conde, 22, Barcelona",
+        "opening_hours": "Mo-Sa 10:00-19:00",
+        "phone": "+34 930 31 92 21",
+        "website": "https://www.kasahanaka.com",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1249629,
+          41.3933584
+        ]
+      },
+      "properties": {
+        "name": "DOLE",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3933584,
+        "longitude": 2.1249629,
+        "address": "Carrer de Manuel de Falla, 16, Barcelona",
+        "opening_hours": "Mo-Fr 06:00-15:30, Sa 07:00-13:00",
+        "phone": "+34 932 04 11 20",
+        "cuisine": "sandwich;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0735139,
+          41.3833348
+        ]
+      },
+      "properties": {
+        "name": "La Casona de Sant Just",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3833348,
+        "longitude": 2.0735139,
+        "address": "Carrer Tudona, 2, Sant Just Desvern",
+        "opening_hours": "We-Sa 12:00-24:00, Su 12:00-20:00",
+        "phone": "+34 931 89 29 25",
+        "cuisine": "grill;bar_and_grill;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0588161,
+          41.3877921
+        ]
+      },
+      "properties": {
+        "name": "La Dolce e Vito",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3877921,
+        "longitude": 2.0588161,
+        "address": "Carrer Rosa de Luxemburg, 16, Sant Just Desvern",
+        "opening_hours": "Sa-Su 13:00-16:00; Tu-Su 20:00-23:00",
+        "phone": "+34 93 631 33 06",
+        "website": "https://la-dolce-e-vito.eltenedor.rest/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0654446,
+          41.3793712
+        ]
+      },
+      "properties": {
+        "name": "La Tagliatelle",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3793712,
+        "longitude": 2.0654446,
+        "opening_hours": "Mo-Su 20:00-00:00",
+        "website": "https://www.latagliatella.es/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0594531,
+          41.3872105
+        ]
+      },
+      "properties": {
+        "name": "52 moments",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3872105,
+        "longitude": 2.0594531,
+        "address": "Carrer de Rosa Luxemburg, 10, Sant Just Desvern",
+        "opening_hours": "Mo-Su 06:30-21:00",
+        "phone": "+34 93 499 60 05",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0678506,
+          41.3799446
+        ]
+      },
+      "properties": {
+        "name": "Bar Cafetería Muñoz",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3799446,
+        "longitude": 2.0678506,
+        "address": "Carretera Reial, 106",
+        "opening_hours": "Mo-Fr 07:00-22:00; Sa 08:00-16:30",
+        "phone": "+34 933715785",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.220221,
+          41.4151111
+        ]
+      },
+      "properties": {
+        "name": "Amani Sky & Tapas Bar",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4151111,
+        "longitude": 2.220221,
+        "address": "Carrer de Ramon Llull, 479-487, Barcelona",
+        "opening_hours": "Mo-Su 16:00-00:00",
+        "phone": "+34 93 655 04 00",
+        "website": "https://tembobarcelona.com/",
+        "cuisine": "spanish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2158686,
+          41.4093688
+        ]
+      },
+      "properties": {
+        "name": "Brasayleña",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4093688,
+        "longitude": 2.2158686,
+        "address": "Avinguda Diagonal, 3",
+        "opening_hours": "Mo-Su 13:00-00:00",
+        "phone": "+3493 715 38 58",
+        "website": "https://brasaylena.com/",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2202844,
+          41.414935
+        ]
+      },
+      "properties": {
+        "name": "Kanga Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.414935,
+        "longitude": 2.2202844,
+        "address": "Carrer de Ramon Llull, 479-487, Barcelona",
+        "opening_hours": "Mo-Su 08:00-16:00",
+        "phone": "+34936550400",
+        "website": "https://tembobarcelona.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2177983,
+          41.4102269
+        ]
+      },
+      "properties": {
+        "name": "Havanna",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4102269,
+        "longitude": 2.2177983,
+        "phone": "+34 68 085 79 19",
+        "website": "https://www.havanna.com.es/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0984289,
+          41.4344119
+        ]
+      },
+      "properties": {
+        "name": "El Mirador de Can Cases",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4344119,
+        "longitude": 2.0984289,
+        "address": "Camí de Can Cases, 15, Sant Cugat del Vallès",
+        "opening_hours": "Mo-Su 17:00-00:00; Fr-Su,PH 11:00-17:00",
+        "phone": "+34935891868",
+        "website": "https://www.cancases.com/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1055636,
+          41.4293234
+        ]
+      },
+      "properties": {
+        "name": "Masia Can Cortès",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4293234,
+        "longitude": 2.1055636,
+        "address": "Avinguda de Can Cortès, 36, Sant Cugat del Vallès",
+        "opening_hours": "Tu-Su,PH 10:00-17:00; Mo off",
+        "phone": "+34936741704",
+        "website": "https://www.cancortes.com/",
+        "cuisine": "catalan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1922152,
+          41.3939267
+        ]
+      },
+      "properties": {
+        "name": "Bahn Mi Club",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3939267,
+        "longitude": 2.1922152,
+        "address": "Carrer de Llull, 55",
+        "opening_hours": "Mo-Fr 12:00-23:00",
+        "phone": "+34 684 78 40 14",
+        "website": "https://www.bahnmiclub.com",
+        "cuisine": "vietnamese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.109899,
+          41.3942273
+        ]
+      },
+      "properties": {
+        "name": "El Jardí de l'Abadessa",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3942273,
+        "longitude": 2.109899,
+        "website": "https://www.jardiabadessa.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.180579,
+          41.434906
+        ]
+      },
+      "properties": {
+        "name": "Casa Carmen",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.434906,
+        "longitude": 2.180579,
+        "address": "Avinguda de Rio de Janeiro, 42, Barcelona",
+        "opening_hours": "Mo-Th 12:30-23:00,Fr-Sa 12:30-00:00,Su 12:30-23:30",
+        "phone": "+34931315592",
+        "website": "https://casacarmenrestaurant.com/restaurantes/som/",
+        "wheelchair": "yes",
+        "cuisine": "mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1908356,
+          41.4357724
+        ]
+      },
+      "properties": {
+        "name": "Shokudo II",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4357724,
+        "longitude": 2.1908356,
+        "address": "Plaça d'Orfila, 12, Barcelona",
+        "opening_hours": "Tu-Su 13:00-14:00,20:00-24:00",
+        "phone": "+34 936 84 68 44",
+        "cuisine": "japanese;sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1912471,
+          41.42398
+        ]
+      },
+      "properties": {
+        "name": "Tacos &Tragos",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.42398,
+        "longitude": 2.1912471,
+        "address": "Carrer Gran de la Sagrera, 106",
+        "opening_hours": "Mo,We-Th 12:00-24:00; Tu off; Fr-Sa 12:00-02:00; Su 12:00-23:00",
+        "phone": "+34 687 93 94 03",
+        "website": "https://tacosytragos.es",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1912211,
+          41.4233746
+        ]
+      },
+      "properties": {
+        "name": "Aromes",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4233746,
+        "longitude": 2.1912211,
+        "address": "Carrer Gran de la Sagrera, 84",
+        "opening_hours": "Mo-Sa 08:00-20:00; Su off",
+        "phone": "+34 933 52 61 70",
+        "website": "https://www.aromescafeteria.com",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1895577,
+          41.4349497
+        ]
+      },
+      "properties": {
+        "name": "Xurreria Sant Andreu",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4349497,
+        "longitude": 2.1895577,
+        "address": "Carrer Gran de Sant Andreu, 241, Barcelona",
+        "phone": "+34933118754",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1133177,
+          41.3872682
+        ]
+      },
+      "properties": {
+        "name": "Honest food",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3872682,
+        "longitude": 2.1133177,
+        "address": "Carrer de Jordi Girona, 10",
+        "opening_hours": "Su-Fr 10:30-23:00; Sa 09:30-22:30",
+        "website": "https://www.somoshonest.com/",
+        "cuisine": "mediterranean;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1014622,
+          41.375411
+        ]
+      },
+      "properties": {
+        "name": "Bar La Julia",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.375411,
+        "longitude": 2.1014622,
+        "address": "Carrer de Toledo, 5, l'Hospitalet de Llobregat",
+        "opening_hours": "Mo-Su 07:30-21:00",
+        "phone": "+34931191392",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1123914,
+          41.3863754
+        ]
+      },
+      "properties": {
+        "name": "Pizzeria Bar Divina Pedralbes",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3863754,
+        "longitude": 2.1123914,
+        "address": "Carrer d'Alfambra, 11, Barcelona",
+        "phone": "+34932803184",
+        "cuisine": "italian;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.118231,
+          41.3856392
+        ]
+      },
+      "properties": {
+        "name": "DUNKIN'",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3856392,
+        "longitude": 2.118231,
+        "opening_hours": "Mo-Sa 07:00-23:00",
+        "website": "https://www.dunkin.es",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1612389,
+          41.3752307
+        ]
+      },
+      "properties": {
+        "name": "Buenas Migas",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3752307,
+        "longitude": 2.1612389,
+        "address": "Avinguda del Paral·lel, 130, Barcelona",
+        "opening_hours": "Mo-Fr 07:00-23:00; Sa-Su,PH 08:00-23:00",
+        "phone": "+34 937 82 69 91",
+        "website": "http://www.buenasmigas.com",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2124232,
+          41.4654774
+        ]
+      },
+      "properties": {
+        "name": "El Racó Torribera",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4654774,
+        "longitude": 2.2124232,
+        "address": "Carrer de Castella, Santa Coloma de Gramenet",
+        "phone": "+34 933924207",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.194911,
+          41.4653927
+        ]
+      },
+      "properties": {
+        "name": "Restaurant La Font",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4653927,
+        "longitude": 2.194911,
+        "address": "Camí de la Font de l'Alzina",
+        "phone": "+3493 468 01 99",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1015736,
+          41.4185021
+        ]
+      },
+      "properties": {
+        "name": "El Racó de Collserola",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4185021,
+        "longitude": 2.1015736,
+        "address": "Carretera de l'Església, Barcelona",
+        "opening_hours": "Mo-Su 08:30-17:30",
+        "phone": "+34 932 80 26 49",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0969687,
+          41.419214
+        ]
+      },
+      "properties": {
+        "name": "n9u",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.419214,
+        "longitude": 2.0969687,
+        "address": "Camí del Pantà, 2",
+        "phone": "+34938487515",
+        "website": "http://9restaurant.com",
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.205015,
+          41.4075157
+        ]
+      },
+      "properties": {
+        "name": "Abyss Coffee Roasters",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4075157,
+        "longitude": 2.205015,
+        "address": "Avinguda Diagonal, 93",
+        "opening_hours": "Mo-We 08:00-18:00; Th-Fr 08:00-19:00; Sa-Su 09:00-18:00",
+        "website": "https://abysscoffee.es",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1486601,
+          41.4239109
+        ]
+      },
+      "properties": {
+        "name": "La Cruskel-la",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4239109,
+        "longitude": 2.1486601,
+        "address": "Carrer de Josep Sangenís, 15, Barcelona",
+        "opening_hours": "We-Th 18:00-22:30; Fr-Sa 18:00-23:00; Su 18:00-22:30; PH off",
+        "phone": "+34 672 900 438",
+        "website": "https://lacruskella.org",
+        "wheelchair": "yes",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1575463,
+          41.4161581
+        ]
+      },
+      "properties": {
+        "name": "Terra Mía",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4161581,
+        "longitude": 2.1575463,
+        "address": "Carrer d'Ana María Matute Ausejo, 31, Barcelona",
+        "opening_hours": "09:00-23:30",
+        "phone": "+34 931 86 30 99",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1654571,
+          41.4149332
+        ]
+      },
+      "properties": {
+        "name": "Escaleta del Guinardó: Cuina de Mercat",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4149332,
+        "longitude": 2.1654571,
+        "address": "Avinguda de la Mare de Déu de Montserrat, 83, Barcelona",
+        "opening_hours": "Tu-Th,Su 13:00-16:00; Fr-Sa 13:00-16:00,20:00-01:00",
+        "phone": "+34 93 009 17 96",
+        "cuisine": "local;mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.175078,
+          41.4159115
+        ]
+      },
+      "properties": {
+        "name": "Padel Bar Cafeteria",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4159115,
+        "longitude": 2.175078,
+        "address": "Carrer de Sant Quintí, 116, Barcelona",
+        "opening_hours": "Mo-Fr 07:00-21:30; Sa-Su 07:30-21:30",
+        "phone": "+34931148178",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1698817,
+          41.4131821
+        ]
+      },
+      "properties": {
+        "name": "Na tazzulella e café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4131821,
+        "longitude": 2.1698817,
+        "address": "Ronda del Guinardó, 74",
+        "phone": "+34610114386",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.20621,
+          41.4193692
+        ]
+      },
+      "properties": {
+        "name": "Els Porxos",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4193692,
+        "longitude": 2.20621,
+        "address": "Carrer del Maresme, 201, Barcelona",
+        "opening_hours": "We-Su 12:00-16:00,19:00-24:00",
+        "phone": "+34 935 04 58 42",
+        "website": "https://elporxosantmarti.com",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2108736,
+          41.4220462
+        ]
+      },
+      "properties": {
+        "name": "Bar Lafuente",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4220462,
+        "longitude": 2.2108736,
+        "address": "Gran Via de les Corts Catalanes, 1179",
+        "opening_hours": "Tu-Sa 10:00-16:00, 18:00-23:00",
+        "phone": "+34 932 78 19 59",
+        "cuisine": "tapas",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2115164,
+          41.4227448
+        ]
+      },
+      "properties": {
+        "name": "Mr. Carlos -Braseria-Tapas & Burger",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4227448,
+        "longitude": 2.2115164,
+        "address": "Avinguda de les Corts Catalanes, 3",
+        "opening_hours": "Th-Tu 10:00-23:30",
+        "phone": "+34 931 52 52 64",
+        "cuisine": "burger;peruvian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1912098,
+          41.4238456
+        ]
+      },
+      "properties": {
+        "name": "iaia’Nita",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4238456,
+        "longitude": 2.1912098,
+        "address": "Carrer Gran de la Sagrera, 98",
+        "phone": "+34 930 10 75 10",
+        "website": "https://iaianita.com/",
+        "cuisine": "coffee_shop;bakery",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1571374,
+          41.4095146
+        ]
+      },
+      "properties": {
+        "name": "La Panxa del Bisbe",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4095146,
+        "longitude": 2.1571374,
+        "address": "Carrer del Torrent de les Flors, 158",
+        "opening_hours": "Tu-Sa 13:30-15:30, 20:30-23:30",
+        "phone": "+34932137049",
+        "website": "https://www.instagram.com/lapanxadelbisbe/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1617555,
+          41.4137602
+        ]
+      },
+      "properties": {
+        "name": "365",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4137602,
+        "longitude": 2.1617555,
+        "address": "Avinguda de la Mare de Déu de Montserrat, 24, Barcelona",
+        "website": "https://365obrador.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1695814,
+          41.4178835
+        ]
+      },
+      "properties": {
+        "name": "Sabor do Brasil",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4178835,
+        "longitude": 2.1695814,
+        "address": "Carrer de Brusel·les, 47, Barcelona",
+        "opening_hours": "Tu-Sa 10:00-19:00; Su 10:00-15:00",
+        "phone": "+34 602 52 45 29",
+        "website": "https://sabordobrasil.es",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1756033,
+          41.4155021
+        ]
+      },
+      "properties": {
+        "name": "Organic Ume",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4155021,
+        "longitude": 2.1756033,
+        "opening_hours": "Mo-Fr 11:00-23:00; Sa-Su 11:00-01:00",
+        "website": "https://organicume.es/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1701738,
+          41.3736012
+        ]
+      },
+      "properties": {
+        "name": "Xiloka",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3736012,
+        "longitude": 2.1701738,
+        "address": "Carrer de Cabanes, 22",
+        "opening_hours": "Th 19:00-23:45; Fr-Sa 13:00-23:45; Su 13:00-17:00",
+        "phone": "+34931463676",
+        "website": "https://xiloka.com/",
+        "cuisine": "mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1741363,
+          41.3745048
+        ]
+      },
+      "properties": {
+        "name": "Bar Restaurant J&R",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3745048,
+        "longitude": 2.1741363,
+        "address": "Avinguda del Paral·lel, 21",
+        "opening_hours": "Mo-Su 06:30-22:00",
+        "phone": "+34 936339733",
+        "cuisine": "breakfast;spanish;mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2391953,
+          41.4447307
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Palacio Oriente",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4447307,
+        "longitude": 2.2391953,
+        "address": "Avinguda del Marquès de Mont-roig, 13-15",
+        "opening_hours": "Su-Mo, We-Th 12:00-16:30, 19:30-23:30; Tu 12:00-16:30; Fr-Sa 12:00-16:30, 19:30-00:00",
+        "phone": "+34933874501;+34933876096",
+        "website": "https://palaciodeloriente2.com",
+        "wheelchair": "yes",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2465166,
+          41.4515765
+        ]
+      },
+      "properties": {
+        "name": "La Sargantana",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4515765,
+        "longitude": 2.2465166,
+        "address": "Carrer de Sant Sebastià, 2",
+        "opening_hours": "Tu-Sa 19:00-24:00",
+        "phone": "+3493 464 22 16",
+        "website": "https://www.lasargantana.org/",
+        "cuisine": "mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2495618,
+          41.4521597
+        ]
+      },
+      "properties": {
+        "name": "la Mare del Tano",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4521597,
+        "longitude": 2.2495618,
+        "address": "Carrer de Francesc Layret, 175, Badalona",
+        "opening_hours": "Mo-Fr 13:00-16:00, 20:00-23:00; Sa 20:00-23:00",
+        "phone": "+3493 179 72 40",
+        "website": "https://www.lamaredeltano.es",
+        "cuisine": "burger;kebab;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2383327,
+          41.4584725
+        ]
+      },
+      "properties": {
+        "name": "MRcupcakesBDN",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4584725,
+        "longitude": 2.2383327,
+        "address": "Plaça de la Ciutat de San Carlos de Nicaragua, 4",
+        "opening_hours": "Mo-Fr 07:30-13:00,16:00-20:00; Sa 08:30-13:30",
+        "phone": "+34 931 662 962",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2508669,
+          41.449916
+        ]
+      },
+      "properties": {
+        "name": "Amauta Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.449916,
+        "longitude": 2.2508669,
+        "address": "Carrer del Carme, 53, Badalona",
+        "phone": "+34 687270031",
+        "website": "https://amautacoffee.com",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1563359,
+          41.4374756
+        ]
+      },
+      "properties": {
+        "name": "La Panera",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4374756,
+        "longitude": 2.1563359,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1566095,
+          41.4375721
+        ]
+      },
+      "properties": {
+        "name": "Torrades",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4375721,
+        "longitude": 2.1566095,
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0891192,
+          41.4270319
+        ]
+      },
+      "properties": {
+        "name": "La Botigueta",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4270319,
+        "longitude": 2.0891192,
+        "cuisine": "spanish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1058393,
+          41.4143023
+        ]
+      },
+      "properties": {
+        "name": "UAALA Gelateria",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4143023,
+        "longitude": 2.1058393,
+        "address": "Carrer de les Alberes, 29",
+        "cuisine": "cake;ice_cream",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1418091,
+          41.4145185
+        ]
+      },
+      "properties": {
+        "name": "Cafeteria del Parc Sanitari Pere Virgili",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4145185,
+        "longitude": 2.1418091,
+        "opening_hours": "07:00-20:00",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1384357,
+          41.4114575
+        ]
+      },
+      "properties": {
+        "name": "Manolo Bakes",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4114575,
+        "longitude": 2.1384357,
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa,Su,PH 09:00-20:00",
+        "popularity": 0
+      }
     }
   ]
 }

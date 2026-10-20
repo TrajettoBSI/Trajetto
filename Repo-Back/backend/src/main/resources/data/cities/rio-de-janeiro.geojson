@@ -16494,6 +16494,1602 @@
         "phone": "(21) 2508-5751",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1937184,
+          -22.9880847
+        ]
+      },
+      "properties": {
+        "name": "ARP Beach Bar",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9880847,
+        "longitude": -43.1937184,
+        "address": "Avenida Francisco Bhering, 65, Rio de Janeiro",
+        "opening_hours": "24/7",
+        "phone": "+55 21 3600 4000",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1951008,
+          -22.9847783
+        ]
+      },
+      "properties": {
+        "name": "Brasinha Ipanema",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9847783,
+        "longitude": -43.1951008,
+        "address": "Rua Gomes Carneiro, 112",
+        "opening_hours": "Mo-Su 07:00-24:00",
+        "phone": "+55 21 2247-3778",
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1882705,
+          -22.9759073
+        ]
+      },
+      "properties": {
+        "name": "Cervejaria Devassa",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9759073,
+        "longitude": -43.1882705,
+        "address": "Rua Bolívar, 8, Rio de Janeiro",
+        "opening_hours": "Mo-Tu 11:00-02:00; Fr-Su 11:00-03:00",
+        "phone": "+55 21 2236 0667",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1903849,
+          -22.9767958
+        ]
+      },
+      "properties": {
+        "name": "Stalos",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9767958,
+        "longitude": -43.1903849,
+        "opening_hours": "24/7",
+        "phone": "+55 21 2521 5143",
+        "website": "https://www.staloscafe.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2202857,
+          -22.9656849
+        ]
+      },
+      "properties": {
+        "name": "Sud, o pássaro verde",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9656849,
+        "longitude": -43.2202857,
+        "address": "Rua Visconde de Carandaí, 35, Rio de Janeiro",
+        "opening_hours": "Tu-Su 18:00-22:00, Su 12:00-17:00",
+        "phone": "+55 21 31140464",
+        "website": "http://www.robertasudbrack.com.br/",
+        "wheelchair": "yes",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2223999,
+          -22.9704685
+        ]
+      },
+      "properties": {
+        "name": "Rubaiyat Rio",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9704685,
+        "longitude": -43.2223999,
+        "address": "Rua Jardim Botânico, 971",
+        "opening_hours": "Mo-Su 12:00-00:30",
+        "phone": "+55 21 3204-9999",
+        "website": "http://rubaiyat.com.br/en/rubaiyat-rio/",
+        "cuisine": "brazilian;steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2205117,
+          -22.9659542
+        ]
+      },
+      "properties": {
+        "name": "Puro Restaurante",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9659542,
+        "longitude": -43.2205117,
+        "address": "Rua Visconde de Carandaí, 43, Rio de Janeiro",
+        "opening_hours": "Mo 13:00-20:00; Tu-Th 17:00-01:00; Fr-Sa 13:00-01:00",
+        "phone": "+55 21 3284-5377",
+        "website": "http://www.purorestaurante.com.br",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2269306,
+          -22.9653049
+        ]
+      },
+      "properties": {
+        "name": "Jojô",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9653049,
+        "longitude": -43.2269306,
+        "address": "Rua Pacheco Leão, 812",
+        "opening_hours": "Mo 13:00-20:00; Tu,We 17:00-24:00; Th 17:00-01:00; Fr,Sa 13:00-01:00",
+        "phone": "+55 21 3565 9007",
+        "website": "http://www.jojocafe.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1967098,
+          -22.9856887
+        ]
+      },
+      "properties": {
+        "name": "Casa da Feijoada",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9856887,
+        "longitude": -43.1967098,
+        "address": "Rua Prudente de Morais, 10B, rio de janeiro",
+        "opening_hours": "Mo-Su 12:00-23:30",
+        "phone": "+55 21 2247 2776",
+        "website": "http://www.cozinhatipica.com.br/?content=restaurantes",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2424412,
+          -22.9957158
+        ]
+      },
+      "properties": {
+        "name": "Bar da Laje",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9957158,
+        "longitude": -43.2424412,
+        "address": "Rua Armando de Almeida Lima",
+        "opening_hours": "Mo-Fr 12:00-20:00; Sa-Su ,PH 12:00-22:00",
+        "phone": "+55 21 3323 5807",
+        "website": "https://bardalaje.rio/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3418922,
+          -22.87815
+        ]
+      },
+      "properties": {
+        "name": "Beto rei da Carne de Sol",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.87815,
+        "longitude": -43.3418922,
+        "address": "Rua Andrade Pinto, EF 20, Rio de Janeiro",
+        "opening_hours": "Fr-Su 19:00-01:00",
+        "website": "https://www.instagram.com/betoreidacarnedesol/?hl=pt-br",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2161773,
+          -22.9825061
+        ]
+      },
+      "properties": {
+        "name": "Outback Steakhouse",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9825061,
+        "longitude": -43.2161773,
+        "opening_hours": "Mo-Th 12:00-15:00,17:00-22:00; Fr-Sa 12:00-22:00; Su,PH 12:00-21:00",
+        "phone": "+55 21 3875 1605",
+        "website": "https://www.outback.com.br/",
+        "cuisine": "american;steak",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2037557,
+          -22.9855811
+        ]
+      },
+      "properties": {
+        "name": "Spazziano",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9855811,
+        "longitude": -43.2037557,
+        "address": "Rua Prudente de Morais, 729",
+        "opening_hours": "12:00-15:00",
+        "website": "http://ipanema.spamariabonita.com.br/spazziano/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.207008,
+          -22.9845069
+        ]
+      },
+      "properties": {
+        "name": "Emporio Jardim la Praia",
+        "name_en": "Emporio Jardim na Praia",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9845069,
+        "longitude": -43.207008,
+        "address": "Rua Maria Quitéria, 62",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "phone": "+552125359862",
+        "website": "https://www.emporiojardimrio.com.br/",
+        "cuisine": "breakfast;coffee_shop;diner;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.202673,
+          -22.9836167
+        ]
+      },
+      "properties": {
+        "name": "Lapamaki",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9836167,
+        "longitude": -43.202673,
+        "address": "Rua Vinícius de Moraes, 124, Rio de Janeiro",
+        "opening_hours": "Mo-Th,Su 11:30-00:00; Fr-Sa 12:00-02:00",
+        "phone": "+55 21 3547 5803; +55 21 99651 8266",
+        "website": "http://lapamaki.com.br/",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.202456,
+          -22.9831667
+        ]
+      },
+      "properties": {
+        "name": "Gringo Café",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9831667,
+        "longitude": -43.202456,
+        "address": "Rua Barão da Torre, 240",
+        "opening_hours": "Mo-Su 08:00-22:30",
+        "phone": "+55 21 3813 3972",
+        "website": "http://www.gringocafe.com",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1997436,
+          -22.9846923
+        ]
+      },
+      "properties": {
+        "name": "Aipo e Aipim",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9846923,
+        "longitude": -43.1997436,
+        "address": "Rua Visconde de Pirajá, 145",
+        "opening_hours": "Mo-Fr 11:00-22:00; Sa-Su 11:00-17:00",
+        "phone": "+55 21 2267 8313",
+        "website": "http://aipoeaipim.com.br",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2216305,
+          -22.9157485
+        ]
+      },
+      "properties": {
+        "name": "Cheirin Bão",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9157485,
+        "longitude": -43.2216305,
+        "address": "Rua Mariz e Barros, 824 - Loja E",
+        "opening_hours": "Mo-Sa 08:00-19:00; Su 08:30-16:00",
+        "website": "https://cheirinbao.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1989306,
+          -22.9843685
+        ]
+      },
+      "properties": {
+        "name": "Frontera",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9843685,
+        "longitude": -43.1989306,
+        "address": "Rua Visconde de Pirajá, 128",
+        "opening_hours": "Mo-Su 11:30-23:00",
+        "phone": "+55 21 3289 2350",
+        "website": "https://www.frontera.com.br/",
+        "cuisine": "brazilian;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2513907,
+          -22.9175756
+        ]
+      },
+      "properties": {
+        "name": "Keiko Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9175756,
+        "longitude": -43.2513907,
+        "address": "Rua Barão de Cotegipe, 5",
+        "opening_hours": "Tu-Su 18:00-00:00",
+        "phone": "+55 21 3197-2218",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2550402,
+          -22.9238379
+        ]
+      },
+      "properties": {
+        "name": "Bar do Canedo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9238379,
+        "longitude": -43.2550402,
+        "address": "Rua Barão de Mesquita, 916, Rio de Janeiro",
+        "opening_hours": "Mo-Su 11:30-23:30",
+        "phone": "+55 21 2238 3028",
+        "website": "https://www.instagram.com/bardocanedo/",
+        "cuisine": "pizza;burger;chicken;tapas;friture",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2507988,
+          -22.9159346
+        ]
+      },
+      "properties": {
+        "name": "Parmê",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9159346,
+        "longitude": -43.2507988,
+        "address": "Praça Barão de Drumond, 4/10",
+        "opening_hours": "Mo-Th, Su 11:00-00:00; Fr, Sa 11:00-00:30",
+        "phone": "+55 21 3879-5050",
+        "website": "https://www.parme.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2757359,
+          -22.9005156
+        ]
+      },
+      "properties": {
+        "name": "Dreem Beer Bistro - Méier",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9005156,
+        "longitude": -43.2757359,
+        "address": "Rua Carolina Méier, 77 LJ E, Rio de Janeiro",
+        "opening_hours": "We-Th 16:00-23:00|Fr-Sa 12:00-23:00|Su 12:00-23:00",
+        "website": "https://dreambeerbistro.com.br/meier",
+        "cuisine": "regional;burger;juice;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2803064,
+          -22.9049547
+        ]
+      },
+      "properties": {
+        "name": "Skinão do Méier",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9049547,
+        "longitude": -43.2803064,
+        "address": "Rua Joaquim Méier, Rio de Janeiro",
+        "opening_hours": "11:00-22:00",
+        "phone": "+55 21 98655-8205",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.240007,
+          -22.9318466
+        ]
+      },
+      "properties": {
+        "name": "Allegra Caffè",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9318466,
+        "longitude": -43.240007,
+        "address": "Rua Conde de Bonfim, 664, Rio de Janeiro",
+        "opening_hours": "08:00-22:00",
+        "phone": "+55 21 2268-2410",
+        "website": "http://www.ottocafe.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2048291,
+          -22.960522
+        ]
+      },
+      "properties": {
+        "name": "Guerin",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.960522,
+        "longitude": -43.2048291,
+        "address": "Rua Jardim Botânico",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2121995,
+          -22.9598005
+        ]
+      },
+      "properties": {
+        "name": "Plage Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9598005,
+        "longitude": -43.2121995,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1642056,
+          -22.9511133
+        ]
+      },
+      "properties": {
+        "name": "Rei do Mate",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9511133,
+        "longitude": -43.1642056,
+        "cuisine": "tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1790379,
+          -22.8991198
+        ]
+      },
+      "properties": {
+        "name": "Rubro Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8991198,
+        "longitude": -43.1790379,
+        "address": "Rua da Quitanda, 191 A, Rio de Janeiro",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1788503,
+          -22.8991255
+        ]
+      },
+      "properties": {
+        "name": "Casa do Pão de Queijo",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8991255,
+        "longitude": -43.1788503,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1880559,
+          -22.9103597
+        ]
+      },
+      "properties": {
+        "name": "Café Senado",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9103597,
+        "longitude": -43.1880559,
+        "opening_hours": "Mo-Fr 09:00-19:00; Sa-Su 09:00-12:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2025567,
+          -22.9118067
+        ]
+      },
+      "properties": {
+        "name": "GoCoffe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9118067,
+        "longitude": -43.2025567,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1908947,
+          -22.981686
+        ]
+      },
+      "properties": {
+        "name": "Apetite Café e Delicatessen",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.981686,
+        "longitude": -43.1908947,
+        "address": "Rua Souza Lima, 68, Rio de Janeiro",
+        "opening_hours": "08:00-20:00",
+        "cuisine": "Café,_deli_e_padaria",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1909761,
+          -22.9789206
+        ]
+      },
+      "properties": {
+        "name": "Drop",
+        "name_en": "Drop Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9789206,
+        "longitude": -43.1909761,
+        "address": "Avenida Nossa Senhora de Copacabana",
+        "opening_hours": "Mo-Th, Sa 08:00-20:00; Fr 08:00-22:30; Su 14:00-21:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1761131,
+          -22.9510194
+        ]
+      },
+      "properties": {
+        "name": "Pix Café Internet",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9510194,
+        "longitude": -43.1761131,
+        "phone": "+55-21-25418802",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2375395,
+          -22.9104866
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Universitário",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9104866,
+        "longitude": -43.2375395,
+        "opening_hours": "Mo-Fr 10:30-14:30,17:00-20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2385541,
+          -22.9127034
+        ]
+      },
+      "properties": {
+        "name": "Bela Cap",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9127034,
+        "longitude": -43.2385541,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2288341,
+          -22.9047225
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Quinta da Boa Vista",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9047225,
+        "longitude": -43.2288341,
+        "website": "http://www.restaurantequintaboavista.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1750953,
+          -22.9358323
+        ]
+      },
+      "properties": {
+        "name": "mimo",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9358323,
+        "longitude": -43.1750953,
+        "opening_hours": "Mo-Fr 09:30-18:50",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1761831,
+          -22.9341461
+        ]
+      },
+      "properties": {
+        "name": "Cookie Do Mario",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9341461,
+        "longitude": -43.1761831,
+        "address": "Rua Paissandu, 73, Rio de Janeiro",
+        "cuisine": "cookies",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2559285,
+          -22.993291
+        ]
+      },
+      "properties": {
+        "name": "Zona Zen",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.993291,
+        "longitude": -43.2559285,
+        "address": "Estrada da Gávea, 636, São Conrado",
+        "website": "https://www.zonazen.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1815052,
+          -22.9559548
+        ]
+      },
+      "properties": {
+        "name": "Fica Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9559548,
+        "longitude": -43.1815052,
+        "address": "Rua Fernandes Guimarães, 91",
+        "opening_hours": "Tu-Fr 10:00-19:00; Sa 10:00-14:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1865556,
+          -22.9213814
+        ]
+      },
+      "properties": {
+        "name": "Cultivar",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9213814,
+        "longitude": -43.1865556,
+        "opening_hours": "Mo-Sa 07:00-18:00",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1602029,
+          -22.9435114
+        ]
+      },
+      "properties": {
+        "name": "Bar Urca",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9435114,
+        "longitude": -43.1602029,
+        "address": "Rua Cândido Gaffrée, 205, Rio de Janeiro",
+        "phone": "+55 (21) 2295-8744",
+        "website": "https://www.barurca.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2783731,
+          -22.8368267
+        ]
+      },
+      "properties": {
+        "name": "Império Gourmet",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8368267,
+        "longitude": -43.2783731,
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1235403,
+          -22.8959353
+        ]
+      },
+      "properties": {
+        "name": "Rei do Mate",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8959353,
+        "longitude": -43.1235403,
+        "cuisine": "tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1148832,
+          -22.8898244
+        ]
+      },
+      "properties": {
+        "name": "Rei do Mate",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8898244,
+        "longitude": -43.1148832,
+        "cuisine": "tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2975071,
+          -23.0102216
+        ]
+      },
+      "properties": {
+        "name": "Camacha",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.0102216,
+        "longitude": -43.2975071,
+        "address": "Estrada da Barra da Tijuca, 18, Rio de Janeiro",
+        "phone": "+55 21 2493-0776",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2950429,
+          -23.0111817
+        ]
+      },
+      "properties": {
+        "name": "Espaço Pura Vida",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.0111817,
+        "longitude": -43.2950429,
+        "address": "Rua Maria Luisa Pitanga, 110, Rio de Janeiro",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.185081,
+          -22.9113131
+        ]
+      },
+      "properties": {
+        "name": "Fazenda Paradiso Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9113131,
+        "longitude": -43.185081,
+        "address": "Rua dos Inválidos, 126, Rio de Janeiro",
+        "opening_hours": "Mo-Fr 08:00-19:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1959539,
+          -22.9537719
+        ]
+      },
+      "properties": {
+        "name": "Cake & Co.",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9537719,
+        "longitude": -43.1959539,
+        "address": "Rua Conde de Irajá, 132, Rio de Janeiro",
+        "opening_hours": "Mo-Fr, Su 10:00-19:00; Sa 09:00-19:00",
+        "cuisine": "cake",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1905927,
+          -22.9498774
+        ]
+      },
+      "properties": {
+        "name": "Bloise Bistro",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9498774,
+        "longitude": -43.1905927,
+        "address": "Rua São Clemente, 254",
+        "website": "http://www.pasticceriabloise.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2279915,
+          -22.9852228
+        ]
+      },
+      "properties": {
+        "name": "Envidia",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9852228,
+        "longitude": -43.2279915,
+        "address": "Rua Dias Ferreira, 106 / A",
+        "phone": "02125121313",
+        "website": "http://www.envidia.com.br",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.224238,
+          -22.9841156
+        ]
+      },
+      "properties": {
+        "name": "Kurt",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9841156,
+        "longitude": -43.224238,
+        "address": "Rua General Urquiza, 117",
+        "website": "http://confeitariakurt.com.br",
+        "cuisine": "german",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.0319294,
+          -22.9719456
+        ]
+      },
+      "properties": {
+        "name": "Compão Itacoatiara",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9719456,
+        "longitude": -43.0319294,
+        "address": "Rua das Camélias",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "cuisine": "burger;coffee_shop;mexican;ice_cream;juice;chocolate",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.0453113,
+          -22.9727351
+        ]
+      },
+      "properties": {
+        "name": "Bar do Paulinho",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9727351,
+        "longitude": -43.0453113,
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2018834,
+          -22.9118564
+        ]
+      },
+      "properties": {
+        "name": "L'ulivo Tettoria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9118564,
+        "longitude": -43.2018834,
+        "address": "Rua Corrêa Vasques, 46, Rio de Janeiro",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2020565,
+          -22.9118738
+        ]
+      },
+      "properties": {
+        "name": "Dom Barcellos",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9118738,
+        "longitude": -43.2020565,
+        "wheelchair": "yes",
+        "cuisine": "chicken",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2019156,
+          -22.9119385
+        ]
+      },
+      "properties": {
+        "name": "HōFu",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9119385,
+        "longitude": -43.2019156,
+        "address": "Rua Corrêa Vasques, 49, Rio de Janeiro",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3072913,
+          -22.8555009
+        ]
+      },
+      "properties": {
+        "name": "Bar Tembes",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8555009,
+        "longitude": -43.3072913,
+        "address": "Rua Tembés, 351, Rio de Janeiro",
+        "cuisine": "tapas",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3182284,
+          -22.8905702
+        ]
+      },
+      "properties": {
+        "name": "Ninho Vegano",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8905702,
+        "longitude": -43.3182284,
+        "address": "Travessa Barros Leite, 109, Rio de Janeiro",
+        "phone": "+55 21 97980 2275",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1010319,
+          -22.8542859
+        ]
+      },
+      "properties": {
+        "name": "The Tudo um Porco",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8542859,
+        "longitude": -43.1010319,
+        "address": "Rodovia Governador Mário Covas, 1409",
+        "phone": "+55 (21) 98332-6177",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2599969,
+          -22.8488756
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria Rabi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8488756,
+        "longitude": -43.2599969,
+        "address": "Rua Milton, 137, Rio de Janeiro",
+        "website": "https://pizzariarabi.com/",
+        "cuisine": "pizza;pasta",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.318807,
+          -22.8309084
+        ]
+      },
+      "properties": {
+        "name": "Brasil 500",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8309084,
+        "longitude": -43.318807,
+        "address": "Avenida do Braz de Pina, 2678, Rio de Janeiro",
+        "opening_hours": "Mo-Su 10:30-23:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3193839,
+          -22.8294448
+        ]
+      },
+      "properties": {
+        "name": "Trio bar e restaurante",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.8294448,
+        "longitude": -43.3193839,
+        "opening_hours": "Mo-Su 10:00-00:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3192687,
+          -22.828115
+        ]
+      },
+      "properties": {
+        "name": "Toca do Boi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.828115,
+        "longitude": -43.3192687,
+        "address": "Avenida Brás de Pina, 2830",
+        "phone": "+55 21 3014-5719",
+        "website": "www.tocadoboi.com.br",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2428961,
+          -22.9859074
+        ]
+      },
+      "properties": {
+        "name": "99 sushi bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -22.9859074,
+        "longitude": -43.2428961,
+        "cuisine": "japanese",
+        "popularity": 0
+      }
     }
   ]
 }

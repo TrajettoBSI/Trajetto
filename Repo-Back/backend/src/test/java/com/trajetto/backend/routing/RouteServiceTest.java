@@ -66,6 +66,8 @@ class RouteServiceTest {
                 .andExpect(header("Authorization", "chave-de-teste"))
                 .andExpect(jsonPath("$.coordinates.length()").value(3))
                 .andExpect(jsonPath("$.coordinates[0][0]").value(12.48))
+                .andExpect(jsonPath("$.radiuses.length()").value(3))
+                .andExpect(jsonPath("$.radiuses[0]").value(-1))
                 .andRespond(withSuccess("""
                         {"routes":[{"geometry":"abc123","summary":{"distance":1500.5,"duration":300.2},"way_points":[0,4,9]}]}
                         """, MediaType.APPLICATION_JSON));

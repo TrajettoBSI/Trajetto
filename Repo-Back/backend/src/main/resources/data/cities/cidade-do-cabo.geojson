@@ -6306,6 +6306,1938 @@
         "website": "https://www.wedgewoodnougat.co.za",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3849464,
+          -33.9435828
+        ]
+      },
+      "properties": {
+        "name": "Salsify",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9435828,
+        "longitude": 18.3849464,
+        "address": "Round House Road",
+        "phone": "+27 21 010 6444",
+        "cuisine": "fine_dining",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4336217,
+          -33.9887332
+        ]
+      },
+      "properties": {
+        "name": "Moyo",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9887332,
+        "longitude": 18.4336217,
+        "opening_hours": "Mo-Th 11:00-18:00; Tu,Fr-Su 09:00-18:00; Fr 11:00-23:00",
+        "phone": "+27 21 762 9585",
+        "wheelchair": "yes",
+        "cuisine": "seafood;regional;chicken;african",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4316218,
+          -33.9868955
+        ]
+      },
+      "properties": {
+        "name": "Fynkos",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9868955,
+        "longitude": 18.4316218,
+        "opening_hours": "Mo-Su 09:00-16:00; Dec 25 off",
+        "phone": "+27 66 189 3910",
+        "website": "https://fynkos.co.za/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4343606,
+          -33.9893262
+        ]
+      },
+      "properties": {
+        "name": "Vida e Caffè",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9893262,
+        "longitude": 18.4343606,
+        "opening_hours": "Mo-Fr 06:30-18:00; PH,Sa,Su 07:30-18:00",
+        "phone": "+27 21 762 6047",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4133445,
+          -33.9095797
+        ]
+      },
+      "properties": {
+        "name": "Bootlegger Coffee Company",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9095797,
+        "longitude": 18.4133445,
+        "address": "Vesperdene Road",
+        "opening_hours": "Mo-Fr 06:30-21:00; Sa-Su 07:00-21:00",
+        "phone": "+27 21 201 6906",
+        "website": "https://www.bootlegger.coffee/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3973273,
+          -33.9085494
+        ]
+      },
+      "properties": {
+        "name": "Shift Espresso Bar",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9085494,
+        "longitude": 18.3973273,
+        "address": "Glengariff Road",
+        "opening_hours": "Mo-Sa 06:00-17:00; Su 07:00-14:00",
+        "cuisine": "breakfast;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4594155,
+          -33.9599975
+        ]
+      },
+      "properties": {
+        "name": "Jean's Kitchen",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9599975,
+        "longitude": 18.4594155,
+        "cuisine": "mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4706841,
+          -33.9478937
+        ]
+      },
+      "properties": {
+        "name": "Gangstar Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9478937,
+        "longitude": 18.4706841,
+        "address": "Main Road, 65, Cape Town",
+        "website": "https://gangstarcafe.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4706442,
+          -33.9590784
+        ]
+      },
+      "properties": {
+        "name": "The Hussar Grill",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9590784,
+        "longitude": 18.4706442,
+        "address": "Main Road, 10, Rondebosch",
+        "opening_hours": "Mo-Fr 12:00-23:00; Sa 18:00-23:00; Su 18:00-21:00",
+        "phone": "+27 21 689 9516",
+        "website": "https://www.hussargrill.co.za/find-us/western-cape/rondebosch/",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4704017,
+          -33.9601074
+        ]
+      },
+      "properties": {
+        "name": "Nando's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9601074,
+        "longitude": 18.4704017,
+        "address": "Main Road, Rondebosch",
+        "opening_hours": "Mo-Th,Su 10:00-22:00; Fr-Sa 10:00-23:00",
+        "cuisine": "chicken;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4647458,
+          -33.9707925
+        ]
+      },
+      "properties": {
+        "name": "The Trufood Station",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9707925,
+        "longitude": 18.4647458,
+        "address": "Main Road, 420, Rondebosch",
+        "opening_hours": "Mo-Su 06:30-17:00",
+        "phone": "+27 82 851 4214",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4190284,
+          -34.0306611
+        ]
+      },
+      "properties": {
+        "name": "Jonkershuis Eatery",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0306611,
+        "longitude": 18.4190284,
+        "address": "Groot Constantia Estate, Cape Town",
+        "opening_hours": "Mo-Sa 08:00-21:00; Su 08:00-17:00",
+        "phone": "+27 21 794 6255",
+        "website": "https://jonkershuisconstantia.co.za/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4175655,
+          -34.0311549
+        ]
+      },
+      "properties": {
+        "name": "Simon's Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0311549,
+        "longitude": 18.4175655,
+        "address": "Groot Constantia Estate, Cape Town",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+27 21 794 1143",
+        "website": "https://simons.co.za/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4753335,
+          -33.965536
+        ]
+      },
+      "properties": {
+        "name": "Michael's Kitchen & Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.965536,
+        "longitude": 18.4753335,
+        "address": "Camp Ground Road, 88, Rondebosch",
+        "opening_hours": "Mo-Sa 07:00-18:00",
+        "phone": "+27 21 689 9188",
+        "website": "https://www.michaelskitchenandbar.co.za/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4707216,
+          -33.9595824
+        ]
+      },
+      "properties": {
+        "name": "Vida e Caffè",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9595824,
+        "longitude": 18.4707216,
+        "opening_hours": "Mo-Fr 07:00-18:00; Sa 08:00-17:00; Su 08:00-16:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4700627,
+          -33.962084
+        ]
+      },
+      "properties": {
+        "name": "RocoMamas",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.962084,
+        "longitude": 18.4700627,
+        "address": "Main Road, Cape Town",
+        "phone": "+27 212077222",
+        "website": "https://rocomamas.com/",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.474296,
+          -33.9869589
+        ]
+      },
+      "properties": {
+        "name": "Cool Runnings",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9869589,
+        "longitude": 18.474296,
+        "address": "2nd Avenue, 49",
+        "opening_hours": "Mo 16:00-22:00, Tu-Su 12:00-22:00",
+        "phone": "+27 216717462",
+        "website": "http://seagrill2nd.co.za",
+        "cuisine": "seafood;mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4741809,
+          -33.9943158
+        ]
+      },
+      "properties": {
+        "name": "Banana Jam",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9943158,
+        "longitude": 18.4741809,
+        "address": "2nd Avenue, 157",
+        "opening_hours": "Mo-Sa 11:00-23:00; Su 17:00-23:00",
+        "phone": "+27 21 674 0186",
+        "website": "https://www.bananajamcafe.co.za/",
+        "cuisine": "caribbean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4643631,
+          -33.9800474
+        ]
+      },
+      "properties": {
+        "name": "Ottawa Spur",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9800474,
+        "longitude": 18.4643631,
+        "opening_hours": "Mo-Th 09:00-21:00; Fr-Sa 09:00-22:00; Su 09:00-20:00",
+        "phone": "+27 21 671 7218",
+        "website": "https://www.spursteakranches.com/za/restaurant/western-cape/cape-town/claremont/ottawa-spur",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4640796,
+          -33.978513
+        ]
+      },
+      "properties": {
+        "name": "O'ways Teacafé",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.978513,
+        "longitude": 18.4640796,
+        "address": "Dreyer Street, 20",
+        "opening_hours": "Mo-Fr 07:30-17:00; Sa 09:00-14:00",
+        "phone": "+27 21 671 2850",
+        "website": "https://www.oways.co.za/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4689321,
+          -33.9960664
+        ]
+      },
+      "properties": {
+        "name": "Bootlegger Coffee Company",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9960664,
+        "longitude": 18.4689321,
+        "address": "Main Road, 323, Cape Town",
+        "opening_hours": "Mo-Su 06:30-21:00",
+        "website": "https://www.bootlegger.coffee/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4632748,
+          -34.0068256
+        ]
+      },
+      "properties": {
+        "name": "Four & Twenty Cafe & Pantry",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0068256,
+        "longitude": 18.4632748,
+        "address": "Wolfe Street, 23, Wynberg",
+        "phone": "+27217620975",
+        "website": "https://www.fourandtwentycafe.co.za/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4612433,
+          -34.0143985
+        ]
+      },
+      "properties": {
+        "name": "High Tea",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0143985,
+        "longitude": 18.4612433,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4685811,
+          -33.9954661
+        ]
+      },
+      "properties": {
+        "name": "Borruso's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9954661,
+        "longitude": 18.4685811,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4681759,
+          -34.0062587
+        ]
+      },
+      "properties": {
+        "name": "The Mill Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0062587,
+        "longitude": 18.4681759,
+        "address": "Millbank Road, 3, Wynberg",
+        "opening_hours": "Mo-Fr 08:30-15:30",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop;sandwich;breakfast;lunch;snack;salad;barrista",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.358361,
+          -34.0455611
+        ]
+      },
+      "properties": {
+        "name": "Dunes Beach Restaurant & Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0455611,
+        "longitude": 18.358361,
+        "address": "Beach Crescent, 1, Hout Bay",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "phone": "+27 21 7901876",
+        "website": "https://www.dunesrestaurant.co.za/",
+        "cuisine": "burger;steak_house;sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.361907,
+          -34.0456264
+        ]
+      },
+      "properties": {
+        "name": "The Indian Oven",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0456264,
+        "longitude": 18.361907,
+        "opening_hours": "Tu-Su 12:00-22:30",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3613648,
+          -34.0458395
+        ]
+      },
+      "properties": {
+        "name": "Casareccio",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0458395,
+        "longitude": 18.3613648,
+        "phone": "+27 21 7900200",
+        "wheelchair": "limited",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3619468,
+          -34.0458164
+        ]
+      },
+      "properties": {
+        "name": "Seattle Coffee Company",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0458164,
+        "longitude": 18.3619468,
+        "opening_hours": "Mo-Sa 06:30-17:00; Su 07:00-15:00",
+        "website": "https://www.seattlecoffeecompany.co.za/store/chapmans-peak/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3596376,
+          -34.0402347
+        ]
+      },
+      "properties": {
+        "name": "Torrador",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0402347,
+        "longitude": 18.3596376,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4951462,
+          -33.8545765
+        ]
+      },
+      "properties": {
+        "name": "Hong Kong Kitchen",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.8545765,
+        "longitude": 18.4951462,
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4953334,
+          -33.8548287
+        ]
+      },
+      "properties": {
+        "name": "Yo Eastern Fusion",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.8548287,
+        "longitude": 18.4953334,
+        "cuisine": "asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4823631,
+          -33.9783611
+        ]
+      },
+      "properties": {
+        "name": "Col'Cacchio",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9783611,
+        "longitude": 18.4823631,
+        "address": "Belvedere Square, Shop 20, Rondebosch",
+        "opening_hours": "Mo-Su 11:30-21:00",
+        "phone": "+27 21 674 0040",
+        "website": "https://www.colcacchio.co.za/",
+        "cuisine": "pizza;italian;pasta",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4823909,
+          -33.978272
+        ]
+      },
+      "properties": {
+        "name": "The Eatery",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.978272,
+        "longitude": 18.4823909,
+        "address": "Belvedere Road, 70",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4838304,
+          -33.9774782
+        ]
+      },
+      "properties": {
+        "name": "Seattle Coffee Company",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9774782,
+        "longitude": 18.4838304,
+        "opening_hours": "Mo-Fr 06:30-17:00; Sa,Su 07:00-14:00",
+        "website": "https://www.seattlecoffeecompany.co.za/store/belvedere/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4823974,
+          -33.9781534
+        ]
+      },
+      "properties": {
+        "name": "Vida e Caffè",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9781534,
+        "longitude": 18.4823974,
+        "phone": "+27 87 357 0692",
+        "website": "https://vidaecaffe.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3503676,
+          -34.010963
+        ]
+      },
+      "properties": {
+        "name": "Suikerbossie",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.010963,
+        "longitude": 18.3503676,
+        "phone": "+27 21 790 1450",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4032409,
+          -33.9580112
+        ]
+      },
+      "properties": {
+        "name": "Ten 67",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9580112,
+        "longitude": 18.4032409,
+        "opening_hours": "Mo-Su 08:00-20:30",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4157598,
+          -33.9552287
+        ]
+      },
+      "properties": {
+        "name": "Morning Mojo Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9552287,
+        "longitude": 18.4157598,
+        "cuisine": "coffee_shop;coffee;cold_beverages",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.474736,
+          -33.9838604
+        ]
+      },
+      "properties": {
+        "name": "Khao Hom Thai",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9838604,
+        "longitude": 18.474736,
+        "opening_hours": "Fr-Sa 11:00-21:00; Su 03:00-20:00; Mo 13:00-20:00; Tu-Th 11:00-20:00",
+        "phone": "+27662421183",
+        "website": "https://khaohom.co.za/",
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4803143,
+          -33.9838682
+        ]
+      },
+      "properties": {
+        "name": "Pho House",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9838682,
+        "longitude": 18.4803143,
+        "opening_hours": "Mo-Sa 11:00-21:00; Su 11:00-19:00",
+        "cuisine": "vietnamese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4855998,
+          -33.9854639
+        ]
+      },
+      "properties": {
+        "name": "Love Coffee",
+        "name_en": "I Love Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9854639,
+        "longitude": 18.4855998,
+        "opening_hours": "Mo-Fr 08:00-16:00; Sa 08:00-14:00",
+        "website": "https://www.ilovecoffeegroup.co.za/",
+        "cuisine": "breakfast;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4495849,
+          -34.0031
+        ]
+      },
+      "properties": {
+        "name": "Chart Farm",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0031,
+        "longitude": 18.4495849,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4700554,
+          -33.9622125
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9622125,
+        "longitude": 18.4700554,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.423502,
+          -33.908917
+        ]
+      },
+      "properties": {
+        "name": "Nü",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.908917,
+        "longitude": 18.423502,
+        "opening_hours": "Mo-Th 05:00-21:00; Fr 05:00-20:30; Sa-Su 06:00-19:30",
+        "phone": "+27 87 106 0154",
+        "website": "https://nu12.goreview.co.za/store-information",
+        "cuisine": "health_food",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4637367,
+          -33.9710551
+        ]
+      },
+      "properties": {
+        "name": "The Creamery Café Newlands",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9710551,
+        "longitude": 18.4637367,
+        "address": "Dean Street, Cape Town",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "website": "https://thecreamery.co.za/",
+        "cuisine": "ice_cream",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3508549,
+          -34.0434852
+        ]
+      },
+      "properties": {
+        "name": "Dario's Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0434852,
+        "longitude": 18.3508549,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3831606,
+          -33.9207691
+        ]
+      },
+      "properties": {
+        "name": "Bootlegger Coffee Company",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9207691,
+        "longitude": 18.3831606,
+        "phone": "+27 21 433 2000",
+        "website": "https://www.bootlegger.coffee/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3854577,
+          -33.9197716
+        ]
+      },
+      "properties": {
+        "name": "Bootlegger Coffee Company",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9197716,
+        "longitude": 18.3854577,
+        "address": "Regent Road",
+        "website": "https://www.bootlegger.coffee/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5027193,
+          -33.8617262
+        ]
+      },
+      "properties": {
+        "name": "Wimpy",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.8617262,
+        "longitude": 18.5027193,
+        "cuisine": "burger;breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5025652,
+          -33.8616317
+        ]
+      },
+      "properties": {
+        "name": "Dale's Black Angus",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.8616317,
+        "longitude": 18.5025652,
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5023596,
+          -33.8616932
+        ]
+      },
+      "properties": {
+        "name": "Ocean Basket",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -33.8616932,
+        "longitude": 18.5023596,
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4161381,
+          -34.0418509
+        ]
+      },
+      "properties": {
+        "name": "Beyond Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0418509,
+        "longitude": 18.4161381,
+        "website": "https://buitenverwachting.com/restaurant-2/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4243407,
+          -34.0478847
+        ]
+      },
+      "properties": {
+        "name": "Open Door Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0478847,
+        "longitude": 18.4243407,
+        "phone": "+27217943010",
+        "website": "https://www.opendoorrestaurant.co.za/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4258075,
+          -34.0468844
+        ]
+      },
+      "properties": {
+        "name": "Kirsten's Kickass Ice Cream",
+        "name_en": "Kristen's Kickass Ice Cream",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0468844,
+        "longitude": 18.4258075,
+        "address": "Spaanschemat River Road",
+        "website": "https://kristenskickass.co.za/",
+        "cuisine": "ice_cream",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4165292,
+          -34.0418315
+        ]
+      },
+      "properties": {
+        "name": "Coffee Bloc",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0418315,
+        "longitude": 18.4165292,
+        "website": "https://buitenverwachting.com/coffee-bloc/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3506993,
+          -34.0405524
+        ]
+      },
+      "properties": {
+        "name": "Papino's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0405524,
+        "longitude": 18.3506993,
+        "phone": "+27 21 7904077",
+        "wheelchair": "limited",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3565794,
+          -34.0323181
+        ]
+      },
+      "properties": {
+        "name": "Kitima",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0323181,
+        "longitude": 18.3565794,
+        "phone": "+27 21 790 8004",
+        "cuisine": "asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3503945,
+          -34.040887
+        ]
+      },
+      "properties": {
+        "name": "Nippon Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.040887,
+        "longitude": 18.3503945,
+        "address": "Victoria Avenue, 38, Hout Bay Cape Town",
+        "phone": "+27843636888",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3510784,
+          -34.0307228
+        ]
+      },
+      "properties": {
+        "name": "Black Box Coffeeworks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0307228,
+        "longitude": 18.3510784,
+        "address": "Empire Avenue, 148, Hout Bay",
+        "opening_hours": "07:00-16:00",
+        "phone": "+27 78 663 0059",
+        "website": "https://www.facebook.com/blackboxcoffeecapetown",
+        "cuisine": "coffee_shop;coffee;juice;smoothie;breakfast;toastie",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4592871,
+          -33.9756772
+        ]
+      },
+      "properties": {
+        "name": "The Sushi Box",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9756772,
+        "longitude": 18.4592871,
+        "address": "Kildare Road",
+        "opening_hours": "Mo-Su 11:30-20:00",
+        "phone": "+27 216740820",
+        "website": "https://sushibox.co.za/",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4588451,
+          -33.9763243
+        ]
+      },
+      "properties": {
+        "name": "Culture Wine Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9763243,
+        "longitude": 18.4588451,
+        "address": "Main Street, 64, Newlands",
+        "opening_hours": "Mo-Th 12:00-23:00; Fr-Sa 11:00-23:00; Su 11:00-22:00",
+        "phone": "+27 21 0548578",
+        "website": "https://culturenewlands.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5415508,
+          -33.932671
+        ]
+      },
+      "properties": {
+        "name": "Devil's Peak Brewing Company",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.932671,
+        "longitude": 18.5415508,
+        "address": "Devil's Peak Way, Epping",
+        "phone": "+27 21 2005818",
+        "website": "https://www.devilspeakbrewing.co.za/",
+        "cuisine": "burger;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4090085,
+          -34.0156246
+        ]
+      },
+      "properties": {
+        "name": "Constantia Glen Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0156246,
+        "longitude": 18.4090085,
+        "address": "Constantia Main Road",
+        "opening_hours": "Su-Fr 11:00-18:00; Sa 11:00-20:00",
+        "phone": "+27 21 795 6100",
+        "website": "https://www.constantiaglen.com/eat/",
+        "cuisine": "barbecue;tapas;regional;breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4054797,
+          -34.0125345
+        ]
+      },
+      "properties": {
+        "name": "La Parada Constantia Nek",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0125345,
+        "longitude": 18.4054797,
+        "opening_hours": "Mo-Fr 09:00-23:00; Sa-Su 08:00-00:00",
+        "phone": "+27 21 795 0620",
+        "website": "https://laparada.co.za/constantia-nek/",
+        "cuisine": "tapas",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4032911,
+          -34.0151161
+        ]
+      },
+      "properties": {
+        "name": "La Colombe",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0151161,
+        "longitude": 18.4032911,
+        "address": "Silvermist Estate, Constantia Nek, Cape Town",
+        "phone": "+27 21 794 2390",
+        "website": "https://www.lacolombe.co.za",
+        "cuisine": "fine_dining",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.405379,
+          -34.0117167
+        ]
+      },
+      "properties": {
+        "name": "Black Box Coffeeworks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0117167,
+        "longitude": 18.405379,
+        "opening_hours": "Mo-Su 07:00-15:00",
+        "phone": "+27786630059",
+        "website": "https://www.facebook.com/blackboxcoffeecapetown",
+        "cuisine": "coffee;cafe",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5331638,
+          -33.8686748
+        ]
+      },
+      "properties": {
+        "name": "Debonairs Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.8686748,
+        "longitude": 18.5331638,
+        "address": "Vryburger Avenue",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5465803,
+          -33.8703935
+        ]
+      },
+      "properties": {
+        "name": "Vide e Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.8703935,
+        "longitude": 18.5465803,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4655483,
+          -34.0282129
+        ]
+      },
+      "properties": {
+        "name": "Nando's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0282129,
+        "longitude": 18.4655483,
+        "cuisine": "chicken;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4451321,
+          -34.0296018
+        ]
+      },
+      "properties": {
+        "name": "Knead",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0296018,
+        "longitude": 18.4451321,
+        "address": "Ladies Mile Road, Constantia Emporium, Cape Town",
+        "opening_hours": "Mo-Sa 08:00-18:00; Su 08:00-16:00",
+        "phone": "+27 21 213 0015",
+        "cuisine": "bakery;cafe",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4454736,
+          -34.0205867
+        ]
+      },
+      "properties": {
+        "name": "Prashad Cafe & Spices Constantia",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0205867,
+        "longitude": 18.4454736,
+        "opening_hours": "Mo-Su 10:00-20:30",
+        "phone": "+27 21 795 0049",
+        "website": "https://prashadcafe.com/",
+        "wheelchair": "yes",
+        "cuisine": "indian;oriental",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4683956,
+          -34.0225786
+        ]
+      },
+      "properties": {
+        "name": "Red Hawk Spur",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0225786,
+        "longitude": 18.4683956,
+        "opening_hours": "Mo-Sa 08:30-21:00; Su 08:30-20:00",
+        "phone": "+27 21 201 5772",
+        "website": "https://www.spursteakranches.com/za/restaurant/western-cape/cape-town/plumstead/red-hawk-spur",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4670476,
+          -34.0217661
+        ]
+      },
+      "properties": {
+        "name": "Ocean Basket",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0217661,
+        "longitude": 18.4670476,
+        "address": "Gabriel Road, Plumstead",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4645753,
+          -34.0183766
+        ]
+      },
+      "properties": {
+        "name": "Dulce Cafe",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.0183766,
+        "longitude": 18.4645753,
+        "address": "Gabriel Road, Cape Town",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.484405,
+          -33.8911606
+        ]
+      },
+      "properties": {
+        "name": "Wang Thai",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.8911606,
+        "longitude": 18.484405,
+        "website": "https://www.wangthai.co.za/",
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4948503,
+          -33.8848636
+        ]
+      },
+      "properties": {
+        "name": "Nando's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.8848636,
+        "longitude": 18.4948503,
+        "cuisine": "chicken;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5060735,
+          -33.8958824
+        ]
+      },
+      "properties": {
+        "name": "Bootlegger Coffee Company",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.8958824,
+        "longitude": 18.5060735,
+        "phone": "+27216120933",
+        "website": "https://www.bootlegger.coffee/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4743265,
+          -33.994793
+        ]
+      },
+      "properties": {
+        "name": "Bardelli's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.994793,
+        "longitude": 18.4743265,
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4790712,
+          -33.9891219
+        ]
+      },
+      "properties": {
+        "name": "Simply Asia",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9891219,
+        "longitude": 18.4790712,
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.479254,
+          -33.9873716
+        ]
+      },
+      "properties": {
+        "name": "Bootlegger Coffee Company",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -33.9873716,
+        "longitude": 18.479254,
+        "website": "https://www.bootlegger.coffee/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
     }
   ]
 }

@@ -10,7 +10,9 @@ Como fica a selecao:
   * atracoes, museus, parques e afins entram se tiverem algum sinal de que sao
     conhecidos -- codigo do Wikidata, artigo na Wikipedia, site ou horario;
   * comida e bebida entram so perto do centro, com horario e site ou telefone
-    cadastrados, ate um teto por categoria;
+    cadastrados, ate um teto por categoria -- e, perto de cada atracao popular
+    longe do centro (a Torre de Belem, as piramides), alguns restaurantes e cafes
+    para o app sugerir as refeicoes do dia;
   * teatros e templos entram so com codigo do Wikidata (sao muitos, e so os
     conhecidos interessam);
   * codigo do Wikidata que nao descreve o proprio lugar (uma pessoa, um tipo de
@@ -36,6 +38,7 @@ Uso, a partir de Repo-Back/backend:
     python scripts/gera_catalogo_cidade.py --perfis curitiba    # so refaz os perfis de viajante
     python scripts/gera_catalogo_cidade.py --recintos curitiba  # so refaz os recintos ("site")
     python scripts/gera_catalogo_cidade.py --nomes curitiba     # so refaz os nomes traduzidos ("names")
+    python scripts/gera_catalogo_cidade.py --comida curitiba    # so completa a comida perto das atracoes
 """
 import http.client
 import json
@@ -209,7 +212,7 @@ def riqueza(props):
     return sum(1 for k in ('address', 'phone', 'wheelchair', 'cuisine', 'wikidata') if props.get(k))
 
 
-def para_feature(elemento, cidade):
+def para_feature(elemento, cidade, comida_flexivel=False):
     tags = elemento.get('tags', {})
     cat = categoria(tags)
     if cat is None:
@@ -222,7 +225,11 @@ def para_feature(elemento, cidade):
     if distancia_km(lat, lon, cidade['latitude'], cidade['longitude']) > cidade['radiusKm']:
         return None
     if cat in COMIDA:
-        if not any(tags.get(k) for k in ('website', 'contact:website', 'phone', 'contact:phone')):
+        # Perto de uma atracao sem nenhuma comida (comida_flexivel), horario ou cozinha tambem
+        # mostram que o lugar existe: no Brasil, pouco restaurante do OSM tem site ou telefone.
+        sinais = ('website', 'contact:website', 'phone', 'contact:phone') + (
+            ('opening_hours', 'cuisine') if comida_flexivel else ())
+        if not any(tags.get(k) for k in sinais):
             return None
     elif not notavel(tags):
         return None
@@ -509,6 +516,58 @@ def aplica_nomes(features):
     print(f'{com_nome} pontos com nome traduzido.')
 
 
+# O app sugere cafe e restaurante perto das paradas (ate 1,2 km, depois 2,5 km). As
+# atracoes mais populares sem nenhum desses por perto ganham alguns, buscados em volta delas.
+ATRACOES_COM_COMIDA = 150
+COMIDA_PERTO_KM = 1.2
+COMIDA_POR_ATRACAO = {'restaurant': 3, 'cafe': 2}
+
+
+def completa_comida(cidade, features):
+    """Acrescenta restaurantes e cafes perto das atracoes populares que nao tem nenhum por perto."""
+    def perto(p, cat):
+        return any(f['properties']['category'] == cat and distancia_km(
+            p['latitude'], p['longitude'], f['properties']['latitude'], f['properties']['longitude']) <= COMIDA_PERTO_KM
+            for f in features)
+
+    atracoes = sorted((f['properties'] for f in features
+                       if f['properties']['category'] not in COMIDA and f['properties']['category'] != 'restaurant'),
+                      key=lambda p: p.get('popularity', 0), reverse=True)[:ATRACOES_COM_COMIDA]
+    faltando = [(p, [cat for cat in COMIDA_POR_ATRACAO if not perto(p, cat)]) for p in atracoes]
+    faltando = [(p, cats) for p, cats in faltando if cats]
+    if not faltando:
+        print('Todas as atracoes populares ja tem comida por perto.')
+        return
+
+    raio = int(COMIDA_PERTO_KM * 1000)
+    linhas = '\n'.join(
+        f'  nwr(around:{raio},{p["latitude"]},{p["longitude"]})["name"]["amenity"~"^(restaurant|cafe)$"];'
+        for p, _ in faltando)
+    elementos = consulta(f'[out:json][timeout:300];\n(\n{linhas}\n);\nout center tags;')
+    candidatos = [f for f in (para_feature(e, cidade, comida_flexivel=True) for e in elementos) if f]
+
+    vistos = {(f['properties']['name'].casefold(), round(f['properties']['latitude'], 4)) for f in features}
+    novos = []
+    for p, cats in faltando:
+        for cat in cats:
+            proximos = sorted(
+                (f for f in candidatos if f['properties']['category'] == cat and distancia_km(
+                    p['latitude'], p['longitude'], f['properties']['latitude'], f['properties']['longitude']) <= COMIDA_PERTO_KM),
+                # Com horario primeiro (o app mostra se esta aberto), depois o cadastro mais completo.
+                key=lambda f: (not f['properties'].get('opening_hours'), -riqueza(f['properties']), distancia_km(
+                    p['latitude'], p['longitude'], f['properties']['latitude'], f['properties']['longitude'])))
+            for f in proximos[:COMIDA_POR_ATRACAO[cat]]:
+                chave = (f['properties']['name'].casefold(), round(f['properties']['latitude'], 4))
+                if chave not in vistos:
+                    vistos.add(chave)
+                    f['properties']['popularity'] = 0
+                    novos.append(f)
+    features += novos
+    sem = sum(1 for p, cats in faltando if any(not perto(p, cat) for cat in cats))
+    print(f'{len(novos)} restaurantes e cafes acrescentados perto de {len(faltando)} atracoes; '
+          f'{sem} continuam sem comida cadastrada no OSM por perto.')
+
+
 def regrava(cidade, alteracao):
     arquivo = DADOS / 'cities' / f'{cidade["slug"]}.geojson'
     texto = arquivo.read_text(encoding='utf-8')
@@ -547,7 +606,8 @@ def main():
     so_perfis = '--perfis' in args
     so_recintos = '--recintos' in args
     so_nomes = '--nomes' in args
-    args = [a for a in args if a not in ('--revisar', '--perfis', '--recintos', '--nomes')]
+    so_comida = '--comida' in args
+    args = [a for a in args if a not in ('--revisar', '--perfis', '--recintos', '--nomes', '--comida')]
     if len(args) != 1:
         sys.exit(__doc__)
     sys.stdout.reconfigure(encoding='utf-8')
@@ -557,6 +617,9 @@ def main():
         return
     if so_nomes:
         regrava(cidade, aplica_nomes)
+        return
+    if so_comida:
+        regrava(cidade, lambda features: completa_comida(cidade, features))
         return
     if so_recintos:
         regrava(cidade, lambda features: aplica_recintos(cidade, features))
@@ -575,6 +638,7 @@ def main():
 
     aplica_popularidade([f['properties'] for f in features])
     features = seleciona(features)
+    completa_comida(cidade, features)
     aplica_recintos(cidade, features)
     aplica_nomes(features)
 

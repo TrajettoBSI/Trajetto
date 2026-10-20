@@ -4732,6 +4732,1614 @@
         "wheelchair": "yes",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3362324,
+          -25.4367783
+        ]
+      },
+      "properties": {
+        "name": "Piatto o Pastifício & Rotisseria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4367783,
+        "longitude": -49.3362324,
+        "address": "Rua José Nicco, 712",
+        "opening_hours": "Tu-Fr 10:00-19:00; Sa 10:00-16:00; Su 10:00-14:00",
+        "phone": "+55 41 3285-3672",
+        "website": "https://piatto-3.ola.click/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3029585,
+          -25.4562248
+        ]
+      },
+      "properties": {
+        "name": "Mais1 Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4562248,
+        "longitude": -49.3029585,
+        "address": "Avenida Presidente Arthur da Silva Bernardes, 493, Curitiba",
+        "opening_hours": "Tu-Su 07:00-19:00",
+        "phone": "+5541989019871",
+        "website": "https://www.mais1cafe.com.br/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2254461,
+          -25.4797344
+        ]
+      },
+      "properties": {
+        "name": "Chibabentou Yakisoba",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4797344,
+        "longitude": -49.2254461,
+        "address": "Avenida Senador Salgado Filho, 4222, Curitiba",
+        "opening_hours": "Mo-Sa 09:00-14:30; Th-Sa 18:00-21:40",
+        "phone": "+55 41 996689215",
+        "website": "https://instagram.com/chibabentou",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3325311,
+          -25.477518
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Popular CIC",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.477518,
+        "longitude": -49.3325311,
+        "address": "Rua Raul Pompéia, 190, Curitiba",
+        "opening_hours": "Mo-Fr 11:00-14:00",
+        "phone": "+55 41 3229 2555",
+        "website": "https://www.curitiba.pr.gov.br/servicos/restaurante-popular/86",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2304072,
+          -25.4698275
+        ]
+      },
+      "properties": {
+        "name": "Famiglia Ceschin Trattoria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4698275,
+        "longitude": -49.2304072,
+        "address": "Avenida Comendador Franco, 4387, Curitiba",
+        "opening_hours": "Tu-Fr 18:00-23:00; Sa,Su 12:00-23:00",
+        "phone": "+55 41 99201-8583",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2303119,
+          -25.4697249
+        ]
+      },
+      "properties": {
+        "name": "Fábrica Cafeteria",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4697249,
+        "longitude": -49.2303119,
+        "address": "Avenida Comendador Franco, 4387, Curitiba",
+        "opening_hours": "Tu-Fr 14:00-23:00; Sa,Su 12:00-23:00",
+        "phone": "+55 41 98404-5411",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2938186,
+          -25.48295
+        ]
+      },
+      "properties": {
+        "name": "San Diego Restaurante e Pizzaria",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.48295,
+        "longitude": -49.2938186,
+        "address": "Rua Salomão Guelmann, 66, Curitiba",
+        "opening_hours": "Mo-Su 11:00-15:00",
+        "phone": "+55 41 3247 0010",
+        "website": "https://www.instagram.com/sandiegorestaurantepizzaria/",
+        "cuisine": "pizza;brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2325231,
+          -25.4481124
+        ]
+      },
+      "properties": {
+        "name": "Todeschini",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4481124,
+        "longitude": -49.2325231,
+        "opening_hours": "Mo-Sa 08:00-23:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2379601,
+          -25.4427157
+        ]
+      },
+      "properties": {
+        "name": "Senac Café-Escola",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4427157,
+        "longitude": -49.2379601,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2671899,
+          -25.4094455
+        ]
+      },
+      "properties": {
+        "name": "MON Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4094455,
+        "longitude": -49.2671899,
+        "opening_hours": "Tu-Su 10:00-18:00",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2675699,
+          -25.4201299
+        ]
+      },
+      "properties": {
+        "name": "Oliva Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4201299,
+        "longitude": -49.2675699,
+        "address": "Rua da Glória, 307, Curitiba",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2830293,
+          -25.3907848
+        ]
+      },
+      "properties": {
+        "name": "Burek Grill",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3907848,
+        "longitude": -49.2830293,
+        "address": "Rua Amaury Lange Silvério, 860, Curitiba",
+        "phone": "+55 41 3339 4318",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2628072,
+          -25.412457
+        ]
+      },
+      "properties": {
+        "name": "Trato Cozinha de Encontro",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.412457,
+        "longitude": -49.2628072,
+        "address": "Rua Rocha Pombo, 921, Curitiba",
+        "phone": "+55 41 98787 6928",
+        "website": "https://www.instagram.com/tratocozinha/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2716307,
+          -25.4152869
+        ]
+      },
+      "properties": {
+        "name": "Filé na Brasa",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4152869,
+        "longitude": -49.2716307,
+        "address": "Rua Mateus Leme, 1365",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2710448,
+          -25.4185234
+        ]
+      },
+      "properties": {
+        "name": "Calabouço",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4185234,
+        "longitude": -49.2710448,
+        "address": "Rua Mateus Leme, 1000",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2705203,
+          -25.4253372
+        ]
+      },
+      "properties": {
+        "name": "Romanu's Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4253372,
+        "longitude": -49.2705203,
+        "address": "Rua Barão do Serro Azul, 411, Curitiba",
+        "phone": "+55 41 3010 2723",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2189488,
+          -25.4372944
+        ]
+      },
+      "properties": {
+        "name": "Bella Pasta",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4372944,
+        "longitude": -49.2189488,
+        "address": "Rua Professor Nivaldo Braga, 1188, Curitiba",
+        "cuisine": "casa_de_massas",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2166763,
+          -25.4347757
+        ]
+      },
+      "properties": {
+        "name": "Fernandes",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4347757,
+        "longitude": -49.2166763,
+        "address": "Rua Osmário de Lima, 269",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2242176,
+          -25.4351948
+        ]
+      },
+      "properties": {
+        "name": "Armazém São Gonçalo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4351948,
+        "longitude": -49.2242176,
+        "address": "Rua Nicolau Gulbino, 296",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2937632,
+          -25.3833647
+        ]
+      },
+      "properties": {
+        "name": "Megapizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3833647,
+        "longitude": -49.2937632,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2830593,
+          -25.3980767
+        ]
+      },
+      "properties": {
+        "name": "café unilivre",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3980767,
+        "longitude": -49.2830593,
+        "opening_hours": "Tu-Su 12:00-18:30",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2148893,
+          -25.3847331
+        ]
+      },
+      "properties": {
+        "name": "Disk Pizza Lucarelli",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3847331,
+        "longitude": -49.2148893,
+        "address": "Avenida Marechal Mascarenhas de Moraes, 1637, Curitiba",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2004144,
+          -25.3880175
+        ]
+      },
+      "properties": {
+        "name": "Empadaria SantaLu",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3880175,
+        "longitude": -49.2004144,
+        "wheelchair": "yes",
+        "cuisine": "sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2531415,
+          -25.4532933
+        ]
+      },
+      "properties": {
+        "name": "Gregário Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4532933,
+        "longitude": -49.2531415,
+        "address": "Rua Imaculada Conceição, 1430, Curitiba",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2401979,
+          -25.4141125
+        ]
+      },
+      "properties": {
+        "name": "Caldo de Cana Strapasson",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4141125,
+        "longitude": -49.2401979,
+        "opening_hours": "13:00-18:00",
+        "cuisine": "sugar_cane_juice",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3134186,
+          -25.4279698
+        ]
+      },
+      "properties": {
+        "name": "Circuito Tropical",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4279698,
+        "longitude": -49.3134186,
+        "cuisine": "ice_cream;tapioca",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.351475,
+          -25.448947
+        ]
+      },
+      "properties": {
+        "name": "La Bella",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.448947,
+        "longitude": -49.351475,
+        "address": "Rua Eduardo Sprada, 4900",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3493981,
+          -25.4476976
+        ]
+      },
+      "properties": {
+        "name": "Ponto Assados",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4476976,
+        "longitude": -49.3493981,
+        "address": "Rua Eduardo Sprada, 4649, Curitiba",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3614132,
+          -25.4520947
+        ]
+      },
+      "properties": {
+        "name": "Madero",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4520947,
+        "longitude": -49.3614132,
+        "address": "Avenida Juscelino Kubitschek de Oliveira, 2211, Curitiba",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3000548,
+          -25.4716826
+        ]
+      },
+      "properties": {
+        "name": "Bäckerei Zechner",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4716826,
+        "longitude": -49.3000548,
+        "address": "R. Eng. Heitor Soares Gomes, 479",
+        "opening_hours": "Mo-Su 07:30-20:00",
+        "cuisine": "coffee_shop;bakery",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2274265,
+          -25.3930556
+        ]
+      },
+      "properties": {
+        "name": "Fire Dog",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3930556,
+        "longitude": -49.2274265,
+        "address": "Avenida Prefeito Erasto Gaertner, 2323, Curitiba",
+        "opening_hours": "Mo-Su 18:00-03:00",
+        "wheelchair": "yes",
+        "cuisine": "hot_dog",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2229042,
+          -25.3897064
+        ]
+      },
+      "properties": {
+        "name": "Orymaki Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3897064,
+        "longitude": -49.2229042,
+        "address": "Avenida Monteiro Tourinho, Curitiba",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2232013,
+          -25.3897579
+        ]
+      },
+      "properties": {
+        "name": "Mar e Terra",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3897579,
+        "longitude": -49.2232013,
+        "address": "Avenida Monteiro Tourinho, 141",
+        "cuisine": "seafood;steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2907766,
+          -25.413488
+        ]
+      },
+      "properties": {
+        "name": "Schnaps Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.413488,
+        "longitude": -49.2907766,
+        "address": "Rua André Zanetti, 129",
+        "cuisine": "german",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2907893,
+          -25.4229583
+        ]
+      },
+      "properties": {
+        "name": "Casa do Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4229583,
+        "longitude": -49.2907893,
+        "address": "Rua Professora Rosa Saporski, 151, Curitiba",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2821552,
+          -25.4183363
+        ]
+      },
+      "properties": {
+        "name": "Sforno Pizzaria e Trattoria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4183363,
+        "longitude": -49.2821552,
+        "address": "Rua Dom Alberto Gonçalves, 480",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2711809,
+          -25.4031306
+        ]
+      },
+      "properties": {
+        "name": "Ervin Churrascaria",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4031306,
+        "longitude": -49.2711809,
+        "address": "Rua Mateus Leme, 2746, Curitiba",
+        "opening_hours": "Mo-Fr 11:30-14:00; Sa-Su 11:00-15:30",
+        "wheelchair": "limited",
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2715135,
+          -25.4032971
+        ]
+      },
+      "properties": {
+        "name": "Mannus",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4032971,
+        "longitude": -49.2715135,
+        "address": "Rua Mateus Leme, 2725",
+        "opening_hours": "Sa 11:15-15:00",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2316284,
+          -25.3945969
+        ]
+      },
+      "properties": {
+        "name": "Seu Marechal Gastro Bar",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3945969,
+        "longitude": -49.2316284,
+        "address": "Rua Marechal Trompowski, 95",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2368283,
+          -25.3976874
+        ]
+      },
+      "properties": {
+        "name": "aHorta Bike Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3976874,
+        "longitude": -49.2368283,
+        "address": "Rua Nicarágua, 1277",
+        "cuisine": "brunch",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2038763,
+          -25.4180874
+        ]
+      },
+      "properties": {
+        "name": "Restaurane Ói Que Beleza!",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4180874,
+        "longitude": -49.2038763,
+        "address": "Rua José de Oliveira Franco, 2280",
+        "phone": "+55 41 99603 3033",
+        "cuisine": "regional;fogão_a_lenha;buffet_livre;marmitex",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2679273,
+          -25.436799
+        ]
+      },
+      "properties": {
+        "name": "Petit Pavê",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.436799,
+        "longitude": -49.2679273,
+        "address": "Rua Lourenço Pinto, 398",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2688923,
+          -25.4404066
+        ]
+      },
+      "properties": {
+        "name": "Manifesto",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4404066,
+        "longitude": -49.2688923,
+        "opening_hours": "Mo-Fr 10:00-18:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3060934,
+          -25.4241898
+        ]
+      },
+      "properties": {
+        "name": "Bistrô Casa Amarela",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4241898,
+        "longitude": -49.3060934,
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2978976,
+          -25.429412
+        ]
+      },
+      "properties": {
+        "name": "Nyck - Costela no Rolete",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.429412,
+        "longitude": -49.2978976,
+        "address": "Rua Bruno Filgueira, 2397",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3083917,
+          -25.4272021
+        ]
+      },
+      "properties": {
+        "name": "Maggiore",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4272021,
+        "longitude": -49.3083917,
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2853013,
+          -25.4624317
+        ]
+      },
+      "properties": {
+        "name": "O Giramundo Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4624317,
+        "longitude": -49.2853013,
+        "address": "Rua Santa Catarina, 456, Curitiba",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2933282,
+          -25.4685617
+        ]
+      },
+      "properties": {
+        "name": "Go Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4685617,
+        "longitude": -49.2933282,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2041628,
+          -25.5377864
+        ]
+      },
+      "properties": {
+        "name": "Madero",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5377864,
+        "longitude": -49.2041628,
+        "opening_hours": "11:00-22:00",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.20425,
+          -25.5384858
+        ]
+      },
+      "properties": {
+        "name": "Honk Kong",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5384858,
+        "longitude": -49.20425,
+        "opening_hours": "11:00-22:00",
+        "cuisine": "asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2043021,
+          -25.5384667
+        ]
+      },
+      "properties": {
+        "name": "Spoleto",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5384667,
+        "longitude": -49.2043021,
+        "opening_hours": "11:00-22:00",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2465488,
+          -25.4258022
+        ]
+      },
+      "properties": {
+        "name": "En Torno Cerâmica",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4258022,
+        "longitude": -49.2465488,
+        "address": "Rua Fernandes de Barros, 613, Curitiba",
+        "opening_hours": "Tu-Sa 14:00-19:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2704656,
+          -25.3977686
+        ]
+      },
+      "properties": {
+        "name": "Bar do Victor",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3977686,
+        "longitude": -49.2704656,
+        "address": "Rua Lívio Moreira, 284",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2710933,
+          -25.3977435
+        ]
+      },
+      "properties": {
+        "name": "Rei do Camarão",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3977435,
+        "longitude": -49.2710933,
+        "address": "Rua Lívio Moreira, 232",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2885319,
+          -25.4502332
+        ]
+      },
+      "properties": {
+        "name": "Tangerina Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4502332,
+        "longitude": -49.2885319,
+        "address": "Rua Carneiro Lobo, 92, Curitiba",
+        "cuisine": "breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2608941,
+          -25.4300527
+        ]
+      },
+      "properties": {
+        "name": "Bello Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4300527,
+        "longitude": -49.2608941,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2874514,
+          -25.4453345
+        ]
+      },
+      "properties": {
+        "name": "Huguito Cafeteria Argentina",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4453345,
+        "longitude": -49.2874514,
+        "address": "Rua Francisco Rocha, 40 Loja 5, Curitiba",
+        "cuisine": "argentinian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2471095,
+          -25.4796293
+        ]
+      },
+      "properties": {
+        "name": "Costelão do Gaúcho",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4796293,
+        "longitude": -49.2471095,
+        "address": "Rua Anne Frank, 1484",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.255108,
+          -25.4798579
+        ]
+      },
+      "properties": {
+        "name": "Tobo Sushi Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4798579,
+        "longitude": -49.255108,
+        "address": "Rua Professor João Soares Barcelos",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1968637,
+          -25.4326215
+        ]
+      },
+      "properties": {
+        "name": "Churrascaria Valejo",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4326215,
+        "longitude": -49.1968637,
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1935649,
+          -25.4315802
+        ]
+      },
+      "properties": {
+        "name": "Churrascão Gaúcho",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4315802,
+        "longitude": -49.1935649,
+        "address": "Rodovia João Leopoldo Jacomel, 12660, Pinhais",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2000753,
+          -25.4322847
+        ]
+      },
+      "properties": {
+        "name": "Costelão pinhais",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4322847,
+        "longitude": -49.2000753,
+        "address": "Rodovia João Leopoldo Jacomel",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1864456,
+          -25.4378225
+        ]
+      },
+      "properties": {
+        "name": "COXINHA",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4378225,
+        "longitude": -49.1864456,
+        "address": "Rua Sete de Setembro, Pinhais",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3528682,
+          -25.4262106
+        ]
+      },
+      "properties": {
+        "name": "Mapp Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4262106,
+        "longitude": -49.3528682,
+        "address": "Avenida Vereador Toaldo Túlio, Curitiba",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3485785,
+          -25.418746
+        ]
+      },
+      "properties": {
+        "name": "Temakeria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.418746,
+        "longitude": -49.3485785,
+        "address": "Avenida Vereador Toaldo Túlio, Curitiba",
+        "cuisine": "sushi;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3487015,
+          -25.4186189
+        ]
+      },
+      "properties": {
+        "name": "Ala Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4186189,
+        "longitude": -49.3487015,
+        "address": "Avenida Vereador Toaldo Túlio, Curitiba",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.204478,
+          -25.5385197
+        ]
+      },
+      "properties": {
+        "name": "Kiro Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5385197,
+        "longitude": -49.204478,
+        "opening_hours": "11:00-22:00",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2696768,
+          -25.5423517
+        ]
+      },
+      "properties": {
+        "name": "D'Gust Restaurante e Lanchonete",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5423517,
+        "longitude": -49.2696768,
+        "phone": "+55 41 32068302",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3576154,
+          -25.4511298
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria La Bella",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4511298,
+        "longitude": -49.3576154,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
     }
   ]
 }

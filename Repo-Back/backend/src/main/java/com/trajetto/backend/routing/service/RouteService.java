@@ -1,6 +1,7 @@
 package com.trajetto.backend.routing.service;
 
 import com.trajetto.backend.exception.ApiErrorCode;
+import lombok.extern.slf4j.Slf4j;
 import com.trajetto.backend.exception.ApiException;
 import com.trajetto.backend.routing.dto.CoordinateDTO;
 import com.trajetto.backend.routing.dto.RouteRequestDTO;
@@ -9,6 +10,7 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestClientException;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.web.client.RestTemplate;
@@ -19,6 +21,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @Service
 public class RouteService {
 
@@ -69,6 +72,10 @@ public class RouteService {
         Map<String, Object> body = new HashMap<>();
 
         body.put("coordinates", coordinates);
+        // Sem limite para achar a rua mais proxima de cada ponto: a Estatua da Liberdade, uma
+        // ilha ou o meio de um parque ficam a mais de 350 m (o padrao) de uma rua, e um ponto
+        // so sem rua derrubava a rota do dia inteiro.
+        body.put("radiuses", coordinates.stream().map(c -> -1).toList());
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", apiKey);
         headers.setContentType(MediaType.APPLICATION_JSON);
@@ -87,6 +94,11 @@ public class RouteService {
             // Sem a causa: o limite da chave nao e defeito, e o stack trace so polui o log.
             throw new ApiException(ApiErrorCode.EXTERNAL_SERVICE_ERROR,
                     "O serviço de rotas atingiu o limite de consultas; tente de novo em instantes.");
+        } catch (HttpStatusCodeException e) {
+            log.warn("OpenRouteService recusou a rota ({} pontos): {} {}", coordinates.size(),
+                    e.getStatusCode().value(), e.getResponseBodyAsString());
+            throw new ApiException(ApiErrorCode.EXTERNAL_SERVICE_ERROR,
+                    "Não foi possível calcular a rota no momento.");
         } catch (RestClientException e) {
             throw new ApiException(ApiErrorCode.EXTERNAL_SERVICE_ERROR,
                     "Não foi possível calcular a rota no momento.", e);

@@ -24595,6 +24595,3252 @@
         "website": "https://www.wavegelato.co.uk/",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.282415,
+          51.5572008
+        ]
+      },
+      "properties": {
+        "name": "TGI Fridays",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5572008,
+        "longitude": -0.282415,
+        "address": "Wembley Park Boulevard, Unit 1 - 3, Wembley",
+        "opening_hours": "Su-Th 12:00-22:30; Fr-Sa 12:00-23:00",
+        "phone": "+44 20 3031 4901",
+        "website": "https://www.tgifridays.co.uk/restaurant/wembley",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2832391,
+          51.5567704
+        ]
+      },
+      "properties": {
+        "name": "Wagamama",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5567704,
+        "longitude": -0.2832391,
+        "address": "Wembley Park Boulevard, Wembley",
+        "opening_hours": "Mo-Th 11:00-22:30; Fr-Sa 11:00-23:00; Su 11:00-22:00",
+        "phone": "+44 20 8795 2597",
+        "website": "https://www.wagamama.com/restaurants/london/wembley",
+        "cuisine": "asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2836144,
+          51.5564992
+        ]
+      },
+      "properties": {
+        "name": "Handmade Burger",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5564992,
+        "longitude": -0.2836144,
+        "address": "Wembley Park Boulevard, Unit 105, Level 2, Wembley",
+        "opening_hours": "Mo-Su \"Open until late\"",
+        "phone": "+44 20 8902 7857",
+        "website": "http://www.london-designer-outlet.com/brand-directory/handmade-burger-co",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2837875,
+          51.5560979
+        ]
+      },
+      "properties": {
+        "name": "Costa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5560979,
+        "longitude": -0.2837875,
+        "address": "Wembley Park Boulevard, Unit 49, Wembley",
+        "opening_hours": "Mo-Su \"Open until late\"",
+        "phone": "+44 20 8903 9832",
+        "website": "https://www.costa.co.uk/stores/wembley",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2841012,
+          51.556405
+        ]
+      },
+      "properties": {
+        "name": "Caffè Nero",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.556405,
+        "longitude": -0.2841012,
+        "address": "Wembley Park Boulevard, Unit 79, Level 1, Wembley",
+        "opening_hours": "Mo-Sa 07:00-21:00; Su 08:30-19:00",
+        "phone": "+44 20 8902 0169",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0082943,
+          51.4812171
+        ]
+      },
+      "properties": {
+        "name": "Sticks'n'Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4812171,
+        "longitude": -0.0082943,
+        "address": "Nelson Road, 1, London",
+        "opening_hours": "Su-We 12:00-22:00; Th-Sa 12:00-23:00",
+        "phone": "+44 20 8858 8424",
+        "website": "https://sticksnsushi.com/restaurants/london/greenwich",
+        "wheelchair": "limited",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0090595,
+          51.4805845
+        ]
+      },
+      "properties": {
+        "name": "PizzaExpress",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4805845,
+        "longitude": -0.0090595,
+        "address": "Greenwich Church Street, 4, London",
+        "opening_hours": "Su-Tu 11:30-22:00; We 11:30-22:30; Th-Sa 11:30-23:00",
+        "phone": "+44 20 8853 2770",
+        "website": "https://www.pizzaexpress.com/greenwich-church-street",
+        "wheelchair": "yes",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0090959,
+          51.4807158
+        ]
+      },
+      "properties": {
+        "name": "Bill's",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4807158,
+        "longitude": -0.0090959,
+        "address": "Nelson Road, 13, London",
+        "opening_hours": "Mo-Sa 08:00-23:00; Su,PH 08:00-22:30",
+        "phone": "+44 20 8853 4385",
+        "website": "https://bills-website.co.uk/restaurants/greenwich/",
+        "wheelchair": "yes",
+        "cuisine": "british",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0098564,
+          51.482149
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.482149,
+        "longitude": -0.0098564,
+        "address": "Greenwich Church Street, 54-56, London",
+        "opening_hours": "Mo-Fr 07:00-20:00; PH,Sa,Su 07:30-20:00",
+        "phone": "+44 20 8858 9992",
+        "website": "https://www.starbucks.com/store-locator/store/2561/greenwich-cutty-sark-54-56-greenwich-church-st-london-eng-se-10-9-bl-gb",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0169508,
+          51.4811477
+        ]
+      },
+      "properties": {
+        "name": "The Coffee Studio",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4811477,
+        "longitude": -0.0169508,
+        "address": "Creek Road, 44, London",
+        "opening_hours": "Mo-Sa 07:30-20:00; Su 10:00-17:00",
+        "phone": "+44 20 8158 9641",
+        "website": "https://www.thecoffeestudioldn.com/greenwich",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1686653,
+          51.4967358
+        ]
+      },
+      "properties": {
+        "name": "EL&N",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4967358,
+        "longitude": -0.1686653,
+        "address": "Brompton Road, 239, London",
+        "opening_hours": "Mo-Fr 08:00-24:00; Sa-Su 08:00-24:00",
+        "phone": "+44 20 7584 4900",
+        "website": "https://www.elnlondon.co.uk/pages/brompton-road",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1743617,
+          51.4935675
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4935675,
+        "longitude": -0.1743617,
+        "address": "Old Brompton Road, 19, London",
+        "opening_hours": "Mo-Fr 05:45-22:30; Sa,Su 06:30-22:30",
+        "phone": "+44 20 7225 0921",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1766772,
+          51.4938293
+        ]
+      },
+      "properties": {
+        "name": "Trevi Italian Tiramisu",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4938293,
+        "longitude": -0.1766772,
+        "address": "Bute Street, 29, London",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "phone": "+44 20 7584 6946",
+        "website": "https://trevitiramisu.co.uk/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1838555,
+          51.4992368
+        ]
+      },
+      "properties": {
+        "name": "Sakurado London",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4992368,
+        "longitude": -0.1838555,
+        "address": "Gloucester Road, 14",
+        "opening_hours": "Mo-Fr 07:30-23:00; Sa 10:00-23:00; Su 11:00-23:00",
+        "phone": "+44 20 7589 2260",
+        "website": "https://www.sakurado.co.uk",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2871352,
+          51.4721771
+        ]
+      },
+      "properties": {
+        "name": "Banon Thai",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4721771,
+        "longitude": -0.2871352,
+        "address": "Sandycombe Road, 214, Richmond",
+        "opening_hours": "We-Sa 18:30-21:00",
+        "phone": "+44 20 8948 8487",
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3014981,
+          51.4836908
+        ]
+      },
+      "properties": {
+        "name": "Galata Pera",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4836908,
+        "longitude": -0.3014981,
+        "opening_hours": "Mo-Fr 16:00-22:00; Sa-Su 12:00-22:00",
+        "phone": "+44 20 8560 1798",
+        "website": "https://galatapera.co.uk",
+        "cuisine": "turkish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3012976,
+          51.4838099
+        ]
+      },
+      "properties": {
+        "name": "Anima",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4838099,
+        "longitude": -0.3012976,
+        "opening_hours": "Mo-We off; Th 17:00-22:00; Fr-Sa 10:00-23:00; Su 10:00-22:00",
+        "phone": "+44 20 8568 8599",
+        "website": "https://anima.london",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2863136,
+          51.4780658
+        ]
+      },
+      "properties": {
+        "name": "Cafe Torelli",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4780658,
+        "longitude": -0.2863136,
+        "address": "Royal Parade, 3, Richmond",
+        "opening_hours": "Mo-Sa 06:00-17:00+; Su 07:00-15:00+",
+        "phone": "+44 20 8940 6558",
+        "website": "http://www.caffetorelli.com/",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2845842,
+          51.4768907
+        ]
+      },
+      "properties": {
+        "name": "Neighbourhood Cafe Yukari",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4768907,
+        "longitude": -0.2845842,
+        "address": "North Road, 110, Richmond",
+        "opening_hours": "Mo-Th off; Fr 12:00-18:00; Sa 10:00-20:00; PH 10:00-18:00; Dec 01-Jan 31 off \"closed in December and January\"",
+        "phone": "+44 20 8487 1338",
+        "website": "https://www.kewcafeyukari.com/",
+        "wheelchair": "yes",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1662565,
+          51.4984883
+        ]
+      },
+      "properties": {
+        "name": "Feya",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4984883,
+        "longitude": -0.1662565,
+        "address": "Marble Arch, 6, London",
+        "opening_hours": "Mo-Su 09:30-23:00",
+        "phone": "+44 20 3972 7989",
+        "website": "https://www.feya.co.uk/",
+        "cuisine": "brunch;breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1564362,
+          51.4993228
+        ]
+      },
+      "properties": {
+        "name": "Rococo Chocolates",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4993228,
+        "longitude": -0.1564362,
+        "address": "Motcomb Street, 5, London",
+        "opening_hours": "Mo-Sa 09:30-17:30, Su 11:00-18:00",
+        "phone": "+44 20 7245 0993",
+        "website": "https://www.rococochocolates.com/pages/belgravia",
+        "cuisine": "chocolate;patisserie",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1565363,
+          51.542035
+        ]
+      },
+      "properties": {
+        "name": "Greenberry",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.542035,
+        "longitude": -0.1565363,
+        "address": "Regent's Park Road, 101, London",
+        "opening_hours": "Mo 09:00-15:00; Tu-Sa 09:00-20:00; Su 09:00-15:00",
+        "phone": "+44 20 7483 3765",
+        "website": "https://www.greenberrycafe.co.uk/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1558864,
+          51.5268181
+        ]
+      },
+      "properties": {
+        "name": "Holme Green Kiosk",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5268181,
+        "longitude": -0.1558864,
+        "address": "Inner Circle, London",
+        "opening_hours": "Sa-Su dawn-dusk",
+        "wheelchair": "yes",
+        "cuisine": "ice_cream",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0083905,
+          51.4813718
+        ]
+      },
+      "properties": {
+        "name": "Goddards at Greenwich",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4813718,
+        "longitude": -0.0083905,
+        "address": "King William Walk, 22, London",
+        "opening_hours": "Su-Th 10:00-19:30; Fr-Sa 10:00-20:00",
+        "phone": "+44 20 8305 9612",
+        "website": "https://www.goddardsatgreenwich.co.uk/",
+        "wheelchair": "limited",
+        "cuisine": "pie_and_mash",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0095395,
+          51.4811096
+        ]
+      },
+      "properties": {
+        "name": "Pho",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4811096,
+        "longitude": -0.0095395,
+        "address": "Greenwich Church Street, 18, London",
+        "opening_hours": "Mo-Su 12:00-22:00",
+        "phone": "+44 20 8161 0775",
+        "website": "https://www.phocafe.co.uk/locations/greenwich-authentic-vietnamese-food-pho-restaurant/",
+        "wheelchair": "limited",
+        "cuisine": "vietnamese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1564102,
+          51.5226026
+        ]
+      },
+      "properties": {
+        "name": "Petit Pret",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5226026,
+        "longitude": -0.1564102,
+        "address": "Station Approach, Marylebone Road, 5-5a, London",
+        "opening_hours": "Mo-Fr 06:45-18:00; Sa 07:00-16:30; Su 08:00-16:00",
+        "phone": "+44 20 7486 2023",
+        "website": "https://www.pret.co.uk/en-GB/shop-finder/l/london/marylebone-road/10578",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0044418,
+          51.5028239
+        ]
+      },
+      "properties": {
+        "name": "Rodizio Rico",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5028239,
+        "longitude": 0.0044418,
+        "address": "Entertainment Avenue, 16, London",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+44 20 8858 6333",
+        "website": "https://www.theo2.co.uk/inside/bars-restaurants-rodizio-rico.html",
+        "wheelchair": "yes",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0044704,
+          51.5029349
+        ]
+      },
+      "properties": {
+        "name": "Frankie & Benny's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5029349,
+        "longitude": 0.0044704,
+        "address": "Peninsula Square, London",
+        "opening_hours": "Mo-Th 12:00-21:00; Fr 12:00-22:00; Sa 11:00-22:00; Su 11:00-20:00",
+        "phone": "+44 20 8293 6160",
+        "website": "https://www.frankieandbennys.com/restaurants/london-the-o2",
+        "wheelchair": "yes",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.004516,
+          51.5032007
+        ]
+      },
+      "properties": {
+        "name": "TGI Fridays",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5032007,
+        "longitude": 0.004516,
+        "address": "Entertainment Avenue, 20, London",
+        "opening_hours": "12:00 - 23:00",
+        "phone": "+44 844 692 0315",
+        "website": "https://www.tgifridays.co.uk/restaurant/london-the-o2",
+        "wheelchair": "yes",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0047723,
+          51.5021437
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5021437,
+        "longitude": 0.0047723,
+        "opening_hours": "Mo-We 10:00-19:00; Th 10:00-20:00; Fr-Sa 10:00-20:30; Su 10:00-20:00",
+        "website": "https://www.starbucks.com/store-locator/store/2944/greenwich-the-o-2-the-o-2-london-eng-se-10-0-bb-gb",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.003804,
+          51.5001693
+        ]
+      },
+      "properties": {
+        "name": "Caffè Nero",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5001693,
+        "longitude": 0.003804,
+        "address": "Millennium Way, London",
+        "opening_hours": "Mo-Fr 06:00-20:00; Sa 06:30-20:00; Su 07:30-18:00",
+        "website": "https://www.caffenero.com/uk/stores/greenwich-north",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1713786,
+          51.533883
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.533883,
+        "longitude": -0.1713786,
+        "address": "St John's Wood High Street, 79, London",
+        "opening_hours": "Mo-Th 06:00-19:30; Fr-Su 07:00-19:30",
+        "phone": "+44 20 7586 4365",
+        "website": "https://www.starbucks.co.uk/store-locator/12038-10588",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1793645,
+          51.5257214
+        ]
+      },
+      "properties": {
+        "name": "Caffè Nero",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5257214,
+        "longitude": -0.1793645,
+        "address": "Clifton Road, 18, London",
+        "opening_hours": "Mo-Fr 06:30-19:00; Sa-Su 07:00-19:00",
+        "website": "https://www.caffenero.com/uk/stores/maida-vale",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1948822,
+          51.5084736
+        ]
+      },
+      "properties": {
+        "name": "Panache",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5084736,
+        "longitude": -0.1948822,
+        "address": "Kensington Church Street, 182-186, London",
+        "opening_hours": "Mo-Sa 08:30-20:00; Su 10:00-17:00",
+        "phone": "+44 20 7235 8819",
+        "website": "https://panache.co.uk/",
+        "cuisine": "cake",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0006891,
+          51.4767501
+        ]
+      },
+      "properties": {
+        "name": "The Pavilion Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4767501,
+        "longitude": 0.0006891,
+        "opening_hours": "Mo-Su 08:00-16:00",
+        "website": "https://www.royalparks.org.uk/parks/greenwich-park/food-and-drink/the-pavilion-cafe",
+        "wikidata": "Q130320524",
+        "wheelchair": "limited",
+        "cuisine": "pizza;tea;cake;sandwich;coffee_shop;ice_cream;burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0089131,
+          51.4810006
+        ]
+      },
+      "properties": {
+        "name": "Honest Burgers",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4810006,
+        "longitude": -0.0089131,
+        "address": "Nelson Road, 8, London",
+        "opening_hours": "Mo-Sa 11:30-23:00; Su 11:30-22:00",
+        "phone": "+44 20 3019 7777",
+        "website": "https://www.honestburgers.co.uk/locations/greenwich/",
+        "wheelchair": "limited",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1373375,
+          51.5608632
+        ]
+      },
+      "properties": {
+        "name": "The Tiffin Tin",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5608632,
+        "longitude": -0.1373375,
+        "address": "Junction Road, 122, London",
+        "opening_hours": "Mo-Th 17:30-23:00, Fr,Sa 17:00-23:00, Su 17:00-22:30",
+        "phone": "+44 20 7272 7701",
+        "website": "http://www.thetiffintin.com/",
+        "wheelchair": "yes",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.140689,
+          51.5649774
+        ]
+      },
+      "properties": {
+        "name": "Bold Food & Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5649774,
+        "longitude": -0.140689,
+        "address": "Dartmouth Park Hill, 126, London",
+        "opening_hours": "Mo-Th 16:00-23:00; Fr-Sa 16:00-24:00; Su 12:00-23:00",
+        "phone": "+447585 957 145",
+        "website": "https://www.thehouselondon.co.uk/",
+        "cuisine": "Pizza;mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1497866,
+          51.562029
+        ]
+      },
+      "properties": {
+        "name": "Citro",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.562029,
+        "longitude": -0.1497866,
+        "address": "Swain's Lane, 15a",
+        "opening_hours": "Su 12:00-15:00; Tu-Sa 12:00-15:00,17:30-22:00; Mo off",
+        "phone": "+447840917586",
+        "website": "https://www.eatcitro.com/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1348981,
+          51.5643683
+        ]
+      },
+      "properties": {
+        "name": "Bread and Bean",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5643683,
+        "longitude": -0.1348981,
+        "address": "Junction Road, 37;37A, London",
+        "opening_hours": "Mo-Sa 08:00-15:00; Su 08:30-15:00",
+        "phone": "+44 20 7272 1712",
+        "website": "https://www.breadandbeancoffeeshop.co.uk/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1357659,
+          51.5626987
+        ]
+      },
+      "properties": {
+        "name": "Little Garden Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5626987,
+        "longitude": -0.1357659,
+        "address": "Junction Road, 95, London",
+        "opening_hours": "Mo-Sa 07:00-18:00; Su 08:00-18:00",
+        "phone": "+44 20 7263 2036",
+        "cuisine": "breakfast;local;mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0107122,
+          51.5476713
+        ]
+      },
+      "properties": {
+        "name": "Darkhorse",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5476713,
+        "longitude": -0.0107122,
+        "address": "Victory Parade, 16-19, London",
+        "opening_hours": "Tu-Th 11:00-23:00; Fr-Sa 10:00-24:00; Su 10:00-18:00",
+        "phone": "+44 20 8534 4579",
+        "website": "http://www.thedarkhorserestaurant.com/",
+        "wheelchair": "yes",
+        "cuisine": "european",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0073034,
+          51.5425551
+        ]
+      },
+      "properties": {
+        "name": "Elondi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5425551,
+        "longitude": -0.0073034,
+        "address": "Montfichet Road, 10A, London",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+44 20 3301 9090",
+        "website": "https://www.hyattrestaurants.com/en/london/restaurant/elondi-restaurant-bar-and-terrace",
+        "wheelchair": "yes",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.010066,
+          51.5417683
+        ]
+      },
+      "properties": {
+        "name": "Pizza East",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5417683,
+        "longitude": -0.010066,
+        "address": "Endeavour Square, London",
+        "opening_hours": "Mo-Th 11:30-22:00; Fr,Sa 11:30-23:00; Su 11:30-21:00",
+        "website": "https://www.pizzaeast.com/stratford",
+        "wheelchair": "yes",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0248363,
+          51.5430816
+        ]
+      },
+      "properties": {
+        "name": "HWK Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5430816,
+        "longitude": -0.0248363,
+        "address": "White Post Lane, 29, London",
+        "opening_hours": "Mo 07:00-16:00; Tu-Fr 07:00-17:00; Sa 08:00-17:00; Su 08:30-16:00",
+        "phone": "+44 20 8533 4685",
+        "website": "https://www.hwklondon.com/",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0122633,
+          51.5467556
+        ]
+      },
+      "properties": {
+        "name": "Signorelli",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5467556,
+        "longitude": -0.0122633,
+        "address": "Victory Parade, 7, London",
+        "opening_hours": "Tu-Fr 08:30-18:00; Sa-Su 09:00-17:30",
+        "phone": "+44 20 8534 4972",
+        "website": "http://www.signorelli.co.uk/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1963848,
+          51.40159
+        ]
+      },
+      "properties": {
+        "name": "Blue Junction",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.40159,
+        "longitude": -0.1963848,
+        "address": "Crown Lane, 1, Morden",
+        "opening_hours": "Tu-Su 17:00-23:00",
+        "phone": "+44 20 8540 2583",
+        "website": "https://www.bluejunction.co.uk/",
+        "cuisine": "curry;indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1925697,
+          51.402239
+        ]
+      },
+      "properties": {
+        "name": "Yaki Sarsa",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.402239,
+        "longitude": -0.1925697,
+        "address": "Abbotsbury Road, 30, Morden",
+        "opening_hours": "We 17:00-21:30,Th-Su 12:00-21:30",
+        "phone": "+44 203 336 1621",
+        "website": "https://yakisarsa.com/",
+        "cuisine": "filipino;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1928887,
+          51.4027165
+        ]
+      },
+      "properties": {
+        "name": "Kebaby",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4027165,
+        "longitude": -0.1928887,
+        "address": "London Road, 19, Morden",
+        "opening_hours": "Mo-Su 12:00-24:00",
+        "phone": "+44 20 8544 5444",
+        "website": "https://kebaby.co.uk/",
+        "cuisine": "kebab;burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1954827,
+          51.4018052
+        ]
+      },
+      "properties": {
+        "name": "Metronome",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4018052,
+        "longitude": -0.1954827,
+        "address": "Crown Lane, 8, Morden",
+        "opening_hours": "Mo-Fr 07:00-16:00",
+        "website": "https://www.metronome.life/",
+        "cuisine": "coffee_shop;event_space",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1891008,
+          51.4015821
+        ]
+      },
+      "properties": {
+        "name": "Potter's Shed - National Trust Shop & Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4015821,
+        "longitude": -0.1891008,
+        "opening_hours": "Mo-Su 10:00-16:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1421671,
+          51.5908701
+        ]
+      },
+      "properties": {
+        "name": "Akatuki",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5908701,
+        "longitude": -0.1421671,
+        "address": "Muswell Hill Broadway, 224, London",
+        "opening_hours": "Mo-Su 12:00-15:00,17:00-23:00",
+        "phone": "+44 20 8444 8777",
+        "website": "https://www.akatuki.co.uk",
+        "wheelchair": "yes",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.144335,
+          51.5901831
+        ]
+      },
+      "properties": {
+        "name": "Miller & Carter",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5901831,
+        "longitude": -0.144335,
+        "address": "Muswell Hill Broadway, 87, London",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "website": "https://www.millerandcarter.co.uk/restaurants/london/millerandcartermuswellhill",
+        "wikidata": "Q26350994",
+        "wikipedia": "en:Miller & Carter, Muswell Hill",
+        "wheelchair": "no",
+        "cuisine": "steak",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.117296,
+          51.5876101
+        ]
+      },
+      "properties": {
+        "name": "Mum Likes Thai Food",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5876101,
+        "longitude": -0.117296,
+        "address": "High Street, 82, London",
+        "opening_hours": "Mo-Th 12:00-15:30,17:00-22:30; Fr-Sa 12:00-15:30,17:00-23:00; Su 12:00-15:30,17:00-22:30",
+        "phone": "+442035182614",
+        "website": "https://www.mumlikesthaifood.com/general-7-1",
+        "wheelchair": "yes",
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1374227,
+          51.5920863
+        ]
+      },
+      "properties": {
+        "name": "The Grove Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5920863,
+        "longitude": -0.1374227,
+        "address": "Alexandra Palace Way, London",
+        "opening_hours": "Th-Su 09:00-16:00",
+        "website": "https://www.alexandrapalace.com/food-drink/grove-cafe",
+        "wheelchair": "yes",
+        "cuisine": "italian;cafe",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1433419,
+          51.5929709
+        ]
+      },
+      "properties": {
+        "name": "Mooboo",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5929709,
+        "longitude": -0.1433419,
+        "address": "Muswell Hill Broadway, 496, London",
+        "opening_hours": "Mo-Fr 12:30-18:30; Sa-Su 11:30-18:30",
+        "website": "https://www.mooboo.co/stores/muswell-hill",
+        "wheelchair": "yes",
+        "cuisine": "bubble_tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.178477,
+          51.5593311
+        ]
+      },
+      "properties": {
+        "name": "La Gaffe",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5593311,
+        "longitude": -0.178477,
+        "address": "Heath Street, 107-111, London",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1783473,
+          51.5589642
+        ]
+      },
+      "properties": {
+        "name": "Quest",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5589642,
+        "longitude": -0.1783473,
+        "address": "Heath Street, 108, London",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1783437,
+          51.5588291
+        ]
+      },
+      "properties": {
+        "name": "Tinseltown",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5588291,
+        "longitude": -0.1783437,
+        "address": "Heath Street, London",
+        "website": "https://www.tinseltown.co.uk/",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1785543,
+          51.5590788
+        ]
+      },
+      "properties": {
+        "name": "LLS Café Deli",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5590788,
+        "longitude": -0.1785543,
+        "address": "Heath Street, 95-97, London",
+        "opening_hours": "Mo-Fr 07:00-18:00; Sa-Su 08:00-18:00",
+        "phone": "+44 20 7794 8600",
+        "website": "https://www.llscafe.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.16715,
+          51.571476
+        ]
+      },
+      "properties": {
+        "name": "The Steward's Room",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.571476,
+        "longitude": -0.16715,
+        "opening_hours": "Dec-Jan: Sa-Su 08:00-15:00; Feb-Mar: Sa-Su 08:00-16:00; Apr-Sep: Sa-Su 08:00-17:00; Oct-Nov: Sa-Su 08:00-16:00; Dec-Jan: Mo-Fr 08:00-12:00; Feb-Mar: Mo-Fr 08:00-15:00; Apr-Sep: Mo-Fr 08:00-16:00; Oct-Nov: Mo-Fr 08:00-15:00",
+        "phone": "+44 20 8348 4073",
+        "website": "http://searcyskenwoodhouse.co.uk",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1562335,
+          51.52047
+        ]
+      },
+      "properties": {
+        "name": "Tasty Inn",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.52047,
+        "longitude": -0.1562335,
+        "address": "Paddington Street, 34, London",
+        "opening_hours": "Mo-Sa 08:00-16:30",
+        "phone": "+44 20 7224 4069",
+        "cuisine": "sandwich;coffee_shop;italian;tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1625822,
+          51.5454264
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5454264,
+        "longitude": -0.1625822,
+        "address": "England's Lane, 55-57, London",
+        "opening_hours": "Mo-Fr 06:30-19:00; Sa 07:30-19:00; Su 08:00-19:00; PH 08:00-19:00",
+        "website": "https://www.starbucks.com/store-locator/store/2562/belsize-park-englands-lane-57-englands-lane-belsize-park-london-eng-nw-3-4-yd",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1744376,
+          51.5554299
+        ]
+      },
+      "properties": {
+        "name": "Caffè Nero",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5554299,
+        "longitude": -0.1744376,
+        "address": "Hampstead High Street, 1, London",
+        "opening_hours": "Mo-Fr 06:30-17:00; Sa-Su 07:30-17:00",
+        "website": "https://www.caffenero.com/uk/stores/hampstead",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1504571,
+          51.571551
+        ]
+      },
+      "properties": {
+        "name": "Centuno",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.571551,
+        "longitude": -0.1504571,
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1667879,
+          51.5717552
+        ]
+      },
+      "properties": {
+        "name": "The Brew House Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5717552,
+        "longitude": -0.1667879,
+        "opening_hours": "Dec-Jan: Mo-Su 09:00-16:00; Feb-Mar: Mo-Su 09:00-17:00; Apr-Sep: Mo-Su 09:00-18:00; Oct-Nov: Mo-Su 09:00-17:00",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.084942,
+          51.4492191
+        ]
+      },
+      "properties": {
+        "name": "Rocca di Papa",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4492191,
+        "longitude": -0.084942,
+        "address": "Dulwich Village, 75-79, London",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "phone": "+44 20 8299 6333",
+        "website": "https://www.roccarestaurants.com/dulwich_village.htm",
+        "wheelchair": "yes",
+        "cuisine": "pizza;italian;pasta;salad",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0744731,
+          51.4495873
+        ]
+      },
+      "properties": {
+        "name": "Magic Wok",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4495873,
+        "longitude": -0.0744731,
+        "address": "Lordship Lane, 379, London",
+        "opening_hours": "Mo,We,Th, Su 17:00-23:00; Fr, Sa 17:00-23:30; Tu off",
+        "phone": "+44 20 8693 5585",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1004667,
+          51.4507712
+        ]
+      },
+      "properties": {
+        "name": "2210 By NattyCanCook",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4507712,
+        "longitude": -0.1004667,
+        "address": "Norwood Road, 75-79, London",
+        "opening_hours": "Mo-Tu off; We-Th 17:00-23:00; Fr 17:00-24:00; Sa 12:00-24:00; Su 12:00-22:00 || We-Th \"Last orders 21:30\"; Fr-Sa \"Last orders 22:30\"; Su \"Last orders 20:30\"",
+        "phone": "+44 20 3713 5108",
+        "website": "https://www.2210bynattycancook.com/",
+        "cuisine": "caribbean;fine_dining",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0790961,
+          51.4454581
+        ]
+      },
+      "properties": {
+        "name": "The Dulwich Clock Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4454581,
+        "longitude": -0.0790961,
+        "address": "College Road, London",
+        "opening_hours": "Mo-Su 08:30-16:00, later in summer",
+        "phone": "+44 208 299 0643",
+        "website": "https://www.colicci.co.uk/dulwich-clock-cafe",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0857788,
+          51.4460103
+        ]
+      },
+      "properties": {
+        "name": "Flotsam & Jetsam",
+        "name_en": "Dulwich Gallery Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4460103,
+        "longitude": -0.0857788,
+        "opening_hours": "Tu-Su 08:00-17:00",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1468458,
+          51.494309
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.494309,
+        "longitude": -0.1468458,
+        "address": "Buckingham Palace Road, 98, London",
+        "opening_hours": "Mo-Fr 05:30-21:30; Sa,Su 06:00-21:00",
+        "phone": "+44 20 7259 0347",
+        "website": "https://www.starbucks.com/store-locator/store/2508/victoria-buckingham-palace-r-98-buckingham-palace-road-london-eng-sw-1-w-0-ss-g",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1505436,
+          51.4932934
+        ]
+      },
+      "properties": {
+        "name": "Peggy Porschen Belgravia",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4932934,
+        "longitude": -0.1505436,
+        "address": "Ebury Street, 116, London",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "phone": "+44 20 7730 1316",
+        "website": "https://www.peggyporschen.com/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0082194,
+          51.4672798
+        ]
+      },
+      "properties": {
+        "name": "Zero Degrees",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4672798,
+        "longitude": 0.0082194,
+        "address": "Montpelier Vale, 29-33, London",
+        "opening_hours": "Su-Th 12:00-24:00; Fr-Sa 12:00-25:00",
+        "phone": "+44 20 8852 5619",
+        "website": "https://www.zerodegrees.co.uk/restaurants/blackheath/",
+        "wheelchair": "yes",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0080608,
+          51.4675741
+        ]
+      },
+      "properties": {
+        "name": "The Ivy Cafe",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4675741,
+        "longitude": 0.0080608,
+        "address": "Montpelier Vale, 43-45, London",
+        "opening_hours": "Mo-Th,Su 08:30-24:00; Fr-Sa 08:30-24:30",
+        "phone": "+44 20 3940 1010",
+        "website": "https://theivycafeblackheath.com/",
+        "cuisine": "british",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0081213,
+          51.4675126
+        ]
+      },
+      "properties": {
+        "name": "Everest Inn",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4675126,
+        "longitude": 0.0081213,
+        "address": "Montpelier Vale, 41, London",
+        "opening_hours": "Tu-Th 16:00-22:30; Fr 16:00-23:00; Sa 13:00-23:00; Su 13:00-22:00",
+        "phone": "+44 20 8852 7872",
+        "website": "https://everestinn.co.uk/blackheath/",
+        "cuisine": "indian;nepalese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0076,
+          51.4665197
+        ]
+      },
+      "properties": {
+        "name": "Costa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4665197,
+        "longitude": 0.0076,
+        "address": "Tranquil Vale, 41, London",
+        "opening_hours": "Mo-Fr 06:00-19:00; Sa 07:00-19:00; Su 07:30-17:30",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1560193,
+          51.4898497
+        ]
+      },
+      "properties": {
+        "name": "Kat Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4898497,
+        "longitude": -0.1560193,
+        "address": "Lower Sloane Street, 93, London",
+        "opening_hours": "Mo-Sa 07:30-17:00; Su 08:30-17:00",
+        "website": "https://www.katcoffee.co.uk/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1692627,
+          51.4778763
+        ]
+      },
+      "properties": {
+        "name": "Mooboo Bubble Tea",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4778763,
+        "longitude": -0.1692627,
+        "address": "Battersea Bridge Road, 65, London",
+        "opening_hours": "Mo-Fr 12:00-20:00; Sa-Su 11:00-19:00",
+        "website": "https://www.mooboo.co/",
+        "cuisine": "bubble_tea;chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3083036,
+          51.4889644
+        ]
+      },
+      "properties": {
+        "name": "L'Amo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4889644,
+        "longitude": -0.3083036,
+        "address": "Windmill Road, 43",
+        "opening_hours": "Mo-Th 12:00-23:45; Fr-Su 12:00-24:45",
+        "phone": "+44 20 8075 7779",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2230817,
+          51.4888389
+        ]
+      },
+      "properties": {
+        "name": "Mezza&Grill",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4888389,
+        "longitude": -0.2230817,
+        "address": "Fulham Palace Road, 76, London",
+        "opening_hours": "Mo-Th 10:30-23:30; Fr 10:30-01:00, Sa 12:00-01:00, Su 12:00-22:30",
+        "phone": "+44 20 8741 5331",
+        "cuisine": "lebanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2226915,
+          51.4879226
+        ]
+      },
+      "properties": {
+        "name": "Kenta",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4879226,
+        "longitude": -0.2226915,
+        "address": "Fulham Palace Road, 106, London",
+        "opening_hours": "Mo-Sa 12:00-15:30, 17:30-22:30; Su 12:00-15:30, 17:30-22:00",
+        "phone": "+44 20 8741 8111",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2240962,
+          51.4938684
+        ]
+      },
+      "properties": {
+        "name": "Wagamama",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4938684,
+        "longitude": -0.2240962,
+        "address": "Shepherds Bush Road, 244, London",
+        "opening_hours": "Su-Th 11:00-22:00; Fr,Sa 11:00-23:00",
+        "phone": "+44 20 8741 9814",
+        "website": "https://www.wagamama.com/restaurants/london/hammersmith",
+        "cuisine": "asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2253919,
+          51.4927859
+        ]
+      },
+      "properties": {
+        "name": "Caffè Nero",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4927859,
+        "longitude": -0.2253919,
+        "opening_hours": "Mo-Fr 06:30-20:00; Sa 07:30-20:00; Su 07:30-19:00",
+        "phone": "+44 20 8741 9939",
+        "website": "https://www.caffenero.com/uk/stores/hammersmith-king-st",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2237089,
+          51.4932526
+        ]
+      },
+      "properties": {
+        "name": "Caffè Nero",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4932526,
+        "longitude": -0.2237089,
+        "address": "Hammersmith Broadway, 6, London",
+        "opening_hours": "Mo-Fr 06:30-18:30; Sa 07:30-18:00; Su 08:30-18:00",
+        "website": "https://www.caffenero.com/uk/stores/hammersmith-broadway",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2879784,
+          51.5101708
+        ]
+      },
+      "properties": {
+        "name": "Nando's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5101708,
+        "longitude": -0.2879784,
+        "address": "Uxbridge Road, 1 - 2, London",
+        "opening_hours": "Tu 11:30-19:00; We off; Th-Mo 11:30-22:00",
+        "phone": "+44 20 8992 2290",
+        "website": "https://www.nandos.co.uk/restaurants/ealing-common",
+        "wheelchair": "yes",
+        "cuisine": "chicken;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2846726,
+          51.5013777
+        ]
+      },
+      "properties": {
+        "name": "Italian Corner",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5013777,
+        "longitude": -0.2846726,
+        "address": "Park Parade, 1, London",
+        "opening_hours": "Mo-Fr 10:30-23:00; Sa 14:00-23:00; Su off",
+        "phone": "+447949873083",
+        "website": "https://www.facebook.com/italiancornerlondon/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2851141,
+          51.5014046
+        ]
+      },
+      "properties": {
+        "name": "Tokri",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5014046,
+        "longitude": -0.2851141,
+        "address": "Park Parade, 7, London",
+        "opening_hours": "Mo off; Tu-Fr 17:00-22:00; Sa-Su 12:00-14:30,17:00-22:00",
+        "phone": "+44 20 8992 2436",
+        "website": "https://www.tokri.co.uk/",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2693524,
+          51.5069257
+        ]
+      },
+      "properties": {
+        "name": "Costa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5069257,
+        "longitude": -0.2693524,
+        "address": "High Street, 114-116, London",
+        "opening_hours": "Mo-Fr 06:30-20:00; Sa, Su 07:30-20:30",
+        "phone": "+44 20 8992 0453",
+        "website": "https://www.costa.co.uk/stores/acton",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2691825,
+          51.5066561
+        ]
+      },
+      "properties": {
+        "name": "The Coffee House",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5066561,
+        "longitude": -0.2691825,
+        "address": "High Street, 135, London",
+        "opening_hours": "Mo-Sa 08:00-20:00; Su 09:00-20:00",
+        "phone": "+44 20 3089 6377",
+        "website": "https://www.thecoffeehouseacton.co.uk/",
+        "wheelchair": "yes",
+        "cuisine": "breakfast;cake;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2075597,
+          51.5067845
+        ]
+      },
+      "properties": {
+        "name": "Mister Pumpernick",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5067845,
+        "longitude": -0.2075597,
+        "address": "Holland Park Avenue, 116, London",
+        "opening_hours": "Su-Th 11:00-01:00, Fr,Sa 11:00-03:00",
+        "phone": "+44 20 7221 3380",
+        "website": "https://mrpumpernink.com/",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2032296,
+          51.4974306
+        ]
+      },
+      "properties": {
+        "name": "Apadana",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4974306,
+        "longitude": -0.2032296,
+        "address": "Kensington High Street, 351, London",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+44 20 7603 3696",
+        "website": "https://www.apadana-restaurant.com/",
+        "cuisine": "persian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2110805,
+          51.500126
+        ]
+      },
+      "properties": {
+        "name": "Alounak",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.500126,
+        "longitude": -0.2110805,
+        "address": "Russell Gardens, 10, London",
+        "opening_hours": "Mo-Su 12:00-23:30",
+        "phone": "+44 20 7603 1130",
+        "cuisine": "persian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1193947,
+          51.4693245
+        ]
+      },
+      "properties": {
+        "name": "Emnete Restaurant",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4693245,
+        "longitude": -0.1193947,
+        "address": "Stockwell Road, 71, London",
+        "opening_hours": "Mo-Su 12:00-12:00",
+        "phone": "+44 20 7924 0168",
+        "cuisine": "ethiopian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1143413,
+          51.4650533
+        ]
+      },
+      "properties": {
+        "name": "T4 Tea For U",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4650533,
+        "longitude": -0.1143413,
+        "address": "Brixton Road, 410a",
+        "opening_hours": "12:00-20:00",
+        "website": "http://t4.co.uk/",
+        "cuisine": "bubble_tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.003845,
+          51.5363239
+        ]
+      },
+      "properties": {
+        "name": "The Pie Crust (Thai)",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5363239,
+        "longitude": -0.003845,
+        "address": "High Street, 273, London",
+        "opening_hours": "Tu-Sa 11:00-15:00, 18:00-23:00",
+        "phone": "+44 20 8534 2873",
+        "wheelchair": "yes",
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0134037,
+          51.5402991
+        ]
+      },
+      "properties": {
+        "name": "Dessert Ice Cream Club",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5402991,
+        "longitude": -0.0134037,
+        "address": "Tessa Jowell Boulevard, London",
+        "opening_hours": "Tu-Fr 10:00-16:00; Sa,Su 10:00-19:00",
+        "website": "https://desserticecreamclub.co.uk/",
+        "wheelchair": "yes",
+        "cuisine": "ice_cream",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1927694,
+          51.4995096
+        ]
+      },
+      "properties": {
+        "name": "Muffin Man Tea Shop",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4995096,
+        "longitude": -0.1927694,
+        "address": "Wrights Lane, 12, London",
+        "opening_hours": "Mo-Th 09:00-17:00; Fr-Su 09:00-18:00",
+        "phone": "+44 20 7937 6652",
+        "website": "http://www.themuffinmanteashop.co.uk/",
+        "cuisine": "tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2070444,
+          51.4920034
+        ]
+      },
+      "properties": {
+        "name": "Chapter Coffee Co.",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4920034,
+        "longitude": -0.2070444,
+        "address": "North End Road, 137, London",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "phone": "+44 20 3875 3655",
+        "website": "https://www.chaptercoffee.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1555267,
+          51.4745176
+        ]
+      },
+      "properties": {
+        "name": "Kapihan",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4745176,
+        "longitude": -0.1555267,
+        "address": "Battersea Park Road, London",
+        "opening_hours": "Mo-Sa 07:30-16:00; Su 08:30-17:00",
+        "phone": "+44 20 3665 8625",
+        "website": "https://www.kapihan.coffee/",
+        "cuisine": "filipino",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.167522,
+          51.4714942
+        ]
+      },
+      "properties": {
+        "name": "Kapihan",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4714942,
+        "longitude": -0.167522,
+        "address": "Battersea Park Road, 547, London",
+        "opening_hours": "Mo-Fr 07:30-16:00; Sa-Su 08:30-17:00",
+        "phone": "+44 20 7228 4279",
+        "website": "https://www.kapihan.coffee/",
+        "cuisine": "filipino",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.261279,
+          51.541003
+        ]
+      },
+      "properties": {
+        "name": "Reggie's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.541003,
+        "longitude": -0.261279,
+        "address": "Hillside, 55, London",
+        "opening_hours": "Mo-Fr 10:00-16:00",
+        "cuisine": "caribbean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2562618,
+          51.5541606
+        ]
+      },
+      "properties": {
+        "name": "Nando's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5541606,
+        "longitude": -0.2562618,
+        "website": "https://www.nandos.co.uk/restaurants/wembley-park",
+        "cuisine": "chicken;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2508805,
+          51.539203
+        ]
+      },
+      "properties": {
+        "name": "Kulmiye Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.539203,
+        "longitude": -0.2508805,
+        "address": "Craven Park Road, 62, London",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0527494,
+          51.4506572
+        ]
+      },
+      "properties": {
+        "name": "Legends American Grill & Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4506572,
+        "longitude": 0.0527494,
+        "address": "Eltham High Street, 90, London",
+        "opening_hours": "Mo-Th 11:00-22:30; Fr,Sa 11:00-23:00; Su 11:00-22:00",
+        "phone": "+44 20 8850 7550",
+        "wheelchair": "no",
+        "cuisine": "american;burger;pasta;seafood;steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0564982,
+          51.4506553
+        ]
+      },
+      "properties": {
+        "name": "PizzaExpress",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4506553,
+        "longitude": 0.0564982,
+        "address": "Eltham High Street, 168-176, London",
+        "opening_hours": "Mo-Th 11:30-22:00; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+        "phone": "+44 20 8104 0324",
+        "website": "https://www.pizzaexpress.com/eltham-high-street",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0566774,
+          51.450639
+        ]
+      },
+      "properties": {
+        "name": "Nando's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.450639,
+        "longitude": 0.0566774,
+        "address": "Eltham High Street, 168, London",
+        "opening_hours": "Mo-Su 11:30-22:00",
+        "phone": "+44 20 3984 2020",
+        "website": "https://www.nandos.co.uk/restaurants/eltham",
+        "cuisine": "chicken;portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0541669,
+          51.4508475
+        ]
+      },
+      "properties": {
+        "name": "Costa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4508475,
+        "longitude": 0.0541669,
+        "address": "Eltham High Street, 101, London",
+        "opening_hours": "Mo-Fr 06:30-18:00; Sa 06:30-18:00; Su 07:30-17:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0581263,
+          51.4504641
+        ]
+      },
+      "properties": {
+        "name": "The Fabulous Tea Room",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4504641,
+        "longitude": 0.0581263,
+        "opening_hours": "Tu-Fr 09:00-15:00; Sa-Su 10:00-16:00",
+        "wheelchair": "yes",
+        "cuisine": "tea;breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1795216,
+          51.5194525
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5194525,
+        "longitude": -0.1795216,
+        "address": "Sheldon Square, 15, London",
+        "opening_hours": "Mo-Fr 06:30-20:00; Sa 07:30-19:00; Su 08:00-19:00",
+        "phone": "+44 20 7289 7381",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1644408,
+          51.5158638
+        ]
+      },
+      "properties": {
+        "name": "Mehmet Efendi 1953",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5158638,
+        "longitude": -0.1644408,
+        "address": "Edgware Road, 81, London",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "phone": "+44 28 7116 4915",
+        "website": "https://mehmetefendi.co.uk/",
+        "cuisine": "turkish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0546483,
+          51.4395559
+        ]
+      },
+      "properties": {
+        "name": "Canvas & Cream",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4395559,
+        "longitude": -0.0546483,
+        "address": "London Road, 18, London",
+        "opening_hours": "Mo-Fr 09:00-17:00; Sa-Su 10:00-18:00",
+        "phone": "+44 20 8699 9589",
+        "website": "https://www.canvasandcream.com/",
+        "wheelchair": "no",
+        "cuisine": "breakfast;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0544021,
+          51.4375393
+        ]
+      },
+      "properties": {
+        "name": "Ama Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4375393,
+        "longitude": -0.0544021,
+        "address": "Dartmouth Road, 49A, London",
+        "opening_hours": "Mo-Su 12:00-22:00",
+        "phone": "+442082596068",
+        "website": "https://www.amasushi.co.uk/",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0685982,
+          51.4444476
+        ]
+      },
+      "properties": {
+        "name": "Simorgh",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4444476,
+        "longitude": -0.0685982,
+        "address": "Lordship Lane, 481, London",
+        "opening_hours": "Tu-Su 12:00-23:00",
+        "phone": "+44 20 4642 7177",
+        "website": "https://www.instagram.com/simorgh_se22",
+        "cuisine": "persian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0552297,
+          51.4392778
+        ]
+      },
+      "properties": {
+        "name": "Galão",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4392778,
+        "longitude": -0.0552297,
+        "address": "London Road, 27",
+        "opening_hours": "Mo-Fr 07:00-16:00; Sa-Su 08:00-16:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.054486,
+          51.4389983
+        ]
+      },
+      "properties": {
+        "name": "Costa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4389983,
+        "longitude": -0.054486,
+        "address": "London Road, 7-9, London",
+        "opening_hours": "Mo-Sa 07:00-18:30; Su 08:00-17:00",
+        "website": "https://www.costa.co.uk/stores/lon-forest-hill",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1042008,
+          51.5642165
+        ]
+      },
+      "properties": {
+        "name": "Hamer Ethiopia Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5642165,
+        "longitude": -0.1042008,
+        "address": "Rock Street, 1B-1C, London",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+44 20 7226 8114; +44 7852 154983",
+        "cuisine": "ethiopian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1031843,
+          51.5640838
+        ]
+      },
+      "properties": {
+        "name": "Dilara Uyghur Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5640838,
+        "longitude": -0.1031843,
+        "address": "Blackstock Road, 27, London",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "phone": "+44 20 7226 2446",
+        "website": "https://dilarauyghurrestaurant.co.uk/",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1130375,
+          51.561113
+        ]
+      },
+      "properties": {
+        "name": "Hana Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.561113,
+        "longitude": -0.1130375,
+        "address": "Seven Sisters Road, 150, London",
+        "opening_hours": "Tu-Sa 11:00-15:00; Tu-Sa 17:30-22:30; Su 17:30-22:00",
+        "phone": "+44 20 7281 2226",
+        "website": "https://hanasushi.net/",
+        "cuisine": "sushi",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1034792,
+          51.5700504
+        ]
+      },
+      "properties": {
+        "name": "Finsbury Park Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5700504,
+        "longitude": -0.1034792,
+        "address": "Endymion Road, London",
+        "opening_hours": "Mo-Su 09:00-17:00",
+        "phone": "+447715647295",
+        "website": "https://www.finsburyparkcafe.co.uk/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1159315,
+          51.5595618
+        ]
+      },
+      "properties": {
+        "name": "Ollie's Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5595618,
+        "longitude": -0.1159315,
+        "address": "Seven Sisters Road, 94, London",
+        "opening_hours": "Mo-Sa 07:00-16:30; Su 08:00-15:30",
+        "website": "https://olliescafelondon.com/",
+        "wheelchair": "yes",
+        "cuisine": "breakfast;british",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2622862,
+          51.4917587
+        ]
+      },
+      "properties": {
+        "name": "Lil' Nashville",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4917587,
+        "longitude": -0.2622862,
+        "address": "Barley Mow Passage, 11, London",
+        "opening_hours": "Mo off; We-Th 17:00-23:00; Fr 17:00-24:00; Sa 12:00-24:00; Su 12:00-20:00",
+        "phone": "+44 20 4619 8285",
+        "website": "https://www.lilnashville.co.uk/",
+        "wheelchair": "limited",
+        "cuisine": "burger;chicken;wings",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2536857,
+          51.4929401
+        ]
+      },
+      "properties": {
+        "name": "Franco Manca",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4929401,
+        "longitude": -0.2536857,
+        "address": "Chiswick High Road, 144, London",
+        "opening_hours": "Mo-Th 12:00-22:00; Fr 12:00-23:00; Sa-Su 11:30-22:00",
+        "phone": "+44 20 8747 4822",
+        "website": "https://www.francomanca.co.uk/restaurants/chiswick/",
+        "wheelchair": "yes",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2530441,
+          51.4929815
+        ]
+      },
+      "properties": {
+        "name": "D Grande",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4929815,
+        "longitude": -0.2530441,
+        "address": "Chiswick High Road, 132, London",
+        "opening_hours": "Mo-Th 12:00-21:30; Fr-Sa 12:00-22:00; Su 12:00-21:00",
+        "phone": "+44 20 3667 7257",
+        "website": "https://dgrandetexmex.com/",
+        "wheelchair": "no",
+        "cuisine": "tex-mex",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2597327,
+          51.4926441
+        ]
+      },
+      "properties": {
+        "name": "WAFT Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4926441,
+        "longitude": -0.2597327,
+        "address": "Chiswick High Road, 280, London",
+        "opening_hours": "Mo-Su 06:30-19:00",
+        "phone": "+44 20 8747 8215",
+        "website": "https://waftcoffee.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2647814,
+          51.4927211
+        ]
+      },
+      "properties": {
+        "name": "Caffè Nero",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 51.4927211,
+        "longitude": -0.2647814,
+        "address": "Chiswick High Road, 386, London",
+        "opening_hours": "Mo-Fr 06:30-19:00; Sa 07:00-19:00; Su 07:30-18:30",
+        "phone": "+44 20 8742 8495",
+        "website": "https://www.caffenero.com/uk/stores/chiswick-park",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
     }
   ]
 }

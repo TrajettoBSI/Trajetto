@@ -5112,6 +5112,1273 @@
         "website": "https://www.elmalky.co",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1242692,
+          29.9782554
+        ]
+      },
+      "properties": {
+        "name": "Khufu's Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9782554,
+        "longitude": 31.1242692,
+        "opening_hours": "Mo-Su 09:00-04:00",
+        "phone": "+201080058888",
+        "website": "https://khufus.com/",
+        "cuisine": "breakfast;diner",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1235721,
+          29.9782625
+        ]
+      },
+      "properties": {
+        "name": "Breadfast",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9782625,
+        "longitude": 31.1235721,
+        "address": "طريق القاهرة, الفيوم الصحراوى, Giza",
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "website": "https://pyramids.breadfast.com/",
+        "cuisine": "breakfast;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1313871,
+          29.9879406
+        ]
+      },
+      "properties": {
+        "name": "Felfela",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9879406,
+        "longitude": 31.1313871,
+        "address": "Alex-Cairo Desert Red. Ext.",
+        "cuisine": "egyptian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1405385,
+          29.9754028
+        ]
+      },
+      "properties": {
+        "name": "Caf",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9754028,
+        "longitude": 31.1405385,
+        "opening_hours": "Mo-Su 08:00-17:00",
+        "phone": "+20 12 26026106",
+        "website": "https://www.cafcafeeg.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1247793,
+          29.9784428
+        ]
+      },
+      "properties": {
+        "name": "Laduree Paris",
+        "name_en": "لادوري باريس",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9784428,
+        "longitude": 31.1247793,
+        "cuisine": "cake",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1411331,
+          29.9753997
+        ]
+      },
+      "properties": {
+        "name": "Pizza Hut",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9753997,
+        "longitude": 31.1411331,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.141029,
+          29.9726561
+        ]
+      },
+      "properties": {
+        "name": "El Hadaba",
+        "name_en": "الهضبة",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9726561,
+        "longitude": 31.141029,
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1357441,
+          29.9851107
+        ]
+      },
+      "properties": {
+        "name": "Cheristo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9851107,
+        "longitude": 31.1357441,
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2980271,
+          30.1257389
+        ]
+      },
+      "properties": {
+        "name": "Elzahraa kabab",
+        "name_en": "كبابجي الزهراء",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.1257389,
+        "longitude": 31.2980271,
+        "opening_hours": "Mo-Su 00:00-03:30",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2244467,
+          29.8650713
+        ]
+      },
+      "properties": {
+        "name": "Restaurant Pharous",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 29.8650713,
+        "longitude": 31.2244467,
+        "cuisine": "arab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.245065,
+          30.0305878
+        ]
+      },
+      "properties": {
+        "name": "El Gahsh",
+        "name_en": "الجحش",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0305878,
+        "longitude": 31.245065,
+        "cuisine": "Egyptian_beans",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2625099,
+          30.0472905
+        ]
+      },
+      "properties": {
+        "name": "El Zahraa Cafe",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0472905,
+        "longitude": 31.2625099,
+        "address": "El Zahraa Cafe Hussein Sq.",
+        "phone": "25914267",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2614372,
+          30.0501082
+        ]
+      },
+      "properties": {
+        "name": "Saheb El Sa’ada",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0501082,
+        "longitude": 31.2614372,
+        "wheelchair": "no",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2613887,
+          30.0463071
+        ]
+      },
+      "properties": {
+        "name": "Gad",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0463071,
+        "longitude": 31.2613887,
+        "cuisine": "turkish;kebab;arab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2625717,
+          30.0541104
+        ]
+      },
+      "properties": {
+        "name": "Tabarak Coffee Maker",
+        "name_en": "مطحن بن تبارك",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0541104,
+        "longitude": 31.2625717,
+        "address": "شارع المعز لدين الله الفاطمي, 136",
+        "opening_hours": "Su-Sa 12:00-23:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2320332,
+          30.0432431
+        ]
+      },
+      "properties": {
+        "name": "Pane Vino",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0432431,
+        "longitude": 31.2320332,
+        "wheelchair": "yes",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2285071,
+          30.0480323
+        ]
+      },
+      "properties": {
+        "name": "Studio Misr",
+        "name_en": "استديو مصر",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0480323,
+        "longitude": 31.2285071,
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2284666,
+          30.0484834
+        ]
+      },
+      "properties": {
+        "name": "Chili's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0484834,
+        "longitude": 31.2284666,
+        "cuisine": "tex-mex",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.261627,
+          30.0480581
+        ]
+      },
+      "properties": {
+        "name": "Restaurant Khan El Khalili",
+        "name_en": "مقهى نجيب محفوظ",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0480581,
+        "longitude": 31.261627,
+        "cuisine": "oriental",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2605303,
+          30.0451223
+        ]
+      },
+      "properties": {
+        "name": "Chiken dodi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0451223,
+        "longitude": 31.2605303,
+        "cuisine": "chicken",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3264727,
+          30.0912005
+        ]
+      },
+      "properties": {
+        "name": "Tabali Korba",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0912005,
+        "longitude": 31.3264727,
+        "address": "شارع نزيه خليفه, 18, القاهرة",
+        "opening_hours": "Mo-Su 07:30-23:00",
+        "cuisine": "breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.338793,
+          30.0879398
+        ]
+      },
+      "properties": {
+        "name": "Shiva Indian Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0879398,
+        "longitude": 31.338793,
+        "address": "Mohamed Ebeid, 11",
+        "opening_hours": "Mo-Su 14:00-01:00",
+        "phone": "01017544912",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3413162,
+          30.0864199
+        ]
+      },
+      "properties": {
+        "name": "keif",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0864199,
+        "longitude": 31.3413162,
+        "opening_hours": "24/7",
+        "cuisine": "lebanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3231629,
+          30.0921141
+        ]
+      },
+      "properties": {
+        "name": "Coffee Shop Company",
+        "name_en": "Coffeeshop Company",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0921141,
+        "longitude": 31.3231629,
+        "address": "شارع الاهرام, 25",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3240064,
+          30.0910642
+        ]
+      },
+      "properties": {
+        "name": "Bouchée",
+        "name_en": "بوشيه",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0910642,
+        "longitude": 31.3240064,
+        "website": "https://bouchee.eg",
+        "cuisine": "coffee_shop;french;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.251926,
+          30.0594687
+        ]
+      },
+      "properties": {
+        "name": "مقهي جمال",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0594687,
+        "longitude": 31.251926,
+        "address": "شارع البرج, 6, القاهرة",
+        "phone": "01115948987",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2887756,
+          30.087337
+        ]
+      },
+      "properties": {
+        "name": "ElQubba’s Fish resturant",
+        "name_en": "اسماك القبه",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.087337,
+        "longitude": 31.2887756,
+        "address": "Misr and Sudan, 165",
+        "opening_hours": "24/7",
+        "phone": "+20224640752",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.343773,
+          30.114584
+        ]
+      },
+      "properties": {
+        "name": "مطعم الخيرات",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.114584,
+        "longitude": 31.343773,
+        "address": "شارع فريد سميكة",
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3425656,
+          30.1058405
+        ]
+      },
+      "properties": {
+        "name": "Quadro Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.1058405,
+        "longitude": 31.3425656,
+        "address": "شارع عبد العزيز فهمى, 77",
+        "opening_hours": "Mo-Su 09:00-02:00",
+        "cuisine": "international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3387065,
+          30.0970602
+        ]
+      },
+      "properties": {
+        "name": "Down The Bridge Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0970602,
+        "longitude": 31.3387065,
+        "phone": "+20 100 172 9850",
+        "website": "https://down-the-bridge-cafe.business.site",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2118423,
+          30.0257409
+        ]
+      },
+      "properties": {
+        "name": "zed",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0257409,
+        "longitude": 31.2118423,
+        "opening_hours": "Su-Thu 8:30-6:00",
+        "cuisine": "burger;pizza;coffee_shop;sandwich;shawarma;pasta;crepe",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3181851,
+          30.077194
+        ]
+      },
+      "properties": {
+        "name": "The Location",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.077194,
+        "longitude": 31.3181851,
+        "address": "Asmaa Zaghloul, 20",
+        "opening_hours": "Mo-Su 09:00-02:00",
+        "phone": "01066551006",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2223891,
+          30.0182425
+        ]
+      },
+      "properties": {
+        "name": "Volo‘s Café",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0182425,
+        "longitude": 31.2223891,
+        "cuisine": "italian;mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2225413,
+          30.0188759
+        ]
+      },
+      "properties": {
+        "name": "Atlantis",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0188759,
+        "longitude": 31.2225413,
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3145489,
+          30.0969395
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "ستاربكس",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0969395,
+        "longitude": 31.3145489,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3996509,
+          30.0150124
+        ]
+      },
+      "properties": {
+        "name": "Karak Boy",
+        "name_en": "كرك بوي",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0150124,
+        "longitude": 31.3996509,
+        "phone": "+20 106 9524257",
+        "website": "https://www.karakboy.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2156034,
+          29.9974947
+        ]
+      },
+      "properties": {
+        "name": "Pinci Cafe",
+        "name_en": "كافتريا بينشي",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9974947,
+        "longitude": 31.2156034,
+        "website": "https://www.pharaonicvillage.com/pinci/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.376049,
+          30.1072204
+        ]
+      },
+      "properties": {
+        "name": "emotion playstation",
+        "name_en": "بلاي ستيشن ايموشن",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.1072204,
+        "longitude": 31.376049,
+        "address": "شارع الدكتور عبد الحميد بدوي, 12",
+        "opening_hours": "24/7",
+        "phone": "0222666031",
+        "website": "http://emtionplaystation@yahoo.om",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3766192,
+          30.1007715
+        ]
+      },
+      "properties": {
+        "name": "Coffeeshop Company",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.1007715,
+        "longitude": 31.3766192,
+        "address": "شارع مصطفى رفعت, القاهرة",
+        "wheelchair": "no",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2337682,
+          30.0324024
+        ]
+      },
+      "properties": {
+        "name": "Tabkha Space",
+        "name_en": "طبخه",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0324024,
+        "longitude": 31.2337682,
+        "phone": "010 26191467",
+        "cuisine": "local",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2411943,
+          30.0375299
+        ]
+      },
+      "properties": {
+        "name": "Dayan fish",
+        "name_en": "اسماك دهب",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0375299,
+        "longitude": 31.2411943,
+        "cuisine": "local",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3486371,
+          30.0656911
+        ]
+      },
+      "properties": {
+        "name": "Wardelsham",
+        "name_en": "ورد الشام",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0656911,
+        "longitude": 31.3486371,
+        "address": "شارع أحمد فخري, 8 أ",
+        "opening_hours": "Mo-Su 08:00-12:00",
+        "phone": "01119654573",
+        "website": "https://269833.site123.me/",
+        "cuisine": "oriental;sandwich;breakfast;grill;chicken;diner;barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.348695,
+          30.0659772
+        ]
+      },
+      "properties": {
+        "name": "ورد الشام",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0659772,
+        "longitude": 31.348695,
+        "address": "شارع أحمد فخري, 8 أ",
+        "opening_hours": "Mo-Su 08:00-23:30",
+        "phone": "01119654573",
+        "website": "https://269833.site123.me/",
+        "cuisine": "chicken;sandwich;breakfast;asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.350409,
+          30.0686688
+        ]
+      },
+      "properties": {
+        "name": "buffalo burger-Nasr City Ahly",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0686688,
+        "longitude": 31.350409,
+        "address": "شارع حافظ رمضان, 8, مدينة نصر",
+        "opening_hours": "11:00Am-3:00Am",
+        "phone": "19914",
+        "website": "https://buffaloburger.com/branches/all/menu",
+        "cuisine": "burger;sandwich;chicken",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3510806,
+          30.0683536
+        ]
+      },
+      "properties": {
+        "name": "Partido cafe",
+        "name_en": "بارتيدو",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0683536,
+        "longitude": 31.3510806,
+        "address": "شارع عبد اللطيف حمزة, 11",
+        "opening_hours": "Mo-Su 08:00-02:00",
+        "phone": "02 2354 7532",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3415642,
+          30.0680815
+        ]
+      },
+      "properties": {
+        "name": "tigo coffee shop",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0680815,
+        "longitude": 31.3415642,
+        "address": "شارع حافظ رمضان, 3, cairo",
+        "phone": "0128088244",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3250202,
+          30.0881147
+        ]
+      },
+      "properties": {
+        "name": "Sachi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0881147,
+        "longitude": 31.3250202,
+        "address": "Cleopatra Street, 3, Cairo",
+        "website": "https://www.sachirestaurant.com/heliopolis",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.328838,
+          30.0898042
+        ]
+      },
+      "properties": {
+        "name": "Mood Swing",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0898042,
+        "longitude": 31.328838,
+        "website": "https://www.facebook.com/MoodSwingEG/",
+        "cuisine": "international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3213952,
+          30.0891649
+        ]
+      },
+      "properties": {
+        "name": "Second Cup",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0891649,
+        "longitude": 31.3213952,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1440518,
+          29.977056
+        ]
+      },
+      "properties": {
+        "name": "139 Pyramids Lounge",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.977056,
+        "longitude": 31.1440518,
+        "website": "https://pyramidsspiritualgate.com/139pyramidslounge/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2053704,
+          30.0649498
+        ]
+      },
+      "properties": {
+        "name": "Lifeguard",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0649498,
+        "longitude": 31.2053704,
+        "opening_hours": "10:00-02:00",
+        "wheelchair": "limited",
+        "cuisine": "shisha",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2015927,
+          30.0655623
+        ]
+      },
+      "properties": {
+        "name": "Time Out",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0655623,
+        "longitude": 31.2015927,
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2458727,
+          29.9623036
+        ]
+      },
+      "properties": {
+        "name": "ElMohamady",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9623036,
+        "longitude": 31.2458727,
+        "address": "شارع كورنيش النيل, Cairo",
+        "opening_hours": "Mo-Su 07:00-01:00",
+        "phone": "19964",
+        "website": "https://www.elmohamadyegypt.com/",
+        "cuisine": "kebab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2508619,
+          29.9599981
+        ]
+      },
+      "properties": {
+        "name": "Caribou Coffee",
+        "name_en": "كاريبو كوفي",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9599981,
+        "longitude": 31.2508619,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
     }
   ]
 }

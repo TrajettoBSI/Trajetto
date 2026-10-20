@@ -12907,6 +12907,932 @@
         "phone": "+39 055 760 6445",
         "popularity": 0
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2170183,
+          43.8241075
+        ]
+      },
+      "properties": {
+        "name": "Pala e Matterello",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8241075,
+        "longitude": 11.2170183,
+        "address": "Via Antonio Gramsci, 584, Sesto Fiorentino",
+        "phone": "+39 055 455 4321",
+        "cuisine": "pizza;regional;burger;italian;chicken;seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2166779,
+          43.8242675
+        ]
+      },
+      "properties": {
+        "name": "IL Loca",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8242675,
+        "longitude": 11.2166779,
+        "address": "Via Antonio Gramsci, 578, Sesto Fiorentino",
+        "phone": "+39 055 527 2168",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2327419,
+          43.8122877
+        ]
+      },
+      "properties": {
+        "name": "Mania Carioca",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8122877,
+        "longitude": 11.2327419,
+        "address": "Via Reginaldo Giuliani, 318",
+        "website": "http://maniacariocafirenze.it",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2175976,
+          43.8219817
+        ]
+      },
+      "properties": {
+        "name": "Ital bar",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8219817,
+        "longitude": 11.2175976,
+        "address": "via Boito, 58, Sesto Fiorentino",
+        "phone": "+39 333 4390326",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2958623,
+          43.8069744
+        ]
+      },
+      "properties": {
+        "name": "India",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8069744,
+        "longitude": 11.2958623,
+        "address": "Via Gramsci, 43A",
+        "opening_hours": "Mo, We-Su 19:30-23:00",
+        "phone": "+39 055 59 99 00",
+        "website": "https://www.indiafiesole.com/",
+        "cuisine": "indian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2931179,
+          43.8069734
+        ]
+      },
+      "properties": {
+        "name": "Bistrot al 5",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8069734,
+        "longitude": 11.2931179,
+        "opening_hours": "We,Th 19:00-22:30; Fr,Sa 12:00-15:00,19:00-22:30; Su 12:00-16:00",
+        "phone": "+39 055 59250",
+        "website": "https://bistrotal5.com",
+        "cuisine": "italian;local",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2795806,
+          43.8044496
+        ]
+      },
+      "properties": {
+        "name": "Circolo ARCI \"Il Risorgimento\" Ponte alla Badia",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8044496,
+        "longitude": 11.2795806,
+        "opening_hours": "Su-Fr 12:00-14:30, Fr,Sa 19:30-22:30",
+        "phone": "+39 055 599568",
+        "cuisine": "fish;italian;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.293322,
+          43.8069504
+        ]
+      },
+      "properties": {
+        "name": "Ferro Battuto",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8069504,
+        "longitude": 11.293322,
+        "cuisine": "ice_cream;pastry",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2505222,
+          43.8234136
+        ]
+      },
+      "properties": {
+        "name": "Lo Strettoio",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8234136,
+        "longitude": 11.2505222,
+        "website": "https://www.lostrettoiofirenze.it/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2248339,
+          43.7256437
+        ]
+      },
+      "properties": {
+        "name": "Ristorante la Bianchina",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7256437,
+        "longitude": 11.2248339,
+        "address": "Via Cassia, 36",
+        "opening_hours": "Th-Mo 12:00-15:00, 19:00-23:00; We 19:00-23:00",
+        "phone": "+39 055 2022163",
+        "website": "https://www.labianchina.com/",
+        "cuisine": "fish;italian_pizza;pizza;steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2246671,
+          43.7380337
+        ]
+      },
+      "properties": {
+        "name": "Kokoro",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7380337,
+        "longitude": 11.2246671,
+        "address": "Via Senese, 271, Firenze",
+        "opening_hours": "Mo, We-Su 12:00-15:30, 19:00-23:30",
+        "phone": "+39 333 612 6172",
+        "website": "https://kokorofirenze.com/",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2793524,
+          43.8037337
+        ]
+      },
+      "properties": {
+        "name": "Cherlot",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8037337,
+        "longitude": 11.2793524,
+        "address": "Via Faentina, 1, Fiesole",
+        "opening_hours": "Mo-Sa 19:30-23:30; Su,PH off",
+        "cuisine": "marrocan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2133241,
+          43.7727854
+        ]
+      },
+      "properties": {
+        "name": "Osteria Manì",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7727854,
+        "longitude": 11.2133241,
+        "address": "Via Giovan Battista Foggini, 7, Firenze",
+        "opening_hours": "Mo off; Tu-Su 11:30-14:30; Tu-Sa 18:30-23:30",
+        "phone": "+39 055 712978",
+        "website": "https://osteriamani.it/",
+        "wheelchair": "yes",
+        "cuisine": "italian;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2152343,
+          43.7731799
+        ]
+      },
+      "properties": {
+        "name": "Sushi Me&U",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7731799,
+        "longitude": 11.2152343,
+        "address": "Viale Francesco Talenti, 117, Firenze",
+        "opening_hours": "We-Mo 12:00-15:00,19:00-23:00",
+        "phone": "+39 338 528 8802",
+        "website": "https://www.sushi-uandme.it/",
+        "wheelchair": "yes",
+        "cuisine": "japanese_and_chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2208661,
+          43.7706924
+        ]
+      },
+      "properties": {
+        "name": "L'artigiano Trattoria pizzeria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7706924,
+        "longitude": 11.2208661,
+        "address": "Via Pisana, 165 R, Firenze",
+        "opening_hours": "Tu-Su 12:00-14:30,19:00-23:30",
+        "phone": "+39 055 7390449",
+        "website": "https://lartigiano-trattoria-pizzeria.business.site/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2115561,
+          43.7701747
+        ]
+      },
+      "properties": {
+        "name": "Caffè della Federiga",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7701747,
+        "longitude": 11.2115561,
+        "opening_hours": "Mo,We-Sa 06:00-19:30; Su 06:00-16:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2178518,
+          43.7671341
+        ]
+      },
+      "properties": {
+        "name": "Pasticceria Giorgio",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7671341,
+        "longitude": 11.2178518,
+        "website": "https://www.pasticceriagiorgio.it/it/",
+        "cuisine": "cake;savory_pancakes;breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1965086,
+          43.7748957
+        ]
+      },
+      "properties": {
+        "name": "Il Baca",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7748957,
+        "longitude": 11.1965086,
+        "address": "Via Simone Martini, 13, Firenze",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2035299,
+          43.7734333
+        ]
+      },
+      "properties": {
+        "name": "il Flamingo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7734333,
+        "longitude": 11.2035299,
+        "address": "Via dei Tommasi, 9",
+        "cuisine": "pasta;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2059858,
+          43.7812974
+        ]
+      },
+      "properties": {
+        "name": "Cinzia",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7812974,
+        "longitude": 11.2059858,
+        "address": "Via dell'Argingrosso, 65",
+        "cuisine": "italian_pizza;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2054603,
+          43.777525
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.777525,
+        "longitude": 11.2054603,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2222088,
+          43.7971201
+        ]
+      },
+      "properties": {
+        "name": "Cartabianca Cafè",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7971201,
+        "longitude": 11.2222088,
+        "address": "Viale Alessandro Guidoni, 75b, Firenze",
+        "opening_hours": "Mo-Fr 07:00-20:30; Sa 07:00-20:30; Su 07:00-13:30",
+        "phone": "+39 055 419 739",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.232987,
+          43.7863639
+        ]
+      },
+      "properties": {
+        "name": "Nee Bahia Cafè",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7863639,
+        "longitude": 11.232987,
+        "address": "Via Claudio Monteverdi, 29, Firenze",
+        "opening_hours": "Mo-Fr 07:00-21:00",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2234177,
+          43.7901436
+        ]
+      },
+      "properties": {
+        "name": "Bar pasticceria Silvano e Valentino",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7901436,
+        "longitude": 11.2234177,
+        "opening_hours": "Mo-Sa 05:15-19:30; Su 05:15-13:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2211525,
+          43.7928731
+        ]
+      },
+      "properties": {
+        "name": "Baraka Cafè",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7928731,
+        "longitude": 11.2211525,
+        "address": "Via di Novoli, 75, Firenze",
+        "phone": "+39 055 431495",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2927746,
+          43.8064851
+        ]
+      },
+      "properties": {
+        "name": "Vinandro Vino e Desco Molle",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8064851,
+        "longitude": 11.2927746,
+        "opening_hours": "Mo-Fr 12:00-14:30,19:00-22:15; Sa,Su 12:00-15:00,19:00-22:15",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.322898,
+          43.7834055
+        ]
+      },
+      "properties": {
+        "name": "La Sosta del Rossellino",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7834055,
+        "longitude": 11.322898,
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3221695,
+          43.7833167
+        ]
+      },
+      "properties": {
+        "name": "La Capponcina di Settignano",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7833167,
+        "longitude": 11.3221695,
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2119915,
+          43.7936062
+        ]
+      },
+      "properties": {
+        "name": "Pizzeria Pizzaman",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7936062,
+        "longitude": 11.2119915,
+        "opening_hours": "Mo-Su 12:00-15:00, 18:00-23:00",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1948557,
+          43.7965839
+        ]
+      },
+      "properties": {
+        "name": "Osteria Pronto e via",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7965839,
+        "longitude": 11.1948557,
+        "address": "Via di Peretola, 44 R, Firenze",
+        "phone": "+39055311077",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1858298,
+          43.7941266
+        ]
+      },
+      "properties": {
+        "name": "Trattoria da Burde",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7941266,
+        "longitude": 11.1858298,
+        "address": "Via Pistoiese, 154, Firenze",
+        "phone": "+39 055 317206",
+        "website": "https://landing.vinodaburde.eu/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1965489,
+          43.7984823
+        ]
+      },
+      "properties": {
+        "name": "Pasticceria Saida",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7984823,
+        "longitude": 11.1965489,
+        "address": "via Pratese, 51-2",
+        "phone": "+390553024998",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2212713,
+          43.8187552
+        ]
+      },
+      "properties": {
+        "name": "Il trippaio Elvis",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8187552,
+        "longitude": 11.2212713,
+        "cuisine": "regional;lampredotto",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2064,
+          43.8251862
+        ]
+      },
+      "properties": {
+        "name": "The Carbonariano's",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8251862,
+        "longitude": 11.2064,
+        "phone": "+39 0553952570",
+        "cuisine": "italian;carbonara",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2422436,
+          43.8044194
+        ]
+      },
+      "properties": {
+        "name": "Le Panche",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8044194,
+        "longitude": 11.2422436,
+        "opening_hours": "Mo 12:00-14:00; Tu-Sa 12:00-14:00,19:00-24:00; Su 19:00-24:00",
+        "phone": "+39 055431922",
+        "website": "https://pizzeria-le-panche.eatbu.com",
+        "cuisine": "diner;pizza;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2453407,
+          43.8032606
+        ]
+      },
+      "properties": {
+        "name": "100% Ramen",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 43.8032606,
+        "longitude": 11.2453407,
+        "address": "Largo A. Brambilla, Firenze",
+        "cuisine": "ramen",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2953135,
+          43.7780735
+        ]
+      },
+      "properties": {
+        "name": "Pasticceria L'Incontro",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7780735,
+        "longitude": 11.2953135,
+        "address": "Via Domenico Maria Manni, 100r, Firenze",
+        "phone": "+39055608860",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2938602,
+          43.7769422
+        ]
+      },
+      "properties": {
+        "name": "Bar 10 e lode",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7769422,
+        "longitude": 11.2938602,
+        "address": "Via S. Giovanni Gualberto, 2r, Firenze",
+        "phone": "+393299691183",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3046375,
+          43.7938514
+        ]
+      },
+      "properties": {
+        "name": "Fattoria di Maiano",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 43.7938514,
+        "longitude": 11.3046375,
+        "address": "Via Cave di Maiano, 2",
+        "phone": "+39 055 59432",
+        "cuisine": "regional",
+        "popularity": 0
+      }
     }
   ]
 }
