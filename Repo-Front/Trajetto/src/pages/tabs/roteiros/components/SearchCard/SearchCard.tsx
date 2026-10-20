@@ -8,10 +8,9 @@ import { styles } from './styles';
 
 type Props = {
   onPressSearch: () => void;
-  onPressChip: () => void;
 };
 
-export default function SearchCard({ onPressSearch, onPressChip }: Props) {
+export default function SearchCard({ onPressSearch }: Props) {
   const { t } = useTranslation('roteiros');
   const colors = useColors();
   const s = styles(colors);
@@ -35,12 +34,6 @@ export default function SearchCard({ onPressSearch, onPressChip }: Props) {
           />
         </View>
       </Pressable>
-
-      <View style={s.chipRow}>
-        <Pressable style={s.chip} onPress={onPressChip}>
-          <Text style={s.chipText}>{t('destinations.rome')}</Text>
-        </Pressable>
-      </View>
     </View>
   );
 }

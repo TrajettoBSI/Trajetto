@@ -31,25 +31,4 @@ export const styles = (colors: AppColors) =>
       color: colors.textSubtle,
       paddingVertical: 9,
     },
-    chipRow: {
-      flexDirection: 'row',
-      gap: 8,
-      marginTop: 12,
-    },
-    chip: {
-      backgroundColor: colors.white,
-      borderRadius: 16,
-      paddingHorizontal: 14,
-      paddingVertical: 6,
-      shadowColor: colors.shadow,
-      shadowOpacity: 0.12,
-      shadowRadius: 4,
-      shadowOffset: { width: 0, height: 1 },
-      elevation: 1,
-    },
-    chipText: {
-      fontSize: 12,
-      fontFamily: 'Inter-Bold',
-      color: colors.text,
-    },
   });

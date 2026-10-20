@@ -121,15 +121,7 @@ export default function Roteiros() {
         scrollEventThrottle={16}
       >
         {!selectMode && (
-          <SearchCard
-            onPressSearch={() => openGenerate()}
-            onPressChip={() => openGenerate({
-              lat: 41.9028,
-              lng: 12.4964,
-              shortName: t('destinations.rome'),
-              displayName: `${t('destinations.rome')}, ${t('destinations.italy')}`,
-            })}
-          />
+          <SearchCard onPressSearch={() => openGenerate()} />
         )}
 
         {!selectMode && (

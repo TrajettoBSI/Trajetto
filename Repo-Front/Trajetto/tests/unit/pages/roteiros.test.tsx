@@ -139,7 +139,7 @@ describe('meus roteiros', () => {
     expect(mockRouter.push).toHaveBeenCalledWith('/ExploreScreen');
   });
 
-  it('abre o fluxo de gerar quando chega pelo atalho e pelo chip de Roma', async () => {
+  it('abre o fluxo de gerar quando chega pelo atalho e pela busca de destinos', async () => {
     setMockParams({ openGenerate: '1' });
     svc.getAllItineraries.mockResolvedValue([roteiro(1, true)]);
     await render(<Roteiros />);
@@ -147,8 +147,16 @@ describe('meus roteiros', () => {
     expect(await screen.findByText('Novo Roteiro')).toBeTruthy();
     expect(mockRouter.setParams).toHaveBeenCalledWith({ openGenerate: undefined });
     await fireEvent.press(screen.getByText('✕'));
-    await fireEvent.press(screen.getAllByText('Roma')[0]);
-    expect((await screen.findAllByText('Roma, Itália')).length).toBeGreaterThan(0);
+    await fireEvent.press(screen.getByPlaceholderText('Buscar destinos'));
+    expect(await screen.findByText('Novo Roteiro')).toBeTruthy();
+  });
+
+  it('a busca de destinos nao tem atalho de uma cidade so', async () => {
+    svc.getAllItineraries.mockResolvedValue([roteiro(1, true)]);
+    await render(<Roteiros />);
+
+    expect(await screen.findByText('Qual o próximo roteiro?')).toBeTruthy();
+    expect(screen.queryByText('Roma')).toBeNull();
   });
 });
 
