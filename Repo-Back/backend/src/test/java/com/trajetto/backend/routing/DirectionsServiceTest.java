@@ -1,5 +1,7 @@
 package com.trajetto.backend.routing;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.trajetto.backend.itinerary.data.CityCatalog;
 import com.trajetto.backend.routing.dto.CoordinateDTO;
 import com.trajetto.backend.routing.dto.DirectionsRequestDTO;
 import com.trajetto.backend.routing.dto.DirectionsResponseDTO;
@@ -33,7 +35,8 @@ class DirectionsServiceTest {
     @BeforeEach
     void setUp() {
         MockServerRestTemplateCustomizer customizer = new MockServerRestTemplateCustomizer();
-        service = new DirectionsService(new RestTemplateBuilder(customizer), "chave-de-teste");
+        service = new DirectionsService(new RestTemplateBuilder(customizer), "chave-de-teste",
+                new CityCatalog(new ObjectMapper()));
         server = customizer.getServer();
     }
 

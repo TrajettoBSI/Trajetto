@@ -2,8 +2,8 @@ package com.trajetto.backend.itinerary.service;
 
 import com.trajetto.backend.itinerary.data.BookingLinks;
 import com.trajetto.backend.itinerary.data.PlaceXid;
-import com.trajetto.backend.itinerary.data.RomePlacesLoader;
-import com.trajetto.backend.itinerary.data.RomePlacesLoader.RomePlace;
+import com.trajetto.backend.itinerary.data.CityCatalog;
+import com.trajetto.backend.itinerary.data.CityCatalog.CatalogPlace;
 import com.trajetto.backend.itinerary.dto.AddPlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
@@ -49,7 +49,9 @@ public class ItineraryService {
 
     private static final Set<String> NOT_FOR_EVENING = Set.of("historic_archaeological_site", "historic_ruins", "marketplace");
 
-    private static final Pattern EVENING_NAME = Pattern.compile("^(Piazza|Piazzale|Fontana|Scalinata|Ponte|Campo)\\b");
+    /** Pracas, fontes e pontes, que valem a visita a noite -- nos idiomas das cidades do catalogo. */
+    private static final Pattern EVENING_NAME = Pattern.compile(
+            "^(Piazza|Piazzale|Fontana|Scalinata|Ponte|Campo|Place|Pont|Fontaine|Praça|Largo|Plaza)\\b|\\bSquare$");
 
     private static final LocalTime EVENING = LocalTime.of(20, 0);
 
@@ -69,7 +71,7 @@ public class ItineraryService {
     private UserRepository userRepository;
 
     @Autowired
-    private RomePlacesLoader romePlacesLoader;
+    private CityCatalog cityCatalog;
 
     @Autowired
     private PlaceRepository placeRepository;
@@ -156,12 +158,14 @@ public class ItineraryService {
 
         Random random = new Random();
 
-        record ScoredPlace(RomePlace place, double score) {}
+        record ScoredPlace(CatalogPlace place, double score) {}
 
-        List<RomePlace> candidates = romePlacesLoader.getPlaces().stream()
+        // O roteiro sai da cidade do catalogo mais perto do ponto de partida.
+        CityCatalog.City city = cityCatalog.nearestCity(req.getStartLatitude(), req.getStartLongitude());
+        List<CatalogPlace> candidates = cityCatalog.placesOf(city).stream()
                 .filter(place -> !MEAL_CATEGORIES.contains(place.category()))
                 .toList();
-        double maxPopularity = Math.log1p(candidates.stream().mapToInt(RomePlace::popularity).max().orElse(0));
+        double maxPopularity = Math.log1p(candidates.stream().mapToInt(CatalogPlace::popularity).max().orElse(0));
 
         List<ScoredPlace> scored = candidates.stream().map(place -> {
             double popularityScore = maxPopularity == 0 ? 0 : 6.0 * Math.log1p(place.popularity()) / maxPopularity;
@@ -182,12 +186,12 @@ public class ItineraryService {
         long eveningSlots = schedule.stream().flatMap(List::stream).filter(t -> !t.isBefore(EVENING)).count();
         long totalSlots = schedule.stream().mapToLong(List::size).sum();
 
-        List<RomePlace> ranked = scored.stream().map(ScoredPlace::place).toList();
+        List<CatalogPlace> ranked = scored.stream().map(ScoredPlace::place).toList();
         Set<String> chosen = new HashSet<>();
-        List<RomePlace> eveningPool = pick(ranked.stream().filter(this::isEveningPlace).toList(), eveningSlots, chosen);
-        List<RomePlace> dayPool = pick(ranked, totalSlots - eveningSlots, chosen);
+        List<CatalogPlace> eveningPool = pick(ranked.stream().filter(this::isEveningPlace).toList(), eveningSlots, chosen);
+        List<CatalogPlace> dayPool = pick(ranked, totalSlots - eveningSlots, chosen);
 
-        record DayStop(RomePlace place, LocalDate date, LocalTime time) {}
+        record DayStop(CatalogPlace place, LocalDate date, LocalTime time) {}
         List<DayStop> ordered = new ArrayList<>();
         for (int day = 0; day < days; day++) {
             double curLat = req.getStartLatitude();
@@ -195,10 +199,10 @@ public class ItineraryService {
             LocalDate date = startDate.plusDays(day);
             for (LocalTime time : schedule.get(day)) {
                 boolean evening = !time.isBefore(EVENING);
-                List<RomePlace> pool = evening && !eveningPool.isEmpty() ? eveningPool : dayPool;
+                List<CatalogPlace> pool = evening && !eveningPool.isEmpty() ? eveningPool : dayPool;
                 // Um museu fechado as segundas nao entra na segunda: entre os ja escolhidos, vale o
                 // mais perto que esteja aberto no horario; se nenhum estiver, busca outro na lista geral.
-                Optional<RomePlace> next = nearestOpen(pool, curLat, curLng, date, time);
+                Optional<CatalogPlace> next = nearestOpen(pool, curLat, curLng, date, time);
                 if (next.isPresent()) {
                     pool.remove(next.get());
                 } else {
@@ -224,7 +228,7 @@ public class ItineraryService {
 
         List<PlaceModel> places = new ArrayList<>();
         for (int i = 0; i < ordered.size(); i++) {
-            RomePlace rp = ordered.get(i).place();
+            CatalogPlace rp = ordered.get(i).place();
             PlaceModel p = new PlaceModel();
             p.setXid(PlaceXid.of(rp.name()));
             p.setName(rp.name());
@@ -251,9 +255,9 @@ public class ItineraryService {
         itineraryRepository.saveAllAndFlush(ativos);
     }
 
-    private List<RomePlace> pick(List<RomePlace> ranked, long limit, Set<String> chosen) {
-        List<RomePlace> picked = new ArrayList<>();
-        for (RomePlace place : ranked) {
+    private List<CatalogPlace> pick(List<CatalogPlace> ranked, long limit, Set<String> chosen) {
+        List<CatalogPlace> picked = new ArrayList<>();
+        for (CatalogPlace place : ranked) {
             if (picked.size() == limit) break;
             if (markChosen(place, chosen)) picked.add(place);
         }
@@ -261,7 +265,7 @@ public class ItineraryService {
     }
 
     /** Marca o lugar como usado no roteiro; devolve {@code false} se ele (ou o mesmo lugar com outro nome) ja estava. */
-    private boolean markChosen(RomePlace place, Set<String> chosen) {
+    private boolean markChosen(CatalogPlace place, Set<String> chosen) {
         boolean repeated = chosen.contains(PlaceXid.of(place.name()))
                 || (!place.wikidata().isBlank() && chosen.contains(place.wikidata()));
         if (repeated) return false;
@@ -270,7 +274,7 @@ public class ItineraryService {
         return true;
     }
 
-    private List<RomePlace> reserve(List<RomePlace> ranked, Set<String> chosen, boolean evening) {
+    private List<CatalogPlace> reserve(List<CatalogPlace> ranked, Set<String> chosen, boolean evening) {
         return ranked.stream()
                 .filter(place -> !evening || isEveningPlace(place))
                 .filter(place -> !chosen.contains(PlaceXid.of(place.name()))
@@ -279,13 +283,13 @@ public class ItineraryService {
                 .toList();
     }
 
-    private Optional<RomePlace> nearestOpen(List<RomePlace> pool, double lat, double lng, LocalDate date, LocalTime time) {
+    private Optional<CatalogPlace> nearestOpen(List<CatalogPlace> pool, double lat, double lng, LocalDate date, LocalTime time) {
         return pool.stream()
                 .filter(place -> OpeningHours.statusAt(place.openingHours(), date, time, VISIT_LENGTH) != Status.CLOSED)
                 .min(Comparator.comparingDouble(place -> haversineKm(lat, lng, place.latitude(), place.longitude())));
     }
 
-    private boolean isEveningPlace(RomePlace place) {
+    private boolean isEveningPlace(CatalogPlace place) {
         return !NOT_FOR_EVENING.contains(place.category())
                 && ("viewpoint".equals(place.category()) || EVENING_NAME.matcher(place.name()).find());
     }
@@ -462,7 +466,7 @@ public class ItineraryService {
                 ? LocalTime.parse(req.getEstimatedVisitTime())
                 : nextFreeTime(itinerary, date);
 
-        Optional<RomePlace> catalog = romePlacesLoader.getPlaces().stream()
+        Optional<CatalogPlace> catalog = cityCatalog.getPlaces().stream()
                 .filter(rp -> PlaceXid.of(rp.name()).equals(req.getXid()) || rp.name().equalsIgnoreCase(req.getName()))
                 .findFirst();
 
@@ -473,9 +477,9 @@ public class ItineraryService {
         place.setLatitude(req.getLatitude());
         place.setLongitude(req.getLongitude());
         place.setCategory(req.getCategory() != null ? req.getCategory()
-                : catalog.map(RomePlace::category).filter(c -> !c.isBlank()).orElse(null));
-        place.setOpeningHours(catalog.map(RomePlace::openingHours).filter(h -> !h.isBlank()).orElse(null));
-        place.setFee(catalog.map(RomePlace::fee).filter(f -> !f.isBlank()).orElse(null));
+                : catalog.map(CatalogPlace::category).filter(c -> !c.isBlank()).orElse(null));
+        place.setOpeningHours(catalog.map(CatalogPlace::openingHours).filter(h -> !h.isBlank()).orElse(null));
+        place.setFee(catalog.map(CatalogPlace::fee).filter(f -> !f.isBlank()).orElse(null));
         place.setVisitDate(date);
         place.setEstimatedVisitTime(time);
         place.setOrderIndex(itinerary.getPlaces().stream().mapToInt(PlaceModel::getOrderIndex).max().orElse(-1) + 1);

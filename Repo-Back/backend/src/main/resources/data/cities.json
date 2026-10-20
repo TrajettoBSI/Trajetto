@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "roma",
+    "name": "Roma",
+    "country": "IT",
+    "latitude": 41.9028,
+    "longitude": 12.4964,
+    "radiusKm": 25,
+    "timezone": "Europe/Rome",
+    "localCuisine": [
+      "italian",
+      "local",
+      "romana",
+      "italian_pizza",
+      "steak_house"
+    ]
+  },
+  {
+    "slug": "curitiba",
+    "name": "Curitiba",
+    "country": "BR",
+    "latitude": -25.4284,
+    "longitude": -49.2733,
+    "radiusKm": 15,
+    "timezone": "America/Sao_Paulo",
+    "localCuisine": [
+      "brazilian",
+      "regional",
+      "barbecue",
+      "steak_house",
+      "churrasco"
+    ]
+  },
+  {
+    "slug": "paris",
+    "name": "Paris",
+    "country": "FR",
+    "latitude": 48.8566,
+    "longitude": 2.3522,
+    "radiusKm": 12,
+    "timezone": "Europe/Paris",
+    "localCuisine": [
+      "french",
+      "regional",
+      "local"
+    ]
+  },
+  {
+    "slug": "toquio",
+    "name": "Tóquio",
+    "country": "JP",
+    "latitude": 35.6812,
+    "longitude": 139.7671,
+    "radiusKm": 18,
+    "timezone": "Asia/Tokyo",
+    "localCuisine": [
+      "japanese",
+      "sushi",
+      "ramen",
+      "tempura",
+      "udon",
+      "soba",
+      "yakitori",
+      "kaiseki"
+    ],
+    "preferEnglishName": true
+  },
+  {
+    "slug": "nova-york",
+    "name": "Nova York",
+    "country": "US",
+    "latitude": 40.758,
+    "longitude": -73.9855,
+    "radiusKm": 15,
+    "timezone": "America/New_York",
+    "localCuisine": [
+      "american",
+      "steak_house",
+      "new_american",
+      "seafood"
+    ]
+  }
+]
