@@ -11,7 +11,11 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.IdentityHashMap;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 import java.util.Optional;
 
 /**
@@ -58,9 +62,17 @@ public class CityCatalog {
             int popularity
     ) {}
 
+    /**
+     * Pontos a menos disso um do outro sao a mesma visita: o OSM cadastra a Piramide, o
+     * Palacio e o Museu do Louvre separados, mas quem vai la faz uma parada so.
+     */
+    public static final double SAME_VISIT_KM = 0.1;
+
     private final ObjectMapper objectMapper;
     private final List<City> cities;
     private final List<CatalogPlace> places;
+    private final Map<CatalogPlace, List<CatalogPlace>> sameVisit = new IdentityHashMap<>();
+    private final Map<String, CatalogPlace> byName = new HashMap<>();
 
     public CityCatalog(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
@@ -70,6 +82,17 @@ public class CityCatalog {
             loaded.addAll(loadPlaces(city));
         }
         this.places = Collections.unmodifiableList(loaded);
+        for (City city : cities) {
+            List<CatalogPlace> ofCity = placesOf(city);
+            for (CatalogPlace p : ofCity) {
+                sameVisit.put(p, ofCity.stream()
+                        .filter(o -> haversineKm(p.latitude(), p.longitude(), o.latitude(), o.longitude()) <= SAME_VISIT_KM)
+                        .toList());
+            }
+        }
+        for (CatalogPlace p : places) {
+            byName.putIfAbsent(p.name().toLowerCase(Locale.ROOT), p);
+        }
     }
 
     private List<City> loadCities() {
@@ -136,6 +159,16 @@ public class CityCatalog {
 
     public List<CatalogPlace> placesOf(City city) {
         return places.stream().filter(p -> p.city().equals(city.slug())).toList();
+    }
+
+    /** O proprio ponto e os outros do catalogo no mesmo lugar (ver {@link #SAME_VISIT_KM}). */
+    public List<CatalogPlace> sameVisit(CatalogPlace place) {
+        return sameVisit.getOrDefault(place, List.of(place));
+    }
+
+    /** Ponto do catalogo com esse nome, sem diferenciar maiusculas. */
+    public Optional<CatalogPlace> findByName(String name) {
+        return name == null ? Optional.empty() : Optional.ofNullable(byName.get(name.toLowerCase(Locale.ROOT)));
     }
 
     /**

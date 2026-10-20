@@ -36,6 +36,7 @@ interface TicketCardProps {
         note?: string | null;
         openAtVisit?: boolean | null;
         bookingUrl?: string | null;
+        ticketUrl?: string | null;
     };
     idx: number;
     color: string;
@@ -153,6 +154,17 @@ export function TicketCard({
                         <Text style={ticketStyles.bookingText}>{t('ticketCard.booking')}</Text>
                         <Ionicons name="open-outline" size={14} color={colors.warningBannerText} />
                     </TouchableOpacity>
+                ) : place.ticketUrl ? (
+                    <TouchableOpacity
+                        style={ticketStyles.ticketRow}
+                        onPress={() => Linking.openURL(place.ticketUrl!).catch(() => {})}
+                        accessibilityRole="link"
+                        accessibilityHint={t('ticketCard.ticketsHint')}
+                    >
+                        <Ionicons name="ticket-outline" size={15} color={colors.primary} />
+                        <Text style={ticketStyles.ticketText}>{t('ticketCard.tickets')}</Text>
+                        <Ionicons name="open-outline" size={14} color={colors.primary} />
+                    </TouchableOpacity>
                 ) : null}
 
                 <TouchableOpacity
@@ -243,6 +255,18 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
         borderColor: colors.warningBannerBorder,
     },
     bookingText: { flex: 1, fontSize: 12, fontWeight: '700', color: colors.warningBannerText },
+    // Ingresso pago sem reserva obrigatoria: informacao, nao alerta.
+    ticketRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        marginTop: 10,
+        paddingHorizontal: 10,
+        paddingVertical: 8,
+        borderRadius: 10,
+        backgroundColor: colors.backgroundMuted,
+    },
+    ticketText: { flex: 1, fontSize: 12, fontWeight: '700', color: colors.primary },
 
     // ── Cabeçalho ──
     header: {

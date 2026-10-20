@@ -29,7 +29,9 @@
     "editNote": "Edit note",
     "closedAtVisit": "Closed at this time. Change the time or the stop.",
     "booking": "Book ahead on the official website",
-    "bookingHint": "Opens the official booking website"
+    "bookingHint": "Opens the official booking website",
+    "tickets": "Tickets and hours on the official website",
+    "ticketsHint": "Opens the place's official website"
   },
   "exportPdfDoc": {
     "estimatedTime": "Estimated Time:",

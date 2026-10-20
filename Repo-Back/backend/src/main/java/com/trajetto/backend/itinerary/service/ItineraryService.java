@@ -190,9 +190,12 @@ public class ItineraryService {
         long totalSlots = schedule.stream().mapToLong(List::size).sum();
 
         List<CatalogPlace> ranked = scored.stream().map(ScoredPlace::place).toList();
+        // De dia, cada lugar vira a sua visita principal: quem pontuou com a Piramide do Louvre
+        // ganha o Museu do Louvre. A noite fica com os pontos como sao (o mirante, nao o museu).
+        List<CatalogPlace> visits = ranked.stream().map(this::mainVisit).distinct().toList();
         Set<String> chosen = new HashSet<>();
         List<CatalogPlace> eveningPool = pick(ranked.stream().filter(this::isEveningPlace).toList(), eveningSlots, chosen);
-        List<CatalogPlace> dayPool = pick(ranked, totalSlots - eveningSlots, chosen);
+        List<CatalogPlace> dayPool = pick(visits, totalSlots - eveningSlots, chosen);
 
         record DayStop(CatalogPlace place, LocalDate date, LocalTime time) {}
         List<DayStop> ordered = new ArrayList<>();
@@ -209,7 +212,7 @@ public class ItineraryService {
                 if (next.isPresent()) {
                     pool.remove(next.get());
                 } else {
-                    next = nearestOpen(reserve(ranked, chosen, evening), curLat, curLng, date, time);
+                    next = nearestOpen(reserve(evening ? ranked : visits, chosen, evening), curLat, curLng, date, time);
                     next.ifPresent(place -> markChosen(place, chosen));
                 }
                 if (next.isEmpty()) continue;
@@ -267,14 +270,28 @@ public class ItineraryService {
         return picked;
     }
 
-    /** Marca o lugar como usado no roteiro; devolve {@code false} se ele (ou o mesmo lugar com outro nome) ja estava. */
+    /**
+     * Marca o lugar como usado no roteiro, junto com os pontos no mesmo lugar (o Louvre leva
+     * a Piramide); devolve {@code false} se ele (ou o mesmo lugar com outro nome) ja estava.
+     */
     private boolean markChosen(CatalogPlace place, Set<String> chosen) {
         boolean repeated = chosen.contains(PlaceXid.of(place.name()))
                 || (!place.wikidata().isBlank() && chosen.contains(place.wikidata()));
         if (repeated) return false;
-        chosen.add(PlaceXid.of(place.name()));
-        if (!place.wikidata().isBlank()) chosen.add(place.wikidata());
+        for (CatalogPlace same : cityCatalog.sameVisit(place)) {
+            chosen.add(PlaceXid.of(same.name()));
+            if (!same.wikidata().isBlank()) chosen.add(same.wikidata());
+        }
         return true;
+    }
+
+    /** O ponto mais conhecido entre os que ficam no mesmo lugar -- e ele que vale a parada. */
+    private CatalogPlace mainVisit(CatalogPlace place) {
+        CatalogPlace main = place;
+        for (CatalogPlace same : cityCatalog.sameVisit(place)) {
+            if (!MEAL_CATEGORIES.contains(same.category()) && same.popularity() > main.popularity()) main = same;
+        }
+        return main;
     }
 
     private List<CatalogPlace> reserve(List<CatalogPlace> ranked, Set<String> chosen, boolean evening) {
@@ -590,6 +607,10 @@ public class ItineraryService {
         dto.setVisitDate(model.getVisitDate());
         dto.setOpenAtVisit(openAtVisit(model));
         dto.setBookingUrl(BookingLinks.forPlace(model.getName()));
+        if (dto.getBookingUrl() == null && "yes".equals(model.getFee())) {
+            dto.setTicketUrl(cityCatalog.findByName(model.getName())
+                    .map(CatalogPlace::website).filter(w -> !w.isBlank()).orElse(null));
+        }
         return dto;
     }
 

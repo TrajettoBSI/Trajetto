@@ -34,6 +34,17 @@ class CityCatalogTest {
     }
 
     @Test
+    @DisplayName("A Piramide e o Museu do Louvre ficam no mesmo lugar; a Torre Eiffel e o Champ de Mars, nao")
+    void mesmoLugar() {
+        var piramide = catalog.findByName("Pyramide du Louvre").orElseThrow();
+        var museu = catalog.findByName("Musée du Louvre").orElseThrow();
+        var torre = catalog.findByName("Tour Eiffel").orElseThrow();
+        var campo = catalog.findByName("Champ de Mars").orElseThrow();
+        assertTrue(catalog.sameVisit(piramide).contains(museu));
+        assertFalse(catalog.sameVisit(torre).contains(campo));
+    }
+
+    @Test
     @DisplayName("A cidade escolhida e a mais perto da posicao, mesmo fora do raio de todas")
     void cidadeMaisProxima() {
         assertEquals("roma", catalog.nearestCity(41.9009, 12.4833).slug());

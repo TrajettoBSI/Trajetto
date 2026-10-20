@@ -26,4 +26,7 @@ public class PlaceResponseDTO {
 
     /** Site oficial de reserva, quando a atracao exige reservar antes. */
     private String bookingUrl;
+
+    /** Site oficial do lugar pago que nao exige reserva -- onde ver preco e comprar o ingresso. */
+    private String ticketUrl;
 }

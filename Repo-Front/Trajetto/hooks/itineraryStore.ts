@@ -17,6 +17,8 @@ export interface Places {
   note?: string | null;
   openAtVisit?: boolean | null;
   bookingUrl?: string | null;
+  /** Site oficial do lugar pago que nao exige reserva: onde ver preco e comprar o ingresso. */
+  ticketUrl?: string | null;
 }
 
 export interface Itinerary {
