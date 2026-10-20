@@ -24,7 +24,12 @@
         "wikipedia": "en:Great Pyramid of Giza",
         "fee": "yes",
         "popularity": 126,
-        "site": "Q12508"
+        "site": "Q12508",
+        "names": {
+          "pt": "Pirâmide de Quéops",
+          "en": "Great Pyramid of Giza",
+          "es": "Gran pirámide de Giza"
+        }
       }
     },
     {
@@ -49,7 +54,12 @@
         "wikidata": "Q12508",
         "wikipedia": "en:Giza pyramid complex",
         "popularity": 92,
-        "site": "Q12508"
+        "site": "Q12508",
+        "names": {
+          "pt": "pirâmides de Gizé",
+          "en": "Giza pyramid complex",
+          "es": "pirámides de Guiza"
+        }
       }
     },
     {
@@ -73,7 +83,12 @@
         "wikidata": "Q130958",
         "wikipedia": "ar:أبو الهول",
         "popularity": 85,
-        "site": "Q12508"
+        "site": "Q12508",
+        "names": {
+          "pt": "Esfinge de Gizé",
+          "en": "The Great Sphinx",
+          "es": "Gran Esfinge de Guiza"
+        }
       }
     },
     {
@@ -97,7 +112,12 @@
         "longitude": 31.3079279,
         "wikidata": "Q191687",
         "wikipedia": "ar:أون",
-        "popularity": 63
+        "popularity": 63,
+        "names": {
+          "pt": "Heliópolis",
+          "en": "Heliopolis",
+          "es": "Heliópolis"
+        }
       }
     },
     {
@@ -124,7 +144,12 @@
         "wikidata": "Q201219",
         "wikipedia": "ar:المتحف المصري",
         "fee": "yes",
-        "popularity": 63
+        "popularity": 63,
+        "names": {
+          "pt": "Museu Egípcio",
+          "en": "Egyptian Museum",
+          "es": "Museo Egipcio de El Cairo"
+        }
       }
     },
     {
@@ -149,7 +174,12 @@
         "wikidata": "Q192418",
         "wikipedia": "en:Pyramid of Djoser",
         "popularity": 56,
-        "site": "Q192418"
+        "site": "Q192418",
+        "names": {
+          "pt": "Pirâmide de Djoser",
+          "en": "Pyramid of Djoser",
+          "es": "pirámide escalonada de Zoser"
+        }
       }
     },
     {
@@ -172,7 +202,12 @@
         "longitude": 31.2132845,
         "wikidata": "Q220276",
         "wikipedia": "en:Third Dynasty of Egypt",
-        "popularity": 54
+        "popularity": 54,
+        "names": {
+          "pt": "III dinastia egípcia",
+          "en": "Third Dynasty of Egypt",
+          "es": "Dinastía III de Egipto"
+        }
       }
     },
     {
@@ -198,7 +233,12 @@
         "wikipedia": "en:Pyramid of Khafre",
         "fee": "yes",
         "popularity": 53,
-        "site": "Q12508"
+        "site": "Q12508",
+        "names": {
+          "pt": "Pirâmide de Quéfren",
+          "en": "Pyramid of Khafre",
+          "es": "Pirámide de Kefrén"
+        }
       }
     },
     {
@@ -222,7 +262,12 @@
         "longitude": 31.2357444,
         "wikidata": "Q12061",
         "wikipedia": "en:Tahrir Square",
-        "popularity": 53
+        "popularity": 53,
+        "names": {
+          "pt": "Praça Tahrir",
+          "en": "Tahrir Square",
+          "es": "Plaza de la Liberación"
+        }
       }
     },
     {
@@ -247,7 +292,12 @@
         "website": "https://www.visit-gem.com",
         "wikidata": "Q2583681",
         "wikipedia": "en:Grand Egyptian Museum",
-        "popularity": 47
+        "popularity": 47,
+        "names": {
+          "pt": "Grande Museu Egípcio",
+          "en": "Grand Egyptian Museum",
+          "es": "Gran Museo Egipcio"
+        }
       }
     },
     {
@@ -272,7 +322,12 @@
         "wikidata": "Q238623",
         "wikipedia": "en:Giza East Field",
         "popularity": 46,
-        "site": "Q12508"
+        "site": "Q12508",
+        "names": {
+          "pt": "Pirâmide de Miquerinos",
+          "en": "Pyramid of Menkaure",
+          "es": "Pirámide de Micerino"
+        }
       }
     },
     {
@@ -296,7 +351,11 @@
         "longitude": 31.2496089,
         "wikidata": "Q915413",
         "wikipedia": "en:Mosque of Ibn Tulun",
-        "popularity": 46
+        "popularity": 46,
+        "names": {
+          "en": "Mosque of Ibn Tulun",
+          "es": "Mezquita de Ibn Tulun"
+        }
       }
     },
     {
@@ -320,7 +379,12 @@
         "longitude": 31.262676,
         "wikidata": "Q312342",
         "wikipedia": "ar:الجامع الأزهر",
-        "popularity": 41
+        "popularity": 41,
+        "names": {
+          "pt": "Mesquita de al-Azhar",
+          "en": "al-Azhar Mosque",
+          "es": "Mezquita de Al-Azhar"
+        }
       }
     },
     {
@@ -345,7 +409,12 @@
         "wikidata": "Q1988240",
         "wikipedia": "de:Zitadelle von Saladin",
         "popularity": 37,
-        "site": "Q1988240"
+        "site": "Q1988240",
+        "names": {
+          "pt": "Cidadela do Cairo",
+          "en": "Cairo Citadel",
+          "es": "Ciudadela de El Cairo"
+        }
       }
     },
     {
@@ -367,11 +436,15 @@
         ],
         "latitude": 30.0290726,
         "longitude": 31.2596163,
-        "address": "شارع صلاح الدين, Cairo",
+        "address": "شارع صلاح الدين",
         "wikidata": "Q652046",
         "wikipedia": "en:Mosque of Muhammad Ali",
         "popularity": 35,
-        "site": "Q1988240"
+        "site": "Q1988240",
+        "names": {
+          "en": "Muhammad Ali Mosque",
+          "es": "Mezquita de Muhammad Alí"
+        }
       }
     },
     {
@@ -396,7 +469,12 @@
         "wikidata": "Q1478801",
         "wikipedia": "en:Pyramid of Unas",
         "popularity": 33,
-        "site": "Q192418"
+        "site": "Q192418",
+        "names": {
+          "pt": "Pirâmide de Unas",
+          "en": "Pyramid of Unas",
+          "es": "Pirámide de Unis"
+        }
       }
     },
     {
@@ -419,7 +497,12 @@
         "longitude": 31.2024288,
         "wikidata": "Q1609149",
         "wikipedia": "en:Pyramid of Neferirkare",
-        "popularity": 31
+        "popularity": 31,
+        "names": {
+          "pt": "Pirâmide de Neferirkaré",
+          "en": "Pyramid of Neferirkare",
+          "es": "Pirámide de Neferirkara"
+        }
       }
     },
     {
@@ -443,7 +526,11 @@
         "longitude": 31.256313,
         "wikidata": "Q1430119",
         "wikipedia": "en:Mosque-Madrasa of Sultan Hasan",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "en": "Mosque-Madrassa of Sultan Hassan",
+          "es": "Mezquita-Medersa de Sultan Hassan"
+        }
       }
     },
     {
@@ -466,7 +553,12 @@
         "longitude": 31.161262,
         "wikidata": "Q740691",
         "wikipedia": "en:Layer Pyramid",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Pirâmide estratificada",
+          "en": "Layer Pyramid",
+          "es": "Pirámide estratificada"
+        }
       }
     },
     {
@@ -490,7 +582,12 @@
         "longitude": 31.2033926,
         "wikidata": "Q131820",
         "wikipedia": "en:Pyramid of Sahure",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Pirâmide de Sahuré",
+          "en": "Pyramid of Sahure",
+          "es": "Pirámide de Sahura"
+        }
       }
     },
     {
@@ -515,7 +612,12 @@
         "wikidata": "Q1570082",
         "wikipedia": "en:Pyramid of Userkaf",
         "popularity": 28,
-        "site": "Q192418"
+        "site": "Q192418",
+        "names": {
+          "pt": "Pirâmide de Userkaf",
+          "en": "Pyramid of Userkaf",
+          "es": "Pirámide de Userkaf"
+        }
       }
     },
     {
@@ -537,10 +639,15 @@
         ],
         "latitude": 30.04603,
         "longitude": 31.2243127,
-        "address": "البرج, Cairo",
+        "address": "البرج",
         "wikidata": "Q614684",
         "wikipedia": "en:Cairo Tower",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Torre do Cairo",
+          "en": "Cairo Tower",
+          "es": "Torre del Cairo"
+        }
       }
     },
     {
@@ -564,7 +671,12 @@
         "longitude": 31.2136489,
         "wikidata": "Q135318",
         "wikipedia": "en:Buried Pyramid",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Pirâmide de Sekhemkhet",
+          "en": "Buried Pyramid",
+          "es": "Complejo funerario de Sejemjet"
+        }
       }
     },
     {
@@ -587,7 +699,12 @@
         "longitude": 31.0749381,
         "wikidata": "Q1569654",
         "wikipedia": "en:Pyramid of Djedefre",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Pirâmide de Djedefré",
+          "en": "Pyramid of Djedefre",
+          "es": "Pirámide de Dyedefra"
+        }
       }
     },
     {
@@ -612,7 +729,11 @@
         "wikidata": "Q2422298",
         "wikipedia": "en:Hanging Church",
         "popularity": 26,
-        "site": "Q3438824"
+        "site": "Q3438824",
+        "names": {
+          "en": "Hanging Church",
+          "es": "iglesia Colgante"
+        }
       }
     },
     {
@@ -635,7 +756,12 @@
         "latitude": 30.0545133,
         "longitude": 31.2637637,
         "wikidata": "Q775838",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Mesquita de al-Hakim",
+          "en": "Al-Hakim Mosque",
+          "es": "Mezquita Al-Hakim"
+        }
       }
     },
     {
@@ -659,7 +785,10 @@
         "longitude": 31.2632106,
         "wikidata": "Q2279688",
         "wikipedia": "en:Al-Hussein Mosque",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "en": "Al-Hussein Mosque"
+        }
       }
     },
     {
@@ -683,7 +812,12 @@
         "longitude": 31.2474606,
         "wikidata": "Q307747",
         "wikipedia": "en:Abdeen_Palace",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "pt": "Palácio de Abdeen",
+          "en": "Abdeen Palace",
+          "es": "Palacio de Abdeen"
+        }
       }
     },
     {
@@ -706,7 +840,11 @@
         "longitude": 31.2036312,
         "wikidata": "Q1751693",
         "wikipedia": "en:Pyramid of Nyuserre",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "en": "Pyramid of Nyuserre Ini",
+          "es": "Pirámide de Nyuserra"
+        }
       }
     },
     {
@@ -730,7 +868,12 @@
         "longitude": 31.2570977,
         "wikidata": "Q311441",
         "wikipedia": "ar:مسجد الرفاعي",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Mesquita de Al-Rifa'i",
+          "en": "Al-Rifa'i Mosque",
+          "es": "Mezquita de Al Rifa'i"
+        }
       }
     },
     {
@@ -754,7 +897,11 @@
         "longitude": 31.2603623,
         "wikidata": "Q622784",
         "wikipedia": "en:Aqsunqur Mosque",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "en": "Aqsunqur Mosque",
+          "es": "Mezquita de Aqsunqur"
+        }
       }
     },
     {
@@ -780,7 +927,11 @@
         "website": "https://nmec.gov.eg/",
         "wikidata": "Q29017001",
         "wikipedia": "en:National Museum of Egyptian Civilization",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "en": "National Museum of Egyptian Civilization",
+          "es": "Museo Nacional de la Civilización Egipcia"
+        }
       }
     },
     {
@@ -803,7 +954,12 @@
         "latitude": 30.042589,
         "longitude": 31.2240324,
         "wikidata": "Q597617",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Ópera do Cairo",
+          "en": "Cairo Opera House",
+          "es": "Ópera de El Cairo"
+        }
       }
     },
     {
@@ -827,7 +983,12 @@
         "longitude": 31.2217551,
         "wikidata": "Q1278166",
         "wikipedia": "en:Pyramid of Teti",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Pirâmide de Teti",
+          "en": "Pyramid of Teti",
+          "es": "Pirámide de Teti"
+        }
       }
     },
     {
@@ -850,7 +1011,12 @@
         "longitude": 31.2016947,
         "wikidata": "Q240579",
         "wikipedia": "en:Pyramid of Neferefre",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Pirâmide de Nedefefré",
+          "en": "Pyramid of Neferefre",
+          "es": "Pirámide de Neferefra"
+        }
       }
     },
     {
@@ -877,7 +1043,12 @@
         "wikipedia": "en:Coptic Museum",
         "wheelchair": "yes",
         "popularity": 21,
-        "site": "Q3438824"
+        "site": "Q3438824",
+        "names": {
+          "pt": "Museu Copta",
+          "en": "Coptic Museum",
+          "es": "Museo Copto"
+        }
       }
     },
     {
@@ -902,7 +1073,11 @@
         "wikidata": "Q2474653",
         "wikipedia": "en:Ben Ezra Synagogue",
         "popularity": 21,
-        "site": "Q3438824"
+        "site": "Q3438824",
+        "names": {
+          "en": "Ben Ezra Synagogue",
+          "es": "Sinagoga Ben Ezra"
+        }
       }
     },
     {
@@ -926,7 +1101,12 @@
         "longitude": 31.2527223,
         "wikidata": "Q3330629",
         "wikipedia": "en:Museum of Islamic Art, Cairo",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Museu de Arte Islâmica",
+          "en": "Museum of Islamic Art",
+          "es": "Museo de Arte Islámico de El Cairo"
+        }
       }
     },
     {
@@ -951,7 +1131,12 @@
         "wikidata": "Q3438824",
         "wikipedia": "ar:القاهرة القبطية",
         "popularity": 19,
-        "site": "Q3438824"
+        "site": "Q3438824",
+        "names": {
+          "pt": "Cairo Copta",
+          "en": "Coptic Cairo",
+          "es": "Barrio copto de El Cairo"
+        }
       }
     },
     {
@@ -976,7 +1161,11 @@
         "wikidata": "Q1707580",
         "wikipedia": "en:Al-Nasir Muhammad Mosque",
         "popularity": 19,
-        "site": "Q1988240"
+        "site": "Q1988240",
+        "names": {
+          "en": "Al-Nasir Muhammad Mosque",
+          "es": "Mezquita de An-Nassir Muhammad"
+        }
       }
     },
     {
@@ -1000,7 +1189,11 @@
         "longitude": 31.2577817,
         "wikidata": "Q2041270",
         "wikipedia": "en:Bab Zuweila",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "en": "Bab Zuweila",
+          "es": "Bab Zuweila"
+        }
       }
     },
     {
@@ -1024,7 +1217,10 @@
         "longitude": 31.3302538,
         "wikidata": "Q808618",
         "wikipedia": "en:Baron Empain Palace",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "en": "Baron Empain Palace"
+        }
       }
     },
     {
@@ -1049,7 +1245,11 @@
         "wikidata": "Q4255568",
         "wikipedia": "en:Church of St. George (Cairo)",
         "popularity": 17,
-        "site": "Q3438824"
+        "site": "Q3438824",
+        "names": {
+          "en": "Church of St. George",
+          "es": "iglesia de San Jorge"
+        }
       }
     },
     {
@@ -1072,7 +1272,11 @@
         "longitude": 31.2189899,
         "wikidata": "Q1536118",
         "wikipedia": "en:Pyramid of Pepi I",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "en": "mortuary complex of Pepi I",
+          "es": "Pirámide de Pepi I"
+        }
       }
     },
     {
@@ -1097,7 +1301,11 @@
         "wikidata": "Q2965718",
         "wikipedia": "en:Saints Sergius and Bacchus Church",
         "popularity": 16,
-        "site": "Q3438824"
+        "site": "Q3438824",
+        "names": {
+          "en": "Saints Sergius and Bacchus Church",
+          "es": "iglesia de los santos Sergio y Baco (El Cairo)"
+        }
       }
     },
     {
@@ -1121,7 +1329,11 @@
         "longitude": 31.2298343,
         "wikidata": "Q1973889",
         "wikipedia": "en:Qasr El Nil Bridge",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Qasr al-Nil Bridge",
+          "es": "puente Qasr al-Nil"
+        }
       }
     },
     {
@@ -1147,7 +1359,11 @@
         "wikidata": "Q286446",
         "wikipedia": "en:Al-Azhar Park",
         "fee": "yes",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Al-Azhar Park",
+          "es": "Parque Al-Azhar"
+        }
       }
     },
     {
@@ -1171,7 +1387,11 @@
         "longitude": 31.2575067,
         "wikidata": "Q838360",
         "wikipedia": "en:Mosque of Sultan al-Muayyad",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Sultan Al-Muayyad Mosque",
+          "es": "Mezquita de Sultan Al-Muayyad"
+        }
       }
     },
     {
@@ -1195,7 +1415,11 @@
         "longitude": 31.2620213,
         "wikidata": "Q287283",
         "wikipedia": "en:Aqmar Mosque",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Al-Aqmar Mosque",
+          "es": "Mezquita Aqmar"
+        }
       }
     },
     {
@@ -1218,7 +1442,12 @@
         "longitude": 31.2095902,
         "wikidata": "Q287375",
         "wikipedia": "en:Serapeum of Saqqara",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Serapeu de Sacará",
+          "en": "Serapeum of Saqqara",
+          "es": "Serapeum de Saqqara"
+        }
       }
     },
     {
@@ -1242,7 +1471,12 @@
         "longitude": 31.2607724,
         "wikidata": "Q1237010",
         "fee": "yes",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Complexo Calavuno",
+          "en": "Al-Mansour Qalawun Complex (Madrassa, Tomb and Hospital)",
+          "es": "Complejo de Qalawun"
+        }
       }
     },
     {
@@ -1267,7 +1501,11 @@
         "wikidata": "Q1277350",
         "wikipedia": "en:Madrasa of al-Nasir Muhammad",
         "fee": "yes",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Madrassa of Al-Nasir Muhammad",
+          "es": "Medersa de Al-Nasir Muhammad"
+        }
       }
     },
     {
@@ -1292,7 +1530,11 @@
         "wikidata": "Q12241714",
         "wikipedia": "en:Mosque-Madrasa of Sultan Barquq",
         "fee": "yes",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "Mosque-Madrassa of Sultan Barquq",
+          "es": "Mezquita-Medersa de Sultan Barquq"
+        }
       }
     },
     {
@@ -1316,7 +1558,11 @@
         "longitude": 31.2681813,
         "wikidata": "Q6702951",
         "wikipedia": "en:Lulua Mosque",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Lulua Mosque",
+          "es": "Mezquita de Lulua"
+        }
       }
     },
     {
@@ -1339,7 +1585,11 @@
         "longitude": 31.151556,
         "wikidata": "Q785696",
         "wikipedia": "en:Unfinished Northern Pyramid of Zawyet El Aryan",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Unfinished Northern Pyramid of Zawyet el'Aryan",
+          "es": "pirámida inacabada de Zawyet el-Aryan"
+        }
       }
     },
     {
@@ -1362,7 +1612,11 @@
         "longitude": 31.1991712,
         "wikidata": "Q2301943",
         "wikipedia": "ar:معبد الشمس لأوسكارف",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Sun temple of Userkaf",
+          "es": "Templo solar de Userkaf"
+        }
       }
     },
     {
@@ -1387,7 +1641,11 @@
         "website": "http://www.gizazoo-eg.com/",
         "wikidata": "Q2509245",
         "wikipedia": "en:Giza Zoo",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Giza Zoo",
+          "es": "Zoológico de Guiza"
+        }
       }
     },
     {
@@ -1412,7 +1670,10 @@
         "wikidata": "Q11936598",
         "wikipedia": "en:Sulayman Pasha Mosque",
         "popularity": 13,
-        "site": "Q1988240"
+        "site": "Q1988240",
+        "names": {
+          "en": "Sulayman Pasha Mosque"
+        }
       }
     },
     {
@@ -1435,7 +1696,11 @@
         "longitude": 31.274915,
         "wikidata": "Q12242839",
         "wikipedia": "en:Funerary complex of Sultan Qaytbay",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Sultan Qaytbay Complex",
+          "es": "Complexe del Sultan Qaytbay"
+        }
       }
     },
     {
@@ -1459,7 +1724,11 @@
         "longitude": 31.2229255,
         "wikidata": "Q821146",
         "wikipedia": "en:Headless Pyramid",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Headless Pyramid",
+          "es": "Pirámide sin cabeza"
+        }
       }
     },
     {
@@ -1485,7 +1754,11 @@
         "wikipedia": "en:Gayer-Anderson Museum",
         "fee": "yes",
         "wheelchair": "no",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Gayer-Anderson Museum",
+          "es": "Museo Gayer-Anderson"
+        }
       }
     },
     {
@@ -1509,7 +1782,10 @@
         "longitude": 31.2634595,
         "wikidata": "Q1535255",
         "wikipedia": "en:Mosque of al-Zahir Baybars",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Mosque of al-Zahir Baybars"
+        }
       }
     },
     {
@@ -1531,10 +1807,14 @@
         ],
         "latitude": 30.0355567,
         "longitude": 31.2195836,
-        "address": "شارع النيل, 80, Cairo",
+        "address": "شارع النيل, 80",
         "wikidata": "Q4115728",
         "wikipedia": "en:Mohamed Mahmoud Khalil Museum",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Museu Mohamed Mamoud Khalil",
+          "en": "Mohamed Mahmoud Khalil Museum"
+        }
       }
     },
     {
@@ -1557,7 +1837,11 @@
         "longitude": 31.2237624,
         "wikidata": "Q15179391",
         "wikipedia": "ru:Собор Всех Святых (Каир)",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "All Saints' Cathedral, Cairo",
+          "es": "Catedral de Todos los Santos"
+        }
       }
     },
     {
@@ -1581,7 +1865,10 @@
         "longitude": 31.2577817,
         "wikidata": "Q12242780",
         "wikipedia": "en:Al-Mahmoudia Mosque",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Mosque of al-Mahmudiya"
+        }
       }
     },
     {
@@ -1606,7 +1893,10 @@
         "wikidata": "Q4116059",
         "wikipedia": "en:Al-Gawhara Palace",
         "popularity": 11,
-        "site": "Q1988240"
+        "site": "Q1988240",
+        "names": {
+          "en": "Al-Gawhara Palace"
+        }
       }
     },
     {
@@ -1629,7 +1919,11 @@
         "latitude": 30.0069316,
         "longitude": 31.2250004,
         "wikidata": "Q1992209",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Nilometer in Rhoda Island",
+          "es": "Nilómetro en la isla Roda"
+        }
       }
     },
     {
@@ -1653,7 +1947,11 @@
         "longitude": 31.2576432,
         "wikidata": "Q43033418",
         "wikipedia": "en:Mahmud al-Kurdi Mosque",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Mahmud al-Kurdi Mosque",
+          "es": "Mezquita de Mahmud al-Kurdi"
+        }
       }
     },
     {
@@ -1677,7 +1975,11 @@
         "longitude": 31.2437489,
         "wikidata": "Q2919031",
         "wikipedia": "en:Sha'ar Hashamayim Synagogue (Cairo)",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Sha'ar Hashamayim Synagogue",
+          "es": "Sinagoga Sha'ar Hashamayim"
+        }
       }
     },
     {
@@ -1701,7 +2003,10 @@
         "longitude": 31.2091708,
         "wikidata": "Q2420309",
         "wikipedia": "en:Agricultural Museum, Egypt",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Agricultural Museum"
+        }
       }
     },
     {
@@ -1725,7 +2030,10 @@
         "longitude": 31.2829422,
         "wikidata": "Q12242788",
         "wikipedia": "en:Al-Nour Mosque (Cairo)",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Al-Nour Mosque"
+        }
       }
     },
     {
@@ -1749,7 +2057,10 @@
         "longitude": 31.2944102,
         "wikidata": "Q40377967",
         "wikipedia": "en:Gamal Abdel Nasser Mosque",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Gamal Abdel Nasser Mosque"
+        }
       }
     },
     {
@@ -1774,7 +2085,11 @@
         "address": "شارع محمد صبري ابو علم, 36, القاهرة",
         "wikidata": "Q28519128",
         "wikipedia": "en:Annunciation Cathedral, Cairo",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Annunciation Cathedral, Cairo",
+          "es": "Catedral de la Anunciación"
+        }
       }
     },
     {
@@ -1798,7 +2113,12 @@
         "longitude": 31.2683725,
         "wikidata": "Q4022325",
         "wikipedia": "en:Juyushi Mosque",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Mesquita Juyushi",
+          "en": "Juyushi Mosque",
+          "es": "Mezquita de Juyushi"
+        }
       }
     },
     {
@@ -1822,7 +2142,11 @@
         "longitude": 31.3445034,
         "wikidata": "Q5052324",
         "wikipedia": "en:Our Lady of Fatima Cathedral, Cairo",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "cathedral of Our Lady of Fatima",
+          "es": "Catedral de Nuestra Señora de Fátima"
+        }
       }
     },
     {
@@ -1846,7 +2170,11 @@
         "longitude": 31.2580189,
         "wikidata": "Q3397019",
         "wikipedia": "en:Al-Salih Tala'i Mosque",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Al-Salih Tala'i Mosque",
+          "es": "Mezquita de Al-Salih Tala'i"
+        }
       }
     },
     {
@@ -1873,7 +2201,10 @@
         "phone": "+2 02 37483452",
         "wikidata": "Q4991033",
         "wikipedia": "en:Orman Garden",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Orman Garden"
+        }
       }
     },
     {
@@ -1897,7 +2228,11 @@
         "longitude": 31.3138006,
         "wikidata": "Q2919312",
         "wikipedia": "en:Unknown Soldier Memorial (Egypt)",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Unknown Soldier Memorial",
+          "es": "Monumento al soldado desconocido"
+        }
       }
     },
     {
@@ -1919,9 +2254,12 @@
         ],
         "latitude": 30.0658596,
         "longitude": 31.2662423,
-        "address": "ميدان السكاكيني, Cairo",
+        "address": "ميدان السكاكيني",
         "wikidata": "Q10981930",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Sakakini Palace"
+        }
       }
     },
     {
@@ -1945,7 +2283,10 @@
         "longitude": 31.1941213,
         "wikidata": "Q2009417",
         "wikipedia": "en:Abu Gorab",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Sun temple of Nyuserre"
+        }
       }
     },
     {
@@ -1969,7 +2310,11 @@
         "longitude": 31.2614085,
         "wikidata": "Q7404512",
         "wikipedia": "en:Salihiyya Madrasa",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Salihiyya Madrasa",
+          "es": "Mausoleo de Al-Saleh Nagm Al-Din Ayyub"
+        }
       }
     },
     {
@@ -1993,7 +2338,11 @@
         "longitude": 31.2119188,
         "wikidata": "Q1907814",
         "wikipedia": "en:Mastaba of Ti",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Mastaba of Ti",
+          "es": "Mastaba de Ti"
+        }
       }
     },
     {
@@ -2018,7 +2367,10 @@
         "wikidata": "Q7401018",
         "wikipedia": "en:Saint Barbara Church in Coptic Cairo",
         "popularity": 9,
-        "site": "Q3438824"
+        "site": "Q3438824",
+        "names": {
+          "en": "Saint Barbara Church in Coptic Cairo"
+        }
       }
     },
     {
@@ -2041,7 +2393,11 @@
         "longitude": 31.20167,
         "wikidata": "Q1574230",
         "wikipedia": "en:Unfinished Pyramid of Abusir",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Unfinished Pyramid of Abusir",
+          "es": "Pirámide inacabada de Abusir"
+        }
       }
     },
     {
@@ -2065,7 +2421,10 @@
         "longitude": 31.2579829,
         "wikidata": "Q12241698",
         "wikipedia": "en:Mosque of Qani-Bay",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Qanibay Al Ramah Mosque"
+        }
       }
     },
     {
@@ -2090,7 +2449,10 @@
         "wikidata": "Q12204334",
         "wikipedia": "en:Sinan Pasha Mosque (Cairo)",
         "wheelchair": "no",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Sinan Pasha Mosque"
+        }
       }
     },
     {
@@ -2114,7 +2476,10 @@
         "longitude": 31.2619061,
         "wikidata": "Q12242812",
         "wikipedia": "en:Mosque-Sabil of Sulayman Agha al-Silahdar",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Mosque-Sabil of Sulayman Agha al-Silahdar"
+        }
       }
     },
     {
@@ -2138,7 +2503,10 @@
         "longitude": 31.2061459,
         "wikidata": "Q1527638",
         "wikipedia": "en:Gisr el-Mudir",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Gisr el-Mudir"
+        }
       }
     },
     {
@@ -2162,7 +2530,11 @@
         "longitude": 31.2616572,
         "wikidata": "Q4896257",
         "wikipedia": "en:Beshtak Palace",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Beshtak Palace",
+          "es": "Beshtak Palacio"
+        }
       }
     },
     {
@@ -2187,7 +2559,10 @@
         "wikidata": "Q5348411",
         "wikipedia": "en:Egyptian Geological Museum",
         "wheelchair": "no",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Egyptian Geological Museum"
+        }
       }
     },
     {
@@ -2211,7 +2586,10 @@
         "longitude": 31.2595315,
         "wikidata": "Q12242840",
         "wikipedia": "en:Amir Qijmas al-Ishaqi Mosque",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Amir Qijmas al-Ishaqi Mosque"
+        }
       }
     },
     {
@@ -2235,7 +2613,10 @@
         "longitude": 31.2743853,
         "wikidata": "Q20413592",
         "wikipedia": "en:Moussa Dar'i Synagogue",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Moussa Dar'i Synagogue"
+        }
       }
     },
     {
@@ -2259,7 +2640,10 @@
         "longitude": 31.2229447,
         "wikidata": "Q6933506",
         "wikipedia": "en:Mukhtar Museum",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Mukhtar Museum"
+        }
       }
     },
     {
@@ -2283,7 +2667,10 @@
         "longitude": 31.3069523,
         "wikidata": "Q6741397",
         "wikipedia": "en:6th of October Panorama",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "6th of October Panorama"
+        }
       }
     },
     {
@@ -2306,7 +2693,10 @@
         "latitude": 30.0259186,
         "longitude": 31.2521512,
         "wikidata": "Q23975588",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Mausoleum of Shajarat al-Durr"
+        }
       }
     },
     {
@@ -2329,7 +2719,11 @@
         "longitude": 31.2239814,
         "wikidata": "Q997397",
         "wikipedia": "en:Bubasteum",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Bubasteion of Saqqara",
+          "es": "Bubasteion"
+        }
       }
     },
     {
@@ -2351,7 +2745,10 @@
         "longitude": 31.2158727,
         "wikidata": "Q6753132",
         "wikipedia": "ar:تمثال نهضة مصر",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Renascence of Egypt"
+        }
       }
     },
     {
@@ -2375,7 +2772,10 @@
         "longitude": 31.2175989,
         "wikidata": "Q372088",
         "wikipedia": "en:Ahmed Shawki Museum",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Ahmed Shawki Museum"
+        }
       }
     },
     {
@@ -2400,7 +2800,10 @@
         "wikidata": "Q5046116",
         "wikipedia": "ar:متحف المركبات الملكية",
         "popularity": 6,
-        "site": "Q1988240"
+        "site": "Q1988240",
+        "names": {
+          "en": "Carriage Museum"
+        }
       }
     },
     {
@@ -2424,7 +2827,10 @@
         "longitude": 31.2308439,
         "wikidata": "Q7401898",
         "wikipedia": "en:Saint Mercurius Church in Coptic Cairo",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Saint Mercurius Church in Coptic Cairo"
+        }
       }
     },
     {
@@ -2448,7 +2854,10 @@
         "longitude": 31.2248842,
         "wikidata": "Q7881638",
         "wikipedia": "en:Umm Kulthum Museum",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Umm Kulthum Museum"
+        }
       }
     },
     {
@@ -2473,7 +2882,10 @@
         "opening_hours": "Sa-Fr 09:00-16:30; Tu off",
         "wikidata": "Q6392353",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Aquarium Grotto Garden"
+        }
       }
     },
     {
@@ -2497,7 +2909,10 @@
         "longitude": 31.3025996,
         "wikidata": "Q4165397",
         "wikipedia": "en:Koubbeh Palace",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Koubbeh Palace"
+        }
       }
     },
     {
@@ -2522,7 +2937,10 @@
         "longitude": 31.2570877,
         "wikidata": "Q12246605",
         "wikipedia": "ar:ميدان صلاح الدين",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Salah al-Din Square"
+        }
       }
     },
     {
@@ -2546,7 +2964,10 @@
         "longitude": 31.0596458,
         "wikidata": "Q12211738",
         "wikipedia": "ar:دريم بارك",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Dream Park"
+        }
       }
     },
     {
@@ -2572,7 +2993,10 @@
         "wikidata": "Q6940902",
         "wikipedia": "ar:متحف الخزف الإسلامي",
         "wheelchair": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Museum of Islamic Ceramics"
+        }
       }
     },
     {
@@ -2596,7 +3020,11 @@
         "longitude": 31.2576185,
         "wikidata": "Q23975559",
         "wikipedia": "ar:زاوية وسبيل الناصر فرج بن برقوق",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Zawiya-Sabil Faraj Ibn Barquq",
+          "es": "Zaouia y sabil de Farag ibn Barquq"
+        }
       }
     },
     {
@@ -2645,7 +3073,10 @@
         "longitude": 31.2340081,
         "wikidata": "Q25452804",
         "wikipedia": "ar:مسجد عمر مكرم",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Omar Makram mosque"
+        }
       }
     },
     {
@@ -2670,7 +3101,10 @@
         "wikidata": "Q28715270",
         "wikipedia": "ar:باب العزب (القاهرة)",
         "popularity": 3,
-        "site": "Q1988240"
+        "site": "Q1988240",
+        "names": {
+          "en": "Bab al-Azab"
+        }
       }
     },
     {
@@ -2694,7 +3128,10 @@
         "longitude": 31.2574366,
         "wikidata": "Q25452754",
         "wikipedia": "ar:مسجد ومدرسة إينال اليوسفي",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mosque of Inal al-Yusufi"
+        }
       }
     },
     {
@@ -2719,7 +3156,10 @@
         "wikidata": "Q2309639",
         "wikipedia": "de:Sphinxtempel von Gizeh (Altes Reich)",
         "popularity": 2,
-        "site": "Q12508"
+        "site": "Q12508",
+        "names": {
+          "en": "Sphinx Temple of Giza"
+        }
       }
     },
     {
@@ -2740,7 +3180,10 @@
         "latitude": 30.0470017,
         "longitude": 31.232889,
         "wikidata": "Q131138357",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Auguste Mariette’s Memorial"
+        }
       }
     },
     {
@@ -2786,7 +3229,10 @@
         "latitude": 30.0309903,
         "longitude": 31.2529984,
         "wikidata": "Q126913354",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Shaykhu Mosque"
+        }
       }
     },
     {
@@ -2809,7 +3255,10 @@
         "latitude": 30.0459758,
         "longitude": 31.260127,
         "wikidata": "Q126914593",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Mausoleum-Sabil-Kuttab Al-Ghouri"
+        }
       }
     },
     {
@@ -2833,7 +3282,10 @@
         "longitude": 31.13811,
         "wikidata": "Q18008311",
         "popularity": 1,
-        "site": "Q12508"
+        "site": "Q12508",
+        "names": {
+          "en": "Temple of Amenhotep II (Giza)"
+        }
       }
     },
     {
@@ -2856,7 +3308,10 @@
         "latitude": 29.8758839,
         "longitude": 31.2214951,
         "wikidata": "Q99913494",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Mastaba of Kagemni"
+        }
       }
     },
     {
@@ -2898,7 +3353,7 @@
         ],
         "latitude": 30.049967,
         "longitude": 31.2613757,
-        "address": "El Muez St., 121, Cairo",
+        "address": "El Muez St., 121",
         "opening_hours": "09:00-16:30",
         "phone": "0227865227",
         "website": "https://www.facebook.com/EgyptianTextileMuseum",
@@ -2947,7 +3402,7 @@
         ],
         "latitude": 30.0146046,
         "longitude": 31.2766469,
-        "address": "طريق المقطم, Cairo",
+        "address": "طريق المقطم",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -2970,7 +3425,7 @@
         ],
         "latitude": 30.1260972,
         "longitude": 31.3192333,
-        "address": "شارع جنينات الشريف, Cairo",
+        "address": "شارع جنينات الشريف",
         "opening_hours": "Sa-Th",
         "popularity": 0
       }
@@ -2994,7 +3449,10 @@
         "latitude": 30.0640916,
         "longitude": 31.2157202,
         "wikidata": "Q42310529",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Umm Kulthum"
+        }
       }
     },
     {
@@ -3129,7 +3587,10 @@
         "latitude": 30.0423713,
         "longitude": 31.2330885,
         "wikidata": "Q126916442",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Simón Bolívar statue in Cairo"
+        }
       }
     },
     {
@@ -3244,7 +3705,7 @@
         ],
         "latitude": 29.9454471,
         "longitude": 31.0550594,
-        "address": "شارع الفردوس, 20, Cairo",
+        "address": "شارع الفردوس, 20",
         "opening_hours": "Mo-Su 09:00-22:00",
         "phone": "015332340;15246",
         "website": "https://www.bim.eg/",
@@ -3318,7 +3779,10 @@
         "latitude": 30.0304381,
         "longitude": 31.253016,
         "wikidata": "Q126913472",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Khanqah of Shaykhu"
+        }
       }
     },
     {
@@ -3342,7 +3806,10 @@
         "longitude": 31.2399209,
         "address": "شارع محمد صبري ابو علم, 34, القاهرة",
         "wikidata": "Q126947669",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "El-Rahma Mosque"
+        }
       }
     },
     {
@@ -3481,7 +3948,10 @@
         "latitude": 29.8817323,
         "longitude": 31.2152874,
         "wikidata": "Q136281122",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Sacred Animal Necropolis at Saqqara"
+        }
       }
     },
     {
@@ -3672,7 +4142,7 @@
         ],
         "latitude": 30.0591691,
         "longitude": 31.2241754,
-        "address": "شارع 26 يوليو, Cairo",
+        "address": "شارع 26 يوليو",
         "opening_hours": "24/7",
         "phone": "+201223692004",
         "website": "https://www.maisonthomas.net/",
@@ -3698,7 +4168,7 @@
         ],
         "latitude": 30.0465833,
         "longitude": 31.2381966,
-        "address": "عطفه مصطفى ابو هيف, Cairo",
+        "address": "عطفه مصطفى ابو هيف",
         "opening_hours": "Mo-Su 10:00-24:00",
         "phone": "+20223900784",
         "website": "https://felfelaegypt.com/menu/",
@@ -3725,7 +4195,7 @@
         ],
         "latitude": 30.0594437,
         "longitude": 31.2242493,
-        "address": "شارع اسحاق يعقوب, Cairo",
+        "address": "شارع اسحاق يعقوب",
         "opening_hours": "Mo-Su 13:00-01:00",
         "phone": "+20227359640",
         "website": "https://www.abouelsid.com/",
@@ -3752,7 +4222,7 @@
         ],
         "latitude": 30.0401088,
         "longitude": 31.2112717,
-        "address": "الدقى, Cairo",
+        "address": "الدقى",
         "opening_hours": "Mo-Su 09:00-00:30",
         "phone": "+20-2-3335-4671",
         "cuisine": "seafood",
@@ -3777,7 +4247,7 @@
         ],
         "latitude": 30.0595562,
         "longitude": 31.2240956,
-        "address": "شارع اسحاق يعقوب, Cairo",
+        "address": "شارع اسحاق يعقوب",
         "opening_hours": "Mo-Su 12:00-01:00",
         "phone": "Reservations (Little O's)   2736 5609  or   0100 415 5756  Reservations (O's Cellar)   2736 7404  or   0121 224 4062  Delivery Hotline  0122 221 6050",
         "website": "https://ospasta.com/",
@@ -3932,7 +4402,7 @@
         ],
         "latitude": 30.0350517,
         "longitude": 31.2291239,
-        "address": "شارع كورنيش النيل, Cairo",
+        "address": "شارع كورنيش النيل",
         "opening_hours": "Mo-Su 09:00-02:00",
         "phone": "+201117701113",
         "website": "https://www.ilnilo.com/",
@@ -3985,7 +4455,7 @@
         ],
         "latitude": 30.0534882,
         "longitude": 31.2434997,
-        "address": "شارع زكريا احمد, Cairo",
+        "address": "شارع زكريا احمد",
         "opening_hours": "Mo-Su 12:00-24:00",
         "phone": "+20225771888",
         "cuisine": "kebab;arab",
@@ -4087,7 +4557,7 @@
         ],
         "latitude": 30.0678913,
         "longitude": 31.2209509,
-        "address": "أحمد حشمت, 35, Cairo",
+        "address": "أحمد حشمت, 35",
         "opening_hours": "06:59-23:00",
         "phone": "+20 2 27352205",
         "popularity": 0
@@ -4161,7 +4631,7 @@
         ],
         "latitude": 30.0480831,
         "longitude": 31.2365628,
-        "address": "شارع محمود بسيوني, Cairo",
+        "address": "شارع محمود بسيوني",
         "opening_hours": "Mo-Su 10:00-01:00",
         "phone": "+201055570001",
         "website": "https://linktr.ee/mazeejhotels",
@@ -4186,7 +4656,7 @@
         ],
         "latitude": 30.0509234,
         "longitude": 31.2443485,
-        "address": "شارع محمد فريد, Cairo",
+        "address": "شارع محمد فريد",
         "opening_hours": "Mo-Su 10:00-23:00",
         "phone": "+201283222983",
         "website": "https://www.samaklabanstudio.com/",
@@ -4211,7 +4681,7 @@
         ],
         "latitude": 30.0610061,
         "longitude": 31.2192828,
-        "address": "شارع الصالح ايوب, 16, Cairo",
+        "address": "شارع الصالح ايوب, 16",
         "opening_hours": "Mo-Su 08:00-01:00",
         "website": "http://www.zoobaeats.com/",
         "cuisine": "regional",
@@ -4384,7 +4854,7 @@
         ],
         "latitude": 30.0510204,
         "longitude": 31.242725,
-        "address": "شارع عدلي, 26, Cairo",
+        "address": "شارع عدلي, 26",
         "opening_hours": "10:00-22:00",
         "phone": "01551109792",
         "website": "https://www.facebook.com/craftedhome.eg",
@@ -4439,7 +4909,10 @@
         "opening_hours": "Mo-Su 07:00-01:00",
         "phone": "+20223911871",
         "wikidata": "Q6757577",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Café Groppi"
+        }
       }
     },
     {
@@ -4460,7 +4933,7 @@
         ],
         "latitude": 30.0162032,
         "longitude": 31.2128602,
-        "address": "شارع مراد, Cairo",
+        "address": "شارع مراد",
         "opening_hours": "24/7",
         "phone": "023773338",
         "popularity": 0
@@ -4510,7 +4983,7 @@
         ],
         "latitude": 30.0565291,
         "longitude": 31.2226921,
-        "address": "شارع الشيخ المرصفي, Cairo",
+        "address": "شارع الشيخ المرصفي",
         "opening_hours": "Mo-Su 08:00-22:30",
         "website": "https://www.holmcafe.com/",
         "cuisine": "cake;coffee_shop",
@@ -4535,7 +5008,7 @@
         ],
         "latitude": 30.0604663,
         "longitude": 31.2204665,
-        "address": "شارع الكامل محمد, Cairo",
+        "address": "شارع الكامل محمد",
         "opening_hours": "Mo-Su 09:00-24:00",
         "phone": "+201050009887",
         "popularity": 0
@@ -4559,7 +5032,7 @@
         ],
         "latitude": 30.0353939,
         "longitude": 31.2313715,
-        "address": "شارع اتحاد المحامين العرب, Cairo",
+        "address": "شارع اتحاد المحامين العرب",
         "opening_hours": "Mo-Su 09:00-23:00",
         "phone": "+201000681543",
         "website": "https://www.roomart.space/",
@@ -4608,7 +5081,7 @@
         ],
         "latitude": 30.0640138,
         "longitude": 31.2267157,
-        "address": "شارع كورنيش النيل, GATE 9 ,B10 , MAMSHA AHL MISR, Cairo",
+        "address": "شارع كورنيش النيل, GATE 9 ,B10 , MAMSHA AHL MISR",
         "opening_hours": "24/7",
         "phone": "+201020966441",
         "website": "https://asperogroup.com/",

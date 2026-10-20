@@ -24,7 +24,12 @@
         "wikipedia": "el:Παρθενώνας",
         "wheelchair": "limited",
         "popularity": 137,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "pt": "Partenon",
+          "en": "Parthenon",
+          "es": "Partenón"
+        }
       }
     },
     {
@@ -50,7 +55,12 @@
         "wikipedia": "el:Ακρόπολη Αθηνών",
         "wheelchair": "yes",
         "popularity": 97,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "pt": "Acrópole de Atenas",
+          "en": "Acropolis of Athens",
+          "es": "Acrópolis de Atenas"
+        }
       }
     },
     {
@@ -74,7 +84,12 @@
         "longitude": 23.7083807,
         "wikidata": "Q193093",
         "wikipedia": "en:Platonic Academy",
-        "popularity": 69
+        "popularity": 69,
+        "names": {
+          "pt": "Academia de Platão",
+          "en": "Platonic Academy",
+          "es": "Academia de Atenas"
+        }
       }
     },
     {
@@ -98,7 +113,12 @@
         "longitude": 23.7230956,
         "wikidata": "Q202487",
         "wikipedia": "el:Άρειος Πάγος (λόφος)",
-        "popularity": 56
+        "popularity": 56,
+        "names": {
+          "pt": "Areópago",
+          "en": "Areopagus",
+          "es": "Areópago"
+        }
       }
     },
     {
@@ -122,7 +142,12 @@
         "longitude": 23.7245447,
         "wikidata": "Q844930",
         "wikipedia": "el:Αρχαία Αθήνα",
-        "popularity": 55
+        "popularity": 55,
+        "names": {
+          "pt": "Atenas",
+          "en": "Classical Athens",
+          "es": "Antigua Atenas"
+        }
       }
     },
     {
@@ -148,7 +173,12 @@
         "wikipedia": "el:Ερέχθειο",
         "wheelchair": "no",
         "popularity": 50,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "pt": "Erecteion",
+          "en": "Erechtheion",
+          "es": "Erecteión"
+        }
       }
     },
     {
@@ -175,7 +205,12 @@
         "website": "http://www.panathenaicstadium.gr/Default.aspx?tabid=84&language=en-US",
         "wikidata": "Q208811",
         "wikipedia": "en:Panathenaic Stadium",
-        "popularity": 47
+        "popularity": 47,
+        "names": {
+          "pt": "Estádio Panathinaiko",
+          "en": "Panathenaic Stadium",
+          "es": "Estadio Panathinaikó"
+        }
       }
     },
     {
@@ -198,7 +233,12 @@
         "longitude": 23.6359256,
         "wikidata": "Q500444",
         "wikipedia": "el:Μονή Δαφνίου",
-        "popularity": 45
+        "popularity": 45,
+        "names": {
+          "pt": "Monastério Daphni",
+          "en": "Daphni Monastery",
+          "es": "Monasterio de Dafni"
+        }
       }
     },
     {
@@ -222,7 +262,12 @@
         "longitude": 23.7434,
         "wikidata": "Q1160664",
         "wheelchair": "limited",
-        "popularity": 43
+        "popularity": 43,
+        "names": {
+          "pt": "Liceu (clássico)",
+          "en": "Lyceum",
+          "es": "Liceo"
+        }
       }
     },
     {
@@ -247,7 +292,12 @@
         "wikidata": "Q384813",
         "wikipedia": "el:Ναός Αθηνάς Νίκης",
         "popularity": 43,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "pt": "Templo de Atena Nice",
+          "en": "Temple of Athena Nike",
+          "es": "Templo de Atenea Niké"
+        }
       }
     },
     {
@@ -277,7 +327,12 @@
         "wikipedia": "el:Εθνικό Αρχαιολογικό Μουσείο",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 41
+        "popularity": 41,
+        "names": {
+          "pt": "Museu Arqueológico Nacional de Atenas",
+          "en": "National Archaeological Museum of Athens",
+          "es": "Museo Arqueológico Nacional de Atenas"
+        }
       }
     },
     {
@@ -301,7 +356,12 @@
         "longitude": 23.7432387,
         "wikidata": "Q1357713",
         "wikipedia": "el:Λυκαβηττός",
-        "popularity": 38
+        "popularity": 38,
+        "names": {
+          "pt": "Monte Licabeto",
+          "en": "Mount Lycabettus",
+          "es": "Monte Licabeto"
+        }
       }
     },
     {
@@ -327,7 +387,12 @@
         "wikipedia": "el:Ναός Ηφαίστου",
         "wheelchair": "no",
         "popularity": 38,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "pt": "Templo de Hefesto",
+          "en": "Temple of Hephaestus",
+          "es": "Hefestión"
+        }
       }
     },
     {
@@ -353,7 +418,12 @@
         "wikidata": "Q1123019",
         "wikipedia": "el:Ναός του Ολυμπίου Διός",
         "wheelchair": "no",
-        "popularity": 38
+        "popularity": 38,
+        "names": {
+          "pt": "Templo de Zeus Olímpico",
+          "en": "Temple of Olympian Zeus",
+          "es": "Templo de Zeus Olímpico"
+        }
       }
     },
     {
@@ -383,7 +453,12 @@
         "wikipedia": "el:Μουσείο Ακρόπολης",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 37
+        "popularity": 37,
+        "names": {
+          "pt": "Museu da Acrópole de Atenas",
+          "en": "Acropolis Museum",
+          "es": "Museo de la Acrópolis"
+        }
       }
     },
     {
@@ -408,7 +483,12 @@
         "wikidata": "Q372717",
         "wikipedia": "el:Αέρηδες (μνημείο)",
         "popularity": 36,
-        "site": "Q1435551"
+        "site": "Q1435551",
+        "names": {
+          "pt": "Torre dos Ventos",
+          "en": "Tower of the Winds",
+          "es": "Torre de los Vientos"
+        }
       }
     },
     {
@@ -434,7 +514,12 @@
         "wikidata": "Q1227044",
         "wikipedia": "el:Θέατρο του Διονύσου",
         "popularity": 34,
-        "site": "Q1227044"
+        "site": "Q1227044",
+        "names": {
+          "pt": "Teatro de Dionísio",
+          "en": "Theatre of Dionysus",
+          "es": "Teatro de Dioniso"
+        }
       }
     },
     {
@@ -460,7 +545,12 @@
         "wikidata": "Q395367",
         "wikipedia": "el:Αρχαία Αγορά της Αθήνας",
         "popularity": 34,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "pt": "Ágora de Atenas",
+          "en": "Ancient Agora of Athens",
+          "es": "Ágora de Atenas"
+        }
       }
     },
     {
@@ -485,7 +575,12 @@
         "wikidata": "Q1328165",
         "wikipedia": "el:Ωδείο Ηρώδου του Αττικού",
         "wheelchair": "yes",
-        "popularity": 34
+        "popularity": 34,
+        "names": {
+          "pt": "Odeão de Herodes Ático",
+          "en": "Odeon of Herodes Atticus",
+          "es": "Odeón de Herodes Ático"
+        }
       }
     },
     {
@@ -510,7 +605,12 @@
         "wikidata": "Q1137997",
         "wikipedia": "el:Πλατεία Συντάγματος",
         "wheelchair": "yes",
-        "popularity": 34
+        "popularity": 34,
+        "names": {
+          "pt": "Praça Sintagma",
+          "en": "Syntagma Square",
+          "es": "plaza Síntagma"
+        }
       }
     },
     {
@@ -533,7 +633,12 @@
         "latitude": 37.9754,
         "longitude": 23.7265505,
         "wikidata": "Q1455447",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Biblioteca de Adriano",
+          "en": "Hadrian's Library",
+          "es": "Biblioteca de Adriano"
+        }
       }
     },
     {
@@ -557,7 +662,12 @@
         "longitude": 23.7181838,
         "website": "http://odysseus.culture.gr/h/3/eh352.jsp?obj_id=2392",
         "wikidata": "Q630974",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Kerameikos",
+          "en": "Kerameikos",
+          "es": "Cerámico"
+        }
       }
     },
     {
@@ -579,7 +689,12 @@
         "latitude": 37.9623675,
         "longitude": 23.7026146,
         "wikidata": "Q1163616",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Longas Muralhas",
+          "en": "Long Walls",
+          "es": "Muros Largos"
+        }
       }
     },
     {
@@ -604,7 +719,12 @@
         "wikidata": "Q1125096",
         "wikipedia": "el:Πνύκα",
         "popularity": 28,
-        "site": "Q38279507"
+        "site": "Q38279507",
+        "names": {
+          "pt": "Pnyx",
+          "en": "Pnyx",
+          "es": "Pnyx"
+        }
       }
     },
     {
@@ -629,7 +749,12 @@
         "wikidata": "Q755221",
         "wikipedia": "el:Άγαλμα της Προμάχου Αθηνάς",
         "popularity": 27,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "pt": "Atena Promacos",
+          "en": "Athena Promachos",
+          "es": "Atenea Promacos"
+        }
       }
     },
     {
@@ -658,7 +783,12 @@
         "wikidata": "Q816669",
         "wikipedia": "el:Μουσείο Μπενάκη",
         "fee": "yes",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Museu Benaki",
+          "en": "Benaki Museum",
+          "es": "Museo Benaki"
+        }
       }
     },
     {
@@ -683,7 +813,12 @@
         "wikidata": "Q981372",
         "wikipedia": "el:Μητροπολιτικός Ναός Αθηνών",
         "wheelchair": "yes",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Catedral Metropolitana de Atenas",
+          "en": "Metropolitan Cathedral of Athens",
+          "es": "Catedral de la Anunciación de Santa María"
+        }
       }
     },
     {
@@ -708,7 +843,11 @@
         "wikidata": "Q1160691",
         "wikipedia": "el:Μνημείο του Λυσικράτη",
         "wheelchair": "no",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "en": "Choragic Monument of Lysicrates",
+          "es": "Linterna de Lisícrates"
+        }
       }
     },
     {
@@ -734,7 +873,12 @@
         "wikipedia": "el:Μνημείο Φιλοπάππου",
         "wheelchair": "no",
         "popularity": 24,
-        "site": "Q38279507"
+        "site": "Q38279507",
+        "names": {
+          "pt": "Monumento de Filopapos",
+          "en": "Philopappos Monument",
+          "es": "Monumento de Filopapo"
+        }
       }
     },
     {
@@ -757,7 +901,12 @@
         "longitude": 23.7226169,
         "wikidata": "Q936234",
         "wikipedia": "en:Stoa Poikile",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Stoa Poikile",
+          "en": "Stoa Poikile",
+          "es": "Stoa Pecile"
+        }
       }
     },
     {
@@ -785,7 +934,12 @@
         "wikidata": "Q582203",
         "wikipedia": "el:Μέγαρο Μουσικής Αθηνών",
         "wheelchair": "yes",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Sala de Concertos de Atenas",
+          "en": "Athens Concert Hall",
+          "es": "Sala de conciertos de Atenas"
+        }
       }
     },
     {
@@ -809,7 +963,11 @@
         "longitude": 23.7374673,
         "wikidata": "Q646284",
         "wikipedia": "el:Εθνικός Κήπος",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "en": "National Garden of Athens",
+          "es": "Jardín nacional de Atenas"
+        }
       }
     },
     {
@@ -833,7 +991,12 @@
         "longitude": 23.7369949,
         "wikidata": "Q7084890",
         "wikipedia": "el:Παλαιά Ανάκτορα",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Antigo Palácio Real",
+          "en": "Old Royal Palace",
+          "es": "Antiguo Palacio Real"
+        }
       }
     },
     {
@@ -858,7 +1021,12 @@
         "wikidata": "Q1567576",
         "wikipedia": "el:Πύλη του Αδριανού",
         "wheelchair": "yes",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Arco de Adriano",
+          "en": "Arch of Hadrian",
+          "es": "Arco de Adriano"
+        }
       }
     },
     {
@@ -888,7 +1056,12 @@
         "wikipedia": "el:Μουσείο Κυκλαδικής Τέχνης",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Museu de Arte Cicládica",
+          "en": "Museum of Cycladic Art",
+          "es": "Museo de Arte Cicládico"
+        }
       }
     },
     {
@@ -912,7 +1085,11 @@
         "longitude": 23.7260239,
         "wikidata": "Q15958739",
         "wikipedia": "el:Τζαμί Τζισταράκη",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "en": "Tzistarakis Mosque",
+          "es": "Mezquita Tzistarakis"
+        }
       }
     },
     {
@@ -938,7 +1115,11 @@
         "wikipedia": "el:Προπύλαια (Ακρόπολη Αθηνών)",
         "wheelchair": "no",
         "popularity": 21,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "en": "Propylaea of Athens",
+          "es": "Propileos de Atenas"
+        }
       }
     },
     {
@@ -967,7 +1148,11 @@
         "wikipedia": "el:Νομισματικό Μουσείο Αθηνών",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "en": "Numismatic Museum of Athens",
+          "es": "Museo Numismático de Atenas"
+        }
       }
     },
     {
@@ -997,7 +1182,12 @@
         "wikipedia": "el:Βυζαντινό και Χριστιανικό Μουσείο",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Museu Bizantino e Cristão",
+          "en": "Byzantine and Christian Museum",
+          "es": "Museo Bizantino y Cristiano"
+        }
       }
     },
     {
@@ -1022,7 +1212,11 @@
         "wikidata": "Q2615369",
         "wheelchair": "yes",
         "popularity": 19,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Church of the Holy Apostles",
+          "es": "Iglesia de los Santos Apóstoles (Atenas)"
+        }
       }
     },
     {
@@ -1047,7 +1241,11 @@
         "wikidata": "Q5445954",
         "wikipedia": "el:Φετιχιέ τζαμί Αθηνών",
         "popularity": 19,
-        "site": "Q1435551"
+        "site": "Q1435551",
+        "names": {
+          "en": "Fethiye Mosque, Athens",
+          "es": "Mezquita de Fethiye"
+        }
       }
     },
     {
@@ -1077,7 +1275,12 @@
         "wikipedia": "el:Πολεμικό Μουσείο (Αθήνα)",
         "fee": "yes",
         "wheelchair": "no",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Museu da Guerra de Atenas",
+          "en": "Athens War Museum",
+          "es": "Museo de la Guerra de Atenas"
+        }
       }
     },
     {
@@ -1101,7 +1304,11 @@
         "website": "https://oaka.com.gr/",
         "wikidata": "Q387989",
         "wikipedia": "el:Ολυμπιακό Αθλητικό Κέντρο Αθηνών \"Σπύρος Λούης\"",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "en": "Olympic Athletic Center of Athens \"Spiros Louis\"",
+          "es": "Complejo Olímpico de Deportes de Atenas"
+        }
       }
     },
     {
@@ -1127,7 +1334,11 @@
         "wikipedia": "el:Ρωμαϊκή Αγορά της Αθήνας",
         "wheelchair": "limited",
         "popularity": 19,
-        "site": "Q1435551"
+        "site": "Q1435551",
+        "names": {
+          "en": "Roman Agora of Athens",
+          "es": "Ágora romana de Atenas"
+        }
       }
     },
     {
@@ -1151,7 +1362,12 @@
         "longitude": 23.7259939,
         "wikidata": "Q1905296",
         "wikipedia": "el:Στοά Ευμένους",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Stoa de Eumene",
+          "en": "Stoa of Eumenes",
+          "es": "Estoa de Eumenes"
+        }
       }
     },
     {
@@ -1173,9 +1389,13 @@
         ],
         "latitude": 37.9791269,
         "longitude": 23.7346779,
-        "address": "Πανεπιστημίου, 24, Atenas",
+        "address": "Πανεπιστημίου, 24",
         "wikidata": "Q1628075",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "en": "Cathedral Basilica of St. Dionysius the Areopagite",
+          "es": "Catedral-basílica de San Dionisio Areopagita"
+        }
       }
     },
     {
@@ -1200,7 +1420,12 @@
         "wikidata": "Q1728667",
         "wikipedia": "en:Church of Panagia Kapnikarea",
         "wheelchair": "no",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Igreja de Panaghia Kapnikarea",
+          "en": "Church of Panaghia Kapnikarea",
+          "es": "Iglesia de Panagia Kapnikarea"
+        }
       }
     },
     {
@@ -1224,7 +1449,12 @@
         "longitude": 23.7249088,
         "wikidata": "Q1349784",
         "wikipedia": "el:Ελευσίνιον",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Eleusínio",
+          "en": "Eleusinion",
+          "es": "Eleusinion"
+        }
       }
     },
     {
@@ -1253,7 +1483,12 @@
         "wikipedia": "el:Αρχαιολογικό Μουσείο Κεραμεικού",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Museu Arqueológico de Kerameikos",
+          "en": "Kerameikos Archaeological Museum",
+          "es": "Museo Arqueológico del Cerámico"
+        }
       }
     },
     {
@@ -1277,7 +1512,11 @@
         "longitude": 23.7189826,
         "wikidata": "Q3708916",
         "wikipedia": "en:Dipylon",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Dipylon",
+          "es": "Dípilon"
+        }
       }
     },
     {
@@ -1303,7 +1542,12 @@
         "wikipedia": "en:Odeon of Agrippa",
         "wheelchair": "yes",
         "popularity": 15,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "pt": "Odeão de Agripa",
+          "en": "Odeon of Agrippa",
+          "es": "Odeón de Agripa"
+        }
       }
     },
     {
@@ -1325,7 +1569,12 @@
         "latitude": 37.9406488,
         "longitude": 23.6558891,
         "wikidata": "Q1611219",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Muniquia",
+          "en": "Munichia",
+          "es": "Muniquia"
+        }
       }
     },
     {
@@ -1350,7 +1599,12 @@
         "wikidata": "Q2204137",
         "wikipedia": "el:Πανδρόσειο",
         "popularity": 14,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "pt": "Pandrósio",
+          "en": "Pandroseion",
+          "es": "Pandroseión"
+        }
       }
     },
     {
@@ -1376,7 +1630,11 @@
         "opening_hours": "06:00-24:00",
         "website": "https://www.snfcc.org/",
         "wikidata": "Q17511186",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "Stavros Niarchos Foundation Cultural Center",
+          "es": "Centro Cultural de la Fundación Stavros Niarchos"
+        }
       }
     },
     {
@@ -1400,7 +1658,12 @@
         "longitude": 23.7300172,
         "wikidata": "Q2790568",
         "wheelchair": "no",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Panagía Gorgoepíkoös",
+          "en": "Agios Eleftherios Church, Athens",
+          "es": "iglesia de Agios Eleftherios de Atenas"
+        }
       }
     },
     {
@@ -1431,7 +1694,11 @@
         "fee": "no",
         "wheelchair": "yes",
         "popularity": 13,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Museum of the Ancient Agora",
+          "es": "Museo del Ágora de Atenas"
+        }
       }
     },
     {
@@ -1456,7 +1723,11 @@
         "wikidata": "Q699480",
         "wikipedia": "el:Αρρηφόριον",
         "popularity": 13,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "en": "Arrephorion",
+          "es": "Arreforión"
+        }
       }
     },
     {
@@ -1481,7 +1752,11 @@
         "wikidata": "Q3142437",
         "wikipedia": "en:Temple of Apollo Patroos",
         "popularity": 13,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Temple of Apollo Patroos",
+          "es": "Templo de Apolo Patroos"
+        }
       }
     },
     {
@@ -1503,7 +1778,11 @@
         "latitude": 37.9708239,
         "longitude": 23.7263885,
         "wikidata": "Q2278514",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Asclepieion of Athens",
+          "es": "Asclepeion de Atenas"
+        }
       }
     },
     {
@@ -1527,7 +1806,10 @@
         "longitude": 23.699713,
         "wikidata": "Q28465243",
         "wikipedia": "en:Votanikos Mosque",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Athens Mosque"
+        }
       }
     },
     {
@@ -1551,7 +1833,10 @@
         "longitude": 23.7368772,
         "wikidata": "Q932606",
         "wikipedia": "el:Πεδίον του Άρεως",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Pedion tou Areos"
+        }
       }
     },
     {
@@ -1575,7 +1860,10 @@
         "longitude": 23.7249422,
         "wikidata": "Q2984834",
         "wikipedia": "el:Ψυρή",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Psyri"
+        }
       }
     },
     {
@@ -1597,7 +1885,12 @@
         "latitude": 37.9871266,
         "longitude": 23.7744001,
         "wikidata": "Q1224979",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Município de Atenas",
+          "en": "Athens Municipality",
+          "es": "Municipio de Atenas"
+        }
       }
     },
     {
@@ -1623,7 +1916,11 @@
         "wikipedia": "en:Monument of the Eponymous Heroes",
         "wheelchair": "yes",
         "popularity": 12,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Monument of the Eponymous Heroes",
+          "es": "Monumento de los héroes epónimos"
+        }
       }
     },
     {
@@ -1648,7 +1945,11 @@
         "wikidata": "Q331355",
         "wikipedia": "el:Στοά Ελευθερίου Διός",
         "popularity": 12,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Stoa of Zeus",
+          "es": "Estoa de Zeus"
+        }
       }
     },
     {
@@ -1673,7 +1974,11 @@
         "address": "Μελιδώνη, 5, Αθήνα",
         "phone": "+30 21 0325 2898",
         "wikidata": "Q4897633",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Beth Shalom Synagogue",
+          "es": "Sinagoga Beth Shalom"
+        }
       }
     },
     {
@@ -1697,7 +2002,11 @@
         "longitude": 23.6847644,
         "wikidata": "Q2069593",
         "wikipedia": "en:Olympias (trireme)",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Olympias",
+          "es": "Olympias"
+        }
       }
     },
     {
@@ -1723,7 +2032,12 @@
         "website": "http://www.n-t.gr/el/nationaltheatre/theatres/Zillermainstage/",
         "wikidata": "Q583039",
         "wikipedia": "el:Εθνικό Θέατρο",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Teatro Nacional da Grécia",
+          "en": "National Theatre of Greece - Ziller Building",
+          "es": "Teatro nacional de Grecia"
+        }
       }
     },
     {
@@ -1747,7 +2061,11 @@
         "longitude": 23.7283333,
         "wikidata": "Q394211",
         "wikipedia": "en:Aglaureion",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Aglaureion",
+          "es": "Aglaureion"
+        }
       }
     },
     {
@@ -1770,7 +2088,11 @@
         "longitude": 23.7300575,
         "address": "Πλατεία Αγίων Θεοδώρων, Αθήνα",
         "wikidata": "Q4505190",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Agii Theodori",
+          "es": "Iglesia de los Santos Teodoros (Atenas)"
+        }
       }
     },
     {
@@ -1794,7 +2116,11 @@
         "longitude": 23.7227326,
         "wikidata": "Q2872376",
         "popularity": 11,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Altar of the Twelve Gods",
+          "es": "Altar de los Doce Dioses"
+        }
       }
     },
     {
@@ -1823,7 +2149,11 @@
         "wikidata": "Q930891",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Jewish Museum of Greece",
+          "es": "Museo Judío de Grecia"
+        }
       }
     },
     {
@@ -1848,7 +2178,10 @@
         "phone": "+30 21 0723 6619",
         "website": "http://odysseus.culture.gr/h/2/eh255.jsp?obj_id=1524",
         "wikidata": "Q1168003",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Kaisariani monastery"
+        }
       }
     },
     {
@@ -1878,7 +2211,11 @@
         "wikipedia": "el:Επιγραφικό μουσείο",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Epigraphical Museum",
+          "es": "Museo Epigráfico de Atenas"
+        }
       }
     },
     {
@@ -1903,7 +2240,12 @@
         "wikidata": "Q2145005",
         "wikipedia": "el:Ναός της Ρώμης και του Αυγούστου",
         "popularity": 10,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "pt": "Templo de Roma e Augusto",
+          "en": "Temple of Rome and Augustus",
+          "es": "Templo de Roma y Augusto"
+        }
       }
     },
     {
@@ -1928,7 +2270,11 @@
         "wikidata": "Q3818592",
         "wikipedia": "es:Santuario de Pandión",
         "popularity": 10,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "en": "Sanctuary of Pandion",
+          "es": "Santuario de Pandión"
+        }
       }
     },
     {
@@ -1952,7 +2298,11 @@
         "longitude": 23.7227487,
         "wikidata": "Q2405583",
         "popularity": 10,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Temple of Ares",
+          "es": "Templo de Ares"
+        }
       }
     },
     {
@@ -1975,7 +2325,11 @@
         "longitude": 23.721476,
         "wikidata": "Q3082673",
         "popularity": 10,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Strategeion",
+          "es": "Estrategeion"
+        }
       }
     },
     {
@@ -1998,7 +2352,11 @@
         "longitude": 23.7189309,
         "wikidata": "Q2372311",
         "wikipedia": "el:Πομπείον",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Pompeion",
+          "es": "Pompeion"
+        }
       }
     },
     {
@@ -2023,7 +2381,11 @@
         "wikidata": "Q5527012",
         "wikipedia": "en:Gate of Athena Archegetis",
         "popularity": 10,
-        "site": "Q1435551"
+        "site": "Q1435551",
+        "names": {
+          "en": "Gate of Athena Archegetis",
+          "es": "Puerta de Atenea Arquegetis"
+        }
       }
     },
     {
@@ -2053,7 +2415,11 @@
         "wikipedia": "el:Εθνικό Ιστορικό Μουσείο",
         "fee": "yes",
         "wheelchair": "no",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Old Parliament House",
+          "es": "Antiguo Parlamento de Grecia"
+        }
       }
     },
     {
@@ -2078,7 +2444,11 @@
         "wikidata": "Q2088161",
         "wikipedia": "el:Λόφος Φιλοπάππου",
         "popularity": 9,
-        "site": "Q38279507"
+        "site": "Q38279507",
+        "names": {
+          "en": "Philopappou",
+          "es": "Filopapos"
+        }
       }
     },
     {
@@ -2101,7 +2471,11 @@
         "latitude": 37.9711184,
         "longitude": 23.7276316,
         "wikidata": "Q2290491",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Choragic Monument of Thrasyllos",
+          "es": "Monumento de Trasilo"
+        }
       }
     },
     {
@@ -2131,7 +2505,11 @@
         "wikipedia": "el:Αρχαιολογικό Μουσείο Πειραιά",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Archaeological Museum of Piraeus",
+          "es": "Museo Arqueológico de El Pireo"
+        }
       }
     },
     {
@@ -2157,7 +2535,11 @@
         "opening_hours": "Mo-Fr 09:00-16:00; Tu off; Sa,Su 10:00-15:00",
         "wikidata": "Q6941076",
         "fee": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Museum of the City of Athens (Foundation Vourou-Eutaxia)",
+          "es": "Museo de la ciudad de Atenas (Fundación Vourou-Eutaxia)"
+        }
       }
     },
     {
@@ -2180,7 +2562,11 @@
         "latitude": 37.9700704,
         "longitude": 23.7277079,
         "wikidata": "Q2032467",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Temenos of Dionysus Eleuthereus",
+          "es": "Témenos de Dioniso"
+        }
       }
     },
     {
@@ -2203,7 +2589,11 @@
         "latitude": 37.9702386,
         "longitude": 23.7269591,
         "wikidata": "Q3323331",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Monument of Nikias",
+          "es": "Monumento corégico de Nicias"
+        }
       }
     },
     {
@@ -2228,7 +2618,11 @@
         "wikidata": "Q1670679",
         "wikipedia": "el:Βασίλειος Στοά",
         "popularity": 8,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Stoa Basileios",
+          "es": "Estoa Basileos"
+        }
       }
     },
     {
@@ -2256,7 +2650,12 @@
         "website": "http://thf.gr/",
         "wikidata": "Q104527429",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Fundação Theocharákis",
+          "en": "Theocharakis Foundation",
+          "es": "Fundación Theocharákis"
+        }
       }
     },
     {
@@ -2283,7 +2682,10 @@
         "phone": "+30 2107252895",
         "website": "https://goulandris.gr/",
         "wikidata": "Q33119180",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Basil & Elise Goulandris Foundation Museum, Athens"
+        }
       }
     },
     {
@@ -2304,10 +2706,13 @@
         ],
         "latitude": 37.9764901,
         "longitude": 23.7261268,
-        "address": "Πλατεία Μοναστηρακίου, Atenas",
+        "address": "Πλατεία Μοναστηρακίου",
         "wikidata": "Q7131645",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Pantanassa church"
+        }
       }
     },
     {
@@ -2330,7 +2735,11 @@
         "latitude": 37.9732458,
         "longitude": 23.7340271,
         "wikidata": "Q4400515",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Church of the Holy Trinity, Athens",
+          "es": "Iglesia de la Santísima Trinidad (Atenas)"
+        }
       }
     },
     {
@@ -2355,7 +2764,11 @@
         "wikidata": "Q3531128",
         "wikipedia": "el:Μνημείο του άγνωστου στρατιώτη (Ελλάδα)",
         "wheelchair": "no",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Túmulo do Soldado Desconhecido (Atenas)",
+          "en": "Tomb of the Unknown Soldier, Athens"
+        }
       }
     },
     {
@@ -2383,7 +2796,10 @@
         "wikidata": "Q4306254",
         "fee": "yes",
         "wheelchair": "no",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Museum of Greek Folk Musical Instruments"
+        }
       }
     },
     {
@@ -2406,7 +2822,11 @@
         "longitude": 23.7221761,
         "wikidata": "Q3076015",
         "popularity": 7,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Enneakrounos",
+          "es": "Eneacrunos"
+        }
       }
     },
     {
@@ -2430,7 +2850,11 @@
         "longitude": 23.7248413,
         "wikidata": "Q16327864",
         "popularity": 7,
-        "site": "Q131013"
+        "site": "Q131013",
+        "names": {
+          "en": "Pedestal of Agrippa",
+          "es": "Pedestal de Agripa"
+        }
       }
     },
     {
@@ -2460,7 +2884,10 @@
         "wikipedia": "el:Οικία Κλεάνθη - Σάουμπερτ",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Athens University Museum"
+        }
       }
     },
     {
@@ -2484,7 +2911,10 @@
         "longitude": 23.6459179,
         "wikidata": "Q3561072",
         "wikipedia": "el:Παπανικολής Ι (υποβρύχιο)",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Greek submarine Papanikolis"
+        }
       }
     },
     {
@@ -2511,7 +2941,10 @@
         "website": "http://www.museum-synt-isap.gr",
         "wikidata": "Q5357472",
         "wikipedia": "el:Μουσείο Ηλεκτρικών Σιδηροδρόμων",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Electric Railways Museum of Piraeus"
+        }
       }
     },
     {
@@ -2536,7 +2969,11 @@
         "wikidata": "Q2891038",
         "wheelchair": "yes",
         "popularity": 6,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Altar of Zeus Agoraios",
+          "es": "Altar de Zeus Agoraios"
+        }
       }
     },
     {
@@ -2560,7 +2997,10 @@
         "longitude": 23.735311,
         "wikidata": "Q1584857",
         "wikipedia": "el:Θεατρικό Μουσείο - Κέντρο Μελέτης & Έρευνας Ελληνικού Θεάτρου",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Theatrical Museum of Greece"
+        }
       }
     },
     {
@@ -2585,7 +3025,10 @@
         "phone": "+30 210 4404204",
         "website": "https://mariacallasmuseum.gr/en/",
         "wikidata": "Q123193468",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Maria Callas Museum"
+        }
       }
     },
     {
@@ -2611,7 +3054,10 @@
         "phone": "+30 210 3250140",
         "wikidata": "Q23794646",
         "wheelchair": "no",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Agioi Asomatoi"
+        }
       }
     },
     {
@@ -2639,7 +3085,10 @@
         "wikidata": "Q12876104",
         "wikipedia": "en:Piraeus Municipal Theatre",
         "wheelchair": "no",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Piraeus Municipal Theatre"
+        }
       }
     },
     {
@@ -2666,7 +3115,10 @@
         "phone": "+30 21 0325 2823; +30 21 0325 2875",
         "website": "http://athjcom.gr/",
         "wikidata": "Q33422723",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Etz Chaim Synagogue"
+        }
       }
     },
     {
@@ -2693,7 +3145,11 @@
         "phone": "+30 210 5202420;+30 210 3243023",
         "wikidata": "Q1576793",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Municipal Gallery of Athens",
+          "es": "Galería Municipal de Atenas"
+        }
       }
     },
     {
@@ -2722,7 +3178,11 @@
         "wikidata": "Q1163632",
         "wikipedia": "el:Ελληνικό Μουσείο Αυτοκινήτου",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Hellenic Motor Museum",
+          "es": "Hellenic Motor Museum"
+        }
       }
     },
     {
@@ -2749,7 +3209,11 @@
         "phone": "+30 210 4516264;+30 210 4286959",
         "wikidata": "Q3035316",
         "wikipedia": "el:Ναυτικό Μουσείο Ελλάδος",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Hellenic Maritime Museum",
+          "es": "Museo Marítimo de Grecia"
+        }
       }
     },
     {
@@ -2774,7 +3238,10 @@
         "wikidata": "Q20380177",
         "wikipedia": "ru:Храм Преображения Господня (Афины)",
         "wheelchair": "no",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Church of the Transfiguration"
+        }
       }
     },
     {
@@ -2797,7 +3264,11 @@
         "latitude": 37.9710929,
         "longitude": 23.7309861,
         "wikidata": "Q27981490",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Agia Aikaterini (Athens)",
+          "es": "Iglesia de Santa Catalina (Atenas)"
+        }
       }
     },
     {
@@ -2821,7 +3292,10 @@
         "longitude": 23.7470727,
         "wikidata": "Q5015578",
         "wikipedia": "el:Θέατρο Λυκαβηττού",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Lycabettus Theatre"
+        }
       }
     },
     {
@@ -2843,7 +3317,10 @@
         "latitude": 37.9676301,
         "longitude": 23.7398399,
         "wikidata": "Q12873973",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Ardettus"
+        }
       }
     },
     {
@@ -2866,7 +3343,11 @@
         "longitude": 23.7219392,
         "wikidata": "Q9087412",
         "popularity": 5,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Tholos of Athens",
+          "es": "Tholos de Atenas"
+        }
       }
     },
     {
@@ -2890,7 +3371,12 @@
         "longitude": 23.7329859,
         "wikidata": "Q97206898",
         "wikipedia": "el:Δελφίνιον",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Templo de Apolo Delfínio",
+          "en": "Temple of Delphinian Apollo",
+          "es": "Templo de Apolo Delfinio"
+        }
       }
     },
     {
@@ -2911,10 +3397,14 @@
         ],
         "latitude": 37.9739137,
         "longitude": 23.7277596,
-        "address": "Κυρρήστου, 8, Atenas",
+        "address": "Κυρρήστου, 8",
         "wikidata": "Q38284122",
         "wikipedia": "en:Aerides Bath",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Aerides Bath",
+          "es": "Baño turco Abid-Efendi"
+        }
       }
     },
     {
@@ -2941,7 +3431,10 @@
         "phone": "+30 210 9221044",
         "website": "https://www.lalaounis-jewelrymuseum.gr/",
         "wikidata": "Q15051919",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Ilias Lalaounis Jewelry Museum"
+        }
       }
     },
     {
@@ -2966,7 +3459,11 @@
         "website": "https://www.artemisagrotera.org",
         "wikidata": "Q20084335",
         "popularity": 5,
-        "site": "Q20084335"
+        "site": "Q20084335",
+        "names": {
+          "en": "Temple of Artemis Agrotera",
+          "es": "Templo de Artemisa Agrótera"
+        }
       }
     },
     {
@@ -2989,7 +3486,10 @@
         "latitude": 37.9770835,
         "longitude": 23.7280067,
         "wikidata": "Q28802717",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Church of Saint Irene of Athens"
+        }
       }
     },
     {
@@ -3012,7 +3512,10 @@
         "latitude": 37.9726947,
         "longitude": 23.7323462,
         "wikidata": "Q27981494",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Sotira Kotaki church (Athens)"
+        }
       }
     },
     {
@@ -3038,7 +3541,10 @@
         "wikidata": "Q12872113",
         "wikipedia": "el:Άγιος Γεώργιος (Λυκαβηττού)",
         "wheelchair": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Saint George church"
+        }
       }
     },
     {
@@ -3059,7 +3565,10 @@
         "latitude": 37.9342032,
         "longitude": 23.650255,
         "wikidata": "Q48743497",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Pontic Greek Genocide Memorial in Piraeus"
+        }
       }
     },
     {
@@ -3082,7 +3591,11 @@
         "latitude": 37.9720493,
         "longitude": 23.7250088,
         "wikidata": "Q24204694",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Cave of Zeus",
+          "es": "Cueva de Zeus Olímpico"
+        }
       }
     },
     {
@@ -3104,10 +3617,14 @@
         ],
         "latitude": 37.9722492,
         "longitude": 23.7270202,
-        "address": "Peripatos, Atenas",
+        "address": "Peripatos",
         "wikidata": "Q24204702",
         "wikipedia": "el:Ιερό Αφροδίτης και Έρωτα",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Aphrodite and Eros shrine",
+          "es": "Santuario de Afrodita y Eros"
+        }
       }
     },
     {
@@ -3131,7 +3648,10 @@
         "longitude": 23.7566088,
         "wikidata": "Q16332817",
         "wikipedia": "el:Πλατεία Μαβίλη (Αθήνα)",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Mavili square"
+        }
       }
     },
     {
@@ -3153,7 +3673,11 @@
         "latitude": 37.9745779,
         "longitude": 23.7273614,
         "wikidata": "Q12880880",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Former Medrese in the Ancient Roman Agora",
+          "es": "Madrasa de Atenas"
+        }
       }
     },
     {
@@ -3178,7 +3702,10 @@
         "address": "Αθηνάς, Αθήνα",
         "opening_hours": "Mo-Sa 07:00-18:00",
         "wikidata": "Q755345",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Varvakeios market"
+        }
       }
     },
     {
@@ -3206,7 +3733,10 @@
         "wikidata": "Q5504730",
         "wikipedia": "el:Μουσείο Φρυσίρα",
         "wheelchair": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Frissiras Museum"
+        }
       }
     },
     {
@@ -3230,7 +3760,10 @@
         "longitude": 23.7282065,
         "wikidata": "Q27981486",
         "wikipedia": "el:Άγιοι Ανάργυροι Κολοκυνθοί",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Metochion of the Holy Sepulchre"
+        }
       }
     },
     {
@@ -3257,7 +3790,10 @@
         "wikipedia": "el:Μέγαρο Σταθάτου",
         "fee": "yes",
         "wheelchair": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Stathatos Mansion"
+        }
       }
     },
     {
@@ -3280,7 +3816,10 @@
         "longitude": 23.7493823,
         "wikidata": "Q91777689",
         "wikipedia": "el:Ο Δρομέας",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "The Runner"
+        }
       }
     },
     {
@@ -3303,7 +3842,10 @@
         "longitude": 23.7262955,
         "wikidata": "Q16327851",
         "wikipedia": "el:Πλατεία Βάθης",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Vathi"
+        }
       }
     },
     {
@@ -3325,7 +3867,10 @@
         "latitude": 37.9863368,
         "longitude": 23.7782622,
         "wikidata": "Q6972907",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "National Glyptotheque"
+        }
       }
     },
     {
@@ -3349,7 +3894,10 @@
         "address": "Αιόλου, 60, Αθήνα",
         "website": "http://www.xrisospiliotissa.gr",
         "wikidata": "Q38284288",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Panagia Chrysospiliotissa"
+        }
       }
     },
     {
@@ -3373,7 +3921,11 @@
         "longitude": 23.727941,
         "wikidata": "Q24204370",
         "wikipedia": "el:Πάνθεον (Αθήνα)",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Pantheon of Athens",
+          "es": "Panteón de Atenas"
+        }
       }
     },
     {
@@ -3395,10 +3947,14 @@
         ],
         "latitude": 37.9741319,
         "longitude": 23.7290488,
-        "address": "Αδριανού, 96, Atenas",
+        "address": "Αδριανού, 96",
         "website": "https://archontiko-mpenizelon.gr/",
         "wikidata": "Q12874094",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Benizelos mansion",
+          "es": "Mansión Benizelos"
+        }
       }
     },
     {
@@ -3420,7 +3976,10 @@
         "latitude": 37.9418875,
         "longitude": 23.778652,
         "wikidata": "Q16329546",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Monastery of Agios Ioannis Kareas"
+        }
       }
     },
     {
@@ -3443,7 +4002,11 @@
         "latitude": 37.9372441,
         "longitude": 23.6446324,
         "wikidata": "Q28217926",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Theatre of Zea",
+          "es": "Teatro de Zea"
+        }
       }
     },
     {
@@ -3466,7 +4029,10 @@
         "longitude": 23.828544,
         "wikidata": "Q38279664",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Koutouki Cave"
+        }
       }
     },
     {
@@ -3490,7 +4056,10 @@
         "longitude": 23.652883,
         "wikidata": "Q12884409",
         "wikipedia": "el:Σηράγγιο",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Siraggion"
+        }
       }
     },
     {
@@ -3513,7 +4082,10 @@
         "longitude": 23.7286944,
         "wikidata": "Q15260388",
         "wikipedia": "el:Κέντρο Μελετών Ακροπόλεως",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museum of the Center for the Acropolis Studies"
+        }
       }
     },
     {
@@ -3537,7 +4109,10 @@
         "longitude": 23.7389051,
         "address": "Δερβενίων, Αθήνα",
         "wikidata": "Q115244179",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Saint Nicholas church"
+        }
       }
     },
     {
@@ -3560,7 +4135,10 @@
         "longitude": 23.7318204,
         "wikidata": "Q19725037",
         "wikipedia": "el:Πλατεία Αιγύπτου (Αθήνα)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Aigyptou Square"
+        }
       }
     },
     {
@@ -3583,7 +4161,10 @@
         "longitude": 23.7653864,
         "wikidata": "Q3559333",
         "wikipedia": "el:Άλσος Βεΐκου",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Veikos Grove"
+        }
       }
     },
     {
@@ -3606,7 +4187,10 @@
         "longitude": 23.79801,
         "wikidata": "Q56397916",
         "wikipedia": "el:Παναγία Μαρμαριώτισσα (Χαλάνδρι)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Panagia Marmariotissa church"
+        }
       }
     },
     {
@@ -3630,7 +4214,11 @@
         "longitude": 23.723996,
         "wikidata": "Q3321024",
         "popularity": 3,
-        "site": "Q395367"
+        "site": "Q395367",
+        "names": {
+          "en": "Athens",
+          "es": "Ceca (Antigua Atenas)"
+        }
       }
     },
     {
@@ -3653,7 +4241,12 @@
         "longitude": 23.7747546,
         "wikidata": "Q4841041",
         "wikipedia": "en:Badminton Theater",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Badminton Theater",
+          "en": "Badminton Theater",
+          "es": "Badminton Theater"
+        }
       }
     },
     {
@@ -3676,7 +4269,11 @@
         "latitude": 38.0588851,
         "longitude": 23.7388474,
         "wikidata": "Q19631492",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Tomb of Menidi",
+          "es": "Tumba abovedada de Menidi"
+        }
       }
     },
     {
@@ -3705,7 +4302,10 @@
         "wikipedia": "el:Μουσείο Μαρίκας Κοτοπούλη",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Marika Kotopouli Museum"
+        }
       }
     },
     {
@@ -3729,7 +4329,10 @@
         "address": "Αναστάσιου Τσόχα, 39, Αθήνα",
         "wikidata": "Q12872085",
         "wikipedia": "el:Άγιοι Πάντες Αμπελοκήπων",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Agioi Pantes, Ampelokipoi"
+        }
       }
     },
     {
@@ -3752,7 +4355,10 @@
         "latitude": 38.0104698,
         "longitude": 23.7705353,
         "wikidata": "Q18123329",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Open Air Glyptotheque of Psychiko – George Zongolopoulos Square"
+        }
       }
     },
     {
@@ -3775,7 +4381,10 @@
         "longitude": 23.6536573,
         "address": "Βούλγαρη, 50, Πειραιάς",
         "wikidata": "Q47397242",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Evangelistria Church of Piraeus"
+        }
       }
     },
     {
@@ -3803,7 +4412,10 @@
         "website": "https://www.benaki.gr/",
         "wikidata": "Q59165188",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Benaki Museum of Islamic Art"
+        }
       }
     },
     {
@@ -3829,7 +4441,10 @@
         "wikidata": "Q2973241",
         "wikipedia": "en:Greek Film Archive",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Greek Film Archive"
+        }
       }
     },
     {
@@ -3852,7 +4467,10 @@
         "latitude": 37.9388345,
         "longitude": 23.6563179,
         "wikidata": "Q16328701",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Veakio Theater"
+        }
       }
     },
     {
@@ -3876,7 +4494,10 @@
         "address": "Πλατεία Αγίων Ασωμάτων, 5, Αθήνα",
         "wikidata": "Q78033066",
         "wheelchair": "limited",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museum Alex Mylona"
+        }
       }
     },
     {
@@ -3900,7 +4521,10 @@
         "longitude": 23.7203287,
         "wikidata": "Q104473775",
         "popularity": 3,
-        "site": "Q38279507"
+        "site": "Q38279507",
+        "names": {
+          "en": "Church of Hagios Demetrios Loumbardiaris"
+        }
       }
     },
     {
@@ -3924,7 +4548,10 @@
         "address": "Ακαδημίας, 59, Αθήνα",
         "phone": "+30 210 3642540",
         "wikidata": "Q106695288",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Olympia Theatre"
+        }
       }
     },
     {
@@ -3949,7 +4576,10 @@
         "opening_hours": "24/7",
         "wikidata": "Q47524277",
         "popularity": 2,
-        "site": "Q38279507"
+        "site": "Q38279507",
+        "names": {
+          "en": "Prison of Socrates"
+        }
       }
     },
     {
@@ -4001,7 +4631,10 @@
         "wikidata": "Q12880338",
         "wikipedia": "el:Λόφος Νυμφών",
         "popularity": 2,
-        "site": "Q38279507"
+        "site": "Q38279507",
+        "names": {
+          "en": "Hill of the Nymphs"
+        }
       }
     },
     {
@@ -4027,7 +4660,10 @@
         "website": "https://www.plato-academy.gr/museum",
         "wikidata": "Q25535844",
         "wikipedia": "el:Ψηφιακό Μουσείο της Ακαδημίας Πλάτωνος",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Digital Museum of Plato's Academy"
+        }
       }
     },
     {
@@ -4049,7 +4685,10 @@
         "latitude": 37.9770349,
         "longitude": 23.7180284,
         "wikidata": "Q14782166",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Aghios Athanasios Kourkoures"
+        }
       }
     },
     {
@@ -4073,7 +4712,10 @@
         "longitude": 23.6311267,
         "wikidata": "Q16521434",
         "wikipedia": "en:Daphni Cave",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Daphni Cave"
+        }
       }
     },
     {
@@ -4095,7 +4737,10 @@
         "latitude": 37.968312,
         "longitude": 23.7362392,
         "wikidata": "Q57016121",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ilissos Basilica"
+        }
       }
     },
     {
@@ -4119,7 +4764,10 @@
         "longitude": 23.7189776,
         "address": "Αγίας Μαρίνας, 1, Αθήνα",
         "wikidata": "Q14732771",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Agia Marina church (Thisseio)"
+        }
       }
     },
     {
@@ -4143,7 +4791,10 @@
         "address": "Παναγή Τσαλδάρη, 87Β, Αθήνα",
         "phone": "+30 210 3252227",
         "wikidata": "Q115244115",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Agia Triada (Kerameikos)"
+        }
       }
     },
     {
@@ -4166,7 +4817,10 @@
         "latitude": 37.9555608,
         "longitude": 23.7159413,
         "wikidata": "Q56304708",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Church of the Saviour"
+        }
       }
     },
     {
@@ -4189,7 +4843,10 @@
         "latitude": 37.9807041,
         "longitude": 23.7518632,
         "wikidata": "Q5358633",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Eleftherios Venizelos Historical Museum"
+        }
       }
     },
     {
@@ -4215,7 +4872,10 @@
         "wikidata": "Q25378944",
         "wikipedia": "el:Β΄ Ελληνική Ευαγγελική Εκκλησία",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Second Greek Evangelical Church"
+        }
       }
     },
     {
@@ -4237,11 +4897,14 @@
         ],
         "latitude": 37.9702516,
         "longitude": 23.7314125,
-        "address": "Βασιλίσσης Αμαλίας, 50, Atenas",
+        "address": "Βασιλίσσης Αμαλίας, 50",
         "wikidata": "Q12872822",
         "wikipedia": "el:Α΄ Ελληνική Ευαγγελική Εκκλησία",
         "wheelchair": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "First Greek Evangelical Church"
+        }
       }
     },
     {
@@ -4270,7 +4933,10 @@
         "wikidata": "Q6941089",
         "fee": "no",
         "wheelchair": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museum of the History of the Greek Costume"
+        }
       }
     },
     {
@@ -4296,7 +4962,10 @@
         "wikidata": "Q14723554",
         "wikipedia": "el:Αγία Σοφία (ναός, Μερόπειο Ίδρυμα)",
         "wheelchair": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Saint Sophia church, Athens"
+        }
       }
     },
     {
@@ -4322,7 +4991,10 @@
         "phone": "+302104126166",
         "website": "https://naos-aghiospavlos.gr/",
         "wikidata": "Q47397161",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Church of St Paul in Piraeus"
+        }
       }
     },
     {
@@ -4348,7 +5020,10 @@
         "wikidata": "Q7674145",
         "wikipedia": "en:Tactual Museum of Athens",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Tactual Museum of Athens"
+        }
       }
     },
     {
@@ -4373,7 +5048,10 @@
         "wikidata": "Q25535956",
         "wikipedia": "el:Αγία Ειρήνη (ναός στην Πλάκα)",
         "wheelchair": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hagia Irene Church"
+        }
       }
     },
     {
@@ -4396,7 +5074,10 @@
         "longitude": 23.6909123,
         "wikidata": "Q5707194",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hellenic Cosmos"
+        }
       }
     },
     {
@@ -4420,7 +5101,10 @@
         "address": "Γεωργίου Θεοτόκη, 49, Πειραιάς",
         "phone": "+302104513468",
         "wikidata": "Q16329185",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Holy Nile of Myrovliti"
+        }
       }
     },
     {
@@ -4443,7 +5127,10 @@
         "latitude": 37.9386702,
         "longitude": 23.6402488,
         "wikidata": "Q47397193",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "St Nicolas Church of Piraeus"
+        }
       }
     },
     {
@@ -4467,7 +5154,10 @@
         "longitude": 23.7314161,
         "wikidata": "Q12872127",
         "wikipedia": "el:Άγιος Γεώργιος του Καρύκη",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Agios Georgios Karytsi"
+        }
       }
     },
     {
@@ -4489,7 +5179,10 @@
         "latitude": 37.9495968,
         "longitude": 23.7163301,
         "wikidata": "Q12872246",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nea Smyrni Grove"
+        }
       }
     },
     {
@@ -4514,7 +5207,10 @@
         "address": "Αγγελικής Χατζημιχάλη, 6, Αθήνα",
         "phone": "+30 21 0324 3972",
         "wikidata": "Q12882149",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Aggelike Chatzimichali house"
+        }
       }
     },
     {
@@ -4537,7 +5233,11 @@
         "latitude": 37.9397103,
         "longitude": 23.64741,
         "wikidata": "Q5706396",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Arsenal of Philon",
+          "es": "Arsenal (Antigua Atenas)"
+        }
       }
     },
     {
@@ -4566,7 +5266,10 @@
         "wikidata": "Q12877355",
         "wikipedia": "el:Ίδρυμα Ευγενίδου",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Eugenides Planetarium"
+        }
       }
     },
     {
@@ -4587,9 +5290,12 @@
         ],
         "latitude": 37.9898684,
         "longitude": 23.741755,
-        "address": "Αλεξάνδρας, 74, Atenas",
+        "address": "Αλεξάνδρας, 74",
         "wikidata": "Q80212851",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Zina theater"
+        }
       }
     },
     {
@@ -4612,7 +5318,10 @@
         "latitude": 37.9172318,
         "longitude": 23.8063181,
         "wikidata": "Q24992939",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Profitis Ilias"
+        }
       }
     },
     {
@@ -4633,7 +5342,7 @@
         ],
         "latitude": 37.9985191,
         "longitude": 23.6986726,
-        "address": "Κηφισσού, 38, Atenas",
+        "address": "Κηφισσού, 38",
         "phone": "+30 210 5149028",
         "wikidata": "Q12872184",
         "wikipedia": "el:Άγιος Νικόλαος ο Χωστός",
@@ -4661,7 +5370,10 @@
         "longitude": 23.7281069,
         "address": "Πλατεία Ομονοίας, 18, Αθήνα",
         "wikidata": "Q38284362",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Bagkeion Mansion"
+        }
       }
     },
     {
@@ -4683,7 +5395,10 @@
         "latitude": 37.9801655,
         "longitude": 23.7339626,
         "wikidata": "Q111707954",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Athena Promachos"
+        }
       }
     },
     {
@@ -4705,7 +5420,11 @@
         "latitude": 37.9799639,
         "longitude": 23.7341357,
         "wikidata": "Q107288591",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Coluna de Apolo",
+          "en": "Apollo column"
+        }
       }
     },
     {
@@ -4731,7 +5450,10 @@
         "phone": "+30 21 0322 1579",
         "wikidata": "Q61670516",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Vretania"
+        }
       }
     },
     {
@@ -4755,7 +5477,10 @@
         "address": "Ιπποκράτους, 9-11, Αθήνα",
         "wikidata": "Q12877778",
         "wheelchair": "limited",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Akropol Theatre"
+        }
       }
     },
     {
@@ -4777,10 +5502,13 @@
         ],
         "latitude": 37.9771041,
         "longitude": 23.7350517,
-        "address": "Βουκουρεστίου, 5, Atenas",
+        "address": "Βουκουρεστίου, 5",
         "phone": "+30 2103213100",
         "wikidata": "Q60511979",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Pallas Theatre"
+        }
       }
     },
     {
@@ -4802,7 +5530,10 @@
         "latitude": 37.9999592,
         "longitude": 23.7329082,
         "wikidata": "Q61014527",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Katia Dandoulaki"
+        }
       }
     },
     {
@@ -4826,7 +5557,10 @@
         "address": "Ιπποκράτους, 7, Αθήνα",
         "wikidata": "Q61291826",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Gloria theatre, Athens"
+        }
       }
     },
     {
@@ -4874,7 +5608,10 @@
         "phone": "+30 21 0342 7426",
         "wikidata": "Q61598596",
         "wheelchair": "limited",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kivotos theatre"
+        }
       }
     },
     {
@@ -4897,7 +5634,10 @@
         "longitude": 23.7526672,
         "address": "Παπαδιαμαντοπούλου, 4, Αθήνα",
         "wikidata": "Q61041332",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Ilisia"
+        }
       }
     },
     {
@@ -4921,7 +5661,10 @@
         "address": "Ιπποκράτους, 7, Αθήνα",
         "wikidata": "Q61412922",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Diana theatre, Athens"
+        }
       }
     },
     {
@@ -4946,7 +5689,10 @@
         "address": "Ακαδημίας, 3, Αθήνα",
         "wikidata": "Q62596510",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Tzeni Karezi"
+        }
       }
     },
     {
@@ -4968,7 +5714,10 @@
         "latitude": 37.9819779,
         "longitude": 23.7203675,
         "wikidata": "Q62000380",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Apo Michanis Theatre"
+        }
       }
     },
     {
@@ -4990,7 +5739,10 @@
         "latitude": 37.9821048,
         "longitude": 23.7205921,
         "wikidata": "Q63190501",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Metaxourgeio"
+        }
       }
     },
     {
@@ -5011,10 +5763,13 @@
         ],
         "latitude": 37.977692,
         "longitude": 23.7344109,
-        "address": "Αμερικής, 7, Atenas",
+        "address": "Αμερικής, 7",
         "wikidata": "Q60212769",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatre Aliki"
+        }
       }
     },
     {
@@ -5042,7 +5797,10 @@
         "website": "http://www.technopolis-athens.com/",
         "wikidata": "Q116246225",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Industrial Gas Museum"
+        }
       }
     },
     {
@@ -5065,7 +5823,10 @@
         "longitude": 23.7363703,
         "address": "Κυκλάδων, 11, Αθήνα",
         "wikidata": "Q62594563",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Odou Kykladon"
+        }
       }
     },
     {
@@ -5086,9 +5847,12 @@
         ],
         "latitude": 37.9794421,
         "longitude": 23.7233843,
-        "address": "Σαρρή, 11, Atenas",
+        "address": "Σαρρή, 11",
         "wikidata": "Q62596498",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Emporikon"
+        }
       }
     },
     {
@@ -5114,7 +5878,10 @@
         "phone": "+30 21 3088 5700",
         "wikidata": "Q107631790",
         "wheelchair": "designated",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Greek National Opera House"
+        }
       }
     },
     {
@@ -5135,7 +5902,10 @@
         "latitude": 37.9726998,
         "longitude": 23.7436502,
         "wikidata": "Q51954360",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Statue of Harry S. Truman in Athens"
+        }
       }
     },
     {
@@ -5157,7 +5927,10 @@
         "longitude": 23.7748888,
         "wikidata": "Q12138416",
         "wikipedia": "el:Ταράς Σεβτσένκο",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Bust of Taras Shevchenko"
+        }
       }
     },
     {
@@ -5184,7 +5957,10 @@
         "website": "http://epm.gr",
         "wikidata": "Q12877246",
         "wikipedia": "el:Επιτροπή Ποντιακών Μελετών",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Comité de Estudios Pónticos"
+        }
       }
     },
     {
@@ -5206,7 +5982,10 @@
         "latitude": 37.9866156,
         "longitude": 23.7205471,
         "wikidata": "Q119103031",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Stathmos"
+        }
       }
     },
     {
@@ -5228,7 +6007,10 @@
         "latitude": 37.9745072,
         "longitude": 23.7103556,
         "wikidata": "Q62019627",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Alcmene theatre, Athens"
+        }
       }
     },
     {
@@ -5250,7 +6032,10 @@
         "latitude": 37.9855083,
         "longitude": 23.7229887,
         "wikidata": "Q61298580",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Alma theatre"
+        }
       }
     },
     {
@@ -5272,7 +6057,10 @@
         "latitude": 37.986937,
         "longitude": 23.7194953,
         "wikidata": "Q124802059",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Argo theatre"
+        }
       }
     },
     {
@@ -5294,7 +6082,10 @@
         "latitude": 37.9944599,
         "longitude": 23.7387401,
         "wikidata": "Q64784814",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Alsos theater"
+        }
       }
     },
     {
@@ -5316,7 +6107,10 @@
         "latitude": 38.02955,
         "longitude": 23.65304,
         "wikidata": "Q25034835",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kaskadami"
+        }
       }
     },
     {
@@ -5344,7 +6138,10 @@
         "wikidata": "Q16737588",
         "wikipedia": "el:Ελληνικό Μουσείο Πληροφορικής",
         "fee": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Hellenic IT Museum"
+        }
       }
     },
     {
@@ -5366,7 +6163,10 @@
         "latitude": 37.9462643,
         "longitude": 23.8145152,
         "wikidata": "Q25081639",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Evzonos"
+        }
       }
     },
     {
@@ -5389,7 +6189,10 @@
         "longitude": 23.729591,
         "address": "Στουρνάρη, 53, Αθήνα",
         "wikidata": "Q61684648",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Alambra"
+        }
       }
     },
     {
@@ -5411,7 +6214,10 @@
         "latitude": 37.9159201,
         "longitude": 23.7414926,
         "wikidata": "Q29052030",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Euonymos Theater"
+        }
       }
     },
     {
@@ -5433,7 +6239,10 @@
         "latitude": 37.9488761,
         "longitude": 23.7101322,
         "wikidata": "Q15966790",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Chrysostomos of Smyrna square"
+        }
       }
     },
     {
@@ -5455,7 +6264,10 @@
         "latitude": 37.9984178,
         "longitude": 23.6766628,
         "wikidata": "Q75091187",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Egaleo grove"
+        }
       }
     },
     {
@@ -5478,7 +6290,10 @@
         "latitude": 37.969051,
         "longitude": 23.7463603,
         "wikidata": "Q119844201",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Pankrati Grove"
+        }
       }
     },
     {
@@ -5500,7 +6315,10 @@
         "latitude": 38.0423762,
         "longitude": 23.7448697,
         "wikidata": "Q110276814",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Nea Philadelphia Grove"
+        }
       }
     },
     {
@@ -5522,7 +6340,10 @@
         "latitude": 37.9435067,
         "longitude": 23.6445485,
         "wikidata": "Q25166889",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Tinan Garden"
+        }
       }
     },
     {
@@ -5545,7 +6366,10 @@
         "longitude": 23.7239119,
         "wikidata": "Q110147666",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Church of the Nativity of Christ Christokopidi"
+        }
       }
     },
     {
@@ -5567,7 +6391,10 @@
         "latitude": 37.9471317,
         "longitude": 23.7179264,
         "wikidata": "Q18398663",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Agia Fotini cathedral, Nea Smyrni"
+        }
       }
     },
     {
@@ -5590,7 +6417,10 @@
         "longitude": 23.7473411,
         "address": "Βασιλίσσης Σοφίας, 24, Αθήνα",
         "wikidata": "Q38284249",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Church of Agios Georgios Rizareiou Scholis"
+        }
       }
     },
     {
@@ -5613,7 +6443,10 @@
         "longitude": 23.7494454,
         "wikidata": "Q81033801",
         "wikipedia": "el:Πλατεία Μεγάλης του Γένους Σχολής",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Great School of the Genos Square"
+        }
       }
     },
     {
@@ -5640,7 +6473,10 @@
         "phone": "+302103461981",
         "website": "https://herakleidon.org",
         "wikidata": "Q16252571",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Herakleidon Museum"
+        }
       }
     },
     {
@@ -5663,7 +6499,10 @@
         "latitude": 37.9779513,
         "longitude": 23.7341385,
         "wikidata": "Q111245509",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Museum of the Bank of Greece"
+        }
       }
     },
     {
@@ -5689,7 +6528,10 @@
         "website": "http://www.theatro-technis.gr/",
         "wikidata": "Q60705384",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Technis Karolos Koun - Frinichou"
+        }
       }
     },
     {
@@ -5713,7 +6555,10 @@
         "latitude": 37.9303774,
         "longitude": 23.6473513,
         "wikidata": "Q25166886",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Freattyda beach"
+        }
       }
     },
     {
@@ -5737,7 +6582,10 @@
         "wikidata": "Q26996534",
         "wikipedia": "el:Κατράκειο Θέατρο Νίκαιας",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Katrakian Theatre of Nikaia"
+        }
       }
     },
     {
@@ -5763,7 +6611,10 @@
         "phone": "210-3318491-5",
         "website": "http://www.potterymuseum.gr",
         "wikidata": "Q5062634",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Centre for the Study of Traditional Pottery"
+        }
       }
     },
     {
@@ -5786,7 +6637,10 @@
         "longitude": 23.7591416,
         "wikidata": "Q98273271",
         "wikipedia": "el:Μουσείο ΕΑΜικής Εθνικής Αντίστασης Καισαριανής",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "National Resistance Museum, Kaisariani"
+        }
       }
     },
     {
@@ -5813,7 +6667,10 @@
         "wikidata": "Q62596503",
         "wikipedia": "el:Θέατρο Εμπρός",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Embros Theater"
+        }
       }
     },
     {
@@ -5836,7 +6693,10 @@
         "latitude": 37.9353353,
         "longitude": 23.6550592,
         "wikidata": "Q25166884",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Votsalakia beach"
+        }
       }
     },
     {
@@ -5859,7 +6719,10 @@
         "longitude": 23.6426547,
         "wikidata": "Q97355669",
         "wikipedia": "en:Makra Stoa",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Makra Stoa"
+        }
       }
     },
     {
@@ -5882,7 +6745,10 @@
         "longitude": 23.7324686,
         "address": "Δεριγνύ, 10, Αθήνα",
         "wikidata": "Q63343979",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Athina"
+        }
       }
     },
     {
@@ -5905,7 +6771,10 @@
         "longitude": 23.6990392,
         "address": "Λασκαρίδου, 120, Καλλιθέα",
         "wikidata": "Q56396808",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Laskaridou house"
+        }
       }
     },
     {
@@ -5930,7 +6799,10 @@
         "wikidata": "Q85746507",
         "wikipedia": "en:Bema of Phaidros",
         "popularity": 1,
-        "site": "Q1227044"
+        "site": "Q1227044",
+        "names": {
+          "en": "Bema of Phaidros"
+        }
       }
     },
     {
@@ -5952,7 +6824,10 @@
         "latitude": 37.9498733,
         "longitude": 23.7589113,
         "wikidata": "Q61005311",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatro Vrachon"
+        }
       }
     },
     {
@@ -5975,7 +6850,10 @@
         "longitude": 23.7317766,
         "address": "Καρύτση, 7, Αθήνα",
         "wikidata": "Q60714332",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Mousouri theatre"
+        }
       }
     },
     {
@@ -5998,7 +6876,10 @@
         "longitude": 23.7518132,
         "wikidata": "Q58069726",
         "wikipedia": "el:Πλατεία Ουρουγουάης",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Ourougouais Square, Athens"
+        }
       }
     },
     {
@@ -6022,7 +6903,11 @@
         "longitude": 23.7377657,
         "wikidata": "Q107452683",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "The Ellinikon Experience Park",
+          "es": "The Ellinikon Experience Park"
+        }
       }
     },
     {
@@ -6045,7 +6930,10 @@
         "longitude": 23.7331317,
         "wikidata": "Q111707923",
         "wikipedia": "el:Χαρίλαος Τρικούπης",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "statue of Charilaos Trikoupis"
+        }
       }
     },
     {
@@ -6068,7 +6956,10 @@
         "latitude": 38.0041248,
         "longitude": 23.7576199,
         "wikidata": "Q25163821",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Attiko Alsos"
+        }
       }
     },
     {
@@ -6091,7 +6982,10 @@
         "latitude": 38.0144776,
         "longitude": 23.6596666,
         "wikidata": "Q16737824",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Historical Memory and Environmental Awareness Park"
+        }
       }
     },
     {
@@ -6118,7 +7012,10 @@
         "website": "https://theatro-imeras.gr/",
         "wikidata": "Q64523267",
         "wheelchair": "limited",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro tis Imeras"
+        }
       }
     },
     {
@@ -6143,7 +7040,10 @@
         "phone": "+30 21 0645 7086",
         "wikidata": "Q62596494",
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Lampeti"
+        }
       }
     },
     {
@@ -6165,7 +7065,10 @@
         "longitude": 23.6494257,
         "wikidata": "Q116954331",
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Statue of Germanos of Old Patras, Peiraias"
+        }
       }
     },
     {
@@ -6186,7 +7089,10 @@
         "latitude": 37.9409,
         "longitude": 23.6507415,
         "wikidata": "Q116954329",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Mother statue, Peiraias"
+        }
       }
     },
     {
@@ -6207,7 +7113,10 @@
         "latitude": 37.9398129,
         "longitude": 23.6449414,
         "wikidata": "Q75158481",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Panagiotis Vlachakos statue, Piraeus"
+        }
       }
     },
     {
@@ -6228,7 +7137,10 @@
         "latitude": 37.9403013,
         "longitude": 23.6453553,
         "wikidata": "Q75157859",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Iro Konstantopoulou statue"
+        }
       }
     },
     {
@@ -6249,7 +7161,10 @@
         "latitude": 37.9438897,
         "longitude": 23.6446233,
         "wikidata": "Q112961376",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "National Resistance Monument, Piraeus"
+        }
       }
     },
     {
@@ -6270,7 +7185,7 @@
         ],
         "latitude": 38.0251051,
         "longitude": 23.7866466,
-        "address": "Καποδιστρίου, 17, Atenas",
+        "address": "Καποδιστρίου, 17",
         "website": "https://philothei-psychiko.gov.gr/%CE%BA%CE%B1%CF%83%CF%84%CF%81%CE%AF%CF%84%CF%83%CE%B5%CE%B9%CE%BF-%CE%BC%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF/",
         "popularity": 0
       }
@@ -6315,7 +7230,10 @@
         "latitude": 37.9819134,
         "longitude": 23.7279401,
         "wikidata": "Q111707908",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theseus (1)"
+        }
       }
     },
     {
@@ -6336,7 +7254,10 @@
         "latitude": 37.9459615,
         "longitude": 23.6418153,
         "wikidata": "Q112762429",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Karaiskakis statue in Piraeus"
+        }
       }
     },
     {
@@ -6360,7 +7281,10 @@
         "address": "Ιπποκράτους, 17, Αθήνα",
         "wikidata": "Q62596502",
         "wheelchair": "limited",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Akadimos"
+        }
       }
     },
     {
@@ -6404,7 +7328,10 @@
         "longitude": 23.7273786,
         "wikidata": "Q111707889",
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Pericles (statue)"
+        }
       }
     },
     {
@@ -6425,7 +7352,10 @@
         "latitude": 37.9826821,
         "longitude": 23.7564712,
         "wikidata": "Q111356704",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Woman after toil"
+        }
       }
     },
     {
@@ -6446,7 +7376,10 @@
         "latitude": 37.9752081,
         "longitude": 23.7509329,
         "wikidata": "Q114211858",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Monument for the Anonymous Teacher"
+        }
       }
     },
     {
@@ -6494,7 +7427,10 @@
         "latitude": 37.9812207,
         "longitude": 23.7548553,
         "wikidata": "Q111707926",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Clytemnestra"
+        }
       }
     },
     {
@@ -6516,7 +7452,10 @@
         "latitude": 37.9782164,
         "longitude": 23.7658147,
         "wikidata": "Q63486211",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Stoa"
+        }
       }
     },
     {
@@ -6537,7 +7476,10 @@
         "latitude": 37.9238021,
         "longitude": 23.6921611,
         "wikidata": "Q116954342",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Equestrian statue of Konstantine Palaiologos, Faliro"
+        }
       }
     },
     {
@@ -6562,7 +7504,10 @@
         "phone": "+30 21 0865 8902",
         "website": "https://porta-theatre.gr/",
         "wikidata": "Q64176458",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Porta"
+        }
       }
     },
     {
@@ -6584,7 +7529,10 @@
         "latitude": 37.942864,
         "longitude": 23.6852898,
         "wikidata": "Q114119383",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Peace and Freedom (sculture), Kallithea"
+        }
       }
     },
     {
@@ -6608,7 +7556,10 @@
         "address": "Σαρρή, 40, Αθήνα",
         "wikidata": "Q98970231",
         "wheelchair": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Apothiki"
+        }
       }
     },
     {
@@ -6630,7 +7581,10 @@
         "latitude": 37.9834636,
         "longitude": 23.7108987,
         "wikidata": "Q64220210",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Athinais"
+        }
       }
     },
     {
@@ -6653,7 +7607,10 @@
         "longitude": 23.7134404,
         "wikidata": "Q93121470",
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Altera Pars"
+        }
       }
     },
     {
@@ -6675,7 +7632,10 @@
         "latitude": 37.9805855,
         "longitude": 23.7127857,
         "wikidata": "Q76452280",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Chytirio"
+        }
       }
     },
     {
@@ -6698,7 +7658,10 @@
         "longitude": 23.7354297,
         "wikidata": "Q38284096",
         "wheelchair": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatre \"Athenon\""
+        }
       }
     },
     {
@@ -6722,7 +7685,10 @@
         "address": "Καρόλου, 18, Αθήνα",
         "phone": "+30 21 0522 1767",
         "wikidata": "Q60877660",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Vembo"
+        }
       }
     },
     {
@@ -6743,9 +7709,12 @@
         ],
         "latitude": 37.9877631,
         "longitude": 23.729575,
-        "address": "Στουρνάρη, 32, Atenas",
+        "address": "Στουρνάρη, 32",
         "wikidata": "Q60844431",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Veaki Theater"
+        }
       }
     },
     {
@@ -6819,7 +7788,10 @@
         "latitude": 38.0058877,
         "longitude": 23.733595,
         "wikidata": "Q64213542",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Knosos"
+        }
       }
     },
     {
@@ -6841,7 +7813,10 @@
         "latitude": 37.9455571,
         "longitude": 23.666428,
         "wikidata": "Q92055839",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Kato apo ti Gefyra"
+        }
       }
     },
     {
@@ -6863,7 +7838,10 @@
         "latitude": 37.9854185,
         "longitude": 23.7260957,
         "wikidata": "Q62596521",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Angelon Vima"
+        }
       }
     },
     {
@@ -6886,7 +7864,10 @@
         "longitude": 23.7292697,
         "address": "Τρικόρφων, 3, Αθήνα",
         "wikidata": "Q62596508",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Poreia"
+        }
       }
     },
     {
@@ -6936,7 +7917,10 @@
         "longitude": 23.7327764,
         "phone": "+302108654787;+302110130238",
         "wikidata": "Q76947504",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Broadway Theatre"
+        }
       }
     },
     {
@@ -6957,7 +7941,10 @@
         "latitude": 37.9423962,
         "longitude": 23.6467587,
         "wikidata": "Q65966597",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Adamantios Korais bust"
+        }
       }
     },
     {
@@ -6980,7 +7967,10 @@
         "longitude": 23.7362722,
         "address": "Κεφαλληνίας, 17, Αθήνα",
         "wikidata": "Q90009475",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Topos Allou"
+        }
       }
     },
     {
@@ -7003,7 +7993,10 @@
         "longitude": 23.7362186,
         "address": "Κεφαλληνίας, 16, Αθήνα",
         "wikidata": "Q60704969",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Odou Kefallinias"
+        }
       }
     },
     {
@@ -7026,7 +8019,10 @@
         "longitude": 23.734538,
         "phone": "+30 21 0882 7000",
         "wikidata": "Q62596493",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Kappa"
+        }
       }
     },
     {
@@ -7100,7 +8096,10 @@
         "latitude": 37.9551034,
         "longitude": 23.6803843,
         "wikidata": "Q115106439",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Theodoros Kolokotronis, Moschato"
+        }
       }
     },
     {
@@ -7193,7 +8192,10 @@
         "latitude": 37.9294761,
         "longitude": 23.6347795,
         "wikidata": "Q116954466",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Chrysostomos Smyrnis, Peiraias"
+        }
       }
     },
     {
@@ -7214,7 +8216,10 @@
         "latitude": 37.9853555,
         "longitude": 23.7602007,
         "wikidata": "Q111707982",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Statue of Makarios III, Athens"
+        }
       }
     },
     {
@@ -7235,7 +8240,10 @@
         "latitude": 37.9325756,
         "longitude": 23.645133,
         "wikidata": "Q115129193",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Lambros Porphyra, Peiraeus"
+        }
       }
     },
     {
@@ -7256,7 +8264,10 @@
         "latitude": 37.9744869,
         "longitude": 23.7471374,
         "wikidata": "Q111698484",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of François-René de Chateaubriand"
+        }
       }
     },
     {
@@ -7277,7 +8288,10 @@
         "latitude": 37.9746886,
         "longitude": 23.7499617,
         "wikidata": "Q111698469",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Christopher Nezer"
+        }
       }
     },
     {
@@ -7298,7 +8312,10 @@
         "latitude": 37.9732633,
         "longitude": 23.7444217,
         "wikidata": "Q111698476",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Dimitris Mitropoulos"
+        }
       }
     },
     {
@@ -7319,7 +8336,10 @@
         "latitude": 37.9721536,
         "longitude": 23.7425547,
         "wikidata": "Q111698459",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Angelos Sikelianos (monument)"
+        }
       }
     },
     {
@@ -7340,7 +8360,10 @@
         "latitude": 37.9766139,
         "longitude": 23.7490661,
         "wikidata": "Q111698472",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "bust of Constantinos Economos"
+        }
       }
     },
     {
@@ -7361,7 +8384,10 @@
         "latitude": 37.9768829,
         "longitude": 23.7480415,
         "wikidata": "Q111698518",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "bust of Queen Olga, Athens"
+        }
       }
     },
     {
@@ -7382,7 +8408,10 @@
         "latitude": 37.9668067,
         "longitude": 23.7150533,
         "wikidata": "Q114140341",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "statue, The Blind Sculptor"
+        }
       }
     },
     {
@@ -7427,7 +8456,10 @@
         "longitude": 23.7211713,
         "wikidata": "Q116312237",
         "popularity": 0,
-        "site": "Q38279507"
+        "site": "Q38279507",
+        "names": {
+          "en": "Heroum of Musaeus, Athens"
+        }
       }
     },
     {
@@ -7449,7 +8481,10 @@
         "latitude": 37.9842491,
         "longitude": 23.7658705,
         "wikidata": "Q111698494",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Hippocrates bust"
+        }
       }
     },
     {
@@ -7473,7 +8508,10 @@
         "longitude": 23.734421,
         "address": "Τιμολέοντος, 2, Αθήνα",
         "wikidata": "Q98609805",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Loukia Georgandi Museum of Sculptures and Figures"
+        }
       }
     },
     {
@@ -7494,7 +8532,10 @@
         "latitude": 37.9788935,
         "longitude": 23.7282823,
         "wikidata": "Q111707904",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Beneficial & Xenios Hermes"
+        }
       }
     },
     {
@@ -7515,7 +8556,10 @@
         "latitude": 37.934578,
         "longitude": 23.6454107,
         "wikidata": "Q116954427",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Theodoros Afentoulis, Peiraias"
+        }
       }
     },
     {
@@ -7537,7 +8581,10 @@
         "latitude": 37.9903506,
         "longitude": 23.8100001,
         "wikidata": "Q113144628",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Korakovouni (Attiki)"
+        }
       }
     },
     {
@@ -7560,7 +8607,10 @@
         "longitude": 23.7221327,
         "website": "http://attistheatre.com/",
         "wikidata": "Q113462020",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Attis Theatre"
+        }
       }
     },
     {
@@ -7630,7 +8680,10 @@
         "latitude": 37.9439427,
         "longitude": 23.6441658,
         "wikidata": "Q115190997",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Statue of Themistocles, Piraeus"
+        }
       }
     },
     {
@@ -7651,10 +8704,13 @@
         ],
         "latitude": 37.9905317,
         "longitude": 23.7162092,
-        "address": "Ναυπλίου, 12, Atenas",
+        "address": "Ναυπλίου, 12",
         "phone": "+30 21 0513 8067",
         "wikidata": "Q62594606",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Epi Kolono"
+        }
       }
     },
     {
@@ -7701,7 +8757,10 @@
         "latitude": 37.8927087,
         "longitude": 23.7603509,
         "wikidata": "Q116842514",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Eleftherios Venizelos, Elliniko"
+        }
       }
     },
     {
@@ -7773,7 +8832,7 @@
         ],
         "latitude": 37.9847149,
         "longitude": 23.7257615,
-        "address": "Αγίου Κωνσταντίνου, 20, Atenas",
+        "address": "Αγίου Κωνσταντίνου, 20",
         "opening_hours": "\"on appointment\"",
         "phone": "+30 21 05221420",
         "popularity": 0
@@ -7798,7 +8857,10 @@
         "latitude": 37.9862735,
         "longitude": 23.7209543,
         "wikidata": "Q64590744",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Peroke"
+        }
       }
     },
     {
@@ -7840,7 +8902,10 @@
         "latitude": 37.976775,
         "longitude": 23.7369938,
         "wikidata": "Q111698491",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Giorgos Seferis"
+        }
       }
     },
     {
@@ -7886,7 +8951,10 @@
         "latitude": 37.9709036,
         "longitude": 23.73324,
         "wikidata": "Q111648974",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Alexander the Great equestrian statue, Athens"
+        }
       }
     },
     {
@@ -7907,7 +8975,10 @@
         "latitude": 37.9421823,
         "longitude": 23.6473071,
         "wikidata": "Q65966585",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Eleftherios Venizelos statue, Piraeus"
+        }
       }
     },
     {
@@ -7929,7 +9000,10 @@
         "latitude": 37.9776306,
         "longitude": 23.7232571,
         "wikidata": "Q64286514",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Antitheatro"
+        }
       }
     },
     {
@@ -7957,7 +9031,10 @@
         "website": "https://museumofillusions.gr",
         "wikidata": "Q108674606",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of Illusions"
+        }
       }
     },
     {
@@ -8004,7 +9081,10 @@
         "latitude": 38.0035239,
         "longitude": 23.7934485,
         "wikidata": "Q111969143",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Pericles son of Xanthippos of Holargos (statue)"
+        }
       }
     },
     {
@@ -8051,7 +9131,10 @@
         "latitude": 37.9417986,
         "longitude": 23.6465975,
         "wikidata": "Q79971364",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Menelaos Pallantios (bust)"
+        }
       }
     },
     {
@@ -8072,7 +9155,7 @@
         ],
         "latitude": 38.0019271,
         "longitude": 23.7397752,
-        "address": "Φωκίωνος Νέγρη, 55, Atenas",
+        "address": "Φωκίωνος Νέγρη, 55",
         "opening_hours": "Mo-Fr 18:00-21:30",
         "website": "https://www.blankwallgallery.com/",
         "popularity": 0
@@ -8096,7 +9179,10 @@
         "latitude": 37.9773936,
         "longitude": 23.7548245,
         "wikidata": "Q111795528",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Francisco de Miranda bust"
+        }
       }
     },
     {
@@ -8142,7 +9228,10 @@
         "latitude": 37.9855553,
         "longitude": 23.8020209,
         "wikidata": "Q108751413",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Tower of St. John monastery"
+        }
       }
     },
     {
@@ -8163,7 +9252,10 @@
         "latitude": 37.9559747,
         "longitude": 23.7023825,
         "wikidata": "Q114140249",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Giannis Gallos, Kallithea"
+        }
       }
     },
     {
@@ -8211,7 +9303,10 @@
         "address": "Προφήτου Δανιήλ, 3, Αθήνα",
         "phone": "+302110132002",
         "wikidata": "Q61693928",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Katerinas Vasilakou"
+        }
       }
     },
     {
@@ -8237,7 +9332,10 @@
         "phone": "+302106885560",
         "website": "https://athensolympicmuseum.org/",
         "wikidata": "Q109730611",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Athens Olympic Museum"
+        }
       }
     },
     {
@@ -8282,7 +9380,10 @@
         "longitude": 23.7356737,
         "wikidata": "Q110833611",
         "popularity": 0,
-        "site": "Q20084335"
+        "site": "Q20084335",
+        "names": {
+          "en": "Zeus Meilichios sanctuary"
+        }
       }
     },
     {
@@ -8303,7 +9404,10 @@
         "latitude": 37.9725578,
         "longitude": 23.7321332,
         "wikidata": "Q111716691",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Konstantinos Tsatsos (bust)"
+        }
       }
     },
     {
@@ -8324,7 +9428,10 @@
         "latitude": 37.9725811,
         "longitude": 23.7321192,
         "wikidata": "Q111716504",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Ioanna Tsatsou (bust)"
+        }
       }
     },
     {
@@ -8347,7 +9454,10 @@
         "longitude": 23.6488817,
         "website": "https://www.ynanp.gr/el/ypoyrgeio/epopteyomenoi-foreis-ynanp/institoyto-istorias-emporikhs-naytilias/",
         "wikidata": "Q111606203",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of Mercantile Marine"
+        }
       }
     },
     {
@@ -8416,7 +9526,10 @@
         "latitude": 37.9815556,
         "longitude": 23.7347922,
         "wikidata": "Q111698492",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Gregory Xenopoulos"
+        }
       }
     },
     {
@@ -8437,7 +9550,10 @@
         "latitude": 37.9814393,
         "longitude": 23.7348922,
         "wikidata": "Q111702725",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Eduard Schaubert"
+        }
       }
     },
     {
@@ -8483,7 +9599,10 @@
         "latitude": 38.0046031,
         "longitude": 23.6866608,
         "wikidata": "Q114138985",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Statue of Venizelos Eleftherios, Peristeri"
+        }
       }
     },
     {
@@ -8504,7 +9623,10 @@
         "latitude": 38.0155892,
         "longitude": 23.7057808,
         "wikidata": "Q114138977",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Daskalogiannis, Peristeri"
+        }
       }
     },
     {
@@ -8526,7 +9648,10 @@
         "latitude": 37.948023,
         "longitude": 23.7103509,
         "wikidata": "Q114140218",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Giorgos Seferis, Nea Smyrni"
+        }
       }
     },
     {
@@ -8548,7 +9673,10 @@
         "latitude": 37.9751774,
         "longitude": 23.7426914,
         "wikidata": "Q111707920",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Imia Memorial"
+        }
       }
     },
     {
@@ -8569,7 +9697,10 @@
         "latitude": 37.9760892,
         "longitude": 23.7472209,
         "wikidata": "Q111698489",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "bust of Georgios Rizaris"
+        }
       }
     },
     {
@@ -8669,7 +9800,10 @@
         "latitude": 37.9480163,
         "longitude": 23.7102954,
         "wikidata": "Q114140141",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Bust of Stelios Sepheriadis, Nea Smyrni"
+        }
       }
     },
     {
@@ -8690,7 +9824,10 @@
         "latitude": 37.9749357,
         "longitude": 23.7504917,
         "wikidata": "Q111595084",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Maria Callas statue"
+        }
       }
     },
     {
@@ -8782,7 +9919,10 @@
         "latitude": 37.9687285,
         "longitude": 23.730303,
         "wikidata": "Q110808213",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Makri 8"
+        }
       }
     },
     {
@@ -8851,7 +9991,7 @@
         ],
         "latitude": 37.9749141,
         "longitude": 23.7261667,
-        "address": "Δεξίππου, 3, Atenas",
+        "address": "Δεξίππου, 3",
         "website": "https://www.instagram.com/reels/C7Dq6tONJSY/",
         "popularity": 0
       }
@@ -8969,7 +10109,7 @@
         ],
         "latitude": 37.9975023,
         "longitude": 23.6728128,
-        "address": "Έβρου, 31, Atenas",
+        "address": "Έβρου, 31",
         "website": "http://www.tradeicons.com",
         "popularity": 0
       }
@@ -9017,7 +10157,10 @@
         "longitude": 23.7563963,
         "address": "Ούλωφ Πάλμε, Αθήνα",
         "wikidata": "Q127869355",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Alsos Ilision"
+        }
       }
     },
     {
@@ -9040,7 +10183,10 @@
         "latitude": 37.9818204,
         "longitude": 23.7286015,
         "wikidata": "Q38279577",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Kotzia square excavation"
+        }
       }
     },
     {
@@ -9063,7 +10209,10 @@
         "latitude": 37.9803517,
         "longitude": 23.7525911,
         "wikidata": "Q112323831",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Eleftherias Park"
+        }
       }
     },
     {
@@ -9179,7 +10328,10 @@
         "latitude": 37.9810883,
         "longitude": 23.7520745,
         "wikidata": "Q112332552",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of the Antidictatorship Democratic Resistance"
+        }
       }
     },
     {
@@ -9201,7 +10353,10 @@
         "latitude": 37.9750454,
         "longitude": 23.75092,
         "wikidata": "Q111595436",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Madritis Square, Athens"
+        }
       }
     },
     {
@@ -9491,7 +10646,10 @@
         "address": "Μακρή, 4, Αθήνα",
         "wikidata": "Q63343860",
         "wheelchair": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Sfendoni"
+        }
       }
     },
     {
@@ -9514,7 +10672,10 @@
         "latitude": 37.9390305,
         "longitude": 23.6432373,
         "wikidata": "Q113003259",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Rondiri Square archaeological site"
+        }
       }
     },
     {
@@ -9563,7 +10724,10 @@
         "phone": "+30 210 7773946",
         "website": "http://www.benaki.gr/",
         "wikidata": "Q93213417",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Yannis Pappas Studio"
+        }
       }
     },
     {
@@ -9585,7 +10749,10 @@
         "latitude": 37.9814568,
         "longitude": 23.7163678,
         "wikidata": "Q116312064",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Demosion Sema"
+        }
       }
     },
     {
@@ -9665,7 +10832,10 @@
         "longitude": 23.7192031,
         "wikidata": "Q38279507",
         "popularity": 0,
-        "site": "Q38279507"
+        "site": "Q38279507",
+        "names": {
+          "en": "Acropolis Western Hills"
+        }
       }
     },
     {
@@ -9688,7 +10858,10 @@
         "longitude": 23.7179826,
         "address": "Γερμανικού, 20, Αθήνα",
         "wikidata": "Q43064252",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Rabbithole Art & Performance Space"
+        }
       }
     },
     {
@@ -9754,7 +10927,10 @@
         "latitude": 37.9455711,
         "longitude": 23.6463308,
         "wikidata": "Q65966401",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Park IKA"
+        }
       }
     },
     {
@@ -9776,7 +10952,10 @@
         "latitude": 37.9287983,
         "longitude": 23.6298433,
         "wikidata": "Q56397308",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Ancient walls of Piraeus"
+        }
       }
     },
     {
@@ -9825,7 +11004,10 @@
         "website": "https://theatroavaton.com/",
         "wikidata": "Q73380924",
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Theatro Avaton"
+        }
       }
     },
     {
@@ -9847,7 +11029,10 @@
         "latitude": 37.9789758,
         "longitude": 23.7126542,
         "wikidata": "Q124804333",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Roes Theatre"
+        }
       }
     },
     {
@@ -9892,7 +11077,10 @@
         "latitude": 37.9710414,
         "longitude": 23.8064615,
         "wikidata": "Q108664761",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Tower of Anthussa - Ymittos"
+        }
       }
     },
     {
@@ -10008,7 +11196,7 @@
         ],
         "latitude": 38.0399229,
         "longitude": 23.7601092,
-        "address": "Εμμανουήλ Παππά, 11, Atenas",
+        "address": "Εμμανουήλ Παππά, 11",
         "opening_hours": "\"only during periods when there is a show on\"",
         "phone": "+302102758490",
         "website": "http://www.deste.gr",
@@ -10107,7 +11295,10 @@
         "phone": "+30 21 0331 2621; +30 21 0331 2750",
         "wikidata": "Q108651215",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of Greek Children Art"
+        }
       }
     },
     {
@@ -10129,11 +11320,14 @@
         ],
         "latitude": 37.929788,
         "longitude": 23.6874548,
-        "address": "Ποσειδώνος, 14, Atenas",
+        "address": "Ποσειδώνος, 14",
         "opening_hours": "Th-Su 10:00-18:00",
         "website": "https://www.benaki.gr/index.php?option=com_buildings&view=building&id=7&lang=el",
         "wikidata": "Q56396802",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "House of Koulouras"
+        }
       }
     },
     {
@@ -10360,7 +11554,7 @@
         ],
         "latitude": 37.9535388,
         "longitude": 23.6506685,
-        "address": "Υμηττού, Atenas",
+        "address": "Υμηττού",
         "popularity": 0
       }
     },
@@ -10457,7 +11651,10 @@
         "opening_hours": "Nov-Mar Mo-Fr 08:30-14:00; Apr-Oct Tu-Su 08:30-15:30",
         "wikidata": "Q56397345",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Eetioneia"
+        }
       }
     },
     {
@@ -10638,7 +11835,7 @@
         ],
         "latitude": 37.9880058,
         "longitude": 23.7520846,
-        "address": "Αλεξάνδρας, 152, Atenas",
+        "address": "Αλεξάνδρας, 152",
         "opening_hours": "Mo-Su 11:00-02:30",
         "phone": "+30 21 0644 4449",
         "wheelchair": "no",
@@ -10798,7 +11995,7 @@
         ],
         "latitude": 37.9856734,
         "longitude": 23.7643129,
-        "address": "Χαλκηδόνος, 66, Atenas",
+        "address": "Χαλκηδόνος, 66",
         "opening_hours": "Tu-Su 12:00-24:00",
         "phone": "+30 21 1735 8345",
         "website": "https://zuzutoramen.gr/",
@@ -10936,7 +12133,7 @@
         ],
         "latitude": 37.9797546,
         "longitude": 23.7402778,
-        "address": "Φωκυλίδου, 15, Atenas",
+        "address": "Φωκυλίδου, 15",
         "opening_hours": "Mo-Sa 13:30-23:00",
         "phone": "+30 21 0360 8621",
         "website": "http://papadakisrestaurant.com",
@@ -10963,7 +12160,7 @@
         ],
         "latitude": 37.9660501,
         "longitude": 23.7256297,
-        "address": "Βεΐκου, 40, Atenas",
+        "address": "Βεΐκου, 40",
         "opening_hours": "PH,Mo-Su 17:00-23:50",
         "phone": "+30 2114051947",
         "wheelchair": "limited",
@@ -10989,7 +12186,7 @@
         ],
         "latitude": 37.9864531,
         "longitude": 23.7376046,
-        "address": "Μεθώνης, 43, Atenas",
+        "address": "Μεθώνης, 43",
         "opening_hours": "Mo-Su 01:30-00:00",
         "phone": "+302103838167",
         "wheelchair": "yes",
@@ -11015,7 +12212,7 @@
         ],
         "latitude": 37.9783101,
         "longitude": 23.7238242,
-        "address": "Τάκη, 19, Atenas",
+        "address": "Τάκη, 19",
         "opening_hours": "Tu-Su 13:00-23:00",
         "phone": "+30 21 0325 2255",
         "wheelchair": "no",
@@ -11067,7 +12264,7 @@
         ],
         "latitude": 37.9445122,
         "longitude": 23.7205212,
-        "address": "Αρτάκης, 85, Atenas",
+        "address": "Αρτάκης, 85",
         "opening_hours": "Mo-Th,Su 08:00-23:00; Fr-Sa 08:00-02:00",
         "phone": "+30 21 0931 1211",
         "wheelchair": "yes",
@@ -11280,7 +12477,7 @@
         ],
         "latitude": 37.9577203,
         "longitude": 23.7004728,
-        "address": "Λασκαρίδου, 106, Atenas",
+        "address": "Λασκαρίδου, 106",
         "opening_hours": "Mo-Su 12:00-01:30",
         "phone": "+30 2109513215",
         "website": "https://gefseiskallitheas.gr",
@@ -11357,7 +12554,7 @@
         ],
         "latitude": 37.9879923,
         "longitude": 23.7521801,
-        "address": "Αλεξάνδρας, 152, Atenas",
+        "address": "Αλεξάνδρας, 152",
         "opening_hours": "Mo-Su 12:00-24:00",
         "phone": "+30 21 0646 1377",
         "cuisine": "greek",
@@ -11750,7 +12947,7 @@
         ],
         "latitude": 37.9861387,
         "longitude": 23.7324142,
-        "address": "Σόλωνος, 2, Atenas",
+        "address": "Σόλωνος, 2",
         "opening_hours": "Mo-Su 12:00-01:00",
         "phone": "+302103300864",
         "website": "https://www.facebook.com/atitamos",
@@ -11777,7 +12974,7 @@
         ],
         "latitude": 37.9714752,
         "longitude": 23.7449791,
-        "address": "Αρριανού, 31, Atenas",
+        "address": "Αρριανού, 31",
         "opening_hours": "Su 13:00-19:00; Mo-Sa 13:00-24:00",
         "phone": "+30 21 0722 3469",
         "cuisine": "greek;local;seafood;regional",
@@ -11956,7 +13153,7 @@
         ],
         "latitude": 37.987163,
         "longitude": 23.7644696,
-        "address": "Φωκίδος, 20, Atenas",
+        "address": "Φωκίδος, 20",
         "opening_hours": "12:00-24:00",
         "phone": "+302107719872",
         "cuisine": "chinese",
@@ -11981,7 +13178,7 @@
         ],
         "latitude": 37.9805895,
         "longitude": 23.7381363,
-        "address": "Ομήρου, 60, Atenas",
+        "address": "Ομήρου, 60",
         "opening_hours": "Mo-Su 08:00-24:00",
         "phone": "+302103617201",
         "website": "https://niceneasy.gr/athina",
@@ -12057,7 +13254,7 @@
         ],
         "latitude": 37.9776198,
         "longitude": 23.722738,
-        "address": "Ήβης, 21, Atenas",
+        "address": "Ήβης, 21",
         "opening_hours": "Mo off; Tu-Th,Su 10:00-02:00; Fr-Sa 10:00-02:30",
         "phone": "+30 21 0323 5349",
         "wheelchair": "no",
@@ -12108,7 +13305,7 @@
         ],
         "latitude": 37.9727797,
         "longitude": 23.7539618,
-        "address": "Διοχάρους, 31, Atenas",
+        "address": "Διοχάρους, 31",
         "opening_hours": "Mo-Sa 12:00-19:00; Aug 10-23 off",
         "phone": "+30 210 722 4242",
         "cuisine": "greek",
@@ -12184,7 +13381,7 @@
         ],
         "latitude": 37.9830271,
         "longitude": 23.7568436,
-        "address": "Δορυλαίου, 2, Atenas",
+        "address": "Δορυλαίου, 2",
         "opening_hours": "08:30-00:30",
         "phone": "+302106465029",
         "website": "https://flowerathens.com/",
@@ -12237,7 +13434,7 @@
         ],
         "latitude": 37.9726667,
         "longitude": 23.729649,
-        "address": "Επιχάρμου, 1, Atenas",
+        "address": "Επιχάρμου, 1",
         "opening_hours": "Mo-Su 10:00-01:00",
         "phone": "+30 21 0324 6916",
         "website": "https://www.tokafeneio.gr/",
@@ -12289,7 +13486,7 @@
         ],
         "latitude": 37.986368,
         "longitude": 23.7228802,
-        "address": "Βίκτωρος Ουγκώ, 31, Atenas",
+        "address": "Βίκτωρος Ουγκώ, 31",
         "opening_hours": "Mo-Su 08:00-23:00",
         "phone": "+30 21 0220 8179",
         "cuisine": "breakfast;burger",
@@ -12314,7 +13511,7 @@
         ],
         "latitude": 37.9766812,
         "longitude": 23.7317693,
-        "address": "Perikleous, 18, Atenas",
+        "address": "Perikleous, 18",
         "opening_hours": "Mo-Su 13:00-23:45",
         "phone": "+30 21 0322 6542",
         "website": "https://granellopizza.gr",
@@ -12340,7 +13537,7 @@
         ],
         "latitude": 37.9954567,
         "longitude": 23.7375596,
-        "address": "Ευελπίδων, 35, Atenas",
+        "address": "Ευελπίδων, 35",
         "opening_hours": "Tu-Su 12:00-24:00",
         "phone": "+30 21 1418 5060",
         "website": "https://pinsame.gr/",
@@ -12366,7 +13563,7 @@
         ],
         "latitude": 37.9565025,
         "longitude": 23.7430027,
-        "address": "Αμφικράτους, 38, Atenas",
+        "address": "Αμφικράτους, 38",
         "opening_hours": "Mo-Su 14:00-00:00",
         "phone": "+30 21 0701 1906; +30 21 0701 1506; +30 21 0701 5859",
         "website": "https://palataki-delivery.gr/",
@@ -12443,7 +13640,7 @@
         ],
         "latitude": 37.9692722,
         "longitude": 23.7544603,
-        "address": "Εθνικής Αντιστάσεως, 11, Atenas",
+        "address": "Εθνικής Αντιστάσεως, 11",
         "opening_hours": "Mo-Su 12:00-02:00",
         "phone": "+30 21 0724 4072",
         "website": "https://www.mandrakigrill.gr/home",
@@ -12496,7 +13693,7 @@
         ],
         "latitude": 37.9851387,
         "longitude": 23.7321356,
-        "address": "Κλεισόβης, 1, Atenas",
+        "address": "Κλεισόβης, 1",
         "opening_hours": "Tu-Su 13:00-23:00",
         "phone": "+30 21 1425 3983",
         "cuisine": "kebab",
@@ -12548,7 +13745,7 @@
         ],
         "latitude": 37.9900843,
         "longitude": 23.7133555,
-        "address": "Άργους, 66, Atenas",
+        "address": "Άργους, 66",
         "opening_hours": "We-Fr 18:30-23:30; Sa 14:00-23:30",
         "phone": "+3021 0512 7506",
         "cuisine": "greek",
@@ -12573,7 +13770,7 @@
         ],
         "latitude": 37.9649214,
         "longitude": 23.7307593,
-        "address": "Μεναίχμου, 4, Atenas",
+        "address": "Μεναίχμου, 4",
         "opening_hours": "Mo-Sa 18:30-00:00",
         "phone": "+30 21 0921 3690",
         "website": "https://anniefinecooking.gr/",
@@ -12599,7 +13796,7 @@
         ],
         "latitude": 37.9738344,
         "longitude": 23.7327058,
-        "address": "Σκούφου, 15, Atenas",
+        "address": "Σκούφου, 15",
         "opening_hours": "Mo-Su 13:00-00:00",
         "phone": "+30 2113332170",
         "website": "https://www.ekibenkitchen.com/",
@@ -12625,7 +13822,7 @@
         ],
         "latitude": 37.9857353,
         "longitude": 23.7337205,
-        "address": "Θεμιστοκλέους, 56, Atenas",
+        "address": "Θεμιστοκλέους, 56",
         "opening_hours": "Mo-Th 18:00-01:15; Fr-Sa 13:00-03:30; Su 13:00-01:15",
         "phone": "+30 21 0381 5278",
         "website": "https://linktr.ee/exberg",
@@ -12729,7 +13926,7 @@
         ],
         "latitude": 37.9654951,
         "longitude": 23.7266936,
-        "address": "Φαλήρου, 36, Atenas",
+        "address": "Φαλήρου, 36",
         "opening_hours": "17:00-24:00",
         "phone": "+30 21 1006 4220",
         "cuisine": "japanese",
@@ -12754,7 +13951,7 @@
         ],
         "latitude": 37.9762642,
         "longitude": 23.7317888,
-        "address": "Ερμού, 18, Atenas",
+        "address": "Ερμού, 18",
         "opening_hours": "Mo-Su 11:00-23:00",
         "phone": "+30 694 037 5347",
         "cuisine": "greek",
@@ -12831,7 +14028,7 @@
         ],
         "latitude": 37.9567742,
         "longitude": 23.70068,
-        "address": "Σαπφούς, 99, Atenas",
+        "address": "Σαπφούς, 99",
         "opening_hours": "12:00-01:00",
         "phone": "+30 2109590608",
         "website": "https://www.kreatofageion.gr/",
@@ -13108,7 +14305,7 @@
         ],
         "latitude": 37.9741925,
         "longitude": 23.7661461,
-        "address": "Παπακωνσταντίνου, 20, Atenas",
+        "address": "Παπακωνσταντίνου, 20",
         "opening_hours": "Mo-Th 08:00-01:00; Fr-Sa 08:00-02:00; Su 09:00-01:00",
         "phone": "+30 210 7792997",
         "popularity": 0
@@ -13305,7 +14502,7 @@
         ],
         "latitude": 37.9750485,
         "longitude": 23.7283463,
-        "address": "Πανδρόσου, 15, Atenas",
+        "address": "Πανδρόσου, 15",
         "opening_hours": "Mo-Su 11:00-00:15",
         "website": "http://www.hermion.gr",
         "wheelchair": "yes",
@@ -13429,7 +14626,7 @@
         ],
         "latitude": 37.9817219,
         "longitude": 23.7170902,
-        "address": "Λεωνίδου, 80, Atenas",
+        "address": "Λεωνίδου, 80",
         "opening_hours": "Tu-Su 10:00-01:00",
         "phone": "+302105228527",
         "popularity": 0
@@ -13453,7 +14650,7 @@
         ],
         "latitude": 37.9774055,
         "longitude": 23.7241592,
-        "address": "Καραϊσκάκη, 14, Atenas",
+        "address": "Καραϊσκάκη, 14",
         "opening_hours": "Mo-We, Su 10:00-02:00; Th 10:00-02:30; Fr, Sa 10:00-04:00",
         "phone": "+302114182422",
         "popularity": 0
@@ -13576,7 +14773,7 @@
         ],
         "latitude": 37.9551403,
         "longitude": 23.7248366,
-        "address": "Μάχης Αναλάτου, 49, Atenas",
+        "address": "Μάχης Αναλάτου, 49",
         "opening_hours": "Mo-Su 14:30-01:00",
         "phone": "+302114070674",
         "popularity": 0
@@ -13600,7 +14797,7 @@
         ],
         "latitude": 37.9886356,
         "longitude": 23.7215864,
-        "address": "Χίου, 29, Atenas",
+        "address": "Χίου, 29",
         "opening_hours": "Tu-Su 13:30-00:00",
         "phone": "+30 21 5560 0234",
         "website": "https://www.facebook.com/KapaniKafeneio",
@@ -13651,7 +14848,7 @@
         ],
         "latitude": 37.9784987,
         "longitude": 23.7681003,
-        "address": "Στρατάρχου Αλέξανδρου Παπάγου, 69, Atenas",
+        "address": "Στρατάρχου Αλέξανδρου Παπάγου, 69",
         "opening_hours": "Mo-Fr 06:00-23:00; Sa 06:00-23:00; Su 07:00-23:00",
         "phone": "+30 21 0777 1950",
         "website": "http://www.mikelcc.gr/",
@@ -13838,7 +15035,7 @@
         ],
         "latitude": 37.977745,
         "longitude": 23.7243746,
-        "address": "Καραϊσκάκη, 17, Atenas",
+        "address": "Καραϊσκάκη, 17",
         "opening_hours": "Mo-Su 11:00-24:00",
         "phone": "+30 21 0321 4144",
         "wheelchair": "yes",
@@ -13971,7 +15168,7 @@
         ],
         "latitude": 37.9640006,
         "longitude": 23.731172,
-        "address": "Θεοδωρήτου Βρεσθένης, 1, Atenas",
+        "address": "Θεοδωρήτου Βρεσθένης, 1",
         "opening_hours": "08:00-24:00",
         "phone": "+30 21 0923 4227",
         "wheelchair": "no",
@@ -13997,7 +15194,7 @@
         ],
         "latitude": 37.9573447,
         "longitude": 23.732581,
-        "address": "Κάρπου, 64, Atenas",
+        "address": "Κάρπου, 64",
         "opening_hours": "Mo-Fr 07:00-20:00; Sa-Su off",
         "phone": "+30 21 1424 3101",
         "wheelchair": "no",
@@ -14048,7 +15245,7 @@
         ],
         "latitude": 37.9861405,
         "longitude": 23.7346052,
-        "address": "Θεμιστοκλέους, 70, Atenas",
+        "address": "Θεμιστοκλέους, 70",
         "opening_hours": "PH,Mo-Su 07:00-02:00",
         "phone": "+30 21 0330 1177",
         "wheelchair": "limited",
@@ -14224,7 +15421,7 @@
         ],
         "latitude": 37.9772267,
         "longitude": 23.7249404,
-        "address": "Αγίας Θέκλας, 5, Atenas",
+        "address": "Αγίας Θέκλας, 5",
         "opening_hours": "Mo-Fr 08:00-16:00; Sa-Su 08:00-18:00",
         "phone": "+306944200899",
         "website": "https://thebrunchers.gr/",
@@ -14300,7 +15497,7 @@
         ],
         "latitude": 37.978466,
         "longitude": 23.723904,
-        "address": "Τάκη, 14, Atenas",
+        "address": "Τάκη, 14",
         "opening_hours": "09:00-02:00",
         "phone": "+302114129537",
         "website": "https://kalimeres.gr",
@@ -14326,7 +15523,7 @@
         ],
         "latitude": 37.9744344,
         "longitude": 23.750866,
-        "address": "Βασιλέως Αλεξάνδρου, 7, Atenas",
+        "address": "Βασιλέως Αλεξάνδρου, 7",
         "opening_hours": "Mo-Su 09:00-01:00",
         "phone": "+30 21 0725 3200",
         "cuisine": "breakfast;international;coffee_shop",
@@ -14482,7 +15679,7 @@
         ],
         "latitude": 37.9521257,
         "longitude": 23.7172751,
-        "address": "Αιγαίου, 27, Atenas",
+        "address": "Αιγαίου, 27",
         "opening_hours": "Mo-Sa 06:00-19:00",
         "phone": "+30 21 1416 8254",
         "cuisine": "coffee_shop",
@@ -14558,7 +15755,7 @@
         ],
         "latitude": 37.9811304,
         "longitude": 23.71712,
-        "address": "Keramikou, 84, Atenas",
+        "address": "Keramikou, 84",
         "opening_hours": "Su, Tu-Th 09:00-12:00; Fr-Sa 09:00-01:00",
         "phone": "+302105237899",
         "cuisine": "breakfast;greek",
@@ -14711,7 +15908,7 @@
         ],
         "latitude": 37.9776965,
         "longitude": 23.7226328,
-        "address": "Ναυάρχου Αποστόλη, 16, Atenas",
+        "address": "Ναυάρχου Αποστόλη, 16",
         "opening_hours": "10:00-01:00",
         "phone": "+302103236120",
         "wheelchair": "no",
@@ -14788,7 +15985,7 @@
         ],
         "latitude": 38.0013597,
         "longitude": 23.7350864,
-        "address": "Δροσοπούλου, 70, Atenas",
+        "address": "Δροσοπούλου, 70",
         "opening_hours": "Mo-Su 17:00-03:00",
         "phone": "+30 21 0821 9005",
         "wheelchair": "no",
@@ -14814,7 +16011,7 @@
         ],
         "latitude": 37.9547021,
         "longitude": 23.7242061,
-        "address": "Μάχης Αναλάτου, 53, Atenas",
+        "address": "Μάχης Αναλάτου, 53",
         "opening_hours": "Mo-Su 07:00-04:00",
         "phone": "+302109270758",
         "cuisine": "greek",
@@ -14839,7 +16036,7 @@
         ],
         "latitude": 37.9720167,
         "longitude": 23.7342279,
-        "address": "Βασιλίσσης Αμαλίας, 405, Atenas",
+        "address": "Βασιλίσσης Αμαλίας, 405",
         "opening_hours": "Mo-Su 08:00-00:30",
         "phone": "+30 21 0331 6973",
         "cuisine": "sandwich",
@@ -15012,7 +16209,7 @@
         ],
         "latitude": 38.0011332,
         "longitude": 23.7388308,
-        "address": "Φωκίωνος Νέγρη, 52, Atenas",
+        "address": "Φωκίωνος Νέγρη, 52",
         "opening_hours": "Mo-Su 17:00-02:00",
         "phone": "+306945442229",
         "popularity": 0
@@ -15036,7 +16233,7 @@
         ],
         "latitude": 37.9766562,
         "longitude": 23.7288578,
-        "address": "Καλαμιώτου, 4, Atenas",
+        "address": "Καλαμιώτου, 4",
         "opening_hours": "Mo-Su 08:00-05:00",
         "phone": "+30 21 0324 8897",
         "popularity": 0
@@ -15084,7 +16281,7 @@
         ],
         "latitude": 37.9779968,
         "longitude": 23.7239006,
-        "address": "Μίκωνος, 15, Atenas",
+        "address": "Μίκωνος, 15",
         "opening_hours": "Su-Fr 09:00-01:30; Sa 09:00-02:00",
         "phone": "+30 21 1424 7161",
         "popularity": 0
@@ -15108,7 +16305,7 @@
         ],
         "latitude": 37.9782974,
         "longitude": 23.7223186,
-        "address": "Λεπενιώτου, 19, Atenas",
+        "address": "Λεπενιώτου, 19",
         "opening_hours": "Mo-Fr 07:30-18:00; Sa-Su 07:30-19:00",
         "phone": "+30 21 2000 2363",
         "website": "https://usurum.gr",
@@ -15133,7 +16330,7 @@
         ],
         "latitude": 37.9751059,
         "longitude": 23.7109963,
-        "address": "Ευρυσθέως, 4, Atenas",
+        "address": "Ευρυσθέως, 4",
         "opening_hours": "Mo-Th 09:00-02:00; Fr-Su 09:00-03:00",
         "website": "https://linktr.ee/cafenacional",
         "popularity": 0
@@ -15157,7 +16354,7 @@
         ],
         "latitude": 37.9784371,
         "longitude": 23.7219374,
-        "address": "Σαρρή, 39, Atenas",
+        "address": "Σαρρή, 39",
         "opening_hours": "Su, We-Th 19:30-03:00; Fr-Sa 19:30-04:00",
         "website": "https://www.instagram.com/backdoor_athens/",
         "popularity": 0
@@ -15230,7 +16427,7 @@
         ],
         "latitude": 37.9728715,
         "longitude": 23.7330153,
-        "address": "Νίκης, 50, Atenas",
+        "address": "Νίκης, 50",
         "opening_hours": "Mo-Su 14:00-22:00",
         "phone": "+30 21 1111 6760",
         "website": "https://untappd.com/v/brew-str/7694710",
@@ -15282,7 +16479,7 @@
         ],
         "latitude": 37.9716284,
         "longitude": 23.730283,
-        "address": "Κυδαθηναίων, 41, Atenas",
+        "address": "Κυδαθηναίων, 41",
         "opening_hours": "Mo-Su 10:00-03:00",
         "phone": "+30 210 3232110",
         "website": "https://brettosplaka.com/",

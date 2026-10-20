@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.time.ZoneId;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
@@ -76,6 +77,16 @@ class CityCatalogTest {
         assertEquals("roma", catalog.nearestCity(41.9009, 12.4833).slug());
         City qualquer = catalog.nearestCity(0, 0);
         assertTrue(catalog.getCities().contains(qualquer));
+    }
+
+    @Test
+    @DisplayName("Ponto com Wikidata traz o nome em cada idioma do app")
+    void nomesTraduzidos() {
+        assertEquals("Museu do Louvre", lugar("paris", "Musée du Louvre").names().get("pt"));
+        assertEquals("Museo del Louvre", lugar("paris", "Musée du Louvre").names().get("es"));
+        assertEquals("Mesquita Azul", lugar("istambul", "Blue Mosque").names().get("pt"));
+        assertEquals(Map.of(), catalog.getPlaces().stream()
+                .filter(p -> p.wikidata().isBlank()).findFirst().orElseThrow().names());
     }
 
     private CatalogPlace lugar(String cidade, String nome) {

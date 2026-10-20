@@ -19,6 +19,8 @@ export interface Places {
   bookingUrl?: string | null;
   /** Site oficial do lugar pago que nao exige reserva: onde ver preco e comprar o ingresso. */
   ticketUrl?: string | null;
+  /** Nome por idioma do app (pt, en, es), quando o lugar e do catalogo. */
+  names?: Record<string, string> | null;
 }
 
 export interface Itinerary {

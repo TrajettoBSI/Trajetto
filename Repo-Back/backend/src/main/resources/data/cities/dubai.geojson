@@ -25,7 +25,12 @@
         "wikidata": "Q12495",
         "wikipedia": "en:Burj Khalifa",
         "wheelchair": "limited",
-        "popularity": 140
+        "popularity": 140,
+        "names": {
+          "pt": "Burj Khalifa",
+          "en": "Burj Khalifa",
+          "es": "Burj Khalifa"
+        }
       }
     },
     {
@@ -55,7 +60,12 @@
         "wikipedia": "en:The Dubai Mall",
         "wheelchair": "yes",
         "popularity": 38,
-        "site": "Q1133309"
+        "site": "Q1133309",
+        "names": {
+          "pt": "Dubai Mall",
+          "en": "Dubai Mall",
+          "es": "Dubai Mall"
+        }
       }
     },
     {
@@ -80,7 +90,12 @@
         "wikidata": "Q1067672",
         "wikipedia": "en:Ski Dubai",
         "wheelchair": "no",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Ski Dubai",
+          "en": "Ski Dubai",
+          "es": "Ski Dubai"
+        }
       }
     },
     {
@@ -104,7 +119,11 @@
         "longitude": 55.2756983,
         "wikidata": "Q2384491",
         "wheelchair": "yes",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "en": "The Dubai Fountain",
+          "es": "Dubai Fountain"
+        }
       }
     },
     {
@@ -131,7 +150,11 @@
         "wikidata": "Q20386392",
         "wikipedia": "en:Dubai Frame",
         "fee": "yes",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "en": "Dubai Frame",
+          "es": "Dubai Frame"
+        }
       }
     },
     {
@@ -158,7 +181,12 @@
         "wikipedia": "en:Ain Dubai",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Ain Dubai",
+          "en": "Ain Dubai",
+          "es": "Ain Dubai"
+        }
       }
     },
     {
@@ -185,7 +213,12 @@
         "website": "https://museumofthefuture.ae/",
         "wikidata": "Q22948398",
         "wikipedia": "en:Museum of the Future",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Museu do Futuro",
+          "en": "Museum of the Future",
+          "es": "Museo del futuro"
+        }
       }
     },
     {
@@ -214,7 +247,11 @@
         "wikipedia": "en:Dubai Miracle Garden",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Jardim dos Milagres do Dubai",
+          "en": "Dubai Miracle Garden"
+        }
       }
     },
     {
@@ -239,7 +276,10 @@
         "wikidata": "Q5594813",
         "wikipedia": "ar:مسجد دبي الكبير",
         "wheelchair": "yes",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "en": "Grand Mosque"
+        }
       }
     },
     {
@@ -264,7 +304,11 @@
         "opening_hours": "2025-01-01-2026-12-31 off",
         "wikidata": "Q3595657",
         "wikipedia": "ar:محمية رأس الخور للحياة الفطرية",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Ras Al Khor",
+          "es": "Ras Al Khor"
+        }
       }
     },
     {
@@ -288,7 +332,10 @@
         "longitude": 55.2241746,
         "wikidata": "Q6310943",
         "wikipedia": "en:Jumeirah Beach",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Jumeirah Beach"
+        }
       }
     },
     {
@@ -313,7 +360,11 @@
         "wikidata": "Q2094764",
         "wikipedia": "en:Al Bastakiya",
         "popularity": 12,
-        "site": "Q2094764"
+        "site": "Q2094764",
+        "names": {
+          "en": "Al Bastakiya",
+          "es": "Al Bastakiya"
+        }
       }
     },
     {
@@ -337,7 +388,11 @@
         "wikidata": "Q5310547",
         "wikipedia": "en:Dubai Gold Souk",
         "wheelchair": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Dubai Gold Souk",
+          "es": "Zoco de oro de Dubái"
+        }
       }
     },
     {
@@ -361,7 +416,11 @@
         "longitude": 55.3784861,
         "wikidata": "Q2839258",
         "wikipedia": "ar:واحة دبي للسيليكون",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Dubai Silicon Oasis",
+          "es": "Dubai Silicon Oasis"
+        }
       }
     },
     {
@@ -384,7 +443,11 @@
         "longitude": 55.3264496,
         "wikidata": "Q4346630",
         "wikipedia": "en:Deira Clocktower",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Deira Clocktower",
+          "es": "Torre del Reloj de Deira"
+        }
       }
     },
     {
@@ -408,7 +471,10 @@
         "longitude": 55.2947142,
         "wikidata": "Q20987838",
         "wikipedia": "ar:المسجد الشيعي الإيراني، بر دبي",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Iranian Mosque, Bur Dubai"
+        }
       }
     },
     {
@@ -430,13 +496,16 @@
         ],
         "latitude": 25.081394,
         "longitude": 55.3183488,
-        "address": "City of Arabia, IMG Worlds of Adventure, Dubai",
+        "address": "City of Arabia, IMG Worlds of Adventure",
         "opening_hours": "Su-Th 12:00-22:00; Fr-Sa 12:00-23:00",
         "phone": "+971 4 403 8888",
         "website": "https://imgworlds.com/tickets/buy-now",
         "wikidata": "Q18206594",
         "wikipedia": "en:IMG Worlds of Adventure",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "IMG Worlds of Adventure"
+        }
       }
     },
     {
@@ -461,7 +530,11 @@
         "wikidata": "Q2522355",
         "wikipedia": "en:Safa Park",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Safa Park",
+          "es": "Safa Park"
+        }
       }
     },
     {
@@ -485,7 +558,11 @@
         "longitude": 55.3176059,
         "wikidata": "Q7590104",
         "wikipedia": "en:St. Mary's Catholic Church, Dubai",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "St. Mary's Catholic Church, Dubai",
+          "es": "iglesia de Santa María"
+        }
       }
     },
     {
@@ -511,7 +588,10 @@
         "wikidata": "Q5766383",
         "wikipedia": "ar:المعبد الهندوسي في دبي",
         "wheelchair": "limited",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Hindu Temple, Dubai"
+        }
       }
     },
     {
@@ -538,7 +618,10 @@
         "wikidata": "Q20011908",
         "wikipedia": "en:Dubai Municipality",
         "wheelchair": "limited",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Dubai Municipality"
+        }
       }
     },
     {
@@ -562,7 +645,10 @@
         "longitude": 55.2977741,
         "wikidata": "Q23583803",
         "wikipedia": "en:Zabeel Park",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Zabeel Park"
+        }
       }
     },
     {
@@ -583,12 +669,15 @@
         ],
         "latitude": 25.2679406,
         "longitude": 55.2900682,
-        "address": "Al Khaleej street, 14/1, Dubai",
+        "address": "Al Khaleej street, 14/1",
         "opening_hours": "Sa-Th 8:00-20:30, Fr 15:30-21:30, Sa-Th 09:00-17:00 \"Ramadan\", Fr 14:00-17:00 \"Ramadan\"",
         "phone": "04 393 7139",
         "wikidata": "Q4272517",
         "wikipedia": "en:Saeed Al Maktoum House",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Saeed Al Maktoum House"
+        }
       }
     },
     {
@@ -613,7 +702,10 @@
         "opening_hours": "Sa-Th 08:30-20:30; Fr 14:30-20:30; PH 08:30-20:30",
         "wikidata": "Q292826",
         "wikipedia": "ar:حصن الفهيدي",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Al Fahidi Fort"
+        }
       }
     },
     {
@@ -641,7 +733,10 @@
         "wikidata": "Q28736367",
         "wikipedia": "ar:متحف الاتحاد",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Etihad Museum"
+        }
       }
     },
     {
@@ -670,7 +765,10 @@
         "wikipedia": "en:Dubai Butterfly Garden",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Dubai Butterfly Garden"
+        }
       }
     },
     {
@@ -694,7 +792,10 @@
         "longitude": 55.2417502,
         "wikidata": "Q16892960",
         "wikipedia": "ar:موقع جميرا الأثري",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Jumeirah Archaeological Site"
+        }
       }
     },
     {
@@ -717,7 +818,10 @@
         "longitude": 55.2329729,
         "address": "Street 6d, Al Safa 1",
         "wikidata": "Q18204928",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Al Farooq Omar Bin Al Khatab mosque"
+        }
       }
     },
     {
@@ -742,7 +846,10 @@
         "website": "https://www.al-siraaj.com/",
         "wikidata": "Q7492956",
         "wikipedia": "en:Sheikh Obaid bin Thani House",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Sheikh Obaid bin Thani House"
+        }
       }
     },
     {
@@ -768,7 +875,10 @@
         "wikidata": "Q18352718",
         "wikipedia": "en:History of Cinema Museum",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Dubaï Moving Image Museum"
+        }
       }
     },
     {
@@ -792,7 +902,10 @@
         "longitude": 55.296206,
         "wikidata": "Q21523365",
         "wikipedia": "en:Dubai Textile Souk",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Dubai Textile Souk"
+        }
       }
     },
     {
@@ -816,7 +929,10 @@
         "wikidata": "Q117599013",
         "wikipedia": "en:Dubai Coffee Museum",
         "popularity": 4,
-        "site": "Q2094764"
+        "site": "Q2094764",
+        "names": {
+          "en": "Dubai Coffee Museum"
+        }
       }
     },
     {
@@ -840,7 +956,10 @@
         "longitude": 55.2981417,
         "wikidata": "Q20714334",
         "wikipedia": "ar:حي دبي للتصميم",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Dubai Design District"
+        }
       }
     },
     {
@@ -865,7 +984,10 @@
         "wikidata": "Q121359897",
         "wikipedia": "en:Madame Tussauds Dubai",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Madame Tussauds Dubai"
+        }
       }
     },
     {
@@ -889,7 +1011,10 @@
         "longitude": 55.1750244,
         "wikidata": "Q16148650",
         "wikipedia": "ar:موقع الصفوح الأثري",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Al Sufouh Archaeological Site"
+        }
       }
     },
     {
@@ -917,7 +1042,10 @@
         "wikipedia": "en:The Green Planet, Dubai",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "The Green Planet"
+        }
       }
     },
     {
@@ -941,7 +1069,10 @@
         "wikidata": "Q18508368",
         "wikipedia": "en:Al-Rahim Mosque",
         "wheelchair": "limited",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Masjid Al Rahim"
+        }
       }
     },
     {
@@ -964,7 +1095,10 @@
         "longitude": 55.2997933,
         "wikidata": "Q120357129",
         "popularity": 3,
-        "site": "Q2094764"
+        "site": "Q2094764",
+        "names": {
+          "en": "Dubai Coins Museum"
+        }
       }
     },
     {
@@ -987,7 +1121,10 @@
         "latitude": 25.2092804,
         "longitude": 55.3018039,
         "wikidata": "Q109046764",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Zabeel Palace"
+        }
       }
     },
     {
@@ -1010,7 +1147,10 @@
         "longitude": 55.2308013,
         "wikidata": "Q16979318",
         "wikipedia": "en:Majlis Ghorfat Umm Al Sheif",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Majlis Ghorfat Umm Al Sheif"
+        }
       }
     },
     {
@@ -1031,12 +1171,15 @@
         ],
         "latitude": 25.2678973,
         "longitude": 55.2978346,
-        "address": "Old Baladiya Street, Dubai",
+        "address": "Old Baladiya Street",
         "opening_hours": "Su-Th 09:00-15:00; Fr-Sa off",
         "wikidata": "Q125496568",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Dubai Municipality Museum"
+        }
       }
     },
     {
@@ -1057,11 +1200,14 @@
         ],
         "latitude": 25.2718232,
         "longitude": 55.2987026,
-        "address": "28 Street, Dubai",
+        "address": "28 Street",
         "phone": "+971 4 234 2342",
         "website": "http://www.womenmuseumuae.com/",
         "wikidata": "Q122643730",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Women's Museum"
+        }
       }
     },
     {
@@ -1107,7 +1253,7 @@
         ],
         "latitude": 25.3218644,
         "longitude": 55.349683,
-        "address": "Al Mamzar Beach Street, Dubai",
+        "address": "Al Mamzar Beach Street",
         "wikidata": "Q21737834",
         "popularity": 1
       }
@@ -1132,7 +1278,10 @@
         "latitude": 25.1475551,
         "longitude": 55.1956485,
         "wikidata": "Q21737815",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Umm Suqeim Park"
+        }
       }
     },
     {
@@ -1178,7 +1327,10 @@
         "latitude": 25.194182,
         "longitude": 55.2734241,
         "wikidata": "Q134997138",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Burj Park"
+        }
       }
     },
     {
@@ -1441,7 +1593,7 @@
         ],
         "latitude": 25.1412303,
         "longitude": 55.2258743,
-        "address": "Al Quoz 1, Street 8 Alserkal Avenue, Unit 27, Dubai",
+        "address": "Al Quoz 1, Street 8 Alserkal Avenue, Unit 27",
         "opening_hours": "Mo-Su 10:00-23:30",
         "website": "http://www.galerie-nationale.com",
         "fee": "no",
@@ -1540,7 +1692,10 @@
         "latitude": 25.2732828,
         "longitude": 55.3054481,
         "wikidata": "Q137856729",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Al Zarooni Al Kabeer"
+        }
       }
     },
     {
@@ -1637,7 +1792,7 @@
         ],
         "latitude": 25.1987918,
         "longitude": 55.2791456,
-        "address": "Wheelchair access, Dubai",
+        "address": "Wheelchair access",
         "opening_hours": "Su-Th,Sa 10:00-00:00; Fr 10:00-01:00",
         "phone": "+97142541177",
         "website": "https://www.ftnft.com/",
@@ -1830,7 +1985,10 @@
         "latitude": 25.19218,
         "longitude": 55.2963303,
         "wikidata": "Q133201849",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Mercedes-Benz Off Road Experience Centre Dubai"
+        }
       }
     },
     {
@@ -1921,7 +2079,7 @@
         ],
         "latitude": 25.2157301,
         "longitude": 55.2792042,
-        "address": "Maze Tower – Trade Centre, Dubai",
+        "address": "Maze Tower – Trade Centre",
         "opening_hours": "Mo-Su 10:00-18:30",
         "popularity": 0
       }
@@ -1944,7 +2102,7 @@
         ],
         "latitude": 25.2552761,
         "longitude": 55.3018745,
-        "address": "26a شارع, Dubai",
+        "address": "26a شارع",
         "opening_hours": "Mo-Su 09:00-18:00",
         "popularity": 0
       }
@@ -1967,7 +2125,7 @@
         ],
         "latitude": 25.0564455,
         "longitude": 55.2207029,
-        "address": "Dana Road, Dubai",
+        "address": "Dana Road",
         "opening_hours": "Mo-Su 08:00-23:00",
         "popularity": 0
       }
@@ -2014,7 +2172,7 @@
         ],
         "latitude": 25.2723355,
         "longitude": 55.2970187,
-        "address": "شارع الكورنيش, 0, Dubai",
+        "address": "شارع الكورنيش, 0",
         "opening_hours": "10:00-22:00; Fr 16:00-22:00",
         "phone": "+971568833880",
         "popularity": 0
@@ -2112,7 +2270,10 @@
         "latitude": 25.1173341,
         "longitude": 55.1671394,
         "wikidata": "Q124452026",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Black palace beach"
+        }
       }
     },
     {
@@ -2229,7 +2390,10 @@
         "latitude": 25.2290154,
         "longitude": 55.3408469,
         "wikidata": "Q124452109",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Jameel Arts Centre"
+        }
       }
     },
     {
@@ -2439,7 +2603,7 @@
         ],
         "latitude": 25.0747501,
         "longitude": 55.3624019,
-        "address": "La rosa 1, Dubai",
+        "address": "La rosa 1",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -2542,7 +2706,7 @@
         ],
         "latitude": 25.1420436,
         "longitude": 55.2262917,
-        "address": "Alserkal Avenue, Dubai",
+        "address": "Alserkal Avenue",
         "opening_hours": "Mo-Su 09:00-21:00",
         "phone": "+971 52 922 4721",
         "website": "https://salata.co",
@@ -2620,7 +2784,7 @@
         ],
         "latitude": 25.2325429,
         "longitude": 55.2663359,
-        "address": "Al Hudaiba Road, 22B, Dubai",
+        "address": "Al Hudaiba Road, 22B",
         "opening_hours": "Mo-Su 08:30-23:00",
         "phone": "04 345 5822",
         "website": "http://www.saladicious.com",
@@ -2646,7 +2810,7 @@
         ],
         "latitude": 25.2421403,
         "longitude": 55.2714709,
-        "address": "Jumeirah Road, Dubai",
+        "address": "Jumeirah Road",
         "opening_hours": "Mo-Su 19:00-00:00",
         "phone": "04 342 5272",
         "website": "https://bbqtonight.ae/",
@@ -2698,7 +2862,7 @@
         ],
         "latitude": 25.1722676,
         "longitude": 55.2185088,
-        "address": "Al Heeba Street, Dubai",
+        "address": "Al Heeba Street",
         "opening_hours": "Mo-Su 12:00-01:00",
         "phone": "+971 4 288 5853",
         "website": "https://www.buffalowildwings.ae/",
@@ -2724,7 +2888,7 @@
         ],
         "latitude": 25.1894558,
         "longitude": 55.2983794,
-        "address": "Dubai Design District, Building 11, Dubai",
+        "address": "Dubai Design District, Building 11",
         "opening_hours": "Su-We 10:00-00:00; Fr 15:00-01:00; Th 10:00-01:00; Sa 15:00-00:00",
         "phone": "045122444",
         "website": "https://chezcharlesrestaurant.ae/",
@@ -2750,7 +2914,7 @@
         ],
         "latitude": 25.142725,
         "longitude": 55.2246582,
-        "address": "Alserkal Avenue, street 8, H-77, Dubai",
+        "address": "Alserkal Avenue, street 8, H-77",
         "opening_hours": "Mo-Su 10:00-23:30",
         "phone": "+971 800 9453",
         "website": "https://www.wildandthemoon.com/",
@@ -2776,7 +2940,7 @@
         ],
         "latitude": 25.1487798,
         "longitude": 55.2467024,
-        "address": "Latifa Bint Hamdan Street, Dubai",
+        "address": "Latifa Bint Hamdan Street",
         "opening_hours": "Mo-Su 07:00-23:55",
         "phone": "+97152 737 5441",
         "cuisine": "asian;arab;burger;chicken;coffee_shop;curry;fish_and_chips;grill;indian;seafood",
@@ -2801,7 +2965,7 @@
         ],
         "latitude": 25.236914,
         "longitude": 55.2754879,
-        "address": "Al Diyafah Street, Dubai",
+        "address": "Al Diyafah Street",
         "opening_hours": "Mo-Su 11:00-23:00",
         "phone": "+971 4 345 3381",
         "cuisine": "cantonese",
@@ -2877,7 +3041,7 @@
         ],
         "latitude": 25.2244237,
         "longitude": 55.2832163,
-        "address": "Sheikh Zayed Road, Dubai",
+        "address": "Sheikh Zayed Road",
         "opening_hours": "Mo-Su 07:00-04:00",
         "phone": "+971 4 589 3969;+971 600 500208",
         "website": "https://www.goldenfork.ae/",
@@ -2980,7 +3144,7 @@
         ],
         "latitude": 25.1502585,
         "longitude": 55.1966747,
-        "address": "Al Soon Street, Dubai",
+        "address": "Al Soon Street",
         "opening_hours": "Mo-Su,PH 07:00-23:59",
         "phone": "+971565462952",
         "website": "https://www.arabianteahouse.com/",
@@ -3032,7 +3196,7 @@
         ],
         "latitude": 25.1156689,
         "longitude": 55.2053672,
-        "address": "7 Street, 11, Dubai",
+        "address": "7 Street, 11",
         "opening_hours": "Mo-Su 07:30-23:00",
         "phone": "+971 4 4276682",
         "cuisine": "indian",
@@ -3057,7 +3221,7 @@
         ],
         "latitude": 25.1526009,
         "longitude": 55.1987056,
-        "address": "شارع 33, Dubai",
+        "address": "شارع 33",
         "opening_hours": "Mo-Su 12:00-01:00",
         "phone": "050 812 6406",
         "cuisine": "pizza",
@@ -3160,7 +3324,7 @@
         ],
         "latitude": 25.2312338,
         "longitude": 55.2870562,
-        "address": "شارع 54, 99, Dubai",
+        "address": "شارع 54, 99",
         "opening_hours": "Mo-Su 11:30-23:30",
         "phone": "8004069",
         "website": "https://parsuae.com/",
@@ -3186,7 +3350,7 @@
         ],
         "latitude": 25.2109776,
         "longitude": 55.255651,
-        "address": "Al Wasl Road, Dubai",
+        "address": "Al Wasl Road",
         "opening_hours": "Mo-Su 12:00-23:30",
         "phone": "+971 56 381 4118",
         "website": "https://www.rayujapaneserestaurant.com/home",
@@ -3338,7 +3502,7 @@
         ],
         "latitude": 25.2396766,
         "longitude": 55.2704165,
-        "address": "2nd December Road, Dubai",
+        "address": "2nd December Road",
         "opening_hours": "Mo-Su 13:30-15:30",
         "phone": "04 325 4778",
         "website": "http://lalqila.ae",
@@ -3389,7 +3553,7 @@
         ],
         "latitude": 25.114965,
         "longitude": 55.212745,
-        "address": "شارع أم سقيم, Dubai",
+        "address": "شارع أم سقيم",
         "opening_hours": "Mo-Su 10:00-04:00",
         "phone": "+971 4 394 0061;+971 50 665 1790;+971 58 128 2886",
         "website": "https://www.dubaifishhutrestaurant.com/",
@@ -3662,7 +3826,7 @@
         ],
         "latitude": 25.1966689,
         "longitude": 55.2772453,
-        "address": "The Dubai Mall, Dubai",
+        "address": "The Dubai Mall",
         "opening_hours": "Mo-Fr 09:00-23:00; Sa-Su 09:00-23:30",
         "website": "https://carlucciosme.com/locations/the-dubai-mall/",
         "cuisine": "italian",
@@ -3687,7 +3851,7 @@
         ],
         "latitude": 25.1903444,
         "longitude": 55.2657883,
-        "address": "Business Bay, Dubai",
+        "address": "Business Bay",
         "opening_hours": "Mo-Su 11:00-12:00",
         "website": "https://www.gazebo.ae",
         "cuisine": "indian",
@@ -3860,7 +4024,7 @@
         ],
         "latitude": 25.174953,
         "longitude": 55.2180193,
-        "address": "Al Hadd street, 90, Dubai",
+        "address": "Al Hadd street, 90",
         "opening_hours": "Sa-We 08:00-02:00; Th-Fr 08:00-03:00",
         "website": "https://www.zomato.com/dubai/the-beach-house-bait-al-bahar-umm-suqeim",
         "popularity": 0
@@ -4482,7 +4646,7 @@
         ],
         "latitude": 25.2312081,
         "longitude": 55.2915227,
-        "address": "Etisalat Al Kifaf, 2, Dubai",
+        "address": "Etisalat Al Kifaf, 2",
         "opening_hours": "Mo-Fr 07:00-18:00; Sa-Su off",
         "phone": "+971 438 6 4638",
         "website": "https://www.cariboucoffee.com",
@@ -4509,7 +4673,7 @@
         ],
         "latitude": 25.1264512,
         "longitude": 55.2085947,
-        "address": "Sheikh Zayed Road, Shop No. 7, Building 5, Gold & Diamond Park, Dubai",
+        "address": "Sheikh Zayed Road, Shop No. 7, Building 5, Gold & Diamond Park",
         "opening_hours": "Mo-Fr 08:00-20:00; Sa-Su 08:00-21:00",
         "phone": "+971 434 0 5060",
         "wheelchair": "yes",
@@ -4561,7 +4725,7 @@
         ],
         "latitude": 25.2130157,
         "longitude": 55.2486338,
-        "address": "شارع جميرا, Dubai",
+        "address": "شارع جميرا",
         "opening_hours": "Mo-Su,PH 08:00-23:59",
         "website": "https://www.alijaza.ae",
         "wheelchair": "limited",
@@ -4794,7 +4958,7 @@
         ],
         "latitude": 25.1815184,
         "longitude": 55.2629185,
-        "address": "Al Mustaqbal Street, Dubai",
+        "address": "Al Mustaqbal Street",
         "opening_hours": "Mo-Sa 08:00-18:00",
         "phone": "+97145968919",
         "cuisine": "coffee_shop",
@@ -4894,7 +5058,7 @@
         ],
         "latitude": 25.1834912,
         "longitude": 55.2381266,
-        "address": "Al Safa, 1, Dubai",
+        "address": "Al Safa, 1",
         "opening_hours": "Mo-Th 07:30-23:00; Fr-Sa 08:00-24:00; Su 08:00-23:00",
         "website": "https://the-grey.co/",
         "wheelchair": "limited",
@@ -4920,7 +5084,7 @@
         ],
         "latitude": 25.2136463,
         "longitude": 55.2758804,
-        "address": "Sheikh Zayed Road, 80, Dubai",
+        "address": "Sheikh Zayed Road, 80",
         "opening_hours": "Mo-Fr 09:00-17:00; Sa-Su off",
         "website": "https://www.lamarzocco.com/ae/en/",
         "wheelchair": "yes",
@@ -4946,7 +5110,7 @@
         ],
         "latitude": 25.1728023,
         "longitude": 55.3079496,
-        "address": "Aziz Rviera 36, Dubai",
+        "address": "Aziz Rviera 36",
         "opening_hours": "24/7",
         "phone": "+971507843739",
         "website": "https://delphicafedubai.com/",
@@ -4972,7 +5136,7 @@
         ],
         "latitude": 25.172518,
         "longitude": 55.3033373,
-        "address": "Azizi Riviera 8, 13, Dubai",
+        "address": "Azizi Riviera 8, 13",
         "opening_hours": "10:00-02:00",
         "phone": "+971502808157",
         "website": "https://shamscafe.ae",
@@ -4998,7 +5162,7 @@
         ],
         "latitude": 25.2290061,
         "longitude": 55.2863134,
-        "address": "6th Street, Dubai",
+        "address": "6th Street",
         "opening_hours": "Mo-Th 07:30-22:30; Fr-Su 07:30-23:30",
         "phone": "+971 437 0 3033",
         "website": "https://blackcoffee.ae/",
@@ -5076,7 +5240,7 @@
         ],
         "latitude": 25.2297406,
         "longitude": 55.2860307,
-        "address": "6th Street, Ground Floor, Burj Al Salam - Trade Centre, Dubai",
+        "address": "6th Street, Ground Floor, Burj Al Salam - Trade Centre",
         "opening_hours": "Mo-Su 08:00-22:00",
         "phone": "+971 56 445 7526",
         "website": "http://thesumofusdubai.com/",
@@ -5299,7 +5463,7 @@
         ],
         "latitude": 25.2260809,
         "longitude": 55.2585272,
-        "address": "Jumeirah Beach Road, 102, Dubai",
+        "address": "Jumeirah Beach Road, 102",
         "opening_hours": "Mo-Su 08:00-22:00",
         "phone": "+971 4 3854555",
         "website": "https://comptoir102.com",
@@ -5399,7 +5563,7 @@
         ],
         "latitude": 25.1726523,
         "longitude": 55.3014311,
-        "address": "Azizi Riviera, 15, Dubai",
+        "address": "Azizi Riviera, 15",
         "opening_hours": "sun-Sat 08:00-00:00",
         "phone": "971 589182002",
         "popularity": 0
@@ -5447,7 +5611,7 @@
         ],
         "latitude": 25.1848085,
         "longitude": 55.2790667,
-        "address": "shop 9, building 7, Bay Square, Business Bay, Dubai",
+        "address": "shop 9, building 7, Bay Square, Business Bay",
         "opening_hours": "Mo-Su 11:00-00:00",
         "website": "http://uae.myswich.com",
         "popularity": 0
@@ -5496,7 +5660,7 @@
         ],
         "latitude": 25.1333258,
         "longitude": 55.1848109,
-        "address": "Souk Madinat Jumeirah, Dubai",
+        "address": "Souk Madinat Jumeirah",
         "opening_hours": "Mo-Th 16:00-02:00; Fr-Sa 12:00-03:00; Su 12:00-02:00",
         "phone": "+97143686559",
         "website": "https://tradervicsmadinat.com",
@@ -5672,7 +5836,7 @@
         ],
         "latitude": 25.1414347,
         "longitude": 55.1851498,
-        "address": "Jumeira Street, Dubai",
+        "address": "Jumeira Street",
         "opening_hours": "18:30-23:00",
         "website": "https://www.jumeirah.com/en/dine/dubai/burj-al-arab-skyview-bar-and-restaurant",
         "popularity": 0

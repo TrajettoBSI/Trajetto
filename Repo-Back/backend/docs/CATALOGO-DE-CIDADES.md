@@ -78,6 +78,16 @@ Sem baixar do OSM de novo:
 `python scripts/gera_catalogo_cidade.py --revisar <slug>` refaz a checagem do
 Wikidata, a popularidade e os perfis; `--perfis <slug>` refaz só os perfis;
 `--recintos <slug>` refaz só os recintos (uma consulta pequena ao Overpass).
+`--nomes <slug>` refaz só os nomes traduzidos.
+
+## Nomes no idioma do usuário
+
+Cada ponto com Wikidata leva em `names` o nome em português, inglês e espanhol
+(os rótulos do Wikidata: "Musée du Louvre" vira "Museu do Louvre", "Louvre
+Museum", "Museo del Louvre"). O backend devolve `names` na busca de pontos e nas
+paradas do roteiro, e o app mostra o do idioma escolhido (`placeName`); sem
+tradução, fica o nome original. A busca também acha o ponto pelo nome traduzido.
+Endereço fica como no OSM, no formato local — nome de rua não se traduz.
 Só a popularidade: `python scripts/atualiza_popularidade.py [slug]`.
 
 ## Cidades atendidas

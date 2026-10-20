@@ -62,7 +62,8 @@ public class CityCatalog {
             String wikipedia,
             String wheelchair,
             int popularity,
-            String site
+            String site,
+            Map<String, String> names
     ) {}
 
     /**
@@ -148,6 +149,9 @@ public class CityCatalog {
                 List<String> profiles = props.has("profiles")
                         ? objectMapper.convertValue(props.get("profiles"), new TypeReference<>() {})
                         : List.of();
+                Map<String, String> names = props.has("names")
+                        ? Map.copyOf(objectMapper.convertValue(props.get("names"), new TypeReference<Map<String, String>>() {}))
+                        : Map.of();
 
                 if (!name.isBlank() && lat != 0.0 && lon != 0.0) {
                     loaded.add(new CatalogPlace(
@@ -156,7 +160,7 @@ public class CityCatalog {
                             props.path("fee").asText(""), props.path("phone").asText(""),
                             props.path("website").asText(""), props.path("wikidata").asText(""),
                             props.path("wikipedia").asText(""), props.path("wheelchair").asText(""),
-                            props.path("popularity").asInt(0), props.path("site").asText("")
+                            props.path("popularity").asInt(0), props.path("site").asText(""), names
                     ));
                 }
             }

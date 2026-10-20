@@ -3,6 +3,7 @@ import { Keyboard } from 'react-native';
 import MapView from 'react-native-maps';
 import { Place, placesService, PlacesFilter } from '@/services';
 import { LatLng } from '../mapaFormat';
+import { placeName } from '@/src/i18n/format';
 
 const SEARCH_DEBOUNCE_MS = 350;
 
@@ -42,7 +43,7 @@ export function useMapaSearch(mapRef: React.RefObject<MapView | null>, userLocat
 
   const handleSelectSuggestion = (spot: Place) => {
     Keyboard.dismiss();
-    setSearch(spot.name);
+    setSearch(placeName(spot));
     setSuggestions([]);
     setShowSuggestions(false);
     setSelectedSpot(spot);

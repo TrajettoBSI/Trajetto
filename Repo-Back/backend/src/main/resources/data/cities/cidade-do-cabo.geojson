@@ -26,7 +26,12 @@
         "wikipedia": "en:Castle of Good Hope",
         "fee": "yes",
         "popularity": 28,
-        "site": "Q1049562"
+        "site": "Q1049562",
+        "names": {
+          "pt": "Castelo da Boa Esperança",
+          "en": "Castle of Good Hope",
+          "es": "Castillo de Buena Esperanza"
+        }
       }
     },
     {
@@ -48,7 +53,12 @@
         "latitude": -33.9258002,
         "longitude": 18.4197286,
         "wikidata": "Q2119484",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Conselho Nacional de Províncias",
+          "en": "National Council of Provinces",
+          "es": "Consejo Nacional de Provincias"
+        }
       }
     },
     {
@@ -71,7 +81,11 @@
         "longitude": 18.389142,
         "wikidata": "Q1718867",
         "wikipedia": "en:Lion's Head (Cape Town)",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "en": "Lion's Head",
+          "es": "Cabeza de León"
+        }
       }
     },
     {
@@ -98,7 +112,12 @@
         "website": "https://www.sanbi.org/gardens/kirstenbosch/",
         "wikidata": "Q289277",
         "wikipedia": "en:Kirstenbosch National Botanical Garden",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Jardim Botânico Nacional de Kirstenbosch",
+          "en": "Kirstenbosch National Botanical Garden",
+          "es": "Kirstenbosch"
+        }
       }
     },
     {
@@ -121,7 +140,10 @@
         "longitude": 18.4039138,
         "wikidata": "Q2094786",
         "wikipedia": "en:Signal Hill (Cape Town)",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "en": "Signal Hill"
+        }
       }
     },
     {
@@ -147,7 +169,10 @@
         "wikidata": "Q6102031",
         "wikipedia": "en:Iziko South African Museum",
         "fee": "yes",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Iziko South African Museum"
+        }
       }
     },
     {
@@ -168,13 +193,16 @@
         ],
         "latitude": -33.908416,
         "longitude": 18.4230011,
-        "address": "South Arm Road, Cidade do Cabo",
+        "address": "South Arm Road",
         "opening_hours": "Mo-Su 10:00-18:00",
         "phone": "+27 87 350 4777",
         "website": "https://zeitzmocaa.museum",
         "wikidata": "Q28003638",
         "wikipedia": "en:Zeitz Museum of Contemporary Art Africa",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Zeitz Museum of Contemporary Art Africa"
+        }
       }
     },
     {
@@ -197,7 +225,12 @@
         "longitude": 18.4589221,
         "wikidata": "Q3429602",
         "wikipedia": "en:Rhodes Memorial",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Rhodes Memorial",
+          "en": "Rhodes Memorial",
+          "es": "rhodes memorial"
+        }
       }
     },
     {
@@ -220,7 +253,10 @@
         "longitude": 18.4403929,
         "wikidata": "Q917040",
         "wikipedia": "en:Devil's Peak (Cape Town)",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Devil's Peak"
+        }
       }
     },
     {
@@ -245,7 +281,10 @@
         "website": "https://www.auwalmasjid.co.za/",
         "wikidata": "Q4026797",
         "wikipedia": "en:Auwal Mosque",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Auwal Mosque"
+        }
       }
     },
     {
@@ -269,7 +308,10 @@
         "address": "Long Street, 185, Cape Town",
         "wikidata": "Q7128085",
         "wikipedia": "en:Palm Tree Mosque",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Palm Tree Mosque"
+        }
       }
     },
     {
@@ -296,7 +338,10 @@
         "wikidata": "Q1419469",
         "wikipedia": "en:South African National Gallery",
         "fee": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "South African National Gallery"
+        }
       }
     },
     {
@@ -319,7 +364,10 @@
         "longitude": 18.4639911,
         "wikidata": "Q3643657",
         "wikipedia": "en:Groote Schuur",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Groote Schuur"
+        }
       }
     },
     {
@@ -342,7 +390,11 @@
         "longitude": 18.430397,
         "wikidata": "Q557606",
         "wikipedia": "en:Artscape Theatre Centre",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Artscape Theatre Centre",
+          "es": "Centro teatral Artscape"
+        }
       }
     },
     {
@@ -370,7 +422,12 @@
         "wikidata": "Q2487774",
         "wikipedia": "en:Groot Constantia",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Groot constantia",
+          "en": "Groot Constantia",
+          "es": "Groot Constantia"
+        }
       }
     },
     {
@@ -395,7 +452,10 @@
         "phone": "+27 21 423 4202",
         "wikidata": "Q7070309",
         "wikipedia": "en:Nurul Islam Mosque",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Nurul Islam Mosque"
+        }
       }
     },
     {
@@ -418,7 +478,11 @@
         "longitude": 18.3854789,
         "wikidata": "Q3431166",
         "wikipedia": "en:Constantiaberg",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Constantiaberg",
+          "es": "Constantiaberg"
+        }
       }
     },
     {
@@ -443,7 +507,10 @@
         "website": "https://www.capetown.gov.za/Family%20and%20home/see-all-city-facilities/our-recreational-facilities/District%20parks/The%20Company%27s%20Garden",
         "wikidata": "Q590259",
         "wikipedia": "en:Company's Garden",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Company's Garden"
+        }
       }
     },
     {
@@ -468,7 +535,11 @@
         "website": "https://stmaryscathedral.org.za/",
         "wikidata": "Q21515150",
         "wikipedia": "en:St. Mary's Cathedral, Cape Town",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "St. Mary's Cathedral",
+          "es": "Catedral de Santa María"
+        }
       }
     },
     {
@@ -495,7 +566,11 @@
         "wikidata": "Q2499579",
         "wikipedia": "en:St. George's Cathedral, Cape Town",
         "fee": "no",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "St. George's Cathedral",
+          "es": "Catedral de San Jorge"
+        }
       }
     },
     {
@@ -522,7 +597,11 @@
         "website": "https://www.districtsix.co.za/",
         "wikidata": "Q2616757",
         "wikipedia": "en:District Six Museum",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "District Six Museum",
+          "en": "District Six Museum"
+        }
       }
     },
     {
@@ -546,7 +625,10 @@
         "website": "https://www.robben-island.org.za",
         "wikidata": "Q55819532",
         "wikipedia": "en:Maximum Security Prison, Robben Island",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Robben Island Maximum Security Prison"
+        }
       }
     },
     {
@@ -567,13 +649,16 @@
         ],
         "latitude": -33.9251504,
         "longitude": 18.4205641,
-        "address": "Adderley Street, Cidade do Cabo",
+        "address": "Adderley Street",
         "opening_hours": "Mo-Sa 09:00-17:00",
         "phone": "+27 21 481 3967",
         "website": "https://www.iziko.org.za/museums/slave-lodge/",
         "wikidata": "Q20981944",
         "wikipedia": "en:Slave Lodge, Cape Town",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Slave Lodge"
+        }
       }
     },
     {
@@ -596,7 +681,10 @@
         "longitude": 18.4115429,
         "wikidata": "Q1776410",
         "wikipedia": "en:Noon Gun",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Noon Gun"
+        }
       }
     },
     {
@@ -620,7 +708,11 @@
         "wikidata": "Q557245",
         "wikipedia": "en:Baxter Theatre Centre",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Baxter Theatre Centre",
+          "es": "Centro teatral Baxter"
+        }
       }
     },
     {
@@ -644,7 +736,10 @@
         "opening_hours": "Mo-Sa 09:00-16:00",
         "wikidata": "Q5604316",
         "wikipedia": "en:Greenmarket Square",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Greenmarket Square"
+        }
       }
     },
     {
@@ -667,7 +762,10 @@
         "longitude": 18.4119971,
         "wikidata": "Q5244833",
         "wikipedia": "en:De Waal Park",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "De Waal Park"
+        }
       }
     },
     {
@@ -690,7 +788,11 @@
         "longitude": 18.4165488,
         "website": "https://www.gardensshul.org/",
         "wikidata": "Q5522475",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Gardens Shul",
+          "es": "Gardens Shul"
+        }
       }
     },
     {
@@ -717,7 +819,10 @@
         "website": "https://www.iziko.org.za/index.php/museums/rust-en-vreugd",
         "wikidata": "Q5712574",
         "wikipedia": "en:Rust en Vreugd",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Rust en Vreugd"
+        }
       }
     },
     {
@@ -739,7 +844,11 @@
         "latitude": -33.9528563,
         "longitude": 18.4694299,
         "wikidata": "Q113331159",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Irma Stern Museum",
+          "es": "Irma Stern Museum"
+        }
       }
     },
     {
@@ -762,7 +871,10 @@
         "longitude": 18.4239288,
         "wikidata": "Q55619041",
         "wikipedia": "en:Statue of Nelson Mandela, Cape Town City Hall",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Nelson Mandela"
+        }
       }
     },
     {
@@ -788,7 +900,10 @@
         "wikidata": "Q20981364",
         "wikipedia": "en:Arderne Gardens",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Arderne Gardens"
+        }
       }
     },
     {
@@ -811,7 +926,10 @@
         "longitude": 18.420922,
         "wikidata": "Q13035555",
         "wikipedia": "en:Groote Kerk, Cape Town",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Groote Kerk"
+        }
       }
     },
     {
@@ -836,7 +954,10 @@
         "phone": "+27 21 423 5945",
         "wikidata": "Q48727508",
         "wikipedia": "en:Queen Victoria Mosque",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Queen Victoria Mosque"
+        }
       }
     },
     {
@@ -860,7 +981,10 @@
         "longitude": 18.3778335,
         "wikidata": "Q5567593",
         "wikipedia": "en:Glen Beach",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Glen Beach"
+        }
       }
     },
     {
@@ -888,7 +1012,10 @@
         "wikidata": "Q8036586",
         "wikipedia": "en:World of Birds Wildlife Sanctuary and Monkey Park",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "World of Birds Wildlife Sanctuary and Monkey Park"
+        }
       }
     },
     {
@@ -912,7 +1039,10 @@
         "website": "https://cmm.org.za/",
         "wikidata": "Q124397537",
         "wikipedia": "en:Central Methodist Church, Cape Town",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Central Methodist Church, Cape Town"
+        }
       }
     },
     {
@@ -935,7 +1065,10 @@
         "longitude": 18.4202831,
         "wikidata": "Q18083021",
         "wikipedia": "en:South African Sendinggestig Museum",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "South African Sendinggestig Museum"
+        }
       }
     },
     {
@@ -962,7 +1095,10 @@
         "website": "https://www.iziko.org.za/museums/koopmans-de-wet-house/",
         "wikidata": "Q6430729",
         "wikipedia": "en:Koopmans-de Wet House",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Koopmans-de Wet House"
+        }
       }
     },
     {
@@ -985,7 +1121,11 @@
         "latitude": -34.0234283,
         "longitude": 18.3311766,
         "wikidata": "Q7417149",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Sandy Bay",
+          "es": "Bahía de Sandy"
+        }
       }
     },
     {
@@ -1008,7 +1148,10 @@
         "longitude": 18.4642331,
         "wikidata": "Q6797448",
         "wikipedia": "en:Maynardville Open-Air Theatre",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Maynardville Open-Air Theatre"
+        }
       }
     },
     {
@@ -1031,7 +1174,10 @@
         "longitude": 18.4255552,
         "wikidata": "Q55621645",
         "wikipedia": "en:Maclear's Beacon",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Maclear's Beacon"
+        }
       }
     },
     {
@@ -1054,7 +1200,10 @@
         "longitude": 18.4279952,
         "wikidata": "Q114773673",
         "wikipedia": "en:Statues of Bartolomeu Dias",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Statue of Bartolomeu Dias"
+        }
       }
     },
     {
@@ -1079,7 +1228,10 @@
         "website": "https://www.chavonnesbattery.co.za/",
         "wikidata": "Q5088529",
         "wikipedia": "en:Chavonnes Battery",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Chavonnes Battery"
+        }
       }
     },
     {
@@ -1105,7 +1257,10 @@
         "website": "https://www.ctholocaust.co.za/",
         "wikidata": "Q17514353",
         "wikipedia": "en:Cape Town Holocaust Centre",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Cape Town Holocaust Centre"
+        }
       }
     },
     {
@@ -1132,7 +1287,10 @@
         "website": "https://www.sajewishmuseum.co.za/",
         "wikidata": "Q55978914",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "South African Jewish Museum"
+        }
       }
     },
     {
@@ -1156,7 +1314,10 @@
         "address": "Strand Street, 98, Cape Town",
         "wikidata": "Q55621473",
         "wikipedia": "en:Lutheran Church in Strand Street",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Lutheran Church in Strand Street"
+        }
       }
     },
     {
@@ -1177,7 +1338,10 @@
         "latitude": -33.9248481,
         "longitude": 18.4243329,
         "wikidata": "Q19623378",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Statue of Edward VII"
+        }
       }
     },
     {
@@ -1202,7 +1366,10 @@
         "website": "https://hcct.co.za/church/",
         "wikidata": "Q112228484",
         "wikipedia": "en:Greek Orthodox Cathedral of St George",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Greek Orthodox Cathedral of St George"
+        }
       }
     },
     {
@@ -1225,7 +1392,10 @@
         "longitude": 18.3600148,
         "wikidata": "Q5916901",
         "wikipedia": "en:Hout Bay Museum",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hout Bay Museum"
+        }
       }
     },
     {
@@ -1248,7 +1418,10 @@
         "longitude": 18.4162446,
         "wikidata": "Q16251859",
         "wikipedia": "en:Artillery Memorial, Cape Town",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Artillery Memorial, Cape Town"
+        }
       }
     },
     {
@@ -1269,7 +1442,10 @@
         "latitude": -33.9277573,
         "longitude": 18.4193714,
         "wikidata": "Q20972990",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Equestrian Statue of Louis Botha"
+        }
       }
     },
     {
@@ -1292,7 +1468,10 @@
         "longitude": 18.4147656,
         "wikidata": "Q16256469",
         "wikipedia": "en:Cape Medical Museum",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Cape Medical Museum"
+        }
       }
     },
     {
@@ -1318,7 +1497,10 @@
         "website": "https://heartofcapetown.co.za/",
         "wikidata": "Q15223434",
         "wikipedia": "en:Heart of Cape Town Museum",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Heart of Cape Town Museum"
+        }
       }
     },
     {
@@ -1341,7 +1523,10 @@
         "longitude": 18.4998674,
         "wikidata": "Q7333193",
         "wikipedia": "en:Rietvlei Wetland Reserve",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Rietvlei Wetland Reserve"
+        }
       }
     },
     {
@@ -1364,7 +1549,10 @@
         "longitude": 18.4780755,
         "wikidata": "Q20981638",
         "wikipedia": "en:Keurboom Park",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Keurboom Park"
+        }
       }
     },
     {
@@ -1387,7 +1575,10 @@
         "longitude": 18.407557,
         "wikidata": "Q7974585",
         "wikipedia": "en:Waterworks Museum (Cape Town)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Waterworks Museum"
+        }
       }
     },
     {
@@ -1410,7 +1601,10 @@
         "longitude": 18.4026253,
         "wikidata": "Q19904137",
         "wikipedia": "en:Green Point Park",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Green Point Park"
+        }
       }
     },
     {
@@ -1431,11 +1625,14 @@
         ],
         "latitude": -33.9231199,
         "longitude": 18.4198815,
-        "address": "Longmarket Street, 149, Cidade do Cabo",
+        "address": "Longmarket Street, 149",
         "phone": "+27 214813933",
         "wikidata": "Q13034442",
         "wikipedia": "af:Burgerwaghuis",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Old Town House of Cape Town"
+        }
       }
     },
     {
@@ -1459,7 +1656,10 @@
         "website": "https://magnettheatre.co.za/",
         "wikidata": "Q28223219",
         "wikipedia": "en:Magnet Theatre",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Magnet Theatre"
+        }
       }
     },
     {
@@ -1481,7 +1681,10 @@
         "latitude": -34.0167872,
         "longitude": 18.343467,
         "wikidata": "Q31529788",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Klein-Leeukop"
+        }
       }
     },
     {
@@ -1503,7 +1706,10 @@
         "latitude": -33.9728708,
         "longitude": 18.4271265,
         "wikidata": "Q55984155",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Fernwood Peak"
+        }
       }
     },
     {
@@ -1525,7 +1731,10 @@
         "latitude": -33.9738344,
         "longitude": 18.4158782,
         "wikidata": "Q31804841",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Junction Peak"
+        }
       }
     },
     {
@@ -1547,7 +1756,10 @@
         "latitude": -33.9821326,
         "longitude": 18.4105188,
         "wikidata": "Q31525553",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Reserve Peak"
+        }
       }
     },
     {
@@ -1569,7 +1781,10 @@
         "latitude": -34.0332623,
         "longitude": 18.3276095,
         "wikidata": "Q31522433",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Suther Peak"
+        }
       }
     },
     {
@@ -1591,7 +1806,10 @@
         "latitude": -33.9922786,
         "longitude": 18.3753946,
         "wikidata": "Q31410781",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Grootkop"
+        }
       }
     },
     {
@@ -1613,7 +1831,10 @@
         "latitude": -33.9376675,
         "longitude": 18.4697285,
         "wikidata": "Q138698168",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Observatory War Memorial"
+        }
       }
     },
     {
@@ -1635,7 +1856,10 @@
         "latitude": -33.9495715,
         "longitude": 18.4416607,
         "wikidata": "Q32043657",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Woodstock Cave"
+        }
       }
     },
     {
@@ -1657,7 +1881,10 @@
         "latitude": -33.9523324,
         "longitude": 18.4405975,
         "wikidata": "Q31527600",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Minor Peak"
+        }
       }
     },
     {
@@ -1679,7 +1906,10 @@
         "latitude": -33.9560514,
         "longitude": 18.410139,
         "wikidata": "Q32037733",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Union Cave"
+        }
       }
     },
     {
@@ -1700,7 +1930,10 @@
         "latitude": -33.9250551,
         "longitude": 18.4201334,
         "wikidata": "Q114641920",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Jan Smuts Statue, Wale St, Cape Town"
+        }
       }
     },
     {
@@ -1722,7 +1955,10 @@
         "latitude": -33.9945406,
         "longitude": 18.4086396,
         "wikidata": "Q31530004",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Klassenkop"
+        }
       }
     },
     {
@@ -1744,7 +1980,10 @@
         "latitude": -33.9445354,
         "longitude": 18.4420349,
         "wikidata": "Q106839609",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Queen's Blockhouse"
+        }
       }
     },
     {
@@ -1766,7 +2005,10 @@
         "latitude": -33.9713533,
         "longitude": 18.4174522,
         "wikidata": "Q31520320",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Waaikoppie"
+        }
       }
     },
     {
@@ -1788,7 +2030,10 @@
         "latitude": -34.0275049,
         "longitude": 18.3985312,
         "wikidata": "Q31520641",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Vlakkenberg"
+        }
       }
     },
     {
@@ -1810,7 +2055,10 @@
         "latitude": -33.924266,
         "longitude": 18.4195584,
         "wikidata": "Q130425094",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Bishop Robert Gray Memorial"
+        }
       }
     },
     {
@@ -1833,7 +2081,10 @@
         "longitude": 18.4831354,
         "wikidata": "Q116783699",
         "wikipedia": "en:Choo choo park",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Choo choo park"
+        }
       }
     },
     {
@@ -1856,7 +2107,10 @@
         "longitude": 18.4536875,
         "wikidata": "Q8040084",
         "wikipedia": "en:Wynberg Park",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Wynberg Park"
+        }
       }
     },
     {
@@ -1879,7 +2133,10 @@
         "longitude": 18.414543,
         "wikidata": "Q115734697",
         "wikipedia": "en:Little Theatre (Cape Town)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Little Theatre"
+        }
       }
     },
     {
@@ -1902,7 +2159,10 @@
         "longitude": 18.476886,
         "wikidata": "Q20981900",
         "wikipedia": "en:Rondebosch Park",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Rondebosch Park"
+        }
       }
     },
     {
@@ -1924,7 +2184,10 @@
         "latitude": -33.9064795,
         "longitude": 18.4221627,
         "wikidata": "Q55634395",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "V&A Waterfront clock tower"
+        }
       }
     },
     {
@@ -1946,7 +2209,10 @@
         "latitude": -33.950671,
         "longitude": 18.4503513,
         "wikidata": "Q47015779",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "King's Blockhouse"
+        }
       }
     },
     {
@@ -1968,7 +2234,10 @@
         "latitude": -33.9617835,
         "longitude": 18.4694388,
         "wikidata": "Q131160190",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "St Paul's Church Rondebosch"
+        }
       }
     },
     {
@@ -1991,7 +2260,10 @@
         "latitude": -34.045878,
         "longitude": 18.3545991,
         "wikidata": "Q122644079",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Hout Bay beach"
+        }
       }
     },
     {
@@ -2013,7 +2285,10 @@
         "latitude": -33.8055588,
         "longitude": 18.376665,
         "wikidata": "Q55587690",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Church of the Good Shepherd, Robben Island"
+        }
       }
     },
     {
@@ -2039,7 +2314,10 @@
         "website": "https://www.iziko.org.za/museums/bo-kaap-museum/",
         "wikidata": "Q55904371",
         "fee": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Bo-Kaap museum"
+        }
       }
     },
     {
@@ -2061,7 +2339,10 @@
         "latitude": -33.9233804,
         "longitude": 18.4218939,
         "wikidata": "Q55740088",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Two Minutes of Silence and Remembrance"
+        }
       }
     },
     {
@@ -2083,7 +2364,10 @@
         "latitude": -33.9251929,
         "longitude": 18.4213164,
         "wikidata": "Q89046104",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Slave Tree Memorial, Cape Town"
+        }
       }
     },
     {
@@ -2107,7 +2391,10 @@
         "address": "Chiappini Street, Cape Town",
         "phone": "+27 21 4234569",
         "wikidata": "Q56317353",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Mosque Shafee"
+        }
       }
     },
     {
@@ -2129,7 +2416,10 @@
         "latitude": -33.8110955,
         "longitude": 18.378879,
         "wikidata": "Q55587699",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Garrison Church, Robben Island"
+        }
       }
     },
     {
@@ -2152,7 +2442,10 @@
         "longitude": 18.4464751,
         "address": "Albert Road, 70, Cape Town",
         "wikidata": "Q131457458",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "St Mary the Virgin"
+        }
       }
     },
     {
@@ -2176,7 +2469,10 @@
         "address": "Longmarket Street, 204, Cape Town",
         "website": "https://boorhaanol.org.za/",
         "wikidata": "Q132227554",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Boorhaanol Islam Mosque"
+        }
       }
     },
     {
@@ -2199,7 +2495,10 @@
         "latitude": -33.9215937,
         "longitude": 18.3780847,
         "wikidata": "Q32004512",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Queens Beach"
+        }
       }
     },
     {
@@ -2222,7 +2521,10 @@
         "latitude": -33.9202162,
         "longitude": 18.3806647,
         "wikidata": "Q32025320",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Sunset Beach"
+        }
       }
     },
     {
@@ -2245,7 +2547,10 @@
         "longitude": 18.5097394,
         "wikidata": "Q6860229",
         "wikipedia": "en:Milnerton Racecourse Nature Reserve",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Milnerton Racecourse Nature Reserve"
+        }
       }
     },
     {
@@ -2267,7 +2572,10 @@
         "latitude": -33.8609137,
         "longitude": 18.5024991,
         "wikidata": "Q7673123",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Table Bay Nature Reserve"
+        }
       }
     },
     {
@@ -2291,7 +2599,10 @@
         "address": "St. Michael's Road, 10, Cape Town",
         "website": "https://www.stmichael.org.za/",
         "wikidata": "Q136772996",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "St Michael and All Angels Anglican Church"
+        }
       }
     },
     {
@@ -2314,7 +2625,10 @@
         "longitude": 18.4135523,
         "address": "Loop Street, 214, Cape Town",
         "wikidata": "Q125200623",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Coowatool Islam Mosque"
+        }
       }
     },
     {
@@ -2338,7 +2652,10 @@
         "website": "https://www.capetown.gov.za/Family%20and%20home/See-all-city-facilities/Our-recreational-facilities/Nature%20reserves/edith-stephens-nature-reserve",
         "wikidata": "Q5338682",
         "wikipedia": "en:Edith Stephens Wetland Park",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Edith Stephens Wetland Park"
+        }
       }
     },
     {
@@ -2426,7 +2743,7 @@
         ],
         "latitude": -33.9071799,
         "longitude": 18.4224624,
-        "address": "The Clock Tower, Cidade do Cabo",
+        "address": "The Clock Tower",
         "opening_hours": "Mo-Su 09:00-20:00",
         "website": "https://www.capetowndiamondmuseum.org/",
         "popularity": 0
@@ -2472,7 +2789,7 @@
         ],
         "latitude": -34.0446542,
         "longitude": 18.3500691,
-        "address": "Albert Street, 8, Cidade do Cabo",
+        "address": "Albert Street, 8",
         "phone": "+27 722969132",
         "website": "https://sealsnorkeling.com/",
         "popularity": 0
@@ -2607,7 +2924,7 @@
         ],
         "latitude": -33.9000018,
         "longitude": 18.4124838,
-        "address": "Beach Road, Cidade do Cabo",
+        "address": "Beach Road",
         "opening_hours": "Mo-Su 09:00-19:00",
         "phone": "+27214210909",
         "website": "https://www.yacoobyachts.co.za/",
@@ -2657,7 +2974,7 @@
         ],
         "latitude": -33.9297771,
         "longitude": 18.5296855,
-        "address": "Gunners Circle, Cidade do Cabo",
+        "address": "Gunners Circle",
         "opening_hours": "Mo-Sa 05:00-09:00",
         "popularity": 0
       }
@@ -2932,7 +3249,10 @@
         "latitude": -33.9310072,
         "longitude": 18.4311951,
         "wikidata": "Q130905100",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "St Mark's Anglican Church"
+        }
       }
     },
     {
@@ -3000,7 +3320,10 @@
         "latitude": -33.989969,
         "longitude": 18.4298804,
         "wikidata": "Q124317475",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Tree Canopy Walkway"
+        }
       }
     },
     {
@@ -3093,7 +3416,10 @@
         "longitude": 18.4134959,
         "address": "Upper Leeuwen Street, Cape Town",
         "wikidata": "Q125200798",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Nurul Houda Masjied"
+        }
       }
     },
     {
@@ -3139,7 +3465,10 @@
         "longitude": 18.4323781,
         "address": "Russel Road, Zonnebloem, Cape Town",
         "wikidata": "Q130900201",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Moravian Church"
+        }
       }
     },
     {
@@ -3184,7 +3513,10 @@
         "latitude": -33.9169367,
         "longitude": 18.4172425,
         "wikidata": "Q125200655",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Nurul Mogammadiah Masjied"
+        }
       }
     },
     {
@@ -3207,7 +3539,10 @@
         "longitude": 18.414229,
         "website": "https://jumuamosquect.co.za/",
         "wikidata": "Q125200813",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Jumu'a Mosque of Cape Town"
+        }
       }
     },
     {
@@ -3498,13 +3833,16 @@
         ],
         "latitude": -33.920535,
         "longitude": 18.4177475,
-        "address": "Shortmarket Street, 108, Cidade do Cabo",
+        "address": "Shortmarket Street, 108",
         "opening_hours": "Mo-Sa 18:00-23:00",
         "phone": "+27214220221",
         "website": "https://www.africacafe.co.za/",
         "wikidata": "Q56050281",
         "cuisine": "regional",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "The Africa Cafe"
+        }
       }
     },
     {
@@ -3552,7 +3890,7 @@
         ],
         "latitude": -33.9299444,
         "longitude": 18.4110002,
-        "address": "Kloof Street, 71, Cidade do Cabo",
+        "address": "Kloof Street, 71",
         "opening_hours": "Mo-Su 12:00-22:30",
         "phone": "+27 21 422 2260",
         "wheelchair": "no",
@@ -3578,7 +3916,7 @@
         ],
         "latitude": -33.9207494,
         "longitude": 18.3832233,
-        "address": "Regent Road, 76, Cidade do Cabo",
+        "address": "Regent Road, 76",
         "opening_hours": "Mo-Su 18:30-02:00",
         "phone": "+27 214397112",
         "website": "https://www.nv-80.co.za/",
@@ -3659,7 +3997,7 @@
         ],
         "latitude": -33.9327379,
         "longitude": 18.4126852,
-        "address": "Hof Street, 9, Cidade do Cabo",
+        "address": "Hof Street, 9",
         "opening_hours": "We-Fr 12:00-14:30, 18:00-22:30; Sa-Tu 18:00-22:30",
         "phone": "+27 21 4232601",
         "website": "https://nelsons-eye.co.za/",
@@ -3711,7 +4049,7 @@
         ],
         "latitude": -33.9347244,
         "longitude": 18.4161291,
-        "address": "Breda Street, 8, Cidade do Cabo",
+        "address": "Breda Street, 8",
         "opening_hours": "Mo-Su 12:00-22:00",
         "phone": "+27 63 710 4742",
         "website": "https://www.thewoodlandseatery.com/",
@@ -3763,7 +4101,7 @@
         ],
         "latitude": -33.9386153,
         "longitude": 18.4690194,
-        "address": "Lower Main Road, 88, Cidade do Cabo",
+        "address": "Lower Main Road, 88",
         "opening_hours": "Mo-Su 11:00-21:30",
         "phone": "+27 21 447 6509",
         "website": "https://linkorestaurant.co.za/",
@@ -3841,7 +4179,7 @@
         ],
         "latitude": -33.9162396,
         "longitude": 18.417165,
-        "address": "Waterkant Street, 74, Cidade do Cabo",
+        "address": "Waterkant Street, 74",
         "opening_hours": "Mo-Su 10:00-00:00",
         "phone": "+27 214216666",
         "cuisine": "american",
@@ -3916,7 +4254,7 @@
         ],
         "latitude": -33.9215541,
         "longitude": 18.4173931,
-        "address": "Breë Street, 110, Cidade do Cabo",
+        "address": "Breë Street, 110",
         "opening_hours": "Tu-Sa 12:00-23:00",
         "phone": "+27214222770",
         "cuisine": "greek;mediterranean;italian_pizza;barbecue;burger;african;american",
@@ -4045,7 +4383,7 @@
         ],
         "latitude": -33.9001391,
         "longitude": 18.4053167,
-        "address": "Beach Road, 1, Cidade do Cabo",
+        "address": "Beach Road, 1",
         "opening_hours": "Mo-Su 08:00-23:00",
         "phone": "+27 21 204 8545",
         "website": "http://lilysrestaurant.co.za",
@@ -4149,7 +4487,7 @@
         ],
         "latitude": -33.9149846,
         "longitude": 18.4189266,
-        "address": "Napier Street, Cidade do Cabo",
+        "address": "Napier Street",
         "opening_hours": "Mo-Th 12:00-23:00; Fr-Su 12:00-00:00",
         "phone": "+27 62 278 1132;+27 21 139 0037",
         "website": "https://alaturkish.co.za/",
@@ -4175,7 +4513,7 @@
         ],
         "latitude": -33.9331104,
         "longitude": 18.4080231,
-        "address": "Kloof Street, 84, Cidade do Cabo",
+        "address": "Kloof Street, 84",
         "opening_hours": "Mo-We 18:00-23:30; Th-Sa 12:00-23:30; Su 12:00-18:00",
         "phone": "+27 72 415 3752",
         "website": "https://clubkloof.com/\nhttps://www.dineplan.com/restaurant/club-kloof",
@@ -4301,7 +4639,7 @@
         ],
         "latitude": -33.9187744,
         "longitude": 18.4180493,
-        "address": "Rose Street, 15, Cidade do Cabo",
+        "address": "Rose Street, 15",
         "opening_hours": "Tu-Fr 12:00-23:00; Sa-Mo 15:00-23:00",
         "phone": "+27214235412",
         "popularity": 0
@@ -4325,7 +4663,7 @@
         ],
         "latitude": -33.9275623,
         "longitude": 18.4571101,
-        "address": "Albert Road, 375, Cidade do Cabo",
+        "address": "Albert Road, 375",
         "opening_hours": "Tu-Sa 12:30-13:30, 19:00-21:30",
         "phone": "+27214472337",
         "website": "https://www.thetestkitchen.co.za/home/",
@@ -4374,7 +4712,7 @@
         ],
         "latitude": -33.9273056,
         "longitude": 18.4573803,
-        "address": "Albert Road, 373-375, Cidade do Cabo",
+        "address": "Albert Road, 373-375",
         "opening_hours": "Mo-Sa 12:30-14:30, 18:00-22:30; Su 11:00-15:00",
         "phone": "+27214470804",
         "website": "https://thepotluckclub.co.za",
@@ -4399,7 +4737,7 @@
         ],
         "latitude": -33.9207477,
         "longitude": 18.4179926,
-        "address": "Shortmarket Street, 98, Cidade do Cabo",
+        "address": "Shortmarket Street, 98",
         "opening_hours": "Mo-Fr 12:00-22:30",
         "phone": "+27214238888",
         "popularity": 0
@@ -4548,7 +4886,7 @@
         ],
         "latitude": -33.9325507,
         "longitude": 18.4086207,
-        "address": "Kloof Street, 117, Cidade do Cabo",
+        "address": "Kloof Street, 117",
         "opening_hours": "Su-We 08:00-15:30; Th-Sa 08:00-23:00",
         "phone": "+27646425004",
         "website": "https://www.ourlocal.co.za/",
@@ -4622,7 +4960,7 @@
         ],
         "latitude": -33.9241248,
         "longitude": 18.4152441,
-        "address": "Pepper Street, 12, Cidade do Cabo",
+        "address": "Pepper Street, 12",
         "opening_hours": "Tu-Fr 09:00-15:00; Sa-Su 10:00-14:00",
         "website": "https://www.mulberryandprince.co.za/",
         "cuisine": "breakfast",
@@ -4648,7 +4986,7 @@
         ],
         "latitude": -33.9177911,
         "longitude": 18.3882958,
-        "address": "Main Road, 395, Cidade do Cabo",
+        "address": "Main Road, 395",
         "opening_hours": "Mo-Su 07:00-18:00",
         "phone": "+27210005408",
         "website": "https://www.cocosafar.com/",
@@ -4773,7 +5111,7 @@
         ],
         "latitude": -33.9212502,
         "longitude": 18.3826413,
-        "address": "Regent Road, 78, Cidade do Cabo",
+        "address": "Regent Road, 78",
         "opening_hours": "Mo 17:30-22:00; Tu-Su 12:00-22:00",
         "phone": "+27 21 418 5411",
         "website": "https://greekfisherman.co.za/",
@@ -4848,7 +5186,7 @@
         ],
         "latitude": -33.9302638,
         "longitude": 18.4106625,
-        "address": "Kloof Street, 75, Cidade do Cabo",
+        "address": "Kloof Street, 75",
         "opening_hours": "Tu-Sa 12:00-14:30, 18:00-22:00; Su 12:00-15:30",
         "website": "https://ramenhead.co.za/",
         "cuisine": "japanese",
@@ -5091,7 +5429,7 @@
         ],
         "latitude": -33.9215236,
         "longitude": 18.4188019,
-        "address": "Shortmarket Street, 55, Cidade do Cabo",
+        "address": "Shortmarket Street, 55",
         "opening_hours": "Mo,Su 07:00-14:00; Tu-Sa 07:00-23:00",
         "website": "https://thewes.co.za/",
         "popularity": 0
@@ -5166,7 +5504,7 @@
         ],
         "latitude": -33.9413974,
         "longitude": 18.4139858,
-        "address": "Upper Orange Street, 22, Cidade do Cabo",
+        "address": "Upper Orange Street, 22",
         "opening_hours": "Mo-Sa 07:00-20:00; Su 07:00-19:00",
         "phone": "+27 21 465 0795",
         "website": "https://oumeul.co.za/ou-meul-stores/ou-meul-oranjezicht/",
@@ -5193,7 +5531,7 @@
         ],
         "latitude": -33.9354255,
         "longitude": 18.4714382,
-        "address": "Fir Street, 2, Cidade do Cabo",
+        "address": "Fir Street, 2",
         "opening_hours": "Mo-Su 07:00-17:00",
         "phone": "+27214474126",
         "website": "https://vidaecaffe.com/",
@@ -5219,7 +5557,7 @@
         ],
         "latitude": -33.932354,
         "longitude": 18.420882,
-        "address": "Clare Street, Cidade do Cabo",
+        "address": "Clare Street",
         "opening_hours": "Mo-Fr 08:30-17:00",
         "phone": "+27 21 462 1950",
         "cuisine": "coffee_shop",
@@ -5270,7 +5608,7 @@
         ],
         "latitude": -33.9229754,
         "longitude": 18.4196618,
-        "address": "Burg Street, 38, Cidade do Cabo",
+        "address": "Burg Street, 38",
         "opening_hours": "Mo-Sa 07:30-17:00",
         "phone": "+27728842057",
         "cuisine": "coffee_shop",
@@ -5295,7 +5633,7 @@
         ],
         "latitude": -33.9228596,
         "longitude": 18.4160693,
-        "address": "Breë Street, 136, Cidade do Cabo",
+        "address": "Breë Street, 136",
         "opening_hours": "Mo-Fr 07:00-16:00; Sa 08:00-14:30",
         "phone": "+27824511572",
         "website": "https://www.theladderon136.com/",
@@ -5742,7 +6080,7 @@
         ],
         "latitude": -33.929079,
         "longitude": 18.4110298,
-        "address": "Park Road, 1, Cidade do Cabo",
+        "address": "Park Road, 1",
         "opening_hours": "We-Fr 18:00-22:00; Sa 18:00-22:30; Su 14:00-18:00; Mo off",
         "website": "https://onepark.co.za/",
         "popularity": 0
@@ -5867,7 +6205,10 @@
         "phone": "+27 21 689 5949",
         "website": "https://forries.co.za/",
         "wikidata": "Q113714646",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Foresters Arms"
+        }
       }
     },
     {
@@ -5888,7 +6229,7 @@
         ],
         "latitude": -33.9504159,
         "longitude": 18.3787924,
-        "address": "Victoria Road, 35, Cidade do Cabo",
+        "address": "Victoria Road, 35",
         "opening_hours": "Mo-Su 08:00-02:00",
         "phone": "+27 21 286 2106",
         "popularity": 0
@@ -5936,7 +6277,7 @@
         ],
         "latitude": -33.9243406,
         "longitude": 18.4172697,
-        "address": "Long Street, 165, Cidade do Cabo",
+        "address": "Long Street, 165",
         "opening_hours": "Su-We 11:00-22:00; Th-Sa 11:00-23:00",
         "website": "https://morogelato.co.za/",
         "popularity": 0

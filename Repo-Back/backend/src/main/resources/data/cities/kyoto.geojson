@@ -27,7 +27,10 @@
         "wikipedia": "ja:清水寺",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 77
+        "popularity": 77,
+        "names": {
+          "en": "Kiyomizu-dera"
+        }
       }
     },
     {
@@ -54,7 +57,12 @@
         "wikidata": "Q270983",
         "wikipedia": "ja:鹿苑寺",
         "fee": "yes",
-        "popularity": 57
+        "popularity": 57,
+        "names": {
+          "pt": "Kinkaku-ji",
+          "en": "Kinkaku-ji Temple",
+          "es": "Kinkaku-ji"
+        }
       }
     },
     {
@@ -78,7 +86,11 @@
         "longitude": 135.8344171,
         "wikidata": "Q748040",
         "wikipedia": "ja:比叡山",
-        "popularity": 39
+        "popularity": 39,
+        "names": {
+          "en": "Mount Hiei",
+          "es": "Monte Hiei"
+        }
       }
     },
     {
@@ -104,7 +116,12 @@
         "website": "http://www.shokoku-ji.jp/g_about.html",
         "wikidata": "Q257473",
         "wikipedia": "ja:慈照寺",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Ginkaku-ji",
+          "en": "Ginkaku-ji Temple",
+          "es": "Ginkaku-ji"
+        }
       }
     },
     {
@@ -133,7 +150,12 @@
         "wikipedia": "ja:京都御所",
         "fee": "yes",
         "popularity": 33,
-        "site": "Q1202239"
+        "site": "Q1202239",
+        "names": {
+          "pt": "Kyōto Gosho",
+          "en": "Kyoto Imperial Palace",
+          "es": "Palacio Imperial de Kioto"
+        }
       }
     },
     {
@@ -159,7 +181,12 @@
         "wikidata": "Q587371",
         "wikipedia": "ja:龍安寺",
         "wheelchair": "limited",
-        "popularity": 32
+        "popularity": 32,
+        "names": {
+          "pt": "Ryōan-ji",
+          "en": "Ryōan-ji Temple",
+          "es": "Ryōan-ji"
+        }
       }
     },
     {
@@ -187,7 +214,12 @@
         "wikidata": "Q1046403",
         "wikipedia": "ja:東寺",
         "wheelchair": "limited",
-        "popularity": 30
+        "popularity": 30,
+        "names": {
+          "pt": "Kyo-o-gokoku-ji",
+          "en": "Tō-ji Temple",
+          "es": "Templo Tō-ji"
+        }
       }
     },
     {
@@ -215,7 +247,12 @@
         "wikipedia": "ja:二条城",
         "wheelchair": "limited",
         "popularity": 29,
-        "site": "Q1013399"
+        "site": "Q1013399",
+        "names": {
+          "pt": "Castelo de Nijō",
+          "en": "Nijō Castle",
+          "es": "Castillo Nijō"
+        }
       }
     },
     {
@@ -244,7 +281,12 @@
         "wikidata": "Q700448",
         "wikipedia": "ja:賀茂別雷神社",
         "fee": "no",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Kamowakeikazuchi-jinja",
+          "en": "Kamigamo Shrine",
+          "es": "Santuario Kamigamo"
+        }
       }
     },
     {
@@ -273,7 +315,12 @@
         "wikidata": "Q385141",
         "wikipedia": "ja:平安神宮",
         "fee": "no",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Heian Jingū",
+          "en": "Heian Jingū",
+          "es": "Santuario Heian"
+        }
       }
     },
     {
@@ -297,7 +344,12 @@
         "longitude": 135.7768205,
         "wikidata": "Q1196273",
         "wikipedia": "ja:伏見城",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Fushimi-Momoyama",
+          "en": "Fushimi Castle",
+          "es": "Castillo Fushimi-Momoyama"
+        }
       }
     },
     {
@@ -325,7 +377,12 @@
         "fee": "yes",
         "wheelchair": "yes",
         "popularity": 25,
-        "site": "Q147286"
+        "site": "Q147286",
+        "names": {
+          "pt": "National Museum",
+          "en": "Kyoto National Museum",
+          "es": "Museo Nacional de Kioto"
+        }
       }
     },
     {
@@ -354,7 +411,11 @@
         "wikipedia": "ja:仁和寺",
         "fee": "yes",
         "popularity": 25,
-        "site": "Q1202871"
+        "site": "Q1202871",
+        "names": {
+          "en": "Ninna-ji Temple",
+          "es": "Ninna-ji"
+        }
       }
     },
     {
@@ -379,7 +440,12 @@
         "opening_hours": "Mo-Su 09:00-17:00",
         "wikidata": "Q1157535",
         "fee": "yes",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Daigo-ji",
+          "en": "Daigo-ji Temple",
+          "es": "Daigo-ji"
+        }
       }
     },
     {
@@ -409,7 +475,12 @@
         "wikipedia": "ja:八坂神社",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Santuário Yasaka",
+          "en": "Yasaka Shrine",
+          "es": "Santuario Yasaka"
+        }
       }
     },
     {
@@ -431,12 +502,15 @@
         ],
         "latitude": 34.9771669,
         "longitude": 135.7752757,
-        "address": "京都市東山区本町, 15-778, Kyoto",
+        "address": "京都市東山区本町, 15-778",
         "opening_hours": "Mo-Su 08:30-16:30",
         "website": "https://tofukuji.jp/",
         "wikidata": "Q2166743",
         "wikipedia": "ja:東福寺",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "en": "Tōfuku-ji Temple"
+        }
       }
     },
     {
@@ -464,7 +538,12 @@
         "wikidata": "Q701620",
         "wikipedia": "ja:賀茂御祖神社",
         "fee": "no",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Kamomioya-jinja",
+          "en": "Shimogamo Shrine",
+          "es": "Santuario Shimogamo"
+        }
       }
     },
     {
@@ -490,7 +569,11 @@
         "wikidata": "Q1516753",
         "wikipedia": "ja:西芳寺",
         "fee": "yes",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "en": "Saihō-ji Temple",
+          "es": "Saihō-ji"
+        }
       }
     },
     {
@@ -517,7 +600,12 @@
         "website": "http://nanzenji.com/",
         "wikidata": "Q1089767",
         "wikipedia": "ja:南禅寺",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "nanzen-ji temple toshogu",
+          "en": "Nanzen-ji Temple",
+          "es": "Nanzen-ji"
+        }
       }
     },
     {
@@ -544,7 +632,12 @@
         "wikidata": "Q23579173",
         "wikipedia": "en:Bamboo Forest (Kyoto, Japan)",
         "fee": "no",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Floresta de Bambu (Quioto, Japão)",
+          "en": "Bamboo Forest",
+          "es": "Bosque de bambú de Arashiyama y Sagano"
+        }
       }
     },
     {
@@ -572,7 +665,12 @@
         "wikidata": "Q1201304",
         "wikipedia": "ja:京都タワー",
         "fee": "yes",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Torre de Quioto",
+          "en": "Kyoto Tower",
+          "es": "Torre de Kioto"
+        }
       }
     },
     {
@@ -594,7 +692,7 @@
         ],
         "latitude": 34.9879926,
         "longitude": 135.7717834,
-        "address": "京都市東山区三十三間堂迴り, 657, Kyoto",
+        "address": "京都市東山区三十三間堂迴り, 657",
         "opening_hours": "Apr 01-Nov 15 Mo-Su 08:30-17:00; Nov 16-Mar 31 Mo-Su 09:00-16:00",
         "phone": "+81-075-561-0467",
         "website": "https://www.sanjusangendo.jp/",
@@ -602,7 +700,12 @@
         "wikipedia": "ja:三十三間堂",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Sanjūsangen-dō",
+          "en": "Sanjūsangen-dō Temple",
+          "es": "Sanjūsangen-dō"
+        }
       }
     },
     {
@@ -626,7 +729,11 @@
         "longitude": 135.6777774,
         "wikidata": "Q986750",
         "wikipedia": "ja:高山寺",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "en": "Kōzan-ji Temple",
+          "es": "Kōzan-ji"
+        }
       }
     },
     {
@@ -654,7 +761,11 @@
         "wikidata": "Q1759226",
         "wikipedia": "ja:天龍寺",
         "fee": "yes",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "en": "Tenryū-ji Temple",
+          "es": "Tenryū-ji"
+        }
       }
     },
     {
@@ -680,7 +791,11 @@
         "website": "https://www.chion-in.or.jp/",
         "wikidata": "Q873645",
         "wikipedia": "ja:知恩院",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "en": "Chion-in Temple",
+          "es": "Chion-in"
+        }
       }
     },
     {
@@ -706,7 +821,12 @@
         "website": "https://www.kyoto-honnouji.jp/",
         "wikidata": "Q626535",
         "wikipedia": "en:Honnō-ji",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Honnō-ji",
+          "en": "Honnō-ji Temple",
+          "es": "Honnō-ji"
+        }
       }
     },
     {
@@ -730,7 +850,11 @@
         "longitude": 135.7465224,
         "wikidata": "Q901256",
         "wikipedia": "ja:大徳寺",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "en": "Daitoku-ji Temple",
+          "es": "Daitoku-ji"
+        }
       }
     },
     {
@@ -753,7 +877,12 @@
         "longitude": 135.8528467,
         "wikidata": "Q1756307",
         "wikipedia": "ja:園城寺",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Mii-dera",
+          "en": "Mii-dera Temple",
+          "es": "Mii-dera"
+        }
       }
     },
     {
@@ -782,7 +911,11 @@
         "wikidata": "Q662176",
         "wikipedia": "ja:北野天満宮",
         "fee": "no",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "en": "Kitano Tenmangū",
+          "es": "Kitano Tenman-gū"
+        }
       }
     },
     {
@@ -808,7 +941,12 @@
         "wikidata": "Q1736808",
         "wikipedia": "ja:桂離宮",
         "fee": "yes",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Vila Imperial de Katsura",
+          "en": "Katsura Imperial Villa",
+          "es": "Katsura"
+        }
       }
     },
     {
@@ -837,7 +975,11 @@
         "wikidata": "Q1146038",
         "wikipedia": "ja:西本願寺",
         "fee": "no",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Nishi Hongan-ji",
+          "en": "Nishi Hongan-ji Temple"
+        }
       }
     },
     {
@@ -862,7 +1004,11 @@
         "wikidata": "Q376288",
         "wikipedia": "ja:妙心寺",
         "wheelchair": "limited",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "en": "Myōshin-ji Temple",
+          "es": "Myōshin-ji"
+        }
       }
     },
     {
@@ -887,7 +1033,11 @@
         "website": "https://www.momak.go.jp/",
         "wikidata": "Q1055628",
         "wikipedia": "ja:京都国立近代美術館",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "en": "National Museum of Modern Art, Kyoto",
+          "es": "Museo Nacional de Arte Moderno de Kioto"
+        }
       }
     },
     {
@@ -916,7 +1066,12 @@
         "wikipedia": "ja:京都国際マンガミュージアム",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Museu Internacional de Manga de Quioto",
+          "en": "Kyoto International Manga Museum",
+          "es": "Museo Internacional del Manga de Kioto"
+        }
       }
     },
     {
@@ -944,7 +1099,11 @@
         "wikidata": "Q2702064",
         "wikipedia": "ja:高台寺",
         "fee": "yes",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Kōdai-ji Temple",
+          "es": "Kōdai-ji"
+        }
       }
     },
     {
@@ -967,7 +1126,11 @@
         "latitude": 34.9921622,
         "longitude": 135.7719379,
         "wikidata": "Q1045971",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Hōkō-ji",
+          "en": "Hōkō-ji Temple"
+        }
       }
     },
     {
@@ -995,7 +1158,10 @@
         "wikidata": "Q713177",
         "wikipedia": "ja:吉田神社",
         "fee": "no",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "Yoshida Shrine"
+        }
       }
     },
     {
@@ -1020,7 +1186,11 @@
         "wikidata": "Q1786709",
         "wikipedia": "ja:相国寺",
         "wheelchair": "limited",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "Shōkoku-ji Temple",
+          "es": "Shōkoku-ji"
+        }
       }
     },
     {
@@ -1045,7 +1215,11 @@
         "website": "https://tetsugakunomichi.jp/",
         "wikidata": "Q1510488",
         "wikipedia": "ja:哲学の道",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "Philosopher's Walk",
+          "es": "El Camino del Filósofo"
+        }
       }
     },
     {
@@ -1068,7 +1242,12 @@
         "latitude": 34.9522209,
         "longitude": 135.8195149,
         "wikidata": "Q3471686",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Sanbō-in",
+          "en": "Sanbō-in Temple",
+          "es": "Sanbō-in"
+        }
       }
     },
     {
@@ -1097,7 +1276,10 @@
         "wikipedia": "ja:東本願寺",
         "fee": "no",
         "wheelchair": "limited",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Higashi Hongan-ji Temple"
+        }
       }
     },
     {
@@ -1125,7 +1307,11 @@
         "wikidata": "Q1440954",
         "wikipedia": "ja:建仁寺",
         "fee": "yes",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Kennin-ji Temple",
+          "es": "Kennin-ji"
+        }
       }
     },
     {
@@ -1150,7 +1336,11 @@
         "wikidata": "Q1060966",
         "wikipedia": "ja:泉涌寺",
         "wheelchair": "no",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Sennyū-ji Temple",
+          "es": "Sennyu-ji"
+        }
       }
     },
     {
@@ -1178,7 +1368,11 @@
         "wikidata": "Q3106834",
         "wikipedia": "ja:京都府立植物園",
         "fee": "yes",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Kyoto Botanical Garden",
+          "es": "Jardín Botánico de Kioto"
+        }
       }
     },
     {
@@ -1205,7 +1399,10 @@
         "wikidata": "Q2223611",
         "wikipedia": "ja:修学院離宮",
         "fee": "no",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Shugaku-in Imperial Villa"
+        }
       }
     },
     {
@@ -1230,7 +1427,11 @@
         "opening_hours": "Mo-Su 09:00-17:00",
         "wikidata": "Q1157585",
         "wikipedia": "ja:大覚寺",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Daikaku-ji Temple",
+          "es": "Daikaku-ji"
+        }
       }
     },
     {
@@ -1255,7 +1456,10 @@
         "opening_hours": "Mo-Su 08:00-17:00",
         "website": "https://rokuhara.or.jp/",
         "wikidata": "Q1060771",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Rokuharamitsu-ji Temple"
+        }
       }
     },
     {
@@ -1279,7 +1483,10 @@
         "longitude": 135.7727661,
         "wikidata": "Q1072965",
         "wikipedia": "ja:法住寺 (京都市)",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Hōjū-ji Temple"
+        }
       }
     },
     {
@@ -1301,7 +1508,10 @@
         "latitude": 35.0185493,
         "longitude": 135.6807544,
         "wikidata": "Q50187147",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Sagano Scenic Railway"
+        }
       }
     },
     {
@@ -1326,7 +1536,10 @@
         "website": "https://kyoto-maruyama-park.jp/",
         "wikidata": "Q1108695",
         "wikipedia": "ja:円山公園 (京都府)",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Maruyama Park"
+        }
       }
     },
     {
@@ -1354,7 +1567,11 @@
         "wikidata": "Q738971",
         "wikipedia": "ja:平野神社",
         "fee": "no",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Hirano Shrine",
+          "es": "Santuario de Hirano"
+        }
       }
     },
     {
@@ -1377,7 +1594,10 @@
         "longitude": 135.7435526,
         "wikidata": "Q1082935",
         "wikipedia": "ja:壬生寺",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Mibu-dera"
+        }
       }
     },
     {
@@ -1402,7 +1622,10 @@
         "website": "http://www.city.kyoto.jp/bunshi/kmma/",
         "wikidata": "Q3330657",
         "wikipedia": "ja:京都市美術館",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Kyoto Municipal Museum of Art"
+        }
       }
     },
     {
@@ -1426,7 +1649,10 @@
         "longitude": 135.7793482,
         "wikidata": "Q11555353",
         "wikipedia": "ja:法観寺",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Hōkan-ji Temple"
+        }
       }
     },
     {
@@ -1450,7 +1676,11 @@
         "opening_hours": "09:00-16:00",
         "website": "https://kanko.city.kyoto.lg.jp/detail.php?InforKindCode=1&ManageCode=1000031",
         "wikidata": "Q772598",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Kajū-ji Temple",
+          "es": "Kajū-ji"
+        }
       }
     },
     {
@@ -1474,7 +1704,10 @@
         "longitude": 135.7239839,
         "wikidata": "Q3138637",
         "wikipedia": "ja:等持院",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Tōji-in Temple"
+        }
       }
     },
     {
@@ -1498,7 +1731,10 @@
         "longitude": 135.7723519,
         "wikidata": "Q709822",
         "wikipedia": "ja:豊国神社 (京都市)",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Toyokuni Shrine"
+        }
       }
     },
     {
@@ -1523,7 +1759,11 @@
         "website": "https://www.shochiku.co.jp/",
         "wikidata": "Q919524",
         "wikipedia": "en:Minami-za",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Minami-za",
+          "en": "Minami-za"
+        }
       }
     },
     {
@@ -1548,7 +1788,10 @@
         "website": "https://www.shinsenen.org/",
         "wikidata": "Q11590468",
         "wikipedia": "ja:神泉苑",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Shinsen-en"
+        }
       }
     },
     {
@@ -1571,7 +1814,10 @@
         "latitude": 35.014758,
         "longitude": 135.7064269,
         "wikidata": "Q3076920",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Kōryū-ji Temple"
+        }
       }
     },
     {
@@ -1599,7 +1845,10 @@
         "wikidata": "Q377386",
         "wikipedia": "ja:青蓮院",
         "fee": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Shōren-in Temple"
+        }
       }
     },
     {
@@ -1626,7 +1875,10 @@
         "wikidata": "Q135714",
         "wikipedia": "ja:西寺",
         "fee": "no",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Sai-ji"
+        }
       }
     },
     {
@@ -1654,7 +1906,10 @@
         "wikipedia": "ja:京都鉄道博物館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Kyoto Railway Museum"
+        }
       }
     },
     {
@@ -1678,7 +1933,10 @@
         "longitude": 135.7669418,
         "wikidata": "Q7701558",
         "wikipedia": "ja:寺町通",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Teramachi Street"
+        }
       }
     },
     {
@@ -1703,7 +1961,10 @@
         "longitude": 135.6777631,
         "wikidata": "Q11561923",
         "wikipedia": "ja:渡月橋",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Togetsu-kyō"
+        }
       }
     },
     {
@@ -1731,7 +1992,10 @@
         "wikidata": "Q15229013",
         "wikipedia": "ja:嵐山モンキーパークいわたやま",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Iwatayama Monkey Park"
+        }
       }
     },
     {
@@ -1756,7 +2020,11 @@
         "website": "https://www5.city.kyoto.jp/zoo/",
         "wikidata": "Q6452176",
         "wikipedia": "ja:京都市動物園",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Kyoto City Zoo",
+          "es": "Zoológico municipal de Kioto"
+        }
       }
     },
     {
@@ -1781,7 +2049,10 @@
         "website": "https://nomura-museum.or.jp/",
         "wikidata": "Q11645680",
         "wikipedia": "ja:野村美術館",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Nomura Art Museum"
+        }
       }
     },
     {
@@ -1803,12 +2074,15 @@
         ],
         "latitude": 35.0050295,
         "longitude": 135.7647092,
-        "address": "錦小路通, Kyoto",
+        "address": "錦小路通",
         "opening_hours": "Mo-Su,PH 10:00-18:00+",
         "website": "https://www.kyoto-nishiki.or.jp/index.html",
         "wikidata": "Q11650434",
         "wikipedia": "ja:錦市場",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Nishiki Market"
+        }
       }
     },
     {
@@ -1836,7 +2110,10 @@
         "wikidata": "Q843854",
         "wikipedia": "ja:京都御苑",
         "popularity": 7,
-        "site": "Q1202239"
+        "site": "Q1202239",
+        "names": {
+          "en": "Kyoto Gyoen National Garden"
+        }
       }
     },
     {
@@ -1859,7 +2136,10 @@
         "longitude": 135.749673,
         "wikidata": "Q11375124",
         "wikipedia": "ja:京都市考古資料館",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Kyoto City Archaeological Museum"
+        }
       }
     },
     {
@@ -1883,7 +2163,10 @@
         "longitude": 135.7808329,
         "wikidata": "Q80622906",
         "wikipedia": "en:Ninenzaka",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Ninenzaka"
+        }
       }
     },
     {
@@ -1912,7 +2195,11 @@
         "wikidata": "Q795048",
         "wikipedia": "ja:渉成園",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Shōsei Garden",
+          "es": "Shosei-en"
+        }
       }
     },
     {
@@ -1935,7 +2222,10 @@
         "latitude": 35.0337016,
         "longitude": 135.7273413,
         "wikidata": "Q6452177",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Kyoto Museum for World Peace"
+        }
       }
     },
     {
@@ -1959,7 +2249,10 @@
         "longitude": 135.7666862,
         "wikidata": "Q6452137",
         "wikipedia": "ja:京都コンサートホール",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Kyoto Concert Hall"
+        }
       }
     },
     {
@@ -1984,7 +2277,10 @@
         "wikidata": "Q11574990",
         "wikipedia": "ja:産寧坂",
         "wheelchair": "no",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Three-year Slope"
+        }
       }
     },
     {
@@ -2006,7 +2302,11 @@
         "latitude": 35.0175751,
         "longitude": 135.7928271,
         "wikidata": "Q3478488",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Sen-oku Hakuko Kan",
+          "en": "Sen-oku Hakuko Kan"
+        }
       }
     },
     {
@@ -2029,7 +2329,11 @@
         "latitude": 35.0092219,
         "longitude": 135.7622478,
         "wikidata": "Q11375592",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Museum of Kyoto",
+          "es": "Museo de Kioto"
+        }
       }
     },
     {
@@ -2055,7 +2359,10 @@
         "website": "https://global.toei-eigamura.com/",
         "wikidata": "Q11103541",
         "wikipedia": "en:Toei Kyoto Studio Park",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Toei Kyoto Studio Park"
+        }
       }
     },
     {
@@ -2082,7 +2389,10 @@
         "wikidata": "Q6452114",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Kyoto Art Center"
+        }
       }
     },
     {
@@ -2105,7 +2415,10 @@
         "longitude": 135.758486,
         "wikidata": "Q21190901",
         "wikipedia": "en:Ōtani University Museum",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Ōtani University Museum"
+        }
       }
     },
     {
@@ -2128,7 +2441,11 @@
         "latitude": 34.999059,
         "longitude": 135.782717,
         "wikidata": "Q3329667",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Ryozen Museum of History",
+          "es": "Museo de Historia Ryozen"
+        }
       }
     },
     {
@@ -2150,7 +2467,10 @@
         "latitude": 35.0137793,
         "longitude": 135.7796211,
         "wikidata": "Q11606115",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Hosomi Museum"
+        }
       }
     },
     {
@@ -2173,7 +2493,10 @@
         "latitude": 35.0543369,
         "longitude": 135.7508317,
         "wikidata": "Q21019672",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Koryo Museum of Art"
+        }
       }
     },
     {
@@ -2197,7 +2520,10 @@
         "longitude": 135.825954,
         "wikidata": "Q10942951",
         "wikipedia": "ja:如意ヶ嶽",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Mount Nyoigatake"
+        }
       }
     },
     {
@@ -2226,7 +2552,10 @@
         "wikidata": "Q3328153",
         "wikipedia": "ja:無鄰菴",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Murin-an"
+        }
       }
     },
     {
@@ -2251,7 +2580,10 @@
         "longitude": 135.6696711,
         "wikidata": "Q8081591",
         "wikipedia": "ja:大河内山荘",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Ōkōchi Sansō"
+        }
       }
     },
     {
@@ -2275,7 +2607,11 @@
         "longitude": 135.8529991,
         "wikidata": "Q11664332",
         "wikipedia": "ja:音羽山 (滋賀県・京都府)",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Mount Otowa",
+          "es": "Monte Otowa"
+        }
       }
     },
     {
@@ -2297,7 +2633,10 @@
         "latitude": 35.0191504,
         "longitude": 135.7676014,
         "wikidata": "Q6452125",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Kyoto City Library of Historical Documents"
+        }
       }
     },
     {
@@ -2319,7 +2658,10 @@
         "latitude": 35.0280439,
         "longitude": 135.7703404,
         "wikidata": "Q11402029",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Kitamura Museum"
+        }
       }
     },
     {
@@ -2343,7 +2685,10 @@
         "longitude": 135.7812083,
         "wikidata": "Q11622794",
         "wikipedia": "ja:藤井斉成会有鄰館",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Yūrinkan Museum"
+        }
       }
     },
     {
@@ -2366,7 +2711,10 @@
         "longitude": 135.689616,
         "wikidata": "Q28608917",
         "wikipedia": "ja:天皇の杜古墳",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Tenno-no-mori Kofun"
+        }
       }
     },
     {
@@ -2390,7 +2738,12 @@
         "longitude": 135.7929833,
         "wikidata": "Q3558612",
         "wikipedia": "ja:ヴィラ九条山",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Villa Kujoyama",
+          "en": "Villa Kujoyama",
+          "es": "Villa Kujoyama"
+        }
       }
     },
     {
@@ -2415,7 +2768,10 @@
         "website": "https://www.shinkyogoku.or.jp/",
         "wikidata": "Q11501300",
         "wikipedia": "ja:新京極通",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Shinkyōgoku Street"
+        }
       }
     },
     {
@@ -2439,7 +2795,10 @@
         "longitude": 135.7001568,
         "wikidata": "Q11625508",
         "wikipedia": "ja:蛇塚古墳",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Hebizuka Kofun"
+        }
       }
     },
     {
@@ -2463,7 +2822,10 @@
         "website": "https://www.kanjimuseum.kyoto/",
         "wikidata": "Q53737773",
         "wikipedia": "fr:Musée des kanjis",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Japan Kanji Museum & Library"
+        }
       }
     },
     {
@@ -2486,7 +2848,10 @@
         "longitude": 135.7120981,
         "wikidata": "Q11442478",
         "wikipedia": "ja:天塚古墳",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Amazuka Kofun"
+        }
       }
     },
     {
@@ -2512,7 +2877,10 @@
         "website": "https://www.www.samac.jp/",
         "wikidata": "Q60987195",
         "wikipedia": "ja:嵯峨嵐山文華館",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Saga Arashiyama Museum of Arts and Culture"
+        }
       }
     },
     {
@@ -2536,7 +2904,10 @@
         "longitude": 135.7535029,
         "wikidata": "Q30933052",
         "wikipedia": "ja:龍谷ミュージアム",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Ryūkoku Museum"
+        }
       }
     },
     {
@@ -2559,7 +2930,10 @@
         "longitude": 135.6888801,
         "wikidata": "Q11457885",
         "wikipedia": "ja:寺戸大塚古墳",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Terado Ōtsuka Kofun"
+        }
       }
     },
     {
@@ -2582,7 +2956,10 @@
         "longitude": 135.7940418,
         "wikidata": "Q11434768",
         "wikipedia": "ja:大岩山 (京都府)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Mount Ōiwa"
+        }
       }
     },
     {
@@ -2606,7 +2983,10 @@
         "longitude": 135.7873124,
         "wikidata": "Q18457625",
         "wikipedia": "ja:吉田山 (京都市)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Mount Yoshida"
+        }
       }
     },
     {
@@ -2629,7 +3009,10 @@
         "longitude": 135.7220322,
         "wikidata": "Q11626402",
         "wikipedia": "ja:衣笠山 (京都府)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Mount Kinugasa"
+        }
       }
     },
     {
@@ -2653,7 +3036,10 @@
         "longitude": 135.8739144,
         "wikidata": "Q11564666",
         "wikipedia": "ja:滋賀県立琵琶湖文化館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museum of Shiga Prefecture Biwako-Bunkakan"
+        }
       }
     },
     {
@@ -2677,7 +3063,11 @@
         "longitude": 135.7789779,
         "wikidata": "Q48752330",
         "wikipedia": "ja:桃山丘陵",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Momoyama Hill",
+          "es": "Momoyama"
+        }
       }
     },
     {
@@ -2701,7 +3091,10 @@
         "longitude": 135.8479887,
         "wikidata": "Q11639802",
         "wikipedia": "ja:逢坂山",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Mount Ōsaka"
+        }
       }
     },
     {
@@ -2729,7 +3122,10 @@
         "wikidata": "Q11538444",
         "wikipedia": "ja:梅小路公園",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Umekōji Park"
+        }
       }
     },
     {
@@ -2755,7 +3151,10 @@
         "website": "https://www.shimadzu.co.jp/visionary/memorial-hall/",
         "wikidata": "Q11476799",
         "wikipedia": "ja:島津創業記念資料館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Shimadzu Foundation Memorial Museum"
+        }
       }
     },
     {
@@ -2779,7 +3178,10 @@
         "longitude": 135.7882106,
         "wikidata": "Q18339063",
         "wikipedia": "ja:琵琶湖疏水記念館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Lake Biwa Canal Museum"
+        }
       }
     },
     {
@@ -2804,7 +3206,10 @@
         "website": "https://www.city.kyoto.lg.jp/kensetu/page/0000082743.html",
         "wikidata": "Q11472816",
         "wikipedia": "ja:岡崎公園 (京都市)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Okazaki Park"
+        }
       }
     },
     {
@@ -2828,7 +3233,10 @@
         "website": "https://www.biwako-hall.or.jp/",
         "wikidata": "Q11564678",
         "wikipedia": "ja:滋賀県立芸術劇場 びわ湖ホール",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Biwako Hall Center for the Performing Arts, Shiga"
+        }
       }
     },
     {
@@ -2852,7 +3260,11 @@
         "phone": "075-581-0419",
         "website": "https://www.nippon-shinyaku.co.jp/herb/",
         "wikidata": "Q9096880",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Yamashina Botanical Research Institute",
+          "es": "Yamashina Instituto de Investigación Botánica"
+        }
       }
     },
     {
@@ -2875,7 +3287,10 @@
         "longitude": 135.7813222,
         "opening_hours": "Tu-Su 10:00-16:30",
         "wikidata": "Q17213428",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kiyomizu Sannenzaka Museum"
+        }
       }
     },
     {
@@ -2903,7 +3318,10 @@
         "wikidata": "Q11375286",
         "wikipedia": "ja:京都府立陶板名画の庭",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Garden of Fine Arts Kyoto"
+        }
       }
     },
     {
@@ -2926,7 +3344,10 @@
         "latitude": 34.9858196,
         "longitude": 135.7606199,
         "wikidata": "Q11374868",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kyoto Theater"
+        }
       }
     },
     {
@@ -2948,7 +3369,10 @@
         "latitude": 35.007309,
         "longitude": 135.857248,
         "wikidata": "Q11356025",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Setsuko Mitsuhashi Memorial Museum"
+        }
       }
     },
     {
@@ -2972,7 +3396,10 @@
         "longitude": 135.7657254,
         "wikidata": "Q11375001",
         "wikipedia": "ja:京都市学校歴史博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kyoto Municipal Museum of School History"
+        }
       }
     },
     {
@@ -2996,7 +3423,10 @@
         "longitude": 135.726055,
         "wikidata": "Q11375242",
         "wikipedia": "ja:京都府立堂本印象美術館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kyoto Prefectural Insho-Domoto Museum of Fine Arts"
+        }
       }
     },
     {
@@ -3019,7 +3449,10 @@
         "longitude": 135.753275,
         "wikidata": "Q11665410",
         "wikipedia": "ja:風俗博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Costume Museum"
+        }
       }
     },
     {
@@ -3043,7 +3476,10 @@
         "longitude": 135.7798039,
         "website": "https://www.kodaiji.com/museum/",
         "wikidata": "Q3959661",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shō Museum"
+        }
       }
     },
     {
@@ -3066,7 +3502,10 @@
         "latitude": 35.0196387,
         "longitude": 135.8117253,
         "wikidata": "Q31706159",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mount Daimonji"
+        }
       }
     },
     {
@@ -3090,7 +3529,10 @@
         "longitude": 135.7647494,
         "wikidata": "Q11534162",
         "wikipedia": "ja:柳原銀行",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Bank of Yanagihara"
+        }
       }
     },
     {
@@ -3113,7 +3555,10 @@
         "latitude": 35.0446298,
         "longitude": 135.7298163,
         "wikidata": "Q31706143",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mount Daimonji"
+        }
       }
     },
     {
@@ -3134,10 +3579,13 @@
         ],
         "latitude": 35.0014634,
         "longitude": 135.7446225,
-        "address": "Mibukayougosho-cho, 46-1, Kyoto",
+        "address": "Mibukayougosho-cho, 46-1",
         "wikidata": "Q118145425",
         "wikipedia": "ja:京都清宗根付館 (旧神先家住宅)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kyoto Seishū Netsuke Art Museum"
+        }
       }
     },
     {
@@ -3160,7 +3608,10 @@
         "longitude": 135.68006,
         "wikidata": "Q11309480",
         "wikipedia": "ja:ジオラマ・京都・JAPAN",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Diorama Kyoto Japan"
+        }
       }
     },
     {
@@ -3187,7 +3638,10 @@
         "wikidata": "Q11298062",
         "wikipedia": "ja:ギア-GEAR-",
         "wheelchair": "limited",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "GEAR"
+        }
       }
     },
     {
@@ -3209,7 +3663,10 @@
         "latitude": 35.0166394,
         "longitude": 135.6997588,
         "wikidata": "Q28684195",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Tarumiyama Kofun"
+        }
       }
     },
     {
@@ -3232,7 +3689,10 @@
         "longitude": 135.7852187,
         "wikidata": "Q96074702",
         "wikipedia": "ja:阿弥陀ヶ峰",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mount Amidagamine"
+        }
       }
     },
     {
@@ -3255,7 +3715,10 @@
         "longitude": 135.7360223,
         "wikidata": "Q11488867",
         "wikipedia": "ja:御土居",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Odoi"
+        }
       }
     },
     {
@@ -3279,7 +3742,10 @@
         "longitude": 135.6675605,
         "wikidata": "Q85878842",
         "wikipedia": "ja:大枝山古墳群",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ōeyama Kofun Cluster"
+        }
       }
     },
     {
@@ -3302,7 +3768,10 @@
         "longitude": 135.8028658,
         "wikidata": "Q11458635",
         "wikipedia": "ja:将軍山城",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shōgun-yama Castle"
+        }
       }
     },
     {
@@ -3327,7 +3796,10 @@
         "website": "https://www.kyoto-gioncorner.com/",
         "wikidata": "Q56692108",
         "wikipedia": "ja:ギオンコーナー",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Gion Corner"
+        }
       }
     },
     {
@@ -3352,7 +3824,10 @@
         "website": "https://www.city.kyoto.lg.jp/sankan/cmsfiles/contents/0000000/66/masterplan.pdf",
         "wikidata": "Q11374968",
         "wikipedia": "ja:京都市中央卸売市場第一市場",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kyoto Central Wholesale Market"
+        }
       }
     },
     {
@@ -3375,7 +3850,10 @@
         "longitude": 135.7433002,
         "website": "https://omiya-trafficpark.com/",
         "wikidata": "Q11434397",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Omiya Traffic Park"
+        }
       }
     },
     {
@@ -3398,7 +3876,10 @@
         "longitude": 135.7940772,
         "website": "https://nanzenji.or.jp/equipment/sosui",
         "wikidata": "Q134484362",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nanzen-ji Suirokaku"
+        }
       }
     },
     {
@@ -3421,7 +3902,10 @@
         "longitude": 135.7627073,
         "wikidata": "Q11497319",
         "wikipedia": "ja:承天閣美術館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Jōtenkaku Museum"
+        }
       }
     },
     {
@@ -3444,7 +3928,10 @@
         "longitude": 135.7664352,
         "wikidata": "Q30266176",
         "wikipedia": "ja:京都市青少年科学センター",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kyoto Municipal Science Center for Youth"
+        }
       }
     },
     {
@@ -3465,11 +3952,14 @@
         ],
         "latitude": 34.9923277,
         "longitude": 135.7431649,
-        "address": "京都市下京区西新屋敷揚屋町, 32, Kyoto",
+        "address": "京都市下京区西新屋敷揚屋町, 32",
         "opening_hours": "Tu-Su 10:00-16:00",
         "wikidata": "Q11630696",
         "wikipedia": "ja:角屋",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Sumiya"
+        }
       }
     },
     {
@@ -3492,7 +3982,10 @@
         "longitude": 135.7716985,
         "wikidata": "Q123688246",
         "wikipedia": "ja:鴨川デルタ",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kamo River Delta"
+        }
       }
     },
     {
@@ -3515,7 +4008,10 @@
         "longitude": 135.7813522,
         "wikidata": "Q18337620",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Namikawa Cloisonné Museum of Kyoto"
+        }
       }
     },
     {
@@ -3539,7 +4035,10 @@
         "longitude": 135.7896184,
         "wikidata": "Q17990723",
         "wikipedia": "ja:蹴上インクライン",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Keage Incline"
+        }
       }
     },
     {
@@ -3567,7 +4066,10 @@
         "wikidata": "Q102045484",
         "wikipedia": "ja:福田美術館",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Fukuda Art Museum"
+        }
       }
     },
     {
@@ -3593,7 +4095,10 @@
         "wikidata": "Q11482406",
         "wikipedia": "ja:平安神宮神苑",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shin'en"
+        }
       }
     },
     {
@@ -3615,7 +4120,10 @@
         "latitude": 35.0154499,
         "longitude": 135.8527802,
         "wikidata": "Q30931160",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Otsu City Museum of History"
+        }
       }
     },
     {
@@ -3639,7 +4147,10 @@
         "longitude": 135.7755696,
         "website": "https://miyako-odori.jp/",
         "wikidata": "Q20043881",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Gion Kobu Kaburen-jo"
+        }
       }
     },
     {
@@ -3661,7 +4172,10 @@
         "latitude": 35.0267079,
         "longitude": 135.8687834,
         "wikidata": "Q11534047",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Yanagasaki Lakeside Park"
+        }
       }
     },
     {
@@ -3684,7 +4198,10 @@
         "longitude": 135.7354488,
         "wikidata": "Q22118562",
         "wikipedia": "ja:京都佛立ミュージアム",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kyoto HBS Museum"
+        }
       }
     },
     {
@@ -3709,7 +4226,10 @@
         "website": "https://www.gekkeikan.co.jp/english/kyotofushimi/museum.html",
         "wikidata": "Q11516157",
         "wikipedia": "ja:月桂冠大倉記念館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Gekkeikan Ōkura Sake Museum"
+        }
       }
     },
     {
@@ -3731,7 +4251,10 @@
         "latitude": 35.0090535,
         "longitude": 135.7593299,
         "wikidata": "Q123124492",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Gallery of Kyoto Traditional Arts & Crafts"
+        }
       }
     },
     {
@@ -3754,7 +4277,10 @@
         "longitude": 135.7273293,
         "wikidata": "Q11544846",
         "wikipedia": "ja:櫻谷文庫",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ōkoku Bunko"
+        }
       }
     },
     {
@@ -3782,7 +4308,10 @@
         "wikidata": "Q11564007",
         "wikipedia": "ja:源光庵",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Genkō-an"
+        }
       }
     },
     {
@@ -3804,7 +4333,10 @@
         "latitude": 35.0318549,
         "longitude": 135.8521302,
         "wikidata": "Q107268943",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Clock Museum and Treasure House, Ōmi Jingū"
+        }
       }
     },
     {
@@ -3827,7 +4359,10 @@
         "latitude": 35.0487963,
         "longitude": 135.7715007,
         "wikidata": "Q18336820",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kyoto Graeco-Roman Museum"
+        }
       }
     },
     {
@@ -3849,7 +4384,10 @@
         "latitude": 35.0040072,
         "longitude": 135.7754288,
         "wikidata": "Q136472115",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kahitsukan  Kyoto Museum of Contemporary Art"
+        }
       }
     },
     {
@@ -3871,7 +4409,10 @@
         "latitude": 35.0084203,
         "longitude": 135.7557561,
         "wikidata": "Q127602236",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Onishi Seiwemon Museum"
+        }
       }
     },
     {
@@ -3893,7 +4434,10 @@
         "latitude": 35.025676,
         "longitude": 135.75327,
         "wikidata": "Q125002905",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Raku Museum"
+        }
       }
     },
     {
@@ -3916,7 +4460,10 @@
         "latitude": 34.9469278,
         "longitude": 135.8386312,
         "wikidata": "Q31511077",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Mount Daigo"
+        }
       }
     },
     {
@@ -3941,7 +4488,10 @@
         "opening_hours": "Mo-Su 09:00-17:00",
         "website": "https://www.shokoku-ji.jp/kinkakuji/",
         "wikidata": "Q126391445",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Golden Pavilion"
+        }
       }
     },
     {
@@ -3964,7 +4514,10 @@
         "longitude": 135.7617775,
         "wikidata": "Q124482750",
         "wikipedia": "ja:補陀洛寺 (京都市)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Fudaraku-ji Temple"
+        }
       }
     },
     {
@@ -3986,7 +4539,10 @@
         "longitude": 135.7723166,
         "wikidata": "Q130544842",
         "popularity": 1,
-        "site": "Q147286"
+        "site": "Q147286",
+        "names": {
+          "en": "Le Penseur (Kyoto National Museum)"
+        }
       }
     },
     {
@@ -4012,7 +4568,10 @@
         "website": "https://kitanotenmangu.or.jp/guidance/houmotsuden/",
         "wikidata": "Q127588655",
         "fee": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kitano Tenmangū Hōmotsuden"
+        }
       }
     },
     {
@@ -4035,7 +4594,10 @@
         "latitude": 34.9933245,
         "longitude": 135.7145899,
         "wikidata": "Q11375127",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kyoto City Nishikyogoku Comprehensive Sports Park"
+        }
       }
     },
     {
@@ -4059,7 +4621,10 @@
         "longitude": 135.7473149,
         "website": "https://toji.or.jp/guide/houmotsukan/",
         "wikidata": "Q104721143",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Tō-ji Hōmotsukan"
+        }
       }
     },
     {
@@ -4081,7 +4646,10 @@
         "latitude": 35.0258642,
         "longitude": 135.7588972,
         "wikidata": "Q134598359",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kongo Noh Theatre"
+        }
       }
     },
     {
@@ -4104,7 +4672,10 @@
         "longitude": 135.7318389,
         "wikidata": "Q11374970",
         "wikipedia": "ja:京都市中央卸売市場第二市場",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kyoto City Central Wholesale Meat Market"
+        }
       }
     },
     {
@@ -4128,7 +4699,10 @@
         "longitude": 135.7888072,
         "wikidata": "Q98101174",
         "wikipedia": "ja:東山山頂公園",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Higashiyama Summit Park"
+        }
       }
     },
     {
@@ -4152,7 +4726,10 @@
         "longitude": 135.8399637,
         "website": "https://www.hieizan.or.jp/keidai/kokuhoden",
         "wikidata": "Q123144783",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kokuhōden Museum, Mt. Hiei"
+        }
       }
     },
     {
@@ -4221,7 +4798,10 @@
         "latitude": 35.0275284,
         "longitude": 135.6924782,
         "wikidata": "Q130471553",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Heian-kyo"
+        }
       }
     },
     {
@@ -4247,7 +4827,10 @@
         "website": "https://www.takeda.co.jp/kyoto/",
         "wikidata": "Q65548967",
         "wikipedia": "ja:京都薬用植物園",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kyoto Medicinal Plant Garden"
+        }
       }
     },
     {
@@ -4272,7 +4855,10 @@
         "phone": "+81-75-931-1182",
         "website": "https://www.city.muko.kyoto.jp/site/shiryokan/",
         "wikidata": "Q64143380",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Mukō City Museum"
+        }
       }
     },
     {
@@ -4294,7 +4880,10 @@
         "latitude": 35.0229304,
         "longitude": 135.7687702,
         "wikidata": "Q101243649",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kyoto Prefectural Center for Arts and Culture"
+        }
       }
     },
     {
@@ -4341,7 +4930,10 @@
         "longitude": 135.781151,
         "website": "https://www.museum.kit.ac.jp/index.html",
         "wikidata": "Q127503199",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Kyoto Institute of Technology Museum and Archives"
+        }
       }
     },
     {
@@ -4386,7 +4978,10 @@
         "longitude": 135.7927481,
         "website": "https://kyoto-geijutsu-kan.com/",
         "wikidata": "Q127597163",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Kyoto University of Art and Design Gallery"
+        }
       }
     },
     {
@@ -4408,7 +5003,7 @@
         ],
         "latitude": 35.0127156,
         "longitude": 135.7810163,
-        "address": "Okasai Seishojicho9, Kyoto",
+        "address": "Okasai Seishojicho9",
         "phone": "+81757622670",
         "website": "https://kmtc.jp/",
         "popularity": 0
@@ -4546,7 +5141,7 @@
         ],
         "latitude": 35.0031498,
         "longitude": 135.759365,
-        "address": "烏丸通, Kyoto",
+        "address": "烏丸通",
         "phone": "075-353-5885",
         "website": "https://kirakaracho.jp/",
         "popularity": 0
@@ -4688,7 +5283,10 @@
         "latitude": 35.015929,
         "longitude": 135.8447365,
         "wikidata": "Q134493096",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Mount Nagara"
+        }
       }
     },
     {
@@ -4735,7 +5333,7 @@
         ],
         "latitude": 35.0235324,
         "longitude": 135.7493039,
-        "address": "Tōgōrōchō, 582, Kyoto",
+        "address": "Tōgōrōchō, 582",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -4785,7 +5383,7 @@
         ],
         "latitude": 35.0099553,
         "longitude": 135.7826315,
-        "address": "堀池町, 374-2, Kyoto",
+        "address": "堀池町, 374-2",
         "website": "https://kyoto-muse.jp/japanesque/",
         "fee": "no",
         "popularity": 0
@@ -5109,7 +5707,10 @@
         "latitude": 34.9906164,
         "longitude": 135.7510116,
         "wikidata": "Q137291344",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Noh stage, Nishi Hongan-ji"
+        }
       }
     },
     {
@@ -5614,7 +6215,10 @@
         "website": "https://www.ikenobo.jp/rokkakudo/highlight/ikebana.html",
         "wikidata": "Q132529351",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Ikebana History Museum"
+        }
       }
     },
     {
@@ -5750,7 +6354,10 @@
         "latitude": 35.0101665,
         "longitude": 135.7537349,
         "wikidata": "Q132529270",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Kyoto Shibori Museum"
+        }
       }
     },
     {
@@ -5911,7 +6518,10 @@
         "latitude": 35.0032452,
         "longitude": 135.863676,
         "wikidata": "Q110373435",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "35°N Monument on platform of Otsu Station"
+        }
       }
     },
     {
@@ -6056,7 +6666,7 @@
         ],
         "latitude": 35.011287,
         "longitude": 135.79024,
-        "address": "南禅寺草川町, 60, Kyoto",
+        "address": "南禅寺草川町, 60",
         "opening_hours": "Mo-Su 11:00-21:30",
         "phone": "+81 75 761 2311",
         "website": "http://www.to-fu.co.jp/",
@@ -6083,13 +6693,16 @@
         ],
         "latitude": 35.0128132,
         "longitude": 135.7708332,
-        "address": "木屋町通, Kyoto",
+        "address": "木屋町通",
         "opening_hours": "Mo-Su 11:00-22:00",
         "phone": "+81 752233456",
         "website": "https://gankofood.co.jp/",
         "wikidata": "Q11671937",
         "wikipedia": "ja:高瀬川二条苑",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Takasegawa Nijōen"
+        }
       }
     },
     {
@@ -6111,7 +6724,7 @@
         ],
         "latitude": 35.001081,
         "longitude": 135.7640412,
-        "address": "柳馬場通, 163 Marikojicho, Kyoto",
+        "address": "柳馬場通, 163 Marikojicho",
         "opening_hours": "Mo-Su 17:00-22:00",
         "phone": "08062142546",
         "cuisine": "lao",
@@ -6137,7 +6750,7 @@
         ],
         "latitude": 34.9988161,
         "longitude": 135.7589384,
-        "address": "烏丸通, 307, Kyoto",
+        "address": "烏丸通, 307",
         "opening_hours": "Th-Tu 18:00-00:00",
         "phone": "075-361-4710",
         "cuisine": "japanese",
@@ -6163,7 +6776,7 @@
         ],
         "latitude": 35.0029742,
         "longitude": 135.7773004,
-        "address": "Gionmachi Minamigawa, 537-2, Kyoto",
+        "address": "Gionmachi Minamigawa, 537-2",
         "opening_hours": "Fr-We 17:00-23:00",
         "phone": "+81 75 551 5272",
         "website": "https://nana-7-nana.wixsite.com/namihei",
@@ -6190,7 +6803,7 @@
         ],
         "latitude": 35.0043614,
         "longitude": 135.7750006,
-        "address": "Higashiyama Ward, Tominagachō, 123 1F, Kyoto",
+        "address": "Higashiyama Ward, Tominagachō, 123 1F",
         "opening_hours": "Mo-Sa 18:00-03:00",
         "phone": "+81 75-533-0788",
         "website": "https://instagram.com/okonomiyaki_yuu",
@@ -6216,7 +6829,7 @@
         ],
         "latitude": 35.036853,
         "longitude": 135.7711833,
-        "address": "下鴨森本町, 15, Kyoto",
+        "address": "下鴨森本町, 15",
         "opening_hours": "We, Fr-Mo 12:00-14:00, 17:00-20:00",
         "phone": "075-721-2933",
         "website": "http://www.grillseikenkaikan.com",
@@ -6243,7 +6856,7 @@
         ],
         "latitude": 35.0440434,
         "longitude": 135.7514853,
-        "address": "堀川通, 京都市北区紫野下鳥田町37-1, Kyoto",
+        "address": "堀川通, 京都市北区紫野下鳥田町37-1",
         "opening_hours": "Th-Mo 12:00-13:30,17:00-20:00",
         "phone": "075-493-5025",
         "cuisine": "chinese",
@@ -6296,7 +6909,7 @@
         ],
         "latitude": 35.0048357,
         "longitude": 135.7567652,
-        "address": "Komusubidanacho, 420, Kyoto",
+        "address": "Komusubidanacho, 420",
         "opening_hours": "Mo-Su 11:00-14:30, 17:00-20:30",
         "phone": "075-251-6661",
         "cuisine": "curry;japanese;noodle",
@@ -6347,7 +6960,7 @@
         ],
         "latitude": 34.9986734,
         "longitude": 135.7677557,
-        "address": "西木屋町通, Kyoto",
+        "address": "西木屋町通",
         "opening_hours": "Mo-Su 11:30-15:00,17:00-19:30",
         "website": "https://awomb.com/nishikiyamachi/",
         "wheelchair": "no",
@@ -6374,7 +6987,7 @@
         ],
         "latitude": 35.0354423,
         "longitude": 135.7812441,
-        "address": "東大路通, 22, Kyoto",
+        "address": "東大路通, 22",
         "opening_hours": "Th-Mo 12:00-20:00",
         "phone": "0707127891",
         "cuisine": "mexican",
@@ -6425,7 +7038,7 @@
         ],
         "latitude": 34.9896031,
         "longitude": 135.7415314,
-        "address": "新千本通, 80, Kyoto",
+        "address": "新千本通, 80",
         "opening_hours": "Mo-Su 10:30-14:30, 17:00-20:30",
         "phone": "0753214418",
         "website": "https://sushi-ichiba.or.jp/",
@@ -6451,7 +7064,7 @@
         ],
         "latitude": 35.0287175,
         "longitude": 135.7731772,
-        "address": "今出川通, 13-6, Kyoto",
+        "address": "今出川通, 13-6",
         "opening_hours": "Mo-Su 11:30-14:00, 17:00-23:00",
         "phone": "0757082824",
         "website": "http://tanakadetanaka.com",
@@ -6803,7 +7416,7 @@
         ],
         "latitude": 35.0096973,
         "longitude": 135.7709466,
-        "address": "京都市中京区木屋町三条上ル上大阪町, 527, Kyoto",
+        "address": "京都市中京区木屋町三条上ル上大阪町, 527",
         "opening_hours": "Mo-Su 17:00-23:00",
         "website": "https://yakiniku-hiro.com/kiyamachi.php",
         "cuisine": "barbecue;japanese",
@@ -6876,7 +7489,7 @@
         ],
         "latitude": 35.0064187,
         "longitude": 135.7691018,
-        "address": "河原町通, Kyoto",
+        "address": "河原町通",
         "opening_hours": "Mo-Su 11:00-23:00",
         "phone": "752222732",
         "popularity": 0
@@ -6900,7 +7513,7 @@
         ],
         "latitude": 35.0027586,
         "longitude": 135.7317594,
-        "address": "西大路通;京都市道181号京都環状線, Kyoto",
+        "address": "西大路通;京都市道181号京都環状線",
         "opening_hours": "Mo-Su 11:30-23:30",
         "phone": "753214129",
         "popularity": 0
@@ -6975,7 +7588,7 @@
         ],
         "latitude": 35.0093567,
         "longitude": 135.7772163,
-        "address": "1F, Sun Green, 20-2, Shichiken-cho, Higashiyama-ku, Kyoto, Kyoto",
+        "address": "1F, Sun Green, 20-2, Shichiken-cho, Higashiyama-ku, Kyoto",
         "opening_hours": "Mo, We-Su 11:30-15:00, 17:30-22:30",
         "phone": "075-744-6568",
         "popularity": 0
@@ -7676,7 +8289,7 @@
         ],
         "latitude": 35.0251363,
         "longitude": 135.7748012,
-        "address": "東一条通り, 8-1, Kyoto",
+        "address": "東一条通り, 8-1",
         "opening_hours": "Fr-Su 11:30-14:30",
         "phone": "0753664888",
         "website": "http://ofuku-nene.com",
@@ -8502,7 +9115,7 @@
         ],
         "latitude": 35.0017668,
         "longitude": 135.774578,
-        "address": "570-23 Gion-machi Minami-gawa, Higashiyama-ku, Kyoto",
+        "address": "570-23 Gion-machi Minami-gawa, Higashiyama-ku",
         "opening_hours": "Th-Tu 11:30-15:30, 17:30-23:00",
         "website": "http://www.karyo-kyoto.jp/",
         "popularity": 0
@@ -8526,7 +9139,7 @@
         ],
         "latitude": 35.0104546,
         "longitude": 135.7711702,
-        "address": "517-3 Kamiosaka-cho, Sanjo-agaru, Kiyamachi-dori, Nakagyo-ku  , Kyoto",
+        "address": "517-3 Kamiosaka-cho, Sanjo-agaru, Kiyamachi-dori, Nakagyo-ku  ",
         "opening_hours": "Mo-Su 11:30-14:00, 17:00-21:30",
         "website": "https://www.tousuiro.com/en/",
         "popularity": 0
@@ -8550,7 +9163,7 @@
         ],
         "latitude": 35.0084324,
         "longitude": 135.7705617,
-        "address": "木屋町通, Kyoto",
+        "address": "木屋町通",
         "opening_hours": "Mo-Fr 17:00-01:30; Sa 14:00-01:30; Su 14:00-00:00",
         "website": "https://www.gyozakeikaku.com/shop/list/detail/19",
         "popularity": 0
@@ -8575,7 +9188,7 @@
         ],
         "latitude": 34.9892939,
         "longitude": 135.7437128,
-        "address": "下京区朱雀正会町, 1-16, Kyoto",
+        "address": "下京区朱雀正会町, 1-16",
         "opening_hours": "Th-Tu 11:30-14:30, 18:00-22:00",
         "website": "https://mobile.twitter.com/kobushi_ramen",
         "popularity": 0
@@ -8599,7 +9212,7 @@
         ],
         "latitude": 35.0045825,
         "longitude": 135.7773728,
-        "address": "京都市東山区祇園町北側, 323, 4F, Kyoto",
+        "address": "京都市東山区祇園町北側, 323, 4F",
         "opening_hours": "Su-Th 17:00-23:00,Fr-Sa 17:00-24:00",
         "website": "https://www.k-company.net/sp/gion/index.html",
         "popularity": 0
@@ -8623,7 +9236,7 @@
         ],
         "latitude": 34.9817642,
         "longitude": 135.7611706,
-        "address": "京都市南区東九条南山王町, 25, Kyoto",
+        "address": "京都市南区東九条南山王町, 25",
         "opening_hours": "Mo-Su 17:00-23:00",
         "website": "https://yakiniku-hiro.com/japanese/index.html",
         "popularity": 0
@@ -9054,7 +9667,7 @@
         ],
         "latitude": 34.9876627,
         "longitude": 135.7576837,
-        "address": "東岩塩小路町, 579, Kyoto",
+        "address": "東岩塩小路町, 579",
         "opening_hours": "Mo-Su 10:00-18:30",
         "phone": "075-748-1320",
         "website": "https://www.itohkyuemon.co.jp/",
@@ -9080,7 +9693,7 @@
         ],
         "latitude": 35.0179365,
         "longitude": 135.7693045,
-        "address": "河原町通, 369, Kyoto",
+        "address": "河原町通, 369",
         "opening_hours": "Mo-Su 10:00-17:00",
         "phone": "+81 75 741 6660",
         "website": "https://rabbitbagels.jp",
@@ -9133,7 +9746,7 @@
         ],
         "latitude": 35.0402088,
         "longitude": 135.758351,
-        "address": "紫明通, 1-2, Kyoto",
+        "address": "紫明通, 1-2",
         "opening_hours": "We-Mo 09:00-17:00",
         "phone": "0754318020",
         "cuisine": "coffee_shop",
@@ -9158,7 +9771,7 @@
         ],
         "latitude": 34.9893859,
         "longitude": 135.7758717,
-        "address": "女坂, 451-1, Kyoto",
+        "address": "女坂, 451-1",
         "opening_hours": "Tu-Sa 10:30-17:30",
         "phone": "0755317911",
         "website": "https://cafearrietty.com/",
@@ -9288,7 +9901,7 @@
         ],
         "latitude": 35.0299035,
         "longitude": 135.748032,
-        "address": "今出川通, Kyoto",
+        "address": "今出川通",
         "opening_hours": "08:00-18:00",
         "phone": "+81 75-4321-444",
         "website": "https://www.lepetitmec.com/",
@@ -9490,7 +10103,7 @@
         ],
         "latitude": 35.0094523,
         "longitude": 135.7670992,
-        "address": "寺町通, Kyoto",
+        "address": "寺町通",
         "opening_hours": "Mo-Su 08:00-19:00",
         "phone": "0752316547",
         "popularity": 0
@@ -9641,7 +10254,7 @@
         ],
         "latitude": 35.0152961,
         "longitude": 135.7759161,
-        "address": "冷泉通, 19-2, Kyoto",
+        "address": "冷泉通, 19-2",
         "opening_hours": "Mo-Tu, Fr 10:00-17:00; Sa-Su 09:30-17:30",
         "website": "https://etra-kyoto.square.site/",
         "cuisine": "breakfast;coffee_shop;french;japanese;local;pancake;sandwich",
@@ -10029,7 +10642,7 @@
         ],
         "latitude": 35.0092722,
         "longitude": 135.7728541,
-        "address": "三条通(Sanjo-dori), Kyoto",
+        "address": "三条通(Sanjo-dori)",
         "opening_hours": "Mo-Su 17:00-01:00",
         "phone": "0757616022",
         "cuisine": "fish_and_chips",
@@ -10054,7 +10667,7 @@
         ],
         "latitude": 35.0040595,
         "longitude": 135.7709987,
-        "address": "170 Kashiwayachō, Nakagyō-ku, Kyōto-shi, Kyōto-fu, 2F, Kyoto",
+        "address": "170 Kashiwayachō, Nakagyō-ku, Kyōto-shi, Kyōto-fu, 2F",
         "opening_hours": "Mo-Su 16:00-02:00",
         "website": "http://www.facebook.com/bar.alchemist.kyoto",
         "popularity": 0
@@ -10271,7 +10884,7 @@
         ],
         "latitude": 35.0065601,
         "longitude": 135.7694746,
-        "address": "河原町通, 6階, Kyoto",
+        "address": "河原町通, 6階",
         "opening_hours": "Mo-Su 17:00-05:00",
         "phone": "752577228",
         "cuisine": "chicken",

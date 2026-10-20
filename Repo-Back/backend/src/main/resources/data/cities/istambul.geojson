@@ -28,7 +28,12 @@
         "wikipedia": "tr:Ayasofya",
         "wheelchair": "yes",
         "popularity": 152,
-        "site": "Q12506"
+        "site": "Q12506",
+        "names": {
+          "pt": "Santa Sofia",
+          "en": "Hagia Sophia",
+          "es": "Santa Sofía"
+        }
       }
     },
     {
@@ -57,7 +62,12 @@
         "wikidata": "Q80541",
         "wikipedia": "en:Blue Mosque, Istanbul",
         "wheelchair": "no",
-        "popularity": 89
+        "popularity": 89,
+        "names": {
+          "pt": "Mesquita Azul",
+          "en": "Sultan Ahmed Mosque",
+          "es": "Mezquita Azul"
+        }
       }
     },
     {
@@ -85,7 +95,12 @@
         "wikidata": "Q170495",
         "wikipedia": "en:Topkapı Palace",
         "fee": "yes",
-        "popularity": 79
+        "popularity": 79,
+        "names": {
+          "pt": "Palácio de Topkapı",
+          "en": "Topkapı Palace",
+          "es": "palacio de Topkapı"
+        }
       }
     },
     {
@@ -107,12 +122,17 @@
         ],
         "latitude": 41.0162403,
         "longitude": 28.9638245,
-        "address": "Profesör Doktor Sıddık Sami Onar Caddesi, 1, Istambul",
+        "address": "Profesör Doktor Sıddık Sami Onar Caddesi, 1",
         "website": "https://www.geziyerler.com/suleymaniye-camii",
         "wikidata": "Q178643",
         "wikipedia": "en:Süleymaniye Mosque",
         "wheelchair": "yes",
-        "popularity": 69
+        "popularity": 69,
+        "names": {
+          "pt": "Mesquita Süleymaniye",
+          "en": "Süleymaniye Mosque",
+          "es": "mezquita de Süleymaniye"
+        }
       }
     },
     {
@@ -142,7 +162,12 @@
         "wikipedia": "tr:Galata Kulesi",
         "fee": "yes",
         "wheelchair": "no",
-        "popularity": 58
+        "popularity": 58,
+        "names": {
+          "pt": "Torre de Gálata",
+          "en": "Galata Tower",
+          "es": "Torre de Gálata"
+        }
       }
     },
     {
@@ -168,7 +193,12 @@
         "wikidata": "Q274141",
         "wikipedia": "en:Dolmabahçe Palace",
         "wheelchair": "yes",
-        "popularity": 53
+        "popularity": 53,
+        "names": {
+          "pt": "Palácio Dolmabahçe",
+          "en": "Dolmabahçe Palace",
+          "es": "palacio de Dolmabahçe"
+        }
       }
     },
     {
@@ -193,7 +223,12 @@
         "wikidata": "Q736072",
         "wikipedia": "tr:Taksim Meydanı",
         "popularity": 50,
-        "site": "Q736072"
+        "site": "Q736072",
+        "names": {
+          "pt": "Praça Taksim",
+          "en": "Taksim Square",
+          "es": "Plaza Taksim"
+        }
       }
     },
     {
@@ -218,7 +253,12 @@
         "wikidata": "Q387548",
         "wikipedia": "tr:Sultanahmet Meydanı",
         "popularity": 48,
-        "site": "Q387548"
+        "site": "Q387548",
+        "names": {
+          "pt": "Hipódromo de Constantinopla",
+          "en": "Hippodrome of Constantinople",
+          "es": "Hipódromo de Constantinopla"
+        }
       }
     },
     {
@@ -245,7 +285,12 @@
         "wikipedia": "tr:Kapalıçarşı",
         "wheelchair": "limited",
         "popularity": 46,
-        "site": "Q505954"
+        "site": "Q505954",
+        "names": {
+          "pt": "Grande Bazar",
+          "en": "Grand Bazaar",
+          "es": "Gran Bazar"
+        }
       }
     },
     {
@@ -268,7 +313,12 @@
         "longitude": 29.0041377,
         "wikidata": "Q848397",
         "wikipedia": "tr:Kız Kulesi",
-        "popularity": 45
+        "popularity": 45,
+        "names": {
+          "pt": "Torre de Leandro",
+          "en": "Maiden's Tower",
+          "es": "Torre de la Doncella"
+        }
       }
     },
     {
@@ -297,7 +347,12 @@
         "wikidata": "Q849489",
         "wikipedia": "tr:Kariye Camii",
         "wheelchair": "yes",
-        "popularity": 44
+        "popularity": 44,
+        "names": {
+          "pt": "Igreja de São Salvador em Chora",
+          "en": "Chora Church",
+          "es": "San Salvador en Chora"
+        }
       }
     },
     {
@@ -322,7 +377,12 @@
         "wikidata": "Q644677",
         "wikipedia": "tr:Şehzadebaşı Camii",
         "wheelchair": "yes",
-        "popularity": 43
+        "popularity": 43,
+        "names": {
+          "pt": "Mesquita Şehzade",
+          "en": "Şehzade Mosque",
+          "es": "Mezquita Sehzade"
+        }
       }
     },
     {
@@ -347,7 +407,12 @@
         "wikidata": "Q13410316",
         "wikipedia": "tr:Gezi Parkı olayları",
         "popularity": 42,
-        "site": "Q736072"
+        "site": "Q736072",
+        "names": {
+          "pt": "Protestos na Turquia em 2013",
+          "en": "Gezi Park protests",
+          "es": "protestas en el Parque Taksim Gezi de 2013"
+        }
       }
     },
     {
@@ -376,7 +441,12 @@
         "wikidata": "Q216511",
         "wikipedia": "tr:Yerebatan Sarnıcı",
         "wheelchair": "no",
-        "popularity": 41
+        "popularity": 41,
+        "names": {
+          "pt": "Cisterna da Basílica",
+          "en": "Basilica Cistern",
+          "es": "Cisterna Basílica"
+        }
       }
     },
     {
@@ -401,7 +471,12 @@
         "website": "https://www.geziyerler.com/yeni-camii",
         "wikidata": "Q911720",
         "wikipedia": "tr:Yeni Cami",
-        "popularity": 41
+        "popularity": 41,
+        "names": {
+          "pt": "Mesquita Yeni",
+          "en": "New Mosque",
+          "es": "Mezquita Nueva"
+        }
       }
     },
     {
@@ -425,7 +500,12 @@
         "longitude": 28.9212316,
         "wikidata": "Q89917",
         "wikipedia": "en:Walls of Constantinople",
-        "popularity": 40
+        "popularity": 40,
+        "names": {
+          "pt": "Muralhas de Constantinopla",
+          "en": "Walls of Constantinople",
+          "es": "Murallas de Constantinopla"
+        }
       }
     },
     {
@@ -450,7 +530,12 @@
         "website": "https://muze.gen.tr/",
         "wikidata": "Q736676",
         "wikipedia": "tr:Aya İrini",
-        "popularity": 39
+        "popularity": 39,
+        "names": {
+          "pt": "Igreja de Santa Irene",
+          "en": "Hagia Irene",
+          "es": "iglesia de Santa Irene"
+        }
       }
     },
     {
@@ -473,7 +558,12 @@
         "longitude": 28.8526953,
         "wikidata": "Q756189",
         "wikipedia": "en:Fatih Mosque, Istanbul",
-        "popularity": 38
+        "popularity": 38,
+        "names": {
+          "pt": "Mesquita de Fatih",
+          "en": "Fatih Istanbul Mosque",
+          "es": "Mezquita de Fatih"
+        }
       }
     },
     {
@@ -498,7 +588,12 @@
         "wikidata": "Q176380",
         "wikipedia": "en:Ortaköy Mosque",
         "wheelchair": "yes",
-        "popularity": 38
+        "popularity": 38,
+        "names": {
+          "pt": "Mesquita de Ortaköy",
+          "en": "Ortaköy Mosque",
+          "es": "Mezquita de Ortaköy"
+        }
       }
     },
     {
@@ -520,10 +615,15 @@
         ],
         "latitude": 41.0027434,
         "longitude": 28.9722007,
-        "address": "Kücük Ayasofya Caddesi, 13, Istambul",
+        "address": "Kücük Ayasofya Caddesi, 13",
         "wikidata": "Q1144576",
         "wikipedia": "en:Little Hagia Sophia",
-        "popularity": 36
+        "popularity": 36,
+        "names": {
+          "pt": "Igreja de São Sérgio e São Baco",
+          "en": "Little Hagia Sophia",
+          "es": "Pequeña Santa Sofía"
+        }
       }
     },
     {
@@ -551,7 +651,12 @@
         "wikipedia": "en:Istanbul Archaeology Museums",
         "fee": "yes",
         "popularity": 36,
-        "site": "Q636978"
+        "site": "Q636978",
+        "names": {
+          "pt": "Museus Arqueológicos de Istambul",
+          "en": "Istanbul Archaeology Museums",
+          "es": "Museo arqueológico de Estambul"
+        }
       }
     },
     {
@@ -575,7 +680,12 @@
         "longitude": 28.9551665,
         "wikidata": "Q952924",
         "wikipedia": "tr:Bozdoğan_Kemeri",
-        "popularity": 34
+        "popularity": 34,
+        "names": {
+          "pt": "Aqueduto de Valente",
+          "en": "Aqueduct of Valens",
+          "es": "Acueducto de Valente"
+        }
       }
     },
     {
@@ -603,7 +713,12 @@
         "wikidata": "Q668641",
         "wikipedia": "tr:Mısır Çarşısı",
         "wheelchair": "yes",
-        "popularity": 34
+        "popularity": 34,
+        "names": {
+          "pt": "Bazar das Especiarias",
+          "en": "Spice Bazaar",
+          "es": "Bazar de las Especias"
+        }
       }
     },
     {
@@ -629,7 +744,12 @@
         "website": "https://muze.gen.tr/muze-detay/rumeli",
         "wikidata": "Q90801",
         "wikipedia": "tr:Rumeli Hisarı",
-        "popularity": 34
+        "popularity": 34,
+        "names": {
+          "pt": "Rumelihisarı",
+          "en": "Rumeli Hisarı",
+          "es": "Rumeli Hisarı"
+        }
       }
     },
     {
@@ -654,7 +774,12 @@
         "website": "https://muze.gen.tr/",
         "wikidata": "Q911734",
         "wikipedia": "en:Yıldız Palace",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Palácio de Yıldız",
+          "en": "Yıldız Palace",
+          "es": "Palacio de Yıldız"
+        }
       }
     },
     {
@@ -681,7 +806,12 @@
         "website": "https://www.millisaraylar.gov.tr/en/saray-kosk-ve-kasirlar/beylerbeyi-sarayi",
         "wikidata": "Q794349",
         "wikipedia": "tr:Beylerbeyi Sarayı",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Palácio de Beylerbeyi",
+          "en": "Beylerbeyi Palace",
+          "es": "Palacio Beylerbeyi"
+        }
       }
     },
     {
@@ -706,7 +836,12 @@
         "wikidata": "Q1137511",
         "wikipedia": "tr:Rüstem Paşa Camii",
         "wheelchair": "yes",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Mesquita de Rüstem Paşa",
+          "en": "Rüstem Pasha Mosque",
+          "es": "Mezquita de Rüstem Paşa"
+        }
       }
     },
     {
@@ -730,7 +865,12 @@
         "longitude": 29.01531,
         "wikidata": "Q273225",
         "wikipedia": "tr:Çırağan Sarayı",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Palácio de Çırağan",
+          "en": "Çırağan Palace",
+          "es": "Palacio de Çırağan"
+        }
       }
     },
     {
@@ -752,9 +892,14 @@
         ],
         "latitude": 41.0048439,
         "longitude": 28.9720415,
-        "address": "Şehit Mehmetpaşa Sokağı, 15, Istambul",
+        "address": "Şehit Mehmetpaşa Sokağı, 15",
         "wikidata": "Q1572472",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Mesquita de Sokollu Mehmet Paşa",
+          "en": "Sokollu Mehmed Pasha I Mosque",
+          "es": "Mezquita de Sokollu Mehmet Pasha"
+        }
       }
     },
     {
@@ -778,7 +923,12 @@
         "longitude": 28.9652771,
         "wikidata": "Q853064",
         "wikipedia": "tr:Bayezid Camii",
-        "popularity": 32
+        "popularity": 32,
+        "names": {
+          "pt": "Mesquita de Beyazid",
+          "en": "Bayezid II Mosque",
+          "es": "Mezquita de Beyazid"
+        }
       }
     },
     {
@@ -802,7 +952,12 @@
         "longitude": 29.0670194,
         "wikidata": "Q81650",
         "wikipedia": "tr:Anadolu Hisarı",
-        "popularity": 32
+        "popularity": 32,
+        "names": {
+          "pt": "Anadoluhisarı",
+          "en": "Anadoluhisarı",
+          "es": "Anadoluhisarı"
+        }
       }
     },
     {
@@ -826,7 +981,12 @@
         "longitude": 28.957177,
         "wikidata": "Q197094",
         "wikipedia": "tr:Zeyrek Camii",
-        "popularity": 31
+        "popularity": 31,
+        "names": {
+          "pt": "Mesquita de Zeyrek",
+          "en": "Zeyrek Mosque",
+          "es": "Mezquita de Zeyrek"
+        }
       }
     },
     {
@@ -851,7 +1011,12 @@
         "wikidata": "Q763854",
         "wikipedia": "tr:Dikilitaş (Sultanahmet)",
         "popularity": 31,
-        "site": "Q387548"
+        "site": "Q387548",
+        "names": {
+          "pt": "obelisco de Teodósio",
+          "en": "Obelisk of Theodosius",
+          "es": "obelisco de Teodosio"
+        }
       }
     },
     {
@@ -875,7 +1040,12 @@
         "wikidata": "Q1581190",
         "wikipedia": "en:Mihrimah Sultan Mosque, Edirnekapı",
         "wheelchair": "no",
-        "popularity": 31
+        "popularity": 31,
+        "names": {
+          "pt": "Mesquita de Mihrimah Sultan",
+          "en": "Mihrimah Edirnekapı Mosque",
+          "es": "Mezquita de Mihrimah"
+        }
       }
     },
     {
@@ -899,7 +1069,12 @@
         "wikidata": "Q590900",
         "wikipedia": "tr:Laleli Camii",
         "wheelchair": "no",
-        "popularity": 31
+        "popularity": 31,
+        "names": {
+          "pt": "Mesquita de Laleli",
+          "en": "Laleli Mosque",
+          "es": "Mezquita de los Tulipanes"
+        }
       }
     },
     {
@@ -923,7 +1098,12 @@
         "address": "Fethiye Kapısı Sokağı, İstanbul",
         "wikidata": "Q1420984",
         "wikipedia": "tr:Fethiye Camii",
-        "popularity": 30
+        "popularity": 30,
+        "names": {
+          "pt": "Igreja de Pammakaristos",
+          "en": "Pammakaristos Church",
+          "es": "Pammakaristos"
+        }
       }
     },
     {
@@ -947,7 +1127,12 @@
         "longitude": 28.9704056,
         "wikidata": "Q1430090",
         "wikipedia": "en:Nuruosmaniye Mosque",
-        "popularity": 30
+        "popularity": 30,
+        "names": {
+          "pt": "Mesquita de Nuruosmaniye",
+          "en": "Nuruosmaniye Mosque",
+          "es": "Mezquita de Nuruosmaniye"
+        }
       }
     },
     {
@@ -972,7 +1157,12 @@
         "website": "https://www.geziyerler.com/eyup-sultan-camii-ve-turbesi",
         "wikidata": "Q956677",
         "wikipedia": "tr:Eyüp Sultan Camii",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Mesquita de Eyüp Sultan",
+          "en": "Eyüp Sultan Mosque",
+          "es": "Mezquita de Eyüp Sultan"
+        }
       }
     },
     {
@@ -996,7 +1186,11 @@
         "longitude": 28.995263,
         "wikidata": "Q2086068",
         "wikipedia": "tr:Dolmabahçe Camii",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "en": "Dolmabahçe Mosque",
+          "es": "Mezquita de Dolmabahçe"
+        }
       }
     },
     {
@@ -1020,7 +1214,12 @@
         "longitude": 28.9518948,
         "wikidata": "Q1346546",
         "wikipedia": "tr:Aya Yorgi Patrikhane Kilisesi",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Catedral de São Jorge",
+          "en": "Church of St. George",
+          "es": "Catedral Patriarcal de San Jorge"
+        }
       }
     },
     {
@@ -1046,7 +1245,11 @@
         "wikipedia": "tr:Yılanlı Sütun",
         "wheelchair": "yes",
         "popularity": 28,
-        "site": "Q387548"
+        "site": "Q387548",
+        "names": {
+          "en": "Serpent Column",
+          "es": "Columna de las Serpientes"
+        }
       }
     },
     {
@@ -1076,7 +1279,12 @@
         "wikipedia": "en:Turkish and Islamic Arts Museum",
         "wheelchair": "limited",
         "popularity": 28,
-        "site": "Q1655940"
+        "site": "Q1655940",
+        "names": {
+          "pt": "Museu de Arte Turca e Islâmica",
+          "en": "Turkish and Islamic Arts Museum",
+          "es": "Museo de Arte Turco e Islámico"
+        }
       }
     },
     {
@@ -1101,7 +1309,12 @@
         "wikidata": "Q1247287",
         "wikipedia": "en:Column of Constantine",
         "wheelchair": "yes",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Coluna de Constantino",
+          "en": "Column of Constantine",
+          "es": "Columna de Constantino"
+        }
       }
     },
     {
@@ -1125,7 +1338,11 @@
         "longitude": 29.0703099,
         "wikidata": "Q18341384",
         "wikipedia": "tr:Çamlıca Camii",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "en": "Çamlıca Mosque",
+          "es": "Mezquita de Çamlıca"
+        }
       }
     },
     {
@@ -1149,7 +1366,12 @@
         "longitude": 28.9823101,
         "wikidata": "Q1560106",
         "wikipedia": "en:Gülhane Park",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Parque Gülhane",
+          "en": "Gülhane Park",
+          "es": "Parque Gülhane"
+        }
       }
     },
     {
@@ -1173,7 +1395,12 @@
         "longitude": 28.9232092,
         "wikidata": "Q632795",
         "wikipedia": "tr:Yedikule Zindanları",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Fortaleza de Yedikule",
+          "en": "Yedikule Fortress",
+          "es": "Fortaleza de Yedikule"
+        }
       }
     },
     {
@@ -1201,7 +1428,11 @@
         "wikipedia": "en:The Museum of Innocence (museum)",
         "fee": "yes",
         "wheelchair": "no",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "en": "The Museum of Innocence",
+          "es": "El museo de la inocencia"
+        }
       }
     },
     {
@@ -1225,7 +1456,12 @@
         "longitude": 28.9557072,
         "wikidata": "Q2305473",
         "wikipedia": "tr:Bodrum Camii",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Mesquita de Bodrum",
+          "en": "Bodrum Mosque",
+          "es": "Mezquita de Bodrum"
+        }
       }
     },
     {
@@ -1252,7 +1488,12 @@
         "phone": "+90 212 244 0935",
         "wikidata": "Q810122",
         "wikipedia": "en:Church of St. Anthony of Padua, Istanbul",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Igreja de Santo Antônio de Pádua, Istambul",
+          "en": "Church of St. Anthony of Padua",
+          "es": "iglesia de San Antonio de Padua"
+        }
       }
     },
     {
@@ -1277,7 +1518,12 @@
         "address": "Galata Mahkemesi Sokağı, İstanbul",
         "wikidata": "Q642478",
         "wikipedia": "tr:Arap Camii",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Mesquita de Arap",
+          "en": "Arab Istanbul Mosque",
+          "es": "Mezquita de Arap"
+        }
       }
     },
     {
@@ -1301,7 +1547,11 @@
         "wikidata": "Q2424612",
         "wikipedia": "en:Fenari Isa Mosque",
         "wheelchair": "yes",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Mesquita Fenari Isa",
+          "en": "Fenari Isa Mosque"
+        }
       }
     },
     {
@@ -1324,7 +1574,11 @@
         "longitude": 28.9550109,
         "wikidata": "Q2410449",
         "wikipedia": "en:Eski Imaret Mosque",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "en": "Eski Imaret Mosque",
+          "es": "Mezquita Eski Imaret"
+        }
       }
     },
     {
@@ -1348,7 +1602,12 @@
         "longitude": 28.9869032,
         "wikidata": "Q6048634",
         "wikipedia": "en:Taksim Gezi Park",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "pt": "Parque Taksim Gezi",
+          "en": "Gezi Park",
+          "es": "Parque Taksim Gezi"
+        }
       }
     },
     {
@@ -1372,7 +1631,10 @@
         "longitude": 29.0099809,
         "wikidata": "Q1573438",
         "wikipedia": "en:Yıldız Hamidiye Mosque",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "en": "Yıldız Hamidi Mosque"
+        }
       }
     },
     {
@@ -1396,7 +1658,11 @@
         "address": "Hakimiyeti Milliye Caddesi, İstanbul",
         "wikidata": "Q2334567",
         "wikipedia": "tr:Yeni Valide Camii",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "en": "Yeni Üsküdar Mosque",
+          "es": "Mezquita Yeni Valide"
+        }
       }
     },
     {
@@ -1420,7 +1686,11 @@
         "longitude": 28.9512953,
         "wikidata": "Q2565329",
         "wikipedia": "tr:Yavuz Selim Camii",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "en": "Yavuz Selim Mosque",
+          "es": "Mezquita de Yavuz Selim"
+        }
       }
     },
     {
@@ -1446,7 +1716,11 @@
         "opening_hours": "Tu-Su 09:00-17:00",
         "wikidata": "Q1472490",
         "wikipedia": "en:Palace of the Porphyrogenitus",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "en": "Palace of the Porphyrogenitus",
+          "es": "Palacio de los Porfirogenetas"
+        }
       }
     },
     {
@@ -1470,7 +1744,12 @@
         "longitude": 28.9744173,
         "wikidata": "Q2728644",
         "wikipedia": "en:Cistern of Philoxenos",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Cisterna de Filoxeno",
+          "en": "Cistern of Philoxenos",
+          "es": "Cisterna de Binbirdirek"
+        }
       }
     },
     {
@@ -1500,7 +1779,12 @@
         "wikipedia": "tr:İstanbul Modern",
         "fee": "yes",
         "wheelchair": "designated",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Museu de Arte Moderna de Istambul",
+          "en": "İstanbul Modern",
+          "es": "Museo de Arte Moderno de Estambul"
+        }
       }
     },
     {
@@ -1525,7 +1809,12 @@
         "address": "16 Mart Şehitleri Caddesi, İstanbul",
         "wikidata": "Q1758501",
         "wikipedia": "tr:Kalenderhane Camii",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Mesquita de Kalenderhane",
+          "en": "Kalenderhane Mosque",
+          "es": "Mezquita de Kalenderhane"
+        }
       }
     },
     {
@@ -1550,7 +1839,11 @@
         "wikidata": "Q2719785",
         "wikipedia": "en:Pertevniyal Valide Sultan Mosque",
         "wheelchair": "no",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "en": "Pertevniyal Mosque",
+          "es": "Mezquita de Pertevniyal Valide Sultan"
+        }
       }
     },
     {
@@ -1574,7 +1867,10 @@
         "wikidata": "Q2334536",
         "wikipedia": "en:Gül Mosque",
         "wheelchair": "no",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "en": "Gül Mosque"
+        }
       }
     },
     {
@@ -1598,7 +1894,10 @@
         "longitude": 29.0061492,
         "wikidata": "Q1572395",
         "wikipedia": "tr:Sinan Paşa Camii",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "en": "Sinan Pasha Mosque"
+        }
       }
     },
     {
@@ -1622,7 +1921,12 @@
         "wikidata": "Q595289",
         "wikipedia": "tr:Çiçek Pasajı",
         "wheelchair": "no",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Çiçek Pasajı",
+          "en": "Çiçek Pasajı",
+          "es": "Çiçek Pasajı"
+        }
       }
     },
     {
@@ -1652,7 +1956,11 @@
         "wikipedia": "en:Pera Museum",
         "fee": "yes",
         "wheelchair": "no",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Museu de Pera",
+          "en": "Pera Museum"
+        }
       }
     },
     {
@@ -1676,7 +1984,12 @@
         "address": "Koca Mustafa Paşa Caddesi, İstanbul",
         "wikidata": "Q608787",
         "wikipedia": "en:Koca Mustafa Pasha Mosque",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Koca Mustafa Pasha Mosque",
+          "en": "Koça Mustafa Pasha Mosque",
+          "es": "Mezquita de Koca Mustafa Paşa"
+        }
       }
     },
     {
@@ -1699,7 +2012,12 @@
         "longitude": 28.9425923,
         "wikidata": "Q1069807",
         "wikipedia": "en:Church of St. Mary of Blachernae",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Igreja de Santa Maria de Blaquerna",
+          "en": "Church of St. Mary of Blachernae",
+          "es": "iglesia de Santa María de las Blanquernas"
+        }
       }
     },
     {
@@ -1722,7 +2040,10 @@
         "longitude": 28.9459042,
         "wikidata": "Q1572506",
         "wikipedia": "tr:Hirami Ahmed Paşa Camii",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "en": "Hirami Ahmed Pasha Mosque"
+        }
       }
     },
     {
@@ -1747,7 +2068,11 @@
         "wikidata": "Q2537376",
         "wikipedia": "en:Mihrimah Sultan Mosque, Üsküdar",
         "wheelchair": "yes",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Mesquita de Mihrimah Sultan",
+          "en": "Mihrimah Üsküdar Mosque"
+        }
       }
     },
     {
@@ -1772,7 +2097,11 @@
         "wikidata": "Q742474",
         "wikipedia": "tr:Örme Dikilitaş",
         "popularity": 22,
-        "site": "Q387548"
+        "site": "Q387548",
+        "names": {
+          "en": "Walled Obelisk",
+          "es": "Obelisco de Constantino"
+        }
       }
     },
     {
@@ -1801,7 +2130,11 @@
         "wikidata": "Q1085952",
         "wikipedia": "en:Miniatürk",
         "wheelchair": "yes",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Miniatürk",
+          "en": "Miniatürk"
+        }
       }
     },
     {
@@ -1825,7 +2158,12 @@
         "longitude": 28.9780181,
         "wikidata": "Q1187329",
         "wikipedia": "en:Milion",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Milion",
+          "en": "The Stone of Million",
+          "es": "Milion"
+        }
       }
     },
     {
@@ -1850,7 +2188,12 @@
         "address": "Kemeraltı Caddesi, 50, İstanbul",
         "wikidata": "Q862848",
         "wikipedia": "en:Kılıç Ali Pasha Complex",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Mesquita Kılıç Ali Paşa",
+          "en": "Kılıç Ali Pasha Mosque",
+          "es": "Mezquita Kiliç Ali Pasha"
+        }
       }
     },
     {
@@ -1879,7 +2222,11 @@
         "wikidata": "Q747244",
         "wikipedia": "tr:Neve Şalom Sinagogu",
         "wheelchair": "no",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Sinagoga Neve Shalom",
+          "en": "Neve Shalom Synagogue"
+        }
       }
     },
     {
@@ -1905,7 +2252,11 @@
         "wikidata": "Q1153320",
         "wikipedia": "tr:Zeynep Sultan Camii",
         "wheelchair": "no",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Mesquita de Zeynep Sultan",
+          "en": "Zeynep Sultan Mosque"
+        }
       }
     },
     {
@@ -1932,7 +2283,12 @@
         "website": "https://www.millisaraylar.gov.tr/Lokasyon/6/kucuksu-kasri",
         "wikidata": "Q1755906",
         "wikipedia": "tr:Küçüksu Kasrı",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Palácio de Küçüksu",
+          "en": "Küçüksu Pavillion",
+          "es": "Pabellón Küçüksu"
+        }
       }
     },
     {
@@ -1955,7 +2311,12 @@
         "longitude": 28.9346453,
         "wikidata": "Q514563",
         "wikipedia": "tr:Sancaktar Hayreddin Camii",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Mesquita Sancaktar Hayrettin",
+          "en": "Sancaktar Hayrettin Mosque",
+          "es": "Mezquita Sancaktar Hayrettin"
+        }
       }
     },
     {
@@ -1980,7 +2341,10 @@
         "address": "Nuhkuyusu Caddesi, İstanbul",
         "wikidata": "Q2705343",
         "wikipedia": "en:Şakirin Mosque",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "en": "Şakirin Mosque"
+        }
       }
     },
     {
@@ -2004,7 +2368,12 @@
         "address": "Cumhuriyet Caddesi, 127/A, İstanbul",
         "wikidata": "Q79154",
         "wikipedia": "en:Cathedral of the Holy Spirit",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Catedral do Espírito Santo de Istambul",
+          "en": "Cathedral of the Holy Spirit",
+          "es": "Catedral del Espíritu Santo (Estambul)"
+        }
       }
     },
     {
@@ -2028,7 +2397,12 @@
         "longitude": 28.9430614,
         "wikidata": "Q776353",
         "wikipedia": "tr:Arkadios Sütunu",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Coluna de Arcádio",
+          "en": "Column of Arcadius",
+          "es": "Columna de Arcadio"
+        }
       }
     },
     {
@@ -2053,7 +2427,11 @@
         "wikidata": "Q1572481",
         "wikipedia": "tr:Gazi Atik Ali Paşa Camii",
         "wheelchair": "yes",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "en": "Gazi Atik Ali Pasha Mosque",
+          "es": "Mezquita de Atik Alí Pasha"
+        }
       }
     },
     {
@@ -2077,7 +2455,10 @@
         "address": "Meclis-i Mebusan Caddesi, İstanbul",
         "wikidata": "Q614237",
         "wikipedia": "en:Nusretiye Mosque",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "en": "Nusretiye Mosque"
+        }
       }
     },
     {
@@ -2099,13 +2480,18 @@
         ],
         "latitude": 41.0074148,
         "longitude": 28.9723954,
-        "address": "Piyer Loti Caddesi, 4, Istambul",
+        "address": "Piyer Loti Caddesi, 4",
         "opening_hours": "Mo-Su 09:00-18:00",
         "website": "https://www.facebook.com/serefiyesarnici/",
         "wikidata": "Q3150393",
         "wikipedia": "en:Theodosius Cistern",
         "fee": "yes",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Cisterna de Teodósio",
+          "en": "Theodosius Cistern",
+          "es": "Cisterna de Teodosio"
+        }
       }
     },
     {
@@ -2130,7 +2516,11 @@
         "opening_hours": "Mo-Su 08:30-16:30",
         "wikidata": "Q3020134",
         "wikipedia": "en:Church of St. Mary of the Spring (Istanbul)",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Igreja de Santa Maria da Fonte",
+          "en": "Church of St. Mary of the Spring"
+        }
       }
     },
     {
@@ -2153,7 +2543,11 @@
         "longitude": 28.9603299,
         "wikidata": "Q246275",
         "wikipedia": "tr:Vefa Kilise Camii",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "en": "Molla Gürani Mosque",
+          "es": "Mezquita de Vefa Kilise"
+        }
       }
     },
     {
@@ -2176,7 +2570,10 @@
         "longitude": 28.9441211,
         "wikidata": "Q2706762",
         "wikipedia": "en:Atik Mustafa Pasha Mosque",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "en": "Atik Mustafa Pasha Mosque"
+        }
       }
     },
     {
@@ -2202,7 +2599,12 @@
         "website": "https://akmistanbul.gov.tr/tr/iletisim",
         "wikidata": "Q551685",
         "wikipedia": "tr:Atatürk Kültür Merkezi (İstanbul)",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Centro Cultural Atatürk",
+          "en": "Atatürk Cultural Center",
+          "es": "Centro cultural de Atatürk"
+        }
       }
     },
     {
@@ -2226,7 +2628,11 @@
         "opening_hours": "Mo-Su 08:00-22:00",
         "wikidata": "Q1818005",
         "wikipedia": "tr:Yıldız Parkı",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "en": "Yıldız Park",
+          "es": "Parque de Yıldız"
+        }
       }
     },
     {
@@ -2253,7 +2659,12 @@
         "wikipedia": "tr:Çinili Köşk",
         "fee": "yes",
         "popularity": 17,
-        "site": "Q636978"
+        "site": "Q636978",
+        "names": {
+          "pt": "Quiosque Esmaltado",
+          "en": "Tiled Kiosk",
+          "es": "Çinili Köşk"
+        }
       }
     },
     {
@@ -2282,7 +2693,10 @@
         "wikidata": "Q1059699",
         "wikipedia": "en:Jewish Museum of Turkey",
         "wheelchair": "no",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "en": "Jewish Museum of Turkey"
+        }
       }
     },
     {
@@ -2310,7 +2724,10 @@
         "wikidata": "Q11787082",
         "wikipedia": "en:Istanbul Naval Museum",
         "fee": "yes",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "en": "Istanbul Naval Museum"
+        }
       }
     },
     {
@@ -2334,7 +2751,12 @@
         "longitude": 28.9856774,
         "wikidata": "Q2887370",
         "wikipedia": "en:Column of the Goths",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Coluna dos Godos",
+          "en": "Column of the Goths",
+          "es": "Columna de los Godos"
+        }
       }
     },
     {
@@ -2358,7 +2780,11 @@
         "longitude": 28.9812612,
         "wikidata": "Q3076126",
         "wikipedia": "tr:III. Ahmet Çeşmesi",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Fountain of Ahmed III",
+          "es": "Fuente de Ahmet III"
+        }
       }
     },
     {
@@ -2383,7 +2809,12 @@
         "website": "http://www.ayasofyahamami.com",
         "wikidata": "Q2712287",
         "wikipedia": "tr:Haseki Hamamı",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Banhos de Roxelana",
+          "en": "Haseki Hürrem Sultan Hamamı",
+          "es": "Baños de Roxelana"
+        }
       }
     },
     {
@@ -2407,7 +2838,11 @@
         "longitude": 29.0011953,
         "wikidata": "Q2330055",
         "wikipedia": "tr:Ihlamur Kasrı",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Ihlamur Palace",
+          "es": "Palacio de Ihlamur"
+        }
       }
     },
     {
@@ -2433,7 +2868,12 @@
         "website": "https://www.sureyyaoperasi.kadikoy.bel.tr/",
         "wikidata": "Q551616",
         "wikipedia": "en:Süreyya Opera House",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Ópera Süreyya",
+          "en": "Süreyya Opera House",
+          "es": "Ópera de Süreyya"
+        }
       }
     },
     {
@@ -2459,7 +2899,12 @@
         "website": "https://muze.gen.tr/",
         "wikidata": "Q2719230",
         "wikipedia": "tr:Büyük Saray Mozaikleri Müzesi",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Museu dos Mosaicos do Grande Palácio",
+          "en": "Great Palace Mosaic Museum",
+          "es": "Museo de los Mosaicos del Gran Palacio"
+        }
       }
     },
     {
@@ -2480,10 +2925,15 @@
         ],
         "latitude": 41.038414,
         "longitude": 28.9407981,
-        "address": "Dervişzade Sokağı, 10, Istambul",
+        "address": "Dervişzade Sokağı, 10",
         "wikidata": "Q3081830",
         "wikipedia": "tr:Anemas Zindanları",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Prisão de Anemas",
+          "en": "Prison of Anemas",
+          "es": "Prisión de Anemas"
+        }
       }
     },
     {
@@ -2509,7 +2959,11 @@
         "wikipedia": "tr:Alman Çeşmesi",
         "wheelchair": "yes",
         "popularity": 13,
-        "site": "Q387548"
+        "site": "Q387548",
+        "names": {
+          "en": "German Fountain",
+          "es": "Fuente Alemana"
+        }
       }
     },
     {
@@ -2532,7 +2986,10 @@
         "longitude": 28.9679695,
         "wikidata": "Q100320010",
         "wikipedia": "en:Tahtakale Hamam",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Tahtakale Hamam"
+        }
       }
     },
     {
@@ -2556,7 +3013,10 @@
         "longitude": 29.0534519,
         "wikidata": "Q4833521",
         "wikipedia": "en:Aşiyan Museum",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Aşiyan Museum"
+        }
       }
     },
     {
@@ -2583,7 +3043,10 @@
         "wikipedia": "tr:Rahmi M. Koç Müzesi",
         "wheelchair": "yes",
         "popularity": 13,
-        "site": "Q3404565"
+        "site": "Q3404565",
+        "names": {
+          "en": "Rahmi M. Koç Museum"
+        }
       }
     },
     {
@@ -2610,7 +3073,10 @@
         "website": "http://www.askerimuze.tsk.tr/INGILIZCE/military_museum.htm",
         "wikidata": "Q12808583",
         "wikipedia": "en:Istanbul Military Museum",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Istanbul Military Museum"
+        }
       }
     },
     {
@@ -2637,7 +3103,10 @@
         "wikipedia": "en:Galatasaray Museum",
         "fee": "no",
         "wheelchair": "no",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Galatasaray Museum"
+        }
       }
     },
     {
@@ -2661,7 +3130,11 @@
         "longitude": 28.9529591,
         "wikidata": "Q1578614",
         "wikipedia": "en:Church of St. Polyeuctus",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Church of St. Polyeuctus",
+          "es": "iglesia de San Polieucto"
+        }
       }
     },
     {
@@ -2688,7 +3161,10 @@
         "wikipedia": "tr:Müze Gazhane",
         "fee": "no",
         "popularity": 12,
-        "site": "Q107475211"
+        "site": "Q107475211",
+        "names": {
+          "en": "Museum Gazhane"
+        }
       }
     },
     {
@@ -2712,7 +3188,10 @@
         "longitude": 28.9331468,
         "wikidata": "Q5117225",
         "wikipedia": "tr:Surp Kevork Kilisesi",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Church of St. George of Samatya"
+        }
       }
     },
     {
@@ -2740,7 +3219,11 @@
         "website": "https://istanbuloyuncakmuzesi.com/",
         "wikidata": "Q2743371",
         "wikipedia": "en:İstanbul Toy Museum",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "İstanbul Toy Museum",
+          "es": "Museo del Juguete de Estambul"
+        }
       }
     },
     {
@@ -2762,12 +3245,15 @@
         ],
         "latitude": 41.0564045,
         "longitude": 28.9872127,
-        "address": "Halaskargazi Caddesi, 250, Istambul",
+        "address": "Halaskargazi Caddesi, 250",
         "opening_hours": "Mo-We,Fr-Sa 09:00-16:00",
         "wikidata": "Q3701681",
         "wikipedia": "en:Atatürk Museum, Şişli",
         "fee": "no",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Atatürk Museum"
+        }
       }
     },
     {
@@ -2797,7 +3283,10 @@
         "wikipedia": "en:Istanbul Railway Museum",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Istanbul Railway Museum"
+        }
       }
     },
     {
@@ -2820,7 +3309,10 @@
         "longitude": 29.0692717,
         "wikidata": "Q2414579",
         "wikipedia": "en:Çamlıca Hill",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Büyük Çamlıca Hill"
+        }
       }
     },
     {
@@ -2845,7 +3337,11 @@
         "website": "https://camlicakule.istanbul/en",
         "wikidata": "Q28657490",
         "wikipedia": "tr:Küçük Çamlıca Televizyon Kulesi",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Çamlıca Tower",
+          "es": "Torre de Çamlıca"
+        }
       }
     },
     {
@@ -2870,7 +3366,10 @@
         "wikidata": "Q1655940",
         "wheelchair": "limited",
         "popularity": 10,
-        "site": "Q1655940"
+        "site": "Q1655940",
+        "names": {
+          "en": "Ibrahim Pasha Palace"
+        }
       }
     },
     {
@@ -2892,12 +3391,15 @@
         ],
         "latitude": 41.0387821,
         "longitude": 28.9771474,
-        "address": "Tatlı Badem Sokak, 10, Istambul",
+        "address": "Tatlı Badem Sokak, 10",
         "opening_hours": "Tu-Su 09:00-16:30",
         "website": "https://muze.gen.tr/muze-detay/adam",
         "wikidata": "Q4679495",
         "wikipedia": "en:Adam Mickiewicz Museum, Istanbul",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Adam Mickiewicz Museum"
+        }
       }
     },
     {
@@ -2920,7 +3422,10 @@
         "longitude": 28.9713768,
         "wikidata": "Q6070291",
         "wikipedia": "tr:Mahmud Paşa Camii",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Mahmut Pasha Mosque"
+        }
       }
     },
     {
@@ -2944,7 +3449,11 @@
         "longitude": 28.896211,
         "wikidata": "Q4809463",
         "wikipedia": "en:TurkuaZoo",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Sea Life İstanbul",
+          "es": "Istanbul Sea Life Aquarium"
+        }
       }
     },
     {
@@ -2974,7 +3483,12 @@
         "fee": "yes",
         "wheelchair": "yes",
         "popularity": 8,
-        "site": "Q636978"
+        "site": "Q636978",
+        "names": {
+          "pt": "Museu do Antigo Oriente",
+          "en": "Museum of the Ancient Orient",
+          "es": "Museo del Antiguo Oriente"
+        }
       }
     },
     {
@@ -3001,7 +3515,10 @@
         "phone": "+90 212 527 58 51",
         "wikidata": "Q6549659",
         "wikipedia": "en:Museum of Turkish Calligraphy Art",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Museum of Turkish Calligraphy Art"
+        }
       }
     },
     {
@@ -3025,7 +3542,10 @@
         "longitude": 28.9737782,
         "wikidata": "Q6027749",
         "wikipedia": "en:Camondo Stairs",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Camondo stairs"
+        }
       }
     },
     {
@@ -3050,7 +3570,10 @@
         "website": "https://www.rhm.org.tr/",
         "wikidata": "Q7319839",
         "wikipedia": "en:Rezan Has Museum",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Rezan Has Museum"
+        }
       }
     },
     {
@@ -3074,7 +3597,11 @@
         "longitude": 28.9939957,
         "wikidata": "Q6098591",
         "wikipedia": "tr:Maçka Demokrasi Parkı",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Maçka Park",
+          "es": "Maçka Demokrasi Parkı"
+        }
       }
     },
     {
@@ -3099,7 +3626,10 @@
         "address": "Kennedy Cd, İstanbul",
         "wikidata": "Q4867763",
         "wikipedia": "tr:Sepetçiler Kasrı",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Basketmakers' Kiosk"
+        }
       }
     },
     {
@@ -3125,7 +3655,10 @@
         "website": "https://vialand.com/",
         "wikidata": "Q15078111",
         "wikipedia": "tr:Vialand",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Vialand"
+        }
       }
     },
     {
@@ -3148,7 +3681,10 @@
         "longitude": 28.9900538,
         "wikidata": "Q5058732",
         "wikipedia": "tr:Cemil Topuzlu Açıkhava Tiyatrosu",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Cemil Topuzlu Open-Air Theatre"
+        }
       }
     },
     {
@@ -3173,7 +3709,10 @@
         "wikidata": "Q4817294",
         "wikipedia": "tr:TCG Uluçalireis (S-338)",
         "popularity": 7,
-        "site": "Q3404565"
+        "site": "Q3404565",
+        "names": {
+          "en": "USS Thornback"
+        }
       }
     },
     {
@@ -3202,7 +3741,10 @@
         "wikidata": "Q16850295",
         "wikipedia": "en:Istanbul Museum of the History of Science and Technology in Islam",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Istanbul Museum of the History of Science and Technology in Islam"
+        }
       }
     },
     {
@@ -3228,7 +3770,10 @@
         "wikidata": "Q15533769",
         "wikipedia": "tr:Kadıköy Haldun Taner Sahnesi",
         "wheelchair": "limited",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Kadıköy Haldun Taner Stage"
+        }
       }
     },
     {
@@ -3251,7 +3796,10 @@
         "longitude": 28.978391,
         "wikidata": "Q7247329",
         "wikipedia": "tr:Alay Köşkü",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Procession Kiosk"
+        }
       }
     },
     {
@@ -3274,7 +3822,10 @@
         "longitude": 29.0565643,
         "wikidata": "Q12811372",
         "wikipedia": "tr:Perili Köşk (İstanbul)",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Perili Köşk"
+        }
       }
     },
     {
@@ -3297,7 +3848,10 @@
         "longitude": 29.0063574,
         "wikidata": "Q6033590",
         "wikipedia": "tr:Barbaros Anıtı",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Barbaros Monument"
+        }
       }
     },
     {
@@ -3319,12 +3873,15 @@
         ],
         "latitude": 41.0357703,
         "longitude": 28.9783705,
-        "address": "Balo Sokağı, 42, Istambul",
+        "address": "Balo Sokağı, 42",
         "opening_hours": "Tu-Su 10:00-18:00",
         "wikidata": "Q5303887",
         "wikipedia": "en:Doğançay Museum",
         "fee": "no",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Doğançay Museum"
+        }
       }
     },
     {
@@ -3350,7 +3907,10 @@
         "website": "https://muzeyum.istanbul.edu.tr/",
         "wikidata": "Q68217803",
         "wikipedia": "en:Bayezid II Hamam",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Bayezid II, Turkish Bath Culture Museum"
+        }
       }
     },
     {
@@ -3375,7 +3935,10 @@
         "website": "https://www.arter.org.tr",
         "wikidata": "Q25338955",
         "wikipedia": "tr:Arter (sanat mekanı)",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Arter"
+        }
       }
     },
     {
@@ -3403,7 +3966,10 @@
         "wikidata": "Q20949672",
         "wikipedia": "en:Orhan Kemal Literature Museum",
         "popularity": 5,
-        "site": "Q20949672"
+        "site": "Q20949672",
+        "names": {
+          "en": "Orhan Kemal Literature Museum"
+        }
       }
     },
     {
@@ -3428,7 +3994,11 @@
         "website": "http://www.crrkonsersalonu.org/",
         "wikidata": "Q5058633",
         "wikipedia": "en:Cemal Reşit Rey Concert Hall",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Cemal Reşit Rey Concert Hall",
+          "es": "Sala de Conciertos Cemal Reşit Rey"
+        }
       }
     },
     {
@@ -3452,7 +4022,10 @@
         "longitude": 28.9886516,
         "wikidata": "Q16892078",
         "wikipedia": "en:Harbiye Muhsin Ertuğrul Stage",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Harbiye Muhsin Ertuğrul Stage"
+        }
       }
     },
     {
@@ -3479,7 +4052,10 @@
         "wikidata": "Q20051041",
         "wikipedia": "en:National Palaces Painting Museum",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "National Palaces Painting Museum"
+        }
       }
     },
     {
@@ -3505,7 +4081,10 @@
         "website": "https://muze.isbank.com.tr/",
         "wikidata": "Q6053818",
         "wikipedia": "en:İşbank Museum",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Türkiye İş Bankası Museum"
+        }
       }
     },
     {
@@ -3532,7 +4111,11 @@
         "wikidata": "Q6090202",
         "wikipedia": "tr:Panorama 1453 Tarih Müzesi",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Panorama 1453 History Museum",
+          "es": "Museo de Historia Panorama 1453"
+        }
       }
     },
     {
@@ -3554,11 +4137,14 @@
         ],
         "latitude": 41.0085416,
         "longitude": 28.9716244,
-        "address": "Vezirhanı Caddesi, 8, Istambul",
+        "address": "Vezirhanı Caddesi, 8",
         "opening_hours": "Mo-Su 06:00-23:30",
         "wikidata": "Q8077658",
         "wikipedia": "tr:Çemberlitaş Hamamı",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Cemberlitas Hammam"
+        }
       }
     },
     {
@@ -3583,7 +4169,10 @@
         "address": "Boyacı Ahmet Sokak, İstanbul",
         "wikidata": "Q6087315",
         "wikipedia": "en:TGC Press Media Museum",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "TGC Press Media Museum"
+        }
       }
     },
     {
@@ -3628,12 +4217,15 @@
         ],
         "latitude": 41.0583124,
         "longitude": 28.9803794,
-        "address": "Birahane Sokak, 1, Istambul",
+        "address": "Birahane Sokak, 1",
         "opening_hours": "Mo-Sa 10:00-18:00; Su 12:00-18:00",
         "wikidata": "Q96756361",
         "wikipedia": "en:Ara Güler Museum",
         "wheelchair": "limited",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Ara Güler Museum"
+        }
       }
     },
     {
@@ -3656,7 +4248,10 @@
         "longitude": 29.0579917,
         "wikidata": "Q65219354",
         "wikipedia": "tr:Göztepe 60. Yıl Parkı",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Göztepe 60. Yıl Park"
+        }
       }
     },
     {
@@ -3686,7 +4281,10 @@
         "wikipedia": "tr:Galata Mevlevihanesi",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Galata Mevlevihanesi"
+        }
       }
     },
     {
@@ -3711,7 +4309,10 @@
         "website": "https://www.beltur.istanbul/tr/mekan/malta-kosku",
         "wikidata": "Q6744675",
         "wikipedia": "en:Malta Kiosk",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Malta Kiosk"
+        }
       }
     },
     {
@@ -3739,7 +4340,10 @@
         "wikidata": "Q128412143",
         "wikipedia": "tr:Zeyrek Çinili Hamam",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Zeyrek Çinili Hamam"
+        }
       }
     },
     {
@@ -3762,7 +4366,10 @@
         "longitude": 28.9819557,
         "wikidata": "Q49571240",
         "wikipedia": "en:Tophane Park",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Tophane Park"
+        }
       }
     },
     {
@@ -3787,7 +4394,10 @@
         "longitude": 28.9638711,
         "wikidata": "Q55594541",
         "wikipedia": "tr:İstanbul Üniversitesi Alfred Heilbronn Botanik Bahçesi",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Istanbul University Alfred Heilbronn Botanical Garden"
+        }
       }
     },
     {
@@ -3811,7 +4421,10 @@
         "wikidata": "Q20474003",
         "wikipedia": "tr:Abdülmecid Efendi Köşkü",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Abdülmecid Efendi Köşkü"
+        }
       }
     },
     {
@@ -3834,7 +4447,10 @@
         "longitude": 29.0387247,
         "wikidata": "Q20470443",
         "wikipedia": "en:The Feeler",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "The Feeler"
+        }
       }
     },
     {
@@ -3858,7 +4474,10 @@
         "longitude": 29.0337078,
         "wikidata": "Q65219450",
         "wikipedia": "tr:Yoğurtçu Parkı",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Yoğurtçu Park"
+        }
       }
     },
     {
@@ -3881,7 +4500,10 @@
         "longitude": 29.0298271,
         "wikidata": "Q97321014",
         "wikipedia": "en:Sanatçılar Park",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Sanatçılar Park"
+        }
       }
     },
     {
@@ -3906,7 +4528,10 @@
         "opening_hours": "24/7",
         "wikidata": "Q6100374",
         "wikipedia": "tr:Topkapı Parkı",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Topkapı Park"
+        }
       }
     },
     {
@@ -3929,7 +4554,10 @@
         "longitude": 29.0005224,
         "wikidata": "Q12813039",
         "wikipedia": "en:Şairler Sofası",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Şairler Sofası"
+        }
       }
     },
     {
@@ -3952,7 +4580,10 @@
         "longitude": 28.9700049,
         "wikidata": "Q123594731",
         "wikipedia": "en:Cundi Park",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Cundi Park"
+        }
       }
     },
     {
@@ -3975,7 +4606,10 @@
         "longitude": 29.0402107,
         "wikidata": "Q117227058",
         "wikipedia": "tr:Mermer Köşk",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Marble Pavilion"
+        }
       }
     },
     {
@@ -3999,7 +4633,10 @@
         "address": "Küçük Ayasofya Caddesi, İstanbul",
         "wikidata": "Q111697638",
         "wikipedia": "tr:Mehmed Efendi Çeşmesi",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mehmet Efendi Fountain"
+        }
       }
     },
     {
@@ -4027,7 +4664,10 @@
         "wikidata": "Q68219486",
         "wikipedia": "tr:İstanbul Üniversitesi Rıdvan Çelikel Arkeoloji Müzesi",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "İstanbul Üniversitesi Rıdvan Çelikel Arkeoloji Müzesi"
+        }
       }
     },
     {
@@ -4050,7 +4690,10 @@
         "longitude": 28.9907701,
         "wikidata": "Q123684244",
         "wikipedia": "en:Fındıklı Park",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Fındıklı Park"
+        }
       }
     },
     {
@@ -4074,7 +4717,10 @@
         "website": "https://www.beltur.istanbul/tr/mekan/cadir-kosk",
         "wikidata": "Q6100184",
         "wikipedia": "tr:Çadır Köşkü",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Çadır Villa"
+        }
       }
     },
     {
@@ -4098,7 +4744,10 @@
         "address": "Münir Nürettin Selçuk Caddesi, İstanbul",
         "wikidata": "Q6006073",
         "wikipedia": "tr:Kalamış Atatürk Parkı",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kalamış Park"
+        }
       }
     },
     {
@@ -4119,12 +4768,15 @@
         ],
         "latitude": 40.9792736,
         "longitude": 29.0564209,
-        "address": "Perçem Sokak, Istambul",
+        "address": "Perçem Sokak",
         "website": "https://www.geziyerler.com/goztepe-ozgurluk-parki",
         "wikidata": "Q106333372",
         "wikipedia": "tr:Özgürlük Parkı",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Freedom Park"
+        }
       }
     },
     {
@@ -4148,7 +4800,11 @@
         "website": "https://www.geziyerler.com/fenerbahce-parki",
         "wikidata": "Q6035259",
         "wikipedia": "tr:Fenerbahçe Parkı",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Fenerbahçe Park",
+          "es": "Fenerbahçe Parkı"
+        }
       }
     },
     {
@@ -4172,7 +4828,10 @@
         "wikidata": "Q110762885",
         "wikipedia": "tr:Sandal Bedesteni",
         "popularity": 2,
-        "site": "Q505954"
+        "site": "Q505954",
+        "names": {
+          "en": "Sandal Bedesten"
+        }
       }
     },
     {
@@ -4195,7 +4854,10 @@
         "longitude": 29.010926,
         "wikidata": "Q31191094",
         "wikipedia": "tr:Büyük Mabeyn Köşkü",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Great Mabeyn Pavilion"
+        }
       }
     },
     {
@@ -4218,7 +4880,10 @@
         "longitude": 29.0411035,
         "wikidata": "Q115789189",
         "wikipedia": "tr:Sarı Köşk (Üsküdar)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Yellow Pavilion"
+        }
       }
     },
     {
@@ -4242,7 +4907,10 @@
         "longitude": 28.9457788,
         "wikidata": "Q25477354",
         "wikipedia": "tr:Yenikapı Meydanı",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Yenikapı Square"
+        }
       }
     },
     {
@@ -4266,7 +4934,10 @@
         "address": "Ayvansaray Caddesi, İstanbul",
         "wikidata": "Q112055971",
         "wikipedia": "tr:Muhammed El-Ensari Türbesi",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Tomb of Muhammad Al-Ansari"
+        }
       }
     },
     {
@@ -4292,7 +4963,10 @@
         "website": "https://www.kazimkarabekirvakfi.org.tr/",
         "wikidata": "Q6022598",
         "wikipedia": "tr:Kâzım Karabekir Paşa Müzesi",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kâzım Karabekir Museum"
+        }
       }
     },
     {
@@ -4316,7 +4990,10 @@
         "website": "https://esenler.bel.tr/hizmetlerimiz/tesislerimiz/15-temmuz-millet-bahcesi/",
         "wikidata": "Q109389737",
         "wikipedia": "tr:15 Temmuz Millet Bahçesi",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Esenler 15 Temmuz Millet Bahçesi"
+        }
       }
     },
     {
@@ -4338,7 +5015,10 @@
         "latitude": 41.0467465,
         "longitude": 29.0537615,
         "wikidata": "Q133822747",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Havuzbaşı Park"
+        }
       }
     },
     {
@@ -4363,7 +5043,10 @@
         "website": "https://sinematek.kadikoy.bel.tr/",
         "wikidata": "Q111525180",
         "wikipedia": "tr:Sinematek/Sinema Evi",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Sinematek/Sinemaevi"
+        }
       }
     },
     {
@@ -4386,7 +5069,10 @@
         "longitude": 29.038854,
         "wikidata": "Q118119298",
         "wikipedia": "tr:Ahır Köşkü",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ahır Kiosk"
+        }
       }
     },
     {
@@ -4410,7 +5096,10 @@
         "address": "Kennedy Caddesi, 152/A, İstanbul",
         "wikidata": "Q127418626",
         "wikipedia": "tr:Yedekçiler Mescidi",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Yedekçiler Mescidi"
+        }
       }
     },
     {
@@ -4434,7 +5123,10 @@
         "wikidata": "Q116142628",
         "wikipedia": "tr:Zeyrek Sarnıcı",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Zeyrek Cistern"
+        }
       }
     },
     {
@@ -4483,7 +5175,10 @@
         "website": "https://www.millisaraylar.gov.tr/Lokasyon/15/Saray-Koleksiyonlari-Museum",
         "wikidata": "Q112585751",
         "fee": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Istanbul Palace Collections Museum"
+        }
       }
     },
     {
@@ -4535,7 +5230,10 @@
         "wikidata": "Q77780889",
         "wikipedia": "tr:İstanbul Üniversitesi Türk Eczacılık Tarihi İhtisas Müzesi",
         "fee": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Turkish Pharmacy Museum"
+        }
       }
     },
     {
@@ -4557,7 +5255,10 @@
         "latitude": 40.9797784,
         "longitude": 29.0871121,
         "wikidata": "Q134728447",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Bust of İsmet İnönü (Kadıköy)"
+        }
       }
     },
     {
@@ -4580,7 +5281,10 @@
         "latitude": 41.004999,
         "longitude": 28.9777549,
         "wikidata": "Q120829207",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Arasta Bazaar"
+        }
       }
     },
     {
@@ -4626,7 +5330,10 @@
         "longitude": 29.0323242,
         "wikidata": "Q6030900",
         "wikipedia": "tr:Ulus Parkı",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Ulus Park"
+        }
       }
     },
     {
@@ -4649,7 +5356,10 @@
         "longitude": 29.0215314,
         "wikidata": "Q113407470",
         "wheelchair": "limited",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Üsküdar Tekel Stage"
+        }
       }
     },
     {
@@ -4671,7 +5381,10 @@
         "latitude": 41.0710241,
         "longitude": 28.9439111,
         "wikidata": "Q125501713",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Silahtarağa Youth Park"
+        }
       }
     },
     {
@@ -4721,7 +5434,10 @@
         "wikidata": "Q136402588",
         "fee": "yes",
         "popularity": 1,
-        "site": "Q636978"
+        "site": "Q636978",
+        "names": {
+          "en": "Main Building of the Istanbul Archaeological Museums"
+        }
       }
     },
     {
@@ -4745,7 +5461,10 @@
         "longitude": 28.9812065,
         "address": "Akbıyık Caddesi, 1, İstanbul",
         "wikidata": "Q131738570",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "İshak Paşa Baths"
+        }
       }
     },
     {
@@ -4767,7 +5486,10 @@
         "latitude": 41.0436039,
         "longitude": 29.0425996,
         "wikidata": "Q133826188",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Beylerbeyi Park"
+        }
       }
     },
     {
@@ -4812,7 +5534,10 @@
         "latitude": 41.0665855,
         "longitude": 28.946664,
         "wikidata": "Q117012211",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Santralistanbul Energy Museum"
+        }
       }
     },
     {
@@ -4857,7 +5582,10 @@
         "longitude": 28.9807878,
         "wikidata": "Q132134443",
         "wikipedia": "tr:Cankurtaran Mescidi",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Cankurtaran Mosque"
+        }
       }
     },
     {
@@ -4880,7 +5608,10 @@
         "longitude": 28.9743308,
         "wikidata": "Q132134411",
         "wikipedia": "tr:Üçler Mescidi",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Üçler Mescidi (Sultanahmet)"
+        }
       }
     },
     {
@@ -4903,7 +5634,10 @@
         "longitude": 28.9707766,
         "wikidata": "Q127418364",
         "wikipedia": "tr:Katip Sinan Mescidi",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Katip Sinan Mescidi"
+        }
       }
     },
     {
@@ -5137,7 +5871,7 @@
         ],
         "latitude": 41.0303466,
         "longitude": 28.9754498,
-        "address": "İstiklal Caddesi, 160A, Istambul",
+        "address": "İstiklal Caddesi, 160A",
         "opening_hours": "Mo-Fr 09:30-18:00",
         "phone": "+902127058700",
         "fee": "no",
@@ -5164,7 +5898,7 @@
         ],
         "latitude": 41.0304385,
         "longitude": 28.9757547,
-        "address": "İstiklal Caddesi, 211, Istambul",
+        "address": "İstiklal Caddesi, 211",
         "opening_hours": "Tu-Su 11:00-19:00",
         "phone": "+902127085900",
         "website": "https://www.mesher.org",
@@ -5243,7 +5977,10 @@
         "longitude": 28.9767691,
         "address": "Divan Yolu Caddesi, İstanbul",
         "wikidata": "Q131368516",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Cevri Kalfa Fountain"
+        }
       }
     },
     {
@@ -5290,7 +6027,7 @@
         ],
         "latitude": 41.0371441,
         "longitude": 28.9691417,
-        "address": "Toprak Tabya, Istambul",
+        "address": "Toprak Tabya",
         "opening_hours": "Su",
         "popularity": 0
       }
@@ -5380,7 +6117,7 @@
         ],
         "latitude": 41.0238431,
         "longitude": 28.9750813,
-        "address": "Bankalar Caddesi, Istambul",
+        "address": "Bankalar Caddesi",
         "phone": "+90 212 292 49 39",
         "website": "http://kasagaleri.sabanciuniv.edu",
         "fee": "yes",
@@ -5527,7 +6264,7 @@
         ],
         "latitude": 41.0041016,
         "longitude": 28.9751527,
-        "address": "Nakilbent Sokağı, 13, Istambul",
+        "address": "Nakilbent Sokağı, 13",
         "opening_hours": "Mo-Su 09:00-17:30",
         "fee": "no",
         "popularity": 0
@@ -5601,7 +6338,7 @@
         ],
         "latitude": 41.0305186,
         "longitude": 28.9836008,
-        "address": "Akarsu Yokuşu Sokağı, 30, Istambul",
+        "address": "Akarsu Yokuşu Sokağı, 30",
         "opening_hours": "10:00-19:00",
         "website": "https://www.orhankemal.org/v04/muze_tr.htm",
         "fee": "no",
@@ -5673,7 +6410,7 @@
         ],
         "latitude": 41.089864,
         "longitude": 29.0696067,
-        "address": "Çınarlı Sokak, 41, Istambul",
+        "address": "Çınarlı Sokak, 41",
         "opening_hours": "Su-Sa 08:00-17:00",
         "popularity": 0
       }
@@ -5972,7 +6709,7 @@
         ],
         "latitude": 41.0034842,
         "longitude": 28.970825,
-        "address": "Yusuf Aşkın Sokağı, Istambul",
+        "address": "Yusuf Aşkın Sokağı",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -6022,7 +6759,10 @@
         "latitude": 41.0465446,
         "longitude": 29.0063488,
         "wikidata": "Q38186707",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Abbasağa park"
+        }
       }
     },
     {
@@ -6436,7 +7176,10 @@
         "latitude": 41.0096513,
         "longitude": 28.9671749,
         "wikidata": "Q135010073",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Sepetçi Han"
+        }
       }
     },
     {
@@ -6481,7 +7224,10 @@
         "latitude": 41.0499954,
         "longitude": 29.0115888,
         "wikidata": "Q108564974",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum Directorate of Yıldız Palace"
+        }
       }
     },
     {
@@ -6549,7 +7295,10 @@
         "latitude": 41.0099622,
         "longitude": 28.9694024,
         "wikidata": "Q135010060",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Rabia Hanı (Kapalıçarşı)"
+        }
       }
     },
     {
@@ -6619,7 +7368,7 @@
         ],
         "latitude": 40.9933369,
         "longitude": 29.0371336,
-        "address": "Fahrettin Kerim Gökay Caddesi, 2, Istambul",
+        "address": "Fahrettin Kerim Gökay Caddesi, 2",
         "website": "https://www.kadikoy.bel.tr/",
         "popularity": 0
       }
@@ -6945,7 +7694,7 @@
         ],
         "latitude": 41.0086172,
         "longitude": 29.1157385,
-        "address": "Atay Caddesi, Istambul",
+        "address": "Atay Caddesi",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -6968,7 +7717,7 @@
         ],
         "latitude": 41.0076393,
         "longitude": 29.1155082,
-        "address": "Atay Caddesi, Istambul",
+        "address": "Atay Caddesi",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -7301,7 +8050,7 @@
         ],
         "latitude": 41.0327089,
         "longitude": 28.9751817,
-        "address": "Meşrutiyet Caddesi, 51, Istambul",
+        "address": "Meşrutiyet Caddesi, 51",
         "opening_hours": "Mo 18:00-23:45; Tu-Su 12:00-23:45",
         "phone": "+90 212 292 64 96",
         "website": "https://www.cokcok.com.tr/",
@@ -7355,7 +8104,7 @@
         ],
         "latitude": 41.0062127,
         "longitude": 28.9690802,
-        "address": "Piyer Loti Caddesi, 34, Istambul",
+        "address": "Piyer Loti Caddesi, 34",
         "opening_hours": "Mo-Su 08:00-01:30",
         "phone": "+902125179929",
         "wheelchair": "limited",
@@ -7381,7 +8130,7 @@
         ],
         "latitude": 41.02601,
         "longitude": 28.974564,
-        "address": "Kuledibi Şah Kapısı, 2B, Istambul",
+        "address": "Kuledibi Şah Kapısı, 2B",
         "opening_hours": "08:00-24:00",
         "phone": "+90 212249 03 93",
         "website": "https://www.guneyrestaurant.com/",
@@ -7462,7 +8211,7 @@
         ],
         "latitude": 41.0228719,
         "longitude": 28.9758376,
-        "address": "Gümrük Sokak, 4, Istambul",
+        "address": "Gümrük Sokak, 4",
         "opening_hours": "Mo-Th 09:00-24:00; Fr-Sa 09:00-24:30; Su 10:00-22:00",
         "phone": "+90 212 244 22 52",
         "wheelchair": "yes",
@@ -7488,7 +8237,7 @@
         ],
         "latitude": 41.0326721,
         "longitude": 28.9778252,
-        "address": "Yeni Çarşı Caddesi, Istambul",
+        "address": "Yeni Çarşı Caddesi",
         "opening_hours": "Mo-Su 12:00-23:00",
         "phone": "0212251005",
         "website": "https://www.iranyemekleri.com/",
@@ -7596,7 +8345,7 @@
         ],
         "latitude": 41.0040319,
         "longitude": 28.9641813,
-        "address": "Ördekli Bakkal Sokağı, 12A, Istambul",
+        "address": "Ördekli Bakkal Sokağı, 12A",
         "opening_hours": "Mo-Th,Sa-Su 11:00-23:30; Fr 11:00-12:30,14:00-23:30",
         "phone": "+90 539 680 70 05",
         "website": "http://desivibesrestaurant.com/menu",
@@ -7754,7 +8503,7 @@
         ],
         "latitude": 41.0047012,
         "longitude": 28.980572,
-        "address": "Şehit Hasan Kuyu Sokak, 1, Istambul",
+        "address": "Şehit Hasan Kuyu Sokak, 1",
         "opening_hours": "Mo-Su 12:00-02:00",
         "phone": "+902124581824",
         "website": "https://www.balikcisabahattin.com/",
@@ -7780,7 +8529,7 @@
         ],
         "latitude": 41.0129631,
         "longitude": 28.977057,
-        "address": "Ibn-I-Kemal Caddesi, 13, Istambul",
+        "address": "Ibn-I-Kemal Caddesi, 13",
         "opening_hours": "Mo-Su 10:00-00:00",
         "phone": "+90 212 522 34 21",
         "website": "http://www.constantinesark.com/",
@@ -7832,7 +8581,7 @@
         ],
         "latitude": 41.008003,
         "longitude": 28.9769669,
-        "address": "Divanyolu Caddesi, 12, Istambul",
+        "address": "Divanyolu Caddesi, 12",
         "opening_hours": "Mo-Su 10:30-23:00",
         "website": "https://www.sultanahmetkoftesi.com/",
         "wheelchair": "yes",
@@ -7858,7 +8607,7 @@
         ],
         "latitude": 41.0107281,
         "longitude": 28.9754109,
-        "address": "Cagaloğlu Hamami Sokak, 17/j, Istambul",
+        "address": "Cagaloğlu Hamami Sokak, 17/j",
         "opening_hours": "Mo-Su 12:00-23:00",
         "phone": "+90 212 514 55 00",
         "cuisine": "turkish",
@@ -7985,7 +8734,7 @@
         ],
         "latitude": 41.0072732,
         "longitude": 28.9722043,
-        "address": "Peykhane Caddesi, 27, Istambul",
+        "address": "Peykhane Caddesi, 27",
         "opening_hours": "Mo-Su 10:30-01:00",
         "phone": "+90 212 517 61 98",
         "website": "https://wa.me/message/VNZ7REUFZZONL1",
@@ -8038,7 +8787,7 @@
         ],
         "latitude": 40.9894677,
         "longitude": 29.0224099,
-        "address": "Neşet Ömer Sk, 18, Istambul",
+        "address": "Neşet Ömer Sk, 18",
         "opening_hours": "Mo-Fr 09:00-00:00; Sa 09:00-04:00",
         "phone": "+90 216 338 84 18",
         "website": "http://benusenesnaflokantasi.com",
@@ -8090,7 +8839,7 @@
         ],
         "latitude": 41.0086836,
         "longitude": 28.9740801,
-        "address": "Ordu caddesi yeşil tulumba Sokak no 19 Laleli İstanbul, 15, Istambul",
+        "address": "Ordu caddesi yeşil tulumba Sokak no 19 Laleli İstanbul, 15",
         "opening_hours": "Mo-Su 11:00-00:55",
         "phone": "+905334329863",
         "website": "https://www.restaurantbeso.com/",
@@ -8142,7 +8891,7 @@
         ],
         "latitude": 41.004045,
         "longitude": 28.9640127,
-        "address": "Telli Odalari Sokak, 5, Istambul",
+        "address": "Telli Odalari Sokak, 5",
         "opening_hours": "Mo-Su 10:00-01:00",
         "phone": "+902125164002",
         "cuisine": "fish",
@@ -8245,7 +8994,7 @@
         ],
         "latitude": 41.0299944,
         "longitude": 28.9747176,
-        "address": "Asmalı Mescit Sokak, 17/C, Istambul",
+        "address": "Asmalı Mescit Sokak, 17/C",
         "opening_hours": "Mo-Su 09:00-02:00",
         "phone": "+902122921843",
         "cuisine": "turkish",
@@ -8270,7 +9019,7 @@
         ],
         "latitude": 41.0282522,
         "longitude": 28.97709,
-        "address": "Kumbaracı Yokuşu, 35-A, Istambul",
+        "address": "Kumbaracı Yokuşu, 35-A",
         "opening_hours": "Mo-Su 12:00-23:00",
         "phone": "+90 537 5737600",
         "cuisine": "georgian",
@@ -8321,7 +9070,7 @@
         ],
         "latitude": 40.9894547,
         "longitude": 29.0298701,
-        "address": "Ali Suavi Sokağı, 7, Istambul",
+        "address": "Ali Suavi Sokağı, 7",
         "opening_hours": "Mo-Su 15:00-01:00",
         "phone": "+902164585351",
         "website": "http://gunesinsofrasi.com",
@@ -8347,7 +9096,7 @@
         ],
         "latitude": 41.0101766,
         "longitude": 28.9544326,
-        "address": "Yeşiltulumba Sokak, 902125227496, Istambul",
+        "address": "Yeşiltulumba Sokak, 902125227496",
         "opening_hours": "Mo-Su 11:00-01:00",
         "phone": "+905334329863",
         "website": "http://www.byzantionbistro.com",
@@ -8399,7 +9148,7 @@
         ],
         "latitude": 41.006432,
         "longitude": 28.9808176,
-        "address": "Adliye Sokak, 11, Istambul",
+        "address": "Adliye Sokak, 11",
         "opening_hours": "Mo-Su 10:00-00:55",
         "phone": "+90 507 237 59 26",
         "cuisine": "seafood;italian_pizza;russian;beef_bowl;fish_and_chips;italian;coffee_shop;local;mediterranean;barbecue;tea;fine_dining;pizza;steak_house;turkish;fish;pasta;kebab;breakfast;grill",
@@ -8450,7 +9199,7 @@
         ],
         "latitude": 41.0062591,
         "longitude": 28.9736688,
-        "address": "Terzihane Sokağı, 15, Istambul",
+        "address": "Terzihane Sokağı, 15",
         "opening_hours": "Mo-Su 08:00-01:00",
         "phone": "+905428444473",
         "website": "https://gracerooftop.com/",
@@ -8503,7 +9252,7 @@
         ],
         "latitude": 41.0378601,
         "longitude": 28.9823687,
-        "address": "Turan Caddesi, Istambul",
+        "address": "Turan Caddesi",
         "opening_hours": "Mo-Su 12:00-23:00",
         "phone": "+905523208873",
         "cuisine": "pakistani",
@@ -8528,7 +9277,7 @@
         ],
         "latitude": 40.9889231,
         "longitude": 29.0243632,
-        "address": "Dumlupınar Sokağı, 15, Istambul",
+        "address": "Dumlupınar Sokağı, 15",
         "opening_hours": "Mo-Su 17:00-01:00",
         "phone": "+905442047254",
         "website": "https://musaademeyhane.com",
@@ -8581,7 +9330,7 @@
         ],
         "latitude": 40.9928433,
         "longitude": 29.026315,
-        "address": "Reşitefendi Sokağı, 15/A, Istambul",
+        "address": "Reşitefendi Sokağı, 15/A",
         "opening_hours": "Mo-Su 09:00-21:00",
         "phone": "+90 216 337 97 10",
         "cuisine": "asian;diner;russian;tea",
@@ -8632,7 +9381,7 @@
         ],
         "latitude": 41.0055205,
         "longitude": 28.9804384,
-        "address": "Akbıyık Caddesi, 25, Istambul",
+        "address": "Akbıyık Caddesi, 25",
         "opening_hours": "Mo-Su 09:00-03:00",
         "phone": "+905422307982;+905342106532",
         "cuisine": "american;breakfast;burger;cake;chicken;coffee_shop",
@@ -8657,7 +9406,7 @@
         ],
         "latitude": 41.035548,
         "longitude": 28.980322,
-        "address": "Atıf Yılmaz Caddesi, 8, Istambul",
+        "address": "Atıf Yılmaz Caddesi, 8",
         "opening_hours": "Mo-Su 11:20-21:20",
         "phone": "+90 212 249 97 42",
         "cuisine": "turkish;kebab",
@@ -8682,7 +9431,7 @@
         ],
         "latitude": 40.98972,
         "longitude": 29.0283219,
-        "address": "Mimar Çıkmazı Sokağı, 7, Istambul",
+        "address": "Mimar Çıkmazı Sokağı, 7",
         "opening_hours": "Su-Th 14:30-00:30; Fr-Sa 15:00-01:30",
         "phone": "+905523880300",
         "cuisine": "turkish",
@@ -8707,7 +9456,7 @@
         ],
         "latitude": 40.9893469,
         "longitude": 29.0244294,
-        "address": "Güneşlibahçe Sokağı, 43, Istambul",
+        "address": "Güneşlibahçe Sokağı, 43",
         "opening_hours": "Mo-Su 11:00-22:00",
         "phone": "+902163303190",
         "website": "http://www.ciya.com.tr/",
@@ -8759,7 +9508,7 @@
         ],
         "latitude": 41.0444726,
         "longitude": 29.0006836,
-        "address": "Şair Nedim Caddesi, 46, Istambul",
+        "address": "Şair Nedim Caddesi, 46",
         "opening_hours": "Mo-Su 12:00-22:30",
         "phone": "+90 212 236 46 31",
         "website": "http://www.tacodelreyes.com/",
@@ -8786,7 +9535,7 @@
         ],
         "latitude": 41.0158604,
         "longitude": 28.9727796,
-        "address": "Celal Bey Sokağı, 8, Istambul",
+        "address": "Celal Bey Sokağı, 8",
         "opening_hours": "Mo-Su 09:00-00:00",
         "phone": "+90 534 226 97 50",
         "cuisine": "turkish",
@@ -8837,7 +9586,7 @@
         ],
         "latitude": 41.0149875,
         "longitude": 28.9737158,
-        "address": "Hobyar, 24, Istambul",
+        "address": "Hobyar, 24",
         "opening_hours": "Mo-Su 08:00-20:30",
         "phone": "+905398970629",
         "website": "https://cabraloca.istanbul",
@@ -8863,7 +9612,7 @@
         ],
         "latitude": 41.021221,
         "longitude": 28.9742,
-        "address": "Galata Köprüsü, KB/6, Istambul",
+        "address": "Galata Köprüsü, KB/6",
         "opening_hours": "24/7",
         "phone": "+905336604352",
         "cuisine": "fish",
@@ -8888,7 +9637,7 @@
         ],
         "latitude": 41.0211214,
         "longitude": 28.9741775,
-        "address": "Galata Köprüsü, 6, Istambul",
+        "address": "Galata Köprüsü, 6",
         "opening_hours": "Mo-Su 09:00-02:00",
         "phone": "+90 212 252 85 51",
         "website": "http://www.galperaresturant.net",
@@ -8939,7 +9688,7 @@
         ],
         "latitude": 41.0241227,
         "longitude": 28.9791875,
-        "address": "Kemankeş Karamustafa Paşa, 49, Istambul",
+        "address": "Kemankeş Karamustafa Paşa, 49",
         "opening_hours": "Mo-Su 06:30-11:00, 12:00-23:00",
         "phone": "+90 212 806 40 40",
         "cuisine": "fish;mediterranean;turkish",
@@ -8965,7 +9714,7 @@
         ],
         "latitude": 41.0338423,
         "longitude": 28.979088,
-        "address": "Turnacıbaşı Sokağı, 3/A, Istambul",
+        "address": "Turnacıbaşı Sokağı, 3/A",
         "opening_hours": "Su-Sa 10:00-01:00",
         "phone": "+902122513045",
         "cuisine": "turkish",
@@ -8990,7 +9739,7 @@
         ],
         "latitude": 40.9895504,
         "longitude": 29.0244493,
-        "address": "Güneşlibahçe Sokağı, Istambul",
+        "address": "Güneşlibahçe Sokağı",
         "opening_hours": "Mo-Su 11:30-22:00",
         "phone": "+902165505656",
         "website": "http://tatarsalim.com.tr",
@@ -9017,7 +9766,7 @@
         ],
         "latitude": 41.0134446,
         "longitude": 28.978543,
-        "address": "Darüssade Sokağı, 6, Istambul",
+        "address": "Darüssade Sokağı, 6",
         "opening_hours": "Mo-Su 08:00-20:00",
         "phone": "+90 553 009 09 12",
         "website": "https://www.restohan.net/",
@@ -9095,7 +9844,7 @@
         ],
         "latitude": 41.0445975,
         "longitude": 29.0002997,
-        "address": "Şair Nedim Caddesi, 65A, Istambul",
+        "address": "Şair Nedim Caddesi, 65A",
         "opening_hours": "Mo-Su 11:30-04:00",
         "phone": "+90 212 259 38 99",
         "cuisine": "kebab;turkish",
@@ -9120,7 +9869,7 @@
         ],
         "latitude": 41.0404733,
         "longitude": 28.9844496,
-        "address": "Lamartin Caddesi, 36, Istambul",
+        "address": "Lamartin Caddesi, 36",
         "opening_hours": "Mo-Su 12:30-22:30",
         "phone": "+90 539 894 63 01",
         "cuisine": "chinese",
@@ -9196,7 +9945,7 @@
         ],
         "latitude": 40.9940057,
         "longitude": 29.0301269,
-        "address": "Karakolhane Caddesi, 20, Istambul",
+        "address": "Karakolhane Caddesi, 20",
         "opening_hours": "Mo-Sa 07:30-22:00",
         "phone": "+90 532 290 24 18",
         "cuisine": "chicken;local;turkish",
@@ -9247,7 +9996,7 @@
         ],
         "latitude": 41.0333168,
         "longitude": 28.9807299,
-        "address": "Turnacıbaşı Caddesi, 39A, Istambul",
+        "address": "Turnacıbaşı Caddesi, 39A",
         "opening_hours": "Mo-Su 12:00-00:00",
         "phone": "+902122431121",
         "website": "http://baranlahmacun.com",
@@ -9273,7 +10022,7 @@
         ],
         "latitude": 41.0138762,
         "longitude": 28.9783802,
-        "address": "Darüssade Sokağı, Istambul",
+        "address": "Darüssade Sokağı",
         "opening_hours": "Mo-Su 10:00-23:45",
         "phone": "+905312045985",
         "website": "https://lastottomancafe.com/",
@@ -9299,7 +10048,7 @@
         ],
         "latitude": 41.02247,
         "longitude": 29.0069937,
-        "address": "Üsküdar Harem Sahil Yolu, 61, Istambul",
+        "address": "Üsküdar Harem Sahil Yolu, 61",
         "opening_hours": "Mo-Su 08:00-22:30",
         "phone": "+90 216 3420000",
         "website": "https://filizler.com/uskudar",
@@ -9453,7 +10202,7 @@
         ],
         "latitude": 41.0295272,
         "longitude": 28.9754514,
-        "address": "Kumbaracı Yokuşu, 66/b, Istambul",
+        "address": "Kumbaracı Yokuşu, 66/b",
         "opening_hours": "Tu-Sa 12:00-16:00, 17:00-00:30",
         "website": "https://www.yenilokanta.com/",
         "wheelchair": "no",
@@ -9503,7 +10252,7 @@
         ],
         "latitude": 41.04323,
         "longitude": 29.0037887,
-        "address": "Sinanpaşa Köprüsü Sokağı, 02122610374, Istambul",
+        "address": "Sinanpaşa Köprüsü Sokağı, 02122610374",
         "opening_hours": "24/7",
         "website": "www.sinopmanti.com",
         "cuisine": "turkish",
@@ -9528,7 +10277,7 @@
         ],
         "latitude": 41.0289764,
         "longitude": 28.9739429,
-        "address": "General Yazgan Sokağı, 3, Istambul",
+        "address": "General Yazgan Sokağı, 3",
         "opening_hours": "Mo-Sa 12:00-00:00",
         "website": "http://www.antiochiaconcept.com/",
         "cuisine": "mediterranean;turkish",
@@ -9627,7 +10376,7 @@
         ],
         "latitude": 41.0085546,
         "longitude": 28.9761558,
-        "address": "Ticarethane Sokak, 9/B, Istambul",
+        "address": "Ticarethane Sokak, 9/B",
         "opening_hours": "Mo-Su 10:00-02:00",
         "phone": "+90 212 512 27 12",
         "website": "http://mahmiye.com",
@@ -9652,7 +10401,7 @@
         ],
         "latitude": 40.989468,
         "longitude": 29.024535,
-        "address": "Güneşli Bahçe Sokak, 37, Istambul",
+        "address": "Güneşli Bahçe Sokak, 37",
         "opening_hours": "Su-Th 11:00-00:30; Fr-Sa 09:00-01:00",
         "phone": "+90 216 450 15 64",
         "popularity": 0
@@ -9701,7 +10450,7 @@
         ],
         "latitude": 41.0064454,
         "longitude": 28.9700542,
-        "address": "Piyer Loti Caddesi, 35, Istambul",
+        "address": "Piyer Loti Caddesi, 35",
         "opening_hours": "Mo-Su 12:00-23:00",
         "phone": "+902125188081",
         "website": "https://www.hanzadeterracerestaurant.com/",
@@ -9726,7 +10475,7 @@
         ],
         "latitude": 41.0134872,
         "longitude": 28.9376529,
-        "address": "Turgut Özal Millet Caddesi, 104/B, Istambul",
+        "address": "Turgut Özal Millet Caddesi, 104/B",
         "opening_hours": "Mo-Su 10:00-00:00",
         "phone": "+90 212 631 17 68",
         "popularity": 0
@@ -9775,7 +10524,7 @@
         ],
         "latitude": 41.0429579,
         "longitude": 29.0081662,
-        "address": "Cihannuma Man. Serencebey Yokuşu, 1B, Istambul",
+        "address": "Cihannuma Man. Serencebey Yokuşu, 1B",
         "opening_hours": "Mo-Su,PH 10:15-23:00",
         "phone": "+90 531 912 08 28",
         "popularity": 0
@@ -9799,7 +10548,7 @@
         ],
         "latitude": 40.9898566,
         "longitude": 29.027761,
-        "address": "Osmancık Sokağı, 7, Istambul",
+        "address": "Osmancık Sokağı, 7",
         "opening_hours": "Mo-Su 15:00-01:00",
         "phone": "+90 216 345 79 38",
         "website": "https://yenimeyhane.com.tr/",
@@ -9947,7 +10696,7 @@
         ],
         "latitude": 41.0492025,
         "longitude": 28.9961231,
-        "address": "Şakayık Sokağı, 2A, Istambul",
+        "address": "Şakayık Sokağı, 2A",
         "opening_hours": "Tu-Su 11:00-22:00",
         "phone": "+90 212 234 05 71",
         "website": "http://www.gasto.com.tr",
@@ -10022,7 +10771,7 @@
         ],
         "latitude": 41.0236673,
         "longitude": 29.0148857,
-        "address": "Gülfem Sokağı, 14, Istambul",
+        "address": "Gülfem Sokağı, 14",
         "opening_hours": "Mo-Su 11:00-00:00",
         "phone": "+90 542 289 29 25",
         "popularity": 0
@@ -10046,7 +10795,7 @@
         ],
         "latitude": 41.0420553,
         "longitude": 28.9859996,
-        "address": "Elmadağ Caddesi, 6, Istambul",
+        "address": "Elmadağ Caddesi, 6",
         "opening_hours": "Mo-Sa 16:00-01:00",
         "website": "https://www.tarsusocakbasi.com/",
         "cuisine": "turkish",
@@ -10261,7 +11010,7 @@
         ],
         "latitude": 40.9905422,
         "longitude": 29.0234634,
-        "address": "Muvakkıthane Caddesi, 1, Istambul",
+        "address": "Muvakkıthane Caddesi, 1",
         "opening_hours": "Mo-Su 06:00-24:00",
         "phone": "+90 850 9697717",
         "website": "https://www.starbucks.com.tr/",
@@ -10288,7 +11037,7 @@
         ],
         "latitude": 41.0299165,
         "longitude": 28.9753553,
-        "address": "İstiklal Caddesi, 170A, Istambul",
+        "address": "İstiklal Caddesi, 170A",
         "opening_hours": "Mo-Su 07:30-01:00",
         "phone": "+90 212 292 99 99",
         "website": "https://mado.com.tr/",
@@ -10368,7 +11117,7 @@
         ],
         "latitude": 41.0304882,
         "longitude": 28.9498066,
-        "address": "Vodina Caddesi, 39A, Istambul",
+        "address": "Vodina Caddesi, 39A",
         "opening_hours": "Tu-Su 09:00-20:00",
         "phone": "+90 535 248 59 00",
         "website": "https://kaffamiro.com/",
@@ -10422,7 +11171,7 @@
         ],
         "latitude": 41.0291146,
         "longitude": 28.9753326,
-        "address": "İstiklal Caddesi, 187, Istambul",
+        "address": "İstiklal Caddesi, 187",
         "opening_hours": "Mo-Su 09:00-22:00",
         "phone": "+902122493596",
         "website": "https://www.tak.com.tr/",
@@ -10473,7 +11222,7 @@
         ],
         "latitude": 41.031516,
         "longitude": 28.982262,
-        "address": "Firuzaga Cami Sk., 2/e, Istambul",
+        "address": "Firuzaga Cami Sk., 2/e",
         "opening_hours": "Su-Th 08:30-22:30; Fr-Sa 08:30-23:00",
         "phone": "+90 212 243 94 53",
         "website": "http://www.SwedishCoffeePoint.com",
@@ -10499,7 +11248,7 @@
         ],
         "latitude": 41.0259603,
         "longitude": 28.9812597,
-        "address": "Kılıç Ali Pasa Mescidi Sokağı, 8, Istambul",
+        "address": "Kılıç Ali Pasa Mescidi Sokağı, 8",
         "opening_hours": "Mo-Su 08:00-02:00",
         "phone": "+902122936989",
         "wheelchair": "no",
@@ -10550,7 +11299,7 @@
         ],
         "latitude": 41.0361824,
         "longitude": 28.9875104,
-        "address": "Inonü Caddesi, Ulusal apt.no:5, Istambul",
+        "address": "Inonü Caddesi, Ulusal apt.no:5",
         "opening_hours": "Mo-Su 07:30-23:00",
         "phone": "+902122925358",
         "website": "http://www.geziistanbul.com",
@@ -10577,7 +11326,7 @@
         ],
         "latitude": 41.0081261,
         "longitude": 28.9738254,
-        "address": "Divanyolu Caddesi, 21, Istambul",
+        "address": "Divanyolu Caddesi, 21",
         "opening_hours": "Mo-Sa 08:00-20:30",
         "phone": "5162420",
         "cuisine": "turkish",
@@ -10602,7 +11351,7 @@
         ],
         "latitude": 41.0486445,
         "longitude": 28.9958967,
-        "address": "Ahmet Fetgari Sokağı, 18B, Istambul",
+        "address": "Ahmet Fetgari Sokağı, 18B",
         "opening_hours": "Mo-Sa 07:30-23:00; Su 08:30-20:30",
         "phone": "+90 212 247 18 31",
         "cuisine": "coffee_shop;breakfast",
@@ -10627,7 +11376,7 @@
         ],
         "latitude": 41.0259402,
         "longitude": 28.9812438,
-        "address": "Kılıç Ali Pasa Mescidi Sokağı, 10/C, Istambul",
+        "address": "Kılıç Ali Pasa Mescidi Sokağı, 10/C",
         "opening_hours": "Mo-Su 08:00-23:00",
         "phone": "+905417214008",
         "website": "https://www.coffeesapiens.com/",
@@ -10653,7 +11402,7 @@
         ],
         "latitude": 41.0287473,
         "longitude": 28.9739118,
-        "address": "General Yazgan Sokağı, 9/A, Istambul",
+        "address": "General Yazgan Sokağı, 9/A",
         "opening_hours": "Mo-Sa 08:30-22:00; Su 09:30-22:00",
         "phone": "+902122437552",
         "cuisine": "coffee_shop",
@@ -10678,7 +11427,7 @@
         ],
         "latitude": 40.9892006,
         "longitude": 29.0241696,
-        "address": "Güneşli Bahçe Sokak, 40, Istambul",
+        "address": "Güneşli Bahçe Sokak, 40",
         "opening_hours": "Su-Th 08:00-21:00; Fr-Sa 08:00-22:00",
         "phone": "+902165500036",
         "website": "https://coffeemanifesto.com/",
@@ -10704,7 +11453,7 @@
         ],
         "latitude": 40.9864565,
         "longitude": 29.0257598,
-        "address": "Moda Caddesi, Istambul",
+        "address": "Moda Caddesi",
         "opening_hours": "Mo-Su 09:00-21:00",
         "phone": "+905350354635",
         "website": "https://www.rafineespressobar.com/",
@@ -10730,7 +11479,7 @@
         ],
         "latitude": 41.0062707,
         "longitude": 28.9694298,
-        "address": "Piyer Loti Caddesi, 34, Istambul",
+        "address": "Piyer Loti Caddesi, 34",
         "opening_hours": "Mo-Su 08:00-23:00",
         "phone": "+902125179929",
         "website": "http://mivan-restaurant-cafe.bisiness.site",
@@ -10756,7 +11505,7 @@
         ],
         "latitude": 41.0247717,
         "longitude": 28.9778887,
-        "address": "Necatibey Caddesi, 36/A, Istambul",
+        "address": "Necatibey Caddesi, 36/A",
         "opening_hours": "Mo-Fr 08:00-22:00; Sa-Su 10:00-22:00",
         "phone": "+90 535 733 15 72",
         "website": "https://kavacoffeeroasting.com/",
@@ -10782,7 +11531,7 @@
         ],
         "latitude": 40.9944103,
         "longitude": 28.9273671,
-        "address": "Hıdırellez Sokak No:9/0 Yedikule Fatih (İstasyon Caddesi), Istanbul, Turkey, no:9, Istambul",
+        "address": "Hıdırellez Sokak No:9/0 Yedikule Fatih (İstasyon Caddesi), Istanbul, Turkey, no:9",
         "opening_hours": "Mo-Sa 09:30-18:00",
         "phone": "+90 212 589 80 90",
         "cuisine": "coffee_shop;tea",
@@ -10833,7 +11582,7 @@
         ],
         "latitude": 41.0253237,
         "longitude": 29.0109187,
-        "address": "Mimar Sinan Mahallesi Şemsi Paşa, Üsküdar Harem Sahil Yolu No:53, 34672 Üsküdar, 53, Istambul",
+        "address": "Mimar Sinan Mahallesi Şemsi Paşa, Üsküdar Harem Sahil Yolu No:53, 34672 Üsküdar, 53",
         "opening_hours": "Su-Th 08:00-02:00; Fr-Sa 08:00-03:00",
         "phone": "+90 216 310 90 80",
         "website": "https://www.katibim.com.tr/tr/katibim-menu",
@@ -10910,7 +11659,7 @@
         ],
         "latitude": 41.0336984,
         "longitude": 28.9784705,
-        "address": "Kartal Sokağı, 10/4, Istambul",
+        "address": "Kartal Sokağı, 10/4",
         "opening_hours": "Mo-Su 09:00-01:00",
         "phone": "+90 506 146 61 46",
         "website": "https://instagram.com/kusyuvasipera",
@@ -10936,7 +11685,7 @@
         ],
         "latitude": 41.0336856,
         "longitude": 28.9792287,
-        "address": "Turnacıbaşı Sokağı, 3/B, Istambul",
+        "address": "Turnacıbaşı Sokağı, 3/B",
         "opening_hours": "Mo-Su 07:00-00:00",
         "phone": "+902122522044",
         "cuisine": "turkish",
@@ -10961,7 +11710,7 @@
         ],
         "latitude": 41.0315439,
         "longitude": 28.9486596,
-        "address": "Vodina Caddesi, 55/A, Istambul",
+        "address": "Vodina Caddesi, 55/A",
         "opening_hours": "Mo-Su 08:00-02:00",
         "phone": "+90 505 059 16 14",
         "website": "https://instagram.com/cafedoraa",
@@ -10988,7 +11737,7 @@
         ],
         "latitude": 41.0158879,
         "longitude": 28.9727102,
-        "address": "Rahvancı Sokağı, 1, Istambul",
+        "address": "Rahvancı Sokağı, 1",
         "opening_hours": "Mo-Su 07:00-00:00",
         "phone": "+90 534 226 97 50",
         "cuisine": "turkish",
@@ -11013,7 +11762,7 @@
         ],
         "latitude": 41.0314076,
         "longitude": 28.9832923,
-        "address": "Yeni Yuva Sokağı, 31/A, Istambul",
+        "address": "Yeni Yuva Sokağı, 31/A",
         "opening_hours": "Tu-Fr 07:00-17:00; Sa-Su 07:00-18:00; Mo,PH off",
         "phone": "+90 212 243 04 33",
         "website": "https://yigitsoframkahvalti.com",
@@ -11040,7 +11789,7 @@
         ],
         "latitude": 41.0048786,
         "longitude": 28.9696339,
-        "address": "Kadırga Meydanı Sokağı, Istambul",
+        "address": "Kadırga Meydanı Sokağı",
         "opening_hours": "Mo-Su 12:00-24:00",
         "phone": "+90 539 890 75 08",
         "website": "https://balikcimurat.com/",
@@ -11116,7 +11865,7 @@
         ],
         "latitude": 41.0266162,
         "longitude": 29.0163334,
-        "address": "Selman Ağa Çeşme Sokağı, 1, Istambul",
+        "address": "Selman Ağa Çeşme Sokağı, 1",
         "opening_hours": "Mo-Su 10:00-01:00",
         "phone": "+90 552 318 80 00",
         "cuisine": "breakfast;coffee_shop;pancake;turkish",
@@ -11141,7 +11890,7 @@
         ],
         "latitude": 41.0102565,
         "longitude": 29.016685,
-        "address": "Şerif Kuyusu Sokağı, 57, Istambul",
+        "address": "Şerif Kuyusu Sokağı, 57",
         "opening_hours": "Mo-Su 09:30-23:00",
         "phone": "+90 216 531 30 00",
         "website": "https://tesislerimiz.uskudar.bel.tr/tr/main/pages/nevmekan-selimiye/156",
@@ -11167,7 +11916,7 @@
         ],
         "latitude": 40.9848283,
         "longitude": 29.0264946,
-        "address": "Ruşen Ağa Sokağı, 3/C, Istambul",
+        "address": "Ruşen Ağa Sokağı, 3/C",
         "opening_hours": "Mo-Su 09:00-22:00",
         "phone": "+90 216 336 2366",
         "cuisine": "breakfast",
@@ -11218,7 +11967,7 @@
         ],
         "latitude": 41.0324819,
         "longitude": 28.9842411,
-        "address": "Sıraselviler Caddesi, 7B, Istambul",
+        "address": "Sıraselviler Caddesi, 7B",
         "opening_hours": "Mo-Sa 09:30-19:00",
         "phone": "+90 530 096 38 11",
         "website": "https://juicery.bademsoft.com/en/menu-tr-english-2/",
@@ -11244,7 +11993,7 @@
         ],
         "latitude": 41.0377323,
         "longitude": 28.9412814,
-        "address": "Dervişzade Sokağı, 25, Istambul",
+        "address": "Dervişzade Sokağı, 25",
         "opening_hours": "Tu-Su 10:30-22:30",
         "phone": "+90 531 647 93 93",
         "cuisine": "breakfast;coffee_shop",
@@ -11294,7 +12043,7 @@
         ],
         "latitude": 41.0350128,
         "longitude": 28.9769266,
-        "address": "Kamer Hatun Caddesi, 13, Istambul",
+        "address": "Kamer Hatun Caddesi, 13",
         "opening_hours": "Mo-Su 12:00-02:00",
         "phone": "+90 212 252 59 56",
         "cuisine": "turkish",
@@ -11319,7 +12068,7 @@
         ],
         "latitude": 40.9892155,
         "longitude": 29.0239696,
-        "address": "Dumlupınar Sokağı, 23/a, Istambul",
+        "address": "Dumlupınar Sokağı, 23/a",
         "opening_hours": "Sa-Su 11:00-03:00; Mo-Fr 11:00-02:00",
         "phone": "+90 532 287 7179",
         "cuisine": "turkish",
@@ -11443,7 +12192,7 @@
         ],
         "latitude": 41.0404467,
         "longitude": 29.0015656,
-        "address": "Vişnezade, Dolmabahçe Cd., 34357 Beşiktaş/İstanbul, Turchia, Istambul",
+        "address": "Vişnezade, Dolmabahçe Cd., 34357 Beşiktaş/İstanbul, Turchia",
         "opening_hours": "Tu-Su 09:00-17:30",
         "phone": "+90 212 236 90 00",
         "website": "https://msi.projects-tr.com/",
@@ -11468,7 +12217,7 @@
         ],
         "latitude": 40.9882025,
         "longitude": 29.0239109,
-        "address": "Sarraf Ali Sokağı, 30/A, Istambul",
+        "address": "Sarraf Ali Sokağı, 30/A",
         "opening_hours": "Mo-Su 12:00-01:00",
         "phone": "+902163375278",
         "popularity": 0
@@ -11586,7 +12335,7 @@
         ],
         "latitude": 41.0308433,
         "longitude": 28.9829422,
-        "address": "Akarsu Yokuşu Sokağı, 43, Istambul",
+        "address": "Akarsu Yokuşu Sokağı, 43",
         "opening_hours": "Mo-Su 14:00-00:00",
         "phone": "+90 545 139 60 60",
         "popularity": 0
@@ -11610,7 +12359,7 @@
         ],
         "latitude": 41.0264122,
         "longitude": 28.9735203,
-        "address": "Küçük Hendek Caddesi, 15/A, Istambul",
+        "address": "Küçük Hendek Caddesi, 15/A",
         "opening_hours": "Mo-Sa 11:00-23:00",
         "phone": "+905354174461",
         "website": "https://www.peyragalata.com",

@@ -23,7 +23,9 @@ Como fica a selecao:
     pontos que nao sao comida ficam limitados aos mais populares;
   * ponto dentro do contorno de um recinto conhecido (sitio arqueologico, castelo,
     palacio, atracao, museu ou zoo do OSM, com Wikidata) recebe "site" com o codigo
-    do recinto: a Grande Piramide, a Esfinge e o "Giza Pyramids" sao uma visita so.
+    do recinto: a Grande Piramide, a Esfinge e o "Giza Pyramids" sao uma visita so;
+  * ponto com Wikidata recebe "names", o nome em portugues, ingles e espanhol (os
+    rotulos do Wikidata), para o app mostrar o lugar no idioma do usuario.
 
 O resultado e um ponto de partida: vale abrir o arquivo e revisar a lista antes
 de subir -- foi assim que o catalogo de Roma foi curado.
@@ -33,12 +35,15 @@ Uso, a partir de Repo-Back/backend:
     python scripts/gera_catalogo_cidade.py --revisar curitiba   # so refaz Wikidata, popularidade e perfis
     python scripts/gera_catalogo_cidade.py --perfis curitiba    # so refaz os perfis de viajante
     python scripts/gera_catalogo_cidade.py --recintos curitiba  # so refaz os recintos ("site")
+    python scripts/gera_catalogo_cidade.py --nomes curitiba     # so refaz os nomes traduzidos ("names")
 """
 import http.client
 import json
 import math
+import re
 import sys
 import time
+import unicodedata
 import urllib.parse
 import urllib.request
 from collections import Counter
@@ -190,7 +195,8 @@ def endereco(tags, nome_cidade):
     partes = [rua]
     if tags.get('addr:housenumber'):
         partes.append(tags['addr:housenumber'])
-    partes.append(tags.get('addr:city', nome_cidade))
+    if tags.get('addr:city'):
+        partes.append(tags['addr:city'])
     return ', '.join(partes)
 
 
@@ -446,6 +452,63 @@ def aplica_recintos(cidade, features):
           f'{sum(n for n in membros.values() if n > 1)} pontos.')
 
 
+# Idiomas do app e os codigos de rotulo do Wikidata de cada um, na ordem de preferencia.
+IDIOMAS = {'pt': ['pt-br', 'pt'], 'en': ['en'], 'es': ['es']}
+
+
+def rotulos(qids):
+    """Rotulo de cada item do Wikidata em cada idioma do app."""
+    codigos = sorted({c for cs in IDIOMAS.values() for c in cs})
+    filtro = ', '.join(f'"{c}"' for c in codigos)
+    achados = {}
+    for i in range(0, len(qids), 150):
+        valores = ' '.join(f'wd:{q}' for q in qids[i:i + 150])
+        query = (f'SELECT ?item ?rotulo WHERE {{ VALUES ?item {{ {valores} }} '
+                 f'?item rdfs:label ?rotulo . FILTER(LANG(?rotulo) IN ({filtro})) }}')
+        url = SPARQL + '?' + urllib.parse.urlencode({'query': query})
+        req = urllib.request.Request(url, headers={
+            'Accept': 'application/sparql-results+json', 'User-Agent': USER_AGENT})
+        for tentativa in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    dados = json.load(resp)
+                break
+            except (OSError, http.client.HTTPException) as erro:
+                print(f'  Wikidata falhou ({erro}); tentando de novo...')
+                time.sleep(10 * (tentativa + 1))
+        else:
+            sys.exit('Wikidata indisponivel. Tente mais tarde.')
+        for b in dados['results']['bindings']:
+            qid = b['item']['value'].rsplit('/', 1)[-1]
+            achados.setdefault(qid, {})[b['rotulo']['xml:lang']] = b['rotulo']['value']
+        time.sleep(1)
+    return achados
+
+
+def latino(texto):
+    """So letras do alfabeto latino: rotulo "em portugues" escrito em grego ou arabe nao serve."""
+    return all(ord(ch) < 0x0250 or not unicodedata.category(ch).startswith('L') for ch in texto)
+
+
+def aplica_nomes(features):
+    """Grava em "names" o nome do ponto em cada idioma do app, quando o Wikidata tem."""
+    ps = [f['properties'] for f in features]
+    achados = rotulos(sorted({p['wikidata'] for p in ps if (p.get('wikidata') or '').startswith('Q')}))
+    com_nome = 0
+    for p in ps:
+        p.pop('names', None)
+        por_codigo = achados.get(p.get('wikidata'), {})
+        nomes = {}
+        for idioma, codigos in IDIOMAS.items():
+            nome = next((por_codigo[c] for c in codigos if c in por_codigo), None)
+            if nome and latino(nome) and not re.fullmatch(r'Q\d+', nome):
+                nomes[idioma] = nome
+        if nomes:
+            p['names'] = nomes
+            com_nome += 1
+    print(f'{com_nome} pontos com nome traduzido.')
+
+
 def regrava(cidade, alteracao):
     arquivo = DADOS / 'cities' / f'{cidade["slug"]}.geojson'
     texto = arquivo.read_text(encoding='utf-8')
@@ -483,13 +546,17 @@ def main():
     revisar = '--revisar' in args
     so_perfis = '--perfis' in args
     so_recintos = '--recintos' in args
-    args = [a for a in args if a not in ('--revisar', '--perfis', '--recintos')]
+    so_nomes = '--nomes' in args
+    args = [a for a in args if a not in ('--revisar', '--perfis', '--recintos', '--nomes')]
     if len(args) != 1:
         sys.exit(__doc__)
     sys.stdout.reconfigure(encoding='utf-8')
     cidade = carrega_cidade(args[0])
     if so_perfis:
         reaplica_perfis(cidade)
+        return
+    if so_nomes:
+        regrava(cidade, aplica_nomes)
         return
     if so_recintos:
         regrava(cidade, lambda features: aplica_recintos(cidade, features))
@@ -509,6 +576,7 @@ def main():
     aplica_popularidade([f['properties'] for f in features])
     features = seleciona(features)
     aplica_recintos(cidade, features)
+    aplica_nomes(features)
 
     destino = DADOS / 'cities' / f'{cidade["slug"]}.geojson'
     destino.write_text(json.dumps({'type': 'FeatureCollection', 'features': features},

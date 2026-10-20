@@ -25,7 +25,12 @@
         "website": "https://www.teatrocolon.org.ar/",
         "wikidata": "Q827401",
         "wikipedia": "es:Teatro Colón",
-        "popularity": 37
+        "popularity": 37,
+        "names": {
+          "pt": "Teatro Colón",
+          "en": "Colón Theater",
+          "es": "Teatro Colón"
+        }
       }
     },
     {
@@ -51,7 +56,12 @@
         "wikidata": "Q646190",
         "wikipedia": "es:Congreso de la Nación Argentina",
         "popularity": 31,
-        "site": "Q646190"
+        "site": "Q646190",
+        "names": {
+          "pt": "Congresso da Nação Argentina",
+          "en": "Argentine National Congress",
+          "es": "Congreso de la Nación Argentina"
+        }
       }
     },
     {
@@ -75,7 +85,12 @@
         "address": "Avenida de Mayo, 1370, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q571763",
         "wikipedia": "es:Palacio Barolo",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Palacio Barolo",
+          "en": "Barolo Palace",
+          "es": "Palacio Barolo"
+        }
       }
     },
     {
@@ -98,7 +113,12 @@
         "longitude": -58.3721783,
         "wikidata": "Q1126357",
         "wikipedia": "es:Plaza de Mayo",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Plaza de Mayo",
+          "en": "Plaza de Mayo",
+          "es": "Plaza de Mayo"
+        }
       }
     },
     {
@@ -122,7 +142,12 @@
         "wikidata": "Q831389",
         "wikipedia": "es:Obelisco de Buenos Aires",
         "popularity": 25,
-        "site": "Q831389"
+        "site": "Q831389",
+        "names": {
+          "pt": "Obelisco de Buenos Aires",
+          "en": "Obelisco de Buenos Aires",
+          "es": "Obelisco de Buenos Aires"
+        }
       }
     },
     {
@@ -148,7 +173,12 @@
         "wikidata": "Q831322",
         "wikipedia": "es:Cementerio de la Recoleta",
         "wheelchair": "yes",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "pt": "Cemitério da Recoleta",
+          "en": "Recoleta Cemetery",
+          "es": "Cementerio de la Recoleta"
+        }
       }
     },
     {
@@ -177,7 +207,12 @@
         "wikidata": "Q967929",
         "wikipedia": "es:Catedral metropolitana de Buenos Aires",
         "wheelchair": "limited",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "pt": "Catedral Metropolitana de Buenos Aires",
+          "en": "Buenos Aires Cathedral",
+          "es": "Catedral de Buenos Aires"
+        }
       }
     },
     {
@@ -206,7 +241,12 @@
         "wikipedia": "es:Museo Nacional de Bellas Artes (Argentina)",
         "wheelchair": "yes",
         "popularity": 23,
-        "site": "Q1848918"
+        "site": "Q1848918",
+        "names": {
+          "pt": "Museu Nacional de Belas Artes",
+          "en": "National Museum of Fine Arts, Argentina",
+          "es": "Museo Nacional de Bellas Artes"
+        }
       }
     },
     {
@@ -230,7 +270,12 @@
         "longitude": -58.3651291,
         "wikidata": "Q2336867",
         "wikipedia": "es:Puente de la Mujer",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Puente de la Mujer",
+          "en": "Puente de la Mujer",
+          "es": "Puente de la Mujer"
+        }
       }
     },
     {
@@ -256,7 +301,12 @@
         "wikidata": "Q831148",
         "wikipedia": "es:Jardín botánico de Buenos Aires",
         "fee": "no",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Jardim Botânico de Buenos Aires",
+          "en": "Buenos Aires Botanical Garden",
+          "es": "Jardín botánico de Buenos Aires"
+        }
       }
     },
     {
@@ -279,7 +329,12 @@
         "longitude": -58.3855718,
         "wikidata": "Q1027282",
         "wikipedia": "es:Monserrat (Buenos Aires)",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Monserrat",
+          "en": "Monserrat",
+          "es": "Monserrat"
+        }
       }
     },
     {
@@ -305,7 +360,11 @@
         "website": "http://www.templolibertad.org.ar/",
         "wikidata": "Q1268260",
         "wikipedia": "es:Sinagoga de la Congregación Israelita Argentina",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "en": "Templo Libertad",
+          "es": "Templo Libertad"
+        }
       }
     },
     {
@@ -331,7 +390,11 @@
         "website": "http://www.ccislamicoreyfahd.org.ar/",
         "wikidata": "Q1674179",
         "wikipedia": "es:Centro Cultural Islámico Rey Fahd",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "en": "King Fahd Islamic Cultural Center",
+          "es": "Centro Cultural Islámico Rey Fahd"
+        }
       }
     },
     {
@@ -358,7 +421,12 @@
         "website": "https://www.yenny-elateneo.com/grand-splendid",
         "wikidata": "Q1323870",
         "wikipedia": "es:El Ateneo Grand Splendid",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "El Ateneo Grand Splendid",
+          "en": "El Ateneo Grand Splendid",
+          "es": "El Ateneo Grand Splendid"
+        }
       }
     },
     {
@@ -385,7 +453,12 @@
         "wikidata": "Q1024829",
         "wikipedia": "es:Cabildo de Buenos Aires",
         "wheelchair": "yes",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Cabildo de Buenos Aires",
+          "en": "Cabildo of Buenos Aires",
+          "es": "Cabildo de Buenos Aires"
+        }
       }
     },
     {
@@ -408,7 +481,12 @@
         "longitude": -58.3737396,
         "wikidata": "Q570385",
         "wikipedia": "es:Torre Monumental",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Torre Monumental",
+          "en": "Torre Monumental",
+          "es": "Torre Monumental"
+        }
       }
     },
     {
@@ -432,7 +510,12 @@
         "longitude": -58.3746831,
         "wikidata": "Q375910",
         "wikipedia": "es:Edificio Kavanagh",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Edifício Kavanagh",
+          "en": "Kavanagh building",
+          "es": "Edificio Kavanagh"
+        }
       }
     },
     {
@@ -462,7 +545,12 @@
         "wikidata": "Q57785",
         "wikipedia": "es:Museo Histórico Nacional (Argentina)",
         "fee": "no",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Museu Histórico Nacional da Argentina",
+          "en": "National Historical Museum",
+          "es": "Museo Histórico Nacional"
+        }
       }
     },
     {
@@ -492,7 +580,12 @@
         "wikipedia": "es:Museo Nacional de Arte Decorativo",
         "fee": "no",
         "wheelchair": "no",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Museu Nacional de Artes Decorativas",
+          "en": "National Museum of Decorative Arts",
+          "es": "Museo Nacional de Arte Decorativo"
+        }
       }
     },
     {
@@ -521,7 +614,12 @@
         "wikipedia": "es:Museo de Arte Latinoamericano de Buenos Aires",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Museu de Arte Latino-Americana de Buenos Aires",
+          "en": "Museum of Latin American Art of Buenos Aires",
+          "es": "Museo de Arte Latinoamericano de Buenos Aires"
+        }
       }
     },
     {
@@ -547,7 +645,11 @@
         "wikipedia": "es:Pirámide de Mayo",
         "wheelchair": "yes",
         "popularity": 15,
-        "site": "Q831484"
+        "site": "Q831484",
+        "names": {
+          "en": "Pirámide de Mayo",
+          "es": "Pirámide de Mayo"
+        }
       }
     },
     {
@@ -575,7 +677,11 @@
         "wikidata": "Q1633517",
         "wikipedia": "es:Museo Argentino de Ciencias Naturales",
         "fee": "yes",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "Bernardino Rivadavia Natural Sciences Museum",
+          "es": "Museo Argentino de Ciencias Naturales Bernardino Rivadavia"
+        }
       }
     },
     {
@@ -599,7 +705,12 @@
         "website": "https://planetario.buenosaires.gob.ar/",
         "wikidata": "Q606675",
         "wikipedia": "es:Planetario Galileo Galilei",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Planetário Galileo Galilei",
+          "en": "Planetario Galileo Galilei",
+          "es": "Planetario Galileo Galilei"
+        }
       }
     },
     {
@@ -621,7 +732,12 @@
         "latitude": -34.5946413,
         "longitude": -58.3762795,
         "wikidata": "Q2099124",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Plaza San Martín",
+          "en": "Plaza San Martín",
+          "es": "Plaza General San Martín"
+        }
       }
     },
     {
@@ -647,7 +763,11 @@
         "website": "http://www.teatrocervantes.gov.ar/",
         "wikidata": "Q367615",
         "wikipedia": "es:Teatro Nacional Cervantes",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Cervantes National Theatre",
+          "es": "Teatro Nacional Cervantes"
+        }
       }
     },
     {
@@ -676,7 +796,11 @@
         "wikipedia": "es:Museo de Arte Moderno de Buenos Aires",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Buenos Aires Museum of Modern Art",
+          "es": "Museo de Arte Moderno de Buenos Aires"
+        }
       }
     },
     {
@@ -700,7 +824,11 @@
         "longitude": -58.390274,
         "wikidata": "Q2093879",
         "wikipedia": "es:Plaza del Congreso",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Congressional Plaza",
+          "es": "Plaza del Congreso"
+        }
       }
     },
     {
@@ -730,7 +858,12 @@
         "wikipedia": "es:Jardín japonés de Buenos Aires",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Jardim Japonês de Buenos Aires",
+          "en": "Japanese Gardens",
+          "es": "Jardín japonés de Buenos Aires"
+        }
       }
     },
     {
@@ -753,7 +886,12 @@
         "longitude": -58.3625488,
         "wikidata": "Q1029566",
         "wikipedia": "es:Caminito",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Caminito",
+          "en": "Caminito",
+          "es": "Caminito"
+        }
       }
     },
     {
@@ -780,7 +918,12 @@
         "website": "https://www.ara.mil.ar/pag.asp?idItem=113",
         "wikidata": "Q143615",
         "wikipedia": "es:ARA Uruguay",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "ARA Uruguay",
+          "en": "ARA Uruguay",
+          "es": "Buque Museo Corbeta ARA Uruguay"
+        }
       }
     },
     {
@@ -803,7 +946,12 @@
         "longitude": -58.4151873,
         "wikidata": "Q2004385",
         "wikipedia": "es:Nueva Pompeya (Buenos Aires)",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Nueva Pompeya",
+          "en": "Nueva Pompeya",
+          "es": "Nueva Pompeya"
+        }
       }
     },
     {
@@ -828,7 +976,11 @@
         "address": "Alberti, 1541, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q17622351",
         "wikipedia": "es:Mezquita Al Ahmad",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Al Ahmad Mosque",
+          "es": "Mezquita Al Ahmad"
+        }
       }
     },
     {
@@ -851,7 +1003,11 @@
         "longitude": -58.4209528,
         "wikidata": "Q2532668",
         "wikipedia": "es:Plaza Italia (Buenos Aires)",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Plaza Italia, Buenos Aires",
+          "es": "Plaza Italia"
+        }
       }
     },
     {
@@ -874,7 +1030,11 @@
         "longitude": -58.4073819,
         "wikidata": "Q1064141",
         "wikipedia": "es:Plaza Miserere",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "plaza Miserere",
+          "es": "Plaza Miserere"
+        }
       }
     },
     {
@@ -897,7 +1057,12 @@
         "longitude": -58.3738057,
         "wikidata": "Q6079544",
         "wikipedia": "es:Plaza Fuerza Aérea Argentina",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Praça da Força Aérea Argentina",
+          "en": "Argentine Air Force Square",
+          "es": "Plaza Fuerza Aérea Argentina"
+        }
       }
     },
     {
@@ -920,7 +1085,11 @@
         "longitude": -58.3922626,
         "wikidata": "Q2886930",
         "wikipedia": "es:Basílica de Nuestra Señora del Pilar (Buenos Aires)",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Basilica of Our Lady of the Pillar, Buenos Aires",
+          "es": "basílica Nuestra Señora del Pilar (Buenos Aires)"
+        }
       }
     },
     {
@@ -944,7 +1113,11 @@
         "opening_hours": "Fr-Sa 10:00-16:00",
         "wikidata": "Q1138028",
         "wikipedia": "es:Puente Transbordador Nicolás Avellaneda",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Nicolás Avellaneda Transporter Bridge",
+          "es": "Puente Transbordador Nicolás Avellaneda"
+        }
       }
     },
     {
@@ -967,7 +1140,11 @@
         "longitude": -58.369574,
         "wikidata": "Q1133613",
         "wikipedia": "es:Parque Lezama",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Lezama Park",
+          "es": "Parque Lezama"
+        }
       }
     },
     {
@@ -993,7 +1170,12 @@
         "wikidata": "Q1462481",
         "wikipedia": "es:Luna Park (Buenos Aires)",
         "wheelchair": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Luna Park",
+          "en": "Luna Park Stadium",
+          "es": "Estadio Luna Park"
+        }
       }
     },
     {
@@ -1020,7 +1202,11 @@
         "website": "https://www.coleccionfortabat.org.ar/",
         "wikidata": "Q1108956",
         "wikipedia": "es:Colección de Arte Amalia Lacroze de Fortabat",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "AMALITA Collection",
+          "es": "Colección de Arte Amalia Lacroze de Fortabat"
+        }
       }
     },
     {
@@ -1046,7 +1232,11 @@
         "phone": "+54 11 4334-9386",
         "wikidata": "Q296436",
         "wikipedia": "es:ARA Presidente Sarmiento",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "ARA Presidente Sarmiento",
+          "es": "ARA Presidente Sarmiento"
+        }
       }
     },
     {
@@ -1068,7 +1258,12 @@
         "longitude": -58.3940015,
         "wikidata": "Q5240318",
         "wikipedia": "es:Floralis Genérica",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Floralis Generica",
+          "en": "Floralis Genérica",
+          "es": "Floralis Genérica"
+        }
       }
     },
     {
@@ -1095,7 +1290,11 @@
         "website": "https://museosarmiento.cultura.gob.ar/",
         "wikidata": "Q576857",
         "wikipedia": "es:Museo Histórico Sarmiento",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Sarmiento Historic Museum",
+          "es": "Museo Histórico Sarmiento"
+        }
       }
     },
     {
@@ -1119,7 +1318,11 @@
         "address": "Avenida Brasil, 315, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q4411449",
         "wikipedia": "es:Catedral ortodoxa rusa de la Santísima Trinidad (Buenos Aires)",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Cathedral of the Most Holy Trinity, Buenos Aires",
+          "es": "Catedral ortodoxa rusa de la Santísima Trinidad"
+        }
       }
     },
     {
@@ -1144,7 +1347,12 @@
         "address": "Avenida Corrientes, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q937079",
         "wikipedia": "es:Teatro Opera",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Teatro Opera",
+          "en": "Teatro Opera",
+          "es": "Teatro Ópera"
+        }
       }
     },
     {
@@ -1169,7 +1377,12 @@
         "opening_hours": "Mo-Su 08:00-20:00",
         "wikidata": "Q1134587",
         "wikipedia": "es:Parque Centenario (Buenos Aires)",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Parque Centenario",
+          "en": "Parque Centenario",
+          "es": "Parque Centenario"
+        }
       }
     },
     {
@@ -1193,7 +1406,11 @@
         "address": "Teniente General Juan Domingo Perón, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q5722074",
         "wikipedia": "es:Basílica de la Merced (Buenos Aires)",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Our Lady of Mercy Church",
+          "es": "basílica de la Merced"
+        }
       }
     },
     {
@@ -1217,7 +1434,12 @@
         "wikidata": "Q3390424",
         "wikipedia": "es:Plaza de la República (Buenos Aires)",
         "popularity": 8,
-        "site": "Q831389"
+        "site": "Q831389",
+        "names": {
+          "pt": "Praça da República (Buenos Aires)",
+          "en": "Plaza de la República",
+          "es": "Plaza de la República"
+        }
       }
     },
     {
@@ -1245,7 +1467,11 @@
         "wikidata": "Q6940536",
         "wikipedia": "es:Museo de Arte Español Enrique Larreta",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Museum of Spanish Art Enrique Larreta",
+          "es": "Museo de Arte Español Enrique Larreta"
+        }
       }
     },
     {
@@ -1269,7 +1495,12 @@
         "website": "http://www.reservacostanera.com.ar/",
         "wikidata": "Q1034280",
         "wikipedia": "es:Reserva ecológica Costanera Sur (Buenos Aires)",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Reserva Ecológica Costanera Sur",
+          "en": "Costanera Sur Ecological Reserve",
+          "es": "Reserva ecológica de Buenos Aires"
+        }
       }
     },
     {
@@ -1292,7 +1523,11 @@
         "longitude": -58.3716846,
         "wikidata": "Q7420525",
         "wikipedia": "es:Convento de Santo Domingo (Buenos Aires)",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Santo Domingo convent",
+          "es": "Convento de Santo Domingo"
+        }
       }
     },
     {
@@ -1315,7 +1550,11 @@
         "longitude": -58.3717792,
         "wikidata": "Q3392154",
         "wikipedia": "es:Plaza Dorrego",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "plaza Dorrego",
+          "es": "Plaza Dorrego"
+        }
       }
     },
     {
@@ -1338,7 +1577,12 @@
         "longitude": -58.4498156,
         "wikidata": "Q385090",
         "wikipedia": "es:Torre Espacial",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Torre Espacial",
+          "en": "Torre Espacial",
+          "es": "Torre Espacial"
+        }
       }
     },
     {
@@ -1362,7 +1606,11 @@
         "wikidata": "Q4579815",
         "wikipedia": "es:Basílica de San Francisco (Buenos Aires)",
         "popularity": 7,
-        "site": "Q4579815"
+        "site": "Q4579815",
+        "names": {
+          "en": "Basilique Saint-François",
+          "es": "basílica de San Francisco"
+        }
       }
     },
     {
@@ -1388,7 +1636,11 @@
         "website": "http://www2.maipo.com.ar",
         "wikidata": "Q3516763",
         "wikipedia": "es:Teatro Maipo",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Teatro Maipo",
+          "es": "Teatro Maipo"
+        }
       }
     },
     {
@@ -1417,7 +1669,11 @@
         "wikipedia": "es:Museo de Arte Contemporáneo de Buenos Aires",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Museo de Arte Contemporáneo Buenos Aires",
+          "es": "Museo de Arte Contemporáneo de Buenos Aires"
+        }
       }
     },
     {
@@ -1439,7 +1695,11 @@
         "longitude": -58.3898412,
         "wikidata": "Q6023286",
         "wikipedia": "es:Monumento ecuestre a Carlos María de Alvear",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Monument to General Carlos M. de Alvear",
+          "es": "General Carlos María de Alvear"
+        }
       }
     },
     {
@@ -1464,7 +1724,11 @@
         "website": "https://delmolino.gob.ar/",
         "wikidata": "Q1125324",
         "wikipedia": "es:Confitería del Molino",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Confitería del Molino",
+          "es": "Confitería del Molino"
+        }
       }
     },
     {
@@ -1487,7 +1751,11 @@
         "longitude": -58.3846395,
         "wikidata": "Q544331",
         "wikipedia": "es:Plaza Lavalle",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "plaza Lavalle",
+          "es": "Plaza Lavalle"
+        }
       }
     },
     {
@@ -1510,7 +1778,12 @@
         "longitude": -58.4705798,
         "wikidata": "Q3393737",
         "wikipedia": "es:Masacre de San Patricio",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Massacre de São Patrício",
+          "en": "San Patricio Church massacre",
+          "es": "Masacre de San Patricio"
+        }
       }
     },
     {
@@ -1532,7 +1805,11 @@
         "latitude": -34.6144041,
         "longitude": -58.3977428,
         "wikidata": "Q8243750",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Basílica Santa Rosa de Lima",
+          "es": "basílica Santuario de Santa Rosa de Lima"
+        }
       }
     },
     {
@@ -1560,7 +1837,11 @@
         "wikidata": "Q1954289",
         "wikipedia": "es:Museo de Arte Hispanoamericano Isaac Fernández Blanco",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Museum of Hispanic American Art Isaac Fernández Blanco",
+          "es": "Museo de Arte Hispanoamericano Isaac Fernández Blanco"
+        }
       }
     },
     {
@@ -1582,7 +1863,11 @@
         "longitude": -58.4457265,
         "wikidata": "Q8346117",
         "wikipedia": "es:Cid Campeador (Buenos Aires)",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "El Cid by Anna Hyatt Huntington in Buenos Aires",
+          "es": "El Cid Campeador"
+        }
       }
     },
     {
@@ -1607,7 +1892,11 @@
         "website": "https://www.teatroavenida.com",
         "wikidata": "Q545741",
         "wikipedia": "es:Teatro Avenida",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Teatro Avenida",
+          "es": "Teatro Avenida"
+        }
       }
     },
     {
@@ -1636,7 +1925,11 @@
         "wikidata": "Q9046820",
         "wikipedia": "es:Museo etnográfico Juan B. Ambrosetti",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Juan B. Ambrosetti Museum of Ethnography",
+          "es": "Museo Etnográfico Juan B. Ambrosetti"
+        }
       }
     },
     {
@@ -1658,7 +1951,12 @@
         "latitude": -34.5706923,
         "longitude": -58.4173191,
         "wikidata": "Q3050234",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Rosedal",
+          "en": "El Rosedal De Palermo",
+          "es": "El Rosedal"
+        }
       }
     },
     {
@@ -1683,7 +1981,11 @@
         "phone": "+54 11 4370-6105",
         "wikidata": "Q6940866",
         "wikipedia": "es:Museo de la Deuda Externa",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Museum of Foreign Debt",
+          "es": "Museo de la Deuda Externa"
+        }
       }
     },
     {
@@ -1711,7 +2013,11 @@
         "wikidata": "Q6034410",
         "wikipedia": "es:Museo del Cine Pablo Ducrós Hicken",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Museo del Cine Pablo Ducrós Hicken",
+          "es": "Museo del Cine Pablo Ducrós Hicken"
+        }
       }
     },
     {
@@ -1738,7 +2044,11 @@
         "wikidata": "Q16570011",
         "wikipedia": "es:Fundación Proa",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Fundación Proa",
+          "es": "Fundación Proa"
+        }
       }
     },
     {
@@ -1765,7 +2075,11 @@
         "website": "https://museomitre.cultura.gob.ar/",
         "wikidata": "Q1290362",
         "wikipedia": "es:Museo Mitre",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Museo Mitre",
+          "es": "Museo Mitre"
+        }
       }
     },
     {
@@ -1791,7 +2105,12 @@
         "wikidata": "Q1571142",
         "wikipedia": "es:Palais de Glace",
         "wheelchair": "no",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Palais de Glace",
+          "en": "Palais de Glace",
+          "es": "Palais de Glace"
+        }
       }
     },
     {
@@ -1821,7 +2140,11 @@
         "wikidata": "Q17376115",
         "wikipedia": "en:Embassy of the United Kingdom, Buenos Aires",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Embassy of the United Kingdom, Buenos Aires",
+          "es": "embajada Británica en Argentina"
+        }
       }
     },
     {
@@ -1844,7 +2167,11 @@
         "longitude": -58.3865647,
         "address": "Avenida Santa Fe, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q386600",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "San Nicolás de Bari Basilica, Buenos Aires",
+          "es": "Basílica de San Nicolás de Bari, Buenos Aires"
+        }
       }
     },
     {
@@ -1871,7 +2198,11 @@
         "website": "https://manzanadelasluces.cultura.gob.ar/",
         "wikidata": "Q263127",
         "wikipedia": "es:Manzana de las Luces",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Illuminated Block",
+          "es": "Manzana de las Luces"
+        }
       }
     },
     {
@@ -1893,14 +2224,18 @@
         ],
         "latitude": -34.5394995,
         "longitude": -58.4410831,
-        "address": "Avenida Costanera Rafael Obligado, 6745, Buenos Aires",
+        "address": "Avenida Costanera Rafael Obligado, 6745",
         "opening_hours": "Mo-Fr 10:00-18:00; Sa,Su,PH 10:00-19:00",
         "phone": "+54 11 4780-5818",
         "website": "https://www.parquedelamemoria.org.ar/",
         "wikidata": "Q6815684",
         "wikipedia": "es:Parque de la Memoria de Buenos Aires",
         "fee": "no",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Memory Park",
+          "es": "Parque de la Memoria de Buenos Aires"
+        }
       }
     },
     {
@@ -1924,7 +2259,11 @@
         "wikidata": "Q5384418",
         "wikipedia": "es:Monumento ecuestre al General Manuel Belgrano",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Manuel Belgrano equestrian monument",
+          "es": "General Manuel Belgrano"
+        }
       }
     },
     {
@@ -1950,7 +2289,11 @@
         "website": "https://www.teatrocoliseo.org.ar/",
         "wikidata": "Q185504",
         "wikipedia": "es:Teatro Coliseo",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Coliseum Theatre of Buenos Aires",
+          "es": "Teatro Coliseo de Buenos Aires"
+        }
       }
     },
     {
@@ -1973,7 +2316,11 @@
         "longitude": -58.3719948,
         "wikidata": "Q6079457",
         "wikipedia": "es:Plaza Canadá",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Plaza Canadá (Buenos Aires)",
+          "es": "Plaza Canadá"
+        }
       }
     },
     {
@@ -1998,7 +2345,11 @@
         "website": "http://www.basilicadeflores.com.ar/",
         "wikidata": "Q16489560",
         "wikipedia": "es:Basílica de San José de Flores",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Basilica of St. Joseph",
+          "es": "basílica de San José de Flores"
+        }
       }
     },
     {
@@ -2019,12 +2370,16 @@
         ],
         "latitude": -34.5473432,
         "longitude": -58.4332769,
-        "address": "Avenida Costanera Rafael Obligado, 5790, Buenos Aires",
+        "address": "Avenida Costanera Rafael Obligado, 5790",
         "opening_hours": "Fr-Su 09:00-20:00",
         "website": "https://www.tierrasanta.com.ar/TS-2022/",
         "wikidata": "Q7801123",
         "wikipedia": "es:Tierra Santa (parque temático)",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Tierra Santa",
+          "es": "Tierra Santa"
+        }
       }
     },
     {
@@ -2050,7 +2405,11 @@
         "website": "https://www.buenosaires.gob.ar/museos/museo-sivori",
         "wikidata": "Q5340780",
         "wikipedia": "es:Museo de Artes Plásticas Eduardo Sívori",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Eduardo Sívori Museum of Plastic Arts",
+          "es": "Museo de Artes Plásticas Eduardo Sívori"
+        }
       }
     },
     {
@@ -2073,7 +2432,11 @@
         "longitude": -58.3916836,
         "wikidata": "Q5691559",
         "wikipedia": "es:Plaza Intendente Alvear",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Plaza Intendente Alvear",
+          "es": "Plaza Intendente Alvear"
+        }
       }
     },
     {
@@ -2102,7 +2465,11 @@
         "wikipedia": "es:Casa Nacional del Bicentenario",
         "fee": "no",
         "popularity": 5,
-        "site": "Q5047856"
+        "site": "Q5047856",
+        "names": {
+          "en": "National House of the Bicentennial",
+          "es": "Casa Nacional del Bicentenario"
+        }
       }
     },
     {
@@ -2124,7 +2491,11 @@
         "latitude": -34.5933202,
         "longitude": -58.3798567,
         "wikidata": "Q16489557",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "basílica de Nuestra Señora del Socorro",
+          "es": "basílica de Nuestra Señora del Socorro"
+        }
       }
     },
     {
@@ -2146,7 +2517,11 @@
         "latitude": -34.5957141,
         "longitude": -58.3740106,
         "wikidata": "Q8243908",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Basílica del Santísimo Sacramento",
+          "es": "Basílica del Santísimo Sacramento"
+        }
       }
     },
     {
@@ -2173,7 +2548,11 @@
         "website": "https://museodelacarcova.una.edu.ar/",
         "wikidata": "Q5394286",
         "wikipedia": "es:Museo de la Cárcova",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Ernesto de la Cárcova Museum",
+          "es": "Museo de La Cárcova"
+        }
       }
     },
     {
@@ -2196,7 +2575,12 @@
         "longitude": -58.4503976,
         "wikidata": "Q7139688",
         "wikipedia": "es:Parque de la Ciudad",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Parque da Cidade",
+          "en": "Parque de la Ciudad",
+          "es": "Parque de la Ciudad"
+        }
       }
     },
     {
@@ -2220,7 +2604,12 @@
         "longitude": -58.3789541,
         "wikidata": "Q7691917",
         "wikipedia": "es:Teatro Gran Rex",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Teatro Gran Rex",
+          "en": "Teatro Gran Rex",
+          "es": "Teatro Gran Rex"
+        }
       }
     },
     {
@@ -2243,7 +2632,11 @@
         "longitude": -58.3867422,
         "wikidata": "Q5818170",
         "wikipedia": "es:Edificio La Inmobiliaria",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "La Inmobiliaria",
+          "es": "Edificio La Inmobiliaria"
+        }
       }
     },
     {
@@ -2266,7 +2659,12 @@
         "longitude": -58.3835101,
         "wikidata": "Q3817562",
         "wikipedia": "es:Palacio Pereda",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Embaixada do Brasil em Buenos Aires",
+          "en": "Embassy of Brazil, Buenos Aires",
+          "es": "embajada del Brasil en Argentina"
+        }
       }
     },
     {
@@ -2291,7 +2689,12 @@
         "opening_hours": "Tu-Su 11:00-18:00",
         "wikidata": "Q220023",
         "wikipedia": "es:Zoológico de Buenos Aires",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Ecoparque de Buenos Aires",
+          "en": "Buenos Aires Eco-Park",
+          "es": "Ecoparque de Buenos Aires"
+        }
       }
     },
     {
@@ -2314,7 +2717,11 @@
         "longitude": -58.3693942,
         "wikidata": "Q2053957",
         "wikipedia": "es:Parque Colón (Buenos Aires)",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Plaza Colón",
+          "es": "Parque Colón"
+        }
       }
     },
     {
@@ -2337,7 +2744,11 @@
         "longitude": -58.3751497,
         "wikidata": "Q1946552",
         "wikipedia": "es:Monumento a los caídos en Malvinas",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Monumento a los caídos en Malvinas",
+          "es": "Monumento a los caídos en Malvinas"
+        }
       }
     },
     {
@@ -2363,7 +2774,11 @@
         "website": "https://www.museodelholocausto.org.ar/",
         "wikidata": "Q6034447",
         "wikipedia": "es:Museo del Holocausto (Buenos Aires)",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Buenos Aires Holocaust Museum",
+          "es": "Museo del Holocausto Buenos Aires"
+        }
       }
     },
     {
@@ -2387,7 +2802,11 @@
         "website": "https://www.latrastienda.com/",
         "wikidata": "Q1799192",
         "wikipedia": "es:La Trastienda Club",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "La Trastienda Club",
+          "es": "La Trastienda Club"
+        }
       }
     },
     {
@@ -2410,7 +2829,11 @@
         "longitude": -58.3885267,
         "wikidata": "Q7691915",
         "wikipedia": "es:Teatro Municipal General San Martín",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Teatro General San Martín",
+          "es": "Teatro General San Martín"
+        }
       }
     },
     {
@@ -2433,7 +2856,11 @@
         "longitude": -58.4150562,
         "wikidata": "Q6023283",
         "wikipedia": "es:Monumento de los españoles",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Monument to the Carta Magna and Four Regions of Argentina",
+          "es": "La Carta Magna y las Cuatro Regiones Argentinas"
+        }
       }
     },
     {
@@ -2455,7 +2882,11 @@
         "longitude": -58.4183749,
         "wikidata": "Q4409084",
         "wikipedia": "es:Saturnalia (escultura)",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Saturnalia by Ernesto Biondi",
+          "es": "Saturnalia"
+        }
       }
     },
     {
@@ -2478,7 +2909,11 @@
         "longitude": -58.3534175,
         "wikidata": "Q334742",
         "wikipedia": "es:Monumento a España (Buenos Aires)",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Monumento a España CABA",
+          "es": "Homenaje a España"
+        }
       }
     },
     {
@@ -2500,7 +2935,11 @@
         "longitude": -58.3814016,
         "wikidata": "Q5808194",
         "wikipedia": "es:La Botica del Ángel",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Botica del Ángel",
+          "es": "Botica del Ángel"
+        }
       }
     },
     {
@@ -2522,7 +2961,11 @@
         "latitude": -34.5616546,
         "longitude": -58.4547846,
         "wikidata": "Q9060902",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Plaza Manuel Belgrano",
+          "es": "Plaza Manuel Belgrano"
+        }
       }
     },
     {
@@ -2544,7 +2987,11 @@
         "latitude": -34.5848614,
         "longitude": -58.3871709,
         "wikidata": "Q2362930",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Parque Thays",
+          "es": "Parque Thays"
+        }
       }
     },
     {
@@ -2568,7 +3015,11 @@
         "address": "Vuelta de Obligado, 2042, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q6063431",
         "wikipedia": "es:Parroquia Inmaculada Concepción (Belgrano)",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Parroquia Inmaculada Concepción, Buenos Aires",
+          "es": "Parroquia Inmaculada Concepción"
+        }
       }
     },
     {
@@ -2595,7 +3046,11 @@
         "website": "http://www.sanmartiniano.gov.ar/",
         "wikidata": "Q7414874",
         "wikipedia": "es:Instituto Nacional Sanmartiniano",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "San Martín National Institute",
+          "es": "Instituto Nacional Sanmartiniano"
+        }
       }
     },
     {
@@ -2617,7 +3072,11 @@
         "longitude": -58.3567504,
         "wikidata": "Q3076246",
         "wikipedia": "es:Fuente Monumental Las Nereidas",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Fuente de las Nereidas",
+          "es": "Fuente Monumental Las Nereidas"
+        }
       }
     },
     {
@@ -2640,7 +3099,11 @@
         "longitude": -58.4008134,
         "address": "Bartolomé Mitre, 2431, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q60034308",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Parish Nuestra Señora de Balvanera",
+          "es": "Parroquia Nuestra Señora de Balvanera"
+        }
       }
     },
     {
@@ -2668,7 +3131,11 @@
         "wikidata": "Q18378393",
         "wikipedia": "es:Museo Casa de Yrurtia",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "House of Rogelio Yrurtia Museum",
+          "es": "Museo Casa de Rogelio Yrurtia"
+        }
       }
     },
     {
@@ -2694,7 +3161,11 @@
         "website": "https://www.faena.com/faena-art-center/",
         "wikidata": "Q5429316",
         "wikipedia": "en:Faena Arts Center",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Faena Arts Center",
+          "es": "Faena Arts Center"
+        }
       }
     },
     {
@@ -2722,7 +3193,11 @@
         "wikidata": "Q21480852",
         "wikipedia": "es:Museo Casa Carlos Gardel",
         "wheelchair": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Museo Carlos Gardel, Buenos Aires",
+          "es": "Museo Casa Carlos Gardel"
+        }
       }
     },
     {
@@ -2747,7 +3222,11 @@
         "website": "https://catedralanglicana.org.ar/",
         "wikidata": "Q19872340",
         "wikipedia": "es:Catedral anglicana de San Juan Bautista",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Anglican Cathedral of St. John the Baptist",
+          "es": "Catedral Anglicana de San Juan Bautista"
+        }
       }
     },
     {
@@ -2770,7 +3249,11 @@
         "longitude": -58.3789636,
         "wikidata": "Q28519120",
         "wikipedia": "es:Catedral de San Marón (Buenos Aires)",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "St. Maron's Cathedral, Buenos Aires",
+          "es": "Catedral de San Marón"
+        }
       }
     },
     {
@@ -2794,7 +3277,11 @@
         "longitude": -58.378299,
         "wikidata": "Q5401869",
         "wikipedia": "es:Palacio Estrugamou",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Estrugamou Building",
+          "es": "Palacio Estrugamou"
+        }
       }
     },
     {
@@ -2820,7 +3307,12 @@
         "website": "https://www.amijai.org/",
         "wikidata": "Q17364251",
         "wikipedia": "es:Comunidad Amijai",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Amijai",
+          "en": "Congregation Amijai",
+          "es": "Comunidad Amijai"
+        }
       }
     },
     {
@@ -2843,7 +3335,11 @@
         "longitude": -58.4516243,
         "wikidata": "Q6062325",
         "wikipedia": "es:Parque Los Andes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Parque Los Andes",
+          "es": "Parque Los Andes"
+        }
       }
     },
     {
@@ -2865,7 +3361,11 @@
         "latitude": -34.5936456,
         "longitude": -58.3893009,
         "wikidata": "Q6079842",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Plaza Vicente López y Planes",
+          "es": "Plaza Vicente López y Planes"
+        }
       }
     },
     {
@@ -2888,7 +3388,11 @@
         "longitude": -58.478748,
         "wikidata": "Q1729632",
         "wikipedia": "es:Parque Presidente Nicolás Avellaneda",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Parque Nicolás Avellaneda",
+          "es": "Parque Nicolás Avellaneda"
+        }
       }
     },
     {
@@ -2911,7 +3415,11 @@
         "longitude": -58.3771048,
         "wikidata": "Q6023222",
         "wikipedia": "es:Monumento al General San Martín y a los Ejércitos de la Independencia",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Equestrian statue of José de San Martín",
+          "es": "Gral. San Martín y Ejército Libertador"
+        }
       }
     },
     {
@@ -2934,7 +3442,11 @@
         "longitude": -58.3962125,
         "wikidata": "Q6022966",
         "wikipedia": "es:Monumento a Bartolomé Mitre",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Monument to Bartolomé Mitre",
+          "es": "General Bartolomé Mitre"
+        }
       }
     },
     {
@@ -2956,7 +3468,11 @@
         "latitude": -34.6087914,
         "longitude": -58.3875768,
         "wikidata": "Q9082155",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Teatro Liceo",
+          "es": "Teatro Liceo"
+        }
       }
     },
     {
@@ -2981,7 +3497,11 @@
         "opening_hours": "Mo-Fr 13:00-19:00",
         "phone": "+54 11 4311-1071",
         "wikidata": "Q65391602",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Museu de Armas da Nação",
+          "es": "Museo De Armas De La Nación Tte. Gral. Pablo Riccheri"
+        }
       }
     },
     {
@@ -3010,7 +3530,11 @@
         "wikidata": "Q48795653",
         "wikipedia": "es:Museo de la Inmigración",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Immigration Museum",
+          "es": "Museo de la Inmigración"
+        }
       }
     },
     {
@@ -3033,7 +3557,11 @@
         "longitude": -58.4082516,
         "wikidata": "Q6079405",
         "wikipedia": "es:Plaza Alemania",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Plaza Alemania",
+          "es": "Plaza Alemania"
+        }
       }
     },
     {
@@ -3057,7 +3585,11 @@
         "longitude": -58.4428257,
         "wikidata": "Q5066045",
         "wikipedia": "es:Parque Chacabuco",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Chacabuco Park",
+          "es": "Parque Chacabuco"
+        }
       }
     },
     {
@@ -3080,7 +3612,11 @@
         "longitude": -58.4248801,
         "wikidata": "Q9060940",
         "wikipedia": "es:Plaza de Pakistán",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Plaza de Pakistan",
+          "es": "Plaza de Pakistán"
+        }
       }
     },
     {
@@ -3103,7 +3639,11 @@
         "longitude": -58.3981418,
         "wikidata": "Q6079761",
         "wikipedia": "es:Plaza Primero de Mayo (Buenos Aires)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Plaza Primero de Mayo",
+          "es": "Plaza Primero de Mayo"
+        }
       }
     },
     {
@@ -3125,7 +3665,7 @@
         ],
         "latitude": -34.5384819,
         "longitude": -58.4628918,
-        "address": "Avenida Del Libertador, 8151, Buenos Aires",
+        "address": "Avenida Del Libertador, 8151",
         "opening_hours": "Mo-Su 09:00-22:00",
         "phone": "+54 11 4702-9920",
         "website": "https://www.espaciomemoria.ar/",
@@ -3133,7 +3673,12 @@
         "wikipedia": "es:Espacio Memoria y Derechos Humanos",
         "fee": "no",
         "popularity": 3,
-        "site": "Q16563935"
+        "site": "Q16563935",
+        "names": {
+          "pt": "Espaço Memória e Direitos Humanos",
+          "en": "Espacio Memoria y Derechos Humanos",
+          "es": "Espacio Memoria y Derechos Humanos"
+        }
       }
     },
     {
@@ -3156,7 +3701,11 @@
         "longitude": -58.491011,
         "wikidata": "Q6079577",
         "wikipedia": "es:Plaza Hungría",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Hungría square",
+          "es": "Plaza Hungría"
+        }
       }
     },
     {
@@ -3179,7 +3728,11 @@
         "longitude": -58.463646,
         "wikidata": "Q6079562",
         "wikipedia": "es:Plaza General Pueyrredón",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Plaza General Pueyrredón",
+          "es": "Plaza General Pueyrredón"
+        }
       }
     },
     {
@@ -3205,7 +3758,10 @@
         "website": "https://www.parroquiamontserrat.net/",
         "wikidata": "Q50882284",
         "wikipedia": "en:Parish Nuestra Señora de Montserrat (Buenos Aires)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Iglesia de Nuestra Señora de Montserrat, Buenos Aires"
+        }
       }
     },
     {
@@ -3232,7 +3788,11 @@
         "website": "https://mercadosantelmo.com.ar/",
         "wikidata": "Q6010497",
         "wikipedia": "es:Mercado San Telmo",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "San Telmo market",
+          "es": "Mercado San Telmo"
+        }
       }
     },
     {
@@ -3255,7 +3815,11 @@
         "longitude": -58.4419872,
         "wikidata": "Q2917899",
         "wikipedia": "es:Plaza Primera Junta",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Plaza Primera Junta",
+          "es": "Plaza Primera Junta"
+        }
       }
     },
     {
@@ -3277,7 +3841,11 @@
         "latitude": -34.621015,
         "longitude": -58.3706364,
         "wikidata": "Q5911195",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Iglesia de Nuestra Señora de Belén, Buenos Aires",
+          "es": "iglesia de San Pedro Telmo"
+        }
       }
     },
     {
@@ -3301,7 +3869,12 @@
         "address": "Avenida Doctor Ricardo Balbín, 4750, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q6062504",
         "wikipedia": "es:Parque Sarmiento (Buenos Aires)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Parque Sarmiento",
+          "en": "Parque Sarmiento",
+          "es": "Parque Sarmiento"
+        }
       }
     },
     {
@@ -3329,7 +3902,11 @@
         "wikidata": "Q17197967",
         "wikipedia": "es:Museo Malvinas e Islas del Atlántico Sur",
         "popularity": 3,
-        "site": "Q16563935"
+        "site": "Q16563935",
+        "names": {
+          "en": "Museo Malvinas e Islas del Atlántico Sur",
+          "es": "Museo Malvinas e Islas del Atlántico Sur"
+        }
       }
     },
     {
@@ -3352,7 +3929,12 @@
         "longitude": -58.4799578,
         "wikidata": "Q10345318",
         "wikipedia": "es:Parque Saavedra",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Parque Saavedra",
+          "en": "Parque Saavedra",
+          "es": "Parque Saavedra"
+        }
       }
     },
     {
@@ -3376,7 +3958,11 @@
         "address": "Perú, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q5818234",
         "wikipedia": "es:Edificio Otto Wulff",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Otto Wulff building",
+          "es": "Edificio Otto Wulff"
+        }
       }
     },
     {
@@ -3400,7 +3986,11 @@
         "address": "Avenida Corrientes, 1155, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q6139616",
         "wikipedia": "es:Teatro Broadway (Buenos Aires)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Teatro Broadway",
+          "es": "Teatro Broadway"
+        }
       }
     },
     {
@@ -3422,7 +4012,11 @@
         "latitude": -34.6260123,
         "longitude": -58.3811022,
         "wikidata": "Q541430",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Plaza Constitución",
+          "es": "Plaza Constitución"
+        }
       }
     },
     {
@@ -3445,7 +4039,11 @@
         "longitude": -58.4608078,
         "wikidata": "Q7139640",
         "wikipedia": "es:Parque Indoamericano",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Parque Indoamericano",
+          "es": "Parque Indoamericano"
+        }
       }
     },
     {
@@ -3472,7 +4070,11 @@
         "phone": "+54 11 4348-3882",
         "wikidata": "Q21328724",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Héctor Carlos Janson Historic and  Numismatics Museum",
+          "es": "Museo Histórico y Numismático Héctor Carlos Janson"
+        }
       }
     },
     {
@@ -3496,7 +4098,11 @@
         "website": "https://elcubitomagico.wordpress.com/2015/06/12/parque-las-heras-o-como-fugarse/",
         "wikidata": "Q11697851",
         "wikipedia": "es:Parque Las Heras (Buenos Aires)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Las Heras Park, Buenos Aires",
+          "es": "Parque Las Heras, Buenos Aires"
+        }
       }
     },
     {
@@ -3518,12 +4124,16 @@
         ],
         "latitude": -34.5898239,
         "longitude": -58.3787619,
-        "address": "Avenida Del Libertador, 405, Buenos Aires",
+        "address": "Avenida Del Libertador, 405",
         "opening_hours": "Mo-Fr 10:00-18:00",
         "phone": "+54 11 4318 3343",
         "website": "https://www.argentina.gob.ar/museoferroviario",
         "wikidata": "Q17623075",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Raúl Scalabrini Ortiz National Railway Museum",
+          "es": "Museo Nacional Ferroviario Raúl Scalabrini Ortiz"
+        }
       }
     },
     {
@@ -3546,7 +4156,11 @@
         "longitude": -58.4272415,
         "wikidata": "Q48781514",
         "wikipedia": "es:Parroquia de San Francisco Javier (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "San Francisco Javier church, Buenos Aires",
+          "es": "Parroquia de San Francisco Javier"
+        }
       }
     },
     {
@@ -3568,7 +4182,11 @@
         "latitude": -34.6041084,
         "longitude": -58.3898133,
         "wikidata": "Q38263874",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Teatro Astral",
+          "es": "Teatro Astral"
+        }
       }
     },
     {
@@ -3593,7 +4211,11 @@
         "website": "http://www.clubespanolba.org",
         "wikidata": "Q5640527",
         "wikipedia": "es:Club Español (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Club Español en Buenos Aires",
+          "es": "Club Español"
+        }
       }
     },
     {
@@ -3621,7 +4243,11 @@
         "wikidata": "Q21573456",
         "wikipedia": "es:Museo de Arte Popular José Hernández",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "José Hernández Folk Art Museum",
+          "es": "Museo de Arte Popular José Hernández"
+        }
       }
     },
     {
@@ -3644,7 +4270,11 @@
         "longitude": -58.3664208,
         "website": "http://www.iglesiasueca.com.ar/",
         "wikidata": "Q5909087",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Swedich Church of Buenos Aires",
+          "es": "iglesia Nórdica de Buenos Aires"
+        }
       }
     },
     {
@@ -3667,7 +4297,11 @@
         "longitude": -58.3915493,
         "wikidata": "Q6026141",
         "wikipedia": "es:Multiespacio Los Ángeles",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Multiespacio Los Ángeles",
+          "es": "Multiespacio Los Ángeles"
+        }
       }
     },
     {
@@ -3690,7 +4324,11 @@
         "longitude": -58.445664,
         "wikidata": "Q6139882",
         "wikipedia": "es:Teatro Regio (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Teatro Regio",
+          "es": "Teatro Regio"
+        }
       }
     },
     {
@@ -3717,7 +4355,11 @@
         "website": "https://museoroca.cultura.gob.ar/",
         "wikidata": "Q53845031",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Roca Museum - Historical Research Institute",
+          "es": "Museo Roca - Instituto de Investigaciones Históricas"
+        }
       }
     },
     {
@@ -3740,7 +4382,11 @@
         "longitude": -58.4168043,
         "wikidata": "Q5680943",
         "wikipedia": "es:Teatro del Pueblo (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Teatro del Pueblo",
+          "es": "Teatro del Pueblo"
+        }
       }
     },
     {
@@ -3769,7 +4415,11 @@
         "wikidata": "Q21114973",
         "wikipedia": "es:Casa de Ricardo Rojas",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ricardo Rojas' House Museum - Research Institute",
+          "es": "Museo Casa de Ricardo Rojas - Instituto de Investigaciones"
+        }
       }
     },
     {
@@ -3796,7 +4446,11 @@
         "website": "https://museoboquense.com/",
         "wikidata": "Q6034278",
         "wikipedia": "es:Museo de la Pasión Boquense",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Passion for Boca Juniors Museum",
+          "es": "Museo de la pasión boquense"
+        }
       }
     },
     {
@@ -3819,7 +4473,11 @@
         "longitude": -58.3888344,
         "wikidata": "Q5703680",
         "wikipedia": "es:Argentina km 0",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Argentina km 0",
+          "es": "Argentina km 0"
+        }
       }
     },
     {
@@ -3845,7 +4503,11 @@
         "phone": "+54 11 4362-5963",
         "website": "http://www.fsgallegas.org.ar/museo_intro/",
         "wikidata": "Q65391617",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Francisco 'Paco' Lores Museum of Galician Emigration in Argentina",
+          "es": "Museo De La Emigración Gallega En La Argentina Francisco 'Paco' Lores"
+        }
       }
     },
     {
@@ -3869,7 +4531,11 @@
         "address": "Balcarce, 139, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q16488551",
         "wikipedia": "es:Antiguo Congreso Nacional (Argentina)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Former National Congress Building, Buenos Aires",
+          "es": "Antiguo Congreso Nacional"
+        }
       }
     },
     {
@@ -3891,7 +4557,11 @@
         "latitude": -34.6103267,
         "longitude": -58.3733624,
         "wikidata": "Q5974908",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Librería de Ávila",
+          "es": "Librería de Ávila"
+        }
       }
     },
     {
@@ -3915,7 +4585,11 @@
         "address": "San Lorenzo, 380, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q5966085",
         "wikipedia": "es:La casa mínima",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "La casa mínima",
+          "es": "La casa mínima"
+        }
       }
     },
     {
@@ -3941,7 +4615,11 @@
         "phone": "+54 11 4783-6554",
         "website": "http://museodelhombre.cultura.gob.ar/",
         "wikidata": "Q50351269",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "National Museum of Man",
+          "es": "Museo Nacional de las Comunidades"
+        }
       }
     },
     {
@@ -3964,7 +4642,10 @@
         "website": "https://www.ambito.com/815104-por-vandalismo-cambiaran-monumentos-por-replicas",
         "wikidata": "Q5483338",
         "wikipedia": "es:El Beso (Baptiste Gask)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "es": "Leandro y Hero"
+        }
       }
     },
     {
@@ -3988,7 +4669,11 @@
         "address": "Avenida Corrientes, 1283, Ciudad Autónoma de Buenos Aires",
         "website": "https://www.multiteatro.com.ar/",
         "wikidata": "Q6026185",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Multiteatro",
+          "es": "Multiteatro"
+        }
       }
     },
     {
@@ -4015,7 +4700,11 @@
         "website": "https://museofotograficosimik.com/",
         "wikidata": "Q6033370",
         "wikipedia": "es:Museo Fotográfico Simik",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Simik Photographic Museum",
+          "es": "Museo Fotográfico Simik"
+        }
       }
     },
     {
@@ -4040,7 +4729,12 @@
         "phone": "+54 11 4383-9054",
         "wikidata": "Q30902113",
         "wikipedia": "es:Museo de la Mujer Argentina",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Museu da Mulher Argentina",
+          "en": "Women's Museum of Argentina",
+          "es": "Museo de la Mujer de Argentina"
+        }
       }
     },
     {
@@ -4066,7 +4760,11 @@
         "phone": "+54 11 4361-0917",
         "wikidata": "Q6033667",
         "wikipedia": "es:Museo Penitenciario Argentino",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Argentine Penitentiary Museum Antonio Ballvé",
+          "es": "Museo Penitenciario Argentino Antonio Ballvé"
+        }
       }
     },
     {
@@ -4095,7 +4793,11 @@
         "wikipedia": "es:Museo Nacional de Arte Oriental",
         "fee": "no",
         "wheelchair": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "National Museum of Oriental Art",
+          "es": "Museo Nacional de Arte Oriental"
+        }
       }
     },
     {
@@ -4120,7 +4822,11 @@
         "website": "https://museodeinformatica.org.ar/",
         "wikidata": "Q16609930",
         "wikipedia": "es:Museo de Informática de la República Argentina",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museo de Informática de la República Argentina",
+          "es": "Museo de Informática de la República Argentina"
+        }
       }
     },
     {
@@ -4147,7 +4853,11 @@
         "website": "https://www.xulsolar.org.ar/",
         "wikidata": "Q65483381",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Xul Solar Museum",
+          "es": "Museo Xul Solar"
+        }
       }
     },
     {
@@ -4173,7 +4883,11 @@
         "phone": "+54 11 4331-1775",
         "website": "http://www.bapro.com.ar/museo",
         "wikidata": "Q65483176",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Archive and Historical Museum of the Bank of the province of Buenos Aires Dr. Arturo Jauretche",
+          "es": "Archivo y Museo Histórico del Banco de la provincia de Buenos Aires Dr. Arturo Jauretche"
+        }
       }
     },
     {
@@ -4196,7 +4910,11 @@
         "longitude": -58.3778393,
         "wikidata": "Q5910412",
         "wikipedia": "es:Iglesia de San Juan Bautista (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Iglesia de San Juan Bautista, Buenos Aires",
+          "es": "iglesia de San Juan Bautista (Buenos Aires)"
+        }
       }
     },
     {
@@ -4217,7 +4935,11 @@
         "latitude": -34.5954181,
         "longitude": -58.3768494,
         "wikidata": "Q5966526",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "The Doubt",
+          "es": "La Duda"
+        }
       }
     },
     {
@@ -4240,7 +4962,11 @@
         "longitude": -58.4577834,
         "wikidata": "Q6079595",
         "wikipedia": "es:Plaza Irlanda",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Irlanda",
+          "es": "Plaza Irlanda"
+        }
       }
     },
     {
@@ -4263,7 +4989,11 @@
         "longitude": -58.4506691,
         "wikidata": "Q5719936",
         "wikipedia": "es:Barrancas de Belgrano",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Barrancas de Belgrano",
+          "es": "Barrancas de Belgrano"
+        }
       }
     },
     {
@@ -4286,7 +5016,11 @@
         "longitude": -58.3998505,
         "wikidata": "Q21044246",
         "wikipedia": "es:Plaza República de Chile (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza República de Chile",
+          "es": "Plaza República de Chile"
+        }
       }
     },
     {
@@ -4309,7 +5043,11 @@
         "longitude": -58.4455101,
         "wikidata": "Q17625439",
         "wikipedia": "es:Plaza Mafalda",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Mafalda",
+          "es": "Plaza Mafalda"
+        }
       }
     },
     {
@@ -4331,7 +5069,11 @@
         "latitude": -34.6339301,
         "longitude": -58.385013,
         "wikidata": "Q6062170",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Parque España, Buenos Aires",
+          "es": "Parque España"
+        }
       }
     },
     {
@@ -4355,7 +5097,11 @@
         "opening_hours": "Th-Su 08:00-19:00",
         "wikidata": "Q6062806",
         "wikipedia": "es:Parque de los Niños",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kid's Park",
+          "es": "Parque de los Niños"
+        }
       }
     },
     {
@@ -4378,7 +5124,11 @@
         "longitude": -58.3883919,
         "wikidata": "Q6079549",
         "wikipedia": "es:Plaza Garay",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Garay",
+          "es": "Plaza Garay"
+        }
       }
     },
     {
@@ -4401,7 +5151,11 @@
         "longitude": -58.3941418,
         "wikidata": "Q6080257",
         "wikipedia": "es:Plaza de las Naciones Unidas",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza de las Naciones Unidas",
+          "es": "Plaza de las Naciones Unidas"
+        }
       }
     },
     {
@@ -4424,7 +5178,11 @@
         "longitude": -58.4301847,
         "wikidata": "Q11104866",
         "wikipedia": "es:Plaza Serrano",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plazoleta Julio Cortázar",
+          "es": "Plaza Serrano"
+        }
       }
     },
     {
@@ -4447,7 +5205,11 @@
         "longitude": -58.3594348,
         "wikidata": "Q6062385",
         "wikipedia": "es:Parque Micaela Bastidas",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Micaela Bastidas Park",
+          "es": "Parque Micaela Bastidas"
+        }
       }
     },
     {
@@ -4470,7 +5232,11 @@
         "longitude": -58.3833832,
         "wikidata": "Q6079636",
         "wikipedia": "es:Plaza Libertad (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Libertad",
+          "es": "Plaza Libertad"
+        }
       }
     },
     {
@@ -4493,7 +5259,11 @@
         "longitude": -58.3697909,
         "wikidata": "Q6079782",
         "wikipedia": "es:Plaza Roma",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Roma, Buenos Aires",
+          "es": "Plaza Roma"
+        }
       }
     },
     {
@@ -4516,7 +5286,11 @@
         "longitude": -58.3906809,
         "wikidata": "Q16619982",
         "wikipedia": "es:Plaza Dante (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Dante, Buenos Aires",
+          "es": "Plaza Dante"
+        }
       }
     },
     {
@@ -4539,7 +5313,11 @@
         "longitude": -58.3741825,
         "wikidata": "Q6079480",
         "wikipedia": "es:Plaza Colombia",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Colombia",
+          "es": "Plaza Colombia"
+        }
       }
     },
     {
@@ -4562,7 +5340,11 @@
         "longitude": -58.3939473,
         "wikidata": "Q9060913",
         "wikipedia": "es:Plaza Rubén Darío (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Rubén Darío",
+          "es": "Plaza Rubén Darío"
+        }
       }
     },
     {
@@ -4584,7 +5366,11 @@
         "latitude": -34.608103,
         "longitude": -58.3613056,
         "wikidata": "Q6062396",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Argentine Women Park",
+          "es": "Parque Mujeres Argentinas"
+        }
       }
     },
     {
@@ -4608,7 +5394,11 @@
         "address": "Avenida Corrientes, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q6139863",
         "wikipedia": "es:Teatro Alvear",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Teatro Presidente Alvear",
+          "es": "Teatro Presidente Alvear"
+        }
       }
     },
     {
@@ -4636,7 +5426,11 @@
         "wikidata": "Q6034386",
         "wikipedia": "es:Museo Casa Rosada",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Pink House Museum",
+          "es": "Museo Casa Rosada"
+        }
       }
     },
     {
@@ -4659,7 +5453,11 @@
         "longitude": -58.3811195,
         "address": "Lima, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q5912795",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Immaculate Heart of Mary Church",
+          "es": "iglesia del Inmaculado Corazón de María"
+        }
       }
     },
     {
@@ -4682,7 +5480,11 @@
         "longitude": -58.4436979,
         "wikidata": "Q28501895",
         "wikipedia": "es:Plaza Amadeo Sabattini",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Amadeo Sabattini",
+          "es": "Plaza Amadeo Sabattini"
+        }
       }
     },
     {
@@ -4703,13 +5505,17 @@
         ],
         "latitude": -34.536653,
         "longitude": -58.4652768,
-        "address": "Avenida Del Libertador, 8571, Buenos Aires",
+        "address": "Avenida Del Libertador, 8571",
         "opening_hours": "Th-Su 10:00-17:00",
         "website": "https://www.argentina.gob.ar/derechoshumanos/museo-sitio-de-memoria-esma",
         "wikidata": "Q28663704",
         "wikipedia": "es:Museo Sitio de Memoria ESMA",
         "popularity": 2,
-        "site": "Q16563935"
+        "site": "Q16563935",
+        "names": {
+          "en": "ESMA Museum and Site of Memory – Former Clandestine Center of Detention, Torture and Extermination",
+          "es": "Museo Sitio de Memoria ESMA"
+        }
       }
     },
     {
@@ -4731,7 +5537,11 @@
         "latitude": -34.6215976,
         "longitude": -58.4095412,
         "wikidata": "Q5912535",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Iglesia Santa Cruz, Buenos Aires",
+          "es": "iglesia de la Santa Cruz"
+        }
       }
     },
     {
@@ -4754,7 +5564,11 @@
         "longitude": -58.3970581,
         "wikidata": "Q6023016",
         "wikipedia": "es:Monumento a Eva Perón (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "A Maria Eva Duarte de Perón by Ricardo Gianetti",
+          "es": "Monumento a Eva Perón"
+        }
       }
     },
     {
@@ -4781,7 +5595,11 @@
         "website": "https://socearq.org/marq/",
         "wikidata": "Q17197966",
         "wikipedia": "es:Museo de Arquitectura y Diseño",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museum of Architecture and Design",
+          "es": "Museo de Arquitectura y Diseño"
+        }
       }
     },
     {
@@ -4804,7 +5622,11 @@
         "longitude": -58.4334488,
         "wikidata": "Q6062492",
         "wikipedia": "es:Parque Rivadavia",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Parque Rivadavia",
+          "es": "Parque Rivadavia"
+        }
       }
     },
     {
@@ -4827,7 +5649,11 @@
         "longitude": -58.4411573,
         "wikidata": "Q28501884",
         "wikipedia": "es:Plaza Giordano Bruno",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Giordano Bruno",
+          "es": "Plaza Giordano Bruno"
+        }
       }
     },
     {
@@ -4850,7 +5676,11 @@
         "longitude": -58.3808959,
         "wikidata": "Q28605571",
         "wikipedia": "es:Monumento a las cataratas del Iguazú",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Monumento a las cataratas del Iguazú, Buenos Aires",
+          "es": "Monumento a las cataratas del Iguazú"
+        }
       }
     },
     {
@@ -4873,7 +5703,11 @@
         "longitude": -58.3872841,
         "wikidata": "Q6010472",
         "wikipedia": "es:Mercado Modelo (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Model Market, Buenos Aires",
+          "es": "Mercado Modelo, Buenos Aires"
+        }
       }
     },
     {
@@ -4897,7 +5731,11 @@
         "address": "Avenida Entre Ríos, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q6010494",
         "wikipedia": "es:Mercado San Cristóbal",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mercado San Cristóbal",
+          "es": "Mercado San Cristóbal"
+        }
       }
     },
     {
@@ -4922,7 +5760,11 @@
         "website": "https://www.metropolitansura.com.ar/",
         "wikidata": "Q6139799",
         "wikipedia": "es:Teatro Metropolitan (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Teatro Metropolitan",
+          "es": "Teatro Metropolitan"
+        }
       }
     },
     {
@@ -4945,7 +5787,11 @@
         "longitude": -58.4131174,
         "wikidata": "Q52646742",
         "wikipedia": "es:Parque de la Estación",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Station Park",
+          "es": "Parque de la Estación"
+        }
       }
     },
     {
@@ -4968,7 +5814,11 @@
         "longitude": -58.3791375,
         "wikidata": "Q65065082",
         "wikipedia": "en:Church of San Miguel de Arcangel (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Church of San Miguel de Arcangel",
+          "es": "Iglesia Arcángel San Miguel"
+        }
       }
     },
     {
@@ -4990,7 +5840,11 @@
         "latitude": -34.5993718,
         "longitude": -58.512259,
         "wikidata": "Q6079417",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Arenales",
+          "es": "Plaza Arenales"
+        }
       }
     },
     {
@@ -5017,7 +5871,11 @@
         "website": "https://www.buenosaires.gob.ar/museoluisperlotti/",
         "wikidata": "Q21573457",
         "wikipedia": "es:Museo de Esculturas Luis Perlotti",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museo de Esculturas Luis Perlotti",
+          "es": "Museo de Esculturas Luis Perlotti"
+        }
       }
     },
     {
@@ -5040,7 +5898,10 @@
         "longitude": -58.4778046,
         "wikidata": "Q5712505",
         "wikipedia": "es:Automotores Orletti",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "es": "Automotores Orletti"
+        }
       }
     },
     {
@@ -5063,7 +5924,11 @@
         "longitude": -58.3981258,
         "wikidata": "Q6079572",
         "wikipedia": "es:Plaza Houssay",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Houssay",
+          "es": "Plaza Houssay"
+        }
       }
     },
     {
@@ -5085,14 +5950,18 @@
         ],
         "latitude": -34.5851396,
         "longitude": -58.3994037,
-        "address": "Avenida General Las Heras, 2555, Buenos Aires",
+        "address": "Avenida General Las Heras, 2555",
         "opening_hours": "Tu-Su 14:00-19:00",
         "phone": "+54 11 4808-0090",
         "website": "https://www.bn.gov.ar/biblioteca/museo",
         "wikidata": "Q20639610",
         "wikipedia": "es:Museo del Libro y de la Lengua Horacio González",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museo del Libro y de la Lengua Horacio González",
+          "es": "Museo del Libro y de la Lengua Horacio González"
+        }
       }
     },
     {
@@ -5115,7 +5984,11 @@
         "longitude": -58.4084319,
         "wikidata": "Q6062809",
         "wikipedia": "es:Parque de los Patricios",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Parque Patricios",
+          "es": "Parque Patricios"
+        }
       }
     },
     {
@@ -5138,7 +6011,11 @@
         "longitude": -58.388223,
         "wikidata": "Q6062307",
         "wikipedia": "es:Parque Leonardo Pereyra",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Parque Leonardo Pereyra",
+          "es": "Parque Leonardo Pereyra"
+        }
       }
     },
     {
@@ -5162,7 +6039,11 @@
         "website": "https://www.santacatalina.org.ar/",
         "wikidata": "Q6021390",
         "wikipedia": "es:Monasterio de Santa Catalina de Siena (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Saint Catherine of Siena's Monastery, Buenos Aires",
+          "es": "Monasterio de Santa Catalina de Siena, Buenos Aires"
+        }
       }
     },
     {
@@ -5186,7 +6067,11 @@
         "opening_hours": "Tu-Su 09:00-18:00",
         "wikidata": "Q6106241",
         "wikipedia": "es:Reserva ecológica Ciudad Universitaria (Buenos Aires)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ciudad Universitaria Ecological Reserve (Buenos Aires)",
+          "es": "Reserva Ecológica Ciudad Universitaria"
+        }
       }
     },
     {
@@ -5208,7 +6093,11 @@
         "latitude": -34.5887952,
         "longitude": -58.4252378,
         "wikidata": "Q34895341",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Plaza Inmigrantes de Armenia",
+          "es": "Plaza Inmigrantes de Armenia"
+        }
       }
     },
     {
@@ -5231,7 +6120,10 @@
         "longitude": -58.3780229,
         "address": "Esmeralda, 162, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q130533515",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Iglesia Centro"
+        }
       }
     },
     {
@@ -5254,7 +6146,11 @@
         "longitude": -58.4189848,
         "address": "Avenida Sarmiento, 2715, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q6139904",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Teatro Sarmiento",
+          "es": "Teatro Sarmiento"
+        }
       }
     },
     {
@@ -5277,7 +6173,11 @@
         "longitude": -58.3786301,
         "wikidata": "Q6139910",
         "wikipedia": "es:Teatro Tabarís",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Teatro Tabarís",
+          "es": "Teatro Tabarís"
+        }
       }
     },
     {
@@ -5299,7 +6199,11 @@
         "latitude": -34.5849664,
         "longitude": -58.3934704,
         "wikidata": "Q111694971",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Monumento Francia a la Argentina",
+          "es": "Francia a la Argentina"
+        }
       }
     },
     {
@@ -5322,7 +6226,10 @@
         "longitude": -58.3696441,
         "wikidata": "Q5850616",
         "wikipedia": "es:Monumento a la cordialidad argentino - uruguaya",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Homenaje a la cordialidad argentino-uruguaya"
+        }
       }
     },
     {
@@ -5345,7 +6252,11 @@
         "longitude": -58.3712379,
         "address": "Brasil, 401, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q56826669",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Bar El Hipopótamo",
+          "es": "El Hipopotamo"
+        }
       }
     },
     {
@@ -5368,7 +6279,11 @@
         "latitude": -34.6159617,
         "longitude": -58.3716913,
         "wikidata": "Q111038841",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Mafalda statue",
+          "es": "estatua de Mafalda"
+        }
       }
     },
     {
@@ -5395,7 +6310,11 @@
         "website": "https://museodeltiterebsas.wixsite.com/museoargdeltitere",
         "wikidata": "Q16609671",
         "wikipedia": "es:Museo Argentino del Títere",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Argentine Puppet Museum",
+          "es": "Museo Argentino del Títere"
+        }
       }
     },
     {
@@ -5418,7 +6337,11 @@
         "longitude": -58.3913022,
         "address": "Avenida Presidente Quintana, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q56303696",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Rubber Tree of Recoleta",
+          "es": "Gomero de la Recoleta"
+        }
       }
     },
     {
@@ -5440,7 +6363,11 @@
         "longitude": -58.4158602,
         "website": "https://www.buenosaires.gob.ar/ambienteyespaciopublico/mantenimiento/espaciosverdes/jardinbotanico/recorre-el-jardin/obrasdearte/amazona",
         "wikidata": "Q111696578",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Amazona",
+          "es": "Amazona"
+        }
       }
     },
     {
@@ -5462,7 +6389,10 @@
         "longitude": -58.417034,
         "website": "https://www.buenosaires.gob.ar/ambienteyespaciopublico/mantenimiento/espaciosverdes/jardinbotanico/recorre-el-jardin/obrasdearte/banista",
         "wikidata": "Q111696579",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Bañista"
+        }
       }
     },
     {
@@ -5484,7 +6414,11 @@
         "longitude": -58.41888,
         "website": "https://buenosaires.gob.ar/jardinbotanico/canto-de-la-cosechadora",
         "wikidata": "Q111696580",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Canto de la cosechadora",
+          "es": "Canto de la Cosechadora"
+        }
       }
     },
     {
@@ -5506,7 +6440,11 @@
         "longitude": -58.4172041,
         "website": "http://www.arcondebuenosaires.com.ar/jardines_historicos_2.htm",
         "wikidata": "Q111696599",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Meteorological Column",
+          "es": "Columna Meteorológica"
+        }
       }
     },
     {
@@ -5528,7 +6466,11 @@
         "longitude": -58.4161887,
         "website": "https://www.buenosaires.gob.ar/ambienteyespaciopublico/mantenimiento/espaciosverdes/jardinbotanico/recorre-el-jardin/obrasdearte/el-despertar-de-la-naturaleza",
         "wikidata": "Q111696585",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "El despertar de la naturaleza",
+          "es": "El despertar de la naturaleza"
+        }
       }
     },
     {
@@ -5550,7 +6492,11 @@
         "longitude": -58.4191076,
         "website": "https://www.buenosaires.gob.ar/ambienteyespaciopublico/mantenimiento/espaciosverdes/jardinbotanico/recorre-el-jardin/obrasdearte/esquines",
         "wikidata": "Q111696626",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Esquines",
+          "es": "Esquines"
+        }
       }
     },
     {
@@ -5572,7 +6518,10 @@
         "longitude": -58.4164609,
         "website": "https://www.buenosaires.gob.ar/ambienteyespaciopublico/mantenimiento/espaciosverdes/jardinbotanico/recorre-el-jardin/obrasdearte/flor-indigena",
         "wikidata": "Q111696586",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Flor Indígena"
+        }
       }
     },
     {
@@ -5594,7 +6543,11 @@
         "longitude": -58.4194039,
         "website": "https://www.buenosaires.gob.ar/ambienteyespaciopublico/mantenimiento/espaciosverdes/jardinbotanico/recorre-el-jardin/obrasdearte/ondina-del-plata",
         "wikidata": "Q111696602",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "La primavera",
+          "es": "La Primavera"
+        }
       }
     },
     {
@@ -5616,7 +6569,11 @@
         "longitude": -58.4186436,
         "website": "https://buenosaires.gob.ar/jardinbotanico/plegaria-de-la-india-tehuelche",
         "wikidata": "Q111696625",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plegaria de la india tehuelche",
+          "es": "Plegaria de la India Tehuelche"
+        }
       }
     },
     {
@@ -5638,7 +6595,11 @@
         "longitude": -58.4167636,
         "website": "https://www.buenosaires.gob.ar/ambienteyespaciopublico/mantenimiento/espaciosverdes/jardinbotanico/recorre-el-jardin/obrasdearte/sagunto",
         "wikidata": "Q111696631",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Sagunto",
+          "es": "Sagunto"
+        }
       }
     },
     {
@@ -5660,7 +6621,11 @@
         "longitude": -58.418362,
         "website": "https://www.buenosaires.gob.ar/ambienteyespaciopublico/mantenimiento/espaciosverdes/jardinbotanico/recorre-el-jardin/obrasdearte/venus",
         "wikidata": "Q111696777",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Venus",
+          "es": "Venus"
+        }
       }
     },
     {
@@ -5684,7 +6649,11 @@
         "address": "Montañeses, 2175, Ciudad Autónoma de Buenos Aires",
         "website": "https://tzongkuan.org/",
         "wikidata": "Q2794376",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Buddhist Temple Tzong Kuan",
+          "es": "Templo Budista Tzong Kuan"
+        }
       }
     },
     {
@@ -5705,7 +6674,11 @@
         "latitude": -34.607075,
         "longitude": -58.4344042,
         "wikidata": "Q111708110",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "La Aurora",
+          "es": "La Aurora"
+        }
       }
     },
     {
@@ -5727,7 +6700,10 @@
         "longitude": -58.4333907,
         "wikidata": "Q5870234",
         "wikipedia": "es:Fuente de la doncella",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Homenaje Centenario"
+        }
       }
     },
     {
@@ -5749,7 +6725,12 @@
         "latitude": -34.5729093,
         "longitude": -58.4103698,
         "wikidata": "Q54197422",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Coluna Persa",
+          "en": "Persian column",
+          "es": "Columna de Persépolis"
+        }
       }
     },
     {
@@ -5777,7 +6758,11 @@
         "wikidata": "Q6033930",
         "wikipedia": "es:Museo de Artistas Argentinos Benito Quinquela Martín",
         "fee": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Museum of Argentine Artists Benito Quinquela Martín",
+          "es": "Museo de Bellas Artes de La Boca de Artistas Argentinos Benito Quinquela Martín"
+        }
       }
     },
     {
@@ -5800,7 +6785,10 @@
         "longitude": -58.3778063,
         "wikidata": "Q6023059",
         "wikipedia": "es:Monumento a Lisandro de la Torre",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Dr. Lisandro de la Torre"
+        }
       }
     },
     {
@@ -5825,7 +6813,11 @@
         "opening_hours": "Mo-Fr 12:00-18:00; Sa-Su 11:00-20:00",
         "phone": "+54 11 4326-3396",
         "wikidata": "Q84513459",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Museum of Hispanic American Art Isaac Fernández Blanco - Headquarters Casa Fernández Blanco",
+          "es": "Museo de Arte Hispanoamericano Isaac Fernández Blanco - Sede Casa Fernández Blanco"
+        }
       }
     },
     {
@@ -5849,7 +6841,11 @@
         "address": "Presidente José Evaristo Uriburu, 950, Ciudad Autónoma de Buenos Aires",
         "website": "https://museodepatologia.wixsite.com",
         "wikidata": "Q65391612",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Pathology Museum of the University of Buenos Aires",
+          "es": "Museo de Patología de la Universidad de Buenos Aires"
+        }
       }
     },
     {
@@ -5872,7 +6868,11 @@
         "latitude": -34.6053496,
         "longitude": -58.3899918,
         "wikidata": "Q30084628",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Museo Beatle",
+          "es": "Museo Beatle"
+        }
       }
     },
     {
@@ -5897,7 +6897,10 @@
         "opening_hours": "Sa 17:00 - 19:30, Su 09:30 - 11:30",
         "website": "https://iglesiarusa.info/",
         "wikidata": "Q11806712",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Catedral Ortodoxa Rusa de la Resurrección"
+        }
       }
     },
     {
@@ -5920,7 +6923,11 @@
         "longitude": -58.386116,
         "wikidata": "Q6139600",
         "wikipedia": "es:Teatro Apolo (Buenos Aires)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Teatro Apolo",
+          "es": "Teatro Apolo"
+        }
       }
     },
     {
@@ -5942,7 +6949,10 @@
         "latitude": -34.6733975,
         "longitude": -58.4494354,
         "wikidata": "Q2518728",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Vertigorama"
+        }
       }
     },
     {
@@ -5965,7 +6975,10 @@
         "longitude": -58.4104923,
         "address": "José C. Paz, 3400, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q111685526",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza Dr. José C. Paz"
+        }
       }
     },
     {
@@ -5988,7 +7001,10 @@
         "longitude": -58.4625428,
         "wikidata": "Q23639132",
         "wikipedia": "es:Plaza 25 de Agosto",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza 25 de Agosto"
+        }
       }
     },
     {
@@ -6011,7 +7027,11 @@
         "longitude": -58.4566382,
         "wikidata": "Q111685519",
         "wikipedia": "es:Crónicas del Ángel Gris",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza del Ángel Gris",
+          "es": "Plaza del Ángel Gris"
+        }
       }
     },
     {
@@ -6034,7 +7054,11 @@
         "longitude": -58.4644677,
         "wikidata": "Q6079468",
         "wikipedia": "es:Plaza Castelli (Buenos Aires)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza Castelli",
+          "es": "Plaza Castelli"
+        }
       }
     },
     {
@@ -6057,7 +7081,10 @@
         "longitude": -58.4454971,
         "wikidata": "Q76824062",
         "wikipedia": "es:Plaza Benito Nazar",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza Benito Nazar"
+        }
       }
     },
     {
@@ -6080,7 +7107,11 @@
         "longitude": -58.4871885,
         "wikidata": "Q6079400",
         "wikipedia": "es:Plaza Alberdi (Buenos Aires)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza Alberdi",
+          "es": "Plaza Alberdi"
+        }
       }
     },
     {
@@ -6102,7 +7133,11 @@
         "latitude": -34.5754891,
         "longitude": -58.4169522,
         "wikidata": "Q111685550",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza Intendente Seeber",
+          "es": "Plaza Intendente Francisco Seeber"
+        }
       }
     },
     {
@@ -6124,7 +7159,11 @@
         "latitude": -34.5818753,
         "longitude": -58.3976787,
         "wikidata": "Q111685588",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza República Oriental del Uruguay",
+          "es": "Plaza República Oriental del Uruguay"
+        }
       }
     },
     {
@@ -6146,7 +7185,11 @@
         "latitude": -34.5765675,
         "longitude": -58.4039756,
         "wikidata": "Q111685587",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza República del Perú",
+          "es": "Plaza República del Perú"
+        }
       }
     },
     {
@@ -6169,7 +7212,11 @@
         "longitude": -58.3882287,
         "wikidata": "Q55980025",
         "wikipedia": "es:Mariano Moreno",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza Mariano Moreno",
+          "es": "Plaza Mariano Moreno"
+        }
       }
     },
     {
@@ -6198,7 +7245,11 @@
         "wikidata": "Q130374034",
         "wikipedia": "es:Biblioteca Nacional de la República Argentina",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Mariano Moreno National Library building",
+          "es": "edificio de la Biblioteca Nacional Mariano Moreno"
+        }
       }
     },
     {
@@ -6220,7 +7271,11 @@
         "latitude": -34.6059247,
         "longitude": -58.4190812,
         "wikidata": "Q6079407",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza Almagro",
+          "es": "Plaza Almagro"
+        }
       }
     },
     {
@@ -6243,7 +7298,10 @@
         "longitude": -58.3944718,
         "wikidata": "Q6062200",
         "wikipedia": "es:Parque Florentino Ameghino",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Parque Florentino Ameghino"
+        }
       }
     },
     {
@@ -6266,7 +7324,11 @@
         "longitude": -58.4774035,
         "wikidata": "Q6079426",
         "wikipedia": "es:Plaza Benjamín Vicuña Mackenna (Buenos Aires)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza Benjamín Vicuña Mackenna",
+          "es": "Plaza Benjamín Vicuña Mackenna"
+        }
       }
     },
     {
@@ -6288,7 +7350,11 @@
         "latitude": -34.5864651,
         "longitude": -58.3897098,
         "wikidata": "Q16620148",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza San Martín de Tours",
+          "es": "Plaza San Martín de Tours"
+        }
       }
     },
     {
@@ -6311,7 +7377,10 @@
         "longitude": -58.3782755,
         "wikidata": "Q6079777",
         "wikipedia": "es:Plaza Roberto Arlt",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza Roberto Arlt"
+        }
       }
     },
     {
@@ -6335,7 +7404,11 @@
         "website": "https://turismo.buenosaires.gob.ar/es/atractivo/centro-cultural-plaza-defensa",
         "wikidata": "Q6123793",
         "wikipedia": "es:Segunda invasión inglesa al Río de la Plata",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Second invasion of the River Plate",
+          "es": "Segunda invasión inglesa al Río de la Plata"
+        }
       }
     },
     {
@@ -6358,7 +7431,10 @@
         "longitude": -58.3776708,
         "wikidata": "Q12200215",
         "wikipedia": "es:Plaza Díaz Vélez",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza Díaz Vélez"
+        }
       }
     },
     {
@@ -6381,7 +7457,10 @@
         "longitude": -58.4703328,
         "wikidata": "Q6079546",
         "wikipedia": "es:Plaza Félix Lima",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza Félix Lima"
+        }
       }
     },
     {
@@ -6404,7 +7483,10 @@
         "longitude": -58.3587022,
         "wikidata": "Q6079659",
         "wikipedia": "es:Plaza María Eva Duarte de Perón",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza María Eva Duarte de Perón"
+        }
       }
     },
     {
@@ -6430,7 +7512,11 @@
         "phone": "+54 11 4789-1156",
         "website": "http://www.cariverplate.com.ar/museo-river/",
         "wikidata": "Q65484512",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "River Plate Museum",
+          "es": "Museo River Plate"
+        }
       }
     },
     {
@@ -6453,7 +7539,11 @@
         "longitude": -58.4415688,
         "wikidata": "Q28500972",
         "wikipedia": "es:Plazoleta Crisólogo Larralde",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plazoleta Crisólogo Larralde",
+          "es": "Plazoleta Crisólogo Larralde"
+        }
       }
     },
     {
@@ -6476,7 +7566,10 @@
         "longitude": -58.3552517,
         "wikidata": "Q6079820",
         "wikipedia": "es:Plaza Solís",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza Solís"
+        }
       }
     },
     {
@@ -6499,7 +7592,10 @@
         "longitude": -58.4815683,
         "wikidata": "Q5577078",
         "wikipedia": "es:Plaza Marcos Sastre",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza Marcos Sastre"
+        }
       }
     },
     {
@@ -6528,7 +7624,11 @@
         "wikidata": "Q2835568",
         "wikipedia": "es:Museo de la Ciudad (Buenos Aires)",
         "fee": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Buenos Aires Museo",
+          "es": "Buenos Aires Museo"
+        }
       }
     },
     {
@@ -6552,7 +7652,11 @@
         "website": "https://www.euskonews.com/0383zbk/kosmo38301.html",
         "wikidata": "Q55980019",
         "wikipedia": "es:Plaza del Congreso#Plaza Lorea",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza Lorea",
+          "es": "Plaza Lorea"
+        }
       }
     },
     {
@@ -6575,7 +7679,10 @@
         "longitude": -58.381685,
         "wikidata": "Q16619979",
         "wikipedia": "es:Plaza Coronel Toribio Tedín",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza Coronel Toribio Tedín"
+        }
       }
     },
     {
@@ -6599,7 +7706,11 @@
         "address": "Avenida San Isidro Labrador, 4630, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q119217920",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "San Isidro Labrador Parish",
+          "es": "Parroquia San Isidro Labrador"
+        }
       }
     },
     {
@@ -6621,7 +7732,11 @@
         "latitude": -34.5227369,
         "longitude": -58.4660167,
         "wikidata": "Q60220844",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Paseo de la Costa",
+          "es": "Paseo de la Costa"
+        }
       }
     },
     {
@@ -6644,7 +7759,10 @@
         "longitude": -58.4684431,
         "address": "Avenida Cabildo, 3680, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q6063783",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Parroquia de la Santísima Trinidad (Buenos Aires)"
+        }
       }
     },
     {
@@ -6667,7 +7785,11 @@
         "longitude": -58.4121504,
         "address": "Avenida Rivadavia, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q5755326",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Edificio Rossi",
+          "es": "Casa de los Pavos Reales"
+        }
       }
     },
     {
@@ -6692,7 +7814,10 @@
         "phone": "+54 4983-7944",
         "wikidata": "Q9056092",
         "wikipedia": "es:Parroquia Santa María (Almagro)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Parroquia Santa María (Almagro)"
+        }
       }
     },
     {
@@ -6715,7 +7840,10 @@
         "longitude": -58.3686409,
         "wikidata": "Q16620015",
         "wikipedia": "es:Plaza Juan Domingo Perón",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza General Agustín Pedro Justo"
+        }
       }
     },
     {
@@ -6738,7 +7866,12 @@
         "longitude": -58.3882064,
         "wikidata": "Q830935",
         "wikipedia": "es:Departamento Central de la Policía Federal Argentina (edificio)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Polícia Federal Argentina",
+          "en": "Argentine Federal Police building",
+          "es": "Departamento Central de la Policía Federal Argentina"
+        }
       }
     },
     {
@@ -6760,7 +7893,11 @@
         "latitude": -34.5979501,
         "longitude": -58.392402,
         "wikidata": "Q55980028",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza Rodríguez Peña",
+          "es": "Plaza Rodríguez Peña"
+        }
       }
     },
     {
@@ -6783,7 +7920,10 @@
         "longitude": -58.3904655,
         "wikidata": "Q16620122",
         "wikipedia": "es:Plaza Ramón J. Cárcano (Buenos Aires)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza Ramón J. Cárcano"
+        }
       }
     },
     {
@@ -6805,7 +7945,11 @@
         "latitude": -34.6224978,
         "longitude": -58.4128275,
         "wikidata": "Q111685527",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Plaza Boedo",
+          "es": "Plaza Mariano Boedo"
+        }
       }
     },
     {
@@ -6829,7 +7973,11 @@
         "longitude": -58.4816557,
         "wikidata": "Q5926775",
         "wikipedia": "es:Jardín botánico Lucien Hauman",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Jardín Botánico Lucien Hauman",
+          "es": "Jardín botánico Lucien Hauman"
+        }
       }
     },
     {
@@ -6851,7 +7999,10 @@
         "latitude": -34.5840276,
         "longitude": -58.395913,
         "wikidata": "Q111685500",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Plaza Mitre"
+        }
       }
     },
     {
@@ -6874,7 +8025,10 @@
         "longitude": -58.4036128,
         "wikidata": "Q16616302",
         "wikipedia": "es:Parque de la Raza",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Parque de la Raza"
+        }
       }
     },
     {
@@ -6922,7 +8076,10 @@
         "latitude": -34.6114201,
         "longitude": -58.358979,
         "wikidata": "Q111697422",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Guardacostas"
+        }
       }
     },
     {
@@ -6944,7 +8101,10 @@
         "latitude": -34.6095237,
         "longitude": -58.3883681,
         "wikidata": "Q111696473",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "El pensador"
+        }
       }
     },
     {
@@ -7010,7 +8170,11 @@
         "address": "Avenida Independencia, 3071, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4957-4348",
         "wikidata": "Q65390096",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of Experimental Psychology in Argentina \"Dr. Horacio G. Piñero\"",
+          "es": "Museo de la Psicología Experimental en Argentina \"Dr. Horacio G. Piñero\""
+        }
       }
     },
     {
@@ -7056,7 +8220,11 @@
         "longitude": -58.3748453,
         "website": "https://piazzollatango.com/",
         "wikidata": "Q38263850",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Piazzolla Tango",
+          "es": "Piazzolla Tango"
+        }
       }
     },
     {
@@ -7250,7 +8418,11 @@
         "longitude": -58.415624,
         "website": "https://www.buenosaires.gob.ar/ambienteyespaciopublico/mantenimiento/espaciosverdes/jardinbotanico/recorre-el-jardin/obrasdearte/la-soberania",
         "wikidata": "Q111696603",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "La Soberanía",
+          "es": "La Soberanía"
+        }
       }
     },
     {
@@ -7315,7 +8487,11 @@
         "longitude": -58.4184915,
         "website": "https://buenosaires.gob.ar/jardinbotanico/mercurio",
         "wikidata": "Q115332114",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "El mensaje de Mercurio",
+          "es": "El mensaje de Mercurio"
+        }
       }
     },
     {
@@ -7337,7 +8513,11 @@
         "longitude": -58.4170807,
         "website": "https://www.buenosaires.gob.ar/ambienteyespaciopublico/mantenimiento/espaciosverdes/jardinbotanico/recorre-el-jardin/obrasdearte/pureza",
         "wikidata": "Q111696628",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Pureza",
+          "es": "Pureza"
+        }
       }
     },
     {
@@ -7383,7 +8563,10 @@
         "phone": "+54 11 4775-9010",
         "website": "https://chacarereanteatre.com.ar",
         "wikidata": "Q134585059",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Chacarerean Teatre"
+        }
       }
     },
     {
@@ -7409,7 +8592,11 @@
         "phone": "+54 11 4576-5576",
         "wikidata": "Q65486199",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Geographical Museum Professor Miguel Ángel Fernández",
+          "es": "Museo Geográfico Profesor Miguel Ángel Fernández"
+        }
       }
     },
     {
@@ -7431,7 +8618,10 @@
         "latitude": -34.5828667,
         "longitude": -58.3965485,
         "wikidata": "Q111706636",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Rubén Darío"
+        }
       }
     },
     {
@@ -7452,7 +8642,10 @@
         "latitude": -34.5614514,
         "longitude": -58.454457,
         "wikidata": "Q111708365",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Las Tres Gracias"
+        }
       }
     },
     {
@@ -7478,7 +8671,11 @@
         "phone": "+54 11 3533-8505",
         "website": "https://www.centroanafrank.com.ar/museo",
         "wikidata": "Q65484950",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Ann Frank museum",
+          "es": "Museo Ana Frank"
+        }
       }
     },
     {
@@ -7552,7 +8749,11 @@
         "phone": "+54 11 4123-0832",
         "website": "http://museojudio.org.ar/",
         "wikidata": "Q64764388",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Jewish Museum of Buenos Aires Dr. Salvador Kibrick",
+          "es": "Museo Judío de Buenos Aires Dr. Salvador Kibrick"
+        }
       }
     },
     {
@@ -7573,7 +8774,10 @@
         "latitude": -34.6054729,
         "longitude": -58.419037,
         "wikidata": "Q111706799",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "El Fauno"
+        }
       }
     },
     {
@@ -7594,7 +8798,10 @@
         "latitude": -34.6112492,
         "longitude": -58.397665,
         "wikidata": "Q111707571",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Al trabajo"
+        }
       }
     },
     {
@@ -7615,7 +8822,10 @@
         "latitude": -34.6033497,
         "longitude": -58.4097876,
         "wikidata": "Q111707532",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Homenaje al bandoneón"
+        }
       }
     },
     {
@@ -7636,7 +8846,10 @@
         "latitude": -34.6325101,
         "longitude": -58.3836237,
         "wikidata": "Q111697099",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "El aborigen"
+        }
       }
     },
     {
@@ -7657,7 +8870,10 @@
         "latitude": -34.6327837,
         "longitude": -58.3840878,
         "wikidata": "Q111694770",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Gladiador herido"
+        }
       }
     },
     {
@@ -7678,7 +8894,10 @@
         "latitude": -34.6376636,
         "longitude": -58.3740134,
         "wikidata": "Q111696148",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Madre"
+        }
       }
     },
     {
@@ -7699,7 +8918,10 @@
         "latitude": -34.6198954,
         "longitude": -58.3853205,
         "wikidata": "Q111694928",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Mural"
+        }
       }
     },
     {
@@ -7720,7 +8942,10 @@
         "latitude": -34.558861,
         "longitude": -58.4509854,
         "wikidata": "Q111707977",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Mujer con cántaro"
+        }
       }
     },
     {
@@ -7766,7 +8991,10 @@
         "latitude": -34.5674484,
         "longitude": -58.4640341,
         "wikidata": "Q111697286",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Maternidad"
+        }
       }
     },
     {
@@ -7787,7 +9015,11 @@
         "latitude": -34.5535091,
         "longitude": -58.4351155,
         "wikidata": "Q111707979",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Alimaña",
+          "es": "Alimaña"
+        }
       }
     },
     {
@@ -7808,7 +9040,10 @@
         "latitude": -34.6214374,
         "longitude": -58.416568,
         "wikidata": "Q115189174",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La madre"
+        }
       }
     },
     {
@@ -7829,7 +9064,10 @@
         "latitude": -34.6231353,
         "longitude": -58.416203,
         "wikidata": "Q115189473",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Enlace de planos"
+        }
       }
     },
     {
@@ -7850,7 +9088,10 @@
         "latitude": -34.6235017,
         "longitude": -58.4161628,
         "wikidata": "Q111694778",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Bestia"
+        }
       }
     },
     {
@@ -7871,7 +9112,10 @@
         "latitude": -34.6238321,
         "longitude": -58.416344,
         "wikidata": "Q111694779",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Interiores"
+        }
       }
     },
     {
@@ -7892,7 +9136,10 @@
         "latitude": -34.6228131,
         "longitude": -58.4162352,
         "wikidata": "Q115189379",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Mutación"
+        }
       }
     },
     {
@@ -7913,7 +9160,10 @@
         "latitude": -34.6232473,
         "longitude": -58.4163748,
         "wikidata": "Q111694777",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Cholita"
+        }
       }
     },
     {
@@ -7934,7 +9184,10 @@
         "latitude": -34.6247908,
         "longitude": -58.4160609,
         "wikidata": "Q111694780",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Súplica"
+        }
       }
     },
     {
@@ -7955,7 +9208,10 @@
         "latitude": -34.624278,
         "longitude": -58.4162769,
         "wikidata": "Q111694782",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Tango Íntimo"
+        }
       }
     },
     {
@@ -7976,7 +9232,10 @@
         "latitude": -34.6250909,
         "longitude": -58.4160314,
         "wikidata": "Q111694781",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Testimonio"
+        }
       }
     },
     {
@@ -7997,7 +9256,10 @@
         "latitude": -34.6249298,
         "longitude": -58.4160475,
         "wikidata": "Q115189531",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Crecer"
+        }
       }
     },
     {
@@ -8018,7 +9280,10 @@
         "latitude": -34.6052315,
         "longitude": -58.4382076,
         "wikidata": "Q111708109",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Centinela de la Patria"
+        }
       }
     },
     {
@@ -8039,7 +9304,10 @@
         "latitude": -34.6063011,
         "longitude": -58.4361184,
         "wikidata": "Q111706727",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Víctoria Alada"
+        }
       }
     },
     {
@@ -8060,7 +9328,10 @@
         "latitude": -34.6156237,
         "longitude": -58.4582253,
         "wikidata": "Q111694522",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Caridad"
+        }
       }
     },
     {
@@ -8081,7 +9352,10 @@
         "latitude": -34.614266,
         "longitude": -58.4590702,
         "wikidata": "Q111694523",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Esperanza"
+        }
       }
     },
     {
@@ -8102,7 +9376,10 @@
         "latitude": -34.6155663,
         "longitude": -58.4563611,
         "wikidata": "Q111694524",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Fe"
+        }
       }
     },
     {
@@ -8123,7 +9400,11 @@
         "latitude": -34.5882581,
         "longitude": -58.4534157,
         "wikidata": "Q111695705",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Los Andes",
+          "es": "Los Andes"
+        }
       }
     },
     {
@@ -8144,7 +9425,10 @@
         "latitude": -34.5717648,
         "longitude": -58.459891,
         "wikidata": "Q111697318",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Gladiador Borghese"
+        }
       }
     },
     {
@@ -8166,7 +9450,10 @@
         "longitude": -58.4573968,
         "wikidata": "Q111697300",
         "wikipedia": "es:Luís de Camões",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Homenaje a Luis de Camoes"
+        }
       }
     },
     {
@@ -8187,7 +9474,10 @@
         "latitude": -34.617852,
         "longitude": -58.3813158,
         "wikidata": "Q111694710",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Brotes de una nueva conciencia"
+        }
       }
     },
     {
@@ -8208,7 +9498,10 @@
         "latitude": -34.628617,
         "longitude": -58.4632956,
         "wikidata": "Q111708369",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Canción"
+        }
       }
     },
     {
@@ -8229,7 +9522,10 @@
         "latitude": -34.6286668,
         "longitude": -58.463176,
         "wikidata": "Q111708396",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Espera"
+        }
       }
     },
     {
@@ -8250,7 +9546,10 @@
         "latitude": -34.6220125,
         "longitude": -58.4568854,
         "wikidata": "Q111694737",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Familia"
+        }
       }
     },
     {
@@ -8292,7 +9591,10 @@
         "latitude": -34.62956,
         "longitude": -58.4828713,
         "wikidata": "Q111694738",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Columna de la Vida"
+        }
       }
     },
     {
@@ -8313,7 +9615,10 @@
         "latitude": -34.6343645,
         "longitude": -58.3533026,
         "wikidata": "Q111697373",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Madre Marinera"
+        }
       }
     },
     {
@@ -8334,7 +9639,10 @@
         "latitude": -34.6444976,
         "longitude": -58.3643762,
         "wikidata": "Q111708344",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Juventud"
+        }
       }
     },
     {
@@ -8360,7 +9668,10 @@
         "phone": "+54 11 4553-9440",
         "website": "http://www.anconetani.net/",
         "wikidata": "Q65483841",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Anconetani del Acordeón"
+        }
       }
     },
     {
@@ -8381,7 +9692,10 @@
         "latitude": -34.6085793,
         "longitude": -58.3808927,
         "wikidata": "Q111694471",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Sabiduría"
+        }
       }
     },
     {
@@ -8402,7 +9716,10 @@
         "latitude": -34.6085785,
         "longitude": -58.3808483,
         "wikidata": "Q111694473",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Virtud"
+        }
       }
     },
     {
@@ -8445,7 +9762,10 @@
         "longitude": -58.4551136,
         "website": "http://convivenciaypaz.blogspot.com.ar/2009_01_01_archive.html",
         "wikidata": "Q111694361",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Convivencia y Paz"
+        }
       }
     },
     {
@@ -8466,7 +9786,10 @@
         "latitude": -34.5474387,
         "longitude": -58.4684994,
         "wikidata": "Q111707586",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "El hombre y sus pasiones"
+        }
       }
     },
     {
@@ -8487,7 +9810,10 @@
         "latitude": -34.5722623,
         "longitude": -58.412952,
         "wikidata": "Q111706808",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "El atleta"
+        }
       }
     },
     {
@@ -8508,7 +9834,10 @@
         "latitude": -34.5734478,
         "longitude": -58.4143269,
         "wikidata": "Q111706806",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Eduardo Costa"
+        }
       }
     },
     {
@@ -8530,7 +9859,10 @@
         "longitude": -58.4149374,
         "website": "https://palermonline.com.ar/wordpress/?p=39290",
         "wikidata": "Q111706805",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Almirante Ramón González Fernández"
+        }
       }
     },
     {
@@ -8552,7 +9884,10 @@
         "longitude": -58.4008632,
         "website": "https://blogs.lanacion.com.ar/historia-argentina/artes/una-reina-una-primera-dama-y-una-trabajadora/",
         "wikidata": "Q111706637",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Afanes Hogareños"
+        }
       }
     },
     {
@@ -8678,7 +10013,10 @@
         "latitude": -34.5744525,
         "longitude": -58.4169588,
         "wikidata": "Q111696795",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Lucha del tigre"
+        }
       }
     },
     {
@@ -8723,7 +10061,10 @@
         "longitude": -58.3636511,
         "address": "Garibaldi, 1429, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q65486205",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Conventillo 'Marjan Grum'"
+        }
       }
     },
     {
@@ -8744,7 +10085,10 @@
         "latitude": -34.5709243,
         "longitude": -58.4179251,
         "wikidata": "Q111695606",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Flor de Juventud"
+        }
       }
     },
     {
@@ -8765,7 +10109,7 @@
         ],
         "latitude": -34.5921669,
         "longitude": -58.3783479,
-        "address": "Esmeralda, 1357, Buenos Aires",
+        "address": "Esmeralda, 1357",
         "phone": "+54 11 4327-0664",
         "website": "https://www.galeriavasari.com.ar",
         "popularity": 0
@@ -8812,7 +10156,10 @@
         "latitude": -34.5417439,
         "longitude": -58.4354022,
         "wikidata": "Q115188892",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Pensar es un hecho revolucionario"
+        }
       }
     },
     {
@@ -8855,7 +10202,10 @@
         "latitude": -34.5615123,
         "longitude": -58.4314583,
         "wikidata": "Q111694513",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Madre Inmigrante Croata"
+        }
       }
     },
     {
@@ -8881,7 +10231,11 @@
         "phone": "+54 11 4345-6967",
         "wikidata": "Q64764216",
         "wheelchair": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "World Tango Museum",
+          "es": "Museo Mundial del Tango"
+        }
       }
     },
     {
@@ -8931,7 +10285,11 @@
         "wikidata": "Q64764396",
         "fee": "no",
         "wheelchair": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Heritage Museum of the Palacio de las Aguas Corrientes",
+          "es": "Museo Del Patrimonio Del Palacio De Las Aguas Corrientes"
+        }
       }
     },
     {
@@ -8955,7 +10313,11 @@
         "address": "Chile, 832, Ciudad Autónoma de Buenos Aires",
         "opening_hours": "Tu-Su 11:00-19:00",
         "wikidata": "Q64919061",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "costume history museum",
+          "es": "Museo de la historia del traje"
+        }
       }
     },
     {
@@ -8980,7 +10342,10 @@
         "opening_hours": "Mo-Sa 10:00-17:00 \"call for info\"",
         "phone": "+54 11 4962-2592",
         "wikidata": "Q63589326",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Casa De Batato Barea"
+        }
       }
     },
     {
@@ -9005,7 +10370,11 @@
         "opening_hours": "Fr 15:30-17:30",
         "phone": "+54 11 4931-2560",
         "wikidata": "Q65389987",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of Pacemakers and Precursors of Modern Medicine",
+          "es": "Museo De Marcapasos Y Precursores De La Medicina Moderna"
+        }
       }
     },
     {
@@ -9028,7 +10397,11 @@
         "longitude": -58.3943907,
         "address": "Riobamba, 650, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q63589426",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of the De La Salle College of Natural Sciences and Man",
+          "es": "Museo Del Colegio De La Salle De Ciencias Naturales Y Del Hombre"
+        }
       }
     },
     {
@@ -9054,7 +10427,10 @@
         "phone": "+54 11 4382-9068",
         "website": "http://www.museodelaudifono.com.ar/",
         "wikidata": "Q65486229",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo del Audífono"
+        }
       }
     },
     {
@@ -9080,7 +10456,10 @@
         "phone": "+54 11 4010-3020",
         "website": "https://www.senado.gov.ar/micrositios/Museo",
         "wikidata": "Q65486230",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo del Senado de la Nación"
+        }
       }
     },
     {
@@ -9105,7 +10484,11 @@
         "phone": "+54 11 4374-6358",
         "website": "https://www.csjn.gov.ar/cmfcs/files/museo.htm",
         "wikidata": "Q63588925",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Forensic Museum of National Justice Dr. Juan Bautista Bafico",
+          "es": "Museo Forense De La Justicia Nacional Dr. Juan Bautista Bafico"
+        }
       }
     },
     {
@@ -9130,7 +10513,11 @@
         "phone": "+54 11 4953-2587",
         "website": "https://www.diputados.gov.ar/secparl/dmuseo/index.html",
         "wikidata": "Q84513452",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Historical Museum of the Honorable Chamber of Deputies",
+          "es": "Museo Histórico De La Honorable Cámara De Diputados"
+        }
       }
     },
     {
@@ -9154,7 +10541,11 @@
         "address": "Hipólito Yrigoyen, 1708, Ciudad Autónoma de Buenos Aires",
         "opening_hours": "Mo-Fr 10:00-18:00",
         "wikidata": "Q84513466",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Parliamentary Museum Senator Domingo Faustino Sarmiento",
+          "es": "Museo Parlamentario Senador Domingo Faustino Sarmiento"
+        }
       }
     },
     {
@@ -9178,7 +10569,10 @@
         "address": "Bartolomé Mitre, 2455, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4951-4303",
         "wikidata": "Q65391599",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo De Ciencias Naturales Del Colegio San José"
+        }
       }
     },
     {
@@ -9229,7 +10623,10 @@
         "opening_hours": "Mo-Fr 10:00-18:00",
         "phone": "+54 11 4701-1791",
         "wikidata": "Q65485165",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo archivo tecno educativo 'Lorenzo Raggio'"
+        }
       }
     },
     {
@@ -9254,7 +10651,10 @@
         "opening_hours": "Mo-Sa 10:00-17:00 \"call for info\"",
         "phone": "+54 11 4331-9734",
         "wikidata": "Q63615052",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo De La Fotografía Humberto F. Zappa"
+        }
       }
     },
     {
@@ -9282,7 +10682,10 @@
         "wikidata": "Q63441886",
         "fee": "no",
         "wheelchair": "limited",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo de Maquetas"
+        }
       }
     },
     {
@@ -9309,7 +10712,11 @@
         "website": "http://museomortola.gl.fcen.uba.ar/",
         "wikidata": "Q63441994",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of Mineralogy Dra. Elmira Inés Mórtola",
+          "es": "Museo de Mineralogía 'Dra. Elmira Inés Mórtola'"
+        }
       }
     },
     {
@@ -9334,7 +10741,11 @@
         "phone": "+54 11 4631-2910",
         "website": "https://museobarriodeflores.com.ar/",
         "wikidata": "Q65483961",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Flowers Neighborhood Museum",
+          "es": "Museo Barrio de Flores"
+        }
       }
     },
     {
@@ -9359,7 +10770,11 @@
         "opening_hours": "Mo-Fr 10:00-13:00; Mo-Tu 15:00-18:00; Th 15:00-18:00",
         "phone": "+54 11 4576-5666",
         "wikidata": "Q65391594",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Historical Museum of the Horse Grenadier Regiment \"General San Martín\"",
+          "es": "Museo Histórico del Regimiento Granaderos a Caballo \"General San Martín\""
+        }
       }
     },
     {
@@ -9677,7 +11092,10 @@
         "latitude": -34.6117009,
         "longitude": -58.359472,
         "wikidata": "Q115182862",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Monumento al Tango"
+        }
       }
     },
     {
@@ -9698,7 +11116,10 @@
         "latitude": -34.635137,
         "longitude": -58.4391611,
         "wikidata": "Q111695551",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Ñusta (Fuente Incaica)"
+        }
       }
     },
     {
@@ -9719,7 +11140,10 @@
         "latitude": -34.6309104,
         "longitude": -58.4423633,
         "wikidata": "Q111697385",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Cosechadora"
+        }
       }
     },
     {
@@ -9744,7 +11168,10 @@
         "phone": "+54 11 4576-3335",
         "wikidata": "Q63441984",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Interactivo de Matemática"
+        }
       }
     },
     {
@@ -9769,7 +11196,10 @@
         "phone": "+54 11 4576-5537",
         "wikidata": "Q63442008",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo de Los Patricios de Buenos Ayres"
+        }
       }
     },
     {
@@ -9795,7 +11225,10 @@
         "phone": "+54 11 4801-5675",
         "website": "https://www.aca.org.ar/museo/",
         "wikidata": "Q63442073",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo del Automóvil Club Argentino"
+        }
       }
     },
     {
@@ -9819,7 +11252,10 @@
         "address": "Avenida Presidente Figueroa Alcorta, 2263, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4809-5638",
         "wikidata": "Q63442085",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Y Archivo Histórico De La Facultad De Derecho De La Universidad De Buenos Aires"
+        }
       }
     },
     {
@@ -9846,7 +11282,11 @@
         "website": "http://www.basilicadelpilar.org.ar/index.php/la-parroquia/la-basilica/claustros",
         "wikidata": "Q63442119",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Historical Cloisters Basilica del Pilar",
+          "es": "Claustros Históricos Basílica del Pilar"
+        }
       }
     },
     {
@@ -9870,7 +11310,10 @@
         "address": "Guido, 1841, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4804-7743",
         "wikidata": "Q63442129",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Notario Roberto Mario Arata"
+        }
       }
     },
     {
@@ -9895,7 +11338,10 @@
         "phone": "+54 11 4821-8146",
         "website": "http://www.dominicasanunciata.org/noticias/museo-padre-coll/",
         "wikidata": "Q63442147",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Padre Coll"
+        }
       }
     },
     {
@@ -9921,7 +11367,10 @@
         "phone": "+54 11 4811-7678",
         "website": "http://casadelteatro.org.ar/museo-regina-pacini/",
         "wikidata": "Q63442246",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Casa Del Teatro"
+        }
       }
     },
     {
@@ -9945,7 +11394,11 @@
         "address": "Junín, 959, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4961-6141",
         "wikidata": "Q63442309",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Commission of History and Museum of Dentistry of the Argentine Dental Association",
+          "es": "Comisión De Historia Y Museo De Odontología De La Asociación Odontológica Argentina"
+        }
       }
     },
     {
@@ -9970,7 +11423,11 @@
         "phone": "+54 11 5950-9500",
         "wikidata": "Q63442344",
         "wheelchair": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of the History of Surgery Vicente Aníbal Risolía",
+          "es": "Museo De La Historia De La Cirugía Vicente Aníbal Risolía"
+        }
       }
     },
     {
@@ -9996,7 +11453,11 @@
         "website": "https://kosice.com.ar/",
         "wikidata": "Q63589229",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Kosice museum",
+          "es": "Museo Kosice"
+        }
       }
     },
     {
@@ -10022,7 +11483,10 @@
         "phone": "+54 11 4861-2325",
         "website": "https://www.museoabasto.org.ar/",
         "wikidata": "Q63616667",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo de los Niños Abasto"
+        }
       }
     },
     {
@@ -10048,7 +11512,10 @@
         "phone": "+54 11 4349-3202",
         "website": "http://mumin.gob.ar/museo/",
         "wikidata": "Q63905076",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Participativo Minero - Mumin"
+        }
       }
     },
     {
@@ -10072,7 +11539,11 @@
         "address": "Avenida Caseros, 2739, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4941-5478",
         "wikidata": "Q65390781",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Itinerant Museum of Contemporary Art of Mercosur",
+          "es": "Museo Itinerante De Arte Contemporáneo Del Mercosur"
+        }
       }
     },
     {
@@ -10097,7 +11568,10 @@
         "opening_hours": "Sa 14:00-18:00",
         "phone": "+54 11 4302-2194",
         "wikidata": "Q65390921",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Memorias De San Juan Evangelista"
+        }
       }
     },
     {
@@ -10121,7 +11595,11 @@
         "address": "Avenida Vélez Sársfield, 563, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4301-2888",
         "wikidata": "Q65391267",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum Of Natural Sciences Of Medical Zoological Specialty",
+          "es": "Museo De Ciencias Naturales De Especialidad Zoológica Médica"
+        }
       }
     },
     {
@@ -10145,7 +11623,10 @@
         "address": "California, 2000, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4303-0000",
         "wikidata": "Q65391502",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo De La Balanza"
+        }
       }
     },
     {
@@ -10169,7 +11650,11 @@
         "address": "Avenida Medrano, 735, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4863-1357",
         "wikidata": "Q65391589",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Ethnographic Museum of the Pontifical Mission Societies",
+          "es": "Museo Etnográfico De Las Obras Misionales Pontificias"
+        }
       }
     },
     {
@@ -10219,7 +11704,10 @@
         "phone": "+54 11 5776-3545",
         "website": "https://www.argentina.gob.ar/casademoneda/se-casa-de-moneda/museo",
         "wikidata": "Q65391601",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo S.E. Casa De La Moneda"
+        }
       }
     },
     {
@@ -10300,7 +11788,10 @@
         "phone": "+54 11 4671-6464",
         "wikidata": "Q65391607",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo General Belgrano"
+        }
       }
     },
     {
@@ -10326,7 +11817,11 @@
         "phone": "+54 11 4301-1497",
         "website": "https://www.museodecera.com.ar",
         "wikidata": "Q65391609",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Historical Wax Museum",
+          "es": "Museo Histórico de Cera"
+        }
       }
     },
     {
@@ -10351,7 +11846,11 @@
         "phone": "+54 11 5950-9622",
         "website": "https://www.uba.ar/contenido/173",
         "wikidata": "Q65485760",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Houssay Museum of the History of Science and Technology",
+          "es": "Museo Houssay De Historia De La Ciencia Y La Tecnología"
+        }
       }
     },
     {
@@ -10375,7 +11874,10 @@
         "address": "Irala, 1162, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4302-2337",
         "wikidata": "Q65391615",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Casa Taller Celia Chevalier"
+        }
       }
     },
     {
@@ -10400,7 +11902,10 @@
         "phone": "+54 11 4129-1000",
         "website": "http://ppct.caicyt.gov.ar/index.php/anuario/article/view/3115",
         "wikidata": "Q65391616",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo de las Escuelas"
+        }
       }
     },
     {
@@ -10426,7 +11931,11 @@
         "phone": "+54 11 4394-6857",
         "website": "http://cpf.org.ar/museo-policial/",
         "wikidata": "Q65391624",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Police Museum",
+          "es": "Museo Policial"
+        }
       }
     },
     {
@@ -10452,7 +11961,11 @@
         "phone": "+54 11 4964-8235",
         "website": "www.farmacobotanica.org",
         "wikidata": "Q52575624",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museo de Farmacobotánica \"Juan A. Domínguez\"",
+          "es": "Museo De Fármacobotánica Juan A. Domínguez"
+        }
       }
     },
     {
@@ -10477,7 +11990,11 @@
         "opening_hours": "Mo-Fr 08:00-18:00",
         "phone": "+54 11 4331-6444",
         "wikidata": "Q65391947",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Technological Museum Ing. Eduardo Latzina",
+          "es": "Museo Tecnológico Ing. Eduardo Latzina"
+        }
       }
     },
     {
@@ -10501,7 +12018,11 @@
         "address": "Catamarca, 2099, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4941-3777",
         "wikidata": "Q65392978",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Geographic Museum Dr. Juan B. Terán and Museum of Natural Sciences Ángel Gallardo",
+          "es": "Museo Geográfico Dr. Juan B. Terán Y Museo De Ciencias Naturales Ángel Gallardo"
+        }
       }
     },
     {
@@ -10529,7 +12050,11 @@
         "website": "https://www.cultura.gob.ar/institucional/organismos/museos/instituto-nacional-de-estudios-de-teatro-inet/",
         "wikidata": "Q50351158",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Instituto Nacional de Estudios de Teatro",
+          "es": "Instituto Nacional de Estudios de Teatro"
+        }
       }
     },
     {
@@ -10554,7 +12079,10 @@
         "opening_hours": "Mo-Fr 10:00-15:00",
         "phone": "+54 11 4379-8600",
         "wikidata": "Q65393761",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Sadaic Vicente López Y Planes"
+        }
       }
     },
     {
@@ -10579,7 +12107,10 @@
         "phone": "+54 11 4612-0566",
         "website": "https://www.buenosaires.gob.ar/areas/educacion/escuelas/escuelas/primaria/de12esc01/default.htm",
         "wikidata": "Q65397032",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Escuela Museo de Bellas Artes 'General Urquiza'"
+        }
       }
     },
     {
@@ -10631,7 +12162,10 @@
         "phone": "+54 11 4347-2396",
         "wikidata": "Q65482215",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Histórico De La Afip"
+        }
       }
     },
     {
@@ -10656,7 +12190,11 @@
         "opening_hours": "Tu,Fr 09:00-12:00",
         "phone": "+54 11 4964-1271",
         "wikidata": "Q65482510",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of Dentistry and Center for Historical Studies 'Prof. Dr. Orestes Walter Siutti'",
+          "es": "Museo de odontología y centro de estudios Históricos 'Prof. Dr. Orestes Walter Siutti'"
+        }
       }
     },
     {
@@ -10684,7 +12222,10 @@
         "website": "http://www.museonotarial.org.ar:8080/museo/home.do",
         "wikidata": "Q65483033",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Notarial Argentino"
+        }
       }
     },
     {
@@ -10708,7 +12249,10 @@
         "address": "Tabaré, 1371, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4918-9448",
         "wikidata": "Q65483103",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Manoblanca"
+        }
       }
     },
     {
@@ -10734,7 +12278,10 @@
         "phone": "+54 11 4310-2642",
         "website": "https://prensagendarmeria.gob.ar/museo",
         "wikidata": "Q65483231",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Histórico De La Gendarmería Nacional"
+        }
       }
     },
     {
@@ -10759,7 +12306,10 @@
         "phone": "+54 11 4806-3456",
         "wikidata": "Q65483289",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Participativo de Ciencias"
+        }
       }
     },
     {
@@ -10784,7 +12334,10 @@
         "phone": "+54 11 5285-0344; +54 11 5285-0345; +54 11 5285-0233",
         "website": "https://www.fi.uba.ar/es/node/170",
         "wikidata": "Q65483342",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo de Ciencia y Técnica"
+        }
       }
     },
     {
@@ -10808,7 +12361,11 @@
         "address": "Avenida Nazca, 371, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4611-2607",
         "wikidata": "Q65483599",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Blanca Angélica Gandini Neighborhood of Flores History Museum",
+          "es": "Museo Histórico Vecinal De Flores Blanca Angélica Gandini"
+        }
       }
     },
     {
@@ -10836,7 +12393,10 @@
         "wikidata": "Q63900366",
         "fee": "no",
         "popularity": 0,
-        "site": "Q4579815"
+        "site": "Q4579815",
+        "names": {
+          "es": "Museo Franciscano 'Monseñor Fray José María Bottaro'"
+        }
       }
     },
     {
@@ -10879,7 +12439,10 @@
         "longitude": -58.3721862,
         "wikidata": "Q111694510",
         "popularity": 0,
-        "site": "Q831484"
+        "site": "Q831484",
+        "names": {
+          "es": "La Industria"
+        }
       }
     },
     {
@@ -10900,7 +12463,10 @@
         "latitude": -34.6084248,
         "longitude": -58.3721838,
         "wikidata": "Q111694509",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Geografía"
+        }
       }
     },
     {
@@ -10921,7 +12487,10 @@
         "latitude": -34.608423,
         "longitude": -58.3721437,
         "wikidata": "Q111694511",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Navegación"
+        }
       }
     },
     {
@@ -10942,7 +12511,10 @@
         "latitude": -34.6083879,
         "longitude": -58.3721461,
         "wikidata": "Q111694508",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "La Astronomía"
+        }
       }
     },
     {
@@ -10963,7 +12535,7 @@
         ],
         "latitude": -34.6876503,
         "longitude": -58.4128024,
-        "address": "Coronel D'Elía, Buenos Aires",
+        "address": "Coronel D'Elía",
         "opening_hours": "Mo-Sa 09:00-20:00",
         "popularity": 0
       }
@@ -10989,7 +12561,11 @@
         "address": "Vedia, 3546, Ciudad Autónoma de Buenos Aires",
         "website": "https://www.magdafrank.com.ar/museo/",
         "wikidata": "Q62914095",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Magda Frank Museum",
+          "es": "Museo Magda Frank"
+        }
       }
     },
     {
@@ -11013,7 +12589,11 @@
         "address": "Avenida Caseros, 3079, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 9 11 3157-8002",
         "wikidata": "Q98081041",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Dr. Genaro Giacobini Museum",
+          "es": "Museo Dr. Genaro Giacobini"
+        }
       }
     },
     {
@@ -11080,7 +12660,11 @@
         "longitude": -58.3910379,
         "website": "http://patrimonio.com.ar/monumentos/detalle/atlas-de-recoleta/74",
         "wikidata": "Q115184573",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Atlas of Recoleta",
+          "es": "Atlas de Recoleta"
+        }
       }
     },
     {
@@ -11151,7 +12735,10 @@
         "latitude": -34.5739547,
         "longitude": -58.4159623,
         "wikidata": "Q111695593",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Luis María Drago"
+        }
       }
     },
     {
@@ -11172,7 +12759,10 @@
         "latitude": -34.5990172,
         "longitude": -58.3658632,
         "wikidata": "Q114844037",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Pasionaria"
+        }
       }
     },
     {
@@ -11238,7 +12828,7 @@
         ],
         "latitude": -34.5812491,
         "longitude": -58.4183648,
-        "address": "Avenida General Las Heras, 4159, Buenos Aires",
+        "address": "Avenida General Las Heras, 4159",
         "website": "https://www.mundogea.com.ar/sitio2023/",
         "popularity": 0
       }
@@ -11261,7 +12851,10 @@
         "latitude": -34.5779213,
         "longitude": -58.4153632,
         "wikidata": "Q114845838",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Hito de frontera"
+        }
       }
     },
     {
@@ -11282,7 +12875,7 @@
         ],
         "latitude": -34.5972808,
         "longitude": -58.3986808,
-        "address": "Presidente José Evaristo Uriburu, 951, Buenos Aires",
+        "address": "Presidente José Evaristo Uriburu, 951",
         "opening_hours": "Mo-Fr 13:00-18:00",
         "phone": "+541152852933",
         "popularity": 0
@@ -11375,7 +12968,10 @@
         "longitude": -58.4781033,
         "website": "https://www.argentina.gob.ar/escultura-el-perdon",
         "wikidata": "Q111697360",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "El Perdón"
+        }
       }
     },
     {
@@ -11418,7 +13014,10 @@
         "latitude": -34.5871513,
         "longitude": -58.3904869,
         "wikidata": "Q114844873",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Aires de Buenos Aires"
+        }
       }
     },
     {
@@ -11439,7 +13038,7 @@
         ],
         "latitude": -34.6086979,
         "longitude": -58.3785336,
-        "address": "Avenida de Mayo, 853, Buenos Aires",
+        "address": "Avenida de Mayo, 853",
         "opening_hours": "Mo-Su 09:00-19:00",
         "phone": "+54 9 11 5011 5513",
         "website": "https://museodelmate.com.ar/",
@@ -11464,7 +13063,10 @@
         "latitude": -34.5604775,
         "longitude": -58.4490081,
         "wikidata": "Q111707978",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Vasil Levski"
+        }
       }
     },
     {
@@ -11531,7 +13133,10 @@
         "latitude": -34.5974113,
         "longitude": -58.4072778,
         "wikidata": "Q111685565",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Monseñor Miguel de Andrea"
+        }
       }
     },
     {
@@ -11553,7 +13158,10 @@
         "latitude": -34.562174,
         "longitude": -58.4586836,
         "wikidata": "Q111685568",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Noruega"
+        }
       }
     },
     {
@@ -11597,7 +13205,10 @@
         "latitude": -34.5721354,
         "longitude": -58.4193935,
         "wikidata": "Q111685546",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Holanda"
+        }
       }
     },
     {
@@ -11619,7 +13230,10 @@
         "latitude": -34.5550109,
         "longitude": -58.4578229,
         "wikidata": "Q111685575",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Alberti"
+        }
       }
     },
     {
@@ -11641,7 +13255,10 @@
         "latitude": -34.5763342,
         "longitude": -58.5032387,
         "wikidata": "Q111685556",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Leandro N. Alem"
+        }
       }
     },
     {
@@ -11663,7 +13280,10 @@
         "latitude": -34.5814776,
         "longitude": -58.4103846,
         "wikidata": "Q111685493",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Alférez Sobral"
+        }
       }
     },
     {
@@ -11685,7 +13305,10 @@
         "latitude": -34.5496206,
         "longitude": -58.4403666,
         "wikidata": "Q111691776",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Parque Paseo de las Américas"
+        }
       }
     },
     {
@@ -11707,7 +13330,12 @@
         "latitude": -34.5734829,
         "longitude": -58.4098746,
         "wikidata": "Q54197338",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Praça República Islâmica do Irã",
+          "en": "Islamic Republic of Iran Square",
+          "es": "Plaza República Islámica de Irán"
+        }
       }
     },
     {
@@ -11729,7 +13357,10 @@
         "latitude": -34.588258,
         "longitude": -58.3975308,
         "wikidata": "Q111685538",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Tte. Gral. Emilio Mitre"
+        }
       }
     },
     {
@@ -11751,7 +13382,10 @@
         "latitude": -34.6055459,
         "longitude": -58.4929403,
         "wikidata": "Q111685497",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Aristóbulo del Valle"
+        }
       }
     },
     {
@@ -11773,7 +13407,10 @@
         "latitude": -34.6104377,
         "longitude": -58.467601,
         "wikidata": "Q111685529",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Dr. Roque Sáenz Peña"
+        }
       }
     },
     {
@@ -11796,7 +13433,10 @@
         "longitude": -58.3646301,
         "wikidata": "Q111685495",
         "wikipedia": "es:Guillermo Brown",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Brown"
+        }
       }
     },
     {
@@ -11819,7 +13459,10 @@
         "longitude": -58.4140309,
         "website": "https://palermonline.com.ar/wordpress/?p=39290",
         "wikidata": "Q111685496",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Almte. Ramón González Fernández"
+        }
       }
     },
     {
@@ -11841,7 +13484,10 @@
         "latitude": -34.5638508,
         "longitude": -58.4217035,
         "wikidata": "Q111685585",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza República del Ecuador"
+        }
       }
     },
     {
@@ -11863,7 +13509,10 @@
         "latitude": -34.5474483,
         "longitude": -58.4685119,
         "wikidata": "Q111685499",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Balcarce"
+        }
       }
     },
     {
@@ -11885,7 +13534,10 @@
         "latitude": -34.5607938,
         "longitude": -58.4258876,
         "wikidata": "Q114052518",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Israel"
+        }
       }
     },
     {
@@ -11907,7 +13559,11 @@
         "latitude": -34.604642,
         "longitude": -58.3811196,
         "wikidata": "Q111591237",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Paquita Bernardo",
+          "es": "Plazoleta Paquita Bernardo"
+        }
       }
     },
     {
@@ -11929,7 +13585,11 @@
         "latitude": -34.6397822,
         "longitude": -58.4243589,
         "wikidata": "Q111584414",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Enrique Santos Discépolo",
+          "es": "Plazoleta Enrique Santos Discépolo"
+        }
       }
     },
     {
@@ -11973,7 +13633,10 @@
         "latitude": -34.6325674,
         "longitude": -58.4557781,
         "wikidata": "Q111685511",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza de la Misericordia"
+        }
       }
     },
     {
@@ -12017,7 +13680,10 @@
         "latitude": -34.5832209,
         "longitude": -58.390508,
         "wikidata": "Q111685589",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza República Federativa de Brasil"
+        }
       }
     },
     {
@@ -12061,7 +13727,10 @@
         "latitude": -34.596125,
         "longitude": -58.486306,
         "wikidata": "Q111685604",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plazoleta Carlos de la Púa"
+        }
       }
     },
     {
@@ -12110,7 +13779,11 @@
         "latitude": -34.6144366,
         "longitude": -58.3578342,
         "wikidata": "Q111591207",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Haroldo Conti",
+          "es": "Plazoleta Haroldo Conti"
+        }
       }
     },
     {
@@ -12154,7 +13827,10 @@
         "latitude": -34.6260073,
         "longitude": -58.5083791,
         "wikidata": "Q111685524",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Don Bosco"
+        }
       }
     },
     {
@@ -12176,7 +13852,10 @@
         "latitude": -34.6259501,
         "longitude": -58.407801,
         "wikidata": "Q111685561",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Martín Fierro"
+        }
       }
     },
     {
@@ -12220,7 +13899,10 @@
         "latitude": -34.5628746,
         "longitude": -58.4372849,
         "wikidata": "Q111685577",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza República de Bolivia"
+        }
       }
     },
     {
@@ -12242,7 +13924,11 @@
         "latitude": -34.6035412,
         "longitude": -58.3683656,
         "wikidata": "Q111584406",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Dr. Carlos Alberto Erro",
+          "es": "Plazoleta Dr. Carlos Alberto Erro"
+        }
       }
     },
     {
@@ -12264,7 +13950,11 @@
         "latitude": -34.6046903,
         "longitude": -58.3689703,
         "wikidata": "Q111591211",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Hipólito Bouchard",
+          "es": "Plazoleta Hipólito Bouchard"
+        }
       }
     },
     {
@@ -12286,7 +13976,11 @@
         "latitude": -34.6224199,
         "longitude": -58.376401,
         "wikidata": "Q111591254",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plaza Rosario Vera Peñaloza",
+          "es": "Plaza Rosario Vera Peñaloza"
+        }
       }
     },
     {
@@ -12308,7 +14002,10 @@
         "latitude": -34.6268883,
         "longitude": -58.3605436,
         "wikidata": "Q111685552",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Islas Malvinas"
+        }
       }
     },
     {
@@ -12330,7 +14027,10 @@
         "latitude": -34.6402755,
         "longitude": -58.3668457,
         "wikidata": "Q111685522",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Matheu"
+        }
       }
     },
     {
@@ -12352,7 +14052,11 @@
         "latitude": -34.5923376,
         "longitude": -58.382563,
         "wikidata": "Q111591240",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plaza Pierre de Coubertin",
+          "es": "Plaza Pierre de Coubertin"
+        }
       }
     },
     {
@@ -12374,7 +14078,11 @@
         "latitude": -34.5854539,
         "longitude": -58.3897568,
         "wikidata": "Q111591221",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Julio de Caro",
+          "es": "Plazoleta Julio de Caro"
+        }
       }
     },
     {
@@ -12396,7 +14104,10 @@
         "latitude": -34.5785339,
         "longitude": -58.4024663,
         "wikidata": "Q111685601",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plazoleta Alejandro Petion"
+        }
       }
     },
     {
@@ -12418,7 +14129,10 @@
         "latitude": -34.5703167,
         "longitude": -58.4220165,
         "wikidata": "Q111685512",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza de la Shoa"
+        }
       }
     },
     {
@@ -12462,7 +14176,10 @@
         "latitude": -34.556084,
         "longitude": -58.4327342,
         "wikidata": "Q111685498",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Armenia"
+        }
       }
     },
     {
@@ -12484,7 +14201,10 @@
         "latitude": -34.5540518,
         "longitude": -58.4353015,
         "wikidata": "Q111685583",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza República de México"
+        }
       }
     },
     {
@@ -12506,7 +14226,10 @@
         "latitude": -34.6452956,
         "longitude": -58.4088926,
         "wikidata": "Q111685566",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Nicaragua"
+        }
       }
     },
     {
@@ -12528,7 +14251,11 @@
         "latitude": -34.6465977,
         "longitude": -58.4021085,
         "wikidata": "Q116495969",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Herminio Masantonio",
+          "es": "Plazoleta Herminio Masantonio"
+        }
       }
     },
     {
@@ -12550,7 +14277,11 @@
         "latitude": -34.6533838,
         "longitude": -58.3931297,
         "wikidata": "Q111591233",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Miguel de Unamuno",
+          "es": "Plazoleta Miguel de Unamuno"
+        }
       }
     },
     {
@@ -12572,7 +14303,10 @@
         "latitude": -34.6372332,
         "longitude": -58.3772469,
         "wikidata": "Q116502121",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plaza Virrey Vertiz"
+        }
       }
     },
     {
@@ -12594,7 +14328,11 @@
         "latitude": -34.587087,
         "longitude": -58.3969199,
         "wikidata": "Q111591249",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Reino de Tailandia",
+          "es": "Plazoleta Reino de Tailandia"
+        }
       }
     },
     {
@@ -12616,7 +14354,10 @@
         "latitude": -34.5889699,
         "longitude": -58.482872,
         "wikidata": "Q111685551",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Jamaica"
+        }
       }
     },
     {
@@ -12638,7 +14379,11 @@
         "latitude": -34.5873074,
         "longitude": -58.4809208,
         "wikidata": "Q110684388",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Andres Chazarreta",
+          "es": "Plazoleta Andrés Chazarreta"
+        }
       }
     },
     {
@@ -12660,7 +14405,11 @@
         "latitude": -34.6179666,
         "longitude": -58.3572858,
         "wikidata": "Q111547534",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Parque Campaña del Chaco",
+          "es": "Parque Campaña del Chaco"
+        }
       }
     },
     {
@@ -12682,7 +14431,11 @@
         "latitude": -34.5696128,
         "longitude": -58.4567797,
         "wikidata": "Q111591241",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Portugal",
+          "es": "Plazoleta Portugal"
+        }
       }
     },
     {
@@ -12704,7 +14457,10 @@
         "latitude": -34.618076,
         "longitude": -58.3804557,
         "wikidata": "Q111685508",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Concepción del Alto de San Pedro"
+        }
       }
     },
     {
@@ -12726,7 +14482,11 @@
         "latitude": -34.5594737,
         "longitude": -58.4726045,
         "wikidata": "Q111584396",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Plazoleta Curuzú-Cuatiá",
+          "es": "Plazoleta Curuzú-Cuatiá"
+        }
       }
     },
     {
@@ -12770,7 +14530,10 @@
         "latitude": -34.5908404,
         "longitude": -58.5011116,
         "wikidata": "Q111685564",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plaza Martín Rodríguez"
+        }
       }
     },
     {
@@ -12792,7 +14555,10 @@
         "latitude": -34.5816688,
         "longitude": -58.4514384,
         "wikidata": "Q111547647",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Plazoleta Celedonio Esteban Flores"
+        }
       }
     },
     {
@@ -12842,7 +14608,10 @@
         "wikidata": "Q63904885",
         "wikipedia": "es:Edificio de la Cervecería Munich",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Museo Del Humor"
+        }
       }
     },
     {
@@ -12864,7 +14633,10 @@
         "latitude": -34.559918,
         "longitude": -58.4498322,
         "wikidata": "Q111707974",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Motivo decorativo"
+        }
       }
     },
     {
@@ -13160,7 +14932,11 @@
         "longitude": -58.4852815,
         "address": "Avenida Rivadavia, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q38263897",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Teatro Gran Rivadavia",
+          "es": "Teatro Gran Rivadavia"
+        }
       }
     },
     {
@@ -13186,7 +14962,11 @@
         "phone": "+54 11 4524-7997",
         "website": "http://www.teatro25demayo.org/",
         "wikidata": "Q98059273",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Teatro 25 de Mayo",
+          "es": "Teatro 25 de Mayo"
+        }
       }
     },
     {
@@ -13212,7 +14992,11 @@
         "phone": "+54 11 4308-0056",
         "website": "http://www.corralesviejos.com",
         "wikidata": "Q63615008",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of the Old Corrales of Parque Patricios",
+          "es": "Museo De Los Corrales Viejos De Parque Patricios"
+        }
       }
     },
     {
@@ -13306,7 +15090,10 @@
         "longitude": -58.4055309,
         "address": "Viamonte, 2790, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q55970747",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "es": "Casa del Dr. Bernardo Alberto Houssay"
+        }
       }
     },
     {
@@ -13399,7 +15186,11 @@
         "address": "Avenida Independencia, 1190, Ciudad Autónoma de Buenos Aires",
         "phone": "+54 11 4304-0984",
         "wikidata": "Q65391610",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of Sacred Art María Antonia de San José - Holy House of Spiritual Exercises",
+          "es": "Museo De Arte Sacro María Antonia De San José - Santa Casa De Ejercicios Espirituales"
+        }
       }
     },
     {
@@ -13425,7 +15216,12 @@
         "phone": "+54 11 4816-4331",
         "wikidata": "Q17068866",
         "cuisine": "pizza",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "El Cuartito",
+          "en": "El Cuartito",
+          "es": "El Cuartito"
+        }
       }
     },
     {
@@ -13480,7 +15276,11 @@
         "wikidata": "Q5755704",
         "wikipedia": "es:Casal de Catalunya",
         "cuisine": "spanish",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Casal de Catalunya",
+          "es": "Casal de Catalunya"
+        }
       }
     },
     {
@@ -13535,7 +15335,12 @@
         "wikidata": "Q5888023",
         "wikipedia": "es:Güerrín",
         "cuisine": "pizza",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Pizzaria Guerrín",
+          "en": "Pizzeria Guerrín",
+          "es": "Güerrín"
+        }
       }
     },
     {
@@ -13556,7 +15361,7 @@
         ],
         "latitude": -34.5892537,
         "longitude": -58.4168134,
-        "address": "Avenida Medrano, 1906, Buenos Aires",
+        "address": "Avenida Medrano, 1906",
         "opening_hours": "Tu-Sa 12:30-15:30, 20:00-23:50",
         "phone": "+54 11 7112 0598",
         "website": "https://bankedoplaza.com/",
@@ -13589,7 +15394,11 @@
         "website": "https://pulperiaquilapan.com/",
         "wikidata": "Q125849194",
         "cuisine": "regional",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Pulpería Quilapán",
+          "es": "Pulpería Quilapán"
+        }
       }
     },
     {
@@ -13610,7 +15419,7 @@
         ],
         "latitude": -34.6139666,
         "longitude": -58.3918881,
-        "address": "Avenida Entre Ríos, 415, Buenos Aires",
+        "address": "Avenida Entre Ríos, 415",
         "opening_hours": "Mo-Th 07:00-01:00; Fr 07:00-03:00; Sa 07:00-04:00; Su 07:00-01:00",
         "phone": "+54 11 4122 1400",
         "website": "https://www.lacontinental.com/",
@@ -13662,7 +15471,7 @@
         ],
         "latitude": -34.601173,
         "longitude": -58.3915008,
-        "address": "Rodríguez Peña, 682, Buenos Aires",
+        "address": "Rodríguez Peña, 682",
         "opening_hours": "Mo-Sa 12:00-16:00,20:00-24:00",
         "phone": "+54 11 4371-5643",
         "cuisine": "barbecue;steak_house",
@@ -14325,7 +16134,7 @@
         ],
         "latitude": -34.6170494,
         "longitude": -58.424304,
-        "address": "Quito, 4100, Buenos Aires",
+        "address": "Quito, 4100",
         "opening_hours": "We-Th 19:30-00:00; Tu 20:00-00:00; Fr-Sa 19:30-01:00",
         "phone": "+54 11 6260 7418",
         "website": "https://el-molino-dorado-site.lovable.app/",
@@ -14658,7 +16467,7 @@
         ],
         "latitude": -34.6149498,
         "longitude": -58.390509,
-        "address": "Venezuela, 1702, Buenos Aires",
+        "address": "Venezuela, 1702",
         "opening_hours": "Mo-Su 12:00-00:00",
         "phone": "+54 11 4381 5019",
         "cuisine": "arab;kebab;oriental;persian",
@@ -14683,7 +16492,7 @@
         ],
         "latitude": -34.5926486,
         "longitude": -58.3988736,
-        "address": "Azcuénaga, 1388, Buenos Aires",
+        "address": "Azcuénaga, 1388",
         "opening_hours": "Mo-Th 18:30-23:30; Fr-Su 18:30-00:30",
         "phone": "+54 9 11 3404-5242",
         "cuisine": "sushi",
@@ -15491,7 +17300,7 @@
         ],
         "latitude": -34.6101048,
         "longitude": -58.372489,
-        "address": "Adolfo Alsina, 429, Buenos Aires",
+        "address": "Adolfo Alsina, 429",
         "opening_hours": "Mo-Su 12:00-23:00",
         "website": "https://www.furaiboba.com.ar/",
         "popularity": 0
@@ -15539,7 +17348,7 @@
         ],
         "latitude": -34.5821094,
         "longitude": -58.4268375,
-        "address": "Fray Justo Santa María de Oro, 2215, Buenos Aires",
+        "address": "Fray Justo Santa María de Oro, 2215",
         "opening_hours": "Tu-Sa 18:00-01:00",
         "website": "https://www.instagram.com/freda_ar/",
         "popularity": 0
@@ -15563,7 +17372,7 @@
         ],
         "latitude": -34.5890209,
         "longitude": -58.4296506,
-        "address": "Honduras, 4969, Buenos Aires",
+        "address": "Honduras, 4969",
         "opening_hours": "Mo-Th, Su 18:00-01:00; Fr, Sa 18:00-04:00",
         "website": "https://menu.parramarketplace.com/ladov.bsas",
         "popularity": 0
@@ -15587,7 +17396,7 @@
         ],
         "latitude": -34.5959002,
         "longitude": -58.3877073,
-        "address": "Avenida Santa Fe, 1430, Buenos Aires",
+        "address": "Avenida Santa Fe, 1430",
         "opening_hours": "Mo-Th 09:00-00:00; Fr 09:00-03:00; Sa 09:00-01:00",
         "website": "http://cantinarecoleta.com.ar",
         "popularity": 0
@@ -15664,7 +17473,11 @@
         "wikidata": "Q5017245",
         "wikipedia": "es:La Biela",
         "cuisine": "ice_cream",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Café La Biela",
+          "es": "La Biela"
+        }
       }
     },
     {
@@ -15771,7 +17584,12 @@
         "website": "https://www.cafetortoni.com.ar/",
         "wikidata": "Q1025674",
         "wikipedia": "es:Café Tortoni",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Café Tortoni",
+          "en": "Café Tortoni",
+          "es": "Café Tortoni"
+        }
       }
     },
     {
@@ -16047,7 +17865,7 @@
         ],
         "latitude": -34.6148771,
         "longitude": -58.4028179,
-        "address": "Saavedra, 436, Buenos Aires",
+        "address": "Saavedra, 436",
         "opening_hours": "Mo-Fr 08:00-20:00; Sa 10:00-20:00; Su off",
         "phone": "+54 11 2350-4247",
         "website": "https://aromaamor.cafe",
@@ -16073,7 +17891,7 @@
         ],
         "latitude": -34.6005209,
         "longitude": -58.389568,
-        "address": "Montevideo, 719, Buenos Aires",
+        "address": "Montevideo, 719",
         "opening_hours": "Mo-Fr 08:30-20:00; Sa 03:00-20:00",
         "phone": "+54 11 2500 4979",
         "website": "https://linktr.ee/laventanadelcafecaba",
@@ -16099,7 +17917,7 @@
         ],
         "latitude": -34.5909533,
         "longitude": -58.3949926,
-        "address": "Junín, 1493, Buenos Aires",
+        "address": "Junín, 1493",
         "opening_hours": "Su-Th 08:30-19:30; Fr 09:30-19:30",
         "phone": "+54 11 2844 2069",
         "cuisine": "coffee_shop",
@@ -16179,7 +17997,11 @@
         "website": "https://www.cafedelosangelitos.com/",
         "wikidata": "Q16540045",
         "wikipedia": "es:Café de los Angelitos",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Café de los Angelitos",
+          "es": "Café de los Angelitos"
+        }
       }
     },
     {
@@ -16298,7 +18120,7 @@
         ],
         "latitude": -34.6018875,
         "longitude": -58.4322169,
-        "address": "Avenida Estado de Israel, 4841, Buenos Aires",
+        "address": "Avenida Estado de Israel, 4841",
         "opening_hours": "08:00-20:00",
         "website": "https://ww.caffedeldoge.com.ar",
         "cuisine": "coffee_shop",
@@ -16549,7 +18371,7 @@
         ],
         "latitude": -34.6100683,
         "longitude": -58.3721554,
-        "address": "Adolfo Alsina, 401, Buenos Aires",
+        "address": "Adolfo Alsina, 401",
         "opening_hours": "Mo-Fr 08:00-19:00",
         "website": "https://www.instagram.com/nica.cocina/",
         "cuisine": "coffee_shop",
@@ -16574,7 +18396,7 @@
         ],
         "latitude": -34.58958,
         "longitude": -58.3964747,
-        "address": "José A. Pacheco de Melo, 2177, Buenos Aires",
+        "address": "José A. Pacheco de Melo, 2177",
         "opening_hours": "Mo-Sa 09:00-19:00",
         "phone": "+54 11 5638 0141",
         "popularity": 0
@@ -16598,7 +18420,7 @@
         ],
         "latitude": -34.594156,
         "longitude": -58.4244948,
-        "address": "Lavalleja, 1390, Buenos Aires",
+        "address": "Lavalleja, 1390",
         "opening_hours": "Tu-Sa 10:00-18:00; Su 11:00-18:00",
         "phone": "+54 11 5095 6676",
         "website": "https://viandasnutra.com",
@@ -16870,7 +18692,7 @@
         ],
         "latitude": -34.5942802,
         "longitude": -58.4244392,
-        "address": "Gorriti, 4295, Buenos Aires",
+        "address": "Gorriti, 4295",
         "opening_hours": "We, Th 12:00-02:00; Fr, Sa 12:00-03:00; Mo, Tu, Su 12:00-01:00",
         "phone": "+54 11 6737 6903",
         "website": "https://desarmadero.com.ar/",
@@ -16968,7 +18790,7 @@
         ],
         "latitude": -34.5948058,
         "longitude": -58.4235252,
-        "address": "Gorriti, 4191, Buenos Aires",
+        "address": "Gorriti, 4191",
         "opening_hours": "Tu-Th 19:30-00:00; Fr, Sa 19:30-01:00",
         "website": "https://instagram.com/archivo.bar",
         "popularity": 0
@@ -16992,7 +18814,7 @@
         ],
         "latitude": -34.604098,
         "longitude": -58.3921548,
-        "address": "Avenida Callao, 435, Buenos Aires",
+        "address": "Avenida Callao, 435",
         "opening_hours": "Th-Sa 20:00-01:00; Mo-We 20:00-00:00",
         "website": "https://alburrestaurantconcert.com.ar/",
         "popularity": 0

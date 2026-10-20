@@ -637,10 +637,12 @@ public class ItineraryService {
         dto.setVisitDate(model.getVisitDate());
         dto.setOpenAtVisit(openAtVisit(model));
         dto.setBookingUrl(BookingLinks.forPlace(model.getName()));
-        if (dto.getBookingUrl() == null && "yes".equals(model.getFee())
-                && model.getLatitude() != null && model.getLongitude() != null) {
-            dto.setTicketUrl(cityCatalog.findByName(model.getName(), model.getLatitude(), model.getLongitude())
-                    .map(CatalogPlace::website).filter(w -> !w.isBlank()).orElse(null));
+        Optional<CatalogPlace> catalogPlace = model.getLatitude() == null || model.getLongitude() == null
+                ? Optional.empty()
+                : cityCatalog.findByName(model.getName(), model.getLatitude(), model.getLongitude());
+        catalogPlace.ifPresent(cp -> dto.setNames(cp.names()));
+        if (dto.getBookingUrl() == null && "yes".equals(model.getFee())) {
+            dto.setTicketUrl(catalogPlace.map(CatalogPlace::website).filter(w -> !w.isBlank()).orElse(null));
         }
         return dto;
     }

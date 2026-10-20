@@ -25,7 +25,12 @@
         "wikidata": "Q57965",
         "wikipedia": "ja:東京スカイツリー",
         "fee": "yes",
-        "popularity": 72
+        "popularity": 72,
+        "names": {
+          "pt": "Tokyo Sky Tree",
+          "en": "Tokyo Skytree",
+          "es": "Tokyo Skytree"
+        }
       }
     },
     {
@@ -53,7 +58,12 @@
         "wikipedia": "ja:東京タワー",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 69
+        "popularity": 69,
+        "names": {
+          "pt": "Torre de Tóquio",
+          "en": "Tokyo Tower",
+          "es": "Torre de Tokio"
+        }
       }
     },
     {
@@ -81,7 +91,12 @@
         "wikidata": "Q653433",
         "wikipedia": "ja:東京国立博物館",
         "fee": "yes",
-        "popularity": 52
+        "popularity": 52,
+        "names": {
+          "pt": "Museu Nacional de Tóquio",
+          "en": "Tokyo National Museum",
+          "es": "Museo Nacional de Tokio"
+        }
       }
     },
     {
@@ -105,7 +120,12 @@
         "longitude": 139.7714719,
         "wikidata": "Q211861",
         "wikipedia": "ja:お台場",
-        "popularity": 47
+        "popularity": 47,
+        "names": {
+          "pt": "Odaiba",
+          "en": "Odaiba",
+          "es": "Odaiba"
+        }
       }
     },
     {
@@ -132,7 +152,12 @@
         "wikidata": "Q500681",
         "wikipedia": "ja:皇居",
         "popularity": 45,
-        "site": "Q500681"
+        "site": "Q500681",
+        "names": {
+          "pt": "Kōkyo",
+          "en": "Tokyo Imperial Palace",
+          "es": "Kōkyo"
+        }
       }
     },
     {
@@ -158,7 +183,12 @@
         "wikidata": "Q843997",
         "wikipedia": "ja:東京ディズニーランド",
         "popularity": 40,
-        "site": "Q843997"
+        "site": "Q843997",
+        "names": {
+          "pt": "Tokyo Disneyland",
+          "en": "Tokyo Disneyland",
+          "es": "Tokyo Disneyland"
+        }
       }
     },
     {
@@ -182,7 +212,12 @@
         "longitude": 139.754407,
         "wikidata": "Q865913",
         "wikipedia": "ja:江戸城",
-        "popularity": 39
+        "popularity": 39,
+        "names": {
+          "pt": "Castelo Edo",
+          "en": "Edo Castle",
+          "es": "Castillo Edo"
+        }
       }
     },
     {
@@ -210,7 +245,12 @@
         "wikipedia": "ja:国立西洋美術館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 35
+        "popularity": 35,
+        "names": {
+          "pt": "Museu Nacional de Arte Ocidental",
+          "en": "National Museum of Western Art",
+          "es": "Museo Nacional de Arte Occidental"
+        }
       }
     },
     {
@@ -239,7 +279,12 @@
         "wikidata": "Q287165",
         "wikipedia": "ja:明治神宮",
         "fee": "no",
-        "popularity": 34
+        "popularity": 34,
+        "names": {
+          "pt": "Santuário Meiji",
+          "en": "Meiji Jingū",
+          "es": "Santuario Meiji"
+        }
       }
     },
     {
@@ -264,7 +309,12 @@
         "website": "https://www.tsukiji.or.jp/",
         "wikidata": "Q859471",
         "wikipedia": "ja:築地市場",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Mercado de peixes de Tsukiji",
+          "en": "Tsukiji fish market",
+          "es": "Mercado de pescado de Tsukiji"
+        }
       }
     },
     {
@@ -295,7 +345,12 @@
         "fee": "no",
         "wheelchair": "no",
         "popularity": 31,
-        "site": "Q615183"
+        "site": "Q615183",
+        "names": {
+          "pt": "çl",
+          "en": "Sensō-ji Temple",
+          "es": "Sensō-ji"
+        }
       }
     },
     {
@@ -321,7 +376,10 @@
         "website": "https://www.tokyocamii.org/",
         "wikidata": "Q1710283",
         "wikipedia": "ja:東京ジャーミイ",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "en": "Tokyo Mosque"
+        }
       }
     },
     {
@@ -344,7 +402,12 @@
         "longitude": 139.7953573,
         "wikidata": "Q1859550",
         "wikipedia": "en:Yoshiwara",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Yoshiwara",
+          "en": "Yoshiwara",
+          "es": "Yoshiwara"
+        }
       }
     },
     {
@@ -374,7 +437,11 @@
         "wikipedia": "ja:国立新美術館",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "en": "National Art Center, Tokyo",
+          "es": "Centro Nacional de Arte de Tokio"
+        }
       }
     },
     {
@@ -400,7 +467,12 @@
         "website": "https://cathedral-sekiguchi.jp/",
         "wikidata": "Q1193480",
         "wikipedia": "ja:カトリック関口教会",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Catedral de Santa Maria",
+          "en": "St. Mary's Cathedral",
+          "es": "Catedral de Santa María de Tokio"
+        }
       }
     },
     {
@@ -429,7 +501,12 @@
         "wikipedia": "ja:三鷹の森ジブリ美術館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Museu Ghibli",
+          "en": "Ghibli Museum",
+          "es": "Museo Ghibli"
+        }
       }
     },
     {
@@ -459,7 +536,12 @@
         "fee": "yes",
         "wheelchair": "yes",
         "popularity": 26,
-        "site": "Q162722"
+        "site": "Q162722",
+        "names": {
+          "pt": "Zoológico de Ueno",
+          "en": "Ueno Zoo",
+          "es": "Zoológico de Ueno"
+        }
       }
     },
     {
@@ -484,7 +566,12 @@
         "phone": "+81 3 5728 7788",
         "wikidata": "Q555255",
         "wikipedia": "ja:迎賓館赤坂離宮",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Palácio Akasaka",
+          "en": "Akasaka Palace",
+          "es": "Palacio de Akasaka"
+        }
       }
     },
     {
@@ -509,7 +596,12 @@
         "website": "https://www.tokyo-park.or.jp/park/format/index039.html",
         "wikidata": "Q1204253",
         "wikipedia": "ja:代々木公園",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Parque Yoyogi",
+          "en": "Yoyogi Park",
+          "es": "Parque Yoyogi"
+        }
       }
     },
     {
@@ -536,7 +628,12 @@
         "wikidata": "Q74940",
         "wikipedia": "ja:国立科学博物館",
         "wheelchair": "yes",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Museu Nacional de Ciência do Japão",
+          "en": "National Museum of Nature and Science",
+          "es": "Museo Nacional de Ciencia de Japón"
+        }
       }
     },
     {
@@ -561,7 +658,12 @@
         "wikidata": "Q665216",
         "wikipedia": "en:Kabukichō",
         "wheelchair": "yes",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Kabukichō",
+          "en": "Kabukichō",
+          "es": "Kabukichō"
+        }
       }
     },
     {
@@ -589,7 +691,11 @@
         "wikidata": "Q776863",
         "wikipedia": "ja:新宿御苑",
         "fee": "yes",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "en": "Shinjuku Gyoen",
+          "es": "Jardín Nacional Shinjuku Gyoen"
+        }
       }
     },
     {
@@ -617,7 +723,12 @@
         "wikidata": "Q1359908",
         "wikipedia": "ja:東京国立近代美術館",
         "fee": "yes",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Museu Nacional de Arte Moderna de Tóquio",
+          "en": "The National Museum of Modern Art",
+          "es": "Museo Nacional de Arte Moderno de Tokio"
+        }
       }
     },
     {
@@ -643,7 +754,12 @@
         "wikidata": "Q1202341",
         "wikipedia": "ja:東京ディズニーシー",
         "popularity": 21,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "pt": "Tokyo DisneySea",
+          "en": "Tokyo DisneySea",
+          "es": "Tokyo DisneySea"
+        }
       }
     },
     {
@@ -671,7 +787,11 @@
         "wikidata": "Q1033333",
         "wikipedia": "ja:浜離宮恩賜庭園",
         "fee": "yes",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "en": "Hamarikyu Gardens",
+          "es": "Jardines de Hamarikyu"
+        }
       }
     },
     {
@@ -695,7 +815,12 @@
         "longitude": 139.8619281,
         "wikidata": "Q1038727",
         "wikipedia": "ja:葛西臨海公園",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Parque Kasai Rinkai",
+          "en": "Kasai Rinkai Park",
+          "es": "Parque Kasai Rinkai"
+        }
       }
     },
     {
@@ -724,7 +849,11 @@
         "wikidata": "Q1200884",
         "wikipedia": "ja:井の頭恩賜公園",
         "fee": "no",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "en": "Inokashira Park",
+          "es": "Parque Inokashira"
+        }
       }
     },
     {
@@ -748,7 +877,12 @@
         "longitude": 139.7604893,
         "wikidata": "Q1185910",
         "wikipedia": "ja:汐留",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Shiodome",
+          "en": "Shiodome",
+          "es": "Shiodome"
+        }
       }
     },
     {
@@ -776,7 +910,12 @@
         "wikidata": "Q864957",
         "wikipedia": "ja:東京都美術館",
         "wheelchair": "yes",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Museu de Arte Metropolitano de Tóquio",
+          "en": "Tokyo Metropolitan Art Museum",
+          "es": "Museo de Arte Metropolitano de Tokio"
+        }
       }
     },
     {
@@ -800,7 +939,12 @@
         "longitude": 139.8279005,
         "wikidata": "Q11431452",
         "wikipedia": "en:Yumenoshima Park",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Parque de Yumenoshima",
+          "en": "Yumenoshima Park",
+          "es": "Parque de Yumenoshima"
+        }
       }
     },
     {
@@ -826,7 +970,12 @@
         "website": "https://www.artizon.museum/",
         "wikidata": "Q913808",
         "wikipedia": "ja:アーティゾン美術館",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Bridgestone Museum of Art",
+          "en": "Artizon Museum",
+          "es": "Museo de Arte Bridgestone"
+        }
       }
     },
     {
@@ -854,7 +1003,11 @@
         "wikidata": "Q1191042",
         "wikipedia": "ja:東京都江戸東京博物館",
         "fee": "yes",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Edo-Tokyo Museum",
+          "en": "Edo-Tokyo Museum"
+        }
       }
     },
     {
@@ -880,7 +1033,12 @@
         "wikidata": "Q2742709",
         "wikipedia": "ja:シンデレラ城",
         "popularity": 17,
-        "site": "Q843997"
+        "site": "Q843997",
+        "names": {
+          "pt": "Castelo da Cinderela",
+          "en": "Cinderella Castle",
+          "es": "Castillo de la Cenicienta"
+        }
       }
     },
     {
@@ -909,7 +1067,12 @@
         "wikipedia": "ja:日本科学未来館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Museu Nacional de Ciências Emergentes e Inovação",
+          "en": "Miraikan",
+          "es": "Miraikan"
+        }
       }
     },
     {
@@ -935,7 +1098,12 @@
         "website": "https://www.imes.boj.or.jp/cm/",
         "wikidata": "Q865607",
         "wikipedia": "en:Currency Museum of the Bank of Japan",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Museu da Moeda do Banco do Japão",
+          "en": "Currency Museum of the Bank of Japan",
+          "es": "Museo de la Moneda del Banco de Japón"
+        }
       }
     },
     {
@@ -960,7 +1128,12 @@
         "website": "https://www.ntj.jac.go.jp/kokuritsu/",
         "wikidata": "Q1369225",
         "wikipedia": "ja:国立劇場",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Teatro Nacional do Japão",
+          "en": "National Theatre of Japan",
+          "es": "Teatro nacional de Japón"
+        }
       }
     },
     {
@@ -986,7 +1159,11 @@
         "wikidata": "Q670049",
         "wikipedia": "ja:浅草神社",
         "wheelchair": "limited",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "en": "Asakusa Shrine",
+          "es": "Santuario de Asakusa"
+        }
       }
     },
     {
@@ -1013,7 +1190,11 @@
         "website": "http://www.geocities.jp/ynicojp2/index.html",
         "wikidata": "Q2660430",
         "wikipedia": "ja:ニコライ堂",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "en": "Holy Resurrection Cathedral",
+          "es": "catedral de la Santa Resurrección"
+        }
       }
     },
     {
@@ -1038,7 +1219,12 @@
         "phone": "+81 3-3545-6800",
         "website": "https://www.kabuki-za.co.jp",
         "wikidata": "Q3082575",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Kabuki-za",
+          "en": "Kabuki-za",
+          "es": "Kabuki-za"
+        }
       }
     },
     {
@@ -1063,7 +1249,12 @@
         "website": "https://www.nntt.jac.go.jp/",
         "wikidata": "Q1056064",
         "wikipedia": "ja:新国立劇場",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Novo Teatro Nacional de Tóquio",
+          "en": "New National Theatre Tokyo",
+          "es": "Nuevo teatro nacional"
+        }
       }
     },
     {
@@ -1088,7 +1279,10 @@
         "wikidata": "Q1378533",
         "wikipedia": "ja:日比谷公園",
         "wheelchair": "yes",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Hibiya Park"
+        }
       }
     },
     {
@@ -1116,7 +1310,12 @@
         "wikidata": "Q11424081",
         "wikipedia": "ja:地下鉄博物館",
         "fee": "yes",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Museu Metropolitano de Tóquio",
+          "en": "Tokyo Metro Museum",
+          "es": "Museo del Metro de Tokio"
+        }
       }
     },
     {
@@ -1143,7 +1342,12 @@
         "wikipedia": "ja:六本木ヒルズ",
         "wheelchair": "yes",
         "popularity": 15,
-        "site": "Q1071084"
+        "site": "Q1071084",
+        "names": {
+          "pt": "Roppongi Hills",
+          "en": "Roppongi Hills",
+          "es": "Roppongi Hills"
+        }
       }
     },
     {
@@ -1167,7 +1371,10 @@
         "longitude": 139.7553982,
         "wikidata": "Q1064983",
         "wikipedia": "ja:大奥",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "Ōoku"
+        }
       }
     },
     {
@@ -1195,7 +1402,10 @@
         "wikidata": "Q717682",
         "wikipedia": "ja:神田明神",
         "fee": "no",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "Kanda-myōjin"
+        }
       }
     },
     {
@@ -1225,7 +1435,10 @@
         "wikipedia": "ja:根津神社",
         "fee": "no",
         "wheelchair": "limited",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "Nezu Shrine"
+        }
       }
     },
     {
@@ -1249,7 +1462,12 @@
         "longitude": 139.7509767,
         "wikidata": "Q1075966",
         "wikipedia": "ja:北の丸公園",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Parque Kitanomaru",
+          "en": "Kitanomaru Park",
+          "es": "Parque Kitanomaru"
+        }
       }
     },
     {
@@ -1279,7 +1497,11 @@
         "wikipedia": "en:Zōjō-ji",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Zōjō-ji",
+          "en": "Zōjō-ji Temple"
+        }
       }
     },
     {
@@ -1307,7 +1529,11 @@
         "wikidata": "Q1064892",
         "wikipedia": "ja:東京大学大学院理学系研究科附属植物園",
         "fee": "yes",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Koishikawa Botanical Garden",
+          "es": "Jardín Botánico Koishikawa"
+        }
       }
     },
     {
@@ -1331,7 +1557,11 @@
         "longitude": 139.6333436,
         "wikidata": "Q11667807",
         "wikipedia": "en:Tokyo Equestrian Park",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Equestrian Park",
+          "es": "Parque Ecuestre"
+        }
       }
     },
     {
@@ -1355,7 +1585,12 @@
         "longitude": 139.7268482,
         "wikidata": "Q1534481",
         "wikipedia": "ja:護国寺",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Gokoku-ji",
+          "en": "Gokoku-ji Temple",
+          "es": "Gokoku-ji"
+        }
       }
     },
     {
@@ -1380,7 +1615,10 @@
         "website": "https://www.uenotoshogu.com/",
         "wikidata": "Q708550",
         "wikipedia": "ja:上野東照宮",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Ueno Tōshō-gū"
+        }
       }
     },
     {
@@ -1404,7 +1642,10 @@
         "longitude": 139.8014668,
         "wikidata": "Q15121515",
         "wikipedia": "ja:浅草モスク",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Asakusa Mosque"
+        }
       }
     },
     {
@@ -1434,7 +1675,10 @@
         "wikipedia": "ja:六義園",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Rikugi Garden"
+        }
       }
     },
     {
@@ -1458,7 +1702,11 @@
         "longitude": 139.7360737,
         "wikidata": "Q3176144",
         "wikipedia": "en:Sengaku-ji",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Sengaku-ji",
+          "en": "Sengaku-ji Temple"
+        }
       }
     },
     {
@@ -1482,7 +1730,10 @@
         "longitude": 139.7699842,
         "wikidata": "Q6630204",
         "wikipedia": "ja:潮風公園",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "en": "Shiokaze Park"
+        }
       }
     },
     {
@@ -1507,7 +1758,11 @@
         "website": "https://www.ntj.jac.go.jp/en/theatre/noh/",
         "wikidata": "Q1138457",
         "wikipedia": "ja:国立能楽堂",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Teatro Nacional de Noh",
+          "en": "National Noh Theatre"
+        }
       }
     },
     {
@@ -1534,7 +1789,12 @@
         "wikipedia": "ja:東京都庭園美術館",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Museu de Arte Teien",
+          "en": "Tokyo Metropolitan Teien Art Museum",
+          "es": "Museo Metropolitano de Arte Teien de Tokio"
+        }
       }
     },
     {
@@ -1562,7 +1822,10 @@
         "wikidata": "Q1649688",
         "wikipedia": "ja:東京都現代美術館",
         "fee": "yes",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "en": "Museum of Contemporary Art Tokyo"
+        }
       }
     },
     {
@@ -1588,7 +1851,11 @@
         "website": "https://topmuseum.jp/",
         "wikidata": "Q862884",
         "wikipedia": "ja:東京都写真美術館",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Tokyo Photographic Art Museum",
+          "es": "Museo Metropolitano de Fotografía de Tokio"
+        }
       }
     },
     {
@@ -1617,7 +1884,10 @@
         "wikipedia": "en:Mori Art Museum",
         "wheelchair": "yes",
         "popularity": 11,
-        "site": "Q1071084"
+        "site": "Q1071084",
+        "names": {
+          "en": "Mori Art Museum"
+        }
       }
     },
     {
@@ -1645,7 +1915,10 @@
         "wikidata": "Q1778881",
         "wikipedia": "ja:小石川後楽園",
         "fee": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Koishikawa Kōrakuen Garden"
+        }
       }
     },
     {
@@ -1672,7 +1945,10 @@
         "wikidata": "Q4388146",
         "wikipedia": "ja:清澄庭園",
         "fee": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Kiyosumi Garden"
+        }
       }
     },
     {
@@ -1702,7 +1978,10 @@
         "wikipedia": "ja:豪徳寺",
         "fee": "no",
         "wheelchair": "limited",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Gōtoku-ji Temple"
+        }
       }
     },
     {
@@ -1729,7 +2008,11 @@
         "wikidata": "Q3815442",
         "wikipedia": "en:Ukiyo-e Ōta Memorial Museum of Art",
         "fee": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Ōta Memorial Museum of Art",
+          "en": "Ōta Memorial Museum of Art"
+        }
       }
     },
     {
@@ -1757,7 +2040,12 @@
         "wikidata": "Q1047097",
         "wikipedia": "ja:根津美術館",
         "wheelchair": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Nezu Art Museum",
+          "en": "Nezu Museum",
+          "es": "Nezu Art Museum"
+        }
       }
     },
     {
@@ -1782,7 +2070,10 @@
         "opening_hours": "10:00-17:00",
         "wikidata": "Q138537",
         "wikipedia": "ja:宗谷 (船)",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "JCG Sōya"
+        }
       }
     },
     {
@@ -1811,7 +2102,10 @@
         "wikidata": "Q1384780",
         "wikipedia": "ja:東郷神社 (渋谷区)",
         "fee": "no",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Tōgō Shrine"
+        }
       }
     },
     {
@@ -1837,7 +2131,10 @@
         "website": "https://www.yushimatenjin.or.jp/pc/index.htm",
         "wikidata": "Q335606",
         "wikipedia": "ja:湯島天満宮",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Yushima Tenmangū"
+        }
       }
     },
     {
@@ -1867,7 +2164,10 @@
         "wikipedia": "ja:築地本願寺",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Tsukiji Hongan-ji Temple"
+        }
       }
     },
     {
@@ -1891,7 +2191,11 @@
         "longitude": 139.7887938,
         "wikidata": "Q2977163",
         "wikipedia": "ja:合羽橋",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Kappabashi-dōri",
+          "es": "Kappabashi-dori"
+        }
       }
     },
     {
@@ -1917,7 +2221,10 @@
         "website": "https://honmonji.jp/00index/index2.html",
         "wikidata": "Q1537312",
         "wikipedia": "en:Ikegami Honmon-ji",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Ikegami Honmon-ji Temple"
+        }
       }
     },
     {
@@ -1943,7 +2250,10 @@
         "website": "https://www.showakan.go.jp/",
         "wikidata": "Q3788883",
         "wikipedia": "en:National Showa Memorial Museum",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "National Showa Memorial Museum"
+        }
       }
     },
     {
@@ -1969,7 +2279,10 @@
         "website": "https://www.mitsui-museum.jp/",
         "wikidata": "Q864700",
         "wikipedia": "en:Mitsui Memorial Museum",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Mitsui Memorial Museum"
+        }
       }
     },
     {
@@ -1998,7 +2311,10 @@
         "wikipedia": "ja:サントリー美術館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Suntory Museum of Art"
+        }
       }
     },
     {
@@ -2024,7 +2340,11 @@
         "wikidata": "Q3267633",
         "wikipedia": "en:Tokyo Dome City Hall",
         "popularity": 10,
-        "site": "Q564646"
+        "site": "Q564646",
+        "names": {
+          "en": "Tokyo Dome City Hall",
+          "es": "Tokyo Dome City Hall"
+        }
       }
     },
     {
@@ -2053,7 +2373,10 @@
         "wikidata": "Q901172",
         "wikipedia": "ja:飛鳥山公園",
         "fee": "no",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Asukayama Park"
+        }
       }
     },
     {
@@ -2078,7 +2401,11 @@
         "wikidata": "Q948552",
         "wikipedia": "en:Suntory Hall",
         "wheelchair": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Suntory Hall",
+          "es": "Suntory Hall"
+        }
       }
     },
     {
@@ -2103,7 +2430,10 @@
         "website": "https://www.yasukuni.or.jp/yusyukan/",
         "wikidata": "Q2855971",
         "wikipedia": "ja:遊就館",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Yūshūkan"
+        }
       }
     },
     {
@@ -2131,7 +2461,10 @@
         "wikipedia": "ja:皇居三の丸尚蔵館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Museum of the Imperial Collections"
+        }
       }
     },
     {
@@ -2160,7 +2493,11 @@
         "wikidata": "Q3120766",
         "wikipedia": "ja:寛永寺",
         "fee": "no",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Kan'ei-ji",
+          "en": "Kan'ei-ji Temple"
+        }
       }
     },
     {
@@ -2186,7 +2523,11 @@
         "wikidata": "Q2378708",
         "wikipedia": "ja:雷門",
         "popularity": 10,
-        "site": "Q615183"
+        "site": "Q615183",
+        "names": {
+          "en": "Kaminarimon",
+          "es": "Kaminarimon"
+        }
       }
     },
     {
@@ -2210,7 +2551,11 @@
         "longitude": 139.7881752,
         "wikidata": "Q11516419",
         "wikipedia": "ja:有明テニスの森公園",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Ariake Tennis Forest Park",
+          "es": "Parque de tenis de Ariake"
+        }
       }
     },
     {
@@ -2235,7 +2580,12 @@
         "website": "https://www.churchofjesuschrist.org/temples/details/tokyo-japan-temple",
         "wikidata": "Q2036364",
         "wikipedia": "en:Tokyo Japan Temple",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Templo de Tóquio",
+          "en": "Tokyo Japan Temple",
+          "es": "Templo de Tokio"
+        }
       }
     },
     {
@@ -2260,7 +2610,11 @@
         "website": "https://www.tokyo-park.or.jp/park/format/index006.html",
         "wikidata": "Q4388784",
         "wikipedia": "ja:石神井公園",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Shakujii Park",
+          "es": "Shakujii (parque)"
+        }
       }
     },
     {
@@ -2284,7 +2638,11 @@
         "wikidata": "Q62124995",
         "wikipedia": "en:Statue of Hachikō",
         "wheelchair": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Statue of Hachikō",
+          "es": "Estatua de Hachikō"
+        }
       }
     },
     {
@@ -2308,7 +2666,10 @@
         "longitude": 139.7209684,
         "opening_hours": "Mo-Su 10:00-17:00",
         "wikidata": "Q1048740",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Ancient Orient Museum"
+        }
       }
     },
     {
@@ -2334,7 +2695,10 @@
         "website": "https://funenokagakukan.or.jp/",
         "wikidata": "Q1048709",
         "wikipedia": "ja:船の科学館",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Museum of Maritime Science"
+        }
       }
     },
     {
@@ -2360,7 +2724,11 @@
         "website": "https://www.hasegawamachiko.jp/",
         "wikidata": "Q3788646",
         "wikipedia": "en:Hasegawa Machiko Art Museum",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Museu de Arte Machiko Hasegawa",
+          "en": "Hasegawa Machiko Art Museum"
+        }
       }
     },
     {
@@ -2386,7 +2754,10 @@
         "wikidata": "Q3266874",
         "wikipedia": "ja:旧芝離宮恩賜庭園",
         "fee": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Kyu Shiba Rikyu Garden"
+        }
       }
     },
     {
@@ -2410,7 +2781,10 @@
         "longitude": 139.6608655,
         "wikidata": "Q2021485",
         "wikipedia": "ja:駒沢オリンピック公園",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Komazawa Olympic Park"
+        }
       }
     },
     {
@@ -2436,7 +2810,10 @@
         "phone": "+81 44-266-3240",
         "wikidata": "Q1504465",
         "wikipedia": "ja:平間寺",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Kawasaki Daishi"
+        }
       }
     },
     {
@@ -2460,7 +2837,10 @@
         "longitude": 139.6203126,
         "wikidata": "Q4388776",
         "wikipedia": "en:Kinuta Park",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Kinuta Park"
+        }
       }
     },
     {
@@ -2485,7 +2865,10 @@
         "website": "http://www.seido.or.jp/",
         "wikidata": "Q1760591",
         "wikipedia": "ja:湯島聖堂",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Yushima Seidō"
+        }
       }
     },
     {
@@ -2512,7 +2895,10 @@
         "website": "http://www.taishakuten.or.jp/",
         "wikidata": "Q3137192",
         "wikipedia": "ja:柴又帝釈天",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Shibamata Taishakuten"
+        }
       }
     },
     {
@@ -2536,7 +2922,11 @@
         "longitude": 139.6970195,
         "wikidata": "Q773124",
         "wikipedia": "ja:NHKホール",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "NHK Hall",
+          "en": "NHK Hall"
+        }
       }
     },
     {
@@ -2563,7 +2953,11 @@
         "wikidata": "Q863044",
         "wikipedia": "ja:21 21 DESIGN SIGHT",
         "fee": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "21 21 DESIGN SIGHT",
+          "es": "21 21 Design Sight"
+        }
       }
     },
     {
@@ -2587,7 +2981,11 @@
         "longitude": 139.7079776,
         "wikidata": "Q1956181",
         "wikipedia": "ja:東京芸術劇場",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Tokyo Metropolitan Theatre",
+          "es": "Tokyo Metropolitan Art Space"
+        }
       }
     },
     {
@@ -2612,7 +3010,11 @@
         "website": "http://tsukijicatholic.jp/",
         "wikidata": "Q11603476",
         "wikipedia": "ja:カトリック築地教会",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Old Catedral of St. Joseph, Tokyo",
+          "es": "Antigua Catedral de San José"
+        }
       }
     },
     {
@@ -2640,7 +3042,10 @@
         "wikipedia": "ja:三菱一号館美術館",
         "fee": "yes",
         "wheelchair": "no",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Mitsubishi Ichigokan Museum"
+        }
       }
     },
     {
@@ -2665,7 +3070,11 @@
         "website": "https://linecubeshibuya.com/",
         "wikidata": "Q1634356",
         "wikipedia": "en:Shibuya Public Hall",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Shibuya Public Hall",
+          "es": "Shibuya Public Hall"
+        }
       }
     },
     {
@@ -2690,7 +3099,11 @@
         "website": "https://nogijinja.or.jp/",
         "wikidata": "Q3342690",
         "wikipedia": "ja:乃木神社 (東京都港区)",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Nogi Shrine",
+          "es": "Nogi Shrine"
+        }
       }
     },
     {
@@ -2716,7 +3129,10 @@
         "wikidata": "Q2868748",
         "wikipedia": "ja:愛宕神社 (東京都港区)",
         "wheelchair": "no",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Atago Shrine"
+        }
       }
     },
     {
@@ -2742,7 +3158,11 @@
         "wikidata": "Q654417",
         "wikipedia": "ja:富岡八幡宮",
         "wheelchair": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Tomioka Hachiman Shrine",
+          "es": "Tomioka Hachiman-gū"
+        }
       }
     },
     {
@@ -2767,7 +3187,12 @@
         "wikidata": "Q7797685",
         "wikipedia": "en:Three Palace Sanctuaries",
         "popularity": 9,
-        "site": "Q500681"
+        "site": "Q500681",
+        "names": {
+          "pt": "Três Santuários do Palácio",
+          "en": "Three Palace Sanctuaries",
+          "es": "Santuarios de los Tres Palacios"
+        }
       }
     },
     {
@@ -2792,7 +3217,10 @@
         "website": "http://www.city.shinjuku.lg.jp/seikatsu/file15_02_00001.html",
         "wikidata": "Q5364883",
         "wikipedia": "ja:新宿中央公園",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Shinjuku Central Park"
+        }
       }
     },
     {
@@ -2817,7 +3245,10 @@
         "wikidata": "Q5368576",
         "wikipedia": "ja:お台場海浜公園",
         "wheelchair": "limited",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Odaiba Marine Park"
+        }
       }
     },
     {
@@ -2843,7 +3274,11 @@
         "wikidata": "Q1134652",
         "wikipedia": "ja:東京宝塚劇場",
         "wheelchair": "limited",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Tokyo Takarazuka Theater",
+          "es": "Teatro Tokio Takarazuka"
+        }
       }
     },
     {
@@ -2866,7 +3301,10 @@
         "longitude": 139.65491,
         "wikidata": "Q3425473",
         "wikipedia": "en:Renkō-ji",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Renkō-ji Temple"
+        }
       }
     },
     {
@@ -2894,7 +3332,10 @@
         "wikipedia": "en:Gotoh Museum",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Gotoh Museum"
+        }
       }
     },
     {
@@ -2921,7 +3362,10 @@
         "wikidata": "Q3090685",
         "wikipedia": "en:Fukagawa Edo Museum",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Fukagawa Edo Museum"
+        }
       }
     },
     {
@@ -2946,7 +3390,10 @@
         "website": "https://www.nfaj.go.jp/",
         "wikidata": "Q51371009",
         "wikipedia": "en:National Film Archive of Japan",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "National Film Archive of Japan"
+        }
       }
     },
     {
@@ -2974,7 +3421,10 @@
         "wikidata": "Q3329572",
         "wikipedia": "en:Yamatane Museum",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Yamatane Museum of Art"
+        }
       }
     },
     {
@@ -3001,7 +3451,11 @@
         "wikidata": "Q864815",
         "wikipedia": "ja:アメヤ横丁",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Ameya-Yokochō",
+          "es": "Ameya-Yokochō"
+        }
       }
     },
     {
@@ -3029,7 +3483,10 @@
         "wikidata": "Q3329874",
         "wikipedia": "ja:刀剣博物館",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Japanese Sword Museum"
+        }
       }
     },
     {
@@ -3055,7 +3512,10 @@
         "phone": "+81 3-3611-8705",
         "wikidata": "Q7076776",
         "wikipedia": "ja:向島百花園",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Mukōjima-Hyakkaen Garden"
+        }
       }
     },
     {
@@ -3081,7 +3541,10 @@
         "wikidata": "Q4404489",
         "wikipedia": "ja:甘泉園公園",
         "wheelchair": "no",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Kansen-en Park"
+        }
       }
     },
     {
@@ -3108,7 +3571,10 @@
         "wikidata": "Q863180",
         "wikipedia": "ja:浅草花やしき",
         "wheelchair": "limited",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Hanayashiki"
+        }
       }
     },
     {
@@ -3133,7 +3599,10 @@
         "wikidata": "Q3126680",
         "wikipedia": "en:Hanazono Shrine",
         "wheelchair": "no",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Hanazono Shrine"
+        }
       }
     },
     {
@@ -3158,7 +3627,11 @@
         "wikidata": "Q8191484",
         "wikipedia": "ja:安田講堂",
         "wheelchair": "no",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Yasuda Auditorium",
+          "es": "Auditorio Yasuda"
+        }
       }
     },
     {
@@ -3186,7 +3659,11 @@
         "wikipedia": "ja:下町風俗資料館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Shitamachi Museum",
+          "es": "Museo Shitamachi"
+        }
       }
     },
     {
@@ -3210,7 +3687,10 @@
         "longitude": 139.8748774,
         "wikidata": "Q3541303",
         "wikipedia": "en:Mizumoto Park",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Mizumoto Park"
+        }
       }
     },
     {
@@ -3234,7 +3714,10 @@
         "longitude": 139.7351564,
         "wikidata": "Q2750171",
         "wikipedia": "ja:東禅寺 (東京都港区)",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Tōzen-ji Temple"
+        }
       }
     },
     {
@@ -3260,7 +3743,11 @@
         "wikipedia": "ja:東京ドームシティアトラクションズ",
         "wheelchair": "no",
         "popularity": 8,
-        "site": "Q564646"
+        "site": "Q564646",
+        "names": {
+          "en": "Tokyo Dome City Attractions",
+          "es": "Tokyo Dome City Attractions"
+        }
       }
     },
     {
@@ -3288,7 +3775,10 @@
         "wikidata": "Q4404495",
         "wikipedia": "ja:椿山荘",
         "fee": "no",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Chinzan-sō Garden"
+        }
       }
     },
     {
@@ -3315,7 +3805,10 @@
         "website": "https://sompo-museum.org",
         "wikidata": "Q1614504",
         "wikipedia": "ja:SOMPO美術館",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Sompo Museum of Art"
+        }
       }
     },
     {
@@ -3344,7 +3837,10 @@
         "wikidata": "Q1358767",
         "wikipedia": "ja:旧岩崎邸庭園",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Kyu-Iwasaki-tei Garden"
+        }
       }
     },
     {
@@ -3370,7 +3866,11 @@
         "wikidata": "Q844963",
         "wikipedia": "ja:皇居外苑",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Jardim Nacional Kokyo Gaien",
+          "en": "Kōkyogaien"
+        }
       }
     },
     {
@@ -3396,7 +3896,10 @@
         "wikidata": "Q267353",
         "wikipedia": "en:Raging Spirits",
         "popularity": 8,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "Raging Spirits"
+        }
       }
     },
     {
@@ -3420,7 +3923,10 @@
         "longitude": 139.7864315,
         "wikidata": "Q22119178",
         "wikipedia": "ja:曹源寺 (台東区)",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Kappa-dera Temple"
+        }
       }
     },
     {
@@ -3446,7 +3952,10 @@
         "website": "https://www.setagayaartmuseum.or.jp/",
         "wikidata": "Q3892314",
         "wikipedia": "en:Setagaya Art Museum",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Setagaya Art Museum"
+        }
       }
     },
     {
@@ -3473,7 +3982,10 @@
         "wikidata": "Q3329598",
         "wikipedia": "en:Okura Museum of Art",
         "fee": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Okura Museum of Art"
+        }
       }
     },
     {
@@ -3502,7 +4014,10 @@
         "wikipedia": "ja:目黒寄生虫館",
         "fee": "no",
         "wheelchair": "limited",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Meguro Parasitological Museum"
+        }
       }
     },
     {
@@ -3527,7 +4042,10 @@
         "phone": "+81-3-36347776",
         "wikidata": "Q3049659",
         "wikipedia": "ja:回向院",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Ekō-in Temple"
+        }
       }
     },
     {
@@ -3553,7 +4071,10 @@
         "wikidata": "Q864638",
         "wikipedia": "ja:赤坂サカス",
         "popularity": 7,
-        "site": "Q864638"
+        "site": "Q864638",
+        "names": {
+          "en": "akasaka Sacas"
+        }
       }
     },
     {
@@ -3578,7 +4099,11 @@
         "phone": "03-3828-2111",
         "website": "https://www.t-bunka.jp/",
         "wikidata": "Q3892342",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Tokyo Bunka Kaikan",
+          "es": "Tokio Bunka Kaikan"
+        }
       }
     },
     {
@@ -3608,7 +4133,10 @@
         "wikipedia": "ja:旧古河庭園",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Kyu-Furukawa Gardens"
+        }
       }
     },
     {
@@ -3633,7 +4161,10 @@
         "website": "https://www.arisugawa-park.jp/",
         "wikidata": "Q4791114",
         "wikipedia": "ja:有栖川宮記念公園",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Arisugawa-no-miya Memorial Park"
+        }
       }
     },
     {
@@ -3659,7 +4190,10 @@
         "website": "https://www.meijijingugaien.jp/art-culture/seitoku-gallery/",
         "wikidata": "Q5153794",
         "wikipedia": "ja:聖徳記念絵画館",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Meiji Memorial Picture Gallery"
+        }
       }
     },
     {
@@ -3686,7 +4220,10 @@
         "wikidata": "Q3503320",
         "wikipedia": "en:Suitengū (Tokyo)",
         "wheelchair": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Suitengū"
+        }
       }
     },
     {
@@ -3715,7 +4252,10 @@
         "wikidata": "Q11370953",
         "wikipedia": "ja:亀戸天神社",
         "fee": "no",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Kameido Tenjinsha"
+        }
       }
     },
     {
@@ -3742,7 +4282,11 @@
         "wikipedia": "en:Akasaka ACT Theater",
         "wheelchair": "yes",
         "popularity": 7,
-        "site": "Q864638"
+        "site": "Q864638",
+        "names": {
+          "en": "TBS Akasaka ACT Theater",
+          "es": "Akasaka ACT Theater"
+        }
       }
     },
     {
@@ -3768,7 +4312,10 @@
         "website": "https://www.higo-hosokawa.jp/",
         "wikidata": "Q3162465",
         "wikipedia": "ja:肥後細川庭園",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Higo Hosakawa Garden"
+        }
       }
     },
     {
@@ -3793,7 +4340,10 @@
         "website": "https://www.ignatius.gr.jp/",
         "wikidata": "Q11610869",
         "wikipedia": "ja:聖イグナチオ教会",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Saint Ignatius Church"
+        }
       }
     },
     {
@@ -3821,7 +4371,10 @@
         "wikidata": "Q17220332",
         "wikipedia": "ja:すみだ北斎美術館",
         "fee": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Sumida Hokusai Museum"
+        }
       }
     },
     {
@@ -3846,7 +4399,10 @@
         "wikidata": "Q11635414",
         "wikipedia": "ja:赤坂御用地",
         "popularity": 7,
-        "site": "Q11635414"
+        "site": "Q11635414",
+        "names": {
+          "en": "Akasaka Estate"
+        }
       }
     },
     {
@@ -3870,7 +4426,11 @@
         "longitude": 139.7498101,
         "wikidata": "Q11432120",
         "wikipedia": "ja:大井ふ頭中央海浜公園",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Ōi Futō Chūō Kaihin Park",
+          "es": "Parque Ōi Futō Chūō Kaihin"
+        }
       }
     },
     {
@@ -3895,7 +4455,10 @@
         "website": "https://www.akasakahikawa.or.jp",
         "wikidata": "Q3135503",
         "wikipedia": "ja:氷川神社 (東京都港区赤坂)",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Hikawa Shrine"
+        }
       }
     },
     {
@@ -3918,7 +4481,11 @@
         "latitude": 35.7095683,
         "longitude": 139.7220484,
         "wikidata": "Q3594031",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Ōkuma Garden",
+          "es": "Jardín Ōkuma"
+        }
       }
     },
     {
@@ -3944,7 +4511,10 @@
         "website": "http://www.tendaitokyo.jp/jiinmei/tennoji/",
         "wikidata": "Q17218754",
         "wikipedia": "ja:天王寺 (台東区)",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Tennō-ji Temple"
+        }
       }
     },
     {
@@ -3973,7 +4543,11 @@
         "wikipedia": "ja:皇居東御苑",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Imperial Palace East Gardens",
+          "es": "Jardines Orientales del Palacio Imperial"
+        }
       }
     },
     {
@@ -4000,7 +4574,10 @@
         "wikidata": "Q6630114",
         "wikipedia": "ja:隅田公園",
         "fee": "no",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Sumida Park"
+        }
       }
     },
     {
@@ -4025,7 +4602,10 @@
         "website": "https://www.tokyo-park.or.jp/park/kiba/",
         "wikidata": "Q6403923",
         "wikipedia": "ja:木場公園",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Kiba Park"
+        }
       }
     },
     {
@@ -4050,7 +4630,10 @@
         "website": "http://goldengai.jp/",
         "wikidata": "Q5363705",
         "wikipedia": "ja:新宿ゴールデン街",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Shinjuku Golden Gai"
+        }
       }
     },
     {
@@ -4075,7 +4658,10 @@
         "website": "https://tokyo-sensai.net/",
         "wikidata": "Q15961648",
         "wikipedia": "en:Center of the Tokyo Raids and War Damage",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Center of the Tokyo Raids and War Damage"
+        }
       }
     },
     {
@@ -4102,7 +4688,11 @@
         "phone": "03-3522-0281",
         "wikidata": "Q4388023",
         "wikipedia": "en:Yumenoshima Tropical Greenhouse Dome",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Yumenoshima Tropical Greenhouse Dome",
+          "es": "Cúpula Invernadero Tropical Yumenoshima"
+        }
       }
     },
     {
@@ -4128,7 +4718,10 @@
         "website": "https://www.tobu.co.jp/museum/",
         "wikidata": "Q3915461",
         "wikipedia": "ja:東武博物館",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Tobu Museum"
+        }
       }
     },
     {
@@ -4154,7 +4747,11 @@
         "phone": "+81 3-5449-0251",
         "wikidata": "Q11530056",
         "wikipedia": "en:Matsuoka Museum of Art",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Museu de Arte Matsuoka",
+          "en": "Matsuoka Museum of Art"
+        }
       }
     },
     {
@@ -4179,7 +4776,10 @@
         "opening_hours": "Tu-Su 10:00-17:00",
         "wikidata": "Q3330210",
         "wikipedia": "en:Hatakeyama Memorial Museum of Fine Art",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Ebara Hatakeyama Museum of Art"
+        }
       }
     },
     {
@@ -4206,7 +4806,10 @@
         "wikipedia": "en:Musée Tomo",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Kikuchi Kanjitsu Memorial Tomo Museum"
+        }
       }
     },
     {
@@ -4232,7 +4835,11 @@
         "website": "https://www.nomamuseum.kodansha.co.jp/",
         "wikidata": "Q3788846",
         "wikipedia": "en:Kodansha Noma Memorial Museum",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Museu Memorial Kodansha Noma",
+          "en": "Kodansha Noma Memorial Museum"
+        }
       }
     },
     {
@@ -4282,7 +4889,10 @@
         "website": "https://www.kidzania.jp/tokyo/",
         "wikidata": "Q5363436",
         "wikipedia": "en:KidZania Tokyo",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Kidzania Tokyo"
+        }
       }
     },
     {
@@ -4308,7 +4918,10 @@
         "website": "http://www.hiramasjid.org",
         "wikidata": "Q20410089",
         "wikipedia": "ja:行徳モスク",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Hira Masjid"
+        }
       }
     },
     {
@@ -4331,7 +4944,10 @@
         "latitude": 35.6772124,
         "longitude": 139.7478515,
         "wikidata": "Q11508443",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Japan Vertical Datum"
+        }
       }
     },
     {
@@ -4355,7 +4971,10 @@
         "longitude": 139.7003636,
         "wikidata": "Q4474025",
         "wikipedia": "en:Panasonic Globe Theatre",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Panasonic Globe Theatre"
+        }
       }
     },
     {
@@ -4383,7 +5002,10 @@
         "wikipedia": "en:TeamLab Planets TOKYO DMM.com",
         "fee": "yes",
         "wheelchair": "no",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "teamLab Planets TOKYO DMM.com"
+        }
       }
     },
     {
@@ -4408,7 +5030,11 @@
         "wikidata": "Q65044325",
         "wikipedia": "en:World of Frozen",
         "popularity": 6,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "World of Frozen",
+          "es": "Arendelle: World of Frozen"
+        }
       }
     },
     {
@@ -4432,7 +5058,10 @@
         "longitude": 139.6506187,
         "wikidata": "Q7812852",
         "wikipedia": "ja:等々力緑地",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Todoroki Ryokuchi"
+        }
       }
     },
     {
@@ -4457,7 +5086,11 @@
         "website": "https://www.waseda.jp/culture/facility/auditorium/",
         "wikidata": "Q2870807",
         "wikipedia": "ja:大隈講堂",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Ōkuma Auditorium",
+          "es": "Auditorio Ōkuma"
+        }
       }
     },
     {
@@ -4484,7 +5117,10 @@
         "website": "https://temple.nichiren.or.jp/1041026-hokekyoji/",
         "wikidata": "Q786113",
         "wikipedia": "ja:法華経寺",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Hokekyō-ji Temple"
+        }
       }
     },
     {
@@ -4507,7 +5143,10 @@
         "longitude": 139.7171248,
         "wikidata": "Q85773424",
         "wikipedia": "en:Kamata Mosque",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Kamata Mosque"
+        }
       }
     },
     {
@@ -4533,7 +5172,10 @@
         "website": "https://mingeikan.or.jp/",
         "wikidata": "Q3789149",
         "wikipedia": "ja:日本民藝館",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Japanese Folk Crafts Museum"
+        }
       }
     },
     {
@@ -4556,7 +5198,10 @@
         "latitude": 35.7220577,
         "longitude": 139.6740165,
         "wikidata": "Q9087421",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Tetsugaku-dō Park"
+        }
       }
     },
     {
@@ -4580,7 +5225,10 @@
         "longitude": 139.7031734,
         "wikidata": "Q11533314",
         "wikipedia": "ja:林試の森公園",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Rinshi-no-mori Park"
+        }
       }
     },
     {
@@ -4609,7 +5257,11 @@
         "wikipedia": "ja:旧朝倉家住宅",
         "fee": "yes",
         "popularity": 6,
-        "site": "Q16944532"
+        "site": "Q16944532",
+        "names": {
+          "en": "Kyu Asakura House",
+          "es": "Casa Kyu Asakura"
+        }
       }
     },
     {
@@ -4633,7 +5285,10 @@
         "wikidata": "Q10954019",
         "wikipedia": "ja:FCGビル",
         "wheelchair": "limited",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "FCG Building"
+        }
       }
     },
     {
@@ -4661,7 +5316,10 @@
         "wikidata": "Q728781",
         "wikipedia": "ja:永青文庫",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Eisei Bunko Museum"
+        }
       }
     },
     {
@@ -4685,7 +5343,10 @@
         "longitude": 139.7365145,
         "wikidata": "Q11648348",
         "wikipedia": "ja:鈴ヶ森刑場",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Suzugamori execution grounds"
+        }
       }
     },
     {
@@ -4712,7 +5373,10 @@
         "wikipedia": "ja:ウエスタンリバー鉄道",
         "wheelchair": "yes",
         "popularity": 6,
-        "site": "Q843997"
+        "site": "Q843997",
+        "names": {
+          "en": "Western River Railroad"
+        }
       }
     },
     {
@@ -4737,7 +5401,10 @@
         "wikidata": "Q458122",
         "wikipedia": "de:Kamezuka-Park",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Kamezuka Park"
+        }
       }
     },
     {
@@ -4762,7 +5429,10 @@
         "wikidata": "Q11271573",
         "wikipedia": "ja:城北中央公園",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Jōhoku Chūō Park"
+        }
       }
     },
     {
@@ -4788,7 +5458,10 @@
         "wikidata": "Q4473948",
         "wikipedia": "ja:日生劇場",
         "wheelchair": "limited",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Nissay Theatre"
+        }
       }
     },
     {
@@ -4816,7 +5489,10 @@
         "wikidata": "Q994083",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Printing Museum"
+        }
       }
     },
     {
@@ -4844,7 +5520,10 @@
         "wikidata": "Q85880847",
         "wikipedia": "ja:明治大学博物館",
         "fee": "no",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Meiji University Museum"
+        }
       }
     },
     {
@@ -4870,7 +5549,10 @@
         "wikidata": "Q11525339",
         "wikipedia": "ja:東京都水道歴史館",
         "wheelchair": "no",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Tokyo Waterworks Historical Museum"
+        }
       }
     },
     {
@@ -4896,7 +5578,11 @@
         "wikidata": "Q9011001",
         "wikipedia": "ja:板橋区立熱帯環境植物館",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Itabashi Botanical Garden",
+          "es": "Jardín de plantas tropicales de Itabashi"
+        }
       }
     },
     {
@@ -4922,7 +5608,10 @@
         "website": "https://mmat.jp/",
         "wikidata": "Q3815450",
         "wikipedia": "ja:目黒区美術館",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Meguro Museum of Art"
+        }
       }
     },
     {
@@ -4947,7 +5636,10 @@
         "website": "https://www.shinbashi-enbujo.co.jp/",
         "wikidata": "Q4410425",
         "wikipedia": "ja:新橋演舞場",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Shinbashi Enbujō"
+        }
       }
     },
     {
@@ -4971,7 +5663,10 @@
         "website": "https://www.ntv.co.jp/shiodome/shop/tokei.html",
         "wikidata": "Q76843738",
         "wikipedia": "ja:日テレ大時計",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Ni-Tele Really Big Clock"
+        }
       }
     },
     {
@@ -5000,7 +5695,10 @@
         "wikidata": "Q11284141",
         "wikipedia": "ja:アド・ミュージアム東京",
         "fee": "no",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Ad Museum Tokyo"
+        }
       }
     },
     {
@@ -5025,7 +5723,10 @@
         "website": "https://www.akb48.co.jp/theater/",
         "wikidata": "Q864490",
         "wikipedia": "ja:AKB48劇場",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "AKB48 Theater"
+        }
       }
     },
     {
@@ -5050,7 +5751,10 @@
         "website": "https://www.kawasaki-sym-hall.jp/",
         "wikidata": "Q4589156",
         "wikipedia": "en:Muza Kawasaki Symphony Hall",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Muza Kawasaki Symphony Hall"
+        }
       }
     },
     {
@@ -5078,7 +5782,10 @@
         "wikipedia": "ja:草間彌生美術館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Yayoi Kusama Museum"
+        }
       }
     },
     {
@@ -5102,7 +5809,10 @@
         "longitude": 139.7586067,
         "wikidata": "Q10445002",
         "wikipedia": "ja:神田古書店街",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Jimbōchō Book Town"
+        }
       }
     },
     {
@@ -5127,7 +5837,10 @@
         "website": "https://www.smallworlds.jp/",
         "wikidata": "Q30926669",
         "wikipedia": "ja:スモールワールズ",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Small Worlds"
+        }
       }
     },
     {
@@ -5153,7 +5866,11 @@
         "wikidata": "Q6128676",
         "wikipedia": "ja:東京アニメセンター",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Tokyo Anime Center",
+          "en": "Tokyo Anime Center"
+        }
       }
     },
     {
@@ -5179,7 +5896,10 @@
         "website": "https://www.city.meguro.tokyo.jp/shisetsu/shisetsu/koen/komaba.html",
         "wikidata": "Q11668323",
         "wikipedia": "ja:駒場公園 (目黒区)",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Komaba Park"
+        }
       }
     },
     {
@@ -5204,7 +5924,10 @@
         "website": "https://www.jsf.or.jp/",
         "wikidata": "Q10855424",
         "wikipedia": "ja:科学技術館",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Science Museum"
+        }
       }
     },
     {
@@ -5227,7 +5950,10 @@
         "latitude": 35.7849158,
         "longitude": 139.6565337,
         "wikidata": "Q6629664",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Akatsuka Park"
+        }
       }
     },
     {
@@ -5252,7 +5978,10 @@
         "wikidata": "Q6629688",
         "wikipedia": "en:Ōjima Komatsugawa Park",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Ōjima Komatsugawa Park"
+        }
       }
     },
     {
@@ -5277,7 +6006,11 @@
         "longitude": 139.719893,
         "wikidata": "Q5557026",
         "wikipedia": "ja:国立科学博物館附属自然教育園",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Institute for Nature Study",
+          "es": "Instituto de Estudio de la Naturaleza"
+        }
       }
     },
     {
@@ -5303,7 +6036,10 @@
         "website": "https://www.jti.co.jp/Culture/museum/index.html",
         "wikidata": "Q11271253",
         "wikipedia": "ja:たばこと塩の博物館",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Tobacco and Salt Museum"
+        }
       }
     },
     {
@@ -5330,7 +6066,10 @@
         "website": "http://www.watarium.co.jp/",
         "wikidata": "Q3915469",
         "wikipedia": "ja:ワタリウム美術館",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Watari Museum of Contemporary Art"
+        }
       }
     },
     {
@@ -5356,7 +6095,10 @@
         "wikidata": "Q10860225",
         "wikipedia": "ja:井の頭自然文化園",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Inokashira Park Zoo"
+        }
       }
     },
     {
@@ -5380,7 +6122,10 @@
         "longitude": 139.7960622,
         "wikidata": "Q6941729",
         "wikipedia": "en:Yokoamichō Park",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Yokoamichō Park"
+        }
       }
     },
     {
@@ -5406,7 +6151,10 @@
         "wikidata": "Q901219",
         "wikipedia": "en:Diamond and Flower Ferris Wheel",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Diamond and Flower Ferris Wheel"
+        }
       }
     },
     {
@@ -5431,7 +6179,10 @@
         "opening_hours": "Tu-Th, Sa-Su 09:30-16:30",
         "website": "https://www.taitogeibun.net/asakura/",
         "wikidata": "Q11517304",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Asakura Museum of Sculpture"
+        }
       }
     },
     {
@@ -5457,7 +6208,10 @@
         "wikidata": "Q3006137",
         "wikipedia": "ja:蒸気船マークトウェイン号",
         "popularity": 5,
-        "site": "Q843997"
+        "site": "Q843997",
+        "names": {
+          "en": "Disney Riverboats"
+        }
       }
     },
     {
@@ -5482,7 +6236,10 @@
         "wikidata": "Q48807898",
         "wikipedia": "ja:御守殿",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Akamon"
+        }
       }
     },
     {
@@ -5510,7 +6267,10 @@
         "wikidata": "Q11310533",
         "wikipedia": "en:Joypolis",
         "wheelchair": "limited",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Joypolis"
+        }
       }
     },
     {
@@ -5537,7 +6297,10 @@
         "wikidata": "Q11605492",
         "wikipedia": "ja:紙の博物館",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Paper Museum"
+        }
       }
     },
     {
@@ -5562,7 +6325,11 @@
         "phone": "+81 3 3821 1017",
         "website": "https://taikan.tokyo/",
         "wikidata": "Q30925115",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Yokoyama Taikan Memorial Hall",
+          "es": "Salón Conmemorativo Yokoyama Taikan"
+        }
       }
     },
     {
@@ -5587,7 +6354,10 @@
         "website": "https://www.city.kawasaki.jp/shisetsu/category/21-21-0-0-0-0-0-0-0-0.html",
         "wikidata": "Q11478414",
         "wikipedia": "ja:川崎市平和館",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Kawasaki Peace Museum"
+        }
       }
     },
     {
@@ -5612,7 +6382,12 @@
         "website": "https://www.city.itabashi.tokyo.jp/bousai/kouen/kouen/akatsuka/",
         "wikidata": "Q4700365",
         "wikipedia": "ja:板橋区立赤塚植物園",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Jardim Botânico de Akatsuka",
+          "en": "Akatsuka Botanical Garden",
+          "es": "Jardín Botánico de Akatsuka"
+        }
       }
     },
     {
@@ -5636,7 +6411,10 @@
         "longitude": 139.7404037,
         "wikidata": "Q11286180",
         "wikipedia": "ja:平和の森公園 (大田区)",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Heiwa-no-Mori Park"
+        }
       }
     },
     {
@@ -5660,7 +6438,10 @@
         "longitude": 139.8184931,
         "wikidata": "Q6630094",
         "wikipedia": "ja:猿江恩賜公園",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Sarue-onshi Park"
+        }
       }
     },
     {
@@ -5684,7 +6465,10 @@
         "longitude": 139.7720585,
         "wikidata": "Q6147955",
         "wikipedia": "ja:台場公園",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Daiba Park"
+        }
       }
     },
     {
@@ -5709,7 +6493,10 @@
         "wikidata": "Q11525002",
         "wikipedia": "en:Tokyo Wild Bird Park",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Tokyo Wild Bird Park"
+        }
       }
     },
     {
@@ -5736,7 +6523,11 @@
         "wikidata": "Q11360245",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Ueno Royal Museum",
+          "es": "Museo Real de Ueno"
+        }
       }
     },
     {
@@ -5763,7 +6554,10 @@
         "wikidata": "Q5095308",
         "wikipedia": "ja:千葉県立現代産業科学館",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Chiba Museum of Science and Industry"
+        }
       }
     },
     {
@@ -5790,7 +6584,10 @@
         "wikidata": "Q11396206",
         "wikipedia": "ja:切手の博物館",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Philatelic Museum"
+        }
       }
     },
     {
@@ -5816,7 +6613,10 @@
         "website": "https://t-navi.city.taito.lg.jp/spot/1078",
         "wikidata": "Q10856362",
         "wikipedia": "ja:大名時計博物館",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Daimyo Clock Museum"
+        }
       }
     },
     {
@@ -5842,7 +6642,10 @@
         "website": "https://www.city.bunkyo.lg.jp/rekishikan/",
         "wikidata": "Q11499743",
         "wikipedia": "en:Bunkyo Museum",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Bunkyo Museum"
+        }
       }
     },
     {
@@ -5871,7 +6674,10 @@
         "wikidata": "Q11582043",
         "wikipedia": "ja:相撲博物館",
         "fee": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Sumo Museum"
+        }
       }
     },
     {
@@ -5896,7 +6702,10 @@
         "wikidata": "Q1134380",
         "wikipedia": "ja:野球殿堂博物館 (日本)",
         "wheelchair": "limited",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Baseball Hall of Fame and Museum"
+        }
       }
     },
     {
@@ -5920,7 +6729,10 @@
         "longitude": 139.5868242,
         "wikidata": "Q4503914",
         "wikipedia": "en:Sengawa Theater",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Sengawa Theater"
+        }
       }
     },
     {
@@ -5947,7 +6759,10 @@
         "wikidata": "Q54087317",
         "wikipedia": "en:20,000 Leagues Under the Sea (Tokyo DisneySea)",
         "popularity": 4,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "20,000 Leagues Under the Sea"
+        }
       }
     },
     {
@@ -5972,7 +6787,10 @@
         "phone": "+81 3 5950 0765",
         "website": "http://www.namco.co.jp/tp/namja/",
         "wikidata": "Q5364305",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Namco Namja Town"
+        }
       }
     },
     {
@@ -5997,7 +6815,10 @@
         "opening_hours": "09:30-17:00",
         "website": "https://www.npb.go.jp/museum/index.html",
         "wikidata": "Q11263157",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Banknote & Postage Stamp Museum"
+        }
       }
     },
     {
@@ -6023,7 +6844,10 @@
         "phone": "+81 3-3396-1510",
         "website": "https://sam.or.jp/",
         "wikidata": "Q11095134",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Suginami Animation Museum"
+        }
       }
     },
     {
@@ -6046,7 +6870,10 @@
         "longitude": 139.7977138,
         "wikidata": "Q3209258",
         "wikipedia": "ja:小塚原刑場",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Kozukappara execution grounds"
+        }
       }
     },
     {
@@ -6071,7 +6898,10 @@
         "website": "https://toshiba-mirai-kagakukan.jp/",
         "wikidata": "Q7827637",
         "wikipedia": "ja:東芝未来科学館",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Toshiba Science Museum"
+        }
       }
     },
     {
@@ -6098,7 +6928,10 @@
         "wikidata": "Q122929555",
         "wikipedia": "ja:在日韓人歴史資料館",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "History Museum of J-Koreans"
+        }
       }
     },
     {
@@ -6123,7 +6956,10 @@
         "wikidata": "Q65046459",
         "wikipedia": "ja:ファンタジースプリングス",
         "popularity": 4,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "Fantasy Springs"
+        }
       }
     },
     {
@@ -6150,7 +6986,10 @@
         "website": "https://www.bungakukan.or.jp/",
         "wikidata": "Q1954709",
         "wikipedia": "ja:日本近代文学館",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Museum of Modern Japanese Literature"
+        }
       }
     },
     {
@@ -6174,7 +7013,10 @@
         "longitude": 139.6303905,
         "wikidata": "Q6631678",
         "wikipedia": "ja:光が丘公園",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Hikarigaoka Park"
+        }
       }
     },
     {
@@ -6197,7 +7039,10 @@
         "latitude": 35.7298268,
         "longitude": 139.666012,
         "wikidata": "Q11259195",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Egota-no-Mori Park"
+        }
       }
     },
     {
@@ -6224,7 +7069,10 @@
         "website": "https://enpaku.w.waseda.jp/",
         "wikidata": "Q3951945",
         "wikipedia": "ja:早稲田大学坪内博士記念演劇博物館",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Waseda University Tsubouchi Memorial Theatre Museum"
+        }
       }
     },
     {
@@ -6248,7 +7096,11 @@
         "longitude": 139.7060833,
         "wikidata": "Q10950260",
         "wikipedia": "ja:戸山公園",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Toyama Park",
+          "es": "Toyama Park"
+        }
       }
     },
     {
@@ -6272,7 +7124,10 @@
         "longitude": 139.809896,
         "wikidata": "Q11558624",
         "wikipedia": "ja:海の森公園",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Umi-no-Mori Park"
+        }
       }
     },
     {
@@ -6297,7 +7152,10 @@
         "website": "https://www.tokyo-park.or.jp/park/format/index080.html",
         "wikidata": "Q11661217",
         "wikipedia": "ja:青山公園",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Aoyama Park"
+        }
       }
     },
     {
@@ -6322,7 +7180,10 @@
         "website": "https://www.um.u-tokyo.ac.jp/",
         "wikidata": "Q15524927",
         "wikipedia": "ja:東京大学総合研究博物館",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "The University Museum, The University of Tokyo"
+        }
       }
     },
     {
@@ -6347,7 +7208,11 @@
         "phone": "03-3824-1988",
         "website": "https://www.taitocity.net/zaidan/sougakudou/",
         "wikidata": "Q3891225",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Sogakudo Concert Hall",
+          "es": "Auditorio Sogakudo"
+        }
       }
     },
     {
@@ -6371,7 +7236,10 @@
         "longitude": 139.7362566,
         "wikidata": "Q38255023",
         "wikipedia": "ja:高輪皇族邸",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Takanawa Imperial Residence"
+        }
       }
     },
     {
@@ -6398,7 +7266,10 @@
         "wikipedia": "ja:スター・ツアーズ:ザ・アドベンチャーズ・コンティニュー",
         "wheelchair": "yes",
         "popularity": 4,
-        "site": "Q843997"
+        "site": "Q843997",
+        "names": {
+          "en": "Star Tours – The Adventures Continue"
+        }
       }
     },
     {
@@ -6423,7 +7294,10 @@
         "wikidata": "Q11320079",
         "wikipedia": "ja:ディズニーシー・エレクトリックレールウェイ",
         "popularity": 4,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "DisneySea Electric Railway"
+        }
       }
     },
     {
@@ -6448,7 +7322,10 @@
         "wikidata": "Q80704016",
         "wikipedia": "en:Statue of Unicorn Gundam",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Statue of Unicorn Gundam"
+        }
       }
     },
     {
@@ -6477,7 +7354,10 @@
         "wikidata": "Q3815581",
         "wikipedia": "en:Koishikawa Annex, The University Museum, The University of Tokyo",
         "fee": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Koishikawa Annex, The University Museum, The University of Tokyo"
+        }
       }
     },
     {
@@ -6501,7 +7381,10 @@
         "longitude": 139.7709729,
         "wikidata": "Q2913480",
         "wikipedia": "ja:万世橋",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Manseibashi"
+        }
       }
     },
     {
@@ -6526,7 +7409,10 @@
         "wikidata": "Q11589493",
         "wikipedia": "en:Jingūbashi",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Jingu Bashi"
+        }
       }
     },
     {
@@ -6549,7 +7435,10 @@
         "latitude": 35.7300938,
         "longitude": 139.7089354,
         "wikidata": "Q11552247",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Ikebukuro-nishiguchi Park"
+        }
       }
     },
     {
@@ -6573,7 +7462,10 @@
         "longitude": 139.7772657,
         "wikidata": "Q11308705",
         "wikipedia": "ja:シンボルプロムナード公園",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Symbol Promenade Park"
+        }
       }
     },
     {
@@ -6599,7 +7491,10 @@
         "wikidata": "Q65042943",
         "wikipedia": "ja:美女と野獣“魔法のものがたり”",
         "popularity": 4,
-        "site": "Q843997"
+        "site": "Q843997",
+        "names": {
+          "en": "Enchanted Tale of Beauty and the Beast"
+        }
       }
     },
     {
@@ -6622,7 +7517,10 @@
         "longitude": 139.7018792,
         "wikidata": "Q85763829",
         "wikipedia": "en:Godzilla head",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Godzilla head"
+        }
       }
     },
     {
@@ -6648,7 +7546,10 @@
         "wikidata": "Q107583845",
         "wikipedia": "ja:仲見世通り",
         "popularity": 4,
-        "site": "Q615183"
+        "site": "Q615183",
+        "names": {
+          "en": "Nakamise Street"
+        }
       }
     },
     {
@@ -6671,7 +7572,10 @@
         "latitude": 35.581003,
         "longitude": 139.7837758,
         "wikidata": "Q11426038",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Jōnanjima Seaside Park"
+        }
       }
     },
     {
@@ -6695,7 +7599,10 @@
         "longitude": 139.5903382,
         "wikidata": "Q6630072",
         "wikipedia": "ja:善福寺公園",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Zenpukuji Park"
+        }
       }
     },
     {
@@ -6721,7 +7628,10 @@
         "website": "http://www.jfa.jp/football_museum/",
         "wikidata": "Q11506477",
         "wikipedia": "ja:日本サッカーミュージアム",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Japan Football Museum"
+        }
       }
     },
     {
@@ -6748,7 +7658,10 @@
         "wikidata": "Q10854719",
         "wikipedia": "ja:NHKスタジオパーク",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "NHK Studio Park"
+        }
       }
     },
     {
@@ -6775,7 +7688,10 @@
         "website": "https://www.setabun.or.jp/",
         "wikidata": "Q11362100",
         "wikipedia": "en:Setagaya Literary Museum",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Setagaya Literary Museum"
+        }
       }
     },
     {
@@ -6800,7 +7716,10 @@
         "website": "https://www.senshu-bunko.or.jp/",
         "wikidata": "Q11405795",
         "wikipedia": "ja:千秋文庫",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Senshū Bunko"
+        }
       }
     },
     {
@@ -6824,7 +7743,10 @@
         "longitude": 139.7764529,
         "website": "https://www.taitogeibun.net/shodou/",
         "wikidata": "Q11411955",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Taito City Calligraphy Museum"
+        }
       }
     },
     {
@@ -6848,7 +7770,10 @@
         "longitude": 139.6925118,
         "wikidata": "Q56025796",
         "wikipedia": "ja:平和祈念展示資料館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Memorial Museum for Soldiers, Detainees in Siberia, and Postwar Repatriates"
+        }
       }
     },
     {
@@ -6874,7 +7799,10 @@
         "website": "https://www.toguri-museum.or.jp/",
         "wikidata": "Q11496415",
         "wikipedia": "ja:戸栗美術館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Toguri Museum of Art"
+        }
       }
     },
     {
@@ -6902,7 +7830,10 @@
         "wikidata": "Q30938116",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Waseda Aizu Museum"
+        }
       }
     },
     {
@@ -6929,7 +7860,10 @@
         "website": "https://www.tfd.metro.tokyo.lg.jp/taiken/hkkan/index.html",
         "wikidata": "Q11559505",
         "wikipedia": "ja:消防博物館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Fire Museum"
+        }
       }
     },
     {
@@ -6956,7 +7890,10 @@
         "website": "https://d5f.org/",
         "wikidata": "Q11525586",
         "wikipedia": "ja:東京都立第五福竜丸展示館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Daigo Fukuryu Maru Exhibition Hall"
+        }
       }
     },
     {
@@ -6982,7 +7919,10 @@
         "website": "https://www.city.nerima.tokyo.jp/shisetsu/bunka/kominkan/museum.html",
         "wikidata": "Q11608069",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Nerima Art Museum"
+        }
       }
     },
     {
@@ -7005,7 +7945,10 @@
         "latitude": 35.759098,
         "longitude": 139.9120579,
         "wikidata": "Q104696857",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Municipal Museum of Archaeology in Ichikawa"
+        }
       }
     },
     {
@@ -7030,7 +7973,10 @@
         "website": "https://taro-okamoto.or.jp/",
         "wikidata": "Q11473108",
         "wikipedia": "ja:岡本太郎記念館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Taro Okamoto Memorial Museum"
+        }
       }
     },
     {
@@ -7054,7 +8000,10 @@
         "longitude": 139.910134,
         "wikidata": "Q11427200",
         "wikipedia": "ja:堀之内貝塚",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Horinouchi Shell Mound"
+        }
       }
     },
     {
@@ -7081,7 +8030,10 @@
         "wikidata": "Q115265693",
         "wikipedia": "ja:東京ステーションギャラリー",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Tokyo Station Gallery"
+        }
       }
     },
     {
@@ -7109,7 +8061,10 @@
         "wikidata": "Q11582309",
         "wikipedia": "ja:相田みつを美術館",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Mitsuo Aida Museum"
+        }
       }
     },
     {
@@ -7133,7 +8088,10 @@
         "longitude": 139.7708111,
         "wikidata": "Q8048250",
         "wikipedia": "ja:谷中五重塔放火心中事件",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Yanaka Five-Storied Pagoda Double-Suicide Arson Case"
+        }
       }
     },
     {
@@ -7157,7 +8115,10 @@
         "longitude": 139.7135103,
         "wikidata": "Q11284663",
         "wikipedia": "ja:箱根山 (新宿区)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Mount Hakone"
+        }
       }
     },
     {
@@ -7180,7 +8141,10 @@
         "longitude": 139.7272667,
         "wikidata": "Q17192779",
         "wikipedia": "ja:EX THEATER ROPPONGI",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "EX THEATER ROPPONGI"
+        }
       }
     },
     {
@@ -7205,7 +8169,10 @@
         "website": "https://shibuya-muse.jp/",
         "wikidata": "Q21019078",
         "wikipedia": "ja:白根記念渋谷区郷土博物館・文学館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Shibuya Folk and Literary Shirane Memorial Museum"
+        }
       }
     },
     {
@@ -7231,7 +8198,10 @@
         "wikidata": "Q48750542",
         "wikipedia": "ja:IHIステージアラウンド東京",
         "wheelchair": "limited",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "IHI Stage Around Tokyo"
+        }
       }
     },
     {
@@ -7254,7 +8224,10 @@
         "longitude": 139.6285877,
         "wikidata": "Q11447915",
         "wikipedia": "ja:子母口貝塚",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Shibokuchi Shell Mound"
+        }
       }
     },
     {
@@ -7277,7 +8250,10 @@
         "longitude": 139.6670815,
         "wikidata": "Q11371013",
         "wikipedia": "ja:亀甲山古墳",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kamenokoyama Kofun"
+        }
       }
     },
     {
@@ -7304,7 +8280,10 @@
         "website": "https://kunio-kobayashi.com/",
         "wikidata": "Q29570077",
         "wikipedia": "en:Shunkaen Bonsai Museum",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Shunkaen Bonsai Museum"
+        }
       }
     },
     {
@@ -7330,7 +8309,10 @@
         "website": "https://mugendai.yoshimoto.co.jp/",
         "wikidata": "Q8056177",
         "wikipedia": "ja:ヨシモト∞ホール",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Yoshimoto Mugendai Hall"
+        }
       }
     },
     {
@@ -7358,7 +8340,10 @@
         "wikipedia": "ja:SHIBUYA SKY",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "SHIBUYA SKY"
+        }
       }
     },
     {
@@ -7387,7 +8372,10 @@
         "wikidata": "Q11235312",
         "wikipedia": "ja:NHK放送博物館",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "NHK Museum of Broadcasting"
+        }
       }
     },
     {
@@ -7413,7 +8401,10 @@
         "website": "https://www.nikon.com/company/corporate/museum/",
         "wikidata": "Q21654020",
         "wikipedia": "en:Nikon Museum",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Nikon Museum"
+        }
       }
     },
     {
@@ -7438,7 +8429,10 @@
         "website": "https://tokiwasomm.jp/",
         "wikidata": "Q96707302",
         "wikipedia": "ja:トキワ荘マンガミュージアム",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Toshima City Tokiwasō Manga Museum"
+        }
       }
     },
     {
@@ -7461,7 +8455,10 @@
         "longitude": 139.6073944,
         "wikidata": "Q107138134",
         "wikipedia": "ja:西福寺古墳",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Saifukuji Kofun"
+        }
       }
     },
     {
@@ -7487,7 +8484,10 @@
         "website": "https://shinjuku.xspace.tokyo",
         "wikidata": "Q109702546",
         "wikipedia": "ja:クロス新宿ビジョン",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Cross Shinjuku Vision"
+        }
       }
     },
     {
@@ -7511,7 +8511,10 @@
         "longitude": 139.7487461,
         "wikidata": "Q11493833",
         "wikipedia": "ja:愛宕山 (東京都港区)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Mount Atago"
+        }
       }
     },
     {
@@ -7536,7 +8539,10 @@
         "wikidata": "Q935409",
         "wikipedia": "ja:マーメイドラグーン",
         "popularity": 3,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "Mermaid Lagoon"
+        }
       }
     },
     {
@@ -7561,7 +8567,10 @@
         "wikidata": "Q28530645",
         "wikipedia": "ja:タワー・オブ・テラー (TDS)",
         "popularity": 3,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "Tower of Terror"
+        }
       }
     },
     {
@@ -7585,7 +8594,10 @@
         "longitude": 139.6122881,
         "wikidata": "Q11625161",
         "wikipedia": "ja:蘆花恒春園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Roka Kōshun-en"
+        }
       }
     },
     {
@@ -7609,7 +8621,10 @@
         "longitude": 139.7449548,
         "wikidata": "Q6631821",
         "wikipedia": "ja:千鳥ヶ淵公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Chidorigafuchi Park"
+        }
       }
     },
     {
@@ -7633,7 +8648,10 @@
         "longitude": 139.8524542,
         "wikidata": "Q6378204",
         "wikipedia": "ja:かつしかシンフォニーヒルズ",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Katsushika Symphony Hills"
+        }
       }
     },
     {
@@ -7658,7 +8676,10 @@
         "website": "https://www.norimuseum.com/",
         "wikidata": "Q20748918",
         "wikipedia": "ja:大森海苔のふるさと館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Omori Nori Museum"
+        }
       }
     },
     {
@@ -7687,7 +8708,10 @@
         "wikidata": "Q11437973",
         "wikipedia": "ja:大田黒公園",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Ōtaguro Park"
+        }
       }
     },
     {
@@ -7714,7 +8738,10 @@
         "wikidata": "Q11295937",
         "wikipedia": "ja:ガスの科学館",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Gas Science Museum"
+        }
       }
     },
     {
@@ -7740,7 +8767,11 @@
         "wikidata": "Q6884419",
         "wikipedia": "ja:ミヤシタパーク",
         "wheelchair": "limited",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Parque Miyashita",
+          "en": "Miyashita Park"
+        }
       }
     },
     {
@@ -7763,7 +8794,10 @@
         "longitude": 139.8746323,
         "wikidata": "Q11278844",
         "wikipedia": "ja:みさと公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Misato Park"
+        }
       }
     },
     {
@@ -7787,7 +8821,10 @@
         "longitude": 139.7234961,
         "wikidata": "Q11551828",
         "wikipedia": "ja:池田山公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Ikedayama Park"
+        }
       }
     },
     {
@@ -7810,7 +8847,10 @@
         "latitude": 35.7937817,
         "longitude": 139.6932408,
         "wikidata": "Q11558567",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Ukima Park"
+        }
       }
     },
     {
@@ -7835,7 +8875,10 @@
         "website": "https://www.tobunken.go.jp/kuroda/index_e.html",
         "wikidata": "Q123195608",
         "wikipedia": "en:Kuroda Memorial Hall",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kuroda Memorial Hall"
+        }
       }
     },
     {
@@ -7859,7 +8902,10 @@
         "longitude": 139.8891935,
         "wikidata": "Q5229878",
         "wikipedia": "ja:舞浜アンフィシアター",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Maihama Amphitheater"
+        }
       }
     },
     {
@@ -7882,7 +8928,10 @@
         "longitude": 139.7143509,
         "wikidata": "Q11408045",
         "wikipedia": "ja:南池袋公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Minami-Ikebukuro Park"
+        }
       }
     },
     {
@@ -7910,7 +8959,10 @@
         "wikipedia": "ja:旧安田庭園",
         "fee": "no",
         "wheelchair": "limited",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kyū Yasuda Garden"
+        }
       }
     },
     {
@@ -7939,7 +8991,10 @@
         "wikipedia": "ja:葛飾柴又寅さん記念館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Katsushika Shibamata Tora-san Museum"
+        }
       }
     },
     {
@@ -7962,7 +9017,10 @@
         "longitude": 139.7770415,
         "wikidata": "Q6629703",
         "wikipedia": "ja:尾久の原公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Ogunohara Park"
+        }
       }
     },
     {
@@ -7989,7 +9047,10 @@
         "wikidata": "Q11632332",
         "wikipedia": "ja:警察博物館",
         "wheelchair": "limited",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Police Museum"
+        }
       }
     },
     {
@@ -8013,7 +9074,10 @@
         "longitude": 139.6823232,
         "wikidata": "Q11587731",
         "wikipedia": "en:Himonya Park",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Himonya Park"
+        }
       }
     },
     {
@@ -8037,7 +9101,10 @@
         "longitude": 139.7094095,
         "website": "https://www.museum.univ.gakushuin.ac.jp/",
         "wikidata": "Q11448881",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Gakushuin University Museum of History"
+        }
       }
     },
     {
@@ -8062,7 +9129,10 @@
         "opening_hours": "Jan-Mar,Oct-Dec 06:30-17:30; Apr-Sep 06:30-19:30",
         "wikidata": "Q20043920",
         "wikipedia": "en:Kitami Friendship Square",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kitami Fureai Hiroba"
+        }
       }
     },
     {
@@ -8086,7 +9156,10 @@
         "longitude": 139.7863162,
         "wikidata": "Q20043009",
         "wikipedia": "ja:荒川自然公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Arakawa Nature Park"
+        }
       }
     },
     {
@@ -8112,7 +9185,10 @@
         "phone": "03-3893-6003",
         "wikidata": "Q17191904",
         "wikipedia": "ja:あらかわ遊園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Arakawa Amusement Park"
+        }
       }
     },
     {
@@ -8135,7 +9211,10 @@
         "latitude": 35.7737761,
         "longitude": 139.7107135,
         "wikidata": "Q11635950",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Akabane Nature Observatory Park"
+        }
       }
     },
     {
@@ -8160,7 +9239,10 @@
         "website": "https://www.city.toshima.lg.jp/129/bunka/bunka/shiryokan/kyusenkyoshikan/004412.html",
         "wikidata": "Q3915272",
         "wikipedia": "ja:雑司が谷旧宣教師館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Zoshigaya Missionary Museum"
+        }
       }
     },
     {
@@ -8184,7 +9266,10 @@
         "longitude": 139.6655956,
         "wikidata": "Q11430740",
         "wikipedia": "en:Tamagawadai Park",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Tamagawadai Park"
+        }
       }
     },
     {
@@ -8208,7 +9293,10 @@
         "longitude": 139.7943034,
         "wikidata": "Q11520364",
         "wikipedia": "ja:本所松坂町公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Honjo Matsuzakacho Park"
+        }
       }
     },
     {
@@ -8233,7 +9321,10 @@
         "wikidata": "Q11645747",
         "wikipedia": "ja:野毛大塚古墳",
         "wheelchair": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Noge Ōtsuka Kofun"
+        }
       }
     },
     {
@@ -8261,7 +9352,10 @@
         "wikidata": "Q6810040",
         "wikipedia": "en:Meiji Shrine Inner Garden",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Meiji Shrine Inner Garden"
+        }
       }
     },
     {
@@ -8289,7 +9383,10 @@
         "wikidata": "Q11401205",
         "wikipedia": "ja:北区飛鳥山博物館",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kita City Asukayama Museum"
+        }
       }
     },
     {
@@ -8316,7 +9413,10 @@
         "wikidata": "Q11254595",
         "wikipedia": "ja:渋沢史料館",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Shibusawa Memorial Museum"
+        }
       }
     },
     {
@@ -8341,7 +9441,10 @@
         "wikidata": "Q76860005",
         "wikipedia": "ja:イタリア公園",
         "wheelchair": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Italy Park"
+        }
       }
     },
     {
@@ -8366,7 +9469,10 @@
         "opening_hours": "06:00-20:00",
         "wikidata": "Q11525110",
         "wikipedia": "ja:東京臨海広域防災公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Tokyo Rinkai Disaster Prevention Park"
+        }
       }
     },
     {
@@ -8390,7 +9496,10 @@
         "longitude": 139.7289229,
         "wikidata": "Q11671321",
         "wikipedia": "ja:高橋是清翁記念公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Takahashi Korekiyo Memorial Park"
+        }
       }
     },
     {
@@ -8414,7 +9523,10 @@
         "longitude": 139.8584542,
         "wikidata": "Q11551063",
         "wikipedia": "ja:江戸川区自然動物園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Edogawa Ward Natural Zoo"
+        }
       }
     },
     {
@@ -8437,7 +9549,10 @@
         "longitude": 139.7676116,
         "wikidata": "Q11525229",
         "wikipedia": "ja:東京都交通局7500形電車",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Toei 7500 series"
+        }
       }
     },
     {
@@ -8462,7 +9577,10 @@
         "opening_hours": "Apr-Sep: 08:00-17:00; Oct-Mar: 09:00-16:00",
         "website": "https://www.city.toshima.lg.jp/340/shisetsu/koen/065.html",
         "wikidata": "Q28154514",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Mejiro-no-Mori"
+        }
       }
     },
     {
@@ -8486,7 +9604,10 @@
         "longitude": 139.8353685,
         "wikidata": "Q11616598",
         "wikipedia": "ja:若洲海浜公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Wakasu Seaside Park"
+        }
       }
     },
     {
@@ -8510,7 +9631,10 @@
         "longitude": 139.6952104,
         "wikidata": "Q28154518",
         "wikipedia": "en:Itabashi Traffic Park",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Itabashi Traffic Park"
+        }
       }
     },
     {
@@ -8533,7 +9657,10 @@
         "longitude": 139.6722847,
         "wikidata": "Q55885883",
         "wikipedia": "ja:栗原遺跡",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kurihara Ruins"
+        }
       }
     },
     {
@@ -8555,7 +9682,10 @@
         "latitude": 35.7544819,
         "longitude": 139.6755452,
         "wikidata": "Q89385495",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Moro Heritage Site"
+        }
       }
     },
     {
@@ -8578,7 +9708,10 @@
         "longitude": 139.6223017,
         "wikidata": "Q20041530",
         "wikipedia": "en:Tekigai-sō",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Tekigaisō Park"
+        }
       }
     },
     {
@@ -8602,7 +9735,10 @@
         "longitude": 139.814213,
         "wikidata": "Q11637859",
         "wikipedia": "ja:辰巳の森海浜公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Tatsumi Seaside Park"
+        }
       }
     },
     {
@@ -8627,7 +9763,10 @@
         "website": "http://www.city.setagaya.tokyo.jp/030/d00004246.html",
         "wikidata": "Q11392844",
         "wikipedia": "ja:兵庫島公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Hyōgo Island Park"
+        }
       }
     },
     {
@@ -8652,7 +9791,10 @@
         "wikidata": "Q6600319",
         "wikipedia": "ja:東京ディズニーシーのアトラクションの一覧",
         "popularity": 3,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "list of Tokyo DisneySea attractions"
+        }
       }
     },
     {
@@ -8678,7 +9820,10 @@
         "website": "https://www.minato-rekishi.com/",
         "wikidata": "Q115212362",
         "wikipedia": "ja:港区立郷土歴史館",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Minato City Local History Museum"
+        }
       }
     },
     {
@@ -8702,7 +9847,10 @@
         "longitude": 139.836846,
         "wikidata": "Q6631871",
         "wikipedia": "ja:亀戸中央公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kameido Central Park"
+        }
       }
     },
     {
@@ -8725,7 +9873,10 @@
         "latitude": 35.6384074,
         "longitude": 139.8543998,
         "wikidata": "Q49509425",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kasai Marine Park"
+        }
       }
     },
     {
@@ -8748,7 +9899,10 @@
         "longitude": 139.6038779,
         "wikidata": "Q28683345",
         "wikipedia": "ja:高井戸公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Takaido Park"
+        }
       }
     },
     {
@@ -8772,7 +9926,10 @@
         "longitude": 139.8971758,
         "wikidata": "Q11603730",
         "wikipedia": "ja:篠崎公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Shinozaki Park"
+        }
       }
     },
     {
@@ -8799,7 +9956,10 @@
         "wikidata": "Q11436301",
         "wikipedia": "ja:大森ふるさとの浜辺公園",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Ōmori Furusato-no-Hamabe Park"
+        }
       }
     },
     {
@@ -8827,7 +9987,10 @@
         "wikidata": "Q11610224",
         "wikipedia": "ja:羽根木公園",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Hanegi Park"
+        }
       }
     },
     {
@@ -8851,7 +10014,10 @@
         "longitude": 139.8164448,
         "wikidata": "Q11650536",
         "wikipedia": "ja:錦糸公園",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kinshi Park"
+        }
       }
     },
     {
@@ -8876,7 +10042,10 @@
         "website": "http://www.musashino-culture.or.jp/k_theatre/",
         "wikidata": "Q17211433",
         "wikipedia": "ja:吉祥寺シアター",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kichijoji theatre"
+        }
       }
     },
     {
@@ -8902,7 +10071,10 @@
         "website": "https://www.asakusaengei.com/",
         "wikidata": "Q11557233",
         "wheelchair": "limited",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Asakusa Engei Hall"
+        }
       }
     },
     {
@@ -8931,7 +10103,10 @@
         "wikipedia": "ja:川口市立科学館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kawaguchi Science Museum"
+        }
       }
     },
     {
@@ -8957,7 +10132,10 @@
         "website": "https://assarikunn.wixsite.com/website",
         "wikidata": "Q11558212",
         "wikipedia": "ja:浦安市郷土博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Urayasu City Folk Museum"
+        }
       }
     },
     {
@@ -8983,7 +10161,10 @@
         "website": "https://www.city.setagaya.lg.jp/shisetsu/1213/1265/d00004199.html",
         "wikidata": "Q104708389",
         "wikipedia": "ja:世田谷区立郷土資料館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Setagaya City Local Museum"
+        }
       }
     },
     {
@@ -9009,7 +10190,10 @@
         "website": "https://www.kume-museum.com/",
         "wikidata": "Q11369635",
         "wikipedia": "ja:久米美術館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kume Museum of Art"
+        }
       }
     },
     {
@@ -9035,7 +10219,10 @@
         "website": "https://sato-museum.la.coocan.jp/",
         "wikidata": "Q11384365",
         "wikipedia": "ja:佐藤美術館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Sato Museum of Art"
+        }
       }
     },
     {
@@ -9060,7 +10247,10 @@
         "website": "https://museum.kokugakuin.ac.jp/",
         "wikidata": "Q81916990",
         "wikipedia": "ja:國學院大學博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kokugakuin University Museum"
+        }
       }
     },
     {
@@ -9086,7 +10276,10 @@
         "website": "https://www.city.ota.tokyo.jp/seikatsu/manabu/hakubutsukan/",
         "wikidata": "Q104708388",
         "wikipedia": "ja:大田区立郷土博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Folk Museum of Ōta City"
+        }
       }
     },
     {
@@ -9110,7 +10303,10 @@
         "longitude": 139.715623,
         "website": "https://www.city.ota.tokyo.jp/shisetsu/hakubutsukan/ryuushikinenkan.html",
         "wikidata": "Q112192996",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ryūshi Memorial Museum"
+        }
       }
     },
     {
@@ -9134,7 +10330,10 @@
         "longitude": 139.664992,
         "website": "https://www.city.tokyo-nakano.lg.jp/kurashi/bunka/manabu/rekishiminzoku/shiryokannitsuite.html",
         "wikidata": "Q104708387",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nakano Historical Museum"
+        }
       }
     },
     {
@@ -9159,7 +10358,10 @@
         "opening_hours": "Tu-Su 09:30-17:30",
         "wikidata": "Q11501857",
         "wikipedia": "ja:新宿歴史博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shinjuku Historical Museum"
+        }
       }
     },
     {
@@ -9185,7 +10387,10 @@
         "website": "https://www.jcii-cameramuseum.jp/",
         "wikidata": "Q21019310",
         "wikipedia": "ja:日本カメラ博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "JCII Camera Museum"
+        }
       }
     },
     {
@@ -9208,7 +10413,10 @@
         "longitude": 139.6796239,
         "website": "https://www.itbs-sem.jp/",
         "wikidata": "Q11532661",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Itabashi Science and Education Hall"
+        }
       }
     },
     {
@@ -9231,7 +10439,10 @@
         "latitude": 35.7854982,
         "longitude": 139.6432063,
         "wikidata": "Q104696866",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Itabashi Historical Museum"
+        }
       }
     },
     {
@@ -9258,7 +10469,10 @@
         "wikidata": "Q11577225",
         "wikipedia": "ja:田端文士村記念館",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Tabata Memorial Museum of Writers and Artists"
+        }
       }
     },
     {
@@ -9284,7 +10498,10 @@
         "website": "https://www.museum.city.katsushika.lg.jp/",
         "wikidata": "Q11621071",
         "wikipedia": "ja:葛飾区郷土と天文の博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Katsushika City Museum"
+        }
       }
     },
     {
@@ -9309,7 +10526,10 @@
         "website": "https://www.city.adachi.tokyo.jp/hakubutsukan/",
         "wikidata": "Q11636983",
         "wikipedia": "ja:足立区立郷土博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Adachi City Museum"
+        }
       }
     },
     {
@@ -9335,7 +10555,10 @@
         "wikidata": "Q11519985",
         "wikipedia": "ja:本多劇場",
         "wheelchair": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Honda Theater"
+        }
       }
     },
     {
@@ -9361,7 +10584,10 @@
         "wikidata": "Q11649416",
         "wikipedia": "ja:鈴本演芸場",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Suzumoto Engeijo"
+        }
       }
     },
     {
@@ -9386,7 +10612,10 @@
         "website": "http://www.mitsukoshi.co.jp/store/1010/theater/",
         "wikidata": "Q11357327",
         "wikipedia": "ja:三越劇場",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mitsukoshi Theater"
+        }
       }
     },
     {
@@ -9411,7 +10640,10 @@
         "website": "https://www.gingeki.jp/",
         "wikidata": "Q16141818",
         "wikipedia": "ja:天王洲 銀河劇場",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Galaxy Theatre"
+        }
       }
     },
     {
@@ -9436,7 +10668,10 @@
         "website": "https://www.haiyuzagekijou.co.jp/",
         "wikidata": "Q11398181",
         "wikipedia": "ja:劇団俳優座",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Haiyuza Theatre Company"
+        }
       }
     },
     {
@@ -9462,7 +10697,10 @@
         "website": "https://www.isehanhonten.co.jp/museum/index.html",
         "wikidata": "Q11378949",
         "wikipedia": "ja:伊勢半本店 紅ミュージアム",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Beni Museum"
+        }
       }
     },
     {
@@ -9486,7 +10724,10 @@
         "longitude": 139.6847988,
         "wikidata": "Q24874167",
         "wikipedia": "ja:東京工業大学博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Science Tokyo Museum and Archives"
+        }
       }
     },
     {
@@ -9510,7 +10751,10 @@
         "longitude": 139.684266,
         "opening_hours": "Tu-Su 10:00-16:30",
         "wikidata": "Q11533289",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hayashi Fumiko Memorial Hall"
+        }
       }
     },
     {
@@ -9534,7 +10778,10 @@
         "longitude": 139.7421431,
         "wikidata": "Q11387803",
         "wikipedia": "ja:元和キリシタン遺跡",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Site of Christians in Genna"
+        }
       }
     },
     {
@@ -9559,7 +10806,10 @@
         "website": "https://moriogai-kinenkan.jp/",
         "wikidata": "Q84836242",
         "wikipedia": "ja:文京区立森鷗外記念館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Bunkyō City Mori Ōgai Memorial Museum"
+        }
       }
     },
     {
@@ -9607,7 +10857,10 @@
         "longitude": 139.7630131,
         "wikidata": "Q76864537",
         "wikipedia": "ja:可美真手命像",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Statue of Umashimadenomikoto"
+        }
       }
     },
     {
@@ -9632,7 +10885,11 @@
         "wikidata": "Q11408884",
         "wikipedia": "ja:博品館劇場",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hakuhinkan Theater",
+          "es": "Teatro Hakuhinkan"
+        }
       }
     },
     {
@@ -9657,7 +10914,10 @@
         "website": "https://www.shiki.jp/theatres/0905/",
         "wikidata": "Q11660645",
         "wikipedia": "ja:電通四季劇場［海］",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Dentsū Shiki Theatre Umi"
+        }
       }
     },
     {
@@ -9683,7 +10943,10 @@
         "website": "https://furusatokan.info/",
         "wikidata": "Q20043481",
         "wikipedia": "ja:大山街道ふるさと館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Oyama Kaido Furusatokan"
+        }
       }
     },
     {
@@ -9708,7 +10971,10 @@
         "website": "https://www.hosho.or.jp/",
         "wikidata": "Q24862877",
         "wikipedia": "ja:宝生能楽堂",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hōshō Noh Theatre"
+        }
       }
     },
     {
@@ -9733,7 +10999,10 @@
         "wikidata": "Q11608082",
         "wikipedia": "ja:練馬文化センター",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nerima Culture Center"
+        }
       }
     },
     {
@@ -9758,7 +11027,10 @@
         "website": "https://www.jma.go.jp/jma/kishou/intro/kagakukan.html",
         "wikidata": "Q16872707",
         "wikipedia": "ja:気象科学館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Meteorological Science Museum"
+        }
       }
     },
     {
@@ -9782,7 +11054,10 @@
         "longitude": 139.7708438,
         "wikidata": "Q21652333",
         "wikipedia": "ja:秋葉原ディアステージ",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Akihabara DearStage"
+        }
       }
     },
     {
@@ -9807,7 +11082,10 @@
         "wikidata": "Q11501868",
         "wikipedia": "ja:新宿西口商店街",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Omoide Yokochō"
+        }
       }
     },
     {
@@ -9831,7 +11109,10 @@
         "longitude": 139.891982,
         "wikidata": "Q11534148",
         "wikipedia": "ja:柳原水閘",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Yanagihara suikō"
+        }
       }
     },
     {
@@ -9856,7 +11137,10 @@
         "opening_hours": "Tu-Su 09:00-16:30; Mo off",
         "website": "https://www.taitogeibun.net/ichiyo/",
         "wikidata": "Q11353179",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ichiyo Memorial Museum"
+        }
       }
     },
     {
@@ -9881,7 +11165,10 @@
         "website": "https://kameido-umeyashiki.com",
         "wikidata": "Q133809283",
         "wikipedia": "ja:亀戸梅屋敷",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kameido Umeyashiki"
+        }
       }
     },
     {
@@ -9909,7 +11196,10 @@
         "wikipedia": "ja:レゴランド・ディスカバリー・センター東京",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Legoland Discovery Center Tokyo"
+        }
       }
     },
     {
@@ -9934,7 +11224,12 @@
         "website": "https://www.spacezero.co.jp/",
         "wikidata": "Q11313008",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Space Zero",
+          "en": "Space Zero",
+          "es": "Space Zero"
+        }
       }
     },
     {
@@ -9960,7 +11255,10 @@
         "website": "https://visit-sumida.jp/spot/6036/",
         "wikidata": "Q21014218",
         "wikipedia": "ja:両国花火資料館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ryōgoku Fireworks Museum"
+        }
       }
     },
     {
@@ -9983,7 +11281,10 @@
         "wikidata": "Q80703780",
         "wikipedia": "en:Statue of Shinran, Tokyo",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Statue of Shinran, Tokyo"
+        }
       }
     },
     {
@@ -10007,7 +11308,10 @@
         "longitude": 139.7739414,
         "wikidata": "Q17220560",
         "wikipedia": "ja:摺鉢山古墳",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Suribachiyama Kofun"
+        }
       }
     },
     {
@@ -10032,7 +11336,10 @@
         "website": "https://www.bunka.go.jp/nama/",
         "wikidata": "Q28312009",
         "wikipedia": "ja:国立近現代建築資料館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "National Archives of Modern Architecture"
+        }
       }
     },
     {
@@ -10059,7 +11366,10 @@
         "wikidata": "Q11332978",
         "wikipedia": "en:Fortress Explorations",
         "popularity": 2,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "Fortress Explorations"
+        }
       }
     },
     {
@@ -10085,7 +11395,10 @@
         "wikidata": "Q55529604",
         "wikipedia": "ja:観世能楽堂",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kanze Noh Theater"
+        }
       }
     },
     {
@@ -10109,7 +11422,10 @@
         "longitude": 139.7947915,
         "website": "https://mokubatei.com/",
         "wikidata": "Q11639517",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mokubakan"
+        }
       }
     },
     {
@@ -10135,7 +11451,10 @@
         "phone": "+81 3-6328-3005",
         "website": "https://roppongimuseum.jp/",
         "wikidata": "Q115977950",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Roppongi Museum"
+        }
       }
     },
     {
@@ -10160,7 +11479,10 @@
         "website": "https://what.warehouseofart.org",
         "wikidata": "Q38266999",
         "wikipedia": "ja:建築倉庫ミュージアム",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Archi-Depot Museum"
+        }
       }
     },
     {
@@ -10183,7 +11505,10 @@
         "latitude": 35.7139394,
         "longitude": 139.8059214,
         "wikidata": "Q104698259",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Sumida Heritage Museum"
+        }
       }
     },
     {
@@ -10209,7 +11534,10 @@
         "website": "https://toshima-theatre.jp/",
         "wikidata": "Q85881181",
         "wikipedia": "ja:東京建物 Brillia HALL",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Tokyo Tatemono Brillia Hall"
+        }
       }
     },
     {
@@ -10234,7 +11562,10 @@
         "website": "https://stage.parco.jp/parcotheater/",
         "wikidata": "Q11238391",
         "wikipedia": "ja:PARCO劇場",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Parco Theater"
+        }
       }
     },
     {
@@ -10258,7 +11589,10 @@
         "longitude": 139.7863726,
         "wikidata": "Q97706262",
         "wikipedia": "ja:伊興遺跡公園展示館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ikō Archeological Park Exhibition Hall"
+        }
       }
     },
     {
@@ -10281,7 +11615,10 @@
         "longitude": 139.7926685,
         "wikidata": "Q26813170",
         "wikipedia": "ja:白旗塚古墳",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shirahataduka Kofun"
+        }
       }
     },
     {
@@ -10309,7 +11646,10 @@
         "wikipedia": "ja:アートアクアリウム",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Art Aquarium Museum"
+        }
       }
     },
     {
@@ -10334,7 +11674,10 @@
         "wikidata": "Q21653539",
         "wikipedia": "ja:WWW (ライブハウス)",
         "wheelchair": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "WWW"
+        }
       }
     },
     {
@@ -10359,7 +11702,10 @@
         "website": "http://theatersunmall.server-shared.com/",
         "wikidata": "Q11306883",
         "wikipedia": "ja:シアターサンモール",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Theater Sun-mall"
+        }
       }
     },
     {
@@ -10387,7 +11733,10 @@
         "wikidata": "Q17225229",
         "wikipedia": "ja:郵政博物館 (日本)",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Postal Museum Japan"
+        }
       }
     },
     {
@@ -10412,7 +11761,10 @@
         "website": "https://www.toyo.ac.jp/about/founder/iecp/museum/",
         "wikidata": "Q11527629",
         "wikipedia": "ja:東洋大学井上円了記念博物館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Toyo University Inoue Enryo Memorial Museum"
+        }
       }
     },
     {
@@ -10462,7 +11814,10 @@
         "wikidata": "Q85873622",
         "wikipedia": "ja:ベイマックスのハッピーライド",
         "popularity": 2,
-        "site": "Q843997"
+        "site": "Q843997",
+        "names": {
+          "en": "The Happy Ride with Baymax"
+        }
       }
     },
     {
@@ -10484,7 +11839,10 @@
         "longitude": 139.7175573,
         "wikidata": "Q85803352",
         "wikipedia": "en:Statue of Yasuhito, Prince Chichibu",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Captain"
+        }
       }
     },
     {
@@ -10511,7 +11869,10 @@
         "website": "https://www.odaiba-decks.com/news/event/daiba1chome.html",
         "wikidata": "Q11411934",
         "wikipedia": "ja:台場一丁目商店街",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Daiba 1-chōme Shōtengai"
+        }
       }
     },
     {
@@ -10539,7 +11900,10 @@
         "wikidata": "Q11400774",
         "wikipedia": "ja:北とぴあ",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hokutopia"
+        }
       }
     },
     {
@@ -10563,7 +11927,10 @@
         "longitude": 139.6660191,
         "wikidata": "Q11431697",
         "wikipedia": "ja:夢見ヶ崎動物公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Yumemigasaki Zoological Park"
+        }
       }
     },
     {
@@ -10587,7 +11954,10 @@
         "longitude": 139.8109226,
         "wikidata": "Q11550497",
         "wikipedia": "ja:汐入公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shioiri Park"
+        }
       }
     },
     {
@@ -10610,7 +11980,10 @@
         "latitude": 35.7404825,
         "longitude": 139.7995801,
         "wikidata": "Q105699096",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Adachi Market"
+        }
       }
     },
     {
@@ -10633,7 +12006,10 @@
         "latitude": 35.7329529,
         "longitude": 139.8144214,
         "wikidata": "Q21019411",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Higashi-Shirahige Park"
+        }
       }
     },
     {
@@ -10657,7 +12033,10 @@
         "longitude": 139.63157,
         "wikidata": "Q20045093",
         "wikipedia": "ja:杉並児童交通公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Suginami Children's Traffic Playground"
+        }
       }
     },
     {
@@ -10683,7 +12062,10 @@
         "website": "https://www.city.kita.tokyo.jp/jutaku/koen/koenichiran/a-o/otonashishinsui.html",
         "wikidata": "Q42312615",
         "wikipedia": "ja:音無親水公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Otonashi Water Park"
+        }
       }
     },
     {
@@ -10707,7 +12089,10 @@
         "longitude": 139.8538398,
         "wikidata": "Q20045003",
         "wikipedia": "ja:新小岩公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shin-Koiwa Park"
+        }
       }
     },
     {
@@ -10730,7 +12115,10 @@
         "longitude": 139.6675413,
         "wikidata": "Q111703734",
         "wikipedia": "ja:新井薬師公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Arai Yakushi Park"
+        }
       }
     },
     {
@@ -10754,7 +12142,10 @@
         "longitude": 139.8830893,
         "wikidata": "Q99556555",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Yagiri no Watashi"
+        }
       }
     },
     {
@@ -10776,7 +12167,10 @@
         "latitude": 35.65975,
         "longitude": 139.6912578,
         "wikidata": "Q11650653",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nabeshima Shōtō Park"
+        }
       }
     },
     {
@@ -10799,7 +12193,10 @@
         "latitude": 35.7598507,
         "longitude": 139.624307,
         "wikidata": "Q20044710",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shikinokaori Park"
+        }
       }
     },
     {
@@ -10821,7 +12218,10 @@
         "latitude": 35.7625364,
         "longitude": 139.6339509,
         "wikidata": "Q20042915",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Akinohi Park"
+        }
       }
     },
     {
@@ -10844,7 +12244,10 @@
         "longitude": 139.8537697,
         "wikidata": "Q21019405",
         "wikipedia": "ja:東立石緑地公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Higashi-Tateishi Green Park"
+        }
       }
     },
     {
@@ -10874,7 +12277,10 @@
         "wikidata": "Q11427321",
         "wikipedia": "ja:堀切菖蒲園",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Horikiri Iris Garden"
+        }
       }
     },
     {
@@ -10897,7 +12303,10 @@
         "latitude": 35.7759537,
         "longitude": 139.8310461,
         "wikidata": "Q42312828",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shōbunume Park"
+        }
       }
     },
     {
@@ -10921,7 +12330,10 @@
         "longitude": 139.7700469,
         "wikidata": "Q11374529",
         "wikipedia": "ja:京浜島つばさ公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Keihinjima Tsubasa Park"
+        }
       }
     },
     {
@@ -10943,7 +12355,10 @@
         "latitude": 35.7095911,
         "longitude": 139.644006,
         "wikidata": "Q11667989",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mabashi Park"
+        }
       }
     },
     {
@@ -10967,7 +12382,10 @@
         "longitude": 139.6567056,
         "wikidata": "Q11625489",
         "wikipedia": "ja:蚕糸の森公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Sanshi-no-Mori Park"
+        }
       }
     },
     {
@@ -10993,7 +12411,10 @@
         "website": "https://shoto-museum.jp/",
         "wikidata": "Q11561694",
         "wikipedia": "ja:渋谷区立松濤美術館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shoto Museum of Art"
+        }
       }
     },
     {
@@ -11017,7 +12438,10 @@
         "longitude": 139.7880212,
         "wikidata": "Q11558524",
         "wikipedia": "ja:浮島町公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ukishima-chō Park"
+        }
       }
     },
     {
@@ -11041,7 +12465,10 @@
         "longitude": 139.6807485,
         "wikidata": "Q11668330",
         "wikipedia": "ja:駒場野公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Komabano Park"
+        }
       }
     },
     {
@@ -11067,7 +12494,10 @@
         "wikidata": "Q6838553",
         "wikipedia": "ja:ミッキーの家",
         "popularity": 2,
-        "site": "Q843997"
+        "site": "Q843997",
+        "names": {
+          "en": "Mickey's House and Meet Mickey"
+        }
       }
     },
     {
@@ -11093,7 +12523,10 @@
         "phone": "+81-3-5273-3914",
         "website": "https://www.city.shinjuku.lg.jp/seikatsu/midori02_000105.html",
         "wikidata": "Q126454791",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Okubo Park"
+        }
       }
     },
     {
@@ -11121,7 +12554,10 @@
         "wikipedia": "ja:毛利甲斐守邸跡",
         "wheelchair": "yes",
         "popularity": 2,
-        "site": "Q1071084"
+        "site": "Q1071084",
+        "names": {
+          "en": "Mōri Kai-no-kami's Residence"
+        }
       }
     },
     {
@@ -11144,7 +12580,10 @@
         "latitude": 35.7730463,
         "longitude": 139.6933917,
         "wikidata": "Q11630202",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mitsugi Park"
+        }
       }
     },
     {
@@ -11168,7 +12607,10 @@
         "longitude": 139.6816177,
         "wikidata": "Q11362060",
         "wikipedia": "ja:世田谷公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Setagaya Park"
+        }
       }
     },
     {
@@ -11190,7 +12632,10 @@
         "latitude": 35.7164527,
         "longitude": 139.6193654,
         "wikidata": "Q11521694",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Suginami Science Museum"
+        }
       }
     },
     {
@@ -11213,7 +12658,10 @@
         "latitude": 35.7573911,
         "longitude": 139.7324901,
         "wikidata": "Q11414707",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nanushi-no-Taki Park"
+        }
       }
     },
     {
@@ -11236,7 +12684,10 @@
         "longitude": 139.7117489,
         "wikidata": "Q11661795",
         "wikipedia": "ja:青木町公園総合運動場",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Aokichō Park"
+        }
       }
     },
     {
@@ -11260,7 +12711,10 @@
         "longitude": 139.622175,
         "wikidata": "Q18990038",
         "wikipedia": "ja:天沼もえぎ公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Amanuma Moegi Park"
+        }
       }
     },
     {
@@ -11283,7 +12737,10 @@
         "latitude": 35.6336591,
         "longitude": 139.7665537,
         "wikidata": "Q49173570",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "No.6 Battery"
+        }
       }
     },
     {
@@ -11306,7 +12763,10 @@
         "longitude": 139.8468496,
         "wikidata": "Q24868772",
         "wikipedia": "ja:中川公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nakagawa Park"
+        }
       }
     },
     {
@@ -11329,7 +12789,10 @@
         "longitude": 139.728205,
         "wikidata": "Q11268912",
         "wikipedia": "ja:しながわ中央公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shinagawa Central Park"
+        }
       }
     },
     {
@@ -11353,7 +12816,10 @@
         "longitude": 139.6540035,
         "wikidata": "Q11521690",
         "wikipedia": "ja:杉並区立杉並芸術会館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Suginami Art Center"
+        }
       }
     },
     {
@@ -11379,7 +12845,10 @@
         "phone": "0335811651",
         "website": "http://www.shugiin.go.jp",
         "wikidata": "Q11495238",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Parliamentary Museum"
+        }
       }
     },
     {
@@ -11405,7 +12874,10 @@
         "opening_hours": "09:00-17:30",
         "wikidata": "Q17221580",
         "wikipedia": "ja:国会前庭",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Diet Front Park"
+        }
       }
     },
     {
@@ -11427,7 +12899,10 @@
         "latitude": 35.6998387,
         "longitude": 139.7437233,
         "wikidata": "Q115163657",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ushigome-mitsuke"
+        }
       }
     },
     {
@@ -11450,7 +12925,10 @@
         "latitude": 35.6663072,
         "longitude": 139.7526749,
         "wikidata": "Q62678168",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nan'ō Park"
+        }
       }
     },
     {
@@ -11475,7 +12953,10 @@
         "opening_hours": "Tu-Su 09:30-17:00",
         "wikidata": "Q11532663",
         "wikipedia": "ja:板橋区立美術館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Itabashi Art Museum"
+        }
       }
     },
     {
@@ -11504,7 +12985,10 @@
         "wikipedia": "ja:東京都復興記念館",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Great Kanto Earthquake Memorial Museum"
+        }
       }
     },
     {
@@ -11528,7 +13012,10 @@
         "longitude": 139.7889,
         "wikidata": "Q11558030",
         "wikipedia": "ja:浜町公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hamachō Park"
+        }
       }
     },
     {
@@ -11555,7 +13042,10 @@
         "wikidata": "Q11501846",
         "wikipedia": "ja:新宿文化センター",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shinjuku Bunka Center"
+        }
       }
     },
     {
@@ -11578,7 +13068,10 @@
         "longitude": 139.6156103,
         "wikidata": "Q21019877",
         "wikipedia": "ja:与謝野公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Yosano Park"
+        }
       }
     },
     {
@@ -11602,7 +13095,10 @@
         "longitude": 139.739775,
         "wikidata": "Q11356683",
         "wikipedia": "ja:三田台公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Mitadai Park"
+        }
       }
     },
     {
@@ -11627,7 +13123,10 @@
         "website": "https://www.city.bunkyo.lg.jp/bosai/midori/kuritukouen/kouen/hongoukyuusuijyokouen.html",
         "wikidata": "Q11520900",
         "wikipedia": "ja:本郷給水所公苑",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hongō Water Supply Station Park"
+        }
       }
     },
     {
@@ -11650,7 +13149,10 @@
         "longitude": 139.6819496,
         "wikidata": "Q22124514",
         "wikipedia": "ja:城北交通公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Johoku Kotsu Park"
+        }
       }
     },
     {
@@ -11675,7 +13177,10 @@
         "opening_hours": "Mo-Su 06:00-20:30",
         "wikidata": "Q11254389",
         "wikipedia": "ja:しながわ区民公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shinagawa Kumin Park"
+        }
       }
     },
     {
@@ -11700,7 +13205,10 @@
         "website": "https://soseki-museum.jp",
         "wikidata": "Q24862403",
         "wikipedia": "ja:新宿区立漱石山房記念館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Natsume Soseki Memorial Museum"
+        }
       }
     },
     {
@@ -11723,7 +13231,10 @@
         "longitude": 139.7217201,
         "wikidata": "Q11496628",
         "wikipedia": "ja:戸越公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Togoshi Park"
+        }
       }
     },
     {
@@ -11747,7 +13258,10 @@
         "longitude": 139.9166054,
         "wikidata": "Q11530704",
         "wikipedia": "ja:松戸市綜合卸売市場",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Matsudo-shi Sōgō Oroshiuri Ichiba"
+        }
       }
     },
     {
@@ -11775,7 +13289,10 @@
         "wikipedia": "ja:足立区生物園",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Adachi Park of Living Things"
+        }
       }
     },
     {
@@ -11800,7 +13317,10 @@
         "website": "https://www.seibutuen.jp/motofuchiepark.html",
         "wikidata": "Q18339582",
         "wikipedia": "ja:元渕江公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Motofuchie Park"
+        }
       }
     },
     {
@@ -11824,7 +13344,10 @@
         "opening_hours": "Mo-Su 09:00-17:00; Dec 29 off; Dec 30 off; Dec 31 off; Jan 03 off",
         "wikidata": "Q11501820",
         "wikipedia": "ja:新宿交通公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Niijuku Traffic Park"
+        }
       }
     },
     {
@@ -11847,7 +13370,10 @@
         "longitude": 139.6958934,
         "wikidata": "Q11629662",
         "wikipedia": "ja:西郷山公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Saigōyama Park"
+        }
       }
     },
     {
@@ -11870,7 +13396,10 @@
         "longitude": 139.7268356,
         "wikidata": "Q11611125",
         "wikipedia": "ja:聖跡蒲田梅屋敷公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Seiseki Kamata Umeyashiki Park"
+        }
       }
     },
     {
@@ -11893,7 +13422,10 @@
         "longitude": 139.7062454,
         "wikidata": "Q21019538",
         "wikipedia": "ja:本門寺公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Honmonji Park"
+        }
       }
     },
     {
@@ -11916,7 +13448,10 @@
         "longitude": 139.5819419,
         "wikidata": "Q109364074",
         "wikipedia": "ja:供養塚児童公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kuyoduka Koen Park"
+        }
       }
     },
     {
@@ -11941,7 +13476,10 @@
         "website": "https://www.city.shinagawa.tokyo.jp/jigyo/06/historyhp/hsindex.html",
         "wikidata": "Q11418382",
         "wikipedia": "ja:品川区立品川歴史館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shinagawa Historical Museum"
+        }
       }
     },
     {
@@ -11965,7 +13503,10 @@
         "longitude": 139.6334584,
         "wikidata": "Q17212884",
         "wikipedia": "ja:二子玉川公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Futako-Tamagawa Park"
+        }
       }
     },
     {
@@ -12012,7 +13553,10 @@
         "longitude": 139.8580644,
         "wikidata": "Q11607557",
         "wikipedia": "ja:総合レクリエーション公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Sogo Recreation Park"
+        }
       }
     },
     {
@@ -12038,7 +13582,10 @@
         "website": "https://kawasakishuku.jp/",
         "wikidata": "Q17229268",
         "wikipedia": "ja:東海道かわさき宿交流館",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Tokaido Kawasaki Shuku Koryukan"
+        }
       }
     },
     {
@@ -12062,7 +13609,10 @@
         "longitude": 139.7187189,
         "wikidata": "Q11527573",
         "wikipedia": "ja:東池袋中央公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Higashi-Ikebukuro Central Park"
+        }
       }
     },
     {
@@ -12086,7 +13636,10 @@
         "longitude": 139.7670206,
         "wikidata": "Q42311503",
         "wikipedia": "ja:淡路公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Awaji Park"
+        }
       }
     },
     {
@@ -12109,7 +13662,10 @@
         "longitude": 139.8418778,
         "wikidata": "Q11358533",
         "wikipedia": "ja:上千葉砂原公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kamichiba Sunahara Park"
+        }
       }
     },
     {
@@ -12133,7 +13689,10 @@
         "longitude": 139.7633845,
         "wikidata": "Q11279134",
         "wikipedia": "ja:みなとが丘ふ頭公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Minato-ga-oka-Port Park"
+        }
       }
     },
     {
@@ -12181,7 +13740,10 @@
         "longitude": 139.7712611,
         "wikidata": "Q11514735",
         "wikipedia": "ja:晴海ふ頭公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Harumi Port Park"
+        }
       }
     },
     {
@@ -12205,7 +13767,10 @@
         "longitude": 139.7891146,
         "wikidata": "Q11636388",
         "wikipedia": "ja:越中島公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Etchūjima Park"
+        }
       }
     },
     {
@@ -12228,7 +13793,10 @@
         "longitude": 139.8626507,
         "wikidata": "Q18701012",
         "wikipedia": "ja:葛飾にいじゅくみらい公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Katsushika Niijuku Future Park"
+        }
       }
     },
     {
@@ -12252,7 +13820,11 @@
         "longitude": 139.6935862,
         "wikidata": "Q11405542",
         "wikipedia": "ja:千早フラワー公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Chihaya Flower Park",
+          "es": "Parque floral de Chihaya"
+        }
       }
     },
     {
@@ -12298,7 +13870,10 @@
         "longitude": 139.722496,
         "wikidata": "Q11275095",
         "wikipedia": "ja:ねむの木の庭",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nemunoki-no-niwa Garden"
+        }
       }
     },
     {
@@ -12321,7 +13896,10 @@
         "longitude": 139.7119635,
         "wikidata": "Q11456160",
         "wikipedia": "ja:富士見公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Fujimi Park"
+        }
       }
     },
     {
@@ -12346,7 +13924,10 @@
         "website": "www.tptc.co.jp/park/02_05",
         "wikidata": "Q11516457",
         "wikipedia": "ja:有明西ふ頭公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ariake Nishi Port Park"
+        }
       }
     },
     {
@@ -12391,7 +13972,10 @@
         "longitude": 139.7852278,
         "wikidata": "Q11502072",
         "wikipedia": "ja:新川公園 (東京都)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shinkawa River"
+        }
       }
     },
     {
@@ -12414,7 +13998,10 @@
         "longitude": 139.783429,
         "wikidata": "Q28840599",
         "wikipedia": "ja:佃公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Tsukuda Park"
+        }
       }
     },
     {
@@ -12438,7 +14025,10 @@
         "longitude": 139.7862042,
         "wikidata": "Q11585781",
         "wikipedia": "ja:石川島公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ishikawajima Park"
+        }
       }
     },
     {
@@ -12463,7 +14053,10 @@
         "opening_hours": "06:00-21:00",
         "wikidata": "Q11619120",
         "wikipedia": "ja:菅刈公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Sugekari Park"
+        }
       }
     },
     {
@@ -12487,7 +14080,10 @@
         "longitude": 139.7026489,
         "wikidata": "Q20043077",
         "wikipedia": "ja:池上梅園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ikegami Baien"
+        }
       }
     },
     {
@@ -12512,7 +14108,10 @@
         "website": "https://www.city.minato.tokyo.jp/shisetsu/koen/akasaka/06.html",
         "wikidata": "Q11544635",
         "wikipedia": "ja:檜町公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hinokichō Park"
+        }
       }
     },
     {
@@ -12536,7 +14135,10 @@
         "longitude": 139.8389347,
         "wikidata": "Q11502517",
         "wikipedia": "ja:新木場緑道公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shin-Kiba Greenway"
+        }
       }
     },
     {
@@ -12560,7 +14162,10 @@
         "longitude": 139.7358866,
         "wikidata": "Q11561179",
         "wikipedia": "ja:清水谷公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Shimizudani Park"
+        }
       }
     },
     {
@@ -12583,7 +14188,10 @@
         "longitude": 139.7877824,
         "wikidata": "Q122999527",
         "wikipedia": "ja:東京ドリームパーク",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Tokyo Dream Park"
+        }
       }
     },
     {
@@ -12607,7 +14215,10 @@
         "longitude": 139.7751116,
         "wikidata": "Q42311590",
         "wikipedia": "en:Hatoba Park",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Hatoba Park"
+        }
       }
     },
     {
@@ -12632,7 +14243,10 @@
         "website": "https://seaside-park.jp/park_ooisports-en/",
         "wikidata": "Q11432123",
         "wikipedia": "ja:大井ふ頭中央海浜公園スポーツの森第二球技場",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Oi Central Seaside Park Ball Field No. 2"
+        }
       }
     },
     {
@@ -12656,7 +14270,10 @@
         "longitude": 139.7425085,
         "wikidata": "Q11482236",
         "wikipedia": "ja:平和島公園",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Heiwajima Park"
+        }
       }
     },
     {
@@ -12679,7 +14296,10 @@
         "longitude": 139.8964572,
         "wikidata": "Q65962636",
         "wikipedia": "ja:小山樋門",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Koyama Himon"
+        }
       }
     },
     {
@@ -12704,7 +14324,10 @@
         "longitude": 139.6468412,
         "wikidata": "Q11415939",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kōyama Garden"
+        }
       }
     },
     {
@@ -12729,7 +14352,10 @@
         "website": "https://www.shopping-sumitomo-rd.com/tokyo_garden_theater/",
         "wikidata": "Q85881166",
         "wikipedia": "ja:東京ガーデンシアター",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Tokyo Garden Theater"
+        }
       }
     },
     {
@@ -12778,7 +14404,10 @@
         "longitude": 139.8974978,
         "wikidata": "Q11530687",
         "wikipedia": "ja:松戸市民劇場",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Mtsudo Citizen's Theater"
+        }
       }
     },
     {
@@ -12807,7 +14436,10 @@
         "fee": "yes",
         "wheelchair": "yes",
         "popularity": 1,
-        "site": "Q1071084"
+        "site": "Q1071084",
+        "names": {
+          "en": "Tokyo City View"
+        }
       }
     },
     {
@@ -12831,7 +14463,10 @@
         "longitude": 139.7929538,
         "website": "https://www.asakusatoyokan.com/",
         "wikidata": "Q11333689",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Asakusa France-za Engeijo Toyokan"
+        }
       }
     },
     {
@@ -12905,7 +14540,10 @@
         "website": "https://setagaya-pt.jp/",
         "wikidata": "Q11362056",
         "wikipedia": "ja:世田谷パブリックシアター",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Setagaya Public Theatre"
+        }
       }
     },
     {
@@ -12956,7 +14594,10 @@
         "wikidata": "Q76961476",
         "wikipedia": "en:Flame of Freedom",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Flame of Freedom"
+        }
       }
     },
     {
@@ -12982,7 +14623,10 @@
         "wikidata": "Q30921752",
         "wikipedia": "ja:マジックランプシアター",
         "popularity": 1,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "The Magic Lamp Theater"
+        }
       }
     },
     {
@@ -13008,7 +14652,10 @@
         "wikidata": "Q30921756",
         "wikipedia": "ja:マーメイドラグーンシアター",
         "popularity": 1,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "Mermaid Lagoon Theater"
+        }
       }
     },
     {
@@ -13034,7 +14681,10 @@
         "website": "https://www.toho.co.jp/stage/theatre_crea/",
         "wikidata": "Q11306880",
         "wikipedia": "ja:シアタークリエ",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theatre Creation"
+        }
       }
     },
     {
@@ -13058,7 +14708,10 @@
         "wikidata": "Q11501861",
         "wikipedia": "ja:新宿眼科画廊",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Shinjuku Ophthalmologist Gallery"
+        }
       }
     },
     {
@@ -13081,7 +14734,10 @@
         "latitude": 35.7496368,
         "longitude": 139.5868203,
         "wikidata": "Q22124501",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Ōizumi Anime Gate"
+        }
       }
     },
     {
@@ -13104,7 +14760,10 @@
         "latitude": 35.6779148,
         "longitude": 139.7584739,
         "wikidata": "Q99769697",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Statue of Kusunoki Masashige"
+        }
       }
     },
     {
@@ -13129,7 +14788,10 @@
         "wikidata": "Q11604957",
         "wikipedia": "ja:紀伊國屋ホール",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kinokuniya Hall"
+        }
       }
     },
     {
@@ -13152,7 +14814,10 @@
         "latitude": 35.695902,
         "longitude": 139.8441876,
         "wikidata": "Q120174882",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kameido no Fujizuka"
+        }
       }
     },
     {
@@ -13198,7 +14863,10 @@
         "longitude": 139.714457,
         "wikidata": "Q11306881",
         "wikipedia": "ja:シアターグリーン",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theater Green"
+        }
       }
     },
     {
@@ -13246,7 +14914,10 @@
         "longitude": 139.9286061,
         "wikidata": "Q110863528",
         "wikipedia": "ja:市川地方卸売市場",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Ichikawa Market"
+        }
       }
     },
     {
@@ -13271,7 +14942,10 @@
         "wikidata": "Q11322702",
         "wikipedia": "ja:ドックサイドステージ",
         "popularity": 1,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "Dockside Stage"
+        }
       }
     },
     {
@@ -13317,7 +14991,10 @@
         "longitude": 139.770475,
         "wikidata": "Q17191075",
         "wikipedia": "ja:AKIBAカルチャーズ劇場",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Akiba Cultures Theater"
+        }
       }
     },
     {
@@ -13339,7 +15016,10 @@
         "latitude": 35.7371033,
         "longitude": 139.7954634,
         "wikidata": "Q113364809",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Hashimoto Sanai no Haka kyo-sayadō"
+        }
       }
     },
     {
@@ -13362,7 +15042,10 @@
         "longitude": 139.7868889,
         "wikidata": "Q97706260",
         "wikipedia": "ja:伊興遺跡",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Ikō Site"
+        }
       }
     },
     {
@@ -13385,7 +15068,10 @@
         "longitude": 139.7821942,
         "wikidata": "Q55521394",
         "wikipedia": "ja:越前堀",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Echizenbori"
+        }
       }
     },
     {
@@ -13410,7 +15096,10 @@
         "wikidata": "Q11335172",
         "wikipedia": "ja:ブロードウェイ・ミュージックシアター",
         "popularity": 1,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "Broadway Music Theatre"
+        }
       }
     },
     {
@@ -13482,7 +15171,10 @@
         "latitude": 35.7105596,
         "longitude": 139.7881304,
         "wikidata": "Q137455763",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Niimi Jumbo Cook"
+        }
       }
     },
     {
@@ -13505,7 +15197,10 @@
         "longitude": 139.7741721,
         "wikidata": "Q106062650",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Statue of Saigō Takamori"
+        }
       }
     },
     {
@@ -13529,7 +15224,10 @@
         "longitude": 139.7127225,
         "wikidata": "Q65266322",
         "wikipedia": "ja:常盤松御用邸",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Tokiwamatsu Imperial Villa"
+        }
       }
     },
     {
@@ -13552,7 +15250,10 @@
         "latitude": 35.6533224,
         "longitude": 139.7077493,
         "wikidata": "Q110215017",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Shibuya City Botanical Garden Fureai"
+        }
       }
     },
     {
@@ -13575,7 +15276,10 @@
         "longitude": 139.716785,
         "wikidata": "Q11478056",
         "wikipedia": "ja:川口総合文化センター",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Kawaguchi Comprehensive Cultural Center"
+        }
       }
     },
     {
@@ -13599,7 +15303,10 @@
         "longitude": 139.7555335,
         "wikidata": "Q56425170",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Tokagakudo"
+        }
       }
     },
     {
@@ -13625,7 +15332,10 @@
         "wikidata": "Q11327056",
         "wikipedia": "ja:ハンガーステージ",
         "popularity": 1,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "Hangar Stage"
+        }
       }
     },
     {
@@ -13723,7 +15433,10 @@
         "phone": "+81-47-369-7870",
         "wikidata": "Q24686952",
         "fee": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Showa no Mori Museum"
+        }
       }
     },
     {
@@ -13775,7 +15488,10 @@
         "wikidata": "Q24898725",
         "wikipedia": "ja:占春園",
         "fee": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Senshun-en"
+        }
       }
     },
     {
@@ -13798,7 +15514,10 @@
         "latitude": 35.6969666,
         "longitude": 139.8811855,
         "wikidata": "Q118985226",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Ichinoe Makkō-tei"
+        }
       }
     },
     {
@@ -13822,7 +15541,10 @@
         "website": "https://www.shiki.jp/theatres/4008/",
         "wikidata": "Q11226258",
         "wikipedia": "ja:自由劇場 (劇団四季)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Jiyu Theatre"
+        }
       }
     },
     {
@@ -13896,7 +15618,10 @@
         "latitude": 35.6278606,
         "longitude": 139.7718514,
         "wikidata": "Q106060693",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Statue of Liberty replica"
+        }
       }
     },
     {
@@ -13946,7 +15671,10 @@
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:pd_railway/",
         "wikidata": "Q50437418",
         "popularity": 0,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "Port Discovery Station"
+        }
       }
     },
     {
@@ -13971,7 +15699,10 @@
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:aw_railway/",
         "wikidata": "Q50437130",
         "popularity": 0,
-        "site": "Q1202341"
+        "site": "Q1202341",
+        "names": {
+          "en": "American Waterfront Station"
+        }
       }
     },
     {
@@ -15664,7 +17395,10 @@
         "latitude": 35.7771872,
         "longitude": 139.8992232,
         "wikidata": "Q60059561",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Tojō Park"
+        }
       }
     },
     {
@@ -15833,7 +17567,10 @@
         "latitude": 35.7770346,
         "longitude": 139.8993483,
         "wikidata": "Q60059829",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Former Tokugawa Akitake Garden"
+        }
       }
     },
     {
@@ -16171,7 +17908,10 @@
         "wikipedia": "ja:神田まつや",
         "wheelchair": "no",
         "cuisine": "Soba",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kanda Matsuya"
+        }
       }
     },
     {
@@ -16199,7 +17939,10 @@
         "wikidata": "Q11264550",
         "wikipedia": "ja:かんだやぶそば",
         "cuisine": "Soba",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Kanda Yabusoba"
+        }
       }
     },
     {
@@ -16329,7 +18072,10 @@
         "website": "https://dozeu.com/",
         "wikidata": "Q134054028",
         "cuisine": "dojo",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Dojō Iida-ya"
+        }
       }
     },
     {
@@ -17397,7 +19143,10 @@
         "wikidata": "Q129820690",
         "wikipedia": "en:Tofuya Ukai",
         "cuisine": "japanese",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Tofuya Ukai"
+        }
       }
     },
     {
@@ -17790,7 +19539,10 @@
         "wikidata": "Q21019118",
         "wikipedia": "ja:たいめいけん",
         "wheelchair": "limited",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Taimeiken"
+        }
       }
     },
     {
@@ -19295,7 +21047,10 @@
         "wikipedia": "ja:タリーズコーヒージャパン",
         "wheelchair": "no",
         "cuisine": "coffee_shop",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Tully’s Coffee Japan"
+        }
       }
     },
     {
@@ -19323,7 +21078,10 @@
         "wikipedia": "ja:名曲喫茶ライオン",
         "wheelchair": "no",
         "cuisine": "coffee_shop",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Meikyoku Kissa Lion"
+        }
       }
     },
     {
@@ -19695,7 +21453,10 @@
         "website": "https://www.pokemoncenter-online.com/cafe/",
         "wikidata": "Q130137898",
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Pokémon Cafe (Nihonbashi, Tokyo)"
+        }
       }
     },
     {
@@ -20135,7 +21896,10 @@
         "website": "https://www.nre.co.jp/",
         "wikidata": "Q11507044",
         "wikipedia": "ja:日本レストランエンタプライズ",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nippon Restaurant Enterprise"
+        }
       }
     },
     {
@@ -20212,7 +21976,10 @@
         "website": "https://www.cafe-athome.com/",
         "wikidata": "Q17191434",
         "wikipedia": "ja:@ほぉ〜むカフェ",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "at-home cafe"
+        }
       }
     },
     {
@@ -20342,7 +22109,10 @@
         "website": "http://www.kamiya-bar.com/",
         "wikidata": "Q11590836",
         "wikipedia": "ja:神谷バー",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Kamiya Bar"
+        }
       }
     },
     {

@@ -27,7 +27,12 @@
         "wikidata": "Q2266081",
         "wikipedia": "it:Gallerie nazionali d'arte antica",
         "fee": "yes",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Galeria Nacional de Arte Antiga",
+          "en": "Galleria Nazionale d'Arte Antica",
+          "es": "Galería Nacional de Arte Antiguo"
+        }
       }
     },
     {
@@ -57,7 +62,12 @@
         "wikipedia": "it:Stadio di Domiziano",
         "wheelchair": "no",
         "fee": "yes",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Estádio de Domiciano",
+          "en": "Stadium of Domitian",
+          "es": "Estadio de Domiciano"
+        }
       }
     },
     {
@@ -86,7 +96,12 @@
         "wikidata": "Q3867580",
         "wikipedia": "it:Museo Boncompagni Ludovisi per le arti decorative",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Museu Boncompagni Ludovisi de Artes Decorativas",
+          "en": "Boncompagni Ludovisi Decorative Art Museum",
+          "es": "Museo Boncompagni Ludovisi per le arti decorative"
+        }
       }
     },
     {
@@ -115,7 +130,12 @@
         "wikidata": "Q15055388",
         "wikipedia": "it:Museo nazionale etrusco di Villa Giulia",
         "wheelchair": "limited",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Museu Nacional Etrusco",
+          "en": "Museo Nazionale Etrusco di Villa Giulia",
+          "es": "Museo Nacional Etrusco"
+        }
       }
     },
     {
@@ -143,7 +163,12 @@
         "website": "https://www.catacombesancallisto.it/",
         "wikidata": "Q1027069",
         "wikipedia": "it:Catacombe di San Callisto",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "pt": "Catacumba de Calisto",
+          "en": "Catacomb of Callixtus",
+          "es": "Catacumbas de San Calixto"
+        }
       }
     },
     {
@@ -171,7 +196,11 @@
         "website": "https://www.vicariatusurbis.org/?page_id=188&ID=881",
         "wikidata": "Q1081921",
         "wikipedia": "it:Chiesa del \"Domine quo vadis\"",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Igreja Domine Quo Vadis",
+          "en": "Church of Domine Quo Vadis"
+        }
       }
     },
     {
@@ -199,7 +228,12 @@
         "website": "https://lagallerianazionale.com/",
         "wikidata": "Q1492387",
         "wikipedia": "it:Galleria nazionale d'arte moderna e contemporanea",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Galeria Nacional de Arte Moderna e Contemporânea",
+          "en": "Galleria Nazionale d'Arte Moderna e Contemporanea di Roma",
+          "es": "Galería Nacional de Arte Moderno"
+        }
       }
     },
     {
@@ -229,7 +263,12 @@
         "wikipedia": "it:Colosseo",
         "wheelchair": "limited",
         "fee": "yes",
-        "popularity": 148
+        "popularity": 148,
+        "names": {
+          "pt": "Coliseu de Roma",
+          "en": "Colosseum",
+          "es": "Coliseo"
+        }
       }
     },
     {
@@ -256,7 +295,12 @@
         "website": "https://www.museicapitolini.org/",
         "wikidata": "Q333906",
         "wikipedia": "it:Musei Capitolini",
-        "popularity": 46
+        "popularity": 46,
+        "names": {
+          "pt": "Museus Capitolinos",
+          "en": "Capitoline Museums",
+          "es": "Museos Capitolinos"
+        }
       }
     },
     {
@@ -284,7 +328,12 @@
         "wikidata": "Q3757699",
         "wikipedia": "it:Galleria Spada",
         "fee": "yes",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Galeria Spada",
+          "en": "Galleria Spada",
+          "es": "Galería Spada"
+        }
       }
     },
     {
@@ -313,7 +362,10 @@
         "wikipedia": "it:Museo di Roma a palazzo Braschi",
         "wheelchair": "yes",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Museo di Roma"
+        }
       }
     },
     {
@@ -342,7 +394,10 @@
         "wikipedia": "it:Museo nazionale romano di palazzo Altemps",
         "wheelchair": "yes",
         "fee": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "National Roman Museum of the Altemps Palace"
+        }
       }
     },
     {
@@ -371,7 +426,12 @@
         "wikipedia": "it:Galleria Doria Pamphilj",
         "wheelchair": "limited",
         "fee": "yes",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Galeria Doria Pamphilj",
+          "en": "Galleria Doria Pamphilj",
+          "es": "Galería Doria-Pamphili"
+        }
       }
     },
     {
@@ -400,7 +460,10 @@
         "wikidata": "Q3867582",
         "wikipedia": "it:Museo Canonica",
         "fee": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Museo Pietro Canonica"
+        }
       }
     },
     {
@@ -429,7 +492,12 @@
         "wikipedia": "it:Galleria Borghese",
         "wheelchair": "limited",
         "fee": "yes",
-        "popularity": 47
+        "popularity": 47,
+        "names": {
+          "pt": "Galleria Borghese",
+          "en": "Galleria Borghese",
+          "es": "Galería Borghese"
+        }
       }
     },
     {
@@ -459,7 +527,11 @@
         "wikipedia": "it:Museo napoleonico di Roma",
         "wheelchair": "no",
         "fee": "no",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Napoleonic Museum",
+          "es": "Museo Napoleónico"
+        }
       }
     },
     {
@@ -488,7 +560,10 @@
         "wikipedia": "en:Video Game Museum of Rome",
         "wheelchair": "yes",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Video Game Museum of Rome"
+        }
       }
     },
     {
@@ -516,7 +591,10 @@
         "wikidata": "Q3867611",
         "wikipedia": "it:Museo Hendrik Christian Andersen",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Museo Hendrik Christian Andersen"
+        }
       }
     },
     {
@@ -545,7 +623,11 @@
         "wikipedia": "it:Museo nazionale del Palazzo di Venezia",
         "wheelchair": "yes",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Museo di Palazzo Venezia",
+          "es": "Museo Nacional del Palacio Venezia"
+        }
       }
     },
     {
@@ -573,7 +655,10 @@
         "wikidata": "Q954216",
         "wikipedia": "it:Museo nazionale degli strumenti musicali",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "National Museum of Musical Instruments"
+        }
       }
     },
     {
@@ -602,7 +687,10 @@
         "wikidata": "Q3868045",
         "wikipedia": "it:Museo della Repubblica Romana e della memoria garibaldina",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museum of the Roman Republic and Garibaldi Memorial"
+        }
       }
     },
     {
@@ -659,7 +747,12 @@
         "wikidata": "Q2729588",
         "wikipedia": "it:Museo Barracco",
         "fee": "no",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Museu Barracco",
+          "en": "Museo di Scultura Antica Giovanni Barracco",
+          "es": "Museo Barracco de Escultura Antigua"
+        }
       }
     },
     {
@@ -687,7 +780,10 @@
         "wikidata": "Q3867830",
         "wikipedia": "it:Museo civico di zoologia di Roma",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Museo Civico di Zoologia"
+        }
       }
     },
     {
@@ -715,7 +811,12 @@
         "wikidata": "Q231699",
         "wikipedia": "it:Basilica di San Paolo fuori le mura",
         "wheelchair": "yes",
-        "popularity": 58
+        "popularity": 58,
+        "names": {
+          "pt": "Basílica de São Paulo Extramuros",
+          "en": "Basilica of Saint Paul outside the Walls",
+          "es": "basílica de San Pablo Extramuros"
+        }
       }
     },
     {
@@ -742,7 +843,12 @@
         "website": "https://www.villamedici.it/",
         "wikidata": "Q1362663",
         "wikipedia": "it:Villa Medici",
-        "popularity": 35
+        "popularity": 35,
+        "names": {
+          "pt": "Villa Medici em Roma",
+          "en": "Villa Medici",
+          "es": "Villa Médici"
+        }
       }
     },
     {
@@ -770,7 +876,12 @@
         "wikipedia": "it:Terme di Caracalla",
         "wheelchair": "limited",
         "fee": "yes",
-        "popularity": 43
+        "popularity": 43,
+        "names": {
+          "pt": "Termas de Caracala",
+          "en": "Baths of Caracalla",
+          "es": "Termas de Caracalla"
+        }
       }
     },
     {
@@ -797,7 +908,12 @@
         "website": "http://www.villafarnesina.it",
         "wikidata": "Q1126723",
         "wikipedia": "it:Villa Farnesina",
-        "popularity": 35
+        "popularity": 35,
+        "names": {
+          "pt": "Villa Farnesina",
+          "en": "Villa Farnesina",
+          "es": "Villa Farnesina"
+        }
       }
     },
     {
@@ -825,7 +941,12 @@
         "wikipedia": "en:Vatican Museums",
         "wheelchair": "yes",
         "fee": "yes",
-        "popularity": 65
+        "popularity": 65,
+        "names": {
+          "pt": "Museus Vaticanos",
+          "en": "Vatican Museums",
+          "es": "Museos Vaticanos"
+        }
       }
     },
     {
@@ -854,7 +975,10 @@
         "wikipedia": "it:Centrale Montemartini",
         "wheelchair": "yes",
         "fee": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Centrale Montemartini"
+        }
       }
     },
     {
@@ -882,7 +1006,11 @@
         "wikidata": "Q3867996",
         "wikipedia": "en:Museum of the Ara Pacis",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Museum of the Ara Pacis",
+          "es": "Museo del Ara Pacis"
+        }
       }
     },
     {
@@ -908,7 +1036,12 @@
         "website": "https://palazzo.quirinale.it",
         "wikidata": "Q223079",
         "wikipedia": "it:Palazzo del Quirinale",
-        "popularity": 53
+        "popularity": 53,
+        "names": {
+          "pt": "Palácio do Quirinal",
+          "en": "Quirinal Palace",
+          "es": "Palacio del Quirinal"
+        }
       }
     },
     {
@@ -935,7 +1068,10 @@
         "website": "https://www.museocarlobilotti.it/it/il_museo/editoriale",
         "wikidata": "Q3867587",
         "wikipedia": "it:Museo Carlo Bilotti",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Carlo Bilotti Museum"
+        }
       }
     },
     {
@@ -962,7 +1098,12 @@
         "website": "https://www.coopculture.it/heritage.cfm?id=59#",
         "wikidata": "Q725404",
         "wikipedia": "it:Piramide Cestia",
-        "popularity": 35
+        "popularity": 35,
+        "names": {
+          "pt": "Pirâmide de Céstio",
+          "en": "Pyramid of Cestius",
+          "es": "Pirámide Cestia"
+        }
       }
     },
     {
@@ -990,7 +1131,11 @@
         "wikidata": "Q1881229",
         "wikipedia": "it:MAXXI - Museo nazionale delle arti del XXI secolo",
         "wheelchair": "yes",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "en": "MAXXI",
+          "es": "MAXXI"
+        }
       }
     },
     {
@@ -1016,7 +1161,12 @@
         "website": "https://www.mercatiditraiano.it/",
         "wikidata": "Q211295",
         "wikipedia": "en:Trajan's Forum",
-        "popularity": 47
+        "popularity": 47,
+        "names": {
+          "pt": "Fórum de Trajano",
+          "en": "Trajan's Forum",
+          "es": "Foro de Trajano"
+        }
       }
     },
     {
@@ -1044,7 +1194,10 @@
         "wikidata": "Q3661799",
         "wikipedia": "it:Casino Nobile",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Casino Nobile di Villa Torlonia"
+        }
       }
     },
     {
@@ -1072,7 +1225,11 @@
         "wikidata": "Q2669644",
         "wikipedia": "en:Museum of Contemporary Art of Rome",
         "wheelchair": "yes",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "en": "Museum of Contemporary Art of Rome",
+          "es": "Museo de Arte Contemporáneo de Roma"
+        }
       }
     },
     {
@@ -1099,7 +1256,12 @@
         "wikidata": "Q1971299",
         "wikipedia": "it:Palazzo Colonna",
         "wheelchair": "limited",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Palazzo Colonna",
+          "en": "Palazzo Colonna",
+          "es": "Palacio Colonna"
+        }
       }
     },
     {
@@ -1128,7 +1290,10 @@
         "wikipedia": "en:Chiostro del Bramante",
         "wheelchair": "limited",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "cloister of Bramante"
+        }
       }
     },
     {
@@ -1155,7 +1320,10 @@
         "wikidata": "Q3757768",
         "wikipedia": "it:Galleria nazionale d'arte antica di palazzo Corsini",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Galleria Nazionale d'Arte Antica di Palazzo Corsini"
+        }
       }
     },
     {
@@ -1182,7 +1350,11 @@
         "wikidata": "Q3868150",
         "wikipedia": "it:Museo delle mura",
         "fee": "no",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Museo delle Mura",
+          "en": "Museo delle Mura"
+        }
       }
     },
     {
@@ -1208,7 +1380,12 @@
         "website": "https://www.santamariaintrastevere.it/",
         "wikidata": "Q1137391",
         "wikipedia": "it:Basilica di Santa Maria in Trastevere",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Basílica de Santa Maria em Trastevere",
+          "en": "Santa Maria in Trastevere",
+          "es": "Basílica de Santa María en Trastevere"
+        }
       }
     },
     {
@@ -1233,7 +1410,12 @@
         "website": "https://www.benedettinesantacecilia.it/",
         "wikidata": "Q1479873",
         "wikipedia": "it:Basilica di Santa Cecilia in Trastevere",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Santa Cecilia in Trastevere",
+          "en": "Santa Cecilia in Trastevere",
+          "es": "basílica de Santa Cecilia en Trastevere"
+        }
       }
     },
     {
@@ -1288,7 +1470,10 @@
         "wikidata": "Q2205213",
         "wikipedia": "en:Capo di Bove",
         "fee": "no",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Capo di Bove"
+        }
       }
     },
     {
@@ -1314,7 +1499,11 @@
         "wikidata": "Q3867590",
         "wikipedia": "it:Museo Casina delle Civette",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Casina delle Civette",
+          "es": "Casina delle Civette"
+        }
       }
     },
     {
@@ -1343,7 +1532,10 @@
         "wikipedia": "it:Polo museale ATAC di Roma Porta San Paolo",
         "wheelchair": "yes",
         "fee": "no",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Porta San Paolo Railway Museum"
+        }
       }
     },
     {
@@ -1369,7 +1561,10 @@
         "website": "http://archeoroma.beniculturali.it/musei/museo-ostiense-porta-spaolo",
         "wikidata": "Q3329978",
         "wikipedia": "it:Museo della Via Ostiense",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Museo della via Ostiense"
+        }
       }
     },
     {
@@ -1395,7 +1590,12 @@
         "website": "https://www.catacombepriscilla.com/",
         "wikidata": "Q2462868",
         "wikipedia": "en:Catacomb of Priscilla",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Catacumba de Priscila",
+          "en": "Catacomb of Priscilla",
+          "es": "Catacumbas de Priscila"
+        }
       }
     },
     {
@@ -1421,7 +1621,12 @@
         "wikidata": "Q200642",
         "wikipedia": "it:Palatino",
         "wheelchair": "yes",
-        "popularity": 63
+        "popularity": 63,
+        "names": {
+          "pt": "Palatino",
+          "en": "Palatine Hill",
+          "es": "Monte Palatino"
+        }
       }
     },
     {
@@ -1448,7 +1653,11 @@
         "wikidata": "Q959650",
         "wikipedia": "it:Casa di Goethe",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Casa di Goethe",
+          "en": "Casa di Goethe"
+        }
       }
     },
     {
@@ -1476,7 +1685,12 @@
         "wikipedia": "it:Museo ebraico (Roma)",
         "wheelchair": "limited",
         "fee": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Museu Judaico de Roma",
+          "en": "Jewish Museum of Rome",
+          "es": "Museo Judío de Roma"
+        }
       }
     },
     {
@@ -1502,7 +1716,12 @@
         "wikidata": "Q337494",
         "wikipedia": "it:Académie de France à Rome",
         "fee": "yes",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Academia da França em Roma",
+          "en": "French Academy in Rome",
+          "es": "Academia Francesa en Roma"
+        }
       }
     },
     {
@@ -1530,7 +1749,10 @@
         "wikidata": "Q3661302",
         "wikipedia": "it:Casa di Pirandello",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "House of Pirandello"
+        }
       }
     },
     {
@@ -1556,7 +1778,10 @@
         "website": "https://www.beniculturali.inaf.it/musei/roma",
         "wikidata": "Q27919309",
         "wikipedia": "it:Museo astronomico e copernicano",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Museum of Astronomical Observatory of Rome"
+        }
       }
     },
     {
@@ -1583,7 +1808,12 @@
         "wikipedia": "it:Castel Sant'Angelo",
         "wheelchair": "yes",
         "fee": "yes",
-        "popularity": 58
+        "popularity": 58,
+        "names": {
+          "pt": "Castelo do Santo Anjo",
+          "en": "Castel Sant'Angelo",
+          "es": "Castillo Sant'Angelo"
+        }
       }
     },
     {
@@ -1609,7 +1839,12 @@
         "wikidata": "Q5786",
         "wikipedia": "en:Arch of Constantine",
         "wheelchair": "limited",
-        "popularity": 49
+        "popularity": 49,
+        "names": {
+          "pt": "Arco de Constantino",
+          "en": "Arch of Constantine",
+          "es": "Arco de Constantino"
+        }
       }
     },
     {
@@ -1635,7 +1870,12 @@
         "wikidata": "Q1465674",
         "wikipedia": "it:Chiesa di Sant'Ignazio di Loyola in Campo Marzio",
         "wheelchair": "yes",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Igreja de Santo Inácio de Loyola",
+          "en": "Sant'Ignazio Church",
+          "es": "iglesia de San Ignacio"
+        }
       }
     },
     {
@@ -1662,7 +1902,12 @@
         "wikipedia": "it:Pinacoteca vaticana",
         "wheelchair": "yes",
         "fee": "yes",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Pinacoteca do Vaticano",
+          "en": "Pinacoteca Vaticana",
+          "es": "Pinacoteca Vaticana"
+        }
       }
     },
     {
@@ -1687,7 +1932,12 @@
         "opening_hours": "Sa 10:00-14:00; 2022 Mar: Su[-1] 16:00-20:00",
         "wikidata": "Q580555",
         "wikipedia": "it:Arco di Giano",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Arco de Jano",
+          "en": "Arch of Janus",
+          "es": "Arco de Jano"
+        }
       }
     },
     {
@@ -1713,7 +1963,12 @@
         "opening_hours": "07:00-12:00,16:00-19:00",
         "wikidata": "Q738214",
         "wikipedia": "it:Basilica di San Lorenzo fuori le mura",
-        "popularity": 36
+        "popularity": 36,
+        "names": {
+          "pt": "San Lorenzo fuori le Mura",
+          "en": "Basilica of Saint Lawrence Outside the Walls",
+          "es": "basílica de San Lorenzo Extramuros"
+        }
       }
     },
     {
@@ -1738,7 +1993,12 @@
         "opening_hours": "Mo-Sa 09:00-11:30",
         "wikidata": "Q1526417",
         "wikipedia": "it:Basilica di Santa Pudenziana",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Santa Pudenziana",
+          "en": "Santa Pudenziana",
+          "es": "basílica de Santa Pudenciana"
+        }
       }
     },
     {
@@ -1765,7 +2025,12 @@
         "wikidata": "Q186282",
         "wikipedia": "it:Basilica di Santa Maria Maggiore",
         "wheelchair": "yes",
-        "popularity": 58
+        "popularity": 58,
+        "names": {
+          "pt": "Basílica de Santa Maria Maior",
+          "en": "Basilica di Santa Maria Maggiore",
+          "es": "basílica de Santa María la Mayor"
+        }
       }
     },
     {
@@ -1790,7 +2055,12 @@
         "opening_hours": "09:00-17:00",
         "wikidata": "Q1035634",
         "wikipedia": "it:Carcere Mamertino",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Prisão Mamertina",
+          "en": "Mamertine Prison",
+          "es": "Cárcel Mamertina"
+        }
       }
     },
     {
@@ -1817,7 +2087,12 @@
         "wikidata": "Q385910",
         "wikipedia": "it:Basilica di San Clemente al Laterano",
         "wheelchair": "no",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Basílica de São Clemente",
+          "en": "Basilica of San Clemente",
+          "es": "basílica de San Clemente de Letrán"
+        }
       }
     },
     {
@@ -1843,7 +2118,10 @@
         "website": "https://museum.cref.it/",
         "wikidata": "Q16336192",
         "wikipedia": "it:Museo storico della fisica e Centro di studi e ricerche \"Enrico Fermi\"",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Enrico Fermi Center for Study and Research"
+        }
       }
     },
     {
@@ -1869,7 +2147,12 @@
         "opening_hours": "08:00-12:30,15:00-18:00; Mar Su[-1]-Oct Su[-1] -1 day 08:00-12:30,15:00-19:00",
         "wikidata": "Q542070",
         "wikipedia": "it:Basilica di San Pietro in Vincoli",
-        "popularity": 42
+        "popularity": 42,
+        "names": {
+          "pt": "San Pietro in Vincoli",
+          "en": "San Pietro in Vincoli",
+          "es": "San Pietro in Vincoli"
+        }
       }
     },
     {
@@ -1895,7 +2178,12 @@
         "wikidata": "Q2943",
         "wikipedia": "en:Sistine Chapel",
         "wheelchair": "yes",
-        "popularity": 90
+        "popularity": 90,
+        "names": {
+          "pt": "Capela Sistina",
+          "en": "Sistine Chapel",
+          "es": "Capilla Sixtina"
+        }
       }
     },
     {
@@ -1921,7 +2209,12 @@
         "wikidata": "Q1127325",
         "wikipedia": "it:Ponte Milvio",
         "wheelchair": "yes",
-        "popularity": 36
+        "popularity": 36,
+        "names": {
+          "pt": "Ponte Mílvia",
+          "en": "Ponte Milvio",
+          "es": "puente Milvio"
+        }
       }
     },
     {
@@ -1948,7 +2241,12 @@
         "wikidata": "Q12512",
         "wikipedia": "it:Basilica di San Pietro in Vaticano",
         "wheelchair": "yes",
-        "popularity": 131
+        "popularity": 131,
+        "names": {
+          "pt": "Basílica de São Pedro",
+          "en": "St. Peter's Basilica",
+          "es": "basílica de San Pedro"
+        }
       }
     },
     {
@@ -1973,7 +2271,12 @@
         "website": "http://archeoroma.beniculturali.it/en/archaeological-site/temple-portunus-forum-boarium",
         "wikidata": "Q849241",
         "wikipedia": "it:Tempio di Portuno",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Templo de Portuno",
+          "en": "Temple of Portunus",
+          "es": "Templo de Portunus"
+        }
       }
     },
     {
@@ -2001,7 +2304,12 @@
         "wikipedia": "it:Pantheon (Roma)",
         "wheelchair": "yes",
         "fee": "yes",
-        "popularity": 81
+        "popularity": 81,
+        "names": {
+          "pt": "Panteão",
+          "en": "Pantheon",
+          "es": "Panteón de Agripa"
+        }
       }
     },
     {
@@ -2026,7 +2334,12 @@
         "opening_hours": "07:30-19:00",
         "wikidata": "Q685940",
         "wikipedia": "it:Basilica di Santa Croce in Gerusalemme",
-        "popularity": 35
+        "popularity": 35,
+        "names": {
+          "pt": "Santa Croce in Gerusalemme",
+          "en": "Basilica of the Holy Cross in Jerusalem",
+          "es": "basílica de la Santa Cruz en Jerusalén"
+        }
       }
     },
     {
@@ -2053,7 +2366,12 @@
         "wikidata": "Q84090",
         "wikipedia": "it:Basilica di San Giovanni in Laterano",
         "wheelchair": "yes",
-        "popularity": 63
+        "popularity": 63,
+        "names": {
+          "pt": "Arquibasílica de São João de Latrão",
+          "en": "Archbasilica of St. John Lateran",
+          "es": "Archibasílica de San Juan de Letrán"
+        }
       }
     },
     {
@@ -2079,7 +2397,12 @@
         "wikidata": "Q546419",
         "wikipedia": "en:Catacombs of San Sebastiano",
         "wheelchair": "no",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Catacumbas de São Sebastião",
+          "en": "Catacombs of San Sebastiano",
+          "es": "Catacumbas de San Sebastián"
+        }
       }
     },
     {
@@ -2106,7 +2429,11 @@
         "wikidata": "Q3868477",
         "wikipedia": "it:Museo storico della Liberazione",
         "fee": "no",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Museum of the Liberation of Rome",
+          "es": "Museo de la Liberación (Roma)"
+        }
       }
     },
     {
@@ -2132,7 +2459,10 @@
         "wikidata": "Q3867843",
         "wikipedia": "it:Museo criminologico",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Criminology Museum"
+        }
       }
     },
     {
@@ -2160,7 +2490,10 @@
         "website": "https://museodelcorso.com/",
         "wikidata": "Q131862330",
         "fee": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Cipolla Palace"
+        }
       }
     },
     {
@@ -2186,7 +2519,10 @@
         "wikidata": "Q3757712",
         "wikipedia": "it:Galleria d'arte moderna di Roma Capitale",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Galleria d'arte moderna di Roma Capitale"
+        }
       }
     },
     {
@@ -2213,7 +2549,10 @@
         "website": "https://direzionemuseiroma.cultura.gov.it/museo-nazionale-di-castel-santangelo/",
         "wikidata": "Q55685976",
         "fee": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Museo nazionale di Castel Sant'Angelo"
+        }
       }
     },
     {
@@ -2241,7 +2580,10 @@
         "website": "https://web.uniroma1.it/erbario/",
         "wikidata": "Q55829263",
         "fee": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Herbarium Museum, Sapienza University of Rome"
+        }
       }
     },
     {
@@ -2269,7 +2611,10 @@
         "website": "https://web.uniroma1.it/polomuseale/museo-fisica",
         "wikidata": "Q55360153",
         "fee": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Physics Museum of the Sapienza University of Rome"
+        }
       }
     },
     {
@@ -2295,7 +2640,11 @@
         "wikipedia": "ru:Григорианский Этрусский музей",
         "wheelchair": "limited",
         "fee": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Museu Gregoriano Etrusco",
+          "en": "Gregorian Etruscan Museum"
+        }
       }
     },
     {
@@ -2320,7 +2669,10 @@
         "wikidata": "Q510071",
         "wikipedia": "it:Museo nazionale romano di palazzo Massimo",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Museum Palazzo Massimo alle Terme"
+        }
       }
     },
     {
@@ -2344,7 +2696,11 @@
         "website": "https://museonazionaleromano.beniculturali.it/terme-di-diocleziano/",
         "wikidata": "Q3330142",
         "wikipedia": "it:Museo nazionale romano delle Terme di Diocleziano",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Museum of the Baths of Diocletian",
+          "es": "Museo Nacional de las Termas"
+        }
       }
     },
     {
@@ -2368,7 +2724,12 @@
         "opening_hours": "Mo-Fr 06:55-19:00; Sa 10:00-12:30, 15:30-19:00; Su 08:10-12:30, 15:30-19:00",
         "wikidata": "Q823685",
         "wikipedia": "it:Basilica di Santa Maria sopra Minerva",
-        "popularity": 35
+        "popularity": 35,
+        "names": {
+          "pt": "Santa Maria sopra Minerva",
+          "en": "Santa Maria sopra Minerva",
+          "es": "Santa Maria sobre Minerva"
+        }
       }
     },
     {
@@ -2394,7 +2755,12 @@
         "wikidata": "Q1631593",
         "wikipedia": "it:Basilica di Sant'Andrea della Valle",
         "wheelchair": "no",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Sant'Andrea della Valle",
+          "en": "Sant'Andrea della Valle",
+          "es": "Basílica de San Andrés del Valle"
+        }
       }
     },
     {
@@ -2419,7 +2785,12 @@
         "wikidata": "Q2031901",
         "wikipedia": "it:Chiesa Nuova (Roma)",
         "wheelchair": "no",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Santa Maria in Vallicella",
+          "en": "Santa Maria in Vallicella",
+          "es": "Iglesia de Santa María de Vallicella"
+        }
       }
     },
     {
@@ -2443,7 +2814,12 @@
         "website": "https://www.farnese-rome.it/",
         "wikidata": "Q848386",
         "wikipedia": "it:Palazzo Farnese (Roma)",
-        "popularity": 38
+        "popularity": 38,
+        "names": {
+          "pt": "Palazzo Farnese",
+          "en": "Palazzo Farnese",
+          "es": "Palacio Farnesio"
+        }
       }
     },
     {
@@ -2468,7 +2844,12 @@
         "wikidata": "Q2519438",
         "wikipedia": "it:Battistero lateranense",
         "wheelchair": "limited",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Batistério de Latrão",
+          "en": "Lateran Baptistery",
+          "es": "Baptisterio de Letrán"
+        }
       }
     },
     {
@@ -2492,7 +2873,12 @@
         "opening_hours": "Mo-Sa 10:00-12:00,16:00-18:00; Su 10:00-11:00,16:00-18:00",
         "wikidata": "Q733890",
         "wikipedia": "it:Basilica di Santa Prassede",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Basílica de Santa Prassede",
+          "en": "Santa Prassede",
+          "es": "basílica de Santa Práxedes"
+        }
       }
     },
     {
@@ -2517,7 +2903,12 @@
         "wikidata": "Q658051",
         "wikipedia": "it:Basilica di San Sebastiano fuori le mura",
         "wheelchair": "yes",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "San Sebastiano fuori le mura",
+          "en": "San Sebastiano fuori le mura",
+          "es": "basílica de San Sebastián de las Catacumbas"
+        }
       }
     },
     {
@@ -2544,7 +2935,12 @@
         "wikipedia": "it:Palazzo delle Esposizioni",
         "wheelchair": "limited",
         "fee": "yes",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Palazzo delle Esposizioni",
+          "en": "Palazzo delle Esposizioni",
+          "es": "Palazzo delle Esposizioni"
+        }
       }
     },
     {
@@ -2568,7 +2964,12 @@
         "opening_hours": "Tu-Fr 09:00-13:00, 15:00-19:00; Sa, Su 09:00-13:00, 15:00-20:00",
         "wikidata": "Q1192577",
         "wikipedia": "it:Chiesa di Sant'Agnese in Agone",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Sant'Agnese in Agone",
+          "en": "Sant'Agnese in Agone",
+          "es": "Santa Inés en Agone"
+        }
       }
     },
     {
@@ -2593,7 +2994,12 @@
         "opening_hours": "Mar Su[-1]-Oct Su[-1] -1 day: Tu-Su 10:00-13:00,15:30-18:30; Oct Su[-1]-Mar Su[-1] -1 day: Tu-Su 10:00-13:00,14:00-17:00; Dec 25,Jan 01 off; easter off; 2025 Jan 06-20 off",
         "wikidata": "Q919456",
         "wikipedia": "it:Basilica di Santo Stefano Rotondo al Celio",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "pt": "Santo Stefano Rotondo al Celio",
+          "en": "Santo Stefano Rotondo",
+          "es": "Basílica de Santo Stefano Rotondo"
+        }
       }
     },
     {
@@ -2617,7 +3023,12 @@
         "website": "http://en.museicapitolini.org/",
         "wikidata": "Q64103",
         "wikipedia": "it:Palazzo dei Conservatori",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Palazzo dei Conservatori",
+          "en": "Palazzo dei Conservatori",
+          "es": "Palacio de los Conservadores"
+        }
       }
     },
     {
@@ -2642,7 +3053,11 @@
         "website": "https://www.oratoriogonfalone.eu/",
         "wikidata": "Q1426841",
         "wikipedia": "it:Oratorio del Gonfalone (Roma)",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Oratorio del Gonfalone",
+          "en": "Oratorio del Gonfalone"
+        }
       }
     },
     {
@@ -2666,7 +3081,10 @@
         "website": "https://colosseo.it/area/musei/nuovo-museo-foro-romano/",
         "wikidata": "Q21968175",
         "wikipedia": "it:Antiquarium Forense",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Antiquarium Forense"
+        }
       }
     },
     {
@@ -2690,7 +3108,11 @@
         "website": "https://www.risorgimento.it/php/page_gen.php?id_sezione=5",
         "wikidata": "Q3867752",
         "wikipedia": "it:Museo centrale del Risorgimento al Vittoriano",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museo Centrale del Risorgimento",
+          "es": "Museo centrale del Risorgimento"
+        }
       }
     },
     {
@@ -2715,7 +3137,12 @@
         "wikidata": "Q3330361",
         "wikipedia": "it:Antiquarium del Palatino",
         "fee": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Museu Palatino",
+          "en": "Palatine Museum",
+          "es": "Museo del Palatino"
+        }
       }
     },
     {
@@ -2740,7 +3167,12 @@
         "website": "https://www.scuderiequirinale.it/",
         "wikidata": "Q26840128",
         "wikipedia": "it:Scuderie del Quirinale",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Scuderie del Quirinale",
+          "en": "Scuderie del Quirinale",
+          "es": "Caballerizas del Quirinal"
+        }
       }
     },
     {
@@ -2765,7 +3197,12 @@
         "opening_hours": "Oct-Mar Mo-Fr 06:00-14:00,15:00-18:30; Oct-Mar Sa,Su 07:00-14:00,15:00-18:30; Apr-Sep Mo-Fr 06:00-14:00,15:00-18:30; Apr-Sep Sa,Su 07:00-14:00,15:00-19:00",
         "wikidata": "Q1768461",
         "wikipedia": "it:Scala Santa",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Scala Sancta",
+          "en": "Scala Sancta",
+          "es": "Escalera Santa"
+        }
       }
     },
     {
@@ -2790,7 +3227,12 @@
         "wikidata": "Q569253",
         "wikipedia": "it:Basilica di Santa Maria degli Angeli e dei Martiri",
         "wheelchair": "limited",
-        "popularity": 32
+        "popularity": 32,
+        "names": {
+          "pt": "Santa Maria degli Angeli e dei Martiri",
+          "en": "Santa Maria degli Angeli e dei Martiri",
+          "es": "basílica de Santa María de los Ángeles y los Mártires"
+        }
       }
     },
     {
@@ -2815,7 +3257,10 @@
         "wikidata": "Q1133966",
         "wikipedia": "it:Keats-Shelley Memorial House",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Keats-Shelley Memorial House"
+        }
       }
     },
     {
@@ -2840,7 +3285,10 @@
         "opening_hours": "Tu-Su 10:00-20:00; Dec 24, Dec 31 09:00-14:00; Jan 01 off; May 01 off; Dec 25 off",
         "wikidata": "Q3868182",
         "wikipedia": "it:Museo di Roma in Trastevere",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "museo di Roma in Trastevere"
+        }
       }
     },
     {
@@ -2866,7 +3314,10 @@
         "wikidata": "Q3868475",
         "wikipedia": "it:Museo storico dell'Arma dei carabinieri",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museo Storico dell'Arma dei Carabinieri"
+        }
       }
     },
     {
@@ -2890,7 +3341,10 @@
         "website": "https://www.esercito.difesa.it/Comunicazione/Musei/Granatieri/Pagine/default.aspx",
         "wikidata": "Q3868472",
         "wikipedia": "it:Museo storico dei granatieri di Sardegna",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museo storico dei Granatieri di Sardegna"
+        }
       }
     },
     {
@@ -2941,7 +3395,10 @@
         "phone": "+39 06 0608",
         "website": "https://www.mercatiditraiano.it/it/il_museo/editoriale",
         "wikidata": "Q55673228",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Museo dei Fori Imperiali"
+        }
       }
     },
     {
@@ -2966,7 +3423,11 @@
         "wikidata": "Q864639",
         "wikipedia": "it:Bioparco di Roma",
         "fee": "yes",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "bioparco",
+          "es": "bioparco"
+        }
       }
     },
     {
@@ -2990,7 +3451,12 @@
         "longitude": 12.4907414,
         "wikidata": "Q1217302",
         "wikipedia": "it:Quattro Fontane",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Quattro Fontane",
+          "en": "Quattro Fontane",
+          "es": "Quattro Fontane"
+        }
       }
     },
     {
@@ -3015,7 +3481,12 @@
         "wikidata": "Q249449",
         "wikipedia": "fr:Chambres de Raphaël",
         "fee": "yes",
-        "popularity": 34
+        "popularity": 34,
+        "names": {
+          "pt": "Salas de Rafael",
+          "en": "Raphael Rooms",
+          "es": "Estancias de Rafael"
+        }
       }
     },
     {
@@ -3041,7 +3512,10 @@
         "website": "https://www.turismoroma.it/it/luoghi/museo-della-forma-urbis",
         "wikidata": "Q124309673",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museum of the Forma Urbis"
+        }
       }
     },
     {
@@ -3066,7 +3540,12 @@
         "wikidata": "Q34921",
         "wikipedia": "it:Piazza del Campidoglio",
         "wheelchair": "yes",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Piazza del Campidoglio",
+          "en": "Piazza del Campidoglio",
+          "es": "Plaza del Campidoglio"
+        }
       }
     },
     {
@@ -3091,7 +3570,12 @@
         "wikidata": "Q723887",
         "wikipedia": "en:Arch of Titus",
         "wheelchair": "yes",
-        "popularity": 43
+        "popularity": 43,
+        "names": {
+          "pt": "Arco de Tito",
+          "en": "Arch of Titus",
+          "es": "Arco de Tito"
+        }
       }
     },
     {
@@ -3115,7 +3599,12 @@
         "longitude": 12.5020444,
         "wikidata": "Q592799",
         "wikipedia": "it:Chiesa di San Giovanni a Porta Latina",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "San Giovanni a Porta Latina",
+          "en": "San Giovanni a Porta Latina",
+          "es": "San Juan en Porta Latina"
+        }
       }
     },
     {
@@ -3140,7 +3629,11 @@
         "wikidata": "Q16599544",
         "wikipedia": "it:Sagrestia di San Pietro in Vaticano",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Sacristy of Saint Peter's Basilica",
+          "es": "Sacristía de San Pedro del Vaticano"
+        }
       }
     },
     {
@@ -3167,7 +3660,11 @@
         "wikipedia": "en:Mausoleum of Maxentius",
         "wheelchair": "yes",
         "fee": "no",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Mausoléu de Rômulo",
+          "en": "Mausoleum of Maxentius"
+        }
       }
     },
     {
@@ -3192,7 +3689,12 @@
         "wikidata": "Q655470",
         "wikipedia": "it:Fontana dei Quattro Fiumi",
         "wheelchair": "yes",
-        "popularity": 36
+        "popularity": 36,
+        "names": {
+          "pt": "Fontana dei Quattro Fiumi",
+          "en": "Four Rivers Fountain",
+          "es": "Fuente de los Cuatro Ríos"
+        }
       }
     },
     {
@@ -3216,7 +3718,12 @@
         "longitude": 12.4665693,
         "wikidata": "Q1258576",
         "wikipedia": "it:Chiesa di San Pietro in Montorio",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "San Pietro in Montorio",
+          "en": "San Pietro in Montorio",
+          "es": "San Pietro in Montorio"
+        }
       }
     },
     {
@@ -3241,7 +3748,12 @@
         "wikidata": "Q659138",
         "wikipedia": "it:Teatro di Marcello",
         "wheelchair": "no",
-        "popularity": 36
+        "popularity": 36,
+        "names": {
+          "pt": "Teatro de Marcelo",
+          "en": "Theatre of Marcellus",
+          "es": "Teatro de Marcelo"
+        }
       }
     },
     {
@@ -3265,7 +3777,11 @@
         "longitude": 12.4815601,
         "wikidata": "Q2552044",
         "wikipedia": "it:Area di Sant'Omobono",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Sítio de Santo Omobono",
+          "en": "Sacred Area of Sant'Omobono"
+        }
       }
     },
     {
@@ -3289,7 +3805,12 @@
         "longitude": 12.522518278000002,
         "wikidata": "Q1457351",
         "wikipedia": "it:Circo di Massenzio",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Circo de Maxêncio",
+          "en": "Circus of Maxentius",
+          "es": "Circo majenciano"
+        }
       }
     },
     {
@@ -3314,7 +3835,12 @@
         "wikidata": "Q848072",
         "wikipedia": "en:Spanish Steps",
         "wheelchair": "no",
-        "popularity": 40
+        "popularity": 40,
+        "names": {
+          "pt": "Escadarias da Praça da Espanha",
+          "en": "Spanish Steps",
+          "es": "Escalinata de la plaza de España"
+        }
       }
     },
     {
@@ -3338,7 +3864,10 @@
         "longitude": 12.4835571,
         "wikidata": "Q3868139",
         "wikipedia": "it:Museo delle cere (Roma)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Rome Wax Museum"
+        }
       }
     },
     {
@@ -3362,7 +3891,12 @@
         "longitude": 12.4972548,
         "wikidata": "Q836108",
         "wikipedia": "it:Terme di Diocleziano",
-        "popularity": 32
+        "popularity": 32,
+        "names": {
+          "pt": "Termas de Diocleciano",
+          "en": "Baths of Diocletian",
+          "es": "Termas de Diocleciano"
+        }
       }
     },
     {
@@ -3387,7 +3921,12 @@
         "wikidata": "Q431062",
         "wikipedia": "it:Tempio di Adriano",
         "wheelchair": "yes",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Templo de Adriano",
+          "en": "Temple of Hadrian",
+          "es": "Templo de Adriano"
+        }
       }
     },
     {
@@ -3411,7 +3950,12 @@
         "longitude": 12.455110801298702,
         "wikidata": "Q145093",
         "wikipedia": "la:Palatium Apostolicum",
-        "popularity": 60
+        "popularity": 60,
+        "names": {
+          "pt": "Palácio Apostólico",
+          "en": "Apostolic Palace",
+          "es": "Palacio Apostólico Vaticano"
+        }
       }
     },
     {
@@ -3436,7 +3980,12 @@
         "wikidata": "Q3747467",
         "wikipedia": "it:Fontane di piazza San Pietro",
         "wheelchair": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Fontes da Praça de São Pedro",
+          "en": "Fountains of St. Peter's Square",
+          "es": "Fuentes de la plaza de San Pedro"
+        }
       }
     },
     {
@@ -3460,7 +4009,12 @@
         "longitude": 12.4808629,
         "wikidata": "Q576929",
         "wikipedia": "it:Tempio di Ercole Vincitore",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Templo de Vesta",
+          "en": "Temple of Hercules Victor",
+          "es": "Templo de Hércules Víctor"
+        }
       }
     },
     {
@@ -3485,7 +4039,12 @@
         "wikidata": "Q1540920",
         "wikipedia": "it:Mausoleo di Cecilia Metella",
         "wheelchair": "no",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Túmulo de Cecília Metela",
+          "en": "Tomb of Caecilia Metella",
+          "es": "tumba de Cecilia Metela"
+        }
       }
     },
     {
@@ -3509,7 +4068,12 @@
         "longitude": 12.454740113636364,
         "wikidata": "Q2547111",
         "wikipedia": "it:Cortile del Belvedere",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Cortile del Belvedere",
+          "en": "Cortile del Belvedere",
+          "es": "Patio del Belvedere"
+        }
       }
     },
     {
@@ -3534,7 +4098,12 @@
         "wikidata": "Q679665",
         "wikipedia": "it:Tempio di Marte Ultore",
         "wheelchair": "no",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Templo de Marte Vingador",
+          "en": "Temple of Mars Ultor",
+          "es": "Templo de Marte vengador"
+        }
       }
     },
     {
@@ -3558,7 +4127,12 @@
         "longitude": 12.486278435135137,
         "wikidata": "Q770797",
         "wikipedia": "en:Forum of Augustus",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Fórum de Augusto",
+          "en": "Forum of Augustus",
+          "es": "Foro de Augusto"
+        }
       }
     },
     {
@@ -3582,7 +4156,12 @@
         "longitude": 12.486189293333334,
         "wikidata": "Q686911",
         "wikipedia": "it:Foro di Nerva",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Fórum de Nerva",
+          "en": "Forum Nervae",
+          "es": "Foro de Nerva"
+        }
       }
     },
     {
@@ -3606,7 +4185,12 @@
         "longitude": 12.50571908235294,
         "wikidata": "Q848394",
         "wikipedia": "it:Palazzo del Laterano",
-        "popularity": 39
+        "popularity": 39,
+        "names": {
+          "pt": "Palácio de Latrão",
+          "en": "Lateran Palace",
+          "es": "Palacio de Letrán"
+        }
       }
     },
     {
@@ -3631,7 +4215,12 @@
         "wikidata": "Q185382",
         "wikipedia": "it:Fontana di Trevi",
         "wheelchair": "limited",
-        "popularity": 68
+        "popularity": 68,
+        "names": {
+          "pt": "Fontana di Trevi",
+          "en": "Trevi Fountain",
+          "es": "Fontana di Trevi"
+        }
       }
     },
     {
@@ -3655,7 +4244,12 @@
         "longitude": 12.486862146350369,
         "wikidata": "Q180212",
         "wikipedia": "en:Roman Forum",
-        "popularity": 72
+        "popularity": 72,
+        "names": {
+          "pt": "Fórum Romano",
+          "en": "Roman Forum",
+          "es": "Foro Romano"
+        }
       }
     },
     {
@@ -3679,7 +4273,12 @@
         "longitude": 12.482416651764705,
         "wikidata": "Q15124814",
         "wikipedia": "it:Piazza di Spagna",
-        "popularity": 40
+        "popularity": 40,
+        "names": {
+          "pt": "Piazza di Spagna",
+          "en": "Piazza di Spagna",
+          "es": "Plaza de España"
+        }
       }
     },
     {
@@ -3703,7 +4302,12 @@
         "longitude": 12.485047039130432,
         "wikidata": "Q856968",
         "wikipedia": "en:Forum of Caesar",
-        "popularity": 31
+        "popularity": 31,
+        "names": {
+          "pt": "Fórum de César",
+          "en": "Forum of Caesar",
+          "es": "Foro de César"
+        }
       }
     },
     {
@@ -3727,7 +4331,12 @@
         "longitude": 12.4836955,
         "wikidata": "Q600139",
         "wikipedia": "en:Aqua Virgo",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Água Virgem",
+          "en": "Aqua Virgo",
+          "es": "Aqua Virgo"
+        }
       }
     },
     {
@@ -3752,7 +4361,12 @@
         "wikidata": "Q83425",
         "wikipedia": "it:Piazza San Pietro",
         "wheelchair": "yes",
-        "popularity": 66
+        "popularity": 66,
+        "names": {
+          "pt": "Praça de São Pedro",
+          "en": "Saint Peter's Square",
+          "es": "Plaza de San Pedro"
+        }
       }
     },
     {
@@ -3776,7 +4390,12 @@
         "longitude": 12.483029931460672,
         "wikidata": "Q506234",
         "wikipedia": "it:Vittoriano",
-        "popularity": 43
+        "popularity": 43,
+        "names": {
+          "pt": "Monumento a Vítor Emanuel II da Itália",
+          "en": "Altare della Patria",
+          "es": "Monumento a Víctor Manuel II"
+        }
       }
     },
     {
@@ -3799,7 +4418,11 @@
         "longitude": 12.4856511,
         "wikidata": "Q3747370",
         "wikipedia": "it:Fontana dell'Acqua Acetosa",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Fountain (Fontana dell'Acqua Acetosa)",
+          "es": "fuente del Acqua Acetosa"
+        }
       }
     },
     {
@@ -3823,7 +4446,11 @@
         "wikidata": "Q21208527",
         "wikipedia": "it:Ninfeo di Egeria",
         "wheelchair": "limited",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Ninfeu de Egéria",
+          "en": "Nymphaeum of Egeria"
+        }
       }
     },
     {
@@ -3848,7 +4475,10 @@
         "wikidata": "Q603939",
         "wikipedia": "it:Museo storico dei bersaglieri",
         "fee": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Museo Storico dei Bersaglieri"
+        }
       }
     },
     {
@@ -3871,7 +4501,11 @@
         "longitude": 12.4807242,
         "wikidata": "Q2272265",
         "wikipedia": "it:Idrocronometro",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "hydrochronometer",
+          "es": "Hidrocronómetro"
+        }
       }
     },
     {
@@ -3896,7 +4530,11 @@
         "wikidata": "Q1227431",
         "wikipedia": "it:San Giovanni (metropolitana di Roma)",
         "fee": "no",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "en": "San Giovanni",
+          "es": "San Giovanni"
+        }
       }
     },
     {
@@ -3922,7 +4560,12 @@
         "wikidata": "Q531779",
         "wikipedia": "it:Accademia di Spagna",
         "fee": "no",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Real Academia de España en Roma",
+          "en": "Real Academia de España en Roma",
+          "es": "Academia de España en Roma"
+        }
       }
     },
     {
@@ -3945,7 +4588,12 @@
         "longitude": 12.4802374,
         "wikidata": "Q746102",
         "wikipedia": "it:Cloaca Massima",
-        "popularity": 37
+        "popularity": 37,
+        "names": {
+          "pt": "Cloaca Máxima",
+          "en": "Cloaca Maxima",
+          "es": "Cloaca Máxima"
+        }
       }
     },
     {
@@ -3969,7 +4617,11 @@
         "wikidata": "Q526381",
         "wikipedia": "ru:Григорианский Египетский музей",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Museu Gregoriano Egípcio",
+          "en": "Gregorian Egyptian Museum"
+        }
       }
     },
     {
@@ -3992,7 +4644,10 @@
         "longitude": 12.4246949,
         "wikidata": "Q3748523",
         "wikipedia": "it:Forte Braschi",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Forte Braschi"
+        }
       }
     },
     {
@@ -4016,7 +4671,11 @@
         "wikidata": "Q634691",
         "wikipedia": "de:Galerie der Landkarten",
         "fee": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Gallery of Maps",
+          "es": "Galería de los Mapas"
+        }
       }
     },
     {
@@ -4041,7 +4700,10 @@
         "phone": "+39 06 420421",
         "website": "https://www.istitutosvizzero.it/",
         "wikidata": "Q15820495",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Istituto Svizzero di Roma"
+        }
       }
     },
     {
@@ -4065,7 +4727,12 @@
         "wikidata": "Q463400",
         "wikipedia": "it:Piazza Navona",
         "wheelchair": "yes",
-        "popularity": 47
+        "popularity": 47,
+        "names": {
+          "pt": "Piazza Navona",
+          "en": "Piazza Navona",
+          "es": "Plaza Navona"
+        }
       }
     },
     {
@@ -4111,7 +4778,12 @@
         "longitude": 12.5173898,
         "wikidata": "Q831361",
         "wikipedia": "it:Mausoleo di Santa Costanza",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Santa Costanza",
+          "en": "Santa Costanza",
+          "es": "Mausoleo de Santa Constanza"
+        }
       }
     },
     {
@@ -4134,7 +4806,12 @@
         "longitude": 12.476792440625001,
         "wikidata": "Q1541068",
         "wikipedia": "it:Largo di Torre Argentina",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Largo di Torre Argentina",
+          "en": "largo di Torre Argentina",
+          "es": "Largo di Torre Argentina"
+        }
       }
     },
     {
@@ -4158,7 +4835,12 @@
         "address": "Via di Santa Balbina, 8, Roma",
         "wikidata": "Q2354657",
         "wikipedia": "it:Basilica di Santa Balbina all'Aventino",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Basílica de Santa Balbina",
+          "en": "Santa Balbina",
+          "es": "Santa Balbina"
+        }
       }
     },
     {
@@ -4181,7 +4863,12 @@
         "longitude": 12.4856936,
         "wikidata": "Q1729714",
         "wikipedia": "it:Basilica di San Saba",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "San Saba",
+          "en": "San Saba, Rome",
+          "es": "Basílica de San Saba"
+        }
       }
     },
     {
@@ -4204,7 +4891,12 @@
         "longitude": 12.4839341,
         "wikidata": "Q1229008",
         "wikipedia": "it:Chiesa della Trinità dei Monti",
-        "popularity": 32
+        "popularity": 32,
+        "names": {
+          "pt": "Trinità dei Monti",
+          "en": "Trinità dei Monti",
+          "es": "Trinità dei Monti"
+        }
       }
     },
     {
@@ -4227,7 +4919,12 @@
         "longitude": 12.4817904,
         "wikidata": "Q1785234",
         "wikipedia": "it:Chiesa di Santa Maria in Via",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Santa Maria in Via",
+          "en": "Santa Maria in Via",
+          "es": "Santa Maria in Via"
+        }
       }
     },
     {
@@ -4250,7 +4947,12 @@
         "longitude": 12.468991861290322,
         "wikidata": "Q266212",
         "wikipedia": "it:Oratorio dei Filippini",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Oratorio dei Filippini",
+          "en": "Oratory of Saint Phillip Neri",
+          "es": "Oratorio dei Filippini"
+        }
       }
     },
     {
@@ -4273,7 +4975,12 @@
         "longitude": 12.472607536,
         "wikidata": "Q2047593",
         "wikipedia": "it:Palazzo Pamphilj",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Palazzo Pamphilj",
+          "en": "Palazzo Pamphilj",
+          "es": "Palacio Pamphili"
+        }
       }
     },
     {
@@ -4297,7 +5004,12 @@
         "wikidata": "Q568194",
         "wikipedia": "en:Flaminio Obelisk",
         "wheelchair": "no",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Obelisco Flamínio",
+          "en": "Flaminio Obelisk",
+          "es": "Obelisco Flaminio"
+        }
       }
     },
     {
@@ -4320,7 +5032,12 @@
         "longitude": 12.466546181250001,
         "wikidata": "Q2517648",
         "wikipedia": "it:Palazzo Corsini alla Lungara",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Palazzo Corsini alla Lungara",
+          "en": "Palazzo Corsini",
+          "es": "Palacio Corsini"
+        }
       }
     },
     {
@@ -4343,7 +5060,12 @@
         "longitude": 12.47997897857143,
         "wikidata": "Q1241176",
         "wikipedia": "it:Foro Olitorio",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Fórum Holitório",
+          "en": "Forum Holitorium",
+          "es": "Foro Holitorio"
+        }
       }
     },
     {
@@ -4366,7 +5088,12 @@
         "longitude": 12.4875574,
         "wikidata": "Q5048892",
         "wikipedia": "en:Casino di Villa Boncompagni Ludovisi",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Casino di Villa Boncompagni Ludovisi",
+          "en": "Casino di Villa Boncompagni Ludovisi",
+          "es": "Casino de Villa Boncompagni Ludovisi"
+        }
       }
     },
     {
@@ -4389,7 +5116,11 @@
         "longitude": 12.4611796,
         "wikidata": "Q1627320",
         "wikipedia": "it:Chiesa di Sant'Onofrio al Gianicolo",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Sant'Onofrio al Gianicolo",
+          "en": "Sant'Onofrio"
+        }
       }
     },
     {
@@ -4413,7 +5144,11 @@
         "wikidata": "Q3699559",
         "wikipedia": "it:Cupola di San Pietro",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "St. Peter's Dome",
+          "es": "Cúpula de san Pedro"
+        }
       }
     },
     {
@@ -4436,7 +5171,12 @@
         "longitude": 12.503040791891891,
         "wikidata": "Q3927173",
         "wikipedia": "it:Quartiere Coppedè",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Quartiere Coppedè",
+          "en": "Quartiere Coppedè",
+          "es": "Quartiere Coppedè"
+        }
       }
     },
     {
@@ -4460,7 +5200,12 @@
         "wikidata": "Q1241207",
         "wikipedia": "it:Portico di Ottavia",
         "wheelchair": "limited",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Pórtico de Otávia",
+          "en": "Porticus Octaviae",
+          "es": "Pórtico de Octavia"
+        }
       }
     },
     {
@@ -4483,7 +5228,11 @@
         "longitude": 12.482116,
         "wikidata": "Q1805709",
         "wikipedia": "it:Palazzo Caffarelli al Campidoglio",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Palazzo Caffarelli al Campidoglio",
+          "en": "Palazzo Caffarelli"
+        }
       }
     },
     {
@@ -4506,7 +5255,12 @@
         "longitude": 12.4823001,
         "wikidata": "Q2249182",
         "wikipedia": "it:Insula dell'Ara Coeli",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Ínsula Romana",
+          "en": "Insula Romana",
+          "es": "insula romana en capitolio"
+        }
       }
     },
     {
@@ -4530,7 +5284,12 @@
         "wikidata": "Q1324617",
         "wikipedia": "it:Chiesa di Sant'Ivo alla Sapienza",
         "wheelchair": "no",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Sant'Ivo alla Sapienza",
+          "en": "Sant'Ivo alla Sapienza",
+          "es": "Sant'Ivo alla Sapienza"
+        }
       }
     },
     {
@@ -4554,7 +5313,11 @@
         "wikidata": "Q3005742",
         "wikipedia": "it:Crypta Balbi",
         "wheelchair": "limited",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Cripta de Balbo",
+          "en": "Crypta Balbi"
+        }
       }
     },
     {
@@ -4577,7 +5340,12 @@
         "longitude": 12.47149672142857,
         "wikidata": "Q2031943",
         "wikipedia": "it:Palazzo della Cancelleria",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Palazzo della Cancelleria",
+          "en": "Palazzo della Cancelleria",
+          "es": "Palacio de la Cancillería"
+        }
       }
     },
     {
@@ -4600,7 +5368,12 @@
         "longitude": 12.4843163,
         "wikidata": "Q616271",
         "wikipedia": "en:Basilica Julia",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Basílica Júlia",
+          "en": "Basilica Julia",
+          "es": "Basílica Julia"
+        }
       }
     },
     {
@@ -4623,7 +5396,12 @@
         "longitude": 12.485178,
         "wikidata": "Q1590891",
         "wikipedia": "en:House of Augustus",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Casa de Augusto",
+          "en": "House of Augustus",
+          "es": "Casa de Augusto"
+        }
       }
     },
     {
@@ -4647,7 +5425,12 @@
         "wikidata": "Q870476",
         "wikipedia": "it:Ponte Sant'Angelo",
         "wheelchair": "yes",
-        "popularity": 37
+        "popularity": 37,
+        "names": {
+          "pt": "Ponte do Santo Anjo",
+          "en": "Ponte Sant'Angelo",
+          "es": "puente de Sant’Angelo"
+        }
       }
     },
     {
@@ -4670,7 +5453,12 @@
         "longitude": 12.4537059,
         "wikidata": "Q1515307",
         "wikipedia": "it:Basilica di San Pancrazio",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Basílica de São Pancrácio",
+          "en": "San Pancrazio",
+          "es": "basílica de San Pancracio"
+        }
       }
     },
     {
@@ -4693,7 +5481,12 @@
         "longitude": 12.4814448,
         "wikidata": "Q1123879",
         "wikipedia": "it:Palazzo Venezia",
-        "popularity": 32
+        "popularity": 32,
+        "names": {
+          "pt": "Palácio Venezia",
+          "en": "Palazzo Venezia",
+          "es": "Palazzo Venezia"
+        }
       }
     },
     {
@@ -4717,7 +5510,12 @@
         "address": "Via delle Sette Chiese, 282, Roma",
         "wikidata": "Q287041",
         "wikipedia": "it:Catacombe di Domitilla",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Catacumba de Domitila",
+          "en": "Catacombs of Domitilla",
+          "es": "Catacumbas de Domitila"
+        }
       }
     },
     {
@@ -4740,7 +5538,12 @@
         "longitude": 12.495021646153845,
         "wikidata": "Q1232473",
         "wikipedia": "de:Ludus Magnus",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Ludus Magnus",
+          "en": "Ludus Magnus",
+          "es": "Ludus Magnus"
+        }
       }
     },
     {
@@ -4763,7 +5566,12 @@
         "longitude": 12.484423032000002,
         "wikidata": "Q1971299",
         "wikipedia": "it:Palazzo Colonna",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Palazzo Colonna",
+          "en": "Palazzo Colonna",
+          "es": "Palacio Colonna"
+        }
       }
     },
     {
@@ -4786,7 +5594,10 @@
         "longitude": 12.509510174999999,
         "wikidata": "Q2525547",
         "wikipedia": "it:Villa Alberoni Paganini",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Villa Paganini"
+        }
       }
     },
     {
@@ -4809,7 +5620,12 @@
         "longitude": 12.4755486,
         "wikidata": "Q623612",
         "wikipedia": "en:Ara Pacis",
-        "popularity": 41
+        "popularity": 41,
+        "names": {
+          "pt": "Ara Pacis",
+          "en": "Ara Pacis",
+          "es": "Ara Pacis"
+        }
       }
     },
     {
@@ -4834,7 +5650,12 @@
         "wikidata": "Q867329",
         "wikipedia": "it:Chiesa di San Carlo alle Quattro Fontane",
         "wheelchair": "no",
-        "popularity": 34
+        "popularity": 34,
+        "names": {
+          "pt": "San Carlo alle Quattro Fontane",
+          "en": "Saint Charles at the Four Fountains",
+          "es": "iglesia de San Carlo alle Quattro Fontane"
+        }
       }
     },
     {
@@ -4858,7 +5679,12 @@
         "address": "Via Gregoriana",
         "wikidata": "Q1277188",
         "wikipedia": "it:Palazzetto Zuccari",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Palazzetto Zuccari",
+          "en": "Palazzetto Zuccari",
+          "es": "Palacio Zuccari"
+        }
       }
     },
     {
@@ -4882,7 +5708,12 @@
         "wikidata": "Q1809794",
         "wikipedia": "it:Basilica di Sant'Andrea delle Fratte",
         "wheelchair": "yes",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Sant'Andrea delle Fratte",
+          "en": "Sant'Andrea delle Fratte",
+          "es": "Basílica de Sant'Andrea delle Fratte"
+        }
       }
     },
     {
@@ -4905,7 +5736,12 @@
         "longitude": 12.4642841,
         "wikidata": "Q1435809",
         "wikipedia": "it:Fontana dell'Acqua Paola",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Fontana dell'Acqua Paola",
+          "en": "Fontana dell'Acqua Paola",
+          "es": "Fuente Acqua Paola"
+        }
       }
     },
     {
@@ -4928,7 +5764,12 @@
         "longitude": 12.4663811,
         "wikidata": "Q12960184",
         "wikipedia": "it:Tempietto di San Pietro in Montorio",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Tempietto de Bramante",
+          "en": "Tempietto",
+          "es": "Templete de San Pietro in Montorio"
+        }
       }
     },
     {
@@ -4952,7 +5793,12 @@
         "wikidata": "Q1636696",
         "wikipedia": "it:Basilica di Sant'Agnese fuori le mura",
         "wheelchair": "limited",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "pt": "Basílica de Santa Inês fora dos Muros",
+          "en": "Sant'Agnese fuori le mura",
+          "es": "basílica de Santa Inés Extramuros"
+        }
       }
     },
     {
@@ -4975,7 +5821,10 @@
         "longitude": 12.481006287500001,
         "wikidata": "Q55833241",
         "wikipedia": "it:Palazzetto Venezia",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Palazzetto Venezia"
+        }
       }
     },
     {
@@ -4998,7 +5847,12 @@
         "longitude": 12.483559445161289,
         "wikidata": "Q927092",
         "wikipedia": "it:Palazzo Senatorio",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Palazzo Senatorio",
+          "en": "Palazzo Senatorio",
+          "es": "Palazzo Senatorio"
+        }
       }
     },
     {
@@ -5021,7 +5875,11 @@
         "longitude": 12.5206835,
         "wikidata": "Q3671455",
         "wikipedia": "it:Chiesa di San Nicola a Capo di Bove",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "San Nicola a Capo di Bove",
+          "es": "ruina de la iglesia de San Nicola a Capo di Bove"
+        }
       }
     },
     {
@@ -5045,7 +5903,12 @@
         "address": "Via Ventiquattro Maggio, 43, Roma",
         "wikidata": "Q1817132",
         "wikipedia": "it:Palazzo Pallavicini Rospigliosi",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Palazzo Pallavicini Rospigliosi",
+          "en": "Palazzo Pallavicini-Rospigliosi",
+          "es": "Palacio Pallavicini-Rospigliosi"
+        }
       }
     },
     {
@@ -5091,7 +5954,11 @@
         "longitude": 12.5169713,
         "wikidata": "Q62622219",
         "wikipedia": "it:Sepolcro di largo Talamo",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Sepulcro do Largo Talamo",
+          "en": "Sepolcro di Largo Talamo"
+        }
       }
     },
     {
@@ -5114,7 +5981,12 @@
         "longitude": 12.5166245,
         "wikidata": "Q2887175",
         "wikipedia": "en:Porta Maggiore Basilica",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Basílica subterrânea de Porta Maggiore",
+          "en": "Underground basilica of Porta Maggiore",
+          "es": "Basílica subterránea de Porta Maggiore"
+        }
       }
     },
     {
@@ -5137,7 +6009,10 @@
         "longitude": 12.4984408,
         "wikidata": "Q1540900",
         "wikipedia": "de:Grabmal des Quintus Sulpicius Maximus",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Tomb of Quintus Sulpicius Maximus"
+        }
       }
     },
     {
@@ -5160,7 +6035,12 @@
         "longitude": 12.47982511724138,
         "wikidata": "Q592244",
         "wikipedia": "it:Basilica di Santa Sabina",
-        "popularity": 35
+        "popularity": 35,
+        "names": {
+          "pt": "Basílica de Santa Sabina",
+          "en": "Basilica of Saint Sabina",
+          "es": "basílica de Santa Sabina"
+        }
       }
     },
     {
@@ -5183,7 +6063,12 @@
         "longitude": 12.484462063636363,
         "wikidata": "Q1266234",
         "wikipedia": "it:Basilica Ulpia",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Basílica Úlpia",
+          "en": "Basilica Ulpia",
+          "es": "Basílica Ulpia"
+        }
       }
     },
     {
@@ -5207,7 +6092,11 @@
         "address": "Piazza del Grillo, 1, Roma",
         "wikidata": "Q3661197",
         "wikipedia": "it:Casa dei Cavalieri di Rodi",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Casa dos Cavaleiros de Rodes",
+          "en": "Casa dei Cavalieri di Rodi"
+        }
       }
     },
     {
@@ -5230,7 +6119,12 @@
         "longitude": 12.486679500000001,
         "wikidata": "Q2547165",
         "wikipedia": "it:Torre delle Milizie",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Torre delle Milizie",
+          "en": "Torre delle Milizie",
+          "es": "Torre de la Milicia"
+        }
       }
     },
     {
@@ -5253,7 +6147,12 @@
         "longitude": 12.485992353846148,
         "wikidata": "Q478642",
         "wikipedia": "it:Mercati di Traiano",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Mercado de Trajano",
+          "en": "Trajan's Market",
+          "es": "Mercado de Trajano"
+        }
       }
     },
     {
@@ -5276,7 +6175,12 @@
         "longitude": 12.490671661904761,
         "wikidata": "Q1924755",
         "wikipedia": "it:Meta Sudans",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Meta Sudans",
+          "en": "Meta Sudans",
+          "es": "Meta Sudans"
+        }
       }
     },
     {
@@ -5300,7 +6204,10 @@
         "website": "https://www.mdbr.it/",
         "wikidata": "Q55377956",
         "fee": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Explora"
+        }
       }
     },
     {
@@ -5325,7 +6232,10 @@
         "website": "https://www.museozecca.ipzs.it/",
         "wikidata": "Q3868432",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Italian Mint Museum"
+        }
       }
     },
     {
@@ -5348,7 +6258,10 @@
         "longitude": 12.5112865,
         "website": "https://www.museivillatorlonia.it/it/casino_nobile/museo_della_scuola_romana",
         "wikidata": "Q113512603",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Museo della Scuola Romana"
+        }
       }
     },
     {
@@ -5372,7 +6285,11 @@
         "longitude": 12.47841,
         "wikidata": "Q123752976",
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Aventine Keyhole",
+          "es": "El hueco en la puerta"
+        }
       }
     },
     {
@@ -5448,7 +6365,10 @@
         "longitude": 12.4742019,
         "wikidata": "Q76941085",
         "wheelchair": "limited",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Fountain (Fontana dei Libri)"
+        }
       }
     },
     {
@@ -5471,7 +6391,10 @@
         "longitude": 12.4615365,
         "wikidata": "Q72686034",
         "wheelchair": "limited",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Cannone di Mezzogiorno"
+        }
       }
     },
     {
@@ -5493,7 +6416,11 @@
         "latitude": 41.9027071,
         "longitude": 12.4561851,
         "wikidata": "Q16605485",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Porta de Bronze",
+          "en": "Bronze door of the Apostolic Palace"
+        }
       }
     },
     {
@@ -5515,7 +6442,10 @@
         "latitude": 41.90157,
         "longitude": 12.4814682,
         "wikidata": "Q76972137",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Fountain (Miracle Water)"
+        }
       }
     },
     {
@@ -5537,7 +6467,10 @@
         "latitude": 41.9104635,
         "longitude": 12.4919168,
         "wikidata": "Q76974269",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Fountain (Font Ludovisi)"
+        }
       }
     },
     {
@@ -5640,7 +6573,10 @@
         "longitude": 12.4550732,
         "wikidata": "Q1452723",
         "fee": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Museo Chiaramonti"
+        }
       }
     },
     {
@@ -5663,7 +6599,11 @@
         "longitude": 12.4545808,
         "wikidata": "Q1439912",
         "fee": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Museu Pio-Clementino",
+          "en": "Pio-Clementino museum"
+        }
       }
     },
     {
@@ -5685,7 +6625,10 @@
         "latitude": 41.8886452,
         "longitude": 12.4710262,
         "wikidata": "Q99726663",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Fontana della Botte"
+        }
       }
     },
     {
@@ -5707,7 +6650,10 @@
         "latitude": 41.8759809,
         "longitude": 12.4798899,
         "wikidata": "Q126685447",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Grave of Percy Bysshe Shelley"
+        }
       }
     },
     {
@@ -5729,7 +6675,10 @@
         "latitude": 41.877061,
         "longitude": 12.480411,
         "wikidata": "Q126685444",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Grave of John Keats"
+        }
       }
     },
     {
@@ -5805,7 +6754,10 @@
         "longitude": 12.460454637288134,
         "address": "Lungotevere della Vittoria, Roma",
         "wikidata": "Q1674867",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Historical and Cultural Institute of the Engineer Corps"
+        }
       }
     },
     {
@@ -5827,7 +6779,12 @@
         "latitude": 41.90095523414634,
         "longitude": 12.462171395121949,
         "wikidata": "Q3621743",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Arcispedale di Santo Spirito",
+          "en": "ospedale di Santo Spirito in Sassia",
+          "es": "Arcispedale di Santo Spirito"
+        }
       }
     },
     {
@@ -5849,7 +6806,11 @@
         "latitude": 41.90277038,
         "longitude": 12.461178220000003,
         "wikidata": "Q3889821",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Palazzo Giraud Torlonia",
+          "en": "Palazzo Castellesi"
+        }
       }
     },
     {
@@ -5872,7 +6833,11 @@
         "longitude": 12.482161,
         "wikidata": "Q122231765",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Marcus Aurelius Exedra",
+          "es": "Exedra de Marco Aurelio"
+        }
       }
     },
     {
@@ -5941,7 +6906,10 @@
         "latitude": 41.909586,
         "longitude": 12.5017365,
         "wikidata": "Q56256393",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Monument to the Bersagliere"
+        }
       }
     },
     {
@@ -6797,7 +7765,11 @@
         "website": "https://www.vatican.va/various/basiliche/san_pietro/it/cupola/orari.htm",
         "wikidata": "Q3699559",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "St. Peter's Dome",
+          "es": "Cúpula de san Pedro"
+        }
       }
     },
     {
@@ -7292,7 +8264,12 @@
         "wikidata": "Q729490",
         "wikipedia": "it:Bocca della Verità",
         "wheelchair": "limited",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Bocca della Verità",
+          "en": "Bocca della Verità",
+          "es": "Bocca della Verità"
+        }
       }
     },
     {
@@ -7315,7 +8292,12 @@
         "longitude": 12.4934024,
         "wikidata": "Q1989744",
         "wikipedia": "it:Mosè (Michelangelo)",
-        "popularity": 34
+        "popularity": 34,
+        "names": {
+          "pt": "Moisés",
+          "en": "Moses",
+          "es": "Moisés de Miguel Ángel"
+        }
       }
     },
     {
@@ -7338,7 +8320,12 @@
         "longitude": 12.4813123,
         "wikidata": "Q1115154",
         "wikipedia": "it:Madama Lucrezia",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Madama Lucrezia",
+          "en": "Madama Lucrezia",
+          "es": "Madama Lucrezia"
+        }
       }
     },
     {
@@ -7361,7 +8348,12 @@
         "longitude": 12.4836522,
         "wikidata": "Q408623",
         "wikipedia": "en:Capitoline Wolf",
-        "popularity": 43
+        "popularity": 43,
+        "names": {
+          "pt": "Lupa Capitolina",
+          "en": "Capitoline Wolf",
+          "es": "Loba capitolina"
+        }
       }
     },
     {
@@ -7384,7 +8376,12 @@
         "longitude": 12.4822817,
         "wikidata": "Q907387",
         "wikipedia": "en:Equestrian Statue of Marcus Aurelius",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Estátua equestre de Marco Aurélio",
+          "en": "equestrian statue of Marcus Aurelius",
+          "es": "Estatua ecuestre de Marco Aurelio"
+        }
       }
     },
     {
@@ -7408,7 +8405,12 @@
         "wikidata": "Q192784",
         "wikipedia": "it:Colonna Traiana",
         "wheelchair": "limited",
-        "popularity": 56
+        "popularity": 56,
+        "names": {
+          "pt": "Coluna de Trajano",
+          "en": "Trajan's Column",
+          "es": "Columna de Trajano"
+        }
       }
     },
     {
@@ -7431,7 +8433,11 @@
         "longitude": 12.4545558,
         "wikidata": "Q8564279",
         "wikipedia": "it:Pignone",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Fontana della Pigna",
+          "es": "Piñón"
+        }
       }
     },
     {
@@ -7453,7 +8459,10 @@
         "longitude": 12.482325,
         "wikidata": "Q105989516",
         "wikipedia": "it:Monumento a Cola di Rienzo",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Monument to Cola di Rienzo"
+        }
       }
     },
     {
@@ -7475,7 +8484,12 @@
         "longitude": 12.4746326,
         "wikidata": "Q3603141",
         "wikipedia": "it:Abate Luigi",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Abate Luigi",
+          "en": "Abbot Luigi",
+          "es": "Abate Luigi"
+        }
       }
     },
     {
@@ -7497,7 +8511,12 @@
         "longitude": 12.4545797,
         "wikidata": "Q235242",
         "wikipedia": "it:Pietà vaticana",
-        "popularity": 56
+        "popularity": 56,
+        "names": {
+          "pt": "Pietà",
+          "en": "Pietà (Michelangelo)",
+          "es": "La Piedad"
+        }
       }
     },
     {
@@ -7519,7 +8538,10 @@
         "longitude": 12.4863436,
         "wikidata": "Q1534099",
         "wikipedia": "de:Goethe-Denkmal (Rom)",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Goethe monument in Rome"
+        }
       }
     },
     {
@@ -7541,7 +8563,10 @@
         "longitude": 12.4799265,
         "wikidata": "Q116029788",
         "wikipedia": "en:Monument to the Cairoli Brothers",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Monument to the Cairoli Brothers"
+        }
       }
     },
     {
@@ -7563,7 +8588,12 @@
         "longitude": 12.482954922222222,
         "wikidata": "Q429103",
         "wikipedia": "it:Colonna dell'Immacolata (Roma)",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Coluna da Imaculada Conceição",
+          "en": "Column of the Immaculate Conception",
+          "es": "Columna de la Inmaculada Concepción"
+        }
       }
     },
     {
@@ -7585,7 +8615,10 @@
         "longitude": 12.4890107,
         "wikidata": "Q21141670",
         "wikipedia": "it:Monumento a Umberto I (Roma)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Equestrian statue of Umberto I"
+        }
       }
     },
     {
@@ -7607,7 +8640,10 @@
         "longitude": 12.4843193,
         "wikidata": "Q16579818",
         "wikipedia": "it:Monumento a Giuseppe Mazzini (Roma)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Monument to Giuseppe Mazzini"
+        }
       }
     },
     {
@@ -7629,7 +8665,12 @@
         "longitude": 12.4571375,
         "wikidata": "Q81644885",
         "wikipedia": "en:Angels Unawares",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Anjos inconscientes",
+          "en": "Angels Unawares",
+          "es": "Angels Unawares"
+        }
       }
     },
     {
@@ -7674,7 +8715,10 @@
         "latitude": 41.8931218,
         "longitude": 12.4833077,
         "wikidata": "Q125809209",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Dea Roma, Fountain in Piazza del Campidoglio"
+        }
       }
     },
     {
@@ -7696,7 +8740,10 @@
         "latitude": 41.8935932,
         "longitude": 12.4826774,
         "wikidata": "Q126182518",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Trofei di Mario"
+        }
       }
     },
     {
@@ -7718,7 +8765,10 @@
         "latitude": 41.892044,
         "longitude": 12.4815202,
         "wikidata": "Q126198299",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Colossal Statue of Constantine the Great"
+        }
       }
     },
     {
@@ -7739,7 +8789,10 @@
         "latitude": 41.914978,
         "longitude": 12.4829118,
         "wikidata": "Q76975683",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Fountain (Esculapio)"
+        }
       }
     },
     {
@@ -7760,7 +8813,10 @@
         "latitude": 41.886442120000005,
         "longitude": 12.509611539999998,
         "wikidata": "Q112045393",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Monument to Saint Francis of Assisi"
+        }
       }
     },
     {
@@ -7782,7 +8838,10 @@
         "longitude": 12.458596309999997,
         "address": "Piazzale della Farnesina, Roma",
         "wikidata": "Q56605086",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Sfera grande"
+        }
       }
     },
     {
@@ -7803,7 +8862,11 @@
         "latitude": 41.879833739999995,
         "longitude": 12.48297944,
         "wikidata": "Q13043055",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Monument to Scanderbeg",
+          "es": "monumento a Skanderbeg"
+        }
       }
     },
     {
@@ -7824,7 +8887,10 @@
         "latitude": 41.89319226,
         "longitude": 12.483381040000001,
         "wikidata": "Q125809210",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Nile, Fountain in Piazza del Campidoglio"
+        }
       }
     },
     {
@@ -7852,7 +8918,12 @@
         "website": "https://www.villadimassenzio.it/it/museo/editoriale",
         "wikidata": "Q2363459",
         "wikipedia": "it:Villa di Massenzio",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Villa de Magêncio",
+          "en": "Villa Maxentii",
+          "es": "Villa de Majencio"
+        }
       }
     },
     {
@@ -7879,7 +8950,12 @@
         "website": "https://www.agostiniani.it/comunita-agostiniane-provincia/parrocchia-santa-maria-popolo/",
         "wikidata": "Q869513",
         "wikipedia": "en:Santa Maria del Popolo",
-        "popularity": 35
+        "popularity": 35,
+        "names": {
+          "pt": "Santa Maria del Popolo",
+          "en": "Santa Maria del Popolo",
+          "es": "basílica de Santa María del Popolo"
+        }
       }
     },
     {
@@ -7907,7 +8983,12 @@
         "wikidata": "Q1354667",
         "wikipedia": "it:Chiesa di Sant'Andrea al Quirinale",
         "wheelchair": "no",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Igreja de Santo André no Quirinal",
+          "en": "Sant'Andrea al Quirinale",
+          "es": "iglesia de San Andrés del Quirinal"
+        }
       }
     },
     {
@@ -7932,7 +9013,11 @@
         "website": "http://www.catacombeditalia.va/content/archeologiasacra/it/visita-catacombe/per-regione/roma/catacomba-di-commodilla.html",
         "wikidata": "Q3663192",
         "wikipedia": "it:Catacombe di Commodilla",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Catacumba de Comodila",
+          "en": "Catacomb of Commodilla"
+        }
       }
     },
     {
@@ -7957,7 +9042,11 @@
         "website": "https://www.soprintendenzaspecialeroma.it/schede/mitreo-barberini_2980/",
         "wikidata": "Q3859475",
         "wikipedia": "it:Mitreo Barberini",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Mitreu Barberini",
+          "en": "Palazzo Barberini Mithraeum"
+        }
       }
     },
     {
@@ -7985,7 +9074,11 @@
         "wikidata": "Q3955654",
         "wikipedia": "en:Tomb of Priscilla",
         "wheelchair": "limited",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Sepulcro de Priscila",
+          "en": "Tomb of Priscilla"
+        }
       }
     },
     {
@@ -8011,7 +9104,10 @@
         "website": "http://www.harrysbar.it/",
         "wikidata": "Q5666672",
         "wikipedia": "en:Harry's Bar (Rome)",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Harry's Bar"
+        }
       }
     },
     {
@@ -8038,7 +9134,11 @@
         "wikidata": "Q55678763",
         "wikipedia": "it:Fonte di Anna Perenna",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Fonte de Ana Perena",
+          "en": "Fonte di Anna Perenna"
+        }
       }
     },
     {
@@ -8063,7 +9163,12 @@
         "website": "http://archeoroma.beniculturali.it/en/archaeological-site/adriano-s-auditoria",
         "wikidata": "Q755454",
         "wikipedia": "en:Athenaeum (ancient Rome)",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Ateneu",
+          "en": "Athenaeum",
+          "es": "Ateneo"
+        }
       }
     },
     {
@@ -8088,7 +9193,11 @@
         "phone": "+39 06 5136742",
         "wikidata": "Q638761",
         "wikipedia": "de:Ardeatinische Höhlen",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "en": "Ardeatine massacre",
+          "es": "Masacre de las Fosas Ardeatinas"
+        }
       }
     },
     {
@@ -8114,7 +9223,11 @@
         "website": "http://parrocchiasantateresadavila.it/contattaci/index.html",
         "wikidata": "Q2615449",
         "wikipedia": "it:Basilica di Santa Teresa d'Avila",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Santa Teresa al Corso d'Italia",
+          "en": "Santa Teresa"
+        }
       }
     },
     {
@@ -8139,7 +9252,12 @@
         "website": "https://www.villadimassenzio.it/",
         "wikidata": "Q2363459",
         "wikipedia": "it:Villa di Massenzio",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Villa de Magêncio",
+          "en": "Villa Maxentii",
+          "es": "Villa de Majencio"
+        }
       }
     },
     {
@@ -8164,7 +9282,12 @@
         "website": "https://www.info.roma.it/monumenti_dettaglio.asp?ID_schede=538",
         "wikidata": "Q1570519",
         "wikipedia": "en:Colossus of Nero",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "pt": "Colosso de Nero",
+          "en": "Colossus of Nero",
+          "es": "Coloso de Nerón"
+        }
       }
     },
     {
@@ -8189,7 +9312,11 @@
         "website": "https://www.060608.it/en/cultura-e-svago/beni-culturali/beni-archeologici/ipogeo-di-trebio-giusto.html",
         "wikidata": "Q3801610",
         "wikipedia": "it:Ipogeo di Trebio Giusto",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Hipogeu de Trébio Justo",
+          "en": "Hypogeum of Trebius Giustus"
+        }
       }
     },
     {
@@ -8213,7 +9340,10 @@
         "website": "http://archeoroma.beniculturali.it/en/node/148",
         "wikidata": "Q3959538",
         "wikipedia": "it:Basiliche civili antiche di Roma",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ancient civil basilicas of Rome"
+        }
       }
     },
     {
@@ -8237,7 +9367,11 @@
         "website": "https://www.sovraintendenzaroma.it/i_luoghi/roma_antica/monumenti/ipogeo_di_via_livenza",
         "wikidata": "Q3801615",
         "wikipedia": "it:Ipogeo di via Livenza",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Hipogeu da Via Livenza",
+          "en": "Hypogeum of via Livenza"
+        }
       }
     },
     {
@@ -8262,7 +9396,11 @@
         "website": "https://www.sovraintendenzaroma.it/i_luoghi/roma_antica/monumenti/colombari_di_via_taranto",
         "wikidata": "Q30889215",
         "wikipedia": "it:Colombari di Via Pescara",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Columbários da Via Pescara",
+          "en": "Via Pescara columbaria"
+        }
       }
     },
     {
@@ -8286,7 +9424,12 @@
         "website": "https://colosseo.it/area/domus-aurea/",
         "wikidata": "Q622438",
         "wikipedia": "it:Domus Aurea",
-        "popularity": 37
+        "popularity": 37,
+        "names": {
+          "pt": "Casa Dourada",
+          "en": "Domus Aurea",
+          "es": "Domus Aurea"
+        }
       }
     },
     {
@@ -8311,7 +9454,11 @@
         "website": "https://www.sovraintendenzaroma.it/i_luoghi/roma_antica/monumenti/annia_regilla_sant_urbano",
         "wikidata": "Q3672882",
         "wikipedia": "it:Chiesa di Sant'Urbano alla Caffarella",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Church of Sant'Urbano alla Caffarella",
+          "es": "Iglesia de San Urbano alla Caffarella"
+        }
       }
     },
     {
@@ -8335,7 +9482,12 @@
         "opening_hours": "10:00-19:00",
         "wikidata": "Q934416",
         "wikipedia": "it:Chiesa di Santa Maria dei Miracoli (Roma)",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Santa Maria dei Miracoli",
+          "en": "Santa Maria dei Miracoli",
+          "es": "iglesia de Santa Maria dei Miracoli (Roma)"
+        }
       }
     },
     {
@@ -8360,7 +9512,11 @@
         "opening_hours": "Mo-Sa 07:30-08:30,16:30-19:00; Su 10:00-12:30",
         "wikidata": "Q3585446",
         "wikipedia": "it:Chiesa dei Santi Vito e Modesto (Roma)",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Santi Vito e Modesto",
+          "en": "Santi Vito, Modesto e Crescenzia"
+        }
       }
     },
     {
@@ -8384,7 +9540,11 @@
         "opening_hours": "Oct-Jun Mo-Sa 07:45-12:00,17:00-19:00; Oct-Jun Su 08:00-12:30; Jul-Sep Mo-Sa 07:45-12:00,17:00-19:00; Jul-Sep Su 08:00-12:00",
         "wikidata": "Q3585396",
         "wikipedia": "it:Basilica di Sant'Antonio da Padova all'Esquilino",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Sant'Antonio da Padova all'Esquilino",
+          "en": "Sant'Antonio da Padova in Via Merulana"
+        }
       }
     },
     {
@@ -8408,7 +9568,11 @@
         "website": "http://www.viaappiaantica.com/2014/04/09/sepolcro-di-geta/",
         "wikidata": "Q19545588",
         "wikipedia": "it:Tomba di Geta",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Sepulcro de Geta",
+          "en": "Tomb of Geta"
+        }
       }
     },
     {
@@ -8433,7 +9597,11 @@
         "wikidata": "Q1479910",
         "wikipedia": "it:Basilica di San Marco Evangelista al Campidoglio",
         "wheelchair": "limited",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "San Marco Evangelista al Campidoglio",
+          "en": "Basilica of St. Mark the Evangelist"
+        }
       }
     },
     {
@@ -8457,7 +9625,11 @@
         "website": "https://www.sovraintendenzaroma.it/i_luoghi/roma_antica/monumenti/mausoleo_di_lucilio_peto",
         "wikidata": "Q27808180",
         "wikipedia": "it:Mausoleo di Lucilio Peto",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Mausoléu de Lucílio Peto",
+          "en": "Mausoleum of Lucilius Paetus"
+        }
       }
     },
     {
@@ -8481,7 +9653,12 @@
         "website": "http://www.horti-sallustiani.it",
         "wikidata": "Q1241278",
         "wikipedia": "it:Horti Sallustiani",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Jardins de Salústio",
+          "en": "Gardens of Sallust",
+          "es": "Jardines de Salustio"
+        }
       }
     },
     {
@@ -8505,7 +9682,12 @@
         "website": "http://archeoroma.beniculturali.it/en/node/457",
         "wikidata": "Q1540920",
         "wikipedia": "en:Tomb of Caecilia Metella",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Túmulo de Cecília Metela",
+          "en": "Tomb of Caecilia Metella",
+          "es": "tumba de Cecilia Metela"
+        }
       }
     },
     {
@@ -8530,7 +9712,12 @@
         "wikidata": "Q3053354",
         "wikipedia": "it:Emporium",
         "wheelchair": "no",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Empório",
+          "en": "Emporium",
+          "es": "Emporium"
+        }
       }
     },
     {
@@ -8554,7 +9741,12 @@
         "opening_hours": "Mo-Sa 07:30-18:30; Su 09:00-18:30",
         "wikidata": "Q727508",
         "wikipedia": "it:Chiesa di Santa Caterina a Magnanapoli",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Santa Caterina a Magnanapoli",
+          "en": "Santa Caterina a Magnanapoli",
+          "es": "Santa Caterina a Magnanapoli"
+        }
       }
     },
     {
@@ -8578,7 +9770,12 @@
         "longitude": 12.4775597,
         "wikidata": "Q826635",
         "wikipedia": "it:Obelisco della Minerva",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Obelisco do Elefante",
+          "en": "Elephant and Obelisk",
+          "es": "Obelisco de la Piazza della Minerva"
+        }
       }
     },
     {
@@ -8602,7 +9799,12 @@
         "longitude": 12.5150843,
         "wikidata": "Q475012",
         "wikipedia": "it:Anfiteatro castrense",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Anfiteatro Castrense",
+          "en": "Amphitheatrum Castrense",
+          "es": "Anfiteatro Castrense"
+        }
       }
     },
     {
@@ -8627,7 +9829,11 @@
         "address": "Via Luigi Luzzatti, Roma",
         "wikidata": "Q3801606",
         "wikipedia": "it:Ipogeo degli Aureli",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Hipogeu dos Aurélios",
+          "en": "Hypogeum of the Aurelii"
+        }
       }
     },
     {
@@ -8652,7 +9858,11 @@
         "address": "Via Latina, 258, Roma",
         "wikidata": "Q3801614",
         "wikipedia": "it:Ipogeo di via Dino Compagni",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Hipogeu da Via Dino Compagni",
+          "en": "Hypogeum of via Dino Compagni"
+        }
       }
     },
     {
@@ -8676,7 +9886,12 @@
         "longitude": 12.5058244,
         "wikidata": "Q1777094",
         "wikipedia": "it:Horti Lamiani",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Jardins Lamianos",
+          "en": "Horti Lamiani",
+          "es": "Jardines de Lamia"
+        }
       }
     },
     {
@@ -8700,7 +9915,12 @@
         "longitude": 12.4809718,
         "wikidata": "Q283650",
         "wikipedia": "it:Foro Boario",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Fórum Boário",
+          "en": "Forum Boarium",
+          "es": "Foro Boario"
+        }
       }
     },
     {
@@ -8724,7 +9944,12 @@
         "longitude": 12.4882443,
         "wikidata": "Q625149",
         "wikipedia": "it:Mura Aureliane",
-        "popularity": 48
+        "popularity": 48,
+        "names": {
+          "pt": "Muralha Aureliana",
+          "en": "Aurelian Walls",
+          "es": "Murallas aurelianas"
+        }
       }
     },
     {
@@ -8748,7 +9973,12 @@
         "longitude": 12.4848592,
         "wikidata": "Q162353",
         "wikipedia": "en:Arch of Septimius Severus",
-        "popularity": 38
+        "popularity": 38,
+        "names": {
+          "pt": "Arco de Sétimo Severo",
+          "en": "Arch of Septimius Severus (Roman Forum)",
+          "es": "Arco de Septimio Severo"
+        }
       }
     },
     {
@@ -8772,7 +10002,12 @@
         "longitude": 12.486623799999998,
         "wikidata": "Q752555",
         "wikipedia": "it:Tempio di Antonino e Faustina",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Templo de Antonino e Faustina",
+          "en": "Temple of Antoninus and Faustina",
+          "es": "Templo de Antonino y Faustina"
+        }
       }
     },
     {
@@ -8796,7 +10031,12 @@
         "longitude": 12.5011137,
         "wikidata": "Q281330",
         "wikipedia": "it:Mura serviane",
-        "popularity": 37
+        "popularity": 37,
+        "names": {
+          "pt": "Muralha Serviana",
+          "en": "Servian Wall",
+          "es": "Murallas servianas"
+        }
       }
     },
     {
@@ -8820,7 +10060,12 @@
         "longitude": 12.4517751,
         "wikidata": "Q1166213",
         "wikipedia": "it:Chiesa di Santo Stefano degli Abissini",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Santo Stefano degli Abissini",
+          "en": "St Stephen of the Abyssinians",
+          "es": "iglesia de San Esteban de los abisinios"
+        }
       }
     },
     {
@@ -8844,7 +10089,12 @@
         "longitude": 12.4848943,
         "wikidata": "Q369075",
         "wikipedia": "it:Colonna di Foca",
-        "popularity": 36
+        "popularity": 36,
+        "names": {
+          "pt": "Coluna de Focas",
+          "en": "Column of Phocas",
+          "es": "Columna de Focas"
+        }
       }
     },
     {
@@ -8868,7 +10118,12 @@
         "longitude": 12.4858844,
         "wikidata": "Q1133288",
         "wikipedia": "it:Tempio del Divo Giulio",
-        "popularity": 31
+        "popularity": 31,
+        "names": {
+          "pt": "Templo de César",
+          "en": "Temple of Caesar",
+          "es": "Templo de César"
+        }
       }
     },
     {
@@ -8892,7 +10147,12 @@
         "longitude": 12.483857768750001,
         "wikidata": "Q731284",
         "wikipedia": "it:Tempio di Vespasiano",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Templo de Vespasiano e Tito",
+          "en": "Temple of Vespasian and Titus",
+          "es": "Templo de Vespasiano y Tito"
+        }
       }
     },
     {
@@ -8917,7 +10177,12 @@
         "address": "Via dell'Arco di Travertino, 151, Roma",
         "wikidata": "Q3895465",
         "wikipedia": "it:Parco archeologico delle Tombe di via Latina",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Tumbas da Via Latina",
+          "en": "Tombs of Via Latina",
+          "es": "parque arqueológico de las tumbas de la Vía Latina"
+        }
       }
     },
     {
@@ -8941,7 +10206,11 @@
         "longitude": 12.4794012,
         "wikidata": "Q582353",
         "wikipedia": "it:Tempio di Apollo Sosiano",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Templo de Apolo Sosiano",
+          "en": "Temple of Apollo Sosianus"
+        }
       }
     },
     {
@@ -8965,7 +10234,12 @@
         "longitude": 12.4799774,
         "wikidata": "Q265384",
         "wikipedia": "it:Colonna di Marco Aurelio",
-        "popularity": 39
+        "popularity": 39,
+        "names": {
+          "pt": "Coluna Antonina",
+          "en": "Column of Marcus Aurelius",
+          "es": "Columna de Marco Aurelio"
+        }
       }
     },
     {
@@ -8989,7 +10263,12 @@
         "longitude": 12.4939551,
         "wikidata": "Q599035",
         "wikipedia": "it:Terme di Traiano",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Termas de Trajano",
+          "en": "Baths of Trajan",
+          "es": "Termas de Trajano"
+        }
       }
     },
     {
@@ -9015,7 +10294,12 @@
         "wikidata": "Q2984560",
         "wikipedia": "en:Columbarium of Pomponius Hylas",
         "wheelchair": "no",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Columbário de Pompônio Hilas",
+          "en": "Columbarium of Pomponius Hylas",
+          "es": "columbario de Pomponio Hilas"
+        }
       }
     },
     {
@@ -9040,7 +10324,12 @@
         "phone": "+39 06 0608",
         "wikidata": "Q1540716",
         "wikipedia": "en:Tomb of the Scipios",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Túmulo dos Cipiões",
+          "en": "Tomb of the Scipios",
+          "es": "Tumba de los Escipiones"
+        }
       }
     },
     {
@@ -9088,7 +10377,12 @@
         "longitude": 12.4786835,
         "wikidata": "Q740755",
         "wikipedia": "it:Obelisco di Montecitorio",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Obelisco de Montecitório",
+          "en": "Obelisk of Montecitorio",
+          "es": "Obelisco de Montecitorio"
+        }
       }
     },
     {
@@ -9112,7 +10406,12 @@
         "longitude": 12.4572799,
         "wikidata": "Q1444766",
         "wikipedia": "it:Obelisco Vaticano",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Obelisco do Vaticano",
+          "en": "Vatican obelisk",
+          "es": "Obelisco Vaticano"
+        }
       }
     },
     {
@@ -9137,7 +10436,12 @@
         "wikidata": "Q207808",
         "wikipedia": "it:Circo Massimo",
         "wheelchair": "limited",
-        "popularity": 52
+        "popularity": 52,
+        "names": {
+          "pt": "Circo Máximo",
+          "en": "Circus Maximus",
+          "es": "Circo Máximo"
+        }
       }
     },
     {
@@ -9161,7 +10465,12 @@
         "longitude": 12.487171059375,
         "wikidata": "Q338397",
         "wikipedia": "it:Tempio del Divo Romolo",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Templo de Rómulo e Remo",
+          "en": "Temple of Romulus",
+          "es": "Templo de Rómulo"
+        }
       }
     },
     {
@@ -9185,7 +10494,12 @@
         "longitude": 12.488208722535209,
         "wikidata": "Q371921",
         "wikipedia": "en:Basilica of Maxentius",
-        "popularity": 33
+        "popularity": 33,
+        "names": {
+          "pt": "Basílica de Maxêncio",
+          "en": "Basilica of Maxentius",
+          "es": "Basílica de Majencio"
+        }
       }
     },
     {
@@ -9209,7 +10523,12 @@
         "longitude": 12.485404571428573,
         "wikidata": "Q1144514",
         "wikipedia": "en:Curia Julia",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Cúria Júlia",
+          "en": "Curia Julia",
+          "es": "Curia Julia"
+        }
       }
     },
     {
@@ -9233,7 +10552,12 @@
         "longitude": 12.484813911111113,
         "wikidata": "Q2459870",
         "wikipedia": "en:Temple of Venus Genetrix",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Templo de Vénus Genetrix",
+          "en": "Temple of Venus Genetrix",
+          "es": "Templo de Venus Genetrix"
+        }
       }
     },
     {
@@ -9257,7 +10581,12 @@
         "longitude": 12.48620083125,
         "wikidata": "Q753791",
         "wikipedia": "en:Temple of Vesta",
-        "popularity": 40
+        "popularity": 40,
+        "names": {
+          "pt": "Templo de Vesta",
+          "en": "Temple of Vesta",
+          "es": "templo de Vesta"
+        }
       }
     },
     {
@@ -9281,7 +10610,12 @@
         "longitude": 12.486603977777778,
         "wikidata": "Q285196",
         "wikipedia": "en:House of the Vestals",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Casa das Vestais",
+          "en": "House of the Vestals",
+          "es": "Casa de las Vestales"
+        }
       }
     },
     {
@@ -9305,7 +10639,12 @@
         "longitude": 12.486523996875,
         "wikidata": "Q285196",
         "wikipedia": "en:House of the Vestals",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Casa das Vestais",
+          "en": "House of the Vestals",
+          "es": "Casa de las Vestales"
+        }
       }
     },
     {
@@ -9329,7 +10668,12 @@
         "longitude": 12.479875866666665,
         "wikidata": "Q2595680",
         "wikipedia": "it:Tempio di Bellona (Roma)",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Templo de Belona",
+          "en": "Temple of Bellona",
+          "es": "Templo de Belona"
+        }
       }
     },
     {
@@ -9353,7 +10697,12 @@
         "longitude": 12.484156064705884,
         "wikidata": "Q746721",
         "wikipedia": "en:Temple of Saturn",
-        "popularity": 36
+        "popularity": 36,
+        "names": {
+          "pt": "Templo de Saturno",
+          "en": "Temple of Saturn",
+          "es": "Templo de Saturno"
+        }
       }
     },
     {
@@ -9377,7 +10726,12 @@
         "longitude": 12.485893355555556,
         "wikidata": "Q1714672",
         "wikipedia": "en:Lacus Juturnae",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Fonte de Juturna",
+          "en": "Lacus Juturnae",
+          "es": "Fuente de Juturna"
+        }
       }
     },
     {
@@ -9401,7 +10755,12 @@
         "longitude": 12.485721558064515,
         "wikidata": "Q380530",
         "wikipedia": "en:Temple of Castor and Pollux",
-        "popularity": 35
+        "popularity": 35,
+        "names": {
+          "pt": "Templo de Castor e Pólux",
+          "en": "Temple of Castor and Pollux",
+          "es": "Templo de Cástor y Pólux"
+        }
       }
     },
     {
@@ -9425,7 +10784,12 @@
         "longitude": 12.489570568749999,
         "wikidata": "Q430792",
         "wikipedia": "it:Tempio di Venere e Roma",
-        "popularity": 30
+        "popularity": 30,
+        "names": {
+          "pt": "Templo de Vénus e Roma",
+          "en": "Temple of Venus and Roma",
+          "es": "Templo de Venus y Roma"
+        }
       }
     },
     {
@@ -9449,7 +10813,12 @@
         "longitude": 12.4610923,
         "wikidata": "Q120926285",
         "wikipedia": "it:Teatro di Nerone",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Teatro de Nero",
+          "en": "Theatre of Nero",
+          "es": "Teatro de Nerón"
+        }
       }
     },
     {
@@ -9472,7 +10841,10 @@
         "longitude": 12.5037397,
         "wikidata": "Q3304975",
         "wikipedia": "it:Porta Alchemica",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Porta Alchemica"
+        }
       }
     },
     {
@@ -9495,7 +10867,12 @@
         "longitude": 12.51876,
         "wikidata": "Q3663182",
         "wikipedia": "it:Catacomba di Sant'Agnese",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Catacumba de Santa Inês",
+          "en": "Catacombs of Saint Agnes",
+          "es": "Catacumbas de Santa Inés"
+        }
       }
     },
     {
@@ -9518,7 +10895,11 @@
         "longitude": 12.495335,
         "wikidata": "Q3348564",
         "wikipedia": "it:Obelisco di Villa Celimontana",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Matteiano obelisk",
+          "es": "obelisco de la Villa Celimontana"
+        }
       }
     },
     {
@@ -9541,7 +10922,12 @@
         "longitude": 12.485294,
         "wikidata": "Q927222",
         "wikipedia": "it:Tempio di Augusto",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Templo do Divino Augusto",
+          "en": "Temple of Divus Augustus",
+          "es": "Templo de Augusto (Roma)"
+        }
       }
     },
     {
@@ -9587,7 +10973,12 @@
         "longitude": 12.4871741,
         "wikidata": "Q660398",
         "wikipedia": "it:Criptoportico",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "criptopórtico",
+          "en": "cryptoporticus",
+          "es": "criptopórtico"
+        }
       }
     },
     {
@@ -9610,7 +11001,12 @@
         "longitude": 12.4865652,
         "wikidata": "Q908472",
         "wikipedia": "en:Domus Augustana",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Palácio Augustano",
+          "en": "Domus Augustana",
+          "es": "Domus Augustana"
+        }
       }
     },
     {
@@ -9633,7 +11029,11 @@
         "longitude": 12.4602864,
         "wikidata": "Q3674186",
         "wikipedia": "en:Santa Passera",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Santa Passera",
+          "en": "Santa Passera"
+        }
       }
     },
     {
@@ -9656,7 +11056,12 @@
         "longitude": 12.4787848,
         "wikidata": "Q3023765",
         "wikipedia": "it:Tempio di Esculapio",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Templo de Asclépio",
+          "en": "Temple of Aesculapius",
+          "es": "Templo de Esculapio"
+        }
       }
     },
     {
@@ -9679,7 +11084,10 @@
         "longitude": 12.4558767,
         "wikidata": "Q3874163",
         "wikipedia": "it:Necropoli di Santa Rosa",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Santa Rosa necropolis"
+        }
       }
     },
     {
@@ -9702,7 +11110,10 @@
         "longitude": 12.4667312,
         "wikidata": "Q17652208",
         "wikipedia": "it:Scuderie di Augusto",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Excavation at Largo Perosi - Via Giulia"
+        }
       }
     },
     {
@@ -9726,7 +11137,11 @@
         "address": "Via Appia antica, 42, Roma",
         "wikidata": "Q3683400",
         "wikipedia": "it:Colombario costantiniano",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Columbário Constantiniano",
+          "en": "Constantinian Columbarium"
+        }
       }
     },
     {
@@ -9749,7 +11164,12 @@
         "longitude": 12.4872868,
         "wikidata": "Q94574",
         "wikipedia": "it:Aula Regia",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Aula Régia",
+          "en": "Aula regia",
+          "es": "Aula regia"
+        }
       }
     },
     {
@@ -9773,7 +11193,12 @@
         "address": "Largo del Pallaro",
         "wikidata": "Q944814",
         "wikipedia": "it:Teatro di Pompeo",
-        "popularity": 34
+        "popularity": 34,
+        "names": {
+          "pt": "Teatro de Pompeu",
+          "en": "Theatre of Pompey",
+          "es": "Teatro de Pompeyo"
+        }
       }
     },
     {
@@ -9796,7 +11221,10 @@
         "longitude": 12.424593,
         "wikidata": "Q3748524",
         "wikipedia": "it:Forte Bravetta",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Forte Bravetta"
+        }
       }
     },
     {
@@ -9819,7 +11247,10 @@
         "longitude": 12.4742782,
         "wikidata": "Q3748585",
         "wikipedia": "it:Forte Ostiense",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Forte Ostiense"
+        }
       }
     },
     {
@@ -9842,7 +11273,10 @@
         "longitude": 12.4227637,
         "wikidata": "Q3748515",
         "wikipedia": "it:Forte Aurelia Antica",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Forte Aurelia Antica"
+        }
       }
     },
     {
@@ -9865,7 +11299,10 @@
         "longitude": 12.4174476,
         "wikidata": "Q3748522",
         "wikipedia": "it:Forte Boccea",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Forte Boccea"
+        }
       }
     },
     {
@@ -9888,7 +11325,10 @@
         "longitude": 12.4512541,
         "wikidata": "Q3748583",
         "wikipedia": "it:Forte Monte Mario",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Forte Monte Mario"
+        }
       }
     },
     {
@@ -9911,7 +11351,11 @@
         "longitude": 12.4972789,
         "wikidata": "Q3663210",
         "wikipedia": "it:Catacombe di Santa Felicita",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Catacumba de Santa Felicidade",
+          "en": "Catacomb di Santa Felicita"
+        }
       }
     },
     {
@@ -9934,7 +11378,12 @@
         "longitude": 12.5002514,
         "wikidata": "Q281330",
         "wikipedia": "en:Servian Wall",
-        "popularity": 37
+        "popularity": 37,
+        "names": {
+          "pt": "Muralha Serviana",
+          "en": "Servian Wall",
+          "es": "Murallas servianas"
+        }
       }
     },
     {
@@ -9958,7 +11407,12 @@
         "address": "Roma",
         "wikidata": "Q3664410",
         "wikipedia": "it:Cenotafio di Annia Regilla",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Cenotáfio de Ânia Regila",
+          "en": "tomb of Annia Regilla",
+          "es": "Cenotafio de Ania Regila"
+        }
       }
     },
     {
@@ -9981,7 +11435,12 @@
         "longitude": 12.5048202,
         "wikidata": "Q645181",
         "wikipedia": "it:Obelisco Lateranense",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "pt": "Obelisco Laterano",
+          "en": "Lateran Obelisk",
+          "es": "Obelisco de Letrán"
+        }
       }
     },
     {
@@ -10004,7 +11463,10 @@
         "longitude": 12.4335571,
         "wikidata": "Q3748654",
         "wikipedia": "it:Forte Trionfale",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Forte Trionfale"
+        }
       }
     },
     {
@@ -10027,7 +11489,12 @@
         "longitude": 12.475289369696966,
         "wikidata": "Q781595",
         "wikipedia": "en:Monte Testaccio",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Monte Testaccio",
+          "en": "Monte Testaccio",
+          "es": "Monte Testaccio"
+        }
       }
     },
     {
@@ -10050,7 +11517,11 @@
         "longitude": 12.4607733,
         "wikidata": "Q2295190",
         "wikipedia": "it:Villa Lante (Roma)",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Villa Lante no Janículo",
+          "en": "Villa Lante al Gianicolo"
+        }
       }
     },
     {
@@ -10073,7 +11544,11 @@
         "longitude": 12.4789947,
         "wikidata": "Q1076439",
         "wikipedia": "it:Basilica dei Santi Bonifacio e Alessio",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Santi Bonifacio e Alessio",
+          "en": "Santi Bonifacio e Alessio"
+        }
       }
     },
     {
@@ -10096,7 +11571,11 @@
         "longitude": 12.4770611,
         "wikidata": "Q2219582",
         "wikipedia": "it:Chiesa di San Giacomo in Augusta",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Igreja de São Tiago dos Incuráveis",
+          "en": "San Giacomo in Augusta"
+        }
       }
     },
     {
@@ -10119,7 +11598,11 @@
         "longitude": 12.4811992,
         "wikidata": "Q17051524",
         "wikipedia": "it:Palazzo Núñez-Torlonia",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Palazzo Nuñez Torlonia",
+          "en": "Palazzo Núñez-Torlonia"
+        }
       }
     },
     {
@@ -10142,7 +11625,12 @@
         "longitude": 12.4609224,
         "wikidata": "Q3862680",
         "wikipedia": "it:Monumento a Giuseppe Garibaldi (Roma)",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Monumento a Garibaldi (Roma)",
+          "en": "Monument to Giuseppe Garibaldi",
+          "es": "monumento a Giuseppe Garibaldi"
+        }
       }
     },
     {
@@ -10165,7 +11653,12 @@
         "longitude": 12.4739394,
         "wikidata": "Q2199124",
         "wikipedia": "it:Chiesa di Santa Maria Liberatrice (Roma)",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Santa Maria Liberatrice a Monte Testaccio",
+          "en": "Santa Maria Liberatrice",
+          "es": "iglesia de Maria Liberatrice a Monte Testaccio"
+        }
       }
     },
     {
@@ -10188,7 +11681,10 @@
         "longitude": 12.497502,
         "wikidata": "Q3348559",
         "wikipedia": "it:Obelisco Esquilino",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Esquiline obelisk"
+        }
       }
     },
     {
@@ -10211,7 +11707,12 @@
         "longitude": 12.4829647,
         "wikidata": "Q645062",
         "wikipedia": "en:Arcus Argentariorum",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Arco dos Argentários",
+          "en": "Arch of Septimius Severus (Forum Boarium)",
+          "es": "Arco de los Argentarios"
+        }
       }
     },
     {
@@ -10234,7 +11735,12 @@
         "longitude": 12.4831732,
         "wikidata": "Q3955650",
         "wikipedia": "it:Sepolcro di Gaio Publicio Bibulo",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Túmulo de Bíbulo",
+          "en": "Tomb of Gaius Publicius Bibulus",
+          "es": "tumba de Bíbulo"
+        }
       }
     },
     {
@@ -10257,7 +11763,10 @@
         "longitude": 12.4767503,
         "wikidata": "Q3348569",
         "wikipedia": "it:Obelisco del Pantheon",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Macuteo obelisk"
+        }
       }
     },
     {
@@ -10280,7 +11789,12 @@
         "longitude": 12.47873078,
         "wikidata": "Q2122537",
         "wikipedia": "it:Tempio delle Ninfe",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Templo das Ninfas",
+          "en": "Temple of the Nymphs",
+          "es": "templo de las Ninfas"
+        }
       }
     },
     {
@@ -10303,7 +11817,12 @@
         "longitude": 12.474612421739133,
         "wikidata": "Q1755046",
         "wikipedia": "it:Palazzo Madama (Roma)",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Palazzo Madama",
+          "en": "Palazzo Madama",
+          "es": "Palazzo Madama"
+        }
       }
     },
     {
@@ -10326,7 +11845,12 @@
         "longitude": 12.4811735,
         "wikidata": "Q846559",
         "wikipedia": "it:Basilica di Santa Maria in Via Lata",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Santa Maria em Via Lata",
+          "en": "Santa Maria in Via Lata",
+          "es": "Santa Maria"
+        }
       }
     },
     {
@@ -10349,7 +11873,10 @@
         "longitude": 12.4866406,
         "wikidata": "Q3348571",
         "wikipedia": "it:Obelisco del Quirinale",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Quirinal obelisk"
+        }
       }
     },
     {
@@ -10372,7 +11899,10 @@
         "longitude": 12.4952318,
         "wikidata": "Q3457868",
         "wikipedia": "it:Porta Caelimontana e Porta Querquetulana",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Porta Caelimontana e Porta Querquetulana"
+        }
       }
     },
     {
@@ -10395,7 +11925,12 @@
         "longitude": 12.488483176923078,
         "wikidata": "Q1234446",
         "wikipedia": "it:Settizonio",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Septizódio",
+          "en": "Septizodium",
+          "es": "Septizodium"
+        }
       }
     },
     {
@@ -10418,7 +11953,12 @@
         "longitude": 12.486364363157893,
         "wikidata": "Q786489",
         "wikipedia": "it:Regia (Roma)",
-        "popularity": 24
+        "popularity": 24,
+        "names": {
+          "pt": "Régia",
+          "en": "Regia",
+          "es": "Regia"
+        }
       }
     },
     {
@@ -10441,7 +11981,12 @@
         "longitude": 12.486286193333333,
         "wikidata": "Q1232346",
         "wikipedia": "it:Arco di Augusto (Foro Romano)",
-        "popularity": 19
+        "popularity": 19,
+        "names": {
+          "pt": "Arco de Augusto",
+          "en": "Arch of Augustus",
+          "es": "Arco de Augusto"
+        }
       }
     },
     {
@@ -10464,7 +12009,12 @@
         "longitude": 12.484248817857141,
         "wikidata": "Q828143",
         "wikipedia": "it:Tempio della Concordia (Roma)",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Templo da Concórdia",
+          "en": "Temple of Concord",
+          "es": "Templo de la Concordia"
+        }
       }
     },
     {
@@ -10487,7 +12037,12 @@
         "longitude": 12.4902289,
         "wikidata": "Q3673872",
         "wikipedia": "it:Chiesa di Santa Maria della Neve al Colosseo",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Santa Maria della Neve al Colosseo",
+          "en": "Santa Maria ad nives",
+          "es": "iglesia de Santa María de las Nieves"
+        }
       }
     },
     {
@@ -10511,7 +12066,12 @@
         "address": "Via della Sagrestia, Città del Vaticano",
         "wikidata": "Q519310",
         "wikipedia": "it:Chiesa di Santa Maria della Pietà in Camposanto dei Teutonici",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Santa Maria della Pietà in Camposanto dei Teutonici",
+          "en": "Santa Maria della Pietà in Camposanto dei Teutonici",
+          "es": "iglesia de Nuestra Señora de la Piedad en el Cementerio Alemán"
+        }
       }
     },
     {
@@ -10536,7 +12096,11 @@
         "wikidata": "Q2656902",
         "wikipedia": "it:Chiesa di Nostra Signora di Guadalupe a Monte Mario",
         "wheelchair": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Nostra Signora di Guadalupe a Monte Mario",
+          "es": "Iglesia de Nuestra Señora de Guadalupe en Monte Mario"
+        }
       }
     },
     {
@@ -10559,7 +12123,12 @@
         "longitude": 12.484418572727272,
         "wikidata": "Q1312988",
         "wikipedia": "it:Chiesa di San Giuseppe dei Falegnami",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "San Giuseppe dei Falegnami",
+          "en": "San Giuseppe dei Falegnami",
+          "es": "iglesia de San José dei Falegnami"
+        }
       }
     },
     {
@@ -10582,7 +12151,12 @@
         "longitude": 12.488748512903227,
         "wikidata": "Q969344",
         "wikipedia": "it:Elagabalium",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Templo de Heliogábalo",
+          "en": "Elagabalium",
+          "es": "Elagabalium"
+        }
       }
     },
     {
@@ -10606,7 +12180,12 @@
         "address": "Piazza di Santa Francesca Romana, 4, Roma",
         "wikidata": "Q1091640",
         "wikipedia": "it:Basilica di Santa Francesca Romana",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Basílica de Santa Francesca Romana",
+          "en": "Santa Francesca Romana",
+          "es": "basílica de Santa Francesca Romana"
+        }
       }
     },
     {
@@ -10629,7 +12208,12 @@
         "longitude": 12.486926823076924,
         "wikidata": "Q3629734",
         "wikipedia": "it:Aula Isiaca",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Sala de Ísis",
+          "en": "Temple of Isis",
+          "es": "Aula isíaca"
+        }
       }
     },
     {
@@ -10652,7 +12236,11 @@
         "longitude": 12.487315357575756,
         "wikidata": "Q3661201",
         "wikipedia": "it:Casa dei Grifi",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Casa dos Grifos",
+          "en": "Casa dei Grifi"
+        }
       }
     },
     {
@@ -10675,7 +12263,12 @@
         "longitude": 12.486538644444444,
         "wikidata": "Q529806",
         "wikipedia": "it:Domus Flavia",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Palácio Flávio",
+          "en": "Flavian Palace",
+          "es": "Domus Flavia"
+        }
       }
     },
     {
@@ -10698,7 +12291,12 @@
         "longitude": 12.484932562500001,
         "wikidata": "Q383609",
         "wikipedia": "it:Tempio della Magna Mater",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Templo de Cibele",
+          "en": "Temple of Cybele",
+          "es": "Templo de Cibeles"
+        }
       }
     },
     {
@@ -10721,7 +12319,12 @@
         "longitude": 12.485794007142857,
         "wikidata": "Q833875",
         "wikipedia": "it:Casa di Livia",
-        "popularity": 12
+        "popularity": 12,
+        "names": {
+          "pt": "Casa de Lívia",
+          "en": "House of Livia",
+          "es": "Casa de Livia"
+        }
       }
     },
     {
@@ -10744,7 +12347,11 @@
         "longitude": 12.48736074,
         "wikidata": "Q2484732",
         "wikipedia": "it:Stadio palatino",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Estádio Palatino",
+          "en": "Palatine stadium"
+        }
       }
     },
     {
@@ -10767,7 +12374,11 @@
         "longitude": 12.485496641346154,
         "wikidata": "Q1227764",
         "wikipedia": "it:Paedagogium",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Pedagógio",
+          "en": "Paedagogium"
+        }
       }
     },
     {
@@ -10790,7 +12401,12 @@
         "longitude": 12.486493570319638,
         "wikidata": "Q908472",
         "wikipedia": "it:Domus Augustana",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Palácio Augustano",
+          "en": "Domus Augustana",
+          "es": "Domus Augustana"
+        }
       }
     },
     {
@@ -10813,7 +12429,12 @@
         "longitude": 12.5074453,
         "wikidata": "Q622930",
         "wikipedia": "en:Aqua Claudia",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Água Cláudia",
+          "en": "Aqua Claudia",
+          "es": "Aqua Claudia"
+        }
       }
     },
     {
@@ -10836,7 +12457,12 @@
         "longitude": 12.4839113,
         "wikidata": "Q2313394",
         "wikipedia": "it:Chiesa dei Santi Vincenzo e Anastasio a Trevi",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Santi Vincenzo e Anastasio a Trevi",
+          "en": "Santi Vincenzo e Anastasio a Trevi",
+          "es": "iglesia de los Santos Vicente y Anastasio de Trevi (Roma)"
+        }
       }
     },
     {
@@ -10859,7 +12485,12 @@
         "longitude": 12.4992695,
         "wikidata": "Q3678238",
         "wikipedia": "en:The Seven Halls",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Cisterna das Sete Salas",
+          "en": "The Seven Halls",
+          "es": "Cisterna de las Siete Salas"
+        }
       }
     },
     {
@@ -10882,7 +12513,11 @@
         "longitude": 12.4832351,
         "wikidata": "Q784104",
         "wikipedia": "it:Obelisco Sallustiano",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Sallustian obelisk",
+          "es": "Obelisco Salustiano"
+        }
       }
     },
     {
@@ -10905,7 +12540,12 @@
         "longitude": 12.4752894,
         "wikidata": "Q1071768",
         "wikipedia": "it:Chiesa di Santa Maria della Luce",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Santa Maria della Luce",
+          "en": "Santa Maria della Luce",
+          "es": "iglesia de Santa Maria della Luce"
+        }
       }
     },
     {
@@ -10928,7 +12568,11 @@
         "longitude": 12.4974682,
         "wikidata": "Q3348579",
         "wikipedia": "it:Monumento ai caduti di Dogali",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Obelisco de Dogali",
+          "en": "Dogali obelisk"
+        }
       }
     },
     {
@@ -10951,7 +12595,11 @@
         "longitude": 12.5021256,
         "wikidata": "Q1814304",
         "wikipedia": "en:San Giovanni in Oleo",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "San Giovanni in Oleo",
+          "en": "San Giovanni in Oleo"
+        }
       }
     },
     {
@@ -10974,7 +12622,12 @@
         "longitude": 12.501191627272727,
         "wikidata": "Q1338582",
         "wikipedia": "it:Porta Pia",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Porta Pia",
+          "en": "Porta Pia",
+          "es": "Puerta Pía"
+        }
       }
     },
     {
@@ -10997,7 +12650,11 @@
         "longitude": 12.5325774,
         "wikidata": "Q1351222",
         "wikipedia": "it:Ponte Nomentano",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "en": "Ponte Nomentano",
+          "es": "puente Nomentano"
+        }
       }
     },
     {
@@ -11020,7 +12677,12 @@
         "longitude": 12.5015081,
         "wikidata": "Q1107952",
         "wikipedia": "it:Arco di Druso",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Arco de Druso",
+          "en": "Arch of Drusus",
+          "es": "Arco de Druso"
+        }
       }
     },
     {
@@ -11043,7 +12705,11 @@
         "longitude": 12.5330806,
         "wikidata": "Q14456361",
         "wikipedia": "it:Acquedotto Felice",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Água Feliz",
+          "en": "Acqua Felice"
+        }
       }
     },
     {
@@ -11066,7 +12732,12 @@
         "longitude": 12.464351177777777,
         "wikidata": "Q1902995",
         "wikipedia": "en:Pons Neronianus",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Ponte Neroniana",
+          "en": "Pons Neronianus",
+          "es": "puente de Nerón"
+        }
       }
     },
     {
@@ -11089,7 +12760,11 @@
         "longitude": 12.5118308,
         "wikidata": "Q65174611",
         "wikipedia": "pt:Túmulos republicanos na Via Statilia",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Túmulos republicanos na Via Statilia",
+          "en": "Via Statilia Republican tombs"
+        }
       }
     },
     {
@@ -11112,7 +12787,12 @@
         "longitude": 12.5016299,
         "wikidata": "Q16612725",
         "wikipedia": "it:Tempio di Iside a via Labicana",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Templo de Ísis na Via Labicana",
+          "en": "Temple of Isis",
+          "es": "templo de Isis"
+        }
       }
     },
     {
@@ -11136,7 +12816,12 @@
         "address": "Piazza Vittorio Emanuele II",
         "wikidata": "Q3877101",
         "wikipedia": "it:Ninfeo di Alessandro",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Ninfeu de Alexandre",
+          "en": "Nymphaeum of Alexander Severus",
+          "es": "ninfeo de Alejandro Severo"
+        }
       }
     },
     {
@@ -11159,7 +12844,11 @@
         "longitude": 12.4501022,
         "wikidata": "Q3670753",
         "wikipedia": "it:Chiesa di San Lazzaro (Roma)",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "San Lazzaro dei Lebbrosi",
+          "en": "San Lazzaro Church"
+        }
       }
     },
     {
@@ -11182,7 +12871,11 @@
         "longitude": 12.516883166666666,
         "wikidata": "Q3663214",
         "wikipedia": "en:Vigna Randanini",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Catacumba hebraica da Vigna Randanini",
+          "en": "Vigna Randanini"
+        }
       }
     },
     {
@@ -11205,7 +12898,10 @@
         "longitude": 12.448745700000002,
         "wikidata": "Q3748596",
         "wikipedia": "it:Forte Portuense",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Forte Portuense"
+        }
       }
     },
     {
@@ -11228,7 +12924,12 @@
         "longitude": 12.495692494444446,
         "wikidata": "Q2736770",
         "wikipedia": "it:Basilica di San Sisto Vecchio",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "San Sisto Vecchio",
+          "en": "San Sisto Vecchio",
+          "es": "San Sisto Vecchio"
+        }
       }
     },
     {
@@ -11251,7 +12952,12 @@
         "longitude": 12.4854385,
         "wikidata": "Q1857818",
         "wikipedia": "it:Statua equestre di Traiano",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Estátua equestre de Trajano",
+          "en": "equestrian statue of Trajan",
+          "es": "estatua equestre de Trajano"
+        }
       }
     },
     {
@@ -11274,7 +12980,12 @@
         "longitude": 12.48790895,
         "wikidata": "Q605721",
         "wikipedia": "it:Torre dei Conti",
-        "popularity": 20
+        "popularity": 20,
+        "names": {
+          "pt": "Torre dei Conti",
+          "en": "Torre dei Conti",
+          "es": "Torre del Conde"
+        }
       }
     },
     {
@@ -11297,7 +13008,12 @@
         "longitude": 12.485843889473685,
         "wikidata": "Q522924",
         "wikipedia": "en:Basilica Aemilia",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Basílica Emília",
+          "en": "Basilica Aemilia",
+          "es": "basílica Emilia"
+        }
       }
     },
     {
@@ -11320,7 +13036,12 @@
         "longitude": 12.48572102941176,
         "wikidata": "Q522924",
         "wikipedia": "it:Basilica Emilia",
-        "popularity": 29
+        "popularity": 29,
+        "names": {
+          "pt": "Basílica Emília",
+          "en": "Basilica Aemilia",
+          "es": "basílica Emilia"
+        }
       }
     },
     {
@@ -11343,7 +13064,12 @@
         "longitude": 12.486839133333334,
         "wikidata": "Q1456939",
         "wikipedia": "it:Tempio della Pace",
-        "popularity": 28
+        "popularity": 28,
+        "names": {
+          "pt": "Templo da Paz",
+          "en": "Temple of Peace",
+          "es": "Templo de la Paz"
+        }
       }
     },
     {
@@ -11366,7 +13092,12 @@
         "longitude": 12.484587052380954,
         "wikidata": "Q205840",
         "wikipedia": "en:Umbilicus urbis Romae",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Umbilicus Urbis",
+          "en": "Umbilicus urbis Romae",
+          "es": "Umbilicus urbis"
+        }
       }
     },
     {
@@ -11389,7 +13120,12 @@
         "longitude": 12.484618079999997,
         "wikidata": "Q426372",
         "wikipedia": "it:Rostri",
-        "popularity": 31
+        "popularity": 31,
+        "names": {
+          "pt": "Rostra",
+          "en": "rostra",
+          "es": "rostra"
+        }
       }
     },
     {
@@ -11412,7 +13148,12 @@
         "longitude": 12.487118652000001,
         "wikidata": "Q2767155",
         "wikipedia": "it:Domus Publica",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Casa Pública",
+          "en": "Domus Publica",
+          "es": "Domus Publica"
+        }
       }
     },
     {
@@ -11435,7 +13176,11 @@
         "longitude": 12.48512078780488,
         "wikidata": "Q3786801",
         "wikipedia": "it:Horrea Agrippiana",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Hórreos de Agripa",
+          "en": "Horrea Agrippiana"
+        }
       }
     },
     {
@@ -11458,7 +13203,12 @@
         "longitude": 12.508660610204076,
         "wikidata": "Q2104854",
         "wikipedia": "it:Porta Asinaria",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Porta Asinária",
+          "en": "Porta Asinaria",
+          "es": "Porta Asinaria"
+        }
       }
     },
     {
@@ -11481,7 +13231,12 @@
         "longitude": 12.486040856976746,
         "wikidata": "Q1238767",
         "wikipedia": "it:Domus Tiberiana",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "pt": "Palácio Tiberiano",
+          "en": "Domus Tiberiana",
+          "es": "Domus Tiberiana"
+        }
       }
     },
     {
@@ -11504,7 +13259,12 @@
         "longitude": 12.511881104545456,
         "wikidata": "Q1411575",
         "wikipedia": "en:Temple of Minerva Medica (nymphaeum)",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Templo de Minerva Medica",
+          "en": "Temple of Minerva Medica",
+          "es": "Templo de Minerva Medica"
+        }
       }
     },
     {
@@ -11527,7 +13287,10 @@
         "longitude": 12.500597048076923,
         "wikidata": "Q65047827",
         "wikipedia": "en:Monastery of the Viperesche",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Monastery of the Viperesche"
+        }
       }
     },
     {
@@ -11550,7 +13313,11 @@
         "longitude": 12.473391199999998,
         "wikidata": "Q2366205",
         "wikipedia": "it:Porticus Aemilia",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Pórtico Emília",
+          "en": "Porticus Aemilia"
+        }
       }
     },
     {
@@ -11573,7 +13340,12 @@
         "longitude": 12.460553092638031,
         "wikidata": "Q1329589",
         "wikipedia": "it:Passetto di Borgo",
-        "popularity": 23
+        "popularity": 23,
+        "names": {
+          "pt": "Passetto",
+          "en": "Passetto di Borgo",
+          "es": "Passetto"
+        }
       }
     },
     {
@@ -11596,7 +13368,11 @@
         "longitude": 12.4881167,
         "wikidata": "Q3843088",
         "wikipedia": "it:Magazzini di Lucio Nevio Clemente",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Armazém de Lúcio Névio Clemente",
+          "en": "Shops of Lucius Naevius Clemens"
+        }
       }
     },
     {
@@ -11620,7 +13396,11 @@
         "address": "Via Nomentana, 627, Roma",
         "website": "https://www.sovraintendenzaroma.it/i_luoghi/roma_antica/monumenti/mausoleo_cd_di_menenio_agrippa",
         "wikidata": "Q56256261",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Mausoleum of Menenius Agrippa",
+          "es": "Mausoleo di Menenio Agrippa"
+        }
       }
     },
     {
@@ -11644,7 +13424,11 @@
         "address": "Via Nomentana, 361, Roma",
         "website": "https://www.sovraintendenzaroma.it/i_luoghi/roma_antica/monumenti/mausoleo_di_tor_di_quinto",
         "wikidata": "Q62596148",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Mausoléu de Tor di Quinto",
+          "en": "Mausoleum of Tor di Quinto (Rome)"
+        }
       }
     },
     {
@@ -11688,7 +13472,10 @@
         "latitude": 41.9037383,
         "longitude": 12.4955575,
         "wikidata": "Q98948923",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Rome-Paris twinning column"
+        }
       }
     },
     {
@@ -11732,7 +13519,10 @@
         "latitude": 41.8879509,
         "longitude": 12.5025666,
         "wikidata": "Q133308431",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Domus of Lucius Licinius Sura"
+        }
       }
     },
     {
@@ -11754,7 +13544,10 @@
         "latitude": 41.8581586,
         "longitude": 12.5292793,
         "wikidata": "Q111193124",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Torre Valca"
+        }
       }
     },
     {
@@ -11776,7 +13569,10 @@
         "latitude": 41.92314159,
         "longitude": 12.517169900000003,
         "wikidata": "Q124154237",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Constantinian Basilica in Sant'Agnese fuori le mura"
+        }
       }
     },
     {
@@ -11798,7 +13594,10 @@
         "latitude": 41.8950856,
         "longitude": 12.4769145,
         "wikidata": "Q104586001",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Temple C"
+        }
       }
     },
     {
@@ -11820,7 +13619,12 @@
         "latitude": 41.89692272727272,
         "longitude": 12.476891463636365,
         "wikidata": "Q518832",
-        "popularity": 27
+        "popularity": 27,
+        "names": {
+          "pt": "Termas de Agripa",
+          "en": "Baths of Agrippa",
+          "es": "Termas de Agripa"
+        }
       }
     },
     {
@@ -11842,7 +13646,11 @@
         "latitude": 41.88929691052631,
         "longitude": 12.484837652631581,
         "wikidata": "Q1046434",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Casa de Rômulo",
+          "en": "Casa Romuli"
+        }
       }
     },
     {
@@ -11864,7 +13672,10 @@
         "latitude": 41.91355189090909,
         "longitude": 12.481503727272726,
         "wikidata": "Q52348484",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Propilei egizi"
+        }
       }
     },
     {
@@ -11886,7 +13697,10 @@
         "latitude": 41.9180397,
         "longitude": 12.5198426,
         "wikidata": "Q69560790",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Monumento al Finanziere"
+        }
       }
     },
     {
@@ -11908,7 +13722,12 @@
         "latitude": 41.892312775862074,
         "longitude": 12.485141003448275,
         "wikidata": "Q180212",
-        "popularity": 72
+        "popularity": 72,
+        "names": {
+          "pt": "Fórum Romano",
+          "en": "Roman Forum",
+          "es": "Foro Romano"
+        }
       }
     },
     {
@@ -11930,7 +13749,11 @@
         "latitude": 41.89407437241379,
         "longitude": 12.48449722413793,
         "wikidata": "Q1980093",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Basílica Argentária",
+          "en": "Basilica Argentaria"
+        }
       }
     },
     {
@@ -11954,7 +13777,10 @@
         "longitude": 12.490819513333332,
         "wikidata": "Q124309665",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Parco archeologico del Celio"
+        }
       }
     },
     {
@@ -11981,7 +13807,10 @@
         "website": "https://www.sovraintendenzaroma.it/i_luoghi/ville_e_parchi_storici/passeggiate_parchi_e_giardini/parco_nemorense_o_virgiliano",
         "wikidata": "Q3895451",
         "wikipedia": "it:Parco Virgiliano (Roma)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Parco Nemorense o Virgiliano"
+        }
       }
     },
     {
@@ -12009,7 +13838,11 @@
         "wikidata": "Q1072277",
         "wikipedia": "it:Orto botanico di Roma",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Orto Botanico dell'Università di Roma \"La Sapienza\"",
+          "es": "Jardín Botánico de Roma"
+        }
       }
     },
     {
@@ -12039,7 +13872,11 @@
         "wikidata": "Q1072271",
         "wikipedia": "it:Roseto di Roma Capitale",
         "fee": "no",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Rome Rose Garden",
+          "es": "Rosaleda comunal de Roma"
+        }
       }
     },
     {
@@ -12064,7 +13901,12 @@
         "website": "https://villapamphili.it",
         "wikidata": "Q774654",
         "wikipedia": "it:Villa Doria Pamphilj",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Villa Doria Pamphilj",
+          "en": "Villa Doria Pamphili",
+          "es": "Villa Doria Pamphilj"
+        }
       }
     },
     {
@@ -12089,7 +13931,11 @@
         "opening_hours": "Mo-Su 07:00-21:00",
         "wikidata": "Q7136481",
         "wikipedia": "en:Parco Adriano",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Parco Adriano",
+          "es": "Parco della Mole Adriana"
+        }
       }
     },
     {
@@ -12113,7 +13959,12 @@
         "opening_hours": "Mo-Su 06:30-sunset",
         "wikidata": "Q2000387",
         "wikipedia": "en:Villa Ada",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Villa Ada",
+          "en": "Villa Ada",
+          "es": "Villa Ada"
+        }
       }
     },
     {
@@ -12162,7 +14013,11 @@
         "website": "https://www.parchilazio.it/valledeicasali",
         "wikidata": "Q3936774",
         "wikipedia": "it:Riserva naturale della Valle dei Casali",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Riserva naturale della Valle dei Casali",
+          "es": "Riserva naturale della Valle dei Casali"
+        }
       }
     },
     {
@@ -12186,7 +14041,12 @@
         "longitude": 12.482786730379747,
         "wikidata": "Q678313",
         "wikipedia": "en:Villa Borghese gardens",
-        "popularity": 35
+        "popularity": 35,
+        "names": {
+          "pt": "Jardins da Villa Borghese",
+          "en": "Villa Borghese gardens",
+          "es": "Villa Borghese"
+        }
       }
     },
     {
@@ -12210,7 +14070,12 @@
         "longitude": 12.4887329,
         "wikidata": "Q4011748",
         "wikipedia": "it:Villa Aldobrandini (Roma)",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Villa Aldobrandini",
+          "en": "Villa Aldobrandini",
+          "es": "Villa Aldobrandini"
+        }
       }
     },
     {
@@ -12233,7 +14098,11 @@
         "longitude": 12.5142161,
         "wikidata": "Q474857",
         "wikipedia": "it:Villa Torlonia (Roma)",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Villa Torlonia",
+          "en": "Villa Torlonia"
+        }
       }
     },
     {
@@ -12256,7 +14125,10 @@
         "longitude": 12.496166,
         "wikidata": "Q26258055",
         "wikipedia": "it:Villa Giorgina",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Villa Giorgina"
+        }
       }
     },
     {
@@ -12280,7 +14152,11 @@
         "address": "Via Dandolo, Roma",
         "wikidata": "Q14479150",
         "wikipedia": "it:Villa Sciarra (Roma)",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Villa Sciarra",
+          "en": "Villa Sciarra"
+        }
       }
     },
     {
@@ -12303,7 +14179,10 @@
         "longitude": 12.5238419,
         "wikidata": "Q4012001",
         "wikipedia": "it:Villa Fiorelli",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Villa Fiorelli"
+        }
       }
     },
     {
@@ -12326,7 +14205,10 @@
         "longitude": 12.4896758,
         "wikidata": "Q55831685",
         "wikipedia": "it:Giardini del Palazzo del Quirinale",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Quirinal Palace gardens"
+        }
       }
     },
     {
@@ -12349,7 +14231,11 @@
         "longitude": 12.4338599,
         "wikidata": "Q3895760",
         "wikipedia": "it:Parco regionale urbano del Pineto",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Pineto Regional Park",
+          "es": "Parco regionale urbano Pineto"
+        }
       }
     },
     {
@@ -12372,7 +14258,10 @@
         "longitude": 12.531512727450979,
         "wikidata": "Q4012186",
         "wikipedia": "it:Villa Lais",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Villa Lais"
+        }
       }
     },
     {
@@ -12395,7 +14284,11 @@
         "longitude": 12.441803910638294,
         "wikidata": "Q3936786",
         "wikipedia": "it:Riserva naturale di Monte Mario",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Riserva naturale di Monte Mario",
+          "es": "Riserva naturale di Monte Mario"
+        }
       }
     },
     {
@@ -12419,7 +14312,11 @@
         "longitude": 12.480083699999998,
         "wikidata": "Q3763895",
         "wikipedia": "it:Giardino degli Aranci",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Giardino degli Aranci",
+          "en": "Orange Garden"
+        }
       }
     },
     {
@@ -12442,7 +14339,12 @@
         "longitude": 12.496433742857143,
         "wikidata": "Q1036262",
         "wikipedia": "it:Colle Oppio",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Monte Ópio",
+          "en": "Oppian Hill",
+          "es": "Monte Oppio"
+        }
       }
     },
     {
@@ -12465,7 +14367,12 @@
         "longitude": 12.494301439240504,
         "wikidata": "Q3558489",
         "wikipedia": "it:Villa Celimontana",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Villa Celimontana",
+          "en": "Villa Celimontana",
+          "es": "Villa Celimontana"
+        }
       }
     },
     {
@@ -12488,7 +14395,10 @@
         "longitude": 12.501268214285714,
         "wikidata": "Q3364289",
         "wikipedia": "it:Parco degli Scipioni",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Parco degli Scipioni"
+        }
       }
     },
     {
@@ -12511,7 +14421,12 @@
         "longitude": 12.479825412765951,
         "wikidata": "Q550215",
         "wikipedia": "en:Pincian Hill",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Monte Pinciano",
+          "en": "Pincian Hill",
+          "es": "Pincio"
+        }
       }
     },
     {
@@ -12534,7 +14449,10 @@
         "longitude": 12.519931871212123,
         "wikidata": "Q3649575",
         "wikipedia": "en:Park of the Caffarella",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Park of the Caffarella"
+        }
       }
     },
     {
@@ -12557,7 +14475,11 @@
         "longitude": 12.532456925129809,
         "wikidata": "Q3895749",
         "wikipedia": "it:Parco regionale dell'Appia antica",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Appian Way Regional Park",
+          "es": "Parco naturale regionale Appia Antica"
+        }
       }
     },
     {
@@ -12579,7 +14501,10 @@
         "latitude": 41.9321785,
         "longitude": 12.4779168,
         "wikidata": "Q67149795",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Parco di Villa Glori"
+        }
       }
     },
     {
@@ -13790,7 +15715,11 @@
         "website": "https://cenciolaparolaccia.it/",
         "wikidata": "Q3664378",
         "wikipedia": "en:Cencio la Parolaccia",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Cencio la Parolaccia",
+          "es": "Cencio la Parolaccia"
+        }
       }
     },
     {
@@ -18741,7 +20670,11 @@
         "wikidata": "Q3775863",
         "wikipedia": "it:Grattachecca",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Grattachecca",
+          "es": "Grattachecca"
+        }
       }
     },
     {
@@ -18764,7 +20697,11 @@
         "longitude": 12.4660453,
         "wikidata": "Q3775863",
         "wikipedia": "it:Grattachecca",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Grattachecca",
+          "es": "Grattachecca"
+        }
       }
     },
     {
@@ -18788,7 +20725,11 @@
         "wikidata": "Q3775863",
         "wikipedia": "it:Grattachecca",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Grattachecca",
+          "es": "Grattachecca"
+        }
       }
     },
     {

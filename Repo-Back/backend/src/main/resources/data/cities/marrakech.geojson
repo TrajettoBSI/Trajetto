@@ -20,10 +20,15 @@
         ],
         "latitude": 31.623742,
         "longitude": -7.9935583,
-        "address": "Rue Koutoubia, Marrakech",
+        "address": "Rue Koutoubia",
         "wikidata": "Q1137533",
         "wikipedia": "en:Koutoubia Mosque",
-        "popularity": 42
+        "popularity": 42,
+        "names": {
+          "pt": "Mesquita de Koutoubia",
+          "en": "Koutoubia Mosque",
+          "es": "Mezquita Kutubía"
+        }
       }
     },
     {
@@ -49,7 +54,12 @@
         "wikidata": "Q258348",
         "wikipedia": "en:Jemaa el-Fnaa",
         "wheelchair": "yes",
-        "popularity": 38
+        "popularity": 38,
+        "names": {
+          "pt": "Praça Jemaa El Fna",
+          "en": "Jemaa el-Fnaa",
+          "es": "Plaza de Yamaa el Fna"
+        }
       }
     },
     {
@@ -76,7 +86,12 @@
         "wikidata": "Q1395431",
         "wikipedia": "en:Majorelle Garden",
         "fee": "yes",
-        "popularity": 30
+        "popularity": 30,
+        "names": {
+          "pt": "Jardim Majorelle",
+          "en": "Majorelle Garden",
+          "es": "Jardín Majorelle"
+        }
       }
     },
     {
@@ -103,7 +118,12 @@
         "wikidata": "Q1560540",
         "wikipedia": "en:Ben Youssef Madrasa",
         "fee": "yes",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Madraça Ben Youssef",
+          "en": "Ben Youssef Madrasa",
+          "es": "Medersa Ben Youssef"
+        }
       }
     },
     {
@@ -130,7 +150,12 @@
         "wikidata": "Q1277747",
         "wikipedia": "en:El Badi Palace",
         "fee": "yes",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Palácio el Badi",
+          "en": "El Badi Palace",
+          "es": "Palacio El Badi"
+        }
       }
     },
     {
@@ -154,7 +179,12 @@
         "longitude": -7.9871642,
         "wikidata": "Q3412514",
         "wikipedia": "en:Almoravid Koubba",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Qubba Almorávida",
+          "en": "Almoravid Koubba",
+          "es": "Qubba Almorávide"
+        }
       }
     },
     {
@@ -176,14 +206,19 @@
         ],
         "latitude": 31.6172551,
         "longitude": -7.9885299,
-        "address": "Rue de la Kasbah, Marrakech",
+        "address": "Rue de la Kasbah",
         "opening_hours": "Mo-Su 09:00-17:00",
         "phone": "+212 5 24 43 34 07",
         "wikidata": "Q2152745",
         "wikipedia": "es:Tumbas saadíes",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Túmulos saadianos",
+          "en": "Saadian Tombs",
+          "es": "Tumbas saadíes"
+        }
       }
     },
     {
@@ -205,7 +240,12 @@
         "latitude": 31.5987152,
         "longitude": -7.9766943,
         "wikidata": "Q392057",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Jardins de Agdal",
+          "en": "Agdal Gardens",
+          "es": "Jardines de Agdal"
+        }
       }
     },
     {
@@ -229,7 +269,11 @@
         "longitude": -7.9870551,
         "wikidata": "Q4886745",
         "wikipedia": "ar:مسجد ابن يوسف",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "en": "Ibn Yusuf Mosque",
+          "es": "Mezquita de Ben Youssef"
+        }
       }
     },
     {
@@ -257,7 +301,12 @@
         "wikidata": "Q3090631",
         "wikipedia": "ar:متحف مراكش",
         "fee": "yes",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Museu de Marraquexe",
+          "en": "Marrakech Museum",
+          "es": "Museo de Marrakech"
+        }
       }
     },
     {
@@ -281,7 +330,11 @@
         "longitude": -7.9888765,
         "wikidata": "Q1948938",
         "wikipedia": "en:Kasbah Mosque, Marrakesh",
-        "popularity": 15
+        "popularity": 15,
+        "names": {
+          "en": "Al-Mansour Mosque",
+          "es": "Mezquita de la Alcazaba"
+        }
       }
     },
     {
@@ -305,7 +358,12 @@
         "longitude": -7.9823034,
         "wikidata": "Q3508008",
         "fee": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Sinagoga Salat Alzama",
+          "en": "Slat Al Azama Synagogue",
+          "es": "Sinagoga Salat Alzama"
+        }
       }
     },
     {
@@ -334,7 +392,10 @@
         "wikidata": "Q96394004",
         "wikipedia": "en:Mouassine Museum",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Mouassine Museum"
+        }
       }
     },
     {
@@ -358,7 +419,11 @@
         "longitude": -7.9828725,
         "wikidata": "Q92061407",
         "wikipedia": "ar:مسجد بريمة",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Buraima Mosque",
+          "es": "Mezquita de Berrima"
+        }
       }
     },
     {
@@ -385,7 +450,11 @@
         "wikidata": "Q59956159",
         "wikipedia": "ar:دار الباشا",
         "fee": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Dar el Bacha",
+          "es": "Dar el Bacha"
+        }
       }
     },
     {
@@ -407,7 +476,11 @@
         "latitude": 31.6297127,
         "longitude": -8.0148418,
         "wikidata": "Q113627642",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Royal Theatre",
+          "es": "Teatro Real de Marrakech"
+        }
       }
     },
     {
@@ -430,7 +503,10 @@
         "latitude": 31.6228444,
         "longitude": -7.9931712,
         "wikidata": "Q58975496",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Koutoubia Gardens"
+        }
       }
     },
     {
@@ -452,7 +528,7 @@
         ],
         "latitude": 31.6222731,
         "longitude": -7.984071,
-        "address": "Derb El Bahia, 8, Marrakech",
+        "address": "Derb El Bahia, 8",
         "opening_hours": "9:00-12:30;14:30-18:00",
         "website": "https://tiskiwin.wdro.net/",
         "fee": "yes",
@@ -505,7 +581,10 @@
         "wikidata": "Q123262808",
         "fee": "no",
         "wheelchair": "limited",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Dar Bellarj"
+        }
       }
     },
     {
@@ -527,7 +606,7 @@
         ],
         "latitude": 31.629188,
         "longitude": -7.9902862,
-        "address": "Derb Chorfa Lakbir, 8, Marrakech",
+        "address": "Derb Chorfa Lakbir, 8",
         "phone": "+212 5 24 42 64 63",
         "website": "https://darcherifa.com/",
         "fee": "no",
@@ -553,7 +632,7 @@
         ],
         "latitude": 31.6319862,
         "longitude": -7.9843668,
-        "address": "Rue Ahal Fès, 46, Marrakech",
+        "address": "Rue Ahal Fès, 46",
         "opening_hours": "Mo-Su 09:30-19:00",
         "phone": "+212 5 24 38 57 21",
         "website": "https://www.maisondelaphotographie.ma",
@@ -604,7 +683,7 @@
         ],
         "latitude": 31.6186692,
         "longitude": -7.9879731,
-        "address": "Rue Touareg Ksibat Nhas, 39-40, Marrakech",
+        "address": "Rue Touareg Ksibat Nhas, 39-40",
         "opening_hours": "Tu-Su 10:00-17:30",
         "phone": "+212 8 08 65 85 61",
         "website": "https://www.lemapmarrakech.com/",
@@ -677,7 +756,7 @@
         ],
         "latitude": 31.6419019,
         "longitude": -8.0028817,
-        "address": "Rue Yves Saint Laurent, Marrakech",
+        "address": "Rue Yves Saint Laurent",
         "opening_hours": "10:00-18:00. Fermé le mercredi",
         "website": "https://www.jardinmajorelle.com/",
         "wheelchair": "limited",
@@ -702,7 +781,7 @@
         ],
         "latitude": 31.6308727,
         "longitude": -7.9899339,
-        "address": "Rue Mouassine, 121, Marrakech",
+        "address": "Rue Mouassine, 121",
         "opening_hours": "Mo-Su 09:30-18:00",
         "phone": "+212 524 39 00 40",
         "website": "https://www.lejardinsecretmarrakech.com/",
@@ -753,7 +832,7 @@
         ],
         "latitude": 31.6425511,
         "longitude": -8.0032743,
-        "address": "Rue Yves Saint Laurent, Marrakech",
+        "address": "Rue Yves Saint Laurent",
         "opening_hours": "Th-Tu 10:00-18:00",
         "website": "https://www.museeyslmarrakech.com",
         "fee": "yes",
@@ -780,7 +859,7 @@
         ],
         "latitude": 31.6216368,
         "longitude": -7.9820295,
-        "address": "Rue Riad Zitoun El Jedid, 5, Marrakech",
+        "address": "Rue Riad Zitoun El Jedid, 5",
         "opening_hours": "Mo-Su 09:00-17:00",
         "website": "https://e-services.minculture.gov.ma/fr/tickets/palais-bahia",
         "wikipedia": "en:Bahia Palace",
@@ -829,7 +908,7 @@
         ],
         "latitude": 31.6359916,
         "longitude": -8.0133642,
-        "address": "Boulevard Mohammed Zerktouni, 55, Marrakech",
+        "address": "Boulevard Mohammed Zerktouni, 55",
         "opening_hours": "We-Mo",
         "phone": "+212 524 43 40 60",
         "website": "https://www.alfassia.com/restaurants-gastronomique.html",
@@ -856,7 +935,7 @@
         ],
         "latitude": 31.6240078,
         "longitude": -7.9849483,
-        "address": "Douar Graoua, 2-4, Marrakech",
+        "address": "Douar Graoua, 2-4",
         "opening_hours": "Mo-Su 11:00-22:00",
         "phone": "+212 5 24 37 83 87",
         "website": "https://www.undejeuneramarrakech.com/",
@@ -883,7 +962,7 @@
         ],
         "latitude": 31.6340021,
         "longitude": -7.9907756,
-        "address": "Rue Riad Laarous, 300, Marrakech",
+        "address": "Rue Riad Laarous, 300",
         "opening_hours": "Mo-Su 12:00-22:00",
         "phone": "+212 6 05 30 56 87",
         "wheelchair": "limited",
@@ -909,7 +988,7 @@
         ],
         "latitude": 31.6219848,
         "longitude": -7.9884598,
-        "address": "Rue El Moustachfa, 10, Marrakech",
+        "address": "Rue El Moustachfa, 10",
         "opening_hours": "Mo-Su 08:00-22:00",
         "phone": "+212 5 24 38 07 07",
         "website": "https://www.zwinzwincafe.net/",
@@ -961,7 +1040,7 @@
         ],
         "latitude": 31.6300675,
         "longitude": -7.9850795,
-        "address": "Rue Azbezd, 30, Marrakech",
+        "address": "Rue Azbezd, 30",
         "opening_hours": "08:00-22:00",
         "phone": "+212 6 67 84 63 70",
         "cuisine": "moroccan",
@@ -986,7 +1065,7 @@
         ],
         "latitude": 31.631923,
         "longitude": -7.9848998,
-        "address": "Rue Souk El Fassi, 55, Marrakech",
+        "address": "Rue Souk El Fassi, 55",
         "opening_hours": "Tu-Su 19:00-00:00",
         "phone": "+212 5 24 37 81 76",
         "website": "https://www.foundouk.com/",
@@ -1012,7 +1091,7 @@
         ],
         "latitude": 31.628966,
         "longitude": -7.9968979,
-        "address": "Rue DJebel Alakhdar, Marrakech",
+        "address": "Rue DJebel Alakhdar",
         "opening_hours": "12:30-14:30; 19:30-22:30",
         "phone": "+212 5 24 45 90 00",
         "website": "http://www.lucienbarriere.com/en/luxury-hotel/Marrakech-Hotel-Naoura-Barriere/Fouquets-Marrakech.html",
@@ -1038,7 +1117,7 @@
         ],
         "latitude": 31.6252725,
         "longitude": -7.9839116,
-        "address": "Derb Cherkaoui, 17, Marrakech",
+        "address": "Derb Cherkaoui, 17",
         "opening_hours": "Tu-Su 12:00-14:30,19:30-23:00",
         "phone": "+212 5 24 38 90 67",
         "website": "https://www.pepenero-marrakech.com/",
@@ -1064,7 +1143,7 @@
         ],
         "latitude": 31.6297335,
         "longitude": -7.9905069,
-        "address": "Rue Sidi El Yamani, 63, Marrakech",
+        "address": "Rue Sidi El Yamani, 63",
         "opening_hours": "Th-Tu 12:00-14:30,18:30-21:30",
         "phone": "+212 524385051",
         "website": "https://www.palaislamrani.com/",
@@ -1091,7 +1170,7 @@
         ],
         "latitude": 31.6259112,
         "longitude": -7.9903183,
-        "address": "Place Jamâa El Fna،, 1, Marrakech",
+        "address": "Place Jamâa El Fna،, 1",
         "opening_hours": "Mo-Su 10:00-15:00,19:00-23:00",
         "phone": "+212 5 24 44 23 41",
         "website": "https://www.albaraka-marrakech.com/",
@@ -1117,7 +1196,7 @@
         ],
         "latitude": 31.6286777,
         "longitude": -7.9874376,
-        "address": "Derb Aarjane, 1, Marrakech",
+        "address": "Derb Aarjane, 1",
         "opening_hours": "Mo-Su 12:00-23:00",
         "phone": "+212 5 24 38 16 09",
         "website": "https://nomadmarrakech.com",
@@ -1143,7 +1222,7 @@
         ],
         "latitude": 31.6326366,
         "longitude": -8.0064482,
-        "address": "Rue Badr / Av. des Nations Unies, Marrakech",
+        "address": "Rue Badr / Av. des Nations Unies",
         "opening_hours": "Mo-Su 07:00-23:30",
         "phone": "+212 524 43 89 80",
         "website": "http://www.ltchine-restaurant.com/",
@@ -1169,7 +1248,7 @@
         ],
         "latitude": 31.6312148,
         "longitude": -8.0119426,
-        "address": "Avenue Hassan II, Marrakech",
+        "address": "Avenue Hassan II",
         "opening_hours": "Mo-Su 06:00-00:00",
         "phone": "+212 658 699685",
         "cuisine": "american;arab;asian;barbecue;breakfast;burger;cake;chicken;coffee_shop;crepe;curry;diner;donut;oriental;fish;french;friture;hotdog;international;italian;italian_pizza;kebab;moroccan;pizza;sandwich;sausage;spanish;tea",
@@ -1194,7 +1273,7 @@
         ],
         "latitude": 31.6245374,
         "longitude": -7.985213,
-        "address": "Rue Riad Zitoun El Jedid, 84, Marrakech",
+        "address": "Rue Riad Zitoun El Jedid, 84",
         "opening_hours": "Mo-Sa 12:30-22:30",
         "phone": "+212 524 386 805;+212 602 439 515;+212 635 902 704",
         "website": "https://naranj.ma/",
@@ -1220,7 +1299,7 @@
         ],
         "latitude": 31.6217997,
         "longitude": -7.9862192,
-        "address": "Riad Zitoun Lakdim رياض الزيتون القديم, 12, Marrakech",
+        "address": "Riad Zitoun Lakdim رياض الزيتون القديم, 12",
         "opening_hours": "Mo-Su 11:00-23:00",
         "phone": "+212 5 24 37 75 80",
         "website": "https://koulchizine.com/",
@@ -1246,7 +1325,7 @@
         ],
         "latitude": 31.6336166,
         "longitude": -7.9891467,
-        "address": "Derb Chentouf, 56, Marrakech",
+        "address": "Derb Chentouf, 56",
         "opening_hours": "Tu-Su 17:00-22:00",
         "phone": "+212 6 66 04 48 82",
         "website": "https://exotic-bali.com/",
@@ -1272,7 +1351,7 @@
         ],
         "latitude": 31.6356415,
         "longitude": -8.0111946,
-        "address": "Sis 36 angle rue la liberté et rue Tarik Ibnou Ziad N° 3 rez-de-chaussée, Marrakech",
+        "address": "Sis 36 angle rue la liberté et rue Tarik Ibnou Ziad N° 3 rez-de-chaussée",
         "opening_hours": "Mo-Su 08:00-23:00",
         "phone": "+212 6 61 45 15 19",
         "website": "https://lekilim.com/en/",
@@ -1298,7 +1377,7 @@
         ],
         "latitude": 31.6315526,
         "longitude": -8.0071371,
-        "address": "57 Rue Mouatamid Ibn Abaad, Atar 1 Mag N 2 Angle Av Med, Marrakech",
+        "address": "57 Rue Mouatamid Ibn Abaad, Atar 1 Mag N 2 Angle Av Med",
         "opening_hours": "Mo-Su 11:30-02:00",
         "phone": "+212 6 61 82 56 13",
         "website": "https://babapizza.ma/",
@@ -1375,7 +1454,7 @@
         ],
         "latitude": 31.6318241,
         "longitude": -7.9967886,
-        "address": "Derb Dekkak, 2, Marrakech",
+        "address": "Derb Dekkak, 2",
         "opening_hours": "Mo-Su 12:00-00:00",
         "phone": "+212 6 46 38 47 22",
         "website": "https://mbacha.net/",
@@ -1402,7 +1481,7 @@
         ],
         "latitude": 31.6222767,
         "longitude": -7.9864208,
-        "address": "Riad Zitoun Lakdim رياض الزيتون القديم, Marrakech",
+        "address": "Riad Zitoun Lakdim رياض الزيتون القديم",
         "opening_hours": "Mo-Su 10:00-00:00",
         "phone": "+212 6 23 61 51 31",
         "website": "http://restaurantdardar.com",
@@ -1428,7 +1507,7 @@
         ],
         "latitude": 31.6334188,
         "longitude": -8.0121946,
-        "address": "Boulevard El Mansour Eddahbi, 67, Marrakech",
+        "address": "Boulevard El Mansour Eddahbi, 67",
         "opening_hours": "Mo-Sa 12:00-22:00",
         "phone": "+212 6 69 29 31 62",
         "website": "https://azalaiurbansouk.com/",
@@ -1454,7 +1533,7 @@
         ],
         "latitude": 31.636063,
         "longitude": -7.9967623,
-        "address": "Rue El Gza, Marrakech",
+        "address": "Rue El Gza",
         "opening_hours": "Mo-Su 10:00-23:00",
         "phone": "+212 077 377 1356",
         "website": "https://www.laterrassedujardin.ma/",
@@ -1480,7 +1559,7 @@
         ],
         "latitude": 31.6343522,
         "longitude": -8.007632,
-        "address": "Rue el Imam Malik,, Marrakech",
+        "address": "Rue el Imam Malik,",
         "opening_hours": "sunrise-sunset",
         "phone": "+212 7 70 70 75 75",
         "website": "https://hysushi-marrakech.com/",
@@ -1506,7 +1585,7 @@
         ],
         "latitude": 31.6310673,
         "longitude": -7.9888763,
-        "address": "Souk Cherifia, 15, Marrakech",
+        "address": "Souk Cherifia, 15",
         "opening_hours": "12:00-23:00",
         "phone": "+212 524 375 904",
         "website": "https://www.terrassedesepices.com/",
@@ -1532,7 +1611,7 @@
         ],
         "latitude": 31.6320477,
         "longitude": -7.9887642,
-        "address": "rue El Jeld, Sidi Abdelaziz, 32, Marrakech",
+        "address": "rue El Jeld, Sidi Abdelaziz, 32",
         "opening_hours": "Mo, We 11:30-17:00, 19:00-22:00; Tu 11:30-16:00",
         "phone": "+212 5 24 37 82 95",
         "website": "https://www.norya-ayron.com/",
@@ -1557,7 +1636,7 @@
         ],
         "latitude": 31.6130285,
         "longitude": -7.987289,
-        "address": "Derb Chtouka, 224, Marrakech",
+        "address": "Derb Chtouka, 224",
         "opening_hours": "Mo-Su 09:00-22:00",
         "phone": "+212 5 24 37 83 67",
         "website": "https://www.cafeclock.com/",
@@ -1607,7 +1686,7 @@
         ],
         "latitude": 31.6316491,
         "longitude": -8.0127854,
-        "address": "Rue Yougoslavie زنقة يوغوسلافيا, Marrakech",
+        "address": "Rue Yougoslavie زنقة يوغوسلافيا",
         "opening_hours": "Mo-Su 19:00-01:00",
         "website": "https://www.azarmarrakech.com/",
         "cuisine": "moroccan",
@@ -1632,7 +1711,7 @@
         ],
         "latitude": 31.6324404,
         "longitude": -7.9885322,
-        "address": "Rue Amsafah, 12, Marrakech",
+        "address": "Rue Amsafah, 12",
         "opening_hours": "Mo-Su 11:00-23:00",
         "phone": "+212 524390984;+212 653100088",
         "website": "https://www.kui-zin.com/",
@@ -1657,7 +1736,7 @@
         ],
         "latitude": 31.6228783,
         "longitude": -7.9846187,
-        "address": "Rue Riad Zitoun El Jedid, 42, Marrakech",
+        "address": "Rue Riad Zitoun El Jedid, 42",
         "opening_hours": "Tu-Su 12:00-17:00",
         "phone": "+212 524 385 295",
         "popularity": 0
@@ -1682,7 +1761,7 @@
         ],
         "latitude": 31.6315072,
         "longitude": -7.9827201,
-        "address": "Rue Tachenbacht, Marrakech",
+        "address": "Rue Tachenbacht",
         "opening_hours": "Mo-Su 10:00-23:00",
         "phone": "+212 6 00 75 68 45",
         "popularity": 0
@@ -1706,7 +1785,7 @@
         ],
         "latitude": 31.6329886,
         "longitude": -8.0135755,
-        "address": "Rue Yougoslavie زنقة يوغوسلافيا, 101, Marrakech",
+        "address": "Rue Yougoslavie زنقة يوغوسلافيا, 101",
         "opening_hours": "24/7",
         "phone": "+212 7 63 10 41 11",
         "website": "https://www.panamelounge.com",
@@ -1731,7 +1810,7 @@
         ],
         "latitude": 31.6311057,
         "longitude": -7.989435,
-        "address": "131, Rue Mouassine, Marrakech",
+        "address": "131, Rue Mouassine",
         "opening_hours": "Mo-Su 10:00-00:00",
         "phone": "+212 7 07 77 25 68",
         "website": "https://lafontainedesepices.com/",
@@ -1900,7 +1979,7 @@
         ],
         "latitude": 31.6290624,
         "longitude": -7.9873234,
-        "address": "75 Rahba Lakdima, 75, Marrakech",
+        "address": "75 Rahba Lakdima, 75",
         "opening_hours": "Mo-Su 09:00-23:00",
         "phone": "+212 5 24 39 17 70",
         "website": "https://cafedesepices.ma/",
@@ -1951,7 +2030,7 @@
         ],
         "latitude": 31.631592,
         "longitude": -7.9942543,
-        "address": "Arset Aouzal Souikat, 93, Marrakech",
+        "address": "Arset Aouzal Souikat, 93",
         "opening_hours": "11:00-20:00",
         "website": "http://www.hennacafemarrakech.com/",
         "cuisine": "berber",
@@ -1976,7 +2055,7 @@
         ],
         "latitude": 31.6411864,
         "longitude": -8.0018479,
-        "address": "Rue Yves Saint Laurent, Marrakech",
+        "address": "Rue Yves Saint Laurent",
         "opening_hours": "Mo-Su 08:00-20:00; \"Ramadan 09:00-17:00\"",
         "phone": "+212 524 31 00 16",
         "website": "https://www.16cafe.com/le-16-kawa/",
@@ -2001,7 +2080,7 @@
         ],
         "latitude": 31.6260935,
         "longitude": -7.99105,
-        "address": "Rue Koutoubia, 9, Marrakech",
+        "address": "Rue Koutoubia, 9",
         "opening_hours": "Su-Sa 10:00-19:00",
         "website": "https://instagram.com/foundouk_gargaa_marrakech?igshid=YmMyMTA2M2Y=",
         "cuisine": "moroccan",
@@ -2026,7 +2105,7 @@
         ],
         "latitude": 31.6363854,
         "longitude": -8.0095791,
-        "address": "Rue halab, 14, Marrakech",
+        "address": "Rue halab, 14",
         "opening_hours": "Mo-Th, Sa 09:00-19:00; Fr 15:00-19:00",
         "website": "https://kartell.space/",
         "popularity": 0
@@ -2050,7 +2129,7 @@
         ],
         "latitude": 31.6259205,
         "longitude": -7.9916855,
-        "address": "Rue de la Koutoubia, 26, Marrakech",
+        "address": "Rue de la Koutoubia, 26",
         "opening_hours": "17:00-24:00",
         "phone": "+212 024 38 88 00",
         "popularity": 0

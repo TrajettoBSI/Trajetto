@@ -14,6 +14,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 
 /**
@@ -54,6 +55,8 @@ public class TouristSpotRepository {
         String getWikidata();
         String getWikipedia();
         String getWheelchair();
+        /** Nome por idioma do app ({@code pt}, {@code en}, {@code es}); vazio se o catalogo nao tiver. */
+        Map<String, String> getNames();
         /** Perfis do ponto separados por virgula, ou nulo se nao houver nenhum. */
         String getProfiles();
         Double getDistanceMeters();
@@ -75,6 +78,7 @@ public class TouristSpotRepository {
         private String wikipedia;
         private String wheelchair;
         private List<String> profiles;
+        private Map<String, String> names;
         private Double distanceMeters;
 
         @Override public Long getId() { return id; }
@@ -91,6 +95,7 @@ public class TouristSpotRepository {
         @Override public String getWikipedia() { return wikipedia; }
         @Override public String getWheelchair() { return wheelchair; }
         @Override public Double getDistanceMeters() { return distanceMeters; }
+        @Override public Map<String, String> getNames() { return names == null ? Map.of() : names; }
 
         @Override
         public String getProfiles() {
@@ -133,8 +138,12 @@ public class TouristSpotRepository {
         List<Criteria> filters = new ArrayList<>();
         if (search != null) {
             String regex = Pattern.quote(search);
+            // Tambem pelo nome traduzido: quem usa o app em portugues procura "Museu do Louvre".
             filters.add(new Criteria().orOperator(
                     Criteria.where("name").regex(regex, "i"),
+                    Criteria.where("names.pt").regex(regex, "i"),
+                    Criteria.where("names.en").regex(regex, "i"),
+                    Criteria.where("names.es").regex(regex, "i"),
                     Criteria.where("address").regex(regex, "i")));
         }
         // Igualdade simples: quem ignora maiuscula aqui e a collation

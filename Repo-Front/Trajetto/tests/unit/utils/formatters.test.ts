@@ -13,6 +13,7 @@ import { isEmpty, resolveFeedbackStatus } from '@/src/components/feedback/feedba
 import { contarCriteriosAtivos, FILTRO_VAZIO, intervaloDoPeriodo, paraConsulta, saneado } from '@/src/pages/admin/dashboard/dashboardFilter';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { isSupportedLanguage } from '@/src/i18n/languages';
+import { placeName } from '@/src/i18n/format';
 import { apiError, networkError, rawResponseError } from '../../helpers';
 
 describe('distancias e tempos do mapa', () => {
@@ -190,5 +191,20 @@ describe('estado das telas e filtros do painel', () => {
   it('marca como passada a parada cujo horario ja foi', () => {
     expect(isPlacePast('2000-01-01', '09:00')).toBe(true);
     expect(isPlacePast('2999-01-01', '09:00')).toBe(false);
+  });
+});
+
+describe('placeName', () => {
+  const louvre = { name: 'Musée du Louvre', names: { pt: 'Museu do Louvre', en: 'Louvre Museum', es: 'Museo del Louvre' } };
+
+  it('mostra o nome no idioma ativo', () => {
+    expect(placeName(louvre, 'pt-BR')).toBe('Museu do Louvre');
+    expect(placeName(louvre, 'en-US')).toBe('Louvre Museum');
+    expect(placeName(louvre, 'es-ES')).toBe('Museo del Louvre');
+  });
+
+  it('sem traducao, fica o nome original', () => {
+    expect(placeName({ name: 'Café de Flore' }, 'en-US')).toBe('Café de Flore');
+    expect(placeName({ name: 'Café de Flore', names: { pt: 'Café de Flore' } }, 'es-ES')).toBe('Café de Flore');
   });
 });

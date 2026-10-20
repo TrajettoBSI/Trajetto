@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Ponto do catalogo curado de uma cidade, espelhado do GeoJSON na colecao MongoDB
@@ -43,11 +44,13 @@ public class TouristSpotDocument {
     private String wikipedia;
     private String wheelchair;
     private List<String> profiles;
+    /** Nome por idioma do app ({@code pt}, {@code en}, {@code es}), dos rotulos do Wikidata. */
+    private Map<String, String> names;
 
     public static TouristSpotDocument of(Long id, String city, String name, String address, double latitude, double longitude,
                                           String category, String fee, String openingHours, String phone,
                                           String website, String wikidata, String wikipedia, String wheelchair,
-                                          List<String> profiles) {
+                                          List<String> profiles, Map<String, String> names) {
         TouristSpotDocument doc = new TouristSpotDocument();
         doc.id = id;
         doc.city = city;
@@ -65,6 +68,7 @@ public class TouristSpotDocument {
         doc.wikipedia = wikipedia;
         doc.wheelchair = wheelchair;
         doc.profiles = profiles;
+        doc.names = names;
         return doc;
     }
 }

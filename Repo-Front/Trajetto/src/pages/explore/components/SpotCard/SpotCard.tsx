@@ -4,6 +4,7 @@ import { Place } from '@/services';
 import { useColors } from '@/src/theme';
 import { categoryIcon, categoryLabel } from '@/src/helpers/categoryIcon';
 import { styles } from './styles';
+import { placeName } from '@/src/i18n/format';
 
 type SpotCardProps = {
   spot: Pick<Place, 'name' | 'category' | 'address'>;
@@ -18,7 +19,7 @@ export default function SpotCard({ spot, onPress }: SpotCardProps) {
         <Text style={s.cardIconText}>{categoryIcon(spot.category)}</Text>
       </View>
       <View style={s.cardContent}>
-        <Text style={s.cardName} numberOfLines={1}>{spot.name}</Text>
+        <Text style={s.cardName} numberOfLines={1}>{placeName(spot)}</Text>
         <Text style={s.cardCategory} numberOfLines={1}>{categoryLabel(spot.category)}</Text>
         {spot.address ? <Text style={s.cardAddress} numberOfLines={1}>{spot.address}</Text> : null}
       </View>

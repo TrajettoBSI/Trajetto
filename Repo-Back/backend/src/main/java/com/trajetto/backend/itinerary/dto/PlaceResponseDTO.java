@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Map;
 
 @Data
 public class PlaceResponseDTO {
@@ -29,4 +30,7 @@ public class PlaceResponseDTO {
 
     /** Site oficial do lugar pago que nao exige reserva -- onde ver preco e comprar o ingresso. */
     private String ticketUrl;
+
+    /** Nome do lugar por idioma do app ({@code pt}, {@code en}, {@code es}); vazio fora do catalogo. */
+    private Map<String, String> names = Map.of();
 }

@@ -64,6 +64,16 @@ class TouristSpotSearchIntegrationTest {
     }
 
     @Test
+    @DisplayName("A busca acha o lugar pelo nome traduzido e devolve os nomes por idioma")
+    void buscaPeloNomeTraduzido() {
+        List<TouristSpotResponseDTO> achados = service.search("Museu do Louvre", null, null, null, null, null, null, null);
+
+        TouristSpotResponseDTO louvre = achados.stream()
+                .filter(p -> p.name().equals("Musée du Louvre")).findFirst().orElseThrow();
+        assertEquals("Louvre Museum", louvre.names().get("en"));
+    }
+
+    @Test
     @DisplayName("Locais proximos vem do mais perto para o mais longe, todos dentro do raio")
     void proximosOrdenadosPorDistancia() {
         List<TouristSpotResponseDTO> proximos = service.nearby(LAT, LNG, 500, 100, null, null);

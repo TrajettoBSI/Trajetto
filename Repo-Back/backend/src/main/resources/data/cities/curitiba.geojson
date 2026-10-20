@@ -20,12 +20,17 @@
         ],
         "latitude": -25.441763,
         "longitude": -49.2387389,
-        "address": "Rua Engenheiro Ostoja Roguski, 350, Curitiba",
+        "address": "Rua Engenheiro Ostoja Roguski, 350",
         "opening_hours": "Mo-Su,PH 06:00-19:30",
         "website": "https://www.curitiba.pr.gov.br/servicos/jardim-botanico-de-curitiba/831",
         "wikidata": "Q94923",
         "wikipedia": "pt:Jardim Botânico de Curitiba",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Jardim Botânico de Curitiba",
+          "en": "Botanical Garden of Curitiba",
+          "es": "Jardín botánico de Curitiba"
+        }
       }
     },
     {
@@ -50,7 +55,12 @@
         "wikidata": "Q4991927",
         "wikipedia": "pt:Museu Oscar Niemeyer",
         "fee": "yes",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Museu Oscar Niemeyer",
+          "en": "Oscar Niemeyer Museum",
+          "es": "Museo Oscar Niemeyer"
+        }
       }
     },
     {
@@ -74,7 +84,12 @@
         "longitude": -49.2761532,
         "wikidata": "Q2719464",
         "wikipedia": "pt:Ópera de Arame",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Ópera de Arame",
+          "en": "Wire Opera House",
+          "es": "Ópera de Alambre"
+        }
       }
     },
     {
@@ -96,11 +111,16 @@
         ],
         "latitude": -25.4413461,
         "longitude": -49.3421352,
-        "address": "Rua Deputado Heitor Alencar Furtado, 3641, Curitiba",
+        "address": "Rua Deputado Heitor Alencar Furtado, 3641",
         "website": "https://www.churchofjesuschrist.org/temples/details/curitiba-brazil-temple",
         "wikidata": "Q1144601",
         "wikipedia": "en:Curitiba Brazil Temple",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "pt": "Templo de Curitiba (SUD)",
+          "en": "Curitiba Brazil Temple",
+          "es": "Templo de Curitiba"
+        }
       }
     },
     {
@@ -122,10 +142,14 @@
         ],
         "latitude": -25.4152105,
         "longitude": -49.2722627,
-        "address": "Rua Coronel Agostinho Macedo, 248, Curitiba",
+        "address": "Rua Coronel Agostinho Macedo, 248",
         "wikidata": "Q10333897",
         "wikipedia": "pt:Museu do Holocausto de Curitiba",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Museu do Holocausto de Curitiba",
+          "en": "Holocaust Museum in Curitiba"
+        }
       }
     },
     {
@@ -146,10 +170,15 @@
         ],
         "latitude": -25.4458148,
         "longitude": -49.2873613,
-        "address": "Avenida Sete de Setembro, 5123, Curitiba",
+        "address": "Avenida Sete de Setembro, 5123",
         "wikidata": "Q10353488",
         "wikipedia": "pt:Praça do Japão (Curitiba)",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Praça do Japão",
+          "en": "Praça do Japão",
+          "es": "Praça do Japão"
+        }
       }
     },
     {
@@ -173,7 +202,12 @@
         "wikidata": "Q7691919",
         "wikipedia": "pt:Centro Cultural Teatro Guaíra",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "pt": "Teatro Guaíra",
+          "en": "Teatro Guaíra",
+          "es": "Centro Cultural Teatro Guaíra"
+        }
       }
     },
     {
@@ -196,7 +230,12 @@
         "longitude": -49.3047846,
         "wikidata": "Q5641763",
         "wikipedia": "pt:Memorial Ucraniano",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Memorial Ucraniano",
+          "en": "Memorial Ucraniano",
+          "es": "Memorial Ucraniano"
+        }
       }
     },
     {
@@ -218,14 +257,19 @@
         ],
         "latitude": -25.5567062,
         "longitude": -49.2345989,
-        "address": "Rua João Miqueletto, 1500, Curitiba",
+        "address": "Rua João Miqueletto, 1500",
         "opening_hours": "Tu-Su 10:00-16:00",
         "website": "https://www.curitiba.pr.gov.br/conteudo/zoologico-de-curitiba/3300",
         "wikidata": "Q9011010",
         "wikipedia": "pt:Jardim Zoológico de Curitiba",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Jardim Zoológico de Curitiba",
+          "en": "Curitiba Zoo",
+          "es": "Jardín zoológico de Curitiba"
+        }
       }
     },
     {
@@ -246,12 +290,16 @@
         ],
         "latitude": -25.4360098,
         "longitude": -49.2195521,
-        "address": "Rua Professor Benedito Conceição, 407, Curitiba",
+        "address": "Rua Professor Benedito Conceição, 407",
         "opening_hours": "Tu-Su 09:00-16:45",
         "website": "https://www.curitiba.pr.gov.br/conteudo/bosque-municipal-capao-da-imbuia-museu-de-historia-natural/271",
         "wikidata": "Q12857836",
         "wikipedia": "pt:Bosque do Capão da Imbuia",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Bosque do Capão da Imbuia",
+          "en": "Bosque Capão da Imbuia"
+        }
       }
     },
     {
@@ -274,7 +322,12 @@
         "longitude": -49.2848686,
         "wikidata": "Q9055855",
         "wikipedia": "pt:Parque Tanguá",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Parque Tanguá",
+          "en": "Parque Tanguá",
+          "es": "Parque Tanguá"
+        }
       }
     },
     {
@@ -297,7 +350,11 @@
         "longitude": -49.2866461,
         "wikidata": "Q4947465",
         "wikipedia": "pt:Bosque Alemão",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Memorial Alemão - Bosque Alemão",
+          "en": "Bosque Alemão"
+        }
       }
     },
     {
@@ -318,10 +375,14 @@
         ],
         "latitude": -25.4274834,
         "longitude": -49.2720724,
-        "address": "Rua Mateus Leme, 1, Curitiba",
+        "address": "Rua Mateus Leme, 1",
         "wikidata": "Q10300290",
         "wikipedia": "pt:Igreja da Ordem Terceira de São Francisco das Chagas",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Igreja da Ordem Terceira de São Francisco das Chagas",
+          "en": "Igreja da Ordem Terceira de São Francisco das Chagas"
+        }
       }
     },
     {
@@ -343,13 +404,17 @@
         ],
         "latitude": -25.4278267,
         "longitude": -49.2761847,
-        "address": "Rua Kellers, 289, Curitiba",
+        "address": "Rua Kellers, 289",
         "opening_hours": "Tu-Su 10:00-17:30",
         "website": "https://www.museuparanaense.pr.gov.br/",
         "wikidata": "Q10333606",
         "wikipedia": "pt:Museu Paranaense",
         "fee": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Museu Paranaense",
+          "en": "Museu Paranaense"
+        }
       }
     },
     {
@@ -372,7 +437,11 @@
         "longitude": -49.2057939,
         "wikidata": "Q4818766",
         "wikipedia": "pt:Parque Atuba",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Parque Atuba",
+          "en": "Atuba Park"
+        }
       }
     },
     {
@@ -395,7 +464,11 @@
         "longitude": -49.2721292,
         "wikidata": "Q10333778",
         "wikipedia": "pt:Museu de Arte Sacra da Arquidiocese de Curitiba",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Museu de Arte Sacra da Arquidiocese de Curitiba",
+          "en": "Museu de Arte Sacra da Arquidiocese de Curitiba"
+        }
       }
     },
     {
@@ -416,10 +489,14 @@
         ],
         "latitude": -25.4287014,
         "longitude": -49.2664663,
-        "address": "Rua Conselheiro Laurindo, 160, Curitiba",
+        "address": "Rua Conselheiro Laurindo, 160",
         "wikidata": "Q10353372",
         "wikipedia": "pt:Praça Santos Andrade",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Praça Santos Andrade",
+          "en": "Praça Santos Andrade (Curitiba)"
+        }
       }
     },
     {
@@ -440,11 +517,15 @@
         ],
         "latitude": -25.4347385,
         "longitude": -49.2569818,
-        "address": "Avenida Sete de Setembro, 1865, Curitiba",
+        "address": "Avenida Sete de Setembro, 1865",
         "opening_hours": "Mo 07:00-14:00; Tu-Sa 07:00-18:00; Su 07:00-13:00",
         "wikidata": "Q10328772",
         "wikipedia": "pt:Mercado Municipal de Curitiba",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Mercado Municipal de Curitiba",
+          "en": "Municipal Market Curitiba"
+        }
       }
     },
     {
@@ -467,7 +548,12 @@
         "longitude": -49.258558,
         "wikidata": "Q9047097",
         "wikipedia": "pt:Museu do Expedicionário",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Museu do Expedicionário",
+          "en": "Museu do Expedicionário",
+          "es": "Museo del Expedicionario"
+        }
       }
     },
     {
@@ -488,13 +574,18 @@
         ],
         "latitude": -25.447633,
         "longitude": -49.2574128,
-        "address": "Praça Guido Viaro, Curitiba",
+        "address": "Praça Guido Viaro",
         "opening_hours": "Mo-Fr 13:30-19:00; Sa-Su 15:00-19:00",
         "phone": "+55 41 3213 1340",
         "website": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/teatro-do-paiol",
         "wikidata": "Q959223",
         "wikipedia": "pt:Teatro Paiol",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Teatro Paiol",
+          "en": "Teatro Paiol",
+          "es": "Teatro Paiol"
+        }
       }
     },
     {
@@ -515,10 +606,15 @@
         ],
         "latitude": -25.4157824,
         "longitude": -49.2321407,
-        "address": "Rua Ozório Duque Estrada, 421, Curitiba",
+        "address": "Rua Ozório Duque Estrada, 421",
         "wikidata": "Q4947480",
         "wikipedia": "pt:Bosque de Portugal",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Bosque de Portugal",
+          "en": "Bosque de Portugal",
+          "es": "Bosque de Portugal"
+        }
       }
     },
     {
@@ -539,11 +635,15 @@
         ],
         "latitude": -25.4367484,
         "longitude": -49.2191112,
-        "address": "Rua Professor Benedito Conceição, 407, Curitiba",
+        "address": "Rua Professor Benedito Conceição, 407",
         "opening_hours": "Tu-Su 09:00-16:45",
         "website": "https://www.curitiba.pr.gov.br/conteudo/museu-de-historia-natural-do-capao-da-imbuia-bosque-municipal-capao-da-imbuia/332",
         "wikidata": "Q47068072",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Museu de História Natural Capão da Imbuia",
+          "en": "Museu de História Natural Capão da Imbuia"
+        }
       }
     },
     {
@@ -564,12 +664,17 @@
         ],
         "latitude": -25.423381,
         "longitude": -49.2684364,
-        "address": "Praça Gibran Khalil, Curitiba",
+        "address": "Praça Gibran Khalil",
         "opening_hours": "Mo-Fr 09:00-21:00; Sa 09:00-13:00",
         "wikidata": "Q10328571",
         "wikipedia": "pt:Memorial Árabe",
         "wheelchair": "limited",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Memorial Árabe",
+          "en": "Landmarks in Curitiba",
+          "es": "Memorial Árabe"
+        }
       }
     },
     {
@@ -590,13 +695,18 @@
         ],
         "latitude": -25.4426791,
         "longitude": -49.2856866,
-        "address": "Avenida do Batel, 1323, Curitiba",
+        "address": "Avenida do Batel, 1323",
         "opening_hours": "Mo-Th 08:00-18:00; Fr 00:00-00:00",
         "phone": "+55 41 3243-2359",
         "website": "https://www.castelodobatel.com.br/",
         "wikidata": "Q8342181",
         "wikipedia": "pt:Castelo do Batel",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Castelo do Batel",
+          "en": "Castelo do Batel",
+          "es": "Castillo de Batel"
+        }
       }
     },
     {
@@ -619,7 +729,11 @@
         "longitude": -49.2698995,
         "wikidata": "Q10353232",
         "wikipedia": "pt:Praça 19 de Dezembro (Curitiba)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Praça 19 de Dezembro",
+          "en": "Praça 19 de Dezembro"
+        }
       }
     },
     {
@@ -647,7 +761,12 @@
         "wikidata": "Q9056546",
         "wikipedia": "pt:Passeio Público (Curitiba)",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Portão do Passeio Público",
+          "en": "Passeio Público",
+          "es": "Paseo Público"
+        }
       }
     },
     {
@@ -670,7 +789,11 @@
         "longitude": -49.3110616,
         "wikidata": "Q10344895",
         "wikipedia": "pt:Parque Barigui",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Parque Barigui",
+          "en": "Parque Barigüi"
+        }
       }
     },
     {
@@ -693,7 +816,12 @@
         "longitude": -49.3563724,
         "wikidata": "Q10378904",
         "wikipedia": "pt:Teatro Positivo",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Teatro Positivo",
+          "en": "Teatro Positivo",
+          "es": "Teatro Positivo"
+        }
       }
     },
     {
@@ -716,13 +844,17 @@
         ],
         "latitude": -25.4375277,
         "longitude": -49.265823,
-        "address": "Avenida Sete de Setembro, 2775, Curitiba",
+        "address": "Avenida Sete de Setembro, 2775",
         "opening_hours": "Tu-Sa 10:00-18:00; Su 11:00-19:00",
         "phone": "+55 41 3094-5346",
         "wikidata": "Q56694450",
         "wikipedia": "pt:Museu Ferroviário de Curitiba",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Museu Ferroviário de Curitiba",
+          "en": "Curitiba Station"
+        }
       }
     },
     {
@@ -743,10 +875,14 @@
         ],
         "latitude": -25.3972491,
         "longitude": -49.2835706,
-        "address": "Rua Victor Benato, 210, Curitiba",
+        "address": "Rua Victor Benato, 210",
         "wikidata": "Q10387847",
         "wikipedia": "pt:Universidade Livre do Meio Ambiente",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Universidade Livre do Meio Ambiente",
+          "en": "Universidade Livre do Meio Ambiente"
+        }
       }
     },
     {
@@ -767,12 +903,16 @@
         ],
         "latitude": -25.4762839,
         "longitude": -49.2931978,
-        "address": "Avenida República Argentina, 3430, Curitiba",
+        "address": "Avenida República Argentina, 3430",
         "opening_hours": "Tu-Su 10:00-19:00",
         "website": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/museu-municipal-de-arte-muma-r-portao-cultural/",
         "wikidata": "Q10333542",
         "wikipedia": "pt:Museu Municipal de Arte",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Museu Municipal de Arte",
+          "en": "Museu Municipal de Arte"
+        }
       }
     },
     {
@@ -795,7 +935,12 @@
         "longitude": -49.2281603,
         "wikidata": "Q10333593",
         "wikipedia": "pt:Museu Nacional do Espiritismo",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Museu Nacional do Espiritismo",
+          "en": "Museu Nacional do Espiritismo",
+          "es": "Museu Nacional do Espiritismo"
+        }
       }
     },
     {
@@ -818,7 +963,11 @@
         "longitude": -49.2909486,
         "wikidata": "Q30939398",
         "wikipedia": "pt:Museu da Vida (Curitiba)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Museu da Vida",
+          "en": "Museu da Vida"
+        }
       }
     },
     {
@@ -841,7 +990,10 @@
         "longitude": -49.2693405,
         "wikidata": "Q9662056",
         "wikipedia": "pt:Bosque do Papa",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Bosque do Papa"
+        }
       }
     },
     {
@@ -865,7 +1017,10 @@
         "wikidata": "Q10300922",
         "wikipedia": "pt:Igreja do Rosário (Curitiba)",
         "wheelchair": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Igreja do Rosário (Curitiba)"
+        }
       }
     },
     {
@@ -887,14 +1042,18 @@
         ],
         "latitude": -25.433166,
         "longitude": -49.2729316,
-        "address": "Rua Desembargador Westphalen, 16, Curitiba",
+        "address": "Rua Desembargador Westphalen, 16",
         "opening_hours": "Tu-Fr 10:00-19:00, Sa-Su 10:00-16:00, PH 10:00-16:00",
         "phone": "+55 41 3323 5328; +55 41 3323 5337; +55 41 3222 5172",
         "website": "https://www.mac.pr.gov.br/",
         "wikidata": "Q10333761",
         "wikipedia": "pt:Museu de Arte Contemporânea do Paraná",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Museu de Arte Contemporânea do Paraná",
+          "en": "Museu de Arte Contemporânea do Paraná"
+        }
       }
     },
     {
@@ -915,11 +1074,15 @@
         ],
         "latitude": -25.3897497,
         "longitude": -49.2307701,
-        "address": "Rua Paulo Nadolny, 136, Curitiba",
+        "address": "Rua Paulo Nadolny, 136",
         "opening_hours": "Mo-Su 06:00-22:00",
         "website": "https://www.curitiba.pr.gov.br/conteudo/parque-bacacheriparque-municipal-gal-ibere-de-matos/291",
         "wikidata": "Q4838575",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Parque Bacacheri",
+          "en": "Bacacheri Park"
+        }
       }
     },
     {
@@ -940,10 +1103,14 @@
         ],
         "latitude": -25.4150917,
         "longitude": -49.1966492,
-        "address": "Rua Arno Feliciano de Castilho, 13271, Curitiba",
+        "address": "Rua Arno Feliciano de Castilho, 13271",
         "wikidata": "Q10391442",
         "wikipedia": "pt:Vilinha",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Vilinha",
+          "en": "Parque Histórico de Curitiba"
+        }
       }
     },
     {
@@ -966,7 +1133,11 @@
         "longitude": -49.193159,
         "wikidata": "Q5018024",
         "wikipedia": "pt:Parque Linear Cajuru",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Parque Linear Cajuru",
+          "en": "Cajuru Park"
+        }
       }
     },
     {
@@ -987,11 +1158,15 @@
         ],
         "latitude": -25.4452319,
         "longitude": -49.2715822,
-        "address": "Avenida Presidente Getúlio Vargas, 1193, Curitiba",
+        "address": "Avenida Presidente Getúlio Vargas, 1193",
         "website": "https://pcormaria.com/",
         "wikidata": "Q10345850",
         "wikipedia": "pt:Paróquia do Imaculado Coração de Maria (Curitiba)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Paróquia fazer Imaculado Coração de Maria",
+          "en": "Paróquia Imaculado Coração de Maria"
+        }
       }
     },
     {
@@ -1014,7 +1189,11 @@
         "longitude": -49.3062319,
         "wikidata": "Q10333879",
         "wikipedia": "pt:Museu do Automóvel de Curitiba",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Museu do Automóvel de Curitiba",
+          "en": "Museu do Automóvel de Curitiba"
+        }
       }
     },
     {
@@ -1037,7 +1216,11 @@
         "longitude": -49.2839565,
         "wikidata": "Q9662035",
         "wikipedia": "pt:Bosque Zaninelli",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Bosque Zaninelli",
+          "en": "Zaninelli woods"
+        }
       }
     },
     {
@@ -1060,7 +1243,10 @@
         "latitude": -25.4697443,
         "longitude": -49.2838854,
         "wikidata": "Q139906051",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Ukrainian Cathedral of St. John the Baptist"
+        }
       }
     },
     {
@@ -1083,7 +1269,11 @@
         "longitude": -49.3045278,
         "wikidata": "Q10283319",
         "wikipedia": "pt:Fonte de Jerusalém",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Fonte de Jerusalém",
+          "es": "Fuente de Jerusalén"
+        }
       }
     },
     {
@@ -1104,9 +1294,13 @@
         ],
         "latitude": -25.4297295,
         "longitude": -49.2719587,
-        "address": "Rua Candido Lopes, 500, Curitiba",
+        "address": "Rua Candido Lopes, 500",
         "wikidata": "Q10353387",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Praça Tiradentes",
+          "en": "Praça Tiradentes"
+        }
       }
     },
     {
@@ -1127,11 +1321,14 @@
         ],
         "latitude": -25.4815936,
         "longitude": -49.2244809,
-        "address": "Avenida Senador Salgado Filho, 4460, Curitiba",
+        "address": "Avenida Senador Salgado Filho, 4460",
         "website": "http://www.armazemsantaana.com.br/",
         "wikidata": "Q9629511",
         "wikipedia": "pt:Armazém Santa Ana",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Armazém Santa Ana"
+        }
       }
     },
     {
@@ -1154,7 +1351,10 @@
         "longitude": -49.2742713,
         "wikidata": "Q10359164",
         "wikipedia": "pt:Relógio das Flores (Curitiba)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Relógio das Flores (Curitiba)"
+        }
       }
     },
     {
@@ -1175,13 +1375,17 @@
         ],
         "latitude": -25.3907232,
         "longitude": -49.22622,
-        "address": "Rua Nicarágua, 2620, Curitiba",
+        "address": "Rua Nicarágua, 2620",
         "opening_hours": "Mo-Fr 08:00-12:00,13:00-17:30; Sa 14:30-17:00",
         "phone": "+55 41 3351 3024",
         "website": "https://urci.org.br/museuegipcioerosacruz/",
         "wikidata": "Q28680499",
         "wikipedia": "pt:Museu Egípcio e Rosa Cruz",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Museu Egípcio e Rosa Cruz",
+          "en": "AMORC Building in Curitiba"
+        }
       }
     },
     {
@@ -1202,7 +1406,11 @@
         "latitude": -25.4282607,
         "longitude": -49.2717353,
         "wikidata": "Q105800193",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Mural da Travessa Nestor de Castro (II) - Imagens da Cidade",
+          "en": "Imagens da Cidade"
+        }
       }
     },
     {
@@ -1224,7 +1432,11 @@
         "longitude": -49.2682842,
         "wikidata": "Q65969587",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Conjunto das obras de João Turin",
+          "en": "Conjunto das obras de João Turin"
+        }
       }
     },
     {
@@ -1245,9 +1457,13 @@
         ],
         "latitude": -25.4301573,
         "longitude": -49.2928926,
-        "address": "Praça da Ucrânia, Curitiba",
+        "address": "Praça da Ucrânia",
         "wikidata": "Q136296446",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "monumento a Taras Shevchenko, Curitiba",
+          "en": "Statue of Taras Shevchenko, Curitiba"
+        }
       }
     },
     {
@@ -1270,7 +1486,10 @@
         "longitude": -49.2735506,
         "wikidata": "Q28680414",
         "wikipedia": "pt:Teatro Bom Jesus",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Teatro Bom Jesus"
+        }
       }
     },
     {
@@ -1292,7 +1511,11 @@
         "latitude": -25.4329639,
         "longitude": -49.2758575,
         "wikidata": "Q105986178",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Praça General Osório",
+          "en": "General Osório Square"
+        }
       }
     },
     {
@@ -1313,11 +1536,14 @@
         ],
         "latitude": -25.3846956,
         "longitude": -49.2653229,
-        "address": "Rua José Brusamolin, Curitiba",
+        "address": "Rua José Brusamolin",
         "opening_hours": "Mo-Su 06:00-22:00",
         "wikidata": "Q10345352",
         "wikipedia": "pt:Parque São Lourenço",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Parque São Lourenço"
+        }
       }
     },
     {
@@ -1341,7 +1567,10 @@
         "address": "Rua XV Novembro, 1660, Sao José dos Pinhais",
         "opening_hours": "Mo-Fr 09:00-12:00,13:00-17:00",
         "wikidata": "Q20059115",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Museu Municipal Atílio Rocco"
+        }
       }
     },
     {
@@ -1362,9 +1591,13 @@
         ],
         "latitude": -25.4371698,
         "longitude": -49.2667998,
-        "address": "Avenida Sete de Setembro, 2848, Curitiba",
+        "address": "Avenida Sete de Setembro, 2848",
         "wikidata": "Q65969406",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Praça Eufrásio Correia",
+          "en": "Praça Eufrásio Correia"
+        }
       }
     },
     {
@@ -1386,9 +1619,13 @@
         ],
         "latitude": -25.4350611,
         "longitude": -49.286799,
-        "address": "Alameda Doutor Carlos de Carvalho, 1238, Curitiba",
+        "address": "Alameda Doutor Carlos de Carvalho, 1238",
         "wikidata": "Q100726759",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Praça de Espanha, Curitiba",
+          "es": "Plaza de España"
+        }
       }
     },
     {
@@ -1411,7 +1648,10 @@
         "longitude": -49.3499144,
         "wikidata": "Q10344935",
         "wikipedia": "pt:Parque Diadema (Curitiba)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Parque Diadema (Curitiba)"
+        }
       }
     },
     {
@@ -1434,7 +1674,10 @@
         "longitude": -49.3546474,
         "wikidata": "Q10345542",
         "wikipedia": "pt:Parque dos Tropeiros",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Parque dos Tropeiros"
+        }
       }
     },
     {
@@ -1457,7 +1700,10 @@
         "longitude": -49.2886781,
         "wikidata": "Q9662015",
         "wikipedia": "pt:Bosque Gutierrez",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Bosque Gutierrez"
+        }
       }
     },
     {
@@ -1480,7 +1726,10 @@
         "longitude": -49.266458,
         "wikidata": "Q9695502",
         "wikipedia": "pt:Capela de Nossa Senhora da Glória",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Capela de Nossa Senhora da Glória"
+        }
       }
     },
     {
@@ -1503,7 +1752,10 @@
         "longitude": -49.2602237,
         "wikidata": "Q10345214",
         "wikipedia": "pt:Parque Municipal da Barreirinha",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Parque Municipal da Barreirinha"
+        }
       }
     },
     {
@@ -1526,7 +1778,12 @@
         "longitude": -49.2488903,
         "wikidata": "Q10300901",
         "wikipedia": "pt:Igreja do Cristo Rei",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Igreja do Cristo Rei",
+          "en": "Christ the King Church",
+          "es": "iglesia de Cristo Rey"
+        }
       }
     },
     {
@@ -1547,11 +1804,14 @@
         ],
         "latitude": -25.3877185,
         "longitude": -49.2672781,
-        "address": "Rua Mateus Leme, 4700, Curitiba",
+        "address": "Rua Mateus Leme, 4700",
         "website": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/teatro-cleon-jacques/",
         "wikidata": "Q10378818",
         "wikipedia": "pt:Teatro Cleon Jacques",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Teatro Cleon Jacques"
+        }
       }
     },
     {
@@ -1574,7 +1834,10 @@
         "longitude": -49.379419,
         "wikidata": "Q10345284",
         "wikipedia": "pt:Parque Passaúna",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Parque Passaúna"
+        }
       }
     },
     {
@@ -1597,7 +1860,10 @@
         "longitude": -49.3347204,
         "wikidata": "Q28680523",
         "wikipedia": "pt:Parque Mairi",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Parque Mairi"
+        }
       }
     },
     {
@@ -1620,7 +1886,10 @@
         "longitude": -49.3251705,
         "wikidata": "Q18481089",
         "wikipedia": "pt:Parque Natural Municipal do Guairacá",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Parque Natural Municipal do Guairacá"
+        }
       }
     },
     {
@@ -1641,12 +1910,16 @@
         ],
         "latitude": -25.4246012,
         "longitude": -49.2711581,
-        "address": "Rua Mateus Leme, 336, Curitiba",
+        "address": "Rua Mateus Leme, 336",
         "phone": "+55 41 3222 8262",
         "website": "http://www.maa.pr.gov.br/",
         "wikidata": "Q10333380",
         "wikipedia": "pt:Museu Alfredo Andersen",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Museu Alfredo Andersen",
+          "en": "Museu Alfredo Andersen"
+        }
       }
     },
     {
@@ -1669,7 +1942,12 @@
         "longitude": -49.2964684,
         "wikidata": "Q10300216",
         "wikipedia": "pt:Igreja Santa Izabel",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Igreja Santa Izabel",
+          "en": "Igreja Santa Izabel",
+          "es": "iglesia de Santa Isabel"
+        }
       }
     },
     {
@@ -1690,7 +1968,7 @@
         ],
         "latitude": -25.4268444,
         "longitude": -49.2726285,
-        "address": "Rua Mateus Leme, Curitiba",
+        "address": "Rua Mateus Leme",
         "wikidata": "Q136806534",
         "popularity": 1
       }
@@ -1713,9 +1991,14 @@
         ],
         "latitude": -25.4243798,
         "longitude": -49.2725521,
-        "address": "Rua Inácio Lustosa, 309, Curitiba",
+        "address": "Rua Inácio Lustosa, 309",
         "wikidata": "Q65969614",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "pt": "Igreja Luterana",
+          "en": "Templo Evangélico Luterano",
+          "es": "Templo Evangélico Luterano"
+        }
       }
     },
     {
@@ -1737,7 +2020,10 @@
         "latitude": -25.4273811,
         "longitude": -49.2718088,
         "wikidata": "Q56693282",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Casa João Turin"
+        }
       }
     },
     {
@@ -1757,7 +2043,7 @@
         ],
         "latitude": -25.4280112,
         "longitude": -49.2710255,
-        "address": "Rua São Francisco, 139, Curitiba",
+        "address": "Rua São Francisco, 139",
         "wikipedia": "pt:Memorial a Nossa Senhora da Luz dos Pinhais",
         "popularity": 0
       }
@@ -1780,7 +2066,7 @@
         ],
         "latitude": -25.4528296,
         "longitude": -49.302307,
-        "address": "Rua Professor João Argemiro Loyola, Curitiba",
+        "address": "Rua Professor João Argemiro Loyola",
         "opening_hours": "Sábados pela manhã",
         "popularity": 0
       }
@@ -1803,7 +2089,11 @@
         "latitude": -25.4285029,
         "longitude": -49.2659359,
         "wikidata": "Q136226127",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Máscara de Lala Schneider, Curitiba",
+          "en": "Mask of Lala Schneider, Curitiba"
+        }
       }
     },
     {
@@ -1824,7 +2114,7 @@
         ],
         "latitude": -25.4658426,
         "longitude": -49.2847231,
-        "address": "Avenida dos Estados, 651, Curitiba",
+        "address": "Avenida dos Estados, 651",
         "opening_hours": "Mo-Sa 08:00-20:00",
         "popularity": 0
       }
@@ -1913,7 +2203,7 @@
         ],
         "latitude": -25.4531416,
         "longitude": -49.2443916,
-        "address": "Linha Verde, 10150, Curitiba",
+        "address": "Linha Verde, 10150",
         "opening_hours": "Mo-Fr 08:00-16:00",
         "phone": "+55 41 3535 1945",
         "wikidata": "Q25420032",
@@ -1939,7 +2229,7 @@
         ],
         "latitude": -25.4540059,
         "longitude": -49.28543,
-        "address": "Avenida Água Verde, 1413, Curitiba",
+        "address": "Avenida Água Verde, 1413",
         "opening_hours": "Mo-Fr 10:00-17:30",
         "phone": "+55 41 3121 2395",
         "website": "https://www.maimuseu.com.br/",
@@ -1988,12 +2278,15 @@
         ],
         "latitude": -25.4292335,
         "longitude": -49.2652216,
-        "address": "Rua Conselheiro Laurindo, 273, Curitiba",
+        "address": "Rua Conselheiro Laurindo, 273",
         "opening_hours": "Mo-Su 09:00-20:00",
         "phone": "+55 41 3321 2840",
         "website": "http://fundacaoculturaldecuritiba.com.br",
         "wikidata": "Q56693967",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Museu da Fotografia Cidade de Curitiba"
+        }
       }
     },
     {
@@ -2014,11 +2307,15 @@
         ],
         "latitude": -25.4332498,
         "longitude": -49.2676175,
-        "address": "Rua Barão do Rio Branco, 395, Curitiba",
+        "address": "Rua Barão do Rio Branco, 395",
         "opening_hours": "Tu-Fr 10:00-19:00; Sa-Su 10:00-18:00",
         "website": "https://www.mis.pr.gov.br/",
         "wikidata": "Q56693992",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Museu da Imagem e do Som do Paraná",
+          "en": "Museu da Imagem e do Som (Paraná, Brazil)"
+        }
       }
     },
     {
@@ -2083,7 +2380,7 @@
         ],
         "latitude": -25.4448147,
         "longitude": -49.2914038,
-        "address": "Rua Carneiro Lobo, Curitiba",
+        "address": "Rua Carneiro Lobo",
         "opening_hours": "Sa 12:00-20:00",
         "website": "https://www.curitiba.pr.gov.br/locais/feira-gastronomica-batel/618",
         "popularity": 0
@@ -2151,7 +2448,7 @@
         ],
         "latitude": -25.4281652,
         "longitude": -49.286365,
-        "address": "Rua Desembargador Motta, Curitiba",
+        "address": "Rua Desembargador Motta",
         "opening_hours": "Su 08:00-13:00",
         "website": "https://www.curitiba.pr.gov.br/locais/feira-de-artesanato-29-de-marco/2077",
         "popularity": 0
@@ -2175,7 +2472,7 @@
         ],
         "latitude": -25.4261356,
         "longitude": -49.2684819,
-        "address": "Rua Presidente Faria, 550, Curitiba",
+        "address": "Rua Presidente Faria, 550",
         "opening_hours": "Sa 07:00-12:00",
         "website": "https://www.curitiba.pr.gov.br/locais/feira-organica-passeio-publico/763",
         "popularity": 0
@@ -2199,7 +2496,11 @@
         "latitude": -25.4334347,
         "longitude": -49.2706008,
         "wikidata": "Q136226095",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Busto de Carlos Gomes, Curitiba",
+          "en": "Bust of Carlos Gomes, Curitiba"
+        }
       }
     },
     {
@@ -2241,7 +2542,7 @@
         ],
         "latitude": -25.4374349,
         "longitude": -49.2562661,
-        "address": "Avenida Presidente Affonso Camargo, 330, Curitiba",
+        "address": "Avenida Presidente Affonso Camargo, 330",
         "phone": "+55 41 3888-3488",
         "website": "https://www.serraverdeexpress.com.br/",
         "popularity": 0
@@ -2332,7 +2633,11 @@
         "latitude": -25.4116853,
         "longitude": -49.2719118,
         "wikidata": "Q136226083",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Estátua de Mateus Leme, Curitiba",
+          "en": "Statue of Mateus Leme, Curitiba"
+        }
       }
     },
     {
@@ -2353,7 +2658,11 @@
         "latitude": -25.446145,
         "longitude": -49.2586314,
         "wikidata": "Q136226080",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Estátua de Baltazar Carrasco dos Reis, Curitiba",
+          "en": "Statue of Baltazar Carrasco dos Reis, Curitiba"
+        }
       }
     },
     {
@@ -2374,7 +2683,11 @@
         "latitude": -25.4298662,
         "longitude": -49.274793,
         "wikidata": "Q136226081",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Estátua de Eleodoro Ébano Pereira, Curitiba",
+          "en": "Statue of Eleodoro Ébano Pereira, Curitiba"
+        }
       }
     },
     {
@@ -2395,7 +2708,7 @@
         ],
         "latitude": -25.4354657,
         "longitude": -49.3071352,
-        "address": "Rua São Vicente de Paulo, Curitiba",
+        "address": "Rua São Vicente de Paulo",
         "opening_hours": "We 15:00-20:00",
         "website": "https://www.curitiba.pr.gov.br/locais/nossa-feira-campina-do-siqueira/2037",
         "popularity": 0
@@ -2419,7 +2732,7 @@
         ],
         "latitude": -25.4761617,
         "longitude": -49.2919383,
-        "address": "Rua Professor Euro Brandão, 55, Curitiba",
+        "address": "Rua Professor Euro Brandão, 55",
         "opening_hours": "Tu 07:00-12:00",
         "website": "https://www.curitiba.pr.gov.br/locais/feira-organica-diurna-portao/1602",
         "popularity": 0
@@ -2465,7 +2778,7 @@
         ],
         "latitude": -25.4404746,
         "longitude": -49.2760966,
-        "address": "Rua Brigadeiro Franco, 2333, Curitiba",
+        "address": "Rua Brigadeiro Franco, 2333",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -2488,7 +2801,7 @@
         ],
         "latitude": -25.4281531,
         "longitude": -49.2856016,
-        "address": "Praça Vinte e Nove de Março, Curitiba",
+        "address": "Praça Vinte e Nove de Março",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -2511,7 +2824,7 @@
         ],
         "latitude": -25.5181837,
         "longitude": -49.2187804,
-        "address": "Avenida Marechal Floriano Peixoto, 12205, Curitiba",
+        "address": "Avenida Marechal Floriano Peixoto, 12205",
         "opening_hours": "06:00-20:00",
         "website": "https://www.curitiba.pr.gov.br/conteudo/parque-municipal-nautico-de-curitiba/3304",
         "popularity": 0
@@ -2535,7 +2848,7 @@
         ],
         "latitude": -25.4756582,
         "longitude": -49.3224131,
-        "address": "Rua Carlos Klemtz, 523, Curitiba",
+        "address": "Rua Carlos Klemtz, 523",
         "website": "https://www.curitiba.pr.gov.br/conteudo/parques-e-bosques-bosque-fazendinha/272",
         "popularity": 0
       }
@@ -2560,7 +2873,10 @@
         "longitude": -49.2608247,
         "wikidata": "Q16502227",
         "wikipedia": "pt:Bosque Reinhard Maack",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Bosque Reinhard Maack"
+        }
       }
     },
     {
@@ -2581,7 +2897,7 @@
         ],
         "latitude": -25.4637005,
         "longitude": -49.2269326,
-        "address": "Rua Comendador Correia Júnior, 245, Curitiba",
+        "address": "Rua Comendador Correia Júnior, 245",
         "wikipedia": "pt:Tsunessaburo Makiguti",
         "popularity": 0
       }
@@ -2605,7 +2921,7 @@
         ],
         "latitude": -25.439928,
         "longitude": -49.2381973,
-        "address": "Rua Engenheiro Ostoja Roguski, 350, Curitiba",
+        "address": "Rua Engenheiro Ostoja Roguski, 350",
         "opening_hours": "Mo-Fr 08:30-12:00,13:00-17:00; Su 09:00-17:00",
         "website": "https://www.curitiba.pr.gov.br/locais/museu-botanico/1031",
         "wikidata": "Q16502289",
@@ -2676,7 +2992,7 @@
         ],
         "latitude": -25.4399765,
         "longitude": -49.2238098,
-        "address": "Avenida Prefeito Maurício Fruet, 1880, Curitiba",
+        "address": "Avenida Prefeito Maurício Fruet, 1880",
         "phone": "+55 41 3350 3837",
         "website": "https://www.curitiba.pr.gov.br/noticias/mercado-regional-cajuru-tem-um-mundo-de-delicias-e-clima-de-cidade-do-interior/41027",
         "popularity": 0
@@ -2700,7 +3016,7 @@
         ],
         "latitude": -25.4794226,
         "longitude": -49.1924295,
-        "address": "Rua Rivadávia Fonseca de Macedo, 510, Curitiba",
+        "address": "Rua Rivadávia Fonseca de Macedo, 510",
         "opening_hours": "Mo-Sa 06:00-20:00",
         "website": "https://www.curitiba.pr.gov.br/conteudo/parque-olimpico-do-cajuru/3303",
         "popularity": 0
@@ -2724,7 +3040,7 @@
         ],
         "latitude": -25.4278443,
         "longitude": -49.27191,
-        "address": "Largo da Ordem, 30, Curitiba",
+        "address": "Largo da Ordem, 30",
         "website": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/casa-romario-martins/",
         "popularity": 0
       }
@@ -2748,7 +3064,7 @@
         ],
         "latitude": -25.3876157,
         "longitude": -49.2669245,
-        "address": "Rua Mateus Leme, 4700, Curitiba",
+        "address": "Rua Mateus Leme, 4700",
         "website": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/memorial-paranista/",
         "fee": "no",
         "wheelchair": "yes",
@@ -2796,7 +3112,7 @@
         ],
         "latitude": -25.4920583,
         "longitude": -49.2921044,
-        "address": "Rua André João Gasparin, 170, Curitiba",
+        "address": "Rua André João Gasparin, 170",
         "phone": "+55 41 9 8403 2083",
         "website": "https://mercadomunicipalcapaoraso.com/",
         "popularity": 0
@@ -2820,7 +3136,7 @@
         ],
         "latitude": -25.4306293,
         "longitude": -49.280401,
-        "address": "Rua Professor Fernando Moreira, 240, Curitiba",
+        "address": "Rua Professor Fernando Moreira, 240",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -2843,7 +3159,7 @@
         ],
         "latitude": -25.4278566,
         "longitude": -49.2729899,
-        "address": "Rua do Rosário, 160, Curitiba",
+        "address": "Rua do Rosário, 160",
         "wikidata": "Q10328553",
         "wikipedia": "pt:Memorial da Língua Portuguesa",
         "popularity": 0
@@ -2868,7 +3184,7 @@
         ],
         "latitude": -25.4273839,
         "longitude": -49.2612685,
-        "address": "Rua XV de Novembro, 1348, Curitiba",
+        "address": "Rua XV de Novembro, 1348",
         "opening_hours": "Tu-Sa 14:00-18:00",
         "fee": "no",
         "popularity": 0
@@ -2938,7 +3254,11 @@
         "latitude": -25.4295692,
         "longitude": -49.2695026,
         "wikidata": "Q136226088",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "pt": "Estátua do Barão do Rio Branco, Curitiba",
+          "en": "Statue of Barão do Rio Branco, Curitiba"
+        }
       }
     },
     {
@@ -2981,7 +3301,7 @@
         ],
         "latitude": -25.3979158,
         "longitude": -49.2759243,
-        "address": "Rua Capitão Carlos Henrique Castor, 119-221, Curitiba",
+        "address": "Rua Capitão Carlos Henrique Castor, 119-221",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -3004,7 +3324,7 @@
         ],
         "latitude": -25.4372115,
         "longitude": -49.2790243,
-        "address": "Rua Brigadeiro Franco, 1869, Curitiba",
+        "address": "Rua Brigadeiro Franco, 1869",
         "opening_hours": "09:00-17:00",
         "popularity": 0
       }
@@ -3028,7 +3348,7 @@
         ],
         "latitude": -25.4191728,
         "longitude": -49.2524167,
-        "address": "Rua José de Alencar, 1808, Curitiba",
+        "address": "Rua José de Alencar, 1808",
         "opening_hours": "Mo-Fr 09:00-18:00",
         "popularity": 0
       }
@@ -3051,7 +3371,7 @@
         ],
         "latitude": -25.5420552,
         "longitude": -49.2719174,
-        "address": "Rua Celeste Tortato Gabardo, Curitiba",
+        "address": "Rua Celeste Tortato Gabardo",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -3074,7 +3394,7 @@
         ],
         "latitude": -25.4524436,
         "longitude": -49.3647206,
-        "address": "Rua Eduardo Sprada, 6447, Curitiba",
+        "address": "Rua Eduardo Sprada, 6447",
         "opening_hours": "We-Su 09:00-17:00",
         "popularity": 0
       }
@@ -3142,7 +3462,7 @@
         ],
         "latitude": -25.4350744,
         "longitude": -49.2442823,
-        "address": "Rua Prefeito Ângelo Ferrário Lopes, 36, Curitiba",
+        "address": "Rua Prefeito Ângelo Ferrário Lopes, 36",
         "opening_hours": "19:00-23:30",
         "phone": "+55 41 3262 8857",
         "wheelchair": "yes",
@@ -3168,7 +3488,7 @@
         ],
         "latitude": -25.4258678,
         "longitude": -49.2473874,
-        "address": "Rua Camões, 610, Curitiba",
+        "address": "Rua Camões, 610",
         "opening_hours": "11:00-14:00;19:00-23:00",
         "phone": "+55 41 3019-9580",
         "website": "http://akaisushibar.com.br",
@@ -3195,7 +3515,7 @@
         ],
         "latitude": -25.4176444,
         "longitude": -49.259136,
-        "address": "Rua Augusto Stresser, 280, Curitiba",
+        "address": "Rua Augusto Stresser, 280",
         "opening_hours": "We-Su 18:00-22:30",
         "phone": "+5541998977283",
         "website": "https://www.osoprodawok.com",
@@ -3222,7 +3542,7 @@
         ],
         "latitude": -25.4489318,
         "longitude": -49.2994893,
-        "address": "Avenida Nossa Senhora Aparecida, 78, Curitiba",
+        "address": "Avenida Nossa Senhora Aparecida, 78",
         "opening_hours": "Tu-Fr 11:30-15:00, 18:30-22:30; Sa 11:30-15:30, 18:30-22:30; Su 11:30-16:00; Mo off",
         "phone": "+55 41 3342-8101",
         "website": "https://batelgrill.com.br",
@@ -3248,7 +3568,7 @@
         ],
         "latitude": -25.4613924,
         "longitude": -49.2878333,
-        "address": "Rua Santa Catarina, 180, Curitiba",
+        "address": "Rua Santa Catarina, 180",
         "opening_hours": "Mo-Th 18:30-23:00, Fr-Sa 18:30-23:30",
         "phone": "+55 41 3085-0800",
         "website": "https://carmelapizzeria.com.br/",
@@ -3274,7 +3594,7 @@
         ],
         "latitude": -25.4387453,
         "longitude": -49.2847714,
-        "address": "Alameda Dom Pedro II, 390, Curitiba",
+        "address": "Alameda Dom Pedro II, 390",
         "opening_hours": "Mo-Fr 11:30-15:30 17:30-23:30 / Sa 11:30-23:30 / Su 11:30-22:00",
         "phone": "+55 41 3039 4577",
         "website": "https://oxsteakhouse.com.br/",
@@ -3300,7 +3620,7 @@
         ],
         "latitude": -25.42899,
         "longitude": -49.2912915,
-        "address": "Rua Padre Anchieta, 1287, Curitiba",
+        "address": "Rua Padre Anchieta, 1287",
         "opening_hours": "Mo-Su 19:00-00:00",
         "phone": "+554130140141",
         "website": "https://www.terrazza40.com/",
@@ -3326,7 +3646,7 @@
         ],
         "latitude": -25.4261891,
         "longitude": -49.26289,
-        "address": "Rua Doutor Faivre, 302, Curitiba",
+        "address": "Rua Doutor Faivre, 302",
         "opening_hours": "Su-Mo 18:00-00:00; Tu-Sa 18:00-01:00",
         "phone": "+55 41 3363 7777",
         "website": "http://www.pizzaclock.com",
@@ -3352,7 +3672,7 @@
         ],
         "latitude": -25.4368172,
         "longitude": -49.2692493,
-        "address": "Avenida Visconde de Guarapuava, 2800, Curitiba",
+        "address": "Avenida Visconde de Guarapuava, 2800",
         "opening_hours": "Mo-Sa 11:00-15:00,18:00-22:00",
         "phone": "+55 41 4101-6067",
         "cuisine": "japanese",
@@ -3377,7 +3697,7 @@
         ],
         "latitude": -25.4343172,
         "longitude": -49.2789456,
-        "address": "Rua Visconde do Rio Branco, 1463, Curitiba",
+        "address": "Rua Visconde do Rio Branco, 1463",
         "opening_hours": "Mo-Fr 08:00-15:00",
         "phone": "+55 41 32051338",
         "cuisine": "japanese",
@@ -3402,7 +3722,7 @@
         ],
         "latitude": -25.4594788,
         "longitude": -49.2974947,
-        "address": "Rua Professor Sebastião Paraná, 784, Curitiba",
+        "address": "Rua Professor Sebastião Paraná, 784",
         "opening_hours": "Tu-Su 11:30-22:30",
         "phone": "+55 41 3072 0918",
         "website": "http://tikilikicomidaderua.com.br",
@@ -3428,7 +3748,7 @@
         ],
         "latitude": -25.4383005,
         "longitude": -49.2811185,
-        "address": "Rua Buenos Aires, 50, Curitiba",
+        "address": "Rua Buenos Aires, 50",
         "opening_hours": "Mo-Su 12:00-00:00",
         "phone": "+55 41 3091 6060",
         "website": "https://hardrock.com/",
@@ -3454,7 +3774,7 @@
         ],
         "latitude": -25.4232602,
         "longitude": -49.2812293,
-        "address": "Avenida Manoel Ribas, 227, Curitiba",
+        "address": "Avenida Manoel Ribas, 227",
         "opening_hours": "Mo-Su 11:30-00:00",
         "phone": "+55 41 3092 4419",
         "website": "http://restauranteojardineiro.com.br",
@@ -3480,7 +3800,7 @@
         ],
         "latitude": -25.4423188,
         "longitude": -49.2877708,
-        "address": "Avenida do Batel, 1550, Curitiba",
+        "address": "Avenida do Batel, 1550",
         "opening_hours": "Mo-Sa 18:30-23:00",
         "phone": "+55 41 3223-9962",
         "website": "https://www.iledefrance.com.br/",
@@ -3506,7 +3826,7 @@
         ],
         "latitude": -25.4509668,
         "longitude": -49.2936594,
-        "address": "Avenida Iguaçu, 3390, Curitiba",
+        "address": "Avenida Iguaçu, 3390",
         "opening_hours": "Mo-Sa 11:30-14:00, 18:45-23:00; Su 11:00-14:30, 18:45-22:00",
         "phone": "+55 41 3342 3040",
         "website": "https://www.alandernacuritiba.com.br/",
@@ -3532,7 +3852,7 @@
         ],
         "latitude": -25.4695439,
         "longitude": -49.2894232,
-        "address": "Avenida dos Estados, 1274, Curitiba",
+        "address": "Avenida dos Estados, 1274",
         "opening_hours": "Mo-Su 18:00-23:00",
         "phone": "+55 41 3229-2020;+55 41 3229-9999;+55 41 3376-9566",
         "website": "http://www.lupertine.com.br/",
@@ -3558,7 +3878,7 @@
         ],
         "latitude": -25.4299044,
         "longitude": -49.2780216,
-        "address": "Alameda Cabral, 353, Curitiba",
+        "address": "Alameda Cabral, 353",
         "opening_hours": "Mo-Fr 10:30-14:30",
         "phone": "+55 41 99580-8199",
         "website": "https://www.rota78refeicoes.com.br/",
@@ -3584,7 +3904,7 @@
         ],
         "latitude": -25.4302939,
         "longitude": -49.2657902,
-        "address": "Rua Marechal Deodoro da Fonseca, 686, Curitiba",
+        "address": "Rua Marechal Deodoro da Fonseca, 686",
         "opening_hours": "Tu-Sa 11:00-15:00, 18:00-22:00; Su 11:00-15:00, 18:00-21:00",
         "phone": "+55 41 3402 8654",
         "website": "https://www.ifood.com.br/delivery/curitiba-pr/lovinha-centro",
@@ -3610,7 +3930,7 @@
         ],
         "latitude": -25.4574397,
         "longitude": -49.2956831,
-        "address": "Rua Professor Álvaro Jorge, 700, Curitiba",
+        "address": "Rua Professor Álvaro Jorge, 700",
         "opening_hours": "Tu-Su 16:00-22:00",
         "phone": "+554135210200",
         "website": "https://www.ifood.com.br/delivery/curitiba-pr/jack-bulls-burger---parrilla-vila-izabel/d119908f-5c3b-45d3-ae75-ba00ef95551e",
@@ -3636,7 +3956,7 @@
         ],
         "latitude": -25.4529177,
         "longitude": -49.2460013,
-        "address": "Rua João Marchesini, 139, Curitiba",
+        "address": "Rua João Marchesini, 139",
         "opening_hours": "Mo-Fr 07:30-18:00",
         "phone": "+55 41 99722 9244; +55 41 3085 5646",
         "cuisine": "regional;coffee_shop;breakfast",
@@ -3661,7 +3981,7 @@
         ],
         "latitude": -25.4128184,
         "longitude": -49.2280716,
-        "address": "Rua Fagundes Varela, 1384, Curitiba",
+        "address": "Rua Fagundes Varela, 1384",
         "opening_hours": "Mo-Su 18:00-23:00",
         "phone": "+55 41 3264 2267",
         "cuisine": "burger;pizza",
@@ -3686,7 +4006,7 @@
         ],
         "latitude": -25.4336139,
         "longitude": -49.2525265,
-        "address": "Rua Francisco Alves Guimarães, 293, Curitiba",
+        "address": "Rua Francisco Alves Guimarães, 293",
         "opening_hours": "Mo-Fr 18:00-22:00",
         "phone": "+55 41 99167 1538",
         "cuisine": "steak_house",
@@ -3711,7 +4031,7 @@
         ],
         "latitude": -25.4034501,
         "longitude": -49.2889912,
-        "address": "Rua João Tschannerl, 1010, Curitiba",
+        "address": "Rua João Tschannerl, 1010",
         "opening_hours": "Segunda-Sábado 11:00-14:00",
         "phone": "+55 41 3153-2166",
         "website": "https://garfodemadeira.com.br/garfo_de_madeira_refeicoes",
@@ -3737,7 +4057,7 @@
         ],
         "latitude": -25.45894,
         "longitude": -49.2385266,
-        "address": "Avenida Comendador Franco, 2921, Curitiba",
+        "address": "Avenida Comendador Franco, 2921",
         "opening_hours": "Mo-Su 18:00-23:00",
         "phone": "+55 41 3044-2500",
         "cuisine": "pizza",
@@ -3762,7 +4082,7 @@
         ],
         "latitude": -25.4724879,
         "longitude": -49.2974388,
-        "address": "Rua Carlos Dietzsch, 295, Curitiba",
+        "address": "Rua Carlos Dietzsch, 295",
         "opening_hours": "Tu-Su 11:30-2:40, 18:30-00:00",
         "phone": "+55 41 3345 7272",
         "cuisine": "steak_house;regional",
@@ -3787,7 +4107,7 @@
         ],
         "latitude": -25.4419874,
         "longitude": -49.2491693,
-        "address": "Rua Ernesto de Araújo, 69, Curitiba",
+        "address": "Rua Ernesto de Araújo, 69",
         "opening_hours": "Tu-Su 11:30-14:00",
         "phone": "+55 41 3077-2797",
         "cuisine": "taiwanese;japanese",
@@ -3812,7 +4132,7 @@
         ],
         "latitude": -25.437049,
         "longitude": -49.3137552,
-        "address": "Rua Pedro Viriato Parigot de Souza, 529, Curitiba",
+        "address": "Rua Pedro Viriato Parigot de Souza, 529",
         "opening_hours": "Tu-Sa 18:00-22:00; Fr-Su 11:00-15:00",
         "phone": "+55 41 3030-1589",
         "website": "ttps://afonsos.com/",
@@ -3838,7 +4158,7 @@
         ],
         "latitude": -25.4298191,
         "longitude": -49.250243,
-        "address": "Rua Padre Germano Mayer, 679, Curitiba",
+        "address": "Rua Padre Germano Mayer, 679",
         "opening_hours": "Mo-Sa 11:30-14:30",
         "phone": "+55 41 3022 3223",
         "website": "https://www.friendsgastroclub.com.br",
@@ -3863,7 +4183,7 @@
         ],
         "latitude": -25.4266523,
         "longitude": -49.2718363,
-        "address": "Rua 13 de Maio, 512, Curitiba",
+        "address": "Rua 13 de Maio, 512",
         "opening_hours": "Mo-Sa 11:00-21:00; Su,PH 11:00-19:00",
         "phone": "+55 41 3203 5955",
         "popularity": 0
@@ -3912,7 +4232,7 @@
         ],
         "latitude": -25.4363563,
         "longitude": -49.2822397,
-        "address": "Alameda Dom Pedro II, 24, Curitiba",
+        "address": "Alameda Dom Pedro II, 24",
         "opening_hours": "Su-Th 19:00-24:00; Fr-Sa 19:00-01:00",
         "website": "https://www.carollapizzadoc.com.br/",
         "cuisine": "pizza",
@@ -3937,7 +4257,7 @@
         ],
         "latitude": -25.4262136,
         "longitude": -49.2619248,
-        "address": "Rua Amintas de Barros, Curitiba",
+        "address": "Rua Amintas de Barros",
         "opening_hours": "Mo-Fr 06:45-08:00,11:00-13:30,17:30-19:30; Sa 08:15-09:15,11:30-13:30,17:45-19:30; Su 08:30-09:30,11:30-13:30,17:45-19:00",
         "website": "https://pra.ufpr.br/ru/ru-central/",
         "cuisine": "regional",
@@ -3962,7 +4282,7 @@
         ],
         "latitude": -25.4308079,
         "longitude": -49.2766797,
-        "address": "Rua Cruz Machado, 408, Curitiba",
+        "address": "Rua Cruz Machado, 408",
         "opening_hours": "Mo-Sa 18:00-24:00",
         "phone": "+55 41 3233-4690",
         "website": "http://www.acrotona.com.br/",
@@ -3987,7 +4307,7 @@
         ],
         "latitude": -25.4153851,
         "longitude": -49.256949,
-        "address": "Rua Rocha Pombo, 246, Curitiba",
+        "address": "Rua Rocha Pombo, 246",
         "opening_hours": "Mo-Fr 12:00-14:30,\nMo-Sa 19:00-22:30,\nSa-Su 12:00-15:00",
         "phone": "+55 41 3030 4971",
         "website": "http://armazem71.com",
@@ -4012,7 +4332,7 @@
         ],
         "latitude": -25.4407573,
         "longitude": -49.2771576,
-        "address": "Rua Brigadeiro Franco, 2300 - Loja 256, Curitiba",
+        "address": "Rua Brigadeiro Franco, 2300 - Loja 256",
         "opening_hours": "Mo-Su 11:30-22:00",
         "phone": "+55 41 98855 3826",
         "website": "http://armazem71.com",
@@ -4037,7 +4357,7 @@
         ],
         "latitude": -25.4369753,
         "longitude": -49.2707683,
-        "address": "Rua Desembargador Westphalen, 495, Curitiba",
+        "address": "Rua Desembargador Westphalen, 495",
         "opening_hours": "Mo-Fr 11:00-15:00",
         "phone": "+554133245127",
         "popularity": 0
@@ -4061,7 +4381,7 @@
         ],
         "latitude": -25.4054551,
         "longitude": -49.2190734,
-        "address": "Linha Verde, 3900, Curitiba",
+        "address": "Linha Verde, 3900",
         "opening_hours": "Tu-Sa 11:30-15:00, 19:00-22:45; Su 11:00-15:00; Mo off",
         "phone": "+55 41 3356 2522; +55 41 99196 2522",
         "website": "https://churrascarianovaestrela.com.br",
@@ -4110,7 +4430,7 @@
         ],
         "latitude": -25.4518251,
         "longitude": -49.3031339,
-        "address": "Avenida Sete de Setembro, 6837, Curitiba",
+        "address": "Avenida Sete de Setembro, 6837",
         "opening_hours": "Tu-Fr 11:30-14:30; Sa,Su,PH 12:00-15:00",
         "website": "http://www.restaurantedomveggie.com.br/",
         "popularity": 0
@@ -4181,7 +4501,7 @@
         ],
         "latitude": -25.4082696,
         "longitude": -49.254405,
-        "address": "Avenida Paraná, 265, Curitiba",
+        "address": "Avenida Paraná, 265",
         "opening_hours": "08:00 - 19:00",
         "phone": "+55 41 999587325",
         "website": "https://www.facebook.com/supernovacoffee/",
@@ -4207,7 +4527,7 @@
         ],
         "latitude": -25.4296063,
         "longitude": -49.2639862,
-        "address": "Rua Tibagi, 276, Curitiba",
+        "address": "Rua Tibagi, 276",
         "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:30-18:00",
         "phone": "+55 41 3156-3333",
         "cuisine": "coffee_shop;german",
@@ -4232,7 +4552,7 @@
         ],
         "latitude": -25.4343155,
         "longitude": -49.2797758,
-        "address": "Avenida Vicente Machado, 288, Curitiba",
+        "address": "Avenida Vicente Machado, 288",
         "opening_hours": "Mo-Fr 09:00-18:00",
         "website": "https://www.mais1cafe.com.br/",
         "wheelchair": "yes",
@@ -4258,7 +4578,7 @@
         ],
         "latitude": -25.4286138,
         "longitude": -49.2687369,
-        "address": "Rua Alfredo Bufren, 53, Curitiba",
+        "address": "Rua Alfredo Bufren, 53",
         "opening_hours": "Mo-Fr 09:00-18:30; Sa 09:00-12:00",
         "phone": "+55 41 3154 0405",
         "popularity": 0
@@ -4283,7 +4603,7 @@
         ],
         "latitude": -25.4365579,
         "longitude": -49.2824013,
-        "address": "Alameda Dom Pedro II, 44, Curitiba",
+        "address": "Alameda Dom Pedro II, 44",
         "opening_hours": "Mo-Sa 09:00-18:00",
         "website": "https://www.arteeletra.com.br",
         "popularity": 0
@@ -4307,7 +4627,7 @@
         ],
         "latitude": -25.4591722,
         "longitude": -49.2825507,
-        "address": "Rua Dom Pedro I, 643, Curitiba",
+        "address": "Rua Dom Pedro I, 643",
         "opening_hours": "Tu-We 17:00-22:00; Th-Fr 17:00-00:00; Sa 11:30-15:00, 18:00-22:30; PH 17:00-22:00",
         "website": "https://www.otaberneiro.com.br/",
         "popularity": 0
@@ -4331,7 +4651,7 @@
         ],
         "latitude": -25.4679484,
         "longitude": -49.2882332,
-        "address": "Avenida dos Estados, 1066, Curitiba",
+        "address": "Avenida dos Estados, 1066",
         "opening_hours": "Tu-Fr 17:00-24:00; Sa 11:00-24:00; Su 11:00-21:00",
         "website": "https://linktr.ee/heiligepocketcwb",
         "popularity": 0
@@ -4355,7 +4675,7 @@
         ],
         "latitude": -25.4602303,
         "longitude": -49.2892542,
-        "address": "Avenida República Argentina, 1531, Curitiba",
+        "address": "Avenida República Argentina, 1531",
         "opening_hours": "Mo-Fr 15:00-22:00; Sa 10:00-22:00",
         "website": "https://imperiocervejeiro.negocio.site/",
         "popularity": 0
@@ -4405,7 +4725,7 @@
         ],
         "latitude": -25.4176822,
         "longitude": -49.2459913,
-        "address": "Rua Augusto Stresser, 1620, Curitiba",
+        "address": "Rua Augusto Stresser, 1620",
         "opening_hours": "Mo-Fr 11:30-20:00; Sa 10:30-20:00; Su 13:30-20:00",
         "phone": "+55 41 99273 1511",
         "website": "https://abre.bio/acaiconceptjuveve",

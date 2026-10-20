@@ -31,7 +31,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { AppColors, useColors } from '../src/theme';
 import { addDays, groupByDay, toIsoDate } from '../src/domain/itinerary/itineraryDays';
 import { freePeriod } from '../src/domain/itinerary/freePeriod';
-import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth } from '../src/i18n/format';
+import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth, placeName } from '../src/i18n/format';
 
 const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
 
@@ -66,55 +66,47 @@ const BALL_R = 9;
 const SIZE = (RADIUS + BALL_R + 6) * 2;
 const CENTER = SIZE / 2;
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
-const AnimatedCircle = Animated.createAnimatedComponent(Circle);
+// Fraction of the circle covered by the trail behind the ball
+const TRAIL = 0.3;
 
 function OrbitLoader() {
   const colors = useColors();
   const loaderStyles = getLoaderStyles(colors);
-  // Two separate values: ball uses native driver, arc (SVG prop) cannot
-  const [ballRot] = useState(() => new Animated.Value(0));
-  const [arcProg] = useState(() => new Animated.Value(0));
+  const [rot] = useState(() => new Animated.Value(0));
 
   useEffect(() => {
+    // Everything spins on the native driver, so the loader stays smooth while the
+    // JS thread is busy waiting for (and parsing) the generated itinerary.
     const anim = Animated.loop(
-      Animated.parallel([
-        Animated.timing(ballRot, {
-          toValue: 1,
-          duration: 1800,
-          easing: Easing.linear,
-          useNativeDriver: true,
-        }),
-        Animated.timing(arcProg, {
-          toValue: 1,
-          duration: 1800,
-          easing: Easing.linear,
-          useNativeDriver: false,
-        }),
-      ])
+      Animated.timing(rot, {
+        toValue: 1,
+        duration: 1400,
+        easing: Easing.linear,
+        useNativeDriver: true,
+      })
     );
     anim.start();
     return () => anim.stop();
-  }, [ballRot, arcProg]);
+  }, [rot]);
 
-  const rotate = ballRot.interpolate({ inputRange: [0, 1], outputRange: ['0deg', '360deg'] });
-  // Offset shrinks from full circumference (nothing drawn) → 0 (fully drawn)
-  const dashOffset = arcProg.interpolate({ inputRange: [0, 1], outputRange: [CIRCUMFERENCE, 0] });
+  const rotate = rot.interpolate({ inputRange: [0, 1], outputRange: ['0deg', '360deg'] });
 
   return (
     <View style={loaderStyles.container}>
-      {/* Arc draws itself as ball moves — starts at 12 o'clock, grows clockwise */}
       <Svg width={SIZE} height={SIZE} style={{ position: 'absolute' }}>
-        <AnimatedCircle
-          cx={CENTER} cy={CENTER} r={RADIUS}
-          stroke={colors.primary} strokeWidth={3} fill="none"
-          strokeDasharray={CIRCUMFERENCE}
-          strokeDashoffset={dashOffset}
-          strokeLinecap="round"
-          rotation={-90} origin={`${CENTER},${CENTER}`}
-        />
+        <Circle cx={CENTER} cy={CENTER} r={RADIUS} stroke={colors.primary} strokeOpacity={0.15} strokeWidth={3} fill="none" />
       </Svg>
-      {/* Ball leads at the growing tip of the arc */}
       <Animated.View style={[loaderStyles.arm, { transform: [{ rotate }] }]}>
+        {/* Trail ends at 12 o'clock, where the ball sits, and trails counter-clockwise */}
+        <Svg width={SIZE} height={SIZE} style={{ position: 'absolute' }}>
+          <Circle
+            cx={CENTER} cy={CENTER} r={RADIUS}
+            stroke={colors.primary} strokeWidth={3} fill="none"
+            strokeDasharray={`${CIRCUMFERENCE * TRAIL} ${CIRCUMFERENCE}`}
+            strokeLinecap="round"
+            rotation={-90 - 360 * TRAIL} origin={`${CENTER},${CENTER}`}
+          />
+        </Svg>
         <View style={loaderStyles.ball} />
       </Animated.View>
     </View>
@@ -688,7 +680,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                         </View>
                         <View style={styles.previewItemContent}>
                           <View style={styles.previewItemRow}>
-                            <Text style={styles.previewPlaceName} numberOfLines={2}>{place.name}</Text>
+                            <Text style={styles.previewPlaceName} numberOfLines={2}>{placeName(place)}</Text>
                             {place.estimatedVisitTime ? (
                               <View style={[styles.timeBadge, { backgroundColor: color + '18', borderColor: color + '50' }]}>
                                 <Text style={[styles.timeBadgeText, { color }]}>

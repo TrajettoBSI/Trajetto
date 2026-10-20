@@ -105,7 +105,7 @@ public class TouristSpotSearchService {
                 nullToEmpty(r.getOpeningHours()), nullToEmpty(r.getCategory()), nullToEmpty(r.getFee()),
                 nullToEmpty(r.getPhone()), nullToEmpty(r.getWebsite()), nullToEmpty(r.getWikidata()),
                 nullToEmpty(r.getWikipedia()), nullToEmpty(r.getWheelchair()),
-                r.getDistanceMeters(), BookingLinks.forPlace(r.getName()));
+                r.getDistanceMeters(), BookingLinks.forPlace(r.getName()), r.getNames());
     }
 
     private static String blankToNull(String value) {

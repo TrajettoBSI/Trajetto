@@ -53,7 +53,7 @@ public class TouristSpotCatalogSync implements ApplicationRunner {
                     id, p.city(), p.name(), blankToNull(p.address()), p.latitude(), p.longitude(),
                     blankToNull(p.category()), blankToNull(p.fee()), blankToNull(p.openingHours()),
                     blankToNull(p.phone()), blankToNull(p.website()), blankToNull(p.wikidata()),
-                    blankToNull(p.wikipedia()), blankToNull(p.wheelchair()), profiles
+                    blankToNull(p.wikipedia()), blankToNull(p.wheelchair()), profiles, p.names()
             ));
         }
 

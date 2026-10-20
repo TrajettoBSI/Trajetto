@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { categoryLabel } from '@/src/helpers/categoryIcon';
 import { AppColors, useColors } from '@/src/theme';
-import { formatOpeningHours, formatTime } from '@/src/i18n/format';
+import { formatOpeningHours, formatTime, placeName } from '@/src/i18n/format';
 
 function categoryIcon(category: string): string {
     const c = (category || '').toLowerCase();
@@ -37,6 +37,7 @@ interface TicketCardProps {
         openAtVisit?: boolean | null;
         bookingUrl?: string | null;
         ticketUrl?: string | null;
+        names?: Record<string, string> | null;
     };
     idx: number;
     color: string;
@@ -98,7 +99,7 @@ export function TicketCard({
             {/* Corpo do ticket */}
             <View style={ticketStyles.body}>
                 <Text style={[ticketStyles.placeName, isPast && { color: colors.timelineDotPast }]} numberOfLines={2}>
-                    {place.name}
+                    {placeName(place)}
                 </Text>
 
                 <View style={ticketStyles.addressRow}>

@@ -26,7 +26,12 @@
         "wikidata": "Q219574",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 63
+        "popularity": 63,
+        "names": {
+          "pt": "Naucalpan",
+          "en": "Naucalpan",
+          "es": "Municipio de Naucalpan de Juárez"
+        }
       }
     },
     {
@@ -50,7 +55,12 @@
         "wikidata": "Q610961",
         "wikipedia": "es:Catedral Metropolitana de la Ciudad de México",
         "wheelchair": "limited",
-        "popularity": 61
+        "popularity": 61,
+        "names": {
+          "pt": "Catedral Metropolitana da Cidade do México",
+          "en": "Mexico City Metropolitan Cathedral",
+          "es": "Catedral Metropolitana de la Ciudad de México"
+        }
       }
     },
     {
@@ -74,7 +84,12 @@
         "longitude": -99.1504753,
         "wikidata": "Q320454",
         "wikipedia": "es:Estadio Azteca",
-        "popularity": 59
+        "popularity": 59,
+        "names": {
+          "pt": "Estádio Azteca",
+          "en": "Estadio Azteca",
+          "es": "Estadio Banorte"
+        }
       }
     },
     {
@@ -103,7 +118,12 @@
         "fee": "yes",
         "wheelchair": "yes",
         "popularity": 41,
-        "site": "Q524249"
+        "site": "Q524249",
+        "names": {
+          "pt": "Museu Nacional de Antropologia",
+          "en": "National Museum of Anthropology",
+          "es": "Museo Nacional de Antropología"
+        }
       }
     },
     {
@@ -126,7 +146,12 @@
         "longitude": -99.1873924,
         "wikidata": "Q786806",
         "popularity": 37,
-        "site": "Q524249"
+        "site": "Q524249",
+        "names": {
+          "pt": "Pedra do Sol",
+          "en": "Aztec sun stone",
+          "es": "Piedra del Sol"
+        }
       }
     },
     {
@@ -149,7 +174,12 @@
         "longitude": -99.1314871,
         "wikidata": "Q774021",
         "wikipedia": "es:Templo Mayor",
-        "popularity": 31
+        "popularity": 31,
+        "names": {
+          "pt": "Templo Mayor",
+          "en": "Templo Mayor",
+          "es": "Templo Mayor"
+        }
       }
     },
     {
@@ -171,10 +201,15 @@
         ],
         "latitude": 19.4325511,
         "longitude": -99.1311199,
-        "address": "Plaza de la Constitución, 1, Cidade do México",
+        "address": "Plaza de la Constitución, 1",
         "wikidata": "Q1517884",
         "wikipedia": "es:Palacio Nacional (México)",
-        "popularity": 31
+        "popularity": 31,
+        "names": {
+          "pt": "Palácio Nacional",
+          "en": "National Palace",
+          "es": "Palacio Nacional"
+        }
       }
     },
     {
@@ -203,7 +238,12 @@
         "wikipedia": "es:Museo Frida Kahlo",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 30
+        "popularity": 30,
+        "names": {
+          "pt": "Museu Frida Kahlo",
+          "en": "Frida Kahlo Museum",
+          "es": "Museo Frida Kahlo"
+        }
       }
     },
     {
@@ -228,7 +268,12 @@
         "wikidata": "Q1348507",
         "wikipedia": "es:Plaza de la Constitución (Ciudad de México)",
         "wheelchair": "limited",
-        "popularity": 30
+        "popularity": 30,
+        "names": {
+          "pt": "Praça da Constituição",
+          "en": "Zócalo",
+          "es": "Plaza de la Constitución"
+        }
       }
     },
     {
@@ -249,13 +294,18 @@
         ],
         "latitude": 19.4111128,
         "longitude": -99.1924355,
-        "address": "Calle General Francisco Ramírez, 14, Cidade do México",
+        "address": "Calle General Francisco Ramírez, 14",
         "opening_hours": "Mo-Fr 10:00-14:00,16:00-17:00; Sa 10:00-13:00",
         "phone": "+52 55 5515 4908",
         "website": "https://casaluisbarragan.org/",
         "wikidata": "Q1046414",
         "wikipedia": "es:Casa Luis Barragán",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Casa-estúdio de Luis Barragán",
+          "en": "Luis Barragán House and Studio",
+          "es": "Casa Luis Barragán"
+        }
       }
     },
     {
@@ -279,7 +329,12 @@
         "website": "https://mnh.inah.gob.mx/",
         "wikidata": "Q1072510",
         "wikipedia": "en:Chapultepec Castle",
-        "popularity": 26
+        "popularity": 26,
+        "names": {
+          "pt": "Castelo de Chapultepec",
+          "en": "Chapultepec Castle",
+          "es": "Castillo de Chapultepec"
+        }
       }
     },
     {
@@ -304,7 +359,12 @@
         "wikidata": "Q305419",
         "wikipedia": "es:Basílica de Santa María de Guadalupe",
         "wheelchair": "yes",
-        "popularity": 25
+        "popularity": 25,
+        "names": {
+          "pt": "Basílica de Guadalupe",
+          "en": "Basilica of Our Lady of Guadalupe",
+          "es": "Basílica de Santa María de Guadalupe"
+        }
       }
     },
     {
@@ -329,7 +389,12 @@
         "wikidata": "Q928541",
         "wikipedia": "es:Monumento a la Independencia",
         "popularity": 25,
-        "site": "Q928541"
+        "site": "Q928541",
+        "names": {
+          "pt": "El Ángel de la Independencia",
+          "en": "Angel of Independence",
+          "es": "Monumento a la Independencia"
+        }
       }
     },
     {
@@ -350,10 +415,15 @@
         ],
         "latitude": 19.4338658,
         "longitude": -99.1406113,
-        "address": "Lázaro Cárdenas, 2, Cidade do México",
+        "address": "Lázaro Cárdenas, 2",
         "wikidata": "Q947870",
         "wikipedia": "es:Torre Latinoamericana",
-        "popularity": 22
+        "popularity": 22,
+        "names": {
+          "pt": "Torre Latinoamericana",
+          "en": "Torre Latinoamericana",
+          "es": "Torre Latinoamericana"
+        }
       }
     },
     {
@@ -374,12 +444,17 @@
         ],
         "latitude": 19.4473487,
         "longitude": -99.1509583,
-        "address": "Mosqueta, s/n, Cidade do México",
+        "address": "Mosqueta, s/n",
         "opening_hours": "Mo-Su 08:30-19:30",
         "website": "https://bibliotecavasconcelos.gob.mx/",
         "wikidata": "Q6294156",
         "wikipedia": "es:Biblioteca Vasconcelos",
-        "popularity": 21
+        "popularity": 21,
+        "names": {
+          "pt": "Biblioteca Vasconcelos",
+          "en": "Vasconcelos Library",
+          "es": "Biblioteca Vasconcelos"
+        }
       }
     },
     {
@@ -404,7 +479,12 @@
         "wikidata": "Q1389520",
         "wikipedia": "es:Monumento a la Revolución (México)",
         "popularity": 20,
-        "site": "Q1389520"
+        "site": "Q1389520",
+        "names": {
+          "pt": "Monumento a la Revolución",
+          "en": "Monumento a la Revolución",
+          "es": "Monumento a la Revolución"
+        }
       }
     },
     {
@@ -429,7 +509,12 @@
         "wikidata": "Q1138147",
         "wikipedia": "es:Museo Nacional de Arte (México)",
         "fee": "yes",
-        "popularity": 18
+        "popularity": 18,
+        "names": {
+          "pt": "Museu Nacional de Arte",
+          "en": "Museo Nacional de Arte",
+          "es": "Museo Nacional de Arte"
+        }
       }
     },
     {
@@ -452,7 +537,12 @@
         "longitude": -99.1439968,
         "wikidata": "Q3355305",
         "wikipedia": "en:Alameda Central",
-        "popularity": 17
+        "popularity": 17,
+        "names": {
+          "pt": "Alameda Central",
+          "en": "Alameda Central Park",
+          "es": "Alameda Central"
+        }
       }
     },
     {
@@ -475,7 +565,12 @@
         "longitude": -99.1157121,
         "wikidata": "Q1014974",
         "wikipedia": "en:Tepeyac",
-        "popularity": 16
+        "popularity": 16,
+        "names": {
+          "pt": "Tepeyac",
+          "en": "Tepeyac Hill",
+          "es": "Cerro del Tepeyac"
+        }
       }
     },
     {
@@ -501,7 +596,12 @@
         "wikidata": "Q2418266",
         "wikipedia": "es:Los Pinos (México)",
         "popularity": 15,
-        "site": "Q2418266"
+        "site": "Q2418266",
+        "names": {
+          "pt": "Complejo Cultural Los Pinos",
+          "en": "Complejo Cultural Los Pinos",
+          "es": "Complejo Cultural Los Pinos"
+        }
       }
     },
     {
@@ -527,7 +627,12 @@
         "website": "https://academiasancarlos.unam.mx/",
         "wikidata": "Q337267",
         "wikipedia": "en:Academy of San Carlos",
-        "popularity": 14
+        "popularity": 14,
+        "names": {
+          "pt": "Academia de São Carlos",
+          "en": "Academy of San Carlos",
+          "es": "Academia de San Carlos"
+        }
       }
     },
     {
@@ -551,7 +656,12 @@
         "opening_hours": "Mo-Su 10:00-19:00",
         "wikidata": "Q130898",
         "wikipedia": "es:Palacio de Iturbide",
-        "popularity": 13
+        "popularity": 13,
+        "names": {
+          "pt": "Palácio de Iturbide",
+          "en": "Palace of Iturbide",
+          "es": "Palacio de Iturbide"
+        }
       }
     },
     {
@@ -575,7 +685,12 @@
         "wikidata": "Q286179",
         "wikipedia": "en:Auditorio Nacional (Mexico)",
         "wheelchair": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "pt": "Auditório Nacional",
+          "en": "Auditorio Nacional",
+          "es": "Auditorio Nacional"
+        }
       }
     },
     {
@@ -596,10 +711,14 @@
         ],
         "latitude": 19.4356249,
         "longitude": -99.1402953,
-        "address": "Calle Tacuba, 1, Cidade do México",
+        "address": "Calle Tacuba, 1",
         "wikidata": "Q978161",
         "wikipedia": "es:Palacio Postal",
-        "popularity": 11
+        "popularity": 11,
+        "names": {
+          "en": "Palacio de Correos de Mexico",
+          "es": "Palacio Postal"
+        }
       }
     },
     {
@@ -623,7 +742,11 @@
         "opening_hours": "We-Su 09:00-17:30",
         "wikidata": "Q675877",
         "wikipedia": "es:Museo Anahuacalli",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "Anahuacalli Museum",
+          "es": "Museo Anahuacalli"
+        }
       }
     },
     {
@@ -644,13 +767,18 @@
         ],
         "latitude": 19.4381341,
         "longitude": -99.1520074,
-        "address": "Avenida México-Tenochtitlan, 50, Cidade do México",
+        "address": "Avenida México-Tenochtitlan, 50",
         "opening_hours": "Tu-Su 10:00-18:00",
         "website": "https://mnsancarlos.inba.gob.mx/",
         "wikidata": "Q6940507",
         "wikipedia": "en:Museo Nacional de San Carlos",
         "fee": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Museu Nacional de São Carlos",
+          "en": "Museo Nacional de San Carlos",
+          "es": "Museo Nacional de San Carlos"
+        }
       }
     },
     {
@@ -676,7 +804,12 @@
         "wikidata": "Q3032842",
         "wikipedia": "es:Museo de Arte Moderno (México)",
         "fee": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Museo de Arte Moderno de México",
+          "en": "Museo de Arte Moderno",
+          "es": "Museo de Arte Moderno de México"
+        }
       }
     },
     {
@@ -700,7 +833,12 @@
         "wikidata": "Q6023002",
         "wikipedia": "es:Monumento a Cuauhtémoc (Ciudad de México)",
         "wheelchair": "no",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Monumento a Cuauhtémoc",
+          "en": "Monument to Cuauhtémoc",
+          "es": "Monumento a Cuauhtémoc"
+        }
       }
     },
     {
@@ -725,7 +863,12 @@
         "opening_hours": "Mo off; Tu-Su 10:00-17:00",
         "wikidata": "Q1148324",
         "wikipedia": "es:Museo Franz Mayer",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "pt": "Museu Franz Mayer",
+          "en": "Franz Mayer Museum",
+          "es": "Museo Franz Mayer"
+        }
       }
     },
     {
@@ -748,7 +891,11 @@
         "longitude": -99.1390698,
         "wikidata": "Q1471225",
         "wikipedia": "en:Plaza Garibaldi",
-        "popularity": 10
+        "popularity": 10,
+        "names": {
+          "en": "plaza Garibaldi",
+          "es": "Plaza Garibaldi"
+        }
       }
     },
     {
@@ -771,7 +918,11 @@
         "longitude": -99.0923316,
         "wikidata": "Q4274872",
         "wikipedia": "es:Parque Nacional Cerro de la Estrella",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Cerro de la Estrella National Park",
+          "es": "Parque nacional Cerro de la Estrella"
+        }
       }
     },
     {
@@ -794,7 +945,11 @@
         "longitude": -99.1401225,
         "wikidata": "Q1267814",
         "wikipedia": "en:Casa de los Azulejos",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Casa de los Azulejos, Mexico City",
+          "es": "Casa de los Azulejos"
+        }
       }
     },
     {
@@ -820,7 +975,12 @@
         "wikidata": "Q3375717",
         "fee": "no",
         "popularity": 9,
-        "site": "Q3375717"
+        "site": "Q3375717",
+        "names": {
+          "pt": "Zoológico de Chapultepec",
+          "en": "Chapultepec Zoo",
+          "es": "Zoológico de Chapultepec"
+        }
       }
     },
     {
@@ -846,7 +1006,11 @@
         "wikidata": "Q7691977",
         "wikipedia": "es:Teatro de la Ciudad Esperanza Iris",
         "wheelchair": "limited",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Teatro de la Ciudad",
+          "es": "Teatro de la Ciudad Esperanza Iris"
+        }
       }
     },
     {
@@ -867,11 +1031,16 @@
         ],
         "latitude": 19.4292631,
         "longitude": -99.1321346,
-        "address": "Avenida José María Pino Suárez, 30, Cidade do México",
+        "address": "Avenida José María Pino Suárez, 30",
         "opening_hours": "Tu-Su 10:00-18:00",
         "wikidata": "Q1402600",
         "wikipedia": "en:Museum of Mexico City",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "pt": "Museu da Cidade do México",
+          "en": "Museum of Mexico City",
+          "es": "Museo de la Ciudad de México"
+        }
       }
     },
     {
@@ -893,7 +1062,11 @@
         "longitude": -99.1394783,
         "wikidata": "Q3968677",
         "wikipedia": "es:El Caballito (estatua)",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "El Caballito",
+          "es": "El Caballito"
+        }
       }
     },
     {
@@ -922,7 +1095,11 @@
         "wikipedia": "en:Leon Trotsky House Museum",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Leon Trotsky House Museum",
+          "es": "Museo Casa de León Trotsky"
+        }
       }
     },
     {
@@ -946,7 +1123,11 @@
         "address": "Calle Tacuba, 5, Ciudad de México",
         "wikidata": "Q3431087",
         "wikipedia": "es:Palacio de Minería",
-        "popularity": 9
+        "popularity": 9,
+        "names": {
+          "en": "Palacio de Minería",
+          "es": "Palacio de Minería"
+        }
       }
     },
     {
@@ -969,7 +1150,11 @@
         "longitude": -99.1726456,
         "wikidata": "Q2751011",
         "wikipedia": "en:Viveros de Coyoacán",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Viveros de Coyoacán",
+          "es": "Viveros de Coyoacán"
+        }
       }
     },
     {
@@ -993,7 +1178,11 @@
         "wikidata": "Q641374",
         "wikipedia": "en:Arena México",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "names": {
+          "en": "Arena México",
+          "es": "Arena México"
+        }
       }
     },
     {
@@ -1037,10 +1226,15 @@
         ],
         "latitude": 19.4360432,
         "longitude": -99.1307557,
-        "address": "Calle Justo Sierra, 16, Cidade do México",
+        "address": "Calle Justo Sierra, 16",
         "wikidata": "Q2297137",
         "popularity": 8,
-        "site": "Q2297137"
+        "site": "Q2297137",
+        "names": {
+          "pt": "Antigo Colégio de São Ildefonso",
+          "en": "San Ildefonso College",
+          "es": "Antiguo Colegio de San Ildefonso"
+        }
       }
     },
     {
@@ -1061,11 +1255,15 @@
         ],
         "latitude": 19.4336654,
         "longitude": -99.131352,
-        "address": "Calle Moneda, 4, Cidade do México",
+        "address": "Calle Moneda, 4",
         "opening_hours": "Tu-Su 10:00-17:00",
         "wikidata": "Q1142398",
         "wikipedia": "es:Museo de Arte de la Secretaría de Hacienda y Crédito Público",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Museo de la Secretaría de Hacienda y Crédito Público",
+          "es": "Museo de la Secretaría de Hacienda y Crédito Público"
+        }
       }
     },
     {
@@ -1088,7 +1286,11 @@
         "longitude": -99.1816921,
         "wikidata": "Q3330551",
         "wikipedia": "en:Museo Rufino Tamayo, Mexico City",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Museo Tamayo Arte Contemporáneo",
+          "es": "Museo Tamayo Arte Contemporáneo"
+        }
       }
     },
     {
@@ -1109,12 +1311,16 @@
         ],
         "latitude": 19.3933141,
         "longitude": -99.1734402,
-        "address": "Avenida Insurgentes Sur, 701, Cidade do México",
+        "address": "Avenida Insurgentes Sur, 701",
         "phone": "+52 55 5536 4520",
         "wikidata": "Q2265075",
         "wikipedia": "es:Polyforum Cultural Siqueiros",
         "wheelchair": "limited",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Polyforum Cultural Siqueiros",
+          "es": "Polyforum Cultural Siqueiros"
+        }
       }
     },
     {
@@ -1138,7 +1344,12 @@
         "address": "Independencia, 90, Ciudad de México",
         "wikidata": "Q1446543",
         "wikipedia": "en:Teatro Metropólitan",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Teatro Metropolitan",
+          "en": "Teatro Metropólitan",
+          "es": "Teatro Metropólitan"
+        }
       }
     },
     {
@@ -1161,7 +1372,11 @@
         "longitude": -99.1568551,
         "wikidata": "Q54820837",
         "wikipedia": "es:Kiosco morisco",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "Morisco Kiosk",
+          "es": "Kiosco Morisco"
+        }
       }
     },
     {
@@ -1183,12 +1398,17 @@
         ],
         "latitude": 19.4658938,
         "longitude": -99.086824,
-        "address": "Avenida 510, 90, Cidade do México",
+        "address": "Avenida 510, 90",
         "phone": "+52 55 50033734;+52 55 50033736",
         "website": "https://www.churchofjesuschrist.org/temples/details/mexico-city-mexico-temple",
         "wikidata": "Q3289708",
         "wikipedia": "en:Mexico City Mexico Temple",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Templo da Cidade do México",
+          "en": "México City México Temple",
+          "es": "Templo de la Ciudad de México"
+        }
       }
     },
     {
@@ -1211,7 +1431,11 @@
         "longitude": -99.1238683,
         "wikidata": "Q3377015",
         "wikipedia": "en:La Merced Market",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "en": "La Merced Market, Mexico City",
+          "es": "Mercado de La Merced"
+        }
       }
     },
     {
@@ -1234,7 +1458,12 @@
         "longitude": -99.1303922,
         "opening_hours": "Tu-Su 10:00-18:00",
         "wikidata": "Q6940503",
-        "popularity": 7
+        "popularity": 7,
+        "names": {
+          "pt": "Museu Nacional das Culturas",
+          "en": "Museo Nacional de las Culturas del Mundo",
+          "es": "Museo Nacional de las Culturas"
+        }
       }
     },
     {
@@ -1257,7 +1486,11 @@
         "longitude": -99.0904569,
         "wikidata": "Q2299724",
         "wikipedia": "es:Cerro de la Estrella",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Cerro de la Estrella",
+          "es": "Cerro de la Estrella"
+        }
       }
     },
     {
@@ -1285,7 +1518,12 @@
         "wikidata": "Q6033509",
         "wikipedia": "es:Museo Memoria y Tolerancia (México)",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Museu Memória e Tolerância",
+          "en": "Museum of Memory and Tolerance",
+          "es": "Museo Memoria y Tolerancia"
+        }
       }
     },
     {
@@ -1308,7 +1546,11 @@
         "longitude": -99.1792892,
         "wikidata": "Q19381838",
         "wikipedia": "es:Altar a la Patria",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Monumento a los Niños Héroes",
+          "es": "Altar a la Patria"
+        }
       }
     },
     {
@@ -1332,7 +1574,11 @@
         "address": "Calle Francisco I. Madero, 7, Ciudad de México",
         "wikidata": "Q5117093",
         "wikipedia": "en:Church of San Francisco, Madero Street, Mexico City",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Church of San Francisco",
+          "es": "Templo y exconvento de San Francisco"
+        }
       }
     },
     {
@@ -1353,11 +1599,15 @@
         ],
         "latitude": 19.4336753,
         "longitude": -99.1307843,
-        "address": "Calle Licenciado Francisco Primo de Verdad, 10, Cidade do México",
+        "address": "Calle Licenciado Francisco Primo de Verdad, 10",
         "opening_hours": "Mo-Su 10:00-04:00",
         "wikidata": "Q5915612",
         "wikipedia": "en:House of the First Print Shop in the Americas",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "House of the First Print Shop in the Americas",
+          "es": "Casa de la Primera Imprenta de América"
+        }
       }
     },
     {
@@ -1381,7 +1631,11 @@
         "longitude": -99.1716344,
         "wikidata": "Q2323702",
         "wikipedia": "es:Fuente de la Diana Cazadora (Ciudad de México)",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Diana the Huntress fountain",
+          "es": "Fuente de la Diana cazadora"
+        }
       }
     },
     {
@@ -1404,7 +1658,12 @@
         "longitude": -99.1424947,
         "wikidata": "Q9034955",
         "wikipedia": "es:Monumento a La Raza",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "pt": "Monumento a La Raza",
+          "en": "Monumento a La Raza",
+          "es": "Monumento a La Raza"
+        }
       }
     },
     {
@@ -1427,7 +1686,11 @@
         "longitude": -99.1711126,
         "wikidata": "Q580662",
         "wikipedia": "en:Parque España (Mexico City)",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Parque España",
+          "es": "Parque España"
+        }
       }
     },
     {
@@ -1454,7 +1717,11 @@
         "website": "http://www.map.df.gob.mx/",
         "wikidata": "Q2723096",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "names": {
+          "en": "Folk Art Museum",
+          "es": "Museo de Arte Popular"
+        }
       }
     },
     {
@@ -1479,7 +1746,11 @@
         "opening_hours": "24/7",
         "wikidata": "Q3376971",
         "wikipedia": "es:Parque México",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Parque México",
+          "es": "Parque México"
+        }
       }
     },
     {
@@ -1502,7 +1773,11 @@
         "longitude": -99.2097837,
         "wikidata": "Q3375727",
         "wikipedia": "en:Parque Tezozómoc",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Parque Tezozómoc",
+          "es": "Parque Tezozómoc"
+        }
       }
     },
     {
@@ -1527,7 +1802,11 @@
         "wikipedia": "es:Glorieta de los Insurgentes",
         "wheelchair": "yes",
         "popularity": 5,
-        "site": "Q3941792"
+        "site": "Q3941792",
+        "names": {
+          "en": "Glorieta de los Insurgentes",
+          "es": "Glorieta de los Insurgentes"
+        }
       }
     },
     {
@@ -1550,7 +1829,11 @@
         "longitude": -99.1373717,
         "wikidata": "Q14623034",
         "wikipedia": "en:Tlatelolco (archaeological site)",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Tlatelolco",
+          "es": "Zona Arqueológica de Tlatelolco"
+        }
       }
     },
     {
@@ -1576,7 +1859,11 @@
         "wikidata": "Q2893965",
         "wikipedia": "es:Museo Nacional de la Estampa",
         "fee": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Museo Nacional de la Estampa",
+          "es": "Museo Nacional de la Estampa"
+        }
       }
     },
     {
@@ -1597,11 +1884,15 @@
         ],
         "latitude": 19.435663,
         "longitude": -99.1326739,
-        "address": "Calle Donceles, 99, Cidade do México",
+        "address": "Calle Donceles, 99",
         "opening_hours": "11:00-18:00",
         "wikidata": "Q5039534",
         "wikipedia": "en:Caricature Museum, Mexico City",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Caricature Museum, Mexico City",
+          "es": "Museo de la Caricatura"
+        }
       }
     },
     {
@@ -1624,7 +1915,11 @@
         "longitude": -99.1650786,
         "wikidata": "Q1092492",
         "wikipedia": "es:Cineteca Nacional",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Cineteca Nacional",
+          "es": "Cineteca Nacional"
+        }
       }
     },
     {
@@ -1645,14 +1940,18 @@
         ],
         "latitude": 19.3486499,
         "longitude": -99.1770689,
-        "address": "Salvador Novo, 88, Cidade do México",
+        "address": "Salvador Novo, 88",
         "opening_hours": "Tu-Su 10:00-18:00",
         "phone": "+52 55 51304600",
         "website": "https://www.acuarela.org.mx/",
         "wikidata": "Q4723788",
         "wikipedia": "es:Museo Nacional de la Acuarela Alfredo Guati Rojo",
         "wheelchair": "limited",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Alfredo Guati Rojo National Watercolor Museum",
+          "es": "Museo Nacional de Acuarela Alfredo Guati Rojo"
+        }
       }
     },
     {
@@ -1673,10 +1972,14 @@
         ],
         "latitude": 19.4219436,
         "longitude": -99.1247026,
-        "address": "Sur 79, Cidade do México",
+        "address": "Sur 79",
         "wikidata": "Q5548562",
         "wikipedia": "en:Mercado de Sonora",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Mercado de Sonora",
+          "es": "Mercado de Sonora"
+        }
       }
     },
     {
@@ -1699,7 +2002,11 @@
         "longitude": -99.1678177,
         "wikidata": "Q5073555",
         "wikipedia": "es:Acueducto de Chapultepec",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Chapultepec aqueduct",
+          "es": "Acueducto de Chapultepec"
+        }
       }
     },
     {
@@ -1722,7 +2029,11 @@
         "longitude": -99.1625425,
         "wikidata": "Q41793342",
         "wikipedia": "en:How Doth the Little Crocodile (Carrington)",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "How Doth the Little Crocodile",
+          "es": "Cómo hace el pequeño cocodrilo"
+        }
       }
     },
     {
@@ -1743,10 +2054,14 @@
         ],
         "latitude": 19.4336695,
         "longitude": -99.1291324,
-        "address": "Calle Academia, 13, Cidade do México",
+        "address": "Calle Academia, 13",
         "wikidata": "Q6292752",
         "wikipedia": "en:José Luis Cuevas Museum",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "José Luis Cuevas Museum",
+          "es": "Museo José Luis Cuevas"
+        }
       }
     },
     {
@@ -1767,11 +2082,15 @@
         ],
         "latitude": 19.4379504,
         "longitude": -99.1330412,
-        "address": "Calle República de Brasil, 33, Cidade do México",
+        "address": "Calle República de Brasil, 33",
         "website": "https://pem.facmed.unam.mx/",
         "wikidata": "Q7126272",
         "wikipedia": "es:Palacio de la Escuela de Medicina",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Palace of the Inquisition",
+          "es": "Antiguo Palacio de la Inquisición"
+        }
       }
     },
     {
@@ -1792,12 +2111,16 @@
         ],
         "latitude": 19.4344205,
         "longitude": -99.1305263,
-        "address": "Calle Licenciado Francisco Primo de Verdad, 2, Cidade do México",
+        "address": "Calle Licenciado Francisco Primo de Verdad, 2",
         "opening_hours": "Mo-Su 10:00-18:00",
         "website": "https://www.fundacionunam.org.mx/palacio-de-autonomia/",
         "wikidata": "Q7126319",
         "wikipedia": "en:Palacio de la Autonomía",
-        "popularity": 5
+        "popularity": 5,
+        "names": {
+          "en": "Palacio de la Autonomía",
+          "es": "Palacio de la Autonomía"
+        }
       }
     },
     {
@@ -1825,7 +2148,11 @@
         "wikidata": "Q6940565",
         "wikipedia": "en:Museo del Objeto del Objeto",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Museo del Objeto del Objeto",
+          "es": "Museo del Objeto del Objeto"
+        }
       }
     },
     {
@@ -1849,7 +2176,11 @@
         "longitude": -99.14305,
         "wikidata": "Q5100149",
         "wikipedia": "en:Barrio Chino (Mexico City)",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Barrio Chino",
+          "es": "Barrio chino (Ciudad de México)"
+        }
       }
     },
     {
@@ -1872,7 +2203,11 @@
         "longitude": -99.197035,
         "wikidata": "Q3370874",
         "wikipedia": "en:Parque Lincoln",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Parque Lincoln",
+          "es": "Parque Lincoln"
+        }
       }
     },
     {
@@ -1895,7 +2230,11 @@
         "longitude": -99.160454,
         "wikidata": "Q6079786",
         "wikipedia": "es:Plaza Río de Janeiro",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Plaza Rio de Janeiro",
+          "es": "Plaza Río de Janeiro"
+        }
       }
     },
     {
@@ -1918,7 +2257,11 @@
         "longitude": -99.1790941,
         "wikidata": "Q3438112",
         "wikipedia": "en:Parque Hundido",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Parque Hundido",
+          "es": "Parque Hundido"
+        }
       }
     },
     {
@@ -1942,7 +2285,11 @@
         "website": "https://papalote.org.mx/",
         "wikidata": "Q6060078",
         "wikipedia": "en:Papalote Museo del Niño",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Papalote Museo del Niño",
+          "es": "Papalote Museo del Niño"
+        }
       }
     },
     {
@@ -1963,10 +2310,14 @@
         ],
         "latitude": 19.4338459,
         "longitude": -99.1365055,
-        "address": "Calle Isabel la Católica, 21, Cidade do México",
+        "address": "Calle Isabel la Católica, 21",
         "wikidata": "Q7698749",
         "wikipedia": "es:La Profesa",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Temple of San Felipe Neri \"La Profesa\"",
+          "es": "La Profesa"
+        }
       }
     },
     {
@@ -1992,7 +2343,11 @@
         "phone": "+52 55 5510 1828",
         "wikidata": "Q18347778",
         "wikipedia": "es:Mercado de la Ciudadela",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Ciudadela Market",
+          "es": "Mercado de la Ciudadela"
+        }
       }
     },
     {
@@ -2018,7 +2373,12 @@
         "wikidata": "Q17084116",
         "wikipedia": "es:Parque Lira",
         "fee": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Parque Lira",
+          "en": "Parque Lira",
+          "es": "Parque Lira"
+        }
       }
     },
     {
@@ -2048,7 +2408,11 @@
         "wikidata": "Q5142722",
         "wikipedia": "en:Colección Jumex",
         "fee": "no",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Colección Jumex",
+          "es": "Museo Júmex"
+        }
       }
     },
     {
@@ -2071,7 +2435,12 @@
         "address": "Avenida Álvaro Obregón, 99, Ciudad de México",
         "wikidata": "Q581182",
         "wikipedia": "en:Casa Lamm",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "pt": "Casa Lamm",
+          "en": "Casa Lamm Cultural Center",
+          "es": "Casa Lamm"
+        }
       }
     },
     {
@@ -2092,14 +2461,18 @@
         ],
         "latitude": 19.4349037,
         "longitude": -99.1303,
-        "address": "Calle República de Guatemala, 60, Cidade do México",
+        "address": "Calle República de Guatemala, 60",
         "opening_hours": "Tu-Su 09:00-17:00",
         "phone": "+52 55 4040 5600",
         "wikidata": "Q3330387",
         "wikipedia": "es:Museo del Templo Mayor",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Templo Mayor Museum",
+          "es": "Museo del Templo Mayor"
+        }
       }
     },
     {
@@ -2122,7 +2495,11 @@
         "longitude": -99.1386662,
         "wikidata": "Q30905052",
         "wikipedia": "es:Teatro Fru Fru",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Teatro Fru Fru",
+          "es": "Teatro Fru Fru"
+        }
       }
     },
     {
@@ -2146,7 +2523,11 @@
         "address": "Francisco Zarco, 12, Ciudad de México",
         "wikidata": "Q21515155",
         "wikipedia": "es:Templo de San Hipólito",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Templo de San Hipólito",
+          "es": "Templo de San Hipólito"
+        }
       }
     },
     {
@@ -2167,11 +2548,15 @@
         ],
         "latitude": 19.4353064,
         "longitude": -99.1383527,
-        "address": "Calle Tacuba, 17, Cidade do México",
+        "address": "Calle Tacuba, 17",
         "wikidata": "Q6045328",
         "wikipedia": "en:Interactive Museum of Economics",
         "popularity": 4,
-        "site": "Q6045328"
+        "site": "Q6045328",
+        "names": {
+          "en": "Interactive Museum of Economics",
+          "es": "Museo Interactivo de Economía"
+        }
       }
     },
     {
@@ -2197,7 +2582,11 @@
         "wikidata": "Q2878993",
         "wikipedia": "es:Bosque de San Juan de Aragón",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "names": {
+          "en": "Bosque de San Juan de Aragón",
+          "es": "Bosque de San Juan de Aragón"
+        }
       }
     },
     {
@@ -2220,7 +2609,11 @@
         "longitude": -99.1859217,
         "wikidata": "Q6062723",
         "wikipedia": "es:Parque de la Bombilla (Ciudad de México)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Parque de la Bombilla",
+          "es": "Parque de la Bombilla (Ciudad de México)"
+        }
       }
     },
     {
@@ -2242,7 +2635,11 @@
         "longitude": -99.189341,
         "wikidata": "Q98461341",
         "wikipedia": "es:Tótem canadiense de Chapultepec",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Canadian totem",
+          "es": "Tótem canadiense de Chapultepec"
+        }
       }
     },
     {
@@ -2263,10 +2660,14 @@
         ],
         "latitude": 19.4350046,
         "longitude": -99.1321427,
-        "address": "Calle República de Guatemala, 34, Cidade do México",
+        "address": "Calle República de Guatemala, 34",
         "wikidata": "Q18286243",
         "wikipedia": "en:Museo Archivo de la Fotografía",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museo Archivo de la Fotografía",
+          "es": "Museo Archivo de la Fotografía"
+        }
       }
     },
     {
@@ -2288,7 +2689,11 @@
         "longitude": -99.1421277,
         "wikidata": "Q59168042",
         "wikipedia": "es:Monumento a Beethoven",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Beethoven Monument",
+          "es": "Monumento a Beethoven"
+        }
       }
     },
     {
@@ -2310,7 +2715,11 @@
         "longitude": -99.1490403,
         "wikidata": "Q60754883",
         "wikipedia": "es:Puerta 1808",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Puerta 1808",
+          "es": "Puerta 1808"
+        }
       }
     },
     {
@@ -2332,7 +2741,12 @@
         "longitude": -99.1879538,
         "wikidata": "Q76824205",
         "wikipedia": "es:Nuevo Símbolo Universitario",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Nuevo Símbolo Universitario",
+          "en": "Nuevo Símbolo Universitario",
+          "es": "Nuevo Símbolo Universitario"
+        }
       }
     },
     {
@@ -2355,7 +2769,11 @@
         "longitude": -99.1808045,
         "wikidata": "Q60764207",
         "wikipedia": "en:El Sargento",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "El Sargento",
+          "es": "El Sargento"
+        }
       }
     },
     {
@@ -2378,7 +2796,11 @@
         "longitude": -99.156073,
         "wikidata": "Q6062815",
         "wikipedia": "es:Parque de los Venados",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Parque de los Venados",
+          "es": "Parque de los venados"
+        }
       }
     },
     {
@@ -2408,7 +2830,11 @@
         "wikipedia": "es:Zoológico de San Juan de Aragón",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Zoológico de San Juan de Aragón",
+          "es": "Zoológico de San Juan de Aragón"
+        }
       }
     },
     {
@@ -2438,7 +2864,11 @@
         "fee": "no",
         "wheelchair": "yes",
         "popularity": 3,
-        "site": "Q125261430"
+        "site": "Q125261430",
+        "names": {
+          "en": "Aztlán Parque Urbano",
+          "es": "Aztlán Parque Urbano"
+        }
       }
     },
     {
@@ -2462,7 +2892,11 @@
         "wikidata": "Q3792956",
         "wikipedia": "es:Cárcamo de Dolores",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Cárcamo de Dolores",
+          "es": "Cárcamo de Dolores"
+        }
       }
     },
     {
@@ -2486,7 +2920,11 @@
         "address": "Calle 2 de Abril, 6, Ciudad de México",
         "wikidata": "Q7419969",
         "wikipedia": "es:Iglesia de la Santa Veracruz (Ciudad de México)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Santa Veracruz Church, Mexico City",
+          "es": "Iglesia de la Santa Veracruz"
+        }
       }
     },
     {
@@ -2507,11 +2945,15 @@
         ],
         "latitude": 19.4355705,
         "longitude": -99.1466913,
-        "address": "Avenida Juárez, 77, Cidade do México",
+        "address": "Avenida Juárez, 77",
         "opening_hours": "24/7",
         "wikidata": "Q59876701",
         "wikipedia": "es:Plaza de la Solidaridad",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Plaza de la Solidaridad",
+          "es": "Plaza de la Solidaridad"
+        }
       }
     },
     {
@@ -2536,7 +2978,11 @@
         "website": "https://casadellago.unam.mx/nuevo/",
         "wikidata": "Q5047945",
         "wikipedia": "en:Casa del Lago Juan José Arreola",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Casa del Lago Juan José Arreola",
+          "es": "Casa del Lago Juan José Arreola"
+        }
       }
     },
     {
@@ -2560,7 +3006,11 @@
         "address": "Avenida 5 de Mayo, 290, Ciudad de México",
         "wikidata": "Q6062023",
         "wikipedia": "es:Parque Bicentenario (Ciudad de México)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Bicentennial Park",
+          "es": "Parque Bicentenario"
+        }
       }
     },
     {
@@ -2582,11 +3032,16 @@
         ],
         "latitude": 19.4332642,
         "longitude": -99.1361213,
-        "address": "Calle Isabel la Católica, 26, Cidade do México",
+        "address": "Calle Isabel la Católica, 26",
         "wikidata": "Q6034430",
         "wikipedia": "en:Museo del Estanquillo",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "pt": "Museo del Estanquillo",
+          "en": "Museo del Estanquillo",
+          "es": "Museo del Estanquillo"
+        }
       }
     },
     {
@@ -2609,7 +3064,11 @@
         "longitude": -99.1330363,
         "wikidata": "Q16577558",
         "wikipedia": "es:Iglesia de Jesús Nazareno (Ciudad de México)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Jesus Nazareno Church, historic center of Mexico City",
+          "es": "iglesia de Jesús Nazareno"
+        }
       }
     },
     {
@@ -2632,7 +3091,11 @@
         "longitude": -99.1610196,
         "wikidata": "Q9046890",
         "wikipedia": "en:Museo Nacional de Culturas Populares",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museo Nacional de Culturas Populares",
+          "es": "Museo Nacional de Culturas Populares"
+        }
       }
     },
     {
@@ -2653,10 +3116,14 @@
         ],
         "latitude": 19.4372235,
         "longitude": -99.1277542,
-        "address": "Calle República de Venezuela, 72, Cidade do México",
+        "address": "Calle República de Venezuela, 72",
         "wikidata": "Q4666658",
         "wikipedia": "es:Mercado Abelardo L. Rodríguez",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Abelardo L. Rodriguez Market",
+          "es": "Mercado Abelardo L. Rodríguez"
+        }
       }
     },
     {
@@ -2677,12 +3144,16 @@
         ],
         "latitude": 19.4818627,
         "longitude": -99.1170372,
-        "address": "Calle Alberto Herrera, Cidade do México",
+        "address": "Calle Alberto Herrera",
         "opening_hours": "Tu-Su 10:00-17:00",
         "website": "https://sic.cultura.gob.mx/ficha.php?table=museo&table_id=1285",
         "wikidata": "Q6034358",
         "wikipedia": "es:Museo de los Ferrocarrileros",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museo de los Ferrocarrileros",
+          "es": "Museo de los Ferrocarrileros"
+        }
       }
     },
     {
@@ -2706,7 +3177,11 @@
         "address": "Calle del Apartado, 13, Ciudad de México",
         "wikidata": "Q25414976",
         "wikipedia": "es:Museo Numismático Nacional (México)",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museo Nacional Numismático",
+          "es": "Museo Numismático Nacional"
+        }
       }
     },
     {
@@ -2729,7 +3204,11 @@
         "longitude": -99.1371376,
         "wikidata": "Q9047058",
         "wikipedia": "en:Museo de Charrería",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Museo de Charrería",
+          "es": "Museo de la Charrería"
+        }
       }
     },
     {
@@ -2752,7 +3231,11 @@
         "longitude": -99.1634619,
         "wikidata": "Q6033202",
         "wikipedia": "es:Museo Casa Carranza",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museo Casa de Carranza, Mexico City",
+          "es": "Museo Casa Carranza"
+        }
       }
     },
     {
@@ -2774,7 +3257,11 @@
         "longitude": -99.1882079,
         "wikidata": "Q17374363",
         "wikipedia": "es:El pueblo a la universidad, la universidad al pueblo",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "The people to the University, the University to the people",
+          "es": "El pueblo a la universidad, la universidad al pueblo"
+        }
       }
     },
     {
@@ -2797,7 +3284,11 @@
         "wikidata": "Q65120874",
         "wikipedia": "en:El Sereno (sculpture)",
         "popularity": 2,
-        "site": "Q3941792"
+        "site": "Q3941792",
+        "names": {
+          "en": "El Sereno",
+          "es": "El Sereno"
+        }
       }
     },
     {
@@ -2820,7 +3311,12 @@
         "longitude": -99.1806921,
         "wikidata": "Q61998916",
         "wikipedia": "es:Petrograbados del Cerro de Chapultepec",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Petrogravuras do Cerro de Chapultepec",
+          "en": "Petrogravures of Cerro de Chapultepec",
+          "es": "Petrograbados del Cerro de Chapultepec"
+        }
       }
     },
     {
@@ -2844,7 +3340,11 @@
         "wikidata": "Q76761602",
         "wikipedia": "es:Anfiteatro Simón Bolívar",
         "popularity": 2,
-        "site": "Q2297137"
+        "site": "Q2297137",
+        "names": {
+          "en": "Anfiteatro Simón Bolivar",
+          "es": "Anfiteatro Simón Bolivar"
+        }
       }
     },
     {
@@ -2867,7 +3367,12 @@
         "longitude": -99.1316158,
         "wikidata": "Q21002633",
         "wikipedia": "es:Casa de las águilas",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Casa de las águilas",
+          "en": "Casa de las águilas",
+          "es": "Casa de las águilas"
+        }
       }
     },
     {
@@ -2888,10 +3393,15 @@
         ],
         "latitude": 19.4501048,
         "longitude": -99.1374403,
-        "address": "Avenida Ricardo Flores Magón, 1, Cidade do México",
+        "address": "Avenida Ricardo Flores Magón, 1",
         "wikidata": "Q6408610",
         "wikipedia": "es:Centro Cultural Universitario Tlatelolco",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Centro Cultural Universitario Tlatelolco",
+          "en": "Centro Cultural Universitario Tlatelolco",
+          "es": "Centro Cultural Universitario Tlatelolco"
+        }
       }
     },
     {
@@ -2915,7 +3425,11 @@
         "address": "Avenida Hidalgo, 51, Ciudad de México",
         "wikidata": "Q114228534",
         "wikipedia": "es:Templo de San Juan de Dios (Ciudad de México)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "San Juan de Dios church",
+          "es": "Templo de San Juan de Dios"
+        }
       }
     },
     {
@@ -2936,12 +3450,16 @@
         ],
         "latitude": 19.4360099,
         "longitude": -99.1322415,
-        "address": "Calle Donceles, 104, Cidade do México",
+        "address": "Calle Donceles, 104",
         "phone": "+52 55 5702 1843",
         "wikidata": "Q6462320",
         "wikipedia": "en:La Enseñanza Church",
         "wheelchair": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "La Enseñanza Church",
+          "es": "La Iglesia de la Enseñanza"
+        }
       }
     },
     {
@@ -2962,11 +3480,15 @@
         ],
         "latitude": 19.4406779,
         "longitude": -99.1395512,
-        "address": "Peatonal Plaza Garibaldi, Cidade do México",
+        "address": "Peatonal Plaza Garibaldi",
         "website": "https://www.mutemgaribaldi.mx",
         "wikidata": "Q16609994",
         "wikipedia": "es:Museo del Tequila y el Mezcal",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museo del Tequila y el Mezcal",
+          "es": "Museo del Tequila y el Mezcal"
+        }
       }
     },
     {
@@ -2989,7 +3511,12 @@
         "longitude": -99.1493312,
         "wikidata": "Q6080172",
         "wikipedia": "es:Plaza de la Ciudadela",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Plaza de la Ciudadela",
+          "en": "Plaza de la Ciudadela, Mexico City",
+          "es": "Plaza de la Ciudadela"
+        }
       }
     },
     {
@@ -3012,7 +3539,12 @@
         "longitude": -99.1898492,
         "wikidata": "Q6171621",
         "wikipedia": "es:Zona arqueológica de Mixcoac",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "pt": "Zona arqueológica de Mixcoac",
+          "en": "archaeological site of Mixcoac",
+          "es": "zona arqueológica de Mixcoac"
+        }
       }
     },
     {
@@ -3033,13 +3565,17 @@
         ],
         "latitude": 19.4502563,
         "longitude": -99.1577609,
-        "address": "Calle Jaime Torres Bodet, 176, Cidade do México",
+        "address": "Calle Jaime Torres Bodet, 176",
         "opening_hours": "Tu-Su 10:00-17:00",
         "website": "https://www.geologia.unam.mx/igl/museo",
         "wikidata": "Q21573458",
         "wikipedia": "es:Museo de Geología de la UNAM",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museo de Geología de la UNAM",
+          "es": "Museo de Geología de la UNAM"
+        }
       }
     },
     {
@@ -3062,7 +3598,11 @@
         "longitude": -99.1223607,
         "wikidata": "Q28502192",
         "wikipedia": "es:Alameda del sur",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Alameda del sur",
+          "es": "Alameda del sur"
+        }
       }
     },
     {
@@ -3084,7 +3624,10 @@
         "latitude": 19.4472885,
         "longitude": -99.1327625,
         "wikidata": "Q16577850",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "es": "Iglesia de Santa Ana"
+        }
       }
     },
     {
@@ -3107,7 +3650,11 @@
         "longitude": -99.0458577,
         "wikidata": "Q2839974",
         "wikipedia": "es:Facultad de Estudios Superiores Aragón",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Facultad de Estudios Superiores Aragón",
+          "es": "Facultad de Estudios Superiores Aragón"
+        }
       }
     },
     {
@@ -3132,7 +3679,11 @@
         "wikidata": "Q129599292",
         "wikipedia": "es:Museo Yancuic",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Museo Yancuic",
+          "es": "Museo Yancuic"
+        }
       }
     },
     {
@@ -3155,7 +3706,11 @@
         "longitude": -99.1264277,
         "wikidata": "Q113826877",
         "wikipedia": "es:Capilla de la Resurrección Tultenco",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Chapel of la Resurrección Tultenco",
+          "es": "Capilla de la Resurrección Tultenco"
+        }
       }
     },
     {
@@ -3176,13 +3731,17 @@
         ],
         "latitude": 19.4361513,
         "longitude": -99.1544784,
-        "address": "Plaza de la República, Cidade do México",
+        "address": "Plaza de la República",
         "wikidata": "Q24510321",
         "wikipedia": "es:Museo Nacional de la Revolución",
         "fee": "yes",
         "wheelchair": "yes",
         "popularity": 2,
-        "site": "Q1389520"
+        "site": "Q1389520",
+        "names": {
+          "en": "Museo Nacional de la Revolución",
+          "es": "Museo Nacional de la Revolución"
+        }
       }
     },
     {
@@ -3205,7 +3764,11 @@
         "longitude": -99.143908,
         "wikidata": "Q16578034",
         "wikipedia": "es:Iglesia de Nuestra Señora de Guadalupe (Ciudad de México)",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Nuestra Señora de Guadalupe Church, Plaza de San Juan",
+          "es": "iglesia de nuestra señora de Guadalupe"
+        }
       }
     },
     {
@@ -3230,7 +3793,11 @@
         "website": "https://multiforoalicia.com.mx/",
         "wikidata": "Q6026146",
         "wikipedia": "es:Multiforo Cultural Alicia",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "en": "Multiforo Cultural Alicia",
+          "es": "Multiforo Cultural Alicia"
+        }
       }
     },
     {
@@ -3252,7 +3819,10 @@
         "latitude": 19.3487662,
         "longitude": -99.1624045,
         "wikidata": "Q5910431",
-        "popularity": 2
+        "popularity": 2,
+        "names": {
+          "es": "iglesia de San Juan Bautista"
+        }
       }
     },
     {
@@ -3273,7 +3843,11 @@
         "latitude": 19.3160897,
         "longitude": -99.1839302,
         "wikidata": "Q131423769",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Corona del Pedregal",
+          "es": "Corona del Pedregal"
+        }
       }
     },
     {
@@ -3294,7 +3868,11 @@
         "latitude": 19.3155314,
         "longitude": -99.1833338,
         "wikidata": "Q123466946",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Coatl",
+          "es": "Coatl"
+        }
       }
     },
     {
@@ -3315,7 +3893,11 @@
         "latitude": 19.3258059,
         "longitude": -99.1826685,
         "wikidata": "Q131424563",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "La Leonardita",
+          "es": "La Leonardita"
+        }
       }
     },
     {
@@ -3339,7 +3921,11 @@
         "wikidata": "Q24773885",
         "wikipedia": "es:Teatro Juan Ruiz de Alarcón",
         "wheelchair": "limited",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Teatro Juan Ruiz de Alarcón",
+          "es": "Teatro Juan Ruiz de Alarcón"
+        }
       }
     },
     {
@@ -3363,7 +3949,11 @@
         "wikidata": "Q28151452",
         "wikipedia": "es:Foro Sor Juana Inés de la Cruz",
         "wheelchair": "limited",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Theater Sor Juana Inés de la Cruz",
+          "es": "Foro Sor Juana Inés de la Cruz"
+        }
       }
     },
     {
@@ -3384,7 +3974,11 @@
         "latitude": 19.38438,
         "longitude": -99.0368769,
         "wikidata": "Q131420002",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "La Espiga Hendida",
+          "es": "La Espiga Hendida"
+        }
       }
     },
     {
@@ -3412,7 +4006,10 @@
         "wikidata": "Q6034137",
         "wikipedia": "es:Museo de Transportes Eléctricos del Distrito Federal",
         "fee": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Museo de Transportes Eléctricos del Distrito Federal"
+        }
       }
     },
     {
@@ -3434,7 +4031,11 @@
         "longitude": -99.1910184,
         "wikidata": "Q72209880",
         "wikipedia": "es:La universidad, la familia y el deporte en México",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "La universidad, la familia y el deporte en México",
+          "es": "La universidad, la familia y el deporte en México"
+        }
       }
     },
     {
@@ -3457,7 +4058,10 @@
         "longitude": -99.1470682,
         "wikidata": "Q120435402",
         "wikipedia": "es:Museo del Pulque y las Pulquerías",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Museo del Pulque y las Pulquerías"
+        }
       }
     },
     {
@@ -3480,7 +4084,11 @@
         "longitude": -99.1187599,
         "address": "Avenida Fray Servando Teresa de Mier, Ciudad de México",
         "wikidata": "Q130191583",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Parque de los Periodistas Ilustres",
+          "es": "Parque de los Periodistas Ilustres"
+        }
       }
     },
     {
@@ -3503,7 +4111,11 @@
         "longitude": -99.1903054,
         "wikidata": "Q5817917",
         "wikipedia": "es:Museo de Arte Carrillo Gil",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Carrillo Gil Art Museum",
+          "es": "Museo de Arte Carrillo Gil"
+        }
       }
     },
     {
@@ -3526,7 +4138,11 @@
         "longitude": -99.0536345,
         "wikidata": "Q20012761",
         "wikipedia": "es:Alameda Oriente",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Alameda Oriente",
+          "es": "Alameda Oriente"
+        }
       }
     },
     {
@@ -3549,7 +4165,11 @@
         "longitude": -99.1221562,
         "wikidata": "Q113823300",
         "wikipedia": "es:Capilla de San Antonio Tomatlán",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Chapel of San Antonio Tomatlán",
+          "es": "Capilla de San Antonio Tomatlán"
+        }
       }
     },
     {
@@ -3572,7 +4192,11 @@
         "longitude": -99.1254144,
         "wikidata": "Q113826880",
         "wikipedia": "es:Capilla de la Concepción Ixnahualtongo",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Chapel of Concepción Ixnahualtongo",
+          "es": "Capilla de la Concepción Ixnahualtongo"
+        }
       }
     },
     {
@@ -3593,7 +4217,11 @@
         "latitude": 19.4222488,
         "longitude": -99.1692984,
         "wikidata": "Q137132850",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "El Pueblo del Sol",
+          "es": "El Pueblo del Sol"
+        }
       }
     },
     {
@@ -3621,7 +4249,10 @@
         "wikidata": "Q65049388",
         "wikipedia": "en:Parish of the Holy Child of Peace",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Parish of the Holy Child of Peace"
+        }
       }
     },
     {
@@ -3643,7 +4274,11 @@
         "latitude": 19.4176342,
         "longitude": -99.1814396,
         "wikidata": "Q136373087",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Baths of Moctezuma",
+          "es": "Baños de Moctezuma"
+        }
       }
     },
     {
@@ -3665,7 +4300,11 @@
         "longitude": -99.1298433,
         "wikidata": "Q126740889",
         "wikipedia": "es:Molino para la paz",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Molino para la paz",
+          "es": "Molino para la paz"
+        }
       }
     },
     {
@@ -3689,7 +4328,11 @@
         "address": "Callejón Durango, 30, Ciudad de México",
         "wikidata": "Q131625000",
         "wikipedia": "es:Templo del Verbo Encarnado, Romita (Ciudad de México)",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "en": "Verbo Encarnado church",
+          "es": "Templo del Verbo Encarnado, Romita"
+        }
       }
     },
     {
@@ -3710,11 +4353,14 @@
         ],
         "latitude": 19.4394719,
         "longitude": -99.1484464,
-        "address": "Plaza San fernando, Cidade do México",
+        "address": "Plaza San fernando",
         "wikidata": "Q16638476",
         "wikipedia": "es:Templo de San Fernando (México)",
         "wheelchair": "no",
-        "popularity": 1
+        "popularity": 1,
+        "names": {
+          "es": "Templo de San Fernando"
+        }
       }
     },
     {
@@ -3735,7 +4381,7 @@
         ],
         "latitude": 19.3547658,
         "longitude": -99.1488569,
-        "address": "20 de agosto, Cidade do México",
+        "address": "20 de agosto",
         "opening_hours": "Mo-Su 09:00-18:00",
         "popularity": 0
       }
@@ -3780,7 +4426,7 @@
         ],
         "latitude": 19.3393127,
         "longitude": -99.1925055,
-        "address": "Calle Altamirano, 46, Cidade do México",
+        "address": "Calle Altamirano, 46",
         "opening_hours": "Su-Mo, We-Fr 10:30-18:30; Sa 10:00-20:00",
         "popularity": 0
       }
@@ -3825,7 +4471,7 @@
         ],
         "latitude": 19.4153733,
         "longitude": -99.144101,
-        "address": "Calle Doctor Olvera, 15, Cidade do México",
+        "address": "Calle Doctor Olvera, 15",
         "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-16:00; Su 10:00-16:00",
         "phone": "+52 55 5588 2100",
         "website": "https://www.museodeljuguete.mx/",
@@ -3899,7 +4545,7 @@
         ],
         "latitude": 19.3536964,
         "longitude": -99.1685909,
-        "address": "Melchor Ocampo, Cidade do México",
+        "address": "Melchor Ocampo",
         "opening_hours": "Mo-Su 06:00-18:00",
         "phone": "+52 55 5484 3524",
         "popularity": 0
@@ -4079,7 +4725,11 @@
         "latitude": 19.3180004,
         "longitude": -99.1877031,
         "wikidata": "Q131431940",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "La garra y la serpiente",
+          "es": "La garra y la serpiente"
+        }
       }
     },
     {
@@ -4283,7 +4933,11 @@
         "latitude": 19.330971,
         "longitude": -99.1842884,
         "wikidata": "Q131428555",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Faculty of Engineering train car",
+          "es": "Tren de Ingeniería"
+        }
       }
     },
     {
@@ -4582,7 +5236,7 @@
         ],
         "latitude": 19.4527986,
         "longitude": -99.0848805,
-        "address": "Calle Cuarta 553, s/n, Cidade do México",
+        "address": "Calle Cuarta 553, s/n",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -4630,7 +5284,7 @@
         ],
         "latitude": 19.361728,
         "longitude": -99.0204353,
-        "address": "Calle Colima, Cidade do México",
+        "address": "Calle Colima",
         "website": "https://oihfra.org/",
         "popularity": 0
       }
@@ -4833,7 +5487,11 @@
         "latitude": 19.3176077,
         "longitude": -99.1864142,
         "wikidata": "Q131423198",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Pájaro XIII",
+          "es": "Pájaro XIII"
+        }
       }
     },
     {
@@ -4920,7 +5578,11 @@
         "latitude": 19.3309615,
         "longitude": -99.1872818,
         "wikidata": "Q131423132",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Sol y Luna",
+          "es": "Sol y Luna"
+        }
       }
     },
     {
@@ -4941,7 +5603,11 @@
         "latitude": 19.5248268,
         "longitude": -99.1882069,
         "wikidata": "Q131427229",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "La cerca caída",
+          "es": "La cerca caída"
+        }
       }
     },
     {
@@ -4962,7 +5628,11 @@
         "latitude": 19.3153248,
         "longitude": -99.1804454,
         "wikidata": "Q131427912",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Aniversario",
+          "es": "Aniversario"
+        }
       }
     },
     {
@@ -5058,7 +5728,7 @@
         ],
         "latitude": 19.4623227,
         "longitude": -99.162998,
-        "address": "Avenida Tlatilco, Cidade do México",
+        "address": "Avenida Tlatilco",
         "opening_hours": "Mo-Su 09:00-18:00",
         "popularity": 0
       }
@@ -5081,7 +5751,7 @@
         ],
         "latitude": 19.4919099,
         "longitude": -99.0167532,
-        "address": "Avenida Guadiana, s/n, Cidade do México",
+        "address": "Avenida Guadiana, s/n",
         "opening_hours": "Mo-Su,PH 09:00-17:45+",
         "popularity": 0
       }
@@ -5104,7 +5774,7 @@
         ],
         "latitude": 19.4337182,
         "longitude": -99.131851,
-        "address": "Calle Moneda, 2, Cidade do México",
+        "address": "Calle Moneda, 2",
         "opening_hours": "Tu-Sa 11:00-17:00",
         "phone": "+52 55 5542 0186; +52 55 5522 2630",
         "website": "https://www.iisue.unam.mx/museo-unam-hoy/",
@@ -5129,7 +5799,7 @@
         ],
         "latitude": 19.4338104,
         "longitude": -99.1318398,
-        "address": "Seminario, 18, Cidade do México",
+        "address": "Seminario, 18",
         "website": "https://fundacionherdez.com",
         "popularity": 0
       }
@@ -5153,7 +5823,7 @@
         ],
         "latitude": 19.4340858,
         "longitude": -99.1306533,
-        "address": "Calle Licenciado Francisco Primo de Verdad, 8, Cidade do México",
+        "address": "Calle Licenciado Francisco Primo de Verdad, 8",
         "opening_hours": "Mo-Su 10:00-18:00",
         "website": "http://www.exteresa.bellasartes.gob.mx/",
         "fee": "no",
@@ -5226,7 +5896,11 @@
         "opening_hours": "Tu-Su 10:00-18:00",
         "website": "https://museopalaciodebellasartes.inba.gob.mx/",
         "wikidata": "Q119522235",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Museum of the Palace of Fine Arts",
+          "es": "Museo del Palacio de Bellas Artes"
+        }
       }
     },
     {
@@ -5251,7 +5925,11 @@
         "website": "https://munarq.inba.gob.mx/",
         "wikidata": "Q135431655",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "National Museum of Architecture",
+          "es": "Museo Nacional de Arquitectura"
+        }
       }
     },
     {
@@ -5272,7 +5950,7 @@
         ],
         "latitude": 19.4135454,
         "longitude": -99.1698793,
-        "address": "Avenida México, 33, Cidade do México",
+        "address": "Avenida México, 33",
         "opening_hours": "Tu 15:00-18:30; We-Sa 10:30-01:30; We-Sa 15:00-18:30; Su 10:30-1:30; Su 15:00-17:30",
         "phone": "+529993354591",
         "website": "https://54gallery.com.mx",
@@ -5298,7 +5976,7 @@
         ],
         "latitude": 19.436962,
         "longitude": -99.1316145,
-        "address": "Calle República de Argentina, 28, Cidade do México",
+        "address": "Calle República de Argentina, 28",
         "opening_hours": "Mo,We-Su 10:00-18:00; Tu off",
         "website": "https://museovivodelmuralismo.sep.gob.mx/",
         "wheelchair": "yes",
@@ -5345,7 +6023,7 @@
         ],
         "latitude": 19.4944885,
         "longitude": -99.094999,
-        "address": "Calle Fray Bartolomé de Olmedo, Cidade do México",
+        "address": "Calle Fray Bartolomé de Olmedo",
         "opening_hours": "Mo-Su 08:00-18:00",
         "popularity": 0
       }
@@ -5412,7 +6090,7 @@
         ],
         "latitude": 19.4308123,
         "longitude": -99.1963419,
-        "address": "Calle Julio Verne, 102, Cidade do México",
+        "address": "Calle Julio Verne, 102",
         "opening_hours": "Sa-Su 11:00-19:00",
         "phone": "5568405279",
         "website": "https://www.facebook.com/share/1DRUPyKUpf/",
@@ -5437,7 +6115,7 @@
         ],
         "latitude": 19.4421712,
         "longitude": -99.1372546,
-        "address": "Calle Ignacio Allende, 84, Cidade do México",
+        "address": "Calle Ignacio Allende, 84",
         "opening_hours": "Mo-Fr 11:00-17:00; Sa 11:00-15:00",
         "popularity": 0
       }
@@ -5550,7 +6228,7 @@
         ],
         "latitude": 19.3527959,
         "longitude": -99.1614962,
-        "address": "Calle Ignacio Allende, Cidade do México",
+        "address": "Calle Ignacio Allende",
         "opening_hours": "Mo-Su 07:00-18:00",
         "popularity": 0
       }
@@ -5777,7 +6455,7 @@
         ],
         "latitude": 19.440777,
         "longitude": -99.2045715,
-        "address": "Boulevard Miguel de Cervantes, Cidade do México",
+        "address": "Boulevard Miguel de Cervantes",
         "opening_hours": "Mo-Su,PH 10:30-18:30",
         "website": "http://www.soumaya.com.mx/",
         "fee": "no",
@@ -5851,7 +6529,11 @@
         "latitude": 19.4303951,
         "longitude": -99.1197237,
         "wikidata": "Q135212763",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Guadalupe Victoria park",
+          "es": "Parque Guadalupe Victoria"
+        }
       }
     },
     {
@@ -5991,7 +6673,7 @@
         ],
         "latitude": 19.3933601,
         "longitude": -99.0630319,
-        "address": "Sur 16, Cidade do México",
+        "address": "Sur 16",
         "opening_hours": "08:00-18:00",
         "popularity": 0
       }
@@ -6014,7 +6696,7 @@
         ],
         "latitude": 19.3980522,
         "longitude": -99.0611634,
-        "address": "Calle Oriente 259, 84, Cidade do México",
+        "address": "Calle Oriente 259, 84",
         "website": "http://www.mexicocity.gob.mx/detalle.php?id_pat=4187",
         "popularity": 0
       }
@@ -6306,7 +6988,7 @@
         ],
         "latitude": 19.4013599,
         "longitude": -99.0795606,
-        "address": "Oriente 229, Cidade do México",
+        "address": "Oriente 229",
         "opening_hours": "09:00 - 18:00",
         "popularity": 0
       }
@@ -6329,7 +7011,7 @@
         ],
         "latitude": 19.4044357,
         "longitude": -99.191841,
-        "address": "Observatorio, 94, Cidade do México",
+        "address": "Observatorio, 94",
         "opening_hours": "Tu-Sa 10:00 17:00; Su 10:00-16:00",
         "popularity": 0
       }
@@ -6609,7 +7291,7 @@
         ],
         "latitude": 19.4147528,
         "longitude": -99.0580624,
-        "address": "Calle 6, 353, Cidade do México",
+        "address": "Calle 6, 353",
         "opening_hours": "Mo-Su 08:00-19:00",
         "popularity": 0
       }
@@ -6633,7 +7315,7 @@
         ],
         "latitude": 19.3112946,
         "longitude": -99.1664358,
-        "address": "Avenida del Imán, 3, Cidade do México",
+        "address": "Avenida del Imán, 3",
         "opening_hours": "Tu-Su 07:00-16:00",
         "fee": "no",
         "popularity": 0
@@ -6702,7 +7384,7 @@
         ],
         "latitude": 19.349781,
         "longitude": -99.1470379,
-        "address": "Paz Montes de Oca, Cidade do México",
+        "address": "Paz Montes de Oca",
         "opening_hours": "Mo-Su 08:00-18:00",
         "popularity": 0
       }
@@ -6725,7 +7407,7 @@
         ],
         "latitude": 19.4042687,
         "longitude": -99.1967639,
-        "address": "Calle Ex Arzobispado, 29, Cidade do México",
+        "address": "Calle Ex Arzobispado, 29",
         "opening_hours": "Mo-Fr 09:00-18:00",
         "website": "https://mapoteca.siap.gob.mx/",
         "popularity": 0
@@ -6772,7 +7454,7 @@
         ],
         "latitude": 19.4045544,
         "longitude": -99.1952654,
-        "address": "General Victoriano Cepeda, 53, Cidade do México",
+        "address": "General Victoriano Cepeda, 53",
         "opening_hours": "Mo-Fr 10:00-14:00",
         "website": "https://www.geofisica.unam.mx/museos.html",
         "popularity": 0
@@ -6796,7 +7478,7 @@
         ],
         "latitude": 19.3374723,
         "longitude": -99.1813413,
-        "address": "Avenida Copilco, 236, Cidade do México",
+        "address": "Avenida Copilco, 236",
         "opening_hours": "Mo-Sa 08:00-18:00",
         "popularity": 0
       }
@@ -6864,7 +7546,7 @@
         ],
         "latitude": 19.4028182,
         "longitude": -99.193915,
-        "address": "Avenida Observatorio, 139, Cidade do México",
+        "address": "Avenida Observatorio, 139",
         "website": "https://catalogonacionalmhi2016.inah.gob.mx/consulta_publica/detalle/10405",
         "popularity": 0
       }
@@ -7198,7 +7880,7 @@
         ],
         "latitude": 19.319712,
         "longitude": -99.1687481,
-        "address": "Calle Zihuatlán, 340, Cidade do México",
+        "address": "Calle Zihuatlán, 340",
         "opening_hours": "Mo-Su 07:00-18:00",
         "popularity": 0
       }
@@ -7221,7 +7903,7 @@
         ],
         "latitude": 19.3187381,
         "longitude": -99.1513283,
-        "address": "Calle Tepetlapa, Cidade do México",
+        "address": "Calle Tepetlapa",
         "opening_hours": "Mo-Su 08:00-19:00",
         "popularity": 0
       }
@@ -7357,7 +8039,7 @@
         ],
         "latitude": 19.4416407,
         "longitude": -99.1862912,
-        "address": "Calle Lago Alberto, 320, Cidade do México",
+        "address": "Calle Lago Alberto, 320",
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -7426,7 +8108,7 @@
         ],
         "latitude": 19.4107776,
         "longitude": -99.1983355,
-        "address": "Avenida de los Compositores, Cidade do México",
+        "address": "Avenida de los Compositores",
         "opening_hours": "Tu-Su 10:00-17:00",
         "fee": "no",
         "wheelchair": "yes",
@@ -7502,7 +8184,10 @@
         "wikidata": "Q120943481",
         "fee": "no",
         "popularity": 0,
-        "site": "Q2418266"
+        "site": "Q2418266",
+        "names": {
+          "es": "Casa Lázaro Cárdenas"
+        }
       }
     },
     {
@@ -7792,7 +8477,7 @@
         ],
         "latitude": 19.5407059,
         "longitude": -99.1466654,
-        "address": "Adolfo López Mateos, Cidade do México",
+        "address": "Adolfo López Mateos",
         "opening_hours": "Mo-Su 08:00-20:00",
         "phone": "+52 55 7711 5569",
         "popularity": 0
@@ -8127,7 +8812,7 @@
         ],
         "latitude": 19.3494955,
         "longitude": -99.1981406,
-        "address": "Calle Diego Rivera, 50, Cidade do México",
+        "address": "Calle Diego Rivera, 50",
         "phone": "+52 55 5616 2222",
         "website": "https://www.sanangelinn.com/en/",
         "popularity": 0
@@ -8151,7 +8836,7 @@
         ],
         "latitude": 19.436138,
         "longitude": -99.1300611,
-        "address": "Calle San Ildefonso, 43, Cidade do México",
+        "address": "Calle San Ildefonso, 43",
         "opening_hours": "Tu-Fr 09:00-17:00; Sa-Su 10:00-17:00; PH 10:00-17:00",
         "popularity": 0
       }
@@ -8263,7 +8948,7 @@
         ],
         "latitude": 19.4078532,
         "longitude": -99.1337111,
-        "address": "José Antonio Torres, 647, Cidade do México",
+        "address": "José Antonio Torres, 647",
         "opening_hours": "Su-Th 07:00-24:00; Fr-Sa 07:00-13:00",
         "phone": "+52 55 57403198",
         "wheelchair": "yes",
@@ -8343,7 +9028,7 @@
         ],
         "latitude": 19.4076619,
         "longitude": -99.1770196,
-        "address": "Calle General Benjamín Hill, 146, Cidade do México",
+        "address": "Calle General Benjamín Hill, 146",
         "opening_hours": "08:40-13:00,14:00-23:00",
         "phone": "+52 55 8079 3452",
         "wheelchair": "limited",
@@ -8375,7 +9060,11 @@
         "website": "https://xkinareforma.com/",
         "wikidata": "Q138425187",
         "cuisine": "mexican",
-        "popularity": 0
+        "popularity": 0,
+        "names": {
+          "en": "Xkina Reforma",
+          "es": "Xkina Reforma"
+        }
       }
     },
     {
@@ -8449,7 +9138,7 @@
         ],
         "latitude": 19.4178838,
         "longitude": -99.1597764,
-        "address": "Avenida Álvaro Obregón, 115, Cidade do México",
+        "address": "Avenida Álvaro Obregón, 115",
         "opening_hours": "Mo,We-Su 08:00-02:00",
         "website": "https://orbitamx.com",
         "wheelchair": "limited",
@@ -8527,7 +9216,7 @@
         ],
         "latitude": 19.3957874,
         "longitude": -99.1698465,
-        "address": "Pedro Romero de Terreros, 200, Cidade do México",
+        "address": "Pedro Romero de Terreros, 200",
         "opening_hours": "Mo-Fr 11:00-18:00",
         "phone": "+52 55 5669 5211",
         "website": "http://mikasamex.web.fc2.com/hp_shoya.html",
@@ -8553,13 +9242,17 @@
         ],
         "latitude": 19.4141237,
         "longitude": -99.1645912,
-        "address": "Avenida Querétaro, 225, Cidade do México",
+        "address": "Avenida Querétaro, 225",
         "opening_hours": "Mo-Tu 12:00-22:30; We 10:00-22:30; Th 10:00-12:00; Fr-Sa 10:00-01:30; Su 10:00-19:30",
         "phone": "+52 55 5564 1396",
         "website": "https://mr.mercadoroma.com",
         "wikidata": "Q17462409",
         "wikipedia": "en:Mercado Roma",
-        "popularity": 3
+        "popularity": 3,
+        "names": {
+          "en": "Mercado Roma",
+          "es": "Mercado Roma"
+        }
       }
     },
     {
@@ -8632,7 +9325,7 @@
         ],
         "latitude": 19.4032105,
         "longitude": -99.1556427,
-        "address": "Cuauhtémoc, 439, Cidade do México",
+        "address": "Cuauhtémoc, 439",
         "opening_hours": "24/7",
         "phone": "+52 55 5386 1125",
         "cuisine": "breakfast;coffee_shop;mexican",
@@ -8708,7 +9401,7 @@
         ],
         "latitude": 19.436282,
         "longitude": -99.1520785,
-        "address": "Calle Pedro Baranda, 17, Cidade do México",
+        "address": "Calle Pedro Baranda, 17",
         "opening_hours": "Mo-Th 14:00-22:00; Fr-Sa 14:00-22:00",
         "phone": "+52 55 5535 2136",
         "website": "http://gotam.com.mx",
@@ -8759,7 +9452,7 @@
         ],
         "latitude": 19.4327789,
         "longitude": -99.1351893,
-        "address": "Calle de la Palma, 32, Cidade do México",
+        "address": "Calle de la Palma, 32",
         "opening_hours": "Mo-Sa 11:00-18:45",
         "phone": "+52 55 5518 2810",
         "website": "http://elreydelpavo.com.mx/",
@@ -8785,7 +9478,7 @@
         ],
         "latitude": 19.4154025,
         "longitude": -99.1623977,
-        "address": "Calle Zacatecas, 173, Cidade do México",
+        "address": "Calle Zacatecas, 173",
         "opening_hours": "Tu-Su 08:00-17:00",
         "phone": "+52 55 5564 3388",
         "website": "http://eat-lalo.com",
@@ -8836,7 +9529,7 @@
         ],
         "latitude": 19.4340045,
         "longitude": -99.1562424,
-        "address": "Calle Maestro Antonio Caso, 30, Cidade do México",
+        "address": "Calle Maestro Antonio Caso, 30",
         "opening_hours": "Mo-Sa 08:00-20:00",
         "phone": "+52 55 5592 8964",
         "cuisine": "mexican",
@@ -8963,7 +9656,7 @@
         ],
         "latitude": 19.4093159,
         "longitude": -99.1736425,
-        "address": "Calle Campeche, 345, Cidade do México",
+        "address": "Calle Campeche, 345",
         "opening_hours": "Mo-Su 09:00-01:00",
         "phone": "+52 55 5211 8032",
         "website": "http://www.parrillapatagonia.com",
@@ -9016,7 +9709,7 @@
         ],
         "latitude": 19.4066585,
         "longitude": -99.1570217,
-        "address": "Acayucan, 33, Cidade do México",
+        "address": "Acayucan, 33",
         "opening_hours": "Mo-Fr 10:30-15:00",
         "phone": "+52 55 2687 4082",
         "website": "https://fralugio.com/",
@@ -9093,7 +9786,7 @@
         ],
         "latitude": 19.4481233,
         "longitude": -99.146791,
-        "address": "Guerrero, 210, Cidade do México",
+        "address": "Guerrero, 210",
         "opening_hours": "Su-Th 06:00-01:00; Fr-Sa 06:00-02:00",
         "phone": "+52 55 4319 0867",
         "website": "https://www.facebook.com/LasBrasitasDeLaGuerrero/",
@@ -9119,7 +9812,7 @@
         ],
         "latitude": 19.4353536,
         "longitude": -99.1507295,
-        "address": "Avenida Paseo de la Reforma, 1, Cidade do México",
+        "address": "Avenida Paseo de la Reforma, 1",
         "opening_hours": "Su-We 12:00-24:00, Th-Sa 12:00-02:00",
         "phone": "+52 55 7098 1218",
         "website": "https://sonoragrill.com.mx/",
@@ -9145,7 +9838,7 @@
         ],
         "latitude": 19.4095319,
         "longitude": -99.1728383,
-        "address": "Avenida Nuevo León, 137, Cidade do México",
+        "address": "Avenida Nuevo León, 137",
         "opening_hours": "Mo-We 13:30-00:00; Th-Sa 13:30-01:00; Su 13:30-19:00",
         "phone": "+525552565159",
         "website": "http://lacapitalrestaurante.com/restaurante",
@@ -9248,7 +9941,7 @@
         ],
         "latitude": 19.4253613,
         "longitude": -99.1686136,
-        "address": "Calle Varsovia, 13, Cidade do México",
+        "address": "Calle Varsovia, 13",
         "opening_hours": "Mo-Su 12:00-20:30",
         "phone": "5511-7929",
         "cuisine": "korean",
@@ -9273,7 +9966,7 @@
         ],
         "latitude": 19.4150487,
         "longitude": -99.1587516,
-        "address": "Avenida Querétaro, 90, Cidade do México",
+        "address": "Avenida Querétaro, 90",
         "opening_hours": "Mo-Su 09:00-22:00",
         "phone": "+525571592918",
         "website": "https://lapitahayavegana.mx/",
@@ -9299,7 +9992,7 @@
         ],
         "latitude": 19.4148889,
         "longitude": -99.1748341,
-        "address": "Juan Escutia, 66, Cidade do México",
+        "address": "Juan Escutia, 66",
         "opening_hours": "Mo-Sa 13:00-23:00; Su 13:00-19:00",
         "phone": "+525559962209",
         "cuisine": "mexican",
@@ -9324,7 +10017,7 @@
         ],
         "latitude": 19.3995248,
         "longitude": -99.1496355,
-        "address": "Diagonal San Antonio, 1725, Cidade do México",
+        "address": "Diagonal San Antonio, 1725",
         "opening_hours": "Mo-Th 05:00-23:00; Fr,Sa 05:00-24:00",
         "phone": "+52 55 87 53 05 74",
         "cuisine": "vlocal",
@@ -9349,7 +10042,7 @@
         ],
         "latitude": 19.4189928,
         "longitude": -99.1699202,
-        "address": "Calle Durango, 258, Cidade do México",
+        "address": "Calle Durango, 258",
         "opening_hours": "Mo-Su 12:00-22:00",
         "phone": "+52 55 5511 8631",
         "website": "https://facebook.com/Taquer%C3%ADa-La-Negra-1151684548199176/",
@@ -9376,7 +10069,7 @@
         ],
         "latitude": 19.4113635,
         "longitude": -99.1734417,
-        "address": "Calle Michoacán, 74, Cidade do México",
+        "address": "Calle Michoacán, 74",
         "opening_hours": "Mo-Su 13:00-23:00",
         "phone": "+52 55 5929 8227",
         "website": "https://kabuki.mx/",
@@ -9402,7 +10095,7 @@
         ],
         "latitude": 19.4186173,
         "longitude": -99.1751647,
-        "address": "Calle Veracruz, 38, Cidade do México",
+        "address": "Calle Veracruz, 38",
         "opening_hours": "Mo-Sa 13:00-11:30; Su 13:00-19:00",
         "phone": "55534940",
         "website": "https://vecchioforno.mx/",
@@ -9503,7 +10196,7 @@
         ],
         "latitude": 19.4361447,
         "longitude": -99.1526967,
-        "address": "Avenida de la República, 157, Cidade do México",
+        "address": "Avenida de la República, 157",
         "opening_hours": "Mo-Sa 13:00-24:00, Su 10:00-19:00",
         "phone": "+52 55 5705 2272",
         "website": "https://www.terrazachachacha.com/",
@@ -9529,7 +10222,7 @@
         ],
         "latitude": 19.427,
         "longitude": -99.1636977,
-        "address": "Calle Copenhague, 29, Cidade do México",
+        "address": "Calle Copenhague, 29",
         "opening_hours": "Mo-Fr 09:00-23:00; Sa 10:00-00:00",
         "phone": "+525555119704",
         "cuisine": "french;mediterranean",
@@ -9683,7 +10376,7 @@
         ],
         "latitude": 19.4363013,
         "longitude": -99.1352366,
-        "address": "Calle Donceles, 64, Cidade do México",
+        "address": "Calle Donceles, 64",
         "opening_hours": "Mo-Su 14:00-22:00",
         "phone": "+52 55 535 17401",
         "website": "https://www.muertealapizzafalsa.com/",
@@ -9709,7 +10402,7 @@
         ],
         "latitude": 19.431442,
         "longitude": -99.1692959,
-        "address": "Calle Río Nazas, 111, Cidade do México",
+        "address": "Calle Río Nazas, 111",
         "opening_hours": "Mo-We 13:00-21:00; Th 13:00-22:00; Fr-Sa 13:00-23:00; Su 13:00-20:00",
         "phone": "+52 55 5207 5399; +52 55 9155 7672",
         "website": "https://porcorossobbq.mx/ubicaciones/porco-rosso-bbq-cuauhtemoc/",
@@ -9735,7 +10428,7 @@
         ],
         "latitude": 19.4313274,
         "longitude": -99.1353931,
-        "address": "Calle de la Palma, 44, Cidade do México",
+        "address": "Calle de la Palma, 44",
         "opening_hours": "Mo-Fr 07:00-22:00; Sa 08:00-23:00; Su 08:00-22:00",
         "phone": "+52 55 5512 7405",
         "cuisine": "mexican",
@@ -9760,7 +10453,7 @@
         ],
         "latitude": 19.4260574,
         "longitude": -99.1577341,
-        "address": "Calle Dinamarca, 72, Cidade do México",
+        "address": "Calle Dinamarca, 72",
         "opening_hours": "Mo-Sa 13:00-22:00; Su 09:00-20:00",
         "phone": "+52 55 5592 7071",
         "website": "https://asadoargentino.com.mx/",
@@ -9837,7 +10530,7 @@
         ],
         "latitude": 19.4398045,
         "longitude": -99.1448637,
-        "address": "Calle Soto, 68, Cidade do México",
+        "address": "Calle Soto, 68",
         "opening_hours": "Mo-Su 12:00-22:00",
         "phone": "+525555464464",
         "cuisine": "burger;pizza",
@@ -9912,7 +10605,7 @@
         ],
         "latitude": 19.4248114,
         "longitude": -99.1691202,
-        "address": "Calle Oxford, 28, Cidade do México",
+        "address": "Calle Oxford, 28",
         "opening_hours": "Tu-Sa 12:00-22:00; Su 12:00-20:30",
         "phone": "+52 55 51623822",
         "cuisine": "korean",
@@ -10556,7 +11249,7 @@
         ],
         "latitude": 19.4163384,
         "longitude": -99.1551632,
-        "address": "Calle Frontera, 168, Cidade do México",
+        "address": "Calle Frontera, 168",
         "opening_hours": "Mo-Su 13:00-00:00",
         "phone": "552641629",
         "cuisine": "japanese",
@@ -10581,7 +11274,7 @@
         ],
         "latitude": 19.4184472,
         "longitude": -99.176313,
-        "address": "Calle Agustín Melgar, 22, Cidade do México",
+        "address": "Calle Agustín Melgar, 22",
         "opening_hours": "Su 09:00-18:00; Tu-Th 08:30-18:00; Fr-Sa 09:30-19:00",
         "phone": "+52 55 8961 8887",
         "cuisine": "american;burger;mexican",
@@ -10606,7 +11299,7 @@
         ],
         "latitude": 19.3956509,
         "longitude": -99.154675,
-        "address": "Xola, 1311, Cidade do México",
+        "address": "Xola, 1311",
         "opening_hours": "Mo 14:00-21:00; Tu-Th 14:00-22:00; Fr 14:00-01:00; Sa 14:00-23:30; Su 14:00-20:30",
         "phone": "+52 55 9039 2096",
         "cuisine": "mexican",
@@ -10631,7 +11324,7 @@
         ],
         "latitude": 19.4361602,
         "longitude": -99.1400056,
-        "address": "Calle Tacuba, Cidade do México",
+        "address": "Calle Tacuba",
         "opening_hours": "Mo-Su 08:00-18:00",
         "phone": "+52 55 9134 8441",
         "cuisine": "mexican",
@@ -10656,7 +11349,7 @@
         ],
         "latitude": 19.4272481,
         "longitude": -99.1636021,
-        "address": "Calle Copenhague, 26-28, Cidade do México",
+        "address": "Calle Copenhague, 26-28",
         "opening_hours": "Mo,We,Th 11:30-21:30; Fr-Su 11:30-22:00",
         "phone": "+52 55 5922 8009",
         "cuisine": "korean",
@@ -10681,7 +11374,7 @@
         ],
         "latitude": 19.4194967,
         "longitude": -99.1710924,
-        "address": "Calle Cozumel, 37, Cidade do México",
+        "address": "Calle Cozumel, 37",
         "opening_hours": "Mo-Su 13:30-00:00",
         "phone": "+525555530246",
         "website": "https://www.labodeguitadelmedio.com.mx/",
@@ -10707,7 +11400,7 @@
         ],
         "latitude": 19.4172585,
         "longitude": -99.1606796,
-        "address": "Calle Chihuahua, 142 D, Cidade do México",
+        "address": "Calle Chihuahua, 142 D",
         "opening_hours": "Su-Th 13:00-22:00; Fr-Sa 13:00-23:00",
         "phone": "+525619063827",
         "website": "http://tacosantovegano.com",
@@ -10808,7 +11501,7 @@
         ],
         "latitude": 19.4073064,
         "longitude": -99.1732092,
-        "address": "Calle Aguascalientes, 237, Cidade do México",
+        "address": "Calle Aguascalientes, 237",
         "opening_hours": "Mo-Sa 08:00-23:00; Su 08:00-20:00",
         "phone": "+525522202050",
         "website": "https://giacdmx.com",
@@ -10834,7 +11527,7 @@
         ],
         "latitude": 19.4108714,
         "longitude": -99.1748086,
-        "address": "Avenida Tamaulipas, 95, Cidade do México",
+        "address": "Avenida Tamaulipas, 95",
         "opening_hours": "Mo-Su 13:00-22:00",
         "phone": "+52 55 5553 4582",
         "website": "http://asian-bay.com",
@@ -10886,7 +11579,7 @@
         ],
         "latitude": 19.4089746,
         "longitude": -99.1735088,
-        "address": "Calle Campeche, 340, Cidade do México",
+        "address": "Calle Campeche, 340",
         "opening_hours": "Mo-Sa 13:00-22:00; Su 13:00-19:00",
         "phone": "+52 55 5949 8304",
         "website": "https://caracoldemar.com.mx",
@@ -10912,7 +11605,7 @@
         ],
         "latitude": 19.4161891,
         "longitude": -99.1553102,
-        "address": "Calle Frontera, 177, Cidade do México",
+        "address": "Calle Frontera, 177",
         "opening_hours": "Mo-Sa 09:30-21:30; Su 10:00-17:30",
         "phone": "+52 55 7314 5653",
         "cuisine": "mexican",
@@ -11091,7 +11784,7 @@
         ],
         "latitude": 19.4172758,
         "longitude": -99.1580991,
-        "address": "Calle Córdoba, 132, Cidade do México",
+        "address": "Calle Córdoba, 132",
         "opening_hours": "Tu-Sa 13:00-17:00,19:00-23:00; Su 13:00-17:00; PH closed",
         "phone": "+52 558 878 2854",
         "website": "https://www.ginchanmx.com/",
@@ -11167,7 +11860,7 @@
         ],
         "latitude": 19.4447392,
         "longitude": -99.1477693,
-        "address": "Guerrero, 142, Cidade do México",
+        "address": "Guerrero, 142",
         "opening_hours": "Mo-Su 11:00-23:00",
         "phone": "+52 55 5725 7840",
         "popularity": 0
@@ -11191,7 +11884,7 @@
         ],
         "latitude": 19.4357703,
         "longitude": -99.1314225,
-        "address": "Calle República de Argentina, 15, Cidade do México",
+        "address": "Calle República de Argentina, 15",
         "opening_hours": "Mo-Sa 09:00-18:30; Su 10:00-18:30",
         "phone": "+52 55 57047580",
         "website": "https://www.elmayor.com.mx/",
@@ -11241,7 +11934,7 @@
         ],
         "latitude": 19.4373475,
         "longitude": -99.1554299,
-        "address": "Calle José María Iglesias, 55, Cidade do México",
+        "address": "Calle José María Iglesias, 55",
         "opening_hours": "Mo-Su 13:00-22:00",
         "website": "https://mesonpuertochico.com.mx/",
         "cuisine": "spanish",
@@ -11341,7 +12034,7 @@
         ],
         "latitude": 19.4342792,
         "longitude": -99.135498,
-        "address": "Avenida 5 de Mayo, 52, Cidade do México",
+        "address": "Avenida 5 de Mayo, 52",
         "opening_hours": "24/7",
         "phone": "+52 55 5518 6081",
         "wheelchair": "no",
@@ -11367,7 +12060,7 @@
         ],
         "latitude": 19.412293,
         "longitude": -99.1634217,
-        "address": "Chiapas, 157, Cidade do México",
+        "address": "Chiapas, 157",
         "opening_hours": "Tu-Sa 07:30-18:30, Su 09:00-14:00",
         "phone": "+52 55 5564 2010",
         "website": "https://www.facebook.com/PatisserieDominique",
@@ -11393,7 +12086,7 @@
         ],
         "latitude": 19.4118603,
         "longitude": -99.1734435,
-        "address": "Avenida Tamaulipas, 66, Cidade do México",
+        "address": "Avenida Tamaulipas, 66",
         "opening_hours": "Mo-Fr 08:00-22:00; Sa-Su 09:00-22:00",
         "phone": "+52 55 4444 3918",
         "cuisine": "teahouse",
@@ -11444,7 +12137,7 @@
         ],
         "latitude": 19.4184985,
         "longitude": -99.1575887,
-        "address": "Avenida Alvaro Obregón, 64, Cidade do México",
+        "address": "Avenida Alvaro Obregón, 64",
         "opening_hours": "Mo-Su 08:00-23:00",
         "phone": "+52 55 7822 6622",
         "website": "http://quentin.mx/",
@@ -11703,7 +12396,7 @@
         ],
         "latitude": 19.4219806,
         "longitude": -99.173265,
-        "address": "Calle Burdeos, 34, Cidade do México",
+        "address": "Calle Burdeos, 34",
         "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-15:00",
         "phone": "+52 5534262575",
         "cuisine": "coffee_shop",
@@ -11827,7 +12520,7 @@
         ],
         "latitude": 19.4176504,
         "longitude": -99.1640903,
-        "address": "Avenida Monterrey, 104, Cidade do México",
+        "address": "Avenida Monterrey, 104",
         "opening_hours": "Mo-Su 08:00-21:00",
         "website": "https://www.lepainquotidien.com/mx",
         "cuisine": "coffee_shop",
@@ -11876,7 +12569,7 @@
         ],
         "latitude": 19.4184876,
         "longitude": -99.1599607,
-        "address": "Calle Orizaba, 101, Cidade do México",
+        "address": "Calle Orizaba, 101",
         "opening_hours": "Mo-Su 11:00-21:00",
         "website": "http://www.caravanserai.com.mx/",
         "cuisine": "teahouse",
@@ -11901,7 +12594,7 @@
         ],
         "latitude": 19.4073923,
         "longitude": -99.1602992,
-        "address": "Tepic, 5A, Cidade do México",
+        "address": "Tepic, 5A",
         "opening_hours": "Mo-Fr 08:30-20:30; Sa-Su 09:30-17:00",
         "phone": "+52 55 7009 5043",
         "popularity": 0
@@ -12025,7 +12718,7 @@
         ],
         "latitude": 19.3888799,
         "longitude": -99.1355076,
-        "address": "Xavier Sorondo, 274, Cidade do México",
+        "address": "Xavier Sorondo, 274",
         "opening_hours": "Mo-Fr 07:30-21:30",
         "phone": "+52 55 7261 2120",
         "website": "https://lavidaencrepa.ola.click/",
@@ -12298,7 +12991,7 @@
         ],
         "latitude": 19.4347161,
         "longitude": -99.1873621,
-        "address": "Calle Isaac Newton, 186, Cidade do México",
+        "address": "Calle Isaac Newton, 186",
         "opening_hours": "Mo-Sa 08:00-20:00",
         "website": "http://lacajadecristal.com",
         "cuisine": "coffee_shop",
@@ -12323,7 +13016,7 @@
         ],
         "latitude": 19.4745406,
         "longitude": -99.1320178,
-        "address": "Calle Ingeniero Carlos Daza, 202, Cidade do México",
+        "address": "Calle Ingeniero Carlos Daza, 202",
         "opening_hours": "Mo-Sa 08:00-22:30",
         "phone": "+52 55 9037 0545",
         "popularity": 0
@@ -12718,7 +13411,7 @@
         ],
         "latitude": 19.4151797,
         "longitude": -99.1363859,
-        "address": "Calle 5 de Febrero, Cidade do México",
+        "address": "Calle 5 de Febrero",
         "opening_hours": "Mo-Sa 11:30-23:00",
         "phone": "+52 55 6235 2058",
         "popularity": 0
@@ -12887,7 +13580,7 @@
         ],
         "latitude": 19.4421903,
         "longitude": -99.1399506,
-        "address": "Calle Magnolia, 3, Cidade do México",
+        "address": "Calle Magnolia, 3",
         "opening_hours": "Th-Sa 13:30-02:00, Su 13:30-01:00",
         "website": "https://cantaritoselcompadejalisco.com/cantaritos-garibaldi/",
         "popularity": 0
@@ -12958,7 +13651,7 @@
         ],
         "latitude": 19.4120908,
         "longitude": -99.167639,
-        "address": "Avenida Amsterdam, 264, Cidade do México",
+        "address": "Avenida Amsterdam, 264",
         "opening_hours": "Mo-Th 11:00-20:00; Fr-Su 11:00-21:00",
         "website": "https://myka.uffunmenu.com",
         "wheelchair": "no",
@@ -12984,7 +13677,7 @@
         ],
         "latitude": 19.4173647,
         "longitude": -99.1603961,
-        "address": "Chihuahua, 131-1, Cidade do México",
+        "address": "Chihuahua, 131-1",
         "opening_hours": "Mo-Su 09:00-18:00",
         "phone": "55841918",
         "popularity": 0
@@ -13008,7 +13701,7 @@
         ],
         "latitude": 19.4185626,
         "longitude": -99.1759322,
-        "address": "Calle Pachuca, 9, Cidade do México",
+        "address": "Calle Pachuca, 9",
         "opening_hours": "Mo-Su 09:00-21:00",
         "website": "https://www.heladoscarmela.com/",
         "popularity": 0
