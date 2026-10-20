@@ -170,7 +170,7 @@ class MultiDayItineraryIntegrationTest {
 
         assertTrue(!pagos.isEmpty());
         for (PlaceResponseDTO p : pagos) {
-            String site = cityCatalog.findByName(p.getName()).map(CityCatalog.CatalogPlace::website).orElse("");
+            String site = cityCatalog.findByName(p.getName(), p.getLatitude(), p.getLongitude()).map(CityCatalog.CatalogPlace::website).orElse("");
             if (p.getBookingUrl() != null) {
                 assertEquals(null, p.getTicketUrl(), p.getName());
             } else {

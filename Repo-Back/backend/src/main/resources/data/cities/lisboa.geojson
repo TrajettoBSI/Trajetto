@@ -15,8 +15,8 @@
         "name_en": "Tower of Belém",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6916021,
         "longitude": -9.2159192,
@@ -72,8 +72,8 @@
         "name_en": "25th of April Bridge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6941098,
         "longitude": -9.177338,
@@ -97,8 +97,8 @@
         "name_en": "Monument to the Discoveries",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6935901,
         "longitude": -9.2057202,
@@ -125,14 +125,15 @@
         "name_en": "Comércio Square",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7076117,
         "longitude": -9.1365457,
         "wikidata": "Q999002",
         "wikipedia": "pt:Praça do Comércio",
-        "popularity": 32
+        "popularity": 32,
+        "site": "Q999002"
       }
     },
     {
@@ -175,8 +176,8 @@
         "name_en": "São Jorge Castle",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.713928,
         "longitude": -9.1334948,
@@ -204,8 +205,8 @@
         "name": "MEO Arena",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7684695,
         "longitude": -9.0938954,
@@ -259,8 +260,8 @@
         "name_en": "Santa Justa Lift",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7121169,
         "longitude": -9.1393753,
@@ -311,8 +312,8 @@
         "name": "Panteão Nacional",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.714978,
         "longitude": -9.1246825,
@@ -340,8 +341,8 @@
         "name_en": "Vasco da Gama Tower",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7747377,
         "longitude": -9.0912894,
@@ -366,8 +367,8 @@
         "name_en": "Belém National Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6982038,
         "longitude": -9.200666,
@@ -420,8 +421,8 @@
         "name_en": "National Theatre São Carlos",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7094109,
         "longitude": -9.1417186,
@@ -446,15 +447,16 @@
         "name": "Igreja de São Vicente de Fora",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7147274,
         "longitude": -9.1274775,
         "address": "Largo de São Vicente, Lisboa",
         "wikidata": "Q1776168",
         "wikipedia": "pt:Igreja de São Vicente de Fora",
-        "popularity": 19
+        "popularity": 19,
+        "site": "Q1776168"
       }
     },
     {
@@ -527,8 +529,8 @@
         "name_en": "Rua Augusta Arch",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7084385,
         "longitude": -9.1368174,
@@ -552,8 +554,8 @@
         "name_en": "National Shrine of Christ the King",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6786024,
         "longitude": -9.1713376,
@@ -576,8 +578,8 @@
         "name_en": "Estrela Basilica of the Sacred Heart",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7131744,
         "longitude": -9.1605532,
@@ -603,8 +605,8 @@
         "name_en": "Dom Pedro IV Square",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7137701,
         "longitude": -9.1393407,
@@ -761,8 +763,8 @@
         "name": "Teatro Nacional Dona Maria II",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7147788,
         "longitude": -9.139771,
@@ -834,8 +836,8 @@
         "name": "Elevador da Bica",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7097747,
         "longitude": -9.146245,
@@ -858,7 +860,8 @@
         "name": "Parque Florestal de Monsanto",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 38.7225739,
         "longitude": -9.196484,
@@ -881,7 +884,8 @@
         "name": "Jardim Zoológico de Lisboa",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 38.7453582,
         "longitude": -9.1714811,
@@ -892,7 +896,8 @@
         "wikidata": "Q220063",
         "wikipedia": "pt:Jardim Zoológico de Lisboa",
         "wheelchair": "yes",
-        "popularity": 13
+        "popularity": 13,
+        "site": "Q220063"
       }
     },
     {
@@ -908,8 +913,8 @@
         "name": "Elevador do Lavra",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7182422,
         "longitude": -9.1409949,
@@ -939,7 +944,8 @@
         "wikidata": "Q1054277",
         "wikipedia": "pt:Centro Cultural de Belém",
         "wheelchair": "limited",
-        "popularity": 13
+        "popularity": 13,
+        "site": "Q1054277"
       }
     },
     {
@@ -955,8 +961,8 @@
         "name": "Tipuana",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7068987,
         "longitude": -9.1545595,
@@ -1004,8 +1010,8 @@
         "name_en": "Saint Anthony's Church",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7099745,
         "longitude": -9.1336632,
@@ -1067,7 +1073,8 @@
         "website": "www.museudoscoches.pt",
         "wikidata": "Q1659559",
         "fee": "yes",
-        "popularity": 12
+        "popularity": 12,
+        "site": "Q1659559"
       }
     },
     {
@@ -1124,7 +1131,8 @@
         "wikidata": "Q2191491",
         "wikipedia": "pt:Museu de Arte Contemporânea do Centro Cultural de Belém",
         "fee": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "site": "Q1054277"
       }
     },
     {
@@ -1140,8 +1148,8 @@
         "name": "Praça de Touros do Campo Pequeno",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7425782,
         "longitude": -9.1452114,
@@ -1294,8 +1302,8 @@
         "name": "Igreja de São Brás e de Santa Luzia",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7118789,
         "longitude": -9.1303102,
@@ -1441,6 +1449,7 @@
         "name": "Miradouro de Santa Luzia",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -1591,14 +1600,15 @@
         "name": "Pavilhão de Portugal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7662668,
         "longitude": -9.0950219,
         "wikidata": "Q1892495",
         "wheelchair": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "site": "Q1892495"
       }
     },
     {
@@ -1614,6 +1624,7 @@
         "name": "Miradouro de São Pedro de Alcântara",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -1781,7 +1792,8 @@
         "wikipedia": "pt:Museu Arqueológico do Carmo",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 6
+        "popularity": 6,
+        "site": "Q96576011"
       }
     },
     {
@@ -1823,8 +1835,8 @@
         "name": "Coliseu dos Recreios",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7166388,
         "longitude": -9.140281,
@@ -1848,8 +1860,8 @@
         "name": "Teatro da Trindade",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7118564,
         "longitude": -9.1425732,
@@ -1871,8 +1883,8 @@
         "name": "Teatro Maria Vitória",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7193349,
         "longitude": -9.1463746,
@@ -1894,8 +1906,8 @@
         "name": "Fragata Dom Fernando II e Glória",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6865703,
         "longitude": -9.1461634,
@@ -1946,8 +1958,8 @@
         "name": "Fonte Monumental da Alameda",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.737305,
         "longitude": -9.1303086,
@@ -1955,7 +1967,8 @@
         "wikidata": "Q1435854",
         "wikipedia": "pt:Fonte Luminosa (Lisboa)",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "site": "Q1435854"
       }
     },
     {
@@ -1998,8 +2011,9 @@
         "name": "Cinemateca Portuguesa - Museu do Cinema",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7207424,
         "longitude": -9.1485951,
@@ -2128,8 +2142,8 @@
         "name_en": "Ajuda Botanical Garden",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7062162,
         "longitude": -9.2008118,
@@ -2180,6 +2194,7 @@
         "name_en": "Sophia de Mello Breyner Andersen Belvedere",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -2206,8 +2221,8 @@
         "name": "Pelourinho de Lisboa",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7080357,
         "longitude": -9.139196,
@@ -2230,8 +2245,8 @@
         "name": "Teatro Maria Matos",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7459555,
         "longitude": -9.138526,
@@ -2307,8 +2322,8 @@
         "name": "Teleférico do Parque das Nações",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7679026,
         "longitude": -9.0918625,
@@ -2357,8 +2372,8 @@
         "name": "Igreja do Loreto",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.710871,
         "longitude": -9.1427635,
@@ -2384,8 +2399,8 @@
         "name": "Teatro Politeama",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7165272,
         "longitude": -9.141059,
@@ -2456,8 +2471,9 @@
         "name": "Elevador da Boca do Vento",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 38.6846992,
         "longitude": -9.1588114,
@@ -2610,7 +2626,8 @@
         "wikidata": "Q18476235",
         "wikipedia": "pt:Estátua equestre de D. José I",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "site": "Q999002"
       }
     },
     {
@@ -2982,7 +2999,8 @@
         "wikidata": "Q10359790",
         "wikipedia": "pt:Reservatório da Mãe d'Água das Amoreiras",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q10359790"
       }
     },
     {
@@ -2998,8 +3016,8 @@
         "name": "Igreja de Santa Catarina",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.711444,
         "longitude": -9.1483169,
@@ -3146,8 +3164,8 @@
         "name": "Teatro Variedades",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7189373,
         "longitude": -9.145999,
@@ -3177,7 +3195,8 @@
         "wikidata": "Q10284089",
         "wikipedia": "pt:Forte do Bom Sucesso",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q10284089"
       }
     },
     {
@@ -3267,8 +3286,8 @@
         "name": "Submarino Barracuda",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6868479,
         "longitude": -9.1466962,
@@ -3439,8 +3458,8 @@
         "name": "Chafariz d'El Rei",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.709717,
         "longitude": -9.129475,
@@ -3729,8 +3748,8 @@
         "name": "Pastéis de Belém",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6974795,
         "longitude": -9.2033202,
@@ -3812,8 +3831,8 @@
         "name": "Teatro Villaret",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7302473,
         "longitude": -9.1467165,
@@ -3837,6 +3856,7 @@
         "name": "Miradouro do Torel",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -3933,8 +3953,8 @@
         "name": "Teatro Camões",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7609683,
         "longitude": -9.0933132,
@@ -4012,7 +4032,8 @@
         "longitude": -9.142561,
         "address": "Praça dos Restauradores, 25, Lisboa",
         "wikidata": "Q66814282",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q66814282"
       }
     },
     {
@@ -4219,8 +4240,8 @@
         "name_en": "Lisbon Harbor Control Tower",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6940504,
         "longitude": -9.2342918,
@@ -4384,8 +4405,8 @@
         "name": "Capela de São Jerónimo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7013434,
         "longitude": -9.213653,
@@ -4411,8 +4432,8 @@
         "name_en": "Columns Pier",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.706613,
         "longitude": -9.1361658,
@@ -4600,8 +4621,8 @@
         "name": "Teatro Aberto",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7361738,
         "longitude": -9.1585387,
@@ -4695,8 +4716,8 @@
         "name": "Chafariz de Entrecampos",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7451782,
         "longitude": -9.145873,
@@ -4790,8 +4811,8 @@
         "name": "Teatro Thalia",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7450039,
         "longitude": -9.1693119,
@@ -4838,8 +4859,8 @@
         "name": "Chafariz da Esperança",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7089145,
         "longitude": -9.1535398,
@@ -4861,8 +4882,8 @@
         "name": "Chafariz de Andaluz",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7274088,
         "longitude": -9.1477996,
@@ -5286,8 +5307,8 @@
         "name": "Cineteatro Capitólio – Teatro Raúl Solnado",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7188117,
         "longitude": -9.1466634,
@@ -5334,8 +5355,8 @@
         "name": "Primeira Travessia Aérea do Atlântico Sul",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6922118,
         "longitude": -9.2139384,
@@ -5359,7 +5380,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7158484,
         "longitude": -9.1582997,
@@ -5506,8 +5528,8 @@
         "name": "Sociedade Musical Ordem e Progresso",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7066081,
         "longitude": -9.1621921,
@@ -5529,8 +5551,8 @@
         "name": "Teatro Ibérico",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7267411,
         "longitude": -9.111988,
@@ -5561,7 +5583,8 @@
         "website": "https://macam.pt/",
         "wikidata": "Q133462677",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q66814250"
       }
     },
     {
@@ -5605,8 +5628,8 @@
         "name": "Arco Triunfal das Amoreiras",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7221889,
         "longitude": -9.1571474,
@@ -5676,7 +5699,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7070682,
         "longitude": -9.1467323,
@@ -5700,8 +5724,8 @@
         "name": "Teleférico do Jardim Zoológico de Lisboa",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7445712,
         "longitude": -9.1704732,
@@ -5709,7 +5733,8 @@
         "wikidata": "Q10379196",
         "wikipedia": "pt:Teleférico do Jardim Zoológico de Lisboa",
         "wheelchair": "no",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q220063"
       }
     },
     {
@@ -6082,7 +6107,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7255214,
         "longitude": -9.1420993,
@@ -6269,8 +6295,8 @@
         "name": "Teatro de Carnide",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7621164,
         "longitude": -9.1870051,
@@ -6432,8 +6458,8 @@
         "name": "Restaurante Panorâmico de Monsanto",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7286312,
         "longitude": -9.1845958,
@@ -6696,8 +6722,8 @@
         "name": "Sociedade Musical Odivelense",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.79145,
         "longitude": -9.1806767,
@@ -6718,7 +6744,8 @@
         "name": "Quinta Alegre",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 38.7859934,
         "longitude": -9.141947,
@@ -6764,8 +6791,8 @@
         "name": "Chafariz de Benfica",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7504826,
         "longitude": -9.2009371,
@@ -6795,6 +6822,30 @@
         "longitude": -9.1556124,
         "address": "Campo Grande, 398, Lisboa",
         "wikidata": "Q66814310",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.0843426,
+          38.6559
+        ]
+      },
+      "properties": {
+        "name": "Praia Fluvial de Alburrica",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 38.6559,
+        "longitude": -9.0843426,
+        "wikidata": "Q66305449",
+        "wikipedia": "pt:Alburrica",
         "popularity": 2
       }
     },
@@ -6857,8 +6908,8 @@
         "name": "Chafariz da Praça da Armada",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7052516,
         "longitude": -9.1704371,
@@ -6927,8 +6978,8 @@
         "name": "Chafariz do Largo do Carmo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7119243,
         "longitude": -9.1408356,
@@ -6950,14 +7001,15 @@
         "name": "Chafariz das Janelas Verdes",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7054448,
         "longitude": -9.1614058,
         "address": "Largo do Doutor José de Figueiredo, Lisboa",
         "wikidata": "Q16934805",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q16934805"
       }
     },
     {
@@ -7073,6 +7125,30 @@
         "longitude": -9.1058869,
         "wikidata": "Q9698018",
         "wikipedia": "pt:Casa-Museu José Pedro",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2309984,
+          38.6957199
+        ]
+      },
+      "properties": {
+        "name": "Praia de Algés",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 38.6957199,
+        "longitude": -9.2309984,
+        "wikidata": "Q56348641",
+        "wikipedia": "pt:Praia de Algés",
         "popularity": 2
       }
     },
@@ -7489,7 +7565,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7090649,
         "longitude": -9.1693713,
@@ -7829,8 +7906,8 @@
         "name": "Teatro do Bairro Alto",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7179678,
         "longitude": -9.1540182,
@@ -7855,7 +7932,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7086234,
         "longitude": -9.1387855,
@@ -7957,7 +8035,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7166264,
         "longitude": -9.1407551,
@@ -7983,7 +8062,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7155622,
         "longitude": -9.142174,
@@ -7994,7 +8074,8 @@
         "wikidata": "Q17167656",
         "wikipedia": "pt:Museu Nacional do Desporto",
         "fee": "no",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q66814282"
       }
     },
     {
@@ -8174,8 +8255,8 @@
         "name": "Dragoeiro",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7719121,
         "longitude": -9.109352,
@@ -8197,8 +8278,8 @@
         "name": "Bela-sombra",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6987745,
         "longitude": -9.2162368,
@@ -8220,12 +8301,34 @@
         "name": "Plátano",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6939844,
         "longitude": -9.2159889,
         "wikidata": "Q98444717",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1896387,
+          38.733973
+        ]
+      },
+      "properties": {
+        "name": "Monsanto",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 38.733973,
+        "longitude": -9.1896387,
+        "wikidata": "Q31249439",
         "popularity": 1
       }
     },
@@ -8335,7 +8438,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.6643867,
         "longitude": -9.0646959,
@@ -8968,7 +9072,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.766727,
         "longitude": -9.0950337,
@@ -8977,7 +9082,8 @@
         "wikidata": "Q134572011",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q1892495"
       }
     },
     {
@@ -9080,15 +9186,16 @@
         "name": "Igreja do Convento de Santa Maria do Carmo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7121864,
         "longitude": -9.1402612,
         "address": "Largo do Carmo, Lisboa",
         "wikidata": "Q96576011",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q96576011"
       }
     },
     {
@@ -9104,8 +9211,8 @@
         "name": "Igreja de Nossa Senhora da Encarnação",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.710172,
         "longitude": -9.1428638,
@@ -9659,8 +9766,8 @@
         "name": "Torre da Paroquial",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7080877,
         "longitude": -9.1964444,
@@ -9865,8 +9972,8 @@
         "name": "Taborda",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7148155,
         "longitude": -9.1319383,
@@ -9961,7 +10068,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7123684,
         "longitude": -9.1526241,
@@ -10213,8 +10321,8 @@
         "name": "Chafariz de Santo António da Convalescença",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7429871,
         "longitude": -9.1735514,
@@ -10236,8 +10344,8 @@
         "name": "Geomonumento da Rua Sampaio Bruno",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7162642,
         "longitude": -9.169626,
@@ -10260,8 +10368,8 @@
         "name": "Chafariz do Intendente",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7199194,
         "longitude": -9.1357527,
@@ -10352,8 +10460,8 @@
         "name": "Chafariz das Laranjeiras",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7449327,
         "longitude": -9.1687115,
@@ -10448,8 +10556,8 @@
         "name": "Chafariz das Terras",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7087533,
         "longitude": -9.1659114,
@@ -10472,8 +10580,8 @@
         "name": "Chafariz da Rua do Arco a São Mamede",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7171034,
         "longitude": -9.1543364,
@@ -10495,8 +10603,8 @@
         "name": "Chafariz do Largo do Rato",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7199351,
         "longitude": -9.1540671,
@@ -10518,8 +10626,8 @@
         "name": "Chafariz do Alto do Carvalhão",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7241338,
         "longitude": -9.165429,
@@ -10541,8 +10649,8 @@
         "name": "Chafariz do Largo do Mastro",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7213846,
         "longitude": -9.1388399,
@@ -10564,8 +10672,8 @@
         "name": "Chafariz da Fonte Santa",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7124764,
         "longitude": -9.168291,
@@ -10587,8 +10695,8 @@
         "name": "Chafariz da Junqueira",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6981806,
         "longitude": -9.1903537,
@@ -10610,8 +10718,8 @@
         "name": "Chafariz de Carnide",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7598109,
         "longitude": -9.1906945,
@@ -10633,8 +10741,8 @@
         "name": "Chafariz do Largo da Paz",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.704222,
         "longitude": -9.2003774,
@@ -10664,7 +10772,8 @@
         "longitude": -9.1834415,
         "address": "Rua da Junqueira, 62-70, Lisboa",
         "wikidata": "Q66814250",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q66814250"
       }
     },
     {
@@ -10703,8 +10812,8 @@
         "name": "Chafariz da Princesa",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6948884,
         "longitude": -9.2156343,
@@ -10770,8 +10879,8 @@
         "name": "Teatro A Barraca",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7071812,
         "longitude": -9.1552356,
@@ -10907,7 +11016,8 @@
         "name": "Sítio de Alburrica e Mexilhoeiro e seu Património Moageiro, Ambiental e Paisagístico",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 38.659031,
         "longitude": -9.0873979,
@@ -10995,8 +11105,8 @@
         "name": "Recreios da Amadora",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7583305,
         "longitude": -9.2350641,
@@ -11061,8 +11171,8 @@
         "name": "LU.CA - Teatro Luís de Camões",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6990349,
         "longitude": -9.1993519,
@@ -11483,7 +11593,8 @@
         "website": "www.museudoscoches.pt",
         "wikidata": "Q107104537",
         "wikipedia": "pt:Museu Nacional dos Coches",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q1659559"
       }
     },
     {
@@ -11531,7 +11642,8 @@
         "address": "Avenida de Brasília, Lisboa",
         "website": "https://www.ligacombatentes.org/museu-do-combatente-lisboa/",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q10284089"
       }
     },
     {
@@ -11661,6 +11773,7 @@
         "name": "Miradouro do Castelo de São Jorge",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -12605,7 +12718,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7424034,
         "longitude": -9.1452303,
@@ -12630,7 +12744,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7099747,
         "longitude": -9.1370415,
@@ -12656,7 +12771,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.6436164,
         "longitude": -9.1036668,
@@ -12699,8 +12815,8 @@
         "name": "Geomonumento da Rua da Judiaria",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.710297,
         "longitude": -9.129522,
@@ -12722,8 +12838,8 @@
         "name": "Casa de Pasto Estrela da Sé",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7099463,
         "longitude": -9.1342384,
@@ -12746,7 +12862,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.6699565,
         "longitude": -9.1859921,
@@ -12934,7 +13051,8 @@
         "phone": "+351 218 810 559",
         "website": "http://www.patriarcado-lisboa.pt/site/index.php?cont_=47&tem=356",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1776168"
       }
     },
     {
@@ -12951,7 +13069,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7588255,
         "longitude": -9.1180059,
@@ -12976,7 +13095,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.6994129,
         "longitude": -9.2058621,
@@ -13002,7 +13122,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.6943666,
         "longitude": -9.2118953,
@@ -13145,6 +13266,7 @@
         "name": "Miradouro do Monte Agudo",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -13169,6 +13291,7 @@
         "name": "Miradouro da Penha de França",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -13193,6 +13316,7 @@
         "name": "Miradouro da Rocha de Conde de Óbidos",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -13395,7 +13519,8 @@
         "latitude": 38.7373515,
         "longitude": -9.1305597,
         "website": "http://www.cm-lisboa.pt/equipamentos/equipamento/info/as-tagides",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1435854"
       }
     },
     {
@@ -13522,7 +13647,8 @@
         "latitude": 38.6959865,
         "longitude": -9.2090292,
         "website": "http://www.cm-lisboa.pt/equipamentos/equipamento/info/caixa-desmontagem2",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1054277"
       }
     },
     {
@@ -13840,7 +13966,8 @@
         "latitude": 38.6958874,
         "longitude": -9.2096878,
         "website": "http://www.cm-lisboa.pt/equipamentos/equipamento/info/reclining-figure-arched-leg-46",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1054277"
       }
     },
     {
@@ -14410,7 +14537,8 @@
         "latitude": 38.705436,
         "longitude": -9.161401,
         "website": "http://www.cm-lisboa.pt/equipamentos/equipamento/info/venus-e-cupido",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q16934805"
       }
     },
     {
@@ -14448,8 +14576,8 @@
         "name": "Figueira-da-Austrália",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7166789,
         "longitude": -9.1489086,
@@ -14471,8 +14599,8 @@
         "name": "Tamareira-do-Senegal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7096708,
         "longitude": -9.143356,
@@ -14495,8 +14623,8 @@
         "name": "Ginkgo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7307784,
         "longitude": -9.1274594,
@@ -14563,7 +14691,8 @@
         "name": "Fábrica 22",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 38.7567784,
         "longitude": -9.1423295,
@@ -14588,7 +14717,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.6829025,
         "longitude": -9.1577832,
@@ -14657,8 +14787,8 @@
         "name": "Jardim Botânico",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.6836348,
         "longitude": -9.1599087,
@@ -14680,8 +14810,8 @@
         "name_en": "Tower & Exhibition of the Castle's church",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7136482,
         "longitude": -9.1320309,
@@ -14776,8 +14906,8 @@
         "name": "Árvore-da-Borracha-Australiana",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7369222,
         "longitude": -9.1074278,
@@ -14914,7 +15044,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 38.7064324,
         "longitude": -9.17229,
@@ -14992,7 +15123,8 @@
         "opening_hours": "Tu-Su 10:00-13:30",
         "website": "https://www.epal.pt/EPAL/menu/museu-da-%C3%A1gua",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q10359790"
       }
     },
     {
@@ -15054,8 +15186,8 @@
         "name": "Carro Combate 50 ton. Diesel 10,5 cm M48A5 m/1976",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7551543,
         "longitude": -9.2387845,
@@ -15194,8 +15326,8 @@
         "name": "Colectivo Rua - Mural",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 38.7729919,
         "longitude": -9.1035829,
@@ -15245,75 +15377,6 @@
         "latitude": 38.7201021,
         "longitude": -9.1653235,
         "opening_hours": "Th-Su",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -9.1541665,
-          38.7210499
-        ]
-      },
-      "properties": {
-        "name": "Diferença-Comunicação Visual",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 38.7210499,
-        "longitude": -9.1541665,
-        "address": "Rua de São Filipe Néri, 42, Lisboa",
-        "opening_hours": "Tu-Fr 14:00-19:00",
-        "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -9.1673858,
-          38.7187618
-        ]
-      },
-      "properties": {
-        "name": "Galeria Miguel Nabinho",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 38.7187618,
-        "longitude": -9.1673858,
-        "opening_hours": "Mo-Sa",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -9.1029038,
-          38.7886684
-        ]
-      },
-      "properties": {
-        "name": "Feira de Usados",
-        "category": "marketplace",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 38.7886684,
-        "longitude": -9.1029038,
-        "opening_hours": "Su 07:00-17:00; off",
-        "website": "https://uf-sacavemepriorvelho.pt/feira-de-usados-domingos-8h-17h/",
         "popularity": 0
       }
     },
@@ -19715,6 +19778,497 @@
         "phone": "+351 963 098 352",
         "website": "https://www.instagram.com/if_if_if_bar/",
         "cuisine": "georgian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1436244,
+          38.7071222
+        ]
+      },
+      "properties": {
+        "name": "Espumantaria do Cais",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7071222,
+        "longitude": -9.1436244,
+        "address": "Rua Nova do Carvalho, 39, Lisboa",
+        "opening_hours": "Mo-Su 13:00-04:00",
+        "phone": "+351 21 052 2474",
+        "cuisine": "portuguese;grill",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1304976,
+          38.7159874
+        ]
+      },
+      "properties": {
+        "name": "Botequim",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7159874,
+        "longitude": -9.1304976,
+        "address": "Largo da Graça, 79,80, Lisboa",
+        "opening_hours": "PH,Th-Tu 11:00-02:00",
+        "website": "https://botequim.net/",
+        "wikidata": "Q894692",
+        "wikipedia": "de:Botequim (Lissabon)",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1444344,
+          38.7114821
+        ]
+      },
+      "properties": {
+        "name": "Clube da Esquina",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7114821,
+        "longitude": -9.1444344,
+        "address": "Rua da Barroca, 30, Lisboa",
+        "opening_hours": "Mo-Th 19:00-02:00; Fr-Sa 19:00-03:00; Su 21:00-02:00",
+        "phone": "+351 929 092742",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1387924,
+          38.7102452
+        ]
+      },
+      "properties": {
+        "name": "The George",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7102452,
+        "longitude": -9.1387924,
+        "address": "Rua do Crucifixo, 58-62, Lisboa",
+        "opening_hours": "Mo-Fr 17:00-02:00; Sa 11:00-02:00; Su 11:00-01:00",
+        "phone": "+351 960 301 718",
+        "website": "https://www.thegeorgelisbon.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1055199,
+          38.7380581
+        ]
+      },
+      "properties": {
+        "name": "Dois Corvos - Tap Room",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7380581,
+        "longitude": -9.1055199,
+        "address": "Rua Capitão Leitão, 94, Marvila",
+        "opening_hours": "Su-Th 14:00-23:00; Fr-Sa 14:00-01:00",
+        "phone": "+351 21 138 4366",
+        "website": "https://doiscorvos.pt",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1409276,
+          38.7140387
+        ]
+      },
+      "properties": {
+        "name": "The Beer Station",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7140387,
+        "longitude": -9.1409276,
+        "address": "Largo do Duque do Cadaval, 17, Lisboa",
+        "opening_hours": "Mo-Su 12:00-00:00",
+        "phone": "+351 969 837 884",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1496399,
+          38.7110682
+        ]
+      },
+      "properties": {
+        "name": "YAO Pressed Juicery",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7110682,
+        "longitude": -9.1496399,
+        "address": "Largo Doutor António de Sonst Macedo, 4-B, Lisboa",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa, Su 10:00-20:00",
+        "phone": "+351211318196",
+        "website": "http://facebook.com/yaopressedjuicery",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1476098,
+          38.7111966
+        ]
+      },
+      "properties": {
+        "name": "Park Rooftop",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7111966,
+        "longitude": -9.1476098,
+        "address": "Calçada do Combro, 58, Lisboa",
+        "opening_hours": "Tu-Sa 13:00-02:00",
+        "phone": "+351215914011",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1349337,
+          38.7334855
+        ]
+      },
+      "properties": {
+        "name": "Karma Lounge Café Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7334855,
+        "longitude": -9.1349337,
+        "opening_hours": "Mo-Su 16:00-02:00",
+        "phone": "+351 218 001 808",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.144194,
+          38.7125525
+        ]
+      },
+      "properties": {
+        "name": "Artis Wine Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7125525,
+        "longitude": -9.144194,
+        "address": "Rua do Diário de Notícias, 95, Lisboa",
+        "opening_hours": "Tu-Th 17:30-02:00, Fr-Sa 17:30-03:00, Su 17:30-02:00",
+        "phone": "+351 21 342 4795",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1462067,
+          38.7127177
+        ]
+      },
+      "properties": {
+        "name": "Jam Club - Jam Sessions",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7127177,
+        "longitude": -9.1462067,
+        "address": "Travessa dos Inglesinhos, 49, Lisboa",
+        "opening_hours": "Mo-Su 00:00-23:59",
+        "phone": "+351910455138",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1433918,
+          38.711145
+        ]
+      },
+      "properties": {
+        "name": "Ginjinha Das Gaveas",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.711145,
+        "longitude": -9.1433918,
+        "address": "Rua das Gáveas, 17A, Lisboa",
+        "opening_hours": "Su-Th 17:00-02:00, Fr,Sa 17:00-03:00",
+        "phone": "+351213432660",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1358414,
+          38.7127498
+        ]
+      },
+      "properties": {
+        "name": "Lusco Arte Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7127498,
+        "longitude": -9.1358414,
+        "address": "Escadinhas de São Cristóvão, 8, Lisboa",
+        "opening_hours": "We-Su 18:00-02:00",
+        "phone": "+351212070767",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1617907,
+          38.7030112
+        ]
+      },
+      "properties": {
+        "name": "Okah Bar Rooftop",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7030112,
+        "longitude": -9.1617907,
+        "address": "Rocha do Conde de Óbidos, 4, Lisboa",
+        "opening_hours": "16:00-02:00",
+        "phone": "+351 914 110 791",
+        "website": "https://www.okah.pt/bar/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1473021,
+          38.708699
+        ]
+      },
+      "properties": {
+        "name": "Musa da Bica",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.708699,
+        "longitude": -9.1473021,
+        "address": "Calçada Salvador Correia de Sá, 2A, Lisboa",
+        "opening_hours": "Mo-Fr 07:30-19:30",
+        "phone": "+351 21 342 0201",
+        "website": "https://cervejamusa.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1043286,
+          38.7389282
+        ]
+      },
+      "properties": {
+        "name": "Lince",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7389282,
+        "longitude": -9.1043286,
+        "address": "Rua Capitão Leitão, 1B, Lisboa",
+        "opening_hours": "We-Su 17:00-00:00",
+        "phone": "+351215846678",
+        "website": "https://cervejalince.pt/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1445298,
+          38.7283396
+        ]
+      },
+      "properties": {
+        "name": "Lisboa Comedy Club",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7283396,
+        "longitude": -9.1445298,
+        "address": "Avenida Duque de Loulé, 3A, Lisboa",
+        "opening_hours": "Tu-Sa 19:00-24:00",
+        "phone": "+351 216 028 228",
+        "website": "https://lisboacomedyclub.pt",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1477044,
+          38.7300246
+        ]
+      },
+      "properties": {
+        "name": "Gulden Draak",
+        "name_en": "Golden Dragon",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7300246,
+        "longitude": -9.1477044,
+        "address": "Rua Andrade Corvo, 29a, Lisboa",
+        "opening_hours": "Su-Th 12:00-01:00; Fr-Sa 12:00-02:00",
+        "phone": "+351 968 238 415",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1443451,
+          38.7527372
+        ]
+      },
+      "properties": {
+        "name": "Grog",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7527372,
+        "longitude": -9.1443451,
+        "address": "Praça de Alvalade, 3C, Lisboa",
+        "opening_hours": "Tu-Sa 18:00-02:00",
+        "phone": "+351 21 400 3035",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.155489,
+          38.7039415
+        ]
+      },
+      "properties": {
+        "name": "K Urban Beach",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 38.7039415,
+        "longitude": -9.155489,
+        "opening_hours": "We-Sa 20:00-06:00; Jun 08:00-14:00",
+        "phone": "+351 213 932 930",
+        "website": "https://www.grupo-k.pt/",
         "popularity": 0
       }
     },

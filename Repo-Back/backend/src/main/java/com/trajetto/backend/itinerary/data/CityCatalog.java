@@ -7,8 +7,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
 
 import java.io.InputStream;
+import java.text.Normalizer;
 import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -59,7 +61,8 @@ public class CityCatalog {
             String wikidata,
             String wikipedia,
             String wheelchair,
-            int popularity
+            int popularity,
+            String site
     ) {}
 
     /**
@@ -68,11 +71,23 @@ public class CityCatalog {
      */
     public static final double SAME_VISIT_KM = 0.1;
 
+    /**
+     * Ate essa distancia, tambem e a mesma visita quando o nome de um contem o do outro:
+     * "Statue of Liberty" e "Statue of Liberty Museum", "Templo Mayor" e "Museo Templo Mayor".
+     */
+    public static final double SAME_NAME_VISIT_KM = 0.25;
+
+    /*
+     * Pontos com o mesmo "site" (o Wikidata do recinto do OSM em que estao: o planalto de
+     * Gize, a Acropole, a Cidadela do Cairo) tambem sao a mesma visita, a qualquer distancia
+     * -- a Grande Piramide e a Esfinge ficam a 500 m uma da outra, mas e um ingresso so.
+     */
+
     private final ObjectMapper objectMapper;
     private final List<City> cities;
     private final List<CatalogPlace> places;
     private final Map<CatalogPlace, List<CatalogPlace>> sameVisit = new IdentityHashMap<>();
-    private final Map<String, CatalogPlace> byName = new HashMap<>();
+    private final Map<String, List<CatalogPlace>> byName = new HashMap<>();
 
     public CityCatalog(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
@@ -84,14 +99,21 @@ public class CityCatalog {
         this.places = Collections.unmodifiableList(loaded);
         for (City city : cities) {
             List<CatalogPlace> ofCity = placesOf(city);
+            Map<CatalogPlace, List<String>> nameWords = new IdentityHashMap<>();
+            ofCity.forEach(p -> nameWords.put(p, words(p.name())));
             for (CatalogPlace p : ofCity) {
                 sameVisit.put(p, ofCity.stream()
-                        .filter(o -> haversineKm(p.latitude(), p.longitude(), o.latitude(), o.longitude()) <= SAME_VISIT_KM)
+                        .filter(o -> {
+                            double km = haversineKm(p.latitude(), p.longitude(), o.latitude(), o.longitude());
+                            return km <= SAME_VISIT_KM || (km <= SAME_NAME_VISIT_KM
+                                    && oneNamesTheOther(nameWords.get(p), nameWords.get(o), city))
+                                    || (!p.site().isEmpty() && p.site().equals(o.site()));
+                        })
                         .toList());
             }
         }
         for (CatalogPlace p : places) {
-            byName.putIfAbsent(p.name().toLowerCase(Locale.ROOT), p);
+            byName.computeIfAbsent(p.name().toLowerCase(Locale.ROOT), k -> new ArrayList<>()).add(p);
         }
     }
 
@@ -134,7 +156,7 @@ public class CityCatalog {
                             props.path("fee").asText(""), props.path("phone").asText(""),
                             props.path("website").asText(""), props.path("wikidata").asText(""),
                             props.path("wikipedia").asText(""), props.path("wheelchair").asText(""),
-                            props.path("popularity").asInt(0)
+                            props.path("popularity").asInt(0), props.path("site").asText("")
                     ));
                 }
             }
@@ -166,9 +188,16 @@ public class CityCatalog {
         return sameVisit.getOrDefault(place, List.of(place));
     }
 
-    /** Ponto do catalogo com esse nome, sem diferenciar maiusculas. */
-    public Optional<CatalogPlace> findByName(String name) {
-        return name == null ? Optional.empty() : Optional.ofNullable(byName.get(name.toLowerCase(Locale.ROOT)));
+    /**
+     * Ponto do catalogo com esse nome, sem diferenciar maiusculas. O nome se repete entre
+     * cidades -- Toquio tambem tem uma "Statue of Liberty" --, entao vale o mais perto da posicao.
+     */
+    public Optional<CatalogPlace> findByName(String name, double lat, double lon) {
+        if (name == null) {
+            return Optional.empty();
+        }
+        return byName.getOrDefault(name.toLowerCase(Locale.ROOT), List.of()).stream()
+                .min(Comparator.comparingDouble(p -> haversineKm(lat, lon, p.latitude(), p.longitude())));
     }
 
     /**
@@ -179,6 +208,22 @@ public class CityCatalog {
         return cities.stream()
                 .min(Comparator.comparingDouble(c -> haversineKm(lat, lon, c.latitude(), c.longitude())))
                 .orElseThrow();
+    }
+
+    /** Um nome contem o outro, palavra por palavra -- desde que o menor nao seja so o nome da cidade. */
+    private static boolean oneNamesTheOther(List<String> a, List<String> b, City city) {
+        List<String> shorter = a.size() <= b.size() ? a : b;
+        List<String> longer = shorter == a ? b : a;
+        if (shorter.equals(longer) || String.join("", shorter).length() < 6 || shorter.equals(words(city.name()))) {
+            return false;
+        }
+        return Collections.indexOfSubList(longer, shorter) >= 0;
+    }
+
+    /** Palavras do nome sem acento e em minusculas: "Kōdai-ji" vira [kodai, ji]. */
+    static List<String> words(String name) {
+        String plain = Normalizer.normalize(name, Normalizer.Form.NFD).replaceAll("\\p{M}", "").toLowerCase(Locale.ROOT);
+        return Arrays.stream(plain.split("[^a-z0-9]+")).filter(w -> !w.isEmpty()).toList();
     }
 
     static double haversineKm(double lat1, double lon1, double lat2, double lon2) {

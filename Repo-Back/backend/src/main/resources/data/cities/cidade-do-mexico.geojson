@@ -15,7 +15,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4557133,
         "longitude": -99.2474653,
@@ -66,8 +67,8 @@
         "name_en": "Banorte Stadium",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.3029359,
         "longitude": -99.1504753,
@@ -101,7 +102,8 @@
         "wikipedia": "en:National Museum of Anthropology (Mexico)",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 41
+        "popularity": 41,
+        "site": "Q524249"
       }
     },
     {
@@ -117,13 +119,14 @@
         "name": "Piedra del Sol",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4261795,
         "longitude": -99.1873924,
         "wikidata": "Q786806",
-        "popularity": 37
+        "popularity": 37,
+        "site": "Q524249"
       }
     },
     {
@@ -217,8 +220,8 @@
         "name_en": "Constitution Square",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4326372,
         "longitude": -99.1331926,
@@ -293,8 +296,8 @@
         "name_en": "Basilica of Our Lady of Guadalupe",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4848445,
         "longitude": -99.1178568,
@@ -318,14 +321,15 @@
         "name_en": "Angel of Independence",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4270027,
         "longitude": -99.1676673,
         "wikidata": "Q928541",
         "wikipedia": "es:Monumento a la Independencia",
-        "popularity": 25
+        "popularity": 25,
+        "site": "Q928541"
       }
     },
     {
@@ -341,8 +345,8 @@
         "name": "Torre Latinoamericana",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4338658,
         "longitude": -99.1406113,
@@ -365,8 +369,8 @@
         "name": "Biblioteca Vasconcelos",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4473487,
         "longitude": -99.1509583,
@@ -391,15 +395,16 @@
         "name": "Monumento a la Revolución",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4361714,
         "longitude": -99.154622,
         "website": "https://www.mrm.mx/",
         "wikidata": "Q1389520",
         "wikipedia": "es:Monumento a la Revolución (México)",
-        "popularity": 20
+        "popularity": 20,
+        "site": "Q1389520"
       }
     },
     {
@@ -455,6 +460,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -99.1157121,
+          19.4869825
+        ]
+      },
+      "properties": {
+        "name": "Cerro Tepeyac",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 19.4869825,
+        "longitude": -99.1157121,
+        "wikidata": "Q1014974",
+        "wikipedia": "en:Tepeyac",
+        "popularity": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -99.1910304,
           19.4150895
         ]
@@ -472,7 +500,8 @@
         "website": "https://lospinos.cultura.gob.mx/",
         "wikidata": "Q2418266",
         "wikipedia": "es:Los Pinos (México)",
-        "popularity": 15
+        "popularity": 15,
+        "site": "Q2418266"
       }
     },
     {
@@ -514,8 +543,8 @@
         "name": "Palacio de Iturbide",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4336182,
         "longitude": -99.1390405,
@@ -538,8 +567,8 @@
         "name": "Auditorio Nacional",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4247995,
         "longitude": -99.1948376,
@@ -562,8 +591,8 @@
         "name": "Palacio Postal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4356249,
         "longitude": -99.1402953,
@@ -663,8 +692,8 @@
         "name": "Monumento a Cuauhtémoc",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4310833,
         "longitude": -99.1590161,
@@ -712,8 +741,8 @@
         "name": "Plaza Garibaldi",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4407292,
         "longitude": -99.1390698,
@@ -735,7 +764,8 @@
         "name": "Parque Nacional Cerro de la Estrella",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 19.3445848,
         "longitude": -99.0923316,
@@ -757,8 +787,8 @@
         "name": "Casa de los Azulejos",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4343516,
         "longitude": -99.1401225,
@@ -780,14 +810,17 @@
         "name": "Zoológico de Chapultepec",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4233015,
         "longitude": -99.1895501,
         "opening_hours": "Tu-Su 09:00-16:30",
         "wikidata": "Q3375717",
         "fee": "no",
-        "popularity": 9
+        "popularity": 9,
+        "site": "Q3375717"
       }
     },
     {
@@ -803,8 +836,8 @@
         "name": "Teatro de la Ciudad Esperanza Iris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4367097,
         "longitude": -99.1372257,
@@ -952,8 +985,8 @@
         "name": "Arena México",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4246133,
         "longitude": -99.1520013,
@@ -976,8 +1009,8 @@
         "name": "Estela de Luz",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4229408,
         "longitude": -99.1758526,
@@ -1006,7 +1039,8 @@
         "longitude": -99.1307557,
         "address": "Calle Justo Sierra, 16, Cidade do México",
         "wikidata": "Q2297137",
-        "popularity": 8
+        "popularity": 8,
+        "site": "Q2297137"
       }
     },
     {
@@ -1070,8 +1104,8 @@
         "name": "Polyforum Cultural Siqueiros",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.3933141,
         "longitude": -99.1734402,
@@ -1096,8 +1130,8 @@
         "name": "Teatro Metropólitan",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4334298,
         "longitude": -99.1468517,
@@ -1120,8 +1154,8 @@
         "name": "Kiosco morisco",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4496473,
         "longitude": -99.1568551,
@@ -1208,6 +1242,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -99.0904569,
+          19.3438439
+        ]
+      },
+      "properties": {
+        "name": "Cerro de la Estrella",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 19.3438439,
+        "longitude": -99.0904569,
+        "wikidata": "Q2299724",
+        "wikipedia": "es:Cerro de la Estrella",
+        "popularity": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -99.1446224,
           19.4341933
         ]
@@ -1244,8 +1301,8 @@
         "name": "Monumento a los Niños Héroes",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4215134,
         "longitude": -99.1792892,
@@ -1267,8 +1324,8 @@
         "name": "Iglesia de San Francisco",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.433486,
         "longitude": -99.1399939,
@@ -1317,8 +1374,8 @@
         "name_en": "Diana the Huntress Fountain",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.425131,
         "longitude": -99.1716344,
@@ -1461,15 +1518,16 @@
         "name": "Glorieta de los Insurgentes",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4236628,
         "longitude": -99.1629595,
         "wikidata": "Q3941792",
         "wikipedia": "es:Glorieta de los Insurgentes",
         "wheelchair": "yes",
-        "popularity": 5
+        "popularity": 5,
+        "site": "Q3941792"
       }
     },
     {
@@ -1634,8 +1692,8 @@
         "name": "Acueducto de Chapultepec",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4226177,
         "longitude": -99.1678177,
@@ -1784,8 +1842,8 @@
         "name_en": "Chinatown",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.433015,
         "longitude": -99.14305,
@@ -1924,8 +1982,8 @@
         "name": "Mercado de Artesanías de La Ciudadela",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4307575,
         "longitude": -99.1491616,
@@ -1951,7 +2009,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4059003,
         "longitude": -99.1899881,
@@ -1977,7 +2036,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4405021,
         "longitude": -99.2037076,
@@ -2055,8 +2115,8 @@
         "name": "Teatro Fru-fru",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4369166,
         "longitude": -99.1386662,
@@ -2110,7 +2170,8 @@
         "address": "Calle Tacuba, 17, Cidade do México",
         "wikidata": "Q6045328",
         "wikipedia": "en:Interactive Museum of Economics",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q6045328"
       }
     },
     {
@@ -2126,8 +2187,8 @@
         "name": "Bosque de San Juan de Aragón",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4590778,
         "longitude": -99.0715572,
@@ -2152,8 +2213,8 @@
         "name": "Monumento Alvaro Obregón",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.34718,
         "longitude": -99.1859217,
@@ -2287,8 +2348,8 @@
         "name": "Ahuehuete El Sargento",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4193335,
         "longitude": -99.1808045,
@@ -2333,7 +2394,9 @@
         "name": "Zoológico de San Juan de Aragón",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4612042,
         "longitude": -99.0837581,
@@ -2361,7 +2424,9 @@
         "name": "Aztlán Parque Urbano",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4160665,
         "longitude": -99.1953832,
@@ -2372,7 +2437,8 @@
         "wikipedia": "en:Aztlán Parque Urbano",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q125261430"
       }
     },
     {
@@ -2388,8 +2454,8 @@
         "name": "Cárcamo de Dolores",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4128422,
         "longitude": -99.1979807,
@@ -2511,7 +2577,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4332642,
         "longitude": -99.1361213,
@@ -2729,7 +2796,8 @@
         "longitude": -99.1629697,
         "wikidata": "Q65120874",
         "wikipedia": "en:El Sereno (sculpture)",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q3941792"
       }
     },
     {
@@ -2768,14 +2836,15 @@
         "name": "Anfiteatro Simón Bolívar",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4358528,
         "longitude": -99.1310882,
         "wikidata": "Q76761602",
         "wikipedia": "es:Anfiteatro Simón Bolívar",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q2297137"
       }
     },
     {
@@ -2913,8 +2982,8 @@
         "name": "Plaza de la Ciudadela",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4299209,
         "longitude": -99.1493312,
@@ -2936,8 +3005,8 @@
         "name": "Zona arqueológica de Mixcoac",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.3863091,
         "longitude": -99.1898492,
@@ -3055,7 +3124,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.3460004,
         "longitude": -99.0658156,
@@ -3111,7 +3181,8 @@
         "wikipedia": "es:Museo Nacional de la Revolución",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1389520"
       }
     },
     {
@@ -3150,8 +3221,8 @@
         "name": "Multiforo Cultural Alicia",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4529513,
         "longitude": -99.1577091,
@@ -3260,8 +3331,8 @@
         "name": "Teatro Juan Ruiz de Alarcón",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.3133918,
         "longitude": -99.1846074,
@@ -3284,8 +3355,8 @@
         "name": "Foro Sor Juana Inés de la Cruz",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.3136618,
         "longitude": -99.1845821,
@@ -3330,7 +3401,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.3669249,
         "longitude": -99.1335724,
@@ -3673,6 +3745,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -99.0827429,
+          19.441046
+        ]
+      },
+      "properties": {
+        "name": "Peñón de los baños",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 19.441046,
+        "longitude": -99.0827429,
+        "wikipedia": "es:Peñón de los Baños",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -99.1925055,
           19.3393127
         ]
@@ -3752,7 +3846,9 @@
         "name_en": "Entry Only",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4229107,
         "longitude": -99.1874125,
@@ -3798,8 +3894,8 @@
         "name_en": "Entrance #4 to Vivero Coyoacan",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.3536964,
         "longitude": -99.1685909,
@@ -3999,8 +4095,8 @@
         "name": "Casa Gilardi, Luis Barragán 1976",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4140721,
         "longitude": -99.1862947,
@@ -4076,7 +4172,8 @@
         "longitude": -99.1385099,
         "opening_hours": "Tu-Su 10:00-18:00",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q6045328"
       }
     },
     {
@@ -4092,8 +4189,8 @@
         "name": "Mercado de 100",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4115594,
         "longitude": -99.1579152,
@@ -4180,8 +4277,8 @@
         "name": "Tren de Ingeniería",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.330971,
         "longitude": -99.1842884,
@@ -4552,14 +4649,16 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4171719,
         "longitude": -99.1920284,
         "opening_hours": "Tu-Su 11:00-18:00",
         "website": "https://sic.gob.mx/ficha.php?table=museo&table_id=2194",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q2418266"
       }
     },
     {
@@ -4776,7 +4875,8 @@
         ],
         "latitude": 19.4270032,
         "longitude": -99.1676682,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q928541"
       }
     },
     {
@@ -5048,7 +5148,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4340858,
         "longitude": -99.1306533,
@@ -5671,7 +5772,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.440777,
         "longitude": -99.2045715,
@@ -5834,7 +5936,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4194264,
         "longitude": -99.1812862,
@@ -5857,7 +5960,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.3498012,
         "longitude": -99.1769889,
@@ -6105,8 +6209,8 @@
         "name": "Cineteca Nacional",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.3606371,
         "longitude": -99.164615,
@@ -6244,13 +6348,15 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4236399,
         "longitude": -99.1892934,
         "opening_hours": "Tu-Su 10:00-15:30",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q3375717"
       }
     },
     {
@@ -6522,7 +6628,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.3112946,
         "longitude": -99.1664358,
@@ -6684,8 +6791,8 @@
         "name": "Ex-Hacienda Don Roberto",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.3374723,
         "longitude": -99.1813413,
@@ -7314,7 +7421,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4107776,
         "longitude": -99.1983355,
@@ -7383,7 +7491,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4138313,
         "longitude": -99.1914339,
@@ -7392,7 +7501,8 @@
         "website": "https://sic.cultura.gob.mx/ficha.php?table=museo&table_id=2181",
         "wikidata": "Q120943481",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q2418266"
       }
     },
     {
@@ -7478,8 +7588,8 @@
         "name": "Mercado Insurgentes",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4242136,
         "longitude": -99.1654432,
@@ -7501,7 +7611,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 19.4262785,
         "longitude": -99.1568095,
@@ -7606,14 +7717,15 @@
         "name": "Aztlán 360",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.4158431,
         "longitude": -99.1962972,
         "opening_hours": "Tu-Su 10:00-23:00",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q125261430"
       }
     },
     {
@@ -7832,7 +7944,8 @@
         "name": "Parque Nacional \"Los Remedios\"",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 19.4762681,
         "longitude": -99.2558223,
@@ -7986,8 +8099,8 @@
         "name": "Bazar del Sábado",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.3450501,
         "longitude": -99.1927704,
@@ -8009,8 +8122,8 @@
         "name": "San Angel Inn",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 19.3494955,
         "longitude": -99.1981406,
@@ -8078,7 +8191,8 @@
         "name": "Bosque de las Lomas",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 19.4047944,
         "longitude": -99.2438841,
@@ -12461,6 +12575,344 @@
         "address": "Calle Florencia, 35, Ciudad de México",
         "opening_hours": "Mo-Su 20:00-03:00",
         "phone": "+52 55 3460 8745",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1667013,
+          19.4247152
+        ]
+      },
+      "properties": {
+        "name": "El Almacén",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4247152,
+        "longitude": -99.1667013,
+        "address": "Calle Florencia, 37-B, Ciudad de México",
+        "opening_hours": "Tu-Su 21:00-03:00",
+        "phone": "+52 55 5207 9424",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1656879,
+          19.4266312
+        ]
+      },
+      "properties": {
+        "name": "King",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4266312,
+        "longitude": -99.1656879,
+        "address": "Calle Amberes, 18, Ciudad de México",
+        "opening_hours": "Tu-Sa 14:00-01:30: Su 14:00-24:00",
+        "phone": "+52 55 1301 3534",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1662016,
+          19.4270246
+        ]
+      },
+      "properties": {
+        "name": "Kinky Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4270246,
+        "longitude": -99.1662016,
+        "address": "Calle Amberes, 1, Ciudad de México",
+        "opening_hours": "Th 21:00-03:00, Fr,Sa 21:00-04:00",
+        "phone": "+52 55 55154920",
+        "website": "http://www.kinkybar.com.mx/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1562043,
+          19.4277965
+        ]
+      },
+      "properties": {
+        "name": "The Brooklyn Rippers",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4277965,
+        "longitude": -99.1562043,
+        "address": "Calle Liverpool, 10, Ciudad de México",
+        "opening_hours": "Mo-We 17:00-23:30; Th-Sa 17:00-01:30",
+        "phone": "+52 55 4195 0398",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1654675,
+          19.4169117
+        ]
+      },
+      "properties": {
+        "name": "Tlecān",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4169117,
+        "longitude": -99.1654675,
+        "opening_hours": "Mo-Su 18:00-02:00",
+        "phone": "+52 55 1334 4745",
+        "website": "https://tlecan.com/",
+        "cuisine": "mezcal",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1363859,
+          19.4151797
+        ]
+      },
+      "properties": {
+        "name": "La Hija zel Pirata",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4151797,
+        "longitude": -99.1363859,
+        "address": "Calle 5 de Febrero, Cidade do México",
+        "opening_hours": "Mo-Sa 11:30-23:00",
+        "phone": "+52 55 6235 2058",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.161203,
+          19.4192654
+        ]
+      },
+      "properties": {
+        "name": "Patio Escondido - Monstruo de Agua",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4192654,
+        "longitude": -99.161203,
+        "address": "Calle Jalapa, 90, Ciudad de México",
+        "opening_hours": "We, Th 14:00-22:00; Su 14:00-21:00; Fr, Sa 14:00-00:00",
+        "phone": "+52 55 7571 6304",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1201381,
+          19.384136
+        ]
+      },
+      "properties": {
+        "name": "Micheladas Chabenos",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.384136,
+        "longitude": -99.1201381,
+        "address": "Miguel Lerdo de Tejada, 53, CDMX",
+        "opening_hours": "Mo-Th 17:00-02:00; Fr-Sa 17:00-03:00",
+        "website": "https://cervecentrochabenos.wordpress.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1694647,
+          19.4295831
+        ]
+      },
+      "properties": {
+        "name": "Le Tachinomi Desu",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4295831,
+        "longitude": -99.1694647,
+        "address": "Calle Río Pánuco, 130, Ciudad de México",
+        "opening_hours": "Mo-Sa 19:00-01:00",
+        "website": "https://edokobayashi.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1634584,
+          19.4207455
+        ]
+      },
+      "properties": {
+        "name": "Maison Artemisia",
+        "name_en": "Loup Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4207455,
+        "longitude": -99.1634584,
+        "address": "Calle Tonalá, 23, Ciudad de México",
+        "opening_hours": "Mo-We 16:00-01:00; Th-Sa 13:00-01:00",
+        "website": "https://www.loupbar.mx/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1666828,
+          19.4246806
+        ]
+      },
+      "properties": {
+        "name": "El Taller",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4246806,
+        "longitude": -99.1666828,
+        "address": "Calle Florencia, 37-A, Ciudad de México",
+        "opening_hours": "Mo-Su 18:00-02:00",
+        "website": "https://www.cabaretito.com.mx/el-taller/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1649848,
+          19.4246185
+        ]
+      },
+      "properties": {
+        "name": "punto y aparte",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4246185,
+        "longitude": -99.1649848,
+        "address": "Calle Amberes, 61, Ciudad de México",
+        "opening_hours": "Mo-Th 17:00-02:00, Fr,Sa 17:00-03:00, Su 17:00-02:00",
+        "website": "https://www.cabaretito.com.mx/punto-y-aparte/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1399506,
+          19.4421903
+        ]
+      },
+      "properties": {
+        "name": "Cantaritos El Compa de Jalisco",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4421903,
+        "longitude": -99.1399506,
+        "address": "Calle Magnolia, 3, Cidade do México",
+        "opening_hours": "Th-Sa 13:30-02:00, Su 13:30-01:00",
+        "website": "https://cantaritoselcompadejalisco.com/cantaritos-garibaldi/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1672795,
+          19.4191824
+        ]
+      },
+      "properties": {
+        "name": "Gin Gin Roma Norte",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 19.4191824,
+        "longitude": -99.1672795,
+        "opening_hours": "Tu-Sa 18:00 02:00",
+        "website": "https://gingin.mx",
         "popularity": 0
       }
     },

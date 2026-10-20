@@ -15,8 +15,8 @@
         "name_en": "東京スカイツリー",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7100455,
         "longitude": 139.8107139,
@@ -42,8 +42,8 @@
         "name_en": "東京タワー",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6585639,
         "longitude": 139.74544,
@@ -98,8 +98,8 @@
         "name_en": "お台場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6275347,
         "longitude": 139.7714719,
@@ -131,7 +131,8 @@
         "website": "https://www.kunaicho.go.jp/about/shisetsu/kokyo/kokyo.html",
         "wikidata": "Q500681",
         "wikipedia": "ja:皇居",
-        "popularity": 45
+        "popularity": 45,
+        "site": "Q500681"
       }
     },
     {
@@ -148,14 +149,16 @@
         "name_en": "東京ディズニーランド",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.6326606,
         "longitude": 139.8811441,
         "website": "https://www.tokyodisneyresort.jp/tdl/",
         "wikidata": "Q843997",
         "wikipedia": "ja:東京ディズニーランド",
-        "popularity": 40
+        "popularity": 40,
+        "site": "Q843997"
       }
     },
     {
@@ -225,7 +228,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6750484,
         "longitude": 139.6994785,
@@ -274,11 +278,12 @@
       },
       "properties": {
         "name": "Sensō-ji",
-        "name_en": "Храм Сенсодзи 金龍山 浅草寺",
+        "name_en": "金龍山 浅草寺",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 35.713454,
         "longitude": 139.7959524,
@@ -288,8 +293,9 @@
         "wikidata": "Q615183",
         "wikipedia": "ja:浅草寺",
         "fee": "no",
-        "wheelchair": "yes",
-        "popularity": 31
+        "wheelchair": "no",
+        "popularity": 31,
+        "site": "Q615183"
       }
     },
     {
@@ -331,8 +337,8 @@
         "name": "Yoshiwara Red Light District",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7237698,
         "longitude": 139.7953573,
@@ -356,7 +362,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6650234,
         "longitude": 139.7264998,
@@ -401,8 +408,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.5704506,
-          35.6962343
+          139.5705512,
+          35.6961724
         ]
       },
       "properties": {
@@ -413,8 +420,8 @@
           "CULTURAL",
           "LUXO"
         ],
-        "latitude": 35.6962343,
-        "longitude": 139.5704506,
+        "latitude": 35.6961724,
+        "longitude": 139.5705512,
         "opening_hours": "We-Mo 10:00-18:00; Tu off",
         "phone": "+81 570-055-777",
         "website": "https://www.ghibli-museum.jp/",
@@ -439,7 +446,8 @@
         "name_en": "恩賜上野動物園",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 35.7153261,
         "longitude": 139.7705426,
@@ -450,7 +458,8 @@
         "wikipedia": "ja:恩賜上野動物園",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 26
+        "popularity": 26,
+        "site": "Q162722"
       }
     },
     {
@@ -497,11 +506,9 @@
         ],
         "latitude": 35.6699745,
         "longitude": 139.6963083,
-        "phone": "+81 3-3469-6081",
         "website": "https://www.tokyo-park.or.jp/park/format/index039.html",
         "wikidata": "Q1204253",
         "wikipedia": "ja:代々木公園",
-        "fee": "no",
         "popularity": 26
       }
     },
@@ -546,8 +553,8 @@
         "name_en": "東横INN",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.697291,
         "longitude": 139.7043625,
@@ -627,14 +634,16 @@
         "name_en": "東京ディズニーシー",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.6272519,
         "longitude": 139.8831416,
         "website": "https://www.tokyodisneyresort.jp/tds/",
         "wikidata": "Q1202341",
         "wikipedia": "ja:東京ディズニーシー",
-        "popularity": 21
+        "popularity": 21,
+        "site": "Q1202341"
       }
     },
     {
@@ -647,7 +656,7 @@
         ]
       },
       "properties": {
-        "name": "Hama-rikyu Gardens",
+        "name": "Hama-rikyū Gardens",
         "name_en": "浜離宮恩賜庭園",
         "category": "park",
         "profiles": [
@@ -704,7 +713,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6989128,
         "longitude": 139.5778395,
@@ -731,8 +741,8 @@
         "name_en": "汐留SIO-SITE",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6646201,
         "longitude": 139.7604893,
@@ -861,15 +871,16 @@
         "name_en": "シンデレラ城",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6320774,
         "longitude": 139.8808499,
         "website": "https://disneyparks.disney.go.com/jp/disneyland/",
         "wikidata": "Q2742709",
         "wikipedia": "ja:シンデレラ城",
-        "popularity": 17
+        "popularity": 17,
+        "site": "Q843997"
       }
     },
     {
@@ -941,8 +952,8 @@
         "name_en": "国立劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6815244,
         "longitude": 139.7433148,
@@ -1019,8 +1030,8 @@
         "name_en": "歌舞伎座",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.669652,
         "longitude": 139.768076,
@@ -1044,8 +1055,8 @@
         "name_en": "新国立劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6825317,
         "longitude": 139.6858441,
@@ -1122,8 +1133,8 @@
         "name_en": "六本木ヒルズ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6602162,
         "longitude": 139.7300479,
@@ -1131,7 +1142,8 @@
         "wikidata": "Q1071084",
         "wikipedia": "ja:六本木ヒルズ",
         "wheelchair": "yes",
-        "popularity": 15
+        "popularity": 15,
+        "site": "Q1071084"
       }
     },
     {
@@ -1148,8 +1160,8 @@
         "name_en": "大奥跡",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6873627,
         "longitude": 139.7553982,
@@ -1168,12 +1180,13 @@
         ]
       },
       "properties": {
-        "name": "Kanda-myojin",
+        "name": "Kanda-myōjin",
         "name_en": "神田明神",
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7019658,
         "longitude": 139.7677523,
@@ -1200,7 +1213,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7200041,
         "longitude": 139.7607627,
@@ -1253,7 +1267,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6571906,
         "longitude": 139.7482124,
@@ -1353,7 +1368,7 @@
         ]
       },
       "properties": {
-        "name": "Ueno Toshogu",
+        "name": "Ueno Tōshō-gū Shrine",
         "name_en": "上野東照宮",
         "category": "historic_church",
         "profiles": [
@@ -1484,8 +1499,8 @@
         "name_en": "国立能楽堂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.680345,
         "longitude": 139.7081066,
@@ -1600,9 +1615,9 @@
         "website": "https://www.mori.art.museum/jp/index.html",
         "wikidata": "Q4410434",
         "wikipedia": "en:Mori Art Museum",
-        "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "site": "Q1071084"
       }
     },
     {
@@ -1670,12 +1685,13 @@
         ]
       },
       "properties": {
-        "name": "Gotokuji",
+        "name": "Gōtokuji",
         "name_en": "豪徳寺",
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.648682,
         "longitude": 139.6473095,
@@ -1784,7 +1800,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6715348,
         "longitude": 139.7062357,
@@ -1838,7 +1855,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6665791,
         "longitude": 139.7721306,
@@ -1866,8 +1884,8 @@
         "name_en": "合羽橋道具街",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7142625,
         "longitude": 139.7887938,
@@ -1997,15 +2015,16 @@
         "name_en": "TOKYO DOME CITY HALL",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7033222,
         "longitude": 139.7545794,
         "website": "https://www.tokyo-dome.co.jp/tdc-hall/",
         "wikidata": "Q3267633",
         "wikipedia": "en:Tokyo Dome City Hall",
-        "popularity": 10
+        "popularity": 10,
+        "site": "Q564646"
       }
     },
     {
@@ -2023,7 +2042,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7505735,
         "longitude": 139.7387497,
@@ -2050,8 +2070,8 @@
         "name_en": "サントリーホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6667404,
         "longitude": 139.7412215,
@@ -2097,7 +2117,7 @@
       },
       "properties": {
         "name": "Sannomaru Shozokan",
-        "name_en": "皇居三の丸尚蔵館",
+        "name_en": "宮内庁 三の丸尚蔵館",
         "category": "museum",
         "profiles": [
           "CULTURAL",
@@ -2129,7 +2149,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7215778,
         "longitude": 139.7743693,
@@ -2156,15 +2177,16 @@
         "name_en": "雷門",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7111333,
         "longitude": 139.7963683,
-        "website": "https://www.senso-ji.jp/guide/guide01.html",
+        "website": "https://www.senso-ji.jp/guide/kaminari.html",
         "wikidata": "Q2378708",
         "wikipedia": "ja:雷門",
-        "popularity": 10
+        "popularity": 10,
+        "site": "Q615183"
       }
     },
     {
@@ -2286,6 +2308,32 @@
         "longitude": 139.7209684,
         "opening_hours": "Mo-Su 10:00-17:00",
         "wikidata": "Q1048740",
+        "popularity": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.772296,
+          35.620217
+        ]
+      },
+      "properties": {
+        "name": "Museum of Maritime Science",
+        "name_en": "船の科学館",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 35.620217,
+        "longitude": 139.772296,
+        "opening_hours": "closed",
+        "website": "https://funenokagakukan.or.jp/",
+        "wikidata": "Q1048709",
+        "wikipedia": "ja:船の科学館",
         "popularity": 9
       }
     },
@@ -2481,8 +2529,8 @@
         "name_en": "NHKホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6665627,
         "longitude": 139.6970195,
@@ -2532,8 +2580,8 @@
         "name_en": "東京芸術劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7297466,
         "longitude": 139.7079776,
@@ -2609,8 +2657,8 @@
         "name_en": "渋谷公会堂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6640969,
         "longitude": 139.6985325,
@@ -2718,7 +2766,8 @@
         "longitude": 139.749964,
         "wikidata": "Q7797685",
         "wikipedia": "en:Three Palace Sanctuaries",
-        "popularity": 9
+        "popularity": 9,
+        "site": "Q500681"
       }
     },
     {
@@ -2785,8 +2834,8 @@
         "name_en": "東京宝塚劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6728254,
         "longitude": 139.7592046,
@@ -2807,8 +2856,7 @@
         ]
       },
       "properties": {
-        "name": "Renkoji",
-        "name_en": "蓮光寺",
+        "name": "蓮光寺",
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
@@ -2934,20 +2982,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7745414,
-          35.7100241
+          139.7745428,
+          35.7100592
         ]
       },
       "properties": {
-        "name": "Ameya-Yokocho",
+        "name": "Ameya-Yokochō",
         "name_en": "アメヤ横丁",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
-        "latitude": 35.7100241,
-        "longitude": 139.7745414,
+        "latitude": 35.7100592,
+        "longitude": 139.7745428,
         "phone": "+81 3-3832-5053",
         "website": "https://www.ameyoko.net/",
         "wikidata": "Q864815",
@@ -3050,7 +3098,8 @@
         "name_en": "浅草花やしき",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.7155288,
         "longitude": 139.7945719,
@@ -3101,8 +3150,8 @@
         "name_en": "安田講堂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7134168,
         "longitude": 139.7623119,
@@ -3202,14 +3251,16 @@
         "name_en": "東京ドームシティアトラクションズ",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.7042976,
         "longitude": 139.7542122,
         "wikidata": "Q564646",
         "wikipedia": "ja:東京ドームシティアトラクションズ",
         "wheelchair": "no",
-        "popularity": 8
+        "popularity": 8,
+        "site": "Q564646"
       }
     },
     {
@@ -3227,7 +3278,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7125394,
         "longitude": 139.7247453,
@@ -3335,15 +3387,16 @@
         "name_en": "レイジングスピリッツ Raging Spirits",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6277119,
         "longitude": 139.8808184,
         "website": "https://www.tokyodisneyresort.co.jp/tds/ld/atr_raging.html",
         "wikidata": "Q267353",
         "wikipedia": "en:Raging Spirits",
-        "popularity": 8
+        "popularity": 8,
+        "site": "Q1202341"
       }
     },
     {
@@ -3438,7 +3491,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6317,
         "longitude": 139.706666,
@@ -3490,15 +3544,16 @@
         "name_en": "赤坂サカス",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6723363,
         "longitude": 139.7355878,
         "website": "https://sacas.net/",
         "wikidata": "Q864638",
         "wikipedia": "ja:赤坂サカス",
-        "popularity": 7
+        "popularity": 7,
+        "site": "Q864638"
       }
     },
     {
@@ -3515,8 +3570,8 @@
         "name_en": "東京文化会館",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7141743,
         "longitude": 139.7749248,
@@ -3649,7 +3704,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7027062,
         "longitude": 139.8209159,
@@ -3676,8 +3732,8 @@
         "name_en": "赤坂ACTシアター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6728664,
         "longitude": 139.7351475,
@@ -3685,7 +3741,8 @@
         "wikidata": "Q8730462",
         "wikipedia": "en:Akasaka ACT Theater",
         "wheelchair": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "site": "Q864638"
       }
     },
     {
@@ -3788,7 +3845,8 @@
         "longitude": 139.7269688,
         "wikidata": "Q11635414",
         "wikipedia": "ja:赤坂御用地",
-        "popularity": 7
+        "popularity": 7,
+        "site": "Q11635414"
       }
     },
     {
@@ -3854,8 +3912,8 @@
         "name_en": "大隈庭園",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7095683,
         "longitude": 139.7220484,
@@ -3873,7 +3931,7 @@
         ]
       },
       "properties": {
-        "name": "Tennoji",
+        "name": "Tennō Temple",
         "name_en": "天王寺",
         "category": "historic_church",
         "profiles": [
@@ -3899,12 +3957,13 @@
         ]
       },
       "properties": {
-        "name": "The East Gardens of the Imperial Palace",
+        "name": "Imperial Palace East Gardens",
         "name_en": "皇居東御苑",
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.686472,
         "longitude": 139.7571878,
@@ -3932,7 +3991,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.715531,
         "longitude": 139.8041684,
@@ -3982,12 +4042,11 @@
         "name_en": "新宿ゴールデン街",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6940636,
         "longitude": 139.7046894,
-        "phone": "03-3209-6418",
         "website": "http://goldengai.jp/",
         "wikidata": "Q5363705",
         "wikipedia": "ja:新宿ゴールデン街",
@@ -4109,7 +4168,7 @@
       },
       "properties": {
         "name": "Ebara Hatakeyama Museum of Art",
-        "name_en": "荏原 畠山美術館",
+        "name_en": "畠山記念館",
         "category": "museum",
         "profiles": [
           "CULTURAL",
@@ -4118,8 +4177,6 @@
         "latitude": 35.632242,
         "longitude": 139.726938,
         "opening_hours": "Tu-Su 10:00-17:00",
-        "phone": "050 5541 8600",
-        "website": "https://www.hatakeyama-museum.org/exhibition/",
         "wikidata": "Q3330210",
         "wikipedia": "en:Hatakeyama Memorial Museum of Fine Art",
         "popularity": 6
@@ -4192,8 +4249,8 @@
         "name_en": "明治座",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6878645,
         "longitude": 139.7870302,
@@ -4217,7 +4274,8 @@
         "name_en": "キッザニア東京",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.6563097,
         "longitude": 139.7913488,
@@ -4267,8 +4325,8 @@
         "name_en": "水準原点",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6772124,
         "longitude": 139.7478515,
@@ -4290,8 +4348,8 @@
         "name_en": "東京グローブ座",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7047651,
         "longitude": 139.7003636,
@@ -4342,13 +4400,15 @@
         "name_en": "フローズンキングダム",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.6292931,
         "longitude": 139.8776533,
         "wikidata": "Q65044325",
         "wikipedia": "en:World of Frozen",
-        "popularity": 6
+        "popularity": 6,
+        "site": "Q1202341"
       }
     },
     {
@@ -4389,8 +4449,8 @@
         "name_en": "早稲田大学大隈記念講堂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7089433,
         "longitude": 139.721581,
@@ -4548,7 +4608,8 @@
         "wikidata": "Q16944532",
         "wikipedia": "ja:旧朝倉家住宅",
         "fee": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "site": "Q16944532"
       }
     },
     {
@@ -4556,7 +4617,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.774251,
+          139.7742507,
           35.6267596
         ]
       },
@@ -4568,7 +4629,7 @@
           "CULTURAL"
         ],
         "latitude": 35.6267596,
-        "longitude": 139.774251,
+        "longitude": 139.7742507,
         "wikidata": "Q10954019",
         "wikipedia": "ja:FCGビル",
         "wheelchair": "limited",
@@ -4641,8 +4702,8 @@
         "name_en": "ウエスタンリバー鉄道",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6327526,
         "longitude": 139.8842432,
@@ -4650,7 +4711,8 @@
         "wikidata": "Q3567503",
         "wikipedia": "ja:ウエスタンリバー鉄道",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "site": "Q843997"
       }
     },
     {
@@ -4688,7 +4750,7 @@
         ]
       },
       "properties": {
-        "name": "Johoku-Chuo Park",
+        "name": "Jōhoku-Chūō Park",
         "name_en": "城北中央公園",
         "category": "park",
         "profiles": [
@@ -4717,8 +4779,8 @@
         "name_en": "日生劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.673259,
         "longitude": 139.7585337,
@@ -4772,7 +4834,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6986987,
         "longitude": 139.7621517,
@@ -4876,14 +4939,38 @@
         "name_en": "新橋演舞場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6668155,
         "longitude": 139.766977,
         "website": "https://www.shinbashi-enbujo.co.jp/",
         "wikidata": "Q4410425",
         "wikipedia": "ja:新橋演舞場",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7599394,
+          35.6641123
+        ]
+      },
+      "properties": {
+        "name": "Ni-Tele Big Clock",
+        "name_en": "日テレ大時計",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 35.6641123,
+        "longitude": 139.7599394,
+        "website": "https://www.ntv.co.jp/shiodome/shop/tokei.html",
+        "wikidata": "Q76843738",
+        "wikipedia": "ja:日テレ大時計",
         "popularity": 5
       }
     },
@@ -4902,7 +4989,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6645224,
         "longitude": 139.7626413,
@@ -4929,8 +5017,8 @@
         "name_en": "AKB48劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7008075,
         "longitude": 139.7719621,
@@ -4954,8 +5042,8 @@
         "name_en": "ミューザ川崎シンフォニーホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.5311897,
         "longitude": 139.6947779,
@@ -5007,8 +5095,8 @@
         "name_en": "神田古書店街",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.69586,
         "longitude": 139.7586067,
@@ -5030,8 +5118,8 @@
         "name": "Small Worlds Tokyo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6378302,
         "longitude": 139.78825,
@@ -5259,7 +5347,8 @@
         "name_en": "井の頭自然文化園",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 35.7008844,
         "longitude": 139.5713612,
@@ -5308,7 +5397,8 @@
         "name_en": "ダイヤと花の大観覧車",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.6439404,
         "longitude": 139.8572504,
@@ -5358,15 +5448,16 @@
         "name_en": "蒸気船マークトウェイン号",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6316122,
         "longitude": 139.8829532,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:wl_mark/",
         "wikidata": "Q3006137",
         "wikipedia": "ja:蒸気船マークトウェイン号",
-        "popularity": 5
+        "popularity": 5,
+        "site": "Q843997"
       }
     },
     {
@@ -5383,8 +5474,8 @@
         "name_en": "赤門",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.710605,
         "longitude": 139.7603538,
@@ -5408,7 +5499,8 @@
         "name_en": "ジョイポリス",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.6286805,
         "longitude": 139.7753412,
@@ -5544,30 +5636,6 @@
         "longitude": 139.7404037,
         "wikidata": "Q11286180",
         "wikipedia": "ja:平和の森公園 (大田区)",
-        "popularity": 5
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7599403,
-          35.664082
-        ]
-      },
-      "properties": {
-        "name": "Ni-Tele Big Clock",
-        "name_en": "日テレ大時計",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 35.664082,
-        "longitude": 139.7599403,
-        "website": "https://www.ntv.co.jp/shiodome/shop/tokei.html",
-        "wikidata": "Q76843738",
-        "wikipedia": "ja:日テレ大時計",
         "popularity": 5
       }
     },
@@ -5792,7 +5860,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6972706,
         "longitude": 139.7932372,
@@ -5844,8 +5913,8 @@
         "name_en": "せんがわ劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6614929,
         "longitude": 139.5868242,
@@ -5868,8 +5937,8 @@
         "name_en": "海底2万マイル",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6263849,
         "longitude": 139.884684,
@@ -5877,7 +5946,8 @@
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:mi_20000/",
         "wikidata": "Q54087317",
         "wikipedia": "en:20,000 Leagues Under the Sea (Tokyo DisneySea)",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q1202341"
       }
     },
     {
@@ -5894,8 +5964,8 @@
         "name_en": "ナンジャタウン",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7288803,
         "longitude": 139.7196965,
@@ -6045,13 +6115,15 @@
         "name_en": "ラプンツェルの森",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.6289779,
         "longitude": 139.8789533,
         "wikidata": "Q65046459",
         "wikipedia": "ja:ファンタジースプリングス",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q1202341"
       }
     },
     {
@@ -6184,8 +6256,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.8086405,
-          35.6072694
+          139.809896,
+          35.6074619
         ]
       },
       "properties": {
@@ -6196,8 +6268,8 @@
           "NATUREZA",
           "RELAXAMENTO"
         ],
-        "latitude": 35.6072694,
-        "longitude": 139.8086405,
+        "latitude": 35.6074619,
+        "longitude": 139.809896,
         "wikidata": "Q11558624",
         "wikipedia": "ja:海の森公園",
         "popularity": 4
@@ -6267,41 +6339,14 @@
         "name_en": "奏樂堂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7180523,
         "longitude": 139.7731511,
         "phone": "03-3824-1988",
         "website": "https://www.taitocity.net/zaidan/sougakudou/",
         "wikidata": "Q3891225",
-        "popularity": 4
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7726096,
-          35.7003696
-        ]
-      },
-      "properties": {
-        "name": "Akihabara UDX",
-        "name_en": "秋葉原UDX",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 35.7003696,
-        "longitude": 139.7726096,
-        "phone": "+81 3-5298-4185",
-        "website": "http://udx-akibaichi.jp/",
-        "wikidata": "Q9393080",
-        "wikipedia": "ja:秋葉原UDX",
-        "fee": "no",
         "popularity": 4
       }
     },
@@ -6343,8 +6388,8 @@
         "name_en": "スター・ツアーズザ・アドベンチャーズ・コンティニュー",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6335434,
         "longitude": 139.8780085,
@@ -6352,7 +6397,8 @@
         "wikidata": "Q3496988",
         "wikipedia": "ja:スター・ツアーズ:ザ・アドベンチャーズ・コンティニュー",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q843997"
       }
     },
     {
@@ -6369,14 +6415,15 @@
         "name_en": "ディズニーシー・エレクトリックレールウェイ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6249928,
         "longitude": 139.8855004,
         "wikidata": "Q11320079",
         "wikipedia": "ja:ディズニーシー・エレクトリックレールウェイ",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q1202341"
       }
     },
     {
@@ -6389,8 +6436,8 @@
         ]
       },
       "properties": {
-        "name": "The Life-Sized Unicorn Gundam Statue Version Tokyo Water Front City",
-        "name_en": "RX-0 ユニコーンガンダム Version Tokyo Water Front City",
+        "name": "Gundam Unicorn RX-0 1:1 Statue",
+        "name_en": "Gundam ユニコーン RX-0 1:1 Statue",
         "category": "artwork",
         "profiles": [
           "CULTURAL"
@@ -6419,7 +6466,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7213986,
         "longitude": 139.7411356,
@@ -6446,14 +6494,13 @@
         "name_en": "万世橋",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6971326,
         "longitude": 139.7709729,
         "wikidata": "Q2913480",
         "wikipedia": "ja:万世橋",
-        "wheelchair": "yes",
         "popularity": 4
       }
     },
@@ -6471,8 +6518,8 @@
         "name_en": "神宮橋",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6697179,
         "longitude": 139.7024123,
@@ -6510,6 +6557,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          139.7772657,
+          35.6228739
+        ]
+      },
+      "properties": {
+        "name": "Symbolpromenade Park",
+        "name_en": "シンボルプロムナード公園",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 35.6228739,
+        "longitude": 139.7772657,
+        "wikidata": "Q11308705",
+        "wikipedia": "ja:シンボルプロムナード公園",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           139.8778506,
           35.6306115
         ]
@@ -6519,15 +6590,16 @@
         "name_en": "美女と野獣”魔法のものがたり”",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6306115,
         "longitude": 139.8778506,
         "website": "https://www.tokyodisneyresort.jp/tdl/attraction/detail/197/",
         "wikidata": "Q65042943",
         "wikipedia": "ja:美女と野獣“魔法のものがたり”",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q843997"
       }
     },
     {
@@ -6551,6 +6623,32 @@
         "wikidata": "Q85763829",
         "wikipedia": "en:Godzilla head",
         "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.796502,
+          35.712388
+        ]
+      },
+      "properties": {
+        "name": "Nakamise Shopping Street",
+        "name_en": "仲見世商店街",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 35.712388,
+        "longitude": 139.796502,
+        "opening_hours": "Mo-Su 09:00-19:00",
+        "wikidata": "Q107583845",
+        "wikipedia": "ja:仲見世通り",
+        "popularity": 4,
+        "site": "Q615183"
       }
     },
     {
@@ -6605,31 +6703,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7827021,
-          35.6259285
-        ]
-      },
-      "properties": {
-        "name": "Symbol Promenade Park",
-        "name_en": "シンボルプロムナード公園",
-        "category": "park",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO"
-        ],
-        "latitude": 35.6259285,
-        "longitude": 139.7827021,
-        "website": "https://www.tptc.co.jp/park/01_04",
-        "wikidata": "Q11308705",
-        "wikipedia": "ja:シンボルプロムナード公園",
-        "popularity": 4
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.7639427,
           35.7042546
         ]
@@ -6665,7 +6738,8 @@
         "name_en": "NHKスタジオパーク",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.6651148,
         "longitude": 139.6965929,
@@ -6818,7 +6892,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.708554,
         "longitude": 139.7203599,
@@ -7066,6 +7141,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          139.7135103,
+          35.7037012
+        ]
+      },
+      "properties": {
+        "name": "Hakoneyama",
+        "name_en": "箱根山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 35.7037012,
+        "longitude": 139.7135103,
+        "wikidata": "Q11284663",
+        "wikipedia": "ja:箱根山 (新宿区)",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           139.7272667,
           35.66121
         ]
@@ -7074,8 +7173,8 @@
         "name": "EX THEATER ROPPONGI",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.66121,
         "longitude": 139.7272667,
@@ -7114,19 +7213,19 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7853159,
-          35.6474409
+          139.7853289,
+          35.6474361
         ]
       },
       "properties": {
         "name": "IHI STAGE AROUND TOKYO",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
-        "latitude": 35.6474409,
-        "longitude": 139.7853159,
+        "latitude": 35.6474361,
+        "longitude": 139.7853289,
         "phone": "03-5144-0360",
         "website": "http://www.tbs.co.jp/stagearound/theater/",
         "wikidata": "Q48750542",
@@ -7222,8 +7321,8 @@
         "name_en": "ヨシモト∞ホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6613604,
         "longitude": 139.6975989,
@@ -7247,6 +7346,7 @@
         "name": "Shibuya Sky",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7276,7 +7376,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6637251,
         "longitude": 139.7482596,
@@ -7286,6 +7387,57 @@
         "wikidata": "Q11235312",
         "wikipedia": "ja:NHK放送博物館",
         "fee": "no",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7421159,
+          35.6255169
+        ]
+      },
+      "properties": {
+        "name": "Nikon Museum",
+        "name_en": "ニコン ミュージアム",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 35.6255169,
+        "longitude": 139.7421159,
+        "opening_hours": "Mo-Sa 10:00-18:00",
+        "website": "https://www.nikon.com/company/corporate/museum/",
+        "wikidata": "Q21654020",
+        "wikipedia": "en:Nikon Museum",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6860426,
+          35.724274
+        ]
+      },
+      "properties": {
+        "name": "Toshima City Tokiwaso Manga Museum",
+        "name_en": "トキワ荘マンガミュージアム",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 35.724274,
+        "longitude": 139.6860426,
+        "website": "https://tokiwasomm.jp/",
+        "wikidata": "Q96707302",
+        "wikipedia": "ja:トキワ荘マンガミュージアム",
         "popularity": 3
       }
     },
@@ -7326,8 +7478,8 @@
         "name_en": "クロス新宿ビジョン",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6926184,
         "longitude": 139.7007975,
@@ -7335,6 +7487,30 @@
         "website": "https://shinjuku.xspace.tokyo",
         "wikidata": "Q109702546",
         "wikipedia": "ja:クロス新宿ビジョン",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7487461,
+          35.6647678
+        ]
+      },
+      "properties": {
+        "name": "Atagoyama",
+        "name_en": "愛宕山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 35.6647678,
+        "longitude": 139.7487461,
+        "wikidata": "Q11493833",
+        "wikipedia": "ja:愛宕山 (東京都港区)",
         "popularity": 3
       }
     },
@@ -7352,14 +7528,15 @@
         "name_en": "マーメイドラグーン Mermaid Lagoon",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6269893,
         "longitude": 139.8824842,
         "wikidata": "Q935409",
         "wikipedia": "ja:マーメイドラグーン",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q1202341"
       }
     },
     {
@@ -7367,8 +7544,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.8882684,
-          35.6240957
+          139.8881379,
+          35.6241493
         ]
       },
       "properties": {
@@ -7376,37 +7553,15 @@
         "name_en": "タワー・オブ・テラー",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
-        "latitude": 35.6240957,
-        "longitude": 139.8882684,
+        "latitude": 35.6241493,
+        "longitude": 139.8881379,
         "wikidata": "Q28530645",
         "wikipedia": "ja:タワー・オブ・テラー (TDS)",
-        "popularity": 3
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7162499,
-          35.7079151
-        ]
-      },
-      "properties": {
-        "name": "Women's Active Museum on War and Peace",
-        "name_en": "アクティブ・ミュージアム「女たちの戦争と平和資料館」（wam）",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 35.7079151,
-        "longitude": 139.7162499,
-        "wikidata": "Q11446206",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q1202341"
       }
     },
     {
@@ -7419,7 +7574,7 @@
         ]
       },
       "properties": {
-        "name": "Roka Koshun-en",
+        "name": "Roka Kōshun-en",
         "name_en": "蘆花恒春園",
         "category": "park",
         "profiles": [
@@ -7471,8 +7626,8 @@
         "name_en": "葛飾シンフォニーヒルズ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7425573,
         "longitude": 139.8524542,
@@ -7491,7 +7646,7 @@
         ]
       },
       "properties": {
-        "name": "Omori Nori Museum",
+        "name": "Ōmori Nori Museum",
         "name_en": "大森海苔のふるさと館",
         "category": "museum",
         "profiles": [
@@ -7521,7 +7676,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7008599,
         "longitude": 139.6247018,
@@ -7567,7 +7723,7 @@
         "type": "Point",
         "coordinates": [
           139.7017561,
-          35.6619199
+          35.6619403
         ]
       },
       "properties": {
@@ -7578,7 +7734,7 @@
           "NATUREZA",
           "RELAXAMENTO"
         ],
-        "latitude": 35.6619199,
+        "latitude": 35.6619403,
         "longitude": 139.7017561,
         "opening_hours": "Mo-Su 08:00-23:00",
         "wikidata": "Q6884419",
@@ -7696,8 +7852,8 @@
         "name_en": "舞浜アンフィシアター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6326129,
         "longitude": 139.8891935,
@@ -7745,7 +7901,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6983842,
         "longitude": 139.7938336,
@@ -7937,7 +8094,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7585313,
+          139.7586817,
           35.7532637
         ]
       },
@@ -7946,10 +8103,11 @@
         "name_en": "あらかわ遊園",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.7532637,
-        "longitude": 139.7585313,
+        "longitude": 139.7586817,
         "opening_hours": "09:00-17:00",
         "phone": "03-3893-6003",
         "wikidata": "Q17191904",
@@ -8063,7 +8221,7 @@
         ]
       },
       "properties": {
-        "name": "Noge Otsuka Kofun",
+        "name": "Noge Ōtsuka Kofun",
         "name_en": "野毛大塚古墳",
         "category": "historic_archaeological_site",
         "profiles": [
@@ -8088,8 +8246,8 @@
         ]
       },
       "properties": {
-        "name": "Inner Garden",
-        "name_en": "御苑",
+        "name": "Meiji Jingu Inner Garden",
+        "name_en": "明治神宮御苑",
         "category": "garden",
         "profiles": [
           "NATUREZA",
@@ -8249,7 +8407,8 @@
         "name_en": "江戸川区自然動物園",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 35.6710576,
         "longitude": 139.8584542,
@@ -8271,8 +8430,8 @@
         "name": "都電7500形 (7506号車)",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7155691,
         "longitude": 139.7676116,
@@ -8451,34 +8610,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6860797,
-          35.7242653
-        ]
-      },
-      "properties": {
-        "name": "Toshima City Tokiwaso Manga Museum",
-        "name_en": "豊島区立 トキワ荘マンガミュージアム",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 35.7242653,
-        "longitude": 139.6860797,
-        "website": "https://tokiwasomm.jp/",
-        "wikidata": "Q96707302",
-        "wikipedia": "ja:トキワ荘マンガミュージアム",
-        "fee": "yes",
-        "popularity": 3
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.6228976,
-          35.6124263
+          139.622908,
+          35.6124367
         ]
       },
       "properties": {
@@ -8489,8 +8622,8 @@
           "NATUREZA",
           "RELAXAMENTO"
         ],
-        "latitude": 35.6124263,
-        "longitude": 139.6228976,
+        "latitude": 35.6124367,
+        "longitude": 139.622908,
         "website": "http://www.city.setagaya.tokyo.jp/030/d00004246.html",
         "wikidata": "Q11392844",
         "wikipedia": "ja:兵庫島公園",
@@ -8511,14 +8644,15 @@
         "name_en": "ピーターパンのネバーランドアドベンチャー",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6278926,
         "longitude": 139.8789515,
         "wikidata": "Q6600319",
         "wikipedia": "ja:東京ディズニーシーのアトラクションの一覧",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q1202341"
       }
     },
     {
@@ -8651,12 +8785,13 @@
         ]
       },
       "properties": {
-        "name": "Omori Furusato no Hamabe Park",
+        "name": "Ōmori Furusato no Hamabe Park",
         "name_en": "大森ふるさとの浜辺公園",
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.5739211,
         "longitude": 139.7421812,
@@ -8682,7 +8817,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6590248,
         "longitude": 139.654739,
@@ -8732,8 +8868,8 @@
         "name_en": "吉祥寺シアター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7038074,
         "longitude": 139.5835202,
@@ -8757,8 +8893,8 @@
         "name_en": "浅草演芸ホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7135224,
         "longitude": 139.7930745,
@@ -8808,7 +8944,7 @@
         ]
       },
       "properties": {
-        "name": "Urayasu City Folk Museum",
+        "name": "Urayasu City Museum of Local History",
         "name_en": "浦安市郷土博物館",
         "category": "museum",
         "profiles": [
@@ -8818,7 +8954,6 @@
         "latitude": 35.655169,
         "longitude": 139.901136,
         "opening_hours": "Tu-Su 09:30-17:00",
-        "phone": "047-305-4300",
         "website": "https://assarikunn.wixsite.com/website",
         "wikidata": "Q11558212",
         "wikipedia": "ja:浦安市郷土博物館",
@@ -9104,31 +9239,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7193832,
-          35.6823264
-        ]
-      },
-      "properties": {
-        "name": "Min-On Music Museum",
-        "name_en": "民音音楽博物館",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 35.6823264,
-        "longitude": 139.7193832,
-        "opening_hours": "Tu-Sa 11:00-16:00; Su 10:00-17:00",
-        "website": "https://museum.min-on.or.jp/",
-        "wikidata": "Q65272034",
-        "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.759259,
           35.738472
         ]
@@ -9216,8 +9326,8 @@
         "name_en": "本多劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6617082,
         "longitude": 139.6684726,
@@ -9242,8 +9352,8 @@
         "name_en": "鈴本演芸場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.709173,
         "longitude": 139.7730454,
@@ -9268,8 +9378,8 @@
         "name_en": "三越劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6855642,
         "longitude": 139.7732349,
@@ -9293,8 +9403,8 @@
         "name_en": "天王洲銀河劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6235195,
         "longitude": 139.7513603,
@@ -9318,8 +9428,8 @@
         "name_en": "俳優座劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6638143,
         "longitude": 139.7327132,
@@ -9376,7 +9486,6 @@
         "longitude": 139.6847988,
         "wikidata": "Q24874167",
         "wikipedia": "ja:東京工業大学博物館",
-        "fee": "no",
         "popularity": 2
       }
     },
@@ -9467,14 +9576,15 @@
         "name_en": "フランダーのフライングフィッシュコースター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6271738,
         "longitude": 139.8823191,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:ml_flounder/",
         "wikidata": "Q2358448",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1202341"
       }
     },
     {
@@ -9514,8 +9624,8 @@
         "name_en": "博品館劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6678267,
         "longitude": 139.7610469,
@@ -9539,8 +9649,8 @@
         "name_en": "四季劇場 海",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6647288,
         "longitude": 139.7623,
@@ -9548,28 +9658,6 @@
         "wikidata": "Q11660645",
         "wikipedia": "ja:電通四季劇場［海］",
         "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7196203,
-          35.7087916
-        ]
-      },
-      "properties": {
-        "name": "Shigenobu Okuma Statue",
-        "name_en": "大隈重信銅像",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 35.7087916,
-        "longitude": 139.7196203,
-        "wikipedia": "ja:大隈重信像",
-        "popularity": 0
       }
     },
     {
@@ -9612,8 +9700,8 @@
         "name_en": "宝生能楽堂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7033909,
         "longitude": 139.7561751,
@@ -9637,8 +9725,8 @@
         "name_en": "練馬文化センター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7394074,
         "longitude": 139.6537515,
@@ -9687,8 +9775,8 @@
         "name_en": "秋葉原ディアステージ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7011113,
         "longitude": 139.7708438,
@@ -9711,8 +9799,8 @@
         "name_en": "思い出横丁",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6930689,
         "longitude": 139.6995016,
@@ -9736,8 +9824,8 @@
         "name_en": "柳原閘門",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7520051,
         "longitude": 139.891982,
@@ -9785,8 +9873,8 @@
         "name_en": "亀戸梅屋敷",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7016038,
         "longitude": 139.8255702,
@@ -9810,7 +9898,8 @@
         "name_en": "レゴランド・ディスカバリー・センター",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.6288171,
         "longitude": 139.775669,
@@ -9837,8 +9926,8 @@
         "name_en": "全労災ホール/スペース・ゼロ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.687017,
         "longitude": 139.6973312,
@@ -9969,7 +10058,8 @@
         "website": "https://www.tokyodisneyresort.jp/en/tds/attraction/detail/245/",
         "wikidata": "Q11332978",
         "wikipedia": "en:Fortress Explorations",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1202341"
       }
     },
     {
@@ -9986,8 +10076,8 @@
         "name_en": "観世能楽堂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6693179,
         "longitude": 139.7642898,
@@ -10012,39 +10102,13 @@
         "name_en": "浅草木馬館",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7144122,
         "longitude": 139.7947915,
         "website": "https://mokubatei.com/",
         "wikidata": "Q11639517",
-        "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7151556,
-          35.6749482
-        ]
-      },
-      "properties": {
-        "name": "JAPAN OLYMPIC MUSEUM",
-        "name_en": "日本オリンピックミュージアム",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 35.6749482,
-        "longitude": 139.7151556,
-        "website": "https://japan-olympicmuseum.jp",
-        "wikidata": "Q140042196",
-        "fee": "yes",
-        "wheelchair": "yes",
         "popularity": 2
       }
     },
@@ -10136,8 +10200,8 @@
         "name_en": "東京建物 Brillia HALL",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7318313,
         "longitude": 139.7157152,
@@ -10162,8 +10226,8 @@
         "name_en": "パルコ劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6621937,
         "longitude": 139.6988628,
@@ -10183,7 +10247,7 @@
         ]
       },
       "properties": {
-        "name": "Iko Ruins Park Exhibition Hall",
+        "name": "Ikō Ruins Park Exhibition Hall",
         "name_en": "伊興遺跡公園展示館",
         "category": "museum",
         "profiles": [
@@ -10261,8 +10325,8 @@
         "name": "WWW",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6615428,
         "longitude": 139.6987503,
@@ -10287,8 +10351,8 @@
         "name_en": "シアターサンモール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6897684,
         "longitude": 139.7129075,
@@ -10365,14 +10429,15 @@
         "name_en": "東京ディズニーランド・エレクトリカルパレード・ドリームライツ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6332582,
         "longitude": 139.8807865,
         "wikidata": "Q3039229",
         "wikipedia": "ja:東京ディズニーランド・エレクトリカルパレード・ドリームライツ",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q843997"
       }
     },
     {
@@ -10389,14 +10454,15 @@
         "name_en": "ベイマックスのハッピーライド",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6317007,
         "longitude": 139.8788382,
         "wikidata": "Q85873622",
         "wikipedia": "ja:ベイマックスのハッピーライド",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q843997"
       }
     },
     {
@@ -10435,7 +10501,8 @@
         "name_en": "台場一丁目商店街",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.6292846,
         "longitude": 139.7762176,
@@ -10444,53 +10511,6 @@
         "website": "https://www.odaiba-decks.com/news/event/daiba1chome.html",
         "wikidata": "Q11411934",
         "wikipedia": "ja:台場一丁目商店街",
-        "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7426381,
-          35.6808161
-        ]
-      },
-      "properties": {
-        "name": "Engei Theatre",
-        "name_en": "演芸場",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 35.6808161,
-        "longitude": 139.7426381,
-        "website": "https://www.ntj.jac.go.jp/en/theatre/engei/",
-        "wikidata": "Q11421281",
-        "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.713757,
-          35.6750521
-        ]
-      },
-      "properties": {
-        "name": "Meiji Park",
-        "name_en": "都立明治公園",
-        "category": "park",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO"
-        ],
-        "latitude": 35.6750521,
-        "longitude": 139.713757,
-        "wikidata": "Q11512308",
         "popularity": 2
       }
     },
@@ -10508,8 +10528,8 @@
         "name_en": "北とぴあ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7552568,
         "longitude": 139.7362954,
@@ -10727,8 +10747,8 @@
         "name_en": "矢切の渡し",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7595794,
         "longitude": 139.8830893,
@@ -10843,7 +10863,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7424537,
         "longitude": 139.8261809,
@@ -11037,15 +11058,16 @@
         "name_en": "ミッキーの家とミート・ミッキー",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6302509,
         "longitude": 139.8786152,
         "website": "https://www.tokyodisneyresort.jp/greeting/detail/str_id:tt_mickey/",
         "wikidata": "Q6838553",
         "wikipedia": "ja:ミッキーの家",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q843997"
       }
     },
     {
@@ -11098,7 +11120,8 @@
         "wikidata": "Q11547673",
         "wikipedia": "ja:毛利甲斐守邸跡",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1071084"
       }
     },
     {
@@ -11323,8 +11346,8 @@
         "name_en": "座・高円寺",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7059154,
         "longitude": 139.6540035,
@@ -11470,7 +11493,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6998208,
         "longitude": 139.7968952,
@@ -11521,8 +11545,8 @@
         "name_en": "新宿文化センター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6953822,
         "longitude": 139.7094426,
@@ -11740,7 +11764,8 @@
         "name_en": "足立区生物園",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 35.7924067,
         "longitude": 139.8072069,
@@ -11995,6 +12020,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          139.7029071,
+          35.5325347
+        ]
+      },
+      "properties": {
+        "name": "Tokaido Kawasaki Shuku Koryukan",
+        "name_en": "東海道かわさき宿交流館",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 35.5325347,
+        "longitude": 139.7029071,
+        "opening_hours": "Tu-Su 09:00-17:00",
+        "website": "https://kawasakishuku.jp/",
+        "wikidata": "Q17229268",
+        "wikipedia": "ja:東海道かわさき宿交流館",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           139.7187189,
           35.7301284
         ]
@@ -12099,8 +12150,8 @@
         "name_en": "栗山配水塔",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7552299,
         "longitude": 139.8977863,
@@ -12525,13 +12576,86 @@
         "name": "東京ドリームパーク",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6293414,
         "longitude": 139.7877824,
         "wikidata": "Q122999527",
         "wikipedia": "ja:東京ドリームパーク",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7751116,
+          35.6640321
+        ]
+      },
+      "properties": {
+        "name": "Hatoba",
+        "name_en": "はとば",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 35.6640321,
+        "longitude": 139.7751116,
+        "wikidata": "Q42311590",
+        "wikipedia": "en:Hatoba Park",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7526816,
+          35.5910328
+        ]
+      },
+      "properties": {
+        "name": "Oi Central Seaside Park Sports Forest",
+        "name_en": "大井ふ頭中央海浜公園 スポーツの森",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 35.5910328,
+        "longitude": 139.7526816,
+        "website": "https://seaside-park.jp/park_ooisports-en/",
+        "wikidata": "Q11432123",
+        "wikipedia": "ja:大井ふ頭中央海浜公園スポーツの森第二球技場",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7425085,
+          35.5821036
+        ]
+      },
+      "properties": {
+        "name": "Heiwajima Park",
+        "name_en": "平和島公園",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 35.5821036,
+        "longitude": 139.7425085,
+        "wikidata": "Q11482236",
+        "wikipedia": "ja:平和島公園",
         "popularity": 2
       }
     },
@@ -12548,8 +12672,8 @@
         "name": "小山樋門",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7780344,
         "longitude": 139.8964572,
@@ -12573,7 +12697,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7420946,
         "longitude": 139.6468412,
@@ -12596,8 +12721,8 @@
         "name_en": "東京ガーデンシアター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6377253,
         "longitude": 139.7920429,
@@ -12621,8 +12746,8 @@
         "name_en": "北沢タウンホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6620874,
         "longitude": 139.669682,
@@ -12646,8 +12771,8 @@
         "name_en": "松戸市民劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.785042,
         "longitude": 139.8974978,
@@ -12670,6 +12795,7 @@
         "name_en": "東京シティビュー",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -12680,7 +12806,8 @@
         "wikidata": "Q126417093",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q1071084"
       }
     },
     {
@@ -12697,8 +12824,8 @@
         "name_en": "浅草東洋館",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7135812,
         "longitude": 139.7929538,
@@ -12721,15 +12848,16 @@
         "name_en": "シンデレラのフェアリーテイル・ホール Cinderella's Fairy Tale Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6319456,
         "longitude": 139.8808501,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:fl_cinderella/",
         "wikidata": "Q11308639",
         "wikipedia": "ja:シンデレラのフェアリーテイル・ホール",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q843997"
       }
     },
     {
@@ -12745,8 +12873,8 @@
         "name": "野菊の墓文学碑",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.76025,
         "longitude": 139.895183,
@@ -12769,8 +12897,8 @@
         "name_en": "世田谷パブリックシアター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6438871,
         "longitude": 139.6696466,
@@ -12794,8 +12922,8 @@
         "name_en": "よみうりホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6755136,
         "longitude": 139.7632029,
@@ -12845,15 +12973,16 @@
         "name_en": "マジックランプシアター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6285626,
         "longitude": 139.883104,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:ac_magic/",
         "wikidata": "Q30921752",
         "wikipedia": "ja:マジックランプシアター",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q1202341"
       }
     },
     {
@@ -12870,15 +12999,16 @@
         "name_en": "マーメイドラグーンシアター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6262202,
         "longitude": 139.8830533,
         "website": "http://www.tokyodisneyresort.jp/attraction/detail/str_id:ml_theater/",
         "wikidata": "Q30921756",
         "wikipedia": "ja:マーメイドラグーンシアター",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q1202341"
       }
     },
     {
@@ -12895,8 +13025,8 @@
         "name_en": "シアタークリエ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6725164,
         "longitude": 139.7597291,
@@ -12945,8 +13075,8 @@
         "name_en": "大泉アニメゲート",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7496368,
         "longitude": 139.5868203,
@@ -12991,8 +13121,8 @@
         "name_en": "紀ノ国屋ホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6923918,
         "longitude": 139.703117,
@@ -13016,35 +13146,13 @@
         "name_en": "亀戸の富士塚",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.695902,
         "longitude": 139.8441876,
         "wikidata": "Q120174882",
         "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.774547,
-          35.7100862
-        ]
-      },
-      "properties": {
-        "name": "賑わいの像",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 35.7100862,
-        "longitude": 139.774547,
-        "wikipedia": "ja:賑わいの像",
-        "wheelchair": "yes",
-        "popularity": 0
       }
     },
     {
@@ -13074,6 +13182,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          139.714457,
+          35.7264168
+        ]
+      },
+      "properties": {
+        "name": "Theater Green",
+        "name_en": "シアターグリーン",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 35.7264168,
+        "longitude": 139.714457,
+        "wikidata": "Q11306881",
+        "wikipedia": "ja:シアターグリーン",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           139.713398,
           35.7321417
         ]
@@ -13082,8 +13214,8 @@
         "name": "池袋ミカド劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7321417,
         "longitude": 139.713398,
@@ -13131,14 +13263,15 @@
         "name_en": "ドックサイドステージ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6236505,
         "longitude": 139.8869334,
         "wikidata": "Q11322702",
         "wikipedia": "ja:ドックサイドステージ",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q1202341"
       }
     },
     {
@@ -13177,8 +13310,8 @@
         "name_en": "AKIBAカルチャーズ劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6995077,
         "longitude": 139.770475,
@@ -13269,14 +13402,15 @@
         "name_en": "ブロードウェイ・ミュージックシアター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6250845,
         "longitude": 139.8883862,
         "wikidata": "Q11335172",
         "wikipedia": "ja:ブロードウェイ・ミュージックシアター",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q1202341"
       }
     },
     {
@@ -13293,14 +13427,15 @@
         "name_en": "スカイ・フル・オブ・カラーズ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.630731,
         "longitude": 139.8847416,
         "wikidata": "Q11524280",
         "wikipedia": "ja:東京ディズニーランドのエンターテイメントの一覧",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q843997"
       }
     },
     {
@@ -13317,8 +13452,8 @@
         "name_en": "神田連雀亭",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6967156,
         "longitude": 139.7687852,
@@ -13425,30 +13560,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7144517,
-          35.7264646
-        ]
-      },
-      "properties": {
-        "name": "Theater Green",
-        "name_en": "シアターグリーン",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 35.7264646,
-        "longitude": 139.7144517,
-        "wikidata": "Q11306881",
-        "wikipedia": "ja:シアターグリーン",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.716785,
           35.800942
         ]
@@ -13457,8 +13568,8 @@
         "name": "川口総合文化センターリリア",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.800942,
         "longitude": 139.716785,
@@ -13477,12 +13588,12 @@
         ]
       },
       "properties": {
-        "name": "Tokagakudo Concert Hall",
+        "name": "Tōkagakudō Concert Hall",
         "name_en": "桃華楽堂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6884177,
         "longitude": 139.7555335,
@@ -13505,15 +13616,16 @@
         "name_en": "ハンガーステージ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6257654,
         "longitude": 139.8825777,
         "website": "https://www.tokyodisneyresort.jp/en/tds/show/detail/975/",
         "wikidata": "Q11327056",
         "wikipedia": "ja:ハンガーステージ",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q1202341"
       }
     },
     {
@@ -13530,15 +13642,16 @@
         "name_en": "チップとデールのツリーハウス",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6303717,
         "longitude": 139.878754,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:tt_chip/",
         "wikidata": "Q11317957",
         "wikipedia": "ja:チップとデールのツリーハウス",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q843997"
       }
     },
     {
@@ -13555,8 +13668,8 @@
         "name_en": "第一生命ホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6568716,
         "longitude": 139.7819942,
@@ -13579,8 +13692,8 @@
         "name": "矢切庚申塚",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7604933,
         "longitude": 139.8979295,
@@ -13601,7 +13714,8 @@
         "name": "昭和の杜博物館",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.7717159,
         "longitude": 139.9297528,
@@ -13626,14 +13740,15 @@
         "name_en": "リドアイル",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6257568,
         "longitude": 139.886707,
         "wikidata": "Q11348247",
         "wikipedia": "ja:リドアイル",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q1202341"
       }
     },
     {
@@ -13652,7 +13767,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.7205166,
         "longitude": 139.7382941,
@@ -13698,8 +13814,8 @@
         "name": "劇団四季 自由劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6574632,
         "longitude": 139.7612362,
@@ -13723,8 +13839,8 @@
         "name_en": "市川市八幡市民会館（全日警ホール）",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7235126,
         "longitude": 139.9310369,
@@ -13750,8 +13866,8 @@
         "name_en": "江戸川区総合文化センター",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7111225,
         "longitude": 139.868204,
@@ -13797,14 +13913,15 @@
         "name_en": "ビッグ サンダー マウンテン",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6326401,
         "longitude": 139.8840822,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:wl_mountain/",
         "wikipedia": "en:Big Thunder Mountain Railroad",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q843997"
       }
     },
     {
@@ -13821,14 +13938,15 @@
         "name_en": "ポートディスカバリー・ステーション",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.625393,
         "longitude": 139.8830972,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:pd_railway/",
         "wikidata": "Q50437418",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1202341"
       }
     },
     {
@@ -13845,14 +13963,15 @@
         "name_en": "アメリカンウォーターフロント・ステーション",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6248634,
         "longitude": 139.8877946,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:aw_railway/",
         "wikidata": "Q50437130",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1202341"
       }
     },
     {
@@ -13869,6 +13988,7 @@
         "name_en": "Sky Circus",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -13910,29 +14030,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6800465,
-          35.7214767
-        ]
-      },
-      "properties": {
-        "name": "Hobby Center Kato",
-        "name_en": "ホビーセンターカトー",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 35.7214767,
-        "longitude": 139.6800465,
-        "website": "https://www.katomodels.com/hobbycenter/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.701462,
           35.64737
         ]
@@ -13950,7 +14047,8 @@
         "opening_hours": "11:00-19:00",
         "phone": "+81 3-3476-4869",
         "wheelchair": "no",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q16944532"
       }
     },
     {
@@ -13967,8 +14065,10 @@
         "name_en": "東京都庁展望室 南",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.689088,
         "longitude": 139.6917631,
@@ -14071,6 +14171,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          139.6799848,
+          35.721599
+        ]
+      },
+      "properties": {
+        "name": "Keikyu DeHa 268",
+        "name_en": "京急デハ268",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 35.721599,
+        "longitude": 139.6799848,
+        "wikipedia": "ja:湘南電気鉄道デ1形電車",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           139.8824076,
           35.6339528
         ]
@@ -14080,14 +14203,15 @@
         "name_en": "ジャングルクルーズ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6339528,
         "longitude": 139.8824076,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:al_jungle/",
         "wikipedia": "ja:ジャングルクルーズ",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q843997"
       }
     },
     {
@@ -14104,14 +14228,15 @@
         "name_en": "タートル・トーク",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6233239,
         "longitude": 139.8874676,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:aw_turtle/",
         "wikipedia": "ja:タートル・トーク",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1202341"
       }
     },
     {
@@ -14128,13 +14253,14 @@
         "name_en": "ブローフィッシュ・バルーンレース",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6265401,
         "longitude": 139.8829696,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:ml_balloon/",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1202341"
       }
     },
     {
@@ -14151,13 +14277,14 @@
         "name_en": "ジャンピン・ジェリーフィッシュ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6264458,
         "longitude": 139.8833143,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:ml_jelly/",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1202341"
       }
     },
     {
@@ -14174,13 +14301,14 @@
         "name_en": "アリエルのプレイグラウンド",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6267105,
         "longitude": 139.8830194,
         "website": "https://www.tokyodisneyresort.jp/attraction/detail/str_id:ml_play/",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1202341"
       }
     },
     {
@@ -14265,6 +14393,7 @@
         "name_en": "荒川ロックゲート",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -14289,14 +14418,36 @@
         "name_en": "シアタートラム",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6442043,
         "longitude": 139.6693064,
         "wikidata": "Q43100006",
         "wikipedia": "ja:シアタートラム",
         "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7196203,
+          35.7087916
+        ]
+      },
+      "properties": {
+        "name": "Shigenobu Okuma Statue",
+        "name_en": "大隈重信銅像",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 35.7087916,
+        "longitude": 139.7196203,
+        "wikipedia": "ja:大隈重信像",
         "popularity": 0
       }
     },
@@ -14328,28 +14479,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7178873,
-          35.6843446
-        ]
-      },
-      "properties": {
-        "name": "The Artcomplex Center of Tokyo",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 35.6843446,
-        "longitude": 139.7178873,
-        "website": "https://www.gallerycomplex.com/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.7522196,
           35.7082294
         ]
@@ -14358,6 +14487,7 @@
         "name": "Observation deck",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -14428,8 +14558,8 @@
         "name_en": "ハイパーレーン",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7327694,
         "longitude": 139.7135437,
@@ -14453,8 +14583,8 @@
         "name_en": "東京ラーメンストリート",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6803754,
         "longitude": 139.7678774,
@@ -14514,20 +14644,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7587483,
-          35.6661034
+          139.7587437,
+          35.6661
         ]
       },
       "properties": {
         "name": "D51機関車の動輪",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 35.6661,
+        "longitude": 139.7587437,
+        "wikipedia": "ja:国鉄D51形蒸気機関車",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7745466,
+          35.7101006
+        ]
+      },
+      "properties": {
+        "name": "賑わいの像",
+        "category": "artwork",
+        "profiles": [
           "CULTURAL"
         ],
-        "latitude": 35.6661034,
-        "longitude": 139.7587483,
-        "wikipedia": "ja:国鉄D51形蒸気機関車",
+        "latitude": 35.7101006,
+        "longitude": 139.7745466,
+        "wikipedia": "ja:賑わいの像",
+        "wheelchair": "yes",
         "popularity": 0
       }
     },
@@ -14641,8 +14793,8 @@
         "name_en": "SAP草加ボウル",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.8354396,
         "longitude": 139.8186133,
@@ -14665,6 +14817,7 @@
         "name_en": "富士見台",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -14688,8 +14841,8 @@
         "name_en": "都電6080号",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7503675,
         "longitude": 139.7387432,
@@ -14711,8 +14864,8 @@
         "name_en": "蒸気機関車D51 853",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7501111,
         "longitude": 139.7388469,
@@ -14757,8 +14910,10 @@
         "name": "西側展望デッキ",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6677864,
         "longitude": 139.9412462,
@@ -14780,8 +14935,10 @@
         "name": "東側展望デッキ",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6687604,
         "longitude": 139.9448086,
@@ -14804,8 +14961,8 @@
         "name_en": "谷中銀座",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.727657,
         "longitude": 139.7669682,
@@ -14870,8 +15027,8 @@
         "name_en": "葛西臨海水族園",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6400593,
         "longitude": 139.8621905,
@@ -14893,8 +15050,8 @@
         "name_en": "吉祥寺サンロード",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7048428,
         "longitude": 139.580385,
@@ -14916,8 +15073,8 @@
         "name_en": "ナツゲーミュージアム",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.7137052,
         "longitude": 139.7035995,
@@ -14944,7 +15101,7 @@
         ],
         "latitude": 35.6893819,
         "longitude": 139.7777146,
-        "opening_hours": "Mo off",
+        "opening_hours": "Closed Monday",
         "popularity": 0
       }
     },
@@ -14977,6 +15134,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          139.6909055,
+          35.6829541
+        ]
+      },
+      "properties": {
+        "name": "Hellogallerytokyo",
+        "category": "gallery",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 35.6829541,
+        "longitude": 139.6909055,
+        "opening_hours": "4 Chome-28-7 Yoyogi, Shibuya City, Tokyo",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           139.7745922,
           35.6270652
         ]
@@ -14985,6 +15164,7 @@
         "name": "球体展望室",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -15000,19 +15180,19 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7013091,
-          35.6880133
+          139.7009331,
+          35.68812
         ]
       },
       "properties": {
-        "name": "Suica Penguin",
-        "name_en": "Suicaのペンギン",
-        "category": "artwork",
+        "name": "Suica ペンギンの広場",
+        "category": "attraction",
         "profiles": [
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
-        "latitude": 35.6880133,
-        "longitude": 139.7013091,
+        "latitude": 35.68812,
+        "longitude": 139.7009331,
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -15031,13 +15211,14 @@
         "name_en": "インディ・ジョーンズ・アドベンチャークリスタルスカルの魔宮",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6267129,
         "longitude": 139.8806129,
         "wikipedia": "ja:インディ・ジョーンズ・アドベンチャー",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1202341"
       }
     },
     {
@@ -15054,13 +15235,14 @@
         "name_en": "空飛ぶダンボ",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.6314631,
         "longitude": 139.8816938,
         "wikipedia": "ja:空飛ぶダンボ",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q843997"
       }
     },
     {
@@ -15077,8 +15259,10 @@
         "name_en": "丸の内ハウス",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6824495,
         "longitude": 139.7646788,
@@ -15099,8 +15283,7 @@
         ]
       },
       "properties": {
-        "name": "Gallery Ueda",
-        "name_en": "ギャラリー上田",
+        "name": "ギャラリー上田 / Gallery Ueda",
         "category": "gallery",
         "profiles": [
           "CULTURAL",
@@ -15128,8 +15311,10 @@
         "name_en": "東京交通会館コリーヌ",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.674874,
         "longitude": 139.7639371,
@@ -15152,6 +15337,7 @@
         "name": "Crossing View & Rooftop Lounge MAG8",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -15199,7 +15385,8 @@
         "name_en": "ちいかわパーク",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.7302409,
         "longitude": 139.7173053,
@@ -15248,7 +15435,8 @@
         "latitude": 35.6602876,
         "longitude": 139.7304404,
         "website": "http://www.othoniel.fr/fr/studio/commandes/2014",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1071084"
       }
     },
     {
@@ -15460,141 +15648,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7429967,
-          35.662521
-        ]
-      },
-      "properties": {
-        "name": "Azabudai Hills Gallery",
-        "name_en": "麻布台ヒルズ ギャラリー",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 35.662521,
-        "longitude": 139.7429967,
-        "wikidata": "Q140692564",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7833419,
-          35.6978761
-        ]
-      },
-      "properties": {
-        "name": "アトリエアール",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 35.6978761,
-        "longitude": 139.7833419,
-        "address": "JR浅草橋駅, 1丁目24-11, Tóquio",
-        "website": "https://atelier-ar-57.com/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7100322,
-          35.7306602
-        ]
-      },
-      "properties": {
-        "name": "BanG Dream! It's MyGO!!!!!-themed Manhole Cover",
-        "name_en": "BanG Dream! It's MyGO!!!!! デザインマンホール",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 35.7306602,
-        "longitude": 139.7100322,
-        "website": "https://www.city.toshima.lg.jp/424/2602191600.html",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.6403503,
-          35.6126834
-        ]
-      },
-      "properties": {
-        "name": "Gallery ARTIST GUILD",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 35.6126834,
-        "longitude": 139.6403503,
-        "website": "https://gallery-artistguild.themedia.jp/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7810532,
-          35.6789774
-        ]
-      },
-      "properties": {
-        "name": "RECTO VERSO GALLERY",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 35.6789774,
-        "longitude": 139.7810532,
-        "website": "https://www.recto.co.jp/verso/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7686877,
-          35.6725662
-        ]
-      },
-      "properties": {
-        "name": "MireyaGallery",
-        "name_en": "銀座ミレージャギャラリー",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 35.6725662,
-        "longitude": 139.7686877,
-        "website": "http://www.mireyagallery.com/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.8992232,
           35.7771872
         ]
@@ -15604,6 +15657,7 @@
         "name_en": "戸定が丘歴史公園",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -15633,32 +15687,8 @@
         "latitude": 35.6780898,
         "longitude": 139.7250919,
         "wikipedia": "ja:東宮御所",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7463098,
-          35.651428
-        ]
-      },
-      "properties": {
-        "name": "芝のはらっぱ",
-        "category": "garden",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO",
-          "SOLITARIO"
-        ],
-        "latitude": 35.651428,
-        "longitude": 139.7463098,
-        "website": "https://shibanoharappa.tokyo/",
-        "wikidata": "Q140694372",
-        "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q11635414"
       }
     },
     {
@@ -15679,7 +15709,8 @@
         "latitude": 35.6610103,
         "longitude": 139.7296601,
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1071084"
       }
     },
     {
@@ -15695,8 +15726,10 @@
         "name": "船堀タワー",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.6843888,
         "longitude": 139.8644905,
@@ -15744,12 +15777,14 @@
         "name_en": "子供動物園すてっぷ",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 35.7138617,
         "longitude": 139.7715152,
         "website": "https://www.tokyo-zoo.net/zoo/ueno/childrenszoostep/",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q162722"
       }
     },
     {
@@ -15774,30 +15809,6 @@
         "longitude": 139.77187,
         "website": "https://www.uenotoshogu.com/botan/",
         "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7369595,
-          35.6209135
-        ]
-      },
-      "properties": {
-        "name": "Gotenyama Garden",
-        "name_en": "御殿山庭園",
-        "category": "garden",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO",
-          "SOLITARIO"
-        ],
-        "latitude": 35.6209135,
-        "longitude": 139.7369595,
-        "opening_hours": "Mo-Su 07:00-19:00",
         "popularity": 0
       }
     },
@@ -15886,7 +15897,8 @@
         "name_en": "ワーナー ブラザース スタジオツアー東京 - メイキング・オブ・ハリー・ポッター",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.7456338,
         "longitude": 139.6456572,
@@ -15908,13 +15920,15 @@
         "name_en": "恩賜上野動物園（東園）",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 35.7163957,
         "longitude": 139.7714921,
         "opening_hours": "09:30-17:00",
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q162722"
       }
     },
     {
@@ -15931,14 +15945,16 @@
         "name_en": "恩賜上野動物園（西園）",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 35.7139631,
         "longitude": 139.7702341,
         "opening_hours": "Mo-Su 09:30-17:00",
         "phone": "+81 3 38285171",
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q162722"
       }
     },
     {
@@ -15955,7 +15971,8 @@
         "name_en": "吉祥寺プティット村",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.7046577,
         "longitude": 139.5747282,
@@ -16023,12 +16040,14 @@
         "name_en": "スイスファミリー・ツリーハウス",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 35.6332742,
         "longitude": 139.8817526,
         "wikipedia": "ja:スイスファミリー・ツリーハウス",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q843997"
       }
     },
     {
@@ -16044,11 +16063,85 @@
         "name": "水辺のさと",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 35.7816955,
         "longitude": 139.878387,
         "opening_hours": "09:00-16:30; Mo off",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7482757,
+          35.6843476
+        ]
+      },
+      "properties": {
+        "name": "Gosho",
+        "name_en": "御所",
+        "category": "historic_castle",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 35.6843476,
+        "longitude": 139.7482757,
+        "wikipedia": "ja:御所",
+        "popularity": 0,
+        "site": "Q500681"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6875881,
+          35.6509932
+        ]
+      },
+      "properties": {
+        "name": "Meguro Sky Garden",
+        "name_en": "目黒天空庭園",
+        "category": "garden",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO",
+          "SOLITARIO"
+        ],
+        "latitude": 35.6509932,
+        "longitude": 139.6875881,
+        "opening_hours": "07:00-21:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.700387,
+          35.690776
+        ]
+      },
+      "properties": {
+        "name": "RF1/KOBE CROQUET",
+        "name_en": "RF1/神戸コロッケ",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.690776,
+        "longitude": 139.700387,
+        "opening_hours": "08:00-22:00",
+        "phone": "+81-3-6709-8210",
+        "website": "https://www.himitsu.kitchen/",
         "popularity": 0
       }
     },
@@ -16079,34 +16172,6 @@
         "wheelchair": "no",
         "cuisine": "Soba",
         "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7045566,
-          35.6937596
-        ]
-      },
-      "properties": {
-        "name": "RAMEN NAGI",
-        "name_en": "すごい煮干ラーメン凪 新宿ゴールデン街店本館",
-        "category": "restaurant",
-        "profiles": [
-          "LUXO",
-          "SOCIAL"
-        ],
-        "latitude": 35.6937596,
-        "longitude": 139.7045566,
-        "address": "新宿ゴールデン街 G2通り, １丁目１一１０, 新宿区",
-        "opening_hours": "24/7",
-        "phone": "03-3205-1925",
-        "website": "https://n-nagi.com/",
-        "wheelchair": "no",
-        "cuisine": "ramen",
-        "popularity": 0
       }
     },
     {
@@ -16207,7 +16272,7 @@
         ],
         "latitude": 35.7123406,
         "longitude": 139.7066076,
-        "opening_hours": "Mo-Sa 11:30-23:00; Su 17:30-22:00",
+        "opening_hours": "Mo-Sa 11:30-23:00;Su 17:30-22:00",
         "phone": "050-5831-1785",
         "website": "https://www.flattoria.com/",
         "wheelchair": "yes",
@@ -16343,6 +16408,33 @@
         "website": "https://www.devilcraft.jp/kanda",
         "wheelchair": "no",
         "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7276518,
+          35.659624
+        ]
+      },
+      "properties": {
+        "name": "Chugoku Chabo 8",
+        "name_en": "中国茶房8",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.659624,
+        "longitude": 139.7276518,
+        "opening_hours": "24/7",
+        "phone": "+81 3-5414-5708",
+        "website": "http://www.roppongi8.jp",
+        "wheelchair": "no",
+        "cuisine": "Peking_Duck",
         "popularity": 0
       }
     },
@@ -17888,32 +17980,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7986385,
-          35.7126687
-        ]
-      },
-      "properties": {
-        "name": "Injoy 悦納",
-        "category": "restaurant",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 35.7126687,
-        "longitude": 139.7986385,
-        "opening_hours": "Th-Tu 11:00-14:00, 17:00-19:00",
-        "phone": "03-5830-2333",
-        "website": "https://tokyoinjoy.com/",
-        "wikidata": "Q141206064",
-        "cuisine": "asian",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.7631643,
           35.7201178
         ]
@@ -18497,7 +18563,7 @@
         ],
         "latitude": 35.6680623,
         "longitude": 139.7576057,
-        "opening_hours": "Mo-Th,Sa-Su 06:30-24:00; Fr,PH 06:30-28:00",
+        "opening_hours": "Mo-Th,Sa-Su 6:30-24:00; Fr,PH 06:30-4:00",
         "phone": "+81 50-3464-4847",
         "website": "https://ladsdewine-shinbashi.gorp.jp/",
         "wheelchair": "limited",
@@ -19128,8 +19194,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.8327728,
-          35.7049717
+          139.8328052,
+          35.7049752
         ]
       },
       "properties": {
@@ -19140,13 +19206,40 @@
           "MOCHILEIRO",
           "SOCIAL"
         ],
-        "latitude": 35.7049717,
-        "longitude": 139.8327728,
-        "opening_hours": "Th-Tu 17:00-23:30",
+        "latitude": 35.7049752,
+        "longitude": 139.8328052,
+        "opening_hours": "Th-Tu 17:00-23:30 (LO 23:00)",
         "phone": "+81-3-3614-8929",
         "website": "https://www.mrdanger.jp/",
         "wheelchair": "yes",
         "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7621885,
+          35.6717729
+        ]
+      },
+      "properties": {
+        "name": "Kaitenzushi Nemuro Hanamaru Ginza",
+        "name_en": "回転寿司 根室花まる 銀座店",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6717729,
+        "longitude": 139.7621885,
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+81-3-6264-5735",
+        "website": "https://www.sushi-hanamaru.com/store/details/s12.html",
+        "wheelchair": "limited",
+        "cuisine": "sushi",
         "popularity": 0
       }
     },
@@ -19187,7 +19280,7 @@
       },
       "properties": {
         "name": "Tully's Coffee",
-        "name_en": "タリーズコーヒー 早大理工店",
+        "name_en": "タリーズコーヒー",
         "category": "cafe",
         "profiles": [
           "RELAXAMENTO",
@@ -19195,10 +19288,9 @@
         ],
         "latitude": 35.706005,
         "longitude": 139.7086246,
-        "address": "明治通り, ３丁目４一１, 新宿区",
         "opening_hours": "Mo-Fr 08:00-20:00; Sa 09:00-18:00; Su off",
-        "phone": "03-5292-9505",
-        "website": "https://shop.tullys.co.jp/detail/1000534",
+        "phone": "+81 3-5292-9505",
+        "website": "https://www.tullys.co.jp/",
         "wikidata": "Q11316408",
         "wikipedia": "ja:タリーズコーヒージャパン",
         "wheelchair": "no",
@@ -19334,7 +19426,7 @@
         ],
         "latitude": 35.656693,
         "longitude": 139.7542923,
-        "opening_hours": "Mo-Fr 07:00-20:00; Sa,Su,PH 11:00-18:00",
+        "opening_hours": "Mo-Fr 07:00-22:00; Sa 07:00-21:00",
         "phone": "+81 3-5733-0650",
         "website": "https://www.ueshima-coffee-ten.jp/",
         "wheelchair": "yes",
@@ -19361,7 +19453,7 @@
         ],
         "latitude": 35.6592343,
         "longitude": 139.7930314,
-        "opening_hours": "Mo-Fr 07:00-18:00",
+        "opening_hours": "wd 07:00-18:00",
         "phone": "+81-3-3534-9400",
         "website": "http://www.doutor.co.jp/exc/",
         "wheelchair": "yes",
@@ -19806,7 +19898,7 @@
         ],
         "latitude": 35.6915265,
         "longitude": 139.7814298,
-        "opening_hours": "Mo-Su 08:00-18:00",
+        "opening_hours": "08:00-18:00",
         "phone": "+81-3-6661-7559",
         "website": "https://backpackersjapan.co.jp/berthcoffee/berthtokyo",
         "wheelchair": "limited",
@@ -20012,8 +20104,8 @@
         ],
         "latitude": 35.7121467,
         "longitude": 139.7069442,
-        "opening_hours": "Mo-Su,PH 11:30-23:00",
-        "phone": "+81-3-3207-3369",
+        "opening_hours": "11:30-5:00",
+        "phone": "03-3207-3369",
         "website": "https://www.intro.co.jp/cotton/",
         "wheelchair": "no",
         "popularity": 0
@@ -20154,22 +20246,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6924172,
-          35.6668306
+          139.8288675,
+          35.6890949
         ]
       },
       "properties": {
-        "name": "BONDI COFFEE SANDWICHES",
+        "name": "Komeda's Coffee",
+        "name_en": "コメダ珈琲店",
         "category": "cafe",
         "profiles": [
           "RELAXAMENTO",
           "SOCIAL"
         ],
-        "latitude": 35.6668306,
-        "longitude": 139.6924172,
-        "opening_hours": "Mo-Fr 07:00-17:00; Sa-Su 07:00-19:00",
-        "phone": "+81 3-5738-7730",
-        "cuisine": "coffee_shop;sandwich",
+        "latitude": 35.6890949,
+        "longitude": 139.8288675,
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+81-3-58751046",
+        "website": "https://www.komeda.co.jp/",
+        "cuisine": "coffee_shop",
         "popularity": 0
       }
     },
@@ -20229,58 +20323,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7044337,
-          35.694121
-        ]
-      },
-      "properties": {
-        "name": "Bar Carrot",
-        "name_en": "BAR キャロット",
-        "category": "bar",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 35.694121,
-        "longitude": 139.7044337,
-        "address": "まねき通り, １丁目１一６, 新宿区",
-        "opening_hours": "20:00-05:00",
-        "phone": "090-2666-4035",
-        "wheelchair": "no",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7044567,
-          35.69405
-        ]
-      },
-      "properties": {
-        "name": "La Jetee bar",
-        "name_en": "洗濯船",
-        "category": "bar",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 35.69405,
-        "longitude": 139.7044567,
-        "address": "あかるい花園一番街, １丁目１一８, 新宿区",
-        "opening_hours": "Tu-Sa 19:00-00:00",
-        "phone": "03-3208-9716",
-        "wheelchair": "no",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.7975062,
           35.7109207
         ]
@@ -20308,23 +20350,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7047082,
-          35.6939716
+          139.7044337,
+          35.694121
         ]
       },
       "properties": {
-        "name": "Golden Dust",
-        "name_en": "ゴールデンダスト",
+        "name": "Bar Carrot",
+        "name_en": "BAR キャロット",
         "category": "bar",
         "profiles": [
           "MOCHILEIRO",
           "SOCIAL"
         ],
-        "latitude": 35.6939716,
-        "longitude": 139.7047082,
-        "address": "あかるい花園三番街, １丁目１一８, Tóquio",
-        "opening_hours": "24/7",
-        "website": "https://asia-tokyo-world.com/store/goldendust/",
+        "latitude": 35.694121,
+        "longitude": 139.7044337,
+        "opening_hours": "20:00-05:00",
+        "phone": "+81 90-2666-4035",
         "wheelchair": "no",
         "popularity": 0
       }
@@ -20484,25 +20525,535 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7737806,
-          35.7058321
+          139.793918,
+          35.7133088
         ]
       },
       "properties": {
-        "name": "Wald",
-        "category": "pub",
+        "name": "HOGEISEN",
+        "name_en": "捕鯨船",
+        "category": "bar",
         "profiles": [
           "MOCHILEIRO",
           "SOCIAL"
         ],
-        "latitude": 35.7058321,
-        "longitude": 139.7737806,
-        "address": "Ueno, 3-10-7, 台東区",
-        "opening_hours": "Mo-Fr 17:00-23:00; Sa 13:00-23:00; Su 13:00-22:00",
-        "phone": "+81 3-5846-8340",
-        "website": "https://wald.jp.net",
+        "latitude": 35.7133088,
+        "longitude": 139.793918,
+        "opening_hours": "Mo-We, Fr 17:00-22:00; Sa-Su 16:00-22:00",
+        "phone": "+81 3 38449114",
+        "cuisine": "japanese;regional;local",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7050039,
+          35.6940273
+        ]
+      },
+      "properties": {
+        "name": "Skavla",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6940273,
+        "longitude": 139.7050039,
+        "opening_hours": "19:00-04:00",
+        "phone": "+81 3-3204-1522",
         "wheelchair": "no",
-        "cuisine": "german",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7060821,
+          35.661039
+        ]
+      },
+      "properties": {
+        "name": "INC Cocktails",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.661039,
+        "longitude": 139.7060821,
+        "opening_hours": "Mo-Su 18:00-02:00",
+        "phone": "06-6210-2277",
+        "website": "http://www.bar-inc.co.jp",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7025786,
+          35.6563538
+        ]
+      },
+      "properties": {
+        "name": "DAIKON 2nd",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6563538,
+        "longitude": 139.7025786,
+        "opening_hours": "Mo-Sa 11:00-14:00; 19:00-04:00",
+        "phone": "+81364550596",
+        "website": "https://www.shibuya-sakura-stage.com/shop/detail/?cd=000073",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.770054,
+          35.6924705
+        ]
+      },
+      "properties": {
+        "name": "神田 たまには、",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6924705,
+        "longitude": 139.770054,
+        "opening_hours": "Mo-Sa 19:00-00:00",
+        "phone": "+81 3-3518-5733",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7267876,
+          35.6879336
+        ]
+      },
+      "properties": {
+        "name": "Sin Rumbo",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6879336,
+        "longitude": 139.7267876,
+        "opening_hours": "Tu,We,Fr 19:00-23:00; Th 19:30-23:00; Sa 18:00-23:00",
+        "phone": "+81333531756",
+        "website": "http://www.corazon-de-tango.com/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6991363,
+          35.6940563
+        ]
+      },
+      "properties": {
+        "name": "Liquid Ruby",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6940563,
+        "longitude": 139.6991363,
+        "opening_hours": "Mo-Fr 18:00-02:00; Sa 18:00-01:00",
+        "phone": "03-6908-6664",
+        "fee": "no",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7363845,
+          35.6727663
+        ]
+      },
+      "properties": {
+        "name": "b＆r",
+        "name_en": "ビー・アンド・アール",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6727663,
+        "longitude": 139.7363845,
+        "opening_hours": "Mo-Fr 12:00-23:00",
+        "phone": "03-5545-6887",
+        "website": "https://akasaka-br.zetton.co.jp/?utm_source=google&utm_medium=maps",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7113019,
+          35.6645045
+        ]
+      },
+      "properties": {
+        "name": "カフェ・ラ・ボエム",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6645045,
+        "longitude": 139.7113019,
+        "opening_hours": "11:30-02:00",
+        "phone": "+81 3-5766-1666",
+        "website": "http://rp.gnavi.co.jp/5845298/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7044054,
+          35.6939579
+        ]
+      },
+      "properties": {
+        "name": "OIL",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6939579,
+        "longitude": 139.7044054,
+        "opening_hours": "21:00-04:00",
+        "website": "http://www6.ocn.ne.jp/~oil/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.765583,
+          35.664167
+        ]
+      },
+      "properties": {
+        "name": "Fukko Bar",
+        "name_en": "復興バー銀座店",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.664167,
+        "longitude": 139.765583,
+        "opening_hours": "Mo-Sa 18:00-22:00",
+        "phone": "0225-25-4953",
+        "website": "http://ishinomaki2.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.698168,
+          35.6822526
+        ]
+      },
+      "properties": {
+        "name": "Gratialligo",
+        "name_en": "グラーティアリゴ",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6822526,
+        "longitude": 139.698168,
+        "opening_hours": "18:00-24:00",
+        "phone": "+81-3-6276-7668",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7234956,
+          35.6586656
+        ]
+      },
+      "properties": {
+        "name": "Bar Vivian",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6586656,
+        "longitude": 139.7234956,
+        "opening_hours": "21:00-05:00",
+        "phone": "+81-3-6450-5691",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7545793,
+          35.6689879
+        ]
+      },
+      "properties": {
+        "name": "Katete",
+        "name_en": "かてて",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6689879,
+        "longitude": 139.7545793,
+        "opening_hours": "Mo-Sa 11:00-15:00,17:30-23:00",
+        "phone": "+81 3-6457-9439",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7600001,
+          35.6931957
+        ]
+      },
+      "properties": {
+        "name": "Craft Beer Market",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6931957,
+        "longitude": 139.7600001,
+        "opening_hours": "11:30-14:00, 17:00-23:30; Sa 16:00-23:30; Su, PH off",
+        "phone": "+81 3-5244-5288",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6909691,
+          35.6926972
+        ]
+      },
+      "properties": {
+        "name": "ZATTA",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6926972,
+        "longitude": 139.6909691,
+        "opening_hours": "Su-We 11:00-01:00; Th-Sa 11:00-03:00",
+        "phone": "+81-3-5324-8039",
+        "website": "https://www3.hilton.com/en/hotels/japan/hilton-tokyo-TYOHITW/dining/index.html",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.704987,
+          35.6579546
+        ]
+      },
+      "properties": {
+        "name": "Bar Ishinohana",
+        "name_en": "石の華",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6579546,
+        "longitude": 139.704987,
+        "opening_hours": "Mo,Tu,Fr,Sa 17:00-24:00; We off; Th off; Su 04:00-23:00; PH off",
+        "phone": "+81-3-5485-8405",
+        "website": "https://ishinohana.com",
+        "fee": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6965995,
+          35.6894885
+        ]
+      },
+      "properties": {
+        "name": "Bar BenFiddich",
+        "name_en": "ベンフィディック",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6894885,
+        "longitude": 139.6965995,
+        "opening_hours": "Su-Fr 18:00-01:00",
+        "phone": "+81 3-6279-4223",
+        "website": "https://benfiddich.tokyo",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7629368,
+          35.6715955
+        ]
+      },
+      "properties": {
+        "name": "Bar HIGH FIVE",
+        "name_en": "バー ハイ・ファイブ",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6715955,
+        "longitude": 139.7629368,
+        "opening_hours": "Mo-Sa 17:00-23:30; Su,PH off",
+        "phone": "+81-3-3571-5815",
+        "website": "https://barhighfive.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7650025,
+          35.6697755
+        ]
+      },
+      "properties": {
+        "name": "Ginza 300BAR 5-chome",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6697755,
+        "longitude": 139.7650025,
+        "opening_hours": "Mo-Su 12:00-02:00",
+        "phone": "+81 3-3572-6300",
+        "website": "https://www.300bar.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6970184,
+          35.6609521
+        ]
+      },
+      "properties": {
+        "name": "TASUICHI",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6609521,
+        "longitude": 139.6970184,
+        "opening_hours": "Su-Th 17:00-02:00; Fr-Sa 17:00-03:00",
+        "phone": "+81-3-3463-0077",
+        "website": "https://tasuichi.co.jp",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7378918,
+          35.6800096
+        ]
+      },
+      "properties": {
+        "name": "Bar Napoleon",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6800096,
+        "longitude": 139.7378918,
+        "opening_hours": "18:00-24:00",
+        "phone": "+81 3-6261-1153",
         "popularity": 0
       }
     },
@@ -20581,6 +21132,33 @@
         "phone": "+81 3 3834 5123",
         "wheelchair": "no",
         "cuisine": "horse",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7437146,
+          35.6474592
+        ]
+      },
+      "properties": {
+        "name": "Toriichidai",
+        "name_en": "鳥一代",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6474592,
+        "longitude": 139.7437146,
+        "opening_hours": "Mo-Fr 11:30-14:00,17:30-23:00; Sa,Su,PH off",
+        "phone": "+81-3-5439-6242",
+        "website": "https://toriichidai-keiou.owst.jp/",
+        "wheelchair": "yes",
+        "cuisine": "chicken;japanese",
         "popularity": 0
       }
     },
@@ -20983,6 +21561,255 @@
         "opening_hours": "11:00-14:30,17:00-24:00",
         "phone": "+81 3 6803 2880",
         "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7742422,
+          35.7063447
+        ]
+      },
+      "properties": {
+        "name": "Tofuro",
+        "name_en": "土風炉",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7063447,
+        "longitude": 139.7742422,
+        "opening_hours": "Mo-Fr 11:30-14:30,16:30-23:30;Sa,Su,PH 11:30-23:30",
+        "phone": "+81 3 5807 6616",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7605194,
+          35.7054445
+        ]
+      },
+      "properties": {
+        "name": "Torajirou",
+        "name_en": "虎次朗",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7054445,
+        "longitude": 139.7605194,
+        "opening_hours": "11:00-24:00",
+        "phone": "+81 3 5684 7505",
+        "cuisine": "noodle",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7838239,
+          35.6977245
+        ]
+      },
+      "properties": {
+        "name": "ひよっ子",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6977245,
+        "longitude": 139.7838239,
+        "opening_hours": "17:00-23:00",
+        "phone": "+81 3 3861 8993",
+        "cuisine": "chicken",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.760955,
+          35.7064569
+        ]
+      },
+      "properties": {
+        "name": "鶏ジロー",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7064569,
+        "longitude": 139.760955,
+        "opening_hours": "00:00-02:00;17:00-24:00",
+        "phone": "+81 3 5805 9225",
+        "cuisine": "chicken",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7602525,
+          35.7070863
+        ]
+      },
+      "properties": {
+        "name": "Sengyoya",
+        "name_en": "鮮魚家",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7070863,
+        "longitude": 139.7602525,
+        "opening_hours": "Tu-Sa 00:00-02:00,16:30-24:00;Su 00:00-02:00;Mo 16:30-24:00",
+        "phone": "+81 3 3813 9997",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6991493,
+          35.6575571
+        ]
+      },
+      "properties": {
+        "name": "Wailele",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6575571,
+        "longitude": 139.6991493,
+        "opening_hours": "Mo-Su 18:00-00:00",
+        "phone": "+81 70-6987-1981",
+        "website": "https://cervezagym.hatenablog.com/",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7715608,
+          35.6988363
+        ]
+      },
+      "properties": {
+        "name": "Akakara",
+        "name_en": "赤から",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6988363,
+        "longitude": 139.7715608,
+        "opening_hours": "Mo-Fr 16:00-23:30;Sa,Su,PH 15:00-23:30",
+        "phone": "+81 3 5298 5514",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7722596,
+          35.6987758
+        ]
+      },
+      "properties": {
+        "name": "Fukuju",
+        "name_en": "福寿",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.6987758,
+        "longitude": 139.7722596,
+        "opening_hours": "Mo-Fr 11:00-15:00,17:00-23:00;Sa,Su,PH 11:30-23:00",
+        "phone": "+81 3 5297 2910",
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7752425,
+          35.7103974
+        ]
+      },
+      "properties": {
+        "name": "肉の大山",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7103974,
+        "longitude": 139.7752425,
+        "opening_hours": "Mo-Sa 11:00-23:00; Su 11:00-22:00",
+        "website": "https://www.ohyama.com/ueno",
+        "wheelchair": "limited",
+        "cuisine": "japanese;friture;grill",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.705921,
+          35.7213857
+        ]
+      },
+      "properties": {
+        "name": "Sharaku",
+        "name_en": "たべのみや写楽",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.7213857,
+        "longitude": 139.705921,
+        "opening_hours": "17:30-23:30; Su,PH off",
+        "phone": "+81-3-3954-4687",
+        "website": "https://tabenomiyasharaku-mejiro-izakaya.gorp.jp/",
+        "cuisine": "japanese",
         "popularity": 0
       }
     },

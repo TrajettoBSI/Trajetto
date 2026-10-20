@@ -27,6 +27,32 @@ Em qualquer caso, só sorteia pontos dela. O fuso
 da cidade mais próxima é o que o `DirectionsService` usa para saber se é
 madrugada.
 
+## Como o roteiro escolhe os pontos
+
+- **Pontuação.** Cada ponto soma popularidade (0 a 6, pelo número de Wikipédias
+  com artigo sobre ele), um bônus de `PROFILE_BONUS` se combina com o perfil do
+  viajante, um pouco de acaso e uma penalidade pela distância da partida.
+- **Imperdíveis.** Os `MUST_SEE` (5) pontos mais famosos da cidade ganham o
+  mesmo bônus do perfil: o Coliseu entra para o aventureiro também, e o perfil
+  decide o resto. `ProfileItineraryIntegrationTest` mede as duas coisas.
+- **Uma parada por lugar.** Pontos a menos de 100 m, ou a menos de 250 m quando
+  o nome de um contém o do outro ("Statue of Liberty" e "Statue of Liberty
+  Museum"), são a mesma visita: vale o mais famoso, e escolher um bloqueia os
+  outros (`CityCatalog.sameVisit`). Pontos dentro do contorno do mesmo recinto
+  do OSM — sítio arqueológico, castelo, palácio, atração, museu ou zoo com
+  Wikidata — também, a qualquer distância: a Grande Pirâmide, a Esfinge e o
+  "Giza Pyramids" ficam a até 1,3 km um do outro, mas são um ingresso só; o
+  Partenon e o Templo de Atena Nike são a Acrópole. O script grava o código do
+  recinto em `site`. Parque e jardim não contam como recinto, mesmo marcados como atração: a
+  Torre Eiffel fica dentro do Champ de Mars e é outro passeio.
+- **Noite.** Mirantes, praças e fontes para todos; bar e pub só para os perfis
+  Social e Mochileiro, e para eles com prioridade.
+
+Os perfis de cada categoria ficam em `PERFIS`, no script. Cada perfil precisa de
+um conjunto próprio de lugares, senão o roteiro sai igual para todos: Aventureiro
+é ruína, castelo, forte, mirante, pico, cachoeira e caverna; `attraction` é
+Cultural e Social; lugar com entrada gratuita ganha Mochileiro.
+
 ## Adicionando uma cidade
 
 1. Acrescente a cidade em `data/cities.json`. O raio deve cobrir a área que
@@ -48,16 +74,17 @@ madrugada.
 4. Rode os testes: `CityCatalogTest` confere que todo ponto está dentro do
    raio da sua cidade e que o fuso é válido.
 
-Para refazer só a checagem do Wikidata e a popularidade num arquivo já
-revisado à mão (sem baixar do OSM de novo):
-`python scripts/gera_catalogo_cidade.py --revisar <slug>`. Só a popularidade:
-`python scripts/atualiza_popularidade.py [slug]`.
+Sem baixar do OSM de novo:
+`python scripts/gera_catalogo_cidade.py --revisar <slug>` refaz a checagem do
+Wikidata, a popularidade e os perfis; `--perfis <slug>` refaz só os perfis;
+`--recintos <slug>` refaz só os recintos (uma consulta pequena ao Overpass).
+Só a popularidade: `python scripts/atualiza_popularidade.py [slug]`.
 
 ## Cidades atendidas
 
-Roma (curada à mão), Florença, Paris, Londres, Lisboa, Barcelona, Nova York,
-Cidade do México, Buenos Aires, Rio de Janeiro, São Paulo, Curitiba, Tóquio e
-Kyoto. As geradas pelo script ainda pedem a revisão do passo 3 — por exemplo,
+Roma (curada à mão), Florença, Paris, Londres, Lisboa, Barcelona, Atenas,
+Istambul, Nova York, Cidade do México, Buenos Aires, Rio de Janeiro, São Paulo,
+Curitiba, Cairo (com Gizé), Marrakech, Cidade do Cabo, Dubai, Tóquio e Kyoto. As geradas pelo script ainda pedem a revisão do passo 3 — por exemplo,
 "Santos FC Business Center" no topo de São Paulo herda a popularidade do clube.
 
 ## O que ainda é específico de Roma

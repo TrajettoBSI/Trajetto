@@ -15,7 +15,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5193124,
         "longitude": -0.1268767,
@@ -43,8 +44,8 @@
         "name": "Buckingham Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5008342,
         "longitude": -0.1426584,
@@ -54,7 +55,8 @@
         "wikidata": "Q42182",
         "wikipedia": "en:Buckingham Palace",
         "wheelchair": "limited",
-        "popularity": 95
+        "popularity": 95,
+        "site": "Q42182"
       }
     },
     {
@@ -70,8 +72,8 @@
         "name": "Westminster Abbey",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4994013,
         "longitude": -0.1273907,
@@ -97,8 +99,8 @@
         "name": "Elizabeth Tower",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5007011,
         "longitude": -0.1245731,
@@ -120,8 +122,8 @@
         "name": "Tower of London",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5081331,
         "longitude": -0.0762864,
@@ -130,7 +132,8 @@
         "wikidata": "Q62378",
         "wikipedia": "en:Tower of London",
         "wheelchair": "yes",
-        "popularity": 88
+        "popularity": 88,
+        "site": "Q62378"
       }
     },
     {
@@ -146,8 +149,8 @@
         "name": "Tower Bridge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5055166,
         "longitude": -0.0753662,
@@ -171,8 +174,8 @@
         "name": "Palace of Westminster",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4993872,
         "longitude": -0.1245662,
@@ -196,8 +199,8 @@
         "name": "British Library",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5300022,
         "longitude": -0.1277087,
@@ -224,8 +227,8 @@
         "name": "London Eye",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5033416,
         "longitude": -0.1196765,
@@ -251,8 +254,8 @@
         "name": "London Bridge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5080183,
         "longitude": -0.0876824,
@@ -275,8 +278,8 @@
         "name": "Wembley Stadium",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5560663,
         "longitude": -0.2796038,
@@ -299,8 +302,8 @@
         "name": "Bank of England",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5141144,
         "longitude": -0.088557,
@@ -309,7 +312,8 @@
         "website": "https://www.bankofengland.co.uk",
         "wikidata": "Q183231",
         "wikipedia": "en:Bank of England",
-        "popularity": 75
+        "popularity": 75,
+        "site": "Q183231"
       }
     },
     {
@@ -325,8 +329,8 @@
         "name": "St Paul's Cathedral",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5137849,
         "longitude": -0.0984365,
@@ -352,15 +356,16 @@
         "name": "Trafalgar Square",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5081687,
         "longitude": -0.1282727,
         "wikidata": "Q129143",
         "wikipedia": "en:Trafalgar Square",
         "wheelchair": "yes",
-        "popularity": 73
+        "popularity": 73,
+        "site": "Q129143"
       }
     },
     {
@@ -377,7 +382,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5088888,
         "longitude": -0.1287522,
@@ -430,8 +436,8 @@
         "name": "10 Downing Street",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5034994,
         "longitude": -0.1275539,
@@ -455,8 +461,8 @@
         "name": "Hyde Park",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5074147,
         "longitude": -0.1630518,
@@ -479,15 +485,16 @@
         "name": "Greenwich Meridian",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4779428,
         "longitude": -0.0014747,
         "website": "https://www.rmg.co.uk/explore/astronomy-and-time/astronomy-facts/history/the-prime-meridian-at-greenwich",
         "wikidata": "Q131108",
         "wheelchair": "yes",
-        "popularity": 62
+        "popularity": 62,
+        "site": "Q192988"
       }
     },
     {
@@ -504,7 +511,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5074292,
         "longitude": -0.0993862,
@@ -544,7 +552,8 @@
         "wikidata": "Q192988",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 61
+        "popularity": 61,
+        "site": "Q192988"
       }
     },
     {
@@ -561,7 +570,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4969111,
         "longitude": -0.1721152,
@@ -589,8 +599,8 @@
         "name": "The Shard",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5043718,
         "longitude": -0.0864754,
@@ -615,8 +625,8 @@
         "name": "Royal Opera House",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5128834,
         "longitude": -0.1224974,
@@ -642,7 +652,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4964552,
         "longitude": -0.1760222,
@@ -669,8 +680,8 @@
         "name": "Kensington Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5050885,
         "longitude": -0.1880544,
@@ -696,8 +707,8 @@
         "name": "Piccadilly Circus",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5098981,
         "longitude": -0.1343822,
@@ -718,8 +729,8 @@
         "name": "Royal Albert Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5010147,
         "longitude": -0.17741,
@@ -770,8 +781,8 @@
         "name": "Saint James's Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5045485,
         "longitude": -0.137973,
@@ -794,8 +805,8 @@
         "name": "Westminster Bridge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5008256,
         "longitude": -0.1209896,
@@ -843,8 +854,8 @@
         "name": "Harrods",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4992448,
         "longitude": -0.1630069,
@@ -872,7 +883,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4973971,
         "longitude": -0.1762307,
@@ -898,8 +910,8 @@
         "name": "Site of the original Globe Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5068375,
         "longitude": -0.0947424,
@@ -921,8 +933,8 @@
         "name": "Westminster Cathedral",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4958198,
         "longitude": -0.1395187,
@@ -996,7 +1008,8 @@
         "name": "London Zoo",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 51.5353021,
         "longitude": -0.1552372,
@@ -1074,8 +1087,8 @@
         "name": "Leicester Square",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5104369,
         "longitude": -0.1301305,
@@ -1110,7 +1123,8 @@
         "wikidata": "Q270920",
         "wikipedia": "en:Royal Academy of Arts",
         "wheelchair": "yes",
-        "popularity": 41
+        "popularity": 41,
+        "site": "Q225471"
       }
     },
     {
@@ -1181,7 +1195,8 @@
         "longitude": -0.12793,
         "wikidata": "Q842089",
         "wikipedia": "en:Nelson's Column",
-        "popularity": 39
+        "popularity": 39,
+        "site": "Q129143"
       }
     },
     {
@@ -1197,8 +1212,8 @@
         "name": "The O2 Arena",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5029315,
         "longitude": 0.003184,
@@ -1219,8 +1234,8 @@
         "name": "Abbey Road Studios",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5319966,
         "longitude": -0.1782181,
@@ -1246,7 +1261,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4958006,
         "longitude": -0.1085907,
@@ -1274,8 +1290,8 @@
         "name": "St Martin-in-the-Fields",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5088308,
         "longitude": -0.1266767,
@@ -1300,8 +1316,8 @@
         "name": "The Mall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5042691,
         "longitude": -0.1347305,
@@ -1402,8 +1418,8 @@
         "name": "Marble Arch",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5131844,
         "longitude": -0.1589052,
@@ -1454,7 +1470,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4807826,
         "longitude": -0.0054049,
@@ -1504,8 +1521,8 @@
         "name": "Highgate Cemetery",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5663343,
         "longitude": -0.1465865,
@@ -1557,8 +1574,8 @@
         "name": "HMS Belfast",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5065631,
         "longitude": -0.0813114,
@@ -1608,8 +1625,8 @@
         "name": "National Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5070283,
         "longitude": -0.1140048,
@@ -1634,7 +1651,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4811879,
         "longitude": -0.0037479,
@@ -1687,15 +1705,16 @@
         "name": "The Albert Memorial",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5023845,
         "longitude": -0.1776744,
         "wikidata": "Q281465",
         "wikipedia": "en:Albert Memorial",
         "wheelchair": "yes",
-        "popularity": 32
+        "popularity": 32,
+        "site": "Q281465"
       }
     },
     {
@@ -1711,8 +1730,8 @@
         "name": "Crown Jewels",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5085864,
         "longitude": -0.0758418,
@@ -1720,7 +1739,8 @@
         "wikidata": "Q918264",
         "wikipedia": "en:Crown Jewels of the United Kingdom",
         "wheelchair": "yes",
-        "popularity": 31
+        "popularity": 31,
+        "site": "Q62378"
       }
     },
     {
@@ -1736,8 +1756,8 @@
         "name": "City Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5048047,
         "longitude": -0.0786534,
@@ -1761,8 +1781,8 @@
         "name": "The Old Vic",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5020083,
         "longitude": -0.1092836,
@@ -1839,8 +1859,8 @@
         "name": "Alexandra Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5942633,
         "longitude": -0.1308694,
@@ -1865,8 +1885,8 @@
         "name": "Banqueting House",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5045773,
         "longitude": -0.1259162,
@@ -1943,8 +1963,8 @@
         "name": "Parliament Square",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5006259,
         "longitude": -0.126826,
@@ -1967,8 +1987,8 @@
         "name": "221B Baker Street",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5233879,
         "longitude": -0.1582367,
@@ -1991,8 +2011,8 @@
         "name": "Theatre Royal, Drury Lane",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5129948,
         "longitude": -0.1202039,
@@ -2018,7 +2038,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5212707,
         "longitude": -0.1448646,
@@ -2045,8 +2066,8 @@
         "name": "His Majesty's Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5081378,
         "longitude": -0.1319965,
@@ -2096,8 +2117,8 @@
         "name": "Victoria Memorial",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5018399,
         "longitude": -0.1405865,
@@ -2120,8 +2141,8 @@
         "name": "The Monument to the Great Fire of London",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5101415,
         "longitude": -0.0859491,
@@ -2193,15 +2214,16 @@
         "name": "Horse Guards Parade",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5046612,
         "longitude": -0.1282961,
         "wikidata": "Q1254964",
         "wikipedia": "en:Horse Guards Parade",
         "wheelchair": "yes",
-        "popularity": 25
+        "popularity": 25,
+        "site": "Q1254964"
       }
     },
     {
@@ -2217,8 +2239,8 @@
         "name": "BT Tower",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5214424,
         "longitude": -0.1388044,
@@ -2241,8 +2263,8 @@
         "name": "Wellington Arch",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5025358,
         "longitude": -0.1508184,
@@ -2319,8 +2341,8 @@
         "name": "Carnaby Street",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.513122,
         "longitude": -0.1387655,
@@ -2366,8 +2388,8 @@
         "name": "Royal Festival Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5058217,
         "longitude": -0.1167845,
@@ -2392,8 +2414,8 @@
         "name": "Kenwood House",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.571545,
         "longitude": -0.1673598,
@@ -2418,7 +2440,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5235782,
         "longitude": -0.1329843,
@@ -2445,8 +2468,8 @@
         "name": "London Palladium",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5145338,
         "longitude": -0.1401738,
@@ -2526,7 +2549,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4906527,
         "longitude": -0.1587634,
@@ -2580,7 +2604,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5170751,
         "longitude": -0.117469,
@@ -2653,8 +2678,8 @@
         "name": "Chelsea Physic Garden",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4846484,
         "longitude": -0.1621613,
@@ -2679,8 +2704,8 @@
         "name": "Kew Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4838317,
         "longitude": -0.2950549,
@@ -2706,8 +2731,8 @@
         "name": "Eventim Apollo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4907086,
         "longitude": -0.2244626,
@@ -2739,10 +2764,11 @@
         "longitude": -0.2813747,
         "opening_hours": "\"special events\"",
         "website": "https://www.ltmuseum.co.uk/visit/museum-depot",
+        "wikidata": "Q1541098",
         "wikipedia": "en:London Transport Museum",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 0
+        "popularity": 22
       }
     },
     {
@@ -2758,8 +2784,8 @@
         "name": "London Coliseum",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5100068,
         "longitude": -0.1262395,
@@ -2785,8 +2811,8 @@
         "name": "Guildhall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5158565,
         "longitude": -0.0919303,
@@ -2794,7 +2820,8 @@
         "website": "https://www.guildhall.cityoflondon.gov.uk/",
         "wikidata": "Q81279",
         "wikipedia": "en:Guildhall, London",
-        "popularity": 22
+        "popularity": 22,
+        "site": "Q81279"
       }
     },
     {
@@ -2810,8 +2837,8 @@
         "name": "Brick Lane",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5174584,
         "longitude": -0.0706571,
@@ -2885,8 +2912,8 @@
         "name": "O2 Academy Brixton",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4655423,
         "longitude": -0.1148654,
@@ -2937,8 +2964,8 @@
         "name": "The Royal Central School of Speech and Drama",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5443049,
         "longitude": -0.1740702,
@@ -2987,8 +3014,8 @@
         "name": "ArcelorMittal Orbit",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5382851,
         "longitude": -0.0130051,
@@ -3014,7 +3041,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4998875,
         "longitude": -0.2001738,
@@ -3042,8 +3070,8 @@
         "name": "St. Mary-Le-Bow",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5137475,
         "longitude": -0.093546,
@@ -3070,8 +3098,8 @@
         "name": "Royal Court Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4925742,
         "longitude": -0.1563496,
@@ -3131,7 +3159,8 @@
         "wikidata": "Q1528473",
         "wikipedia": "en:White Tower (Tower of London)",
         "wheelchair": "limited",
-        "popularity": 19
+        "popularity": 19,
+        "site": "Q62378"
       }
     },
     {
@@ -3155,7 +3184,8 @@
         "address": "Tower Hill, London",
         "wikidata": "Q1938714",
         "wikipedia": "en:Church of St Peter ad Vincula",
-        "popularity": 19
+        "popularity": 19,
+        "site": "Q62378"
       }
     },
     {
@@ -3171,8 +3201,8 @@
         "name": "Burlington Arcade",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5090053,
         "longitude": -0.1402002,
@@ -3219,8 +3249,8 @@
         "name": "Royal Courts of Justice",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5142221,
         "longitude": -0.1130412,
@@ -3272,8 +3302,8 @@
         "name": "The London Dungeon",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5026002,
         "longitude": -0.1192189,
@@ -3322,8 +3352,8 @@
         "name": "Eltham Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4470858,
         "longitude": 0.0481774,
@@ -3350,8 +3380,8 @@
         "name": "Old Royal Naval College",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4829509,
         "longitude": -0.0063427,
@@ -3399,8 +3429,8 @@
         "name": "Sadler's Wells",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5294846,
         "longitude": -0.1061834,
@@ -3424,8 +3454,8 @@
         "name": "Apollo Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5115661,
         "longitude": -0.1334413,
@@ -3450,8 +3480,8 @@
         "name": "The Rolling Bridge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5183946,
         "longitude": -0.174722,
@@ -3476,7 +3506,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4410289,
         "longitude": -0.0609895,
@@ -3504,8 +3535,8 @@
         "name": "Savoy Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5101413,
         "longitude": -0.1208814,
@@ -3528,14 +3559,15 @@
         "name": "Burlington House",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5090014,
         "longitude": -0.1394091,
         "wikidata": "Q225471",
         "wikipedia": "en:Burlington House",
-        "popularity": 18
+        "popularity": 18,
+        "site": "Q225471"
       }
     },
     {
@@ -3551,8 +3583,8 @@
         "name": "Camden Market",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5423781,
         "longitude": -0.1471949,
@@ -3604,8 +3636,8 @@
         "name": "Theatre Royal Haymarket",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5086331,
         "longitude": -0.1312776,
@@ -3711,8 +3743,8 @@
         "name": "Wigmore Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5168338,
         "longitude": -0.148307,
@@ -3737,8 +3769,8 @@
         "name": "Dominion Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5169214,
         "longitude": -0.1297404,
@@ -3867,8 +3899,8 @@
         "name": "Lyceum Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5114805,
         "longitude": -0.1200573,
@@ -3894,7 +3926,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5979808,
         "longitude": -0.2391016,
@@ -3920,8 +3953,8 @@
         "name": "Horse Guards",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5047795,
         "longitude": -0.127044,
@@ -3945,8 +3978,8 @@
         "name": "Aldwych Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5130714,
         "longitude": -0.118817,
@@ -3971,8 +4004,8 @@
         "name": "RHS Chelsea Flower Show Pavilion",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4858379,
         "longitude": -0.1554554,
@@ -3995,8 +4028,8 @@
         "name": "Adelphi Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5102387,
         "longitude": -0.123192,
@@ -4019,8 +4052,8 @@
         "name": "The Royal Hospital Chelsea",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4874288,
         "longitude": -0.1571102,
@@ -4044,8 +4077,8 @@
         "name": "Shakespeare's Globe",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5081231,
         "longitude": -0.0970886,
@@ -4087,22 +4120,21 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.1597717,
-          51.5596203
+          -0.1597557,
+          51.5596469
         ]
       },
       "properties": {
         "name": "Parliament Hill",
-        "category": "viewpoint",
+        "category": "peak",
         "profiles": [
-          "RELAXAMENTO",
-          "SOLITARIO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
-        "latitude": 51.5596203,
-        "longitude": -0.1597717,
+        "latitude": 51.5596469,
+        "longitude": -0.1597557,
         "wikidata": "Q2036052",
         "wikipedia": "en:Parliament Hill, London",
-        "wheelchair": "yes",
         "popularity": 14
       }
     },
@@ -4155,7 +4187,8 @@
         "wikidata": "Q779736",
         "wikipedia": "en:Hayward Gallery",
         "fee": "yes",
-        "popularity": 14
+        "popularity": 14,
+        "site": "Q2339207"
       }
     },
     {
@@ -4194,8 +4227,8 @@
         "name": "The Young Vic",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5032796,
         "longitude": -0.1073173,
@@ -4244,8 +4277,8 @@
         "name": "Southbank Centre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5056301,
         "longitude": -0.116478,
@@ -4254,7 +4287,8 @@
         "website": "https://www.southbankcentre.co.uk",
         "wikidata": "Q2339207",
         "wikipedia": "en:Southbank Centre",
-        "popularity": 14
+        "popularity": 14,
+        "site": "Q2339207"
       }
     },
     {
@@ -4318,8 +4352,8 @@
         "name": "St Bartholomew-The Great",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5188923,
         "longitude": -0.0994083,
@@ -4398,8 +4432,8 @@
         "name": "Sondheim Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5120289,
         "longitude": -0.1328283,
@@ -4452,8 +4486,8 @@
         "name": "Cleopatra's Needle",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5085151,
         "longitude": -0.120316,
@@ -4570,7 +4604,8 @@
         "name": "The London Wetland Centre",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 51.4788325,
         "longitude": -0.232271,
@@ -4594,8 +4629,8 @@
         "name": "Almeida Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5394403,
         "longitude": -0.1030764,
@@ -4627,7 +4662,8 @@
         "wikipedia": "en:King's Gallery",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 12
+        "popularity": 12,
+        "site": "Q42182"
       }
     },
     {
@@ -4669,15 +4705,16 @@
         "name": "Queen Elizabeth Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5066326,
         "longitude": -0.1163834,
         "wikidata": "Q1622428",
         "wikipedia": "en:Queen Elizabeth Hall",
         "wheelchair": "yes",
-        "popularity": 12
+        "popularity": 12,
+        "site": "Q2339207"
       }
     },
     {
@@ -4764,8 +4801,8 @@
         "name": "O2 Empire",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5034475,
         "longitude": -0.2244676,
@@ -4836,8 +4873,8 @@
         "name": "Ham House",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4442287,
         "longitude": -0.3140515,
@@ -4863,8 +4900,8 @@
         "name": "Fortune Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5133165,
         "longitude": -0.1208862,
@@ -4912,8 +4949,8 @@
         "name": "Palace Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5131001,
         "longitude": -0.1297877,
@@ -4938,8 +4975,8 @@
         "name": "Piccadilly Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5109643,
         "longitude": -0.1354348,
@@ -5010,7 +5047,8 @@
         "category": "historic_ruins",
         "profiles": [
           "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5123789,
         "longitude": -0.0906755,
@@ -5037,8 +5075,8 @@
         "name": "The Royal Mews",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4989189,
         "longitude": -0.1442496,
@@ -5112,8 +5150,8 @@
         "name": "Sarm West Studios",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5177203,
         "longitude": -0.2050078,
@@ -5160,7 +5198,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5290596,
         "longitude": -0.0548708,
@@ -5284,8 +5323,8 @@
         "name": "Prince Edward Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5136428,
         "longitude": -0.1309923,
@@ -5310,8 +5349,8 @@
         "name": "Baden-Powell House",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4955099,
         "longitude": -0.1796687,
@@ -5406,8 +5445,8 @@
         "name": "Donmar Warehouse",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5139417,
         "longitude": -0.1257733,
@@ -5431,8 +5470,8 @@
         "name": "St. Katharine Docks",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5065406,
         "longitude": -0.0716502,
@@ -5528,8 +5567,8 @@
         "name": "Noël Coward Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5111149,
         "longitude": -0.1274534,
@@ -5555,8 +5594,8 @@
         "name": "Ambassadors",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.513041,
         "longitude": -0.1278389,
@@ -5581,8 +5620,8 @@
         "name": "Cambridge Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.513631,
         "longitude": -0.1265435,
@@ -5607,8 +5646,8 @@
         "name": "Tom Stoppard Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5102014,
         "longitude": -0.1273587,
@@ -5633,8 +5672,8 @@
         "name": "Garrick",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5099986,
         "longitude": -0.1278692,
@@ -5682,8 +5721,8 @@
         "name": "Duchess Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5121364,
         "longitude": -0.1197353,
@@ -5708,8 +5747,8 @@
         "name_en": "Novello Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5124297,
         "longitude": -0.119382,
@@ -5733,8 +5772,8 @@
         "name": "Westminster Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.499892,
         "longitude": -0.1253567,
@@ -5782,7 +5821,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5315077,
         "longitude": -0.0764441,
@@ -5909,7 +5949,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5259739,
         "longitude": -0.1340195,
@@ -5961,7 +6002,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5141974,
         "longitude": -0.0876796,
@@ -5969,7 +6011,8 @@
         "website": "https://www.bankofengland.co.uk/museum",
         "wikidata": "Q1893754",
         "fee": "no",
-        "popularity": 9
+        "popularity": 9,
+        "site": "Q183231"
       }
     },
     {
@@ -6009,7 +6052,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5214637,
         "longitude": -0.0997845,
@@ -6134,8 +6178,8 @@
         "name": "All Souls Church",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.518153,
         "longitude": -0.1430256,
@@ -6308,8 +6352,8 @@
         "name": "Victoria Palace Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4968783,
         "longitude": -0.1424492,
@@ -6334,8 +6378,8 @@
         "name": "Smith Square Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.495976,
         "longitude": -0.1270485,
@@ -6385,8 +6429,8 @@
         "name": "Criterion",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5096166,
         "longitude": -0.1339883,
@@ -6409,8 +6453,8 @@
         "name": "Gielgud Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5118894,
         "longitude": -0.1331069,
@@ -6531,8 +6575,8 @@
         "name": "Arts Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5120985,
         "longitude": -0.1275502,
@@ -6582,8 +6626,8 @@
         "name": "Gillian Lynne Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5154151,
         "longitude": -0.1226885,
@@ -6797,8 +6841,8 @@
         "name": "Regent's Park Open Air Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5284696,
         "longitude": -0.1548946,
@@ -6917,8 +6961,8 @@
         "name": "Shaftesbury Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5161284,
         "longitude": -0.1258597,
@@ -6968,8 +7012,8 @@
         "name": "Cadogan Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4937972,
         "longitude": -0.1572408,
@@ -6994,8 +7038,8 @@
         "name": "Playhouse Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5069993,
         "longitude": -0.1236127,
@@ -7020,8 +7064,8 @@
         "name": "Wyndham's",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5111107,
         "longitude": -0.1280545,
@@ -7046,7 +7090,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5075942,
         "longitude": -0.0238722,
@@ -7074,8 +7119,8 @@
         "name": "Lyric Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5113432,
         "longitude": -0.133751,
@@ -7100,8 +7145,8 @@
         "name": "London Hippodrome",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5114674,
         "longitude": -0.1289434,
@@ -7124,8 +7169,8 @@
         "name": "Apollo Victoria Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4955828,
         "longitude": -0.1425625,
@@ -7150,8 +7195,8 @@
         "name": "Harold Pinter Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.509333,
         "longitude": -0.1316345,
@@ -7248,8 +7293,8 @@
         "name": "Carlton House Terrace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5064024,
         "longitude": -0.1318286,
@@ -7433,7 +7478,8 @@
         "name": "Abney Park",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 51.5643588,
         "longitude": -0.076837,
@@ -7455,8 +7501,8 @@
         "name": "Pagoda",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4712691,
         "longitude": -0.295712,
@@ -7525,7 +7571,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.449477,
         "longitude": -0.3133176,
@@ -7599,8 +7646,8 @@
         "name": "St. Marylebone Parish Church",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5226514,
         "longitude": -0.1523265,
@@ -7624,8 +7671,8 @@
         "name": "The Vaudeville Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5105006,
         "longitude": -0.1225767,
@@ -7732,8 +7779,8 @@
         "name": "Trafalgar Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5065794,
         "longitude": -0.1276306,
@@ -7780,8 +7827,8 @@
         "name": "Prince of Wales Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5100633,
         "longitude": -0.1317615,
@@ -7829,7 +7876,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5155578,
         "longitude": -0.0914038,
@@ -7857,7 +7905,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5912964,
         "longitude": -0.0202942,
@@ -7952,8 +8001,8 @@
         "name": "BedZED",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.3823263,
         "longitude": -0.1560409,
@@ -8140,8 +8189,8 @@
         "name": "Riverside Studios",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.488785,
         "longitude": -0.2283572,
@@ -8186,7 +8235,8 @@
         "name": "Isleworth Ait",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 51.4683143,
         "longitude": -0.3204454,
@@ -8443,8 +8493,8 @@
         "name": "St Martin's",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5128896,
         "longitude": -0.1275921,
@@ -8469,8 +8519,8 @@
         "name": "St George's Bloomsbury",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5177097,
         "longitude": -0.1247267,
@@ -8493,8 +8543,8 @@
         "name": "Kiln Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.543133,
         "longitude": -0.2002986,
@@ -8518,8 +8568,8 @@
         "name": "Phoenix Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5145094,
         "longitude": -0.1293569,
@@ -8543,8 +8593,8 @@
         "name": "Bush Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5051178,
         "longitude": -0.2260037,
@@ -8718,8 +8768,8 @@
         "name": "New Wimbledon Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4192096,
         "longitude": -0.201434,
@@ -8769,8 +8819,8 @@
         "name": "The Cockpit Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.524448,
         "longitude": -0.1696162,
@@ -8884,8 +8934,8 @@
         "name": "Cyberdog",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5422203,
         "longitude": -0.1474331,
@@ -9011,7 +9061,8 @@
         "longitude": -0.000651,
         "wikidata": "Q8061501",
         "wikipedia": "en:Statue of Yuri Gagarin, Greenwich",
-        "popularity": 5
+        "popularity": 5,
+        "site": "Q192988"
       }
     },
     {
@@ -9168,7 +9219,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5356967,
         "longitude": -0.1239054,
@@ -9195,13 +9247,14 @@
         "name": "Purcell Room",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5065492,
         "longitude": -0.1158933,
         "wikidata": "Q3925902",
-        "popularity": 5
+        "popularity": 5,
+        "site": "Q2339207"
       }
     },
     {
@@ -9453,8 +9506,8 @@
         "name": "Severndroog Castle",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.4666244,
         "longitude": 0.0600544,
@@ -9573,8 +9626,8 @@
         "name": "Hackney Empire",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5456305,
         "longitude": -0.0557173,
@@ -9648,8 +9701,8 @@
         "name": "Bankside Gallery",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5081907,
         "longitude": -0.1011433,
@@ -9675,8 +9728,8 @@
         "name": "BFI IMAX",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.504821,
         "longitude": -0.1136286,
@@ -9723,8 +9776,8 @@
         "name": "Soho Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 51.5144121,
         "longitude": -0.132793,
@@ -9825,7 +9878,8 @@
         "name": "Tower Hamlets Cemetery Park",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 51.5229533,
         "longitude": -0.0273442,
@@ -10156,7 +10210,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.523732,
         "longitude": -0.1342662,
@@ -10323,7 +10378,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5152831,
         "longitude": -0.1158701,
@@ -10446,7 +10502,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4588993,
         "longitude": -0.3064806,
@@ -10852,7 +10909,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4869114,
         "longitude": -0.2552378,
@@ -10926,8 +10984,10 @@
         "name": "Tower of Church of St Augustine",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5478194,
         "longitude": -0.0545078,
@@ -11204,7 +11264,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4376564,
         "longitude": -0.2316167,
@@ -11252,7 +11313,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.4472676,
         "longitude": -0.3192584,
@@ -11403,7 +11465,8 @@
         "name": "Walthamstow Marshes",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 51.5703642,
         "longitude": -0.0503283,
@@ -13149,7 +13212,8 @@
         "name": "Sydenham Hill Wood",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 51.4383986,
         "longitude": -0.0670766,
@@ -14144,7 +14208,8 @@
         "longitude": -0.1776897,
         "wikidata": "Q5504472",
         "wikipedia": "en:Frieze of Parnassus",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q281465"
       }
     },
     {
@@ -14367,7 +14432,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5005011,
         "longitude": -0.1357744,
@@ -14420,7 +14486,8 @@
         "longitude": -0.127496,
         "wikidata": "Q18159880",
         "wikipedia": "en:Equestrian statue of Viscount Wolseley",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q1254964"
       }
     },
     {
@@ -14619,7 +14686,8 @@
         "name": "Parkland Walk Local Nature Reserve",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 51.5732519,
         "longitude": -0.124705,
@@ -14641,7 +14709,8 @@
         "name": "Walthamstow Wetlands",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 51.5866208,
         "longitude": -0.0519218,
@@ -14735,6 +14804,7 @@
         "name": "Stave Hill",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -14781,6 +14851,7 @@
         "name": "King Henry VIII's Mound",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -14980,7 +15051,8 @@
         "name": "Westbere Copse",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 51.5530546,
         "longitude": -0.2065931,
@@ -15116,7 +15188,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.544491,
         "longitude": -0.0559105,
@@ -15142,7 +15215,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5264897,
         "longitude": -0.1045003,
@@ -15476,7 +15550,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5160542,
         "longitude": -0.092855,
@@ -15485,7 +15560,8 @@
         "website": "https://www.newlondonarchitecture.org/",
         "wikidata": "Q21716357",
         "fee": "no",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q81279"
       }
     },
     {
@@ -15567,7 +15643,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 51.5304173,
         "longitude": -0.095107,
@@ -20424,6 +20501,525 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -0.1466139,
+          51.5410872
+        ]
+      },
+      "properties": {
+        "name": "Lockside Lounge",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5410872,
+        "longitude": -0.1466139,
+        "address": "Camden Lock Place, 78–89, London",
+        "opening_hours": "Su-We 12:00-22:00; Th-Fr 12:00-23:00; Sa 11:00-00:00",
+        "phone": "+44 20 7284 0007",
+        "website": "https://www.camdenlockside.co.uk/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0860166,
+          51.5107157
+        ]
+      },
+      "properties": {
+        "name": "London Cocktail Club",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5107157,
+        "longitude": -0.0860166,
+        "address": "Eastcheap, 2B, London",
+        "opening_hours": "Mo-We 16:00-00:00; Th 16:00-01:00; Fr-Sa 16:00-02:00",
+        "phone": "+44 20 7580 1969",
+        "website": "https://www.londoncocktailclub.co.uk/monument/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0918016,
+          51.5028201
+        ]
+      },
+      "properties": {
+        "name": "Belushi's London Bridge",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5028201,
+        "longitude": -0.0918016,
+        "address": "Borough High Street, 161-165, London",
+        "opening_hours": "Mo-Th 08:00-02:00; Fr-Su 08:00-03:00",
+        "phone": "+44 20 7939 9700",
+        "website": "https://belushis.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.13455,
+          51.5154814
+        ]
+      },
+      "properties": {
+        "name": "Mr Fogg's Gin Club",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5154814,
+        "longitude": -0.13455,
+        "address": "Great Chapel Street, 22, London",
+        "opening_hours": "Mo off; Tu 18:01-23:01; We-Sa 18:01-00:01; Su off",
+        "phone": "+44 20 7223 5200",
+        "website": "https://www.mr-foggs.com/gin-club/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1168689,
+          51.5026134
+        ]
+      },
+      "properties": {
+        "name": "Slug and Lettuce",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5026134,
+        "longitude": -0.1168689,
+        "address": "Chicheley Street, 5, London",
+        "opening_hours": "Mo-Th 09:00-23:00; Fr 09:00-00:00; Sa 10:00-00:00; Su 10:00-22:30",
+        "phone": "+44 20 3375 6334",
+        "website": "https://www.slugandlettuce.co.uk/county-hall",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0868419,
+          51.5222905
+        ]
+      },
+      "properties": {
+        "name": "Singer Tavern",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5222905,
+        "longitude": -0.0868419,
+        "address": "City Road, 1, London",
+        "opening_hours": "Mo-We 11:00-24:00; Th-Sa 11:00-02:00; Su off",
+        "phone": "+44 20 3752 2680",
+        "website": "https://www.singertavern.com/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1032036,
+          51.5042272
+        ]
+      },
+      "properties": {
+        "name": "Southwark Tap & Wine Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5042272,
+        "longitude": -0.1032036,
+        "address": "Scoresby Street, 80, London",
+        "opening_hours": "Mo-Fr 11:30-23:00",
+        "phone": "+44 20 7928 0905",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0995696,
+          51.5060174
+        ]
+      },
+      "properties": {
+        "name": "The Refinery",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5060174,
+        "longitude": -0.0995696,
+        "address": "Southwark Street, 110, London",
+        "opening_hours": "Mo-We 08:00-23:00; Th-Fr 08:00-00:00; Sa 10:00-00:00; Su 10:00-18:00",
+        "phone": "+44 845 468 0186",
+        "website": "https://drakeandmorgan.co.uk/the-refinery-bankside",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1365302,
+          51.5189497
+        ]
+      },
+      "properties": {
+        "name": "The London Cocktail Club",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5189497,
+        "longitude": -0.1365302,
+        "address": "Goodge Street, 61, London",
+        "opening_hours": "Mo-Th 16:30-23:30; Fr-Sa 16:30-00:00",
+        "phone": "+44 20 7580 1960",
+        "website": "https://londoncocktailclub.co.uk/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1408183,
+          51.5173191
+        ]
+      },
+      "properties": {
+        "name": "The Social",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5173191,
+        "longitude": -0.1408183,
+        "address": "Little Portland Street, 5, London",
+        "opening_hours": "Mo-We 11:30-00:00; Th-Fr 11:30-01:00; Sa 18:00-01:00; Su off",
+        "phone": "+44 20 7636 4992",
+        "website": "https://www.thesocial.com/",
+        "cuisine": "hot_dog",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0780296,
+          51.5259174
+        ]
+      },
+      "properties": {
+        "name": "Aurax",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5259174,
+        "longitude": -0.0780296,
+        "address": "Shoreditch High Street, 145, London",
+        "opening_hours": "Mo-Sa 12:00-02:00, Su 12:00-00:00",
+        "phone": "+44 20 7739 3440",
+        "website": "http://theshoreditch-london.com",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1784009,
+          51.5253442
+        ]
+      },
+      "properties": {
+        "name": "LV lounge",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5253442,
+        "longitude": -0.1784009,
+        "address": "Clarendon Terrace, 4, London",
+        "opening_hours": "Mo-Sa 17:00-23:00",
+        "phone": "+44 20 7286 4838",
+        "website": "https://lvlounge.co.uk/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1225789,
+          51.5358883
+        ]
+      },
+      "properties": {
+        "name": "Beer + Burger",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5358883,
+        "longitude": -0.1225789,
+        "address": "York Way, 1, London",
+        "opening_hours": "Mo-Th 12:00-23:00; Fr-Sa 12:00-23:30; Su 12:00-22:30",
+        "phone": "+44 20 3963 5795",
+        "website": "https://beerandburgerstore.com/",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.100133,
+          51.5069953
+        ]
+      },
+      "properties": {
+        "name": "Level 1 Members Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5069953,
+        "longitude": -0.100133,
+        "address": "Bankside, Londres",
+        "opening_hours": "Mo-Su 10:00-18:00",
+        "website": "https://www.tate.org.uk/visit/tate-modern/level-1-members-bar",
+        "wheelchair": "yes",
+        "cuisine": "cake;coffee_shop;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0761775,
+          51.5043533
+        ]
+      },
+      "properties": {
+        "name": "The Vault",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5043533,
+        "longitude": -0.0761775,
+        "address": "Tower Bridge, London",
+        "opening_hours": "Mo-Su 11:00-23:30",
+        "phone": "+44 20 7407 8782",
+        "website": "https://towerbridgevault.com/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1037409,
+          51.506658
+        ]
+      },
+      "properties": {
+        "name": "Sama",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.506658,
+        "longitude": -0.1037409,
+        "address": "Robinson Road, 3, London",
+        "opening_hours": "Mo, Tu 10:00-11:00; We, Th 10:00-00:00; Fr 10:00-01:30; Sa 16:00-01:30",
+        "phone": "+44 20 3904 6760;+44 7968 828 504",
+        "website": "https://www.samabankside.co.uk/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0712432,
+          51.5071934
+        ]
+      },
+      "properties": {
+        "name": "Traders",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5071934,
+        "longitude": -0.0712432,
+        "address": "East Smithfield, London",
+        "opening_hours": "Mo-We 16:00-21:00; Th-Sa 12:00-23:00; Su 12:00-21:00",
+        "phone": "+44 20 7481 3796",
+        "website": "https://www.traderswine.co.uk/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1874985,
+          51.5129602
+        ]
+      },
+      "properties": {
+        "name": "Beachcomber",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5129602,
+        "longitude": -0.1874985,
+        "address": "Queensway, 86, London",
+        "opening_hours": "Mo-Th 19:00-01:00; Fr-Sa 19:00-02:00; Su 22:00-24:00",
+        "phone": "+44 20 7221 2455",
+        "website": "https://thebeachcomber.co.uk",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1253679,
+          51.536483
+        ]
+      },
+      "properties": {
+        "name": "Spiritland",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.536483,
+        "longitude": -0.1253679,
+        "address": "Stable Street, 9 - 10, London",
+        "opening_hours": "We-Fr 17:30-23:00; Sa 12:00-23:00; Su 10:00-18:00",
+        "phone": "+44 20 3319 0050",
+        "website": "https://www.spiritland.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1203559,
+          51.5310181
+        ]
+      },
+      "properties": {
+        "name": "Bell & Viv",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5310181,
+        "longitude": -0.1203559,
+        "address": "Pentonville Road, 258, London",
+        "opening_hours": "Mo-We 16:00-23:00; Th-Su 16:00-00:00",
+        "phone": "+44 20 3089 6568",
+        "website": "https://www.bellandviv.co.uk",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -0.1396355,
           51.5529728
         ]
@@ -20966,6 +21562,280 @@
         "wikipedia": "en:The George Inn, Southwark",
         "wheelchair": "no",
         "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.102759,
+          51.5195269
+        ]
+      },
+      "properties": {
+        "name": "Smiths of Smithfield",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5195269,
+        "longitude": -0.102759,
+        "address": "Charterhouse Street, 67-77, London",
+        "opening_hours": "Mo-Fr 07:30-23:00; Sa 10:00-22:00",
+        "phone": "+44 207 251 7950",
+        "website": "https://www.smithsofsmithfield.co.uk",
+        "wikidata": "Q27086035",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1071826,
+          51.5143416
+        ]
+      },
+      "properties": {
+        "name": "Ye Olde Cheshire Cheese",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5143416,
+        "longitude": -0.1071826,
+        "address": "Fleet Street, 145, London",
+        "opening_hours": "Mo-Su 11:30-23:00",
+        "phone": "+44 20 7353 6170",
+        "wikidata": "Q1771680",
+        "wikipedia": "en:Ye Olde Cheshire Cheese",
+        "wheelchair": "no",
+        "popularity": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1128229,
+          51.5185237
+        ]
+      },
+      "properties": {
+        "name": "Cittie of Yorke",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5185237,
+        "longitude": -0.1128229,
+        "address": "High Holborn, 22-23, London",
+        "opening_hours": "Mo-Sa 12:00-23:00; Su 12:00-18:00",
+        "phone": "+44 20 7242 7670",
+        "website": "https://cittieofyorkeholborn.co.uk/",
+        "wikidata": "Q5122929",
+        "wikipedia": "en:Cittie of Yorke",
+        "wheelchair": "limited",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1325619,
+          51.5269747
+        ]
+      },
+      "properties": {
+        "name": "Euston Tap",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5269747,
+        "longitude": -0.1325619,
+        "address": "Euston Road, 190, London",
+        "opening_hours": "Mo-Sa 12:00-23:00; Su 12:00-22:00",
+        "phone": "+44 20 3137 8837",
+        "website": "http://eustontap.com",
+        "wikidata": "Q136091302",
+        "wheelchair": "no",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1114638,
+          51.5139311
+        ]
+      },
+      "properties": {
+        "name": "The Old Bank of England",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5139311,
+        "longitude": -0.1114638,
+        "address": "Fleet Street, 194, London",
+        "opening_hours": "Mo-We 11:30-22:00; Th-Fr 11:30-23:00; Sa 11:30-22:00; Su 12:00-20:00",
+        "phone": "+44 20 7430 2255",
+        "website": "http://www.oldbankofengland.co.uk/",
+        "wikidata": "Q26487354",
+        "wikipedia": "en:The Old Bank of England",
+        "wheelchair": "limited",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1432028,
+          51.5236593
+        ]
+      },
+      "properties": {
+        "name": "The Greene Man",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5236593,
+        "longitude": -0.1432028,
+        "address": "Euston Road, 383, London",
+        "opening_hours": "Mo-Sa 11:00-23:00; Su 11:00-22:30",
+        "phone": "+44 20 7387 6977",
+        "website": "https://www.greeneking-pubs.co.uk/pubs/greater-london/green-man/",
+        "wikidata": "Q76984918",
+        "wikipedia": "en:Greene Man",
+        "wheelchair": "limited",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1190466,
+          51.5230913
+        ]
+      },
+      "properties": {
+        "name": "The Lamb",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5230913,
+        "longitude": -0.1190466,
+        "address": "Lambs Conduit Street, 94, London",
+        "opening_hours": "Mo-We 11:00-23:00; Th-Sa 11:00-24:00; Su 12:00-22:30",
+        "phone": "+44 20 7405 0713",
+        "website": "https://www.thelamblondon.com/",
+        "wikidata": "Q7745280",
+        "wikipedia": "en:The Lamb, Bloomsbury",
+        "wheelchair": "limited",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1267227,
+          51.5061518
+        ]
+      },
+      "properties": {
+        "name": "The Clarence",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5061518,
+        "longitude": -0.1267227,
+        "address": "Whitehall, 53, London",
+        "opening_hours": "Mo-Sa 11:00-23:00; Su 12:00-23:00",
+        "phone": "+44 20 7930 4808",
+        "website": "http://www.theclarencewhitehall.co.uk",
+        "wikidata": "Q28026682",
+        "wheelchair": "limited",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1266761,
+          51.509575
+        ]
+      },
+      "properties": {
+        "name": "The Chandos",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.509575,
+        "longitude": -0.1266761,
+        "address": "St Martin's Lane, 29, London",
+        "opening_hours": "Mo-Th 11:00-23:00; Fr-Sa 10:00-23:00; Su 10:00-22:30",
+        "phone": "+44 20 7836 1401",
+        "website": "https://thechandos.co.uk/",
+        "wikidata": "Q108940306",
+        "wheelchair": "limited",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1830815,
+          51.5271918
+        ]
+      },
+      "properties": {
+        "name": "Warrington",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 51.5271918,
+        "longitude": -0.1830815,
+        "address": "Warrington Crescent, 93, London",
+        "opening_hours": "Mo-Th 15:00-23:00; Fr 15:00-00:00; Sa 12:00-00:00; Su 12:00-22:30",
+        "phone": "+44 20 7286 8282",
+        "website": "https://www.thewarrington.co",
+        "wikidata": "Q17062311",
+        "wheelchair": "limited",
+        "popularity": 3
       }
     },
     {

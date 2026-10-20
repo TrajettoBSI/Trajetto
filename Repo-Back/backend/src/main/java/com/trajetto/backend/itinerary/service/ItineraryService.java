@@ -38,6 +38,7 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
+import java.util.function.Predicate;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -48,6 +49,19 @@ public class ItineraryService {
     private static final Set<String> MEAL_CATEGORIES = Set.of("restaurant", "cafe", "ice_cream");
 
     private static final Set<String> NOT_FOR_EVENING = Set.of("historic_archaeological_site", "historic_ruins", "marketplace");
+
+    /** Bar e pub so entram a noite -- e so para quem tem o perfil da vida noturna. */
+    private static final Set<String> NIGHTLIFE = Set.of("bar", "pub");
+    private static final Set<String> NIGHTLIFE_PROFILES = Set.of("SOCIAL", "MOCHILEIRO");
+
+    /** Quanto o lugar ganha por combinar com o perfil do viajante (a popularidade vai de 0 a 6). */
+    static final double PROFILE_BONUS = 2.0;
+
+    /**
+     * Os lugares mais famosos da cidade ganham o mesmo bonus de quem combina com o perfil: o
+     * Coliseu entra para o aventureiro tambem, e o perfil decide o resto do roteiro.
+     */
+    static final int MUST_SEE = 5;
 
     /** Pracas, fontes e pontes, que valem a visita a noite -- nos idiomas das cidades do catalogo. */
     private static final Pattern EVENING_NAME = Pattern.compile(
@@ -169,10 +183,16 @@ public class ItineraryService {
                 .filter(place -> !MEAL_CATEGORIES.contains(place.category()))
                 .toList();
         double maxPopularity = Math.log1p(candidates.stream().mapToInt(CatalogPlace::popularity).max().orElse(0));
+        Set<CatalogPlace> mustSee = candidates.stream()
+                .filter(place -> !NIGHTLIFE.contains(place.category()))
+                .sorted(Comparator.comparingInt(CatalogPlace::popularity).reversed())
+                .limit(MUST_SEE)
+                .collect(Collectors.toSet());
 
         List<ScoredPlace> scored = candidates.stream().map(place -> {
             double popularityScore = maxPopularity == 0 ? 0 : 6.0 * Math.log1p(place.popularity()) / maxPopularity;
-            double profileScore = hasProfile && place.profiles().contains(profile) ? 2.0 : 0.0;
+            double profileScore = hasProfile && (place.profiles().contains(profile) || mustSee.contains(place))
+                    ? PROFILE_BONUS : 0.0;
             double randomScore = random.nextDouble() * 0.5;
             double distKm = haversineKm(req.getStartLatitude(), req.getStartLongitude(),
                     place.latitude(), place.longitude());
@@ -192,9 +212,18 @@ public class ItineraryService {
         List<CatalogPlace> ranked = scored.stream().map(ScoredPlace::place).toList();
         // De dia, cada lugar vira a sua visita principal: quem pontuou com a Piramide do Louvre
         // ganha o Museu do Louvre. A noite fica com os pontos como sao (o mirante, nao o museu).
-        List<CatalogPlace> visits = ranked.stream().map(this::mainVisit).distinct().toList();
+        List<CatalogPlace> visits = ranked.stream().filter(place -> !NIGHTLIFE.contains(place.category()))
+                .map(this::mainVisit).distinct().toList();
+        // A noite: mirantes e pracas para todos; bar e pub tambem, para os perfis Social e Mochileiro.
+        boolean nightlife = hasProfile && NIGHTLIFE_PROFILES.contains(profile);
+        Predicate<CatalogPlace> eveningFit = place -> isEveningPlace(place)
+                || (nightlife && NIGHTLIFE.contains(place.category()));
         Set<String> chosen = new HashSet<>();
-        List<CatalogPlace> eveningPool = pick(ranked.stream().filter(this::isEveningPlace).toList(), eveningSlots, chosen);
+        // Para quem gosta da vida noturna, bar e pub passam na frente das pracas famosas a noite.
+        List<CatalogPlace> eveningRanked = ranked.stream().filter(eveningFit)
+                .sorted(Comparator.comparing((CatalogPlace place) -> !(nightlife && NIGHTLIFE.contains(place.category()))))
+                .toList();
+        List<CatalogPlace> eveningPool = pick(eveningRanked, eveningSlots, chosen);
         List<CatalogPlace> dayPool = pick(visits, totalSlots - eveningSlots, chosen);
 
         record DayStop(CatalogPlace place, LocalDate date, LocalTime time) {}
@@ -212,7 +241,8 @@ public class ItineraryService {
                 if (next.isPresent()) {
                     pool.remove(next.get());
                 } else {
-                    next = nearestOpen(reserve(evening ? ranked : visits, chosen, evening), curLat, curLng, date, time);
+                    next = nearestOpen(evening ? reserve(ranked, chosen, eveningFit) : reserve(visits, chosen, place -> true),
+                            curLat, curLng, date, time);
                     next.ifPresent(place -> markChosen(place, chosen));
                 }
                 if (next.isEmpty()) continue;
@@ -294,9 +324,9 @@ public class ItineraryService {
         return main;
     }
 
-    private List<CatalogPlace> reserve(List<CatalogPlace> ranked, Set<String> chosen, boolean evening) {
+    private List<CatalogPlace> reserve(List<CatalogPlace> ranked, Set<String> chosen, Predicate<CatalogPlace> fit) {
         return ranked.stream()
-                .filter(place -> !evening || isEveningPlace(place))
+                .filter(fit)
                 .filter(place -> !chosen.contains(PlaceXid.of(place.name()))
                         && (place.wikidata().isBlank() || !chosen.contains(place.wikidata())))
                 .limit(RESERVE_SIZE)
@@ -607,8 +637,9 @@ public class ItineraryService {
         dto.setVisitDate(model.getVisitDate());
         dto.setOpenAtVisit(openAtVisit(model));
         dto.setBookingUrl(BookingLinks.forPlace(model.getName()));
-        if (dto.getBookingUrl() == null && "yes".equals(model.getFee())) {
-            dto.setTicketUrl(cityCatalog.findByName(model.getName())
+        if (dto.getBookingUrl() == null && "yes".equals(model.getFee())
+                && model.getLatitude() != null && model.getLongitude() != null) {
+            dto.setTicketUrl(cityCatalog.findByName(model.getName(), model.getLatitude(), model.getLongitude())
                     .map(CatalogPlace::website).filter(w -> !w.isBlank()).orElse(null));
         }
         return dto;

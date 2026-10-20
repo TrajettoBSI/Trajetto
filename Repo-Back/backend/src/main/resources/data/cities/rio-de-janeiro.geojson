@@ -15,8 +15,8 @@
         "name_en": "Christ the Redeemer",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9519173,
         "longitude": -43.2104585,
@@ -40,8 +40,8 @@
         "name_en": "Sugarloaf",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9494891,
         "longitude": -43.1561568,
@@ -49,6 +49,29 @@
         "wikipedia": "pt:Pão de Açúcar",
         "wheelchair": "yes",
         "popularity": 57
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.210579,
+          -22.9519478
+        ]
+      },
+      "properties": {
+        "name": "Corcovado",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9519478,
+        "longitude": -43.210579,
+        "wikidata": "Q506938",
+        "wikipedia": "pt:Corcovado",
+        "popularity": 47
       }
     },
     {
@@ -72,7 +95,7 @@
         "longitude": -43.2265156,
         "address": "Quinta da Boa Vista, Rio de Janeiro",
         "opening_hours": "Tu-Su 10:00-17:00; Mo 12:00-17:00",
-        "phone": "+55 21 2562 6900",
+        "phone": "+55-21-25626900",
         "website": "https://museunacional.ufrj.br/",
         "wikidata": "Q1850416",
         "wikipedia": "pt:Museu Nacional (Brasil)",
@@ -93,8 +116,8 @@
         "name_en": "Valongo Wharf",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8968785,
         "longitude": -43.1873893,
@@ -118,13 +141,13 @@
         "name_en": "National Library",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9097047,
         "longitude": -43.1754182,
         "address": "Avenida Rio Branco, 219, Rio de Janeiro",
-        "phone": "+55 21 3095 3879",
+        "phone": "+55-21-30953879",
         "website": "https://www.bn.br/",
         "wikidata": "Q948882",
         "wikipedia": "pt:Biblioteca Nacional do Brasil",
@@ -145,8 +168,8 @@
         "name_en": "Rio de Janeiro Cathedral",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9107984,
         "longitude": -43.1806914,
@@ -201,14 +224,15 @@
         "name_en": "Sambadrome Marquês de Sapucaí",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9108924,
         "longitude": -43.1968718,
         "wikidata": "Q281521",
         "wikipedia": "pt:Sambódromo da Marquês de Sapucaí",
-        "popularity": 22
+        "popularity": 22,
+        "site": "Q281521"
       }
     },
     {
@@ -247,8 +271,8 @@
         "name": "Pedra da Gávea",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.998982,
         "longitude": -43.2829733,
@@ -271,8 +295,8 @@
         "name_en": "Rio de Janeiro Botanical Garden",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9681408,
         "longitude": -43.2250663,
@@ -299,8 +323,8 @@
         "name_en": "Church of Our Lady of the Candelária",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9008464,
         "longitude": -43.1777938,
@@ -324,8 +348,8 @@
         "name": "Theatro Municipal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9090075,
         "longitude": -43.1766894,
@@ -357,7 +381,7 @@
         "longitude": -43.1757692,
         "address": "Avenida Rio Branco, 199, Rio de Janeiro",
         "opening_hours": "Tu-Fr 10:00-18:00; Sa-Su 12:00-17:00",
-        "phone": "+55 21 2219 8474",
+        "phone": "+55-21-22198474",
         "website": "http://www.mnba.gov.br/",
         "wikidata": "Q1954370",
         "wikipedia": "pt:Museu Nacional de Belas Artes (Brasil)",
@@ -377,13 +401,37 @@
         "name": "Arcos da Lapa",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9130271,
         "longitude": -43.1799525,
         "wikidata": "Q1579892",
         "wikipedia": "pt:Aqueduto da Carioca",
+        "popularity": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1929682,
+          -22.9889889
+        ]
+      },
+      "properties": {
+        "name": "Praia do Arpoador",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9889889,
+        "longitude": -43.1929682,
+        "wikidata": "Q775787",
+        "wikipedia": "pt:Arpoador",
         "popularity": 15
       }
     },
@@ -427,8 +475,8 @@
         "name": "Quinta da Boa Vista",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9054069,
         "longitude": -43.2263838,
@@ -450,13 +498,13 @@
         "name": "Igreja de Nossa Senhora do Monte do Carmo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9034301,
         "longitude": -43.1754843,
         "address": "Rua Primeiro de Março, Rio de Janeiro",
-        "phone": "+55 21 2242 0830",
+        "phone": "+55-21-22420830",
         "wikidata": "Q2942273",
         "wikipedia": "pt:Igreja de Nossa Senhora do Monte do Carmo",
         "popularity": 14
@@ -511,7 +559,7 @@
         "longitude": -43.1720611,
         "address": "Avenida Infante Dom Henrique, 85, Rio de Janeiro",
         "opening_hours": "Tu-Fr 12:00-18:00; Sa-Su,PH 12:00-19:00",
-        "phone": "+55 21 3883 5600",
+        "phone": "+55-21-3883-5600",
         "website": "https://mam.rio/",
         "wikidata": "Q1431995",
         "wikipedia": "pt:Museu de Arte Moderna do Rio de Janeiro",
@@ -538,7 +586,7 @@
         "longitude": -43.1822346,
         "address": "Rua Luis de Camões, 30, Rio de Janeiro",
         "opening_hours": "Mo-Fr 09:00-18:00",
-        "phone": "+55 21 2221 3138",
+        "phone": "+55-21-22213138",
         "website": "https://www.realgabinete.com.br/",
         "wikidata": "Q5411113",
         "wikipedia": "pt:Real Gabinete Português de Leitura",
@@ -582,7 +630,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -22.9035922,
         "longitude": -43.1742598,
@@ -602,6 +651,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1698023,
+          -22.9573942
+        ]
+      },
+      "properties": {
+        "name": "Morro da Babilônia",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9573942,
+        "longitude": -43.1698023,
+        "wikidata": "Q6914185",
+        "wikipedia": "pt:Morro da Babilônia",
+        "popularity": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1601093,
           -22.950328
         ]
@@ -610,8 +682,8 @@
         "name": "Teleférico do Pão de Açúcar",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.950328,
         "longitude": -43.1601093,
@@ -656,14 +728,15 @@
         "name": "Ilha Fiscal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8969401,
         "longitude": -43.1662863,
         "wikidata": "Q985128",
         "wikipedia": "pt:Ilha Fiscal",
-        "popularity": 11
+        "popularity": 11,
+        "site": "Q985128"
       }
     },
     {
@@ -704,18 +777,20 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -22.9258988,
         "longitude": -43.1762145,
         "address": "Rua do Catete, 153, Rio de Janeiro",
-        "phone": "+55 21 3235 2650",
+        "phone": "+55-21-32352650",
         "website": "https://museudarepublica.museus.gov.br/",
         "wikidata": "Q1142766",
         "wikipedia": "pt:Museu da República",
         "fee": "no",
         "wheelchair": "limited",
-        "popularity": 9
+        "popularity": 9,
+        "site": "Q1142766"
       }
     },
     {
@@ -731,8 +806,8 @@
         "name": "GRES Estação Primeira de Mangueira",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9036357,
         "longitude": -43.2403653,
@@ -763,7 +838,7 @@
         "longitude": -43.1722326,
         "address": "Avenida Rui Barbosa, Rio de Janeiro",
         "opening_hours": "Tu-Fr 11:00-17:00;Sa-Su 13:00-17:00;PH 13:00-17:00",
-        "phone": "+55 21 2334 4293",
+        "phone": "+55-21-23344293",
         "website": "https://www.funarj.rj.gov.br/museus/mcm_01.html",
         "wikidata": "Q10333423",
         "wikipedia": "pt:Museu Carmen Miranda",
@@ -833,14 +908,15 @@
         "name": "Praça Floriano Peixoto",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9105625,
         "longitude": -43.1759272,
         "wikidata": "Q579694",
         "wikipedia": "pt:Cinelândia",
-        "popularity": 9
+        "popularity": 9,
+        "site": "Q579694"
       }
     },
     {
@@ -856,14 +932,14 @@
         "name": "Igreja e Mosteiro de São Bento",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8968236,
         "longitude": -43.1779064,
         "address": "Rua Dom Gerardo, 40, Rio de Janeiro",
         "opening_hours": "Mo-Fr 07:00-11:00,14:30-18:00",
-        "phone": "+55 21 2206 8100",
+        "phone": "+55-21-22068100",
         "website": "http://www.osb.org.br/mosteiro/index.php",
         "wikidata": "Q2820360",
         "wikipedia": "pt:Mosteiro de São Bento (Rio de Janeiro)",
@@ -883,8 +959,8 @@
         "name": "GRES Portela",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8710281,
         "longitude": -43.3429218,
@@ -932,8 +1008,8 @@
         "name": "Monumento Nacional aos Mortos da Segunda Guerra Mundial",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9165961,
         "longitude": -43.173642,
@@ -974,6 +1050,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.2867068,
+          -22.9440031
+        ]
+      },
+      "properties": {
+        "name": "Pico da Tijuca",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9440031,
+        "longitude": -43.2867068,
+        "wikidata": "Q22033490",
+        "wikipedia": "en:Pico da Tijuca",
+        "popularity": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1787441,
           -22.9051703
         ]
@@ -982,8 +1081,8 @@
         "name": "Confeitaria Colombo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9051703,
         "longitude": -43.1787441,
@@ -993,6 +1092,54 @@
         "website": "www.confeitariacolombo.com.br",
         "wikidata": "Q18479573",
         "wikipedia": "pt:Confeitaria Colombo",
+        "popularity": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1645324,
+          -22.9552293
+        ]
+      },
+      "properties": {
+        "name": "Praia Vermelha",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9552293,
+        "longitude": -43.1645324,
+        "wikidata": "Q203325",
+        "wikipedia": "pt:Praia Vermelha (Rio de Janeiro)",
+        "popularity": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1906721,
+          -22.9895266
+        ]
+      },
+      "properties": {
+        "name": "Praia do Diabo",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9895266,
+        "longitude": -43.1906721,
+        "wikidata": "Q10352994",
+        "wikipedia": "pt:Praia do Diabo",
         "popularity": 7
       }
     },
@@ -1057,8 +1204,8 @@
         "name": "Palácio Laranjeiras",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9314947,
         "longitude": -43.1834474,
@@ -1088,11 +1235,34 @@
         "longitude": -43.1910113,
         "address": "Rua das Palmeiras, 55, Rio de Janeiro",
         "opening_hours": "Mo-Fr 09:00-17:30; Sa-Su 13:00-17:30",
-        "phone": "+55 21 3214 8702",
+        "phone": "+55-21-32148702",
         "website": "https://www.museudoindio.org.br/",
         "wikidata": "Q6940631",
         "wikipedia": "pt:Museu Nacional dos Povos Indígenas",
         "popularity": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1529239,
+          -22.940689
+        ]
+      },
+      "properties": {
+        "name": "Morro Cara de Cão",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.940689,
+        "longitude": -43.1529239,
+        "wikidata": "Q10332386",
+        "wikipedia": "pt:Morro Cara de Cão",
+        "popularity": 6
       }
     },
     {
@@ -1132,8 +1302,8 @@
         "name": "Igreja de Nossa Senhora da Penha",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8443121,
         "longitude": -43.275091,
@@ -1187,7 +1357,8 @@
         "longitude": -43.1745945,
         "wikidata": "Q3284128",
         "wikipedia": "pt:S Riachuelo (S-22)",
-        "popularity": 6
+        "popularity": 6,
+        "site": "Q10274952"
       }
     },
     {
@@ -1203,13 +1374,13 @@
         "name": "Teatro João Caetano",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9060045,
         "longitude": -43.1823158,
         "address": "Praça Tiradentes, Rio de Janeiro",
-        "phone": "+55 21 2332 9166",
+        "phone": "+55-21-23329166",
         "website": "https://www.funarj.rj.gov.br/",
         "wikidata": "Q6367742",
         "wikipedia": "pt:Teatro João Caetano (Rio de Janeiro)",
@@ -1275,8 +1446,8 @@
         "name": "GRES Unidos da Tijuca",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9046066,
         "longitude": -43.2093294,
@@ -1300,6 +1471,7 @@
         "name_en": "Chinese Belvedere",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -1309,6 +1481,147 @@
         "wikidata": "Q7936437",
         "wikipedia": "pt:Vista Chinesa",
         "popularity": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1809959,
+          -22.9756944
+        ]
+      },
+      "properties": {
+        "name": "Praia de Copacabana",
+        "name_en": "Copacabana Beach",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9756944,
+        "longitude": -43.1809959,
+        "wikidata": "Q63894",
+        "wikipedia": "pt:Praia de Copacabana",
+        "popularity": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2840913,
+          -22.989182
+        ]
+      },
+      "properties": {
+        "name": "Pedra Bonita",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.989182,
+        "longitude": -43.2840913,
+        "wikidata": "Q22048649",
+        "wikipedia": "pt:Pedra Bonita (Rio de Janeiro)",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1835222,
+          -22.8991556
+        ]
+      },
+      "properties": {
+        "name": "Morro da Conceição",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8991556,
+        "longitude": -43.1835222,
+        "wikidata": "Q10332434",
+        "wikipedia": "pt:Morro da Conceição (Rio de Janeiro)",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2589244,
+          -22.9391082
+        ]
+      },
+      "properties": {
+        "name": "Morro do Borel",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9391082,
+        "longitude": -43.2589244,
+        "wikidata": "Q22069188",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2905292,
+          -23.0146864
+        ]
+      },
+      "properties": {
+        "name": "Praia da Joatinga",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -23.0146864,
+        "longitude": -43.2905292,
+        "wikidata": "Q10352615",
+        "wikipedia": "pt:Praia da Joatinga",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.205069,
+          -22.9873125
+        ]
+      },
+      "properties": {
+        "name": "Praia de Ipanema",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9873125,
+        "longitude": -43.205069,
+        "wikidata": "Q3390838",
+        "wikipedia": "pt:Praia de Ipanema",
+        "popularity": 5
       }
     },
     {
@@ -1349,7 +1662,8 @@
         "name_en": "Rio de Janeiro Zoological Garden",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": -22.9053177,
         "longitude": -43.2293783,
@@ -1374,14 +1688,15 @@
         "name": "Praça da Apoteose",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9133722,
         "longitude": -43.19615,
         "wikidata": "Q7239115",
         "wikipedia": "pt:Praça da Apoteose",
-        "popularity": 5
+        "popularity": 5,
+        "site": "Q281521"
       }
     },
     {
@@ -1397,13 +1712,13 @@
         "name": "Igreja de Nossa Senhora da Lapa dos Mercadores",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9021923,
         "longitude": -43.1752886,
         "address": "Rua do Ouvidor, 35, Rio de Janeiro",
-        "phone": "+55 21 2231 2339",
+        "phone": "+55-21-22312339",
         "wikidata": "Q10300403",
         "wikipedia": "pt:Igreja de Nossa Senhora da Lapa dos Mercadores",
         "popularity": 5
@@ -1422,8 +1737,8 @@
         "name": "Pedra do Sal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8980361,
         "longitude": -43.1854777,
@@ -1451,7 +1766,7 @@
         "latitude": -22.9189813,
         "longitude": -43.215059,
         "address": "Rua Haddock Lobo, 266, Rio de Janeiro",
-        "phone": "+55 21 2204 7900",
+        "phone": "+55 (21) 2204-7900",
         "website": "https://igrejadoscapuchinhos.org.br/",
         "wikidata": "Q10300861",
         "popularity": 5
@@ -1531,6 +1846,31 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1799244,
+          -22.9454002
+        ]
+      },
+      "properties": {
+        "name": "Praia de Botafogo",
+        "name_en": "Botafogo Beach",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9454002,
+        "longitude": -43.1799244,
+        "wikidata": "Q10352741",
+        "wikipedia": "pt:Praia de Botafogo",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1792214,
           -22.9073605
         ]
@@ -1539,18 +1879,41 @@
         "name": "Igreja e Convento de Santo Antônio",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9073605,
         "longitude": -43.1792214,
         "address": "Largo da Carioca, Rio de Janeiro",
         "opening_hours": "Mo-Fr 07:30-18:30; Sa 07:30-11:30,14:30-18:00; Su 09:30-11:30",
-        "phone": "+55 21 2262 0129",
+        "phone": "+55-21-22620129",
         "wikidata": "Q14947966",
         "wikipedia": "pt:Convento de Santo Antônio (Rio de Janeiro)",
         "wheelchair": "no",
         "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1964288,
+          -22.9451361
+        ]
+      },
+      "properties": {
+        "name": "Morro Dona Marta",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9451361,
+        "longitude": -43.1964288,
+        "wikidata": "Q10332393",
+        "wikipedia": "pt:Morro Dona Marta",
+        "popularity": 4
       }
     },
     {
@@ -1588,13 +1951,59 @@
         "name": "Teatro Municipal Carlos Gomes",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9074557,
         "longitude": -43.1826174,
         "wikidata": "Q7691903",
         "wikipedia": "pt:Teatro Carlos Gomes (Rio de Janeiro)",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.192985,
+          -22.8940661
+        ]
+      },
+      "properties": {
+        "name": "Morro da Saúde",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8940661,
+        "longitude": -43.192985,
+        "wikidata": "Q22032761",
+        "wikipedia": "pt:Morro da Saúde",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2240988,
+          -22.937586
+        ]
+      },
+      "properties": {
+        "name": "Morro do Sumaré",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.937586,
+        "longitude": -43.2240988,
+        "wikidata": "Q10332521",
+        "wikipedia": "pt:Morro do Sumaré",
         "popularity": 4
       }
     },
@@ -1626,6 +2035,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.2319393,
+          -22.9922409
+        ]
+      },
+      "properties": {
+        "name": "Praia do Vidigal",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9922409,
+        "longitude": -43.2319393,
+        "wikidata": "Q10353129",
+        "wikipedia": "pt:Praia do Vidigal",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1758333,
           -22.916864
         ]
@@ -1649,6 +2082,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.0343922,
+          -22.9748651
+        ]
+      },
+      "properties": {
+        "name": "Praia de Itacoatiara",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9748651,
+        "longitude": -43.0343922,
+        "wikidata": "Q22066762",
+        "wikipedia": "pt:Praia de Itacoatiara",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1753928,
           -22.9215166
         ]
@@ -1657,8 +2114,8 @@
         "name": "Igreja de Nossa Senhora da Glória do Outeiro",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9215166,
         "longitude": -43.1753928,
@@ -1679,14 +2136,14 @@
         "name": "Igreja de São Francisco de Paula",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.905612,
         "longitude": -43.1805396,
         "address": "Largo São Francisco de Paula, Rio de Janeiro",
         "opening_hours": "Mo-Fr 09:00-13:00",
-        "phone": "+55 21 2569 0070",
+        "phone": "+55-21-25690070",
         "wikidata": "Q10300739",
         "wikipedia": "pt:Igreja de São Francisco de Paula (Rio de Janeiro)",
         "popularity": 4
@@ -1799,8 +2256,8 @@
         "name": "Cidade do Samba",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8958864,
         "longitude": -43.1977253,
@@ -1869,8 +2326,8 @@
         "name": "Yup Star",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8931106,
         "longitude": -43.1941401,
@@ -1942,8 +2399,8 @@
         "name": "GRES Acadêmicos do Salgueiro",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9217064,
         "longitude": -43.2434868,
@@ -1959,6 +2416,51 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1973691,
+          -22.9689314
+        ]
+      },
+      "properties": {
+        "name": "Morro dos Cabritos",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9689314,
+        "longitude": -43.1973691,
+        "wikidata": "Q22049002",
+        "wikipedia": "pt:Morro dos Cabritos",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1728684,
+          -22.9399874
+        ]
+      },
+      "properties": {
+        "name": "Morro da Viúva",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9399874,
+        "longitude": -43.1728684,
+        "wikidata": "Q22031111",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1785387,
           -22.9146026
         ]
@@ -1967,13 +2469,13 @@
         "name": "Sala Cecília Meireles",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9146026,
         "longitude": -43.1785387,
         "address": "Largo da Lapa, 47, Rio de Janeiro",
-        "phone": "+55 21 2332 9160",
+        "phone": "+55-21-23329160",
         "website": "https://www.salaceciliameireles.com.br/",
         "wikidata": "Q7403325",
         "wikipedia": "pt:Sala Cecília Meireles",
@@ -1994,8 +2496,8 @@
         "name_en": "Mayrink Chapel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9568275,
         "longitude": -43.2780827,
@@ -2017,12 +2519,103 @@
         "name": "Castelinho do Flamengo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9293683,
         "longitude": -43.1744425,
         "wikidata": "Q9703653",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1909894,
+          -22.8984342
+        ]
+      },
+      "properties": {
+        "name": "Morro do Livramento",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8984342,
+        "longitude": -43.1909894,
+        "wikidata": "Q10332504",
+        "wikipedia": "pt:Morro do Livramento",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2016405,
+          -22.9025949
+        ]
+      },
+      "properties": {
+        "name": "Morro do Pinto",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9025949,
+        "longitude": -43.2016405,
+        "wikidata": "Q22036177",
+        "wikipedia": "pt:Morro do Pinto",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3145747,
+          -22.9166251
+        ]
+      },
+      "properties": {
+        "name": "Alto dos Pretos Forros",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9166251,
+        "longitude": -43.3145747,
+        "wikidata": "Q10370519",
+        "wikipedia": "pt:Serra dos Pretos-Forros",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.287505,
+          -22.9356312
+        ]
+      },
+      "properties": {
+        "name": "Morro do Elefante",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9356312,
+        "longitude": -43.287505,
+        "wikidata": "Q22069193",
         "popularity": 3
       }
     },
@@ -2053,6 +2646,52 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.315272,
+          -22.8633336
+        ]
+      },
+      "properties": {
+        "name": "Morro do Juramento",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8633336,
+        "longitude": -43.315272,
+        "wikidata": "Q10332502",
+        "wikipedia": "pt:Morro do Juramento",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.316739,
+          -22.8939755
+        ]
+      },
+      "properties": {
+        "name": "Morro do Paraíso",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8939755,
+        "longitude": -43.316739,
+        "wikidata": "Q10332428",
+        "wikipedia": "pt:Morro da Caixa d'Água",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1970557,
           -22.9406716
         ]
@@ -2061,8 +2700,8 @@
         "name": "Bica da Rainha",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9406716,
         "longitude": -43.1970557,
@@ -2131,8 +2770,8 @@
         "name": "Teatro Riachuelo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9121848,
         "longitude": -43.1766869,
@@ -2169,6 +2808,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1687573,
+          -22.9644775
+        ]
+      },
+      "properties": {
+        "name": "Praia do Leme",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9644775,
+        "longitude": -43.1687573,
+        "wikidata": "Q10353031",
+        "wikipedia": "pt:Praia do Leme",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.176289,
           -22.9010646
         ]
@@ -2178,7 +2841,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -22.9010646,
         "longitude": -43.176289,
@@ -2205,8 +2869,8 @@
         "name": "GRES Estácio de Sá",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9123422,
         "longitude": -43.2017556,
@@ -2229,8 +2893,8 @@
         "name": "GRES Unidos do Viradouro",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8590748,
         "longitude": -43.1043954,
@@ -2260,11 +2924,12 @@
         "longitude": -43.1746784,
         "address": "Avenida Alfred Agache, Rio de Janeiro",
         "opening_hours": "Tu-Su 11:00-17:00",
-        "phone": "+55 21 2532 5992",
+        "phone": "+55 (21) 2532-5992",
         "website": "https://www.marinha.mil.br/dphdm/espaco-cultural-da-marinha",
         "wikidata": "Q10274952",
         "wikipedia": "pt:Espaço Cultural da Marinha",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q10274952"
       }
     },
     {
@@ -2280,8 +2945,8 @@
         "name": "G.R.E.S. Unidos de Vila Isabel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9160124,
         "longitude": -43.2489634,
@@ -2327,8 +2992,8 @@
         "name": "GRES União da Ilha do Governador",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8137545,
         "longitude": -43.1887356,
@@ -2351,8 +3016,8 @@
         "name": "GRES Imperatriz Leopoldinense",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8562045,
         "longitude": -43.2627565,
@@ -2398,8 +3063,8 @@
         "name": "GRES São Clemente",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9090147,
         "longitude": -43.2048982,
@@ -2424,7 +3089,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -22.9001662,
         "longitude": -43.1750081,
@@ -2433,7 +3099,8 @@
         "wikidata": "Q10335795",
         "wikipedia": "pt:Nau Capitânia",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q10274952"
       }
     },
     {
@@ -2662,7 +3329,7 @@
         "latitude": -22.9519243,
         "longitude": -43.1905124,
         "address": "Rua Sorocaba, 200, Rio de Janeiro",
-        "phone": "+55 21 2226 9818",
+        "phone": "+55-21-22269818",
         "website": "https://www.museuvillalobos.org.br/",
         "wikidata": "Q56641205",
         "wikipedia": "pt:Museu Villa-Lobos",
@@ -2754,14 +3421,14 @@
         "name": "Igreja da Ordem Terceira do Carmo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9031303,
         "longitude": -43.1755809,
         "address": "Rua Primeiro de Março, Rio de Janeiro",
         "opening_hours": "Mo-Fr 08:00-14:00; Sa 08:00-12:00",
-        "phone": "+55 21 2242 4828",
+        "phone": "+55-21-22424828",
         "wikidata": "Q10300293",
         "wikipedia": "pt:Igreja da Ordem Terceira do Carmo (Rio de Janeiro)",
         "popularity": 3
@@ -2817,6 +3484,51 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1639861,
+          -22.9508198
+        ]
+      },
+      "properties": {
+        "name": "Morro da Urca",
+        "name_en": "Urca Hill",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9508198,
+        "longitude": -43.1639861,
+        "wikidata": "Q22030730",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2302732,
+          -22.9506529
+        ]
+      },
+      "properties": {
+        "name": "Alto do Sumaré",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9506529,
+        "longitude": -43.2302732,
+        "wikidata": "Q22049669",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1777432,
           -22.914651
         ]
@@ -2839,6 +3551,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1623345,
+          -22.9594544
+        ]
+      },
+      "properties": {
+        "name": "Morro dos Urubus",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9594544,
+        "longitude": -43.1623345,
+        "wikidata": "Q22068944",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.176553,
           -22.9071925
         ]
@@ -2847,13 +3581,124 @@
         "name": "Teatro Glauce Rocha",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9071925,
         "longitude": -43.176553,
         "address": "Avenida Rio Branco, 179, Rio de Janeiro",
         "wikidata": "Q10378849",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3009272,
+          -22.9537071
+        ]
+      },
+      "properties": {
+        "name": "Bico do Papagaio",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9537071,
+        "longitude": -43.3009272,
+        "wikidata": "Q22037209",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.178372,
+          -22.897169
+        ]
+      },
+      "properties": {
+        "name": "Morro de São Bento",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.897169,
+        "longitude": -43.178372,
+        "wikidata": "Q10332465",
+        "wikipedia": "pt:Morro de São Bento (Rio de Janeiro)",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3220531,
+          -22.9831414
+        ]
+      },
+      "properties": {
+        "name": "Morro da Muzema",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9831414,
+        "longitude": -43.3220531,
+        "wikidata": "Q22049219",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1950453,
+          -22.9789795
+        ]
+      },
+      "properties": {
+        "name": "Morro do Cantagalo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9789795,
+        "longitude": -43.1950453,
+        "wikidata": "Q22069086",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2378746,
+          -22.9515968
+        ]
+      },
+      "properties": {
+        "name": "Pico da Carioca",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9515968,
+        "longitude": -43.2378746,
+        "wikidata": "Q22069104",
         "popularity": 2
       }
     },
@@ -2901,6 +3746,29 @@
         "website": "http://www.museus.gov.br/os-museus/museus-ibram/",
         "wikidata": "Q10333744",
         "wikipedia": "pt:Museu de Arqueologia de Itaipu",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1902905,
+          -22.8016721
+        ]
+      },
+      "properties": {
+        "name": "Morro do Dendê",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8016721,
+        "longitude": -43.1902905,
+        "wikidata": "Q10332494",
+        "wikipedia": "pt:Morro do Dendê",
         "popularity": 2
       }
     },
@@ -2988,7 +3856,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -22.8573429,
         "longitude": -43.2324,
@@ -3021,6 +3890,29 @@
         "address": "Avenida Marechal Floriano, 196, Rio de Janeiro",
         "wikidata": "Q10333514",
         "wikipedia": "pt:Museu Histórico e Diplomático do Itamaraty",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2712604,
+          -22.9261832
+        ]
+      },
+      "properties": {
+        "name": "Pico do Perdido",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9261832,
+        "longitude": -43.2712604,
+        "wikidata": "Q10347220",
+        "wikipedia": "pt:Pico do Perdido",
         "popularity": 2
       }
     },
@@ -3098,6 +3990,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.0700646,
+          -22.9581402
+        ]
+      },
+      "properties": {
+        "name": "Praia do Sossego",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9581402,
+        "longitude": -43.0700646,
+        "wikidata": "Q10353118",
+        "wikipedia": "pt:Praia do Sossego",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1730099,
           -22.9038552
         ]
@@ -3113,7 +4029,7 @@
         "longitude": -43.1730099,
         "address": "Rua Dom Manuel, 15, Rio de Janeiro",
         "opening_hours": "Mo-Fr 08:30-11:45,13:15-16:00",
-        "phone": "+55 21 2104 5325",
+        "phone": "+55-21-21045325",
         "wikidata": "Q10333597",
         "wikipedia": "pt:Museu Naval e Oceanográfico",
         "popularity": 2
@@ -3155,8 +4071,8 @@
         "name": "GRES Império Serrano",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8741417,
         "longitude": -43.3364748,
@@ -3180,8 +4096,8 @@
         "name": "Palácio São Joaquim",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9209091,
         "longitude": -43.1772531,
@@ -3272,14 +4188,14 @@
         "name": "Centro Luiz Gonzaga de Tradições Nordestinas",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8974107,
         "longitude": -43.220422,
         "address": "Campo de São Cristóvão, Rio de Janeiro",
         "opening_hours": "Tu-Th 10:00-18:00; Fr 10:00-24:00; Sa 00:00-24:00; Su 00:00-21:00",
-        "phone": "+55 21 2580 5335",
+        "phone": "+55-21-25805335",
         "website": "https://www.feiradesaocristovao.org.br/",
         "wikidata": "Q9725013",
         "popularity": 2
@@ -3448,7 +4364,7 @@
         "longitude": -43.2192122,
         "address": "Avenida Pedro II, 383, Rio de Janeiro",
         "opening_hours": "Tu-Su 10:00-17:00; PH 10:00-17:00",
-        "phone": "+55 21 2589 9581",
+        "phone": "+55-21-25899581",
         "website": "https://www.fortedecopacabana.com/mmcl/",
         "wikidata": "Q10333543",
         "popularity": 2
@@ -3552,6 +4468,29 @@
         "website": "http://www.museudamare.org.br",
         "wikidata": "Q10333705",
         "wikipedia": "pt:Museu da Maré",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.295487,
+          -23.0130316
+        ]
+      },
+      "properties": {
+        "name": "Praia dos Amores",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -23.0130316,
+        "longitude": -43.295487,
+        "wikidata": "Q10353131",
         "popularity": 2
       }
     },
@@ -3727,8 +4666,8 @@
         "name": "GRES Paraíso do Tuiuti",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8983329,
         "longitude": -43.2186102,
@@ -3751,8 +4690,8 @@
         "name": "GRES Em Cima da Hora",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8694524,
         "longitude": -43.3156338,
@@ -3775,8 +4714,8 @@
         "name": "GRES Unidos do Porto da Pedra",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8240186,
         "longitude": -43.0626877,
@@ -3800,8 +4739,8 @@
         "name": "SRES Lins Imperial",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9113201,
         "longitude": -43.285098,
@@ -3824,8 +4763,8 @@
         "name": "GRES Acadêmicos de Vigário Geral",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8068612,
         "longitude": -43.3068382,
@@ -3848,8 +4787,8 @@
         "name": "GRESE Império da Tijuca",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9397711,
         "longitude": -43.2448584,
@@ -3961,6 +4900,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.169647,
+          -22.9280025
+        ]
+      },
+      "properties": {
+        "name": "Praia do Flamengo",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9280025,
+        "longitude": -43.169647,
+        "wikidata": "Q10352999",
+        "wikipedia": "pt:Praia do Flamengo",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1805228,
           -22.9155893
         ]
@@ -3991,8 +4954,8 @@
         "name": "Teatro Villa-Lobos",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9610176,
         "longitude": -43.174969,
@@ -4015,14 +4978,124 @@
         "name": "Centro Municipal de Referência da Música Carioca Artur da Távola",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.935217,
         "longitude": -43.2442362,
         "address": "Rua Conde de Bonfim, 824, Rio de Janeiro",
         "wikidata": "Q30933470",
         "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.276992,
+          -22.9859721
+        ]
+      },
+      "properties": {
+        "name": "Aguilhinha da Gávea",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9859721,
+        "longitude": -43.276992,
+        "wikidata": "Q22069147",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2586028,
+          -22.9565372
+        ]
+      },
+      "properties": {
+        "name": "Morro da Moganga",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9565372,
+        "longitude": -43.2586028,
+        "wikidata": "Q22069159",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2863133,
+          -23.0033019
+        ]
+      },
+      "properties": {
+        "name": "Pico dos Quatro",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -23.0033019,
+        "longitude": -43.2863133,
+        "wikidata": "Q22069142",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1229404,
+          -22.9330596
+        ]
+      },
+      "properties": {
+        "name": "Morro do Macaco",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9330596,
+        "longitude": -43.1229404,
+        "wikidata": "Q22049658",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1784363,
+          -22.9516557
+        ]
+      },
+      "properties": {
+        "name": "Morro do Pasmado",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9516557,
+        "longitude": -43.1784363,
+        "wikidata": "Q22068975",
+        "popularity": 1
       }
     },
     {
@@ -4051,6 +5124,73 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1964204,
+          -22.9007384
+        ]
+      },
+      "properties": {
+        "name": "Morro da Providência",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9007384,
+        "longitude": -43.1964204,
+        "wikidata": "Q22036776",
+        "wikipedia": "pt:Morro da Providência",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1077778,
+          -22.767654
+        ]
+      },
+      "properties": {
+        "name": "Morro do Vigário",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.767654,
+        "longitude": -43.1077778,
+        "wikidata": "Q22069006",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1042244,
+          -22.7643774
+        ]
+      },
+      "properties": {
+        "name": "Morro das Paineiras",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.7643774,
+        "longitude": -43.1042244,
+        "wikidata": "Q22069005",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1748287,
           -22.9040472
         ]
@@ -4064,6 +5204,138 @@
         "latitude": -22.9040472,
         "longitude": -43.1748287,
         "wikidata": "Q67210383",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1875405,
+          -22.9264997
+        ]
+      },
+      "properties": {
+        "name": "Morro da Nova Cintra",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9264997,
+        "longitude": -43.1875405,
+        "wikidata": "Q22049663",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1850118,
+          -22.9407181
+        ]
+      },
+      "properties": {
+        "name": "Morro Mundo Novo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9407181,
+        "longitude": -43.1850118,
+        "wikidata": "Q22068973",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1972504,
+          -22.9627134
+        ]
+      },
+      "properties": {
+        "name": "Morro da Saudade",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9627134,
+        "longitude": -43.1972504,
+        "wikidata": "Q22049667",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2287334,
+          -22.9197807
+        ]
+      },
+      "properties": {
+        "name": "Pedra da Babilônia",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9197807,
+        "longitude": -43.2287334,
+        "wikidata": "Q22069063",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3006533,
+          -22.9587485
+        ]
+      },
+      "properties": {
+        "name": "Morro da Cocanha",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9587485,
+        "longitude": -43.3006533,
+        "wikidata": "Q22069174",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2912978,
+          -22.9501337
+        ]
+      },
+      "properties": {
+        "name": "Pedra do Archer",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9501337,
+        "longitude": -43.2912978,
+        "wikidata": "Q22069177",
         "popularity": 1
       }
     },
@@ -4114,6 +5386,1635 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.314972,
+          -22.9941699
+        ]
+      },
+      "properties": {
+        "name": "Pedra do Itanhangá",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9941699,
+        "longitude": -43.314972,
+        "wikidata": "Q22069170",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3150149,
+          -22.9788547
+        ]
+      },
+      "properties": {
+        "name": "Morro do Quilombo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9788547,
+        "longitude": -43.3150149,
+        "wikidata": "Q22069172",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3122075,
+          -22.9853719
+        ]
+      },
+      "properties": {
+        "name": "Morro do Pica Pau",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9853719,
+        "longitude": -43.3122075,
+        "wikidata": "Q22049220",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2070506,
+          -22.906558
+        ]
+      },
+      "properties": {
+        "name": "Morro de São Diogo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.906558,
+        "longitude": -43.2070506,
+        "wikidata": "Q22069078",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1954211,
+          -22.9325784
+        ]
+      },
+      "properties": {
+        "name": "Morro de São Judas Tadeu",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9325784,
+        "longitude": -43.1954211,
+        "wikidata": "Q22068971",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1931246,
+          -22.9228637
+        ]
+      },
+      "properties": {
+        "name": "Morro da Coroa",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9228637,
+        "longitude": -43.1931246,
+        "wikidata": "Q22069054",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1919782,
+          -22.9152936
+        ]
+      },
+      "properties": {
+        "name": "Morro de Paula Matos",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9152936,
+        "longitude": -43.1919782,
+        "wikidata": "Q22069057",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2044431,
+          -22.9348198
+        ]
+      },
+      "properties": {
+        "name": "Morro dos Prazeres",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9348198,
+        "longitude": -43.2044431,
+        "wikidata": "Q22068963",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1833072,
+          -22.9175472
+        ]
+      },
+      "properties": {
+        "name": "Morro do Curvelo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9175472,
+        "longitude": -43.1833072,
+        "wikidata": "Q22068968",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1747032,
+          -22.9233182
+        ]
+      },
+      "properties": {
+        "name": "Outeiro da Glória",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9233182,
+        "longitude": -43.1747032,
+        "wikidata": "Q22068967",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1800349,
+          -22.9233577
+        ]
+      },
+      "properties": {
+        "name": "Morro de Santo Amaro",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9233577,
+        "longitude": -43.1800349,
+        "wikidata": "Q22068969",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2023938,
+          -22.9207094
+        ]
+      },
+      "properties": {
+        "name": "Morro de Santos Rodrigues",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9207094,
+        "longitude": -43.2023938,
+        "wikidata": "Q22069058",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2000871,
+          -22.9225276
+        ]
+      },
+      "properties": {
+        "name": "Morro do Querosene",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9225276,
+        "longitude": -43.2000871,
+        "wikidata": "Q22068964",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1924701,
+          -22.9371812
+        ]
+      },
+      "properties": {
+        "name": "Morro do Chico",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9371812,
+        "longitude": -43.1924701,
+        "wikidata": "Q22068972",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1975773,
+          -22.9818835
+        ]
+      },
+      "properties": {
+        "name": "Morro do Pavão",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9818835,
+        "longitude": -43.1975773,
+        "wikidata": "Q22069127",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2188633,
+          -22.955391
+        ]
+      },
+      "properties": {
+        "name": "Pedra do Sapo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.955391,
+        "longitude": -43.2188633,
+        "wikidata": "Q22069105",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1804219,
+          -22.9382994
+        ]
+      },
+      "properties": {
+        "name": "Morro Azul",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9382994,
+        "longitude": -43.1804219,
+        "wikidata": "Q22068974",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2049904,
+          -22.9449276
+        ]
+      },
+      "properties": {
+        "name": "Morro do Inglês",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9449276,
+        "longitude": -43.2049904,
+        "wikidata": "Q22069092",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1289569,
+          -22.880564
+        ]
+      },
+      "properties": {
+        "name": "Morro da Armação",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.880564,
+        "longitude": -43.1289569,
+        "wikidata": "Q22069053",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2611329,
+          -22.9085924
+        ]
+      },
+      "properties": {
+        "name": "Morro de São João",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9085924,
+        "longitude": -43.2611329,
+        "wikidata": "Q22069222",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2487335,
+          -22.9300755
+        ]
+      },
+      "properties": {
+        "name": "Morro do Cruz",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9300755,
+        "longitude": -43.2487335,
+        "wikidata": "Q22081042",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2561987,
+          -22.9108862
+        ]
+      },
+      "properties": {
+        "name": "Morro dos Macacos",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9108862,
+        "longitude": -43.2561987,
+        "wikidata": "Q22068982",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2240549,
+          -22.8961015
+        ]
+      },
+      "properties": {
+        "name": "Morro de São Januário",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8961015,
+        "longitude": -43.2240549,
+        "wikidata": "Q22069074",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2192698,
+          -22.9010442
+        ]
+      },
+      "properties": {
+        "name": "Morro do Barro Vermelho",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9010442,
+        "longitude": -43.2192698,
+        "wikidata": "Q22069079",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2350197,
+          -22.9036919
+        ]
+      },
+      "properties": {
+        "name": "Morro do Telégrafo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9036919,
+        "longitude": -43.2350197,
+        "wikidata": "Q22069076",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2320371,
+          -22.8926225
+        ]
+      },
+      "properties": {
+        "name": "Morro do Pedregulho",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8926225,
+        "longitude": -43.2320371,
+        "wikidata": "Q22069075",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2290555,
+          -22.9341871
+        ]
+      },
+      "properties": {
+        "name": "Morro dos Trapicheiros",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9341871,
+        "longitude": -43.2290555,
+        "wikidata": "Q22068959",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2222802,
+          -22.9322969
+        ]
+      },
+      "properties": {
+        "name": "Morro do Mirante",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9322969,
+        "longitude": -43.2222802,
+        "wikidata": "Q22068960",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2249142,
+          -22.9540855
+        ]
+      },
+      "properties": {
+        "name": "Pedra do Cão",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9540855,
+        "longitude": -43.2249142,
+        "wikidata": "Q22069110",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2133689,
+          -22.9445229
+        ]
+      },
+      "properties": {
+        "name": "Alto da Coroa",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9445229,
+        "longitude": -43.2133689,
+        "wikidata": "Q22069095",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.232596,
+          -22.9576825
+        ]
+      },
+      "properties": {
+        "name": "Morro Sete Quedas",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9576825,
+        "longitude": -43.232596,
+        "wikidata": "Q22069111",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2562073,
+          -22.9622853
+        ]
+      },
+      "properties": {
+        "name": "Morro do Queimado",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9622853,
+        "longitude": -43.2562073,
+        "wikidata": "Q22049223",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2681278,
+          -22.9667096
+        ]
+      },
+      "properties": {
+        "name": "Morro da Freira",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9667096,
+        "longitude": -43.2681278,
+        "wikidata": "Q22069160",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2838134,
+          -22.9939523
+        ]
+      },
+      "properties": {
+        "name": "Morro da Bandeira",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9939523,
+        "longitude": -43.2838134,
+        "wikidata": "Q22069143",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2846912,
+          -22.9818896
+        ]
+      },
+      "properties": {
+        "name": "Morro do Chapecó",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9818896,
+        "longitude": -43.2846912,
+        "wikidata": "Q22069149",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2829122,
+          -22.9824952
+        ]
+      },
+      "properties": {
+        "name": "Morro da Gávea Pequena",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9824952,
+        "longitude": -43.2829122,
+        "wikidata": "Q22069150",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2891757,
+          -23.0114936
+        ]
+      },
+      "properties": {
+        "name": "Morro da Joatinga",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -23.0114936,
+        "longitude": -43.2891757,
+        "wikidata": "Q22049212",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2659134,
+          -22.98321
+        ]
+      },
+      "properties": {
+        "name": "Morro do Cochrane",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.98321,
+        "longitude": -43.2659134,
+        "wikidata": "Q22049221",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2537309,
+          -22.9835234
+        ]
+      },
+      "properties": {
+        "name": "Morro do Laboriaux",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9835234,
+        "longitude": -43.2537309,
+        "wikidata": "Q22069153",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2332162,
+          -22.9724595
+        ]
+      },
+      "properties": {
+        "name": "Morro da Margarida",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9724595,
+        "longitude": -43.2332162,
+        "wikidata": "Q22069116",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3287048,
+          -22.9680272
+        ]
+      },
+      "properties": {
+        "name": "Morro do Pinheiro",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9680272,
+        "longitude": -43.3287048,
+        "wikidata": "Q22049226",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3240226,
+          -22.9592209
+        ]
+      },
+      "properties": {
+        "name": "Morro Mata Cavalo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9592209,
+        "longitude": -43.3240226,
+        "wikidata": "Q22069173",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3181937,
+          -22.9521114
+        ]
+      },
+      "properties": {
+        "name": "Morro do Quitite",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9521114,
+        "longitude": -43.3181937,
+        "wikidata": "Q22069206",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3171208,
+          -22.9738365
+        ]
+      },
+      "properties": {
+        "name": "Morro da Marimbeira",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9738365,
+        "longitude": -43.3171208,
+        "wikidata": "Q22049225",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3074703,
+          -22.9443413
+        ]
+      },
+      "properties": {
+        "name": "Pico Taunay",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9443413,
+        "longitude": -43.3074703,
+        "wikidata": "Q22069203",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3048668,
+          -22.9451918
+        ]
+      },
+      "properties": {
+        "name": "Pico Escragnolle",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9451918,
+        "longitude": -43.3048668,
+        "wikidata": "Q22069202",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3112845,
+          -22.9390057
+        ]
+      },
+      "properties": {
+        "name": "Morro do Bananal",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9390057,
+        "longitude": -43.3112845,
+        "wikidata": "Q22069210",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3188761,
+          -22.9436148
+        ]
+      },
+      "properties": {
+        "name": "Pedra de São Francisco",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9436148,
+        "longitude": -43.3188761,
+        "wikidata": "Q22069208",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3144475,
+          -22.9446082
+        ]
+      },
+      "properties": {
+        "name": "Pedra das Morcegas",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9446082,
+        "longitude": -43.3144475,
+        "wikidata": "Q22069209",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3095382,
+          -22.9154209
+        ]
+      },
+      "properties": {
+        "name": "Morro da Água Santa",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9154209,
+        "longitude": -43.3095382,
+        "wikidata": "Q22069232",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3215377,
+          -22.8993848
+        ]
+      },
+      "properties": {
+        "name": "Morro do Dezoito",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8993848,
+        "longitude": -43.3215377,
+        "wikidata": "Q22069238",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3393948,
+          -22.8895802
+        ]
+      },
+      "properties": {
+        "name": "Morro da Bica",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8895802,
+        "longitude": -43.3393948,
+        "wikidata": "Q22049246",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3262155,
+          -22.904947
+        ]
+      },
+      "properties": {
+        "name": "Morro do Inácio Dias",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.904947,
+        "longitude": -43.3262155,
+        "wikidata": "Q18484500",
+        "wikipedia": "pt:Serra do Inácio Dias",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3237106,
+          -22.9106579
+        ]
+      },
+      "properties": {
+        "name": "Morro do Careca",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9106579,
+        "longitude": -43.3237106,
+        "wikidata": "Q22069236",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2820127,
+          -22.9203537
+        ]
+      },
+      "properties": {
+        "name": "Morro da Cotia",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9203537,
+        "longitude": -43.2820127,
+        "wikidata": "Q22069217",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2717377,
+          -22.9180927
+        ]
+      },
+      "properties": {
+        "name": "Morro da Bacia",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9180927,
+        "longitude": -43.2717377,
+        "wikidata": "Q22081043",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2772491,
+          -22.9204328
+        ]
+      },
+      "properties": {
+        "name": "Morro da Cachoeirinha",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9204328,
+        "longitude": -43.2772491,
+        "wikidata": "Q22069219",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.277807,
+          -22.9128631
+        ]
+      },
+      "properties": {
+        "name": "Morro do Amor",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9128631,
+        "longitude": -43.277807,
+        "wikidata": "Q22069227",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2925291,
+          -22.928332
+        ]
+      },
+      "properties": {
+        "name": "Pico do Ramalho",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.928332,
+        "longitude": -43.2925291,
+        "wikidata": "Q22069214",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2906816,
+          -22.916895
+        ]
+      },
+      "properties": {
+        "name": "Morro do Gambá",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.916895,
+        "longitude": -43.2906816,
+        "wikidata": "Q22069230",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.303646,
+          -22.936853
+        ]
+      },
+      "properties": {
+        "name": "Pico Jorge Lossio",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.936853,
+        "longitude": -43.303646,
+        "wikidata": "Q22069200",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2963032,
+          -22.9396611
+        ]
+      },
+      "properties": {
+        "name": "Alto dos Ciganos",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9396611,
+        "longitude": -43.2963032,
+        "wikidata": "Q22069194",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3081092,
+          -22.9316083
+        ]
+      },
+      "properties": {
+        "name": "Morro do Thedim",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9316083,
+        "longitude": -43.3081092,
+        "wikidata": "Q22069212",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3020582,
+          -22.9407262
+        ]
+      },
+      "properties": {
+        "name": "Pico Magalhães Castro",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9407262,
+        "longitude": -43.3020582,
+        "wikidata": "Q22069201",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3019674,
+          -22.9651494
+        ]
+      },
+      "properties": {
+        "name": "Morro da Taquara",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9651494,
+        "longitude": -43.3019674,
+        "wikidata": "Q22049224",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3045863,
+          -22.9682315
+        ]
+      },
+      "properties": {
+        "name": "Morro do Cipó",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9682315,
+        "longitude": -43.3045863,
+        "wikidata": "Q22069167",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2970124,
+          -22.9468126
+        ]
+      },
+      "properties": {
+        "name": "Pedra João Antônio",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9468126,
+        "longitude": -43.2970124,
+        "wikidata": "Q22069176",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2789691,
+          -22.939704
+        ]
+      },
+      "properties": {
+        "name": "Pico do Andaraí Maior",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.939704,
+        "longitude": -43.2789691,
+        "wikidata": "Q22049235",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2739989,
+          -22.9488948
+        ]
+      },
+      "properties": {
+        "name": "Pedra do Conde",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9488948,
+        "longitude": -43.2739989,
+        "wikidata": "Q22081194",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2727406,
+          -22.9438204
+        ]
+      },
+      "properties": {
+        "name": "Excelsior",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9438204,
+        "longitude": -43.2727406,
+        "wikidata": "Q22069181",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2743096,
+          -22.9333764
+        ]
+      },
+      "properties": {
+        "name": "Morro Redondo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9333764,
+        "longitude": -43.2743096,
+        "wikidata": "Q22069185",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2694172,
+          -22.9393838
+        ]
+      },
+      "properties": {
+        "name": "Morro do Felizardo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9393838,
+        "longitude": -43.2694172,
+        "wikidata": "Q22069182",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2522457,
+          -22.9356628
+        ]
+      },
+      "properties": {
+        "name": "Morro da Casa Branca",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9356628,
+        "longitude": -43.2522457,
+        "wikidata": "Q22069189",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2836898,
+          -22.9602101
+        ]
+      },
+      "properties": {
+        "name": "Morro do Almeida",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9602101,
+        "longitude": -43.2836898,
+        "wikidata": "Q22069162",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.2743342,
           -22.9572859
         ]
@@ -4122,12 +7023,321 @@
         "name": "Alto da Bandeira",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
         "latitude": -22.9572859,
         "longitude": -43.2743342,
         "wikidata": "Q22069180",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2885392,
+          -22.9700866
+        ]
+      },
+      "properties": {
+        "name": "Morro Tijuaçu",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9700866,
+        "longitude": -43.2885392,
+        "wikidata": "Q22069164",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1764587,
+          -22.797482
+        ]
+      },
+      "properties": {
+        "name": "Morro do Barão",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.797482,
+        "longitude": -43.1764587,
+        "wikidata": "Q22069024",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3435745,
+          -22.9310249
+        ]
+      },
+      "properties": {
+        "name": "Morro do Pau Ferro",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9310249,
+        "longitude": -43.3435745,
+        "wikidata": "Q22068989",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1591048,
+          -22.7793853
+        ]
+      },
+      "properties": {
+        "name": "Morro do Boqueirão",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.7793853,
+        "longitude": -43.1591048,
+        "wikidata": "Q22048707",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1772344,
+          -22.786905
+        ]
+      },
+      "properties": {
+        "name": "Morro das Araras",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.786905,
+        "longitude": -43.1772344,
+        "wikidata": "Q22069027",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1746187,
+          -22.7783961
+        ]
+      },
+      "properties": {
+        "name": "Morro do Matias",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.7783961,
+        "longitude": -43.1746187,
+        "wikidata": "Q22069028",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1858561,
+          -22.7895886
+        ]
+      },
+      "properties": {
+        "name": "Morro dos Bancários",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.7895886,
+        "longitude": -43.1858561,
+        "wikidata": "Q22069026",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1879423,
+          -22.7914946
+        ]
+      },
+      "properties": {
+        "name": "Morro da Olaria",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.7914946,
+        "longitude": -43.1879423,
+        "wikidata": "Q22069025",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1800883,
+          -22.8187321
+        ]
+      },
+      "properties": {
+        "name": "Morro do Zumbi",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8187321,
+        "longitude": -43.1800883,
+        "wikidata": "Q22069019",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1727884,
+          -22.8220686
+        ]
+      },
+      "properties": {
+        "name": "Morro do Ouro",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8220686,
+        "longitude": -43.1727884,
+        "wikidata": "Q22068957",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1711404,
+          -22.8268409
+        ]
+      },
+      "properties": {
+        "name": "Morro do Cabaceiro",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8268409,
+        "longitude": -43.1711404,
+        "wikidata": "Q22069044",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.184509,
+          -22.8271279
+        ]
+      },
+      "properties": {
+        "name": "Morro do Matoso",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8271279,
+        "longitude": -43.184509,
+        "wikidata": "Q22069045",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2147403,
+          -22.8163923
+        ]
+      },
+      "properties": {
+        "name": "Morro do Engenho Velho",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8163923,
+        "longitude": -43.2147403,
+        "wikidata": "Q22069050",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.216458,
+          -22.8057549
+        ]
+      },
+      "properties": {
+        "name": "Morro do Limão",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8057549,
+        "longitude": -43.216458,
+        "wikidata": "Q22069015",
         "popularity": 1
       }
     },
@@ -4150,6 +7360,380 @@
         "latitude": -22.9662715,
         "longitude": -43.2194233,
         "wikidata": "Q67210336",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3241244,
+          -22.864768
+        ]
+      },
+      "properties": {
+        "name": "Morro da Serrinha",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.864768,
+        "longitude": -43.3241244,
+        "wikidata": "Q22069245",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2954988,
+          -22.8498985
+        ]
+      },
+      "properties": {
+        "name": "Morro do Grotão",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8498985,
+        "longitude": -43.2954988,
+        "wikidata": "Q22069249",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2939452,
+          -22.8548631
+        ]
+      },
+      "properties": {
+        "name": "Morro do Caricó",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8548631,
+        "longitude": -43.2939452,
+        "wikidata": "Q22047474",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2937559,
+          -22.843936
+        ]
+      },
+      "properties": {
+        "name": "Morro do Sereno",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.843936,
+        "longitude": -43.2937559,
+        "wikidata": "Q22069253",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.274942,
+          -22.8440139
+        ]
+      },
+      "properties": {
+        "name": "Morro da Penha",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8440139,
+        "longitude": -43.274942,
+        "wikidata": "Q22049269",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2813748,
+          -22.8627602
+        ]
+      },
+      "properties": {
+        "name": "Morro das Palmeiras",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8627602,
+        "longitude": -43.2813748,
+        "wikidata": "Q22069247",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2661838,
+          -22.8584306
+        ]
+      },
+      "properties": {
+        "name": "Morro da Baiana",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8584306,
+        "longitude": -43.2661838,
+        "wikidata": "Q22069243",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.261108,
+          -22.8649346
+        ]
+      },
+      "properties": {
+        "name": "Morro do Adeus",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8649346,
+        "longitude": -43.261108,
+        "wikidata": "Q22048700",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3371377,
+          -22.8558898
+        ]
+      },
+      "properties": {
+        "name": "Morro do Sapê",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8558898,
+        "longitude": -43.3371377,
+        "wikidata": "Q22069272",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2915711,
+          -22.8728322
+        ]
+      },
+      "properties": {
+        "name": "Morro do Engenho da Rainha",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8728322,
+        "longitude": -43.2915711,
+        "wikidata": "Q22069244",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2395992,
+          -22.8623446
+        ]
+      },
+      "properties": {
+        "name": "Morro do Timbau",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8623446,
+        "longitude": -43.2395992,
+        "wikidata": "Q22069072",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2465744,
+          -22.8746219
+        ]
+      },
+      "properties": {
+        "name": "Morro do Amorim",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8746219,
+        "longitude": -43.2465744,
+        "wikidata": "Q22068961",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2627642,
+          -22.8883022
+        ]
+      },
+      "properties": {
+        "name": "Morro do Jacarezinho",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8883022,
+        "longitude": -43.2627642,
+        "wikidata": "Q22069241",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2597392,
+          -22.8960234
+        ]
+      },
+      "properties": {
+        "name": "Morro do Jacaré",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8960234,
+        "longitude": -43.2597392,
+        "wikidata": "Q22069224",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2584083,
+          -22.9000637
+        ]
+      },
+      "properties": {
+        "name": "Morro do Paim",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9000637,
+        "longitude": -43.2584083,
+        "wikidata": "Q22069223",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2673588,
+          -22.8977016
+        ]
+      },
+      "properties": {
+        "name": "Morro do Vintém",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8977016,
+        "longitude": -43.2673588,
+        "wikidata": "Q22069225",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2848007,
+          -22.8998265
+        ]
+      },
+      "properties": {
+        "name": "Morro das Dores",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.8998265,
+        "longitude": -43.2848007,
+        "wikidata": "Q22069228",
         "popularity": 1
       }
     },
@@ -4224,6 +7808,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.2051653,
+          -22.971427
+        ]
+      },
+      "properties": {
+        "name": "Morro do Sacopã",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.971427,
+        "longitude": -43.2051653,
+        "wikidata": "Q63229958",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1792341,
           -22.9208804
         ]
@@ -4248,22 +7854,21 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.1745818,
-          -22.9031587
+          -43.2280543,
+          -22.9583731
         ]
       },
       "properties": {
-        "name": "General Osório",
-        "name_en": "General Osório Statue",
-        "category": "artwork",
+        "name": "Cachoeira dos Primatas",
+        "category": "waterfall",
         "profiles": [
-          "CULTURAL"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
-        "latitude": -22.9031587,
-        "longitude": -43.1745818,
-        "address": "Praça Quinze de Novembro, Rio de Janeiro",
-        "wikipedia": "pt:Estátua equestre do General Osório",
-        "popularity": 0
+        "latitude": -22.9583731,
+        "longitude": -43.2280543,
+        "wikidata": "Q22069113",
+        "popularity": 1
       }
     },
     {
@@ -4279,6 +7884,7 @@
         "name": "Mirante do Sacopã",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -4387,6 +7993,7 @@
         "name": "Mirante do Rato Molhado",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -4544,7 +8151,8 @@
         "latitude": -22.9107158,
         "longitude": -43.1759613,
         "wikidata": "Q61774415",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q579694"
       }
     },
     {
@@ -4656,27 +8264,6 @@
         "longitude": -43.1982082,
         "wikidata": "Q67204964",
         "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.1776343,
-          -22.9549152
-        ]
-      },
-      "properties": {
-        "name": "Manequinho",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -22.9549152,
-        "longitude": -43.1776343,
-        "wikipedia": "pt:Manequinho",
-        "popularity": 0
       }
     },
     {
@@ -4819,8 +8406,8 @@
         "name": "Cascatinha Taunay",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9585381,
         "longitude": -43.2774796,
@@ -4842,8 +8429,8 @@
         "name": "Cachoeira das Almas",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.948637,
         "longitude": -43.2868361,
@@ -5743,6 +9330,52 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1554948,
+          -22.9453403
+        ]
+      },
+      "properties": {
+        "name": "Praia de Fora",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9453403,
+        "longitude": -43.1554948,
+        "wikidata": "Q22069082",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2646802,
+          -23.000623
+        ]
+      },
+      "properties": {
+        "name": "Praia do Pepino",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -23.000623,
+        "longitude": -43.2646802,
+        "wikidata": "Q22041884",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1657211,
           -22.9550549
         ]
@@ -5819,7 +9452,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": -22.9766347,
         "longitude": -43.1940071,
@@ -5858,6 +9492,75 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1066839,
+          -22.7633119
+        ]
+      },
+      "properties": {
+        "name": "Praia Grossa",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.7633119,
+        "longitude": -43.1066839,
+        "wikidata": "Q22069004",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1105811,
+          -22.7628783
+        ]
+      },
+      "properties": {
+        "name": "Praia da Guarda",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.7628783,
+        "longitude": -43.1105811,
+        "wikidata": "Q22068995",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1717886,
+          -22.8211156
+        ]
+      },
+      "properties": {
+        "name": "Praia da Engenhoca",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.8211156,
+        "longitude": -43.1717886,
+        "wikidata": "Q22071524",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.0955331,
           -22.8897613
         ]
@@ -5866,8 +9569,8 @@
         "name": "G.R.E.S. Acadêmicos do Cubango",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.8897613,
         "longitude": -43.0955331,
@@ -5897,7 +9600,7 @@
         "longitude": -43.2169829,
         "address": "Avenida Pedro II, 293, Rio de Janeiro",
         "opening_hours": "Tu-Fr 11:00-17:00",
-        "phone": "+55 21 2332 4513",
+        "phone": "+55-21-23324513",
         "website": "https://www.funarj.rj.gov.br/museus/mpr_01.html",
         "wikidata": "Q52333149",
         "popularity": 1
@@ -5922,6 +9625,52 @@
         "latitude": -22.9022751,
         "longitude": -43.2010734,
         "wikidata": "Q48866975",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1961411,
+          -22.8193284
+        ]
+      },
+      "properties": {
+        "name": "Praia da Bica",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.8193284,
+        "longitude": -43.1961411,
+        "wikidata": "Q22048404",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2256178,
+          -22.8203005
+        ]
+      },
+      "properties": {
+        "name": "Praia Belo Jardim",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.8203005,
+        "longitude": -43.2256178,
+        "wikidata": "Q22069051",
         "popularity": 1
       }
     },
@@ -5998,6 +9747,52 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1062304,
+          -22.7677372
+        ]
+      },
+      "properties": {
+        "name": "Praia da Imbuca",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.7677372,
+        "longitude": -43.1062304,
+        "wikidata": "Q22069007",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1111372,
+          -22.7561474
+        ]
+      },
+      "properties": {
+        "name": "Praia da Moreninha",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.7561474,
+        "longitude": -43.1111372,
+        "wikidata": "Q22068996",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.2770304,
           -22.8430823
         ]
@@ -6006,7 +9801,8 @@
         "name": "Parque Shanghai",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": -22.8430823,
         "longitude": -43.2770304,
@@ -6074,8 +9870,8 @@
         "name": "Palácio da Cidade",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9501912,
         "longitude": -43.1942215,
@@ -6258,12 +10054,36 @@
         "name": "Área de Proteção Ambiental e Recuperação Urbana do Jequiá",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": -22.8250674,
         "longitude": -43.1825546,
         "wikidata": "Q10395967",
         "wikipedia": "pt:Área de Proteção Ambiental e Recuperação Urbana do Jequiá",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2503428,
+          -22.8389543
+        ]
+      },
+      "properties": {
+        "name": "Praia de Ramos",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.8389543,
+        "longitude": -43.2503428,
+        "wikidata": "Q22068987",
         "popularity": 1
       }
     },
@@ -6309,7 +10129,7 @@
         "latitude": -22.930068,
         "longitude": -43.1762202,
         "address": "Rua Dois de Dezembro, 63, Rio de Janeiro",
-        "phone": "+55 21 3131 3060",
+        "phone": "+55-21-31313060",
         "website": "https://www.oifuturo.org.br/",
         "popularity": 0
       }
@@ -6333,7 +10153,7 @@
         "latitude": -22.9265779,
         "longitude": -43.1763402,
         "address": "Rua do Catete, 179, Rio de Janeiro",
-        "phone": "+55 21 2285 0441",
+        "phone": "+55-21-22850441",
         "website": "https://www.cnfcp.gov.br/",
         "wheelchair": "limited",
         "popularity": 0
@@ -6377,8 +10197,8 @@
         "name": "Baobá Maria Gorda",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.7584541,
         "longitude": -43.1085003,
@@ -6415,28 +10235,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.2862141,
-          -22.9438076
-        ]
-      },
-      "properties": {
-        "name": "Pico da Tijuca",
-        "category": "viewpoint",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOLITARIO"
-        ],
-        "latitude": -22.9438076,
-        "longitude": -43.2862141,
-        "website": "http://www.parquedatijuca.com.br/verde/pt03.htm",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -43.1983029,
           -22.9827699
         ]
@@ -6445,6 +10243,7 @@
         "name": "Mirante da Paz",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6481,6 +10280,51 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1797993,
+          -22.9075391
+        ]
+      },
+      "properties": {
+        "name": "Morro de Santo Antônio",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9075391,
+        "longitude": -43.1797993,
+        "wikipedia": "pt:Morro de Santo Antônio",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2916043,
+          -22.9138513
+        ]
+      },
+      "properties": {
+        "name": "Morro do Céu",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": -22.9138513,
+        "longitude": -43.2916043,
+        "wikidata": "Q22069231",
+        "wikipedia": "pt:Morro do Céu",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.2249351,
           -22.9710478
         ]
@@ -6489,12 +10333,12 @@
         "name": "Espaço Tom Jobim",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9710478,
         "longitude": -43.2249351,
-        "phone": "+55 21 2274 7012",
+        "phone": "+55-21-22747012",
         "website": "http://www.jbrj.gov.br/cultura/espaco_tom_jobim.html",
         "wikidata": "Q36304621",
         "popularity": 0
@@ -6519,7 +10363,7 @@
         "latitude": -22.9810216,
         "longitude": -43.2079726,
         "address": "Avenida Epitácio Pessoa, 1164, Rio de Janeiro",
-        "phone": "+55 21 2227 2237",
+        "phone": "+55-21-22272237",
         "website": "https://www.casadosaber.com.br/",
         "popularity": 0
       }
@@ -6543,6 +10387,29 @@
         "longitude": -43.2470733,
         "address": "Rua Teixeira Ribeiro, 535, Rio de Janeiro",
         "website": "https://observatoriodefavelas.org.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1745818,
+          -22.9031587
+        ]
+      },
+      "properties": {
+        "name": "General Osório",
+        "name_en": "General Osório Statue",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -22.9031587,
+        "longitude": -43.1745818,
+        "address": "Praça Quinze de Novembro, Rio de Janeiro",
+        "wikipedia": "pt:Estátua equestre do General Osório",
         "popularity": 0
       }
     },
@@ -6582,8 +10449,8 @@
         "name_en": "Corcovado Train",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9406446,
         "longitude": -43.1985422,
@@ -6670,7 +10537,7 @@
         ]
       },
       "properties": {
-        "name": "Museu da Farmácia da Santa Casa de Misericórdia",
+        "name": "Museu da Farmacia da Santa Casa de Misericórdia",
         "category": "museum",
         "profiles": [
           "CULTURAL",
@@ -6702,7 +10569,7 @@
         "latitude": -22.8947583,
         "longitude": -43.2941188,
         "opening_hours": "Tu-Sa 09:00-21:00; Su 09:30-16:30",
-        "phone": "+55 21 4101 1665",
+        "phone": "2141011665",
         "popularity": 0
       }
     },
@@ -6780,6 +10647,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.1776343,
+          -22.9549152
+        ]
+      },
+      "properties": {
+        "name": "Manequinho",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -22.9549152,
+        "longitude": -43.1776343,
+        "wikipedia": "pt:Manequinho",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1737335,
           -22.9097491
         ]
@@ -6830,8 +10718,8 @@
         "name": "Lago das Fadas",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9522079,
         "longitude": -43.2837098,
@@ -6875,7 +10763,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -22.9258642,
         "longitude": -43.1762213,
@@ -6883,7 +10772,8 @@
         "opening_hours": "3a a 6a - 10 às 17 h e Sábados, Domingos e Feriados- 11 às 18 h",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1142766"
       }
     },
     {
@@ -6922,8 +10812,8 @@
         "name": "Ponto de Encontro do passeio da Ilha da Boa Viagem",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9083873,
         "longitude": -43.1308395,
@@ -6944,7 +10834,8 @@
         "name": "Heroes Park",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": -22.9433681,
         "longitude": -43.0588209,
@@ -7029,6 +10920,53 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.2213661,
+          -22.9878898
+        ]
+      },
+      "properties": {
+        "name": "Praia do Leblon",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9878898,
+        "longitude": -43.2213661,
+        "wikidata": "Q22040361",
+        "wikipedia": "pt:Praia do Leblon",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.0581322,
+          -22.9630775
+        ]
+      },
+      "properties": {
+        "name": "Praia de Camboinhas",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9630775,
+        "longitude": -43.0581322,
+        "wikidata": "Q63801375",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1730321,
           -22.9377826
         ]
@@ -7087,7 +11025,8 @@
         "latitude": -22.8969059,
         "longitude": -43.1663633,
         "website": "https://www.mar.mil.br/dphdm/ilha/ilha.htm",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q985128"
       }
     },
     {
@@ -7178,6 +11117,30 @@
         "longitude": -43.3418434,
         "address": "Rua Andrade Pinto, Rio de Janeiro",
         "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1632632,
+          -22.9479415
+        ]
+      },
+      "properties": {
+        "name": "Praia da Urca",
+        "name_en": "Urca Beach",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": -22.9479415,
+        "longitude": -43.1632632,
+        "wikidata": "Q22030731",
         "popularity": 0
       }
     },
@@ -7282,14 +11245,14 @@
         "name": "Igreja do Glorioso Patriarca São José",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9044197,
         "longitude": -43.1739568,
         "address": "Avenida Presidente Antônio Carlos, Rio de Janeiro",
         "opening_hours": "Mo-Fr 09:00-12:00,14:00-17:00; Su 09:00-11:00",
-        "phone": "+55 21 2533 4545",
+        "phone": "+55-21-25334545",
         "wheelchair": "yes",
         "popularity": 0
       }
@@ -7353,8 +11316,8 @@
         "name": "Arco do Teles",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9026883,
         "longitude": -43.174681,
@@ -7490,7 +11453,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -22.9178182,
         "longitude": -43.182479,
@@ -7516,13 +11480,13 @@
         "name": "Centro de Artes Calouste Gulbenkian",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9083198,
         "longitude": -43.1957817,
         "address": "Rua Benedito Hipólito, 125, Rio de Janeiro",
-        "phone": "+55 21 2224 2628",
+        "phone": "+55-21-22242628",
         "website": "http://www.rio.rj.gov.br/web/smc/exibeconteudo?article-id=151959",
         "popularity": 0
       }
@@ -7540,13 +11504,13 @@
         "name": "Igreja da Ordem Terceira de São Francisco da Penitência",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9069153,
         "longitude": -43.1792559,
         "address": "Largo da Carioca, 5, Rio de Janeiro",
-        "phone": "+55 21 2262 0197",
+        "phone": "+55-21-22620197",
         "wikipedia": "pt:Igreja da Ordem Terceira de São Francisco da Penitência",
         "popularity": 0
       }
@@ -7661,7 +11625,7 @@
         "longitude": -43.2233048,
         "address": "Rua Jardim Botânico, 1008, Rio de Janeiro",
         "opening_hours": "08:00-17:00",
-        "phone": "+55 21 3874 1808",
+        "phone": "+5521 3874-1808;+55-21-38741808",
         "website": "http://www.jbrj.gov.br;http://museudomeioambiente.jbrj.gov.br/",
         "wheelchair": "yes",
         "popularity": 0
@@ -7694,8 +11658,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.2173721,
-          -22.8684867
+          -43.2173667,
+          -22.8685229
         ]
       },
       "properties": {
@@ -7705,8 +11669,8 @@
           "NATUREZA",
           "RELAXAMENTO"
         ],
-        "latitude": -22.8684867,
-        "longitude": -43.2173721,
+        "latitude": -22.8685229,
+        "longitude": -43.2173667,
         "opening_hours": "24/7",
         "popularity": 0
       }
@@ -7724,8 +11688,8 @@
         "name": "Espaço Cultural Municipal Sérgio Porto",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.958546,
         "longitude": -43.1994102,
@@ -7802,7 +11766,7 @@
         "longitude": -43.1694037,
         "address": "Praça Marechal Âncora, 95, Rio de Janeiro",
         "opening_hours": "Segunda-feira a sexta, das 10h às 18h",
-        "phone": "+55 21 2240 5568",
+        "phone": "+55 (21) 2240-5568",
         "website": "http://www.ccms.saude.gov.br/",
         "popularity": 0
       }
@@ -7821,7 +11785,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -22.896144,
         "longitude": -43.1942602,
@@ -8210,14 +12175,14 @@
         "name": "Igreja da Santa Cruz dos Militares",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9021274,
         "longitude": -43.1756079,
         "address": "Rua Primeiro de Março, 36, Rio de Janeiro",
         "opening_hours": "Mo-Fr 13:30-15:30",
-        "phone": "+55 21 2509 3878",
+        "phone": "+55-21-25093878",
         "wikipedia": "pt:Igreja de Santa Cruz dos Militares",
         "popularity": 0
       }
@@ -8472,31 +12437,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.1268027,
-          -22.8996052
-        ]
-      },
-      "properties": {
-        "name": "Casa 264",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": -22.8996052,
-        "longitude": -43.1268027,
-        "address": "Rua General Andrade Neves, 264, Niterói",
-        "opening_hours": "Th-Sa 19:00-00:00",
-        "website": "https://www.casa264.com.br/",
-        "wheelchair": "limited",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -43.1704472,
           -22.9066458
         ]
@@ -8505,8 +12445,8 @@
         "name": "Igreja de Nossa Senhora da Misericórdia e Santa Isabel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -22.9066458,
         "longitude": -43.1704472,
@@ -8536,7 +12476,7 @@
         "longitude": -43.1972416,
         "address": "Rua Voluntários da Pátria, 448 lj A, Rio de Janeiro",
         "opening_hours": "Mo-Sa 11:00-00:00; Su 11:00-22:00",
-        "phone": "+55 21 2537 8108",
+        "phone": "(21)2537-8108",
         "wheelchair": "limited",
         "cuisine": "regional",
         "popularity": 0
@@ -8562,7 +12502,7 @@
         "longitude": -43.1849497,
         "address": "Rua Álvaro Chaves, 41, Rio de Janeiro",
         "opening_hours": "Mo-Su 12:00-22:00",
-        "phone": "+55 21 3592 5368; +55 21 2499 5766",
+        "phone": "+55 21 3592 5368",
         "wheelchair": "limited",
         "cuisine": "brazilian;pizza",
         "popularity": 0
@@ -8639,7 +12579,7 @@
         "longitude": -43.20789,
         "address": "Rua Maria Angélica, 129, Rio de Janeiro",
         "opening_hours": "Mo-Th 18:30-00:30; Fr-Sa 18:30-01:30",
-        "phone": "+55 21 2535 0687",
+        "phone": "+55-21-25350687",
         "website": "http://www.casabraz.com.br/",
         "cuisine": "pizza",
         "popularity": 0
@@ -8665,7 +12605,7 @@
         "longitude": -43.2225558,
         "address": "Rua Conde de Bonfim, 41 Lj A, Rio de Janeiro",
         "opening_hours": "Mo-Su 08:00-00:00",
-        "phone": "+55 21 2567 4242",
+        "phone": "+55 (21) 2567-4242",
         "website": "https://www.ravelle.com.br/",
         "cuisine": "pizza;cake",
         "popularity": 0
@@ -8770,7 +12710,7 @@
         "longitude": -43.1770784,
         "address": "Rua Marquês de Abrantes, 79, Rio de Janeiro",
         "opening_hours": "Mo-Fr 12:00-23:00; Sa 13:00-23:00",
-        "phone": "+55 21 2553 2806",
+        "phone": "+55-21-25532806",
         "website": "http://www.mitsuobrasil.com.br/",
         "cuisine": "japanese",
         "popularity": 0
@@ -8796,7 +12736,7 @@
         "longitude": -43.1966086,
         "address": "Voluntários da Pátria, 448, Rio de Janeiro",
         "opening_hours": "Tu-Sa 12:00-01:00; Mo, Su 12:00-00:00",
-        "phone": "+55 21 2535 2774",
+        "phone": "(21)2535-2774",
         "cuisine": "regional",
         "popularity": 0
       }
@@ -8821,7 +12761,7 @@
         "longitude": -43.1663261,
         "address": "Avenida Atlântica, 290, Rio de Janeiro",
         "opening_hours": "Mo-Su 12:00-00:00",
-        "phone": "+55 21 2275 0652",
+        "phone": "+55 (21) 2275-0652",
         "website": "https://marius.com.br/",
         "cuisine": "brazilian;grill;barbecue;steak_house;fish;fine_dining",
         "popularity": 0
@@ -8924,7 +12864,7 @@
         "longitude": -43.1823139,
         "address": "Rua Riachuelo, 67, Rio de Janeiro",
         "opening_hours": "Mo-We 11:30-00:00, Th 11:30-01:00, Fr 11:30-03:00, Sa 11:30-02:00",
-        "phone": "+55 21 99853 5035",
+        "phone": "21 9853-5035, 21 99853-5035",
         "website": "http://lapamaki.com.br",
         "cuisine": "sushi",
         "popularity": 0
@@ -9002,7 +12942,7 @@
         "longitude": -43.1903114,
         "address": "Rua Mário Portela, 16, Rio de Janeiro",
         "opening_hours": "Mo-Su 09:00-00:00",
-        "phone": "+55 21 2558 5582",
+        "phone": "(21) 2558-5582",
         "website": "https://botecosonholindo.com.br/sonholindo-lara/",
         "cuisine": "regional",
         "popularity": 0
@@ -9028,7 +12968,7 @@
         "longitude": -43.1756113,
         "address": "Rua Primeiro de Março, 24, Rio de Janeiro",
         "opening_hours": "Mo-Fr 11:00-13:30",
-        "phone": "+55 21 2224 6021; +55 21 99646 6126",
+        "phone": "+55 21 22246021;+55 21 96466126",
         "cuisine": "regional",
         "popularity": 0
       }
@@ -9130,7 +13070,7 @@
         "longitude": -43.2161532,
         "address": "Rua São Cristóvão, 850, Rio de Janeiro",
         "opening_hours": "Mo-Fr 11:30-15:30",
-        "phone": "+55 21 2580 3197",
+        "phone": "(21) 2580-3197",
         "cuisine": "international",
         "popularity": 0
       }
@@ -9207,7 +13147,7 @@
         "longitude": -43.1265458,
         "address": "Avenida Visconde do Rio Branco, 655, Niterói",
         "opening_hours": "Mo-Su 11:00-1:00",
-        "phone": "+55 21 3254 1709",
+        "phone": "02132541709",
         "website": "https://botequimarretado.ccmpedidoonline.com.br/",
         "cuisine": "regional",
         "popularity": 0
@@ -9337,7 +13277,7 @@
         "longitude": -43.1792612,
         "address": "Rua dois de Dezembro, 141, Rio de Janeiro",
         "opening_hours": "Mo-Su 11:00-00:00",
-        "phone": "+55 21 2135 2308",
+        "phone": "(21) 2135-2308",
         "website": "https://barbrotar.com.br/",
         "cuisine": "regional",
         "popularity": 0
@@ -9363,7 +13303,7 @@
         "longitude": -43.1786908,
         "address": "Rua Duvivier, 101, Rio de Janeiro",
         "opening_hours": "Mo-Su 11:00-00:00",
-        "phone": "+55 21 3648 2710",
+        "phone": "+55-21-3648-2710",
         "website": "https://www.bardoadao.com.br/",
         "wheelchair": "limited",
         "popularity": 0
@@ -9415,7 +13355,7 @@
         "longitude": -43.1953301,
         "address": "Rua Conde de Irajá, 247, Rio de Janeiro",
         "opening_hours": "Mo-Th 11:30-16:30, 18:00-23:00; Fr-Su 11:30-23:00",
-        "phone": "+55 21 3215 7216",
+        "phone": "552132157216",
         "website": "https://cozibistro.com.br/",
         "cuisine": "brazilian",
         "popularity": 0
@@ -9443,32 +13383,6 @@
         "phone": "+55 21 96633-4907",
         "wheelchair": "yes",
         "cuisine": "japanese",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.1306594,
-          -22.8981286
-        ]
-      },
-      "properties": {
-        "name": "Brasserie Reserva",
-        "category": "restaurant",
-        "profiles": [
-          "LUXO",
-          "SOCIAL"
-        ],
-        "latitude": -22.8981286,
-        "longitude": -43.1306594,
-        "address": "Avenida Visconde do Rio Branco, 880, Niterói",
-        "opening_hours": "Mo-Su 12:00-22:00",
-        "phone": "+55 21 98501 7814",
-        "website": "https://reservacultural.com.br/niteroi/gastronomia/brasserie-reserva/",
-        "cuisine": "french;brazilian",
         "popularity": 0
       }
     },
@@ -9518,7 +13432,7 @@
         "longitude": -43.1875876,
         "address": "Rua Dezenove de Fevereiro, 5, Rio de Janeiro",
         "opening_hours": "Mo-Sa 11:00-24:00; Su 11:00-22:00; PH 11:00-22:00",
-        "phone": "+55 21 2226 2424",
+        "phone": "+55-21-22262424",
         "website": "https://www.nabrasacolumbia.com.br/botafogo.php",
         "cuisine": "steak_house",
         "popularity": 0
@@ -9544,7 +13458,7 @@
         "longitude": -43.1808936,
         "address": "Rua Farani, 12;14;16, Rio de Janeiro",
         "opening_hours": "12:00-15:30; 19:00-24:00",
-        "phone": "+55 21 2553 4046; +55 21 2553 3929",
+        "phone": "+55-21-25534046;+55-21-25533929",
         "website": "http://www.restaurantemizu.com.br/",
         "cuisine": "japanese;mexican",
         "popularity": 0
@@ -9645,7 +13559,7 @@
         "longitude": -43.1970417,
         "address": "Rua Voluntários da Pátria, 446 lojas 1 e 2A, Rio de Janeiro",
         "opening_hours": "Mo-Su 12:00-00:00",
-        "phone": "+55 21 2537 1510",
+        "phone": "(21)2537-1510",
         "popularity": 0
       }
     },
@@ -9669,7 +13583,7 @@
         "longitude": -43.1965911,
         "address": "Rua Voluntários da Pátria, 448, Rio de Janeiro",
         "opening_hours": "Mo-Su 12:00-00:00",
-        "phone": "+55 21 3268 2856",
+        "phone": "*(21)3268-2856",
         "popularity": 0
       }
     },
@@ -9693,7 +13607,7 @@
         "longitude": -43.1811549,
         "address": "Rua Farani, 20, Rio de Janeiro",
         "opening_hours": "12:00-15:00; 18:30-24:00",
-        "phone": "+55 21 2552 7847; +55 21 2554 8290",
+        "phone": "+55-21-25527847; +55-21-25548290",
         "website": "http://www.miako.com.br/",
         "popularity": 0
       }
@@ -9718,7 +13632,7 @@
         "longitude": -43.2075238,
         "address": "Avenida Alexandre Ferreira, 220A, Rio de Janeiro",
         "opening_hours": "Mo-Th 12:00-24:00; Fr-Sa 12:00-01:00; Su 12:00-24:00",
-        "phone": "+55 21 2537 8906",
+        "phone": "+55-21-25378906",
         "website": "https://www.gulagula.com.br/",
         "popularity": 0
       }
@@ -9743,7 +13657,7 @@
         "longitude": -43.2078165,
         "address": "Rua Maria Angélica, 21, Rio de Janeiro",
         "opening_hours": "Mo-Th 19:00-00:30; Fr-Sa 19:00-01:30; Su 13:00-23:30",
-        "phone": "+55 21 2286 6661",
+        "phone": "+55-21-22866661",
         "website": "https://www.mrlam.com.br/",
         "popularity": 0
       }
@@ -9792,7 +13706,7 @@
         "latitude": -22.8978304,
         "longitude": -43.2211655,
         "opening_hours": "Tu-Th 11:00-16:00; Fr-Su 11:00-22:00",
-        "phone": "+55 21 3860 2929",
+        "phone": "+55-21-38602929",
         "website": "http://www.barracadachiquita.com.br",
         "cuisine": "regional",
         "popularity": 0
@@ -9843,7 +13757,7 @@
         "longitude": -43.1995271,
         "address": "Rua Almirante Alexandrino, 3056, Rio de Janeiro",
         "opening_hours": "Mo-Sa 11:00-22:30",
-        "phone": "+55 21 2556 6638",
+        "phone": "+55-21-25566638",
         "popularity": 0
       }
     },
@@ -9916,7 +13830,7 @@
         "latitude": -22.9145655,
         "longitude": -43.1848489,
         "opening_hours": "Mo-Su 09:00-17:00",
-        "phone": "+55 21 2242 2129",
+        "phone": "2122422129",
         "cuisine": "local",
         "popularity": 0
       }
@@ -9940,7 +13854,7 @@
         "latitude": -22.934237,
         "longitude": -43.177387,
         "opening_hours": "Mo-Fr 11:00-18:00; Sa 11:00-16:00",
-        "phone": "+55 21 2557 8600",
+        "phone": "+55 (21) 2557 8600",
         "cuisine": "brazilian",
         "popularity": 0
       }
@@ -9989,7 +13903,7 @@
         "latitude": -22.9306192,
         "longitude": -43.1793897,
         "opening_hours": "Mo-Su 09:00-23:00",
-        "phone": "+55 21 2556 5323",
+        "phone": "+55 (21) 2556-5323",
         "website": "https://pedido.anota.ai/information",
         "cuisine": "brazilian",
         "popularity": 0
@@ -10015,7 +13929,7 @@
         "longitude": -43.185977,
         "address": "Rua dos Inválidos, 14, Rio de Janeiro",
         "opening_hours": "Mo-Fr 11:30-15:00",
-        "phone": "+55 21 99973 2211",
+        "phone": "(21) 99973-2211",
         "popularity": 0
       }
     },
@@ -10064,7 +13978,7 @@
         "longitude": -43.1755375,
         "address": "Rua do Rosário, 34, Rio de Janeiro",
         "opening_hours": "Mo-We 11:00-18:00; Th-Sa 11:00-20:00; Su 11:00-29:00",
-        "phone": "+55 21 97978 4353",
+        "phone": "+55 21 979-784-353",
         "website": "https://sobrado-da-cidade.negocio.site/",
         "popularity": 0
       }
@@ -10089,7 +14003,7 @@
         "longitude": -43.1769802,
         "address": "Rua Buenos Aires, 21, Rio de Janeiro",
         "opening_hours": "Mo-Fr 07:00-00:00",
-        "phone": "+55 21 3178 0003",
+        "phone": "+55 21  3178-0003",
         "popularity": 0
       }
     },
@@ -10313,7 +14227,7 @@
         "longitude": -43.2419063,
         "address": "Boulevard 28 de Setembro, 178A, Rio de Janeiro",
         "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-14:00",
-        "phone": "+55 21 3495 3382; +55 21 97267 0414",
+        "phone": "+55 21 3495-3382, +55 21 97267-0414",
         "website": "https://www.facebook.com/bolodepaodequeijoerian/",
         "cuisine": "coffee_shop",
         "popularity": 0
@@ -10364,7 +14278,7 @@
         "longitude": -43.1826727,
         "address": "Praia de Botafogo, 416, Rio de Janeiro",
         "opening_hours": "Mo-Su 07:00-19:00",
-        "phone": "+55 21 99910 8686",
+        "phone": "+55 21 99910-8686",
         "website": "https://instagram.com/cheirinbao.praiabotafogo",
         "cuisine": "coffee_shop;regional;sandwich;chicken;breakfast;donut;cake;juice;hot_dog;dessert;brazilian;brunch;salad",
         "popularity": 0
@@ -10440,7 +14354,7 @@
         "longitude": -43.1966304,
         "address": "Rua Capitão Salomão, 14B, Rio de Janeiro",
         "opening_hours": "Mo-Fr 08:00-19:00; Sa, Su 09:00-18:00",
-        "phone": "+55 21 2535 2465",
+        "phone": "(21)2535-2465",
         "popularity": 0
       }
     },
@@ -10462,7 +14376,7 @@
         ],
         "latitude": -22.9229555,
         "longitude": -43.176183,
-        "opening_hours": "Mo-Th 09:00-19:00; Fr 09:00-22:30",
+        "opening_hours": "Mo-Th 9:00-19:00; Fr 9:00-22:30",
         "phone": "+55 21 3251-3027",
         "website": "https://mayacafe.com.br/lojas/",
         "popularity": 0
@@ -10560,7 +14474,7 @@
         "longitude": -43.1803573,
         "address": "Avenida Atlântica, 1910, Rio de Janeiro",
         "opening_hours": "Tu-Th 18:00-01:00; Fr 18:00-04:00; Sa 12:00-04:00; Su 12:00-01:00",
-        "phone": "+55 21 3649 9658",
+        "phone": "+55 (21) 3649 9658",
         "website": "http://www.cafedelmarrj.com.br/",
         "popularity": 0
       }
@@ -10585,7 +14499,7 @@
         "longitude": -43.2230136,
         "address": "Rua Valparaíso, 16, Rio de Janeiro",
         "opening_hours": "Mo-Sa 08:00-24:00, Su 11:00-24:00",
-        "phone": "+55 21 2567 8906",
+        "phone": "55 2125678906",
         "popularity": 0
       }
     },
@@ -10659,7 +14573,7 @@
         "longitude": -43.1969165,
         "address": "Rua Voluntários da Pátria, 446 Loja 12 e 13, Rio de Janeiro",
         "opening_hours": "Mo-Sa 08:00-22:00; Su 08:00-16:00",
-        "phone": "+55 21 2286 2717",
+        "phone": "+55-21-22862717",
         "cuisine": "arab",
         "popularity": 0
       }
@@ -10684,7 +14598,7 @@
         "longitude": -43.1946001,
         "address": "Rua Pedro Ernesto, 89, Rio de Janeiro",
         "opening_hours": "Tu-Su 18:00-01:00",
-        "phone": "+55 21 2510 6061",
+        "phone": "02125106061",
         "website": "https://www.msdelta.com.br/",
         "cuisine": "local",
         "popularity": 0
@@ -10710,7 +14624,7 @@
         "longitude": -43.1967521,
         "address": "Voluntários da Pátria, 448, Rio de Janeiro",
         "opening_hours": "Mo-Su 12:00-02:00",
-        "phone": "+55 21 3269 1103",
+        "phone": "(21)3269-1103",
         "popularity": 0
       }
     },
@@ -10734,7 +14648,7 @@
         "longitude": -43.1972993,
         "address": "Rua Humaitá, 12, loja C, Rio de Janeiro",
         "opening_hours": "Tu-Sa 10:00-02:00; Su 10:00-23:00",
-        "phone": "+55 21 98386 7469",
+        "phone": "(21)98386-7469",
         "popularity": 0
       }
     },
@@ -10782,7 +14696,7 @@
         "longitude": -43.1860663,
         "address": "Praça da República, 1, Rio de Janeiro",
         "opening_hours": "Mo-Sa 07:00-24:00",
-        "phone": "+55 21 2508 5751",
+        "phone": "(21) 2508-5751",
         "popularity": 0
       }
     }

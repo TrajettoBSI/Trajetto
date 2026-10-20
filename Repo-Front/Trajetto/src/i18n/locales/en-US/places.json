@@ -27,6 +27,10 @@
     "zoo": "Zoo",
     "historic_villa": "Historic villa",
     "historic_tower": "Historic tower",
-    "historic_monastery": "Monastery"
+    "historic_monastery": "Monastery",
+    "beach": "Beach",
+    "peak": "Peak",
+    "waterfall": "Waterfall",
+    "cave": "Cave"
   }
 }

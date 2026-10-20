@@ -27,6 +27,10 @@
     "zoo": "Zoológico",
     "historic_villa": "Villa histórica",
     "historic_tower": "Torre histórica",
-    "historic_monastery": "Monasterio"
+    "historic_monastery": "Monasterio",
+    "beach": "Playa",
+    "peak": "Pico",
+    "waterfall": "Cascada",
+    "cave": "Cueva"
   }
 }

@@ -6,27 +6,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -58.3746749,
-          -34.6100015
-        ]
-      },
-      "properties": {
-        "name": "Tritón",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -34.6100015,
-        "longitude": -58.3746749,
-        "wikipedia": "es:Tritón (mitología)",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -58.3831792,
           -34.6010807
         ]
@@ -35,8 +14,8 @@
         "name": "Teatro Colón",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6010807,
         "longitude": -58.3831792,
@@ -63,15 +42,16 @@
         "name_en": "National Congress of Argentina",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6098063,
         "longitude": -58.3926617,
         "address": "Avenida Entre Ríos, 51, Ciudad Autónoma de Buenos Aires",
         "wikidata": "Q646190",
         "wikipedia": "es:Congreso de la Nación Argentina",
-        "popularity": 31
+        "popularity": 31,
+        "site": "Q646190"
       }
     },
     {
@@ -87,8 +67,8 @@
         "name": "Palacio Barolo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6096597,
         "longitude": -58.3857297,
@@ -126,48 +106,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -58.4015343,
-          -34.580163
-        ]
-      },
-      "properties": {
-        "name": "Marino de la Armada Argentina",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -34.580163,
-        "longitude": -58.4015343,
-        "wikipedia": "es:Armada Argentina",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -58.4016832,
-          -34.580683
-        ]
-      },
-      "properties": {
-        "name": "Piloto de la Fuerza Aérea Argentina",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -34.580683,
-        "longitude": -58.4016832,
-        "wikipedia": "es:Fuerza Aérea Argentina",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -58.3816296,
           -34.6037093
         ]
@@ -176,14 +114,15 @@
         "name": "Obelisco",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6037093,
         "longitude": -58.3816296,
         "wikidata": "Q831389",
         "wikipedia": "es:Obelisco de Buenos Aires",
-        "popularity": 25
+        "popularity": 25,
+        "site": "Q831389"
       }
     },
     {
@@ -200,8 +139,8 @@
         "name_en": "Recoleta Cemetry",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.587653,
         "longitude": -58.3935023,
@@ -226,8 +165,8 @@
         "name_en": "Metropolitan Cathedral",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.607476,
         "longitude": -58.3732471,
@@ -266,7 +205,8 @@
         "wikidata": "Q1848918",
         "wikipedia": "es:Museo Nacional de Bellas Artes (Argentina)",
         "wheelchair": "yes",
-        "popularity": 23
+        "popularity": 23,
+        "site": "Q1848918"
       }
     },
     {
@@ -283,35 +223,14 @@
         "name_en": "Women's Bridge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6080163,
         "longitude": -58.3651291,
         "wikidata": "Q2336867",
         "wikipedia": "es:Puente de la Mujer",
         "popularity": 23
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -58.4013667,
-          -34.5802171
-        ]
-      },
-      "properties": {
-        "name": "Soldado del Ejército Argentino",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -34.5802171,
-        "longitude": -58.4013667,
-        "wikipedia": "es:Ejército Argentino",
-        "popularity": 0
       }
     },
     {
@@ -327,8 +246,9 @@
         "name": "Jardín Botánico Carlos Thays",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": -34.582855,
         "longitude": -58.4173375,
@@ -427,8 +347,8 @@
         "name": "El Ateneo Grand Splendid",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5959828,
         "longitude": -58.3942623,
@@ -481,8 +401,8 @@
         "name": "Torre de los Ingleses",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5921821,
         "longitude": -58.3737396,
@@ -505,8 +425,8 @@
         "name_en": "Kavanagh Building",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5954039,
         "longitude": -58.3746831,
@@ -530,7 +450,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.6269637,
         "longitude": -58.3705905,
@@ -558,7 +479,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5826341,
         "longitude": -58.4010471,
@@ -616,15 +538,16 @@
         "name_en": "Pyramid of May",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6084063,
         "longitude": -58.3721649,
         "wikidata": "Q831484",
         "wikipedia": "es:Pirámide de Mayo",
         "wheelchair": "yes",
-        "popularity": 15
+        "popularity": 15,
+        "site": "Q831484"
       }
     },
     {
@@ -668,8 +591,8 @@
         "name": "Planetario Galileo Galilei",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5696495,
         "longitude": -58.411721,
@@ -714,8 +637,8 @@
         "name": "Teatro Cervantes",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5989638,
         "longitude": -58.3834186,
@@ -794,7 +717,8 @@
         "name_en": "Buenos Aires Japanese Gardens",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": -34.5751872,
         "longitude": -58.4094107,
@@ -822,8 +746,8 @@
         "name": "Caminito",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6392639,
         "longitude": -58.3625488,
@@ -1012,8 +936,8 @@
         "name": "Puente Transbordador Nicolás Avellaneda",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6385581,
         "longitude": -58.356241,
@@ -1059,8 +983,8 @@
         "name": "Stadium Luna Park",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6023179,
         "longitude": -58.3687006,
@@ -1187,8 +1111,8 @@
         "name": "Catedral ortodoxa rusa de la Santísima Trinidad",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6251002,
         "longitude": -58.3700364,
@@ -1212,8 +1136,8 @@
         "name_en": "Teatro Opera",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6037068,
         "longitude": -58.378948,
@@ -1277,27 +1201,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -58.3670588,
-          -34.6333165
-        ]
-      },
-      "properties": {
-        "name": "La “Inmortal Polaca” del maestro ajedrecista Miguel Najdorf",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -34.6333165,
-        "longitude": -58.3670588,
-        "wikipedia": "es:Inmortal polaca",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -58.3816023,
           -34.6036938
         ]
@@ -1313,7 +1216,8 @@
         "longitude": -58.3816023,
         "wikidata": "Q3390424",
         "wikipedia": "es:Plaza de la República (Buenos Aires)",
-        "popularity": 8
+        "popularity": 8,
+        "site": "Q831389"
       }
     },
     {
@@ -1357,7 +1261,8 @@
         "name": "Reserva Ecológica Costanera Sur",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": -34.6069227,
         "longitude": -58.3515043,
@@ -1365,27 +1270,6 @@
         "wikidata": "Q1034280",
         "wikipedia": "es:Reserva ecológica Costanera Sur (Buenos Aires)",
         "popularity": 8
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -58.4018294,
-          -34.5806146
-        ]
-      },
-      "properties": {
-        "name": "Granadero",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -34.5806146,
-        "longitude": -58.4018294,
-        "wikipedia": "es:Regimiento de Granaderos a Caballo General San Martín",
-        "popularity": 0
       }
     },
     {
@@ -1424,8 +1308,8 @@
         "name": "Plaza Dorrego",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6204739,
         "longitude": -58.3717792,
@@ -1447,8 +1331,8 @@
         "name": "Torre Espacial",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6728492,
         "longitude": -58.4498156,
@@ -1477,7 +1361,8 @@
         "longitude": -58.3718514,
         "wikidata": "Q4579815",
         "wikipedia": "es:Basílica de San Francisco (Buenos Aires)",
-        "popularity": 7
+        "popularity": 7,
+        "site": "Q4579815"
       }
     },
     {
@@ -1493,8 +1378,8 @@
         "name": "Maipo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6027665,
         "longitude": -58.3779684,
@@ -1570,8 +1455,8 @@
         "name": "Confitería El Molino",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6088588,
         "longitude": -58.39225,
@@ -1713,8 +1598,8 @@
         "name": "Teatro Avenida",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6093558,
         "longitude": -58.3836511,
@@ -1767,8 +1652,8 @@
         "name": "Parque El Rosedal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5706923,
         "longitude": -58.4173191,
@@ -2003,7 +1888,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5394995,
         "longitude": -58.4410831,
@@ -2030,8 +1916,8 @@
         "name": "Monumento ecuestre al General Manuel Belgrano",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6083586,
         "longitude": -58.3712484,
@@ -2054,8 +1940,8 @@
         "name": "Teatro Coliseo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.596736,
         "longitude": -58.3832768,
@@ -2128,7 +2014,8 @@
         "name": "Tierra Santa",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": -34.5473432,
         "longitude": -58.4332769,
@@ -2203,7 +2090,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5976151,
         "longitude": -58.3944597,
@@ -2213,7 +2101,8 @@
         "wikidata": "Q5047856",
         "wikipedia": "es:Casa Nacional del Bicentenario",
         "fee": "no",
-        "popularity": 5
+        "popularity": 5,
+        "site": "Q5047856"
       }
     },
     {
@@ -2324,8 +2213,8 @@
         "name_en": "Teatro Gran Rex",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6032177,
         "longitude": -58.3789541,
@@ -2347,8 +2236,8 @@
         "name": "Edificio La Inmobiliaria",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6096376,
         "longitude": -58.3867422,
@@ -2394,7 +2283,8 @@
         "name_en": "Ecopark",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": -34.5784206,
         "longitude": -58.4168344,
@@ -2440,8 +2330,8 @@
         "name": "Monumento a los Caídos en Malvinas",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5939289,
         "longitude": -58.3751497,
@@ -2489,8 +2379,8 @@
         "name": "La Trastienda Club",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6130956,
         "longitude": -58.3705332,
@@ -2513,8 +2403,8 @@
         "name": "Teatro General San Martín",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6045409,
         "longitude": -58.3885267,
@@ -2544,27 +2434,6 @@
         "wikidata": "Q6023283",
         "wikipedia": "es:Monumento de los españoles",
         "popularity": 4
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -58.4189888,
-          -34.5821195
-        ]
-      },
-      "properties": {
-        "name": "Los primeros fríos",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -34.5821195,
-        "longitude": -58.4189888,
-        "wikipedia": "es:Los primeros fríos",
-        "popularity": 0
       }
     },
     {
@@ -2918,8 +2787,8 @@
         "name_en": "Estrugamou Building",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5924927,
         "longitude": -58.378299,
@@ -3081,8 +2950,8 @@
         "name": "Liceo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6087914,
         "longitude": -58.3875768,
@@ -3129,7 +2998,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5929041,
         "longitude": -58.3679245,
@@ -3250,7 +3120,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5384819,
         "longitude": -58.4628918,
@@ -3261,7 +3132,8 @@
         "wikidata": "Q16563935",
         "wikipedia": "es:Espacio Memoria y Derechos Humanos",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q16563935"
       }
     },
     {
@@ -3456,7 +3328,8 @@
         "website": "https://museomalvinas.cultura.gob.ar/",
         "wikidata": "Q17197967",
         "wikipedia": "es:Museo Malvinas e Islas del Atlántico Sur",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q16563935"
       }
     },
     {
@@ -3495,8 +3368,8 @@
         "name": "Edificio Otto Wulff",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6124285,
         "longitude": -58.3749276,
@@ -3519,8 +3392,8 @@
         "name": "Teatro Broadway",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6034539,
         "longitude": -58.3831941,
@@ -3589,7 +3462,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.6053383,
         "longitude": -58.3740115,
@@ -3688,8 +3562,8 @@
         "name": "Teatro Astral",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6041084,
         "longitude": -58.3898133,
@@ -3710,8 +3584,8 @@
         "name": "Club Español",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6103651,
         "longitude": -58.3804301,
@@ -3786,8 +3660,8 @@
         "name": "Los Angeles",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6045403,
         "longitude": -58.3915493,
@@ -3809,8 +3683,8 @@
         "name": "Regio",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5842642,
         "longitude": -58.445664,
@@ -3833,7 +3707,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.587663,
         "longitude": -58.3955349,
@@ -3858,8 +3733,8 @@
         "name": "Teatro del Pueblo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6003927,
         "longitude": -58.4168043,
@@ -3882,7 +3757,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5939504,
         "longitude": -58.4062627,
@@ -3936,8 +3812,8 @@
         "name": "Kilómetro Cero",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6095597,
         "longitude": -58.3888344,
@@ -3985,8 +3861,8 @@
         "name": "Antigua Sede del Congreso Nacional",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6091647,
         "longitude": -58.3711512,
@@ -4009,8 +3885,8 @@
         "name": "La Librería de Avila",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6103267,
         "longitude": -58.3733624,
@@ -4031,8 +3907,8 @@
         "name": "Casa Mínima",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6167555,
         "longitude": -58.3713487,
@@ -4104,8 +3980,8 @@
         "name": "Multiteatro Comafi",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6037659,
         "longitude": -58.3849163,
@@ -4207,7 +4083,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5996894,
         "longitude": -58.3743531,
@@ -4723,8 +4600,8 @@
         "name": "Teatro Presidente Alvear",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6039255,
         "longitude": -58.3901623,
@@ -4831,7 +4708,8 @@
         "website": "https://www.argentina.gob.ar/derechoshumanos/museo-sitio-de-memoria-esma",
         "wikidata": "Q28663704",
         "wikipedia": "es:Museo Sitio de Memoria ESMA",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q16563935"
       }
     },
     {
@@ -4965,8 +4843,8 @@
         "name": "Cataratas del Iguazú, Misiones",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.608771,
         "longitude": -58.3808959,
@@ -5035,8 +4913,8 @@
         "name": "Teatro Metropolitano",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6036417,
         "longitude": -58.3858727,
@@ -5202,7 +5080,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5851396,
         "longitude": -58.3994037,
@@ -5275,8 +5154,8 @@
         "name": "Claustro Santa Catalina de Siena",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5992811,
         "longitude": -58.373742,
@@ -5299,7 +5178,8 @@
         "name": "Reserva Ecológica Ciudad Universitaria - Costanera Norte",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": -34.539166,
         "longitude": -58.4448656,
@@ -5367,8 +5247,8 @@
         "name": "Teatro Sarmiento",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5796697,
         "longitude": -58.4189848,
@@ -5390,8 +5270,8 @@
         "name": "Tabaris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6033691,
         "longitude": -58.3786301,
@@ -5458,8 +5338,8 @@
         "name": "El Hipopótamo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6252776,
         "longitude": -58.3712379,
@@ -5482,8 +5362,8 @@
         "name_en": "Mafalda, Susanita and Manolito",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6159617,
         "longitude": -58.3716913,
@@ -5531,8 +5411,8 @@
         "name": "Gomero de la Recoleta",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5877475,
         "longitude": -58.3913022,
@@ -5812,28 +5692,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -58.4189057,
-          -34.5689236
-        ]
-      },
-      "properties": {
-        "name": "Familia de Ciervos",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -34.5689236,
-        "longitude": -58.4189057,
-        "website": "http://puesta-en-valor.blogspot.com.ar/2009/06/escultura-mutilada-en-palermo.html",
-        "wikipedia": "fr:Famille de cervidés",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -58.4344042,
           -34.607075
         ]
@@ -5950,27 +5808,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -58.3930777,
-          -34.5840204
-        ]
-      },
-      "properties": {
-        "name": "Dinámica del viento",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -34.5840204,
-        "longitude": -58.3930777,
-        "wikipedia": "es:Dinámica del viento",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -58.3865096,
           -34.6100737
         ]
@@ -6076,8 +5913,8 @@
         "name": "Apolo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.604147,
         "longitude": -58.386116,
@@ -6099,8 +5936,8 @@
         "name": "Vertigorama",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6733975,
         "longitude": -58.4494354,
@@ -6349,8 +6186,8 @@
         "name_en": "National Library Mariano Moreno",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5843924,
         "longitude": -58.3979664,
@@ -6679,7 +6516,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.6103421,
         "longitude": -58.3722644,
@@ -6822,8 +6660,8 @@
         "name": "Casa de los Pavos Reales",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6107978,
         "longitude": -58.4121504,
@@ -7211,8 +7049,8 @@
         "name": "Piazzolla Tango",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6061369,
         "longitude": -58.3748453,
@@ -7442,6 +7280,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -58.4189888,
+          -34.5821195
+        ]
+      },
+      "properties": {
+        "name": "Los primeros fríos",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -34.5821195,
+        "longitude": -58.4189888,
+        "wikipedia": "es:Los primeros fríos",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -58.4184915,
           -34.5829912
         ]
@@ -7515,8 +7374,8 @@
         "name": "Chacarerean Teatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.581832,
         "longitude": -58.4330597,
@@ -7541,7 +7400,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5718301,
         "longitude": -58.4401302,
@@ -7618,6 +7478,28 @@
         "phone": "+54 11 3533-8505",
         "website": "https://www.centroanafrank.com.ar/museo",
         "wikidata": "Q65484950",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4189057,
+          -34.5689236
+        ]
+      },
+      "properties": {
+        "name": "Familia de Ciervos",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -34.5689236,
+        "longitude": -58.4189057,
+        "website": "http://puesta-en-valor.blogspot.com.ar/2009/06/escultura-mutilada-en-palermo.html",
+        "wikipedia": "fr:Famille de cervidés",
         "popularity": 0
       }
     },
@@ -8528,6 +8410,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -58.3746749,
+          -34.6100015
+        ]
+      },
+      "properties": {
+        "name": "Tritón",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -34.6100015,
+        "longitude": -58.3746749,
+        "wikipedia": "es:Tritón (mitología)",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -58.4551136,
           -34.5288464
         ]
@@ -8657,6 +8560,48 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -58.4018294,
+          -34.5806146
+        ]
+      },
+      "properties": {
+        "name": "Granadero",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -34.5806146,
+        "longitude": -58.4018294,
+        "wikipedia": "es:Regimiento de Granaderos a Caballo General San Martín",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4016832,
+          -34.580683
+        ]
+      },
+      "properties": {
+        "name": "Piloto de la Fuerza Aérea Argentina",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -34.580683,
+        "longitude": -58.4016832,
+        "wikipedia": "es:Fuerza Aérea Argentina",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -58.401702,
           -34.580555
         ]
@@ -8670,6 +8615,48 @@
         "latitude": -34.580555,
         "longitude": -58.401702,
         "website": "https://www.todo-argentina.net/biografias/Personajes/jose_pacifico_otero.htm",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4015343,
+          -34.580163
+        ]
+      },
+      "properties": {
+        "name": "Marino de la Armada Argentina",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -34.580163,
+        "longitude": -58.4015343,
+        "wikipedia": "es:Armada Argentina",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4013667,
+          -34.5802171
+        ]
+      },
+      "properties": {
+        "name": "Soldado del Ejército Argentino",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -34.5802171,
+        "longitude": -58.4013667,
+        "wikipedia": "es:Ejército Argentino",
         "popularity": 0
       }
     },
@@ -8707,8 +8694,8 @@
         "name": "Columna del Foro Romano",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.580876,
         "longitude": -58.421157,
@@ -8841,8 +8828,8 @@
         "name": "Carnavales de la Calle Defensa",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6162143,
         "longitude": -58.371708,
@@ -8932,7 +8919,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.6004835,
         "longitude": -58.3945971,
@@ -9283,7 +9271,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5414994,
         "longitude": -58.4441177,
@@ -9310,7 +9299,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5418085,
         "longitude": -58.4421648,
@@ -9377,6 +9367,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -58.3930777,
+          -34.5840204
+        ]
+      },
+      "properties": {
+        "name": "Dinámica del viento",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -34.5840204,
+        "longitude": -58.3930777,
+        "wikipedia": "es:Dinámica del viento",
+        "popularity": 0,
+        "site": "Q1848918"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -58.3930884,
           -34.5840164
         ]
@@ -9389,7 +9401,8 @@
         ],
         "latitude": -34.5840164,
         "longitude": -58.3930884,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9409,7 +9422,8 @@
         ],
         "latitude": -34.5840126,
         "longitude": -58.3930996,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9429,7 +9443,8 @@
         ],
         "latitude": -34.5840082,
         "longitude": -58.3931123,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9449,7 +9464,8 @@
         ],
         "latitude": -34.5840007,
         "longitude": -58.393137,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9469,7 +9485,8 @@
         ],
         "latitude": -34.5840047,
         "longitude": -58.3931255,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9489,7 +9506,8 @@
         ],
         "latitude": -34.5839745,
         "longitude": -58.393139,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9509,7 +9527,8 @@
         ],
         "latitude": -34.5839785,
         "longitude": -58.3931247,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9529,7 +9548,8 @@
         ],
         "latitude": -34.5839922,
         "longitude": -58.3930816,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9549,7 +9569,8 @@
         ],
         "latitude": -34.5839633,
         "longitude": -58.3931082,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9569,7 +9590,8 @@
         ],
         "latitude": -34.5839584,
         "longitude": -58.3931239,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9589,7 +9611,8 @@
         ],
         "latitude": -34.5839448,
         "longitude": -58.3931361,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9609,7 +9632,8 @@
         ],
         "latitude": -34.5839368,
         "longitude": -58.3931328,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9629,7 +9653,8 @@
         ],
         "latitude": -34.5839282,
         "longitude": -58.3931286,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1848918"
       }
     },
     {
@@ -9711,7 +9736,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5445375,
         "longitude": -58.4396097,
@@ -9810,7 +9836,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5866611,
         "longitude": -58.3920084,
@@ -10209,7 +10236,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5975847,
         "longitude": -58.394528,
@@ -10219,7 +10247,8 @@
         "website": "https://museodelgrabado.cultura.gob.ar/",
         "wikidata": "Q50351224",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q5047856"
       }
     },
     {
@@ -10236,7 +10265,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.6094335,
         "longitude": -58.3709005,
@@ -10488,7 +10518,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.598968,
         "longitude": -58.3839347,
@@ -10590,7 +10621,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.6090417,
         "longitude": -58.3716407,
@@ -10641,7 +10673,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.5912478,
         "longitude": -58.3916325,
@@ -10792,7 +10825,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.6102062,
         "longitude": -58.3717266,
@@ -10801,7 +10835,8 @@
         "phone": "+54 11 4331-0625",
         "wikidata": "Q63900366",
         "fee": "no",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q4579815"
       }
     },
     {
@@ -10843,7 +10878,8 @@
         "latitude": -34.6083898,
         "longitude": -58.3721862,
         "wikidata": "Q111694510",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q831484"
       }
     },
     {
@@ -11173,14 +11209,15 @@
         "name": "Visita Honorable Cámara de Diputados",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6093469,
         "longitude": -58.3928828,
         "address": "Avenida Rivadavia, 1864, Ciudad Autónoma de Buenos Aires",
         "website": "https://www.diputados.gov.ar/secgralpres/dcultura/visitas-guiadas/",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q646190"
       }
     },
     {
@@ -11196,7 +11233,8 @@
         "name": "Mundo Gea",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": -34.5812491,
         "longitude": -58.4183648,
@@ -11308,7 +11346,8 @@
         "name": "Indoor",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": -34.5819436,
         "longitude": -58.4609127,
@@ -12038,8 +12077,8 @@
         "name": "Galerías Pacífico",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5992439,
         "longitude": -58.3747417,
@@ -12819,8 +12858,8 @@
         "name": "Glorieta Antonio Malvagni",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.559918,
         "longitude": -58.4498322,
@@ -12864,8 +12903,8 @@
         "name": "Colón Fábrica",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6415293,
         "longitude": -58.3613498,
@@ -12940,6 +12979,27 @@
         "latitude": -34.6201461,
         "longitude": -58.4414511,
         "opening_hours": "Mo-Sa 09:00-20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3670588,
+          -34.6333165
+        ]
+      },
+      "properties": {
+        "name": "La “Inmortal Polaca” del maestro ajedrecista Miguel Najdorf",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -34.6333165,
+        "longitude": -58.3670588,
+        "wikipedia": "es:Inmortal polaca",
         "popularity": 0
       }
     },
@@ -13093,8 +13153,8 @@
         "name": "Gran Rivadavia",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.6350854,
         "longitude": -58.4852815,
@@ -13116,8 +13176,8 @@
         "name": "Centro Cultural 25 de Mayo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -34.5764056,
         "longitude": -58.4837318,
@@ -13192,7 +13252,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -34.6401117,
         "longitude": -58.3619769,
@@ -16838,6 +16899,125 @@
         "opening_hours": "12:00-02:00",
         "phone": "+54 11 4022-9603",
         "website": "https://www.cervelar.com.ar/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.372765,
+          -34.619431
+        ]
+      },
+      "properties": {
+        "name": "La Licoreria Del Mercado",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.619431,
+        "longitude": -58.372765,
+        "address": "Estados Unidos, 460, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "We-Su 00:00-24:00",
+        "website": "https://www.instagram.com/lalicoreria_delmercado/?hl=es-la",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4186119,
+          -34.6070477
+        ]
+      },
+      "properties": {
+        "name": "El Boliche de Roberto",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.6070477,
+        "longitude": -58.4186119,
+        "address": "Bulnes, 331, Ciudad Autónoma de Buenos Aires",
+        "opening_hours": "Mo-Th, Su 18:00-01:00; Fr, Sa 19:00-02:00",
+        "website": "https://instagram.com/bolichederoberto_/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4235252,
+          -34.5948058
+        ]
+      },
+      "properties": {
+        "name": "Archivo",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5948058,
+        "longitude": -58.4235252,
+        "address": "Gorriti, 4191, Buenos Aires",
+        "opening_hours": "Tu-Th 19:30-00:00; Fr, Sa 19:30-01:00",
+        "website": "https://instagram.com/archivo.bar",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3921548,
+          -34.604098
+        ]
+      },
+      "properties": {
+        "name": "Albur - Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.604098,
+        "longitude": -58.3921548,
+        "address": "Avenida Callao, 435, Buenos Aires",
+        "opening_hours": "Th-Sa 20:00-01:00; Mo-We 20:00-00:00",
+        "website": "https://alburrestaurantconcert.com.ar/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4261316,
+          -34.5863155
+        ]
+      },
+      "properties": {
+        "name": "Backroom Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -34.5863155,
+        "longitude": -58.4261316,
+        "opening_hours": "Mo-Fr 15:00-05:00;Sa-Su 12:00-05:00",
+        "website": "https://backroom-bar.com/",
         "popularity": 0
       }
     },

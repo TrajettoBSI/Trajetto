@@ -133,7 +133,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8587186,
         "longitude": 12.5114366,
@@ -161,7 +161,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8665689,
         "longitude": 12.5037306,
@@ -217,7 +217,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.890335502205886,
         "longitude": 12.49238329485295,
@@ -388,7 +388,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9151245,
         "longitude": 12.4862373,
@@ -445,7 +446,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.901781,
         "longitude": 12.4720387,
@@ -588,7 +590,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8883948,
         "longitude": 12.4614944,
@@ -616,7 +619,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9048633,
         "longitude": 12.5141157,
@@ -644,7 +648,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8967967,
         "longitude": 12.4725923,
@@ -700,7 +705,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8582832,
         "longitude": 12.477402,
@@ -727,7 +732,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9084245,
         "longitude": 12.4831912,
@@ -755,7 +760,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.87926267435897,
         "longitude": 12.492260002564104,
@@ -782,7 +787,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.893722,
         "longitude": 12.4673993,
@@ -895,7 +900,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.900326856756756,
         "longitude": 12.486952581081084,
@@ -948,7 +953,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8766252,
         "longitude": 12.4807653,
@@ -1003,7 +1008,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.895170607575764,
         "longitude": 12.485464327272732,
@@ -1167,7 +1172,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8735333,
         "longitude": 12.5016481,
@@ -1193,7 +1199,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8895004,
         "longitude": 12.4699384,
@@ -1219,7 +1225,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8876088,
         "longitude": 12.4755669,
@@ -1244,7 +1250,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8937387,
         "longitude": 12.4878433,
@@ -1270,7 +1277,8 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8478622,
         "longitude": 12.5226966,
@@ -1323,7 +1331,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.87513436,
         "longitude": 12.481141439999998,
@@ -1378,7 +1387,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9297262,
         "longitude": 12.5087652,
@@ -1404,7 +1413,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8893064,
         "longitude": 12.4871093,
@@ -1510,7 +1519,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9163001,
         "longitude": 12.5143588,
@@ -1564,7 +1574,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9036438,
         "longitude": 12.4668307,
@@ -1591,8 +1601,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.8897062,
         "longitude": 12.4908066,
@@ -1618,7 +1627,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8985276,
         "longitude": 12.4801085,
@@ -1671,8 +1680,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.8893081,
         "longitude": 12.4829003,
@@ -1697,7 +1705,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.90252882500001,
         "longitude": 12.521022768749999,
@@ -1723,7 +1731,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8986252,
         "longitude": 12.495341,
@@ -1748,7 +1756,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.897266,
         "longitude": 12.4988459,
@@ -1800,8 +1808,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.88934942307692,
         "longitude": 12.497515580769228,
@@ -1854,7 +1861,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.894018,
         "longitude": 12.4935675,
@@ -1880,8 +1887,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.9030313,
         "longitude": 12.4546795,
@@ -1907,7 +1913,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9362238,
         "longitude": 12.4665963,
@@ -1933,8 +1939,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.9022073,
         "longitude": 12.4524088,
@@ -1961,8 +1966,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.889341,
         "longitude": 12.4808175,
@@ -1987,7 +1991,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89865224324324,
         "longitude": 12.476784108108108,
@@ -2015,7 +2019,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8881511,
         "longitude": 12.5156729,
@@ -2040,7 +2044,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.885878264516116,
         "longitude": 12.50570984516129,
@@ -2066,7 +2070,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.85593,
         "longitude": 12.5157968,
@@ -2092,7 +2096,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8887174,
         "longitude": 12.5063522,
@@ -2144,7 +2149,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8995494,
         "longitude": 12.4809031,
@@ -2224,7 +2230,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9027658,
         "longitude": 12.5169621,
@@ -2251,7 +2258,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.901647,
         "longitude": 12.5157519,
@@ -2353,7 +2361,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8981234,
         "longitude": 12.4780784,
@@ -2377,7 +2385,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8959494,
         "longitude": 12.4746116,
@@ -2403,7 +2411,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8986707,
         "longitude": 12.4691173,
@@ -2428,7 +2436,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89468451111111,
         "longitude": 12.470510544444444,
@@ -2452,7 +2460,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8861162,
         "longitude": 12.5041676,
@@ -2477,7 +2485,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8960241,
         "longitude": 12.498717,
@@ -2501,7 +2509,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8557313,
         "longitude": 12.5153446,
@@ -2553,7 +2561,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8986651,
         "longitude": 12.4727529,
@@ -2577,7 +2585,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.88468204999999,
         "longitude": 12.496667560526314,
@@ -2602,7 +2610,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8932767,
         "longitude": 12.4825083,
@@ -2626,7 +2634,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8973116,
         "longitude": 12.4664696,
@@ -2749,7 +2757,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8872326,
         "longitude": 12.5068412,
@@ -2774,7 +2782,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9036595,
         "longitude": 12.4975129,
@@ -2849,7 +2857,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9063197,
         "longitude": 12.4592314,
@@ -2898,7 +2907,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9131566,
         "longitude": 12.5141884,
@@ -2948,7 +2957,8 @@
         "name": "Bioparco",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 41.91749336666666,
         "longitude": 12.487494956756755,
@@ -2974,7 +2984,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9019689,
         "longitude": 12.4907414,
@@ -3049,7 +3059,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8931615,
         "longitude": 12.4832437,
@@ -3074,8 +3084,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.8907202,
         "longitude": 12.4886549,
@@ -3100,7 +3109,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8771438,
         "longitude": 12.5020444,
@@ -3149,7 +3158,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8552718,
         "longitude": 12.5186616,
@@ -3175,7 +3185,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8988746,
         "longitude": 12.4730532,
@@ -3200,7 +3210,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8884751,
         "longitude": 12.4665693,
@@ -3224,7 +3234,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.892217,
         "longitude": 12.4793827,
@@ -3249,7 +3259,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8908454,
         "longitude": 12.4815601,
@@ -3273,7 +3283,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.85457141399999,
         "longitude": 12.522518278000002,
@@ -3297,7 +3307,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9057756,
         "longitude": 12.4823972,
@@ -3346,7 +3356,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9043512,
         "longitude": 12.4972548,
@@ -3370,7 +3380,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89970829629629,
         "longitude": 12.479347248148148,
@@ -3395,7 +3405,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.90310817012987,
         "longitude": 12.455110801298702,
@@ -3419,7 +3429,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9027411,
         "longitude": 12.457268,
@@ -3444,8 +3454,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.8886968,
         "longitude": 12.4808629,
@@ -3469,7 +3478,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.85217330909091,
         "longitude": 12.52088721818182,
@@ -3494,7 +3503,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.903743545454546,
         "longitude": 12.454740113636364,
@@ -3518,7 +3527,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89433459999999,
         "longitude": 12.48691435652174,
@@ -3543,7 +3552,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89405589459461,
         "longitude": 12.486278435135137,
@@ -3567,7 +3576,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89311130666667,
         "longitude": 12.486189293333334,
@@ -3591,7 +3600,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.886477135294115,
         "longitude": 12.50571908235294,
@@ -3615,7 +3624,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.900894619999995,
         "longitude": 12.483273240000004,
@@ -3640,7 +3649,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89172161496349,
         "longitude": 12.486862146350369,
@@ -3664,7 +3673,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.905591011764706,
         "longitude": 12.482416651764705,
@@ -3688,7 +3697,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.893697851086955,
         "longitude": 12.485047039130432,
@@ -3712,7 +3721,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.90259718,
         "longitude": 12.4836955,
@@ -3736,7 +3745,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.90221313541668,
         "longitude": 12.45737237152778,
@@ -3761,8 +3770,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.89477505505617,
         "longitude": 12.483029931460672,
@@ -3785,7 +3793,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9315211,
         "longitude": 12.4856511,
@@ -3808,7 +3816,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8591593,
         "longitude": 12.5242611,
@@ -3832,7 +3840,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.909267,
         "longitude": 12.5010785,
@@ -3856,7 +3865,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9117513,
         "longitude": 12.4807242,
@@ -3879,7 +3888,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8853194,
         "longitude": 12.5099333,
@@ -3903,7 +3913,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8889045,
         "longitude": 12.4666124,
@@ -3928,7 +3939,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8888344,
         "longitude": 12.4802374,
@@ -3975,8 +3986,7 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO",
-          "AVENTUREIRO"
+          "LUXO"
         ],
         "latitude": 41.9152519,
         "longitude": 12.4246949,
@@ -4048,7 +4058,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9000308,
         "longitude": 12.4728438,
@@ -4072,7 +4082,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9332788,
         "longitude": 12.514775,
@@ -4095,7 +4105,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9224726,
         "longitude": 12.5173898,
@@ -4118,7 +4128,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.895352775000006,
         "longitude": 12.476792440625001,
@@ -4141,7 +4151,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8805784,
         "longitude": 12.4899176,
@@ -4165,7 +4175,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8784984,
         "longitude": 12.4856936,
@@ -4188,7 +4198,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.906157,
         "longitude": 12.4839341,
@@ -4211,7 +4221,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9016757,
         "longitude": 12.4817904,
@@ -4234,7 +4244,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89870274516128,
         "longitude": 12.468991861290322,
@@ -4257,7 +4267,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.898029236,
         "longitude": 12.472607536,
@@ -4280,8 +4290,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.9106951,
         "longitude": 12.4763776,
@@ -4305,7 +4314,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89320238124999,
         "longitude": 12.466546181250001,
@@ -4328,7 +4337,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89121469999999,
         "longitude": 12.47997897857143,
@@ -4351,7 +4360,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9071723,
         "longitude": 12.4875574,
@@ -4374,7 +4383,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8971303,
         "longitude": 12.4611796,
@@ -4397,7 +4406,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9018789,
         "longitude": 12.4533905,
@@ -4421,7 +4430,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.91838662432434,
         "longitude": 12.503040791891891,
@@ -4444,7 +4453,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8926014,
         "longitude": 12.4785411,
@@ -4468,7 +4477,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.892591,
         "longitude": 12.482116,
@@ -4491,7 +4500,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8943053,
         "longitude": 12.4823001,
@@ -4514,7 +4523,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8981832,
         "longitude": 12.4747213,
@@ -4538,7 +4547,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.894375110638286,
         "longitude": 12.478973548936171,
@@ -4562,7 +4571,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89668041428571,
         "longitude": 12.47149672142857,
@@ -4585,7 +4594,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8923768,
         "longitude": 12.4843163,
@@ -4631,7 +4640,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9023401,
         "longitude": 12.4664853,
@@ -4655,7 +4664,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8851458,
         "longitude": 12.4537059,
@@ -4678,7 +4687,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8963144,
         "longitude": 12.4814448,
@@ -4701,7 +4710,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.858771864999994,
         "longitude": 12.505518615,
@@ -4725,7 +4734,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8902074,
         "longitude": 12.495021646153845,
@@ -4748,7 +4757,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89793343333334,
         "longitude": 12.484423032000002,
@@ -4771,9 +4780,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "NATUREZA",
-          "RELAXAMENTO"
+          "SOCIAL"
         ],
         "latitude": 41.916646635714294,
         "longitude": 12.509510174999999,
@@ -4796,8 +4803,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.9060518,
         "longitude": 12.4755486,
@@ -4820,7 +4826,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9018254,
         "longitude": 12.4906181,
@@ -4845,7 +4851,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9057076,
         "longitude": 12.4839718,
@@ -4869,7 +4875,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9037419,
         "longitude": 12.4841185,
@@ -4893,7 +4899,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8889204,
         "longitude": 12.4642841,
@@ -4916,7 +4922,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8887767,
         "longitude": 12.4663811,
@@ -4939,7 +4945,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9228404,
         "longitude": 12.518998,
@@ -4963,7 +4969,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8954616375,
         "longitude": 12.481006287500001,
@@ -4986,7 +4992,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89293225483872,
         "longitude": 12.483559445161289,
@@ -5009,7 +5015,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8516357,
         "longitude": 12.5206835,
@@ -5032,7 +5038,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.898355499999994,
         "longitude": 12.48738994,
@@ -5056,8 +5062,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.9295315,
         "longitude": 12.522768,
@@ -5080,7 +5085,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8947092,
         "longitude": 12.5169713,
@@ -5103,7 +5108,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8917638,
         "longitude": 12.5166245,
@@ -5126,7 +5131,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9105523,
         "longitude": 12.4984408,
@@ -5149,7 +5154,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.884569934482755,
         "longitude": 12.47982511724138,
@@ -5172,7 +5177,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89555595454546,
         "longitude": 12.484462063636363,
@@ -5195,7 +5200,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89474802307693,
         "longitude": 12.48654160769231,
@@ -5219,7 +5224,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89597075,
         "longitude": 12.486679500000001,
@@ -5242,7 +5247,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.895665578021955,
         "longitude": 12.485992353846148,
@@ -5265,7 +5270,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.89007464285714,
         "longitude": 12.490671661904761,
@@ -5312,7 +5317,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9432163,
         "longitude": 12.5078474,
@@ -5360,7 +5366,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.882927,
         "longitude": 12.47841,
@@ -5436,7 +5442,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8984018,
         "longitude": 12.4742019,
@@ -5459,7 +5465,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8914458,
         "longitude": 12.4615365,
@@ -5482,7 +5488,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9027071,
         "longitude": 12.4561851,
@@ -5504,7 +5510,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.90157,
         "longitude": 12.4814682,
@@ -5526,7 +5532,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9104635,
         "longitude": 12.4919168,
@@ -5601,7 +5607,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9023349,
         "longitude": 12.5138592,
@@ -5673,7 +5680,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8886452,
         "longitude": 12.4710262,
@@ -5695,7 +5702,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8759809,
         "longitude": 12.4798899,
@@ -5717,7 +5724,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.877061,
         "longitude": 12.480411,
@@ -5765,7 +5772,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8998394,
         "longitude": 12.4815471,
@@ -5814,7 +5822,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.90095523414634,
         "longitude": 12.462171395121949,
@@ -5836,7 +5844,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.90277038,
         "longitude": 12.461178220000003,
@@ -5858,7 +5866,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8927805,
         "longitude": 12.482161,
@@ -5881,7 +5889,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.892957,
         "longitude": 12.4821821,
@@ -5928,8 +5936,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "SOLITARIO"
+          "SOCIAL"
         ],
         "latitude": 41.909586,
         "longitude": 12.5017365,
@@ -5951,7 +5958,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.9136677,
         "longitude": 12.5124146,
@@ -5976,8 +5983,6 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO",
-          "MOCHILEIRO",
           "SOCIAL"
         ],
         "latitude": 41.8947131,
@@ -6075,7 +6080,8 @@
         "name": "Dumbopark",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 41.8875314,
         "longitude": 12.5347315,
@@ -6197,7 +6203,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8949726,
         "longitude": 12.4766282,
@@ -6221,7 +6227,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.885196,
         "longitude": 12.5335882,
@@ -6269,7 +6276,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9212132,
         "longitude": 12.4663482,
@@ -6319,7 +6327,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8457742,
         "longitude": 12.5251063,
@@ -6368,7 +6376,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8875648,
         "longitude": 12.4846241,
@@ -6535,7 +6544,8 @@
         "name": "Eden Park",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 41.90645391666667,
         "longitude": 12.412103475000002,
@@ -6560,7 +6570,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9026059,
         "longitude": 12.5157569,
@@ -6585,7 +6596,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9023798,
         "longitude": 12.516192,
@@ -6608,7 +6620,7 @@
         "category": "attraction",
         "profiles": [
           "CULTURAL",
-          "AVENTUREIRO"
+          "SOCIAL"
         ],
         "latitude": 41.8954968,
         "longitude": 12.4794988,
@@ -6654,7 +6666,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.9016166,
         "longitude": 12.4836806,
@@ -6725,7 +6738,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.8781554,
         "longitude": 12.4792431,
@@ -6773,6 +6787,7 @@
         "name_en": "Dome of Saint Peter",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6798,6 +6813,7 @@
         "name": "Forum Romanum view",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6820,6 +6836,7 @@
         "name": "Belvedere Romolo E Remo",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6842,6 +6859,7 @@
         "name": "Balconata del Pincio",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6863,6 +6881,7 @@
         "name": "Giardino degli Aranci",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6885,6 +6904,7 @@
         "name": "Terrazza del Gianicolo",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6907,6 +6927,7 @@
         "name": "Punto panoramico di viale della Galea",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6928,6 +6949,7 @@
         "name": "Terrazza Viale del Belvedere",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6949,6 +6971,7 @@
         "name": "Belvedere Niccolò Scatoli",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6971,6 +6994,7 @@
         "name": "Torre del Tabularium",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6992,6 +7016,7 @@
         "name": "Illusione ottica del Cupolone",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7013,6 +7038,7 @@
         "name": "Isola Tiberina",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7034,6 +7060,7 @@
         "name": "Belvedere Dei Salvati",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7056,6 +7083,7 @@
         "name": "Passeggiata del gianicolo",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7078,6 +7106,7 @@
         "name": "Punto panoramico di Ponte Umberto I",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7099,6 +7128,7 @@
         "name": "Piazza del Quirinale",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7120,6 +7150,7 @@
         "name": "Colosseo",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7141,6 +7172,7 @@
         "name": "Terrazza Est Hotel Paolo VI",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7162,6 +7194,7 @@
         "name": "Terrazza Ovest Hotel Paolo VI",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7183,6 +7216,7 @@
         "name": "Terrazza Caffarelli",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7204,6 +7238,7 @@
         "name": "Bosco di viale Aurelio Saffi",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7225,6 +7260,7 @@
         "name": "Stadio Palatino",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7365,8 +7401,7 @@
         "name_en": "Trajan's Column",
         "category": "artwork",
         "profiles": [
-          "CULTURAL",
-          "SOLITARIO"
+          "CULTURAL"
         ],
         "latitude": 41.89580942,
         "longitude": 12.484263720000001,
@@ -7522,8 +7557,7 @@
         "name": "Colonna dell'Immacolata",
         "category": "artwork",
         "profiles": [
-          "CULTURAL",
-          "SOLITARIO"
+          "CULTURAL"
         ],
         "latitude": 41.90499314444444,
         "longitude": 12.482954922222222,
@@ -7807,8 +7841,8 @@
         "name_en": "Villa of Maxentius",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8559222,
         "longitude": 12.5195946,
@@ -7889,8 +7923,8 @@
         "name": "Catacombe di Commodilla",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8612127,
         "longitude": 12.48341,
@@ -7914,8 +7948,8 @@
         "name": "Mitreo Barberini",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9036724,
         "longitude": 12.4912501,
@@ -7940,8 +7974,8 @@
         "name_en": "Tomb of Priscilla",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.86654027692308,
         "longitude": 12.50300943846154,
@@ -7968,9 +8002,7 @@
         "category": "historic_monument",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO",
-          "SOCIAL",
-          "MOCHILEIRO"
+          "SOLITARIO"
         ],
         "latitude": 41.909077,
         "longitude": 12.488319,
@@ -7995,8 +8027,8 @@
         "name": "Fonte di Anna Perenna",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9274661,
         "longitude": 12.4802345,
@@ -8023,8 +8055,8 @@
         "name_en": "Auditorium of Hadrian",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89594668333333,
         "longitude": 12.483254483333333,
@@ -8099,8 +8131,8 @@
         "name_en": "Monuments complex of Maxentius",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.85477108125,
         "longitude": 12.520701340625001,
@@ -8124,8 +8156,8 @@
         "name_en": "pedestal of colossus of Nero",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89086249999999,
         "longitude": 12.490967739999999,
@@ -8148,8 +8180,8 @@
         "name": "Ipogeo di Trebio Giusto",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.873765,
         "longitude": 12.5159997,
@@ -8173,8 +8205,8 @@
         "name": "Basilica Hilariana",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8858204,
         "longitude": 12.4966238,
@@ -8197,8 +8229,8 @@
         "name": "Ipogeo di via Livenza",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9134776,
         "longitude": 12.4952373,
@@ -8221,8 +8253,8 @@
         "name": "Colombari di via Taranto",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8825118,
         "longitude": 12.5225399,
@@ -8246,8 +8278,8 @@
         "name": "Domus Aurea",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8912624,
         "longitude": 12.4951112,
@@ -8368,8 +8400,8 @@
         "name": "Sepolcro di Geta",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8677261,
         "longitude": 12.502981,
@@ -8417,8 +8449,8 @@
         "name": "Mausoleo di Lucilio Peto",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.914958,
         "longitude": 12.4963772,
@@ -8441,11 +8473,8 @@
         "name": "Horti Sallustiani",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
           "AVENTUREIRO",
-          "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "CULTURAL"
         ],
         "latitude": 41.9081002,
         "longitude": 12.4972892,
@@ -8492,8 +8521,8 @@
         "name": "Emporium",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.88233052857142,
         "longitude": 12.474581185714285,
@@ -8566,8 +8595,8 @@
         "name_en": "Amphitheatre Castrense",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8876475,
         "longitude": 12.5150843,
@@ -8590,8 +8619,8 @@
         "name_en": "Hypogeum of the Aurelii",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8925024,
         "longitude": 12.5094723,
@@ -8615,8 +8644,8 @@
         "name_en": "Hypogeum of via Dino Compagni",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8714566,
         "longitude": 12.5177317,
@@ -8640,8 +8669,8 @@
         "name_en": "Caligula's Nymphaeum (Horti Lamiani)",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8935388,
         "longitude": 12.5058244,
@@ -8664,10 +8693,8 @@
         "name_en": "Forum Boarium",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
           "AVENTUREIRO",
-          "NATUREZA",
-          "RELAXAMENTO"
+          "CULTURAL"
         ],
         "latitude": 41.8882747,
         "longitude": 12.4809718,
@@ -8762,8 +8789,8 @@
         "name_en": "Servian Wall",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9024458,
         "longitude": 12.5011137,
@@ -8834,8 +8861,8 @@
         "name_en": "Temple of Divus Iulius",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8919764,
         "longitude": 12.4858844,
@@ -8858,8 +8885,8 @@
         "name_en": "Temple of Vespasian and Titus",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.892720912499996,
         "longitude": 12.483857768750001,
@@ -8882,10 +8909,8 @@
         "name_en": "Tombs of Via Latina",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
           "AVENTUREIRO",
-          "NATUREZA",
-          "RELAXAMENTO"
+          "CULTURAL"
         ],
         "latitude": 41.8628703,
         "longitude": 12.5339845,
@@ -8909,8 +8934,8 @@
         "name_en": "Temple of Apollo Sosianus",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8923191,
         "longitude": 12.4794012,
@@ -8957,8 +8982,8 @@
         "name_en": "Baths of Trajan",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8923449,
         "longitude": 12.4939551,
@@ -8980,8 +9005,8 @@
         "name": "Colombario di Pomponio Hylas",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8763552,
         "longitude": 12.5021369,
@@ -9006,8 +9031,8 @@
         "name": "Sepolcro degli Scipioni",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.875991,
         "longitude": 12.500791,
@@ -9104,10 +9129,8 @@
         "name_en": "Circus Maximus",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
           "AVENTUREIRO",
-          "NATUREZA",
-          "RELAXAMENTO"
+          "CULTURAL"
         ],
         "latitude": 41.88510210681819,
         "longitude": 12.486748843181818,
@@ -9131,8 +9154,8 @@
         "name_en": "Temple of Romulus",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89185623750001,
         "longitude": 12.487171059375,
@@ -9155,8 +9178,8 @@
         "name_en": "Basilica of Maxentius",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89193062816902,
         "longitude": 12.488208722535209,
@@ -9179,8 +9202,8 @@
         "name_en": "Curia Julia",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89296514285714,
         "longitude": 12.485404571428573,
@@ -9203,8 +9226,8 @@
         "name_en": "Temple of Venus Genetrix",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89413249444445,
         "longitude": 12.484813911111113,
@@ -9227,8 +9250,8 @@
         "name_en": "Temple of Vesta",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.891701390625,
         "longitude": 12.48620083125,
@@ -9251,8 +9274,8 @@
         "name_en": "Atrium of the House of the Vestal Virgin",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8914095,
         "longitude": 12.486603977777778,
@@ -9275,8 +9298,8 @@
         "name_en": "House of the Vestal Virgins",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89144613437499,
         "longitude": 12.486523996875,
@@ -9299,8 +9322,8 @@
         "name_en": "Temple of Bellona",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89239070833333,
         "longitude": 12.479875866666665,
@@ -9323,8 +9346,8 @@
         "name_en": "Temple of Saturn",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89245708235294,
         "longitude": 12.484156064705884,
@@ -9347,8 +9370,8 @@
         "name_en": "Spring of Juturna",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.891571777777784,
         "longitude": 12.485893355555556,
@@ -9371,8 +9394,8 @@
         "name_en": "Temple of Castor and Pollux",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89161830322582,
         "longitude": 12.485721558064515,
@@ -9395,8 +9418,8 @@
         "name_en": "Temple of Venus and Roma",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89087302968751,
         "longitude": 12.489570568749999,
@@ -9419,8 +9442,8 @@
         "name_en": "Theatre of Nero",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9015921,
         "longitude": 12.4610923,
@@ -9442,8 +9465,8 @@
         "name": "Porta Magica",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8955021,
         "longitude": 12.5037397,
@@ -9465,8 +9488,8 @@
         "name": "Catacombe di Sant'Agnese",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9227681,
         "longitude": 12.51876,
@@ -9511,8 +9534,8 @@
         "name": "Tempio di Augusto",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8913995,
         "longitude": 12.485294,
@@ -9534,8 +9557,8 @@
         "name": "Torrione di Via Prenestina",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8920651,
         "longitude": 12.5297079,
@@ -9557,8 +9580,8 @@
         "name": "Criptoportico Neroniano",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.890019,
         "longitude": 12.4871741,
@@ -9580,8 +9603,8 @@
         "name": "Domus Augustana - Peristilio",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8878622,
         "longitude": 12.4865652,
@@ -9603,8 +9626,8 @@
         "name": "Ipogeo di Santa Passera",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8584919,
         "longitude": 12.4602864,
@@ -9626,8 +9649,8 @@
         "name": "Rilievo di Asclepio",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8900824,
         "longitude": 12.4787848,
@@ -9649,8 +9672,8 @@
         "name": "Necropoli della Via Triumphalis",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9056115,
         "longitude": 12.4558767,
@@ -9672,8 +9695,8 @@
         "name": "Scuderie di Augusto",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8968502,
         "longitude": 12.4667312,
@@ -9695,8 +9718,8 @@
         "name": "Colombario Costantiniano",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8567297,
         "longitude": 12.5294367,
@@ -9719,8 +9742,8 @@
         "name": "Aula Regia",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8891287,
         "longitude": 12.4872868,
@@ -9742,8 +9765,8 @@
         "name": "Teatro di Pompeo",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.895479,
         "longitude": 12.4739812,
@@ -9881,8 +9904,8 @@
         "name": "Catacombe di Santa Felicita",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9178645,
         "longitude": 12.4972789,
@@ -9904,8 +9927,8 @@
         "name": "Resti di Mura Serviane",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9033798,
         "longitude": 12.5002514,
@@ -9927,8 +9950,8 @@
         "name": "Sepolcro di Annia Regilla",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8651038,
         "longitude": 12.5164908,
@@ -9997,8 +10020,8 @@
         "name": "Monte Testaccio",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.875746593939404,
         "longitude": 12.475289369696966,
@@ -10019,7 +10042,10 @@
       "properties": {
         "name": "Villa Lante",
         "category": "historic_villa",
-        "profiles": [],
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
         "latitude": 41.8930133,
         "longitude": 12.4607733,
         "wikidata": "Q2295190",
@@ -10201,8 +10227,8 @@
         "name": "Sepolcro di Gaio Poplicio Bibulo",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8952546,
         "longitude": 12.4831732,
@@ -10247,8 +10273,8 @@
         "name": "Tempio delle Ninfe",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.895144280000004,
         "longitude": 12.47873078,
@@ -10339,8 +10365,8 @@
         "name": "Porta Caelimontana",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8856246,
         "longitude": 12.4952318,
@@ -10362,8 +10388,8 @@
         "name": "Settizodio",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.885548376923076,
         "longitude": 12.488483176923078,
@@ -10385,8 +10411,8 @@
         "name": "Regia",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.891919236842114,
         "longitude": 12.486364363157893,
@@ -10408,8 +10434,8 @@
         "name": "Arco di Augusto",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89196963333334,
         "longitude": 12.486286193333333,
@@ -10431,8 +10457,8 @@
         "name": "Tempio della Concordia",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8929583892857,
         "longitude": 12.484248817857141,
@@ -10549,8 +10575,8 @@
         "name": "Elagabalium",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.889645596774194,
         "longitude": 12.488748512903227,
@@ -10596,8 +10622,8 @@
         "name": "Aula Isiaca",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.88934240769232,
         "longitude": 12.486926823076924,
@@ -10619,8 +10645,8 @@
         "name": "Casa dei Grifi",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.888970148484844,
         "longitude": 12.487315357575756,
@@ -10642,8 +10668,8 @@
         "name": "Domus Flavia",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.88865721250001,
         "longitude": 12.486538644444444,
@@ -10665,8 +10691,8 @@
         "name": "Tempio di Magna Mater",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8894300875,
         "longitude": 12.484932562500001,
@@ -10688,8 +10714,8 @@
         "name": "Casa di Livia",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.889175,
         "longitude": 12.485794007142857,
@@ -10711,8 +10737,8 @@
         "name": "Stadio Palatino",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.88734352352943,
         "longitude": 12.48736074,
@@ -10734,8 +10760,8 @@
         "name": "Pedagogio",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.88771077884614,
         "longitude": 12.485496641346154,
@@ -10757,8 +10783,8 @@
         "name": "Domus Augustana",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.88787876301368,
         "longitude": 12.486493570319638,
@@ -10826,8 +10852,8 @@
         "name": "Cisterna delle Sette Sale",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8929405,
         "longitude": 12.4992695,
@@ -10964,8 +10990,8 @@
         "name": "Ponte Nomentano",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9335092,
         "longitude": 12.5325774,
@@ -10987,8 +11013,8 @@
         "name": "Arco di Druso",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8737622,
         "longitude": 12.5015081,
@@ -11033,8 +11059,8 @@
         "name": "Ponte Neroniano",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.900830899999995,
         "longitude": 12.464351177777777,
@@ -11056,8 +11082,8 @@
         "name": "Sepolcri repubblicani di Via Statilia",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8902025,
         "longitude": 12.5118308,
@@ -11079,8 +11105,8 @@
         "name": "Tempio di Iside a via Labicana",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.889823,
         "longitude": 12.5016299,
@@ -11102,8 +11128,8 @@
         "name": "Ninfeo di Alessandro Severo",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8951127,
         "longitude": 12.5038117,
@@ -11149,8 +11175,8 @@
         "name": "Vigna Randanini",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.85799823333333,
         "longitude": 12.516883166666666,
@@ -11218,8 +11244,8 @@
         "name": "Equus Traiani",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8947767,
         "longitude": 12.4854385,
@@ -11240,7 +11266,10 @@
       "properties": {
         "name": "Torre dei Conti",
         "category": "historic_tower",
-        "profiles": [],
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
         "latitude": 41.89360344999999,
         "longitude": 12.48790895,
         "wikidata": "Q605721",
@@ -11261,8 +11290,8 @@
         "name": "Basilica Aemilia",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89267798947369,
         "longitude": 12.485843889473685,
@@ -11284,8 +11313,8 @@
         "name": "Tabernae Novae",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.892532376470584,
         "longitude": 12.48572102941176,
@@ -11307,8 +11336,8 @@
         "name": "Tempio della Pace",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.892866814814816,
         "longitude": 12.486839133333334,
@@ -11330,8 +11359,8 @@
         "name": "Umbilicus Urbis Romae",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89272087142857,
         "longitude": 12.484587052380954,
@@ -11353,8 +11382,8 @@
         "name": "Rostra Vetera",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89264077600001,
         "longitude": 12.484618079999997,
@@ -11376,8 +11405,8 @@
         "name": "Domus Publica",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.891574936000005,
         "longitude": 12.487118652000001,
@@ -11399,8 +11428,8 @@
         "name": "Horrea Agrippiana",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89082388292684,
         "longitude": 12.48512078780488,
@@ -11422,8 +11451,8 @@
         "name": "Porta Asinaria",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8857118632653,
         "longitude": 12.508660610204076,
@@ -11445,8 +11474,8 @@
         "name": "Domus Tiberiana",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89036507441863,
         "longitude": 12.486040856976746,
@@ -11468,8 +11497,8 @@
         "name": "Tempio di Minerva Medica",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89387138181818,
         "longitude": 12.511881104545456,
@@ -11514,8 +11543,8 @@
         "name": "Porticus Aemilia",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.87991566153846,
         "longitude": 12.473391199999998,
@@ -11560,8 +11589,8 @@
         "name": "Magazzini di Lucio Nevio Clemente",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8969369,
         "longitude": 12.4881167,
@@ -11583,8 +11612,8 @@
         "name": "Mausoleo di Menenio Agrippa",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9344582,
         "longitude": 12.5348794,
@@ -11607,8 +11636,8 @@
         "name": "Mausoleo di Tor di Quinto",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.9241075,
         "longitude": 12.5209971,
@@ -11631,8 +11660,8 @@
         "name": "Tomba alla Torre del Giudizio (Sepolcro romano di via Teodora sotto la Torre del Giudizio)",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8529489,
         "longitude": 12.4597807,
@@ -11675,8 +11704,8 @@
         "name": "Tomba di Marco Servilio Quarto",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.841589,
         "longitude": 12.532156,
@@ -11697,8 +11726,8 @@
         "name": "Domus di Lucio Licinio Sura",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8879509,
         "longitude": 12.5025666,
@@ -11719,8 +11748,8 @@
         "name": "Torre Valca",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8581586,
         "longitude": 12.5292793,
@@ -11741,8 +11770,8 @@
         "name": "Basilica costantiniana di S. Agnese",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.92314159,
         "longitude": 12.517169900000003,
@@ -11763,8 +11792,8 @@
         "name": "Tempio C",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.8950856,
         "longitude": 12.4769145,
@@ -11785,8 +11814,8 @@
         "name": "Terme di Agrippa",
         "category": "historic_ruins",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89692272727272,
         "longitude": 12.476891463636365,
@@ -11807,8 +11836,8 @@
         "name": "Capanne Romulee",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.88929691052631,
         "longitude": 12.484837652631581,
@@ -11873,8 +11902,8 @@
         "name": "Piazza del Foro",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.892312775862074,
         "longitude": 12.485141003448275,
@@ -11895,8 +11924,8 @@
         "name": "Basilica Argentaria",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 41.89407437241379,
         "longitude": 12.48449722413793,
@@ -11917,10 +11946,9 @@
         "name": "Parco Archeologico del Celio",
         "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
           "AVENTUREIRO",
-          "NATUREZA",
-          "RELAXAMENTO"
+          "CULTURAL",
+          "MOCHILEIRO"
         ],
         "latitude": 41.887893577777774,
         "longitude": 12.490819513333332,
@@ -11999,8 +12027,9 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
+          "RELAXAMENTO",
           "SOLITARIO",
-          "RELAXAMENTO"
+          "MOCHILEIRO"
         ],
         "latitude": 41.884923516,
         "longitude": 12.483133244000001,
@@ -12125,7 +12154,8 @@
         "name": "Riserva Naturale Valle dei Casali",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 41.86004225599999,
         "longitude": 12.433855165090902,
@@ -12173,8 +12203,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.8965191,
         "longitude": 12.4887329,
@@ -12382,8 +12412,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.88505261153846,
         "longitude": 12.480083699999998,
@@ -12520,7 +12550,8 @@
         "name": "Parco Naturale Regionale Appia Antica",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 41.84209882461051,
         "longitude": 12.532456925129809,
@@ -12566,8 +12597,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.88502548571429,
         "longitude": 12.479170261904764,
@@ -12701,8 +12732,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.9184788,
         "longitude": 12.4799447,
@@ -12746,8 +12777,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.9004653,
         "longitude": 12.4902019,
@@ -12814,8 +12845,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.8997733,
         "longitude": 12.4890753,
@@ -12859,8 +12890,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.8561651,
         "longitude": 12.4672669,
@@ -13040,8 +13071,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.901926,
         "longitude": 12.4492611,
@@ -13063,8 +13094,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.9032563,
         "longitude": 12.4513707,
@@ -13086,8 +13117,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.9029927,
         "longitude": 12.4480114,
@@ -13153,8 +13184,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.9050432,
         "longitude": 12.4522188,
@@ -13280,8 +13311,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.8584646,
         "longitude": 12.4923588,
@@ -13598,8 +13629,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.9156137,
         "longitude": 12.5183779,
@@ -13683,8 +13714,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.9234878,
         "longitude": 12.5072829,
@@ -13726,8 +13757,8 @@
         "category": "garden",
         "profiles": [
           "NATUREZA",
-          "SOLITARIO",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": 41.9188778,
         "longitude": 12.5066785,

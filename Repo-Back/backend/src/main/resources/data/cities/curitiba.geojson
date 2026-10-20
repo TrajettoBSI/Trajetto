@@ -67,8 +67,8 @@
         "name_en": "Wire Opera House",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.3844991,
         "longitude": -49.2761532,
@@ -141,8 +141,8 @@
         "name": "Praça do Japão",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4458148,
         "longitude": -49.2873613,
@@ -165,8 +165,8 @@
         "name": "Teatro Guaíra",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4280742,
         "longitude": -49.2651254,
@@ -189,8 +189,8 @@
         "name": "Memorial Ucraniano",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4023587,
         "longitude": -49.3047846,
@@ -212,7 +212,9 @@
         "name": "Zoológico de Curitiba",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA",
+          "MOCHILEIRO"
         ],
         "latitude": -25.5567062,
         "longitude": -49.2345989,
@@ -336,7 +338,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -25.4278267,
         "longitude": -49.2761847,
@@ -480,8 +483,8 @@
         "name": "Teatro Paiol",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.447633,
         "longitude": -49.2574128,
@@ -556,8 +559,8 @@
         "name": "Memorial Árabe",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.423381,
         "longitude": -49.2684364,
@@ -582,8 +585,8 @@
         "name": "Castelo do Batel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4426791,
         "longitude": -49.2856866,
@@ -633,7 +636,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": -25.4252858,
         "longitude": -49.2670675,
@@ -682,8 +686,8 @@
         "name": "Teatro Positivo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.446377,
         "longitude": -49.3563724,
@@ -707,7 +711,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -25.4375277,
         "longitude": -49.265823,
@@ -733,8 +738,8 @@
         "name": "Universidade Livre do Meio Ambiente",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.3972491,
         "longitude": -49.2835706,
@@ -877,7 +882,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -25.433166,
         "longitude": -49.2729316,
@@ -1116,8 +1122,8 @@
         "name": "Armazém Santa Ana",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4815936,
         "longitude": -49.2244809,
@@ -1141,36 +1147,14 @@
         "name": "Relógio das Flores",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4274663,
         "longitude": -49.2742713,
         "wikidata": "Q10359164",
         "wikipedia": "pt:Relógio das Flores (Curitiba)",
         "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -49.2710255,
-          -25.4280112
-        ]
-      },
-      "properties": {
-        "name": "Memorial a Nossa Senhora da Luz dos Pinhais",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -25.4280112,
-        "longitude": -49.2710255,
-        "address": "Rua São Francisco, 139, Curitiba",
-        "wikipedia": "pt:Memorial a Nossa Senhora da Luz dos Pinhais",
-        "popularity": 0
       }
     },
     {
@@ -1279,8 +1263,8 @@
         "name": "Teatro Bom Jesus",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4384712,
         "longitude": -49.2735506,
@@ -1558,8 +1542,8 @@
         "name": "Teatro Cleon Jacques",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.3877185,
         "longitude": -49.2672781,
@@ -1701,8 +1685,8 @@
         "name": "Teatro José Maria Santos",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4268444,
         "longitude": -49.2726285,
@@ -1753,6 +1737,28 @@
         "latitude": -25.4273811,
         "longitude": -49.2718088,
         "wikidata": "Q56693282",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2710255,
+          -25.4280112
+        ]
+      },
+      "properties": {
+        "name": "Memorial a Nossa Senhora da Luz dos Pinhais",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.4280112,
+        "longitude": -49.2710255,
+        "address": "Rua São Francisco, 139, Curitiba",
+        "wikipedia": "pt:Memorial a Nossa Senhora da Luz dos Pinhais",
         "popularity": 0
       }
     },
@@ -1953,8 +1959,8 @@
         "name": "Teatro Regina Vogue",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4387442,
         "longitude": -49.2678835,
@@ -2230,8 +2236,8 @@
         "name": "Curitiba",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4374349,
         "longitude": -49.2562661,
@@ -2432,8 +2438,8 @@
         "name": "Jardim das Sensações",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.44126,
         "longitude": -49.2379708,
@@ -2594,7 +2600,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -25.439928,
         "longitude": -49.2381973,
@@ -2642,8 +2649,8 @@
         "name": "P-47D Thunderbolt",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -25.4289359,
         "longitude": -49.2583866,
@@ -2736,7 +2743,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -25.3876157,
         "longitude": -49.2669245,
@@ -2855,7 +2863,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -25.4273839,
         "longitude": -49.2612685,

@@ -226,5 +226,105 @@
       "tacos",
       "local"
     ]
+  },
+  {
+    "slug": "atenas",
+    "name": "Atenas",
+    "country": "GR",
+    "latitude": 37.9715,
+    "longitude": 23.7257,
+    "radiusKm": 10,
+    "timezone": "Europe/Athens",
+    "localCuisine": [
+      "greek",
+      "mediterranean",
+      "regional",
+      "local",
+      "souvlaki"
+    ],
+    "preferEnglishName": true
+  },
+  {
+    "slug": "cairo",
+    "name": "Cairo",
+    "country": "EG",
+    "latitude": 30.03,
+    "longitude": 31.2,
+    "radiusKm": 20,
+    "timezone": "Africa/Cairo",
+    "localCuisine": [
+      "egyptian",
+      "arab",
+      "middle_eastern",
+      "regional",
+      "local"
+    ],
+    "preferEnglishName": true
+  },
+  {
+    "slug": "istambul",
+    "name": "Istambul",
+    "country": "TR",
+    "latitude": 41.0082,
+    "longitude": 28.9784,
+    "radiusKm": 12,
+    "timezone": "Europe/Istanbul",
+    "localCuisine": [
+      "turkish",
+      "kebab",
+      "ottoman",
+      "regional",
+      "local"
+    ],
+    "preferEnglishName": true
+  },
+  {
+    "slug": "dubai",
+    "name": "Dubai",
+    "country": "AE",
+    "latitude": 25.18,
+    "longitude": 55.24,
+    "radiusKm": 20,
+    "timezone": "Asia/Dubai",
+    "localCuisine": [
+      "arab",
+      "emirati",
+      "lebanese",
+      "middle_eastern",
+      "regional"
+    ],
+    "preferEnglishName": true
+  },
+  {
+    "slug": "cidade-do-cabo",
+    "name": "Cidade do Cabo",
+    "country": "ZA",
+    "latitude": -33.9249,
+    "longitude": 18.4241,
+    "radiusKm": 15,
+    "timezone": "Africa/Johannesburg",
+    "localCuisine": [
+      "african",
+      "south_african",
+      "seafood",
+      "regional",
+      "local"
+    ]
+  },
+  {
+    "slug": "marrakech",
+    "name": "Marrakech",
+    "country": "MA",
+    "latitude": 31.6295,
+    "longitude": -7.9811,
+    "radiusKm": 8,
+    "timezone": "Africa/Casablanca",
+    "localCuisine": [
+      "moroccan",
+      "arab",
+      "regional",
+      "local"
+    ],
+    "preferEnglishName": true
   }
 ]

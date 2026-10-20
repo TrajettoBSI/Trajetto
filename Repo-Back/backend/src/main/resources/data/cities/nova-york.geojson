@@ -42,8 +42,9 @@
         "name": "Statue of Liberty",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 40.6892395,
         "longitude": -74.0445353,
@@ -68,8 +69,8 @@
         "name": "Empire State Building",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.748442,
         "longitude": -73.9856589,
@@ -151,8 +152,8 @@
         "name": "Brooklyn Bridge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7056913,
         "longitude": -73.9963566,
@@ -175,6 +176,7 @@
         "name": "One World Observatory",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -198,8 +200,8 @@
         "name": "Times Square",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7572603,
         "longitude": -73.9860053,
@@ -319,7 +321,8 @@
         "wikipedia": "en:American Museum of Natural History",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 60
+        "popularity": 60,
+        "site": "Q217717"
       }
     },
     {
@@ -335,8 +338,8 @@
         "name": "Madison Square Garden",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7505185,
         "longitude": -73.9935059,
@@ -362,8 +365,8 @@
         "name": "Greenwich Village",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7335844,
         "longitude": -74.0028172,
@@ -386,8 +389,8 @@
         "name": "Grand Central Terminal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7526483,
         "longitude": -73.9772748,
@@ -413,8 +416,8 @@
         "name": "United Nations Headquarters",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7496007,
         "longitude": -73.9675511,
@@ -439,15 +442,16 @@
         "name": "Flatiron Building",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.74103,
         "longitude": -73.9896864,
         "address": "5th Avenue, 175, New York",
         "wikidata": "Q220728",
         "wikipedia": "en:Flatiron Building",
-        "popularity": 50
+        "popularity": 50,
+        "site": "Q220728"
       }
     },
     {
@@ -491,8 +495,8 @@
         "name": "Rockefeller Center",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7592398,
         "longitude": -73.9800939,
@@ -502,7 +506,8 @@
         "wikidata": "Q11277",
         "wikipedia": "en:Rockefeller Center",
         "wheelchair": "yes",
-        "popularity": 48
+        "popularity": 48,
+        "site": "Q11277"
       }
     },
     {
@@ -518,8 +523,8 @@
         "name": "Woolworth Building",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7124548,
         "longitude": -74.0083348,
@@ -541,8 +546,8 @@
         "name": "Manhattan Bridge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7070805,
         "longitude": -73.9905117,
@@ -565,8 +570,8 @@
         "name": "Saint Patrick’s Cathedral",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7585895,
         "longitude": -73.9762957,
@@ -591,7 +596,8 @@
         "name": "Bronx Zoo",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 40.8491573,
         "longitude": -73.8771695,
@@ -618,8 +624,8 @@
         "name": "SoHo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.72288,
         "longitude": -73.9987505,
@@ -641,8 +647,8 @@
         "name": "Lincoln Center for the Performing Arts",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7726126,
         "longitude": -73.9842234,
@@ -650,7 +656,8 @@
         "phone": "+1-212-875-5456",
         "wikidata": "Q581044",
         "wikipedia": "en:Lincoln Center",
-        "popularity": 37
+        "popularity": 37,
+        "site": "Q581044"
       }
     },
     {
@@ -690,8 +697,8 @@
         "name": "Stonewall Inn",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7338163,
         "longitude": -74.0021613,
@@ -818,8 +825,8 @@
         "name": "Studio 54",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7643444,
         "longitude": -73.9837787,
@@ -844,8 +851,8 @@
         "name": "Radio City Music Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7598175,
         "longitude": -73.9792746,
@@ -855,7 +862,8 @@
         "wikidata": "Q753437",
         "wikipedia": "en:Radio City Music Hall",
         "wheelchair": "yes",
-        "popularity": 30
+        "popularity": 30,
+        "site": "Q11277"
       }
     },
     {
@@ -900,8 +908,8 @@
         "name": "The High Line",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7479527,
         "longitude": -74.0039539,
@@ -1001,8 +1009,8 @@
         "name": "Cleopatra's Needle",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7796359,
         "longitude": -73.9653965,
@@ -1080,8 +1088,8 @@
         "name": "USS Intrepid",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7647343,
         "longitude": -74.000829,
@@ -1105,14 +1113,15 @@
         "name": "Columbus Circle",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7680767,
         "longitude": -73.9818944,
         "wikidata": "Q109968",
         "wikipedia": "en:Columbus Circle",
-        "popularity": 27
+        "popularity": 27,
+        "site": "Q109968"
       }
     },
     {
@@ -1175,8 +1184,8 @@
         "name": "The Dakota",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7767769,
         "longitude": -73.9761539,
@@ -1199,8 +1208,8 @@
         "name": "Apollo Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.810129,
         "longitude": -73.9498627,
@@ -1248,8 +1257,8 @@
         "name": "Cathedral of Saint John the Divine",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.803767,
         "longitude": -73.9617468,
@@ -1285,7 +1294,8 @@
         "wikipedia": "en:The Cloisters",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 23
+        "popularity": 23,
+        "site": "Q1138030"
       }
     },
     {
@@ -1301,7 +1311,8 @@
         "name": "Central Park Zoo",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 40.7677015,
         "longitude": -73.9716988,
@@ -1310,7 +1321,8 @@
         "website": "https://centralparkzoo.com/",
         "wikidata": "Q954207",
         "wikipedia": "en:Central Park Zoo",
-        "popularity": 23
+        "popularity": 23,
+        "site": "Q954207"
       }
     },
     {
@@ -1326,8 +1338,8 @@
         "name": "Bryant Park",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7537508,
         "longitude": -73.9835384,
@@ -1404,13 +1416,14 @@
         "name": "Flatiron District",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7410722,
         "longitude": -73.9896534,
         "wikidata": "Q1427377",
-        "popularity": 21
+        "popularity": 21,
+        "site": "Q220728"
       }
     },
     {
@@ -1527,8 +1540,8 @@
         "name": "Times Square Ball",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.756132,
         "longitude": -73.9865766,
@@ -1755,7 +1768,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.7732296,
         "longitude": -73.9815958,
@@ -1909,7 +1923,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.7458698,
         "longitude": -73.8467443,
@@ -1983,8 +1998,8 @@
         "name": "New Amsterdam Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7559683,
         "longitude": -73.9880353,
@@ -2058,8 +2073,8 @@
         "name": "Minskoff Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.758063,
         "longitude": -73.9862053,
@@ -2089,7 +2104,8 @@
         "longitude": -73.9771802,
         "wikidata": "Q2869431",
         "wikipedia": "en:Atlas (statue)",
-        "popularity": 14
+        "popularity": 14,
+        "site": "Q11277"
       }
     },
     {
@@ -2105,8 +2121,8 @@
         "name": "Joker Stairs",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.8357962,
         "longitude": -73.9236054,
@@ -2131,8 +2147,8 @@
         "name": "Gershwin Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7623285,
         "longitude": -73.9852288,
@@ -2156,8 +2172,8 @@
         "name": "David Geffen Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7728223,
         "longitude": -73.9830166,
@@ -2166,7 +2182,8 @@
         "wikidata": "Q790654",
         "wikipedia": "en:David Geffen Hall",
         "wheelchair": "yes",
-        "popularity": 14
+        "popularity": 14,
+        "site": "Q581044"
       }
     },
     {
@@ -2210,8 +2227,8 @@
         "name": "Broadway Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7634029,
         "longitude": -73.9833744,
@@ -2340,8 +2357,8 @@
         "name": "South Street Seaport",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7057505,
         "longitude": -74.0029056,
@@ -2364,8 +2381,8 @@
         "name": "Palace Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7589003,
         "longitude": -73.9846166,
@@ -2464,8 +2481,8 @@
         "name": "Metropolitan Opera House",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7728556,
         "longitude": -73.9846954,
@@ -2473,7 +2490,8 @@
         "wikidata": "Q188031",
         "wikipedia": "en:Metropolitan Opera House (Lincoln Center)",
         "wheelchair": "yes",
-        "popularity": 13
+        "popularity": 13,
+        "site": "Q581044"
       }
     },
     {
@@ -2489,8 +2507,8 @@
         "name": "Ambassador Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.761247,
         "longitude": -73.9849896,
@@ -2514,8 +2532,8 @@
         "name": "Belasco Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7566549,
         "longitude": -73.9837919,
@@ -2608,8 +2626,8 @@
         "name": "Little Island",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7420048,
         "longitude": -74.0106097,
@@ -2676,7 +2694,8 @@
         "wikipedia": "en:Rose Center for Earth and Space",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 12
+        "popularity": 12,
+        "site": "Q217717"
       }
     },
     {
@@ -2717,8 +2736,8 @@
         "name": "Winter Garden Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7616146,
         "longitude": -73.9834231,
@@ -2767,8 +2786,8 @@
         "name": "Washington Square Arch",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7312347,
         "longitude": -73.9971025,
@@ -2791,8 +2810,8 @@
         "name": "David H. Koch Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.771792,
         "longitude": -73.983768,
@@ -2800,7 +2819,8 @@
         "wikidata": "Q3018029",
         "wikipedia": "en:David H. Koch Theater",
         "wheelchair": "yes",
-        "popularity": 12
+        "popularity": 12,
+        "site": "Q581044"
       }
     },
     {
@@ -2816,8 +2836,8 @@
         "name": "Majestic Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7584154,
         "longitude": -73.9880182,
@@ -2841,8 +2861,8 @@
         "name": "Shubert Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7581388,
         "longitude": -73.9872563,
@@ -2865,8 +2885,8 @@
         "name": "Bethesda Fountain",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7743162,
         "longitude": -73.9708332,
@@ -2967,7 +2987,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.70575,
         "longitude": -74.017691,
@@ -3020,8 +3041,8 @@
         "name": "Vivian Beaumont Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.773677,
         "longitude": -73.9848015,
@@ -3029,7 +3050,8 @@
         "website": "https://www.lct.org/about/beaumont-theater/",
         "wikidata": "Q176205",
         "wikipedia": "en:Vivian Beaumont Theater",
-        "popularity": 11
+        "popularity": 11,
+        "site": "Q581044"
       }
     },
     {
@@ -3097,8 +3119,8 @@
         "name": "Bernard B. Jacobs Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7586143,
         "longitude": -73.9877334,
@@ -3121,8 +3143,8 @@
         "name": "Lunt-Fontanne Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7591832,
         "longitude": -73.9858937,
@@ -3146,8 +3168,8 @@
         "name": "Richard Rodgers Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7590388,
         "longitude": -73.9867431,
@@ -3170,8 +3192,8 @@
         "name": "St. James Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7579901,
         "longitude": -73.9881542,
@@ -3195,8 +3217,8 @@
         "name": "Imperial Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7591087,
         "longitude": -73.9871438,
@@ -3221,8 +3243,8 @@
         "name": "Eugene O'Neill Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7610859,
         "longitude": -73.985754,
@@ -3245,8 +3267,8 @@
         "name": "Neil Simon Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7630106,
         "longitude": -73.9845246,
@@ -3270,8 +3292,8 @@
         "name": "Lyceum Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7578829,
         "longitude": -73.984494,
@@ -3295,7 +3317,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.82136,
         "longitude": -73.9473012,
@@ -3320,8 +3343,8 @@
         "name": "Perelman Performing Arts Center",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7126717,
         "longitude": -74.0122928,
@@ -3349,7 +3372,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.8310911,
         "longitude": -73.9199471,
@@ -3375,8 +3399,8 @@
         "name": "The Town Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7560233,
         "longitude": -73.9845629,
@@ -3408,7 +3432,8 @@
         "website": "https://www.amnh.org/exhibitions/permanent/rose-center",
         "wikidata": "Q2397171",
         "fee": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "site": "Q217717"
       }
     },
     {
@@ -3500,8 +3525,8 @@
         "name": "Barrymore Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.760107,
         "longitude": -73.9861446,
@@ -3525,8 +3550,8 @@
         "name": "Broadhurst Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7582725,
         "longitude": -73.987617,
@@ -3549,8 +3574,8 @@
         "name": "Lena Horne Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7599493,
         "longitude": -73.9869854,
@@ -3624,7 +3649,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.7455513,
         "longitude": -73.9474943,
@@ -3672,8 +3698,8 @@
         "name": "Beacon Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7804903,
         "longitude": -73.9811314,
@@ -3698,8 +3724,8 @@
         "name": "Stephen Sondheim Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7558962,
         "longitude": -73.9849328,
@@ -3801,8 +3827,8 @@
         "name": "Circle in the Square Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7622484,
         "longitude": -73.9853553,
@@ -3825,8 +3851,8 @@
         "name": "Alvin Ailey American Dance Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7669219,
         "longitude": -73.9869645,
@@ -3851,8 +3877,8 @@
         "name": "Marquis Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7589043,
         "longitude": -73.9861848,
@@ -3950,8 +3976,8 @@
         "name": "New York City Center",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7639365,
         "longitude": -73.9794055,
@@ -3976,8 +4002,8 @@
         "name": "Al Hirschfeld Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.759253,
         "longitude": -73.9892006,
@@ -4001,8 +4027,8 @@
         "name": "Lyric Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7568497,
         "longitude": -73.9876205,
@@ -4026,8 +4052,8 @@
         "name": "Booth Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7583652,
         "longitude": -73.9870937,
@@ -4051,8 +4077,8 @@
         "name": "Music Box Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7588726,
         "longitude": -73.9871509,
@@ -4076,8 +4102,8 @@
         "name": "Samuel J. Friedman Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7603799,
         "longitude": -73.9867366,
@@ -4100,8 +4126,8 @@
         "name": "Walter Kerr Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7606811,
         "longitude": -73.9855846,
@@ -4126,8 +4152,8 @@
         "name": "James Earl Jones Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7591178,
         "longitude": -73.9830767,
@@ -4283,7 +4309,8 @@
         "name": "Queens Zoo",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 40.7449318,
         "longitude": -73.8491167,
@@ -4363,7 +4390,8 @@
         "website": "https://www.rockefellercenter.com/art-and-history/art/prometheus/",
         "wikidata": "Q17182277",
         "wikipedia": "en:Prometheus (Manship)",
-        "popularity": 8
+        "popularity": 8,
+        "site": "Q11277"
       }
     },
     {
@@ -4424,8 +4452,8 @@
         "name": "Bloody Angle",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7144127,
         "longitude": -73.9981498,
@@ -4521,8 +4549,8 @@
         "name": "USS Ling",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.8801275,
         "longitude": -74.0396367,
@@ -4650,8 +4678,8 @@
         "name": "Todd Haimes Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7571556,
         "longitude": -73.9881192,
@@ -4675,8 +4703,8 @@
         "name": "Gerald Schoenfeld Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7585014,
         "longitude": -73.9874322,
@@ -4700,8 +4728,8 @@
         "name": "John Golden Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7587097,
         "longitude": -73.9879674,
@@ -4724,8 +4752,8 @@
         "name": "Longacre Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7603381,
         "longitude": -73.9859536,
@@ -4749,8 +4777,8 @@
         "name": "August Wilson Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.763373,
         "longitude": -73.9841933,
@@ -4774,8 +4802,8 @@
         "name": "Hudson Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7571116,
         "longitude": -73.9844399,
@@ -4879,8 +4907,8 @@
         "name": "New York Stock Exchange",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7070248,
         "longitude": -74.0112103,
@@ -4904,8 +4932,8 @@
         "name": "Delacorte Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7802611,
         "longitude": -73.9687943,
@@ -5129,8 +5157,8 @@
         "name": "Colgate Clock",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7120205,
         "longitude": -74.033915,
@@ -5175,7 +5203,8 @@
         "name": "Prospect Park Zoo",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 40.6652885,
         "longitude": -73.9648904,
@@ -5380,8 +5409,8 @@
         "name": "Kings Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.6460163,
         "longitude": -73.9574168,
@@ -5427,8 +5456,8 @@
         "name": "Stephen A. Schwarzman Building",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7532182,
         "longitude": -73.9822454,
@@ -5455,8 +5484,8 @@
         "name": "New Victory Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7565592,
         "longitude": -73.9874526,
@@ -5481,8 +5510,8 @@
         "name": "Nederlander Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7554972,
         "longitude": -73.9883023,
@@ -5505,8 +5534,8 @@
         "name": "Helen Hayes Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7578513,
         "longitude": -73.9878417,
@@ -5657,8 +5686,8 @@
         "name": "Manhattan Center",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7529446,
         "longitude": -73.9941403,
@@ -5803,8 +5832,8 @@
         "name": "Diamond District",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7573718,
         "longitude": -73.9801578,
@@ -5904,7 +5933,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.704027,
         "longitude": -74.013747,
@@ -5955,8 +5985,8 @@
         "name": "Westinghouse Time Capsules",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7429101,
         "longitude": -73.845096,
@@ -6001,8 +6031,8 @@
         "name": "Cherry Lane Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7312452,
         "longitude": -74.0052802,
@@ -6051,8 +6081,8 @@
         "name": "Gay Street",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7336111,
         "longitude": -74.000518,
@@ -6195,8 +6225,8 @@
         "name": "Comedy Cellar",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.730194,
         "longitude": -74.0005647,
@@ -6244,8 +6274,8 @@
         "name": "Fireboat John J. Harvey",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7523288,
         "longitude": -74.0098033,
@@ -6349,8 +6379,8 @@
         "name": "Abyssinian Baptist Church",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.8166419,
         "longitude": -73.9414779,
@@ -6472,7 +6502,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.793677,
         "longitude": -73.9522832,
@@ -6521,7 +6552,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.6908211,
         "longitude": -74.0463272,
@@ -6568,8 +6600,8 @@
         "name": "Atlantic Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7439485,
         "longitude": -74.001512,
@@ -6592,8 +6624,8 @@
         "name": "Loews Paradise Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.8605556,
         "longitude": -73.8988889,
@@ -6704,8 +6736,8 @@
         "name": "Brooklyn Heights Promenade",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.6956299,
         "longitude": -73.9983246,
@@ -6726,8 +6758,8 @@
         "name": "Skirball Center for the Performing Arts",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7298263,
         "longitude": -73.9977312,
@@ -6752,8 +6784,8 @@
         "name": "Playwrights Horizons",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7586397,
         "longitude": -73.9936128,
@@ -6898,8 +6930,8 @@
         "name": "Blockhouse No. 1",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7986699,
         "longitude": -73.9562876,
@@ -7068,8 +7100,8 @@
         "name": "Wavertree",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7052525,
         "longitude": -74.0030208,
@@ -7219,8 +7251,8 @@
         "name": "FDNY Ladder 8",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7195568,
         "longitude": -74.0066188,
@@ -7268,8 +7300,8 @@
         "name": "Lightship Frying Pan",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7521022,
         "longitude": -74.0092753,
@@ -7292,8 +7324,8 @@
         "name": "New World Stages",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7627597,
         "longitude": -73.987573,
@@ -7339,8 +7371,8 @@
         "name": "Blackwell House",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7603348,
         "longitude": -73.9511335,
@@ -7411,8 +7443,8 @@
         "name": "Rumsey Playfield",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7725851,
         "longitude": -73.9702129,
@@ -7584,8 +7616,8 @@
         "name": "Fort Jay",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.6914175,
         "longitude": -74.0160006,
@@ -7654,8 +7686,8 @@
         "name": "Daryl Roth Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7352914,
         "longitude": -73.9894585,
@@ -7677,7 +7709,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.737978,
         "longitude": -73.9938312,
@@ -7702,8 +7735,8 @@
         "name": "Irving Plaza",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7349099,
         "longitude": -73.9882699,
@@ -7795,8 +7828,8 @@
         "name": "Wyckoff House Museum",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.6443616,
         "longitude": -73.9208761,
@@ -8011,8 +8044,8 @@
         "name": "Ambrose",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7053167,
         "longitude": -74.0024477,
@@ -8104,7 +8137,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.7224437,
         "longitude": -74.0028908,
@@ -8304,8 +8338,8 @@
         "name": "Bow Bridge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7757593,
         "longitude": -73.971768,
@@ -8336,7 +8370,8 @@
         "wikidata": "Q86518088",
         "wikipedia": "en:Columbus Monument (New York City)",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q109968"
       }
     },
     {
@@ -8397,8 +8432,8 @@
         "name": "Moynihan Train Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7512987,
         "longitude": -73.9953378,
@@ -8578,6 +8613,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -74.0891125,
+          40.757795
+        ]
+      },
+      "properties": {
+        "name": "Laurel Hill",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.757795,
+        "longitude": -74.0891125,
+        "wikidata": "Q7547010",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -73.9940276,
           40.8667664
         ]
@@ -8609,7 +8666,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.7214779,
         "longitude": -73.9971032,
@@ -8636,8 +8694,8 @@
         "name": "Second Stage Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7581985,
         "longitude": -73.9895564,
@@ -8658,8 +8716,8 @@
         "name": "Joyce Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7425,
         "longitude": -74.0011111,
@@ -8680,8 +8738,8 @@
         "name": "Merkin Concert Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7752346,
         "longitude": -73.9829549,
@@ -8728,8 +8786,8 @@
         "name": "Le Poisson Rouge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7284254,
         "longitude": -73.9998816,
@@ -8797,8 +8855,8 @@
         "name": "PlayStation Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7576451,
         "longitude": -73.9864422,
@@ -8844,8 +8902,8 @@
         "name": "Westside Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.759448,
         "longitude": -73.9926202,
@@ -8937,13 +8995,37 @@
         "name": "Astor Place Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7293012,
         "longitude": -73.992186,
         "website": "https://www.blueman.com/new-york/about-show",
         "wikidata": "Q4811073",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.969074,
+          40.7794109
+        ]
+      },
+      "properties": {
+        "name": "Vista Rock",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.7794109,
+        "longitude": -73.969074,
+        "website": "https://www.centralparknyc.org/locations/vista-rock",
+        "wikidata": "Q3561112",
+        "wikipedia": "fr:Vista Rock",
         "popularity": 3
       }
     },
@@ -8960,8 +9042,8 @@
         "name": "Liz Christy Garden",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.724241,
         "longitude": -73.9921517,
@@ -8984,8 +9066,8 @@
         "name": "Colonnade row",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.72928,
         "longitude": -73.9924535,
@@ -9029,7 +9111,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.7079432,
         "longitude": -74.0137633,
@@ -9056,8 +9139,8 @@
         "name": "Performance Space 122",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7281228,
         "longitude": -73.9843931,
@@ -9081,8 +9164,8 @@
         "name": "The Billie Holiday Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.6799708,
         "longitude": -73.9454417,
@@ -9103,6 +9186,7 @@
         "name": "Sylvan Terrace",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -9127,7 +9211,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.717363,
         "longitude": -74.002815,
@@ -9155,8 +9240,8 @@
         "name": "Spyscape",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7650644,
         "longitude": -73.9838591,
@@ -9201,8 +9286,8 @@
         "name": "Hangman's Elm",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7319686,
         "longitude": -73.9986093,
@@ -9962,8 +10047,8 @@
         "name": "Jane's Carousel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7044341,
         "longitude": -73.9923845,
@@ -9989,8 +10074,8 @@
         "name": "Pepsi-Cola Sign",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7474749,
         "longitude": -73.9576966,
@@ -10059,8 +10144,8 @@
         "name": "New York Theatre Workshop",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7266728,
         "longitude": -73.9900003,
@@ -10085,8 +10170,8 @@
         "name": "Lucille Lortel Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7333583,
         "longitude": -74.0057418,
@@ -10133,8 +10218,8 @@
         "name": "Gramercy Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7399075,
         "longitude": -73.9849292,
@@ -10158,8 +10243,8 @@
         "name": "Masquerade",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7657091,
         "longitude": -73.9812391,
@@ -10182,8 +10267,8 @@
         "name": "Swedish Cottage Marionette Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7799521,
         "longitude": -73.9703474,
@@ -10206,8 +10291,8 @@
         "name": "Queens Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7441838,
         "longitude": -73.8445182,
@@ -10253,6 +10338,7 @@
         "name": "Harlem Fire Watchtower",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -10298,8 +10384,8 @@
         "name": "St. Ann's Warehouse",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7036538,
         "longitude": -73.9928126,
@@ -10820,8 +10906,8 @@
         "name": "United Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.8465626,
         "longitude": -73.9381268,
@@ -11028,8 +11114,8 @@
         "name": "Minetta Lane Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7302778,
         "longitude": -74.0016667,
@@ -11058,50 +11144,6 @@
         "wikidata": "Q18157039",
         "wikipedia": "en:Statue of Walter Scott (New York City)",
         "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9725659,
-          40.770193
-        ]
-      },
-      "properties": {
-        "name": "Robert Burns",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 40.770193,
-        "longitude": -73.9725659,
-        "website": "https://www.nycgovparks.org/parks/central-park/monuments/197",
-        "wikipedia": "en:Robert Burns (Steell)",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9519498,
-          40.7942639
-        ]
-      },
-      "properties": {
-        "name": "Three Dancing Maidens – Untermyer Fountain",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 40.7942639,
-        "longitude": -73.9519498,
-        "website": "https://www.centralparknyc.org/locations/untermyer-fountain",
-        "wikipedia": "en:Three Dancing Maidens",
-        "popularity": 0
       }
     },
     {
@@ -11233,8 +11275,8 @@
         "name": "Upright Citizens Brigade Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7606764,
         "longitude": -73.997433,
@@ -11258,8 +11300,8 @@
         "name": "Classic Stage Company",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7327227,
         "longitude": -73.9882473,
@@ -11415,28 +11457,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.9559997,
-          40.7886205
-        ]
-      },
-      "properties": {
-        "name": "Albert Bertel Thorvaldsen",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 40.7886205,
-        "longitude": -73.9559997,
-        "website": "https://www.nycgovparks.org/parks/central-park/monuments/1543",
-        "wikipedia": "en:Bertel Thorvaldsen with the Statue of Hope",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -73.974118,
           40.7747533
         ]
@@ -11515,15 +11535,16 @@
         "name": "Delacorte Musical Clock",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7681147,
         "longitude": -73.9711748,
         "website": "https://www.nycgovparks.org/parks/central-park/monuments/378",
         "wikidata": "Q43306957",
         "wikipedia": "en:Delacorte Clock",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q954207"
       }
     },
     {
@@ -11587,8 +11608,8 @@
         "name": "Theater for the New City",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7286136,
         "longitude": -73.9847889,
@@ -11682,8 +11703,8 @@
         "name": "Rockwood Music Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7224743,
         "longitude": -73.9885122,
@@ -11806,8 +11827,8 @@
         "name": "Comic Strip Live",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7748581,
         "longitude": -73.9536956,
@@ -11832,8 +11853,8 @@
         "name": "Theatre Row",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7585537,
         "longitude": -73.9933987,
@@ -12047,6 +12068,7 @@
         "name": "Edge",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -12159,8 +12181,8 @@
         "name": "Brooklyn Paramount",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.6902136,
         "longitude": -73.9811602,
@@ -12188,7 +12210,8 @@
         "latitude": 40.7725534,
         "longitude": -73.9841707,
         "wikidata": "Q123243814",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q581044"
       }
     },
     {
@@ -12410,8 +12433,8 @@
         "name": "Fort Clinton",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7952855,
         "longitude": -73.9521501,
@@ -12434,7 +12457,8 @@
         "name": "WNYC Transmitter Park",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 40.7298528,
         "longitude": -73.9614003,
@@ -12814,7 +12838,8 @@
         "latitude": 40.758446,
         "longitude": -73.9779564,
         "wikidata": "Q34816322",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q11277"
       }
     },
     {
@@ -12837,6 +12862,52 @@
         "longitude": -73.9172274,
         "website": "https://www.nycgovparks.org/parks/hoyt-playground/",
         "wikidata": "Q34836293",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0068687,
+          40.718642
+        ]
+      },
+      "properties": {
+        "name": "Finn Square",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 40.718642,
+        "longitude": -74.0068687,
+        "website": "https://www.nycgovparks.org/parks/greenstreet-mz30/history",
+        "wikidata": "Q49489072",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9223243,
+          40.7678466
+        ]
+      },
+      "properties": {
+        "name": "Athens Square",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 40.7678466,
+        "longitude": -73.9223243,
+        "website": "https://www.nycgovparks.org/parks/athenssquare/history",
+        "wikidata": "Q34803522",
         "popularity": 2
       }
     },
@@ -12879,8 +12950,8 @@
         "name": "Orpheum Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 40.7281871,
         "longitude": -73.9874903,
@@ -13132,7 +13203,8 @@
         "name": "Big Snow American Dream",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 40.8103739,
         "longitude": -74.070394,
@@ -13155,7 +13227,8 @@
         "name": "Nickelodeon Universe",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 40.8064325,
         "longitude": -74.0708343,
@@ -13177,7 +13250,8 @@
         "name": "DreamWorks Water Park",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 40.8073991,
         "longitude": -74.0686285,
@@ -13322,6 +13396,230 @@
         "wikidata": "Q86290881",
         "wikipedia": "en:Four Eagles",
         "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9719321,
+          40.6609969
+        ]
+      },
+      "properties": {
+        "name": "Quaker Hill",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.6609969,
+        "longitude": -73.9719321,
+        "wikidata": "Q49065970",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9720201,
+          40.6575268
+        ]
+      },
+      "properties": {
+        "name": "Lookout Hill",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.6575268,
+        "longitude": -73.9720201,
+        "wikidata": "Q34925776",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9258333,
+          40.8741667
+        ]
+      },
+      "properties": {
+        "name": "Inwood Hill",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.8741667,
+        "longitude": -73.9258333,
+        "wikidata": "Q34824908",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9186111,
+          40.8825
+        ]
+      },
+      "properties": {
+        "name": "Tetards Hill",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.8825,
+        "longitude": -73.9186111,
+        "wikidata": "Q34812135",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9180556,
+          40.8797222
+        ]
+      },
+      "properties": {
+        "name": "Spuyten Duyvil Hill",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.8797222,
+        "longitude": -73.9180556,
+        "wikidata": "Q34910268",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9316667,
+          40.865
+        ]
+      },
+      "properties": {
+        "name": "Long Hill",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.865,
+        "longitude": -73.9316667,
+        "wikidata": "Q34925613",
+        "popularity": 1,
+        "site": "Q1138030"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9590687,
+          40.8538286
+        ]
+      },
+      "properties": {
+        "name": "Hazard Beach",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 40.8538286,
+        "longitude": -73.9590687,
+        "wikidata": "Q49321129",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0210258,
+          40.7651055
+        ]
+      },
+      "properties": {
+        "name": "Kings Bluff",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.7651055,
+        "longitude": -74.0210258,
+        "wikidata": "Q49041734",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9444884,
+          40.8813496
+        ]
+      },
+      "properties": {
+        "name": "Bloomer Beach",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 40.8813496,
+        "longitude": -73.9444884,
+        "wikidata": "Q34644243",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9422222,
+          40.8866667
+        ]
+      },
+      "properties": {
+        "name": "Undercliff Beach",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 40.8866667,
+        "longitude": -73.9422222,
+        "wikidata": "Q49325100",
+        "popularity": 1
       }
     },
     {
@@ -13571,6 +13869,7 @@
         "name": "Top of the Rock",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -13580,7 +13879,8 @@
         "website": "https://www.topoftherocknyc.com/",
         "wikidata": "Q66722774",
         "wheelchair": "yes",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q11277"
       }
     },
     {
@@ -13763,7 +14063,8 @@
         "website": "https://catalogue.henry-moore.org/objects/14970/reclining-figure",
         "wikidata": "Q19759280",
         "wikipedia": "en:Reclining Figure (Lincoln Center)",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q581044"
       }
     },
     {
@@ -14153,6 +14454,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -73.9893587,
+          40.6569526
+        ]
+      },
+      "properties": {
+        "name": "Battle Hill",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.6569526,
+        "longitude": -73.9893587,
+        "wikidata": "Q4870056",
+        "wikipedia": "en:Battle Hill (Brooklyn)",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -73.9881018,
           40.7541701
         ]
@@ -14229,7 +14553,8 @@
         "name": "Audubon Park",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 40.7072077,
         "longitude": -74.0871595,
@@ -14299,7 +14624,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.6991123,
         "longitude": -74.0395257,
@@ -15119,6 +15445,50 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -73.9725659,
+          40.770193
+        ]
+      },
+      "properties": {
+        "name": "Robert Burns",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 40.770193,
+        "longitude": -73.9725659,
+        "website": "https://www.nycgovparks.org/parks/central-park/monuments/197",
+        "wikipedia": "en:Robert Burns (Steell)",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9519498,
+          40.7942639
+        ]
+      },
+      "properties": {
+        "name": "Three Dancing Maidens – Untermyer Fountain",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 40.7942639,
+        "longitude": -73.9519498,
+        "website": "https://www.centralparknyc.org/locations/untermyer-fountain",
+        "wikipedia": "en:Three Dancing Maidens",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -73.9878619,
           40.7031022
         ]
@@ -15135,6 +15505,28 @@
         "address": "Pearl Street, 80, Nova York",
         "opening_hours": "Mo-Fr off; Sa-Su 10:00-17:00",
         "website": "https://www.brooklynflea.com/dumboflea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.938224,
+          40.8529816
+        ]
+      },
+      "properties": {
+        "name": "Manhattan High Point",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 40.8529816,
+        "longitude": -73.938224,
+        "wikidata": "Q136723636",
         "popularity": 0
       }
     },
@@ -15217,6 +15609,7 @@
         "name": "The Overlook",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -15284,7 +15677,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 40.7925409,
         "longitude": -73.9711668,
@@ -15455,310 +15849,6 @@
         "opening_hours": "We-Su 12:00-18:00",
         "phone": "+1-212-777-7799",
         "website": "https://krausegallery.com",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.0020133,
-          40.7181761
-        ]
-      },
-      "properties": {
-        "name": "Andrew Kreps Gallery",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 40.7181761,
-        "longitude": -74.0020133,
-        "address": "Cortlandt Alley, 22, Nova York",
-        "opening_hours": "Tu-Sa 10:00-18:00",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.0098159,
-          40.7226366
-        ]
-      },
-      "properties": {
-        "name": "Art Projects International",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 40.7226366,
-        "longitude": -74.0098159,
-        "address": "Greenwich Street, 434, New York",
-        "opening_hours": "Th-Sa 11:00-18:00",
-        "phone": "+1 212-343-2599",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9797591,
-          40.7230918
-        ]
-      },
-      "properties": {
-        "name": "La Sala de Pepe",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 40.7230918,
-        "longitude": -73.9797591,
-        "address": "Avenue C, 73, Nova York",
-        "website": "https://www.lasaladepepe.org",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9905269,
-          40.7172602
-        ]
-      },
-      "properties": {
-        "name": "Shin Gallery",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 40.7172602,
-        "longitude": -73.9905269,
-        "address": "Grand Street, 322, Nova York",
-        "phone": "+1-212-375-1735",
-        "website": "http://www.shin-gallery.com",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.995463,
-          40.7164341
-        ]
-      },
-      "properties": {
-        "name": "Magenta Plains",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 40.7164341,
-        "longitude": -73.995463,
-        "address": "Canal Street, 149, New York",
-        "opening_hours": "We-Su 11:00-18:00",
-        "phone": "+1-917-388-2464",
-        "website": "https://magentaplains.com/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9789276,
-          40.6882524
-        ]
-      },
-      "properties": {
-        "name": "The Rudin Family Gallery",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 40.6882524,
-        "longitude": -73.9789276,
-        "address": "Fulton Street, 653, Nova York",
-        "phone": "+1-718-636-4100",
-        "website": "https://www.bam.org/visit#The-Rudin-Family-Gallery",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9744918,
-          40.680379
-        ]
-      },
-      "properties": {
-        "name": "Established Gallery",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 40.680379,
-        "longitude": -73.9744918,
-        "address": "6th Avenue, 75, Brooklyn",
-        "opening_hours": "Th-Su 12:00-19:00",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.8458849,
-          40.7478868
-        ]
-      },
-      "properties": {
-        "name": "Freedom of the Human Spirit",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 40.7478868,
-        "longitude": -73.8458849,
-        "website": "https://www.nycgovparks.org/parks/flushing-meadows-corona-park/monuments/554",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.8463826,
-          40.7487528
-        ]
-      },
-      "properties": {
-        "name": "Soul in Flight: Arthur Ashe Memorial",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 40.7487528,
-        "longitude": -73.8463826,
-        "website": "https://www.nycgovparks.org/parks/flushing-meadows-corona-park/monuments/1908",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.8468096,
-          40.7472743
-        ]
-      },
-      "properties": {
-        "name": "Free Form",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 40.7472743,
-        "longitude": -73.8468096,
-        "website": "https://www.nycgovparks.org/parks/flushing-meadows-corona-park/monuments/553",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9448716,
-          40.8321455
-        ]
-      },
-      "properties": {
-        "name": "Children's Cultural Center of Native America",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 40.8321455,
-        "longitude": -73.9448716,
-        "address": "West 155th Street, 550, New York",
-        "opening_hours": "Mo-Fr 10:30-13:00",
-        "phone": "+1-917-902-6628",
-        "website": "https://www.cccona.org/",
-        "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.005072,
-          40.713744
-        ]
-      },
-      "properties": {
-        "name": "Hall des Lumières",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 40.713744,
-        "longitude": -74.005072,
-        "address": "Chambers Street, 49, New York",
-        "opening_hours": "10:00-18:00; Tu off; Th-Sa 10:00-22:00",
-        "phone": "+1 3322428810",
-        "website": "https://www.halldeslumieres.com/",
-        "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9826995,
-          40.7184451
-        ]
-      },
-      "properties": {
-        "name": "Hashimoto Contemporary",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 40.7184451,
-        "longitude": -73.9826995,
-        "address": "Rivington Street, 210, New York",
-        "website": "https://www.hashimotocontemporary.com/",
         "popularity": 0
       }
     },
@@ -20372,6 +20462,526 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -73.9888643,
+          40.7475728
+        ]
+      },
+      "properties": {
+        "name": "O'Reilly's Pub",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7475728,
+        "longitude": -73.9888643,
+        "address": "West 31st Street, 54, New York",
+        "opening_hours": "11:00-02:00",
+        "phone": "+1 212-684-4244",
+        "website": "https://www.oreillyspubnyc.com",
+        "wheelchair": "limited",
+        "cuisine": "pub",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9842388,
+          40.7630054
+        ]
+      },
+      "properties": {
+        "name": "Winnie's",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7630054,
+        "longitude": -73.9842388,
+        "address": "West 52nd Street, 240, Nova York",
+        "opening_hours": "Tu-Th 16:00-24:00,Fr 16:00-02:00, Sa 12:00-02:00, Su 12:00-17:00",
+        "website": "https://www.winniesbroadway.com",
+        "wheelchair": "yes",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9196792,
+          40.7591405
+        ]
+      },
+      "properties": {
+        "name": "The Rabbit Hole",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7591405,
+        "longitude": -73.9196792,
+        "address": "Broadway, 38-04, Astoria",
+        "opening_hours": "Mo-Th 17:00-02:00; Fr 17:00-04:00; Sa 15:00-04:00; Su 13:00-02:00",
+        "phone": "+1 718 255 1271",
+        "website": "https://www.therabbithole.nyc/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0029527,
+          40.7231111
+        ]
+      },
+      "properties": {
+        "name": "Broome Street Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7231111,
+        "longitude": -74.0029527,
+        "address": "West Broadway, 363, Nova York",
+        "opening_hours": "Mo-Th, Su 11:00-01:30; Fr, Sa 11:00-14:30",
+        "phone": "+1 212-925-2806",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9783661,
+          40.7291724
+        ]
+      },
+      "properties": {
+        "name": "Mona's",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7291724,
+        "longitude": -73.9783661,
+        "address": "Avenue B, 224, New York",
+        "opening_hours": "Mo-Su 15:00-04:00",
+        "phone": "+1-212-353-3780",
+        "website": "https://www.facebook.com/Monas-Bar-NYC-118839478171924/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9904827,
+          40.7445195
+        ]
+      },
+      "properties": {
+        "name": "The Flatiron Room",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7445195,
+        "longitude": -73.9904827,
+        "address": "West 26th Street, 37, Nova York",
+        "opening_hours": "Mo-Fr 16:00-02:00; Sa 17:00-02:00; Su 17:00-24:00",
+        "phone": "+1-212-725-3860",
+        "website": "https://www.theflatironroom.com",
+        "cuisine": "american;continental",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9915172,
+          40.7193178
+        ]
+      },
+      "properties": {
+        "name": "Paint 'N Pour",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7193178,
+        "longitude": -73.9915172,
+        "address": "Delancey Street, 53, New York",
+        "opening_hours": "Mo-We 12:00-23:00; Th 12:00-01:00; Fr, Sa 12:00-02:00; Su 12:00-20:00",
+        "phone": "+1 212-804-7037",
+        "website": "https://www.paintnpournyc.com/locations/lower-east-side",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9882234,
+          40.7232877
+        ]
+      },
+      "properties": {
+        "name": "One and One",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7232877,
+        "longitude": -73.9882234,
+        "address": "East 1st Street, 76, New York",
+        "opening_hours": "Mo 15:00-01:00, Tu-Th 14:00-02:00, Fr 14:00-04:00, Sa 12:00-04:00, Su 12:00-02:00",
+        "phone": "+1-212-598-9126",
+        "website": "https://www.oneandonenyc.com",
+        "cuisine": "pub",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9902614,
+          40.7188615
+        ]
+      },
+      "properties": {
+        "name": "Grey Lady",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7188615,
+        "longitude": -73.9902614,
+        "address": "Delancey Street, 77, Nova York",
+        "opening_hours": "Mo 16:00-24:00; Tu,We 12:00-02:00; Th,Fr 12:00-04:00; Sa 11:00-04:00; Su 11:00-12:00",
+        "phone": "+1-646-580-5239",
+        "website": "https://www.greyladynyc.com",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9555644,
+          40.7762933
+        ]
+      },
+      "properties": {
+        "name": "Dylan Murphy's",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7762933,
+        "longitude": -73.9555644,
+        "address": "3rd Avenue, 1453, Nova York",
+        "opening_hours": "Mo-Fr 12:00-04:00; Sa, Su 11:00-04:00",
+        "phone": "+1 212-988-9434",
+        "website": "https://www.dylanmurphysnyc.com/",
+        "cuisine": "pub",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9834817,
+          40.7386819
+        ]
+      },
+      "properties": {
+        "name": "Ampersand",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7386819,
+        "longitude": -73.9834817,
+        "opening_hours": "Mo-We 16:00-02:00; Th-Sa 16:00-04:00; Su 16:00-01:00",
+        "phone": "+1-212-477-8100",
+        "website": "https://www.ampersandbarnyc.com",
+        "wheelchair": "yes",
+        "cuisine": "snack",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9544262,
+          40.7695853
+        ]
+      },
+      "properties": {
+        "name": "2nd Floor Bar & Essen",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7695853,
+        "longitude": -73.9544262,
+        "address": "1st Avenue, 1442, Nova York",
+        "opening_hours": "Tu-Th 17:00-24:00, Fr-Sa 17:00-02:00",
+        "phone": "+1-212-737-1700",
+        "website": "https://2ndfloor.com/",
+        "cuisine": "pub",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9821051,
+          40.7399496
+        ]
+      },
+      "properties": {
+        "name": "AWOL Bar and Grill",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7399496,
+        "longitude": -73.9821051,
+        "address": "3rd Avenue, 337, New York",
+        "opening_hours": "Mo-We 15:30-02:00; Th 14:00-04:00; Fr 12:00-04:00; Sa 11:30-04:00; Su 11:30-02:00",
+        "phone": "+1-646-682-9405",
+        "website": "https://www.goawolnyc.com",
+        "cuisine": "pub;international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9773007,
+          40.7446129
+        ]
+      },
+      "properties": {
+        "name": "Mr. B Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7446129,
+        "longitude": -73.9773007,
+        "address": "East 33rd Street, 231, Nova York",
+        "opening_hours": "Mo-We 11:00-23:00, Th 11:00-01:00, Fr-Sa 11:00-02:00, Su 11:00-23:00",
+        "phone": "+1-347-372-0198",
+        "website": "https://mrbbarnyc.com",
+        "cuisine": "italian;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9563888,
+          40.771213
+        ]
+      },
+      "properties": {
+        "name": "Stumble Inn",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.771213,
+        "longitude": -73.9563888,
+        "address": "2nd Avenue, 1454, Nova York",
+        "opening_hours": "11:30-04:00",
+        "phone": "+1 212-650-0561",
+        "website": "http://thestumbleinn.eatdrinkandbemerry.com/",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9567416,
+          40.7839393
+        ]
+      },
+      "properties": {
+        "name": "Eli's Bar 91",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7839393,
+        "longitude": -73.9567416,
+        "address": "Madison Avenue, 1270, Nova York",
+        "opening_hours": "17:00-21:00",
+        "phone": "+1 646-755-3999",
+        "website": "https://www.elizabar.com/ElisEssentials_91_Madison.aspx",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96273,
+          40.7099118
+        ]
+      },
+      "properties": {
+        "name": "Velvet Lounge",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7099118,
+        "longitude": -73.96273,
+        "address": "Broadway, 174, Nova York",
+        "opening_hours": "Mo-Th, Su 16:00-25:00; Fr, Sa 16:00-26:00",
+        "phone": "+1-718-302-4427",
+        "website": "https://velvetbrooklyn.com/",
+        "cuisine": "tapas;snack",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9980744,
+          40.7143387
+        ]
+      },
+      "properties": {
+        "name": "Opera House",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7143387,
+        "longitude": -73.9980744,
+        "address": "Doyers Street, 5, Nova York",
+        "opening_hours": "Mo-Su 17:00-01:30",
+        "phone": "+1-646-355-8693",
+        "website": "https://www.operahouse.nyc/",
+        "cuisine": "chinese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9850248,
+          40.7189562
+        ]
+      },
+      "properties": {
+        "name": "Black Crescent",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7189562,
+        "longitude": -73.9850248,
+        "address": "Clinton Street, 76, New York",
+        "opening_hours": "Tu-Sa 17:00-02:00; Su 17:00-24:00",
+        "phone": "+1-347-820-4330",
+        "website": "https://www.blackcrescentnyc.com",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9508866,
+          40.7235576
+        ]
+      },
+      "properties": {
+        "name": "The Hidden Pearl",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7235576,
+        "longitude": -73.9508866,
+        "address": "Manhattan Avenue, 621, Brooklyn",
+        "opening_hours": "Mo-Th 17:00-22:00; Fr-Sa 17:00-23:00",
+        "phone": "+1-718-383-3291",
+        "website": "https://www.hiddenpearlbk.com",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -73.9593705,
           40.771073
         ]
@@ -20908,6 +21518,268 @@
         "website": "https://www.joneswoodfoundry.com/",
         "wheelchair": "no",
         "cuisine": "british",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9738906,
+          40.7518415
+        ]
+      },
+      "properties": {
+        "name": "Malone's Irish Bar & Grill",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7518415,
+        "longitude": -73.9738906,
+        "address": "3rd Avenue, 692, New York",
+        "opening_hours": "Mo-Fr 08:00-24:00; Sa-Su 11:00-24:00",
+        "phone": "+1 646-858-0110",
+        "website": "https://malonesnyc.com/",
+        "wheelchair": "yes",
+        "cuisine": "pub",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9725709,
+          40.7528677
+        ]
+      },
+      "properties": {
+        "name": "Rosie Dunn's",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7528677,
+        "longitude": -73.9725709,
+        "address": "3rd Avenue, 729, New York",
+        "opening_hours": "11:30-02:00",
+        "phone": "+1 212-888-4679",
+        "website": "https://rosiedunns.com/",
+        "wheelchair": "yes",
+        "cuisine": "irish;pub",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9998287,
+          40.7165068
+        ]
+      },
+      "properties": {
+        "name": "Whiskey Tavern",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7165068,
+        "longitude": -73.9998287,
+        "address": "Baxter Street, 79, New York",
+        "opening_hours": "Mo-Su 11:00-04:00",
+        "phone": "+1 212 374 9119",
+        "cuisine": "american;pub",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9922879,
+          40.7273093
+        ]
+      },
+      "properties": {
+        "name": "Swift Hibernian Lounge",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7273093,
+        "longitude": -73.9922879,
+        "address": "East 4th Street, 34, New York",
+        "opening_hours": "Tu-Fr 16:00-23:00; Sa,Su 14:00-23:00",
+        "phone": "+1 212-260-3600",
+        "website": "https://www.swiftnycbar.com/",
+        "cuisine": "pub",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9446095,
+          40.7148868
+        ]
+      },
+      "properties": {
+        "name": "Mother's",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7148868,
+        "longitude": -73.9446095,
+        "address": "Graham Avenue, 347, Nova York",
+        "opening_hours": "Su-Th 12:00-23:00; Fr, Sa 12:00-24:00",
+        "phone": "+1 718-384-7778",
+        "website": "https://mothersbrooklyn.com",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9434202,
+          40.7147528
+        ]
+      },
+      "properties": {
+        "name": "Harefield Road",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7147528,
+        "longitude": -73.9434202,
+        "address": "Metropolitan Avenue, 769, Nova York",
+        "opening_hours": "Mo-Th 16:00-24:00; Fr 12:00-02:00; Sa, Su 11:00-24:00",
+        "phone": "+1 718-388-6870",
+        "website": "https.//harefieldroad.com",
+        "cuisine": "irish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9943348,
+          40.7499443
+        ]
+      },
+      "properties": {
+        "name": "Tír na nÓg",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7499443,
+        "longitude": -73.9943348,
+        "address": "West 31st Street, 254, Nova York",
+        "opening_hours": "Mo-Sa 11:00-02:00; Su 12:00-01:00",
+        "phone": "+1 212-630-0249",
+        "website": "https://www.tirnanognyc.com/penn_station/home",
+        "cuisine": "irish;gastropub",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9829157,
+          40.7649158
+        ]
+      },
+      "properties": {
+        "name": "McGee's Pub & Restaurant",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7649158,
+        "longitude": -73.9829157,
+        "address": "West 55th Street, 240, New York",
+        "opening_hours": "Mo-Su 11:00-02:00",
+        "phone": "+12129573536",
+        "website": "https://mcgeespub.com/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9576075,
+          40.7216221
+        ]
+      },
+      "properties": {
+        "name": "Brooklyn Brewery",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7216221,
+        "longitude": -73.9576075,
+        "address": "North 11th Street, 79, Brooklyn",
+        "opening_hours": "Fr 14:00-23:00; Sa 12:00-00:00; Su 12:00-20:00; Mo-We 16:00-21:00; Th 16:00-22:00",
+        "phone": "+1 718 486 74 22",
+        "website": "https://brooklynbrewery.com/visit-us/",
+        "wikidata": "Q1764694",
+        "wikipedia": "en:Brooklyn Brewery",
+        "popularity": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9833266,
+          40.7645366
+        ]
+      },
+      "properties": {
+        "name": "Characters NYC Bar & Lounge",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 40.7645366,
+        "longitude": -73.9833266,
+        "address": "West 54th Street, 243, New York",
+        "opening_hours": "11:00-04:00",
+        "phone": "+1 212 459 8904",
+        "website": "http://charactersnyc.com/",
+        "wheelchair": "no",
         "popularity": 0
       }
     },

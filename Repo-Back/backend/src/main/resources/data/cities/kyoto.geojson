@@ -15,8 +15,8 @@
         "name_en": "清水寺",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 34.9944239,
         "longitude": 135.7844825,
@@ -55,6 +55,30 @@
         "wikipedia": "ja:鹿苑寺",
         "fee": "yes",
         "popularity": 57
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8344171,
+          35.0658048
+        ]
+      },
+      "properties": {
+        "name": "Mt. Hiei",
+        "name_en": "比叡山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 35.0658048,
+        "longitude": 135.8344171,
+        "wikidata": "Q748040",
+        "wikipedia": "ja:比叡山",
+        "popularity": 39
       }
     },
     {
@@ -108,7 +132,8 @@
         "wikidata": "Q1202239",
         "wikipedia": "ja:京都御所",
         "fee": "yes",
-        "popularity": 33
+        "popularity": 33,
+        "site": "Q1202239"
       }
     },
     {
@@ -125,8 +150,8 @@
         "name_en": "龍安寺",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0334933,
         "longitude": 135.7180571,
@@ -179,8 +204,8 @@
         "name_en": "二条城",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0139647,
         "longitude": 135.7485092,
@@ -189,7 +214,8 @@
         "wikidata": "Q1013399",
         "wikipedia": "ja:二条城",
         "wheelchair": "limited",
-        "popularity": 29
+        "popularity": 29,
+        "site": "Q1013399"
       }
     },
     {
@@ -207,7 +233,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0603405,
         "longitude": 135.7525539,
@@ -235,7 +262,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.016171,
         "longitude": 135.7828996,
@@ -296,7 +324,8 @@
         "wikipedia": "ja:京都国立博物館",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 25
+        "popularity": 25,
+        "site": "Q147286"
       }
     },
     {
@@ -313,8 +342,8 @@
         "name_en": "仁和寺",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0297494,
         "longitude": 135.7140311,
@@ -324,7 +353,8 @@
         "wikidata": "Q1202871",
         "wikipedia": "ja:仁和寺",
         "fee": "yes",
-        "popularity": 25
+        "popularity": 25,
+        "site": "Q1202871"
       }
     },
     {
@@ -367,7 +397,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0034854,
         "longitude": 135.778387,
@@ -423,7 +454,8 @@
         "category": "historic_monastery",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0369731,
         "longitude": 135.7727345,
@@ -502,8 +534,9 @@
         "name_en": "嵐山竹林",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0176471,
         "longitude": 135.6730827,
@@ -528,6 +561,7 @@
         "name_en": "京都タワー",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -737,7 +771,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0302384,
         "longitude": 135.7348654,
@@ -791,7 +826,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 34.991585,
         "longitude": 135.7510539,
@@ -949,7 +985,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0243784,
         "longitude": 135.7845746,
@@ -1000,8 +1037,8 @@
         "name_en": "哲学の道",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0215812,
         "longitude": 135.7946821,
@@ -1049,7 +1086,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 34.9913887,
         "longitude": 135.7583906,
@@ -1157,8 +1195,9 @@
         "name_en": "修学院離宮",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0536419,
         "longitude": 135.8016171,
@@ -1256,8 +1295,8 @@
         "name": "Sagano Romantic Train",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0185493,
         "longitude": 135.6807544,
@@ -1305,7 +1344,8 @@
         "category": "historic_church",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.032364,
         "longitude": 135.7325114,
@@ -1475,8 +1515,8 @@
         "name_en": "南座",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0034911,
         "longitude": 135.7724017,
@@ -1577,7 +1617,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 34.9807649,
         "longitude": 135.7379889,
@@ -1630,8 +1671,8 @@
         "name_en": "寺町通",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0061636,
         "longitude": 135.7669418,
@@ -1654,6 +1695,7 @@
         "name_en": "渡月橋",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -1678,7 +1720,8 @@
         "name_en": "嵐山モンキーパークいわたやま",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 35.0090989,
         "longitude": 135.6749712,
@@ -1705,7 +1748,8 @@
         "name_en": "京都市動物園",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 35.0128491,
         "longitude": 135.7866217,
@@ -1754,8 +1798,8 @@
         "name_en": "錦市場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0050295,
         "longitude": 135.7647092,
@@ -1791,7 +1835,8 @@
         "website": "https://fng.or.jp/kyoto/",
         "wikidata": "Q843854",
         "wikipedia": "ja:京都御苑",
-        "popularity": 7
+        "popularity": 7,
+        "site": "Q1202239"
       }
     },
     {
@@ -1831,8 +1876,8 @@
         "name_en": "二寧坂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 34.998092,
         "longitude": 135.7808329,
@@ -1907,8 +1952,8 @@
         "name_en": "京都コンサートホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0499911,
         "longitude": 135.7666862,
@@ -1931,8 +1976,8 @@
         "name_en": "産寧坂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 34.9963416,
         "longitude": 135.7808762,
@@ -2001,7 +2046,8 @@
         "name_en": "東映太秦映画村",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.0162529,
         "longitude": 135.7078311,
@@ -2027,7 +2073,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.005437,
         "longitude": 135.7582688,
@@ -2134,6 +2181,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          135.825954,
+          35.0168756
+        ]
+      },
+      "properties": {
+        "name": "Nyoigatake Mountain",
+        "name_en": "如意ヶ岳",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 35.0168756,
+        "longitude": 135.825954,
+        "wikidata": "Q10942951",
+        "wikipedia": "ja:如意ヶ嶽",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           135.7873126,
           35.0115662
         ]
@@ -2181,6 +2252,30 @@
         "wikidata": "Q8081591",
         "wikipedia": "ja:大河内山荘",
         "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8529991,
+          34.9768561
+        ]
+      },
+      "properties": {
+        "name": "Mt. Otowa",
+        "name_en": "音羽山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 34.9768561,
+        "longitude": 135.8529991,
+        "wikidata": "Q11664332",
+        "wikipedia": "ja:音羽山 (滋賀県・京都府)",
+        "popularity": 4
       }
     },
     {
@@ -2312,8 +2407,8 @@
         "name_en": "新京極通",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.007442,
         "longitude": 135.7673305,
@@ -2472,6 +2567,76 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          135.7940418,
+          34.9518591
+        ]
+      },
+      "properties": {
+        "name": "大岩山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 34.9518591,
+        "longitude": 135.7940418,
+        "wikidata": "Q11434768",
+        "wikipedia": "ja:大岩山 (京都府)",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7873124,
+          35.0270614
+        ]
+      },
+      "properties": {
+        "name": "Mt. Yoshida",
+        "name_en": "吉田山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 35.0270614,
+        "longitude": 135.7873124,
+        "wikidata": "Q18457625",
+        "wikipedia": "ja:吉田山 (京都市)",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7220322,
+          35.0358019
+        ]
+      },
+      "properties": {
+        "name": "衣笠山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 35.0358019,
+        "longitude": 135.7220322,
+        "wikidata": "Q11626402",
+        "wikipedia": "ja:衣笠山 (京都府)",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           135.8739144,
           35.0081313
         ]
@@ -2496,6 +2661,54 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          135.7789779,
+          34.937329
+        ]
+      },
+      "properties": {
+        "name": "Momoyama Hill",
+        "name_en": "桃山丘陵",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 34.937329,
+        "longitude": 135.7789779,
+        "wikidata": "Q48752330",
+        "wikipedia": "ja:桃山丘陵",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8479887,
+          35.0008878
+        ]
+      },
+      "properties": {
+        "name": "Mount Osaka",
+        "name_en": "逢坂山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 35.0008878,
+        "longitude": 135.8479887,
+        "wikidata": "Q11639802",
+        "wikipedia": "ja:逢坂山",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           135.7462077,
           34.9874045
         ]
@@ -2506,7 +2719,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 34.9874045,
         "longitude": 135.7462077,
@@ -2606,8 +2820,8 @@
         "name": "滋賀県立芸術劇場 びわ湖ホール",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0069961,
         "longitude": 135.8768466,
@@ -2706,8 +2920,8 @@
         "name_en": "京都劇場 (Kyoto-Gekijo)",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 34.9858196,
         "longitude": 135.7606199,
@@ -2837,6 +3051,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          135.8117253,
+          35.0196387
+        ]
+      },
+      "properties": {
+        "name": "Mt. Daimonji",
+        "name_en": "大文字山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 35.0196387,
+        "longitude": 135.8117253,
+        "wikidata": "Q31706159",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           135.7647494,
           34.9861652
         ]
@@ -2853,6 +3090,29 @@
         "longitude": 135.7647494,
         "wikidata": "Q11534162",
         "wikipedia": "ja:柳原銀行",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7298163,
+          35.0446298
+        ]
+      },
+      "properties": {
+        "name": "Daimonjiyama",
+        "name_en": "大文字山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 35.0446298,
+        "longitude": 135.7298163,
+        "wikidata": "Q31706143",
         "popularity": 2
       }
     },
@@ -2893,8 +3153,8 @@
         "name": "ジオラマ京都JAPAN",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0186388,
         "longitude": 135.68006,
@@ -2917,8 +3177,8 @@
         "name_en": "ギア専用劇場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0084517,
         "longitude": 135.7665392,
@@ -2949,6 +3209,29 @@
         "latitude": 35.0166394,
         "longitude": 135.6997588,
         "wikidata": "Q28684195",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7852187,
+          34.9880199
+        ]
+      },
+      "properties": {
+        "name": "阿弥陀ヶ峰",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 34.9880199,
+        "longitude": 135.7852187,
+        "wikidata": "Q96074702",
+        "wikipedia": "ja:阿弥陀ヶ峰",
         "popularity": 2
       }
     },
@@ -3036,8 +3319,8 @@
         "name_en": "ギオンコーナー",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0013741,
         "longitude": 135.7756711,
@@ -3108,8 +3391,8 @@
         "name": "水路閣",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0105936,
         "longitude": 135.7940772,
@@ -3249,8 +3532,8 @@
         "name_en": "蹴上インクライン",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0094427,
         "longitude": 135.7896184,
@@ -3349,8 +3632,8 @@
         "name_en": "祇園甲部歌舞練場",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0016201,
         "longitude": 135.7755696,
@@ -3464,8 +3747,8 @@
         "name": "櫻谷文庫（旧木島櫻谷家住宅）",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.029495,
         "longitude": 135.7273293,
@@ -3488,8 +3771,8 @@
         "name_en": "源光庵",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0547677,
         "longitude": 135.7317934,
@@ -3618,6 +3901,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          135.8386312,
+          34.9469278
+        ]
+      },
+      "properties": {
+        "name": "Mt. Daigo",
+        "name_en": "醍醐山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 34.9469278,
+        "longitude": 135.8386312,
+        "wikidata": "Q31511077",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           135.7284537,
           35.0395179
         ]
@@ -3627,8 +3933,8 @@
         "name_en": "金閣",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0395179,
         "longitude": 135.7284537,
@@ -3679,7 +3985,8 @@
         "latitude": 34.9900024,
         "longitude": 135.7723166,
         "wikidata": "Q130544842",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q147286"
       }
     },
     {
@@ -3768,8 +4075,8 @@
         "name": "金剛能楽堂",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0258642,
         "longitude": 135.7588972,
@@ -3981,8 +4288,8 @@
         "name": "京都府立文化芸術会館",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0229304,
         "longitude": 135.7687702,
@@ -4004,7 +4311,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0299042,
         "longitude": 135.7496545,
@@ -4233,8 +4541,8 @@
         "name": "Kira Karacho",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0031498,
         "longitude": 135.759365,
@@ -4258,8 +4566,8 @@
         "name_en": "先斗町",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0042456,
         "longitude": 135.7712126,
@@ -4280,8 +4588,8 @@
         "name": "Kyoto Lookout",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0000696,
         "longitude": 135.7876107,
@@ -4303,8 +4611,8 @@
         "name_en": "二条陣屋",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0103111,
         "longitude": 135.7486973,
@@ -4327,7 +4635,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 34.9961506,
         "longitude": 135.7807414,
@@ -4351,12 +4660,34 @@
         "name_en": "京都御所入口",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0258134,
         "longitude": 135.7609261,
         "opening_hours": "Tu-Sa 09:00-17:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8447365,
+          35.015929
+        ]
+      },
+      "properties": {
+        "name": "長等山",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 35.015929,
+        "longitude": 135.8447365,
+        "wikidata": "Q134493096",
         "popularity": 0
       }
     },
@@ -4399,8 +4730,8 @@
         "name": "Cours de calligraphie japonaise",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0235324,
         "longitude": 135.7493039,
@@ -4423,8 +4754,9 @@
         "name_en": "キモノフォレスト",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0152928,
         "longitude": 135.6784525,
@@ -4448,7 +4780,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0099553,
         "longitude": 135.7826315,
@@ -4562,8 +4895,8 @@
         "name": "Tea Ceremony Ju-an at Jotokuji",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 34.9954572,
         "longitude": 135.7642552,
@@ -4630,8 +4963,8 @@
         "name": "teamLab BioVortex",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 34.9837455,
         "longitude": 135.7654182,
@@ -4675,8 +5008,8 @@
         "name": "Stamp Point №3",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 34.9921043,
         "longitude": 135.7589161,
@@ -4752,7 +5085,8 @@
         "longitude": 135.7509427,
         "opening_hours": "Mo-Su 09:00-16:45",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1013399"
       }
     },
     {
@@ -4769,8 +5103,8 @@
         "name_en": "能舞台",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 34.9906164,
         "longitude": 135.7510116,
@@ -5153,7 +5487,8 @@
         "longitude": 135.7134069,
         "opening_hours": "Mar-Apr Mo-Su 08:00-17:00; May-Feb off",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1202871"
       }
     },
     {
@@ -5270,7 +5605,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 35.0080365,
         "longitude": 135.7601072,
@@ -5364,8 +5700,8 @@
         "name_en": "仙洞御所",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 35.0216416,
         "longitude": 135.7656478,
@@ -5453,7 +5789,8 @@
         "name": "観空台遊園地",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 35.0469944,
         "longitude": 135.6688685,
@@ -5545,8 +5882,8 @@
         "name": "旧上田家住宅",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 34.9425854,
         "longitude": 135.7059897,
@@ -9888,6 +10225,30 @@
         "longitude": 135.7703016,
         "opening_hours": "Mo, We-Su 18:00-02:00",
         "website": "https://cafelasiesta.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7791117,
+          35.0291266
+        ]
+      },
+      "properties": {
+        "name": "Katharsis",
+        "name_en": "カタルシス",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 35.0291266,
+        "longitude": 135.7791117,
+        "opening_hours": "Tu,We,Fr,Su 19:00-24:00",
+        "website": "https://linktr.ee/katharsis.katarubar",
         "popularity": 0
       }
     },

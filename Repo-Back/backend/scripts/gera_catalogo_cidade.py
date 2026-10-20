@@ -20,14 +20,19 @@ Como fica a selecao:
     fica de fora;
   * o mesmo lugar (nome ou codigo do Wikidata repetido) entra uma vez so;
   * no fim, cada ponto recebe "popularity" (ver atualiza_popularidade.py) e os
-    pontos que nao sao comida ficam limitados aos mais populares.
+    pontos que nao sao comida ficam limitados aos mais populares;
+  * ponto dentro do contorno de um recinto conhecido (sitio arqueologico, castelo,
+    palacio, atracao, museu ou zoo do OSM, com Wikidata) recebe "site" com o codigo
+    do recinto: a Grande Piramide, a Esfinge e o "Giza Pyramids" sao uma visita so.
 
 O resultado e um ponto de partida: vale abrir o arquivo e revisar a lista antes
 de subir -- foi assim que o catalogo de Roma foi curado.
 
 Uso, a partir de Repo-Back/backend:
     python scripts/gera_catalogo_cidade.py curitiba
-    python scripts/gera_catalogo_cidade.py --revisar curitiba   # so refaz Wikidata e popularidade
+    python scripts/gera_catalogo_cidade.py --revisar curitiba   # so refaz Wikidata, popularidade e perfis
+    python scripts/gera_catalogo_cidade.py --perfis curitiba    # so refaz os perfis de viajante
+    python scripts/gera_catalogo_cidade.py --recintos curitiba  # so refaz os recintos ("site")
 """
 import http.client
 import json
@@ -52,25 +57,34 @@ HISTORIC = ['archaeological_site', 'ruins', 'church', 'monument', 'temple', 'cas
             'fort', 'villa', 'aqueduct', 'tower', 'monastery']
 LEISURE = ['park', 'garden', 'nature_reserve']
 AMENITY = ['restaurant', 'cafe', 'bar', 'pub', 'ice_cream', 'marketplace']
+# Natureza conhecida (com Wikidata): o que o perfil Aventureiro procura numa cidade como o Rio.
+NATURAL = {'beach': 'beach', 'peak': 'peak', 'volcano': 'peak', 'cave_entrance': 'cave', 'waterfall': 'waterfall'}
 # Amenities que viram uma categoria que o app ja conhece.
 AMENITY_COMO = {'theatre': 'attraction', 'place_of_worship': 'historic_church'}
 
-# Mesmos perfis que o catalogo de Roma usa para cada categoria.
+# Perfis de viajante de cada categoria. Cada perfil precisa de um conjunto proprio de
+# lugares, senao o roteiro sai igual para todos: "attraction" (torres, pracas, predios
+# famosos) e Cultural e Social, nao Aventureiro; Aventureiro e explorar ruinas, castelos,
+# fortes, mirantes e natureza.
 PERFIS = {
     'museum': ['CULTURAL', 'LUXO'],
     'gallery': ['CULTURAL', 'LUXO'],
-    'attraction': ['AVENTUREIRO', 'CULTURAL'],
-    'zoo': ['AVENTUREIRO'],
-    'theme_park': ['AVENTUREIRO'],
-    'viewpoint': ['RELAXAMENTO', 'SOLITARIO'],
+    'attraction': ['CULTURAL', 'SOCIAL'],
     'artwork': ['CULTURAL'],
+    'zoo': ['AVENTUREIRO', 'NATUREZA'],
+    'theme_park': ['AVENTUREIRO', 'SOCIAL'],
+    'viewpoint': ['AVENTUREIRO', 'RELAXAMENTO', 'SOLITARIO'],
     'historic_archaeological_site': ['AVENTUREIRO', 'CULTURAL'],
     'historic_ruins': ['AVENTUREIRO', 'CULTURAL'],
     'historic_castle': ['AVENTUREIRO', 'CULTURAL'],
     'historic_fort': ['AVENTUREIRO', 'CULTURAL'],
     'park': ['NATUREZA', 'RELAXAMENTO'],
     'garden': ['NATUREZA', 'RELAXAMENTO', 'SOLITARIO'],
-    'nature_reserve': ['NATUREZA'],
+    'nature_reserve': ['NATUREZA', 'AVENTUREIRO'],
+    'beach': ['RELAXAMENTO', 'NATUREZA', 'SOCIAL'],
+    'peak': ['AVENTUREIRO', 'NATUREZA'],
+    'waterfall': ['AVENTUREIRO', 'NATUREZA'],
+    'cave': ['AVENTUREIRO', 'NATUREZA'],
     'cafe': ['RELAXAMENTO', 'SOCIAL'],
     'ice_cream': ['RELAXAMENTO', 'SOCIAL'],
     'bar': ['MOCHILEIRO', 'SOCIAL'],
@@ -82,7 +96,8 @@ PERFIS_HISTORICO = ['CULTURAL', 'SOLITARIO']
 COMIDA = {'restaurant', 'cafe', 'bar', 'pub', 'ice_cream'}
 # Categorias em que o codigo do Wikidata costuma ser o do tema retratado, nao o da obra.
 OBRAS = {'artwork', 'historic_monument'}
-TETO_COMIDA = {'restaurant': 120, 'cafe': 40, 'bar': 10, 'pub': 20, 'ice_cream': 25}
+# Bares e pubs sao a noite dos perfis Social e Mochileiro, por isso um teto maior que o de Roma.
+TETO_COMIDA = {'restaurant': 120, 'cafe': 40, 'bar': 30, 'pub': 30, 'ice_cream': 25}
 TETO_RESTANTE = 650
 # Cidade grande tem centenas de igrejas com Wikidata; sem teto elas tomam o catalogo.
 TETO_CATEGORIA = {'historic_church': 40}
@@ -116,10 +131,16 @@ def consulta_overpass(cidade):
       nwr(around:{raio},{lat},{lon})["name"]["leisure"~"{lista(LEISURE)}"];
       nwr(around:{raio},{lat},{lon})["name"]["amenity"="marketplace"];
       nwr(around:{raio},{lat},{lon})["name"]["amenity"~"{lista(AMENITY_COMO)}"]["wikidata"];
+      nwr(around:{raio},{lat},{lon})["name"]["natural"~"{lista(NATURAL)}"]["wikidata"];
+      nwr(around:{raio},{lat},{lon})["name"]["waterway"="waterfall"]["wikidata"];
       nwr(around:{raio_comida},{lat},{lon})["name"]["amenity"~"{lista(comida)}"]["opening_hours"];
     );
     out center tags;
     """
+    return consulta(query)
+
+
+def consulta(query):
     dados = urllib.parse.urlencode({'data': query}).encode()
     for tentativa in range(3):
         for url in OVERPASS:
@@ -144,16 +165,22 @@ def categoria(tags):
         return tags['amenity']
     if tags.get('amenity') in AMENITY_COMO and tags.get('wikidata'):
         return AMENITY_COMO[tags['amenity']]
+    if tags.get('natural') in NATURAL and tags.get('wikidata'):
+        return NATURAL[tags['natural']]
+    if tags.get('waterway') == 'waterfall' and tags.get('wikidata'):
+        return 'waterfall'
     return None
 
 
-def perfis(cat, tags, cozinhas_locais):
+def perfis(cat, fee, cuisine, cozinhas_locais):
     if cat == 'restaurant':
-        cozinhas = {c.strip() for c in tags.get('cuisine', '').split(';')}
+        cozinhas = {c.strip() for c in (cuisine or '').split(';')}
         return ['LUXO', 'SOCIAL'] if cozinhas & set(cozinhas_locais) else ['MOCHILEIRO', 'SOCIAL']
-    if cat.startswith('historic_') and cat not in PERFIS:
-        return PERFIS_HISTORICO
-    return PERFIS.get(cat, [])
+    base = PERFIS_HISTORICO if cat.startswith('historic_') and cat not in PERFIS else PERFIS.get(cat, [])
+    # Entrada gratuita e o que o mochileiro procura.
+    if fee == 'no' and cat not in COMIDA and 'MOCHILEIRO' not in base:
+        base = base + ['MOCHILEIRO']
+    return list(base)
 
 
 def endereco(tags, nome_cidade):
@@ -203,7 +230,7 @@ def para_feature(elemento, cidade):
         'name': nome,
         'name_en': nome_en,
         'category': cat,
-        'profiles': perfis(cat, tags, cidade.get('localCuisine', [])),
+        'profiles': perfis(cat, tags.get('fee'), tags.get('cuisine'), cidade.get('localCuisine', [])),
         'latitude': lat,
         'longitude': lon,
         'address': endereco(tags, cidade['name']),
@@ -317,6 +344,131 @@ def seleciona(features):
     return escolhidos
 
 
+# Recintos que agrupam pontos numa visita so. Parque e jardim nao contam, nem quando
+# tambem estao marcados como atracao: o Champ de Mars tem a Torre Eiffel, o Jardin des
+# Plantes tem quatro museus, e cada um e um passeio.
+RECINTO_HISTORIC = ['archaeological_site', 'castle', 'fort', 'ruins', 'palace']
+RECINTO_TOURISM = ['attraction', 'museum', 'zoo', 'theme_park']
+# Diagonal maxima do recinto, em km: maior que isso e um bairro, nao um lugar. Sitio
+# arqueologico pode ser grande -- o planalto de Gize tem 5 km.
+RECINTO_KM = 2
+RECINTO_ARQUEOLOGICO_KM = 6
+
+
+def consulta_recintos(cidade):
+    """Contornos (ways fechados e multipoligonos) dos recintos conhecidos da cidade."""
+    lat, lon = cidade['latitude'], cidade['longitude']
+    raio = int(cidade['radiusKm'] * 1000)
+    historic = '^(' + '|'.join(RECINTO_HISTORIC) + ')$'
+    tourism = '^(' + '|'.join(RECINTO_TOURISM) + ')$'
+    query = f"""
+    [out:json][timeout:300];
+    (
+      way(around:{raio},{lat},{lon})["name"]["wikidata"]["historic"~"{historic}"][!"leisure"];
+      way(around:{raio},{lat},{lon})["name"]["wikidata"]["tourism"~"{tourism}"][!"leisure"];
+      rel(around:{raio},{lat},{lon})["type"="multipolygon"]["name"]["wikidata"]["historic"~"{historic}"][!"leisure"];
+      rel(around:{raio},{lat},{lon})["type"="multipolygon"]["name"]["wikidata"]["tourism"~"{tourism}"][!"leisure"];
+    );
+    out body geom;
+    """
+    return consulta(query)
+
+
+def arestas(elemento):
+    """Segmentos do contorno. A ordem dos ways nao importa para o teste de ponto dentro."""
+    if elemento['type'] == 'way':
+        geometria = elemento.get('geometry') or []
+        if not geometria or geometria[0] != geometria[-1]:
+            return []
+        linhas = [geometria]
+    else:
+        linhas = [m.get('geometry') or [] for m in elemento.get('members', [])
+                  if m.get('type') == 'way' and m.get('role') in ('outer', 'inner')]
+    segmentos = []
+    for linha in linhas:
+        pontos = [(p['lat'], p['lon']) for p in linha if p]
+        segmentos += zip(pontos, pontos[1:])
+    return segmentos
+
+
+def dentro(lat, lon, segmentos):
+    """Par ou impar de cruzamentos de um raio para leste: buracos (inner) ficam de fora."""
+    cruzamentos = 0
+    for (y1, x1), (y2, x2) in segmentos:
+        if (y1 > lat) != (y2 > lat) and lon < x1 + (lat - y1) * (x2 - x1) / (y2 - y1):
+            cruzamentos += 1
+    return cruzamentos % 2 == 1
+
+
+def aplica_recintos(cidade, features):
+    """Marca com "site" os pontos de um mesmo recinto; o maior recinto que contem o ponto vence."""
+    recintos = []
+    for elemento in consulta_recintos(cidade):
+        segmentos = arestas(elemento)
+        if not segmentos:
+            continue
+        ys = [y for s in segmentos for y, _ in s]
+        xs = [x for s in segmentos for _, x in s]
+        diagonal = distancia_km(min(ys), min(xs), max(ys), max(xs))
+        arqueologico = elemento['tags'].get('historic') == 'archaeological_site'
+        if diagonal > (RECINTO_ARQUEOLOGICO_KM if arqueologico else RECINTO_KM):
+            continue
+        recintos.append((diagonal, elemento['tags']['wikidata'], segmentos, (min(ys), min(xs), max(ys), max(xs))))
+    recintos.sort(key=lambda r: r[0], reverse=True)
+
+    membros = Counter()
+    for f in features:
+        p = f['properties']
+        p.pop('site', None)
+        if p['category'] in COMIDA or p['category'] == 'restaurant':
+            continue
+        for _, qid, segmentos, (y0, x0, y1, x1) in recintos:
+            if qid == p.get('wikidata'):
+                continue  # o contorno do proprio ponto
+            if y0 <= p['latitude'] <= y1 and x0 <= p['longitude'] <= x1 and dentro(p['latitude'], p['longitude'], segmentos):
+                p['site'] = qid
+                membros[qid] += 1
+                break
+    # O ponto que e o proprio recinto ("Giza Pyramids") entra no grupo dos que estao dentro dele.
+    for f in features:
+        p = f['properties']
+        qid = p.get('wikidata')
+        if membros[qid] and p.get('site') != qid:
+            if 'site' in p:
+                membros[p['site']] -= 1
+            p['site'] = qid
+            membros[qid] += 1
+    # Recinto com um ponto so nao agrupa nada.
+    for f in features:
+        if membros[f['properties'].get('site')] == 1:
+            del f['properties']['site']
+    print(f'{sum(1 for n in membros.values() if n > 1)} recintos agrupando '
+          f'{sum(n for n in membros.values() if n > 1)} pontos.')
+
+
+def regrava(cidade, alteracao):
+    arquivo = DADOS / 'cities' / f'{cidade["slug"]}.geojson'
+    texto = arquivo.read_text(encoding='utf-8')
+    catalogo = json.loads(texto)
+    alteracao(catalogo['features'])
+    arquivo.write_text(json.dumps(catalogo, ensure_ascii=False, indent=2) + ('\n' if texto.endswith('\n') else ''),
+                       encoding='utf-8', newline='\n')
+
+
+def reaplica_perfis(cidade):
+    """Recalcula os perfis de viajante dos pontos que nao sao comida, sem consultar nada."""
+    arquivo = DADOS / 'cities' / f'{cidade["slug"]}.geojson'
+    texto = arquivo.read_text(encoding='utf-8')
+    catalogo = json.loads(texto)
+    for f in catalogo['features']:
+        p = f['properties']
+        if p['category'] not in COMIDA and p['category'] != 'restaurant':
+            p['profiles'] = perfis(p['category'], p.get('fee'), p.get('cuisine'), cidade.get('localCuisine', []))
+    arquivo.write_text(json.dumps(catalogo, ensure_ascii=False, indent=2) + ('\n' if texto.endswith('\n') else ''),
+                       encoding='utf-8', newline='\n')
+    print(Counter(pr for f in catalogo['features'] for pr in f['properties']['profiles']).most_common())
+
+
 def revisa(cidade):
     """Reaplica a checagem do Wikidata e a popularidade num arquivo ja gerado, sem consultar o OSM."""
     arquivo = DADOS / 'cities' / f'{cidade["slug"]}.geojson'
@@ -329,13 +481,22 @@ def revisa(cidade):
 def main():
     args = sys.argv[1:]
     revisar = '--revisar' in args
-    args = [a for a in args if a != '--revisar']
+    so_perfis = '--perfis' in args
+    so_recintos = '--recintos' in args
+    args = [a for a in args if a not in ('--revisar', '--perfis', '--recintos')]
     if len(args) != 1:
         sys.exit(__doc__)
     sys.stdout.reconfigure(encoding='utf-8')
     cidade = carrega_cidade(args[0])
+    if so_perfis:
+        reaplica_perfis(cidade)
+        return
+    if so_recintos:
+        regrava(cidade, lambda features: aplica_recintos(cidade, features))
+        return
     if revisar:
         revisa(cidade)
+        reaplica_perfis(cidade)
         return
 
     print(f'Consultando o OpenStreetMap ({cidade["name"]}, raio de {cidade["radiusKm"]} km)...')
@@ -347,6 +508,7 @@ def main():
 
     aplica_popularidade([f['properties'] for f in features])
     features = seleciona(features)
+    aplica_recintos(cidade, features)
 
     destino = DADOS / 'cities' / f'{cidade["slug"]}.geojson'
     destino.write_text(json.dumps({'type': 'FeatureCollection', 'features': features},

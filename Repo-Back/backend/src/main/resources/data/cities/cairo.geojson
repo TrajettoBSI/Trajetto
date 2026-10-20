@@ -1,0 +1,4644 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1342122,
+          29.97917
+        ]
+      },
+      "properties": {
+        "name": "Great Pyramid of Giza",
+        "name_en": "هرم خوفو",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.97917,
+        "longitude": 31.1342122,
+        "wikidata": "Q37200",
+        "wikipedia": "en:Great Pyramid of Giza",
+        "fee": "yes",
+        "popularity": 126,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.125074,
+          29.9707692
+        ]
+      },
+      "properties": {
+        "name": "Giza Pyramids",
+        "name_en": "أهرامات الجيزة",
+        "category": "historic_archaeological_site",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 29.9707692,
+        "longitude": 31.125074,
+        "wikidata": "Q12508",
+        "wikipedia": "en:Giza pyramid complex",
+        "popularity": 92,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1375947,
+          29.9752813
+        ]
+      },
+      "properties": {
+        "name": "The Great Sphinx",
+        "name_en": "أبو الهول",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 29.9752813,
+        "longitude": 31.1375947,
+        "wikidata": "Q130958",
+        "wikipedia": "ar:أبو الهول",
+        "popularity": 85,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3079279,
+          30.1292477
+        ]
+      },
+      "properties": {
+        "name": "Ancient Heliopolis",
+        "name_en": "أون",
+        "category": "historic_archaeological_site",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 30.1292477,
+        "longitude": 31.3079279,
+        "wikidata": "Q191687",
+        "wikipedia": "ar:أون",
+        "popularity": 63
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2336017,
+          30.0478467
+        ]
+      },
+      "properties": {
+        "name": "Egyptian Museum",
+        "name_en": "المتحف المصري",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0478467,
+        "longitude": 31.2336017,
+        "opening_hours": "Mo-Sa 09:00-21:00; Su 09:00-16:00",
+        "website": "https://egyptianmuseumcairo.eg/emc/ar/",
+        "wikidata": "Q201219",
+        "wikipedia": "ar:المتحف المصري",
+        "fee": "yes",
+        "popularity": 63
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2165654,
+          29.8712196
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Djoser",
+        "name_en": "هرم زوسر المدرج",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8712196,
+        "longitude": 31.2165654,
+        "wikidata": "Q192418",
+        "wikipedia": "en:Pyramid of Djoser",
+        "popularity": 56,
+        "site": "Q192418"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2132845,
+          29.8768204
+        ]
+      },
+      "properties": {
+        "name": "Tombs of 3rd Dynasty",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8768204,
+        "longitude": 31.2132845,
+        "wikidata": "Q220276",
+        "wikipedia": "en:Third Dynasty of Egypt",
+        "popularity": 54
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1307366,
+          29.9759896
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Khafre",
+        "name_en": "هرم خفرع",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.9759896,
+        "longitude": 31.1307366,
+        "wikidata": "Q208358",
+        "wikipedia": "en:Pyramid of Khafre",
+        "fee": "yes",
+        "popularity": 53,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2357444,
+          30.0444147
+        ]
+      },
+      "properties": {
+        "name": "El Tahrir Square",
+        "name_en": "ميدان التحرير",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 30.0444147,
+        "longitude": 31.2357444,
+        "wikidata": "Q12061",
+        "wikipedia": "en:Tahrir Square",
+        "popularity": 53
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1192355,
+          29.9945706
+        ]
+      },
+      "properties": {
+        "name": "Grand Egyptian Museum",
+        "name_en": "المتحف المصري الكبير",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 29.9945706,
+        "longitude": 31.1192355,
+        "website": "https://www.visit-gem.com",
+        "wikidata": "Q2583681",
+        "wikipedia": "en:Grand Egyptian Museum",
+        "popularity": 47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1282609,
+          29.9725095
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Menkaure",
+        "name_en": "هرم منقرع",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.9725095,
+        "longitude": 31.1282609,
+        "wikidata": "Q238623",
+        "wikipedia": "en:Giza East Field",
+        "popularity": 46,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2496089,
+          30.0286574
+        ]
+      },
+      "properties": {
+        "name": "Mosque of Ahmed Ibn Tulun",
+        "name_en": "مسجد أحمد إبن طولون",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0286574,
+        "longitude": 31.2496089,
+        "wikidata": "Q915413",
+        "wikipedia": "en:Mosque of Ibn Tulun",
+        "popularity": 46
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.262676,
+          30.0457344
+        ]
+      },
+      "properties": {
+        "name": "El Azhar Mosque",
+        "name_en": "الجامع الأزهر",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0457344,
+        "longitude": 31.262676,
+        "wikidata": "Q312342",
+        "wikipedia": "ar:الجامع الأزهر",
+        "popularity": 41
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2621151,
+          30.0293262
+        ]
+      },
+      "properties": {
+        "name": "Salah El Din Citadel",
+        "name_en": "قلعة صلاح الدين",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0293262,
+        "longitude": 31.2621151,
+        "wikidata": "Q1988240",
+        "wikipedia": "de:Zitadelle von Saladin",
+        "popularity": 37,
+        "site": "Q1988240"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2596163,
+          30.0290726
+        ]
+      },
+      "properties": {
+        "name": "Mosque of Muhammad Ali",
+        "name_en": "مسجد محمد علي",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0290726,
+        "longitude": 31.2596163,
+        "address": "شارع صلاح الدين, Cairo",
+        "wikidata": "Q652046",
+        "wikipedia": "en:Mosque of Muhammad Ali",
+        "popularity": 35,
+        "site": "Q1988240"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2149354,
+          29.8681879
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Unas",
+        "name_en": "هرم أوناس",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8681879,
+        "longitude": 31.2149354,
+        "wikidata": "Q1478801",
+        "wikipedia": "en:Pyramid of Unas",
+        "popularity": 33,
+        "site": "Q192418"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2024288,
+          29.8949706
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Neferirkare",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8949706,
+        "longitude": 31.2024288,
+        "wikidata": "Q1609149",
+        "wikipedia": "en:Pyramid of Neferirkare",
+        "popularity": 31
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.256313,
+          30.0322551
+        ]
+      },
+      "properties": {
+        "name": "Sultan Hassan Mosque",
+        "name_en": "مسجد السلطان حسن",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0322551,
+        "longitude": 31.256313,
+        "wikidata": "Q1430119",
+        "wikipedia": "en:Mosque-Madrasa of Sultan Hasan",
+        "popularity": 29
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.161262,
+          29.93282
+        ]
+      },
+      "properties": {
+        "name": "Layer Pyramid",
+        "category": "historic_archaeological_site",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 29.93282,
+        "longitude": 31.161262,
+        "wikidata": "Q740691",
+        "wikipedia": "en:Layer Pyramid",
+        "popularity": 28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2033926,
+          29.8975358
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Sahure",
+        "name_en": "هرم سهورة",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8975358,
+        "longitude": 31.2033926,
+        "wikidata": "Q131820",
+        "wikipedia": "en:Pyramid of Sahure",
+        "popularity": 28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2188806,
+          29.8734202
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Userkaf",
+        "name_en": "هرم أوسركاف",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8734202,
+        "longitude": 31.2188806,
+        "wikidata": "Q1570082",
+        "wikipedia": "en:Pyramid of Userkaf",
+        "popularity": 28,
+        "site": "Q192418"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2243127,
+          30.04603
+        ]
+      },
+      "properties": {
+        "name": "Cairo Tower",
+        "name_en": "برج القاهرة",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.04603,
+        "longitude": 31.2243127,
+        "address": "البرج, Cairo",
+        "wikidata": "Q614684",
+        "wikipedia": "en:Cairo Tower",
+        "popularity": 28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2136489,
+          29.866153
+        ]
+      },
+      "properties": {
+        "name": "Buried Pyramid",
+        "name_en": "الهرم المدفون",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.866153,
+        "longitude": 31.2136489,
+        "wikidata": "Q135318",
+        "wikipedia": "en:Buried Pyramid",
+        "popularity": 27
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.0749381,
+          30.0321443
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Djedefre",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0321443,
+        "longitude": 31.0749381,
+        "wikidata": "Q1569654",
+        "wikipedia": "en:Pyramid of Djedefre",
+        "popularity": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2301665,
+          30.0052517
+        ]
+      },
+      "properties": {
+        "name": "Hanging Church",
+        "name_en": "الكنيسة المعلقة",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0052517,
+        "longitude": 31.2301665,
+        "wikidata": "Q2422298",
+        "wikipedia": "en:Hanging Church",
+        "popularity": 26,
+        "site": "Q3438824"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2637637,
+          30.0545133
+        ]
+      },
+      "properties": {
+        "name": "Mosque Al HakIm Bi Amr Allah",
+        "name_en": "جامع الحاكم بأمر الله",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0545133,
+        "longitude": 31.2637637,
+        "wikidata": "Q775838",
+        "popularity": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2632106,
+          30.0478438
+        ]
+      },
+      "properties": {
+        "name": "Hussein Mosque",
+        "name_en": "مسجد الحسين",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0478438,
+        "longitude": 31.2632106,
+        "wikidata": "Q2279688",
+        "wikipedia": "en:Al-Hussein Mosque",
+        "popularity": 25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2474606,
+          30.0427646
+        ]
+      },
+      "properties": {
+        "name": "Abdin Palace",
+        "name_en": "قصر عابدين",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0427646,
+        "longitude": 31.2474606,
+        "wikidata": "Q307747",
+        "wikipedia": "en:Abdeen_Palace",
+        "popularity": 24
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2036312,
+          29.8955433
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Nyuserre",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8955433,
+        "longitude": 31.2036312,
+        "wikidata": "Q1751693",
+        "wikipedia": "en:Pyramid of Nyuserre",
+        "popularity": 23
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2570977,
+          30.0328402
+        ]
+      },
+      "properties": {
+        "name": "Al-Rifa'i Mosque",
+        "name_en": "مسجد الرفاعي",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0328402,
+        "longitude": 31.2570977,
+        "wikidata": "Q311441",
+        "wikipedia": "ar:مسجد الرفاعي",
+        "popularity": 22
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2603623,
+          30.0361475
+        ]
+      },
+      "properties": {
+        "name": "Blue Mosque",
+        "name_en": "المسجد الأزرق",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0361475,
+        "longitude": 31.2603623,
+        "wikidata": "Q622784",
+        "wikipedia": "en:Aqsunqur Mosque",
+        "popularity": 22
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2489634,
+          30.0076128
+        ]
+      },
+      "properties": {
+        "name": "National Museum of Egyptian Civilization",
+        "name_en": "المتحف القومي للحضارة المصرية",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0076128,
+        "longitude": 31.2489634,
+        "address": "شارع عين الصيرة, قاهرة",
+        "website": "https://nmec.gov.eg/",
+        "wikidata": "Q29017001",
+        "wikipedia": "en:National Museum of Egyptian Civilization",
+        "popularity": 22
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2240324,
+          30.042589
+        ]
+      },
+      "properties": {
+        "name": "Cairo Opera House",
+        "name_en": "أوبرا القاهرة",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.042589,
+        "longitude": 31.2240324,
+        "wikidata": "Q597617",
+        "popularity": 22
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2217551,
+          29.875165
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Teti",
+        "name_en": "هرم تتى",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.875165,
+        "longitude": 31.2217551,
+        "wikidata": "Q1278166",
+        "wikipedia": "en:Pyramid of Teti",
+        "popularity": 21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2016947,
+          29.8937108
+        ]
+      },
+      "properties": {
+        "name": "Unfinished Pyramid of Neferefe",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8937108,
+        "longitude": 31.2016947,
+        "wikidata": "Q240579",
+        "wikipedia": "en:Pyramid of Neferefre",
+        "popularity": 21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2303596,
+          30.0057685
+        ]
+      },
+      "properties": {
+        "name": "The Coptic Museum",
+        "name_en": "المتحف القبطى",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0057685,
+        "longitude": 31.2303596,
+        "website": "http://www.coptic-cairo.com/museum/museum.html",
+        "wikidata": "Q1784177",
+        "wikipedia": "en:Coptic Museum",
+        "wheelchair": "yes",
+        "popularity": 21,
+        "site": "Q3438824"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2310536,
+          30.005803
+        ]
+      },
+      "properties": {
+        "name": "Ben Ezra Synagogue",
+        "name_en": "المعبد اليهودى",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.005803,
+        "longitude": 31.2310536,
+        "wikidata": "Q2474653",
+        "wikipedia": "en:Ben Ezra Synagogue",
+        "popularity": 21,
+        "site": "Q3438824"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2527223,
+          30.0446521
+        ]
+      },
+      "properties": {
+        "name": "Museum of Islamic Art",
+        "name_en": "متحف الفنون الأسلامية",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0446521,
+        "longitude": 31.2527223,
+        "wikidata": "Q3330629",
+        "wikipedia": "en:Museum of Islamic Art, Cairo",
+        "popularity": 20
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2318415,
+          30.0062606
+        ]
+      },
+      "properties": {
+        "name": "Coptic Cairo",
+        "name_en": "القاهرة القبطية",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0062606,
+        "longitude": 31.2318415,
+        "wikidata": "Q3438824",
+        "wikipedia": "ar:القاهرة القبطية",
+        "popularity": 19,
+        "site": "Q3438824"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2607281,
+          30.029306
+        ]
+      },
+      "properties": {
+        "name": "Mosque Of Al Nasser Mohammad Ibn Qalaun",
+        "name_en": "جامع الناصر محمد بن قلاوون",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.029306,
+        "longitude": 31.2607281,
+        "wikidata": "Q1707580",
+        "wikipedia": "en:Al-Nasir Muhammad Mosque",
+        "popularity": 19,
+        "site": "Q1988240"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2577817,
+          30.0427938
+        ]
+      },
+      "properties": {
+        "name": "Bab Zuweila",
+        "name_en": "باب زويلة",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0427938,
+        "longitude": 31.2577817,
+        "wikidata": "Q2041270",
+        "wikipedia": "en:Bab Zuweila",
+        "popularity": 18
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3302538,
+          30.0866555
+        ]
+      },
+      "properties": {
+        "name": "Baron Empain Palace",
+        "name_en": "قصر بارون أمبان",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0866555,
+        "longitude": 31.3302538,
+        "wikidata": "Q808618",
+        "wikipedia": "en:Baron Empain Palace",
+        "popularity": 17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2300186,
+          30.00654
+        ]
+      },
+      "properties": {
+        "name": "Saint George's Church",
+        "name_en": "كنيسة القديس جورج",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.00654,
+        "longitude": 31.2300186,
+        "wikidata": "Q4255568",
+        "wikipedia": "en:Church of St. George (Cairo)",
+        "popularity": 17,
+        "site": "Q3438824"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2189899,
+          29.8544317
+        ]
+      },
+      "properties": {
+        "name": "Pyramid of Pepi I",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8544317,
+        "longitude": 31.2189899,
+        "wikidata": "Q1536118",
+        "wikipedia": "en:Pyramid of Pepi I",
+        "popularity": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2306554,
+          30.0062615
+        ]
+      },
+      "properties": {
+        "name": "Cavern Church, and The Martyrs Sergius and Bacchus",
+        "name_en": "كنيسة المغارة والشهيدين سرجيوس وواخس",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0062615,
+        "longitude": 31.2306554,
+        "wikidata": "Q2965718",
+        "wikipedia": "en:Saints Sergius and Bacchus Church",
+        "popularity": 16,
+        "site": "Q3438824"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2298343,
+          30.0436895
+        ]
+      },
+      "properties": {
+        "name": "Qasr El-Nile Bridge (The Nile Castle Bridge)",
+        "name_en": "كوبري قصر النيل",
+        "category": "historic_monument",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0436895,
+        "longitude": 31.2298343,
+        "wikidata": "Q1973889",
+        "wikipedia": "en:Qasr El Nil Bridge",
+        "popularity": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2648077,
+          30.0401178
+        ]
+      },
+      "properties": {
+        "name": "Al Azhar Park",
+        "name_en": "حديقة الأزهر",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 30.0401178,
+        "longitude": 31.2648077,
+        "website": "https://azharpark.com/index.html",
+        "wikidata": "Q286446",
+        "wikipedia": "en:Al-Azhar Park",
+        "fee": "yes",
+        "popularity": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2575067,
+          30.0433521
+        ]
+      },
+      "properties": {
+        "name": "Mosque of Sultan al-Muayyad",
+        "name_en": "مسجد السلطان المؤيَّد شيخ",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0433521,
+        "longitude": 31.2575067,
+        "wikidata": "Q838360",
+        "wikipedia": "en:Mosque of Sultan al-Muayyad",
+        "popularity": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2620213,
+          30.0515556
+        ]
+      },
+      "properties": {
+        "name": "Al-Aqmar Mosque",
+        "name_en": "جامع الأقمر",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0515556,
+        "longitude": 31.2620213,
+        "wikidata": "Q287283",
+        "wikipedia": "en:Aqmar Mosque",
+        "popularity": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2095902,
+          29.8760223
+        ]
+      },
+      "properties": {
+        "name": "Serapeum",
+        "category": "historic_archaeological_site",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 29.8760223,
+        "longitude": 31.2095902,
+        "wikidata": "Q287375",
+        "wikipedia": "en:Serapeum of Saqqara",
+        "popularity": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2607724,
+          30.0494172
+        ]
+      },
+      "properties": {
+        "name": "Qalawun Complex",
+        "name_en": "مجموعة السلطان المنصور قلاوون",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0494172,
+        "longitude": 31.2607724,
+        "wikidata": "Q1237010",
+        "fee": "yes",
+        "popularity": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2608855,
+          30.0498518
+        ]
+      },
+      "properties": {
+        "name": "Madrasa of Sultan Al-Nasir Muhammad Ibn Qalawun",
+        "name_en": "مدرسة السلطان الناصر محمد بن قلاوون",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0498518,
+        "longitude": 31.2608855,
+        "wikidata": "Q1277350",
+        "wikipedia": "en:Madrasa of al-Nasir Muhammad",
+        "fee": "yes",
+        "popularity": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2610146,
+          30.0501146
+        ]
+      },
+      "properties": {
+        "name": "Madrasa and Khanqa of Sultan Barquq",
+        "name_en": "مدرسة وخانقاة السلطان برقوق",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0501146,
+        "longitude": 31.2610146,
+        "wikidata": "Q12241714",
+        "wikipedia": "en:Mosque-Madrasa of Sultan Barquq",
+        "fee": "yes",
+        "popularity": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2681813,
+          30.0197608
+        ]
+      },
+      "properties": {
+        "name": "Al-Lu'lu'a Mosque",
+        "name_en": "مسجد اللؤلؤة",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0197608,
+        "longitude": 31.2681813,
+        "wikidata": "Q6702951",
+        "wikipedia": "en:Lulua Mosque",
+        "popularity": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.151556,
+          29.9401222
+        ]
+      },
+      "properties": {
+        "name": "Unfinished Northern Pyramid of Zawyet El Aryan",
+        "category": "historic_archaeological_site",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 29.9401222,
+        "longitude": 31.151556,
+        "wikidata": "Q785696",
+        "wikipedia": "en:Unfinished Northern Pyramid of Zawyet El Aryan",
+        "popularity": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1991712,
+          29.90005
+        ]
+      },
+      "properties": {
+        "name": "Sun Temple of Userkaf",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.90005,
+        "longitude": 31.1991712,
+        "wikidata": "Q2301943",
+        "wikipedia": "ar:معبد الشمس لأوسكارف",
+        "popularity": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2138521,
+          30.0242265
+        ]
+      },
+      "properties": {
+        "name": "Giza Zoo",
+        "name_en": "حديقة الحيوانات",
+        "category": "zoo",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 30.0242265,
+        "longitude": 31.2138521,
+        "website": "http://www.gizazoo-eg.com/",
+        "wikidata": "Q2509245",
+        "wikipedia": "en:Giza Zoo",
+        "popularity": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2642538,
+          30.0312359
+        ]
+      },
+      "properties": {
+        "name": "Sulayman Pasha Mosque",
+        "name_en": "مسجد سليمان باشا الخادم",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0312359,
+        "longitude": 31.2642538,
+        "wikidata": "Q11936598",
+        "wikipedia": "en:Sulayman Pasha Mosque",
+        "popularity": 13,
+        "site": "Q1988240"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.274915,
+          30.0439662
+        ]
+      },
+      "properties": {
+        "name": "funerary complex of Sultan Qaytbay",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0439662,
+        "longitude": 31.274915,
+        "wikidata": "Q12242839",
+        "wikipedia": "en:Funerary complex of Sultan Qaytbay",
+        "popularity": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2229255,
+          29.8755638
+        ]
+      },
+      "properties": {
+        "name": "Headless Pyramid",
+        "name_en": "الهرم مقطوع الرأس",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8755638,
+        "longitude": 31.2229255,
+        "wikidata": "Q821146",
+        "wikipedia": "en:Headless Pyramid",
+        "popularity": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2507258,
+          30.0283804
+        ]
+      },
+      "properties": {
+        "name": "Gayer-Anderson Museum",
+        "name_en": "متحف جاير أندرسون",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0283804,
+        "longitude": 31.2507258,
+        "wikidata": "Q2190649",
+        "wikipedia": "en:Gayer-Anderson Museum",
+        "fee": "yes",
+        "wheelchair": "no",
+        "popularity": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2634595,
+          30.0623862
+        ]
+      },
+      "properties": {
+        "name": "Sultan Alzahir Bebars Mosque",
+        "name_en": "جامع السلطان الظاهر بيبرس",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0623862,
+        "longitude": 31.2634595,
+        "wikidata": "Q1535255",
+        "wikipedia": "en:Mosque of al-Zahir Baybars",
+        "popularity": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2195836,
+          30.0355567
+        ]
+      },
+      "properties": {
+        "name": "Mahmoud Khaleel",
+        "name_en": "متحف محمود خليل",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0355567,
+        "longitude": 31.2195836,
+        "address": "شارع النيل, 80, Cairo",
+        "wikidata": "Q4115728",
+        "wikipedia": "en:Mohamed Mahmoud Khalil Museum",
+        "popularity": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2237624,
+          30.0580457
+        ]
+      },
+      "properties": {
+        "name": "All Saints",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0580457,
+        "longitude": 31.2237624,
+        "wikidata": "Q15179391",
+        "wikipedia": "ru:Собор Всех Святых (Каир)",
+        "popularity": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2577817,
+          30.0316053
+        ]
+      },
+      "properties": {
+        "name": "El-Mahmoudya Mosque",
+        "name_en": "مسجد المحمودية",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0316053,
+        "longitude": 31.2577817,
+        "wikidata": "Q12242780",
+        "wikipedia": "en:Al-Mahmoudia Mosque",
+        "popularity": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2602537,
+          30.0276072
+        ]
+      },
+      "properties": {
+        "name": "Al-Gawhara Palace",
+        "name_en": "قصر الجوهرة",
+        "category": "historic_castle",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 30.0276072,
+        "longitude": 31.2602537,
+        "wikidata": "Q4116059",
+        "wikipedia": "en:Al-Gawhara Palace",
+        "popularity": 11,
+        "site": "Q1988240"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2250004,
+          30.0069316
+        ]
+      },
+      "properties": {
+        "name": "Nilometer in Rhoda Island",
+        "name_en": "نيلوميتر",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0069316,
+        "longitude": 31.2250004,
+        "wikidata": "Q1992209",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2576432,
+          30.0415974
+        ]
+      },
+      "properties": {
+        "name": "Mosque of Mahmud Kurdi",
+        "name_en": "مسجد الكردي",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0415974,
+        "longitude": 31.2576432,
+        "wikidata": "Q43033418",
+        "wikipedia": "en:Mahmud al-Kurdi Mosque",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2437489,
+          30.0514129
+        ]
+      },
+      "properties": {
+        "name": "Chaar Hachamaim Synagogue",
+        "name_en": "شعار هشامايم",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0514129,
+        "longitude": 31.2437489,
+        "wikidata": "Q2919031",
+        "wikipedia": "en:Sha'ar Hashamayim Synagogue (Cairo)",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2091708,
+          30.0466925
+        ]
+      },
+      "properties": {
+        "name": "Agricultural Museum",
+        "name_en": "المتحف الزراعي",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0466925,
+        "longitude": 31.2091708,
+        "wikidata": "Q2420309",
+        "wikipedia": "en:Agricultural Museum, Egypt",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2829422,
+          30.0752741
+        ]
+      },
+      "properties": {
+        "name": "Al-Nour",
+        "name_en": "النور",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0752741,
+        "longitude": 31.2829422,
+        "wikidata": "Q12242788",
+        "wikipedia": "en:Al-Nour Mosque (Cairo)",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2944102,
+          30.083464
+        ]
+      },
+      "properties": {
+        "name": "Gamal Abdel Nasser Mosque",
+        "name_en": "مسجد جمال عبد الناصر",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.083464,
+        "longitude": 31.2944102,
+        "wikidata": "Q40377967",
+        "wikipedia": "en:Gamal Abdel Nasser Mosque",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2395441,
+          30.0467916
+        ]
+      },
+      "properties": {
+        "name": "Armenian Catholic Cathedral of Annunciation",
+        "name_en": "كنيسة البشارة الأرمنية الكسليكية",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0467916,
+        "longitude": 31.2395441,
+        "address": "شارع محمد صبري ابو علم, 36, القاهرة",
+        "wikidata": "Q28519128",
+        "wikipedia": "en:Annunciation Cathedral, Cairo",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2683725,
+          30.0221078
+        ]
+      },
+      "properties": {
+        "name": "El Geyoushy Mosque",
+        "name_en": "مسجد الجيوشى",
+        "category": "historic_monument",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0221078,
+        "longitude": 31.2683725,
+        "wikidata": "Q4022325",
+        "wikipedia": "en:Juyushi Mosque",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3445034,
+          30.1058718
+        ]
+      },
+      "properties": {
+        "name": "Basilica of Our Lady of Fatima",
+        "name_en": "كنيسة سانت فاتيما",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.1058718,
+        "longitude": 31.3445034,
+        "wikidata": "Q5052324",
+        "wikipedia": "en:Our Lady of Fatima Cathedral, Cairo",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2580189,
+          30.0423101
+        ]
+      },
+      "properties": {
+        "name": "Al-Tala'ee Mosque",
+        "name_en": "مسجد الصالح طلائع",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0423101,
+        "longitude": 31.2580189,
+        "wikidata": "Q3397019",
+        "wikipedia": "en:Al-Salih Tala'i Mosque",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2132409,
+          30.029429
+        ]
+      },
+      "properties": {
+        "name": "Orman Botanic Garden",
+        "name_en": "حديقة الأورمان النباتية",
+        "category": "garden",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO",
+          "SOLITARIO"
+        ],
+        "latitude": 30.029429,
+        "longitude": 31.2132409,
+        "address": "شارع عبد السلام عارف, 9, جيزه",
+        "phone": "+2 02 37483452",
+        "wikidata": "Q4991033",
+        "wikipedia": "en:Orman Garden",
+        "popularity": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3138006,
+          30.0653741
+        ]
+      },
+      "properties": {
+        "name": "Unknown Soldier Memorial",
+        "name_en": "الجندي المجهول",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0653741,
+        "longitude": 31.3138006,
+        "wikidata": "Q2919312",
+        "wikipedia": "en:Unknown Soldier Memorial (Egypt)",
+        "popularity": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2662423,
+          30.0658596
+        ]
+      },
+      "properties": {
+        "name": "Sakakini Palace",
+        "name_en": "قصر السكاكيني",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0658596,
+        "longitude": 31.2662423,
+        "address": "ميدان السكاكيني, Cairo",
+        "wikidata": "Q10981930",
+        "popularity": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1941213,
+          29.9040208
+        ]
+      },
+      "properties": {
+        "name": "Sun Temple of Niuserre",
+        "name_en": "معبد الإلاه الشمس",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.9040208,
+        "longitude": 31.1941213,
+        "wikidata": "Q2009417",
+        "wikipedia": "en:Abu Gorab",
+        "popularity": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2614085,
+          30.0490346
+        ]
+      },
+      "properties": {
+        "name": "Madrasa and Mausoleum of Sultan Al-Salih Nagm Al-Din Ayyub",
+        "name_en": "مدرسة وقبة الصالح نجم الدين أيوب",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0490346,
+        "longitude": 31.2614085,
+        "wikidata": "Q7404512",
+        "wikipedia": "en:Salihiyya Madrasa",
+        "popularity": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2119188,
+          29.8775861
+        ]
+      },
+      "properties": {
+        "name": "Mastaba of Ti",
+        "name_en": "مقبرة تي",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8775861,
+        "longitude": 31.2119188,
+        "wikidata": "Q1907814",
+        "wikipedia": "en:Mastaba of Ti",
+        "popularity": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2313165,
+          30.006132
+        ]
+      },
+      "properties": {
+        "name": "Saint Barbara Church",
+        "name_en": "كنيسة القديسة برباره الأثرية",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.006132,
+        "longitude": 31.2313165,
+        "wikidata": "Q7401018",
+        "wikipedia": "en:Saint Barbara Church in Coptic Cairo",
+        "popularity": 9,
+        "site": "Q3438824"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.20167,
+          29.89861
+        ]
+      },
+      "properties": {
+        "name": "Unfinished Pyramid of Abusir",
+        "category": "historic_monument",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 29.89861,
+        "longitude": 31.20167,
+        "wikidata": "Q1574230",
+        "wikipedia": "en:Unfinished Pyramid of Abusir",
+        "popularity": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2579829,
+          30.0322638
+        ]
+      },
+      "properties": {
+        "name": "Qani Bey Mosque",
+        "name_en": "مسجد قاني باي",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0322638,
+        "longitude": 31.2579829,
+        "wikidata": "Q12241698",
+        "wikipedia": "en:Mosque of Qani-Bay",
+        "popularity": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2294593,
+          30.0621319
+        ]
+      },
+      "properties": {
+        "name": "Sinan Pasha Mosque",
+        "name_en": "مسجد سنان باشا",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0621319,
+        "longitude": 31.2294593,
+        "wikidata": "Q12204334",
+        "wikipedia": "en:Sinan Pasha Mosque (Cairo)",
+        "wheelchair": "no",
+        "popularity": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2619061,
+          30.0525686
+        ]
+      },
+      "properties": {
+        "name": "Mosque-Sabil of Sulayman Agha al-Silahdar",
+        "name_en": "مسجد وسبيل سليمان أغا السلحدار",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0525686,
+        "longitude": 31.2619061,
+        "wikidata": "Q12242812",
+        "wikipedia": "en:Mosque-Sabil of Sulayman Agha al-Silahdar",
+        "popularity": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2061459,
+          29.8668042
+        ]
+      },
+      "properties": {
+        "name": "Gisr el-Mudir",
+        "name_en": "جسر المدير",
+        "category": "historic_archaeological_site",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 29.8668042,
+        "longitude": 31.2061459,
+        "wikidata": "Q1527638",
+        "wikipedia": "en:Gisr el-Mudir",
+        "popularity": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2616572,
+          30.0504413
+        ]
+      },
+      "properties": {
+        "name": "Beshtak Palace",
+        "name_en": "قصر الأمير بشتاك",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0504413,
+        "longitude": 31.2616572,
+        "wikidata": "Q4896257",
+        "wikipedia": "en:Beshtak Palace",
+        "popularity": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2287249,
+          29.9961855
+        ]
+      },
+      "properties": {
+        "name": "Egyptian Geological Museum",
+        "name_en": "المتخف الجيولوجي المصري",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 29.9961855,
+        "longitude": 31.2287249,
+        "wikidata": "Q5348411",
+        "wikipedia": "en:Egyptian Geological Museum",
+        "wheelchair": "no",
+        "popularity": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2595315,
+          30.0414715
+        ]
+      },
+      "properties": {
+        "name": "Qogmas Al-Ishaqi Mosue",
+        "name_en": "مسجد قجماس الإسحاقي",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0414715,
+        "longitude": 31.2595315,
+        "wikidata": "Q12242840",
+        "wikipedia": "en:Amir Qijmas al-Ishaqi Mosque",
+        "popularity": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2743853,
+          30.061954
+        ]
+      },
+      "properties": {
+        "name": "Abbasiyya Synagogue",
+        "name_en": "معبد العباسية اليهودي",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.061954,
+        "longitude": 31.2743853,
+        "wikidata": "Q20413592",
+        "wikipedia": "en:Moussa Dar'i Synagogue",
+        "popularity": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2229447,
+          30.0406374
+        ]
+      },
+      "properties": {
+        "name": "Mahmoud Mukhtar Museum",
+        "name_en": "متحف محمود مختار",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0406374,
+        "longitude": 31.2229447,
+        "wikidata": "Q6933506",
+        "wikipedia": "en:Mukhtar Museum",
+        "popularity": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3069523,
+          30.074126
+        ]
+      },
+      "properties": {
+        "name": "October War Panorama",
+        "name_en": "بانوراما حرب أوكتوبر",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.074126,
+        "longitude": 31.3069523,
+        "wikidata": "Q6741397",
+        "wikipedia": "en:6th of October Panorama",
+        "popularity": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2521512,
+          30.0259186
+        ]
+      },
+      "properties": {
+        "name": "Mausoleum of Shagar El Dorr",
+        "name_en": "قبة شجر الدر",
+        "category": "historic_monument",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0259186,
+        "longitude": 31.2521512,
+        "wikidata": "Q23975588",
+        "popularity": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2239814,
+          29.8735271
+        ]
+      },
+      "properties": {
+        "name": "Bubasteion",
+        "category": "historic_archaeological_site",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 29.8735271,
+        "longitude": 31.2239814,
+        "wikidata": "Q997397",
+        "wikipedia": "en:Bubasteum",
+        "popularity": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2158727,
+          30.0282948
+        ]
+      },
+      "properties": {
+        "name": "تمثال نهضة مصر",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 30.0282948,
+        "longitude": 31.2158727,
+        "wikidata": "Q6753132",
+        "wikipedia": "ar:تمثال نهضة مصر",
+        "popularity": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2175989,
+          30.0214538
+        ]
+      },
+      "properties": {
+        "name": "Ahmed Shawqi Museum",
+        "name_en": "متحف أحمد شوقي",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0214538,
+        "longitude": 31.2175989,
+        "wikidata": "Q372088",
+        "wikipedia": "en:Ahmed Shawki Museum",
+        "popularity": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2635146,
+          30.0294231
+        ]
+      },
+      "properties": {
+        "name": "The Carriage Museum",
+        "name_en": "متحف المركبات الملكية",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0294231,
+        "longitude": 31.2635146,
+        "wikidata": "Q5046116",
+        "wikipedia": "ar:متحف المركبات الملكية",
+        "popularity": 6,
+        "site": "Q1988240"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2308439,
+          30.0125111
+        ]
+      },
+      "properties": {
+        "name": "Saint Mercurius Church in Coptic Cairo",
+        "name_en": "كنيسة أبو سفن",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0125111,
+        "longitude": 31.2308439,
+        "wikidata": "Q7401898",
+        "wikipedia": "en:Saint Mercurius Church in Coptic Cairo",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2248842,
+          30.0076221
+        ]
+      },
+      "properties": {
+        "name": "Om Kalthom Museum",
+        "name_en": "متحف أم كلثوم",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0076221,
+        "longitude": 31.2248842,
+        "wikidata": "Q7881638",
+        "wikipedia": "en:Umm Kulthum Museum",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2188121,
+          30.0565189
+        ]
+      },
+      "properties": {
+        "name": "Aquarium Grotto Garden",
+        "name_en": "حديقة جيلاية الأسماك",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 30.0565189,
+        "longitude": 31.2188121,
+        "opening_hours": "Sa-Fr 09:00-16:30; Tu off",
+        "wikidata": "Q6392353",
+        "fee": "yes",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3025996,
+          30.0987657
+        ]
+      },
+      "properties": {
+        "name": "Qubba Palace",
+        "name_en": "قصر القبة",
+        "category": "historic_castle",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 30.0987657,
+        "longitude": 31.3025996,
+        "wikidata": "Q4165397",
+        "wikipedia": "en:Koubbeh Palace",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2570877,
+          30.0313228
+        ]
+      },
+      "properties": {
+        "name": "Salah Al Din Square",
+        "name_en": "ميدان صلاح الدين",
+        "category": "garden",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0313228,
+        "longitude": 31.2570877,
+        "wikidata": "Q12246605",
+        "wikipedia": "ar:ميدان صلاح الدين",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.0596458,
+          29.9670759
+        ]
+      },
+      "properties": {
+        "name": "Dream Park",
+        "name_en": "دريم بارك",
+        "category": "theme_park",
+        "profiles": [
+          "AVENTUREIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9670759,
+        "longitude": 31.0596458,
+        "wikidata": "Q12211738",
+        "wikipedia": "ar:دريم بارك",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.223104,
+          30.0564865
+        ]
+      },
+      "properties": {
+        "name": "Museum of Islamic Ceramics",
+        "name_en": "متحف الخزف الإسلامي",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0564865,
+        "longitude": 31.223104,
+        "website": "http://www.icm.gov.eg/",
+        "wikidata": "Q6940902",
+        "wikipedia": "ar:متحف الخزف الإسلامي",
+        "wheelchair": "no",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2576185,
+          30.0426059
+        ]
+      },
+      "properties": {
+        "name": "Zawiya-Sabil Faraj Ibn Barquq",
+        "name_en": "زاوية وسبيل فرج بن برقوق",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0426059,
+        "longitude": 31.2576185,
+        "wikidata": "Q23975559",
+        "wikipedia": "ar:زاوية وسبيل الناصر فرج بن برقوق",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2274622,
+          30.0447733
+        ]
+      },
+      "properties": {
+        "name": "El Andalos Park",
+        "name_en": "حديقة الأندلس",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 30.0447733,
+        "longitude": 31.2274622,
+        "wikidata": "Q12207340",
+        "wikipedia": "ar:حديقة الأندلس (القاهرة)",
+        "fee": "yes",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2340081,
+          30.0431868
+        ]
+      },
+      "properties": {
+        "name": "Omar Makram mosque",
+        "name_en": "مسجد عمر مكرم",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0431868,
+        "longitude": 31.2340081,
+        "wikidata": "Q25452804",
+        "wikipedia": "ar:مسجد عمر مكرم",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2581273,
+          30.0310482
+        ]
+      },
+      "properties": {
+        "name": "Bab al-Azab",
+        "name_en": "باب العزب",
+        "category": "historic_tower",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0310482,
+        "longitude": 31.2581273,
+        "wikidata": "Q28715270",
+        "wikipedia": "ar:باب العزب (القاهرة)",
+        "popularity": 3,
+        "site": "Q1988240"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2574366,
+          30.0411191
+        ]
+      },
+      "properties": {
+        "name": "Mosque of Inal al-Yusufi",
+        "name_en": "مسجد إينال اليوسفي",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0411191,
+        "longitude": 31.2574366,
+        "wikidata": "Q25452754",
+        "wikipedia": "ar:مسجد ومدرسة إينال اليوسفي",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1382798,
+          29.9752153
+        ]
+      },
+      "properties": {
+        "name": "Sphinx Temple",
+        "name_en": "معبد أبو الهول",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.9752153,
+        "longitude": 31.1382798,
+        "wikidata": "Q2309639",
+        "wikipedia": "de:Sphinxtempel von Gizeh (Altes Reich)",
+        "popularity": 2,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.232889,
+          30.0470017
+        ]
+      },
+      "properties": {
+        "name": "Auguste Mariette",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 30.0470017,
+        "longitude": 31.232889,
+        "wikidata": "Q131138357",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2790606,
+          30.0761621
+        ]
+      },
+      "properties": {
+        "name": "Arab Al Mohammedi Park",
+        "name_en": "حديقة عرب المحمدي",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 30.0761621,
+        "longitude": 31.2790606,
+        "wikidata": "Q23973756",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2529984,
+          30.0309903
+        ]
+      },
+      "properties": {
+        "name": "Mosque of Sheikhun El Omary El Mamlouky",
+        "name_en": "مسجد الأمير شيخون العمرى المملوكى",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0309903,
+        "longitude": 31.2529984,
+        "wikidata": "Q126913354",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.260127,
+          30.0459758
+        ]
+      },
+      "properties": {
+        "name": "Mausoleum-Sabil-Kuttab Al-Ghouri",
+        "name_en": "سلطان الغوري",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0459758,
+        "longitude": 31.260127,
+        "wikidata": "Q126914593",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.13811,
+          29.9755978
+        ]
+      },
+      "properties": {
+        "name": "Amenhotep II Temple",
+        "name_en": "معبد أمنحتب الثاني",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.9755978,
+        "longitude": 31.13811,
+        "wikidata": "Q18008311",
+        "popularity": 1,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2214951,
+          29.8758839
+        ]
+      },
+      "properties": {
+        "name": "Tomb of Kagemni",
+        "name_en": "مصطبة كاجيمنى",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8758839,
+        "longitude": 31.2214951,
+        "wikidata": "Q99913494",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2384944,
+          30.0476098
+        ]
+      },
+      "properties": {
+        "name": "Talaat Harb",
+        "name_en": "طلعت حرب",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 30.0476098,
+        "longitude": 31.2384944,
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2613757,
+          30.049967
+        ]
+      },
+      "properties": {
+        "name": "Egyptian Textile Museum",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.049967,
+        "longitude": 31.2613757,
+        "address": "El Muez St., 121, Cairo",
+        "opening_hours": "09:00-16:30",
+        "phone": "0227865227",
+        "website": "https://www.facebook.com/EgyptianTextileMuseum",
+        "fee": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2619145,
+          30.016492
+        ]
+      },
+      "properties": {
+        "name": "Friday's Market",
+        "name_en": "سوق الجمعة",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.016492,
+        "longitude": 31.2619145,
+        "opening_hours": "Fr",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2766469,
+          30.0146046
+        ]
+      },
+      "properties": {
+        "name": "تلة المقطم",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0146046,
+        "longitude": 31.2766469,
+        "address": "طريق المقطم, Cairo",
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3192333,
+          30.1260972
+        ]
+      },
+      "properties": {
+        "name": "آثار عين شمس . مدينة اون القديمة .",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.1260972,
+        "longitude": 31.3192333,
+        "address": "شارع جنينات الشريف, Cairo",
+        "opening_hours": "Sa-Th",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2157202,
+          30.0640916
+        ]
+      },
+      "properties": {
+        "name": "Umm Kulthum",
+        "name_en": "أم كلثوم",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 30.0640916,
+        "longitude": 31.2157202,
+        "wikidata": "Q42310529",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3882026,
+          30.0164661
+        ]
+      },
+      "properties": {
+        "name": "New Cairo Convention Centre",
+        "name_en": "Teleperformance - City Walk",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0164661,
+        "longitude": 31.3882026,
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1864013,
+          30.1295407
+        ]
+      },
+      "properties": {
+        "name": "Tanash B-Tech Park",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.1295407,
+        "longitude": 31.1864013,
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1934393,
+          30.1236529
+        ]
+      },
+      "properties": {
+        "name": "بقالة ابو كريم",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.1236529,
+        "longitude": 31.1934393,
+        "opening_hours": "10:00-22:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1378372,
+          29.9752684
+        ]
+      },
+      "properties": {
+        "name": "Sphinx Stele",
+        "name_en": "لوحة أبي الهول",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.9752684,
+        "longitude": 31.1378372,
+        "wikipedia": "en:Dream Stele",
+        "popularity": 0,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.217199,
+          29.9972735
+        ]
+      },
+      "properties": {
+        "name": "Cleopatra’s Museum",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 29.9972735,
+        "longitude": 31.217199,
+        "website": "https://www.pharaonicvillage.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2330885,
+          30.0423713
+        ]
+      },
+      "properties": {
+        "name": "Simón Bolívar",
+        "name_en": "سيمون بوليفار",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 30.0423713,
+        "longitude": 31.2330885,
+        "wikidata": "Q126916442",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2403083,
+          30.0498341
+        ]
+      },
+      "properties": {
+        "name": "Contemporary Image Collective (CIC)",
+        "name_en": "Contemporary Image Collective (CIC) - مركز الصورة المعاصرة",
+        "category": "gallery",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0498341,
+        "longitude": 31.2403083,
+        "address": "شارع طلعت حرب, 27, القاهرة",
+        "opening_hours": "Su-Th 11:00-19:00",
+        "fee": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1751941,
+          29.9719641
+        ]
+      },
+      "properties": {
+        "name": "Adam Henein Museum",
+        "name_en": "متحف آدم حنين",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 29.9719641,
+        "longitude": 31.1751941,
+        "website": "https://www.adamheneinmuseum.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3867592,
+          30.1032428
+        ]
+      },
+      "properties": {
+        "name": "Ice skating",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.1032428,
+        "longitude": 31.3867592,
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2428189,
+          30.0329644
+        ]
+      },
+      "properties": {
+        "name": "Bayt al-Sinnari",
+        "name_en": "بيت السناري",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 30.0329644,
+        "longitude": 31.2428189,
+        "phone": "+20 223909471",
+        "website": "https://bibalex.org/BaytAlsinnari/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.0550594,
+          29.9454471
+        ]
+      },
+      "properties": {
+        "name": "BIM",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9454471,
+        "longitude": 31.0550594,
+        "address": "شارع الفردوس, 20, Cairo",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "phone": "015332340;15246",
+        "website": "https://www.bim.eg/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3473941,
+          30.061917
+        ]
+      },
+      "properties": {
+        "name": "The Child Garden",
+        "name_en": "حديقة الطفل",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 30.061917,
+        "longitude": 31.3473941,
+        "opening_hours": "Mo‑Su 09:00‑22:00",
+        "fee": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3196721,
+          30.0889912
+        ]
+      },
+      "properties": {
+        "name": "Heliopolis Presidential Palace",
+        "name_en": "قصر رئاسة",
+        "category": "historic_castle",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 30.0889912,
+        "longitude": 31.3196721,
+        "wikipedia": "en:Heliopolis Palace",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.253016,
+          30.0304381
+        ]
+      },
+      "properties": {
+        "name": "Khanqah of Shaykhu",
+        "name_en": "خانقاه الأمير شيخون العمرى المملوكى",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0304381,
+        "longitude": 31.253016,
+        "wikidata": "Q126913472",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2399209,
+          30.0466709
+        ]
+      },
+      "properties": {
+        "name": "El-Rahma mosque",
+        "name_en": "مسجد الرحمة",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 30.0466709,
+        "longitude": 31.2399209,
+        "address": "شارع محمد صبري ابو علم, 34, القاهرة",
+        "wikidata": "Q126947669",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2098819,
+          29.8832952
+        ]
+      },
+      "properties": {
+        "name": "Abu Sir",
+        "category": "historic_archaeological_site",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 29.8832952,
+        "longitude": 31.2098819,
+        "wikipedia": "en:Abusir",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1292831,
+          29.9725177
+        ]
+      },
+      "properties": {
+        "name": "Funerary Temple of Menkaure",
+        "name_en": "المعبد الجنائزي منقرع",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.9725177,
+        "longitude": 31.1292831,
+        "wikipedia": "en:Giza East Field",
+        "popularity": 0,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1396256,
+          29.9745911
+        ]
+      },
+      "properties": {
+        "name": "Sound & Light Show",
+        "name_en": "عرض الصوت والضوء",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.9745911,
+        "longitude": 31.1396256,
+        "phone": "+20233852880",
+        "website": "https://www.soundandlight.com.eg/Shows/GizaPyramidsHome.aspx",
+        "popularity": 0,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1363661,
+          29.9725066
+        ]
+      },
+      "properties": {
+        "name": "Valley Temple of Menkaure",
+        "name_en": "معبد وادي منقرع",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.9725066,
+        "longitude": 31.1363661,
+        "popularity": 0,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.0334952,
+          29.976443
+        ]
+      },
+      "properties": {
+        "name": "Flower Resort Park",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 29.976443,
+        "longitude": 31.0334952,
+        "address": "Magnolia Drive مسار الماجنوليا, 1, مدينة 6 أكتوبر",
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2152874,
+          29.8817323
+        ]
+      },
+      "properties": {
+        "name": "Sacred Animal Necropolis Site",
+        "category": "historic_archaeological_site",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 29.8817323,
+        "longitude": 31.2152874,
+        "wikidata": "Q136281122",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2004143,
+          30.0702242
+        ]
+      },
+      "properties": {
+        "name": "Garden",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 30.0702242,
+        "longitude": 31.2004143,
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1382939,
+          29.974737
+        ]
+      },
+      "properties": {
+        "name": "Valley Temple of Khafre",
+        "name_en": "معبد الوادي لخفرع",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.974737,
+        "longitude": 31.1382939,
+        "popularity": 0,
+        "site": "Q12508"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2212032,
+          29.8757922
+        ]
+      },
+      "properties": {
+        "name": "Tomb of Mereruka",
+        "name_en": "مصطبة مريروكا",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.8757922,
+        "longitude": 31.2212032,
+        "website": "https://egymonuments.gov.eg/en/monuments/tomb-of-mereruka",
+        "wikipedia": "ru:Мерерука",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2402356,
+          29.9642121
+        ]
+      },
+      "properties": {
+        "name": "Maadi Island",
+        "name_en": "جزيرة المعادى",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 29.9642121,
+        "longitude": 31.2402356,
+        "opening_hours": "08:00-22:00",
+        "fee": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2626335,
+          30.0523628
+        ]
+      },
+      "properties": {
+        "name": "Bayt Al-Suhaymi",
+        "name_en": "بيت السحيمي",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 30.0523628,
+        "longitude": 31.2626335,
+        "website": "https://egymonuments.com/locations/details/HouseOfSuhaym",
+        "fee": "yes",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2176304,
+          29.9961603
+        ]
+      },
+      "properties": {
+        "name": "The Pharaonic Village",
+        "name_en": "القرية الفرعونية",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 29.9961603,
+        "longitude": 31.2176304,
+        "website": "https://pharaonicvillage.com/",
+        "wikipedia": "en:Pharaonic Village",
+        "fee": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.210978,
+          30.0431513
+        ]
+      },
+      "properties": {
+        "name": "Al Gnani Al Demeshqi (Dokki Chillout branch)",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0431513,
+        "longitude": 31.210978,
+        "address": "Al Dokki Street, Chill Out Gas Station, Giza",
+        "opening_hours": "24/7",
+        "phone": "17079",
+        "website": "https://www.facebook.com/Aalgnani1",
+        "wheelchair": "yes",
+        "cuisine": "syrian_food;fast_food",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2241754,
+          30.0591691
+        ]
+      },
+      "properties": {
+        "name": "Maison Thomas",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0591691,
+        "longitude": 31.2241754,
+        "address": "شارع 26 يوليو, Cairo",
+        "opening_hours": "24/7",
+        "phone": "+201223692004",
+        "website": "https://www.maisonthomas.net/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2381966,
+          30.0465833
+        ]
+      },
+      "properties": {
+        "name": "Felfela",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0465833,
+        "longitude": 31.2381966,
+        "address": "عطفه مصطفى ابو هيف, Cairo",
+        "opening_hours": "Mo-Su 10:00-24:00",
+        "phone": "+20223900784",
+        "website": "https://felfelaegypt.com/menu/",
+        "cuisine": "turkish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2242493,
+          30.0594437
+        ]
+      },
+      "properties": {
+        "name": "Abou El Seed",
+        "name_en": "مطعم أبو السيد",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0594437,
+        "longitude": 31.2242493,
+        "address": "شارع اسحاق يعقوب, Cairo",
+        "opening_hours": "Mo-Su 13:00-01:00",
+        "phone": "+20227359640",
+        "website": "https://www.abouelsid.com/",
+        "cuisine": "arab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2112717,
+          30.0401088
+        ]
+      },
+      "properties": {
+        "name": "Chef Saber",
+        "name_en": "الشيف صابر",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0401088,
+        "longitude": 31.2112717,
+        "address": "الدقى, Cairo",
+        "opening_hours": "Mo-Su 09:00-00:30",
+        "phone": "+20-2-3335-4671",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2240956,
+          30.0595562
+        ]
+      },
+      "properties": {
+        "name": "O's Pasta",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0595562,
+        "longitude": 31.2240956,
+        "address": "شارع اسحاق يعقوب, Cairo",
+        "opening_hours": "Mo-Su 12:00-01:00",
+        "phone": "Reservations (Little O's)   2736 5609  or   0100 415 5756  Reservations (O's Cellar)   2736 7404  or   0121 224 4062  Delivery Hotline  0122 221 6050",
+        "website": "https://ospasta.com/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2112632,
+          30.0402345
+        ]
+      },
+      "properties": {
+        "name": "أهل اليمن",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0402345,
+        "longitude": 31.2112632,
+        "address": "شارع الدقى, 63, Giza",
+        "opening_hours": "24/7",
+        "phone": "+201212002005",
+        "website": "https://www.facebook.com/ahlelyemeneg/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1622767,
+          29.9897928
+        ]
+      },
+      "properties": {
+        "name": "shikh el araab (saif)",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9897928,
+        "longitude": 31.1622767,
+        "address": "شارع ترسا, 24, giza",
+        "opening_hours": "Mo-Su 11:00-02:00",
+        "phone": "002010030501008",
+        "website": "https://www.facebook.com/profile.php?id=100007227017709",
+        "cuisine": "chicken;sandwich;kebab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.18426,
+          30.0218102
+        ]
+      },
+      "properties": {
+        "name": "مطعم زهرة الشام",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0218102,
+        "longitude": 31.18426,
+        "address": "شارع العشرين, برج الباشا, الجيزة",
+        "opening_hours": "24/7",
+        "phone": "00201027958050",
+        "cuisine": "sandwich;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2206333,
+          30.0639047
+        ]
+      },
+      "properties": {
+        "name": "Buffalo Burger - Zamalek",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0639047,
+        "longitude": 31.2206333,
+        "address": "شارع الدكتور طه حسين, القاهرة",
+        "opening_hours": "8:00Am - 3:00Am",
+        "phone": "19914",
+        "website": "https://buffaloburger.com",
+        "cuisine": "burger;sandwich;chicken",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2206362,
+          30.0638894
+        ]
+      },
+      "properties": {
+        "name": "Roma Pizza to Go - Zamalek",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0638894,
+        "longitude": 31.2206362,
+        "address": "شارع الدكتور طه حسين, القاهرة",
+        "opening_hours": "8:00Am - 3:00Am",
+        "phone": "19994",
+        "website": "https://roma2go.com",
+        "cuisine": "pizza;italian;ice_cream",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2291239,
+          30.0350517
+        ]
+      },
+      "properties": {
+        "name": "il Nilo Garden City",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0350517,
+        "longitude": 31.2291239,
+        "address": "شارع كورنيش النيل, Cairo",
+        "opening_hours": "Mo-Su 09:00-02:00",
+        "phone": "+201117701113",
+        "website": "https://www.ilnilo.com/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.239358,
+          30.045868
+        ]
+      },
+      "properties": {
+        "name": "CaiRoma",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.045868,
+        "longitude": 31.239358,
+        "address": "شارع يوسف الجندي, القاهرة",
+        "opening_hours": "Mo-Su 15:00-24:30",
+        "phone": "+20223923228",
+        "website": "https://cairomarestaurant.com/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2434997,
+          30.0534882
+        ]
+      },
+      "properties": {
+        "name": "Alfi Bek Restaurant",
+        "name_en": "مطعم الفي بك",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0534882,
+        "longitude": 31.2434997,
+        "address": "شارع زكريا احمد, Cairo",
+        "opening_hours": "Mo-Su 12:00-24:00",
+        "phone": "+20225771888",
+        "cuisine": "kebab;arab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2184076,
+          30.0250429
+        ]
+      },
+      "properties": {
+        "name": "VIOLA ROOFTOP",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0250429,
+        "longitude": 31.2184076,
+        "address": "El Nile St, 135, جيزه",
+        "opening_hours": "24/7",
+        "phone": "+201117263336",
+        "website": "https://bolivarboat.com/viola-the-rooftop/",
+        "cuisine": "regional;pizza;burger;seafood;steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2181653,
+          30.0261117
+        ]
+      },
+      "properties": {
+        "name": "Aspero Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0261117,
+        "longitude": 31.2181653,
+        "address": "شارع النيل, 133, جيزه",
+        "opening_hours": "24/7",
+        "phone": "+201050855838",
+        "website": "https://aspero-restaurant.com/",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1604591,
+          29.9942663
+        ]
+      },
+      "properties": {
+        "name": "Pizza Hut",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9942663,
+        "longitude": 31.1604591,
+        "address": "شارع الهرم, 202, الجيزة",
+        "opening_hours": "Mo-Su 0:00-3:00, 11:00-24:00",
+        "website": "http://www.pizzahut.com.eg/",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2209509,
+          30.0678913
+        ]
+      },
+      "properties": {
+        "name": "Sattva Steps",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0678913,
+        "longitude": 31.2209509,
+        "address": "أحمد حشمت, 35, Cairo",
+        "opening_hours": "06:59-23:00",
+        "phone": "+20 2 27352205",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1289729,
+          29.9928348
+        ]
+      },
+      "properties": {
+        "name": "Abo Hussien Al-Iraqi resturant",
+        "name_en": "مطعم ابو حسين العراقي",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9928348,
+        "longitude": 31.1289729,
+        "opening_hours": "Mo-Su 10:00-12:00",
+        "phone": "01113388986",
+        "cuisine": "fish;sandwich;grill;cake;tea;steak_house;fine_dining;chicken;diner;kebab;barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2452011,
+          30.0807463
+        ]
+      },
+      "properties": {
+        "name": "Karam Al Sham",
+        "name_en": "كرم الشام",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0807463,
+        "longitude": 31.2452011,
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "phone": "0116 189 3515",
+        "cuisine": "arab;chicken;sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2365628,
+          30.0480831
+        ]
+      },
+      "properties": {
+        "name": "Mazeej Balad Rooftop",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0480831,
+        "longitude": 31.2365628,
+        "address": "شارع محمود بسيوني, Cairo",
+        "opening_hours": "Mo-Su 10:00-01:00",
+        "phone": "+201055570001",
+        "website": "https://linktr.ee/mazeejhotels",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2443485,
+          30.0509234
+        ]
+      },
+      "properties": {
+        "name": "Samak Laban",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0509234,
+        "longitude": 31.2443485,
+        "address": "شارع محمد فريد, Cairo",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "phone": "+201283222983",
+        "website": "https://www.samaklabanstudio.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2192828,
+          30.0610061
+        ]
+      },
+      "properties": {
+        "name": "Zööba",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0610061,
+        "longitude": 31.2192828,
+        "address": "شارع الصالح ايوب, 16, Cairo",
+        "opening_hours": "Mo-Su 08:00-01:00",
+        "website": "http://www.zoobaeats.com/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2436954,
+          30.0510222
+        ]
+      },
+      "properties": {
+        "name": "Eish wa Malh",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0510222,
+        "longitude": 31.2436954,
+        "opening_hours": "Mo-Su 09:00-01:00",
+        "phone": "+20223931457",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1370614,
+          29.9908291
+        ]
+      },
+      "properties": {
+        "name": "Wizzo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9908291,
+        "longitude": 31.1370614,
+        "opening_hours": "Mo-Su 11:00-03:00",
+        "phone": "15830;+20 2 3772 5351;+20 111 128 0682;+20 100 667 0095",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2025013,
+          30.0548471
+        ]
+      },
+      "properties": {
+        "name": "Location Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0548471,
+        "longitude": 31.2025013,
+        "address": "شارع جامعه الدول العربيه, 13, القاهرة",
+        "opening_hours": "24/7",
+        "phone": "01211187777",
+        "cuisine": "coffee_shop;sandwich;pizza;kebab",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2089154,
+          30.0407592
+        ]
+      },
+      "properties": {
+        "name": "المصطبه",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0407592,
+        "longitude": 31.2089154,
+        "address": "شارع محمد صالح, 2, الدقي",
+        "opening_hours": "24/7",
+        "phone": "01144755294",
+        "website": "Bedoesam950@gmail.com",
+        "cuisine": "جميع_انواع_الجاتوه_السريع_والترت",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2217005,
+          30.0647774
+        ]
+      },
+      "properties": {
+        "name": "Auntie loulou",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0647774,
+        "longitude": 31.2217005,
+        "address": "شارع احمد حشمت, القاهرة",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "phone": "+20227352514",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2215833,
+          30.0654495
+        ]
+      },
+      "properties": {
+        "name": "Fornalia artisan bakery and Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0654495,
+        "longitude": 31.2215833,
+        "address": "شارع محمد المرعشلي, القاهرة",
+        "opening_hours": "Mo-Su 08:00-01:00",
+        "phone": "01022173376",
+        "website": "https://fornalia.com/",
+        "cuisine": "coffee_shop;dessert;cake",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.242725,
+          30.0510204
+        ]
+      },
+      "properties": {
+        "name": "Crafted Home كرافتيد هوم",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0510204,
+        "longitude": 31.242725,
+        "address": "شارع عدلي, 26, Cairo",
+        "opening_hours": "10:00-22:00",
+        "phone": "01551109792",
+        "website": "https://www.facebook.com/craftedhome.eg",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2404598,
+          30.0452259
+        ]
+      },
+      "properties": {
+        "name": "Al Horreya Cafe",
+        "name_en": "الحرية",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0452259,
+        "longitude": 31.2404598,
+        "address": "شارع عبد السلام عارف - البستان سابقا, القاهرة",
+        "opening_hours": "Mo-Su 06:00-03:00",
+        "phone": "+20223920397",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2380692,
+          30.0476018
+        ]
+      },
+      "properties": {
+        "name": "Groppi",
+        "name_en": "جروبي",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0476018,
+        "longitude": 31.2380692,
+        "opening_hours": "Mo-Su 07:00-01:00",
+        "phone": "+20223911871",
+        "wikidata": "Q6757577",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2128602,
+          30.0162032
+        ]
+      },
+      "properties": {
+        "name": "Ziznia",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0162032,
+        "longitude": 31.2128602,
+        "address": "شارع مراد, Cairo",
+        "opening_hours": "24/7",
+        "phone": "023773338",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2279457,
+          30.071573
+        ]
+      },
+      "properties": {
+        "name": "Starbucks",
+        "name_en": "ستاربكس",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.071573,
+        "longitude": 31.2279457,
+        "opening_hours": "Mo-Sa 07:00-00:00; Su 07:00-24:00",
+        "phone": "+20 122 080 0307",
+        "website": "https://www.starbucks.eg/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2226921,
+          30.0565291
+        ]
+      },
+      "properties": {
+        "name": "Holm Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0565291,
+        "longitude": 31.2226921,
+        "address": "شارع الشيخ المرصفي, Cairo",
+        "opening_hours": "Mo-Su 08:00-22:30",
+        "website": "https://www.holmcafe.com/",
+        "cuisine": "cake;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2204665,
+          30.0604663
+        ]
+      },
+      "properties": {
+        "name": "Gramophone",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0604663,
+        "longitude": 31.2204665,
+        "address": "شارع الكامل محمد, Cairo",
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "phone": "+201050009887",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2313715,
+          30.0353939
+        ]
+      },
+      "properties": {
+        "name": "Room Art Space",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0353939,
+        "longitude": 31.2313715,
+        "address": "شارع اتحاد المحامين العرب, Cairo",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "phone": "+201000681543",
+        "website": "https://www.roomart.space/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2340665,
+          30.0468725
+        ]
+      },
+      "properties": {
+        "name": "Caf",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0468725,
+        "longitude": 31.2340665,
+        "opening_hours": "Mo-Su 09:00-17:00",
+        "phone": "+20 12 26026250",
+        "website": "https://www.cafcafeeg.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2267157,
+          30.0640138
+        ]
+      },
+      "properties": {
+        "name": "Aspero Restobar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 30.0640138,
+        "longitude": 31.2267157,
+        "address": "شارع كورنيش النيل, GATE 9 ,B10 , MAMSHA AHL MISR, Cairo",
+        "opening_hours": "24/7",
+        "phone": "+201020966441",
+        "website": "https://asperogroup.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1363192,
+          29.9909682
+        ]
+      },
+      "properties": {
+        "name": "Al Malky Ice Cream",
+        "name_en": "المالكي ايس كريم",
+        "category": "ice_cream",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 29.9909682,
+        "longitude": 31.1363192,
+        "opening_hours": "Mo-Su 09:00-02:00",
+        "phone": "19017",
+        "website": "https://www.elmalky.co",
+        "popularity": 0
+      }
+    }
+  ]
+}

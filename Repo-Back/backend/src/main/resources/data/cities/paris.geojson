@@ -15,40 +15,18 @@
         "name_en": "Eiffel Tower",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8582603,
         "longitude": 2.2945008,
         "address": "Avenue Anatole France, 5, Paris",
-        "opening_hours": "09:30-23:45; Jun 21-Sep 2: 09:00-00:45; Jul 14,Jul 15 off",
+        "opening_hours": "09:30-23:45; Jun 21-Sep 02: 09:00-00:45; Jul 14,Jul 15 off",
         "website": "https://www.toureiffel.paris/",
         "wikidata": "Q243",
         "wikipedia": "fr:Tour Eiffel",
-        "wheelchair": "no",
+        "wheelchair": "limited",
         "popularity": 191
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.335397,
-          48.8493342
-        ]
-      },
-      "properties": {
-        "name": "Mètre étalon",
-        "name_en": "standard metre",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 48.8493342,
-        "longitude": 2.335397,
-        "wikipedia": "en:Metre",
-        "popularity": 0
       }
     },
     {
@@ -77,7 +55,8 @@
         "wikipedia": "fr:Musée du Louvre",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 170
+        "popularity": 170,
+        "site": "Q19675"
       }
     },
     {
@@ -94,8 +73,8 @@
         "name_en": "Cathedral of Notre Dame",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8529371,
         "longitude": 2.3498701,
@@ -106,7 +85,8 @@
         "wikidata": "Q2981",
         "wikipedia": "fr:Cathédrale Notre-Dame de Paris",
         "wheelchair": "limited",
-        "popularity": 125
+        "popularity": 125,
+        "site": "Q2981"
       }
     },
     {
@@ -130,7 +110,7 @@
         "longitude": 2.3265259,
         "address": "Rue de la Légion d'Honneur, 1, Paris",
         "opening_hours": "Tu-Su 09:30-18:00; Th 09:30-21:45",
-        "phone": "+33140494814",
+        "phone": "+33 1 40 49 48 14",
         "website": "https://www.musee-orsay.fr/",
         "wikidata": "Q23402",
         "wikipedia": "fr:Musée d'Orsay",
@@ -152,8 +132,8 @@
         "name": "Champs Élysées",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8707573,
         "longitude": 2.3053312,
@@ -200,17 +180,19 @@
         "name": "Arc de Triomphe",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8737782,
         "longitude": 2.2950354,
-        "opening_hours": "Apr 2-Jan 31: Mo-Su 10:00-22:30; Apr 1,Sep 30: Mo-Su 10:00-23:00; Oct 1,Dec 31: Mo-Su 10:00-22:30; Jan 1,May 1,May 8,Jul 14,Nov 11,Dec 25: off",
+        "opening_hours": "Apr 02-Jan 31: Mo-Su 10:00-22:30; Apr 01,Sep 30: Mo-Su 10:00-23:00; Oct 01,Dec 31: Mo-Su 10:00-22:30; Jan 01,May 01,May 08,Jul 14,Nov 11,Dec 25: off",
         "website": "https://www.paris-arc-de-triomphe.fr/",
         "wikidata": "Q64436",
         "wikipedia": "fr:Arc de triomphe de l'Étoile",
+        "fee": "yes",
         "wheelchair": "no",
-        "popularity": 86
+        "popularity": 86,
+        "site": "Q64436"
       }
     },
     {
@@ -227,8 +209,8 @@
         "name_en": "Père Lachaise Cemetery",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8611438,
         "longitude": 2.3941849,
@@ -254,12 +236,12 @@
         "name_en": "Élysée Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8703766,
         "longitude": 2.3166056,
-        "website": "https://www.elysee.fr/",
+        "website": "https://www.elysee.fr",
         "wikidata": "Q188190",
         "wikipedia": "fr:Palais de l'Élysée",
         "popularity": 66
@@ -278,18 +260,19 @@
         "name": "Opéra Garnier",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8720294,
         "longitude": 2.3317281,
         "opening_hours": "10:00-17:00",
-        "phone": "+33 892 89 90 90",
+        "phone": "08 92 89 90 90",
         "website": "https://www.operadeparis.fr",
         "wikidata": "Q187840",
         "wikipedia": "fr:Opéra Garnier",
         "wheelchair": "yes",
-        "popularity": 63
+        "popularity": 63,
+        "site": "Q187840"
       }
     },
     {
@@ -335,8 +318,8 @@
         "name_en": "Concorde Square",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8654898,
         "longitude": 2.321186,
@@ -360,8 +343,8 @@
         "name_en": "Pantheon",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8461887,
         "longitude": 2.3460724,
@@ -389,8 +372,8 @@
         "name_en": "National Assembly",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8617532,
         "longitude": 2.317959,
@@ -398,7 +381,8 @@
         "wikidata": "Q193582",
         "wikipedia": "fr:Assemblée nationale (France)",
         "wheelchair": "no",
-        "popularity": 61
+        "popularity": 61,
+        "site": "Q193582"
       }
     },
     {
@@ -415,8 +399,8 @@
         "name_en": "Basilica of the Sacred Heart of Paris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8867961,
         "longitude": 2.3430272,
@@ -441,8 +425,8 @@
         "name": "Basilique Saint-Denis",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.9354635,
         "longitude": 2.3597266,
@@ -464,8 +448,8 @@
         "name": "Sainte-Chapelle",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8553966,
         "longitude": 2.3450136,
@@ -494,12 +478,13 @@
         "name_en": "Field of Mars",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.856163,
         "longitude": 2.2978311,
         "opening_hours": "24/7",
+        "website": "https://www.paris.fr/lieux/parc-du-champ-de-mars-1807",
         "wikidata": "Q217925",
         "wikipedia": "fr:Champ-de-Mars (Paris)",
         "wheelchair": "yes",
@@ -519,18 +504,19 @@
         "name": "Hôtel des Invalides",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8559525,
         "longitude": 2.3125541,
         "address": "Rue de Grenelle, 129, Paris",
-        "phone": "+33 810 11 33 99",
-        "website": "https://www.invalides.org/",
+        "phone": "0 810 11 33 99",
+        "website": "https://parisjetaime.com/culture/hotel-national-des-invalides-p1014",
         "wikidata": "Q188977",
         "wikipedia": "fr:Hôtel des Invalides",
         "wheelchair": "no",
-        "popularity": 57
+        "popularity": 57,
+        "site": "Q4992220"
       }
     },
     {
@@ -546,8 +532,8 @@
         "name": "Université Paris 1 Panthéon-Sorbonne - Centre Sorbonne",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8486365,
         "longitude": 2.3436087,
@@ -571,8 +557,8 @@
         "name": "Moulin Rouge",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8841094,
         "longitude": 2.3323564,
@@ -652,8 +638,8 @@
         "name": "Grande Arche de la Défense",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8925645,
         "longitude": 2.2358747,
@@ -692,7 +678,8 @@
         "wikipedia": "fr:Grand Palais (Paris)",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 51
+        "popularity": 51,
+        "site": "Q457318"
       }
     },
     {
@@ -709,8 +696,8 @@
         "name_en": "Luxembourg Garden",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8467137,
         "longitude": 2.3363649,
@@ -737,14 +724,15 @@
         "name_en": "Royal Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8635185,
         "longitude": 2.3369196,
         "wikidata": "Q329948",
         "wikipedia": "fr:Palais-Royal",
-        "popularity": 51
+        "popularity": 51,
+        "site": "Q329948"
       }
     },
     {
@@ -765,6 +753,7 @@
         ],
         "latitude": 48.8641777,
         "longitude": 2.2521892,
+        "website": "https://www.paris.fr/lieux/bois-de-boulogne-2779",
         "wikidata": "Q209626",
         "wikipedia": "fr:Bois de Boulogne",
         "popularity": 49
@@ -784,8 +773,8 @@
         "name_en": "Montparnasse Tower",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8421127,
         "longitude": 2.3219796,
@@ -834,12 +823,13 @@
         ]
       },
       "properties": {
-        "name": "Musée des beaux-arts de la Ville de Paris",
+        "name": "Petit Palais, Musée des beaux-arts de la Ville de Paris",
         "name_en": "Museum of Fine Arts of the City of Paris",
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8660437,
         "longitude": 2.3149694,
@@ -867,12 +857,13 @@
         "name": "Église de la Madeleine",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.870028,
         "longitude": 2.3244655,
         "address": "Place de la Madeleine, Paris",
+        "opening_hours": "Mo-Su 09:30-19:00",
         "wikidata": "Q330564",
         "wikipedia": "fr:Église de la Madeleine",
         "wheelchair": "yes",
@@ -893,8 +884,8 @@
         "name_en": "Grand Mosque of Paris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8420708,
         "longitude": 2.3551205,
@@ -974,8 +965,8 @@
         "name": "Pont Neuf",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8565248,
         "longitude": 2.3408132,
@@ -1009,7 +1000,8 @@
         "wikidata": "Q138101",
         "wikipedia": "fr:Conciergerie de Paris",
         "fee": "yes",
-        "popularity": 44
+        "popularity": 44,
+        "site": "Q143080"
       }
     },
     {
@@ -1025,8 +1017,8 @@
         "name": "Le Bataclan",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8630357,
         "longitude": 2.3706465,
@@ -1051,15 +1043,16 @@
         "name_en": "Louvre Pyramid",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8610132,
         "longitude": 2.3358545,
         "wikidata": "Q13397",
         "wikipedia": "fr:Pyramide du Louvre",
         "wheelchair": "yes",
-        "popularity": 43
+        "popularity": 43,
+        "site": "Q19675"
       }
     },
     {
@@ -1075,15 +1068,16 @@
         "name": "Place Vendôme",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8674726,
         "longitude": 2.3294385,
         "wikidata": "Q643520",
         "wikipedia": "fr:Place Vendôme",
         "wheelchair": "yes",
-        "popularity": 42
+        "popularity": 42,
+        "site": "Q643520"
       }
     },
     {
@@ -1106,7 +1100,8 @@
         "longitude": 2.3182513,
         "wikidata": "Q936633",
         "wikipedia": "fr:Palais Bourbon",
-        "popularity": 42
+        "popularity": 42,
+        "site": "Q193582"
       }
     },
     {
@@ -1122,8 +1117,8 @@
         "name": "Opéra Bastille",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8514912,
         "longitude": 2.3706641,
@@ -1148,8 +1143,8 @@
         "name": "Château de Vincennes",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8427637,
         "longitude": 2.4358888,
@@ -1158,7 +1153,8 @@
         "wikidata": "Q663673",
         "wikipedia": "fr:Château de Vincennes",
         "wheelchair": "limited",
-        "popularity": 41
+        "popularity": 41,
+        "site": "Q663673"
       }
     },
     {
@@ -1180,6 +1176,7 @@
         ],
         "latitude": 48.8643053,
         "longitude": 2.297793,
+        "address": "avenue du Président Wilson, 11, Paris",
         "opening_hours": "Tu-Su 10:00-18:00",
         "phone": "+33 1 53 67 40 00",
         "website": "https://www.mam.paris.fr/",
@@ -1203,8 +1200,8 @@
         "name_en": "Triumphal Arch of the Carousel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8617276,
         "longitude": 2.3329082,
@@ -1280,8 +1277,8 @@
         "name": "Folies Bergère",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8744911,
         "longitude": 2.3447704,
@@ -1306,8 +1303,8 @@
         "name_en": "Louvre Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8614768,
         "longitude": 2.3351677,
@@ -1316,7 +1313,8 @@
         "wikidata": "Q1075988",
         "wikipedia": "fr:Palais du Louvre",
         "wheelchair": "yes",
-        "popularity": 39
+        "popularity": 39,
+        "site": "Q1075988"
       }
     },
     {
@@ -1386,18 +1384,19 @@
         ]
       },
       "properties": {
-        "name": "Hôtel de Ville",
+        "name": "Hôtel de ville",
+        "name_en": "Hôtel de Ville",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8564265,
         "longitude": 2.352527,
         "address": "Place de l’Hotel de Ville, Paris",
         "opening_hours": "Mo-Sa 10:00-19:00",
         "phone": "+33 1 42 76 40 40",
-        "website": "https://www.paris.fr/",
+        "website": "https://www.paris.fr",
         "wikidata": "Q640968",
         "wikipedia": "fr:Hôtel de ville de Paris",
         "wheelchair": "limited",
@@ -1418,7 +1417,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8793714,
         "longitude": 2.3088916,
@@ -1553,8 +1553,8 @@
         "name_en": "Garden of the Plants",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8440393,
         "longitude": 2.3596915,
@@ -1692,14 +1692,15 @@
         "name": "Palais de Chaillot",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8618668,
         "longitude": 2.288865,
         "wikidata": "Q13360213",
         "wikipedia": "fr:Palais de Chaillot",
-        "popularity": 34
+        "popularity": 34,
+        "site": "Q13360213"
       }
     },
     {
@@ -1740,15 +1741,16 @@
         "name_en": "Tomb of the Unknown Soldier",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8737505,
         "longitude": 2.295133,
         "wikidata": "Q523312",
         "wikipedia": "fr:Tombe du Soldat inconnu (France)",
         "wheelchair": "no",
-        "popularity": 33
+        "popularity": 33,
+        "site": "Q64436"
       }
     },
     {
@@ -1764,8 +1766,8 @@
         "name": "L'Olympia",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8702443,
         "longitude": 2.3283595,
@@ -1792,7 +1794,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8576819,
         "longitude": 2.3627147,
@@ -1819,8 +1822,8 @@
         "name": "Théâtre des Champs-Elysées",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8658174,
         "longitude": 2.3029039,
@@ -1852,14 +1855,15 @@
         "latitude": 48.8506604,
         "longitude": 2.3437396,
         "address": "Place Paul Painlevé, 6, Paris",
-        "opening_hours": "Tu off; Jan 1 off; May 1 off; Dec 25 off; Tu-Su 09:30-18:15",
+        "opening_hours": "Jan 1 off; May 1 off; Dec 25 off; Tu-Su 09:30-18:15",
         "phone": "+33 1 53 73 78 00",
         "website": "https://www.musee-moyenage.fr/",
         "wikidata": "Q1124095",
         "wikipedia": "fr:Musée de Cluny",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 31
+        "popularity": 31,
+        "site": "Q1124095"
       }
     },
     {
@@ -1876,8 +1880,8 @@
         "name_en": "Luxor Obelisk",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8654765,
         "longitude": 2.3211306,
@@ -1901,8 +1905,8 @@
         "name_en": "Military School",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8518517,
         "longitude": 2.3048526,
@@ -1923,8 +1927,8 @@
         "name": "La Samaritaine",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8592672,
         "longitude": 2.3424349,
@@ -1977,8 +1981,8 @@
         "name": "Théâtre national de l'Opéra Comique",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8711116,
         "longitude": 2.3378433,
@@ -2003,8 +2007,8 @@
         "name": "Odéon–Théâtre de l'Europe",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8495021,
         "longitude": 2.3387228,
@@ -2085,7 +2089,8 @@
         "name": "Jardin d'Acclimatation",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 48.8781454,
         "longitude": 2.2646841,
@@ -2094,6 +2099,7 @@
         "website": "https://www.jardindacclimatation.fr/",
         "wikidata": "Q3090513",
         "wikipedia": "fr:Jardin d'acclimatation (Paris)",
+        "fee": "yes",
         "popularity": 28
       }
     },
@@ -2111,8 +2117,8 @@
         "name_en": "Saint-Jacques Tower",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8579983,
         "longitude": 2.3489178,
@@ -2185,11 +2191,11 @@
         ]
       },
       "properties": {
-        "name": "Cavae des Arènes de Lutèce",
+        "name": "Arènes de Lutèce",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8450776,
         "longitude": 2.352912,
@@ -2212,8 +2218,8 @@
         "name": "Théâtre du Châtelet",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8577971,
         "longitude": 2.3462634,
@@ -2319,14 +2325,15 @@
         "name_en": "Palace of Justice",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8556537,
         "longitude": 2.344607,
         "wikidata": "Q143080",
         "wikipedia": "fr:Palais de justice de Paris",
-        "popularity": 27
+        "popularity": 27,
+        "site": "Q143080"
       }
     },
     {
@@ -2342,8 +2349,8 @@
         "name": "Porte Saint-Denis",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8697934,
         "longitude": 2.3526868,
@@ -2379,7 +2386,8 @@
         "wikipedia": "fr:Musée de l'Homme",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 26
+        "popularity": 26,
+        "site": "Q13360213"
       }
     },
     {
@@ -2485,32 +2493,8 @@
         "address": "Place Vendôme, Paris",
         "wikidata": "Q1111051",
         "wikipedia": "fr:Colonne Vendôme",
-        "popularity": 26
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3340447,
-          48.861633
-        ]
-      },
-      "properties": {
-        "name": "Place du Carrousel",
-        "name_en": "Carousel Square",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 48.861633,
-        "longitude": 2.3340447,
-        "wikidata": "Q2723969",
-        "wikipedia": "fr:Place du Carrousel",
-        "wheelchair": "yes",
-        "popularity": 25
+        "popularity": 26,
+        "site": "Q643520"
       }
     },
     {
@@ -2579,7 +2563,8 @@
         "name": "Parc zoologique de Paris",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 48.8318246,
         "longitude": 2.4172936,
@@ -2650,8 +2635,8 @@
         "name": "Pont au Change",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8567097,
         "longitude": 2.3468433,
@@ -2674,8 +2659,8 @@
         "name": "Parc Montsouris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8222357,
         "longitude": 2.3380114,
@@ -2805,6 +2790,7 @@
         ],
         "latitude": 48.8613091,
         "longitude": 2.289514,
+        "website": "https://www.paris.fr/lieux/jardins-du-trocadero-1789",
         "wikidata": "Q1683459",
         "wikipedia": "fr:Jardins du Trocadéro",
         "popularity": 22
@@ -2834,7 +2820,8 @@
         "wikidata": "Q1319378",
         "wikipedia": "fr:Musée des Arts décoratifs de Paris",
         "wheelchair": "limited",
-        "popularity": 21
+        "popularity": 21,
+        "site": "Q1075988"
       }
     },
     {
@@ -2971,6 +2958,7 @@
         ],
         "latitude": 48.8354139,
         "longitude": 2.3821188,
+        "website": "https://www.paris.fr/lieux/parc-de-bercy-grandes-pelouses-5",
         "wikidata": "Q945251",
         "wikipedia": "fr:Parc de Bercy",
         "popularity": 20
@@ -2981,7 +2969,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3508448,
+          2.3508452,
           48.8590777
         ]
       },
@@ -2994,7 +2982,7 @@
           "SOLITARIO"
         ],
         "latitude": 48.8590777,
-        "longitude": 2.3508448,
+        "longitude": 2.3508452,
         "opening_hours": "09:00-18:00",
         "website": "http://www.saintmerry.org/",
         "wikidata": "Q525891",
@@ -3016,8 +3004,8 @@
         "name": "Le Crazy horse de Paris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8659605,
         "longitude": 2.3017221,
@@ -3066,8 +3054,8 @@
         "name": "Église Saint-Roch",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8653817,
         "longitude": 2.3326659,
@@ -3145,7 +3133,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8552057,
         "longitude": 2.2808844,
@@ -3248,8 +3237,8 @@
         "name": "Philharmonie de Paris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8919138,
         "longitude": 2.3941891,
@@ -3274,12 +3263,12 @@
         "name": "Casino de Paris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.878448,
         "longitude": 2.3305067,
-        "phone": "+33892698926",
+        "phone": "0 892 69 89 26",
         "website": "https://www.casinodeparis.fr/",
         "wikidata": "Q1187828",
         "wikipedia": "fr:Casino de Paris",
@@ -3354,8 +3343,8 @@
         "name": "Bateaux-Mouches",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.863978,
         "longitude": 2.3058261,
@@ -3380,8 +3369,8 @@
         "name": "Au Lapin Agile",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8886229,
         "longitude": 2.3399952,
@@ -3470,7 +3459,8 @@
         "wikidata": "Q2715373",
         "wikipedia": "fr:Musée Bourdelle",
         "wheelchair": "yes",
-        "popularity": 18
+        "popularity": 18,
+        "site": "Q2715373"
       }
     },
     {
@@ -3497,6 +3487,7 @@
         "website": "https://www.daliparis.com",
         "wikidata": "Q973216",
         "wikipedia": "fr:Espace Dalí",
+        "fee": "yes",
         "popularity": 17
       }
     },
@@ -3514,7 +3505,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.854799,
         "longitude": 2.3661358,
@@ -3543,8 +3535,8 @@
         "name_en": "Cabaret Lido",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8724266,
         "longitude": 2.3008705,
@@ -3592,8 +3584,8 @@
         "name": "Théâtre de la Ville",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8572969,
         "longitude": 2.3480535,
@@ -3690,8 +3682,8 @@
         "name": "Le Zénith",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8941804,
         "longitude": 2.3931712,
@@ -3764,8 +3756,8 @@
         "name": "Jardin des serres d’Auteuil",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8467064,
         "longitude": 2.252623,
@@ -3844,6 +3836,7 @@
         ],
         "latitude": 48.854635,
         "longitude": 2.3638126,
+        "website": "https://www.hotel-de-sully.fr/",
         "wikidata": "Q1643144",
         "wikipedia": "fr:Hôtel de Sully",
         "popularity": 17
@@ -3862,14 +3855,38 @@
         "name": "Hôtel de Soubise",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8603506,
         "longitude": 2.3576038,
         "wikidata": "Q917337",
         "wikipedia": "fr:Hôtel de Soubise",
-        "popularity": 17
+        "popularity": 17,
+        "site": "Q917337"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3472341,
+          48.8446766
+        ]
+      },
+      "properties": {
+        "name": "Montagne Sainte-Geneviève",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 48.8446766,
+        "longitude": 2.3472341,
+        "wikidata": "Q1945520",
+        "wikipedia": "fr:Montagne Sainte-Geneviève",
+        "popularity": 16
       }
     },
     {
@@ -3939,7 +3956,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8791701,
         "longitude": 2.3124351,
@@ -4018,8 +4036,8 @@
         "name": "Hippodrome de Longchamp",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8577354,
         "longitude": 2.2332848,
@@ -4127,8 +4145,8 @@
         "name": "Théâtre des Bouffes Parisiens",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8683542,
         "longitude": 2.335477,
@@ -4199,7 +4217,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8794704,
         "longitude": 2.3125399,
@@ -4227,7 +4246,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8813424,
         "longitude": 2.3335207,
@@ -4283,7 +4303,7 @@
         ],
         "latitude": 48.8372866,
         "longitude": 2.4444216,
-        "website": "http://www.parcfloraldeparis.com/",
+        "website": "https://www.parcfloraldeparis.com/",
         "wikidata": "Q1726347",
         "wikipedia": "fr:Parc floral de Paris",
         "popularity": 15
@@ -4302,8 +4322,8 @@
         "name": "Rue des Rosiers",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8577892,
         "longitude": 2.3581374,
@@ -4479,8 +4499,8 @@
         "name": "Fontaine Médicis",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8480587,
         "longitude": 2.3392944,
@@ -4532,8 +4552,8 @@
         "name": "Salle Pleyel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8770119,
         "longitude": 2.3010998,
@@ -4681,8 +4701,8 @@
         "name": "Mémorial de la France combattante",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8716448,
         "longitude": 2.2138599,
@@ -4745,7 +4765,8 @@
         "wikipedia": "fr:Musée national de la Marine",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 12
+        "popularity": 12,
+        "site": "Q13360213"
       }
     },
     {
@@ -4762,7 +4783,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8442383,
         "longitude": 2.3447906,
@@ -4893,7 +4915,8 @@
         "longitude": 2.3001112,
         "wikidata": "Q1579344",
         "wikipedia": "fr:Château de Sceaux",
-        "popularity": 12
+        "popularity": 12,
+        "site": "Q1579344"
       }
     },
     {
@@ -4908,10 +4931,10 @@
       "properties": {
         "name": "Crypte archéologique du parvis Notre-Dame",
         "name_en": "Archaeological Crypt of the Notre-Dame Forecourt",
-        "category": "museum",
+        "category": "historic_archaeological_site",
         "profiles": [
-          "CULTURAL",
-          "LUXO"
+          "AVENTUREIRO",
+          "CULTURAL"
         ],
         "latitude": 48.8535851,
         "longitude": 2.3480846,
@@ -4921,7 +4944,6 @@
         "website": "https://crypte.paris.fr/",
         "wikidata": "Q3005760",
         "wikipedia": "fr:Crypte archéologique du parvis Notre-Dame",
-        "fee": "yes",
         "wheelchair": "no",
         "popularity": 12
       }
@@ -5008,6 +5030,7 @@
         "name": "Ballon de Paris",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -5122,11 +5145,12 @@
         ],
         "latitude": 48.8431475,
         "longitude": 2.3628815,
-        "opening_hours": "We-Mo 10:00-18:00; Jan 1, May 1, Dec 25 : off",
+        "opening_hours": "We-Mo 10:00-18:00; Jan 01, May 01, Dec 25 : off",
         "phone": "+33 1 40 79 54 79;+33 1 40 79 56 01",
         "website": "https://www.mnhn.fr/fr/visitez/lieux/galeries-anatomie-comparee-paleontologie",
         "wikidata": "Q1457391",
         "wikipedia": "fr:Galerie de paléontologie et d'anatomie comparée du Muséum national d'histoire naturelle",
+        "fee": "yes",
         "wheelchair": "yes",
         "popularity": 11
       }
@@ -5144,7 +5168,8 @@
         "name": "Ménagerie du Jardin des Plantes",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 48.8454066,
         "longitude": 2.360595,
@@ -5271,7 +5296,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8505861,
         "longitude": 2.3621853,
@@ -5299,8 +5325,8 @@
         "name": "Théâtre du Vieux-Colombier",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8516772,
         "longitude": 2.3301934,
@@ -5325,8 +5351,8 @@
         "name": "Cité de la Musique - Philharmonie de Paris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8898925,
         "longitude": 2.3938223,
@@ -5352,14 +5378,15 @@
         "name_en": "Saint Louis of Les Invalids Cathedral",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.855637,
         "longitude": 2.3125832,
         "wikidata": "Q4992220",
         "wikipedia": "fr:Cathédrale Saint-Louis-des-Invalides",
-        "popularity": 11
+        "popularity": 11,
+        "site": "Q4992220"
       }
     },
     {
@@ -5375,12 +5402,12 @@
         "name": "Théâtre Mogador",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.875373,
         "longitude": 2.3307359,
-        "phone": "+33 1 53 32 32 32; +33 820 88 87 86",
+        "phone": "+33 1 53 32 32 32; 0 820 88 87 86",
         "website": "http://www.mogador.net/",
         "wikidata": "Q3527525",
         "wikipedia": "fr:Théâtre Mogador",
@@ -5426,8 +5453,8 @@
         "name": "Élysée Montmartre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8831627,
         "longitude": 2.3434327,
@@ -5527,7 +5554,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8428133,
         "longitude": 2.3337722,
@@ -5577,8 +5605,8 @@
         "name": "Hôtel de la Marine",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8669318,
         "longitude": 2.323065,
@@ -5602,8 +5630,8 @@
         "name": "Theatre du Marais",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8662975,
         "longitude": 2.3577542,
@@ -5682,8 +5710,8 @@
         "name": "Théâtre des Variétés",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8714333,
         "longitude": 2.3421383,
@@ -5716,7 +5744,8 @@
         "website": "https://archeologie.culture.gouv.fr/paris/fr/les-thermes-de-cluny",
         "wikidata": "Q2669368",
         "wikipedia": "fr:Thermes de Cluny",
-        "popularity": 10
+        "popularity": 10,
+        "site": "Q1124095"
       }
     },
     {
@@ -5732,13 +5761,14 @@
         "name": "Bobino",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8399471,
         "longitude": 2.3231602,
         "website": "https://bobino.fr",
         "wikidata": "Q888776",
+        "wikipedia": "fr:Bobino",
         "popularity": 10
       }
     },
@@ -5831,8 +5861,8 @@
         "name": "Théâtre de la Porte-Saint-Martin",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8690687,
         "longitude": 2.3568989,
@@ -5856,8 +5886,8 @@
         "name": "Cirque d'Hiver",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8635364,
         "longitude": 2.3675917,
@@ -5881,8 +5911,8 @@
         "name": "Théâtre de la Madeleine",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8708055,
         "longitude": 2.3203157,
@@ -5906,8 +5936,8 @@
         "name": "Théâtre de l'Atelier",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8834404,
         "longitude": 2.3424447,
@@ -5954,13 +5984,14 @@
         "name_en": "Memorial to the Martyrs of the Deportation",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8517365,
         "longitude": 2.3524734,
         "address": "Allee des Justes de France, Paris",
-        "opening_hours": "Oct - Mar, Mar-Dim 10:00-17:00; Avr - Sep, Mar-Dim 10:00-19:00",
+        "opening_hours": "Oct-Mar Tu-Su 10:00-17:00; Apr-Sep Tu-Su 10:00-19:00",
         "wikidata": "Q3333162",
         "wikipedia": "fr:Mémorial des Martyrs de la Déportation",
         "fee": "no",
@@ -6063,8 +6094,8 @@
         "name": "Théâtre Antoine",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8705772,
         "longitude": 2.3552836,
@@ -6116,8 +6147,8 @@
         "name_en": "Chaillot Theater",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8626783,
         "longitude": 2.2885551,
@@ -6125,7 +6156,8 @@
         "website": "https://www.theatre-chaillot.fr/",
         "wikidata": "Q1342159",
         "wikipedia": "fr:Théâtre national de Chaillot",
-        "popularity": 9
+        "popularity": 9,
+        "site": "Q13360213"
       }
     },
     {
@@ -6178,7 +6210,8 @@
         "wikipedia": "fr:Cité de l'architecture et du patrimoine",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 9
+        "popularity": 9,
+        "site": "Q13360213"
       }
     },
     {
@@ -6222,8 +6255,8 @@
         "name": "Jardin Atlantique",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8398756,
         "longitude": 2.3189805,
@@ -6293,8 +6326,8 @@
         "name": "Théâtre du Palais Royal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8661383,
         "longitude": 2.3376341,
@@ -6319,8 +6352,8 @@
         "name": "Hôtel de Lauzun",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.851565,
         "longitude": 2.3589627,
@@ -6342,8 +6375,8 @@
         "name": "Théâtre de la Renaissance",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8690852,
         "longitude": 2.3564359,
@@ -6367,8 +6400,8 @@
         "name": "Théâtre Marigny",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8687177,
         "longitude": 2.3137578,
@@ -6392,8 +6425,8 @@
         "name": "Le Trianon",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8830878,
         "longitude": 2.3430267,
@@ -6418,8 +6451,8 @@
         "name": "Théâtre Hébertot",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8821604,
         "longitude": 2.3189011,
@@ -6449,7 +6482,8 @@
         "longitude": 2.317297,
         "wikidata": "Q1165249",
         "wikipedia": "fr:Hôtel de Lassay",
-        "popularity": 9
+        "popularity": 9,
+        "site": "Q193582"
       }
     },
     {
@@ -6540,8 +6574,8 @@
         "name": "Domaine national de Saint-Cloud",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8336308,
         "longitude": 2.1964974,
@@ -6564,11 +6598,11 @@
         ]
       },
       "properties": {
-        "name": "Bouffes du Nord",
+        "name": "Théâtre des Bouffes du Nord",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8839948,
         "longitude": 2.3588579,
@@ -6615,8 +6649,8 @@
         "name": "Théâtre Montparnasse",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.839465,
         "longitude": 2.32356,
@@ -6638,8 +6672,8 @@
         "name": "Théâtre de Paris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8785619,
         "longitude": 2.3313946,
@@ -6664,6 +6698,7 @@
         "name": "Domaine de Bellevue",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -6710,35 +6745,14 @@
         "name": "Théâtre de l'Œuvre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8808405,
         "longitude": 2.3282176,
         "website": "http://theatredeloeuvre.fr/",
         "wikidata": "Q2292251",
         "popularity": 8
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.4498561,
-          48.8209183
-        ]
-      },
-      "properties": {
-        "name": "Ourasi 1980-2013",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 48.8209183,
-        "longitude": 2.4498561,
-        "wikipedia": "fr:Ourasi",
-        "popularity": 0
       }
     },
     {
@@ -6754,8 +6768,8 @@
         "name": "Fontaine du Fellah",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.84879,
         "longitude": 2.3210687,
@@ -6778,7 +6792,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8604503,
         "longitude": 2.3578119,
@@ -6788,7 +6803,8 @@
         "website": "https://www.archives-nationales.culture.gouv.fr/le-musee-des-archives-nationales",
         "wikidata": "Q3330111",
         "fee": "no",
-        "popularity": 8
+        "popularity": 8,
+        "site": "Q917337"
       }
     },
     {
@@ -6830,7 +6846,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8602946,
         "longitude": 2.3247235,
@@ -6933,6 +6950,7 @@
         "latitude": 48.8574038,
         "longitude": 2.3402065,
         "opening_hours": "24/7",
+        "website": "https://www.paris.fr/lieux/square-du-vert-galant-2825",
         "wikidata": "Q3495079",
         "wikipedia": "fr:Square du Vert-Galant",
         "popularity": 8
@@ -6978,8 +6996,8 @@
         "name_en": "The Docks - City of Fashion and Design",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8408136,
         "longitude": 2.3699923,
@@ -7002,15 +7020,16 @@
         "name": "Sainte-Chapelle de Vincennes",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8423627,
         "longitude": 2.4364649,
         "wikidata": "Q3464208",
         "wikipedia": "fr:Sainte-Chapelle de Vincennes",
         "wheelchair": "limited",
-        "popularity": 8
+        "popularity": 8,
+        "site": "Q663673"
       }
     },
     {
@@ -7042,17 +7061,17 @@
         "type": "Point",
         "coordinates": [
           2.320532,
-          48.8510562
+          48.8511159
         ]
       },
       "properties": {
         "name": "Jardin Catherine Labouré",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
-        "latitude": 48.8510562,
+        "latitude": 48.8511159,
         "longitude": 2.320532,
         "wikidata": "Q3162304",
         "popularity": 8
@@ -7191,14 +7210,16 @@
         "name": "Jardins des Champs-Élysées",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8661752,
         "longitude": 2.3132237,
+        "website": "https://www.paris.fr/lieux/jardins-des-champs-elysees-2471",
         "wikidata": "Q677543",
         "wikipedia": "fr:Jardins des Champs-Élysées",
-        "popularity": 8
+        "popularity": 8,
+        "site": "Q457318"
       }
     },
     {
@@ -7214,8 +7235,8 @@
         "name": "Théâtre des Amandiers",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8931704,
         "longitude": 2.214017,
@@ -7241,8 +7262,8 @@
         "name_en": "Point Zero for French Road Measurements",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8534015,
         "longitude": 2.3487885,
@@ -7291,8 +7312,8 @@
         "name": "La Cigale",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8824754,
         "longitude": 2.3401302,
@@ -7316,8 +7337,8 @@
         "name": "Le Splendid",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8707058,
         "longitude": 2.3567665,
@@ -7340,8 +7361,8 @@
         "name": "Salle Gaveau",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8735064,
         "longitude": 2.3141502,
@@ -7394,7 +7415,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8513494,
         "longitude": 2.355588,
@@ -7420,8 +7442,8 @@
         "name": "Théâtre du Soleil",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8363526,
         "longitude": 2.4499634,
@@ -7444,8 +7466,8 @@
         "name": "Théâtre de la Gaîté-Montparnasse",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8393508,
         "longitude": 2.3231395,
@@ -7481,29 +7503,6 @@
         "wikipedia": "fr:Musée de l'Ordre de la Libération",
         "wheelchair": "yes",
         "popularity": 7
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3294481,
-          48.8424428
-        ]
-      },
-      "properties": {
-        "name": "Monument à Balzac",
-        "name_en": "Monument to Balzac",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 48.8424428,
-        "longitude": 2.3294481,
-        "wikipedia": "fr:Monument à Balzac",
-        "wheelchair": "yes",
-        "popularity": 0
       }
     },
     {
@@ -7559,28 +7558,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3478864,
-          48.8532677
-        ]
-      },
-      "properties": {
-        "name": "Notre-Dame de Paris",
-        "name_en": "Virgin of Paris",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 48.8532677,
-        "longitude": 2.3478864,
-        "wikipedia": "fr:Notre-Dame de Paris (statue)",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3125378,
           48.855027
         ]
@@ -7590,12 +7567,13 @@
         "name_en": "Tomb of Napoleon",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.855027,
         "longitude": 2.3125378,
         "wikidata": "Q59210966",
+        "wikipedia": "fr:Tombeau de Napoléon Ier aux Invalides",
         "popularity": 7
       }
     },
@@ -7613,7 +7591,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8715287,
         "longitude": 2.330216,
@@ -7709,30 +7688,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3619723,
-          48.8627768
-        ]
-      },
-      "properties": {
-        "name": "Marché couvert des Enfants Rouges",
-        "category": "marketplace",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8627768,
-        "longitude": 2.3619723,
-        "opening_hours": "Tu-Sa 08:30-20:30; Th 08:30-21:30; Su 08:30-17:00",
-        "wikidata": "Q3289922",
-        "wikipedia": "fr:Marché des Enfants-Rouges",
-        "popularity": 7
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.336613,
           48.8654941
         ]
@@ -7741,8 +7696,8 @@
         "name": "Fontaine Molière",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8654941,
         "longitude": 2.336613,
@@ -7764,8 +7719,8 @@
         "name": "Théâtre du Gymnase Marie Bell",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8709159,
         "longitude": 2.348839,
@@ -7788,8 +7743,8 @@
         "name": "Maison Planeix",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8233199,
         "longitude": 2.3737873,
@@ -7842,11 +7797,12 @@
         ],
         "latitude": 48.8421181,
         "longitude": 2.3562418,
-        "opening_hours": "Mo 10:00-18:00; We-Su 10:00-18:00; May 1 off",
+        "opening_hours": "Mo 10:00-18:00; We-Su 10:00-18:00; May 01 off",
         "phone": "+33 1 40 79 56 01",
         "website": "https://www.jardindesplantesdeparis.fr/fr/grande-galerie-de-l-evolution",
         "wikidata": "Q2372049",
         "wikipedia": "fr:Grande galerie de l'évolution",
+        "fee": "yes",
         "wheelchair": "yes",
         "popularity": 7
       }
@@ -7865,7 +7821,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8217424,
         "longitude": 2.4564884,
@@ -7942,7 +7899,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8672952,
         "longitude": 2.2441531,
@@ -7970,6 +7928,7 @@
         ],
         "latitude": 48.8592641,
         "longitude": 2.2684699,
+        "website": "https://www.paris.fr/lieux/jardin-du-ranelagh-1778",
         "wikidata": "Q3162588",
         "wikipedia": "fr:Jardin du Ranelagh",
         "popularity": 7
@@ -8014,8 +7973,8 @@
         "name": "Théâtre Déjazet",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8661243,
         "longitude": 2.3641777,
@@ -8038,8 +7997,8 @@
         "name": "Paradis Latin",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8479782,
         "longitude": 2.3529858,
@@ -8129,7 +8088,8 @@
         "wikipedia": "fr:Bibliothèque-musée de l'Opéra",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "site": "Q187840"
       }
     },
     {
@@ -8145,8 +8105,8 @@
         "name": "Théâtre de la Huchette",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8530067,
         "longitude": 2.3453592,
@@ -8170,8 +8130,8 @@
         "name": "Théâtre des Nouveautés",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8713709,
         "longitude": 2.3448748,
@@ -8204,7 +8164,8 @@
         "website": "https://www.servicehistorique.sga.defense.gouv.fr/",
         "wikidata": "Q1340921",
         "wikipedia": "fr:Service historique de la Défense",
-        "popularity": 6
+        "popularity": 6,
+        "site": "Q663673"
       }
     },
     {
@@ -8245,8 +8206,8 @@
         "name": "Madame Arthur",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8825911,
         "longitude": 2.3395439,
@@ -8375,6 +8336,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3393342,
+          48.851041
+        ]
+      },
+      "properties": {
+        "name": "Maison d'Auguste Comte",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 48.851041,
+        "longitude": 2.3393342,
+        "opening_hours": "Tu-We 14:00-17:00; Sa[2] 14:00-17:00",
+        "phone": "+33 1 43 26 08 56",
+        "website": "https://augustecomte.org/",
+        "wikidata": "Q6737052",
+        "fee": "yes",
+        "popularity": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3292925,
           48.862889
         ]
@@ -8434,7 +8421,7 @@
         ],
         "latitude": 48.8523775,
         "longitude": 2.3503406,
-        "website": "https://www.paris.fr/portail/loisirs/Portal.lut?page=equipment&template=equipment.template.popup&document_equipment_id=35",
+        "website": "https://www.paris.fr/lieux/square-jean-xxiii-35",
         "wikidata": "Q3494657",
         "wikipedia": "fr:Square Jean XXIII",
         "popularity": 6
@@ -8450,7 +8437,7 @@
         ]
       },
       "properties": {
-        "name": "Square Federico-García-Lorca",
+        "name": "Jardin Federico-García-Lorca",
         "category": "park",
         "profiles": [
           "NATUREZA",
@@ -8458,6 +8445,7 @@
         ],
         "latitude": 48.8547442,
         "longitude": 2.3531977,
+        "website": "https://www.paris.fr/lieux/jardin-federico-garcia-lorca-1204",
         "wikidata": "Q3495077",
         "wikipedia": "fr:Jardin Federico-García-Lorca",
         "popularity": 6
@@ -8527,7 +8515,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8848435,
         "longitude": 2.3445246,
@@ -8555,8 +8544,8 @@
         "name_en": "Richelieu Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8635374,
         "longitude": 2.336193,
@@ -8566,7 +8555,8 @@
         "wikidata": "Q836007",
         "wikipedia": "fr:Salle Richelieu",
         "wheelchair": "yes",
-        "popularity": 6
+        "popularity": 6,
+        "site": "Q329948"
       }
     },
     {
@@ -8582,8 +8572,8 @@
         "name": "Palais des glaces",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8693198,
         "longitude": 2.3681662,
@@ -8653,7 +8643,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8463579,
         "longitude": 2.2732198,
@@ -8682,7 +8673,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8340236,
         "longitude": 2.4671753,
@@ -8730,7 +8722,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.858226,
         "longitude": 2.3619639,
@@ -8804,8 +8797,8 @@
         "name": "Maison de Nicolas Flamel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8635254,
         "longitude": 2.3531338,
@@ -8943,8 +8936,8 @@
         "name": "Théâtre des Mathurins",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8733076,
         "longitude": 2.3256182,
@@ -8968,8 +8961,8 @@
         "name": "Théâtre Édouard VII",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8714072,
         "longitude": 2.3293794,
@@ -8992,8 +8985,8 @@
         "name": "Théâtre de l'Athénée - Louis-Jouvet",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8719199,
         "longitude": 2.3288943,
@@ -9047,7 +9040,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8494311,
         "longitude": 2.3483534,
@@ -9072,8 +9066,8 @@
         "name": "Théâtre des Abbesses",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8845934,
         "longitude": 2.3372352,
@@ -9096,8 +9090,8 @@
         "name": "Le Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8721414,
         "longitude": 2.3433983,
@@ -9120,8 +9114,8 @@
         "name": "Chais et Entrepôts de Bercy",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8327851,
         "longitude": 2.3883176,
@@ -9160,28 +9154,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3008801,
-          48.8591113
-        ]
-      },
-      "properties": {
-        "name": "Immeuble Lavirotte",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 48.8591113,
-        "longitude": 2.3008801,
-        "wikidata": "Q3149058",
-        "wikipedia": "fr:Immeuble Lavirotte",
-        "popularity": 5
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3526957,
           48.8622616
         ]
@@ -9196,6 +9168,30 @@
         "longitude": 2.3526957,
         "wikidata": "Q1763620",
         "wikipedia": "fr:Le Défenseur du Temps",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3441227,
+          48.850054
+        ]
+      },
+      "properties": {
+        "name": "Square Samuel Paty",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 48.850054,
+        "longitude": 2.3441227,
+        "website": "https://www.paris.fr/lieux/square-samuel-paty-2444",
+        "wikidata": "Q3494759",
+        "wikipedia": "fr:Square Samuel-Paty",
         "popularity": 5
       }
     },
@@ -9262,7 +9258,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8418045,
         "longitude": 2.3577296,
@@ -9315,7 +9312,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8474186,
         "longitude": 2.3607371,
@@ -9345,6 +9343,7 @@
         ],
         "latitude": 48.8679732,
         "longitude": 2.3375739,
+        "website": "https://www.paris.fr/lieux/square-louvois-2416",
         "wikidata": "Q3487022",
         "wikipedia": "fr:Square Louvois",
         "popularity": 5
@@ -9363,13 +9362,13 @@
         "name": "Collège des Bernardins",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8488289,
         "longitude": 2.3520343,
         "address": "Rue de Poissy, 20, Paris",
-        "opening_hours": "Mo-sa 10:00-18:00; Su 14:00-18:00",
+        "opening_hours": "Mo-Sa 10:00-18:00; Su 14:00-18:00",
         "phone": "+33 1 53 10 74 44",
         "website": "https://www.collegedesbernardins.fr/",
         "wikidata": "Q960165",
@@ -9439,8 +9438,8 @@
         "name": "Théâtre Daunou",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8692654,
         "longitude": 2.3318641,
@@ -9487,11 +9486,12 @@
         "name": "Rotonde de la Villette",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8834633,
         "longitude": 2.3695457,
+        "website": "https://larotondestalingrad.com/",
         "wikidata": "Q1240015",
         "wikipedia": "fr:Rotonde de la Villette",
         "popularity": 5
@@ -9510,8 +9510,8 @@
         "name": "Théâtre de la Concorde",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8673923,
         "longitude": 2.3186947,
@@ -9534,8 +9534,8 @@
         "name": "Théâtre Saint-Georges",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8781775,
         "longitude": 2.3370777,
@@ -9561,7 +9561,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.9105217,
         "longitude": 2.2935346,
@@ -9580,6 +9581,34 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.2216201,
+          48.8681513
+        ]
+      },
+      "properties": {
+        "name": "Musée d'Histoire Urbaine et Sociale - MUS",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 48.8681513,
+        "longitude": 2.2216201,
+        "address": "Place Michel Colucci, dit Coluche, 1, Suresnes",
+        "opening_hours": "We-Su 14:00-18:00",
+        "phone": "+33 1 41 18 37 37",
+        "website": "https://mus.suresnes.fr",
+        "wikidata": "Q28033642",
+        "wikipedia": "fr:Musée d'Histoire urbaine et sociale de Suresnes",
+        "fee": "yes",
+        "popularity": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3402042,
           48.8882459
         ]
@@ -9588,8 +9617,8 @@
         "name": "Vigne du Clos Montmartre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8882459,
         "longitude": 2.3402042,
@@ -9612,13 +9641,14 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8340943,
         "longitude": 2.3317055,
         "address": "Avenue du Colonel Henri Rol Tanguy, 4, Paris",
-        "opening_hours": "Tu-Su,PH 10:00-18:00",
-        "phone": "+33 1 40 64 39 44",
+        "opening_hours": "Tu-Su 10:00-18:00",
+        "phone": "+33 1 71 28 34 70",
         "website": "https://www.museeliberation-leclerc-moulin.paris.fr/",
         "wikidata": "Q85854194",
         "wikipedia": "fr:Musée de la Libération de Paris – musée du général-Leclerc – musée Jean-Moulin",
@@ -9639,8 +9669,8 @@
         "name": "Salle Wagram",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8774175,
         "longitude": 2.2965116,
@@ -9692,35 +9722,10 @@
         ],
         "latitude": 48.8474633,
         "longitude": 2.2555879,
+        "opening_hours": "Mo-Fr 08:00-18:30; Sa-Su 09:00-18:30",
         "website": "https://www.paris.fr/equipements/square-des-poetes-2778",
         "wikidata": "Q3162555",
         "wikipedia": "fr:Jardin des Poètes",
-        "popularity": 5
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.2630722,
-          48.8423031
-        ]
-      },
-      "properties": {
-        "name": "Laboratoire d'aérodynamisme de Gustave Eiffel",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 48.8423031,
-        "longitude": 2.2630722,
-        "address": "Rue Boileau, 67, Paris",
-        "phone": "+33 1 42 88 47 40",
-        "website": "https://www.aerodynamiqueeiffel.fr",
-        "wikidata": "Q22922245",
-        "wikipedia": "fr:Laboratoire Aérodynamique Eiffel",
         "popularity": 5
       }
     },
@@ -9764,8 +9769,8 @@
         "name": "Théâtre du Rond-Point",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8677572,
         "longitude": 2.3108853,
@@ -9844,7 +9849,7 @@
         "latitude": 48.8626235,
         "longitude": 2.344487,
         "opening_hours": "24/7",
-        "website": "http://equipement.paris.fr/jardin-nelson-mandela-ex-des-halles-1765",
+        "website": "https://www.paris.fr/lieux/jardin-nelson-mandela-1765",
         "wikidata": "Q3162546",
         "wikipedia": "fr:Jardin Nelson-Mandela",
         "popularity": 5
@@ -9911,7 +9916,8 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8421926,
         "longitude": 2.3874556,
@@ -10079,8 +10085,8 @@
         "name": "Silvia Monfort",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8308115,
         "longitude": 2.3001985,
@@ -10103,8 +10109,9 @@
         "name": "Fontaine Cuvier",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8439963,
         "longitude": 2.3550311,
@@ -10127,8 +10134,8 @@
         "name": "Théâtre de la Michodière",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8693146,
         "longitude": 2.3347338,
@@ -10152,8 +10159,8 @@
         "name": "Théâtre Michel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8733204,
         "longitude": 2.3254505,
@@ -10208,7 +10215,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8522269,
         "longitude": 2.335005,
@@ -10234,8 +10242,8 @@
         "name": "Café de la Gare",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8598058,
         "longitude": 2.3531806,
@@ -10258,8 +10266,8 @@
         "name": "Théâtre Libre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8697908,
         "longitude": 2.3549967,
@@ -10283,8 +10291,8 @@
         "name": "Théâtre Gaîté Rive Gauche",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.840783,
         "longitude": 2.3243234,
@@ -10309,8 +10317,8 @@
         "name": "Théâtre Tristan Bernard",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8788203,
         "longitude": 2.3192755,
@@ -10354,8 +10362,8 @@
         "name": "Le Divan du Monde",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8824651,
         "longitude": 2.3395217,
@@ -10379,6 +10387,7 @@
         "name_en": "Esplanade of Trocadero",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -10426,8 +10435,8 @@
         "name": "Cité Florale",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.822703,
         "longitude": 2.3448195,
@@ -10470,8 +10479,8 @@
         "name": "Alhambra",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8705912,
         "longitude": 2.3629757,
@@ -10495,8 +10504,8 @@
         "name": "Comédie Caumartin",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8716302,
         "longitude": 2.3279234,
@@ -10539,8 +10548,8 @@
         "name": "Le Duc des Lombards",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8596927,
         "longitude": 2.3486049,
@@ -10659,30 +10668,8 @@
         "longitude": 2.3124817,
         "wikidata": "Q3094695",
         "fee": "yes",
-        "popularity": 4
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3227452,
-          48.8639685
-        ]
-      },
-      "properties": {
-        "name": "Ève",
-        "name_en": "Eve",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 48.8639685,
-        "longitude": 2.3227452,
-        "wikidata": "Q18147649",
-        "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q457318"
       }
     },
     {
@@ -10698,8 +10685,8 @@
         "name": "Gnomon astronomique",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8512608,
         "longitude": 2.3349582,
@@ -10776,7 +10763,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8501854,
         "longitude": 2.3346494,
@@ -10842,6 +10830,53 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3638643,
+          48.8513463
+        ]
+      },
+      "properties": {
+        "name": "Salle des traditions de la Garde républicaine",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 48.8513463,
+        "longitude": 2.3638643,
+        "address": "Boulevard Henri IV, 18, Paris",
+        "website": "https://www.gendarmerie.interieur.gouv.fr",
+        "wikidata": "Q3469923",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3634632,
+          48.8557445
+        ]
+      },
+      "properties": {
+        "name": "Fontaine de Jarente",
+        "category": "historic_monument",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 48.8557445,
+        "longitude": 2.3634632,
+        "wikidata": "Q1435786",
+        "wikipedia": "fr:Fontaine de Jarente",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3378176,
           48.8650062
         ]
@@ -10851,8 +10886,8 @@
         "name_en": "Royal Palace Garden",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 48.8650062,
         "longitude": 2.3378176,
@@ -10960,6 +10995,31 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.392393,
+          48.8956035
+        ]
+      },
+      "properties": {
+        "name": "Le Cabaret Sauvage",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 48.8956035,
+        "longitude": 2.392393,
+        "website": "https://www.cabaretsauvage.com/",
+        "wikidata": "Q2932275",
+        "wikipedia": "fr:Cabaret Sauvage",
+        "wheelchair": "yes",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.4102306,
           48.8656133
         ]
@@ -10997,7 +11057,7 @@
         "latitude": 48.8499067,
         "longitude": 2.3597039,
         "opening_hours": "24/7",
-        "website": "https://www.paris.fr/portail/loisirs/Portal.lut?page=equipment&template=equipment.template.popup&document_equipment_id=29",
+        "website": "https://www.paris.fr/lieux/square-barye-29",
         "wikidata": "Q3494500",
         "popularity": 4
       }
@@ -11088,7 +11148,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.7717367,
         "longitude": 2.2705338,
@@ -11242,6 +11303,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3356771,
+          48.8880392
+        ]
+      },
+      "properties": {
+        "name": "Maison de Tristan Tzara",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 48.8880392,
+        "longitude": 2.3356771,
+        "address": "Avenue Junot, 15, Paris",
+        "wikidata": "Q3279593",
+        "wikipedia": "fr:Maison de Tristan Tzara (Paris)",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3887599,
           48.8446697
         ]
@@ -11287,6 +11372,31 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.2993165,
+          48.8655978
+        ]
+      },
+      "properties": {
+        "name": "Musée Yves Saint Laurent",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 48.8655978,
+        "longitude": 2.2993165,
+        "phone": "+33 1 44 31 64 00",
+        "website": "https://museeyslparis.com",
+        "wikidata": "Q43688220",
+        "fee": "yes",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3476025,
           48.8143
         ]
@@ -11296,7 +11406,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8143,
         "longitude": 2.3476025,
@@ -11629,6 +11740,7 @@
         ],
         "latitude": 48.8558034,
         "longitude": 2.3359362,
+        "website": "https://www.paris.fr/lieux/jardin-alice-saunier-seite-2835",
         "wikidata": "Q3162525",
         "wikipedia": "fr:Jardin Alice-Saunier-Seïté",
         "popularity": 4
@@ -11698,6 +11810,7 @@
         ],
         "latitude": 48.8513526,
         "longitude": 2.3618562,
+        "website": "https://www.paris.fr/lieux/square-henri-galli-34",
         "wikidata": "Q3494627",
         "wikipedia": "fr:Square Henri-Galli",
         "popularity": 4
@@ -11745,6 +11858,7 @@
         ],
         "latitude": 48.8484372,
         "longitude": 2.3958432,
+        "website": "https://www.paris.fr/lieux/jardin-de-marianne-19517",
         "wikidata": "Q3494971",
         "wikipedia": "fr:Square de la place de la Nation",
         "popularity": 4
@@ -11768,6 +11882,7 @@
         ],
         "latitude": 48.8766819,
         "longitude": 2.2811427,
+        "website": "https://www.paris.fr/lieux/square-alexandre-et-rene-parodi-2752",
         "wikidata": "Q3494467",
         "popularity": 4
       }
@@ -11904,7 +12019,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8434624,
         "longitude": 2.3362665,
@@ -11963,21 +12079,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.4451917,
-          48.8339043
+          2.3249979,
+          48.8600338
         ]
       },
       "properties": {
-        "name": "Pyramide",
-        "category": "historic_monument",
+        "name": "L'Afrique",
+        "category": "artwork",
         "profiles": [
-          "CULTURAL",
-          "SOLITARIO"
+          "CULTURAL"
         ],
-        "latitude": 48.8339043,
-        "longitude": 2.4451917,
-        "wikidata": "Q3411287",
-        "wikipedia": "fr:Pyramide du bois de Vincennes",
+        "latitude": 48.8600338,
+        "longitude": 2.3249979,
+        "wikidata": "Q23639892",
+        "wheelchair": "no",
         "popularity": 3
       }
     },
@@ -12004,7 +12119,8 @@
         "wikidata": "Q3329858",
         "wikipedia": "fr:Musée du Domaine départemental de Sceaux",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q1579344"
       }
     },
     {
@@ -12050,30 +12166,6 @@
         "wikidata": "Q3139717",
         "wikipedia": "fr:Hommage au capitaine Dreyfus",
         "wheelchair": "yes",
-        "popularity": 3
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3703276,
-          48.8405179
-        ]
-      },
-      "properties": {
-        "name": "Art Ludique - Le Musée",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 48.8405179,
-        "longitude": 2.3703276,
-        "opening_hours": "Mo-Th 11:00-19:00; Fr 11:00-22:00; Sa,Su 10:00-20:00",
-        "website": "http://www.artludique.com",
-        "wikidata": "Q16303874",
         "popularity": 3
       }
     },
@@ -12185,7 +12277,8 @@
         "longitude": 2.3187575,
         "wikidata": "Q3222981",
         "wikipedia": "fr:Le Fruit",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q2715373"
       }
     },
     {
@@ -12215,6 +12308,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3290843,
+          48.8717798
+        ]
+      },
+      "properties": {
+        "name": "Le poète chevauchant Pégase",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 48.8717798,
+        "longitude": 2.3290843,
+        "wikidata": "Q18168590",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3311429,
           48.8574457
         ]
@@ -12233,6 +12347,27 @@
         "wikidata": "Q59680518",
         "wikipedia": "fr:Maison Gainsbourg",
         "fee": "yes",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3326912,
+          48.8625386
+        ]
+      },
+      "properties": {
+        "name": "La Montagne",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 48.8625386,
+        "longitude": 2.3326912,
+        "wikidata": "Q3210771",
         "popularity": 3
       }
     },
@@ -12338,7 +12473,8 @@
         "category": "gallery",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8600483,
         "longitude": 2.3345554,
@@ -12346,7 +12482,8 @@
         "wikipedia": "fr:Tunnel des Tuileries",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q1075988"
       }
     },
     {
@@ -12554,6 +12691,7 @@
         "latitude": 48.8530479,
         "longitude": 2.3594008,
         "opening_hours": "24/7",
+        "website": "https://www.paris.fr/lieux/jardin-marie-trintignant-31",
         "wikidata": "Q3494721",
         "wikipedia": "fr:Square Marie-Trintignant",
         "popularity": 3
@@ -12626,7 +12764,7 @@
         ],
         "latitude": 48.8490369,
         "longitude": 2.3777476,
-        "opening_hours": "Tu-Fr 8:00-13:00,16:00-19:30; Sa 8:00-19:30; Su 8:00-13:30",
+        "opening_hours": "Tu-Fr 08:00-13:00,16:00-19:30; Sa 08:00-19:30; Su 08:00-13:30",
         "website": "https://www.paris.fr/lieux/marche-couvert-beauvau-5480",
         "wikidata": "Q3289775",
         "wikipedia": "fr:Marché Beauvau",
@@ -12652,6 +12790,7 @@
         "latitude": 48.8455472,
         "longitude": 2.2766187,
         "opening_hours": "24/7",
+        "website": "https://www.paris.fr/lieux/jardin-des-meres-et-grands-meres-de-la-place-de-mai-2873",
         "wikidata": "Q3162552",
         "popularity": 3
       }
@@ -13119,6 +13258,7 @@
         ],
         "latitude": 48.8629473,
         "longitude": 2.367071,
+        "website": "https://www.paris.fr/lieux/square-de-la-place-pasdeloup-2585",
         "wikidata": "Q3494966",
         "wikipedia": "fr:Square de la Place-Pasdeloup",
         "popularity": 3
@@ -13143,6 +13283,7 @@
         ],
         "latitude": 48.8543578,
         "longitude": 2.3554613,
+        "website": "https://www.paris.fr/lieux/jardin-du-bataillon-de-l-onu-1205",
         "wikidata": "Q3162574",
         "popularity": 3
       }
@@ -13235,6 +13376,7 @@
         ],
         "latitude": 48.8786669,
         "longitude": 2.4080907,
+        "website": "https://www.paris.fr/lieux/jardin-serge-gainsbourg-6337",
         "wikidata": "Q3162362",
         "wikipedia": "fr:Jardin Serge-Gainsbourg",
         "wheelchair": "yes",
@@ -13294,6 +13436,31 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3581854,
+          48.8707438
+        ]
+      },
+      "properties": {
+        "name": "Marché Couvert Saint-Martin",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8707438,
+        "longitude": 2.3581854,
+        "address": "Rue du Château d'Eau, 31-33, Paris",
+        "opening_hours": "Tu-Sa 09:00-20:00; Su 09:00-14:00",
+        "website": "https://www.paris.fr/lieux/marche-couvert-saint-martin-5473",
+        "wikidata": "Q3289911",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3889151,
           48.8386537
         ]
@@ -13307,7 +13474,7 @@
         ],
         "latitude": 48.8386537,
         "longitude": 2.3889151,
-        "website": "http://equipement.paris.fr/square-jean-morin-2600",
+        "website": "https://www.paris.fr/lieux/square-jean-morin-2600",
         "wikidata": "Q3494647",
         "wikipedia": "fr:Square Jean-Morin",
         "popularity": 3
@@ -13333,6 +13500,30 @@
         "longitude": 2.3308943,
         "wikidata": "Q3494829",
         "wikipedia": "fr:Square Taras-Chevtchenko",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3116513,
+          48.8669753
+        ]
+      },
+      "properties": {
+        "name": "Square Jean Perrin",
+        "category": "garden",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO",
+          "SOLITARIO"
+        ],
+        "latitude": 48.8669753,
+        "longitude": 2.3116513,
+        "wikidata": "Q60847846",
+        "wikipedia": "fr:Square Jean-Perrin",
         "popularity": 3
       }
     },
@@ -13418,7 +13609,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.9047868,
         "longitude": 2.3038403,
@@ -13543,6 +13735,7 @@
         "latitude": 48.8716219,
         "longitude": 2.2749197,
         "wikidata": "Q3390652",
+        "wikipedia": "fr:Place du Maréchal-de-Lattre-de-Tassigny",
         "popularity": 3
       }
     },
@@ -13635,6 +13828,7 @@
         ],
         "latitude": 48.8530339,
         "longitude": 2.2611555,
+        "website": "https://www.paris.fr/lieux/square-tolstoi-2620",
         "wikidata": "Q3494841",
         "wikipedia": "fr:Square Tolstoï",
         "popularity": 3
@@ -14027,7 +14221,7 @@
         ],
         "latitude": 48.8271278,
         "longitude": 2.1987352,
-        "opening_hours": "Th-Su 14:00-18:30",
+        "opening_hours": "Th-Su 14:00-18:30; Jan 15-Sep 01 off",
         "phone": "+33145346122",
         "wikidata": "Q2348375",
         "wikipedia": "fr:Maison des Jardies",
@@ -14053,6 +14247,7 @@
         ],
         "latitude": 48.819718,
         "longitude": 2.416127,
+        "address": "Rue de Paris, Paris",
         "opening_hours": "Mo-Fr 08:30-17:15",
         "phone": "+33 1 46 76 46 76",
         "website": "http://www.charentonlepont.fr",
@@ -14170,6 +14365,7 @@
         "latitude": 48.8761496,
         "longitude": 2.4066262,
         "opening_hours": "24/7",
+        "website": "https://www.paris.fr/lieux/square-du-docteur-variot-2723",
         "wikidata": "Q3495030",
         "wikipedia": "fr:Square du Docteur-Variot",
         "popularity": 3
@@ -14330,6 +14526,7 @@
         ],
         "latitude": 48.8665478,
         "longitude": 2.3904787,
+        "website": "https://www.paris.fr/lieux/square-elisa-borey-2715",
         "wikidata": "Q3495092",
         "wikipedia": "fr:Square Élisa-Borey",
         "popularity": 3
@@ -14378,6 +14575,7 @@
         "longitude": 2.3631392,
         "opening_hours": "Oct 01-Oct Su[-1] 09:00-18:30; Oct Su[-1]-Feb 29 09:00-17:00; Mar 01-Mar Su[-1] 09:00-18:00; Mar Su[-1]-Apr 30,Sep 09:00-19:30; May-Aug 09:00-20:30, Mo-Fr 08:00-09:00; PH 08:00-09:00 closed",
         "wikidata": "Q28493739",
+        "wikipedia": "fr:Jardins Rosa-Luxemburg",
         "popularity": 3
       }
     },
@@ -14399,6 +14597,7 @@
         ],
         "latitude": 48.8815777,
         "longitude": 2.400215,
+        "website": "https://www.paris.fr/lieux/promenade-amalia-rodrigues-2679",
         "wikidata": "Q3494865",
         "wikipedia": "fr:Promenade Amalia-Rodrigues",
         "popularity": 3
@@ -14660,29 +14859,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.320645,
-          48.9000696
-        ]
-      },
-      "properties": {
-        "name": "Jardin Hans et Sophie Scholl",
-        "category": "park",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO"
-        ],
-        "latitude": 48.9000696,
-        "longitude": 2.320645,
-        "wikidata": "Q102306225",
-        "wikipedia": "fr:Place Pouchet",
-        "popularity": 3
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3360579,
           48.8631316
         ]
@@ -14827,7 +15003,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.840397,
         "longitude": 2.4849183,
@@ -15103,7 +15280,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8513131,
         "longitude": 2.35562,
@@ -15164,41 +15342,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3131464,
-          48.863021
+          2.334298,
+          48.8507795
         ]
       },
       "properties": {
-        "name": "La France sous Louis XIV",
-        "name_en": "France of Louis XIV",
+        "name": "Héliodore chassé du temple",
         "category": "artwork",
         "profiles": [
           "CULTURAL"
         ],
-        "latitude": 48.863021,
-        "longitude": 2.3131464,
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3138099,
-          48.8630304
-        ]
-      },
-      "properties": {
-        "name": "La France à la Renaissance",
-        "name_en": "France of the Renaissance",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 48.8630304,
-        "longitude": 2.3138099,
-        "popularity": 0
+        "latitude": 48.8507795,
+        "longitude": 2.334298,
+        "wikidata": "Q26788979",
+        "popularity": 2
       }
     },
     {
@@ -15215,7 +15372,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 48.8146963,
         "longitude": 2.2517826,
@@ -15247,27 +15405,8 @@
         "longitude": 2.3498162,
         "wikidata": "Q63168906",
         "wheelchair": "yes",
-        "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.2317077,
-          48.8252635
-        ]
-      },
-      "properties": {
-        "name": "Pouce",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": 48.8252635,
-        "longitude": 2.2317077,
-        "popularity": 0
+        "popularity": 2,
+        "site": "Q2981"
       }
     },
     {
@@ -15309,7 +15448,7 @@
         "latitude": 48.8439652,
         "longitude": 2.3575767,
         "wikidata": "Q18177091",
-        "wikipedia": "fr:Monument_à_Bernardin_de_Saint-Pierre",
+        "wikipedia": "fr:Monument à Bernardin de Saint-Pierre",
         "popularity": 2
       }
     },
@@ -15428,6 +15567,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3257398,
+          48.8421217
+        ]
+      },
+      "properties": {
+        "name": "Galerie du Montparnasse",
+        "category": "gallery",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 48.8421217,
+        "longitude": 2.3257398,
+        "opening_hours": "14:00-20:00",
+        "wikidata": "Q82508367",
+        "wheelchair": "yes",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3229851,
           48.8306005
         ]
@@ -15488,6 +15651,32 @@
         "longitude": 2.3526185,
         "wikidata": "Q3223171",
         "wikipedia": "fr:Le Grand Assistant",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3439751,
+          48.8441489
+        ]
+      },
+      "properties": {
+        "name": "Maison Poincaré",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO",
+          "MOCHILEIRO"
+        ],
+        "latitude": 48.8441489,
+        "longitude": 2.3439751,
+        "address": "Rue Pierre et Marie Curie, 11, Paris",
+        "website": "https://www.ihp.fr/fr/musee-maison-poincare",
+        "wikidata": "Q122863757",
+        "fee": "no",
         "popularity": 2
       }
     },
@@ -15615,6 +15804,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3587768,
+          48.8440097
+        ]
+      },
+      "properties": {
+        "name": "Jardin Alpin",
+        "category": "garden",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO",
+          "SOLITARIO"
+        ],
+        "latitude": 48.8440097,
+        "longitude": 2.3587768,
+        "wikidata": "Q48753535",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3329791,
           48.8003982
         ]
@@ -15709,6 +15921,31 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3344262,
+          48.8483243
+        ]
+      },
+      "properties": {
+        "name": "Orangerie du Sénat",
+        "category": "gallery",
+        "profiles": [
+          "CULTURAL",
+          "LUXO",
+          "MOCHILEIRO"
+        ],
+        "latitude": 48.8483243,
+        "longitude": 2.3344262,
+        "wikidata": "Q113325069",
+        "fee": "no",
+        "wheelchair": "yes",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3391016,
           48.8484166
         ]
@@ -15753,6 +15990,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.362341,
+          48.8827882
+        ]
+      },
+      "properties": {
+        "name": "Le Faune aux Enfants",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": 48.8827882,
+        "longitude": 2.362341,
+        "wikidata": "Q16354729",
+        "wikipedia": "fr:Faune aux enfants",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3550372,
           48.8769232
         ]
@@ -15767,6 +16026,7 @@
         "latitude": 48.8769232,
         "longitude": 2.3550372,
         "opening_hours": "Tu-Sa 08:00-20:00, Su 08:00-13:30",
+        "website": "https://www.paris.fr/lieux/marche-couvert-saint-quentin-5474",
         "wikidata": "Q3289806",
         "wikipedia": "fr:Marché Saint-Quentin",
         "popularity": 2
@@ -15836,103 +16096,6 @@
         "latitude": 48.840245,
         "longitude": 2.3367588,
         "wikidata": "Q3323408",
-        "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3575692,
-          48.9379364
-        ]
-      },
-      "properties": {
-        "name": "Maison des Arbalétriers",
-        "category": "historic_monument",
-        "profiles": [
-          "CULTURAL",
-          "SOLITARIO"
-        ],
-        "latitude": 48.9379364,
-        "longitude": 2.3575692,
-        "wikidata": "Q22915909",
-        "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.4708216,
-          48.8139385
-        ]
-      },
-      "properties": {
-        "name": "Château du Parangon",
-        "category": "historic_castle",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 48.8139385,
-        "longitude": 2.4708216,
-        "wikidata": "Q2971754",
-        "wikipedia": "fr:Château du Parangon",
-        "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.2570965,
-          48.9441256
-        ]
-      },
-      "properties": {
-        "name": "Musée Sauvage",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 48.9441256,
-        "longitude": 2.2570965,
-        "address": "Rue Pierre Guienne, 5, Paris",
-        "opening_hours": "Th 17:00-20:00; We 12:00-20:00; Fr 17:00-22:00; Sa 16:00-20:00",
-        "website": "https://museesauvage.com",
-        "wikidata": "Q3329532",
-        "fee": "yes",
-        "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.2160865,
-          48.8719161
-        ]
-      },
-      "properties": {
-        "name": "Musée de la colombophilie militaire",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 48.8719161,
-        "longitude": 2.2160865,
-        "opening_hours": "\"visitable aux journées du patrimoine\"",
-        "website": "https://www.cheminsdememoire.gouv.fr/fr/revue/le-musee-de-la-colombophilie-militaire",
-        "wikidata": "Q3329526",
-        "fee": "no",
-        "wheelchair": "yes",
         "popularity": 2
       }
     },
@@ -16054,6 +16217,34 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3410141,
+          48.8533212
+        ]
+      },
+      "properties": {
+        "name": "Allard",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8533212,
+        "longitude": 2.3410141,
+        "address": "Rue Saint-André des Arts, 41, Paris",
+        "opening_hours": "12:00-14:00,19:00-22:00",
+        "phone": "+33 1 43 26 48 23",
+        "website": "https://www.restaurant-allard.fr/",
+        "wikidata": "Q125621487",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3292123,
           48.8423598
         ]
@@ -16074,6 +16265,61 @@
         "wheelchair": "yes",
         "cuisine": "french",
         "popularity": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3477501,
+          48.8741138
+        ]
+      },
+      "properties": {
+        "name": "Richer",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8741138,
+        "longitude": 2.3477501,
+        "address": "Rue Richer, 2, Paris",
+        "opening_hours": "Mo-Su 08:00-01:00",
+        "phone": "+33 9 67 29 18 43",
+        "website": "https://lericher.com/",
+        "wikidata": "Q125621926",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3433043,
+          48.8617832
+        ]
+      },
+      "properties": {
+        "name": "La Poule au Pot",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8617832,
+        "longitude": 2.3433043,
+        "address": "Rue Vauvilliers, 9, Paris",
+        "opening_hours": "Tu-Su 19:00-05:00",
+        "phone": "+33 1 42 36 32 96",
+        "wikidata": "Q136746889",
+        "wheelchair": "limited",
+        "cuisine": "french",
+        "popularity": 0
       }
     },
     {
@@ -16129,6 +16375,32 @@
         "website": "https://unoparis.com/",
         "wheelchair": "limited",
         "cuisine": "italian;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3643313,
+          48.8580708
+        ]
+      },
+      "properties": {
+        "name": "Café des Musées",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8580708,
+        "longitude": 2.3643313,
+        "address": "Rue de Turenne, 49, Paris",
+        "opening_hours": "Mo-Su 12:00-15:00,19:00-23:30",
+        "phone": "+33 1 42 72 96 17",
+        "wheelchair": "no",
+        "cuisine": "french",
         "popularity": 0
       }
     },
@@ -16462,33 +16734,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.375616,
-          48.8178977
-        ]
-      },
-      "properties": {
-        "name": "Okahashi",
-        "category": "restaurant",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8178977,
-        "longitude": 2.375616,
-        "address": "Avenue Maurice Thorez, 75, Ivry-sur-Seine",
-        "opening_hours": "Mo-Sa 11:30-14:30,18:30-22:30, Su 18:30-22:30",
-        "phone": "+33 1 46 72 61 52",
-        "website": "http://www.okahashi94.com/",
-        "wheelchair": "no",
-        "cuisine": "japanese",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3476311,
           48.8598868
         ]
@@ -16556,7 +16801,7 @@
         "latitude": 48.8492044,
         "longitude": 2.389514,
         "address": "Rue du Faubourg Saint-Antoine, 240, Paris",
-        "opening_hours": "Tu-Sa 12:00-15:00,19:00-23:00",
+        "opening_hours": "Tu-Sa 12:00-23:00",
         "phone": "+33 1 49 96 60 10",
         "website": "https://www.restaurant-letylouis.fr/",
         "wheelchair": "yes",
@@ -16717,7 +16962,7 @@
         "latitude": 48.8491483,
         "longitude": 2.3746044,
         "address": "Rue Traversière, 63, Paris",
-        "opening_hours": "Mo-Th 12:00-14:30, 19:00-23:00; Fr 19:00-23:00; Sa-Su 12:00-23:00",
+        "opening_hours": "12:00-23:00",
         "phone": "+33 1 43 45 36 04",
         "website": "https://www.gemmapizzeria.com",
         "wheelchair": "yes",
@@ -16757,6 +17002,33 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3788828,
+          48.8497475
+        ]
+      },
+      "properties": {
+        "name": "Paya Thaï Aligre",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8497475,
+        "longitude": 2.3788828,
+        "address": "Rue d'Aligre, 30, Paris",
+        "opening_hours": "Mo-Sa 12:00-14:30,19:00-23:30",
+        "phone": "+33 9 50 96 10 00",
+        "website": "https://www.paya-thai.fr/",
+        "wheelchair": "limited",
+        "cuisine": "thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3862895,
           48.8330618
         ]
@@ -16771,9 +17043,9 @@
         "latitude": 48.8330618,
         "longitude": 2.3862895,
         "address": "Cour Saint-Émilion, 27;29, Paris",
-        "opening_hours": "Mo-Th,Su 11:00-23:30; Fr-Sa 11:00-24:30",
-        "phone": "+33 1 44 73 88 11",
-        "website": "https://www.hippopotamus.fr/nos-restaurants/hippopotamus-paris-bercy-village-12e?utm_source=google&utm_medium=organic&utm_campaign=mybusiness-website",
+        "opening_hours": "Mo-Th 11:00-23:30; Fr-Sa 11:00-00:30; Su 11:00-23:30",
+        "phone": "+33 1 76 21 54 94",
+        "website": "https://www.hippopotamus.fr/nos-restaurants/hippopotamus-paris-bercy-village-12e",
         "wheelchair": "no",
         "cuisine": "steak_house",
         "popularity": 0
@@ -17025,8 +17297,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.332564,
-          48.8672663
+          2.3324818,
+          48.867162
         ]
       },
       "properties": {
@@ -17036,8 +17308,8 @@
           "LUXO",
           "SOCIAL"
         ],
-        "latitude": 48.8672663,
-        "longitude": 2.332564,
+        "latitude": 48.867162,
+        "longitude": 2.3324818,
         "address": "Place du Marché Saint-Honoré, 36, Paris",
         "opening_hours": "Mo-Su 11:30-22:30",
         "phone": "+33 1 42 60 36 67",
@@ -17106,6 +17378,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3480633,
+          48.8649406
+        ]
+      },
+      "properties": {
+        "name": "Rocambole",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8649406,
+        "longitude": 2.3480633,
+        "address": "Rue Marie Stuart, 5, Paris",
+        "opening_hours": "Tu 18:00-23:00; We-Fr 12:00-14:30, 18:30-23:00; Sa 12:00-14:30, 19:00-23:00; Su 11:30-16:30",
+        "phone": "+33 1 42 33 05 89",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3519457,
           48.868095
         ]
@@ -17125,6 +17423,32 @@
         "website": "https://lanouvellegarde.com/en/brasserie-dubillot/",
         "wheelchair": "yes",
         "cuisine": "french;traditional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.355464,
+          48.8522927
+        ]
+      },
+      "properties": {
+        "name": "Bouillon de l'île",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8522927,
+        "longitude": 2.355464,
+        "address": "Rue Saint-Louis en l'Île, 66, Paris",
+        "opening_hours": "Mo-Tu,Th-Su 09:00-15:00,18:30-22:00; We 09:00-15:00",
+        "phone": "+33 146331371",
+        "wheelchair": "no",
+        "cuisine": "international;coffee_shop",
         "popularity": 0
       }
     },
@@ -17333,7 +17657,7 @@
         "latitude": 48.866114,
         "longitude": 2.3595353,
         "address": "Rue de Turbigo, 70, Paris",
-        "opening_hours": "12:00-14:30,19:15-23:30, Sa-Su 14:30-15:00",
+        "opening_hours": "Mo-Fr 12:00-14:30, 19:15-23:30; Sa-Su 12:00-15:00, 19:15-23:30",
         "phone": "+33 1 42 74 13 94",
         "website": "https://www.la-massara.fr/",
         "wheelchair": "limited",
@@ -17628,7 +17952,7 @@
         "latitude": 48.8396593,
         "longitude": 2.3567206,
         "address": "Rue Poliveau, 45, Paris",
-        "opening_hours": "Mo-Fr 06:30-21:00; Sa 07:00:21:00",
+        "opening_hours": "Mo-Fr 06:30-21:00; Sa 07:00-21:00",
         "phone": "+33 171326531",
         "website": "https://la-traversee-de-paris5.eatbu.com/",
         "wheelchair": "yes",
@@ -17655,8 +17979,8 @@
         "latitude": 48.8731505,
         "longitude": 2.3255205,
         "address": "Rue des Mathurins, 29, Paris",
-        "opening_hours": "Mo-Fr 07:00-02:00; Sa-Su 11:00-02:00",
-        "phone": "+33142658087",
+        "opening_hours": "Mo-Su 07:00-00:00",
+        "phone": "+33 1 42 65 80 87",
         "website": "https://legreffulhe.fr/",
         "wheelchair": "no",
         "cuisine": "french",
@@ -17736,7 +18060,7 @@
         "longitude": 2.4005614,
         "address": "Rue de Bagnolet, 81, Paris",
         "opening_hours": "Tu,Th-Sa 12:00-14:00, Tu-Sa 19:30-22:30",
-        "phone": "+33 1143707793",
+        "phone": "+33 1 43 70 77 93",
         "wheelchair": "yes",
         "cuisine": "regional;french",
         "popularity": 0
@@ -17768,6 +18092,33 @@
         "wheelchair": "limited",
         "cuisine": "french",
         "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35457,
+          48.8746039
+        ]
+      },
+      "properties": {
+        "name": "Les Tontons Veg",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8746039,
+        "longitude": 2.35457,
+        "address": "Rue de Paradis, 8, Paris",
+        "opening_hours": "Mo-Fr 12:00-14:30, 19:00-22:00; Sa 12:00-15:00, 18:00-22:00",
+        "phone": "+33 1 53 62 08 94",
+        "website": "https://www.lestontonsveg.fr/",
+        "wheelchair": "limited",
+        "cuisine": "burger",
+        "popularity": 0
       }
     },
     {
@@ -17855,32 +18206,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3241013,
-          48.8186764
-        ]
-      },
-      "properties": {
-        "name": "Le Menec",
-        "category": "restaurant",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8186764,
-        "longitude": 2.3241013,
-        "address": "Rue Théophile Gautier, 7, Montrouge",
-        "opening_hours": "Mo-Sa 11:30-15:00,18:30-22:30",
-        "phone": "+33142531979",
-        "wheelchair": "yes",
-        "cuisine": "crepe",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.394626,
           48.8464569
         ]
@@ -17898,7 +18223,7 @@
         "opening_hours": "Mo-Fr 07:00-24:00; Sa 09:00-24:00",
         "phone": "+33 1 43 43 27 44",
         "wheelchair": "no",
-        "cuisine": "french",
+        "cuisine": "french;jewish",
         "popularity": 0
       }
     },
@@ -18333,6 +18658,33 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3365053,
+          48.8669021
+        ]
+      },
+      "properties": {
+        "name": "Toyotomi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8669021,
+        "longitude": 2.3365053,
+        "address": "Rue Chabanais, 1, Paris",
+        "opening_hours": "12:00-15:00,18:00-23:00",
+        "phone": "+33 1 42 86 02 86",
+        "website": "https://www.toyotomi.fr",
+        "wheelchair": "yes",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3495364,
           48.8275961
         ]
@@ -18441,6 +18793,60 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3212953,
+          48.8704298
+        ]
+      },
+      "properties": {
+        "name": "Contraste",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8704298,
+        "longitude": 2.3212953,
+        "address": "Rue d'Anjou, 18, Paris",
+        "opening_hours": "Mo-Fr 12:00-14:00,19:00-23:30",
+        "phone": "+33  1 42 65 08 36",
+        "website": "https://www.contraste.paris",
+        "wheelchair": "yes",
+        "cuisine": "fine_dining",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3437958,
+          48.8634885
+        ]
+      },
+      "properties": {
+        "name": "Au Pied de Cochon",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8634885,
+        "longitude": 2.3437958,
+        "opening_hours": "24/7",
+        "phone": "+33 1 40 13 77 00",
+        "website": "https://www.pieddecochon.com/",
+        "wikidata": "Q12713563",
+        "wheelchair": "yes",
+        "cuisine": "french",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3420157,
           48.850156
         ]
@@ -18487,6 +18893,33 @@
         "phone": "+33 143074920",
         "wheelchair": "no",
         "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3575889,
+          48.879909
+        ]
+      },
+      "properties": {
+        "name": "Arya Bhavan",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.879909,
+        "longitude": 2.3575889,
+        "address": "Rue du Faubourg Saint-Denis, 170, Paris",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "phone": "+33 1 40 05 01 01",
+        "website": "https://nkaryabhavan.fr/fr/succursales/gare-du-nord/",
+        "wheelchair": "limited",
+        "cuisine": "indian",
         "popularity": 0
       }
     },
@@ -18589,7 +19022,7 @@
         "latitude": 48.8395564,
         "longitude": 2.3497363,
         "address": "Rue Mouffetard, 138, Paris",
-        "opening_hours": "Mo-Su 08:00-18:30",
+        "opening_hours": "Mo-Su 11:00-22:00",
         "phone": "+33 1 55 43 91 99",
         "wheelchair": "yes",
         "cuisine": "italian",
@@ -18645,6 +19078,33 @@
         "phone": "+33 1 42 92 00 24",
         "website": "https://www.lefumoir.com/",
         "wheelchair": "limited",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344702,
+          48.8518696
+        ]
+      },
+      "properties": {
+        "name": "Rocaille",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8518696,
+        "longitude": 2.344702,
+        "address": "Rue de la Parcheminerie, 24, Paris",
+        "opening_hours": "Mo 18:30-22:30; Tu-Fr 11:45-14:30,18:30-22:30; Sa 11:45-22:30; Su 11:45-22:00",
+        "phone": "+33 1 71 32 30 11",
+        "website": "https://www.rocaillerestaurant.com/",
+        "wheelchair": "no",
         "cuisine": "french",
         "popularity": 0
       }
@@ -18842,319 +19302,53 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.342997,
-          48.8726419
+          2.3234037,
+          48.8405139
         ]
       },
       "properties": {
-        "name": "Nouilles ceintures",
+        "name": "Le Plomb du Cantal - Jolivet",
         "category": "restaurant",
         "profiles": [
-          "MOCHILEIRO",
+          "LUXO",
           "SOCIAL"
         ],
-        "latitude": 48.8726419,
-        "longitude": 2.342997,
-        "address": "Rue du Faubourg Montmartre, 17, Paris",
-        "opening_hours": "Mo-Sa 12:00-15:00,18:30-23:00",
-        "phone": "+33 1 73 71 73 45",
-        "website": "https://www.nouillesceintures.fr",
+        "latitude": 48.8405139,
+        "longitude": 2.3234037,
+        "address": "Rue du Maine, 5, Paris",
+        "opening_hours": "Mo off",
+        "phone": "+33 1 42 79 89 79",
+        "wheelchair": "yes",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3786908,
+          48.8874309
+        ]
+      },
+      "properties": {
+        "name": "Pavillon des Canaux",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8874309,
+        "longitude": 2.3786908,
+        "address": "Quai de la Loire, 39, Paris",
+        "opening_hours": "Tu, Th, Su 11:00-24:00; Fr, Sa 11:00-02:00; We 18:00-24:00; Mo off",
+        "phone": "+33 1 73 71 82 90",
+        "website": "https://www.pavillondescanaux.com/",
+        "wikidata": "Q108772756",
         "wheelchair": "no",
-        "cuisine": "chinese;noodle",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3139529,
-          48.8820348
-        ]
-      },
-      "properties": {
-        "name": "Restaurant Brigitte",
-        "category": "restaurant",
-        "profiles": [
-          "LUXO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8820348,
-        "longitude": 2.3139529,
-        "address": "Avenue de Villiers, 16, Paris",
-        "opening_hours": "Mo-Su 12:00-14:30, 20:00-22:30",
-        "phone": "+33 1 47 63 25 61",
-        "website": "https://www.restaurantbrigitte.fr/",
-        "wheelchair": "no",
-        "cuisine": "french",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3171769,
-          48.8824595
-        ]
-      },
-      "properties": {
-        "name": "Bistrot du Passage",
-        "category": "restaurant",
-        "profiles": [
-          "LUXO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8824595,
-        "longitude": 2.3171769,
-        "address": "Passage Geffroy Didelot, 14, Paris",
-        "opening_hours": "Tu-Fr 12:00-14:30, Tu-Sa 19:00-22:30",
-        "phone": "+33 1 43 87 28 10",
-        "website": "https://lebistrotdupassage.fr/",
-        "wheelchair": "limited",
-        "cuisine": "french",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3894381,
-          48.8447543
-        ]
-      },
-      "properties": {
-        "name": "Fukuyama",
-        "category": "restaurant",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8447543,
-        "longitude": 2.3894381,
-        "address": "Rue de Reuilly, 60, Paris",
-        "opening_hours": "Mo-Fr 11:45-14:15,18:30-23:00; Sa-Su 18:30-23:00",
-        "phone": "+33 1 43 45 27 58",
-        "website": "http://www.fukuyama.fr",
-        "wheelchair": "yes",
-        "cuisine": "japanese",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3520815,
-          48.8595901
-        ]
-      },
-      "properties": {
-        "name": "Paris Beaubourg",
-        "category": "restaurant",
-        "profiles": [
-          "LUXO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8595901,
-        "longitude": 2.3520815,
-        "address": "Rue Saint-Merri, 25, Paris",
-        "opening_hours": "Mo-Su 07:00-02:00",
-        "phone": "+33 1 42 74 01 23",
-        "wheelchair": "limited",
-        "cuisine": "burger;pizza;crepe;pasta;regional",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3506828,
-          48.8238476
-        ]
-      },
-      "properties": {
-        "name": "Chez Yong 鼎鼎香",
-        "category": "restaurant",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8238476,
-        "longitude": 2.3506828,
-        "address": "Rue de la Colonie, 72, Paris",
-        "opening_hours": "Tu-Su 11:45-14:30,18:45-22:30",
-        "phone": "+33 1 45 65 17 88",
-        "wheelchair": "limited",
-        "cuisine": "chinese",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3705075,
-          48.8537085
-        ]
-      },
-      "properties": {
-        "name": "Le Bastille",
-        "category": "restaurant",
-        "profiles": [
-          "LUXO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8537085,
-        "longitude": 2.3705075,
-        "address": "Place de la Bastille, 8, Paris",
-        "opening_hours": "Mo-Su 07:30-04:30",
-        "phone": "+33 1 43 07 79 95",
-        "wheelchair": "limited",
-        "cuisine": "french",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3632536,
-          48.8221895
-        ]
-      },
-      "properties": {
-        "name": "Impérial Choisy",
-        "category": "restaurant",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8221895,
-        "longitude": 2.3632536,
-        "address": "Avenue de Choisy, 32, Paris",
-        "opening_hours": "Mo-Su 12:00-23:00",
-        "phone": "+33 1 45 86 42 40",
-        "wheelchair": "limited",
-        "cuisine": "chinese;cantonese",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3383598,
-          48.8268373
-        ]
-      },
-      "properties": {
-        "name": "Joayo",
-        "category": "restaurant",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8268373,
-        "longitude": 2.3383598,
-        "address": "Rue d'Alésia, 7, Paris",
-        "opening_hours": "Mo-Sa 12:00-14:30,19:00-22:30",
-        "phone": "+33 9 80 55 38 07",
-        "website": "https://joayo-alesia.fr/fr",
-        "wheelchair": "yes",
-        "cuisine": "barbecue;korean",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3307106,
-          48.8279313
-        ]
-      },
-      "properties": {
-        "name": "Azhen pâtes",
-        "name_en": "Azhen noodles",
-        "category": "restaurant",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8279313,
-        "longitude": 2.3307106,
-        "address": "Rue d'Alésia, 28, Paris",
-        "opening_hours": "Mo-Sa 12:00-15:00,18:00-23:00",
-        "phone": "+33 1 43 27 73 01",
-        "website": "http://www.momento.rest",
-        "wheelchair": "yes",
-        "cuisine": "chinese",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3996388,
-          48.8664565
-        ]
-      },
-      "properties": {
-        "name": "Chantefable",
-        "category": "restaurant",
-        "profiles": [
-          "LUXO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8664565,
-        "longitude": 2.3996388,
-        "address": "Avenue Gambetta, 93, Paris",
-        "opening_hours": "Mo-Tu,Th-Fr 07:00-22:30; We 06:30-22:30; Sa 06:30-23:00; Su 11:00-22:30",
-        "phone": "+33 1 46 36 81 76",
-        "website": "https://chantefable.fr/",
-        "wheelchair": "yes",
-        "cuisine": "french",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3621306,
-          48.8244847
-        ]
-      },
-      "properties": {
-        "name": "天天旺",
-        "category": "restaurant",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8244847,
-        "longitude": 2.3621306,
-        "address": "Rue Baudricourt, 82, Paris",
-        "opening_hours": "Mo-Su 19:00-01:00",
-        "phone": "+33 1 45 86 63 86",
-        "wheelchair": "limited",
-        "cuisine": "asian;chinese",
-        "popularity": 0
+        "cuisine": "coffee_shop",
+        "popularity": 1
       }
     },
     {
@@ -19403,6 +19597,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3366866,
+          48.8672433
+        ]
+      },
+      "properties": {
+        "name": "Machi machi",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8672433,
+        "longitude": 2.3366866,
+        "address": "Rue Chabanais, 5, Paris",
+        "opening_hours": "Mo-Su 12:00-22:00",
+        "phone": "+33 1 42 36 39 37",
+        "wheelchair": "no",
+        "cuisine": "bubble_tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3325864,
           48.8690244
         ]
@@ -19422,6 +19642,33 @@
         "wikidata": "Q2932996",
         "wikipedia": "fr:Café du Cadran",
         "wheelchair": "limited",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340225,
+          48.8478162
+        ]
+      },
+      "properties": {
+        "name": "Le Rostand",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8478162,
+        "longitude": 2.340225,
+        "address": "Place Edmond Rostand, 6, Paris",
+        "opening_hours": "08:00-24:00",
+        "phone": "+33 1 43 54 61 58",
+        "website": "https://lerostand.fr/",
+        "wikidata": "Q28494431",
+        "wheelchair": "no",
         "popularity": 2
       }
     },
@@ -19697,6 +19944,33 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3647376,
+          48.8734923
+        ]
+      },
+      "properties": {
+        "name": "Ten Belles",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8734923,
+        "longitude": 2.3647376,
+        "address": "Rue de la Grange aux Belles, 10, Paris",
+        "opening_hours": "Mo-Fr 08:30-16:30; Sa-Su 09:00-17:30",
+        "phone": "+33 9 83 08 86 69",
+        "website": "https://www.tenbelles.com/paris-10",
+        "wheelchair": "limited",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3250747,
           48.8688448
         ]
@@ -19711,7 +19985,7 @@
         "latitude": 48.8688448,
         "longitude": 2.3250747,
         "address": "Rue du Chevalier de Saint-George, 11, Paris",
-        "opening_hours": "Mo-Su 08:00-20:00",
+        "opening_hours": "Mo-Sa 08:00-21:00; Su 09:00-21:00",
         "phone": "+33 1 59 20 04 88",
         "website": "https://www.joejuice.com/",
         "wheelchair": "limited",
@@ -19739,7 +20013,7 @@
         "longitude": 2.366559,
         "address": "Rue Saint-Antoine, 15, Paris",
         "opening_hours": "Mo-Su 07:00-00:00",
-        "phone": "+33 1952505789",
+        "phone": "+33 9 52 50 57 89",
         "website": "https://www.lerempartbastille.fr/",
         "wheelchair": "no",
         "cuisine": "french",
@@ -19770,6 +20044,33 @@
         "website": "https://www.alabonnebiere.com/",
         "wheelchair": "yes",
         "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3432631,
+          48.8469941
+        ]
+      },
+      "properties": {
+        "name": "La Crêperie",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8469941,
+        "longitude": 2.3432631,
+        "address": "Rue Soufflot, 12, Paris",
+        "opening_hours": "Mo-Su 07:00-01:00",
+        "phone": "+33 1 43 54 22 80",
+        "website": "https://www.lacreperiedupantheon.fr/",
+        "wheelchair": "no",
+        "cuisine": "crepe",
         "popularity": 0
       }
     },
@@ -19872,7 +20173,7 @@
         "latitude": 48.8596119,
         "longitude": 2.3572985,
         "address": "Rue des Francs Bourgeois, 55 bis, Paris",
-        "opening_hours": "We-Su 12:00-24:00",
+        "opening_hours": "We-Sa 12:00-24:00; Tu 18:00-00:00; Su 11:00-18:00",
         "phone": "+33 1 43 36 98 37",
         "website": "https://griffon.paris/",
         "wheelchair": "no",
@@ -20099,145 +20400,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3477715,
-          48.8679313
-        ]
-      },
-      "properties": {
-        "name": "Boneshaker Donuts",
-        "category": "cafe",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8679313,
-        "longitude": 2.3477715,
-        "address": "Rue d'Aboukir, 86, Paris",
-        "opening_hours": "Tu-Sa 09:30-17:00",
-        "phone": "+33 1 45 08 84 62",
-        "website": "https://boneshakerparis.com/",
-        "wheelchair": "limited",
-        "cuisine": "pastry;donut",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3651512,
-          48.8613049
-        ]
-      },
-      "properties": {
-        "name": "Pontochoux Café",
-        "category": "cafe",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8613049,
-        "longitude": 2.3651512,
-        "address": "Rue du Pont aux Choux, 18, Paris",
-        "opening_hours": "Tu-Fr 10:00-17:30; Sa 10:00-18:00; Su 10:00-17:30",
-        "phone": "+33 9 82 32 66 66",
-        "wheelchair": "limited",
-        "cuisine": "japanese;pastry",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3626514,
-          48.8416202
-        ]
-      },
-      "properties": {
-        "name": "Yi Fang Tea",
-        "category": "cafe",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8416202,
-        "longitude": 2.3626514,
-        "address": "Boulevard de l'Hôpital, 22, Paris",
-        "opening_hours": "Mo-Sa 12:00-21:00; Su 13:00-20:00",
-        "phone": "+33 189332922",
-        "website": "https://www.yifangtea.fr/",
-        "wheelchair": "no",
-        "cuisine": "bubble_tea",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3632646,
-          48.842429
-        ]
-      },
-      "properties": {
-        "name": "Tabac de l'Arrivée",
-        "category": "cafe",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOCIAL"
-        ],
-        "latitude": 48.842429,
-        "longitude": 2.3632646,
-        "address": "Boulevard de l'Hôpital, 12, Paris",
-        "opening_hours": "Mo-Fr 06:00-22:00; Sa-Su 09:00-21:00",
-        "phone": "+33 143311872",
-        "wheelchair": "yes",
-        "cuisine": "asian",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3468439,
-          48.8654813
-        ]
-      },
-      "properties": {
-        "name": "Café du Centre",
-        "category": "cafe",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8654813,
-        "longitude": 2.3468439,
-        "address": "Rue Montorgueil, 57, Paris",
-        "opening_hours": "Mo-Su 06:00-02:00",
-        "phone": "+33 1 42 33 20 40",
-        "website": "http://lecafeducentre.com/",
-        "wheelchair": "no",
-        "cuisine": "coffee_shop",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3357136,
           48.8714582
         ]
       },
       "properties": {
-        "name": "Hanoi Cà Phê Opéra",
+        "name": "Hanoï Cà Phê Opéra",
         "category": "bar",
         "profiles": [
           "MOCHILEIRO",
@@ -20245,13 +20413,40 @@
         ],
         "latitude": 48.8714582,
         "longitude": 2.3357136,
-        "address": "Boulevard des Italiens, Paris",
+        "address": "Boulevard des Italiens, 26, Paris",
         "opening_hours": "Mo-Su 12:00-02:00",
-        "phone": "+33 1 48 78 03 61",
-        "website": "https://www.hanoi-caphe.com/",
+        "phone": "+33 148780361",
+        "website": "http://hanoi-caphe.com",
         "wheelchair": "yes",
         "cuisine": "vietnamese",
         "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3862299,
+          48.8799811
+        ]
+      },
+      "properties": {
+        "name": "Rosa Bonheur",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8799811,
+        "longitude": 2.3862299,
+        "address": "Avenue de la Cascade, 2, Paris",
+        "opening_hours": "Th-Su 12:00-00:00",
+        "phone": "+33 1 42 00 00 45",
+        "website": "https://rosabonheur.fr/rosa-buttes",
+        "wikidata": "Q108810458",
+        "wheelchair": "yes",
+        "popularity": 1
       }
     },
     {
@@ -20501,6 +20696,508 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3701245,
+          48.8335806
+        ]
+      },
+      "properties": {
+        "name": "Incubateur de fraîcheur",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8335806,
+        "longitude": 2.3701245,
+        "address": "Rue Louise Weiss, 13, Paris",
+        "opening_hours": "Mo 12:00-14:30; Tu 12:00-14:30, 18:00-23:59; We-Th 00:00-00:30, 18:00-23:59; Fr 00:00-02:00, 18:00-23:59; Sa 00:00-02:00",
+        "phone": "+33 9 74 64 02 36",
+        "website": "https://incubateur-de-fraicheur-restaurant-paris13.eatbu.com/?lang=fr",
+        "wheelchair": "limited",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3503684,
+          48.86543
+        ]
+      },
+      "properties": {
+        "name": "Mala Bavo",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.86543,
+        "longitude": 2.3503684,
+        "address": "Rue Saint-Denis, 171, Paris",
+        "opening_hours": "Mo-Fr 07:30-02:00; Sa 09:30-02:00",
+        "phone": "+33 1 77 14 13 13",
+        "website": "http://malabavo.com/",
+        "wheelchair": "yes",
+        "cuisine": "kurdish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3599637,
+          48.8265068
+        ]
+      },
+      "properties": {
+        "name": "L'âge D'or",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8265068,
+        "longitude": 2.3599637,
+        "address": "Rue du Docteur Magnan, 26, Paris",
+        "opening_hours": "Mo-Sa 09:00-26:00; Su 09:00-00:00",
+        "phone": "+33 1 45 85 10 58",
+        "website": "http://www.lagedorparis.com/",
+        "wheelchair": "yes",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3505554,
+          48.8699377
+        ]
+      },
+      "properties": {
+        "name": "Pratolina",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8699377,
+        "longitude": 2.3505554,
+        "address": "Boulevard de Bonne Nouvelle, 11, Paris",
+        "opening_hours": "Mo-Th 12:00-14:30, 19:00-22:30; Fr-Sa 12:00-23:00; Su 12:00-22:30",
+        "phone": "+33 1 42 36 01 30",
+        "website": "https://pratolina.paris/",
+        "wheelchair": "yes",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3446128,
+          48.8724048
+        ]
+      },
+      "properties": {
+        "name": "Au Loup",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8724048,
+        "longitude": 2.3446128,
+        "address": "Rue Bergère, 25, Paris",
+        "opening_hours": "Tu-Sa 17:00-02:00",
+        "phone": "+33 9 74 73 53 46",
+        "wheelchair": "no",
+        "cuisine": "italian;french;wine",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3434939,
+          48.8687334
+        ]
+      },
+      "properties": {
+        "name": "Mikuna Sentier",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8687334,
+        "longitude": 2.3434939,
+        "address": "Rue Montmartre, 140, Paris",
+        "opening_hours": "Mo-We 11:30-14:30, 18:30-23:00; Th 11:30-14:30, 18:30-23:30; Fr 11:30-14:30, 18:30-24:00; Sa 00:00-00:30, 18:30-24:00; Su 00:00-00:30",
+        "phone": "+33 9 74 73 57 28",
+        "website": "https://mikunaparis.com/",
+        "wheelchair": "no",
+        "cuisine": "peruvian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3118262,
+          48.8446055
+        ]
+      },
+      "properties": {
+        "name": "Starving Club - Pasteur",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8446055,
+        "longitude": 2.3118262,
+        "address": "Boulevard Pasteur, 11, Paris",
+        "opening_hours": "Mo 10:30-15:00; Tu-Sa 10:30-24:00; Su 10:30-15:00",
+        "phone": "+33788526404",
+        "website": "https://starvingclub.fr/",
+        "wheelchair": "yes",
+        "cuisine": "american;burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3511346,
+          48.8632185
+        ]
+      },
+      "properties": {
+        "name": "Sacré Frenchy !",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8632185,
+        "longitude": 2.3511346,
+        "address": "Boulevard de Sébastopol, 58, Paris",
+        "opening_hours": "Mo-Su 11:30-23:00",
+        "phone": "+33 1 42 74 55 63",
+        "website": "https://www.sacrefrenchy.com",
+        "wheelchair": "limited",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3439107,
+          48.8678022
+        ]
+      },
+      "properties": {
+        "name": "Les Brigands",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8678022,
+        "longitude": 2.3439107,
+        "address": "Rue Montmartre, 120, Paris",
+        "opening_hours": "Mo-Fr 16:00-02:00; Sa 15:00-01:00; Su 15:00-00:00",
+        "phone": "+33 1 73 79 89 69",
+        "website": "https://www.thirstymadcat.com/",
+        "wheelchair": "no",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3709612,
+          48.8731222
+        ]
+      },
+      "properties": {
+        "name": "Léo Bistrot",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8731222,
+        "longitude": 2.3709612,
+        "address": "Rue Saint-Maur, 210, Paris",
+        "opening_hours": "Mo-Su 00:00-02:00, 07:00-23:59",
+        "phone": "+33 1 82 09 16 60",
+        "website": "https://leobistrotparis.fr",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3418555,
+          48.8625425
+        ]
+      },
+      "properties": {
+        "name": "IRASSHAi",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8625425,
+        "longitude": 2.3418555,
+        "opening_hours": "Mo-Su 08:30-22:00",
+        "phone": "+33 1 84 74 35 30",
+        "website": "https://irasshai.co/pages/kissaba-le-lieu",
+        "wikidata": "Q139349318",
+        "wheelchair": "limited",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3479569,
+          48.8629729
+        ]
+      },
+      "properties": {
+        "name": "Le Choubichou Paris Châtelet",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8629729,
+        "longitude": 2.3479569,
+        "address": "Rue Mondétour, 5, Paris",
+        "opening_hours": "06:00-02:00",
+        "phone": "+33 9 74 64 02 02",
+        "website": "https://www.choubichou.fr/",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3855839,
+          48.8662492
+        ]
+      },
+      "properties": {
+        "name": "Lou Pascalou",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8662492,
+        "longitude": 2.3855839,
+        "address": "Rue des Panoyaux, 14, Paris",
+        "opening_hours": "Mo-Th 16:00-02:00; Fr 12:00-02:00; Sa-Su 15:00-02:00",
+        "phone": "+33146367810",
+        "website": "http://www.cafe-loupascalou.com",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3660388,
+          48.8667141
+        ]
+      },
+      "properties": {
+        "name": "Le Little",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8667141,
+        "longitude": 2.3660388,
+        "address": "Avenue de la République, 4, Paris",
+        "opening_hours": "Mo 17:00-23:59; Tu-Sa 00:00-02:00, 17:00-23:59; Su 00:00-02:00",
+        "phone": "+33 9 74 64 03 42",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3799862,
+          48.8687712
+        ]
+      },
+      "properties": {
+        "name": "L'Assassin",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8687712,
+        "longitude": 2.3799862,
+        "address": "Rue Jean-Pierre Timbaud, 99, Paris",
+        "opening_hours": "Mo-Su 09:00-02:00",
+        "phone": "+33 1 49 23 08 96",
+        "website": "https://www.lassassin.fr",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3813011,
+          48.8453283
+        ]
+      },
+      "properties": {
+        "name": "L’Indé",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8453283,
+        "longitude": 2.3813011,
+        "opening_hours": "Mo-Sa 12:00-24:00",
+        "phone": "+33 1 43 07 14 52",
+        "wheelchair": "no",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3615547,
+          48.8330139
+        ]
+      },
+      "properties": {
+        "name": "La Halte",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8330139,
+        "longitude": 2.3615547,
+        "address": "Boulevard Vincent Auriol, 130, Paris",
+        "opening_hours": "Mo-Fr 07:00-02:00, Sa 08:00-02:00, Su 09:00-02:00",
+        "phone": "+33 1 45 84 60 32",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3509011,
+          48.8644935
+        ]
+      },
+      "properties": {
+        "name": "Les Cariatides",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8644935,
+        "longitude": 2.3509011,
+        "address": "Rue de Palestro, 3, Paris",
+        "opening_hours": "Mo,Su off; Tu-We 18:00-05:00; Th-Sa 18:00-06:00",
+        "phone": "+33 1 42 36 19 72",
+        "website": "https://les-cariatides.fr",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37377,
+          48.8499216
+        ]
+      },
+      "properties": {
+        "name": "Chante!",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8499216,
+        "longitude": 2.37377,
+        "address": "Rue de Charenton, 50, Paris",
+        "opening_hours": "Su-Th 12:00-02:00; Fr-Sa 12:00-04:00",
+        "phone": "+33 1 43 46 08 09",
+        "website": "http://www.lechina.eu",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3970587,
           48.847497
         ]
@@ -20716,6 +21413,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3792125,
+          48.8532762
+        ]
+      },
+      "properties": {
+        "name": "Les Cuves de Fauve",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8532762,
+        "longitude": 2.3792125,
+        "address": "Rue de Charonne, 66, Paris",
+        "opening_hours": "Mo-Fr 17:30-02:00, Sa,Su 11:30-02:00",
+        "phone": "+33749059596",
+        "website": "https://fauvebiere.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3861988,
           48.8329893
         ]
@@ -20793,32 +21516,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3685729,
-          48.8815168
-        ]
-      },
-      "properties": {
-        "name": "Le Point Ephémère",
-        "category": "pub",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8815168,
-        "longitude": 2.3685729,
-        "address": "Quai de Valmy, 200, Paris",
-        "opening_hours": "Mo-Sa 12:00-02:00, Su 14:00-24:00",
-        "phone": "+33 1 40 34 02 48",
-        "website": "https://www.pointephemere.org/",
-        "wikidata": "Q3393486",
-        "popularity": 3
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3760001,
           48.8420674
         ]
@@ -20861,6 +21558,32 @@
         "address": "Rue des Anglais, 6, Paris",
         "opening_hours": "Mo-Su 17:30-02:00",
         "phone": "+33625002654",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3488844,
+          48.861037
+        ]
+      },
+      "properties": {
+        "name": "Mc Brides",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.861037,
+        "longitude": 2.3488844,
+        "address": "Rue Saint-Denis, 54, Paris",
+        "opening_hours": "Mo-We 11:00-01:00;\nTh 11:00-01:30;\nFr-Sa 11:00-05:00;\nSu 11:00-00:00",
+        "phone": "+33 1 40 26 46 70",
+        "website": "https://www.corcoransirishpubs.fr/mcbrides",
         "wheelchair": "no",
         "popularity": 0
       }
@@ -20936,7 +21659,7 @@
         "longitude": 2.3671641,
         "address": "Rue Amelot, 116, Paris",
         "opening_hours": "Tu-Sa 17:00-04:00",
-        "phone": "+33663453244",
+        "phone": "+33 6 63 45 32 44",
         "website": "https://www.lemammouth-bar.com/",
         "wheelchair": "limited",
         "popularity": 0
@@ -21024,6 +21747,231 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3960322,
+          48.8728446
+        ]
+      },
+      "properties": {
+        "name": "El Zokalo",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8728446,
+        "longitude": 2.3960322,
+        "address": "Rue Pixérécourt, 49, Paris",
+        "opening_hours": "Mo-Sa 17:00-02:00; Su 17:00-00:30",
+        "phone": "+33 1 46 36 96 38",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347702,
+          48.8468643
+        ]
+      },
+      "properties": {
+        "name": "The Bombardier",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8468643,
+        "longitude": 2.347702,
+        "address": "Place du Panthéon, 2, Paris",
+        "opening_hours": "Mo-Su 12:00-02:00",
+        "phone": "+33143547922",
+        "website": "https://www.bombardierpub.fr/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3420793,
+          48.8922737
+        ]
+      },
+      "properties": {
+        "name": "Le Petit Duc",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8922737,
+        "longitude": 2.3420793,
+        "address": "Rue Duc, 17, Paris",
+        "opening_hours": "Mo-Su 06:00-01:00",
+        "phone": "+33 1 46 06 27 47",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3993768,
+          48.8520778
+        ]
+      },
+      "properties": {
+        "name": "Le Bouillon Belge",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8520778,
+        "longitude": 2.3993768,
+        "opening_hours": "Mo-Sa 17:00-26:00; Su 17:00-24:00",
+        "phone": "+33 9 63 65 70 70",
+        "wheelchair": "limited",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3711238,
+          48.8324698
+        ]
+      },
+      "properties": {
+        "name": "The Lions",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8324698,
+        "longitude": 2.3711238,
+        "opening_hours": "Mo 11:00-00:00; Tu-We 11:00-01:00; Th-Fr 11:00-02:00; Sa 19:00-02:00; Su 19:00-00:00",
+        "phone": "+33 1 73 75 86 13",
+        "website": "https://www.thelionsparis.fr/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3769721,
+          48.8658873
+        ]
+      },
+      "properties": {
+        "name": "Le bap",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8658873,
+        "longitude": 2.3769721,
+        "address": "Rue Saint-Maur, 111, Paris",
+        "opening_hours": "Tu-Th, Su 17:00-02:00; Fr, Sa 17:00-04:00",
+        "phone": "+33 1 43 55 87 21",
+        "website": "https://www.lebap.fr/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370733,
+          48.854971
+        ]
+      },
+      "properties": {
+        "name": "Au Lèche Vin",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.854971,
+        "longitude": 2.370733,
+        "address": "Rue Daval, 13, Paris",
+        "opening_hours": "18:00-02:00",
+        "phone": "+33143559891",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376085,
+          48.8467554
+        ]
+      },
+      "properties": {
+        "name": "La Revanche",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8467554,
+        "longitude": 2.376085,
+        "address": "Avenue Daumesnil, 38, Paris",
+        "opening_hours": "Mo 17:30-24:00, Tu-Sa 17:30-01:00, Su 13:30-22:00",
+        "phone": "+33638149009",
+        "website": "https://larevanche-bistrotludique.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3430453,
+          48.8710339
+        ]
+      },
+      "properties": {
+        "name": "The Frog & Underground",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8710339,
+        "longitude": 2.3430453,
+        "address": "Rue Montmartre, 176, Paris",
+        "opening_hours": "Mo-Tu 12:00-00:00; We 12:00-01:00; Th 12:00-02:00; Fr-Sa 12:00-05:00; Su 12:00-00:00",
+        "phone": "+33 1 44 82 04 72",
+        "website": "https://www.frogpubs.com/fr/pub-the-frog-underground-paris-13.php",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3514536,
           48.8617812
         ]
@@ -21038,7 +21986,7 @@
         "latitude": 48.8617812,
         "longitude": 2.3514536,
         "address": "Rue Rambuteau, 58, Paris",
-        "opening_hours": "Mo-Su 12:30-22:30",
+        "opening_hours": "Su-We, Fr 12:30-23:30; Th 12:30-22:30; Sa 12:30-23:00",
         "phone": "+33 9 52 79 73 00",
         "website": "https://bachir.fr/",
         "wheelchair": "no",
@@ -21066,7 +22014,7 @@
         "longitude": 2.36529,
         "address": "Rue Saint-Antoine, 27, Paris",
         "opening_hours": "Mo-Th 12:30-19:00; Fr 12:30-22:00; Sa 12:30-23:00; Su 12:30-22:00",
-        "phone": "+33 1954117209",
+        "phone": "+33 9 54 11 72 09",
         "website": "https://www.baltisparis.com/",
         "wheelchair": "yes",
         "popularity": 0
@@ -21128,6 +22076,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.315122,
+          48.8824478
+        ]
+      },
+      "properties": {
+        "name": "Gérard Taurin",
+        "category": "ice_cream",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8824478,
+        "longitude": 2.315122,
+        "address": "Rue de Lévis, 27, Paris",
+        "opening_hours": "Mo-Th 11:30-14:00, 15:00-20:00; Fr 11:30-20:00; Sa 10:00-20:00; Su 10:00-19:00",
+        "phone": "+33 1 73 08 37 10",
+        "website": "https://www.gerardtaurin.com/en",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3375014,
           48.8538909
         ]
@@ -21167,11 +22141,11 @@
         ],
         "latitude": 48.8641275,
         "longitude": 2.3602312,
-        "opening_hours": "Mo-Th 12:30-21:45; Fr-Sa 12:30-22:45; Su 12:30-21:45; 2026 Jul 14 12:00-21:00",
+        "opening_hours": "Mo-Su 11:30-19:00",
         "phone": "+33 6 21 76 65 18",
         "website": "https://linktr.ee/Moustache_lemarais",
-        "wheelchair": "limited",
-        "cuisine": "tea;coffee_shop;chocolate",
+        "wheelchair": "yes",
+        "cuisine": "tea;chocolate;coffee_shop;cake",
         "popularity": 0
       }
     },
@@ -21269,7 +22243,7 @@
         "latitude": 48.871084,
         "longitude": 2.3650219,
         "address": "Quai de Valmy, 61, Paris",
-        "opening_hours": "Tu-Su 10:00-22:00",
+        "opening_hours": "Tu-Su 13:00-22:00",
         "website": "https://www.sucre-glace.fr",
         "wheelchair": "no",
         "popularity": 0
@@ -21346,6 +22320,30 @@
         "address": "Rue de Prague, 7, Paris",
         "opening_hours": "Tu-Su 12:00-19:30",
         "website": "https://www.latropicaleglacier.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3418313,
+          48.8473007
+        ]
+      },
+      "properties": {
+        "name": "Amorino",
+        "category": "ice_cream",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8473007,
+        "longitude": 2.3418313,
+        "opening_hours": "11:00-24:00",
+        "phone": "+33 1 55 42 09 56",
+        "website": "https://www.amorino.com/stores/paris-soufflot",
         "popularity": 0
       }
     },
@@ -21474,29 +22472,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3418313,
-          48.8473007
-        ]
-      },
-      "properties": {
-        "name": "Amorino",
-        "category": "ice_cream",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOCIAL"
-        ],
-        "latitude": 48.8473007,
-        "longitude": 2.3418313,
-        "opening_hours": "11:00-24:00",
-        "website": "https://www.amorino.com/stores/paris-soufflot",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3359939,
           48.8659086
         ]
@@ -21558,6 +22533,29 @@
         "longitude": 2.3452416,
         "opening_hours": "07:00-24:00",
         "website": "https://www.rivareno.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.357807,
+          48.8428721
+        ]
+      },
+      "properties": {
+        "name": "Louise",
+        "category": "ice_cream",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 48.8428721,
+        "longitude": 2.357807,
+        "opening_hours": "Apr-Oct 12:00-19:00",
+        "website": "https://www.jardindesplantesdeparis.fr/fr/restaurations",
         "popularity": 0
       }
     },

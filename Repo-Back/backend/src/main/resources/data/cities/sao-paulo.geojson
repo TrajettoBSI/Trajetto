@@ -14,8 +14,8 @@
         "name": "Santos FC Business Center",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5426269,
         "longitude": -46.6649508,
@@ -42,8 +42,8 @@
         "name": "Mirante do Vale",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5421665,
         "longitude": -46.6354178,
@@ -94,8 +94,8 @@
         "name_en": "Altino Arantes Building",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5457708,
         "longitude": -46.6341278,
@@ -104,7 +104,8 @@
         "phone": "+55 11 2196 3730",
         "wikidata": "Q169420",
         "wikipedia": "pt:Edifício Altino Arantes",
-        "popularity": 50
+        "popularity": 50,
+        "site": "Q169420"
       }
     },
     {
@@ -120,8 +121,8 @@
         "name": "Edifício Itália",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5455268,
         "longitude": -46.6435738,
@@ -145,8 +146,8 @@
         "name_en": "Ibirapuera Park",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5877115,
         "longitude": -46.6581889,
@@ -173,8 +174,8 @@
         "name_en": "Copan Building",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5465966,
         "longitude": -46.6444665,
@@ -197,14 +198,14 @@
         "name_en": "São Paulo Cathedral",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5512574,
         "longitude": -46.6343496,
         "address": "Praça da Sé, São Paulo",
         "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:00-17:00; Su 08:00-18:00",
-        "phone": "+55 11 3107 6832",
+        "phone": "(11) 3107-6832",
         "website": "http://www.catedraldase.org.br/site/",
         "wikidata": "Q1050668",
         "wikipedia": "pt:Catedral Metropolitana de São Paulo",
@@ -224,8 +225,8 @@
         "name": "Ponte Estaiada",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.6127112,
         "longitude": -46.6989359,
@@ -248,8 +249,8 @@
         "name_en": "Municipal Theatre of São Paulo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5452695,
         "longitude": -46.6386437,
@@ -302,15 +303,16 @@
         "name_en": "Luz Station",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5351033,
         "longitude": -46.6353376,
         "address": "Praça da Luz, 1, São Paulo",
         "wikidata": "Q2983699",
         "wikipedia": "pt:Estação da Luz",
-        "popularity": 16
+        "popularity": 16,
+        "site": "Q2983699"
       }
     },
     {
@@ -333,11 +335,12 @@
         "latitude": -23.5349786,
         "longitude": -46.6350476,
         "address": "Praça da Luz, São Paulo",
-        "phone": "+55 11 3664 3859",
+        "phone": "(11) 3664-3859",
         "website": "https://www.museudalinguaportuguesa.org.br/",
         "wikidata": "Q2422478",
         "wikipedia": "pt:Museu da Língua Portuguesa",
-        "popularity": 15
+        "popularity": 15,
+        "site": "Q2983699"
       }
     },
     {
@@ -360,7 +363,7 @@
         "latitude": -23.5880162,
         "longitude": -46.655484,
         "opening_hours": "Tu-Su 10:00-18:00",
-        "phone": "+55 11 5085 1300",
+        "phone": "(11) 5085-1300",
         "website": "https://www.mam.org.br/",
         "wikidata": "Q1581634",
         "wikipedia": "pt:Museu de Arte Moderna de São Paulo",
@@ -414,7 +417,8 @@
         "website": "https://museudoipiranga.org.br/",
         "wikidata": "Q371803",
         "wikipedia": "pt:Museu do Ipiranga",
-        "popularity": 13
+        "popularity": 13,
+        "site": "Q371803"
       }
     },
     {
@@ -436,7 +440,7 @@
         "latitude": -23.5582333,
         "longitude": -46.6182952,
         "address": "Rua Barão de Jaguara, 632, São Paulo",
-        "phone": "+55 11 3208 6789",
+        "phone": "(11) 3208-6789",
         "website": "http://www.mesquitabrasil.com.br/",
         "wikidata": "Q10328971",
         "wikipedia": "pt:Mesquita Brasil",
@@ -509,8 +513,8 @@
         "name_en": "Monument to the Bandeiras",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5800516,
         "longitude": -46.660687,
@@ -533,8 +537,8 @@
         "name": "Monumento à Independência",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5794006,
         "longitude": -46.6102976,
@@ -560,8 +564,8 @@
         "name_en": "Sé Square",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5504435,
         "longitude": -46.6331172,
@@ -583,8 +587,8 @@
         "name": "Edifício Martinelli",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5455261,
         "longitude": -46.635222,
@@ -642,8 +646,9 @@
         "latitude": -23.5597692,
         "longitude": -46.7220744,
         "website": "http://www.mac.usp.br/",
+        "wikidata": "Q2557770",
         "wikipedia": "pt:Museu de Arte Contemporânea da Universidade de São Paulo",
-        "popularity": 0
+        "popularity": 10
       }
     },
     {
@@ -711,15 +716,16 @@
         "name": "Pateo do Collegio",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5479561,
         "longitude": -46.6326287,
         "website": "https://www.pateodocollegio.com.br/",
         "wikidata": "Q2914788",
         "wikipedia": "pt:Pátio do Colégio",
-        "popularity": 10
+        "popularity": 10,
+        "site": "Q2914788"
       }
     },
     {
@@ -811,8 +817,8 @@
         "name": "Sala São Paulo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5342403,
         "longitude": -46.6398353,
@@ -835,21 +841,22 @@
       },
       "properties": {
         "name": "Jardim Zoológico de São Paulo",
-        "name_en": "São Paulo Zoo",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": -23.6527013,
         "longitude": -46.6181217,
         "address": "Avenida Miguel Estéfano, 4241, São Paulo",
         "opening_hours": "Mo-Su,PH 09:00-18:00",
-        "phone": "+55 11 4934 6804",
+        "phone": "(11) 4934-6804",
         "website": "https://www.zoologico.com.br/",
         "wikidata": "Q3364798",
         "wikipedia": "pt:Parque Zoológico de São Paulo",
         "fee": "yes",
-        "popularity": 8
+        "popularity": 8,
+        "site": "Q3364798"
       }
     },
     {
@@ -865,8 +872,9 @@
         "name": "Palácio dos Bandeirantes",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": -23.6015315,
         "longitude": -46.7117233,
@@ -899,7 +907,7 @@
         "longitude": -46.636949,
         "address": "Rua Santa Ifigênia, São Paulo",
         "opening_hours": "07:00-19:00",
-        "phone": "+55 11 3229 6706",
+        "phone": "(11) 3229-6706",
         "website": "https://arquisp.org.br/regiaose/paroquias/paroquia-nossa-senhora-da-conceicao-santa-ifigenia/matriz-paroquial-nossa-senhora-da-conceicao-santa-ifigenia",
         "wikidata": "Q10295886",
         "wikipedia": "pt:Paróquia Matriz Nossa Senhora da Conceição (Santa Ifigênia)",
@@ -917,17 +925,17 @@
       },
       "properties": {
         "name": "Jardim Botânico de São Paulo",
-        "name_en": "São Paulo Botanical Garden",
-        "category": "attraction",
+        "category": "garden",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "NATUREZA",
+          "RELAXAMENTO",
+          "SOLITARIO"
         ],
         "latitude": -23.6415824,
         "longitude": -46.6233451,
         "address": "Avenida Miguel Estéfano, 3031, São Paulo",
         "opening_hours": "Mo-Su 09:00-17:00",
-        "phone": "+55 11 4934 6804",
+        "phone": "(11) 4934-6804",
         "website": "https://jardimbotanico.com.br/",
         "wikidata": "Q3028259",
         "wikipedia": "pt:Jardim Botânico de São Paulo",
@@ -948,8 +956,8 @@
         "name": "Auditório Ibirapuera",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5855875,
         "longitude": -46.6565865,
@@ -1000,7 +1008,7 @@
         ],
         "latitude": -23.5477636,
         "longitude": -46.6466974,
-        "phone": "+55 11 3256 5356",
+        "phone": "(11) 3256-5356",
         "website": "https://igrejadaconsolacao.com.br/",
         "wikidata": "Q5994022",
         "wikipedia": "pt:Paróquia Nossa Senhora da Consolação (São Paulo)",
@@ -1020,8 +1028,8 @@
         "name": "Parque da Luz",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5332126,
         "longitude": -46.6350305,
@@ -1045,8 +1053,8 @@
         "name": "Edifício Matarazzo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5476231,
         "longitude": -46.6374494,
@@ -1153,12 +1161,13 @@
         "latitude": -23.5303111,
         "longitude": -46.6312032,
         "opening_hours": "Tu-Su 09:00-17:00",
-        "phone": "+55 11 3326 3336",
+        "phone": "(11) 3326-3336",
         "website": "https://www.museuartesacra.org.br/pt/museu/museu-da-arte-sacra",
         "wikidata": "Q1954391",
         "wikipedia": "pt:Museu de Arte Sacra de São Paulo",
         "fee": "yes",
-        "popularity": 7
+        "popularity": 7,
+        "site": "Q1954391"
       }
     },
     {
@@ -1260,7 +1269,7 @@
         "longitude": -46.7118386,
         "address": "Rua General Américo de Moura, 200, São Paulo",
         "opening_hours": "Th-Sa 10:00-15:30; PH off; \"by appointment\"",
-        "phone": "+55 11 3744 9902",
+        "phone": "+55-11-3744-9902",
         "website": "http://institutobardi.com.br",
         "wikidata": "Q28105029",
         "wikipedia": "pt:Casa de Vidro",
@@ -1330,8 +1339,8 @@
         "name": "Passarela Cultural",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5164262,
         "longitude": -46.6451754,
@@ -1436,8 +1445,8 @@
         "name_en": "Municipal Market of São Paulo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5417397,
         "longitude": -46.6294216,
@@ -1492,7 +1501,7 @@
         "latitude": -23.5830683,
         "longitude": -46.6096354,
         "opening_hours": "06:00-18:00",
-        "phone": "+55 11 2273 7250",
+        "phone": "(11) 2273-7250",
         "website": "https://www.prefeitura.sp.gov.br/cidade/secretarias/meio_ambiente/parques/regiao_sul/index.php?p=5747",
         "wikidata": "Q2054028",
         "wikipedia": "pt:Parque da Independência",
@@ -1535,8 +1544,8 @@
         "name": "Teatro Ruth Escobar",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5597653,
         "longitude": -46.6468251,
@@ -1560,8 +1569,8 @@
         "name": "Viaduto do Chá",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5465818,
         "longitude": -46.6379543,
@@ -1656,8 +1665,8 @@
         "name": "Monumento a Duque de Caxias",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5363477,
         "longitude": -46.6433864,
@@ -1783,8 +1792,8 @@
         "name": "Edifício Triângulo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5488574,
         "longitude": -46.6346163,
@@ -1812,7 +1821,7 @@
         "latitude": -23.5479573,
         "longitude": -46.6366118,
         "opening_hours": "09:00-17:00",
-        "phone": "+55 11 3242 2414",
+        "phone": "(11) 3242-2414",
         "website": "https://arquisp.org.br/regiaose/paroquias/mosteiros-igrejas-historicas-oratorios-da-regiao-se/igreja-santo-antonio-patriarca",
         "wikidata": "Q5994207",
         "wikipedia": "pt:Igreja Santo Antônio (São Paulo)",
@@ -1878,14 +1887,15 @@
         "name": "Palácio das Indústrias",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5440129,
         "longitude": -46.6277365,
         "wikidata": "Q9054621",
         "wikipedia": "pt:Palácio das Indústrias",
-        "popularity": 5
+        "popularity": 5,
+        "site": "Q18482277"
       }
     },
     {
@@ -1902,8 +1912,8 @@
         "name_en": "Trianon Park",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5623755,
         "longitude": -46.6574127,
@@ -1925,8 +1935,8 @@
         "name": "Teatro Bradesco",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5261736,
         "longitude": -46.6804331,
@@ -1949,8 +1959,8 @@
         "name": "Teatro Brasileiro de Comédia",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5538712,
         "longitude": -46.6430822,
@@ -1998,8 +2008,8 @@
         "name_en": "Batman's alley",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5564923,
         "longitude": -46.6866662,
@@ -2021,8 +2031,8 @@
         "name": "Viaduto Santa Ifigênia",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5428483,
         "longitude": -46.6353707,
@@ -2042,16 +2052,20 @@
       },
       "properties": {
         "name": "Parque Ecológico do Tietê",
-        "category": "nature_reserve",
+        "name_en": "Tietê Ecological Park",
+        "category": "park",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
         "latitude": -23.4891383,
         "longitude": -46.5209344,
-        "address": "Via Parque, 8055, São Paulo",
-        "opening_hours": "06:00-17:00",
+        "opening_hours": "Mo-Su 08:00-17:00",
+        "phone": "+55 11 2958-1477",
         "wikidata": "Q10344974",
         "wikipedia": "pt:Parque Ecológico do Tietê",
+        "fee": "no",
         "popularity": 4
       }
     },
@@ -2117,8 +2131,8 @@
         "name": "Beco do Pinto",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5483342,
         "longitude": -46.6318944,
@@ -2146,7 +2160,7 @@
         "latitude": -23.5505834,
         "longitude": -46.6311159,
         "opening_hours": "Mo-Fr 08:00-14:00",
-        "phone": "+55 11 3242 8361",
+        "phone": "(11) 3242-8361",
         "website": "https://arquisp.org.br/regiaose/paroquias/mosteiros-igrejas-historicas-oratorios-da-regiao-se/igreja-nossa-senhora-do-carmo",
         "wikidata": "Q5994088",
         "wikipedia": "pt:Igreja da Ordem Terceira do Carmo (São Paulo)",
@@ -2235,8 +2249,8 @@
         "name": "Edifício Sampaio Moreira",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5467187,
         "longitude": -46.636146,
@@ -2332,8 +2346,8 @@
         "name": "Shopping Light",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5466845,
         "longitude": -46.6386693,
@@ -2385,8 +2399,8 @@
         "name": "Edifício Banco de São Paulo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5459386,
         "longitude": -46.6345233,
@@ -2460,8 +2474,8 @@
         "name": "Theatro São Pedro",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5323905,
         "longitude": -46.6537801,
@@ -2554,8 +2568,8 @@
         "name": "Teatro Procópio Ferreira",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5653516,
         "longitude": -46.6676131,
@@ -2625,7 +2639,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -23.5475552,
         "longitude": -46.6346871,
@@ -2678,8 +2693,8 @@
         "name": "Teatro da Universidade Católica",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5384858,
         "longitude": -46.6713609,
@@ -2705,18 +2720,20 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -23.5347933,
         "longitude": -46.6391162,
         "address": "Largo General Osório, 66, São Paulo",
         "opening_hours": "Mo-Su 10:00-18:00; Tu off",
-        "phone": "+55 11 3335 4990",
+        "phone": "+55-11-3335-4990",
         "website": "https://memorialdaresistenciasp.org.br",
         "wikidata": "Q10328557",
         "wikipedia": "pt:Memorial da Resistência de São Paulo",
         "fee": "no",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q8779095"
       }
     },
     {
@@ -2755,8 +2772,8 @@
         "name": "Secretaria da Educação do Estado de São Paulo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5442229,
         "longitude": -46.6436572,
@@ -2836,12 +2853,13 @@
         ],
         "latitude": -23.544119,
         "longitude": -46.6277812,
-        "opening_hours": "Tu-Su 09:00-17:00",
-        "phone": "+55 11 3315 0051",
+        "opening_hours": "Tu-Su 9:00-17:00",
+        "phone": "(11) 3315-0051",
         "website": "http://www.cataventocultural.org.br/",
         "wikidata": "Q18482277",
         "wikipedia": "pt:Catavento (museu)",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q18482277"
       }
     },
     {
@@ -2849,8 +2867,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.7214051,
-          -23.632233
+          -46.7211198,
+          -23.6322459
         ]
       },
       "properties": {
@@ -2858,10 +2876,11 @@
         "category": "park",
         "profiles": [
           "NATUREZA",
-          "RELAXAMENTO"
+          "RELAXAMENTO",
+          "MOCHILEIRO"
         ],
-        "latitude": -23.632233,
-        "longitude": -46.7214051,
+        "latitude": -23.6322459,
+        "longitude": -46.7211198,
         "address": "Avenida Dona Helena Pereira de Moraes, 200, São Paulo",
         "opening_hours": "07:00-19:00",
         "wikidata": "Q10344910",
@@ -2916,7 +2935,8 @@
         "website": "https://pinacoteca.org.br/",
         "wikidata": "Q8779095",
         "wikipedia": "pt:Estação Pinacoteca",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q8779095"
       }
     },
     {
@@ -2932,13 +2952,13 @@
         "name": "Mosteiro Nossa Senhora da Imaculada Conceição da Luz",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5305136,
         "longitude": -46.6305476,
         "address": "Avenida Tiradentes, 676, São Paulo",
-        "phone": "+55 11 3311 8745",
+        "phone": "+55  11 3311 8745",
         "website": "https://www.mosteirodaluz.org.br/",
         "wikidata": "Q28677353",
         "wikipedia": "pt:Mosteiro da Imaculada Conceição da Luz",
@@ -2958,8 +2978,8 @@
         "name": "Teatro Maria Della Costa",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5546913,
         "longitude": -46.6493158,
@@ -3007,8 +3027,8 @@
         "name": "Teatro Cultura Artística",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5491716,
         "longitude": -46.6458865,
@@ -3078,8 +3098,8 @@
         "name": "Teatro Renault",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5542243,
         "longitude": -46.6382166,
@@ -3176,7 +3196,8 @@
         "name": "Simba Safari",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": -23.6537581,
         "longitude": -46.6153979,
@@ -3186,7 +3207,8 @@
         "wikidata": "Q10395314",
         "wikipedia": "pt:Simba Safari",
         "fee": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q3364798"
       }
     },
     {
@@ -3202,8 +3224,8 @@
         "name": "Edifício do Tribunal de Justiça de São Paulo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5462726,
         "longitude": -46.6455839,
@@ -3226,8 +3248,8 @@
         "name": "Casa do Grito",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5811193,
         "longitude": -46.6096235,
@@ -3304,7 +3326,7 @@
         "latitude": -23.5557872,
         "longitude": -46.6358512,
         "opening_hours": "Mo-Fr 08:00-16:00",
-        "phone": "+55 11 3208 7591",
+        "phone": "(11) 3208-7591",
         "website": "https://arquisp.org.br/regiaose/paroquias/mosteiros-igrejas-historicas-oratorios-da-regiao-se/igreja-santa-cruz-das-almas-dos-enforcados",
         "wikidata": "Q18480579",
         "wikipedia": "pt:Igreja Santa Cruz das Almas dos Enforcados",
@@ -3330,7 +3352,7 @@
         "latitude": -23.552316,
         "longitude": -46.6299999,
         "address": "Rua do Carmo, 202, São Paulo",
-        "phone": "+55 11 3101 6889",
+        "phone": "(11) 3101-6889",
         "website": "https://arquisp.org.br/regiaose/paroquias/mosteiros-igrejas-historicas-oratorios-da-regiao-se/igreja-nossa-senhora-da-boa-morte",
         "wikidata": "Q18464809",
         "wikipedia": "pt:Igreja Nossa Senhora da Boa Morte (São Paulo)",
@@ -3351,13 +3373,13 @@
         "name_en": "Chapel of the Afflicted",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5561314,
         "longitude": -46.6346559,
         "address": "Rua dos Aflitos, 70, São Paulo",
-        "phone": "+55 11 3275 2028",
+        "phone": "(11) 3275-2028",
         "website": "https://arquisp.org.br/regiaose/paroquias/mosteiros-igrejas-historicas-oratorios-da-regiao-se/igreja-nossa-senhora-dos-aflitos",
         "wikidata": "Q28677843",
         "wikipedia": "pt:Capela dos Aflitos",
@@ -3377,8 +3399,8 @@
         "name": "Edifício Palacete Tereza Toledo Lara",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5487911,
         "longitude": -46.6348924,
@@ -3500,8 +3522,8 @@
         "name": "Roda Rico",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5463737,
         "longitude": -46.7307263,
@@ -3547,7 +3569,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -23.5248461,
         "longitude": -46.6249718,
@@ -3627,7 +3650,8 @@
         "longitude": -46.6330584,
         "wikidata": "Q45052099",
         "wikipedia": "pt:Glória imortal dos fundadores de São Paulo",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q2914788"
       }
     },
     {
@@ -3649,7 +3673,8 @@
         "longitude": -46.6653295,
         "website": "https://memorial.org.br/acervo/obras-de-arte/mao/",
         "wikidata": "Q44993741",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1920091"
       }
     },
     {
@@ -3665,8 +3690,8 @@
         "name": "Teatro Augusta",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.553226,
         "longitude": -46.6547342,
@@ -3723,7 +3748,8 @@
         "longitude": -46.6634804,
         "wikidata": "Q30937723",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1920091"
       }
     },
     {
@@ -3762,8 +3788,8 @@
         "name": "Escada do Bixiga",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5599601,
         "longitude": -46.6465427,
@@ -3879,8 +3905,8 @@
         "name": "Mirante do Jaguaré",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5429876,
         "longitude": -46.7443568,
@@ -3902,8 +3928,8 @@
         "name": "Teatro Gazeta",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5652651,
         "longitude": -46.6513522,
@@ -3927,7 +3953,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -23.5664017,
         "longitude": -46.6592644,
@@ -4117,8 +4144,8 @@
         "name": "Secretaria da Justiça e da Defesa da Cidadania",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5484964,
         "longitude": -46.6325293,
@@ -4156,7 +4183,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.6587062,
+          -46.6586811,
           -23.5455424
         ]
       },
@@ -4168,7 +4195,7 @@
           "RELAXAMENTO"
         ],
         "latitude": -23.5455424,
-        "longitude": -46.6587062,
+        "longitude": -46.6586811,
         "opening_hours": "06:00-22:00",
         "phone": "+55 11 3666-8032",
         "wikidata": "Q10344909",
@@ -4288,7 +4315,7 @@
         "longitude": -46.7370768,
         "address": "Avenida Doutor Gastão Vidigal, 1946, São Paulo",
         "opening_hours": "Mo,We,Sa 06:00-21:00; Tu,Th 06:00-20:00; Fr 06:00-22:00; Su 07:00-13:30",
-        "phone": "+55 11 3643 3700",
+        "phone": "(11) 3643-3700",
         "website": "https://ceagesp.gov.br/",
         "wikidata": "Q18477598",
         "wikipedia": "pt:CEAGESP",
@@ -4455,8 +4482,8 @@
         "name": "Parque Celso Daniel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.6474258,
         "longitude": -46.5359282,
@@ -4583,7 +4610,7 @@
         ],
         "latitude": -23.5562651,
         "longitude": -46.6614637,
-        "phone": "+55 11 3120 3839",
+        "phone": "(11) 3120-3839",
         "website": "http://www.saoluis.org.br/index.php/institucional/igreja/",
         "wikidata": "Q19709810",
         "wikipedia": "pt:Paróquia São Luís Gonzaga",
@@ -4677,7 +4704,8 @@
         "name_en": "Guarulhos Zoo",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": -23.4426088,
         "longitude": -46.5530917,
@@ -4685,7 +4713,8 @@
         "phone": "+55 11 2452 4558",
         "website": "https://www.guarulhos.sp.gov.br/zoologico/",
         "wikidata": "Q64569689",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q64569689"
       }
     },
     {
@@ -4701,15 +4730,16 @@
         "name": "Casa de Dona Yayá",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.55444,
         "longitude": -46.6428217,
         "address": "Rua Major Diogo, 353, São Paulo",
         "wikidata": "Q28677050",
         "wikipedia": "pt:Casa de Dona Yayá",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q18484819"
       }
     },
     {
@@ -4725,8 +4755,8 @@
         "name": "Teatro Paulo Eiró",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.6466851,
         "longitude": -46.7020586,
@@ -4781,7 +4811,7 @@
         "longitude": -46.6352624,
         "address": "Praça Doutor João Mendes, 108, São Paulo",
         "opening_hours": "Mo-Fr 07:00-18:00; Sa 09:00-18:00",
-        "phone": "+55 11 3106 8119",
+        "phone": "(11) 3106-8119",
         "website": "https://arquisp.org.br/regiaose/paroquias/paroquia-pessoal-nipo-brasileira-sao-goncalo/matriz-paroquial-pessoal-nipo-brasileira-sao-goncalo",
         "wikidata": "Q18464945",
         "wikipedia": "pt:Igreja São Gonçalo (São Paulo)",
@@ -4801,8 +4831,8 @@
         "name": "Edifício Guinle",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5490754,
         "longitude": -46.6341352,
@@ -4904,7 +4934,7 @@
         "longitude": -46.5875604,
         "address": "Rua da Mooca, 3911, São Paulo",
         "opening_hours": "Mo-Fr 09:00-18:00",
-        "phone": "+55 11 2601 8837",
+        "phone": "(11)26018837",
         "website": "http://paroquiabomconselho.org/site/",
         "wikidata": "Q7141456",
         "wikipedia": "pt:Paróquia Nossa Senhora do Bom Conselho (São Paulo)",
@@ -4916,8 +4946,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.6343485,
-          -23.5528423
+          -46.6343479,
+          -23.5528389
         ]
       },
       "properties": {
@@ -4927,8 +4957,8 @@
           "NATUREZA",
           "RELAXAMENTO"
         ],
-        "latitude": -23.5528423,
-        "longitude": -46.6343485,
+        "latitude": -23.5528389,
+        "longitude": -46.6343479,
         "wikidata": "Q48878786",
         "wikipedia": "pt:Largo Sete de Setembro",
         "popularity": 2
@@ -4999,14 +5029,14 @@
         "name": "Mercado Municipal da Lapa",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5193202,
         "longitude": -46.701809,
         "address": "Rua Herbart, 47, São Paulo",
         "opening_hours": "Mo-Sa 08:00-18:00",
-        "phone": "+55 11 3641 3946",
+        "phone": "(11) 3641-3946",
         "website": "https://mercadodalapa.com.br/",
         "wikidata": "Q10328794",
         "wikipedia": "pt:Mercado Municipal da Lapa",
@@ -5089,28 +5119,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.5615479,
-          -23.5801752
-        ]
-      },
-      "properties": {
-        "name": "Parque Vila Ema",
-        "category": "park",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO"
-        ],
-        "latitude": -23.5801752,
-        "longitude": -46.5615479,
-        "wikidata": "Q61002360",
-        "popularity": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -46.5970616,
           -23.5130785
         ]
@@ -5119,8 +5127,8 @@
         "name": "Parque da Vila Guilherme-Trote",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5130785,
         "longitude": -46.5970616,
@@ -5218,8 +5226,8 @@
         "name": "Teatro Nelson Rodrigues",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.4517269,
         "longitude": -46.5645701,
@@ -5241,8 +5249,8 @@
         "name": "Tokio Marine Hall",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.6385662,
         "longitude": -46.7204737,
@@ -5267,8 +5275,8 @@
         "name_en": "Capistrano de Abreu State School",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.4666459,
         "longitude": -46.5316079,
@@ -5292,8 +5300,8 @@
         "name": "Teatro Municipal da Mooca Arthur Azevedo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5631349,
         "longitude": -46.5969126,
@@ -5311,8 +5319,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.6377247,
-          -23.5550616
+          -46.6377475,
+          -23.555085
         ]
       },
       "properties": {
@@ -5322,8 +5330,8 @@
           "NATUREZA",
           "RELAXAMENTO"
         ],
-        "latitude": -23.5550616,
-        "longitude": -46.6377247,
+        "latitude": -23.555085,
+        "longitude": -46.6377475,
         "wikidata": "Q19342401",
         "wikipedia": "pt:Praça dos Artesãos Calabreses",
         "popularity": 2
@@ -5366,8 +5374,8 @@
         "name": "Teatro Oficina",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5551932,
         "longitude": -46.6412477,
@@ -5617,28 +5625,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.7015477,
-          -23.5800403
-        ]
-      },
-      "properties": {
-        "name": "Nostalgia",
-        "category": "historic_monument",
-        "profiles": [
-          "CULTURAL",
-          "SOLITARIO"
-        ],
-        "latitude": -23.5800403,
-        "longitude": -46.7015477,
-        "wikidata": "Q45319652",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -46.6366916,
           -23.5498657
         ]
@@ -5756,13 +5742,14 @@
         "name": "Locomotiva Jiboia",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5449019,
         "longitude": -46.627586,
         "wikidata": "Q61750201",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q18482277"
       }
     },
     {
@@ -5778,13 +5765,14 @@
         "name": "Locomotiva Elétrica MK 1 C + C - 1",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5442968,
         "longitude": -46.6286118,
         "wikidata": "Q61750177",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q18482277"
       }
     },
     {
@@ -6010,13 +5998,14 @@
         "name": "Locomotiva a vapor DÜBS",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5447611,
         "longitude": -46.6270266,
         "wikidata": "Q61750192",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q18482277"
       }
     },
     {
@@ -6109,49 +6098,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.6197069,
-          -23.5072985
-        ]
-      },
-      "properties": {
-        "name": "Espheropeia",
-        "category": "artwork",
-        "profiles": [
-          "CULTURAL"
-        ],
-        "latitude": -23.5072985,
-        "longitude": -46.6197069,
-        "wikidata": "Q51661128",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -46.6297546,
-          -23.5164612
-        ]
-      },
-      "properties": {
-        "name": "Vitoria",
-        "category": "historic_monument",
-        "profiles": [
-          "CULTURAL",
-          "SOLITARIO"
-        ],
-        "latitude": -23.5164612,
-        "longitude": -46.6297546,
-        "wikidata": "Q45319989",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -46.6598006,
           -23.585717
         ]
@@ -6208,8 +6154,8 @@
         "name": "Parque Alfredo Volpi",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5877334,
         "longitude": -46.70238,
@@ -6652,7 +6598,8 @@
         "longitude": -46.5531333,
         "address": "Avenida Dona Glória Pagnoncelli, Guarulhos",
         "wikidata": "Q56694133",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q64569689"
       }
     },
     {
@@ -6678,7 +6625,8 @@
         "website": "http://www.usp.br/cpc",
         "wikidata": "Q18484819",
         "wikipedia": "pt:Centro de Preservação Cultural da Universidade de São Paulo",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q18484819"
       }
     },
     {
@@ -6802,28 +6750,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.6990032,
-          -23.6092277
-        ]
-      },
-      "properties": {
-        "name": "Parque Bruno Covas",
-        "category": "park",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO"
-        ],
-        "latitude": -23.6092277,
-        "longitude": -46.6990032,
-        "wikidata": "Q137588306",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -46.6434395,
           -23.5304365
         ]
@@ -6856,8 +6782,8 @@
         "name_en": "Padre Bento Theatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.4687458,
         "longitude": -46.5494463,
@@ -6955,8 +6881,9 @@
         "name": "Museu de Rua",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": -23.56579,
         "longitude": -46.7195886,
@@ -7001,8 +6928,8 @@
         "name": "Teatro Adamastor",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.4695122,
         "longitude": -46.5193179,
@@ -7093,6 +7020,7 @@
         "name": "Belvedere Avanhandava",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -7115,14 +7043,14 @@
         "name": "Mercado Municipal Kinjo Yamato",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5408277,
         "longitude": -46.629798,
         "address": "Rua da Cantareira, 377, São Paulo",
         "opening_hours": "Mo-Sa 03:00-15:00",
-        "phone": "+55 11 3228 3432",
+        "phone": "(11) 3228-3432",
         "popularity": 0
       }
     },
@@ -7187,8 +7115,8 @@
         "name": "Cabeceira de Congonhas",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.619655,
         "longitude": -46.66129,
@@ -7210,13 +7138,13 @@
         "name": "Ó do Borogodó samba",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5601965,
         "longitude": -46.6862159,
         "address": "Rua Horácio Lane, 21, São Paulo",
-        "opening_hours": "20:00-01:00",
+        "opening_hours": "20:00-01-00",
         "phone": "+55 11 3814-4087",
         "popularity": 0
       }
@@ -7240,29 +7168,6 @@
         "latitude": -23.5433106,
         "longitude": -46.6404463,
         "wikidata": "Q55154531",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -46.6462249,
-          -23.5594023
-        ]
-      },
-      "properties": {
-        "name": "Yatch Club",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": -23.5594023,
-        "longitude": -46.6462249,
-        "address": "Rua Treze de Maio, 703, São Paulo",
-        "opening_hours": "We-Sa 23:30-06:00",
         "popularity": 0
       }
     },
@@ -7333,7 +7238,8 @@
         "longitude": -46.6341588,
         "website": "https://www.farolsantander.com.br/",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q169420"
       }
     },
     {
@@ -7355,7 +7261,8 @@
         "latitude": -23.5855037,
         "longitude": -46.6097229,
         "wikipedia": "pt:Independência ou Morte (Pedro Américo)",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7376,7 +7283,8 @@
         ],
         "latitude": -23.5856075,
         "longitude": -46.6102524,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7396,7 +7304,8 @@
         ],
         "latitude": -23.5854955,
         "longitude": -46.6096164,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7416,7 +7325,8 @@
         ],
         "latitude": -23.5855127,
         "longitude": -46.609829,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7436,7 +7346,8 @@
         ],
         "latitude": -23.5856467,
         "longitude": -46.6097093,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7456,7 +7367,8 @@
         ],
         "latitude": -23.5855829,
         "longitude": -46.6097335,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7476,7 +7388,8 @@
         ],
         "latitude": -23.5856055,
         "longitude": -46.6102092,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7496,7 +7409,8 @@
         ],
         "latitude": -23.5855588,
         "longitude": -46.6102622,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7516,7 +7430,8 @@
         ],
         "latitude": -23.5855806,
         "longitude": -46.6103044,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7536,7 +7451,8 @@
         ],
         "latitude": -23.5856267,
         "longitude": -46.6102991,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7556,7 +7472,8 @@
         ],
         "latitude": -23.5855545,
         "longitude": -46.609623,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7576,7 +7493,8 @@
         ],
         "latitude": -23.58557,
         "longitude": -46.6098176,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7597,7 +7515,8 @@
         "latitude": -23.5855084,
         "longitude": -46.6097908,
         "wikipedia": "pt:Retrato de Maria Quitéria de Jesus Medeiros",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7617,7 +7536,8 @@
         ],
         "latitude": -23.5854476,
         "longitude": -46.609653,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7637,7 +7557,8 @@
         ],
         "latitude": -23.5854534,
         "longitude": -46.6096141,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7657,7 +7578,8 @@
         ],
         "latitude": -23.5854808,
         "longitude": -46.6096104,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7677,7 +7599,8 @@
         ],
         "latitude": -23.5854574,
         "longitude": -46.6097961,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7697,7 +7620,8 @@
         ],
         "latitude": -23.5854746,
         "longitude": -46.6098414,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7717,7 +7641,8 @@
         ],
         "latitude": -23.5854519,
         "longitude": -46.6097294,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7737,7 +7662,8 @@
         ],
         "latitude": -23.5854989,
         "longitude": -46.609838,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7757,7 +7683,8 @@
         ],
         "latitude": -23.5854958,
         "longitude": -46.6096476,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7777,7 +7704,8 @@
         ],
         "latitude": -23.5855364,
         "longitude": -46.6094662,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7797,7 +7725,8 @@
         ],
         "latitude": -23.5855853,
         "longitude": -46.6094985,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7817,7 +7746,8 @@
         ],
         "latitude": -23.5856137,
         "longitude": -46.6094956,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7837,7 +7767,8 @@
         ],
         "latitude": -23.5856223,
         "longitude": -46.6094568,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7857,7 +7788,8 @@
         ],
         "latitude": -23.58561,
         "longitude": -46.6094183,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7878,7 +7810,8 @@
         "latitude": -23.5855799,
         "longitude": -46.6094221,
         "wikipedia": "pt:A Conversão de São Paulo a Caminho de Damasco",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7898,7 +7831,8 @@
         ],
         "latitude": -23.5855516,
         "longitude": -46.609425,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7918,7 +7852,8 @@
         ],
         "latitude": -23.5855742,
         "longitude": -46.6095675,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7938,7 +7873,8 @@
         ],
         "latitude": -23.5856292,
         "longitude": -46.609578,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7958,7 +7894,8 @@
         ],
         "latitude": -23.5856439,
         "longitude": -46.6095432,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7978,7 +7915,8 @@
         ],
         "latitude": -23.5856231,
         "longitude": -46.609513,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -7998,7 +7936,8 @@
         ],
         "latitude": -23.5855939,
         "longitude": -46.6095155,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8018,7 +7957,8 @@
         ],
         "latitude": -23.5855713,
         "longitude": -46.6095304,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8038,7 +7978,8 @@
         ],
         "latitude": -23.585547,
         "longitude": -46.6095231,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8058,7 +7999,8 @@
         ],
         "latitude": -23.5855628,
         "longitude": -46.6095737,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8078,7 +8020,8 @@
         ],
         "latitude": -23.5855272,
         "longitude": -46.6095868,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8098,7 +8041,8 @@
         ],
         "latitude": -23.5857079,
         "longitude": -46.6096769,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8118,7 +8062,8 @@
         ],
         "latitude": -23.5856982,
         "longitude": -46.6097315,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8138,7 +8083,8 @@
         ],
         "latitude": -23.5856711,
         "longitude": -46.6097189,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8158,7 +8104,8 @@
         ],
         "latitude": -23.5856827,
         "longitude": -46.6097329,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8178,7 +8125,8 @@
         ],
         "latitude": -23.5857134,
         "longitude": -46.6097303,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8198,7 +8146,8 @@
         ],
         "latitude": -23.5857277,
         "longitude": -46.6097291,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8218,7 +8167,8 @@
         ],
         "latitude": -23.5857341,
         "longitude": -46.6097009,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8238,7 +8188,8 @@
         ],
         "latitude": -23.5857225,
         "longitude": -46.6096753,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8258,7 +8209,8 @@
         ],
         "latitude": -23.5856925,
         "longitude": -46.6096788,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8278,7 +8230,8 @@
         ],
         "latitude": -23.5856753,
         "longitude": -46.6096808,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8298,7 +8251,8 @@
         ],
         "latitude": -23.5856679,
         "longitude": -46.6096966,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8318,7 +8272,8 @@
         ],
         "latitude": -23.585662,
         "longitude": -46.6096242,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8338,7 +8293,8 @@
         ],
         "latitude": -23.5857069,
         "longitude": -46.6096659,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8358,7 +8314,8 @@
         ],
         "latitude": -23.5857008,
         "longitude": -46.6095851,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8378,7 +8335,8 @@
         ],
         "latitude": -23.5857274,
         "longitude": -46.6096322,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8398,7 +8356,8 @@
         ],
         "latitude": -23.5856605,
         "longitude": -46.609608,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8418,7 +8377,8 @@
         ],
         "latitude": -23.5856636,
         "longitude": -46.6096423,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8439,7 +8399,8 @@
         "latitude": -23.5856651,
         "longitude": -46.6096593,
         "wikipedia": "pt:Desembarque de Pedro Álvares Cabral em Porto Seguro em 1500",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8459,7 +8420,8 @@
         ],
         "latitude": -23.5856745,
         "longitude": -46.6096687,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8479,7 +8441,8 @@
         ],
         "latitude": -23.5856913,
         "longitude": -46.6096675,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8499,7 +8462,8 @@
         ],
         "latitude": -23.5857215,
         "longitude": -46.609664,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8519,7 +8483,8 @@
         ],
         "latitude": -23.5857295,
         "longitude": -46.609656,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8539,7 +8504,8 @@
         ],
         "latitude": -23.5857264,
         "longitude": -46.6096163,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8559,7 +8525,8 @@
         ],
         "latitude": -23.5857243,
         "longitude": -46.6095943,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8579,7 +8546,8 @@
         ],
         "latitude": -23.5857137,
         "longitude": -46.6095838,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8599,7 +8567,8 @@
         ],
         "latitude": -23.5856837,
         "longitude": -46.6095869,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8619,7 +8588,8 @@
         ],
         "latitude": -23.5855197,
         "longitude": -46.6095908,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8639,7 +8609,8 @@
         ],
         "latitude": -23.5855461,
         "longitude": -46.6095874,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8659,7 +8630,8 @@
         ],
         "latitude": -23.5855634,
         "longitude": -46.6095698,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8679,7 +8651,8 @@
         ],
         "latitude": -23.5855611,
         "longitude": -46.6095355,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8699,7 +8672,8 @@
         ],
         "latitude": -23.5855439,
         "longitude": -46.6095192,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8719,7 +8693,8 @@
         ],
         "latitude": -23.5855203,
         "longitude": -46.6095214,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8739,7 +8714,8 @@
         ],
         "latitude": -23.5854903,
         "longitude": -46.6095415,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8759,7 +8735,8 @@
         ],
         "latitude": -23.5854935,
         "longitude": -46.6095775,
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q371803"
       }
     },
     {
@@ -8775,14 +8752,14 @@
         "name": "Bourbon Street Music Club",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.612653,
         "longitude": -46.6689505,
         "address": "Rua dos Chanés, 127, São Paulo",
         "opening_hours": "Tu-Su 19:30-02:00",
-        "phone": "+55 11 5095 6100",
+        "phone": "1150956100",
         "website": "https://www.bourbonstreet.com.br",
         "popularity": 0
       }
@@ -8860,30 +8837,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.6440728,
-          -23.5595857
-        ]
-      },
-      "properties": {
-        "name": "Madame Underground Club",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": -23.5595857,
-        "longitude": -46.6440728,
-        "address": "Rua Conselheiro Ramalho, 873, São Paulo",
-        "opening_hours": "Fr-Su 22:00-03:00",
-        "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -46.657745,
           -23.5565941
         ]
@@ -8917,13 +8870,14 @@
         "name": "Morumbi Park",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": -23.6273206,
         "longitude": -46.7171871,
         "address": "Marginal Pinheiros (Local), 16741, São Paulo",
         "opening_hours": "We-Fr 12:00-20:00; Sa 12:00-22:00; Su 10:00-20:00",
-        "phone": "+55 11 2366 5905",
+        "phone": "(11) 2366-5905",
         "website": "https://www.morumbipark.com.br/",
         "fee": "yes",
         "wheelchair": "yes",
@@ -8966,8 +8920,8 @@
         "name": "Club A",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.6157245,
         "longitude": -46.6647028,
@@ -8997,7 +8951,8 @@
         "address": "Av. Mário de Andrade, 664, São Paulo",
         "opening_hours": "Tu-Su 10:00-17:00",
         "website": "https://memorial.org.br/espacos/galeria-marta-traba/",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1920091"
       }
     },
     {
@@ -9080,7 +9035,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -23.5465389,
         "longitude": -46.6343986,
@@ -9126,7 +9082,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": -23.6507539,
         "longitude": -46.6220129,
@@ -9180,7 +9137,7 @@
         "longitude": -46.6712113,
         "address": "Avenida Rebouças, 975, São Paulo",
         "opening_hours": "Mo-Fr 07:00-22:00; Su 08:00-21:30",
-        "phone": "+55 11 2050 0735",
+        "phone": "1120500735",
         "website": "http://mambo.com.br",
         "popularity": 0
       }
@@ -9203,30 +9160,6 @@
         "latitude": -23.5525743,
         "longitude": -46.6336911,
         "wikipedia": "pt:João Mendes de Almeida Júnior",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -46.7033314,
-          -23.4847378
-        ]
-      },
-      "properties": {
-        "name": "OXXO - Rio Verde",
-        "category": "marketplace",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": -23.4847378,
-        "longitude": -46.7033314,
-        "address": "Rua Rio Verde, 485, São Paulo",
-        "opening_hours": "24/7",
-        "website": "http://oxxo.com.br",
         "popularity": 0
       }
     },
@@ -9369,7 +9302,8 @@
         "opening_hours": "Tu-Su 09:00-17:00",
         "website": "https://museuartesacra.org.br/",
         "fee": "yes",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1954391"
       }
     },
     {
@@ -9408,14 +9342,14 @@
         "name": "Mercado Municipal do Ipiranga",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5972575,
         "longitude": -46.6004056,
         "address": "Rua Silva Bueno, 2109, São Paulo",
         "opening_hours": "Tu-Sa 08:00-19:00; Su 08:00-13:00",
-        "phone": "+55 11 95197 0845",
+        "phone": "(11) 95197-0845",
         "popularity": 0
       }
     },
@@ -9637,14 +9571,14 @@
         "name": "Mercado Municipal de Rudge Ramos",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.657683,
         "longitude": -46.5706781,
         "address": "Avenida Caminho do Mar, 3344, São Bernardo do Campo",
         "opening_hours": "Mo-Sa 08:00-19:00",
-        "phone": "+55 11 4368 2053",
+        "phone": "(11) 4368-2053",
         "website": "https://www.mercadomunicipalsbc.com.br/",
         "popularity": 0
       }
@@ -9662,8 +9596,9 @@
         "name": "Macacário",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": -23.5646163,
         "longitude": -46.7188751,
@@ -9784,7 +9719,8 @@
         "latitude": -23.5275669,
         "longitude": -46.6654536,
         "website": "https://memorial.org.br/",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1920091"
       }
     },
     {
@@ -9800,8 +9736,8 @@
         "name": "Escola de Samba Rosas de Ouro",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5072223,
         "longitude": -46.6877827,
@@ -10122,8 +10058,9 @@
         "name": "Serpentário",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL",
+          "MOCHILEIRO"
         ],
         "latitude": -23.5672929,
         "longitude": -46.7182067,
@@ -10174,7 +10111,7 @@
         "longitude": -46.684166,
         "address": "Avenida Professor Vicente Rao, 500, São Paulo",
         "opening_hours": "Segunda a Sábado - 07:00 - 20:00",
-        "phone": "+55 11 5095 6060",
+        "phone": "(11) 5095-6060",
         "website": "https://www.petropolispaulista.com.br/emporio-petropolis.html",
         "popularity": 0
       }
@@ -10264,7 +10201,7 @@
         "latitude": -23.6064048,
         "longitude": -46.671531,
         "address": "Rua Canário, 1379, São Paulo",
-        "phone": "+55 11 3086 0002",
+        "phone": "(11) 3086-0002",
         "website": "https://www.urbanarts.com.br",
         "popularity": 0
       }
@@ -10543,7 +10480,7 @@
         "latitude": -23.6286267,
         "longitude": -46.594683,
         "address": "Rua Henrique Altes, 57, São Paulo",
-        "opening_hours": "09:00-22:00",
+        "opening_hours": "9 as 22",
         "popularity": 0
       }
     },
@@ -10733,8 +10670,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.6391442,
-          -23.5689345
+          -46.6391465,
+          -23.56893
         ]
       },
       "properties": {
@@ -10744,8 +10681,8 @@
           "NATUREZA",
           "RELAXAMENTO"
         ],
-        "latitude": -23.5689345,
-        "longitude": -46.6391442,
+        "latitude": -23.56893,
+        "longitude": -46.6391465,
         "address": "Praça Santo Agostinho, São Paulo",
         "opening_hours": "24/7",
         "popularity": 0
@@ -11169,8 +11106,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.5550774,
-          -23.5967063
+          -46.5550549,
+          -23.5967977
         ]
       },
       "properties": {
@@ -11180,8 +11117,8 @@
           "NATUREZA",
           "RELAXAMENTO"
         ],
-        "latitude": -23.5967063,
-        "longitude": -46.5550774,
+        "latitude": -23.5967977,
+        "longitude": -46.5550549,
         "address": "Rua Costa Barros, 1184, São Paulo",
         "opening_hours": "24/7",
         "popularity": 0
@@ -11277,7 +11214,8 @@
         "address": "Avenida Tiradentes, 676, São Paulo",
         "phone": "+55 11 3311 8745",
         "website": "https://www.mosteirodaluz.org.br/",
-        "popularity": 0
+        "popularity": 0,
+        "site": "Q1954391"
       }
     },
     {
@@ -11339,8 +11277,8 @@
         "name": "Bahamas Club",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.6154048,
         "longitude": -46.6654891,
@@ -11386,7 +11324,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": -23.5712861,
         "longitude": -46.6453275,
@@ -11408,8 +11347,8 @@
         "name": "Praça Butantã Even",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5917295,
         "longitude": -46.7383499,
@@ -11488,8 +11427,8 @@
         "longitude": -46.5691425,
         "address": "Rua Amazonas, 2301, São Caetano do Sul",
         "opening_hours": "Mo-Sa 07:00-20:00; Su 07:00-14:00",
-        "phone": "+55 11 4232 4059",
-        "website": "https://sacolao-saraiva.negocio.site/",
+        "phone": "+55  11 4232 4059",
+        "website": "https://sacolao-saraiva.negocio.site/?utm_source=gmb&utm_medium=referral",
         "wheelchair": "yes",
         "popularity": 0
       }
@@ -11705,8 +11644,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.5525493,
-          -23.6053623
+          -46.5525588,
+          -23.6053924
         ]
       },
       "properties": {
@@ -11716,8 +11655,8 @@
           "NATUREZA",
           "RELAXAMENTO"
         ],
-        "latitude": -23.6053623,
-        "longitude": -46.5525493,
+        "latitude": -23.6053924,
+        "longitude": -46.5525588,
         "address": "Rua Engenheiro Tomás Magalhães, 149, São Paulo",
         "opening_hours": "Mo-Su 06:00-22:00",
         "popularity": 0
@@ -11785,8 +11724,8 @@
         "name": "Mercado Municipal do Pari",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5392421,
         "longitude": -46.6253968,
@@ -11831,7 +11770,8 @@
         "name": "Glow Park Brooklin",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": -23.6439892,
         "longitude": -46.6733665,
@@ -11943,12 +11883,36 @@
         "name": "Marquise",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": -23.5863843,
         "longitude": -46.6572755,
         "opening_hours": "closed",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.573215,
+          -23.6325165
+        ]
+      },
+      "properties": {
+        "name": "Espaço Verde Chico Mendes",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -23.6325165,
+        "longitude": -46.573215,
+        "address": "Avenida Fernando Simonsen, 566, São Caetano do Sul",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "phone": "+55 11 4232 5165",
         "popularity": 0
       }
     },
@@ -12132,7 +12096,7 @@
         "longitude": -46.635862,
         "address": "Avenida São João, 128, São Paulo",
         "opening_hours": "Mo-Sa 11:30-16:00",
-        "phone": "+55 11 3228 7400",
+        "phone": "1132287400",
         "wheelchair": "yes",
         "cuisine": "regional;dessert",
         "popularity": 0
@@ -12162,32 +12126,6 @@
         "website": "https://www.restaurantemani.com.br/",
         "wikidata": "Q89934886",
         "cuisine": "regional",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -46.6334863,
-          -23.5670412
-        ]
-      },
-      "properties": {
-        "name": "Laço Aclimação",
-        "category": "restaurant",
-        "profiles": [
-          "LUXO",
-          "SOCIAL"
-        ],
-        "latitude": -23.5670412,
-        "longitude": -46.6334863,
-        "address": "Rua Pires da Mota, 525, São Paulo",
-        "opening_hours": "11:00-24:00",
-        "phone": "+55 11 3208 7455",
-        "wheelchair": "yes",
-        "cuisine": "brazilian;barbecue;dessert",
         "popularity": 0
       }
     },
@@ -12267,7 +12205,7 @@
         "opening_hours": "11:30-23:00",
         "phone": "+55 11 3885-4348",
         "wheelchair": "yes",
-        "cuisine": "brazilian;barbecue;bar_and_grill;grill;dessert",
+        "cuisine": "brazilian;steak_house;dessert",
         "popularity": 0
       }
     },
@@ -12291,7 +12229,7 @@
         "longitude": -46.6795512,
         "address": "Rua Francisco Leitão, 77, São Paulo",
         "opening_hours": "Mo-Su 11:00-22:00",
-        "phone": "+55 11 98867 4083",
+        "phone": "(11) 98867-4083",
         "fee": "yes",
         "wheelchair": "yes",
         "cuisine": "israeli;arab;kebab;shawarma;gyro;homo;kafta;aral;falafel;brunch;dessert",
@@ -12372,7 +12310,7 @@
         "longitude": -46.6803283,
         "address": "Rua Francisco Leitão, 246, São Paulo",
         "opening_hours": "Tu-Th 12:00-15:00, 18:00-23:00; Fr 12:00-15:00, 18:00-00:00; Sa 12:00-00:00; Su 12:00-23:00",
-        "phone": "+55 11 2925 6189",
+        "phone": "+55-11-2925-6189",
         "fee": "yes",
         "wheelchair": "yes",
         "cuisine": "mexican;tacos;dessert",
@@ -12399,7 +12337,7 @@
         "longitude": -46.6631388,
         "address": "Alameda Franca, 1024, São Paulo",
         "opening_hours": "Fr-We 11:00-23:00; Th 11:00-23:30",
-        "phone": "+55 11 3062 6505",
+        "phone": "(11) 3062-6505",
         "website": "https://www.pokemeup.com.br/",
         "wheelchair": "yes",
         "cuisine": "hawaiian;dessert",
@@ -12438,32 +12376,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.631769,
-          -23.565876
-        ]
-      },
-      "properties": {
-        "name": "Laço de Ouro",
-        "category": "restaurant",
-        "profiles": [
-          "LUXO",
-          "SOCIAL"
-        ],
-        "latitude": -23.565876,
-        "longitude": -46.631769,
-        "address": "Rua Pires da Mota, 295, São Paulo",
-        "opening_hours": "Mo-Sa 11:30-23:00; Su 11:30-22:00",
-        "phone": "+55 11 3208 1567",
-        "wheelchair": "yes",
-        "cuisine": "brazilian;barbecue;dessert",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -46.6332706,
           -23.5581558
         ]
@@ -12480,7 +12392,7 @@
         "longitude": -46.6332706,
         "address": "Rua Barão de Iguape, 373, São Paulo",
         "opening_hours": "We-Mo 11:00-16:00, 18:00-21:30",
-        "phone": "+55 11 95459 6188",
+        "phone": "(11) 95459-6188",
         "website": "https://www.facebook.com/Thai-E-san-Bar-E-Resturante-809788969218725/",
         "wheelchair": "no",
         "cuisine": "thai;dessert",
@@ -12507,7 +12419,7 @@
         "longitude": -46.680488,
         "address": "Rua Artur de Azevedo, 906, São Paulo",
         "opening_hours": "Mo-Fr 11:30-23:55; Sa 12:00-23:55",
-        "phone": "+55 11 3807 9647",
+        "phone": "+55-11-3807-9647",
         "wheelchair": "yes",
         "cuisine": "chilean;empanada;dessert",
         "popularity": 0
@@ -12560,7 +12472,7 @@
         "longitude": -46.6361841,
         "address": "Rua Thomáz Gonzaga, 45C, São Paulo",
         "opening_hours": "Tu-Fr 11:00-16:00, 18:00-21:30; Sa 11:00-16:00, 18:00-22:00; Su 11:00-18:00",
-        "phone": "+55 11 3132 0111",
+        "phone": "(11) 3132-0111",
         "wheelchair": "yes",
         "cuisine": "indian;dessert",
         "popularity": 0
@@ -12586,36 +12498,9 @@
         "longitude": -46.6361472,
         "address": "Rua Thomáz Gonzaga, 45D, São Paulo",
         "opening_hours": "Mo-Fr 11:30-15:30, 18:30-21:45; Sa 11:30-15:45, 18:30-21:45; Su 11:30-16:45",
-        "phone": "+55 11 95999 4884",
+        "phone": "(11) 95999-4884",
         "wheelchair": "yes",
         "cuisine": "thai;dessert",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -46.6366447,
-          -23.5582494
-        ]
-      },
-      "properties": {
-        "name": "Filipinas Restaurante Oriental",
-        "category": "restaurant",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": -23.5582494,
-        "longitude": -46.6366447,
-        "address": "Rua Barão de Iguape, 25, São Paulo",
-        "opening_hours": "Mo 11:30-20:30; Tu-Th 10:30-20:30; Fr 10:30-21:00; Sa 10:30-21:30; Su 10:30-22:00",
-        "phone": "+55 11 93416 1947",
-        "website": "https://www.facebook.com/profile.php?id=100094451743954",
-        "wheelchair": "no",
-        "cuisine": "filipino;asian;dessert",
         "popularity": 0
       }
     },
@@ -12665,7 +12550,7 @@
         "longitude": -46.6586426,
         "address": "Rua Antônio Carlos, 419, São Paulo",
         "opening_hours": "Mo-Su 11:00-22:00",
-        "phone": "+55 11 93753 1526",
+        "phone": "(11) 93753-1526",
         "website": "https://www.letspoke.com.br/",
         "wheelchair": "yes",
         "cuisine": "hawaiian;dessert",
@@ -12798,7 +12683,7 @@
         "longitude": -46.600686,
         "address": "Avenida Morvan Dias de Figueiredo (Local), 3177, São Paulo",
         "opening_hours": "Mo-Su 11:00-23:00",
-        "phone": "+55 11 2954 2113",
+        "phone": "11 2954-2113",
         "wheelchair": "yes",
         "cuisine": "regional;mineira",
         "popularity": 0
@@ -12905,8 +12790,8 @@
         "latitude": -23.5555316,
         "longitude": -46.6077368,
         "address": "Rua Borges de Figueiredo, 82, São Paulo",
-        "opening_hours": "Tu-Th 12:00-15:00,19:00-23:00; Fr 12:00-15:00,19:00-23:30; Sa 12:00-16:00,19:00-23:30; Su 12:00-16:00",
-        "phone": "+55 11 2291 5629",
+        "opening_hours": "Ter-Qui 12:00-15:00, 19:00-23:00; Sex 12:00-15:00, 19:00-23:30; Sab 12:00-16:00, 19:00-23:30; Dom 12:00-16:00",
+        "phone": "+55 (11) 22915629",
         "website": "https://www.restaurantehospedaria.com.br/",
         "wheelchair": "yes",
         "cuisine": "regional, caseira",
@@ -13316,7 +13201,7 @@
         "longitude": -46.6362588,
         "address": "Rua Prates, 343, São Paulo",
         "opening_hours": "Mo-Su 11:00-21:00",
-        "phone": "+55 11 3315 9121",
+        "phone": "55 11 33159121",
         "cuisine": "korean",
         "popularity": 0
       }
@@ -13341,7 +13226,7 @@
         "longitude": -46.6434418,
         "address": "Rua Major Quedinho, 310, São Paulo",
         "opening_hours": "Tu-Su 18:00-00:00",
-        "phone": "+55 11 2688 3501",
+        "phone": "11 26883501",
         "cuisine": "pizza",
         "popularity": 0
       }
@@ -13417,7 +13302,7 @@
         "longitude": -46.6672014,
         "address": "Rua Haddock Lobo, 1396, São Paulo",
         "opening_hours": "Mo-Th 11:30-15:30, 17:30-22:00; Fr-Sa 11:30-23:00; Su 11:30-22:00",
-        "phone": "+55 11 91244 2872",
+        "phone": "(11) 91244-2872",
         "website": "https://api.whatsapp.com/send?phone=5511912442872",
         "fee": "yes",
         "cuisine": "hawaiian;raw_fish;vegetable;rice;dessert",
@@ -13724,7 +13609,7 @@
         "latitude": -23.5531335,
         "longitude": -46.6879689,
         "address": "Rua Original, 123, São Paulo",
-        "opening_hours": "Tu-Fr 11:30-15:00,18:00-23:30; Sa 11:30-00:30; Su 11:30-23:30",
+        "opening_hours": "Tu-Fr 11:30-15:00-18:00-23:30; Sa 11:30-24:30; Su 11:30-23:30",
         "phone": "+55 11 3816-4884",
         "website": "https://originaletrattoria.com.br/",
         "cuisine": "italian",
@@ -13802,7 +13687,7 @@
         "longitude": -46.6808855,
         "address": "Rua Emanuel Kant, 147, São Paulo",
         "opening_hours": "Tu-Su 11:00-00:00",
-        "phone": "+55 11 3071 3641",
+        "phone": "(011)30713641",
         "cuisine": "caribbean",
         "popularity": 0
       }
@@ -13852,7 +13737,7 @@
         "longitude": -46.6361906,
         "address": "Rua Thomáz Gonzaga, 22, São Paulo",
         "opening_hours": "Tu-Sa 11:30-14:00, 18:30-21:30; Su 11:30-15:30",
-        "phone": "+55 11 3132 6083",
+        "phone": "011 3132 6083",
         "cuisine": "japanese",
         "popularity": 0
       }
@@ -14017,6 +13902,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -46.6366447,
+          -23.5582494
+        ]
+      },
+      "properties": {
+        "name": "Filipinas Restaurante Oriental",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5582494,
+        "longitude": -46.6366447,
+        "address": "Rua Barão de Iguape, 25, São Paulo",
+        "opening_hours": "Mo 11:30-20:30; Tu-Th 10:30-20:30; Fr 10:30-21:00; Sa 10:30-21:30; Su 10:30-22:00",
+        "phone": "(11) 93416-1947",
+        "website": "https://www.facebook.com/profile.php?id=100094451743954&mibextid=ZbWKwL",
+        "cuisine": "filipino;asian;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -46.6344004,
           -23.5572034
         ]
@@ -14032,9 +13943,35 @@
         "longitude": -46.6344004,
         "address": "Rua Doutor Américo de Campos, 154, São Paulo",
         "opening_hours": "Th-Sa 11:00-15:30, 18:00-21:30; Su 11:00-15:30, 18:00-21:00; Mo-Tu 11:00-15:30, 18:00-21:30",
-        "phone": "+55 11 98394 6988",
+        "phone": "(11) 98394-6988",
         "website": "https://www.facebook.com/Tailandesa/",
         "cuisine": "thai;dessert",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6066087,
+          -23.5746836
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria Bella Pátria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5746836,
+        "longitude": -46.6066087,
+        "address": "Rua Cipriano barata, 594, São Paulo",
+        "opening_hours": "18:00-23:00",
+        "phone": "+55 11 98011-5120",
+        "website": "https://bellapatria.cardapin.com/",
+        "cuisine": "pizza",
         "popularity": 0
       }
     },
@@ -14084,7 +14021,7 @@
         "longitude": -46.6255378,
         "address": "Rua Senador Carlos Teixeira de Carvalho, 77, São Paulo",
         "opening_hours": "Mo-Su 11:00-21:30",
-        "phone": "+55 11 3203 0146",
+        "phone": "01132030146",
         "website": "https://fortalcuscuz.com.br/",
         "cuisine": "brazilian",
         "popularity": 0
@@ -14161,7 +14098,7 @@
         "longitude": -46.6351026,
         "address": "Largo do Café, 14, São Paulo",
         "opening_hours": "Mo-Fr 08:00-17:00",
-        "phone": "+55 11 99191 8599",
+        "phone": "11991918599",
         "cuisine": "regional",
         "popularity": 0
       }
@@ -14189,31 +14126,6 @@
         "phone": "+55 11 96324 0249",
         "website": "http://santocolomba.com.br",
         "cuisine": "italian",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -46.6403986,
-          -23.6039019
-        ]
-      },
-      "properties": {
-        "name": "Velonetto",
-        "category": "restaurant",
-        "profiles": [
-          "LUXO",
-          "SOCIAL"
-        ],
-        "latitude": -23.6039019,
-        "longitude": -46.6403986,
-        "address": "Rua Luis Góis, 1312, São Paulo",
-        "opening_hours": "Mo-Sa 11:00-15:00; Su off",
-        "phone": "+551150712099",
-        "cuisine": "brazilian",
         "popularity": 0
       }
     },
@@ -14395,7 +14307,7 @@
         "longitude": -46.6393467,
         "address": "Rua Domingos de Morais, 439, São Paulo",
         "opening_hours": "Mo-Su 11:00-00:00",
-        "phone": "+55 11 94612 1820",
+        "phone": "+55 (11) 946121820",
         "cuisine": "burger;american;regional",
         "popularity": 0
       }
@@ -14828,7 +14740,7 @@
         "longitude": -46.6439509,
         "address": "Rua Rio Grande, 85, São Paulo",
         "opening_hours": "Mo-Su 11:00-22:45",
-        "phone": "+55 11 97776 7676",
+        "phone": "+55 (11) 97776-7676",
         "website": "https://www.instagram.com/almidansp/",
         "cuisine": "lebanese;arab",
         "popularity": 0
@@ -15064,6 +14976,57 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -46.67498,
+          -23.5791808
+        ]
+      },
+      "properties": {
+        "name": "Barbacoa",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5791808,
+        "longitude": -46.67498,
+        "address": "Rua Doutor Renato Paes de Barros, 65, São Paulo",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "website": "https://barbacoa.com.br/pt/restaurantes/itaim-bibi",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6457633,
+          -23.5461016
+        ]
+      },
+      "properties": {
+        "name": "Carlino Restaurante",
+        "name_en": "Carlino",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5461016,
+        "longitude": -46.6457633,
+        "address": "Rua Epitácio Pessoa, 85, São Paulo",
+        "opening_hours": "Mo-Su 12:00-00:00",
+        "website": "https://www.ristorantecarlino.com.br/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -46.6530161,
           -23.5659178
         ]
@@ -15105,7 +15068,7 @@
         "longitude": -46.6670824,
         "address": "Rua Haddock Lobo, 1380, São Paulo",
         "opening_hours": "Su-Th 09:00-22:00; Fr-Sa 10:00-23:00",
-        "phone": "+55 11 3542 2652",
+        "phone": "(11) 3542-2652",
         "website": "https://www.paradismacarons.com/",
         "fee": "yes",
         "wheelchair": "no",
@@ -15133,7 +15096,7 @@
         "longitude": -46.6351755,
         "address": "Rua Afonso Celso, 1434, São Paulo",
         "opening_hours": "10:00-20:00",
-        "phone": "+55 11 94748 9868",
+        "phone": "+55-11-94748-9868",
         "website": "https://originalsorvetes.wabiz.delivery/",
         "wheelchair": "limited",
         "cuisine": "ice_cream;coffee_shop;dessert",
@@ -15160,7 +15123,7 @@
         "longitude": -46.6560812,
         "address": "Alameda Santos, 1470, São Paulo",
         "opening_hours": "Mo-Fr 09:00-19:00",
-        "phone": "+55 11 93936 0385",
+        "phone": "+55 (11) 93936-0385",
         "website": "https://www.crio.cafe/",
         "wheelchair": "yes",
         "cuisine": "cafe;pao_de_queijo",
@@ -15292,7 +15255,7 @@
         "longitude": -46.6732474,
         "address": "Rua Doutor João Clímaco Pereira, 62, São Paulo",
         "opening_hours": "Mo-Fr 07:00-16:00",
-        "phone": "+55 11 3045 3440",
+        "phone": "1130453440",
         "website": "http://www.cafetenerifferestaurante.com.br",
         "cuisine": "burger;regional;international;ice_cream;cake;noodles;pasta;pancake;brazilian;arab;chicken;diner;fish_and_chips;oriental;fish;breakfast;sushi;savory_pancakes;moroccan;friture;fine_dining",
         "popularity": 0
@@ -15370,7 +15333,7 @@
         "longitude": -46.6464379,
         "address": "Rua Helvétia, 640, São Paulo",
         "opening_hours": "Mo-Fr 08:00-18:00",
-        "phone": "+55 11 3223 7873",
+        "phone": "1132237873",
         "website": "http://www.biobarista.com.br",
         "cuisine": "coffee_shop;breakfast",
         "popularity": 0
@@ -15422,7 +15385,7 @@
         "longitude": -46.6354579,
         "address": "Rua Luis Góis, 810, São Paulo",
         "opening_hours": "Mo-Su 09:00-19:00",
-        "phone": "+55 11 91188 5445",
+        "phone": "(11) 91188-5445",
         "website": "https://linktr.ee/louloupatisserie",
         "cuisine": "coffee_shop;french",
         "popularity": 0
@@ -15798,7 +15761,7 @@
         "longitude": -46.6451193,
         "address": "Rua Doutor Rafael de Barros, 76, São Paulo",
         "opening_hours": "Mo-Sa 08:30-18:00",
-        "phone": "+55 11 3567 3313",
+        "phone": "1135673313",
         "popularity": 0
       }
     },
@@ -15966,7 +15929,7 @@
         "longitude": -46.6805072,
         "address": "Rua Francisco Leitão, 290, São Paulo",
         "opening_hours": "Mo-We 11:30-23:30; Th-Sa 11:30-00:00; Su 11:30-22:30",
-        "phone": "+55 11 95777 8300",
+        "phone": "+55-11-95777-8300",
         "fee": "yes",
         "wheelchair": "yes",
         "cuisine": "kebab;arab;dessert",
@@ -15993,7 +15956,7 @@
         "longitude": -46.6448479,
         "address": "Avenida Ipiranga, 200, São Paulo",
         "opening_hours": "Mo-We 12:00-23:30; Th-Sa 12:00-00:30; Su 12:00-17:30",
-        "phone": "+55 11 3257 2016",
+        "phone": "1132572016",
         "website": "https://www.bardadonaonca.com.br/",
         "wikidata": "Q69524613",
         "cuisine": "brazilian",
@@ -16020,7 +15983,7 @@
         "longitude": -46.6384353,
         "address": "Praça Ramos de Azevedo, São Paulo",
         "opening_hours": "Tu-We 18:00-01:00; Th-Fr 18:00-02:00; Sa 18:00-03:00",
-        "phone": "+55 11 93453 5594",
+        "phone": "(11) 93453-5594",
         "website": "https://bardosarcos.com.br/",
         "wheelchair": "yes",
         "cuisine": "international",
@@ -16047,7 +16010,7 @@
         "longitude": -46.6416524,
         "address": "Rua Joaquim Távora, 961, São Paulo",
         "opening_hours": "Tu, We 18:00-00:00; Th, Fr 17:00-01:00; Sa 13:00-01:00; Su 13:00-22:00",
-        "phone": "+55 11 97244 7132",
+        "phone": "+55-11-97244-7132",
         "website": "https://www.letsbeer.com.br/",
         "wheelchair": "no",
         "popularity": 0
@@ -16073,7 +16036,7 @@
         "longitude": -46.6372226,
         "address": "Avenida da Liberdade, 638, São Paulo",
         "opening_hours": "Tu-Th 14:00-24:00; Fr-Sa 14:00-04:00; Su 14:00-22:00",
-        "phone": "+55 11 3277 1766",
+        "phone": "(11) 3277-1766",
         "website": "http://www.karaokekampai.com.br/",
         "wheelchair": "no",
         "popularity": 0
@@ -16186,22 +16149,320 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -46.6568567,
-          -23.5723191
+          -46.6292751,
+          -23.5790056
         ]
       },
       "properties": {
-        "name": "Boteco da Glória",
+        "name": "The Garden",
         "category": "bar",
         "profiles": [
           "MOCHILEIRO",
           "SOCIAL"
         ],
-        "latitude": -23.5723191,
-        "longitude": -46.6568567,
-        "address": "Alameda Joaquim Eugênio de Lima, 1714, São Paulo",
-        "opening_hours": "We-Sa 11:30-01:00; Su 11:30-20:00; Mo 11:30-18:00; Tu 11:30-22:00",
-        "phone": "+55 11 3887 7198",
+        "latitude": -23.5790056,
+        "longitude": -46.6292751,
+        "address": "Avenida Engenheiro Luis Gomes Cardim Sangirardi, 20, São Paulo",
+        "opening_hours": "Tu-Th 18:00-23:30, Fr 18:00-00:30, Sa 12:00-00:30, Su 18:00-00:30",
+        "phone": "+55 11 5082-2520",
+        "website": "https://thegarden.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6820695,
+          -23.557249
+        ]
+      },
+      "properties": {
+        "name": "Jazz Nos Fundos",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.557249,
+        "longitude": -46.6820695,
+        "address": "Rua João Moura, 1076, São Paulo",
+        "opening_hours": "Th-Sa 20:00-02:00",
+        "phone": "+55 11 3083-5975",
+        "website": "https://jazznosfundos.net/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.688888,
+          -23.5557108
+        ]
+      },
+      "properties": {
+        "name": "São Paulo Tap House",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5557108,
+        "longitude": -46.688888,
+        "address": "Rua Girassol, 340, São Paulo",
+        "opening_hours": "Tu-Th 18:00-00:00; Fr-Sa 12:00-01:00; Su 12:00-22:30",
+        "phone": "+55 11 35306602",
+        "website": "https://www.spth.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6624387,
+          -23.5596468
+        ]
+      },
+      "properties": {
+        "name": "Rubi Wine Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5596468,
+        "longitude": -46.6624387,
+        "address": "Alameda Jaú, 1595, São Paulo",
+        "opening_hours": "Mo-Fr 12:00-00:00; Sa 19:00-01:00",
+        "phone": "+55 11 4323 1667",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6307958,
+          -23.5767654
+        ]
+      },
+      "properties": {
+        "name": "Boteco Braz Cubas",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5767654,
+        "longitude": -46.6307958,
+        "address": "Rua Braz Cubas, 379, São Paulo",
+        "opening_hours": "Tu-Fr 11:30-00:00; Sa,Su 11:00-00:00",
+        "phone": "+55 11 94546-0999",
+        "website": "http://www.botecobrazcubas.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6422097,
+          -23.5464453
+        ]
+      },
+      "properties": {
+        "name": "Prosa e Vinho",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5464453,
+        "longitude": -46.6422097,
+        "address": "Avenida São Luís, 187, lj. 1, São Paulo",
+        "opening_hours": "Mo-Sa 12:00-22:00",
+        "website": "http://www.prosaevinho.com.br/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6355352,
+          -23.5531196
+        ]
+      },
+      "properties": {
+        "name": "Izakayada",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5531196,
+        "longitude": -46.6355352,
+        "address": "Praça Carlos Gomes, 61A, São Paulo",
+        "opening_hours": "We-Fr 18:00-23:00; Sa 14:00-23:00",
+        "website": "https://www.instagram.com/izakayada/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6449856,
+          -23.5416201
+        ]
+      },
+      "properties": {
+        "name": "Dentro Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5416201,
+        "longitude": -46.6449856,
+        "address": "Largo do Arouche, 77, São Paulo",
+        "opening_hours": "Th-Mo",
+        "website": "https://www.instagram.com/dentrobarsp/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6671141,
+          -23.5818402
+        ]
+      },
+      "properties": {
+        "name": "Skye",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5818402,
+        "longitude": -46.6671141,
+        "address": "Avenida Brigadeiro Luís Antônio, 4700, São Paulo",
+        "opening_hours": "Mo-We 07:00-11:00, 12:00-15:30, 18:00-00:30; Th-Fr 18:00-00:30; Sa 13:00-15:30, 18:00-00:30; Su 07:00-11:00, 13:00-15:30, 18:00-23:30",
+        "phone": "+55 11 3055-4700",
+        "website": "https://www.hotelunique.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6881237,
+          -23.553263
+        ]
+      },
+      "properties": {
+        "name": "Plou",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.553263,
+        "longitude": -46.6881237,
+        "address": "Rua Original, 141, São Paulo",
+        "opening_hours": "Tu-Fr 15:00-00:00; Sa 14:00-00:00; Sa 15:00-20:00",
+        "website": "https://www.instagram.com/plou.vinhos/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6522413,
+          -23.5408879
+        ]
+      },
+      "properties": {
+        "name": "Cervejaria Dogma",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5408879,
+        "longitude": -46.6522413,
+        "address": "Rua Fortunato, 236, São Paulo",
+        "opening_hours": "Tu-Su 19:00-03:00",
+        "phone": "+55 11 99249-9887",
+        "website": "https://cervejariadogma.com.br",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6640941,
+          -23.560057
+        ]
+      },
+      "properties": {
+        "name": "Quai D'Orsay",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.560057,
+        "longitude": -46.6640941,
+        "address": "Rua Haddock Lobo, 932, São Paulo",
+        "opening_hours": "Tu-Sa 15:00-00:00",
+        "phone": "+55 11 3582 4444",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6792793,
+          -23.5498254
+        ]
+      },
+      "properties": {
+        "name": "Casa Híbrida",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -23.5498254,
+        "longitude": -46.6792793,
+        "address": "Avenida Doutor Arnaldo, 1620, São Paulo",
+        "opening_hours": "Fr 16:00-22:00; Su,Sa 12:00-22:00",
+        "website": "https://casa-hibrida.negocio.site/",
         "popularity": 0
       }
     },
@@ -16250,7 +16511,7 @@
         "longitude": -46.6426794,
         "address": "Rua Alfredo Pujol, 1796, São Paulo",
         "opening_hours": "Tu-Sa 18:30-00:00",
-        "phone": "+55 11 3853 1970",
+        "phone": "1138531970",
         "website": "http://fb.com/ikeda",
         "cuisine": "japanese",
         "popularity": 0

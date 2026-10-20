@@ -15,8 +15,8 @@
         "name_en": "Basilica of the Holy Family",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4035047,
         "longitude": 2.1742801,
@@ -41,8 +41,8 @@
         "name": "Spotify Camp Nou",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3808857,
         "longitude": 2.1228105,
@@ -66,8 +66,8 @@
         "name_en": "Park Guell",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4142034,
         "longitude": 2.1516022,
@@ -146,8 +146,8 @@
         "name": "Palau de la Música Catalana",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3875838,
         "longitude": 2.1752198,
@@ -175,8 +175,8 @@
         "name_en": "Cathedral of Santa Eulalia",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3839273,
         "longitude": 2.1763464,
@@ -200,15 +200,16 @@
         "name": "La Rambla",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3790982,
         "longitude": 2.1750788,
         "wikidata": "Q850593",
         "wikipedia": "ca:La Rambla",
         "wheelchair": "yes",
-        "popularity": 39
+        "popularity": 39,
+        "site": "Q850593"
       }
     },
     {
@@ -225,8 +226,8 @@
         "name_en": "Hospital de Sant Pau",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.413977,
         "longitude": 2.1742203,
@@ -248,8 +249,8 @@
         "name": "Casa Vicens",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4034992,
         "longitude": 2.1506266,
@@ -276,8 +277,8 @@
         "name": "Palau Güell",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3788127,
         "longitude": 2.1742337,
@@ -287,6 +288,29 @@
         "wikipedia": "ca:Palau Güell",
         "fee": "yes",
         "popularity": 33
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.118914,
+          41.4223678
+        ]
+      },
+      "properties": {
+        "name": "el Tibidabo",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4223678,
+        "longitude": 2.118914,
+        "wikidata": "Q658271",
+        "wikipedia": "ca:Tibidabo",
+        "popularity": 31
       }
     },
     {
@@ -321,6 +345,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1656148,
+          41.3631512
+        ]
+      },
+      "properties": {
+        "name": "Montjuïc",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.3631512,
+        "longitude": 2.1656148,
+        "wikidata": "Q1122701",
+        "popularity": 30
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1820034,
           41.3838035
         ]
@@ -330,8 +376,8 @@
         "name_en": "Santa Maria del Mar",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3838035,
         "longitude": 2.1820034,
@@ -355,8 +401,8 @@
         "name": "Pavelló Mies van der Rohe",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3705518,
         "longitude": 2.1499635,
@@ -397,29 +443,8 @@
         "wikipedia": "ca:Museu Picasso de Barcelona",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 30
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1567669,
-          41.3622321
-        ]
-      },
-      "properties": {
-        "name": "Parc de Montjuïc",
-        "category": "park",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO"
-        ],
-        "latitude": 41.3622321,
-        "longitude": 2.1567669,
-        "wikidata": "Q1122701",
-        "popularity": 30
+        "popularity": 30,
+        "site": "Q1050032"
       }
     },
     {
@@ -517,8 +542,8 @@
         "name": "Gran Teatre del Liceu",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3801319,
         "longitude": 2.1734126,
@@ -541,8 +566,8 @@
         "name": "Mercat de Sant Josep - La Boqueria",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3817347,
         "longitude": 2.1715777,
@@ -595,8 +620,8 @@
         "name_en": "Magic Fountain of Montjuïc",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3711573,
         "longitude": 2.151738,
@@ -619,8 +644,8 @@
         "name_en": "Columbus Monument",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3758015,
         "longitude": 2.1777736,
@@ -645,7 +670,8 @@
         "name_en": "Barcelona Zoo",
         "category": "zoo",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "NATUREZA"
         ],
         "latitude": 41.3880178,
         "longitude": 2.189366,
@@ -654,7 +680,8 @@
         "website": "https://www.zoobarcelona.cat/",
         "wikidata": "Q220013",
         "wheelchair": "yes",
-        "popularity": 24
+        "popularity": 24,
+        "site": "Q220013"
       }
     },
     {
@@ -670,8 +697,8 @@
         "name": "Observatori Fabra",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4183997,
         "longitude": 2.1240835,
@@ -753,7 +780,8 @@
         "wikidata": "Q3571337",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 20
+        "popularity": 20,
+        "site": "Q1116546"
       }
     },
     {
@@ -780,7 +808,8 @@
         "wikidata": "Q1062480",
         "fee": "yes",
         "wheelchair": "limited",
-        "popularity": 20
+        "popularity": 20,
+        "site": "Q1062480"
       }
     },
     {
@@ -796,8 +825,8 @@
         "name": "Torre de Comunicacions de Montjuïc",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3642794,
         "longitude": 2.1506071,
@@ -862,8 +891,8 @@
         "name": "Temple Expiatori del Sagrat Cor",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4220884,
         "longitude": 2.1187514,
@@ -886,8 +915,8 @@
         "name": "Parròquia Basílica de Santa Maria del Pi",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3820422,
         "longitude": 2.1739172,
@@ -911,8 +940,8 @@
         "name": "Torre Bellesguard",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.409565,
         "longitude": 2.1268441,
@@ -948,7 +977,8 @@
         "website": "http://www.museuxocolata.cat/",
         "wikidata": "Q2890127",
         "wikipedia": "ca:Museu de la Xocolata",
-        "popularity": 17
+        "popularity": 17,
+        "site": "Q2890127"
       }
     },
     {
@@ -965,13 +995,14 @@
         "name_en": "Royal Square",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3800897,
         "longitude": 2.175274,
         "wikidata": "Q1519964",
-        "popularity": 17
+        "popularity": 17,
+        "site": "Q1519964"
       }
     },
     {
@@ -987,8 +1018,8 @@
         "name": "Casa Lleó Morera",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3911173,
         "longitude": 2.1652276,
@@ -1012,8 +1043,8 @@
         "name_en": "Montjuïc Castle",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3627047,
         "longitude": 2.1647847,
@@ -1050,7 +1081,8 @@
         "wikidata": "Q1286354",
         "fee": "yes",
         "wheelchair": "yes",
-        "popularity": 16
+        "popularity": 16,
+        "site": "Q263924"
       }
     },
     {
@@ -1067,8 +1099,8 @@
         "name_en": "Park of the Labyrinth of Horta",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4399784,
         "longitude": 2.1455932,
@@ -1093,13 +1125,14 @@
         "name": "Plaça del Rei",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3841291,
         "longitude": 2.1774066,
         "wikidata": "Q2067174",
-        "popularity": 16
+        "popularity": 16,
+        "site": "Q2067174"
       }
     },
     {
@@ -1168,13 +1201,14 @@
         "name": "Drassanes Reials de Barcelona",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3753128,
         "longitude": 2.1758566,
         "wikidata": "Q263924",
-        "popularity": 15
+        "popularity": 15,
+        "site": "Q263924"
       }
     },
     {
@@ -1190,14 +1224,16 @@
         "name": "Font de Canaletes",
         "category": "artwork",
         "profiles": [
-          "CULTURAL"
+          "CULTURAL",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3851607,
         "longitude": 2.1701756,
         "wikidata": "Q2723971",
         "wikipedia": "en:Font de Canaletes",
         "fee": "no",
-        "popularity": 14
+        "popularity": 14,
+        "site": "Q850593"
       }
     },
     {
@@ -1329,8 +1365,8 @@
         "name": "Teatre Nacional de Catalunya. Sala Tallers",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4004818,
         "longitude": 2.1850483,
@@ -1367,6 +1403,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1895123,
+          41.3715069
+        ]
+      },
+      "properties": {
+        "name": "Platja de Sant Sebastià",
+        "name_en": "Sant Sebastià Beach",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.3715069,
+        "longitude": 2.1895123,
+        "website": "https://www.barcelonaturisme.com/wv3/en/page/1113/sant-sebastia-beach.html",
+        "wikidata": "Q3331620",
+        "wikipedia": "ca:Platja de Sant Sebastià (Barcelona)",
+        "popularity": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.180124,
           41.3808075
         ]
@@ -1385,7 +1447,8 @@
         "wikidata": "Q11682430",
         "wikipedia": "ca:Hash Marihuana & Hemp Museum (Barcelona)",
         "wheelchair": "no",
-        "popularity": 11
+        "popularity": 11,
+        "site": "Q20898622"
       }
     },
     {
@@ -1452,7 +1515,8 @@
         "name": "Parc d'Atraccions Tibidabo",
         "category": "theme_park",
         "profiles": [
-          "AVENTUREIRO"
+          "AVENTUREIRO",
+          "SOCIAL"
         ],
         "latitude": 41.4231475,
         "longitude": 2.1202952,
@@ -1460,7 +1524,8 @@
         "website": "https://www.tibidabo.cat/",
         "wikidata": "Q1138985",
         "wheelchair": "yes",
-        "popularity": 11
+        "popularity": 11,
+        "site": "Q1138985"
       }
     },
     {
@@ -1510,6 +1575,33 @@
         "latitude": 41.3841642,
         "longitude": 2.1774123,
         "wikidata": "Q1116546",
+        "popularity": 11,
+        "site": "Q1116546"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2122443,
+          41.3980426
+        ]
+      },
+      "properties": {
+        "name": "Platja de la Mar Bella",
+        "name_en": "Mar Bella beach",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.3980426,
+        "longitude": 2.2122443,
+        "website": "https://www.barcelonaturisme.com/wv3/en/page/1117/mar-bella-beach.html",
+        "wikidata": "Q3331605",
+        "wikipedia": "ca:Platja de la Mar Bella",
         "popularity": 11
       }
     },
@@ -1526,13 +1618,37 @@
         "name": "L'Auditori",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3985344,
         "longitude": 2.1853715,
         "wikidata": "Q2713088",
         "wikipedia": "ca:Auditori de Barcelona",
+        "popularity": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1933981,
+          41.3793812
+        ]
+      },
+      "properties": {
+        "name": "Platja de la Barceloneta",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.3793812,
+        "longitude": 2.1933981,
+        "wikidata": "Q1053014",
+        "wikipedia": "ca:Platja de la Barceloneta",
         "popularity": 11
       }
     },
@@ -1561,7 +1677,8 @@
         "wikidata": "Q2447148",
         "wikipedia": "ca:Fundació Antoni Tàpies",
         "fee": "yes",
-        "popularity": 10
+        "popularity": 10,
+        "site": "Q50895561"
       }
     },
     {
@@ -1577,8 +1694,8 @@
         "name": "Lliure",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4027189,
         "longitude": 2.1559586,
@@ -1686,6 +1803,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.2073583,
+          41.3939417
+        ]
+      },
+      "properties": {
+        "name": "Platja del Bogatell",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.3939417,
+        "longitude": 2.2073583,
+        "wikidata": "Q3329621",
+        "wikipedia": "ca:Platja del Bogatell",
+        "popularity": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1171201,
           41.3885459
         ]
@@ -1717,8 +1858,8 @@
         "name": "Walden 7",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3802746,
         "longitude": 2.0678135,
@@ -1769,14 +1910,15 @@
         "name_en": "Chapel of Santa Àgata",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3842662,
         "longitude": 2.1775003,
         "wikidata": "Q3896289",
         "wikipedia": "ca:Capella de Santa Àgata",
-        "popularity": 9
+        "popularity": 9,
+        "site": "Q1116546"
       }
     },
     {
@@ -1793,8 +1935,8 @@
         "name_en": "Baron of Quadras Palace",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.396656,
         "longitude": 2.1614,
@@ -1843,13 +1985,38 @@
         "name": "Parc Natural de Collserola",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 41.4348047,
         "longitude": 2.0935915,
         "opening_hours": "24/7",
         "website": "https://parcnaturalcollserola.cat/",
         "wikidata": "Q11697959",
+        "popularity": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.20256,
+          41.3902204
+        ]
+      },
+      "properties": {
+        "name": "Platja de la Nova Icària",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.3902204,
+        "longitude": 2.20256,
+        "wikidata": "Q3329630",
+        "wikipedia": "ca:Platja de la Nova Icària",
         "popularity": 9
       }
     },
@@ -1866,8 +2033,8 @@
         "name": "Parròquia Major de Santa Anna",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3858696,
         "longitude": 2.1714865,
@@ -1936,7 +2103,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3833749,
         "longitude": 2.1772306,
@@ -1947,6 +2115,28 @@
         "wikidata": "Q3819019",
         "fee": "no",
         "wheelchair": "limited",
+        "popularity": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1771643,
+          41.3833619
+        ]
+      },
+      "properties": {
+        "name": "Mont Tàber",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.3833619,
+        "longitude": 2.1771643,
+        "wikidata": "Q549314",
         "popularity": 8
       }
     },
@@ -2063,8 +2253,8 @@
         "name_en": "Sagrada Família Schools",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4029956,
         "longitude": 2.1741991,
@@ -2131,6 +2321,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.2153851,
+          41.4017402
+        ]
+      },
+      "properties": {
+        "name": "Platja de la Nova Mar Bella",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.4017402,
+        "longitude": 2.2153851,
+        "wikidata": "Q3329668",
+        "wikipedia": "ca:Platja de la Nova Mar Bella",
+        "popularity": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1665783,
           41.3837153
         ]
@@ -2166,14 +2380,37 @@
         "name": "Cases dels Canonges",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3834124,
         "longitude": 2.176633,
         "wikidata": "Q3753100",
         "wikipedia": "ca:Cases dels Canonges",
         "popularity": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0981102,
+          41.3934503
+        ]
+      },
+      "properties": {
+        "name": "Sant Pere Màrtir",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.3934503,
+        "longitude": 2.0981102,
+        "wikidata": "Q17482898",
+        "wikipedia": "ca:Puig d'Ossa",
+        "popularity": 7
       }
     },
     {
@@ -2195,7 +2432,8 @@
         "longitude": 2.1775012,
         "wikidata": "Q3819918",
         "wikipedia": "ca:Topos V",
-        "popularity": 7
+        "popularity": 7,
+        "site": "Q2067174"
       }
     },
     {
@@ -2338,7 +2576,8 @@
         "category": "historic_castle",
         "profiles": [
           "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3960644,
         "longitude": 2.1594146,
@@ -2413,8 +2652,8 @@
         "name": "Teatre Grec",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3695171,
         "longitude": 2.1596586,
@@ -2444,7 +2683,8 @@
         "longitude": 2.2066179,
         "wikidata": "Q5401164",
         "wikipedia": "ca:Poblat ibèric del Puig Castellar",
-        "popularity": 7
+        "popularity": 7,
+        "site": "Q5401164"
       }
     },
     {
@@ -2460,14 +2700,15 @@
         "name": "Editorial Montaner i Simón",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3916851,
         "longitude": 2.1636108,
         "wikidata": "Q50895561",
         "wikipedia": "ca:Editorial Montaner i Simon",
-        "popularity": 7
+        "popularity": 7,
+        "site": "Q50895561"
       }
     },
     {
@@ -2483,8 +2724,8 @@
         "name": "Claustre de l'església de la Concepció",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3946139,
         "longitude": 2.1673347,
@@ -2655,8 +2896,8 @@
         "name": "Teatre Principal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3785197,
         "longitude": 2.1749346,
@@ -2715,6 +2956,29 @@
         "wikipedia": "ca:Museu de la Música de Barcelona",
         "fee": "yes",
         "wheelchair": "yes",
+        "popularity": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1615417,
+          41.4192618
+        ]
+      },
+      "properties": {
+        "name": "Turó de la Rovira",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4192618,
+        "longitude": 2.1615417,
+        "wikidata": "Q11953660",
+        "wikipedia": "ca:Turó de la Rovira (Barcelona)",
         "popularity": 6
       }
     },
@@ -2786,6 +3050,29 @@
         "wikidata": "Q3329871",
         "wikipedia": "es:Museo de la Erótica de Barcelona",
         "fee": "yes",
+        "popularity": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1532733,
+          41.4183478
+        ]
+      },
+      "properties": {
+        "name": "Turó del Carmel",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4183478,
+        "longitude": 2.1532733,
+        "wikidata": "Q8538595",
+        "wikipedia": "ca:Turó del Carmel",
         "popularity": 6
       }
     },
@@ -2952,8 +3239,8 @@
         "name": "Teatre Coliseum",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3883096,
         "longitude": 2.1659913,
@@ -2984,6 +3271,30 @@
         "longitude": 2.1799637,
         "wikidata": "Q8262593",
         "wikipedia": "ca:Capella d'en Marcús",
+        "popularity": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2182425,
+          41.4044002
+        ]
+      },
+      "properties": {
+        "name": "Platja de Llevant",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.4044002,
+        "longitude": 2.2182425,
+        "wikidata": "Q3328909",
+        "wikipedia": "ca:Platja de Llevant (Barcelona)",
         "popularity": 6
       }
     },
@@ -3029,7 +3340,8 @@
         "latitude": 41.3839897,
         "longitude": 2.1777594,
         "wikidata": "Q14924660",
-        "popularity": 6
+        "popularity": 6,
+        "site": "Q1116546"
       }
     },
     {
@@ -3046,7 +3358,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3826567,
         "longitude": 2.1265832,
@@ -3096,8 +3409,8 @@
         "name": "Can Serra",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3956894,
         "longitude": 2.157748,
@@ -3178,7 +3491,8 @@
         "latitude": 41.3855632,
         "longitude": 2.1894147,
         "wikidata": "Q16219321",
-        "popularity": 5
+        "popularity": 5,
+        "site": "Q220013"
       }
     },
     {
@@ -3217,8 +3531,8 @@
         "name": "Teatre Romea",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3805321,
         "longitude": 2.1710813,
@@ -3242,8 +3556,8 @@
         "name": "El Molino",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3745513,
         "longitude": 2.1672449,
@@ -3266,8 +3580,8 @@
         "name": "Teatre Apolo",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3747462,
         "longitude": 2.1703632,
@@ -3813,8 +4127,8 @@
         "name": "Sant Adjutori",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.455546,
         "longitude": 2.1142831,
@@ -3930,8 +4244,8 @@
         "name": "Casa Bruno Cuadros",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3814474,
         "longitude": 2.1733176,
@@ -4121,7 +4435,8 @@
         "longitude": 2.1771148,
         "wikidata": "Q9073184",
         "wikipedia": "ca:Saló del Tinell",
-        "popularity": 5
+        "popularity": 5,
+        "site": "Q1116546"
       }
     },
     {
@@ -4160,13 +4475,36 @@
         "name": "Teatre Goya",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.384087,
         "longitude": 2.164267,
         "wikidata": "Q18008292",
         "wikipedia": "ca:Teatre Goya (Barcelona)",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0978383,
+          41.416216
+        ]
+      },
+      "properties": {
+        "name": "Mina Grott",
+        "category": "cave",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.416216,
+        "longitude": 2.0978383,
+        "wikidata": "Q9033252",
+        "wikipedia": "ca:Mina Grott",
         "popularity": 4
       }
     },
@@ -4183,8 +4521,8 @@
         "name": "Teatre Victòria",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3748027,
         "longitude": 2.1687428,
@@ -4245,6 +4583,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1407851,
+          41.4021629
+        ]
+      },
+      "properties": {
+        "name": "Turó de Monterols",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4021629,
+        "longitude": 2.1407851,
+        "wikidata": "Q15130999",
+        "wikipedia": "ca:Turó de Monterols",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1653221,
           41.3913658
         ]
@@ -4263,7 +4624,8 @@
         "wikidata": "Q30095026",
         "wikipedia": "ca:Museu del Perfum",
         "fee": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q15081105"
       }
     },
     {
@@ -4302,8 +4664,8 @@
         "name": "Condal",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3747886,
         "longitude": 2.1647518,
@@ -4355,7 +4717,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3869124,
         "longitude": 2.1817909,
@@ -4366,7 +4729,8 @@
         "wikipedia": "ca:Arxiu Fotogràfic de Barcelona",
         "fee": "no",
         "wheelchair": "yes",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q2890127"
       }
     },
     {
@@ -4433,7 +4797,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.385712,
         "longitude": 2.1836373,
@@ -4444,6 +4809,30 @@
         "wikidata": "Q18695772",
         "fee": "no",
         "wheelchair": "yes",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1964059,
+          41.3835269
+        ]
+      },
+      "properties": {
+        "name": "Platja del Somorrostro",
+        "name_en": "Somorrostro Beach",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.3835269,
+        "longitude": 2.1964059,
+        "wikidata": "Q87167423",
         "popularity": 4
       }
     },
@@ -4579,8 +4968,8 @@
         "name_en": "Roman Sepulchral Via",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3842513,
         "longitude": 2.1721725,
@@ -4817,8 +5206,8 @@
         "name": "Teatre Arnau",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3753504,
         "longitude": 2.1701188,
@@ -4840,8 +5229,8 @@
         "name": "la Rotonda",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4106777,
         "longitude": 2.1373378,
@@ -4887,8 +5276,8 @@
         "name_en": "Water tower for “La Catalana de Gas” company",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3837944,
         "longitude": 2.1925748,
@@ -5026,8 +5415,8 @@
         "name": "Taller Masriera",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3957289,
         "longitude": 2.1727482,
@@ -5082,7 +5471,8 @@
         "longitude": 2.1732711,
         "wikidata": "Q18005025",
         "wikipedia": "ca:Mosaic del Pla de l'Os",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q850593"
       }
     },
     {
@@ -5194,14 +5584,15 @@
         "name": "Casa Mulleras",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3912083,
         "longitude": 2.1651134,
         "wikidata": "Q15081105",
         "wikipedia": "ca:Casa Ramon Mulleras",
-        "popularity": 4
+        "popularity": 4,
+        "site": "Q15081105"
       }
     },
     {
@@ -5324,6 +5715,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1911812,
+          41.3755284
+        ]
+      },
+      "properties": {
+        "name": "Platja de Sant Miquel",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.3755284,
+        "longitude": 2.1911812,
+        "wikidata": "Q24019707",
+        "wikipedia": "ca:Platja de Sant Miquel",
+        "popularity": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1696972,
           41.3933567
         ]
@@ -5406,7 +5821,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3669785,
         "longitude": 2.1528875,
@@ -5490,6 +5906,97 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1095383,
+          41.4283046
+        ]
+      },
+      "properties": {
+        "name": "Turó del Puig",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4283046,
+        "longitude": 2.1095383,
+        "wikidata": "Q11953742",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1280736,
+          41.4338771
+        ]
+      },
+      "properties": {
+        "name": "Turó de Santa Maria",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4338771,
+        "longitude": 2.1280736,
+        "wikidata": "Q17483537",
+        "wikipedia": "ca:Turó de Santa Maria",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1296882,
+          41.442154
+        ]
+      },
+      "properties": {
+        "name": "Turó del Maltall de Magarola",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.442154,
+        "longitude": 2.1296882,
+        "wikidata": "Q17482418",
+        "wikipedia": "ca:Turó de la Magarola",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1363628,
+          41.4428138
+        ]
+      },
+      "properties": {
+        "name": "Turó del Trac",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4428138,
+        "longitude": 2.1363628,
+        "wikidata": "Q17483744",
+        "wikipedia": "ca:Turó del Trac",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.145737,
           41.4182192
         ]
@@ -5521,8 +6028,8 @@
         "name": "Poliorama",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3840778,
         "longitude": 2.1707374,
@@ -5544,13 +6051,59 @@
         "name": "Club Capitol",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3849977,
         "longitude": 2.1707085,
         "wikidata": "Q8347023",
         "wikipedia": "ca:Club Capitol",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1655021,
+          41.4327916
+        ]
+      },
+      "properties": {
+        "name": "Turó de la Peira",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4327916,
+        "longitude": 2.1655021,
+        "wikidata": "Q17482961",
+        "wikipedia": "ca:Turó de la Peira (muntanya)",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1018001,
+          41.4051603
+        ]
+      },
+      "properties": {
+        "name": "Turó d'en Corts",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4051603,
+        "longitude": 2.1018001,
+        "wikidata": "Q17481786",
+        "wikipedia": "ca:Turó d'en Corts",
         "popularity": 3
       }
     },
@@ -5568,13 +6121,37 @@
         "category": "historic_monument",
         "profiles": [
           "CULTURAL",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3877835,
         "longitude": 2.1170052,
         "wikidata": "Q18115979",
         "wikipedia": "ca:Font d'Hèrcules (Gaudí)",
         "fee": "no",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0687697,
+          41.3969129
+        ]
+      },
+      "properties": {
+        "name": "Penya del Moro",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.3969129,
+        "longitude": 2.0687697,
+        "wikidata": "Q9061218",
+        "wikipedia": "ca:Penya del Moro (Collserola)",
         "popularity": 3
       }
     },
@@ -5591,8 +6168,8 @@
         "name": "Teatreneu",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4032396,
         "longitude": 2.1585587,
@@ -5639,8 +6216,8 @@
         "name": "Ateneu Popular de Nou Barris",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.448567,
         "longitude": 2.1800033,
@@ -5701,6 +6278,75 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1351412,
+          41.4594835
+        ]
+      },
+      "properties": {
+        "name": "Turó de Can Cerdà",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4594835,
+        "longitude": 2.1351412,
+        "wikidata": "Q11953485",
+        "wikipedia": "ca:Turó de Can Cerdà",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1702851,
+          41.4513105
+        ]
+      },
+      "properties": {
+        "name": "Turó de Roquetes",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4513105,
+        "longitude": 2.1702851,
+        "wikidata": "Q17483408",
+        "wikipedia": "ca:Turó de Roquetes",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0778934,
+          41.4029224
+        ]
+      },
+      "properties": {
+        "name": "Turó de la Coscollera",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4029224,
+        "longitude": 2.0778934,
+        "wikidata": "Q17481793",
+        "wikipedia": "ca:Turó de la Coscollera",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1666274,
           41.3714368
         ]
@@ -5710,7 +6356,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3714368,
         "longitude": 2.1666274,
@@ -5718,6 +6365,29 @@
         "wikidata": "Q6103595",
         "wikipedia": "ca:Refugi 307",
         "fee": "no",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1182134,
+          41.4563757
+        ]
+      },
+      "properties": {
+        "name": "Turó de Sant Adjutori",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4563757,
+        "longitude": 2.1182134,
+        "wikidata": "Q17483451",
+        "wikipedia": "ca:Turó de Sant Adjutori",
         "popularity": 3
       }
     },
@@ -5756,8 +6426,8 @@
         "name": "Cau d'en Genís",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4695308,
         "longitude": 2.2122531,
@@ -5780,8 +6450,8 @@
         "name": "Teatre Tívoli",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3888056,
         "longitude": 2.17027,
@@ -5789,6 +6459,29 @@
         "wikidata": "Q5101816",
         "wikipedia": "ca:Teatre Tívoli (Barcelona)",
         "wheelchair": "limited",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0749032,
+          41.4029332
+        ]
+      },
+      "properties": {
+        "name": "Turó Rodó",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4029332,
+        "longitude": 2.0749032,
+        "wikidata": "Q18008726",
+        "wikipedia": "ca:Turó Rodó (Collserola)",
         "popularity": 3
       }
     },
@@ -5867,6 +6560,304 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1552856,
+          41.4498159
+        ]
+      },
+      "properties": {
+        "name": "Turó d'en Gras",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4498159,
+        "longitude": 2.1552856,
+        "wikidata": "Q11953448",
+        "wikipedia": "ca:Turó d'en Gras",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.161047,
+          41.4503244
+        ]
+      },
+      "properties": {
+        "name": "Turó Sul",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4503244,
+        "longitude": 2.161047,
+        "wikidata": "Q17483627",
+        "wikipedia": "ca:Turó Sul",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1176193,
+          41.4661992
+        ]
+      },
+      "properties": {
+        "name": "Turó de Torreferrera",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4661992,
+        "longitude": 2.1176193,
+        "wikidata": "Q11953573",
+        "wikipedia": "ca:Turó de Torreferrera",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1655216,
+          41.4515626
+        ]
+      },
+      "properties": {
+        "name": "Turó Blau",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4515626,
+        "longitude": 2.1655216,
+        "wikidata": "Q17481373",
+        "wikipedia": "ca:Turó Blau",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0991112,
+          41.4401546
+        ]
+      },
+      "properties": {
+        "name": "Turó del Mallol",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4401546,
+        "longitude": 2.0991112,
+        "wikidata": "Q17482448",
+        "wikipedia": "ca:Turó del Mallol",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1248433,
+          41.446468
+        ]
+      },
+      "properties": {
+        "name": "Turó de Sant Medir",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.446468,
+        "longitude": 2.1248433,
+        "wikidata": "Q17483499",
+        "wikipedia": "ca:Turó de Sant Medir",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0801715,
+          41.4233118
+        ]
+      },
+      "properties": {
+        "name": "Turó de l'Alzinar",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4233118,
+        "longitude": 2.0801715,
+        "wikidata": "Q11953583",
+        "wikipedia": "ca:Turó de l'Alzinar",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0721149,
+          41.4321303
+        ]
+      },
+      "properties": {
+        "name": "Turó d'en Balasc",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4321303,
+        "longitude": 2.0721149,
+        "wikidata": "Q11953468",
+        "wikipedia": "ca:Turó d'en Balasc",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.087332,
+          41.4386339
+        ]
+      },
+      "properties": {
+        "name": "Turó del Fumet",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4386339,
+        "longitude": 2.087332,
+        "wikidata": "Q11953714",
+        "wikipedia": "ca:Turó del Fumet",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.055188,
+          41.4122022
+        ]
+      },
+      "properties": {
+        "name": "Puig d'Olorda",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4122022,
+        "longitude": 2.055188,
+        "wikidata": "Q11943503",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0628277,
+          41.4183126
+        ]
+      },
+      "properties": {
+        "name": "Turó d'en Serra",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4183126,
+        "longitude": 2.0628277,
+        "wikidata": "Q11953463",
+        "wikipedia": "ca:Turó d'en Serra (Barcelona)",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0707191,
+          41.41889
+        ]
+      },
+      "properties": {
+        "name": "Turó de Can Mallol",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.41889,
+        "longitude": 2.0707191,
+        "wikidata": "Q17481494",
+        "wikipedia": "ca:Turó de Can Mallol",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0872337,
+          41.4176918
+        ]
+      },
+      "properties": {
+        "name": "Turó de Castellví",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4176918,
+        "longitude": 2.0872337,
+        "wikidata": "Q11953506",
+        "wikipedia": "ca:Turó de Castellví",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1735904,
           41.3888477
         ]
@@ -5875,8 +6866,8 @@
         "name": "Teatre Borràs",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3888477,
         "longitude": 2.1735904,
@@ -5936,6 +6927,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.2065591,
+          41.4702938
+        ]
+      },
+      "properties": {
+        "name": "Puig Castellar",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4702938,
+        "longitude": 2.2065591,
+        "wikidata": "Q17481609",
+        "wikipedia": "ca:Puig Castellar (Serra de Marina)",
+        "popularity": 3,
+        "site": "Q5401164"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1701019,
           41.3864214
         ]
@@ -5959,6 +6974,75 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1468881,
+          41.4198731
+        ]
+      },
+      "properties": {
+        "name": "Turó de la Creueta del Coll",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4198731,
+        "longitude": 2.1468881,
+        "wikidata": "Q11953626",
+        "wikipedia": "ca:Turó de la Creueta del Coll",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0840672,
+          41.4093904
+        ]
+      },
+      "properties": {
+        "name": "Turó d'en Merlès",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4093904,
+        "longitude": 2.0840672,
+        "wikidata": "Q11953457",
+        "wikipedia": "ca:Turó d'en Merlès",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0766277,
+          41.410774
+        ]
+      },
+      "properties": {
+        "name": "Turó de la Qüestió",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.410774,
+        "longitude": 2.0766277,
+        "wikidata": "Q11953649",
+        "wikipedia": "ca:Turó de la Qüestió",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1614031,
           41.4060827
         ]
@@ -5967,8 +7051,8 @@
         "name": "Golem's",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4060827,
         "longitude": 2.1614031,
@@ -6037,8 +7121,8 @@
         "name": "Casa Pia Batlló",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3885425,
         "longitude": 2.1665052,
@@ -6082,14 +7166,15 @@
         "name": "Muntanya Russa",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4226763,
         "longitude": 2.1200059,
         "wikidata": "Q4888632",
         "wikipedia": "ca:Muntanya Russa (Parc d'Atraccions Tibidabo)",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q1138985"
       }
     },
     {
@@ -6631,8 +7716,8 @@
         "name_en": "Fountain of Plaça d'Espanya",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3750433,
         "longitude": 2.1491623,
@@ -6916,7 +8001,8 @@
         "latitude": 41.3800915,
         "longitude": 2.1752776,
         "wikidata": "Q18146384",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q1519964"
       }
     },
     {
@@ -6942,7 +8028,8 @@
         "website": "https://www.fundaciofrandaurel.com/barcelona/",
         "wikidata": "Q20949793",
         "wheelchair": "limited",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q1062480"
       }
     },
     {
@@ -7681,29 +8768,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.0687786,
-          41.3967928
-        ]
-      },
-      "properties": {
-        "name": "Penya del Moro",
-        "category": "historic_archaeological_site",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.3967928,
-        "longitude": 2.0687786,
-        "wikidata": "Q9061218",
-        "wikipedia": "ca:Penya del Moro (Collserola)",
-        "popularity": 3
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.1707884,
           41.4153601
         ]
@@ -7893,6 +8957,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.2466678,
+          41.4414765
+        ]
+      },
+      "properties": {
+        "name": "Platja Pont del Petroli",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.4414765,
+        "longitude": 2.2466678,
+        "wikidata": "Q24003083",
+        "wikipedia": "ca:Platja del Pont del Petroli",
+        "popularity": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1662893,
           41.3842004
         ]
@@ -7908,7 +8996,8 @@
         "website": "https://www.diba.cat/ca/web/recintes/casa-de-la-caritat",
         "wikidata": "Q5755089",
         "wheelchair": "yes",
-        "popularity": 3
+        "popularity": 3,
+        "site": "Q134434822"
       }
     },
     {
@@ -8019,8 +9108,8 @@
         "name": "Sala Beckett",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4045826,
         "longitude": 2.1996057,
@@ -8182,8 +9271,8 @@
         "name": "Farmàcia Hereus Torras Surroca",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4485396,
         "longitude": 2.2488028,
@@ -8192,6 +9281,29 @@
         "website": "https://www.farmaciatorrasbadalona.com/",
         "wikidata": "Q11921593",
         "wikipedia": "ca:Farmàcia Surroca",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1328071,
+          41.444688
+        ]
+      },
+      "properties": {
+        "name": "Turó de Valldaura",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.444688,
+        "longitude": 2.1328071,
+        "wikidata": "Q11953580",
+        "wikipedia": "ca:Turó de Valldaura",
         "popularity": 2
       }
     },
@@ -8230,8 +9342,8 @@
         "name": "Teatre Joventut",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.372552,
         "longitude": 2.1177841,
@@ -8303,8 +9415,8 @@
         "name": "Sala FlyHard",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3718421,
         "longitude": 2.1406718,
@@ -8487,8 +9599,8 @@
         "name": "Teatre del Raval",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3793223,
         "longitude": 2.1650025,
@@ -8537,7 +9649,8 @@
         "category": "museum",
         "profiles": [
           "CULTURAL",
-          "LUXO"
+          "LUXO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.4083519,
         "longitude": 2.2015252,
@@ -8583,8 +9696,8 @@
         "name": "La Villarroel",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3845106,
         "longitude": 2.1574535,
@@ -8691,6 +9804,52 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1642029,
+          41.4498204
+        ]
+      },
+      "properties": {
+        "name": "Turó d'en Segarra",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4498204,
+        "longitude": 2.1642029,
+        "wikidata": "Q11953461",
+        "wikipedia": "ca:Turó d'en Segarra",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0605823,
+          41.4256045
+        ]
+      },
+      "properties": {
+        "name": "Turó del Xai",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.4256045,
+        "longitude": 2.0605823,
+        "wikidata": "Q11953759",
+        "wikipedia": "ca:Turó del Xai",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1752598,
           41.3872404
         ]
@@ -8743,8 +9902,8 @@
         "name": "Casa Sayrach",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3946333,
         "longitude": 2.1530982,
@@ -8822,7 +9981,8 @@
         "wikidata": "Q11938072",
         "wikipedia": "ca:Museu de Cultures del Món",
         "fee": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q44844296"
       }
     },
     {
@@ -8838,8 +9998,8 @@
         "name": "Jove Teatre Regina",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3968292,
         "longitude": 2.1560889,
@@ -8974,8 +10134,8 @@
         "name": "Casa Montjuïc",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3738696,
         "longitude": 2.1695922,
@@ -9021,8 +10181,8 @@
         "name": "Farmàcia Serentill",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4493805,
         "longitude": 2.2480506,
@@ -9113,7 +10273,8 @@
         "name": "Font del Bacallà",
         "category": "artwork",
         "profiles": [
-          "CULTURAL"
+          "CULTURAL",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3856784,
         "longitude": 2.1789368,
@@ -9250,7 +10411,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3876592,
         "longitude": 2.1839286,
@@ -9414,8 +10576,8 @@
         "name": "Mirador de Torre Baró",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4516474,
         "longitude": 2.1785887,
@@ -9912,7 +11074,8 @@
         "longitude": 2.1814128,
         "wikidata": "Q46125649",
         "wikipedia": "ca:Casa Mauri (Barcelona)",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1050032"
       }
     },
     {
@@ -9930,7 +11093,8 @@
         "profiles": [
           "NATUREZA",
           "RELAXAMENTO",
-          "SOLITARIO"
+          "SOLITARIO",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3810203,
         "longitude": 2.1742038,
@@ -10044,8 +11208,8 @@
         "name": "Casa de la Generalitat",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3789486,
         "longitude": 2.1636528,
@@ -10141,8 +11305,8 @@
         "name": "Teatre Modern",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3303302,
         "longitude": 2.0927162,
@@ -10355,6 +11519,7 @@
         "name": "Pedrera dels Ocells",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -10959,6 +12124,78 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.2495194,
+          41.4447769
+        ]
+      },
+      "properties": {
+        "name": "Platja de l'Estació",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.4447769,
+        "longitude": 2.2495194,
+        "wikidata": "Q28116143",
+        "wikipedia": "ca:Platja de l'Estació",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2524384,
+          41.4479757
+        ]
+      },
+      "properties": {
+        "name": "Platja dels Pescadors",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.4479757,
+        "longitude": 2.2524384,
+        "wikidata": "Q28119247",
+        "wikipedia": "ca:Platja dels Pescadors (Badalona)",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2317096,
+          41.4167046
+        ]
+      },
+      "properties": {
+        "name": "Platja del Fòrum",
+        "category": "beach",
+        "profiles": [
+          "RELAXAMENTO",
+          "NATUREZA",
+          "SOCIAL"
+        ],
+        "latitude": 41.4167046,
+        "longitude": 2.2317096,
+        "wikidata": "Q18005786",
+        "wikipedia": "ca:Platja de Sant Adrià",
+        "popularity": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.1771789,
           41.3840373
         ]
@@ -10967,15 +12204,16 @@
         "name": "Palau del Lloctinent",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3840373,
         "longitude": 2.1771789,
         "website": "https://patrimoni.gencat.cat/ca/coleccio/arxiu-de-la-corona-darago",
         "wikidata": "Q126089230",
         "wheelchair": "yes",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1116546"
       }
     },
     {
@@ -11020,8 +12258,8 @@
         "name": "Sant Andreu Teatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.430476,
         "longitude": 2.1884547,
@@ -11144,7 +12382,8 @@
         "longitude": 2.1800146,
         "wikidata": "Q20898622",
         "wikipedia": "ca:Palau Mornau",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q20898622"
       }
     },
     {
@@ -11302,7 +12541,8 @@
         "address": "Carrer de Montcada, 17, Barcelona",
         "wikidata": "Q47170361",
         "wikipedia": "ca:Casa del Baró de Castellet",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1050032"
       }
     },
     {
@@ -11349,7 +12589,8 @@
         "address": "Carrer de Montcada, 23, Barcelona",
         "wikidata": "Q47170380",
         "wikipedia": "ca:Palau Finestres",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1050032"
       }
     },
     {
@@ -11373,7 +12614,8 @@
         "address": "Carrer de Montcada, 19, Barcelona",
         "wikidata": "Q47170787",
         "wikipedia": "ca:Palau Meca",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1050032"
       }
     },
     {
@@ -11397,7 +12639,8 @@
         "address": "Carrer de Montcada, 15, Barcelona",
         "wikidata": "Q47170366",
         "wikipedia": "ca:Palau Berenguer d'Aguilar",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q1050032"
       }
     },
     {
@@ -11444,7 +12687,8 @@
         "longitude": 2.1810516,
         "wikidata": "Q44844296",
         "wikipedia": "ca:Palau Nadal",
-        "popularity": 2
+        "popularity": 2,
+        "site": "Q44844296"
       }
     },
     {
@@ -11618,8 +12862,8 @@
         "name": "Teatre Tantarantana",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3759466,
         "longitude": 2.1673377,
@@ -11644,8 +12888,8 @@
         "name": "Blas Infante",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4377005,
         "longitude": 2.2229207,
@@ -11755,7 +12999,8 @@
         "name": "Font de la Caputxeta",
         "category": "artwork",
         "profiles": [
-          "CULTURAL"
+          "CULTURAL",
+          "MOCHILEIRO"
         ],
         "latitude": 41.4012501,
         "longitude": 2.1669556,
@@ -11863,7 +13108,8 @@
         "name": "Font de l'Efeb",
         "category": "artwork",
         "profiles": [
-          "CULTURAL"
+          "CULTURAL",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3985636,
         "longitude": 2.1686612,
@@ -11885,7 +13131,8 @@
         "name": "Font de la Palangana",
         "category": "artwork",
         "profiles": [
-          "CULTURAL"
+          "CULTURAL",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3976747,
         "longitude": 2.1654265,
@@ -11908,6 +13155,7 @@
         "name": "Mirador de la Fillola Quatre Hores",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -11994,6 +13242,7 @@
         "name": "Mirador de l'Estrella",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -12669,8 +13918,8 @@
         "name": "Cafè-Teatre el Llantiol",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3788618,
         "longitude": 2.1674882,
@@ -12716,8 +13965,8 @@
         "name": "L'Antic Teatre",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3871392,
         "longitude": 2.1759819,
@@ -13236,7 +14485,8 @@
         "name": "Font de Blancaneu",
         "category": "artwork",
         "profiles": [
-          "CULTURAL"
+          "CULTURAL",
+          "MOCHILEIRO"
         ],
         "latitude": 41.3987996,
         "longitude": 2.1531218,
@@ -13285,6 +14535,29 @@
         "longitude": 2.1879692,
         "address": "Carrer de Garcilaso, Barcelona",
         "wikidata": "Q99506337",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1390857,
+          41.3998685
+        ]
+      },
+      "properties": {
+        "name": "Turó de Modolell",
+        "category": "peak",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA"
+        ],
+        "latitude": 41.3998685,
+        "longitude": 2.1390857,
+        "wikidata": "Q21085499",
+        "wikipedia": "ca:Turó de Modolell",
         "popularity": 1
       }
     },
@@ -13364,8 +14637,8 @@
         "name": "Aquitania",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3901979,
         "longitude": 2.1447718,
@@ -13557,8 +14830,8 @@
         "name": "La Puntual. Putxinel·lis de Barcelona",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3868174,
         "longitude": 2.1812244,
@@ -13728,8 +15001,8 @@
         "name": "Teatre La Fàbrica",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.403783,
         "longitude": 2.1485186,
@@ -13840,13 +15113,14 @@
         "name": "Pati Manning",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.3841597,
         "longitude": 2.1662726,
         "wikidata": "Q134434822",
-        "popularity": 1
+        "popularity": 1,
+        "site": "Q134434822"
       }
     },
     {
@@ -13929,7 +15203,8 @@
         "name": "Illa del Molí",
         "category": "nature_reserve",
         "profiles": [
-          "NATUREZA"
+          "NATUREZA",
+          "AVENTUREIRO"
         ],
         "latitude": 41.305013,
         "longitude": 2.1305177,
@@ -13950,8 +15225,8 @@
         "name": "Teatre Margarida Xirgu",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.4499482,
         "longitude": 2.2465323,
@@ -13974,8 +15249,8 @@
         "name": "Teatre Zorrilla",
         "category": "attraction",
         "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
+          "CULTURAL",
+          "SOCIAL"
         ],
         "latitude": 41.449197,
         "longitude": 2.2492189,
@@ -13998,6 +15273,7 @@
         "name": "Mirador de Cal Beitas",
         "category": "viewpoint",
         "profiles": [
+          "AVENTUREIRO",
           "RELAXAMENTO",
           "SOLITARIO"
         ],
@@ -14005,1226 +15281,6 @@
         "longitude": 2.1279662,
         "wikidata": "Q98556984",
         "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1162428,
-          41.3126484
-        ]
-      },
-      "properties": {
-        "name": "Mirador de Cal Lluquer",
-        "category": "viewpoint",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOLITARIO"
-        ],
-        "latitude": 41.3126484,
-        "longitude": 2.1162428,
-        "wikidata": "Q98557004",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1828148,
-          41.3956479
-        ]
-      },
-      "properties": {
-        "name": "Mercat de Fort Pienc",
-        "category": "marketplace",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 41.3956479,
-        "longitude": 2.1828148,
-        "wikidata": "Q117357005",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1054631,
-          41.367219
-        ]
-      },
-      "properties": {
-        "name": "Parc de les Planes",
-        "category": "park",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO"
-        ],
-        "latitude": 41.367219,
-        "longitude": 2.1054631,
-        "wikidata": "Q24023345",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1489612,
-          41.3993436
-        ]
-      },
-      "properties": {
-        "name": "Jardins de Can Ferrer",
-        "category": "park",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO"
-        ],
-        "latitude": 41.3993436,
-        "longitude": 2.1489612,
-        "address": "Carrer d'Alfons XII, Barcelona",
-        "wikidata": "Q113627388",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1714407,
-          41.4609873
-        ]
-      },
-      "properties": {
-        "name": "Aqüeducte del Vallès (tram 1)",
-        "category": "historic_aqueduct",
-        "profiles": [
-          "CULTURAL",
-          "SOLITARIO"
-        ],
-        "latitude": 41.4609873,
-        "longitude": 2.1714407,
-        "wikidata": "Q80572985",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1748218,
-          41.4591834
-        ]
-      },
-      "properties": {
-        "name": "Parc de l'Aqüeducte",
-        "category": "park",
-        "profiles": [
-          "NATUREZA",
-          "RELAXAMENTO"
-        ],
-        "latitude": 41.4591834,
-        "longitude": 2.1748218,
-        "wikidata": "Q116689274",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1231088,
-          41.3079089
-        ]
-      },
-      "properties": {
-        "name": "Mirador de Cal Malet",
-        "category": "viewpoint",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOLITARIO"
-        ],
-        "latitude": 41.3079089,
-        "longitude": 2.1231088,
-        "wikidata": "Q112269830",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1598485,
-          41.3686501
-        ]
-      },
-      "properties": {
-        "name": "Fundació Joan Miró",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3686501,
-        "longitude": 2.1598485,
-        "address": "Parc de Montjuïc, Barcelona",
-        "opening_hours": "Tu-Su 10:00-19:00; Apr-Oct Tu-Sa 10:00-20:00; PH off",
-        "phone": "+34 934 43 94 70",
-        "website": "https://www.fmirobcn.org/",
-        "wikidata": "Q45275033",
-        "wikipedia": "ca:Fundació Joan Miró",
-        "fee": "yes",
-        "wheelchair": "yes",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.2034161,
-          41.3998613
-        ]
-      },
-      "properties": {
-        "name": "Casino l'Aliança del Poblenou",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.3998613,
-        "longitude": 2.2034161,
-        "phone": "+34 932252814",
-        "website": "https://www.casinoalianca.com/",
-        "wikidata": "Q46229138",
-        "wikipedia": "ca:Casino l'Aliança",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1808213,
-          41.3848808
-        ]
-      },
-      "properties": {
-        "name": "Palau del Marquès de Llo",
-        "category": "historic_castle",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.3848808,
-        "longitude": 2.1808213,
-        "wikidata": "Q133749451",
-        "wikipedia": "ca:Palau del Marquès de Llo",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.2125651,
-          41.4291634
-        ]
-      },
-      "properties": {
-        "name": "Arc Adrianenc",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.4291634,
-        "longitude": 2.2125651,
-        "opening_hours": "24/7",
-        "wikidata": "Q20985002",
-        "wikipedia": "ca:Arc adrianenc",
-        "wheelchair": "yes",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1726992,
-          41.3837453
-        ]
-      },
-      "properties": {
-        "name": "Palau Magarola",
-        "category": "historic_castle",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.3837453,
-        "longitude": 2.1726992,
-        "wikidata": "Q81100478",
-        "popularity": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1726713,
-          41.3815258
-        ]
-      },
-      "properties": {
-        "name": "Pastelería Escribá Rambla De Les Flors",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.3815258,
-        "longitude": 2.1726713,
-        "address": "Gran Via de les Corts Catalanes, 546, Barcelona",
-        "opening_hours": "Mo-Su 09:00-22:00",
-        "phone": "+34 934547535",
-        "website": "http://escriba.es/es/#_=_",
-        "wheelchair": "no",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1694605,
-          41.3666771
-        ]
-      },
-      "properties": {
-        "name": "Mirador de l'Alcalde",
-        "category": "viewpoint",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOLITARIO"
-        ],
-        "latitude": 41.3666771,
-        "longitude": 2.1694605,
-        "website": "https://www.meet.barcelona/ca/visita-la-i-estima-la/punts-dinteres-de-la-ciutat/jardins-del-mirador-de-l-alcalde-1338142144",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.2179729,
-          41.4492422
-        ]
-      },
-      "properties": {
-        "name": "Mercat del Fondo",
-        "category": "marketplace",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 41.4492422,
-        "longitude": 2.2179729,
-        "address": "Carrer de Mossèn Cinto Verdaguer, 131, Santa Coloma de Gramenet",
-        "opening_hours": "Mo 08:00-14:00,Tu-Th 08:00-14:00,17:00-20:00; Fr 08:00-20:00; Sa 08:00-15:00",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1289757,
-          41.3865788
-        ]
-      },
-      "properties": {
-        "name": "Roca Barcelona Gallery",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3865788,
-        "longitude": 2.1289757,
-        "address": "Carrer de Joan Güell, 211-213, Barcelona",
-        "website": "https://www.rocabarcelonagallery.com/",
-        "fee": "no",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.0851564,
-          41.3573404
-        ]
-      },
-      "properties": {
-        "name": "Museu de Matemàtiques de Catalunya (MMACA)",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3573404,
-        "longitude": 2.0851564,
-        "address": "Parc de Can Mercader, Cornellà de Llobregat",
-        "opening_hours": "We 17:00-20:00; Su 10:00-14:00; PH off",
-        "website": "https://www.mmaca.cat/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1732114,
-          41.3706564
-        ]
-      },
-      "properties": {
-        "name": "Escales de Forestier",
-        "name_en": "Forestier stairs",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.3706564,
-        "longitude": 2.1732114,
-        "wikidata": "Q115438081",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1742612,
-          41.4031293
-        ]
-      },
-      "properties": {
-        "name": "Museu de la Sagrada Família",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.4031293,
-        "longitude": 2.1742612,
-        "website": "https://sagradafamilia.org/casa-museu-gaudi",
-        "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1541901,
-          41.4119765
-        ]
-      },
-      "properties": {
-        "name": "Gaudí Experiència",
-        "name_en": "Gaudi Experience",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.4119765,
-        "longitude": 2.1541901,
-        "address": "Carrer de Larrard, 41, Barcelona",
-        "opening_hours": "Nov-Mar 10:00-17:00; Apr-Jun,Sep-Oct 10:00-18:30; Jul-Aug 10:00-20:00",
-        "phone": "+34 932 85 44 40",
-        "website": "https://www.gaudiexperiencia.com/",
-        "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1560573,
-          41.4040737
-        ]
-      },
-      "properties": {
-        "name": "Refugi Antiaeri de la Plaça del Diamant",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.4040737,
-        "longitude": 2.1560573,
-        "opening_hours": "Su 11:00+;PH off",
-        "phone": "+34932196134",
-        "website": "https://guia.barcelona.cat/detall/visites-guiades-al-refugi-antiaeri-de-la-placa-del-diamant_99400176077.html",
-        "fee": "yes",
-        "wheelchair": "no",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1698409,
-          41.3828465
-        ]
-      },
-      "properties": {
-        "name": "Museu de les Il·lusions",
-        "name_en": "Museum of Illusions Barcelona",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3828465,
-        "longitude": 2.1698409,
-        "address": "Carrer del Pintor Fortuny, 17, Barcelona",
-        "opening_hours": "Mo-Su 11:00-21:00",
-        "phone": "+34 618 55 56 55",
-        "website": "https://illusions-museum.com",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1557853,
-          41.3925882
-        ]
-      },
-      "properties": {
-        "name": "Galería Victor Saavedra",
-        "name_en": "GALERÍA VICTOR SAAVEDRA",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3925882,
-        "longitude": 2.1557853,
-        "address": "Carrer d'Enric Granados, 97, Barcelona",
-        "phone": "+34 932 385 161",
-        "website": "http://www.victorsaavedra.com/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1760031,
-          41.3826234
-        ]
-      },
-      "properties": {
-        "name": "MUHBA Domus de Sant Honorat",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3826234,
-        "longitude": 2.1760031,
-        "address": "Carrer de la Fruita, 2, Barcelona",
-        "website": "https://www.barcelona.cat/museuhistoria/ca/patrimonis-i-recerca/els-espais-del-museu/domus-de-sant-honorat",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1753677,
-          41.3825661
-        ]
-      },
-      "properties": {
-        "name": "MUHBA El Call",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3825661,
-        "longitude": 2.1753677,
-        "address": "Placeta de Manuel Ribé, 3, Barcelona",
-        "website": "https://www.barcelona.cat/museuhistoria/ca/patrimonis-i-recerca/els-espais-del-museu/el-call",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1768433,
-          41.3811467
-        ]
-      },
-      "properties": {
-        "name": "MUHBA Domus Avinyó",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3811467,
-        "longitude": 2.1768433,
-        "address": "Carrer d'Avinyó, 15, Barcelona",
-        "opening_hours": "Sa 10:00-14:00",
-        "website": "https://www.barcelona.cat/museuhistoria/ca/patrimonis-i-recerca/els-espais-del-museu/domus-davinyo",
-        "fee": "yes",
-        "wheelchair": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1732303,
-          41.382628
-        ]
-      },
-      "properties": {
-        "name": "Bcn art/fussion",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.382628,
-        "longitude": 2.1732303,
-        "address": "Carrer de Petritxol, 4, Barcelona",
-        "website": "https://bcnartdiffusion.com/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.112686,
-          41.3957409
-        ]
-      },
-      "properties": {
-        "name": "Reial Monestir de Santa Maria de Pedralbes",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3957409,
-        "longitude": 2.112686,
-        "opening_hours": "Tu-Fr 10:00-14:00; Sa-Su 10:00-17:00",
-        "website": "https://www.monestirpedralbes.barcelona/ca",
-        "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1732989,
-          41.3817824
-        ]
-      },
-      "properties": {
-        "name": "Big Fun Museum",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3817824,
-        "longitude": 2.1732989,
-        "website": "http://bigfunmuseum.com/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1790995,
-          41.3861053
-        ]
-      },
-      "properties": {
-        "name": "Espai Santa Caterina",
-        "category": "historic_archaeological_site",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.3861053,
-        "longitude": 2.1790995,
-        "website": "https://ajuntament.barcelona.cat/museuhistoria/ca/muhba-santa-caterina",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1664828,
-          41.3791633
-        ]
-      },
-      "properties": {
-        "name": "EcoMuseu Urbà Gitano de Barcelona",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3791633,
-        "longitude": 2.1664828,
-        "address": "Carrer de la Cera, 10, Barcelona",
-        "website": "https://emugba.org/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1721937,
-          41.374492
-        ]
-      },
-      "properties": {
-        "name": "Mercat de la Terra",
-        "category": "marketplace",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 41.374492,
-        "longitude": 2.1721937,
-        "opening_hours": "Sa 10:00-16:00",
-        "website": "https://slowfood.barcelona/index.php/mercat-de-la-terra",
-        "wheelchair": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1773177,
-          41.3782466
-        ]
-      },
-      "properties": {
-        "name": "Fundació Enric Miralles",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3782466,
-        "longitude": 2.1773177,
-        "address": "Passatge de la Pau, 10, Barcelona",
-        "phone": "+34 936241702",
-        "website": "https://fundacioenricmiralles.com/ca/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1415291,
-          41.3983547
-        ]
-      },
-      "properties": {
-        "name": "Antic Car Club de Catalunya",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3983547,
-        "longitude": 2.1415291,
-        "website": "https://www.anticcar.com/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.153608,
-          41.3947877
-        ]
-      },
-      "properties": {
-        "name": "Yellowkorner",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3947877,
-        "longitude": 2.153608,
-        "opening_hours": "Mo 11:30-20:30; Tu-Sa 10:30-20:30",
-        "website": "https://www.yellowkorner.com/en/home",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1815639,
-          41.3847271
-        ]
-      },
-      "properties": {
-        "name": "Moco museum",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3847271,
-        "longitude": 2.1815639,
-        "address": "Carrer de Montcada, 25, Barcelona",
-        "opening_hours": "Mo-Th 10:00-20:00; Fr-Su 10:00-21:00",
-        "website": "https://mocomuseum.com/",
-        "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.120228,
-          41.4214904
-        ]
-      },
-      "properties": {
-        "name": "Àrea Panoràmica",
-        "category": "viewpoint",
-        "profiles": [
-          "RELAXAMENTO",
-          "SOLITARIO"
-        ],
-        "latitude": 41.4214904,
-        "longitude": 2.120228,
-        "website": "https://tibidabo.cat/ca/area-panoramica",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1197125,
-          41.4213557
-        ]
-      },
-      "properties": {
-        "name": "Giradabo",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.4213557,
-        "longitude": 2.1197125,
-        "website": "https://tibidabo.cat/ca/parc-atraccions/atraccions/giradabo",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1670327,
-          41.4291415
-        ]
-      },
-      "properties": {
-        "name": "Pilar d'aigua de la mina de Can Travi",
-        "category": "historic_monument",
-        "profiles": [
-          "CULTURAL",
-          "SOLITARIO"
-        ],
-        "latitude": 41.4291415,
-        "longitude": 2.1670327,
-        "wikidata": "Q140136458",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1216081,
-          41.3891011
-        ]
-      },
-      "properties": {
-        "name": "GaudiFond",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3891011,
-        "longitude": 2.1216081,
-        "address": "Carrer de Beltrán i Rózpide, 6, Barcelona",
-        "website": "https://www.gaudifondarte.com/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1783856,
-          41.3774426
-        ]
-      },
-      "properties": {
-        "name": "Say Something Art Gallery",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3774426,
-        "longitude": 2.1783856,
-        "address": "Carrer del Parc, 1, Barcelona",
-        "phone": "+34 711083956",
-        "website": "https://www.say.barcelona/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1619569,
-          41.3879728
-        ]
-      },
-      "properties": {
-        "name": "Lab Art Studio",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3879728,
-        "longitude": 2.1619569,
-        "opening_hours": "Mo-Fr 10:30-14:00,15:30-19:30",
-        "fee": "no",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1787819,
-          41.3751748
-        ]
-      },
-      "properties": {
-        "name": "This is Med Barcelona",
-        "category": "attraction",
-        "profiles": [
-          "AVENTUREIRO",
-          "CULTURAL"
-        ],
-        "latitude": 41.3751748,
-        "longitude": 2.1787819,
-        "phone": "+34936815854",
-        "website": "https://www.thisismed.com/",
-        "wheelchair": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1726876,
-          41.3892982
-        ]
-      },
-      "properties": {
-        "name": "Paradox Museum",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3892982,
-        "longitude": 2.1726876,
-        "website": "https://paradoxmuseum.com/barcelona/",
-        "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.176194,
-          41.3890544
-        ]
-      },
-      "properties": {
-        "name": "Museu Banksy",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3890544,
-        "longitude": 2.176194,
-        "opening_hours": "Fr-We 10:00-20:00; Th 10:00-21:00",
-        "website": "https://museobanksy.es/ca/museu-banksy/",
-        "fee": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1743315,
-          41.3818107
-        ]
-      },
-      "properties": {
-        "name": "Col.lectiu d'Artesans de l'Alimentació de la Plaça del Pi",
-        "category": "marketplace",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 41.3818107,
-        "longitude": 2.1743315,
-        "opening_hours": "Fr-Su[1,3] 11:00-21:00",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.2336364,
-          41.4408275
-        ]
-      },
-      "properties": {
-        "name": "Mercadillo semanal los martes de productos en general",
-        "category": "marketplace",
-        "profiles": [
-          "MOCHILEIRO",
-          "SOCIAL"
-        ],
-        "latitude": 41.4408275,
-        "longitude": 2.2336364,
-        "opening_hours": "Mercadillo semanal los martes de 8 h. a 14 h.",
-        "wheelchair": "yes",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1692171,
-          41.3825267
-        ]
-      },
-      "properties": {
-        "name": "àngels barcelona",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3825267,
-        "longitude": 2.1692171,
-        "address": "Carrer del Pintor Fortuny, 27, Barcelona",
-        "opening_hours": "Mo-Fr 10:30-19:00",
-        "website": "https://www.angelsbarcelona.com/",
-        "fee": "no",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1631733,
-          41.4013506
-        ]
-      },
-      "properties": {
-        "name": "Beta",
-        "category": "gallery",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.4013506,
-        "longitude": 2.1631733,
-        "address": "Carrer de Monistrol, 21, Barcelona",
-        "website": "https://www.betacontemporary.com/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1967916,
-          41.4019067
-        ]
-      },
-      "properties": {
-        "name": "Museu Terra",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.4019067,
-        "longitude": 2.1967916,
-        "website": "https://museuterra.cat/",
-        "fee": "no",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.0969627,
-          41.3613115
-        ]
-      },
-      "properties": {
-        "name": "Museu de l'Hospitalet Can Riera",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.3613115,
-        "longitude": 2.0969627,
-        "website": "https://museu.l-h.cat/",
-        "popularity": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.1824636,
-          41.4191976
-        ]
-      },
-      "properties": {
-        "name": "Museu Alien",
-        "category": "museum",
-        "profiles": [
-          "CULTURAL",
-          "LUXO"
-        ],
-        "latitude": 41.4191976,
-        "longitude": 2.1824636,
-        "address": "Carrer de Juan de Garay, 31, Barcelona",
-        "website": "https://museoalien.com/",
-        "popularity": 0
       }
     },
     {
@@ -19749,6 +19805,513 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1579186,
+          41.4029724
+        ]
+      },
+      "properties": {
+        "name": "Bar Canigó",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4029724,
+        "longitude": 2.1579186,
+        "address": "Carrer de Verdi, 2, Barcelona",
+        "opening_hours": "Mo-Th 10:00-02:00; Fr 10:00-03:00; Sa 20:00-03:00",
+        "phone": "+34 93 213 30 49",
+        "website": "http://www.barcanigo.com/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1560748,
+          41.3876408
+        ]
+      },
+      "properties": {
+        "name": "Cal Oksana",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3876408,
+        "longitude": 2.1560748,
+        "address": "Carrer de Casanova, 110, Barcelona",
+        "opening_hours": "Mo-Su 19:00-12:00",
+        "phone": "+34638583067",
+        "cuisine": "spanish",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1778655,
+          41.385131
+        ]
+      },
+      "properties": {
+        "name": "La Terraza del Central",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.385131,
+        "longitude": 2.1778655,
+        "address": "Via Laietana, 30, Barcelona",
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "phone": "+34 932 957 900",
+        "website": "https://www.grandhotelcentral.com/es/rooftop-barcelona/",
+        "cuisine": "regional;mediterranean",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1571314,
+          41.4059086
+        ]
+      },
+      "properties": {
+        "name": "Vila's Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4059086,
+        "longitude": 2.1571314,
+        "address": "Carrer de l'Alzina, 2,4, Barcelona",
+        "opening_hours": "Mo-We 17:00-24:00; Th 17:00-02:00; Fr 17:00-03:00; Sa 11:30-03:00; Su 11:30-01:00",
+        "phone": "+34 934 06 98 32",
+        "website": "https://www.vilasbar.com",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1639527,
+          41.3725137
+        ]
+      },
+      "properties": {
+        "name": "La Raposa",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3725137,
+        "longitude": 2.1639527,
+        "address": "Carrer de Tapioles, 47, Barcelona",
+        "opening_hours": "Su-Tu 13:00-20:00; We-Sa 13:00-24:00",
+        "phone": "+34 931 257 954",
+        "website": "https://laraposacoop.wordpress.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1804299,
+          41.3872947
+        ]
+      },
+      "properties": {
+        "name": "Ina",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3872947,
+        "longitude": 2.1804299,
+        "address": "Carrer dels Carders, 43, Barcelona",
+        "opening_hours": "Mo, We-Fr 09:30-16:00, 19:00-01:30; Sa 09:30-01:30; Su 09:30-23:00",
+        "phone": "+34663476017",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1622617,
+          41.4100051
+        ]
+      },
+      "properties": {
+        "name": "Cervesaria Creta",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4100051,
+        "longitude": 2.1622617,
+        "address": "Carrer de Pau Alsina, 79, Barcelona",
+        "opening_hours": "Tu-Sa 17:00-23:00",
+        "phone": "+34677457809",
+        "cuisine": "breakfast;burger;coffee_shop;friture;spanish;tapas",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1361855,
+          41.3880943
+        ]
+      },
+      "properties": {
+        "name": "Cerveseria El Tap",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3880943,
+        "longitude": 2.1361855,
+        "address": "Carrer de Constança, 8, Barcelona",
+        "opening_hours": "Mo-Th, Su 12:00-00:00; Fr, Sa 12:00-01:30",
+        "phone": "+34 935396413",
+        "website": "http://eltap.es",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1345217,
+          41.3711848
+        ]
+      },
+      "properties": {
+        "name": "Bodega Salvat",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3711848,
+        "longitude": 2.1345217,
+        "address": "Carrer d'Andalusia, 2, Barcelona",
+        "opening_hours": "Mo 09:00-22:00; Tu-Sa 09:00-22:30; Su 09:00-16:00",
+        "phone": "+34 930 11 46 22",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1603919,
+          41.3906484
+        ]
+      },
+      "properties": {
+        "name": "San Fermín",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3906484,
+        "longitude": 2.1603919,
+        "address": "Carrer de València, 215, Barcelona",
+        "opening_hours": "Mo-Fr 07:10-19:00; Su 09:15-16:00",
+        "phone": "+34934537586",
+        "cuisine": "local",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1921194,
+          41.3967903
+        ]
+      },
+      "properties": {
+        "name": "D9",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3967903,
+        "longitude": 2.1921194,
+        "address": "Carrer de Pallars, 122, Barcelona",
+        "opening_hours": "Su-Th 18:00-02:30; Fr-Sa 18:00-03:00",
+        "phone": "+34 933 099 202;+34 687 955 816",
+        "website": "https://denou.bar/",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1787973,
+          41.3854153
+        ]
+      },
+      "properties": {
+        "name": "Magma Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3854153,
+        "longitude": 2.1787973,
+        "address": "Plaça de Santa Caterina, 1, Barcelona",
+        "opening_hours": "Tu-Sa 18:00-02:30",
+        "phone": "+34645960430",
+        "website": "https://magma.barcelona/",
+        "cuisine": "mediterranean;local",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1819002,
+          41.3955687
+        ]
+      },
+      "properties": {
+        "name": "Contracorrent",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3955687,
+        "longitude": 2.1819002,
+        "address": "Carrer de Ribes, 35, Barcelona",
+        "opening_hours": "Mo,Th 17:30-23:00; Fr-Su 12:30-16:30,19:00-23:00",
+        "phone": "+34 608865917",
+        "website": "https://contracorrentbar.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1735544,
+          41.3774595
+        ]
+      },
+      "properties": {
+        "name": "Cassette Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3774595,
+        "longitude": 2.1735544,
+        "address": "Carrer de l'Est, 11, Barcelona",
+        "opening_hours": "Fr-Sa 19:00-03:00; Mo-Th 19:00-02:30",
+        "website": "https://myspace.com/cassettebarbarcelona",
+        "cuisine": "tapas",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1729617,
+          41.3895384
+        ]
+      },
+      "properties": {
+        "name": "The George Payne",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3895384,
+        "longitude": 2.1729617,
+        "address": "Plaça d'Urquinaona, 5, Barcelona",
+        "opening_hours": "Mo-We 13:00-02:00; Th, Su 13:00-02:30; Fr, Sa 13:00-03:00",
+        "website": "http://www.thegeorgepayne.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1620158,
+          41.3998575
+        ]
+      },
+      "properties": {
+        "name": "Bar Falstaff",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3998575,
+        "longitude": 2.1620158,
+        "address": "Carrer de Venus, 3, Barcelona",
+        "opening_hours": "Th 20:00-02:30; Fr-Sa 20:00-03:00",
+        "phone": "+34932073924;+34695866246",
+        "website": "http://barfalstaff.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1539985,
+          41.3927442
+        ]
+      },
+      "properties": {
+        "name": "Dry Martini",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3927442,
+        "longitude": 2.1539985,
+        "address": "Carrer d'Aribau, 162, Barcelona",
+        "opening_hours": "Mo-Th 13:00-02:30; Fr-Sa 13:00-03:00; Su 16:30-01:30",
+        "phone": "+34 932 17 50 72",
+        "website": "https://www.drymartiniorg.com/locales/dry-martini-v2/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1628073,
+          41.3970928
+        ]
+      },
+      "properties": {
+        "name": "New Chaps",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3970928,
+        "longitude": 2.1628073,
+        "address": "Avinguda Diagonal, 365, Barcelona",
+        "opening_hours": "Mo-Th 21:00-03:00; Fr-Sa 21:00-03:30; Su 19:00-03:00",
+        "phone": "+34 932155365",
+        "website": "http://www.newchaps.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1619869,
+          41.3742741
+        ]
+      },
+      "properties": {
+        "name": "Tinta Roja",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3742741,
+        "longitude": 2.1619869,
+        "address": "Carrer de la Creu dels Molers, 17, Barcelona",
+        "opening_hours": "We 20:30-00:30; Th 20:30-02:30; Fr, Sa 20:30-03:00",
+        "phone": "+34 934433243",
+        "website": "http://www.tintaroja.cat",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1785313,
+          41.382757
+        ]
+      },
+      "properties": {
+        "name": "Ginger",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.382757,
+        "longitude": 2.1785313,
+        "address": "Carrer de la Palma de Sant Just, 1, Barcelona",
+        "opening_hours": "Tu-Sa 19:30-02:30",
+        "phone": "+34 93 310 53 09",
+        "website": "http://ginger.cat/GINGER_BARCELONA/welcome_to_Ginger_Barcelona.html",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.177069,
           41.3806763
         ]
@@ -20246,6 +20809,250 @@
         "opening_hours": "Mo-Su 13:00-02:00",
         "phone": "+34933152053",
         "website": "http://www.pubblackhorse.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1305323,
+          41.371555
+        ]
+      },
+      "properties": {
+        "name": "101",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.371555,
+        "longitude": 2.1305323,
+        "address": "Carrer de Sugranyes, 101, Barcelona",
+        "opening_hours": "Mo-Su 07:00-02:30",
+        "phone": "+34633711066",
+        "website": "http://www.bar101.es/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1290611,
+          41.3731088
+        ]
+      },
+      "properties": {
+        "name": "Bar Sugranyes",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3731088,
+        "longitude": 2.1290611,
+        "address": "Carrer de Sugranyes, 62, Barcelona",
+        "opening_hours": "Tu-Sa 09:00-21:00; Su 11:00-21:00",
+        "phone": "+34934324108",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.159802,
+          41.3867826
+        ]
+      },
+      "properties": {
+        "name": "Brew Wild",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3867826,
+        "longitude": 2.159802,
+        "address": "Carrer del Consell de Cent, 244, Barcelona",
+        "opening_hours": "Mo-Th 18:00-00:00; Fr,Sa 13:00-01:00; Su 13:00-00:00",
+        "phone": "+34913483586",
+        "website": "https://www.brewwildpizzabar.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1509231,
+          41.39489
+        ]
+      },
+      "properties": {
+        "name": "Twice",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.39489,
+        "longitude": 2.1509231,
+        "address": "Carrer d'Aribau, 212, Barcelona",
+        "opening_hours": "Mo-Fr 07:00-18:00; Fr-Sa 23:30-03:00",
+        "phone": "+34 93 1422942",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1901117,
+          41.379154
+        ]
+      },
+      "properties": {
+        "name": "Estraperlo Barceloneta",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.379154,
+        "longitude": 2.1901117,
+        "address": "Carrer de l'Atlàntida, 65, Barcelona",
+        "opening_hours": "Th,Fr 20:00-00:00; Sa,Su 13:00-16:00,20:00-00:00",
+        "phone": "+34 932 21 85 64",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1550741,
+          41.4017761
+        ]
+      },
+      "properties": {
+        "name": "Bar Billar HDP",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.4017761,
+        "longitude": 2.1550741,
+        "address": "Carrer de Sant Joaquim, 35, Barcelona",
+        "opening_hours": "Tu-Th 18:00-01:00; Fr-Sa 18:00-03:00; Su-Mo 18:00-00:00",
+        "phone": "+34 934 15 43 24",
+        "website": "https://hdpbillar.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1406084,
+          41.3758973
+        ]
+      },
+      "properties": {
+        "name": "La perla negra",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3758973,
+        "longitude": 2.1406084,
+        "address": "Carrer de l'Espanya Industrial, 14, Barcelona",
+        "opening_hours": "Tu-Th 18:00-23:59; Fr-Sa 19:00-23:59; Sa 00:00-01:00; Sa-Su 12:00-16:00",
+        "phone": "+34934216773",
+        "website": "https://www.carrerdesants.cat/es/socio/la-perla-negra",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1465965,
+          41.3716464
+        ]
+      },
+      "properties": {
+        "name": "Casa Julio",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3716464,
+        "longitude": 2.1465965,
+        "address": "Carrer de Sant Germà, 18, Barcelona",
+        "opening_hours": "Mo-Fr 07:30-16:00; Sa 12:00-16:00",
+        "phone": "+34 933 28 23 29",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1614216,
+          41.3763829
+        ]
+      },
+      "properties": {
+        "name": "Cal Soci",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3763829,
+        "longitude": 2.1614216,
+        "address": "Carrer de Viladomat, 27, Barcelona",
+        "opening_hours": "Tu-Fr 19:00-02:30; Sa 13:30-03:00; Su 13:30-17:00",
+        "phone": "+34 930 29 89 12",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1528649,
+          41.3843829
+        ]
+      },
+      "properties": {
+        "name": "Bar Restaurante Fortuna",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 41.3843829,
+        "longitude": 2.1528649,
+        "address": "Avinguda de Roma, 110, Barcelona",
+        "opening_hours": "Mo-Th 08:30-00:00; Fr 08:30-01:00; Sa 10:00-01:00; Su 10:00-00:00",
+        "phone": "+34934517060",
         "popularity": 0
       }
     },
