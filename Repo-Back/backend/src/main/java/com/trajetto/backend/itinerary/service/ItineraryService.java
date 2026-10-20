@@ -232,17 +232,22 @@ public class ItineraryService {
             double curLat = req.getStartLatitude();
             double curLng = req.getStartLongitude();
             LocalDate date = startDate.plusDays(day);
-            for (LocalTime time : schedule.get(day)) {
+            List<LocalTime> times = schedule.get(day);
+            for (int slot = 0; slot < times.size(); slot++) {
+                LocalTime time = times.get(slot);
                 boolean evening = !time.isBefore(EVENING);
                 List<CatalogPlace> pool = evening && !eveningPool.isEmpty() ? eveningPool : dayPool;
+                // Os proximos horarios do dia que ainda usam a mesma lista (o dia ou a noite).
+                List<LocalTime> later = times.subList(slot + 1, times.size()).stream()
+                        .filter(t -> !t.isBefore(EVENING) == evening).toList();
                 // Um museu fechado as segundas nao entra na segunda: entre os ja escolhidos, vale o
                 // mais perto que esteja aberto no horario; se nenhum estiver, busca outro na lista geral.
-                Optional<CatalogPlace> next = nearestOpen(pool, curLat, curLng, date, time);
+                Optional<CatalogPlace> next = nearestOpen(pool, curLat, curLng, date, time, later);
                 if (next.isPresent()) {
                     pool.remove(next.get());
                 } else {
                     next = nearestOpen(evening ? reserve(ranked, chosen, eveningFit) : reserve(visits, chosen, place -> true),
-                            curLat, curLng, date, time);
+                            curLat, curLng, date, time, List.of());
                     next.ifPresent(place -> markChosen(place, chosen));
                 }
                 if (next.isEmpty()) continue;
@@ -333,9 +338,21 @@ public class ItineraryService {
                 .toList();
     }
 
-    private Optional<CatalogPlace> nearestOpen(List<CatalogPlace> pool, double lat, double lng, LocalDate date, LocalTime time) {
-        return pool.stream()
+    /**
+     * O mais perto aberto no horario. Antes, porem, o que fecha antes dos proximos horarios
+     * do dia: o Coliseu fecha as 16h30 no inverno, e quem segue sempre o mais perto chega
+     * la tarde demais e perde a visita.
+     */
+    private Optional<CatalogPlace> nearestOpen(List<CatalogPlace> pool, double lat, double lng, LocalDate date,
+                                               LocalTime time, List<LocalTime> later) {
+        List<CatalogPlace> open = pool.stream()
                 .filter(place -> OpeningHours.statusAt(place.openingHours(), date, time, VISIT_LENGTH) != Status.CLOSED)
+                .toList();
+        List<CatalogPlace> lastChance = later.isEmpty() ? List.of() : open.stream()
+                .filter(place -> later.stream().allMatch(t ->
+                        OpeningHours.statusAt(place.openingHours(), date, t, VISIT_LENGTH) == Status.CLOSED))
+                .toList();
+        return (lastChance.isEmpty() ? open : lastChance).stream()
                 .min(Comparator.comparingDouble(place -> haversineKm(lat, lng, place.latitude(), place.longitude())));
     }
 

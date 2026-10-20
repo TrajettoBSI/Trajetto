@@ -60,7 +60,8 @@ class PopularItineraryIntegrationTest {
     @RepeatedTest(5)
     @DisplayName("Um roteiro de um dia em Roma sempre passa pelo Coliseu")
     void umDiaTemOColiseu() {
-        assertTrue(gerar(1).contains("Colosseo"));
+        List<String> nomes = gerar(1);
+        assertTrue(nomes.contains("Colosseo"), nomes::toString);
     }
 
     @RepeatedTest(5)
