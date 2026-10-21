@@ -193,6 +193,8 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   };
 
   useEffect(() => {
+    // Busca a lista no servidor ao abrir; precisa ser efeito.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (visible && cities.length === 0) loadCities();
     // so na abertura; a lista de cidades nao muda durante o uso
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -201,6 +203,8 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   // Abriu com um lugar ja escolhido (o atalho "Roma"): o destino e a cidade dele.
   useEffect(() => {
     if (visible && initialPlace && cities.length > 0 && !selectedCity) {
+      // A cidade depende da lista, que chega depois da abertura; precisa ser efeito.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setSelectedCity(nearestCity(cities, initialPlace.lat, initialPlace.lng));
     }
   }, [visible, initialPlace, cities, selectedCity]);
@@ -297,6 +301,8 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   };
 
   useEffect(() => {
+    // Preenche o destino ao abrir; tambem cancela a busca pendente e fecha o teclado.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (visible && initialPlace) handleSelectSuggestion(initialPlace);
   }, [visible, initialPlace]);
 

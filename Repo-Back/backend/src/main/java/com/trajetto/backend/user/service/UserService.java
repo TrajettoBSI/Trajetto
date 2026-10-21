@@ -25,7 +25,7 @@ public interface UserService {
 
     LoginResponse login(String username, String password);
 
-    void updateUserRole(Long id, boolean isAdmin);
+    UserModel updateUserRole(Long id, String roleCode);
 
     //boolean existsByCPF(String cpf);
 

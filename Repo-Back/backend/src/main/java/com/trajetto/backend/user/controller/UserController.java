@@ -47,14 +47,14 @@ public class UserController {
     private UserFacade userFacade;
 
     @SecurityRequirement(name = "AuthServer")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('USERS_VIEW')")
     @GetMapping
     public ResponseEntity<List<UserResponseDTO>> getUsers() {
         return ResponseEntity.ok(userFacade.getAllUsers());
     }
 
     @SecurityRequirement(name = "AuthServer")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('USERS_VIEW')")
     @GetMapping("/{id}")
     public ResponseEntity<UserResponseDTO> getUserById(@PathVariable Long id) {
         return ResponseEntity.ok(userFacade.getUserById(id));
@@ -84,7 +84,7 @@ public class UserController {
     }
 
     @SecurityRequirement(name = "AuthServer")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('USERS_MANAGE')")
     @PatchMapping("/{id}")
     public ResponseEntity<UserResponseDTO> updateUser(@PathVariable Long id, @RequestBody UserDTO updateModel) {
         if (updateModel == null) {
@@ -99,7 +99,7 @@ public class UserController {
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @SecurityRequirement(name = "AuthServer")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('USERS_MANAGE')")
     @DeleteMapping("/{id}")
     public void deleteUser(@PathVariable Long id) {
         userFacade.deleteUser(id);
@@ -112,9 +112,10 @@ public class UserController {
     }
 
     @SecurityRequirement(name = "AuthServer")
+    @PreAuthorize("hasAuthority('ROLES_ASSIGN')")
     @PutMapping("/{id}/role")
-    public UserResponseDTO updateUserRole(@PathVariable Long id) {
-        return userFacade.updateUserRole(id);
+    public UserResponseDTO updateUserRole(@PathVariable Long id, @RequestBody(required = false) RoleChangeRequest request) {
+        return userFacade.updateUserRole(id, request != null ? request.resolveRoleCode() : null);
     }
 
     @SecurityRequirement(name = "AuthServer")

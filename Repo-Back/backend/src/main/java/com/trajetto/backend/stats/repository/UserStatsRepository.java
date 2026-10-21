@@ -104,7 +104,7 @@ public interface UserStatsRepository extends Repository<UserModel, Long> {
                        CONCAT(u.firstName, ' ', u.lastName), u.email, COUNT(i.id))
             FROM UserModel u
             JOIN ItineraryModel i ON i.user = u
-            WHERE (u.isAdmin IS NULL OR u.isAdmin = FALSE)
+            WHERE u.role.code = 'USER'
               AND """ + StatsRecortes.USUARIO_JPQL + """
               AND """ + StatsRecortes.ROTEIRO_SEM_USUARIO_JPQL + """
             GROUP BY u.id, u.firstName, u.lastName, u.email
@@ -146,10 +146,11 @@ public interface UserStatsRepository extends Repository<UserModel, Long> {
             FROM (
                 SELECT COUNT(i.id) AS total
                 FROM users u
+                JOIN roles r ON r.id = u.role_id
                 LEFT JOIN itineraries i
                        ON i.user_id = u.code
                       AND """ + StatsRecortes.ROTEIRO_SEM_USUARIO_SQL + """
-                WHERE (u.isAdmin IS NULL OR u.isAdmin = 0)
+                WHERE r.code = 'USER'
                   AND """ + StatsRecortes.USUARIO_SQL + """
                 GROUP BY u.code
             ) c

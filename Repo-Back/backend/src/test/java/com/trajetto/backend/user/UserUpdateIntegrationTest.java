@@ -33,8 +33,8 @@ class UserUpdateIntegrationTest {
 
     @BeforeEach
     void seed() {
-        em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, isAdmin, country, travelerProfile) "
-                + "VALUES (" + USUARIO + ", 'Edicao', 'Admin', 'edicao.admin@trajetto.local', 'x', 1, 0, 'Brasil', 'CULTURAL')")
+        em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, role_id, country, travelerProfile) "
+                + "VALUES (" + USUARIO + ", 'Edicao', 'Admin', 'edicao.admin@trajetto.local', 'x', 1, (SELECT id FROM roles WHERE code = 'USER'), 'Brasil', 'CULTURAL')")
                 .executeUpdate();
         em.flush();
         em.clear();

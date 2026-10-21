@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.trajetto.backend.role.model.RoleModel;
+import com.trajetto.backend.role.model.Roles;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -31,9 +33,10 @@ public class UserModel {
     @Column(name = "last_name")
     private String lastName;
 
-    @JsonProperty("isAdmin")
-    @Column(name = "isAdmin")
-    private Boolean isAdmin;
+    @JsonIgnore
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "role_id", nullable = false)
+    private RoleModel role;
 
     @Column(name = "travelerProfile")
     private String travelerProfile;
@@ -68,4 +71,23 @@ public class UserModel {
 //
 //    @Column(name = "profile_picture_url", length = 512)
 //    private String profilePictureUrl;
+
+    /** Código do perfil, exposto no JSON no lugar da entidade. */
+    @JsonProperty("role")
+    public String getRoleCode() {
+        return role != null ? role.getCode() : null;
+    }
+
+    /**
+     * Mantido para o aplicativo, que ainda decide a área de navegação por este campo. A
+     * autorização do backend não o usa: ela olha as permissões do perfil.
+     */
+    @JsonProperty("isAdmin")
+    public boolean getIsAdmin() {
+        return role != null && Roles.ADMIN.equals(role.getCode());
+    }
+
+    public boolean hasPermission(String permissionCode) {
+        return role != null && role.hasPermission(permissionCode);
+    }
 }

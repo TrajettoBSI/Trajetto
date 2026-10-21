@@ -13,14 +13,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.GrantedAuthority;
 
 import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
+import java.util.Collection;
 import java.util.Date;
-import java.util.List;
 import java.util.Map;
 
 @Configuration
@@ -97,12 +97,14 @@ public class Jwt {
     }
 
     private final SecretKey key;
+    private final UserAuthorityResolver authorityResolver;
 
-    public Jwt(@Value("${jwt.secret}") String secret) {
+    public Jwt(@Value("${jwt.secret}") String secret, UserAuthorityResolver authorityResolver) {
         if (secret == null || secret.getBytes(StandardCharsets.UTF_8).length < 32) {
             throw new IllegalStateException("jwt.secret precisa ter pelo menos 32 caracteres (defina JWT_SECRET).");
         }
         this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
+        this.authorityResolver = authorityResolver;
     }
 
     public static ZonedDateTime utcNow() {
@@ -113,13 +115,17 @@ public class Jwt {
         return Date.from(zonedDateTime.toInstant());
     }
 
-    public static Authentication toAuthentication(UserToken userToken) {
+    /**
+     * As autoridades vêm do perfil gravado no banco, não do token: um token emitido antes de uma
+     * troca de perfil passa a valer com o perfil novo na requisição seguinte.
+     *
+     * @throws InvalidSessionException quando o usuário do token foi removido.
+     */
+    private Authentication toAuthentication(UserToken userToken) {
+        Collection<GrantedAuthority> authorities = authorityResolver.authoritiesOf(userToken.getId())
+                .orElseThrow(() -> new InvalidSessionException(ApiErrorCode.INVALID_SESSION,
+                        "Usuário " + userToken.getId() + " do token não existe mais."));
 
-        // Boolean.TRUE.equals: tokens antigos podem não trazer o campo isAdmin.
-        String role = Boolean.TRUE.equals(userToken.getIsAdmin()) ? "ROLE_ADMIN" : "ROLE_USER";
-
-        return new UsernamePasswordAuthenticationToken(
-                userToken, userToken.getId(), List.of(new SimpleGrantedAuthority(role))
-        );
+        return new UsernamePasswordAuthenticationToken(userToken, userToken.getId(), authorities);
     }
- }
+}

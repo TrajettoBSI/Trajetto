@@ -42,8 +42,8 @@ class ProfileItineraryIntegrationTest {
 
     @BeforeEach
     void seed() {
-        em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, isAdmin, travelerProfile) "
-                + "VALUES (" + USUARIO + ", 'Perfil', 'Teste', 'perfil.teste@trajetto.local', 'x', 1, 0, 'SKIPPED')")
+        em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, role_id, travelerProfile) "
+                + "VALUES (" + USUARIO + ", 'Perfil', 'Teste', 'perfil.teste@trajetto.local', 'x', 1, (SELECT id FROM roles WHERE code = 'USER'), 'SKIPPED')")
                 .executeUpdate();
         em.flush();
     }

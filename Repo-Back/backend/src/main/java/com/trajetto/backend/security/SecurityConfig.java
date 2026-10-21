@@ -1,5 +1,6 @@
 package com.trajetto.backend.security;
 
+import com.trajetto.backend.role.model.Permissions;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import org.springframework.context.annotation.Bean;
@@ -49,6 +50,8 @@ public class SecurityConfig {
                 // Instanciado aqui, e não injetado: como bean, o Spring Boot também o
                 // registraria na cadeia de filtros do servlet, fora do controle da segurança.
                 .addFilterAfter(new JwtTokenFilter(jwt), BasicAuthenticationFilter.class)
+                // Cada regra exige uma permissão, e não um perfil: o perfil que tiver a
+                // permissão em role_permissions passa, sem mudança aqui (OB06.1).
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/v3/api-docs/**").permitAll()
                         .requestMatchers("/swagger-ui/**").permitAll()
@@ -60,11 +63,11 @@ public class SecurityConfig {
                         .requestMatchers("/api/address/**").permitAll()
                         .requestMatchers("/user/validateEmail/{email}").permitAll()
                         .requestMatchers("/user/validateCpf/{cpf}").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/stats/**").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/stats/**").hasAuthority(Permissions.STATS_VIEW)
                         .requestMatchers(HttpMethod.GET, "/places").authenticated()
                         .requestMatchers(HttpMethod.GET, "/places/categories").authenticated()
                         .requestMatchers(HttpMethod.GET, "/api/tourist-spots").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/user").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/user").hasAuthority(Permissions.USERS_VIEW)
                         .requestMatchers(HttpMethod.POST, "/user/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/user/logout").authenticated()
                         .requestMatchers(HttpMethod.POST, "/user/password/forgot").permitAll()
@@ -75,11 +78,12 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/user/me").authenticated()
                         .requestMatchers(HttpMethod.PUT, "/user/me").authenticated()
                         .requestMatchers(HttpMethod.POST, "/user/me/picture").authenticated()
-                        .requestMatchers(HttpMethod.GET, "/user/{id}").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/user/{id}").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.PATCH, "/user/{id}").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.PUT, "/user/{id}").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.PUT, "/user/*/role").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/user/{id}").hasAuthority(Permissions.USERS_VIEW)
+                        .requestMatchers(HttpMethod.DELETE, "/user/{id}").hasAuthority(Permissions.USERS_MANAGE)
+                        .requestMatchers(HttpMethod.PATCH, "/user/{id}").hasAuthority(Permissions.USERS_MANAGE)
+                        .requestMatchers(HttpMethod.PUT, "/user/{id}").hasAuthority(Permissions.USERS_MANAGE)
+                        .requestMatchers(HttpMethod.PUT, "/user/*/role").hasAuthority(Permissions.ROLES_ASSIGN)
+                        .requestMatchers(HttpMethod.GET, "/roles").hasAuthority(Permissions.ROLES_ASSIGN)
                         .requestMatchers("/route").permitAll()
                         .anyRequest().authenticated()
                 )

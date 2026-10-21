@@ -69,14 +69,14 @@ class StatsControllerFilterTest {
 
     @Test
     @DisplayName("Requisição sem parâmetro nenhum chega ao serviço como painel inteiro")
-    @WithMockUser(roles = "ADMIN")
+    @WithMockUser(authorities = "STATS_VIEW")
     void semParametros() throws Exception {
         assertEquals(StatsFilter.SEM_RECORTE, filtroRecebidoEm(painel()));
     }
 
     @Test
     @DisplayName("Os quatro critérios chegam juntos, com as datas já convertidas")
-    @WithMockUser(roles = "ADMIN")
+    @WithMockUser(authorities = "STATS_VIEW")
     void quatroCriterios() throws Exception {
         StatsFilter filtro = filtroRecebidoEm(painel()
                 .param("from", "2026-01-01")
@@ -94,7 +94,7 @@ class StatsControllerFilterTest {
 
     @Test
     @DisplayName("Critério isolado não arrasta os outros junto")
-    @WithMockUser(roles = "ADMIN")
+    @WithMockUser(authorities = "STATS_VIEW")
     void criterioIsolado() throws Exception {
         StatsFilter filtro = filtroRecebidoEm(painel().param("country", "Brasil"));
 
@@ -107,7 +107,7 @@ class StatsControllerFilterTest {
 
     @Test
     @DisplayName("Seletor limpo chega vazio e é lido como critério não escolhido")
-    @WithMockUser(roles = "ADMIN")
+    @WithMockUser(authorities = "STATS_VIEW")
     void parametroEmBranco() throws Exception {
         StatsFilter filtro = filtroRecebidoEm(painel()
                 .param("country", "")
@@ -121,7 +121,7 @@ class StatsControllerFilterTest {
 
     @Test
     @DisplayName("Rótulo com espaço e acento atravessa a URL inteiro")
-    @WithMockUser(roles = "ADMIN")
+    @WithMockUser(authorities = "STATS_VIEW")
     void rotuloComEspacoEAcento() throws Exception {
         StatsFilter filtro = filtroRecebidoEm(painel()
                 .param("profile", "Sem perfil")

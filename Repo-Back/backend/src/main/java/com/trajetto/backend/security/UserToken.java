@@ -2,16 +2,24 @@ package com.trajetto.backend.security;
 
 import com.trajetto.backend.user.model.UserModel;
 import java.io.Serializable;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Conteúdo do token. Só identifica o usuário: o perfil vai junto apenas como informação para o
+ * aplicativo, e a autorização do backend relê o perfil no banco a cada requisição.
+ * <p>
+ * {@code ignoreUnknown}: tokens emitidos antes da V16 trazem o campo {@code isAdmin}.
+ */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UserToken implements Serializable {
 
     @JsonProperty("id")
     private Long id;
     @JsonProperty("name")
     private String name;
-    @JsonProperty("isAdmin")
-    private Boolean isAdmin;
+    @JsonProperty("role")
+    private String role;
 
     public UserToken() {
         this.id=0L;
@@ -21,7 +29,7 @@ public class UserToken implements Serializable {
     public UserToken(UserModel user) {
         this.id = user.getId();
         this.name = user.getFirstName()+user.getLastName();
-        this.isAdmin = user.getIsAdmin();
+        this.role = user.getRoleCode();
     }
 
     public UserToken(Long id, String name) {
@@ -33,8 +41,8 @@ public class UserToken implements Serializable {
         return id;
     }
 
-    public Boolean getIsAdmin() {
-        return isAdmin;
+    public String getRole() {
+        return role;
     }
 
     public String getName() {

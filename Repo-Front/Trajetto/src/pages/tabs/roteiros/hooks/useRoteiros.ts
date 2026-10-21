@@ -34,6 +34,8 @@ export function useRoteiros() {
 
   useEffect(() => {
     if (params.openGenerate) {
+      // Sincroniza com o parametro da rota e o consome em seguida; precisa ser efeito.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       openGenerate();
       router.setParams({ openGenerate: undefined });
     }
@@ -55,12 +57,11 @@ export function useRoteiros() {
     setSelectedIds(new Set());
   };
 
-  useEffect(() => {
-    if (selectMode && itineraries.length === 0) {
-      setSelectMode(false);
-      setSelectedIds(new Set());
-    }
-  }, [itineraries.length, selectMode]);
+  // Sem roteiros nao ha o que selecionar: sai do modo selecao ja nesta renderizacao.
+  if (selectMode && itineraries.length === 0) {
+    setSelectMode(false);
+    setSelectedIds(new Set());
+  }
 
   const toggleSelect = (id: number) => {
     setSelectedIds((prev) => {

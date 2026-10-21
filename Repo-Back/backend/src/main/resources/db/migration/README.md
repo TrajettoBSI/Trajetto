@@ -63,6 +63,7 @@ que ainda não foram executados naquele banco. O controle fica na tabela
 | `V12` | `favorite_places`, os locais favoritos de cada usuário (OB05.1, RF08): um local favoritado uma vez só por usuário (`UNIQUE`), favoritos apagados junto com o usuário (`ON DELETE CASCADE`) e o recorte do local que a lista exibe, já que o catálogo mora no MongoDB. |
 | `V13` | Coluna `note` em `places`: a anotação pessoal que o usuário registra em cada parada do roteiro (OB05.3, RF10). Pertence à parada, não ao local do catálogo, e sai junto com o roteiro. |
 | `V14` | Coluna `visit_date` em `places`: o dia da viagem em que cada parada acontece, para o roteiro de vários dias. As paradas que já existiam recebem o `start_date` do próprio roteiro. |
+| `V16` | Perfis de acesso extensíveis: `roles`, `permissions` e `role_permissions` substituem a coluna `users.isAdmin`. Cada usuário passa a apontar para um perfil (`users.role_id`); quem era admin vira `ADMIN`, os demais viram `USER`. A `sp_stats_user_overview` é recriada contando pelo perfil. |
 
 A `V2` limpa duplicatas antes de criar cada `UNIQUE`: e-mail repetido faz a
 conta mais antiga manter o endereço e as demais receberem o sufixo
@@ -161,6 +162,22 @@ GeoJSON) e o estágio `$geoNear` do aggregation framework, em
 `TouristSpotRepository.search`. A sincronização a partir do GeoJSON continua
 existindo, só que escrevendo documentos em vez de linhas (veja
 `TouristSpotCatalogSync`).
+
+A `V16` troca o booleano `isAdmin` por um modelo de perfis e permissões. O
+backend autoriza pela permissão (`hasAuthority('STATS_VIEW')`), nunca pelo nome
+do perfil, então um perfil novo é só dado:
+
+```sql
+INSERT INTO roles (code, name, description) VALUES ('GESTOR', 'Gestor', 'Só acompanha o painel.');
+INSERT INTO role_permissions (role_id, permission_id)
+SELECT r.id, p.id FROM roles r JOIN permissions p
+ WHERE r.code = 'GESTOR' AND p.code = 'STATS_VIEW';
+```
+
+A conversão dos usuários é feita na própria migração e não perde acesso de
+ninguém: o `ADMIN` recebe as quatro permissões que o `isAdmin` liberava. A
+chave estrangeira `fk_users_role` é `RESTRICT`, então um perfil que ainda tem
+usuários não pode ser apagado.
 
 ## Conferindo um plano de consulta
 
