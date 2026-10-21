@@ -3,6 +3,7 @@ package com.trajetto.backend.user.facade.impl;
 import com.trajetto.backend.exception.BusinessRuleException;
 import com.trajetto.backend.exception.ForbiddenOperationException;
 import com.trajetto.backend.exception.ResourceNotFoundException;
+import com.trajetto.backend.role.model.Permissions;
 import com.trajetto.backend.security.UserToken;
 import com.trajetto.backend.user.dto.UserDTO;
 import com.trajetto.backend.user.dto.UserResponseDTO;
@@ -12,6 +13,7 @@ import com.trajetto.backend.user.model.UserModel;
 import com.trajetto.backend.user.repository.UserRepository;
 //import com.trajetto.backend.user.service.FirebaseStorageService;
 import com.trajetto.backend.user.service.UserService;
+import com.trajetto.backend.user.service.impl.DefaultUserService;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -46,7 +48,6 @@ public class DefaultUserFacade implements UserFacade {
         target.setCountry(source.getCountry());
         target.setEmail(source.getEmail());
         target.setPassword(source.getPassword());
-        target.setIsAdmin(source.getIsAdmin());
 
         return target;
     }
@@ -64,7 +65,6 @@ public class DefaultUserFacade implements UserFacade {
         target.setEmail(source.getEmail());
         target.setCountry(source.getCountry());
         target.setPassword(source.getPassword());
-        target.setIsAdmin(source.getIsAdmin());
         //target.setProfilePictureUrl(source.getProfilePicture());
 
         return userService.updateUser(target);
@@ -87,6 +87,8 @@ public class DefaultUserFacade implements UserFacade {
         target.setCountry(source.getCountry());
         target.setEmail(source.getEmail());
         target.setIsAdmin(source.getIsAdmin());
+        target.setRole(source.getRoleCode());
+        target.setPermissions(DefaultUserService.permissionCodes(source));
         //target.setProfilePictureUrl(source.getProfilePictureUrl());
 
         return target;
@@ -102,11 +104,8 @@ public class DefaultUserFacade implements UserFacade {
         UserModel userToDelete = userRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Usuário", id));
 
-        if (Boolean.TRUE.equals(userToDelete.getIsAdmin())) {
-            long adminCount = userRepository.countByIsAdmin(true);
-            if (adminCount <= 1) {
-                throw new BusinessRuleException("Não é possível remover o único administrador do sistema.");
-            }
+        if (isLastRoleManager(userToDelete)) {
+            throw new BusinessRuleException("Não é possível remover o único administrador do sistema.");
         }
 
         userService.deleteUser(id);
@@ -172,7 +171,7 @@ public class DefaultUserFacade implements UserFacade {
     }
 
     @Override
-    public UserResponseDTO updateUserRole(Long id) {
+    public UserResponseDTO updateUserRole(Long id, String roleCode) {
         Long loggedInUserId = getLoggedInUserId();
         if (loggedInUserId.equals(id)) {
             throw new ForbiddenOperationException("Um administrador não pode alterar o próprio cargo.");
@@ -181,20 +180,25 @@ public class DefaultUserFacade implements UserFacade {
         UserModel userToUpdate = userRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Usuário", id));
 
-        if (Boolean.TRUE.equals(userToUpdate.getIsAdmin())) {
-            long adminCount = userRepository.countByIsAdmin(true);
-            if (adminCount <= 1) {
-                throw new BusinessRuleException("Não é possível alterar o cargo do único administrador do sistema.");
-            }
+        if (roleCode.equals(userToUpdate.getRoleCode())) {
+            return populateUserResponseDTO(userToUpdate);
         }
 
-        boolean currentIsAdmin = Boolean.TRUE.equals(userToUpdate.getIsAdmin());
-        userService.updateUserRole(id, !currentIsAdmin);
+        if (isLastRoleManager(userToUpdate)) {
+            throw new BusinessRuleException("Não é possível alterar o cargo do único administrador do sistema.");
+        }
 
-        UserModel updatedUser = userRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Usuário", id));
+        return populateUserResponseDTO(userService.updateUserRole(id, roleCode));
+    }
 
-        return populateUserResponseDTO(updatedUser);
+    /**
+     * O sistema não pode ficar sem ninguém capaz de atribuir perfis: ninguém mais conseguiria
+     * promover um administrador. A regra olha a permissão, e não o nome do perfil, para valer
+     * também para perfis criados depois.
+     */
+    private boolean isLastRoleManager(UserModel user) {
+        return user.hasPermission(Permissions.ROLES_ASSIGN)
+                && userRepository.countByPermission(Permissions.ROLES_ASSIGN) <= 1;
     }
 
     private Long getLoggedInUserId() {

@@ -6,6 +6,10 @@ import com.trajetto.backend.exception.BusinessRuleException;
 import com.trajetto.backend.exception.InvalidRequestException;
 import com.trajetto.backend.exception.ResourceConflictException;
 import com.trajetto.backend.exception.ResourceNotFoundException;
+import com.trajetto.backend.role.model.PermissionModel;
+import com.trajetto.backend.role.model.RoleModel;
+import com.trajetto.backend.role.model.Roles;
+import com.trajetto.backend.role.repository.RoleRepository;
 import com.trajetto.backend.security.Jwt;
 import com.trajetto.backend.user.dto.LoginResponse;
 import com.trajetto.backend.user.dto.UserResponseDTO;
@@ -36,6 +40,7 @@ public class DefaultUserService implements UserService {
     private static final Logger logger = LogManager.getLogger(DefaultUserService.class);
 
     private final UserRepository userRepository;
+    private final RoleRepository roleRepository;
     private final PasswordEncoder passwordEncoder;
     private final Jwt jwt;
     private final ModelMapper modelMapper;
@@ -76,6 +81,8 @@ public class DefaultUserService implements UserService {
         userModel.setCountry(capitalizeWords(userModel.getCountry().trim()));
         userModel.setEmail(email);
         userModel.setPassword(passwordEncoder.encode(userModel.getPassword()));
+        // O cadastro público é sempre de viajante, independente do que vier na requisição.
+        userModel.setRole(findRole(Roles.USER));
 
         String code = String.format("%06d", new Random().nextInt(999999));
         userModel.setVerificationCode(code);
@@ -157,7 +164,17 @@ public class DefaultUserService implements UserService {
         }
 
         UserResponseDTO userResponseDTO = modelMapper.map(userModel, UserResponseDTO.class);
+        userResponseDTO.setIsAdmin(userModel.getIsAdmin());
+        userResponseDTO.setRole(userModel.getRoleCode());
+        userResponseDTO.setPermissions(permissionCodes(userModel));
         return new LoginResponse(jwt.createToken(userModel), userResponseDTO);
+    }
+
+    public static List<String> permissionCodes(UserModel user) {
+        return user.getRole().getPermissions().stream()
+                .map(PermissionModel::getCode)
+                .sorted()
+                .toList();
     }
 
     private String trimOrNull(String text) {
@@ -192,8 +209,16 @@ public class DefaultUserService implements UserService {
 //    }
 
     @Override
-    public void updateUserRole(Long id, boolean isAdmin) {
-        userRepository.updateUserRole(id, isAdmin);
+    public UserModel updateUserRole(Long id, String roleCode) {
+        UserModel user = userRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuário", id));
+        user.setRole(findRole(roleCode));
+        return userRepository.save(user);
+    }
+
+    private RoleModel findRole(String roleCode) {
+        return roleRepository.findByCode(roleCode)
+                .orElseThrow(() -> new InvalidRequestException("Perfil de acesso inexistente: " + roleCode + "."));
     }
 
 //    @Override

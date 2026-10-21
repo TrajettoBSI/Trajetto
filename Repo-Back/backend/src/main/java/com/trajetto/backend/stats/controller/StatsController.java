@@ -55,7 +55,7 @@ import java.util.List;
 @RequestMapping("/stats")
 @RequiredArgsConstructor
 @SecurityRequirement(name = "AuthServer")
-@PreAuthorize("hasRole('ADMIN')")
+@PreAuthorize("hasAuthority('STATS_VIEW')")
 public class StatsController {
 
     private final StatsService statsService;

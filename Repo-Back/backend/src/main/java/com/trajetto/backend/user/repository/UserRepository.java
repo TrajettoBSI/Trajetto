@@ -2,12 +2,8 @@ package com.trajetto.backend.user.repository;
 
 import com.trajetto.backend.user.model.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 public interface UserRepository extends JpaRepository<UserModel,Long> {
 
@@ -17,12 +13,10 @@ public interface UserRepository extends JpaRepository<UserModel,Long> {
 
     //boolean existsByCpf(String cpf);
     
-    List<UserModel> findByIsAdmin(Boolean isAdmin);
-
-    long countByIsAdmin(boolean isAdmin);
-
-    @Transactional
-    @Modifying
-    @Query("UPDATE UserModel u SET u.isAdmin = :isAdmin WHERE u.id = :id")
-    void updateUserRole(@Param("id") Long id, @Param("isAdmin") boolean isAdmin);
+    /**
+     * Quantos usuários têm um perfil com a permissão informada. Usado para impedir que o último
+     * usuário capaz de atribuir perfis seja removido ou rebaixado.
+     */
+    @Query("SELECT COUNT(u) FROM UserModel u JOIN u.role r JOIN r.permissions p WHERE p.code = :permission")
+    long countByPermission(@Param("permission") String permission);
 }

@@ -52,10 +52,7 @@ public class UserDTO {
     @Size(min = 8, max = 100, message = "A senha deve ter no mínimo 8 caracteres")
     private String password;
 
-    private boolean isAdmin;
+    // Sem campo de perfil: o cadastro sempre cria um USER, e o perfil só muda por
+    // PUT /user/{id}/role, que exige a permissão ROLES_ASSIGN.
 //    private String profilePicture;
-
-    public boolean getIsAdmin() {
-        return this.isAdmin;
-    }
 }
