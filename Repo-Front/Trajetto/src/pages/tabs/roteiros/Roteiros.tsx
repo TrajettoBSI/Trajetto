@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import { Animated, Platform, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -54,7 +54,7 @@ export default function Roteiros() {
   const visibleInactiveItineraries = showAllInactive ? inactiveItineraries : inactiveItineraries.slice(0, 4);
   const hiddenInactiveCount = inactiveItineraries.length - visibleInactiveItineraries.length;
 
-  const scrollY = useRef(new Animated.Value(0)).current;
+  const [scrollY] = useState(() => new Animated.Value(0));
   const GREETING_COLLAPSE_RANGE = 70;
   const greetingFontSize = scrollY.interpolate({
     inputRange: [0, GREETING_COLLAPSE_RANGE],

@@ -248,6 +248,8 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   };
 
   useEffect(() => {
+    // Preenche o destino ao abrir; tambem cancela a busca pendente e fecha o teclado.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (visible && initialPlace) handleSelectSuggestion(initialPlace);
   }, [visible, initialPlace]);
 

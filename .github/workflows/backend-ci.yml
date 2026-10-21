@@ -1,11 +1,10 @@
 name: Backend CI
 
 on:
+  # Sem filtro de pasta no PR: a verificacao e obrigatoria para integrar a branch protegida,
+  # entao precisa responder em todo PR, e nao so nos que mexem no backend.
   pull_request:
     branches: [ dev, test, prod ]
-    paths:
-      - 'Repo-Back/backend/**'
-      - '.github/workflows/backend-ci.yml'
   push:
     branches: [ dev, test, prod ]
     paths:
