@@ -24,7 +24,7 @@ public interface UserFacade {
 
     UserResponseDTO updateUserProfile(Long userId, UserUpdateDTO dto);
 
-    UserResponseDTO updateUserRole(Long id);
+    UserResponseDTO updateUserRole(Long id, String roleCode);
 
     //UserResponseDTO updateProfilePicture(Long userId, MultipartFile file);
 }

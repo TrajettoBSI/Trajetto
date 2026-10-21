@@ -31,9 +31,9 @@ class ItineraryNoteIntegrationTest {
 
     @BeforeEach
     void seed() {
-        em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, isAdmin) VALUES "
-                + "(" + USUARIO + ", 'Nota', 'Um', 'nota.um@trajetto.local', 'x', 1, 0), "
-                + "(" + OUTRO_USUARIO + ", 'Nota', 'Dois', 'nota.dois@trajetto.local', 'x', 1, 0)")
+        em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, role_id) VALUES "
+                + "(" + USUARIO + ", 'Nota', 'Um', 'nota.um@trajetto.local', 'x', 1, (SELECT id FROM roles WHERE code = 'USER')), "
+                + "(" + OUTRO_USUARIO + ", 'Nota', 'Dois', 'nota.dois@trajetto.local', 'x', 1, (SELECT id FROM roles WHERE code = 'USER'))")
                 .executeUpdate();
         em.createNativeQuery("INSERT INTO itineraries (id, user_id, start_date, end_date, is_active) "
                 + "VALUES (" + ROTEIRO + ", " + USUARIO + ", '2026-03-01', '2026-03-01', 1)").executeUpdate();

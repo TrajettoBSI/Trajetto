@@ -5,6 +5,8 @@ import com.trajetto.backend.itinerary.model.PlaceModel;
 import com.trajetto.backend.itinerary.repository.ItineraryRepository;
 import com.trajetto.backend.rating.model.RatingModel;
 import com.trajetto.backend.rating.repository.RatingRepository;
+import com.trajetto.backend.role.model.Roles;
+import com.trajetto.backend.role.repository.RoleRepository;
 import com.trajetto.backend.user.model.UserModel;
 import com.trajetto.backend.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -63,6 +65,7 @@ public class DataSeeder implements CommandLineRunner {
     private int avaliacaoSeq = 0;
 
     private final UserRepository userRepository;
+    private final RoleRepository roleRepository;
     private final ItineraryRepository itineraryRepository;
     private final RatingRepository ratingRepository;
     private final PasswordEncoder passwordEncoder;
@@ -299,7 +302,7 @@ public class DataSeeder implements CommandLineRunner {
         u.setCountry(country);
         u.setTravelerProfile(profile);
         u.setBirthDate(birth);
-        u.setIsAdmin(false);
+        u.setRole(roleRepository.findByCode(Roles.USER).orElseThrow());
         u.setVerified(true);
         return u;
     }

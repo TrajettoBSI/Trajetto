@@ -31,6 +31,7 @@ class SchemaRulesTest {
 
     private static final long USUARIO = 990_001L;
     private static final long ROTEIRO = 990_001L;
+    private static final String PERFIL_USER = "(SELECT id FROM roles WHERE code = 'USER')";
 
     @Autowired
     private EntityManager em;
@@ -61,8 +62,8 @@ class SchemaRulesTest {
 
     @BeforeEach
     void seed() {
-        sql("INSERT INTO users (code, first_name, last_name, email, password, is_verified, isAdmin) "
-                + "VALUES (" + USUARIO + ", 'Regra', 'Teste', 'regra.teste@trajetto.local', 'x', 1, 0)");
+        sql("INSERT INTO users (code, first_name, last_name, email, password, is_verified, role_id) "
+                + "VALUES (" + USUARIO + ", 'Regra', 'Teste', 'regra.teste@trajetto.local', 'x', 1, " + PERFIL_USER + ")");
         sql("INSERT INTO itineraries (id, user_id, start_date, end_date, is_active) "
                 + "VALUES (" + ROTEIRO + ", " + USUARIO + ", '2026-03-01', '2026-03-05', 1)");
         sql("INSERT INTO places (itinerary_id, name, order_index, latitude, longitude) "

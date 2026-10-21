@@ -33,8 +33,8 @@ class PopularItineraryIntegrationTest {
 
     @BeforeEach
     void seed() {
-        em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, isAdmin, travelerProfile) "
-                + "VALUES (" + USUARIO + ", 'Popular', 'Teste', 'popular.teste@trajetto.local', 'x', 1, 0, 'SOCIAL')")
+        em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, role_id, travelerProfile) "
+                + "VALUES (" + USUARIO + ", 'Popular', 'Teste', 'popular.teste@trajetto.local', 'x', 1, (SELECT id FROM roles WHERE code = 'USER'), 'SOCIAL')")
                 .executeUpdate();
         em.flush();
     }

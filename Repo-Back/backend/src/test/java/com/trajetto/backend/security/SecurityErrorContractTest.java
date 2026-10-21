@@ -19,10 +19,14 @@ import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.authentication.InsufficientAuthenticationException;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 
+import java.util.Collection;
 import java.util.Date;
+import java.util.List;
+import java.util.Optional;
 import java.util.function.UnaryOperator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -44,7 +48,11 @@ class SecurityErrorContractTest {
     private final ApiErrorResponseWriter responseWriter = new ApiErrorResponseWriter(objectMapper);
     private static final String SECRET = "segredo-de-teste-com-pelo-menos-32-caracteres";
 
-    private final JwtTokenFilter filter = new JwtTokenFilter(new Jwt(SECRET));
+    /** Só o usuário 1 existe, com o perfil USER e nenhuma permissão. */
+    private final UserAuthorityResolver authorities = userId -> userId == 1L
+            ? Optional.<Collection<GrantedAuthority>>of(List.of(new SimpleGrantedAuthority("ROLE_USER")))
+            : Optional.empty();
+    private final JwtTokenFilter filter = new JwtTokenFilter(new Jwt(SECRET, authorities));
     private final JsonAuthenticationEntryPoint entryPoint = new JsonAuthenticationEntryPoint(responseWriter);
     private final JsonAccessDeniedHandler accessDeniedHandler = new JsonAccessDeniedHandler(responseWriter);
 
@@ -105,6 +113,25 @@ class SecurityErrorContractTest {
         MockHttpServletRequest request = request("GET", "/user/me");
         request.addHeader(HttpHeaders.AUTHORIZATION, "Bearer "
                 + token(builder -> builder.issuer("outro-servidor").expiration(hoursFromNow(1))));
+
+        MockHttpServletResponse response = protectedRequest(request);
+
+        assertContract(response, 401, "INVALID_SESSION", "/user/me", "GET");
+    }
+
+    @Test
+    @DisplayName("Token de usuário removido responde 401 INVALID_SESSION")
+    void tokenDeUsuarioRemovido() throws Exception {
+        MockHttpServletRequest request = request("GET", "/user/me");
+        request.addHeader(HttpHeaders.AUTHORIZATION, "Bearer " + Jwts.builder()
+                .json(new JacksonSerializer<>())
+                .signWith(Keys.hmacShaKeyFor(SECRET.getBytes()))
+                .issuer(Jwt.ISSUER)
+                .subject("2")
+                .issuedAt(new Date())
+                .expiration(hoursFromNow(1))
+                .claim(Jwt.USER_FIELD, new UserToken(2L, "Removido"))
+                .compact());
 
         MockHttpServletResponse response = protectedRequest(request);
 

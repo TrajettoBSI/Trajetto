@@ -2,6 +2,8 @@ package com.trajetto.backend.support;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.trajetto.backend.role.model.Roles;
+import com.trajetto.backend.role.repository.RoleRepository;
 import com.trajetto.backend.security.Jwt;
 import com.trajetto.backend.user.model.UserModel;
 import com.trajetto.backend.user.repository.UserRepository;
@@ -40,6 +42,9 @@ public abstract class ApiIntegrationTest {
     protected UserRepository userRepository;
 
     @Autowired
+    protected RoleRepository roleRepository;
+
+    @Autowired
     protected PasswordEncoder passwordEncoder;
 
     @Autowired
@@ -58,7 +63,7 @@ public abstract class ApiIntegrationTest {
         user.setTelephone("41999990000");
         user.setBirthDate(LocalDate.of(1995, 5, 20));
         user.setTravelerProfile("CULTURAL");
-        user.setIsAdmin(admin);
+        user.setRole(roleRepository.findByCode(admin ? Roles.ADMIN : Roles.USER).orElseThrow());
         user.setVerified(true);
         return userRepository.saveAndFlush(user);
     }

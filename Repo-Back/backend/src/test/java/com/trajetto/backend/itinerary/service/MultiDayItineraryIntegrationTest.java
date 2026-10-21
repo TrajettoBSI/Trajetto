@@ -36,8 +36,8 @@ class MultiDayItineraryIntegrationTest {
 
     @BeforeEach
     void seed() {
-        em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, isAdmin, travelerProfile) "
-                + "VALUES (" + USUARIO + ", 'Dias', 'Teste', 'dias.teste@trajetto.local', 'x', 1, 0, 'CULTURAL')")
+        em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, role_id, travelerProfile) "
+                + "VALUES (" + USUARIO + ", 'Dias', 'Teste', 'dias.teste@trajetto.local', 'x', 1, (SELECT id FROM roles WHERE code = 'USER'), 'CULTURAL')")
                 .executeUpdate();
         em.flush();
     }

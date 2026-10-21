@@ -107,8 +107,8 @@ class StatsFilterIntegrationTest {
     }
 
     private void usuario(long code, String nome, String perfil, String nascimento) {
-        sql("INSERT INTO users (code, first_name, last_name, email, password, is_verified, isAdmin, country, travelerProfile, birthDate) "
-                + "VALUES (" + code + ", '" + nome + "', 'Filtro', '" + nome.toLowerCase() + ".filtro@trajetto.local', 'x', 1, 0, "
+        sql("INSERT INTO users (code, first_name, last_name, email, password, is_verified, role_id, country, travelerProfile, birthDate) "
+                + "VALUES (" + code + ", '" + nome + "', 'Filtro', '" + nome.toLowerCase() + ".filtro@trajetto.local', 'x', 1, (SELECT id FROM roles WHERE code = 'USER'), "
                 + "'" + PAIS + "', " + (perfil == null ? "NULL" : "'" + perfil + "'") + ", '" + nascimento + "')");
     }
 
