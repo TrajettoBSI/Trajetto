@@ -6,7 +6,7 @@ import { Place } from '@/services';
 import { categoryIcon, categoryLabel } from '@/src/helpers/categoryIcon';
 import { useColors } from '@/src/theme';
 import { formatCarTime, formatDistance, formatWalkTime, resolveTodayHours } from '../../mapaFormat';
-import { formatTime } from '@/src/i18n/format';
+import { formatTime, placeName } from '@/src/i18n/format';
 import { styles } from './styles';
 
 type SpotDetailCardProps = {
@@ -26,7 +26,7 @@ export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDe
       <View style={s.spotCardHeader}>
         <Text style={s.spotCardEmoji}>{categoryIcon(spot.category)}</Text>
         <View style={s.spotCardInfo}>
-          <Text style={s.spotCardName} numberOfLines={1}>{spot.name}</Text>
+          <Text style={s.spotCardName} numberOfLines={1}>{placeName(spot)}</Text>
           <Text style={s.spotCardCategory}>{categoryLabel(spot.category)}</Text>
         </View>
         <TouchableOpacity onPress={onClose} style={s.spotCardClose}>

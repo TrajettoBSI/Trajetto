@@ -1,0 +1,6345 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2387389,
+          -25.441763
+        ]
+      },
+      "properties": {
+        "name": "Jardim Botânico de Curitiba",
+        "name_en": "Botanical Garden of Curitiba",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.441763,
+        "longitude": -49.2387389,
+        "address": "Rua Engenheiro Ostoja Roguski, 350",
+        "opening_hours": "Mo-Su,PH 06:00-19:30",
+        "website": "https://www.curitiba.pr.gov.br/servicos/jardim-botanico-de-curitiba/831",
+        "wikidata": "Q94923",
+        "wikipedia": "pt:Jardim Botânico de Curitiba",
+        "popularity": 17,
+        "names": {
+          "pt": "Jardim Botânico de Curitiba",
+          "en": "Botanical Garden of Curitiba",
+          "es": "Jardín botánico de Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.267016,
+          -25.4100773
+        ]
+      },
+      "properties": {
+        "name": "Museu Oscar Niemeyer",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4100773,
+        "longitude": -49.267016,
+        "opening_hours": "Tu-Su 10:00-18:00",
+        "wikidata": "Q4991927",
+        "wikipedia": "pt:Museu Oscar Niemeyer",
+        "fee": "yes",
+        "popularity": 16,
+        "names": {
+          "pt": "Museu Oscar Niemeyer",
+          "en": "Oscar Niemeyer Museum",
+          "es": "Museo Oscar Niemeyer"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2761532,
+          -25.3844991
+        ]
+      },
+      "properties": {
+        "name": "Ópera de Arame",
+        "name_en": "Wire Opera House",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.3844991,
+        "longitude": -49.2761532,
+        "wikidata": "Q2719464",
+        "wikipedia": "pt:Ópera de Arame",
+        "popularity": 8,
+        "names": {
+          "pt": "Ópera de Arame",
+          "en": "Wire Opera House",
+          "es": "Ópera de Alambre"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3421352,
+          -25.4413461
+        ]
+      },
+      "properties": {
+        "name": "Templo de Curitiba Brasil",
+        "name_en": "Curitiba Brazil Temple",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4413461,
+        "longitude": -49.3421352,
+        "address": "Rua Deputado Heitor Alencar Furtado, 3641",
+        "website": "https://www.churchofjesuschrist.org/temples/details/curitiba-brazil-temple",
+        "wikidata": "Q1144601",
+        "wikipedia": "en:Curitiba Brazil Temple",
+        "popularity": 8,
+        "names": {
+          "pt": "Templo de Curitiba (SUD)",
+          "en": "Curitiba Brazil Temple",
+          "es": "Templo de Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2722627,
+          -25.4152105
+        ]
+      },
+      "properties": {
+        "name": "Museu do Holocausto",
+        "name_en": "Holocaust Museum in Curitiba",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4152105,
+        "longitude": -49.2722627,
+        "address": "Rua Coronel Agostinho Macedo, 248",
+        "wikidata": "Q10333897",
+        "wikipedia": "pt:Museu do Holocausto de Curitiba",
+        "popularity": 7,
+        "names": {
+          "pt": "Museu do Holocausto de Curitiba",
+          "en": "Holocaust Museum in Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2873613,
+          -25.4458148
+        ]
+      },
+      "properties": {
+        "name": "Praça do Japão",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4458148,
+        "longitude": -49.2873613,
+        "address": "Avenida Sete de Setembro, 5123",
+        "wikidata": "Q10353488",
+        "wikipedia": "pt:Praça do Japão (Curitiba)",
+        "popularity": 5,
+        "names": {
+          "pt": "Praça do Japão",
+          "en": "Praça do Japão",
+          "es": "Praça do Japão"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2651254,
+          -25.4280742
+        ]
+      },
+      "properties": {
+        "name": "Teatro Guaíra",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4280742,
+        "longitude": -49.2651254,
+        "wikidata": "Q7691919",
+        "wikipedia": "pt:Centro Cultural Teatro Guaíra",
+        "wheelchair": "yes",
+        "popularity": 5,
+        "names": {
+          "pt": "Teatro Guaíra",
+          "en": "Teatro Guaíra",
+          "es": "Centro Cultural Teatro Guaíra"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3047846,
+          -25.4023587
+        ]
+      },
+      "properties": {
+        "name": "Memorial Ucraniano",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4023587,
+        "longitude": -49.3047846,
+        "wikidata": "Q5641763",
+        "wikipedia": "pt:Memorial Ucraniano",
+        "popularity": 4,
+        "names": {
+          "pt": "Memorial Ucraniano",
+          "en": "Memorial Ucraniano",
+          "es": "Memorial Ucraniano"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2345989,
+          -25.5567062
+        ]
+      },
+      "properties": {
+        "name": "Zoológico de Curitiba",
+        "category": "zoo",
+        "profiles": [
+          "AVENTUREIRO",
+          "NATUREZA",
+          "MOCHILEIRO"
+        ],
+        "latitude": -25.5567062,
+        "longitude": -49.2345989,
+        "address": "Rua João Miqueletto, 1500",
+        "opening_hours": "Tu-Su 10:00-16:00",
+        "website": "https://www.curitiba.pr.gov.br/conteudo/zoologico-de-curitiba/3300",
+        "wikidata": "Q9011010",
+        "wikipedia": "pt:Jardim Zoológico de Curitiba",
+        "fee": "no",
+        "wheelchair": "yes",
+        "popularity": 4,
+        "names": {
+          "pt": "Jardim Zoológico de Curitiba",
+          "en": "Curitiba Zoo",
+          "es": "Jardín zoológico de Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2195521,
+          -25.4360098
+        ]
+      },
+      "properties": {
+        "name": "Bosque do Capão da Imbuia",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4360098,
+        "longitude": -49.2195521,
+        "address": "Rua Professor Benedito Conceição, 407",
+        "opening_hours": "Tu-Su 09:00-16:45",
+        "website": "https://www.curitiba.pr.gov.br/conteudo/bosque-municipal-capao-da-imbuia-museu-de-historia-natural/271",
+        "wikidata": "Q12857836",
+        "wikipedia": "pt:Bosque do Capão da Imbuia",
+        "popularity": 4,
+        "names": {
+          "pt": "Bosque do Capão da Imbuia",
+          "en": "Bosque Capão da Imbuia"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2848686,
+          -25.3797497
+        ]
+      },
+      "properties": {
+        "name": "Parque Tanguá",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.3797497,
+        "longitude": -49.2848686,
+        "wikidata": "Q9055855",
+        "wikipedia": "pt:Parque Tanguá",
+        "popularity": 4,
+        "names": {
+          "pt": "Parque Tanguá",
+          "en": "Parque Tanguá",
+          "es": "Parque Tanguá"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2866461,
+          -25.405679
+        ]
+      },
+      "properties": {
+        "name": "Bosque Alemão",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.405679,
+        "longitude": -49.2866461,
+        "wikidata": "Q4947465",
+        "wikipedia": "pt:Bosque Alemão",
+        "popularity": 4,
+        "names": {
+          "pt": "Memorial Alemão - Bosque Alemão",
+          "en": "Bosque Alemão"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2720724,
+          -25.4274834
+        ]
+      },
+      "properties": {
+        "name": "Igreja da Ordem",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4274834,
+        "longitude": -49.2720724,
+        "address": "Rua Mateus Leme, 1",
+        "wikidata": "Q10300290",
+        "wikipedia": "pt:Igreja da Ordem Terceira de São Francisco das Chagas",
+        "popularity": 4,
+        "names": {
+          "pt": "Igreja da Ordem Terceira de São Francisco das Chagas",
+          "en": "Igreja da Ordem Terceira de São Francisco das Chagas"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2761847,
+          -25.4278267
+        ]
+      },
+      "properties": {
+        "name": "Museu Paranaense",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO",
+          "MOCHILEIRO"
+        ],
+        "latitude": -25.4278267,
+        "longitude": -49.2761847,
+        "address": "Rua Kellers, 289",
+        "opening_hours": "Tu-Su 10:00-17:30",
+        "website": "https://www.museuparanaense.pr.gov.br/",
+        "wikidata": "Q10333606",
+        "wikipedia": "pt:Museu Paranaense",
+        "fee": "no",
+        "popularity": 4,
+        "names": {
+          "pt": "Museu Paranaense",
+          "en": "Museu Paranaense"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2057939,
+          -25.3801602
+        ]
+      },
+      "properties": {
+        "name": "Parque Atuba",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.3801602,
+        "longitude": -49.2057939,
+        "wikidata": "Q4818766",
+        "wikipedia": "pt:Parque Atuba",
+        "popularity": 4,
+        "names": {
+          "pt": "Parque Atuba",
+          "en": "Atuba Park"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2721292,
+          -25.427555
+        ]
+      },
+      "properties": {
+        "name": "Museu de Arte Sacra de Curitiba",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.427555,
+        "longitude": -49.2721292,
+        "wikidata": "Q10333778",
+        "wikipedia": "pt:Museu de Arte Sacra da Arquidiocese de Curitiba",
+        "popularity": 3,
+        "names": {
+          "pt": "Museu de Arte Sacra da Arquidiocese de Curitiba",
+          "en": "Museu de Arte Sacra da Arquidiocese de Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2664663,
+          -25.4287014
+        ]
+      },
+      "properties": {
+        "name": "Praça Santos Andrade",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4287014,
+        "longitude": -49.2664663,
+        "address": "Rua Conselheiro Laurindo, 160",
+        "wikidata": "Q10353372",
+        "wikipedia": "pt:Praça Santos Andrade",
+        "popularity": 3,
+        "names": {
+          "pt": "Praça Santos Andrade",
+          "en": "Praça Santos Andrade (Curitiba)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2569818,
+          -25.4347385
+        ]
+      },
+      "properties": {
+        "name": "Mercado Municipal de Curitiba",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4347385,
+        "longitude": -49.2569818,
+        "address": "Avenida Sete de Setembro, 1865",
+        "opening_hours": "Mo 07:00-14:00; Tu-Sa 07:00-18:00; Su 07:00-13:00",
+        "wikidata": "Q10328772",
+        "wikipedia": "pt:Mercado Municipal de Curitiba",
+        "popularity": 3,
+        "names": {
+          "pt": "Mercado Municipal de Curitiba",
+          "en": "Municipal Market Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.258558,
+          -25.428581
+        ]
+      },
+      "properties": {
+        "name": "Museu do Expedicionário",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.428581,
+        "longitude": -49.258558,
+        "wikidata": "Q9047097",
+        "wikipedia": "pt:Museu do Expedicionário",
+        "popularity": 3,
+        "names": {
+          "pt": "Museu do Expedicionário",
+          "en": "Museu do Expedicionário",
+          "es": "Museo del Expedicionario"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2574128,
+          -25.447633
+        ]
+      },
+      "properties": {
+        "name": "Teatro Paiol",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.447633,
+        "longitude": -49.2574128,
+        "address": "Praça Guido Viaro",
+        "opening_hours": "Mo-Fr 13:30-19:00; Sa-Su 15:00-19:00",
+        "phone": "+55 41 3213 1340",
+        "website": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/teatro-do-paiol",
+        "wikidata": "Q959223",
+        "wikipedia": "pt:Teatro Paiol",
+        "popularity": 3,
+        "names": {
+          "pt": "Teatro Paiol",
+          "en": "Teatro Paiol",
+          "es": "Teatro Paiol"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2321407,
+          -25.4157824
+        ]
+      },
+      "properties": {
+        "name": "Bosque de Portugal",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4157824,
+        "longitude": -49.2321407,
+        "address": "Rua Ozório Duque Estrada, 421",
+        "wikidata": "Q4947480",
+        "wikipedia": "pt:Bosque de Portugal",
+        "popularity": 3,
+        "names": {
+          "pt": "Bosque de Portugal",
+          "en": "Bosque de Portugal",
+          "es": "Bosque de Portugal"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2191112,
+          -25.4367484
+        ]
+      },
+      "properties": {
+        "name": "Museu de História Natural do Capão da Imbuia",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4367484,
+        "longitude": -49.2191112,
+        "address": "Rua Professor Benedito Conceição, 407",
+        "opening_hours": "Tu-Su 09:00-16:45",
+        "website": "https://www.curitiba.pr.gov.br/conteudo/museu-de-historia-natural-do-capao-da-imbuia-bosque-municipal-capao-da-imbuia/332",
+        "wikidata": "Q47068072",
+        "popularity": 3,
+        "names": {
+          "pt": "Museu de História Natural Capão da Imbuia",
+          "en": "Museu de História Natural Capão da Imbuia"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2684364,
+          -25.423381
+        ]
+      },
+      "properties": {
+        "name": "Memorial Árabe",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.423381,
+        "longitude": -49.2684364,
+        "address": "Praça Gibran Khalil",
+        "opening_hours": "Mo-Fr 09:00-21:00; Sa 09:00-13:00",
+        "wikidata": "Q10328571",
+        "wikipedia": "pt:Memorial Árabe",
+        "wheelchair": "limited",
+        "popularity": 3,
+        "names": {
+          "pt": "Memorial Árabe",
+          "en": "Landmarks in Curitiba",
+          "es": "Memorial Árabe"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2856866,
+          -25.4426791
+        ]
+      },
+      "properties": {
+        "name": "Castelo do Batel",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4426791,
+        "longitude": -49.2856866,
+        "address": "Avenida do Batel, 1323",
+        "opening_hours": "Mo-Th 08:00-18:00; Fr 00:00-00:00",
+        "phone": "+55 41 3243-2359",
+        "website": "https://www.castelodobatel.com.br/",
+        "wikidata": "Q8342181",
+        "wikipedia": "pt:Castelo do Batel",
+        "popularity": 3,
+        "names": {
+          "pt": "Castelo do Batel",
+          "en": "Castelo do Batel",
+          "es": "Castillo de Batel"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2698995,
+          -25.4249599
+        ]
+      },
+      "properties": {
+        "name": "Praça 19 de Dezembro",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4249599,
+        "longitude": -49.2698995,
+        "wikidata": "Q10353232",
+        "wikipedia": "pt:Praça 19 de Dezembro (Curitiba)",
+        "popularity": 3,
+        "names": {
+          "pt": "Praça 19 de Dezembro",
+          "en": "Praça 19 de Dezembro"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2670675,
+          -25.4252858
+        ]
+      },
+      "properties": {
+        "name": "Passeio Público",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO",
+          "MOCHILEIRO"
+        ],
+        "latitude": -25.4252858,
+        "longitude": -49.2670675,
+        "opening_hours": "Tu-Su 06:00-20:00; Mo off",
+        "phone": "+55 41 3323 3793;+55 41 3350 9940;+55 41;+55 41 3350 9631",
+        "website": "https://www.curitiba.pr.gov.br/conteudo/parques-e-bosques-passeio-publico/324",
+        "wikidata": "Q9056546",
+        "wikipedia": "pt:Passeio Público (Curitiba)",
+        "fee": "no",
+        "popularity": 3,
+        "names": {
+          "pt": "Portão do Passeio Público",
+          "en": "Passeio Público",
+          "es": "Paseo Público"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3110616,
+          -25.427657
+        ]
+      },
+      "properties": {
+        "name": "Parque Barigui",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.427657,
+        "longitude": -49.3110616,
+        "wikidata": "Q10344895",
+        "wikipedia": "pt:Parque Barigui",
+        "popularity": 3,
+        "names": {
+          "pt": "Parque Barigui",
+          "en": "Parque Barigüi"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3563724,
+          -25.446377
+        ]
+      },
+      "properties": {
+        "name": "Teatro Positivo",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.446377,
+        "longitude": -49.3563724,
+        "wikidata": "Q10378904",
+        "wikipedia": "pt:Teatro Positivo",
+        "popularity": 2,
+        "names": {
+          "pt": "Teatro Positivo",
+          "en": "Teatro Positivo",
+          "es": "Teatro Positivo"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.265823,
+          -25.4375277
+        ]
+      },
+      "properties": {
+        "name": "Museu Ferroviário de Curitiba",
+        "name_en": "Curitiba Railway Museum",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO",
+          "MOCHILEIRO"
+        ],
+        "latitude": -25.4375277,
+        "longitude": -49.265823,
+        "address": "Avenida Sete de Setembro, 2775",
+        "opening_hours": "Tu-Sa 10:00-18:00; Su 11:00-19:00",
+        "phone": "+55 41 3094-5346",
+        "wikidata": "Q56694450",
+        "wikipedia": "pt:Museu Ferroviário de Curitiba",
+        "fee": "no",
+        "popularity": 2,
+        "names": {
+          "pt": "Museu Ferroviário de Curitiba",
+          "en": "Curitiba Station"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2835706,
+          -25.3972491
+        ]
+      },
+      "properties": {
+        "name": "Universidade Livre do Meio Ambiente",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.3972491,
+        "longitude": -49.2835706,
+        "address": "Rua Victor Benato, 210",
+        "wikidata": "Q10387847",
+        "wikipedia": "pt:Universidade Livre do Meio Ambiente",
+        "popularity": 2,
+        "names": {
+          "pt": "Universidade Livre do Meio Ambiente",
+          "en": "Universidade Livre do Meio Ambiente"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2931978,
+          -25.4762839
+        ]
+      },
+      "properties": {
+        "name": "Museu Municipal de Arte",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4762839,
+        "longitude": -49.2931978,
+        "address": "Avenida República Argentina, 3430",
+        "opening_hours": "Tu-Su 10:00-19:00",
+        "website": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/museu-municipal-de-arte-muma-r-portao-cultural/",
+        "wikidata": "Q10333542",
+        "wikipedia": "pt:Museu Municipal de Arte",
+        "popularity": 2,
+        "names": {
+          "pt": "Museu Municipal de Arte",
+          "en": "Museu Municipal de Arte"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2281603,
+          -25.3859934
+        ]
+      },
+      "properties": {
+        "name": "Museu Nacional do Espiritismo",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.3859934,
+        "longitude": -49.2281603,
+        "wikidata": "Q10333593",
+        "wikipedia": "pt:Museu Nacional do Espiritismo",
+        "popularity": 2,
+        "names": {
+          "pt": "Museu Nacional do Espiritismo",
+          "en": "Museu Nacional do Espiritismo",
+          "es": "Museu Nacional do Espiritismo"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2909486,
+          -25.4153494
+        ]
+      },
+      "properties": {
+        "name": "Museu da Vida",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4153494,
+        "longitude": -49.2909486,
+        "wikidata": "Q30939398",
+        "wikipedia": "pt:Museu da Vida (Curitiba)",
+        "popularity": 2,
+        "names": {
+          "pt": "Museu da Vida",
+          "en": "Museu da Vida"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2693405,
+          -25.4099968
+        ]
+      },
+      "properties": {
+        "name": "Bosque Estadual Papa João Paulo II",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4099968,
+        "longitude": -49.2693405,
+        "wikidata": "Q9662056",
+        "wikipedia": "pt:Bosque do Papa",
+        "popularity": 2,
+        "names": {
+          "pt": "Bosque do Papa"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2737136,
+          -25.4271509
+        ]
+      },
+      "properties": {
+        "name": "Igreja do Rosário",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4271509,
+        "longitude": -49.2737136,
+        "wikidata": "Q10300922",
+        "wikipedia": "pt:Igreja do Rosário (Curitiba)",
+        "wheelchair": "no",
+        "popularity": 2,
+        "names": {
+          "pt": "Igreja do Rosário (Curitiba)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2729316,
+          -25.433166
+        ]
+      },
+      "properties": {
+        "name": "Museu de Arte Contemporânea do Paraná",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO",
+          "MOCHILEIRO"
+        ],
+        "latitude": -25.433166,
+        "longitude": -49.2729316,
+        "address": "Rua Desembargador Westphalen, 16",
+        "opening_hours": "Tu-Fr 10:00-19:00, Sa-Su 10:00-16:00, PH 10:00-16:00",
+        "phone": "+55 41 3323 5328; +55 41 3323 5337; +55 41 3222 5172",
+        "website": "https://www.mac.pr.gov.br/",
+        "wikidata": "Q10333761",
+        "wikipedia": "pt:Museu de Arte Contemporânea do Paraná",
+        "fee": "no",
+        "popularity": 2,
+        "names": {
+          "pt": "Museu de Arte Contemporânea do Paraná",
+          "en": "Museu de Arte Contemporânea do Paraná"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2307701,
+          -25.3897497
+        ]
+      },
+      "properties": {
+        "name": "Parque Bacacheri",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.3897497,
+        "longitude": -49.2307701,
+        "address": "Rua Paulo Nadolny, 136",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "website": "https://www.curitiba.pr.gov.br/conteudo/parque-bacacheriparque-municipal-gal-ibere-de-matos/291",
+        "wikidata": "Q4838575",
+        "popularity": 2,
+        "names": {
+          "pt": "Parque Bacacheri",
+          "en": "Bacacheri Park"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1966492,
+          -25.4150917
+        ]
+      },
+      "properties": {
+        "name": "Praça Max Sesselmeier",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4150917,
+        "longitude": -49.1966492,
+        "address": "Rua Arno Feliciano de Castilho, 13271",
+        "wikidata": "Q10391442",
+        "wikipedia": "pt:Vilinha",
+        "popularity": 2,
+        "names": {
+          "pt": "Vilinha",
+          "en": "Parque Histórico de Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.193159,
+          -25.4580822
+        ]
+      },
+      "properties": {
+        "name": "Parque Linear Cajuru",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4580822,
+        "longitude": -49.193159,
+        "wikidata": "Q5018024",
+        "wikipedia": "pt:Parque Linear Cajuru",
+        "popularity": 2,
+        "names": {
+          "pt": "Parque Linear Cajuru",
+          "en": "Cajuru Park"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2715822,
+          -25.4452319
+        ]
+      },
+      "properties": {
+        "name": "Paróquia do Imaculado Coração de Maria",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4452319,
+        "longitude": -49.2715822,
+        "address": "Avenida Presidente Getúlio Vargas, 1193",
+        "website": "https://pcormaria.com/",
+        "wikidata": "Q10345850",
+        "wikipedia": "pt:Paróquia do Imaculado Coração de Maria (Curitiba)",
+        "popularity": 2,
+        "names": {
+          "pt": "Paróquia fazer Imaculado Coração de Maria",
+          "en": "Paróquia Imaculado Coração de Maria"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3062319,
+          -25.4227716
+        ]
+      },
+      "properties": {
+        "name": "Museu do Automóvel",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4227716,
+        "longitude": -49.3062319,
+        "wikidata": "Q10333879",
+        "wikipedia": "pt:Museu do Automóvel de Curitiba",
+        "popularity": 2,
+        "names": {
+          "pt": "Museu do Automóvel de Curitiba",
+          "en": "Museu do Automóvel de Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2839565,
+          -25.3968532
+        ]
+      },
+      "properties": {
+        "name": "Bosque Zaninelli",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.3968532,
+        "longitude": -49.2839565,
+        "wikidata": "Q9662035",
+        "wikipedia": "pt:Bosque Zaninelli",
+        "popularity": 2,
+        "names": {
+          "pt": "Bosque Zaninelli",
+          "en": "Zaninelli woods"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2838854,
+          -25.4697443
+        ]
+      },
+      "properties": {
+        "name": "Catedral Ucraniana São João Batista",
+        "name_en": "Ukrainian Cathedral of St. John the Baptist",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4697443,
+        "longitude": -49.2838854,
+        "wikidata": "Q139906051",
+        "popularity": 2,
+        "names": {
+          "en": "Ukrainian Cathedral of St. John the Baptist"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3045278,
+          -25.4521382
+        ]
+      },
+      "properties": {
+        "name": "Fonte de Jerusalém",
+        "category": "historic_monument",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4521382,
+        "longitude": -49.3045278,
+        "wikidata": "Q10283319",
+        "wikipedia": "pt:Fonte de Jerusalém",
+        "popularity": 2,
+        "names": {
+          "pt": "Fonte de Jerusalém",
+          "es": "Fuente de Jerusalén"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2719587,
+          -25.4297295
+        ]
+      },
+      "properties": {
+        "name": "Praça Tiradentes",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4297295,
+        "longitude": -49.2719587,
+        "address": "Rua Candido Lopes, 500",
+        "wikidata": "Q10353387",
+        "popularity": 2,
+        "names": {
+          "pt": "Praça Tiradentes",
+          "en": "Praça Tiradentes"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2244809,
+          -25.4815936
+        ]
+      },
+      "properties": {
+        "name": "Armazém Santa Ana",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4815936,
+        "longitude": -49.2244809,
+        "address": "Avenida Senador Salgado Filho, 4460",
+        "website": "http://www.armazemsantaana.com.br/",
+        "wikidata": "Q9629511",
+        "wikipedia": "pt:Armazém Santa Ana",
+        "popularity": 1,
+        "names": {
+          "pt": "Armazém Santa Ana"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2742713,
+          -25.4274663
+        ]
+      },
+      "properties": {
+        "name": "Relógio das Flores",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4274663,
+        "longitude": -49.2742713,
+        "wikidata": "Q10359164",
+        "wikipedia": "pt:Relógio das Flores (Curitiba)",
+        "popularity": 1,
+        "names": {
+          "pt": "Relógio das Flores (Curitiba)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.22622,
+          -25.3907232
+        ]
+      },
+      "properties": {
+        "name": "Museu Egípcio e Rosa Cruz",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.3907232,
+        "longitude": -49.22622,
+        "address": "Rua Nicarágua, 2620",
+        "opening_hours": "Mo-Fr 08:00-12:00,13:00-17:30; Sa 14:30-17:00",
+        "phone": "+55 41 3351 3024",
+        "website": "https://urci.org.br/museuegipcioerosacruz/",
+        "wikidata": "Q28680499",
+        "wikipedia": "pt:Museu Egípcio e Rosa Cruz",
+        "popularity": 1,
+        "names": {
+          "pt": "Museu Egípcio e Rosa Cruz",
+          "en": "AMORC Building in Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2717353,
+          -25.4282607
+        ]
+      },
+      "properties": {
+        "name": "Mural Imagens da Cidade",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.4282607,
+        "longitude": -49.2717353,
+        "wikidata": "Q105800193",
+        "popularity": 1,
+        "names": {
+          "pt": "Mural da Travessa Nestor de Castro (II) - Imagens da Cidade",
+          "en": "Imagens da Cidade"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2682842,
+          -25.4165423
+        ]
+      },
+      "properties": {
+        "name": "Luar do Sertão",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.4165423,
+        "longitude": -49.2682842,
+        "wikidata": "Q65969587",
+        "wheelchair": "no",
+        "popularity": 1,
+        "names": {
+          "pt": "Conjunto das obras de João Turin",
+          "en": "Conjunto das obras de João Turin"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2928926,
+          -25.4301573
+        ]
+      },
+      "properties": {
+        "name": "Taras Shevchenko",
+        "category": "historic_monument",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4301573,
+        "longitude": -49.2928926,
+        "address": "Praça da Ucrânia",
+        "wikidata": "Q136296446",
+        "popularity": 1,
+        "names": {
+          "pt": "monumento a Taras Shevchenko, Curitiba",
+          "en": "Statue of Taras Shevchenko, Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2735506,
+          -25.4384712
+        ]
+      },
+      "properties": {
+        "name": "Teatro Bom Jesus",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4384712,
+        "longitude": -49.2735506,
+        "wikidata": "Q28680414",
+        "wikipedia": "pt:Teatro Bom Jesus",
+        "popularity": 1,
+        "names": {
+          "pt": "Teatro Bom Jesus"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2758575,
+          -25.4329639
+        ]
+      },
+      "properties": {
+        "name": "Praça General Osório",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4329639,
+        "longitude": -49.2758575,
+        "wikidata": "Q105986178",
+        "popularity": 1,
+        "names": {
+          "pt": "Praça General Osório",
+          "en": "General Osório Square"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2653229,
+          -25.3846956
+        ]
+      },
+      "properties": {
+        "name": "Parque São Lourenço",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.3846956,
+        "longitude": -49.2653229,
+        "address": "Rua José Brusamolin",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "wikidata": "Q10345352",
+        "wikipedia": "pt:Parque São Lourenço",
+        "popularity": 1,
+        "names": {
+          "pt": "Parque São Lourenço"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2023708,
+          -25.5374593
+        ]
+      },
+      "properties": {
+        "name": "Museu Municipal Atílio Rocco",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.5374593,
+        "longitude": -49.2023708,
+        "address": "Rua XV Novembro, 1660, Sao José dos Pinhais",
+        "opening_hours": "Mo-Fr 09:00-12:00,13:00-17:00",
+        "wikidata": "Q20059115",
+        "popularity": 1,
+        "names": {
+          "pt": "Museu Municipal Atílio Rocco"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2667998,
+          -25.4371698
+        ]
+      },
+      "properties": {
+        "name": "Praça Eufrásio Correia",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4371698,
+        "longitude": -49.2667998,
+        "address": "Avenida Sete de Setembro, 2848",
+        "wikidata": "Q65969406",
+        "popularity": 1,
+        "names": {
+          "pt": "Praça Eufrásio Correia",
+          "en": "Praça Eufrásio Correia"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.286799,
+          -25.4350611
+        ]
+      },
+      "properties": {
+        "name": "Praça da Espanha",
+        "name_en": "Spanish Square",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4350611,
+        "longitude": -49.286799,
+        "address": "Alameda Doutor Carlos de Carvalho, 1238",
+        "wikidata": "Q100726759",
+        "popularity": 1,
+        "names": {
+          "en": "Praça de Espanha, Curitiba",
+          "es": "Plaza de España"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3499144,
+          -25.4913661
+        ]
+      },
+      "properties": {
+        "name": "Parque Diadema",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4913661,
+        "longitude": -49.3499144,
+        "wikidata": "Q10344935",
+        "wikipedia": "pt:Parque Diadema (Curitiba)",
+        "popularity": 1,
+        "names": {
+          "pt": "Parque Diadema (Curitiba)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3546474,
+          -25.4933217
+        ]
+      },
+      "properties": {
+        "name": "Parque dos Tropeiros",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4933217,
+        "longitude": -49.3546474,
+        "wikidata": "Q10345542",
+        "wikipedia": "pt:Parque dos Tropeiros",
+        "popularity": 1,
+        "names": {
+          "pt": "Parque dos Tropeiros"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2886781,
+          -25.4129592
+        ]
+      },
+      "properties": {
+        "name": "Bosque Gutierrez",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4129592,
+        "longitude": -49.2886781,
+        "wikidata": "Q9662015",
+        "wikipedia": "pt:Bosque Gutierrez",
+        "popularity": 1,
+        "names": {
+          "pt": "Bosque Gutierrez"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.266458,
+          -25.4211727
+        ]
+      },
+      "properties": {
+        "name": "Igreja da Glória",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4211727,
+        "longitude": -49.266458,
+        "wikidata": "Q9695502",
+        "wikipedia": "pt:Capela de Nossa Senhora da Glória",
+        "popularity": 1,
+        "names": {
+          "pt": "Capela de Nossa Senhora da Glória"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2602237,
+          -25.3613784
+        ]
+      },
+      "properties": {
+        "name": "Parque Barreirinha",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.3613784,
+        "longitude": -49.2602237,
+        "wikidata": "Q10345214",
+        "wikipedia": "pt:Parque Municipal da Barreirinha",
+        "popularity": 1,
+        "names": {
+          "pt": "Parque Municipal da Barreirinha"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2488903,
+          -25.4318649
+        ]
+      },
+      "properties": {
+        "name": "Santuário Cristo Rei e São Judas Tadeu",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4318649,
+        "longitude": -49.2488903,
+        "wikidata": "Q10300901",
+        "wikipedia": "pt:Igreja do Cristo Rei",
+        "popularity": 1,
+        "names": {
+          "pt": "Igreja do Cristo Rei",
+          "en": "Christ the King Church",
+          "es": "iglesia de Cristo Rey"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2672781,
+          -25.3877185
+        ]
+      },
+      "properties": {
+        "name": "Teatro Cleon Jacques",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.3877185,
+        "longitude": -49.2672781,
+        "address": "Rua Mateus Leme, 4700",
+        "website": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/teatro-cleon-jacques/",
+        "wikidata": "Q10378818",
+        "wikipedia": "pt:Teatro Cleon Jacques",
+        "popularity": 1,
+        "names": {
+          "pt": "Teatro Cleon Jacques"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.379419,
+          -25.46835
+        ]
+      },
+      "properties": {
+        "name": "Parque Municipal do Passaúna",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.46835,
+        "longitude": -49.379419,
+        "wikidata": "Q10345284",
+        "wikipedia": "pt:Parque Passaúna",
+        "popularity": 1,
+        "names": {
+          "pt": "Parque Passaúna"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3347204,
+          -25.479922
+        ]
+      },
+      "properties": {
+        "name": "Parque Mairi",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.479922,
+        "longitude": -49.3347204,
+        "wikidata": "Q28680523",
+        "wikipedia": "pt:Parque Mairi",
+        "popularity": 1,
+        "names": {
+          "pt": "Parque Mairi"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3251705,
+          -25.4731646
+        ]
+      },
+      "properties": {
+        "name": "Parque Guairacá",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4731646,
+        "longitude": -49.3251705,
+        "wikidata": "Q18481089",
+        "wikipedia": "pt:Parque Natural Municipal do Guairacá",
+        "popularity": 1,
+        "names": {
+          "pt": "Parque Natural Municipal do Guairacá"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2711581,
+          -25.4246012
+        ]
+      },
+      "properties": {
+        "name": "Alfredo Andersen",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4246012,
+        "longitude": -49.2711581,
+        "address": "Rua Mateus Leme, 336",
+        "phone": "+55 41 3222 8262",
+        "website": "http://www.maa.pr.gov.br/",
+        "wikidata": "Q10333380",
+        "wikipedia": "pt:Museu Alfredo Andersen",
+        "popularity": 1,
+        "names": {
+          "pt": "Museu Alfredo Andersen",
+          "en": "Museu Alfredo Andersen"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2964684,
+          -25.4612073
+        ]
+      },
+      "properties": {
+        "name": "Paróquia Santa Izabel",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4612073,
+        "longitude": -49.2964684,
+        "wikidata": "Q10300216",
+        "wikipedia": "pt:Igreja Santa Izabel",
+        "popularity": 1,
+        "names": {
+          "pt": "Igreja Santa Izabel",
+          "en": "Igreja Santa Izabel",
+          "es": "iglesia de Santa Isabel"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2726285,
+          -25.4268444
+        ]
+      },
+      "properties": {
+        "name": "Teatro José Maria Santos",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4268444,
+        "longitude": -49.2726285,
+        "address": "Rua Mateus Leme",
+        "wikidata": "Q136806534",
+        "popularity": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2725521,
+          -25.4243798
+        ]
+      },
+      "properties": {
+        "name": "Templo Evangélico Luterano",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4243798,
+        "longitude": -49.2725521,
+        "address": "Rua Inácio Lustosa, 309",
+        "wikidata": "Q65969614",
+        "popularity": 1,
+        "names": {
+          "pt": "Igreja Luterana",
+          "en": "Templo Evangélico Luterano",
+          "es": "Templo Evangélico Luterano"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2718088,
+          -25.4273811
+        ]
+      },
+      "properties": {
+        "name": "Casa João Turin",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4273811,
+        "longitude": -49.2718088,
+        "wikidata": "Q56693282",
+        "popularity": 0,
+        "names": {
+          "pt": "Casa João Turin"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2710255,
+          -25.4280112
+        ]
+      },
+      "properties": {
+        "name": "Memorial a Nossa Senhora da Luz dos Pinhais",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.4280112,
+        "longitude": -49.2710255,
+        "address": "Rua São Francisco, 139",
+        "wikipedia": "pt:Memorial a Nossa Senhora da Luz dos Pinhais",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.302307,
+          -25.4528296
+        ]
+      },
+      "properties": {
+        "name": "Feira Livre do Seminário",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4528296,
+        "longitude": -49.302307,
+        "address": "Rua Professor João Argemiro Loyola",
+        "opening_hours": "Sábados pela manhã",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2659359,
+          -25.4285029
+        ]
+      },
+      "properties": {
+        "name": "Lala Schneider",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.4285029,
+        "longitude": -49.2659359,
+        "wikidata": "Q136226127",
+        "popularity": 0,
+        "names": {
+          "pt": "Máscara de Lala Schneider, Curitiba",
+          "en": "Mask of Lala Schneider, Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2847231,
+          -25.4658426
+        ]
+      },
+      "properties": {
+        "name": "L'Acqua Verde Supermercado",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4658426,
+        "longitude": -49.2847231,
+        "address": "Avenida dos Estados, 651",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2910168,
+          -25.4629852
+        ]
+      },
+      "properties": {
+        "name": "Feira Livre do Água Verde",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4629852,
+        "longitude": -49.2910168,
+        "opening_hours": "Th 17:00-22:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3051529,
+          -25.4626986
+        ]
+      },
+      "properties": {
+        "name": "Feira de Orgânicos da Santa Quitéria",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4626986,
+        "longitude": -49.3051529,
+        "opening_hours": "Sa 07:00-12:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3080549,
+          -25.4621815
+        ]
+      },
+      "properties": {
+        "name": "Feira Livre do Santa Quitéria",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4621815,
+        "longitude": -49.3080549,
+        "opening_hours": "Th 07:00-11:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2443916,
+          -25.4531416
+        ]
+      },
+      "properties": {
+        "name": "Museu da Polícia Rodoviária Federal",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4531416,
+        "longitude": -49.2443916,
+        "address": "Linha Verde, 10150",
+        "opening_hours": "Mo-Fr 08:00-16:00",
+        "phone": "+55 41 3535 1945",
+        "wikidata": "Q25420032",
+        "wikipedia": "pt:Museu da Polícia Rodoviária Federal",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.28543,
+          -25.4540059
+        ]
+      },
+      "properties": {
+        "name": "MAI - Museu de Arte Indígena",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4540059,
+        "longitude": -49.28543,
+        "address": "Avenida Água Verde, 1413",
+        "opening_hours": "Mo-Fr 10:00-17:30",
+        "phone": "+55 41 3121 2395",
+        "website": "https://www.maimuseu.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2678835,
+          -25.4387442
+        ]
+      },
+      "properties": {
+        "name": "Teatro Regina Vogue",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4387442,
+        "longitude": -49.2678835,
+        "wikidata": "Q28680403",
+        "wikipedia": "pt:Teatro Regina Vogue",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2652216,
+          -25.4292335
+        ]
+      },
+      "properties": {
+        "name": "Espaço Cultural Capela Santa Maria",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4292335,
+        "longitude": -49.2652216,
+        "address": "Rua Conselheiro Laurindo, 273",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "phone": "+55 41 3321 2840",
+        "website": "http://fundacaoculturaldecuritiba.com.br",
+        "wikidata": "Q56693967",
+        "popularity": 0,
+        "names": {
+          "pt": "Museu da Fotografia Cidade de Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2676175,
+          -25.4332498
+        ]
+      },
+      "properties": {
+        "name": "Museu da Imagem e do Som do Paraná",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4332498,
+        "longitude": -49.2676175,
+        "address": "Rua Barão do Rio Branco, 395",
+        "opening_hours": "Tu-Fr 10:00-19:00; Sa-Su 10:00-18:00",
+        "website": "https://www.mis.pr.gov.br/",
+        "wikidata": "Q56693992",
+        "popularity": 0,
+        "names": {
+          "pt": "Museu da Imagem e do Som do Paraná",
+          "en": "Museu da Imagem e do Som (Paraná, Brazil)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2527291,
+          -25.4323343
+        ]
+      },
+      "properties": {
+        "name": "Feira Gastronômica (6° Noite)",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4323343,
+        "longitude": -49.2527291,
+        "opening_hours": "Fr 18:00-22:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.252118,
+          -25.4323605
+        ]
+      },
+      "properties": {
+        "name": "Feirinha do Cristo Rei (6ª Manhã)",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4323605,
+        "longitude": -49.252118,
+        "opening_hours": "Fr 06:00-12:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2914038,
+          -25.4448147
+        ]
+      },
+      "properties": {
+        "name": "Feira Gastronômica Batel",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4448147,
+        "longitude": -49.2914038,
+        "address": "Rua Carneiro Lobo",
+        "opening_hours": "Sa 12:00-20:00",
+        "website": "https://www.curitiba.pr.gov.br/locais/feira-gastronomica-batel/618",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2760737,
+          -25.4332393
+        ]
+      },
+      "properties": {
+        "name": "Feira Sazonal da Praça Osório",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4332393,
+        "longitude": -49.2760737,
+        "opening_hours": "Mar Mo-Sa 10:00-21:00; Mar Su 14:00-20:00; Jun-Jul Mo-Sa 10:00-21:00; Jun-Jul Su 14:00-20:00; Sep-Oct Sa 10:00-21:00; Sep-Oct Su 14:00-20:00; Dec Sa 10:00-21:00; Dec Su 14:00-20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2561811,
+          -25.4210087
+        ]
+      },
+      "properties": {
+        "name": "Feirinha do Alto da XV (Sábado Manhã)",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4210087,
+        "longitude": -49.2561811,
+        "opening_hours": "Sa 04:00-13:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.286365,
+          -25.4281652
+        ]
+      },
+      "properties": {
+        "name": "Feira de Artesanato 29 de Março",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4281652,
+        "longitude": -49.286365,
+        "address": "Rua Desembargador Motta",
+        "opening_hours": "Su 08:00-13:00",
+        "website": "https://www.curitiba.pr.gov.br/locais/feira-de-artesanato-29-de-marco/2077",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2684819,
+          -25.4261356
+        ]
+      },
+      "properties": {
+        "name": "Feira Orgânica Diurna Passeio Público",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4261356,
+        "longitude": -49.2684819,
+        "address": "Rua Presidente Faria, 550",
+        "opening_hours": "Sa 07:00-12:00",
+        "website": "https://www.curitiba.pr.gov.br/locais/feira-organica-passeio-publico/763",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2706008,
+          -25.4334347
+        ]
+      },
+      "properties": {
+        "name": "Busto de Carlos Gomes",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.4334347,
+        "longitude": -49.2706008,
+        "wikidata": "Q136226095",
+        "popularity": 0,
+        "names": {
+          "pt": "Busto de Carlos Gomes, Curitiba",
+          "en": "Bust of Carlos Gomes, Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2687136,
+          -25.4284006
+        ]
+      },
+      "properties": {
+        "name": "Big Flower mural",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.4284006,
+        "longitude": -49.2687136,
+        "website": "https://monacaron.com/artivism/bike-flower-curitiba",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2562661,
+          -25.4374349
+        ]
+      },
+      "properties": {
+        "name": "Curitiba",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4374349,
+        "longitude": -49.2562661,
+        "address": "Avenida Presidente Affonso Camargo, 330",
+        "phone": "+55 41 3888-3488",
+        "website": "https://www.serraverdeexpress.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2722192,
+          -25.4442315
+        ]
+      },
+      "properties": {
+        "name": "Feirinha do Rebouças (3° Manhã)",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4442315,
+        "longitude": -49.2722192,
+        "opening_hours": "Tu 06:00-12:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2449073,
+          -25.4843798
+        ]
+      },
+      "properties": {
+        "name": "Feira Livre Vila Hauer",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4843798,
+        "longitude": -49.2449073,
+        "opening_hours": "Su 07:00-13:00",
+        "website": "https://www.curitiba.pr.gov.br/locais/feira-livre-vila-hauer/574",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1948765,
+          -25.4405235
+        ]
+      },
+      "properties": {
+        "name": "Feira de Gastronomia e Artesanato",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4405235,
+        "longitude": -49.1948765,
+        "opening_hours": "Sa-Su 13:00-20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2719118,
+          -25.4116853
+        ]
+      },
+      "properties": {
+        "name": "Mateus Leme",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.4116853,
+        "longitude": -49.2719118,
+        "wikidata": "Q136226083",
+        "popularity": 0,
+        "names": {
+          "pt": "Estátua de Mateus Leme, Curitiba",
+          "en": "Statue of Mateus Leme, Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2586314,
+          -25.446145
+        ]
+      },
+      "properties": {
+        "name": "Baltazar Carrasco dos Reis",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.446145,
+        "longitude": -49.2586314,
+        "wikidata": "Q136226080",
+        "popularity": 0,
+        "names": {
+          "pt": "Estátua de Baltazar Carrasco dos Reis, Curitiba",
+          "en": "Statue of Baltazar Carrasco dos Reis, Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.274793,
+          -25.4298662
+        ]
+      },
+      "properties": {
+        "name": "Eleodoro Ebano Pereira",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.4298662,
+        "longitude": -49.274793,
+        "wikidata": "Q136226081",
+        "popularity": 0,
+        "names": {
+          "pt": "Estátua de Eleodoro Ébano Pereira, Curitiba",
+          "en": "Statue of Eleodoro Ébano Pereira, Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3071352,
+          -25.4354657
+        ]
+      },
+      "properties": {
+        "name": "Nossa Feira Campina do Siqueira",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4354657,
+        "longitude": -49.3071352,
+        "address": "Rua São Vicente de Paulo",
+        "opening_hours": "We 15:00-20:00",
+        "website": "https://www.curitiba.pr.gov.br/locais/nossa-feira-campina-do-siqueira/2037",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2919383,
+          -25.4761617
+        ]
+      },
+      "properties": {
+        "name": "Feira Orgânica Diurna Portão",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4761617,
+        "longitude": -49.2919383,
+        "address": "Rua Professor Euro Brandão, 55",
+        "opening_hours": "Tu 07:00-12:00",
+        "website": "https://www.curitiba.pr.gov.br/locais/feira-organica-diurna-portao/1602",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2379708,
+          -25.44126
+        ]
+      },
+      "properties": {
+        "name": "Jardim das Sensações",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.44126,
+        "longitude": -49.2379708,
+        "opening_hours": "Tu-Su 09:00-16:30",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2760966,
+          -25.4404746
+        ]
+      },
+      "properties": {
+        "name": "Praça Oswaldo Cruz",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4404746,
+        "longitude": -49.2760966,
+        "address": "Rua Brigadeiro Franco, 2333",
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2856016,
+          -25.4281531
+        ]
+      },
+      "properties": {
+        "name": "Praça Vinte e Nove de Março",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4281531,
+        "longitude": -49.2856016,
+        "address": "Praça Vinte e Nove de Março",
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2187804,
+          -25.5181837
+        ]
+      },
+      "properties": {
+        "name": "Parque Náutico",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.5181837,
+        "longitude": -49.2187804,
+        "address": "Avenida Marechal Floriano Peixoto, 12205",
+        "opening_hours": "06:00-20:00",
+        "website": "https://www.curitiba.pr.gov.br/conteudo/parque-municipal-nautico-de-curitiba/3304",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3224131,
+          -25.4756582
+        ]
+      },
+      "properties": {
+        "name": "Bosque da Fazendinha",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4756582,
+        "longitude": -49.3224131,
+        "address": "Rua Carlos Klemtz, 523",
+        "website": "https://www.curitiba.pr.gov.br/conteudo/parques-e-bosques-bosque-fazendinha/272",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2608247,
+          -25.4897456
+        ]
+      },
+      "properties": {
+        "name": "Bosque Reinhard Maack",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4897456,
+        "longitude": -49.2608247,
+        "wikidata": "Q16502227",
+        "wikipedia": "pt:Bosque Reinhard Maack",
+        "popularity": 0,
+        "names": {
+          "pt": "Bosque Reinhard Maack"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2269326,
+          -25.4637005
+        ]
+      },
+      "properties": {
+        "name": "Praça Tsunessaburo Makiguti",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4637005,
+        "longitude": -49.2269326,
+        "address": "Rua Comendador Correia Júnior, 245",
+        "wikipedia": "pt:Tsunessaburo Makiguti",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2381973,
+          -25.439928
+        ]
+      },
+      "properties": {
+        "name": "Museu Botânico de Curitiba",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO",
+          "MOCHILEIRO"
+        ],
+        "latitude": -25.439928,
+        "longitude": -49.2381973,
+        "address": "Rua Engenheiro Ostoja Roguski, 350",
+        "opening_hours": "Mo-Fr 08:30-12:00,13:00-17:00; Su 09:00-17:00",
+        "website": "https://www.curitiba.pr.gov.br/locais/museu-botanico/1031",
+        "wikidata": "Q16502289",
+        "wikipedia": "pt:Museu Botânico de Curitiba",
+        "fee": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3440685,
+          -25.4280969
+        ]
+      },
+      "properties": {
+        "name": "Bosque Saturno",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4280969,
+        "longitude": -49.3440685,
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2583866,
+          -25.4289359
+        ]
+      },
+      "properties": {
+        "name": "P-47D Thunderbolt",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": -25.4289359,
+        "longitude": -49.2583866,
+        "wikipedia": "pt:Republic P-47 Thunderbolt",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2238098,
+          -25.4399765
+        ]
+      },
+      "properties": {
+        "name": "Mercado Regional Cajuru",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4399765,
+        "longitude": -49.2238098,
+        "address": "Avenida Prefeito Maurício Fruet, 1880",
+        "phone": "+55 41 3350 3837",
+        "website": "https://www.curitiba.pr.gov.br/noticias/mercado-regional-cajuru-tem-um-mundo-de-delicias-e-clima-de-cidade-do-interior/41027",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1924295,
+          -25.4794226
+        ]
+      },
+      "properties": {
+        "name": "Parque Olímpico do Cajuru",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4794226,
+        "longitude": -49.1924295,
+        "address": "Rua Rivadávia Fonseca de Macedo, 510",
+        "opening_hours": "Mo-Sa 06:00-20:00",
+        "website": "https://www.curitiba.pr.gov.br/conteudo/parque-olimpico-do-cajuru/3303",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.27191,
+          -25.4278443
+        ]
+      },
+      "properties": {
+        "name": "Casa Romário Martins",
+        "category": "gallery",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4278443,
+        "longitude": -49.27191,
+        "address": "Largo da Ordem, 30",
+        "website": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/casa-romario-martins/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2669245,
+          -25.3876157
+        ]
+      },
+      "properties": {
+        "name": "Memorial Paranista",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO",
+          "MOCHILEIRO"
+        ],
+        "latitude": -25.3876157,
+        "longitude": -49.2669245,
+        "address": "Rua Mateus Leme, 4700",
+        "website": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/memorial-paranista/",
+        "fee": "no",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1941428,
+          -25.4406172
+        ]
+      },
+      "properties": {
+        "name": "Bosque Municipal de Pinhais",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4406172,
+        "longitude": -49.1941428,
+        "address": "Rua Vinte e Quatro de Maio, Pinhais",
+        "opening_hours": "08:00-20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2921044,
+          -25.4920583
+        ]
+      },
+      "properties": {
+        "name": "Mercado Municipal Capão Raso",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4920583,
+        "longitude": -49.2921044,
+        "address": "Rua André João Gasparin, 170",
+        "phone": "+55 41 9 8403 2083",
+        "website": "https://mercadomunicipalcapaoraso.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.280401,
+          -25.4306293
+        ]
+      },
+      "properties": {
+        "name": "Largo Maestro Luiz Eulógio Zilli",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4306293,
+        "longitude": -49.280401,
+        "address": "Rua Professor Fernando Moreira, 240",
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2729899,
+          -25.4278566
+        ]
+      },
+      "properties": {
+        "name": "Memorial de Curitiba",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4278566,
+        "longitude": -49.2729899,
+        "address": "Rua do Rosário, 160",
+        "wikidata": "Q10328553",
+        "wikipedia": "pt:Memorial da Língua Portuguesa",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2612685,
+          -25.4273839
+        ]
+      },
+      "properties": {
+        "name": "Museu Guido Viaro",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO",
+          "MOCHILEIRO"
+        ],
+        "latitude": -25.4273839,
+        "longitude": -49.2612685,
+        "address": "Rua XV de Novembro, 1348",
+        "opening_hours": "Tu-Sa 14:00-18:00",
+        "fee": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3059505,
+          -25.3179541
+        ]
+      },
+      "properties": {
+        "name": "Parque Espotivo Ver. José Colode",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.3179541,
+        "longitude": -49.3059505,
+        "address": "Rua Vereador Wadislau Bugalski, 495, Almirante Tamandaré",
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2084777,
+          -25.5335355
+        ]
+      },
+      "properties": {
+        "name": "Compre Mais Supermercados",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5335355,
+        "longitude": -49.2084777,
+        "address": "Rua Passos de Oliveira, 931, São José dos Pinhais",
+        "opening_hours": "Mo-Sa 08:00-21:00; Su 08:00-20:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2695026,
+          -25.4295692
+        ]
+      },
+      "properties": {
+        "name": "Barão do Rio Branco",
+        "category": "artwork",
+        "profiles": [
+          "CULTURAL"
+        ],
+        "latitude": -25.4295692,
+        "longitude": -49.2695026,
+        "wikidata": "Q136226088",
+        "popularity": 0,
+        "names": {
+          "pt": "Estátua do Barão do Rio Branco, Curitiba",
+          "en": "Statue of Barão do Rio Branco, Curitiba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1821145,
+          -25.4408794
+        ]
+      },
+      "properties": {
+        "name": "Praça Otília Pereira Régis",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4408794,
+        "longitude": -49.1821145,
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2759243,
+          -25.3979158
+        ]
+      },
+      "properties": {
+        "name": "Praça Paulo Santi",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.3979158,
+        "longitude": -49.2759243,
+        "address": "Rua Capitão Carlos Henrique Castor, 119-221",
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2790243,
+          -25.4372115
+        ]
+      },
+      "properties": {
+        "name": "Área Pública",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.4372115,
+        "longitude": -49.2790243,
+        "address": "Rua Brigadeiro Franco, 1869",
+        "opening_hours": "09:00-17:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2524167,
+          -25.4191728
+        ]
+      },
+      "properties": {
+        "name": "Jardim da Casa Domingos do Nascimento",
+        "category": "garden",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO",
+          "SOLITARIO"
+        ],
+        "latitude": -25.4191728,
+        "longitude": -49.2524167,
+        "address": "Rua José de Alencar, 1808",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2719174,
+          -25.5420552
+        ]
+      },
+      "properties": {
+        "name": "Praça Aristides Outerial Hoefel Filho",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.5420552,
+        "longitude": -49.2719174,
+        "address": "Rua Celeste Tortato Gabardo",
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3647206,
+          -25.4524436
+        ]
+      },
+      "properties": {
+        "name": "Memorial da Segurança no Transporte no Brasil",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": -25.4524436,
+        "longitude": -49.3647206,
+        "address": "Rua Eduardo Sprada, 6447",
+        "opening_hours": "We-Su 09:00-17:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1958875,
+          -25.5372612
+        ]
+      },
+      "properties": {
+        "name": "Campo da Verissimo",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.5372612,
+        "longitude": -49.1958875,
+        "address": "Rua Veríssimo Marques, São José dos Pinhais",
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3027778,
+          -25.481553
+        ]
+      },
+      "properties": {
+        "name": "Bosque dos Mundiais",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": -25.481553,
+        "longitude": -49.3027778,
+        "website": "https://www.curitiba.pr.gov.br/noticias/bosque-dos-mundiais-traz-opcao-de-lazer-em-area-sem-uso-no-portao/33292",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2442823,
+          -25.4350744
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria Dom Martiello",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4350744,
+        "longitude": -49.2442823,
+        "address": "Rua Prefeito Ângelo Ferrário Lopes, 36",
+        "opening_hours": "19:00-23:30",
+        "phone": "+55 41 3262 8857",
+        "wheelchair": "yes",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2473874,
+          -25.4258678
+        ]
+      },
+      "properties": {
+        "name": "Akai Sushi Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4258678,
+        "longitude": -49.2473874,
+        "address": "Rua Camões, 610",
+        "opening_hours": "11:00-14:00;19:00-23:00",
+        "phone": "+55 41 3019-9580",
+        "website": "http://akaisushibar.com.br",
+        "wheelchair": "no",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.259136,
+          -25.4176444
+        ]
+      },
+      "properties": {
+        "name": "O SOPRO DA WOK",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4176444,
+        "longitude": -49.259136,
+        "address": "Rua Augusto Stresser, 280",
+        "opening_hours": "We-Su 18:00-22:30",
+        "phone": "+5541998977283",
+        "website": "https://www.osoprodawok.com",
+        "wheelchair": "yes",
+        "cuisine": "asian;thai;indonesian;japanese;indian;wok",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2994893,
+          -25.4489318
+        ]
+      },
+      "properties": {
+        "name": "Churrascaria Batel Grill",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4489318,
+        "longitude": -49.2994893,
+        "address": "Avenida Nossa Senhora Aparecida, 78",
+        "opening_hours": "Tu-Fr 11:30-15:00, 18:30-22:30; Sa 11:30-15:30, 18:30-22:30; Su 11:30-16:00; Mo off",
+        "phone": "+55 41 3342-8101",
+        "website": "https://batelgrill.com.br",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2878333,
+          -25.4613924
+        ]
+      },
+      "properties": {
+        "name": "Carmela Pizzeria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4613924,
+        "longitude": -49.2878333,
+        "address": "Rua Santa Catarina, 180",
+        "opening_hours": "Mo-Th 18:30-23:00, Fr-Sa 18:30-23:30",
+        "phone": "+55 41 3085-0800",
+        "website": "https://carmelapizzeria.com.br/",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2847714,
+          -25.4387453
+        ]
+      },
+      "properties": {
+        "name": "The Ox Room Steakhouse",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4387453,
+        "longitude": -49.2847714,
+        "address": "Alameda Dom Pedro II, 390",
+        "opening_hours": "Mo-Fr 11:30-15:30 17:30-23:30 / Sa 11:30-23:30 / Su 11:30-22:00",
+        "phone": "+55 41 3039 4577",
+        "website": "https://oxsteakhouse.com.br/",
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2912915,
+          -25.42899
+        ]
+      },
+      "properties": {
+        "name": "Terrazza 40",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.42899,
+        "longitude": -49.2912915,
+        "address": "Rua Padre Anchieta, 1287",
+        "opening_hours": "Mo-Su 19:00-00:00",
+        "phone": "+554130140141",
+        "website": "https://www.terrazza40.com/",
+        "cuisine": "argentinian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.26289,
+          -25.4261891
+        ]
+      },
+      "properties": {
+        "name": "Pizza Clock e Restaurante",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4261891,
+        "longitude": -49.26289,
+        "address": "Rua Doutor Faivre, 302",
+        "opening_hours": "Su-Mo 18:00-00:00; Tu-Sa 18:00-01:00",
+        "phone": "+55 41 3363 7777",
+        "website": "http://www.pizzaclock.com",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2692493,
+          -25.4368172
+        ]
+      },
+      "properties": {
+        "name": "Maneki Lamen",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4368172,
+        "longitude": -49.2692493,
+        "address": "Avenida Visconde de Guarapuava, 2800",
+        "opening_hours": "Mo-Sa 11:00-15:00,18:00-22:00",
+        "phone": "+55 41 4101-6067",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2789456,
+          -25.4343172
+        ]
+      },
+      "properties": {
+        "name": "Bendito Bentô",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4343172,
+        "longitude": -49.2789456,
+        "address": "Rua Visconde do Rio Branco, 1463",
+        "opening_hours": "Mo-Fr 08:00-15:00",
+        "phone": "+55 41 32051338",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2974947,
+          -25.4594788
+        ]
+      },
+      "properties": {
+        "name": "Tiki Liki",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4594788,
+        "longitude": -49.2974947,
+        "address": "Rua Professor Sebastião Paraná, 784",
+        "opening_hours": "Tu-Su 11:30-22:30",
+        "phone": "+55 41 3072 0918",
+        "website": "http://tikilikicomidaderua.com.br",
+        "cuisine": "oriental;japanese;korean;chinese;indian;asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2811185,
+          -25.4383005
+        ]
+      },
+      "properties": {
+        "name": "Hard Rock Cafe",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4383005,
+        "longitude": -49.2811185,
+        "address": "Rua Buenos Aires, 50",
+        "opening_hours": "Mo-Su 12:00-00:00",
+        "phone": "+55 41 3091 6060",
+        "website": "https://hardrock.com/",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2812293,
+          -25.4232602
+        ]
+      },
+      "properties": {
+        "name": "O Jardineiro",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4232602,
+        "longitude": -49.2812293,
+        "address": "Avenida Manoel Ribas, 227",
+        "opening_hours": "Mo-Su 11:30-00:00",
+        "phone": "+55 41 3092 4419",
+        "website": "http://restauranteojardineiro.com.br",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2877708,
+          -25.4423188
+        ]
+      },
+      "properties": {
+        "name": "Île de France",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4423188,
+        "longitude": -49.2877708,
+        "address": "Avenida do Batel, 1550",
+        "opening_hours": "Mo-Sa 18:30-23:00",
+        "phone": "+55 41 3223-9962",
+        "website": "https://www.iledefrance.com.br/",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2936594,
+          -25.4509668
+        ]
+      },
+      "properties": {
+        "name": "A Landerna Curitiba",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4509668,
+        "longitude": -49.2936594,
+        "address": "Avenida Iguaçu, 3390",
+        "opening_hours": "Mo-Sa 11:30-14:00, 18:45-23:00; Su 11:00-14:30, 18:45-22:00",
+        "phone": "+55 41 3342 3040",
+        "website": "https://www.alandernacuritiba.com.br/",
+        "cuisine": "italian_pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2894232,
+          -25.4695439
+        ]
+      },
+      "properties": {
+        "name": "Lupertine",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4695439,
+        "longitude": -49.2894232,
+        "address": "Avenida dos Estados, 1274",
+        "opening_hours": "Mo-Su 18:00-23:00",
+        "phone": "+55 41 3229-2020;+55 41 3229-9999;+55 41 3376-9566",
+        "website": "http://www.lupertine.com.br/",
+        "cuisine": "pizza;italian_pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2780216,
+          -25.4299044
+        ]
+      },
+      "properties": {
+        "name": "Rota 78 Refeições",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4299044,
+        "longitude": -49.2780216,
+        "address": "Alameda Cabral, 353",
+        "opening_hours": "Mo-Fr 10:30-14:30",
+        "phone": "+55 41 99580-8199",
+        "website": "https://www.rota78refeicoes.com.br/",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2657902,
+          -25.4302939
+        ]
+      },
+      "properties": {
+        "name": "Lovinha - Plant-Based Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4302939,
+        "longitude": -49.2657902,
+        "address": "Rua Marechal Deodoro da Fonseca, 686",
+        "opening_hours": "Tu-Sa 11:00-15:00, 18:00-22:00; Su 11:00-15:00, 18:00-21:00",
+        "phone": "+55 41 3402 8654",
+        "website": "https://www.ifood.com.br/delivery/curitiba-pr/lovinha-centro",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2956831,
+          -25.4574397
+        ]
+      },
+      "properties": {
+        "name": "JackBulls Burger & Parrilla",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4574397,
+        "longitude": -49.2956831,
+        "address": "Rua Professor Álvaro Jorge, 700",
+        "opening_hours": "Tu-Su 16:00-22:00",
+        "phone": "+554135210200",
+        "website": "https://www.ifood.com.br/delivery/curitiba-pr/jack-bulls-burger---parrilla-vila-izabel/d119908f-5c3b-45d3-ae75-ba00ef95551e",
+        "cuisine": "burger;steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2460013,
+          -25.4529177
+        ]
+      },
+      "properties": {
+        "name": "Dona Flor",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4529177,
+        "longitude": -49.2460013,
+        "address": "Rua João Marchesini, 139",
+        "opening_hours": "Mo-Fr 07:30-18:00",
+        "phone": "+55 41 99722 9244; +55 41 3085 5646",
+        "cuisine": "regional;coffee_shop;breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2280716,
+          -25.4128184
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria Unipizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4128184,
+        "longitude": -49.2280716,
+        "address": "Rua Fagundes Varela, 1384",
+        "opening_hours": "Mo-Su 18:00-23:00",
+        "phone": "+55 41 3264 2267",
+        "cuisine": "burger;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2525265,
+          -25.4336139
+        ]
+      },
+      "properties": {
+        "name": "Galpão do Gaúcho Espetinhos",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4336139,
+        "longitude": -49.2525265,
+        "address": "Rua Francisco Alves Guimarães, 293",
+        "opening_hours": "Mo-Fr 18:00-22:00",
+        "phone": "+55 41 99167 1538",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2889912,
+          -25.4034501
+        ]
+      },
+      "properties": {
+        "name": "Garfo de Madeira Refeições",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4034501,
+        "longitude": -49.2889912,
+        "address": "Rua João Tschannerl, 1010",
+        "opening_hours": "Segunda-Sábado 11:00-14:00",
+        "phone": "+55 41 3153-2166",
+        "website": "https://garfodemadeira.com.br/garfo_de_madeira_refeicoes",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2385266,
+          -25.45894
+        ]
+      },
+      "properties": {
+        "name": "DNA da Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.45894,
+        "longitude": -49.2385266,
+        "address": "Avenida Comendador Franco, 2921",
+        "opening_hours": "Mo-Su 18:00-23:00",
+        "phone": "+55 41 3044-2500",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2974388,
+          -25.4724879
+        ]
+      },
+      "properties": {
+        "name": "Suprema Grill",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4724879,
+        "longitude": -49.2974388,
+        "address": "Rua Carlos Dietzsch, 295",
+        "opening_hours": "Tu-Su 11:30-2:40, 18:30-00:00",
+        "phone": "+55 41 3345 7272",
+        "cuisine": "steak_house;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2491693,
+          -25.4419874
+        ]
+      },
+      "properties": {
+        "name": "Polome",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4419874,
+        "longitude": -49.2491693,
+        "address": "Rua Ernesto de Araújo, 69",
+        "opening_hours": "Tu-Su 11:30-14:00",
+        "phone": "+55 41 3077-2797",
+        "cuisine": "taiwanese;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3137552,
+          -25.437049
+        ]
+      },
+      "properties": {
+        "name": "Afonso's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.437049,
+        "longitude": -49.3137552,
+        "address": "Rua Pedro Viriato Parigot de Souza, 529",
+        "opening_hours": "Tu-Sa 18:00-22:00; Fr-Su 11:00-15:00",
+        "phone": "+55 41 3030-1589",
+        "website": "ttps://afonsos.com/",
+        "cuisine": "portuguese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.250243,
+          -25.4298191
+        ]
+      },
+      "properties": {
+        "name": "Friends Gastroclub",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4298191,
+        "longitude": -49.250243,
+        "address": "Rua Padre Germano Mayer, 679",
+        "opening_hours": "Mo-Sa 11:30-14:30",
+        "phone": "+55 41 3022 3223",
+        "website": "https://www.friendsgastroclub.com.br",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2718363,
+          -25.4266523
+        ]
+      },
+      "properties": {
+        "name": "Semente de Girassol",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4266523,
+        "longitude": -49.2718363,
+        "address": "Rua 13 de Maio, 512",
+        "opening_hours": "Mo-Sa 11:00-21:00; Su,PH 11:00-19:00",
+        "phone": "+55 41 3203 5955",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2761973,
+          -25.4325398
+        ]
+      },
+      "properties": {
+        "name": "Alameda Grill",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4325398,
+        "longitude": -49.2761973,
+        "opening_hours": "11:30-14:30",
+        "phone": "+55 41 3023-1851",
+        "website": "https://curitibaaldente.com.br/restaurantes/alameda-osorio/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2822397,
+          -25.4363563
+        ]
+      },
+      "properties": {
+        "name": "Carolla Pizza D.O.C.",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4363563,
+        "longitude": -49.2822397,
+        "address": "Alameda Dom Pedro II, 24",
+        "opening_hours": "Su-Th 19:00-24:00; Fr-Sa 19:00-01:00",
+        "website": "https://www.carollapizzadoc.com.br/",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2619248,
+          -25.4262136
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Universitário Central",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4262136,
+        "longitude": -49.2619248,
+        "address": "Rua Amintas de Barros",
+        "opening_hours": "Mo-Fr 06:45-08:00,11:00-13:30,17:30-19:30; Sa 08:15-09:15,11:30-13:30,17:45-19:30; Su 08:30-09:30,11:30-13:30,17:45-19:00",
+        "website": "https://pra.ufpr.br/ru/ru-central/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2766797,
+          -25.4308079
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Acrótona",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4308079,
+        "longitude": -49.2766797,
+        "address": "Rua Cruz Machado, 408",
+        "opening_hours": "Mo-Sa 18:00-24:00",
+        "phone": "+55 41 3233-4690",
+        "website": "http://www.acrotona.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.256949,
+          -25.4153851
+        ]
+      },
+      "properties": {
+        "name": "Armazém 71 - Cucina - Vino",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4153851,
+        "longitude": -49.256949,
+        "address": "Rua Rocha Pombo, 246",
+        "opening_hours": "Mo-Fr 12:00-14:30,\nMo-Sa 19:00-22:30,\nSa-Su 12:00-15:00",
+        "phone": "+55 41 3030 4971",
+        "website": "http://armazem71.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2771576,
+          -25.4407573
+        ]
+      },
+      "properties": {
+        "name": "Armazém 71 - Cucina - Vino - Shopping Curitiba",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4407573,
+        "longitude": -49.2771576,
+        "address": "Rua Brigadeiro Franco, 2300 - Loja 256",
+        "opening_hours": "Mo-Su 11:30-22:00",
+        "phone": "+55 41 98855 3826",
+        "website": "http://armazem71.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2707683,
+          -25.4369753
+        ]
+      },
+      "properties": {
+        "name": "Divino Sabor",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4369753,
+        "longitude": -49.2707683,
+        "address": "Rua Desembargador Westphalen, 495",
+        "opening_hours": "Mo-Fr 11:00-15:00",
+        "phone": "+554133245127",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2190734,
+          -25.4054551
+        ]
+      },
+      "properties": {
+        "name": "Churrascaria Nova Estrela",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4054551,
+        "longitude": -49.2190734,
+        "address": "Linha Verde, 3900",
+        "opening_hours": "Tu-Sa 11:30-15:00, 19:00-22:45; Su 11:00-15:00; Mo off",
+        "phone": "+55 41 3356 2522; +55 41 99196 2522",
+        "website": "https://churrascarianovaestrela.com.br",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2393122,
+          -25.4590157
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria Rapidità",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4590157,
+        "longitude": -49.2393122,
+        "opening_hours": "Mo-Su 18:00-23:00",
+        "phone": "+55 41 3076 1717",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3031339,
+          -25.4518251
+        ]
+      },
+      "properties": {
+        "name": "Dom Veggie",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4518251,
+        "longitude": -49.3031339,
+        "address": "Avenida Sete de Setembro, 6837",
+        "opening_hours": "Tu-Fr 11:30-14:30; Sa,Su,PH 12:00-15:00",
+        "website": "http://www.restaurantedomveggie.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2351091,
+          -25.4494349
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Universitário Centro Politécnico",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4494349,
+        "longitude": -49.2351091,
+        "opening_hours": "Mo-Fr 06:45-08:00,11:00-13:30,17:30-19:30",
+        "website": "https://pra.ufpr.br/ru/ru-centro-politecnico/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2376718,
+          -25.4460219
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Universitário Jardim Botânico",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4460219,
+        "longitude": -49.2376718,
+        "opening_hours": "Mo-Fr 06:45-08:00,11:00-13:30,17:30-19:30",
+        "website": "https://pra.ufpr.br/ru/cardapio-ru-jardim-botanico/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.254405,
+          -25.4082696
+        ]
+      },
+      "properties": {
+        "name": "Supernova Coffee Roasters Cabral",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4082696,
+        "longitude": -49.254405,
+        "address": "Avenida Paraná, 265",
+        "opening_hours": "08:00 - 19:00",
+        "phone": "+55 41 999587325",
+        "website": "https://www.facebook.com/supernovacoffee/",
+        "cuisine": "cafe;cafetaria;cafeteria;brunch;breakfast;coffee;coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2639862,
+          -25.4296063
+        ]
+      },
+      "properties": {
+        "name": "Kolonialle",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4296063,
+        "longitude": -49.2639862,
+        "address": "Rua Tibagi, 276",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:30-18:00",
+        "phone": "+55 41 3156-3333",
+        "cuisine": "coffee_shop;german",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2797758,
+          -25.4343155
+        ]
+      },
+      "properties": {
+        "name": "Mais1 Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4343155,
+        "longitude": -49.2797758,
+        "address": "Avenida Vicente Machado, 288",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "website": "https://www.mais1cafe.com.br/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2687369,
+          -25.4286138
+        ]
+      },
+      "properties": {
+        "name": "Fazenda Rancho Flora Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4286138,
+        "longitude": -49.2687369,
+        "address": "Rua Alfredo Bufren, 53",
+        "opening_hours": "Mo-Fr 09:00-18:30; Sa 09:00-12:00",
+        "phone": "+55 41 3154 0405",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2824013,
+          -25.4365579
+        ]
+      },
+      "properties": {
+        "name": "Arte & Letra",
+        "name_en": "Arte & Letra - Coffee Shop",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4365579,
+        "longitude": -49.2824013,
+        "address": "Alameda Dom Pedro II, 44",
+        "opening_hours": "Mo-Sa 09:00-18:00",
+        "website": "https://www.arteeletra.com.br",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2825507,
+          -25.4591722
+        ]
+      },
+      "properties": {
+        "name": "O Taberneiro",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4591722,
+        "longitude": -49.2825507,
+        "address": "Rua Dom Pedro I, 643",
+        "opening_hours": "Tu-We 17:00-22:00; Th-Fr 17:00-00:00; Sa 11:30-15:00, 18:00-22:30; PH 17:00-22:00",
+        "website": "https://www.otaberneiro.com.br/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2882332,
+          -25.4679484
+        ]
+      },
+      "properties": {
+        "name": "Heillige Pocket",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4679484,
+        "longitude": -49.2882332,
+        "address": "Avenida dos Estados, 1066",
+        "opening_hours": "Tu-Fr 17:00-24:00; Sa 11:00-24:00; Su 11:00-21:00",
+        "website": "https://linktr.ee/heiligepocketcwb",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2892542,
+          -25.4602303
+        ]
+      },
+      "properties": {
+        "name": "Império Cervejeiro",
+        "category": "pub",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4602303,
+        "longitude": -49.2892542,
+        "address": "Avenida República Argentina, 1531",
+        "opening_hours": "Mo-Fr 15:00-22:00; Sa 10:00-22:00",
+        "website": "https://imperiocervejeiro.negocio.site/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2275959,
+          -25.4121039
+        ]
+      },
+      "properties": {
+        "name": "Açaí Concept Bacacheri / Jardim Social",
+        "category": "ice_cream",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4121039,
+        "longitude": -49.2275959,
+        "address": "Rua Fagundes Varela, 1487, Curitba",
+        "opening_hours": "Mo-Fr 11:30-20:00; Sa 10:30-20:00; Su 13:30-20:00",
+        "phone": "+55 41 99985 4887",
+        "website": "https://abre.bio/acaiconceptbacacheri",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2459913,
+          -25.4176822
+        ]
+      },
+      "properties": {
+        "name": "Açaí Concept Juvevê",
+        "category": "ice_cream",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4176822,
+        "longitude": -49.2459913,
+        "address": "Rua Augusto Stresser, 1620",
+        "opening_hours": "Mo-Fr 11:30-20:00; Sa 10:30-20:00; Su 13:30-20:00",
+        "phone": "+55 41 99273 1511",
+        "website": "https://abre.bio/acaiconceptjuveve",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3362324,
+          -25.4367783
+        ]
+      },
+      "properties": {
+        "name": "Piatto o Pastifício & Rotisseria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4367783,
+        "longitude": -49.3362324,
+        "address": "Rua José Nicco, 712",
+        "opening_hours": "Tu-Fr 10:00-19:00; Sa 10:00-16:00; Su 10:00-14:00",
+        "phone": "+55 41 3285-3672",
+        "website": "https://piatto-3.ola.click/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3029585,
+          -25.4562248
+        ]
+      },
+      "properties": {
+        "name": "Mais1 Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4562248,
+        "longitude": -49.3029585,
+        "address": "Avenida Presidente Arthur da Silva Bernardes, 493, Curitiba",
+        "opening_hours": "Tu-Su 07:00-19:00",
+        "phone": "+5541989019871",
+        "website": "https://www.mais1cafe.com.br/",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2254461,
+          -25.4797344
+        ]
+      },
+      "properties": {
+        "name": "Chibabentou Yakisoba",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4797344,
+        "longitude": -49.2254461,
+        "address": "Avenida Senador Salgado Filho, 4222, Curitiba",
+        "opening_hours": "Mo-Sa 09:00-14:30; Th-Sa 18:00-21:40",
+        "phone": "+55 41 996689215",
+        "website": "https://instagram.com/chibabentou",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3325311,
+          -25.477518
+        ]
+      },
+      "properties": {
+        "name": "Restaurante Popular CIC",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.477518,
+        "longitude": -49.3325311,
+        "address": "Rua Raul Pompéia, 190, Curitiba",
+        "opening_hours": "Mo-Fr 11:00-14:00",
+        "phone": "+55 41 3229 2555",
+        "website": "https://www.curitiba.pr.gov.br/servicos/restaurante-popular/86",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2304072,
+          -25.4698275
+        ]
+      },
+      "properties": {
+        "name": "Famiglia Ceschin Trattoria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4698275,
+        "longitude": -49.2304072,
+        "address": "Avenida Comendador Franco, 4387, Curitiba",
+        "opening_hours": "Tu-Fr 18:00-23:00; Sa,Su 12:00-23:00",
+        "phone": "+55 41 99201-8583",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2303119,
+          -25.4697249
+        ]
+      },
+      "properties": {
+        "name": "Fábrica Cafeteria",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4697249,
+        "longitude": -49.2303119,
+        "address": "Avenida Comendador Franco, 4387, Curitiba",
+        "opening_hours": "Tu-Fr 14:00-23:00; Sa,Su 12:00-23:00",
+        "phone": "+55 41 98404-5411",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2938186,
+          -25.48295
+        ]
+      },
+      "properties": {
+        "name": "San Diego Restaurante e Pizzaria",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.48295,
+        "longitude": -49.2938186,
+        "address": "Rua Salomão Guelmann, 66, Curitiba",
+        "opening_hours": "Mo-Su 11:00-15:00",
+        "phone": "+55 41 3247 0010",
+        "website": "https://www.instagram.com/sandiegorestaurantepizzaria/",
+        "cuisine": "pizza;brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2325231,
+          -25.4481124
+        ]
+      },
+      "properties": {
+        "name": "Todeschini",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4481124,
+        "longitude": -49.2325231,
+        "opening_hours": "Mo-Sa 08:00-23:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2379601,
+          -25.4427157
+        ]
+      },
+      "properties": {
+        "name": "Senac Café-Escola",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4427157,
+        "longitude": -49.2379601,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2671899,
+          -25.4094455
+        ]
+      },
+      "properties": {
+        "name": "MON Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4094455,
+        "longitude": -49.2671899,
+        "opening_hours": "Tu-Su 10:00-18:00",
+        "wheelchair": "yes",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2675699,
+          -25.4201299
+        ]
+      },
+      "properties": {
+        "name": "Oliva Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4201299,
+        "longitude": -49.2675699,
+        "address": "Rua da Glória, 307, Curitiba",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2830293,
+          -25.3907848
+        ]
+      },
+      "properties": {
+        "name": "Burek Grill",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3907848,
+        "longitude": -49.2830293,
+        "address": "Rua Amaury Lange Silvério, 860, Curitiba",
+        "phone": "+55 41 3339 4318",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2628072,
+          -25.412457
+        ]
+      },
+      "properties": {
+        "name": "Trato Cozinha de Encontro",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.412457,
+        "longitude": -49.2628072,
+        "address": "Rua Rocha Pombo, 921, Curitiba",
+        "phone": "+55 41 98787 6928",
+        "website": "https://www.instagram.com/tratocozinha/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2716307,
+          -25.4152869
+        ]
+      },
+      "properties": {
+        "name": "Filé na Brasa",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4152869,
+        "longitude": -49.2716307,
+        "address": "Rua Mateus Leme, 1365",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2710448,
+          -25.4185234
+        ]
+      },
+      "properties": {
+        "name": "Calabouço",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4185234,
+        "longitude": -49.2710448,
+        "address": "Rua Mateus Leme, 1000",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2705203,
+          -25.4253372
+        ]
+      },
+      "properties": {
+        "name": "Romanu's Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4253372,
+        "longitude": -49.2705203,
+        "address": "Rua Barão do Serro Azul, 411, Curitiba",
+        "phone": "+55 41 3010 2723",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2189488,
+          -25.4372944
+        ]
+      },
+      "properties": {
+        "name": "Bella Pasta",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4372944,
+        "longitude": -49.2189488,
+        "address": "Rua Professor Nivaldo Braga, 1188, Curitiba",
+        "cuisine": "casa_de_massas",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2166763,
+          -25.4347757
+        ]
+      },
+      "properties": {
+        "name": "Fernandes",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4347757,
+        "longitude": -49.2166763,
+        "address": "Rua Osmário de Lima, 269",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2242176,
+          -25.4351948
+        ]
+      },
+      "properties": {
+        "name": "Armazém São Gonçalo",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4351948,
+        "longitude": -49.2242176,
+        "address": "Rua Nicolau Gulbino, 296",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2937632,
+          -25.3833647
+        ]
+      },
+      "properties": {
+        "name": "Megapizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3833647,
+        "longitude": -49.2937632,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2830593,
+          -25.3980767
+        ]
+      },
+      "properties": {
+        "name": "café unilivre",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3980767,
+        "longitude": -49.2830593,
+        "opening_hours": "Tu-Su 12:00-18:30",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2148893,
+          -25.3847331
+        ]
+      },
+      "properties": {
+        "name": "Disk Pizza Lucarelli",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3847331,
+        "longitude": -49.2148893,
+        "address": "Avenida Marechal Mascarenhas de Moraes, 1637, Curitiba",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2004144,
+          -25.3880175
+        ]
+      },
+      "properties": {
+        "name": "Empadaria SantaLu",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3880175,
+        "longitude": -49.2004144,
+        "wheelchair": "yes",
+        "cuisine": "sandwich",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2531415,
+          -25.4532933
+        ]
+      },
+      "properties": {
+        "name": "Gregário Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4532933,
+        "longitude": -49.2531415,
+        "address": "Rua Imaculada Conceição, 1430, Curitiba",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2401979,
+          -25.4141125
+        ]
+      },
+      "properties": {
+        "name": "Caldo de Cana Strapasson",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4141125,
+        "longitude": -49.2401979,
+        "opening_hours": "13:00-18:00",
+        "cuisine": "sugar_cane_juice",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3134186,
+          -25.4279698
+        ]
+      },
+      "properties": {
+        "name": "Circuito Tropical",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4279698,
+        "longitude": -49.3134186,
+        "cuisine": "ice_cream;tapioca",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.351475,
+          -25.448947
+        ]
+      },
+      "properties": {
+        "name": "La Bella",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.448947,
+        "longitude": -49.351475,
+        "address": "Rua Eduardo Sprada, 4900",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3493981,
+          -25.4476976
+        ]
+      },
+      "properties": {
+        "name": "Ponto Assados",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4476976,
+        "longitude": -49.3493981,
+        "address": "Rua Eduardo Sprada, 4649, Curitiba",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3614132,
+          -25.4520947
+        ]
+      },
+      "properties": {
+        "name": "Madero",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4520947,
+        "longitude": -49.3614132,
+        "address": "Avenida Juscelino Kubitschek de Oliveira, 2211, Curitiba",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3000548,
+          -25.4716826
+        ]
+      },
+      "properties": {
+        "name": "Bäckerei Zechner",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4716826,
+        "longitude": -49.3000548,
+        "address": "R. Eng. Heitor Soares Gomes, 479",
+        "opening_hours": "Mo-Su 07:30-20:00",
+        "cuisine": "coffee_shop;bakery",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2274265,
+          -25.3930556
+        ]
+      },
+      "properties": {
+        "name": "Fire Dog",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3930556,
+        "longitude": -49.2274265,
+        "address": "Avenida Prefeito Erasto Gaertner, 2323, Curitiba",
+        "opening_hours": "Mo-Su 18:00-03:00",
+        "wheelchair": "yes",
+        "cuisine": "hot_dog",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2229042,
+          -25.3897064
+        ]
+      },
+      "properties": {
+        "name": "Orymaki Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3897064,
+        "longitude": -49.2229042,
+        "address": "Avenida Monteiro Tourinho, Curitiba",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2232013,
+          -25.3897579
+        ]
+      },
+      "properties": {
+        "name": "Mar e Terra",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3897579,
+        "longitude": -49.2232013,
+        "address": "Avenida Monteiro Tourinho, 141",
+        "cuisine": "seafood;steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2907766,
+          -25.413488
+        ]
+      },
+      "properties": {
+        "name": "Schnaps Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.413488,
+        "longitude": -49.2907766,
+        "address": "Rua André Zanetti, 129",
+        "cuisine": "german",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2907893,
+          -25.4229583
+        ]
+      },
+      "properties": {
+        "name": "Casa do Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4229583,
+        "longitude": -49.2907893,
+        "address": "Rua Professora Rosa Saporski, 151, Curitiba",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2821552,
+          -25.4183363
+        ]
+      },
+      "properties": {
+        "name": "Sforno Pizzaria e Trattoria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4183363,
+        "longitude": -49.2821552,
+        "address": "Rua Dom Alberto Gonçalves, 480",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2711809,
+          -25.4031306
+        ]
+      },
+      "properties": {
+        "name": "Ervin Churrascaria",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4031306,
+        "longitude": -49.2711809,
+        "address": "Rua Mateus Leme, 2746, Curitiba",
+        "opening_hours": "Mo-Fr 11:30-14:00; Sa-Su 11:00-15:30",
+        "wheelchair": "limited",
+        "cuisine": "barbecue",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2715135,
+          -25.4032971
+        ]
+      },
+      "properties": {
+        "name": "Mannus",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4032971,
+        "longitude": -49.2715135,
+        "address": "Rua Mateus Leme, 2725",
+        "opening_hours": "Sa 11:15-15:00",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2316284,
+          -25.3945969
+        ]
+      },
+      "properties": {
+        "name": "Seu Marechal Gastro Bar",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3945969,
+        "longitude": -49.2316284,
+        "address": "Rua Marechal Trompowski, 95",
+        "cuisine": "brazilian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2368283,
+          -25.3976874
+        ]
+      },
+      "properties": {
+        "name": "aHorta Bike Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3976874,
+        "longitude": -49.2368283,
+        "address": "Rua Nicarágua, 1277",
+        "cuisine": "brunch",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2038763,
+          -25.4180874
+        ]
+      },
+      "properties": {
+        "name": "Restaurane Ói Que Beleza!",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4180874,
+        "longitude": -49.2038763,
+        "address": "Rua José de Oliveira Franco, 2280",
+        "phone": "+55 41 99603 3033",
+        "cuisine": "regional;fogão_a_lenha;buffet_livre;marmitex",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2679273,
+          -25.436799
+        ]
+      },
+      "properties": {
+        "name": "Petit Pavê",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.436799,
+        "longitude": -49.2679273,
+        "address": "Rua Lourenço Pinto, 398",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2688923,
+          -25.4404066
+        ]
+      },
+      "properties": {
+        "name": "Manifesto",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4404066,
+        "longitude": -49.2688923,
+        "opening_hours": "Mo-Fr 10:00-18:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3060934,
+          -25.4241898
+        ]
+      },
+      "properties": {
+        "name": "Bistrô Casa Amarela",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4241898,
+        "longitude": -49.3060934,
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2978976,
+          -25.429412
+        ]
+      },
+      "properties": {
+        "name": "Nyck - Costela no Rolete",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.429412,
+        "longitude": -49.2978976,
+        "address": "Rua Bruno Filgueira, 2397",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3083917,
+          -25.4272021
+        ]
+      },
+      "properties": {
+        "name": "Maggiore",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4272021,
+        "longitude": -49.3083917,
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2853013,
+          -25.4624317
+        ]
+      },
+      "properties": {
+        "name": "O Giramundo Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4624317,
+        "longitude": -49.2853013,
+        "address": "Rua Santa Catarina, 456, Curitiba",
+        "cuisine": "burger",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2933282,
+          -25.4685617
+        ]
+      },
+      "properties": {
+        "name": "Go Coffee",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4685617,
+        "longitude": -49.2933282,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2041628,
+          -25.5377864
+        ]
+      },
+      "properties": {
+        "name": "Madero",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5377864,
+        "longitude": -49.2041628,
+        "opening_hours": "11:00-22:00",
+        "cuisine": "american",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.20425,
+          -25.5384858
+        ]
+      },
+      "properties": {
+        "name": "Honk Kong",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5384858,
+        "longitude": -49.20425,
+        "opening_hours": "11:00-22:00",
+        "cuisine": "asian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2043021,
+          -25.5384667
+        ]
+      },
+      "properties": {
+        "name": "Spoleto",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5384667,
+        "longitude": -49.2043021,
+        "opening_hours": "11:00-22:00",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2465488,
+          -25.4258022
+        ]
+      },
+      "properties": {
+        "name": "En Torno Cerâmica",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4258022,
+        "longitude": -49.2465488,
+        "address": "Rua Fernandes de Barros, 613, Curitiba",
+        "opening_hours": "Tu-Sa 14:00-19:00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2704656,
+          -25.3977686
+        ]
+      },
+      "properties": {
+        "name": "Bar do Victor",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3977686,
+        "longitude": -49.2704656,
+        "address": "Rua Lívio Moreira, 284",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2710933,
+          -25.3977435
+        ]
+      },
+      "properties": {
+        "name": "Rei do Camarão",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.3977435,
+        "longitude": -49.2710933,
+        "address": "Rua Lívio Moreira, 232",
+        "cuisine": "seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2885319,
+          -25.4502332
+        ]
+      },
+      "properties": {
+        "name": "Tangerina Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4502332,
+        "longitude": -49.2885319,
+        "address": "Rua Carneiro Lobo, 92, Curitiba",
+        "cuisine": "breakfast",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2608941,
+          -25.4300527
+        ]
+      },
+      "properties": {
+        "name": "Bello Café",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4300527,
+        "longitude": -49.2608941,
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2874514,
+          -25.4453345
+        ]
+      },
+      "properties": {
+        "name": "Huguito Cafeteria Argentina",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4453345,
+        "longitude": -49.2874514,
+        "address": "Rua Francisco Rocha, 40 Loja 5, Curitiba",
+        "cuisine": "argentinian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2471095,
+          -25.4796293
+        ]
+      },
+      "properties": {
+        "name": "Costelão do Gaúcho",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4796293,
+        "longitude": -49.2471095,
+        "address": "Rua Anne Frank, 1484",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.255108,
+          -25.4798579
+        ]
+      },
+      "properties": {
+        "name": "Tobo Sushi Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4798579,
+        "longitude": -49.255108,
+        "address": "Rua Professor João Soares Barcelos",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1968637,
+          -25.4326215
+        ]
+      },
+      "properties": {
+        "name": "Churrascaria Valejo",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4326215,
+        "longitude": -49.1968637,
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1935649,
+          -25.4315802
+        ]
+      },
+      "properties": {
+        "name": "Churrascão Gaúcho",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4315802,
+        "longitude": -49.1935649,
+        "address": "Rodovia João Leopoldo Jacomel, 12660, Pinhais",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2000753,
+          -25.4322847
+        ]
+      },
+      "properties": {
+        "name": "Costelão pinhais",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4322847,
+        "longitude": -49.2000753,
+        "address": "Rodovia João Leopoldo Jacomel",
+        "cuisine": "steak_house",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.1864456,
+          -25.4378225
+        ]
+      },
+      "properties": {
+        "name": "COXINHA",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4378225,
+        "longitude": -49.1864456,
+        "address": "Rua Sete de Setembro, Pinhais",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3528682,
+          -25.4262106
+        ]
+      },
+      "properties": {
+        "name": "Mapp Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4262106,
+        "longitude": -49.3528682,
+        "address": "Avenida Vereador Toaldo Túlio, Curitiba",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3485785,
+          -25.418746
+        ]
+      },
+      "properties": {
+        "name": "Temakeria",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.418746,
+        "longitude": -49.3485785,
+        "address": "Avenida Vereador Toaldo Túlio, Curitiba",
+        "cuisine": "sushi;japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3487015,
+          -25.4186189
+        ]
+      },
+      "properties": {
+        "name": "Ala Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4186189,
+        "longitude": -49.3487015,
+        "address": "Avenida Vereador Toaldo Túlio, Curitiba",
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.204478,
+          -25.5385197
+        ]
+      },
+      "properties": {
+        "name": "Kiro Sushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5385197,
+        "longitude": -49.204478,
+        "opening_hours": "11:00-22:00",
+        "cuisine": "japanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.2696768,
+          -25.5423517
+        ]
+      },
+      "properties": {
+        "name": "D'Gust Restaurante e Lanchonete",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.5423517,
+        "longitude": -49.2696768,
+        "phone": "+55 41 32068302",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.3576154,
+          -25.4511298
+        ]
+      },
+      "properties": {
+        "name": "Pizzaria La Bella",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": -25.4511298,
+        "longitude": -49.3576154,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    }
+  ]
+}

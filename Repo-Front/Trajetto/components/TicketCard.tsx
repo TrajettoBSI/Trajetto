@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { categoryLabel } from '@/src/helpers/categoryIcon';
 import { AppColors, useColors } from '@/src/theme';
-import { formatOpeningHours, formatTime } from '@/src/i18n/format';
+import { formatOpeningHours, formatTime, placeName } from '@/src/i18n/format';
 
 function categoryIcon(category: string): string {
     const c = (category || '').toLowerCase();
@@ -36,6 +36,8 @@ interface TicketCardProps {
         note?: string | null;
         openAtVisit?: boolean | null;
         bookingUrl?: string | null;
+        ticketUrl?: string | null;
+        names?: Record<string, string> | null;
     };
     idx: number;
     color: string;
@@ -97,7 +99,7 @@ export function TicketCard({
             {/* Corpo do ticket */}
             <View style={ticketStyles.body}>
                 <Text style={[ticketStyles.placeName, isPast && { color: colors.timelineDotPast }]} numberOfLines={2}>
-                    {place.name}
+                    {placeName(place)}
                 </Text>
 
                 <View style={ticketStyles.addressRow}>
@@ -152,6 +154,17 @@ export function TicketCard({
                         <Ionicons name="ticket-outline" size={15} color={colors.warningBannerText} />
                         <Text style={ticketStyles.bookingText}>{t('ticketCard.booking')}</Text>
                         <Ionicons name="open-outline" size={14} color={colors.warningBannerText} />
+                    </TouchableOpacity>
+                ) : place.ticketUrl ? (
+                    <TouchableOpacity
+                        style={ticketStyles.ticketRow}
+                        onPress={() => Linking.openURL(place.ticketUrl!).catch(() => {})}
+                        accessibilityRole="link"
+                        accessibilityHint={t('ticketCard.ticketsHint')}
+                    >
+                        <Ionicons name="ticket-outline" size={15} color={colors.primary} />
+                        <Text style={ticketStyles.ticketText}>{t('ticketCard.tickets')}</Text>
+                        <Ionicons name="open-outline" size={14} color={colors.primary} />
                     </TouchableOpacity>
                 ) : null}
 
@@ -243,6 +256,18 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
         borderColor: colors.warningBannerBorder,
     },
     bookingText: { flex: 1, fontSize: 12, fontWeight: '700', color: colors.warningBannerText },
+    // Ingresso pago sem reserva obrigatoria: informacao, nao alerta.
+    ticketRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        marginTop: 10,
+        paddingHorizontal: 10,
+        paddingVertical: 8,
+        borderRadius: 10,
+        backgroundColor: colors.backgroundMuted,
+    },
+    ticketText: { flex: 1, fontSize: 12, fontWeight: '700', color: colors.primary },
 
     // ── Cabeçalho ──
     header: {

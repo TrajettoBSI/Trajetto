@@ -7,6 +7,7 @@ import { FeedbackState } from '@/src/components/feedback';
 import { useColors } from '@/src/theme';
 import { NOTE_MAX_LENGTH } from '../../hooks/useItineraryNote';
 import { styles } from './styles';
+import { placeName } from '@/src/i18n/format';
 
 type NoteModalProps = {
   place: Places | null;
@@ -30,7 +31,7 @@ export default function NoteModal({ place, draft, saving, error, onChangeDraft, 
           <TouchableOpacity style={s.sheet} activeOpacity={1}>
             <View style={s.handle} />
             <Text style={s.title}>{t('noteModal.title')}</Text>
-            {place && <Text style={s.subtitle} numberOfLines={1}>{place.name}</Text>}
+            {place && <Text style={s.subtitle} numberOfLines={1}>{placeName(place)}</Text>}
 
             <TextInput
               value={draft}

@@ -1,7 +1,7 @@
 import i18n from '@/src/i18n';
 import {
   bearing, countActiveFilters, formatCarTime, formatDistance, formatWalkTime, haversineMeters,
-  interpolateAlongPath, resolveTodayHours,
+  interpolateAlongPath, resolveTodayHours, splitRoute,
 } from '@/src/pages/tabs/mapa/mapaFormat';
 import * as spot from '@/src/pages/spot/detail/spotFormat';
 import { categoryIcon, categoryLabel, formatCategoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
@@ -13,6 +13,7 @@ import { isEmpty, resolveFeedbackStatus } from '@/src/components/feedback/feedba
 import { contarCriteriosAtivos, FILTRO_VAZIO, intervaloDoPeriodo, paraConsulta, saneado } from '@/src/pages/admin/dashboard/dashboardFilter';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { isSupportedLanguage } from '@/src/i18n/languages';
+import { placeName } from '@/src/i18n/format';
 import { apiError, networkError, rawResponseError } from '../../helpers';
 
 describe('distancias e tempos do mapa', () => {
@@ -190,5 +191,38 @@ describe('estado das telas e filtros do painel', () => {
   it('marca como passada a parada cujo horario ja foi', () => {
     expect(isPlacePast('2000-01-01', '09:00')).toBe(true);
     expect(isPlacePast('2999-01-01', '09:00')).toBe(false);
+  });
+});
+
+describe('placeName', () => {
+  const louvre = { name: 'Musée du Louvre', names: { pt: 'Museu do Louvre', en: 'Louvre Museum', es: 'Museo del Louvre' } };
+
+  it('mostra o nome no idioma ativo', () => {
+    expect(placeName(louvre, 'pt-BR')).toBe('Museu do Louvre');
+    expect(placeName(louvre, 'en-US')).toBe('Louvre Museum');
+    expect(placeName(louvre, 'es-ES')).toBe('Museo del Louvre');
+  });
+
+  it('sem traducao, fica o nome original', () => {
+    expect(placeName({ name: 'Café de Flore' }, 'en-US')).toBe('Café de Flore');
+    expect(placeName({ name: 'Café de Flore', names: { pt: 'Café de Flore' } }, 'es-ES')).toBe('Café de Flore');
+  });
+});
+
+describe('splitRoute', () => {
+  const a = { latitude: 0, longitude: 0 };
+  const b = { latitude: 0, longitude: 1 };
+  const c = { latitude: 0, longitude: 2 };
+  const meio = { latitude: 0.1, longitude: 0.5 };
+  const rota = [a, meio, b, c];
+
+  it('separa a rota do dia nos trechos entre as paradas', () => {
+    expect(splitRoute([a, b, c], rota, [0, 2, 3])).toEqual([[a, meio, b], [b, c]]);
+  });
+
+  it('sem a posicao das paradas, cada trecho vira linha reta', () => {
+    expect(splitRoute([a, b, c], rota, undefined)).toEqual([[a, b], [b, c]]);
+    expect(splitRoute([a, b, c], null)).toEqual([[a, b], [b, c]]);
+    expect(splitRoute([a, b, c], rota, [0, 3])).toEqual([[a, b], [b, c]]);
   });
 });

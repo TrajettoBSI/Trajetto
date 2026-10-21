@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { NearbyPlace } from '@/services';
 import { useColors } from '@/src/theme';
-import { formatDistance as formatarDistancia, formatTime } from '@/src/i18n/format';
+import { formatDistance as formatarDistancia, formatTime, placeName } from '@/src/i18n/format';
 import { MealSuggestion } from '../../hooks/useMealSuggestions';
 import { styles } from './styles';
 
@@ -58,7 +58,7 @@ export default function MealSuggestionCard({ suggestion, onSelect, onRetry }: Me
               onPress={() => onSelect(place)}
               activeOpacity={0.7}
             >
-              <Text style={s.optionName} numberOfLines={1}>{place.name}</Text>
+              <Text style={s.optionName} numberOfLines={1}>{placeName(place)}</Text>
               <Text style={s.optionDistance}>{formatDistance(place.distanceMeters)}</Text>
               <Ionicons name="chevron-forward" size={16} color={colors.gray400} />
             </TouchableOpacity>

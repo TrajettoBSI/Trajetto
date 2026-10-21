@@ -27,6 +27,10 @@
     "zoo": "Zoológico",
     "historic_villa": "Vila histórica",
     "historic_tower": "Torre histórica",
-    "historic_monastery": "Mosteiro"
+    "historic_monastery": "Mosteiro",
+    "beach": "Praia",
+    "peak": "Pico",
+    "waterfall": "Cachoeira",
+    "cave": "Caverna"
   }
 }

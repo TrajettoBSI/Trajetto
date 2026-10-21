@@ -1,18 +1,20 @@
 """
-Grava em cada ponto do catalogo (rome_curated.geojson) o campo "popularity":
+Grava em cada ponto do catalogo (data/cities/<slug>.geojson) o campo "popularity":
 em quantas edicoes da Wikipedia o lugar tem artigo, segundo o Wikidata.
 Ponto sem codigo do Wikidata fica com 0.
 
 Uso, a partir de Repo-Back/backend:
-    python scripts/atualiza_popularidade.py
+    python scripts/atualiza_popularidade.py            # todas as cidades
+    python scripts/atualiza_popularidade.py roma       # so uma
 """
 import json
+import sys
 import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
-CATALOGO = Path(__file__).resolve().parent.parent / 'src/main/resources/data/rome_curated.geojson'
+CIDADES = Path(__file__).resolve().parent.parent / 'src/main/resources/data/cities'
 SPARQL = 'https://query.wikidata.org/sparql'
 LOTE = 150
 
@@ -33,11 +35,7 @@ def consulta_sitelinks(qids):
     }
 
 
-def main():
-    texto = CATALOGO.read_text(encoding='utf-8')
-    catalogo = json.loads(texto)
-    props = [f['properties'] for f in catalogo['features']]
-
+def aplica_popularidade(props):
     qids = sorted({p['wikidata'] for p in props if p.get('wikidata', '').startswith('Q')})
     sitelinks = {}
     for i in range(0, len(qids), LOTE):
@@ -46,14 +44,29 @@ def main():
 
     for p in props:
         p['popularity'] = sitelinks.get(p.get('wikidata', ''), 0)
+    print(f'{len(sitelinks)} de {len(qids)} codigos do Wikidata consultados.')
 
-    CATALOGO.write_text(json.dumps(catalogo, ensure_ascii=False, indent=2) + ('\n' if texto.endswith('\n') else ''),
-                        encoding='utf-8', newline='\n')
+
+def atualiza(catalogo_path):
+    texto = catalogo_path.read_text(encoding='utf-8')
+    catalogo = json.loads(texto)
+    props = [f['properties'] for f in catalogo['features']]
+    aplica_popularidade(props)
+
+    catalogo_path.write_text(json.dumps(catalogo, ensure_ascii=False, indent=2) + ('\n' if texto.endswith('\n') else ''),
+                             encoding='utf-8', newline='\n')
 
     ranking = sorted(props, key=lambda p: p['popularity'], reverse=True)[:15]
-    print(f'{len(sitelinks)} de {len(qids)} codigos do Wikidata consultados.')
+    print(f'== {catalogo_path.stem}')
     for p in ranking:
         print(f"{p['popularity']:4d}  {p['name']}")
+
+
+def main():
+    slugs = sys.argv[1:]
+    arquivos = [CIDADES / f'{s}.geojson' for s in slugs] if slugs else sorted(CIDADES.glob('*.geojson'))
+    for arquivo in arquivos:
+        atualiza(arquivo)
 
 
 if __name__ == '__main__':

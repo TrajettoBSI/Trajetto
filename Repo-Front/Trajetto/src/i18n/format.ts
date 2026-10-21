@@ -4,6 +4,17 @@ import i18n from './index';
 // senao a formatacao fica presa no idioma que estava ativo quando o modulo carregou.
 const activeLocale = () => i18n.language || 'pt-BR';
 
+/**
+ * Nome do lugar no idioma ativo: o catalogo traz o nome em pt, en e es (dos rotulos do
+ * Wikidata); sem traducao, fica o nome original.
+ */
+export function placeName(
+  place: { name: string; names?: Record<string, string> | null },
+  locale = activeLocale(),
+): string {
+  return place.names?.[locale.slice(0, 2)] || place.name;
+}
+
 /** Data no formato do locale ativo. `date` em ISO (YYYY-MM-DD) ou objeto Date. */
 export function formatDate(date: string | Date, locale = activeLocale()): string {
   const d = typeof date === 'string' ? new Date(`${date}T00:00:00`) : date;

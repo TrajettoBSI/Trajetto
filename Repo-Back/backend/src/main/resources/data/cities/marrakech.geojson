@@ -1,0 +1,2257 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9935583,
+          31.623742
+        ]
+      },
+      "properties": {
+        "name": "Koutoubia Mosque",
+        "name_en": "Mosquée de la Koutoubia جامع الكتبية",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 31.623742,
+        "longitude": -7.9935583,
+        "address": "Rue Koutoubia",
+        "wikidata": "Q1137533",
+        "wikipedia": "en:Koutoubia Mosque",
+        "popularity": 42,
+        "names": {
+          "pt": "Mesquita de Koutoubia",
+          "en": "Koutoubia Mosque",
+          "es": "Mezquita Kutubía"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.989239,
+          31.6258197
+        ]
+      },
+      "properties": {
+        "name": "Jemaa El-Fna",
+        "name_en": "ⵊⴰⵎⵄ ⵍⴼⵏⴰ جامع الفناء",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 31.6258197,
+        "longitude": -7.989239,
+        "opening_hours": "24/7",
+        "wikidata": "Q258348",
+        "wikipedia": "en:Jemaa el-Fnaa",
+        "wheelchair": "yes",
+        "popularity": 38,
+        "names": {
+          "pt": "Praça Jemaa El Fna",
+          "en": "Jemaa el-Fnaa",
+          "es": "Plaza de Yamaa el Fna"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0029159,
+          31.6413676
+        ]
+      },
+      "properties": {
+        "name": "Majorelle Garden",
+        "name_en": "Jardin Majorelle حديقة ماجوريل",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 31.6413676,
+        "longitude": -8.0029159,
+        "opening_hours": "Oct-Apr: 08:00-17:30; May-Sep: 08:00-18:00",
+        "website": "https://www.jardinmajorelle.com/",
+        "wikidata": "Q1395431",
+        "wikipedia": "en:Majorelle Garden",
+        "fee": "yes",
+        "popularity": 30,
+        "names": {
+          "pt": "Jardim Majorelle",
+          "en": "Majorelle Garden",
+          "es": "Jardín Majorelle"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9862513,
+          31.6319835
+        ]
+      },
+      "properties": {
+        "name": "Ben Youssef Madrasa",
+        "name_en": "Medersa Ben Youssef",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 31.6319835,
+        "longitude": -7.9862513,
+        "opening_hours": "09:00-18:00; PH closed \"religous holidays\"",
+        "website": "https://www.medersabenyoussef.ma/",
+        "wikidata": "Q1560540",
+        "wikipedia": "en:Ben Youssef Madrasa",
+        "fee": "yes",
+        "popularity": 25,
+        "names": {
+          "pt": "Madraça Ben Youssef",
+          "en": "Ben Youssef Madrasa",
+          "es": "Medersa Ben Youssef"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9853687,
+          31.6181786
+        ]
+      },
+      "properties": {
+        "name": "El Badi Palace",
+        "name_en": "Palais El Badi قصر البديع",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 31.6181786,
+        "longitude": -7.9853687,
+        "opening_hours": "09:00-17:00",
+        "website": "https://badipalace.com",
+        "wikidata": "Q1277747",
+        "wikipedia": "en:El Badi Palace",
+        "fee": "yes",
+        "popularity": 21,
+        "names": {
+          "pt": "Palácio el Badi",
+          "en": "El Badi Palace",
+          "es": "Palacio El Badi"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9871642,
+          31.6314595
+        ]
+      },
+      "properties": {
+        "name": "Almoravid Qubba",
+        "name_en": "Almoravid Koubba القبة المرابطية",
+        "category": "historic_ruins",
+        "profiles": [
+          "AVENTUREIRO",
+          "CULTURAL"
+        ],
+        "latitude": 31.6314595,
+        "longitude": -7.9871642,
+        "wikidata": "Q3412514",
+        "wikipedia": "en:Almoravid Koubba",
+        "popularity": 18,
+        "names": {
+          "pt": "Qubba Almorávida",
+          "en": "Almoravid Koubba",
+          "es": "Qubba Almorávide"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9885299,
+          31.6172551
+        ]
+      },
+      "properties": {
+        "name": "Saadian Tombs",
+        "name_en": "Tombeaux Saadiens ضريح السعديين",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6172551,
+        "longitude": -7.9885299,
+        "address": "Rue de la Kasbah",
+        "opening_hours": "Mo-Su 09:00-17:00",
+        "phone": "+212 5 24 43 34 07",
+        "wikidata": "Q2152745",
+        "wikipedia": "es:Tumbas saadíes",
+        "fee": "yes",
+        "wheelchair": "yes",
+        "popularity": 17,
+        "names": {
+          "pt": "Túmulos saadianos",
+          "en": "Saadian Tombs",
+          "es": "Tumbas saadíes"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9766943,
+          31.5987152
+        ]
+      },
+      "properties": {
+        "name": "Jardin de l'Agdal",
+        "category": "park",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO"
+        ],
+        "latitude": 31.5987152,
+        "longitude": -7.9766943,
+        "wikidata": "Q392057",
+        "popularity": 16,
+        "names": {
+          "pt": "Jardins de Agdal",
+          "en": "Agdal Gardens",
+          "es": "Jardines de Agdal"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9870551,
+          31.6319972
+        ]
+      },
+      "properties": {
+        "name": "Ben Youssef Mosque",
+        "name_en": "Ben Youssef Mosquée مسجد ابن يوسف",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 31.6319972,
+        "longitude": -7.9870551,
+        "wikidata": "Q4886745",
+        "wikipedia": "ar:مسجد ابن يوسف",
+        "popularity": 16,
+        "names": {
+          "en": "Ibn Yusuf Mosque",
+          "es": "Mezquita de Ben Youssef"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9860673,
+          31.6315496
+        ]
+      },
+      "properties": {
+        "name": "Marrakech Museum",
+        "name_en": "Musée de Marrakech متحف مراكش",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6315496,
+        "longitude": -7.9860673,
+        "opening_hours": "09:00-18:30",
+        "phone": "+212 244418",
+        "website": "https://marrakechmuseum.com",
+        "wikidata": "Q3090631",
+        "wikipedia": "ar:متحف مراكش",
+        "fee": "yes",
+        "popularity": 16,
+        "names": {
+          "pt": "Museu de Marraquexe",
+          "en": "Marrakech Museum",
+          "es": "Museo de Marrakech"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9888765,
+          31.6176391
+        ]
+      },
+      "properties": {
+        "name": "Moulay al-Yazid Mosque",
+        "name_en": "Mosquée Moulay El Yazid مسجد القصبة",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 31.6176391,
+        "longitude": -7.9888765,
+        "wikidata": "Q1948938",
+        "wikipedia": "en:Kasbah Mosque, Marrakesh",
+        "popularity": 15,
+        "names": {
+          "en": "Al-Mansour Mosque",
+          "es": "Mezquita de la Alcazaba"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9823034,
+          31.6200729
+        ]
+      },
+      "properties": {
+        "name": "Synagogue Salat Al-Azama",
+        "name_en": "Synagogue Laazama",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6200729,
+        "longitude": -7.9823034,
+        "wikidata": "Q3508008",
+        "fee": "yes",
+        "popularity": 10,
+        "names": {
+          "pt": "Sinagoga Salat Alzama",
+          "en": "Slat Al Azama Synagogue",
+          "es": "Sinagoga Salat Alzama"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9887794,
+          31.6293595
+        ]
+      },
+      "properties": {
+        "name": "Museum of Music",
+        "name_en": "Musée de la Musique",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6293595,
+        "longitude": -7.9887794,
+        "address": "Derb Hammam, 5, Marrakech ⵎⵕⵕⴰⴽⵯⵛ مراكش",
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "phone": "+212 7 77 76 77 46",
+        "website": "https://museedelamusique.ma/",
+        "wikidata": "Q96394004",
+        "wikipedia": "en:Mouassine Museum",
+        "fee": "yes",
+        "popularity": 8,
+        "names": {
+          "en": "Mouassine Museum"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9828725,
+          31.6166231
+        ]
+      },
+      "properties": {
+        "name": "Berrima Mosque",
+        "name_en": "Mosquee Berrima مسجد بريمة",
+        "category": "historic_church",
+        "profiles": [
+          "CULTURAL",
+          "SOLITARIO"
+        ],
+        "latitude": 31.6166231,
+        "longitude": -7.9828725,
+        "wikidata": "Q92061407",
+        "wikipedia": "ar:مسجد بريمة",
+        "popularity": 8,
+        "names": {
+          "en": "Buraima Mosque",
+          "es": "Mezquita de Berrima"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9923528,
+          31.6313866
+        ]
+      },
+      "properties": {
+        "name": "Dar El Bacha Museum",
+        "name_en": "Musée Dar El Bacha\n دار الباشا",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6313866,
+        "longitude": -7.9923528,
+        "opening_hours": "Tu-Su 10:00-18:00",
+        "website": "https://darbacha.com/",
+        "wikidata": "Q59956159",
+        "wikipedia": "ar:دار الباشا",
+        "fee": "yes",
+        "popularity": 7,
+        "names": {
+          "en": "Dar el Bacha",
+          "es": "Dar el Bacha"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0148418,
+          31.6297127
+        ]
+      },
+      "properties": {
+        "name": "Théâtre Royal",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 31.6297127,
+        "longitude": -8.0148418,
+        "wikidata": "Q113627642",
+        "popularity": 3,
+        "names": {
+          "en": "Royal Theatre",
+          "es": "Teatro Real de Marrakech"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9931712,
+          31.6228444
+        ]
+      },
+      "properties": {
+        "name": "Koutoubia Gardens",
+        "category": "garden",
+        "profiles": [
+          "NATUREZA",
+          "RELAXAMENTO",
+          "SOLITARIO"
+        ],
+        "latitude": 31.6228444,
+        "longitude": -7.9931712,
+        "wikidata": "Q58975496",
+        "popularity": 1,
+        "names": {
+          "en": "Koutoubia Gardens"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.984071,
+          31.6222731
+        ]
+      },
+      "properties": {
+        "name": "Tiskiwin Museum",
+        "name_en": "Musée Tiskiwin",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6222731,
+        "longitude": -7.984071,
+        "address": "Derb El Bahia, 8",
+        "opening_hours": "9:00-12:30;14:30-18:00",
+        "website": "https://tiskiwin.wdro.net/",
+        "fee": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.988278,
+          31.6346156
+        ]
+      },
+      "properties": {
+        "name": "Museum of Perfume",
+        "name_en": "Musée du Parfum",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6346156,
+        "longitude": -7.988278,
+        "website": "https://www.benchaabane.com/lemuseeduparfum/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9865567,
+          31.6321829
+        ]
+      },
+      "properties": {
+        "name": "Dar Bellarj دار بلارج",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO",
+          "MOCHILEIRO"
+        ],
+        "latitude": 31.6321829,
+        "longitude": -7.9865567,
+        "opening_hours": "Mo-Sa 09:00-17:30",
+        "wikidata": "Q123262808",
+        "fee": "no",
+        "wheelchair": "limited",
+        "popularity": 0,
+        "names": {
+          "en": "Dar Bellarj"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9902862,
+          31.629188
+        ]
+      },
+      "properties": {
+        "name": "Dar Cherifa",
+        "category": "gallery",
+        "profiles": [
+          "CULTURAL",
+          "LUXO",
+          "MOCHILEIRO"
+        ],
+        "latitude": 31.629188,
+        "longitude": -7.9902862,
+        "address": "Derb Chorfa Lakbir, 8",
+        "phone": "+212 5 24 42 64 63",
+        "website": "https://darcherifa.com/",
+        "fee": "no",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9843668,
+          31.6319862
+        ]
+      },
+      "properties": {
+        "name": "Maison de la Photographie",
+        "category": "gallery",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6319862,
+        "longitude": -7.9843668,
+        "address": "Rue Ahal Fès, 46",
+        "opening_hours": "Mo-Su 09:30-19:00",
+        "phone": "+212 5 24 38 57 21",
+        "website": "https://www.maisondelaphotographie.ma",
+        "fee": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9842542,
+          31.6215749
+        ]
+      },
+      "properties": {
+        "name": "Moroccan Culinary Arts museum",
+        "name_en": "Musée de l'Art Culinaire Marocain",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6215749,
+        "longitude": -7.9842542,
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "phone": "+212 524427177",
+        "website": "https://www.moroccan-cam.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9879731,
+          31.6186692
+        ]
+      },
+      "properties": {
+        "name": "Monde des Arts de la Parure (MAP)",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6186692,
+        "longitude": -7.9879731,
+        "address": "Rue Touareg Ksibat Nhas, 39-40",
+        "opening_hours": "Tu-Su 10:00-17:30",
+        "phone": "+212 8 08 65 85 61",
+        "website": "https://www.lemapmarrakech.com/",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9838608,
+          31.6233845
+        ]
+      },
+      "properties": {
+        "name": "Musée Dar Si Saïd متحف دار السي سعيد",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6233845,
+        "longitude": -7.9838608,
+        "opening_hours": "24/7 closed",
+        "website": "https://fnm.ma/musees-ouverts/musee-dar-si-said-de-marrakech/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9790684,
+          31.6203377
+        ]
+      },
+      "properties": {
+        "name": "Jewish Cemetery Miaara",
+        "name_en": "Cimetière Juif Miaara",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 31.6203377,
+        "longitude": -7.9790684,
+        "website": "http://www.cimetierejuifmarrakech.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0028817,
+          31.6419019
+        ]
+      },
+      "properties": {
+        "name": "Berber Museum",
+        "name_en": "Musée Berbère",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6419019,
+        "longitude": -8.0028817,
+        "address": "Rue Yves Saint Laurent",
+        "opening_hours": "10:00-18:00. Fermé le mercredi",
+        "website": "https://www.jardinmajorelle.com/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9899339,
+          31.6308727
+        ]
+      },
+      "properties": {
+        "name": "Le Jardin Secret",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 31.6308727,
+        "longitude": -7.9899339,
+        "address": "Rue Mouassine, 121",
+        "opening_hours": "Mo-Su 09:30-18:00",
+        "phone": "+212 524 39 00 40",
+        "website": "https://www.lejardinsecretmarrakech.com/",
+        "fee": "yes",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9891877,
+          31.6249995
+        ]
+      },
+      "properties": {
+        "name": "Musée Jamaâ el-Fna du patrimoine immatériel",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6249995,
+        "longitude": -7.9891877,
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "website": "https://jemaa-elfnaa.com/fr/musee-du-patrimoine-culturel-immateriel/",
+        "fee": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0032743,
+          31.6425511
+        ]
+      },
+      "properties": {
+        "name": "Musée Yves Saint Laurent",
+        "category": "museum",
+        "profiles": [
+          "CULTURAL",
+          "LUXO"
+        ],
+        "latitude": 31.6425511,
+        "longitude": -8.0032743,
+        "address": "Rue Yves Saint Laurent",
+        "opening_hours": "Th-Tu 10:00-18:00",
+        "website": "https://www.museeyslmarrakech.com",
+        "fee": "yes",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9820295,
+          31.6216368
+        ]
+      },
+      "properties": {
+        "name": "Bahia Palace",
+        "name_en": "Palais Bahia قصر الباهية",
+        "category": "attraction",
+        "profiles": [
+          "CULTURAL",
+          "SOCIAL"
+        ],
+        "latitude": 31.6216368,
+        "longitude": -7.9820295,
+        "address": "Rue Riad Zitoun El Jedid, 5",
+        "opening_hours": "Mo-Su 09:00-17:00",
+        "website": "https://e-services.minculture.gov.ma/fr/tickets/palais-bahia",
+        "wikipedia": "en:Bahia Palace",
+        "fee": "yes",
+        "wheelchair": "yes",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9884135,
+          31.6249443
+        ]
+      },
+      "properties": {
+        "name": "Plaça de Jemaa El Fna",
+        "category": "marketplace",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6249443,
+        "longitude": -7.9884135,
+        "opening_hours": "24/7",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0133642,
+          31.6359916
+        ]
+      },
+      "properties": {
+        "name": "Al Fassia",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6359916,
+        "longitude": -8.0133642,
+        "address": "Boulevard Mohammed Zerktouni, 55",
+        "opening_hours": "We-Mo",
+        "phone": "+212 524 43 40 60",
+        "website": "https://www.alfassia.com/restaurants-gastronomique.html",
+        "wheelchair": "limited",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9849483,
+          31.6240078
+        ]
+      },
+      "properties": {
+        "name": "Un Déjeuner à Marrakech",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6240078,
+        "longitude": -7.9849483,
+        "address": "Douar Graoua, 2-4",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "phone": "+212 5 24 37 83 87",
+        "website": "https://www.undejeuneramarrakech.com/",
+        "wheelchair": "no",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9907756,
+          31.6340021
+        ]
+      },
+      "properties": {
+        "name": "Broc The Kasbah",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6340021,
+        "longitude": -7.9907756,
+        "address": "Rue Riad Laarous, 300",
+        "opening_hours": "Mo-Su 12:00-22:00",
+        "phone": "+212 6 05 30 56 87",
+        "wheelchair": "limited",
+        "cuisine": "arab;burger;diner;moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9884598,
+          31.6219848
+        ]
+      },
+      "properties": {
+        "name": "Zwin Zwin café",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6219848,
+        "longitude": -7.9884598,
+        "address": "Rue El Moustachfa, 10",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+212 5 24 38 07 07",
+        "website": "https://www.zwinzwincafe.net/",
+        "cuisine": "moroccan;regional;international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9917418,
+          31.6203219
+        ]
+      },
+      "properties": {
+        "name": "La Villa des Orangers",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6203219,
+        "longitude": -7.9917418,
+        "address": "Rue Sidi Mimoun, 6, Marrakech مراكش",
+        "opening_hours": "19:30-late",
+        "phone": "+212 5 24 38 46 38",
+        "website": "https://www.villadesorangers.com/index.php/the-restaurant",
+        "cuisine": "french;moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9850795,
+          31.6300675
+        ]
+      },
+      "properties": {
+        "name": "Naima",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6300675,
+        "longitude": -7.9850795,
+        "address": "Rue Azbezd, 30",
+        "opening_hours": "08:00-22:00",
+        "phone": "+212 6 67 84 63 70",
+        "cuisine": "moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9848998,
+          31.631923
+        ]
+      },
+      "properties": {
+        "name": "Le Foundouk",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.631923,
+        "longitude": -7.9848998,
+        "address": "Rue Souk El Fassi, 55",
+        "opening_hours": "Tu-Su 19:00-00:00",
+        "phone": "+212 5 24 37 81 76",
+        "website": "https://www.foundouk.com/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9968979,
+          31.628966
+        ]
+      },
+      "properties": {
+        "name": "Fouquet's",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.628966,
+        "longitude": -7.9968979,
+        "address": "Rue DJebel Alakhdar",
+        "opening_hours": "12:30-14:30; 19:30-22:30",
+        "phone": "+212 5 24 45 90 00",
+        "website": "http://www.lucienbarriere.com/en/luxury-hotel/Marrakech-Hotel-Naoura-Barriere/Fouquets-Marrakech.html",
+        "cuisine": "french;maroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9839116,
+          31.6252725
+        ]
+      },
+      "properties": {
+        "name": "Pepe Nero",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6252725,
+        "longitude": -7.9839116,
+        "address": "Derb Cherkaoui, 17",
+        "opening_hours": "Tu-Su 12:00-14:30,19:30-23:00",
+        "phone": "+212 5 24 38 90 67",
+        "website": "https://www.pepenero-marrakech.com/",
+        "cuisine": "italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9905069,
+          31.6297335
+        ]
+      },
+      "properties": {
+        "name": "La table du Palais",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6297335,
+        "longitude": -7.9905069,
+        "address": "Rue Sidi El Yamani, 63",
+        "opening_hours": "Th-Tu 12:00-14:30,18:30-21:30",
+        "phone": "+212 524385051",
+        "website": "https://www.palaislamrani.com/",
+        "cuisine": "regional;international",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9903183,
+          31.6259112
+        ]
+      },
+      "properties": {
+        "name": "Al Baraka Restaurant",
+        "name_en": "Restaurant Al Baraka",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6259112,
+        "longitude": -7.9903183,
+        "address": "Place Jamâa El Fna،, 1",
+        "opening_hours": "Mo-Su 10:00-15:00,19:00-23:00",
+        "phone": "+212 5 24 44 23 41",
+        "website": "https://www.albaraka-marrakech.com/",
+        "cuisine": "moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9874376,
+          31.6286777
+        ]
+      },
+      "properties": {
+        "name": "Nomad",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6286777,
+        "longitude": -7.9874376,
+        "address": "Derb Aarjane, 1",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+212 5 24 38 16 09",
+        "website": "https://nomadmarrakech.com",
+        "wheelchair": "no",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0064482,
+          31.6326366
+        ]
+      },
+      "properties": {
+        "name": "l'tachine",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6326366,
+        "longitude": -8.0064482,
+        "address": "Rue Badr / Av. des Nations Unies",
+        "opening_hours": "Mo-Su 07:00-23:30",
+        "phone": "+212 524 43 89 80",
+        "website": "http://www.ltchine-restaurant.com/",
+        "cuisine": "regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0119426,
+          31.6312148
+        ]
+      },
+      "properties": {
+        "name": "Bistro La Comedie",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6312148,
+        "longitude": -8.0119426,
+        "address": "Avenue Hassan II",
+        "opening_hours": "Mo-Su 06:00-00:00",
+        "phone": "+212 658 699685",
+        "cuisine": "american;arab;asian;barbecue;breakfast;burger;cake;chicken;coffee_shop;crepe;curry;diner;donut;oriental;fish;french;friture;hotdog;international;italian;italian_pizza;kebab;moroccan;pizza;sandwich;sausage;spanish;tea",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.985213,
+          31.6245374
+        ]
+      },
+      "properties": {
+        "name": "Naranj Libanese",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6245374,
+        "longitude": -7.985213,
+        "address": "Rue Riad Zitoun El Jedid, 84",
+        "opening_hours": "Mo-Sa 12:30-22:30",
+        "phone": "+212 524 386 805;+212 602 439 515;+212 635 902 704",
+        "website": "https://naranj.ma/",
+        "cuisine": "lebanese",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9862192,
+          31.6217997
+        ]
+      },
+      "properties": {
+        "name": "Koulchi Zine - Rooftop Restaurant",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6217997,
+        "longitude": -7.9862192,
+        "address": "Riad Zitoun Lakdim رياض الزيتون القديم, 12",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+212 5 24 37 75 80",
+        "website": "https://koulchizine.com/",
+        "cuisine": "arab;diner;fine_dining;moroccan;regional",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9891467,
+          31.6336166
+        ]
+      },
+      "properties": {
+        "name": "Exotic Bali",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6336166,
+        "longitude": -7.9891467,
+        "address": "Derb Chentouf, 56",
+        "opening_hours": "Tu-Su 17:00-22:00",
+        "phone": "+212 6 66 04 48 82",
+        "website": "https://exotic-bali.com/",
+        "cuisine": "asian;seafood",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0111946,
+          31.6356415
+        ]
+      },
+      "properties": {
+        "name": "Le Kilim",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6356415,
+        "longitude": -8.0111946,
+        "address": "Sis 36 angle rue la liberté et rue Tarik Ibnou Ziad N° 3 rez-de-chaussée",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "phone": "+212 6 61 45 15 19",
+        "website": "https://lekilim.com/en/",
+        "cuisine": "moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0071371,
+          31.6315526
+        ]
+      },
+      "properties": {
+        "name": "Baba Pizza",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6315526,
+        "longitude": -8.0071371,
+        "address": "57 Rue Mouatamid Ibn Abaad, Atar 1 Mag N 2 Angle Av Med",
+        "opening_hours": "Mo-Su 11:30-02:00",
+        "phone": "+212 6 61 82 56 13",
+        "website": "https://babapizza.ma/",
+        "cuisine": "italian_pizza;italian",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0048346,
+          31.6321313
+        ]
+      },
+      "properties": {
+        "name": "Manzil",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6321313,
+        "longitude": -8.0048346,
+        "address": "Rue Ibn Atya, Marrakesch",
+        "opening_hours": "Mo-Su 12:00-03:00",
+        "phone": "+212 6 73 73 20 84",
+        "website": "https://www.manzilmarrakech.com/",
+        "cuisine": "mexican",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9879667,
+          31.6271153
+        ]
+      },
+      "properties": {
+        "name": "Tiznit",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6271153,
+        "longitude": -7.9879667,
+        "address": "Place Jamaâ Lefna, 28, Marrakech Medina",
+        "opening_hours": "Mo-Su 12:00-00:00",
+        "phone": "+212 5 24 42 72 04",
+        "cuisine": "local",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9967886,
+          31.6318241
+        ]
+      },
+      "properties": {
+        "name": "M Bacha",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6318241,
+        "longitude": -7.9967886,
+        "address": "Derb Dekkak, 2",
+        "opening_hours": "Mo-Su 12:00-00:00",
+        "phone": "+212 6 46 38 47 22",
+        "website": "https://mbacha.net/",
+        "cuisine": "japanese;moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9864208,
+          31.6222767
+        ]
+      },
+      "properties": {
+        "name": "Restaurant dardar",
+        "name_en": "دار دار",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6222767,
+        "longitude": -7.9864208,
+        "address": "Riad Zitoun Lakdim رياض الزيتون القديم",
+        "opening_hours": "Mo-Su 10:00-00:00",
+        "phone": "+212 6 23 61 51 31",
+        "website": "http://restaurantdardar.com",
+        "cuisine": "coffee_shop;moroccan;pizza",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0121946,
+          31.6334188
+        ]
+      },
+      "properties": {
+        "name": "Marrakech, Azalai urban souk",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6334188,
+        "longitude": -8.0121946,
+        "address": "Boulevard El Mansour Eddahbi, 67",
+        "opening_hours": "Mo-Sa 12:00-22:00",
+        "phone": "+212 6 69 29 31 62",
+        "website": "https://azalaiurbansouk.com/",
+        "cuisine": "deli",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9967623,
+          31.636063
+        ]
+      },
+      "properties": {
+        "name": "La Terrasse Du Jardin",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.636063,
+        "longitude": -7.9967623,
+        "address": "Rue El Gza",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "phone": "+212 077 377 1356",
+        "website": "https://www.laterrassedujardin.ma/",
+        "cuisine": "moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.007632,
+          31.6343522
+        ]
+      },
+      "properties": {
+        "name": "hysushi",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6343522,
+        "longitude": -8.007632,
+        "address": "Rue el Imam Malik,",
+        "opening_hours": "sunrise-sunset",
+        "phone": "+212 7 70 70 75 75",
+        "website": "https://hysushi-marrakech.com/",
+        "cuisine": "sushi;thai",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9888763,
+          31.6310673
+        ]
+      },
+      "properties": {
+        "name": "La Terrasse Des Epices",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6310673,
+        "longitude": -7.9888763,
+        "address": "Souk Cherifia, 15",
+        "opening_hours": "12:00-23:00",
+        "phone": "+212 524 375 904",
+        "website": "https://www.terrassedesepices.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9887642,
+          31.6320477
+        ]
+      },
+      "properties": {
+        "name": "Pop-Up Shop, Le Jardin",
+        "name_en": "Le Jardin",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6320477,
+        "longitude": -7.9887642,
+        "address": "rue El Jeld, Sidi Abdelaziz, 32",
+        "opening_hours": "Mo, We 11:30-17:00, 19:00-22:00; Tu 11:30-16:00",
+        "phone": "+212 5 24 37 82 95",
+        "website": "https://www.norya-ayron.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.987289,
+          31.6130285
+        ]
+      },
+      "properties": {
+        "name": "Café Clock",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6130285,
+        "longitude": -7.987289,
+        "address": "Derb Chtouka, 224",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "phone": "+212 5 24 37 83 67",
+        "website": "https://www.cafeclock.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9886628,
+          31.6320809
+        ]
+      },
+      "properties": {
+        "name": "Le Jardin",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6320809,
+        "longitude": -7.9886628,
+        "opening_hours": "Mo-Su 10:00-22:30",
+        "phone": "+212 5 24 37 82 95",
+        "website": "https://lejardinmarrakech.com/",
+        "cuisine": "breakfast;mediterranean;moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0127854,
+          31.6316491
+        ]
+      },
+      "properties": {
+        "name": "Azar",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6316491,
+        "longitude": -8.0127854,
+        "address": "Rue Yougoslavie زنقة يوغوسلافيا",
+        "opening_hours": "Mo-Su 19:00-01:00",
+        "website": "https://www.azarmarrakech.com/",
+        "cuisine": "moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9885322,
+          31.6324404
+        ]
+      },
+      "properties": {
+        "name": "Kui-Zin",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6324404,
+        "longitude": -7.9885322,
+        "address": "Rue Amsafah, 12",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+212 524390984;+212 653100088",
+        "website": "https://www.kui-zin.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9846187,
+          31.6228783
+        ]
+      },
+      "properties": {
+        "name": "La famille, Cantine au Jardin",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6228783,
+        "longitude": -7.9846187,
+        "address": "Rue Riad Zitoun El Jedid, 42",
+        "opening_hours": "Tu-Su 12:00-17:00",
+        "phone": "+212 524 385 295",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9827201,
+          31.6315072
+        ]
+      },
+      "properties": {
+        "name": "Dar L’hssira",
+        "name_en": "دار الحصيرة",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6315072,
+        "longitude": -7.9827201,
+        "address": "Rue Tachenbacht",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "phone": "+212 6 00 75 68 45",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0135755,
+          31.6329886
+        ]
+      },
+      "properties": {
+        "name": "Paname Lounge Marrakech",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6329886,
+        "longitude": -8.0135755,
+        "address": "Rue Yougoslavie زنقة يوغوسلافيا, 101",
+        "opening_hours": "24/7",
+        "phone": "+212 7 63 10 41 11",
+        "website": "https://www.panamelounge.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.989435,
+          31.6311057
+        ]
+      },
+      "properties": {
+        "name": "La Fontaine des épices",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6311057,
+        "longitude": -7.989435,
+        "address": "131, Rue Mouassine",
+        "opening_hours": "Mo-Su 10:00-00:00",
+        "phone": "+212 7 07 77 25 68",
+        "website": "https://lafontainedesepices.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.010006,
+          31.6331197
+        ]
+      },
+      "properties": {
+        "name": "Grand Café de la Poste",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6331197,
+        "longitude": -8.010006,
+        "opening_hours": "Mo-Su 08:00-01:00",
+        "phone": "+212 (0) 24 43 30 38",
+        "website": "https://www.grandcafedelaposte-marrakech.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0002174,
+          31.6220131
+        ]
+      },
+      "properties": {
+        "name": "Jad Mahal",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6220131,
+        "longitude": -8.0002174,
+        "opening_hours": "17:00+",
+        "phone": "+212 5 24 43 69 84",
+        "website": "http://www.palaisjadmahal.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9838891,
+          31.6227127
+        ]
+      },
+      "properties": {
+        "name": "Angsana Si Said",
+        "category": "restaurant",
+        "profiles": [
+          "LUXO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6227127,
+        "longitude": -7.9838891,
+        "opening_hours": "12:00-15:00;19:30-23:00",
+        "website": "https://www.angsana.com/en/web/angsana/em-morocco-riad-collection/restaurant-si-said",
+        "cuisine": "thai;moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9917683,
+          31.626188
+        ]
+      },
+      "properties": {
+        "name": "Imlil Snack Bar",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.626188,
+        "longitude": -7.9917683,
+        "opening_hours": "12:30-16:00",
+        "website": "http://news.lesjardinsdelakoutoubia.com/lesjardinsdelakoutoubia/uk/carte-bar-imlil.asp",
+        "cuisine": "french",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9896527,
+          31.6196463
+        ]
+      },
+      "properties": {
+        "name": "Villa Aaron",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6196463,
+        "longitude": -7.9896527,
+        "opening_hours": "Mo-Su 10:00-00:00",
+        "phone": "+212 6 69 09 08 28",
+        "website": "https://villa-aaron.com",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9929493,
+          31.6261357
+        ]
+      },
+      "properties": {
+        "name": "Kabana",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6261357,
+        "longitude": -7.9929493,
+        "opening_hours": "11:00-26:00",
+        "phone": "+212 664 464450",
+        "website": "https://www.kabana-marrakech.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9873234,
+          31.6290624
+        ]
+      },
+      "properties": {
+        "name": "Café des Epices",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6290624,
+        "longitude": -7.9873234,
+        "address": "75 Rahba Lakdima, 75",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "phone": "+212 5 24 39 17 70",
+        "website": "https://cafedesepices.ma/",
+        "wheelchair": "limited",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.987307,
+          31.6263381
+        ]
+      },
+      "properties": {
+        "name": "Café de France",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6263381,
+        "longitude": -7.987307,
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+212 5 24 44 23 19",
+        "website": "https://www.cafe-france-marrakech.com/",
+        "cuisine": "coffee_shop",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9942543,
+          31.631592
+        ]
+      },
+      "properties": {
+        "name": "Henna Cafe",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 31.631592,
+        "longitude": -7.9942543,
+        "address": "Arset Aouzal Souikat, 93",
+        "opening_hours": "11:00-20:00",
+        "website": "http://www.hennacafemarrakech.com/",
+        "cuisine": "berber",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0018479,
+          31.6411864
+        ]
+      },
+      "properties": {
+        "name": "My Kawa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6411864,
+        "longitude": -8.0018479,
+        "address": "Rue Yves Saint Laurent",
+        "opening_hours": "Mo-Su 08:00-20:00; \"Ramadan 09:00-17:00\"",
+        "phone": "+212 524 31 00 16",
+        "website": "https://www.16cafe.com/le-16-kawa/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.99105,
+          31.6260935
+        ]
+      },
+      "properties": {
+        "name": "Foundounk Gargaa",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6260935,
+        "longitude": -7.99105,
+        "address": "Rue Koutoubia, 9",
+        "opening_hours": "Su-Sa 10:00-19:00",
+        "website": "https://instagram.com/foundouk_gargaa_marrakech?igshid=YmMyMTA2M2Y=",
+        "cuisine": "moroccan",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0095791,
+          31.6363854
+        ]
+      },
+      "properties": {
+        "name": "Kartell Kollektiv",
+        "category": "cafe",
+        "profiles": [
+          "RELAXAMENTO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6363854,
+        "longitude": -8.0095791,
+        "address": "Rue halab, 14",
+        "opening_hours": "Mo-Th, Sa 09:00-19:00; Fr 15:00-19:00",
+        "website": "https://kartell.space/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9916855,
+          31.6259205
+        ]
+      },
+      "properties": {
+        "name": "Piano Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6259205,
+        "longitude": -7.9916855,
+        "address": "Rue de la Koutoubia, 26",
+        "opening_hours": "17:00-24:00",
+        "phone": "+212 024 38 88 00",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0005008,
+          31.622383
+        ]
+      },
+      "properties": {
+        "name": "Pearl Sky Lounge",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.622383,
+        "longitude": -8.0005008,
+        "address": "Rue du Temple, 3, Marrkakech",
+        "opening_hours": "11:00-late",
+        "phone": "+212 5 24 42 42 42",
+        "website": "https://www.thepearlmarrakech.com/sky-lounge-,restaurant_viewItem_12-en.html",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0066246,
+          31.6288301
+        ]
+      },
+      "properties": {
+        "name": "Djellabar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6288301,
+        "longitude": -8.0066246,
+        "address": "Rue Iman lbn Hanifa, 2, Marrakesh",
+        "opening_hours": "17:00-late",
+        "phone": "+212 524421242",
+        "website": "http://djellabarmarrakech.com/",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9895423,
+          31.6223763
+        ]
+      },
+      "properties": {
+        "name": "Grand Tazi Bar",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6223763,
+        "longitude": -7.9895423,
+        "opening_hours": "to 23:00",
+        "phone": "+212 024 44 27 87",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0107043,
+          31.6361521
+        ]
+      },
+      "properties": {
+        "name": "Le 68 bar de Vin",
+        "category": "bar",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.6361521,
+        "longitude": -8.0107043,
+        "opening_hours": "Mo-Sa 17:00-02:00",
+        "phone": "+212 5 24 44 97 42",
+        "popularity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9868231,
+          31.5924594
+        ]
+      },
+      "properties": {
+        "name": "Pizza Amore Italiano",
+        "category": "restaurant",
+        "profiles": [
+          "MOCHILEIRO",
+          "SOCIAL"
+        ],
+        "latitude": 31.5924594,
+        "longitude": -7.9868231,
+        "cuisine": "pizza",
+        "popularity": 0
+      }
+    }
+  ]
+}

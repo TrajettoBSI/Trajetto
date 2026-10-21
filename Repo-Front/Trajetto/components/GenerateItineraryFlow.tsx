@@ -19,17 +19,19 @@ import { useTranslation } from 'react-i18next';
 import * as Location from 'expo-location';
 import DateTimePicker, { DateTimePickerAndroid, DateTimePickerEvent } from '@react-native-community/datetimepicker';
 import { useAuth } from '../context/AuthContext';
-import { PlaceSuggestion, searchAddresses, TravelPace } from '../services';
+import { City, cityService, PlaceSuggestion, searchAddresses, TravelPace } from '../services';
 import { getErrorMessage } from '../utils/apiError';
 import { FeedbackState } from '../src/components/feedback';
 import { Itinerary, useItineraryStore } from '../hooks/itineraryStore';
 import CustomButton from './CustomButton';
 import CustomInput from './CustomInput';
+import OptionPickerModal from '../src/components/OptionPickerModal/OptionPickerModal';
+import { countryLabelFromCode } from '../src/i18n/countries';
 import { Ionicons } from '@expo/vector-icons';
 import { AppColors, useColors } from '../src/theme';
 import { addDays, groupByDay, toIsoDate } from '../src/domain/itinerary/itineraryDays';
 import { freePeriod } from '../src/domain/itinerary/freePeriod';
-import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth } from '../src/i18n/format';
+import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth, placeName } from '../src/i18n/format';
 
 const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
 
@@ -45,6 +47,12 @@ const PACES: { id: TravelPace; icon: string; multiDayOnly: boolean }[] = [
 
 const fromIsoDate = (iso: string) => new Date(`${iso}T00:00:00`);
 
+/** Cidade do catalogo mais perto do ponto: e o destino quando o fluxo abre com um lugar ja escolhido. */
+const nearestCity = (cities: City[], lat: number, lng: number) => {
+  const dist = (c: City) => (c.latitude - lat) ** 2 + ((c.longitude - lng) * Math.cos((lat * Math.PI) / 180)) ** 2;
+  return cities.reduce<City | null>((best, c) => (!best || dist(c) < dist(best) ? c : best), null);
+};
+
 type Props = {
   visible: boolean;
   initialPlace?: PlaceSuggestion;
@@ -58,55 +66,47 @@ const BALL_R = 9;
 const SIZE = (RADIUS + BALL_R + 6) * 2;
 const CENTER = SIZE / 2;
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
-const AnimatedCircle = Animated.createAnimatedComponent(Circle);
+// Fraction of the circle covered by the trail behind the ball
+const TRAIL = 0.3;
 
 function OrbitLoader() {
   const colors = useColors();
   const loaderStyles = getLoaderStyles(colors);
-  // Two separate values: ball uses native driver, arc (SVG prop) cannot
-  const [ballRot] = useState(() => new Animated.Value(0));
-  const [arcProg] = useState(() => new Animated.Value(0));
+  const [rot] = useState(() => new Animated.Value(0));
 
   useEffect(() => {
+    // Everything spins on the native driver, so the loader stays smooth while the
+    // JS thread is busy waiting for (and parsing) the generated itinerary.
     const anim = Animated.loop(
-      Animated.parallel([
-        Animated.timing(ballRot, {
-          toValue: 1,
-          duration: 1800,
-          easing: Easing.linear,
-          useNativeDriver: true,
-        }),
-        Animated.timing(arcProg, {
-          toValue: 1,
-          duration: 1800,
-          easing: Easing.linear,
-          useNativeDriver: false,
-        }),
-      ])
+      Animated.timing(rot, {
+        toValue: 1,
+        duration: 1400,
+        easing: Easing.linear,
+        useNativeDriver: true,
+      })
     );
     anim.start();
     return () => anim.stop();
-  }, [ballRot, arcProg]);
+  }, [rot]);
 
-  const rotate = ballRot.interpolate({ inputRange: [0, 1], outputRange: ['0deg', '360deg'] });
-  // Offset shrinks from full circumference (nothing drawn) → 0 (fully drawn)
-  const dashOffset = arcProg.interpolate({ inputRange: [0, 1], outputRange: [CIRCUMFERENCE, 0] });
+  const rotate = rot.interpolate({ inputRange: [0, 1], outputRange: ['0deg', '360deg'] });
 
   return (
     <View style={loaderStyles.container}>
-      {/* Arc draws itself as ball moves — starts at 12 o'clock, grows clockwise */}
       <Svg width={SIZE} height={SIZE} style={{ position: 'absolute' }}>
-        <AnimatedCircle
-          cx={CENTER} cy={CENTER} r={RADIUS}
-          stroke={colors.primary} strokeWidth={3} fill="none"
-          strokeDasharray={CIRCUMFERENCE}
-          strokeDashoffset={dashOffset}
-          strokeLinecap="round"
-          rotation={-90} origin={`${CENTER},${CENTER}`}
-        />
+        <Circle cx={CENTER} cy={CENTER} r={RADIUS} stroke={colors.primary} strokeOpacity={0.15} strokeWidth={3} fill="none" />
       </Svg>
-      {/* Ball leads at the growing tip of the arc */}
       <Animated.View style={[loaderStyles.arm, { transform: [{ rotate }] }]}>
+        {/* Trail ends at 12 o'clock, where the ball sits, and trails counter-clockwise */}
+        <Svg width={SIZE} height={SIZE} style={{ position: 'absolute' }}>
+          <Circle
+            cx={CENTER} cy={CENTER} r={RADIUS}
+            stroke={colors.primary} strokeWidth={3} fill="none"
+            strokeDasharray={`${CIRCUMFERENCE * TRAIL} ${CIRCUMFERENCE}`}
+            strokeLinecap="round"
+            rotation={-90 - 360 * TRAIL} origin={`${CENTER},${CENTER}`}
+          />
+        </Svg>
         <View style={loaderStyles.ball} />
       </Animated.View>
     </View>
@@ -137,7 +137,7 @@ const getLoaderStyles = (colors: AppColors) => StyleSheet.create({
 
 // ── Main component ───────────────────────────────────────────────────────────
 export default function GenerateItineraryFlow({ visible, initialPlace, onAccept, onClose }: Props) {
-  const { t } = useTranslation(['roteiros', 'common', 'itinerario']);
+  const { t, i18n } = useTranslation(['roteiros', 'common', 'itinerario']);
   const colors = useColors();
   const styles = getStyles(colors);
   const { user } = useAuth();
@@ -150,6 +150,10 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   const [searching, setSearching] = useState(false);
   const [searchMessage, setSearchMessage] = useState('');
   const [selectedPlace, setSelectedPlace] = useState<PlaceSuggestion | null>(null);
+  const [cities, setCities] = useState<City[]>([]);
+  const [citiesError, setCitiesError] = useState(false);
+  const [selectedCity, setSelectedCity] = useState<City | null>(null);
+  const [showCityPicker, setShowCityPicker] = useState(false);
   const [generatedItinerary, setGeneratedItinerary] = useState<Itinerary | null>(null);
   const [startDate, setStartDate] = useState(() => toIsoDate(new Date()));
   const [days, setDays] = useState(1);
@@ -169,6 +173,8 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
       setAddressInput('');
       setSuggestions([]);
       setSelectedPlace(null);
+      setSelectedCity(null);
+      setShowCityPicker(false);
       setGeneratedItinerary(null);
       setStartDate(toIsoDate(new Date()));
       setDays(1);
@@ -176,6 +182,53 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
       setShowIosCalendar(false);
     }
   }
+
+  const loadCities = async () => {
+    setCitiesError(false);
+    try {
+      setCities(await cityService.getCities());
+    } catch {
+      setCitiesError(true);
+    }
+  };
+
+  useEffect(() => {
+    // Busca a lista no servidor ao abrir; precisa ser efeito.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (visible && cities.length === 0) loadCities();
+    // so na abertura; a lista de cidades nao muda durante o uso
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [visible]);
+
+  // Abriu com um lugar ja escolhido (o atalho "Roma"): o destino e a cidade dele.
+  useEffect(() => {
+    if (visible && initialPlace && cities.length > 0 && !selectedCity) {
+      // A cidade depende da lista, que chega depois da abertura; precisa ser efeito.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setSelectedCity(nearestCity(cities, initialPlace.lat, initialPlace.lng));
+    }
+  }, [visible, initialPlace, cities, selectedCity]);
+
+  const cityName = (city: City) => t(`roteiros:cities.${city.slug}`, { defaultValue: city.name });
+  const cityLabel = (city: City) => `${cityName(city)}, ${countryLabelFromCode(city.country, i18n.language)}`;
+  const cityOptions = [...cities]
+    .sort((a, b) => cityName(a).localeCompare(cityName(b), i18n.language))
+    .map((c) => ({ value: c.slug, label: cityLabel(c) }));
+
+  const handleSelectCity = (slug: string | null) => {
+    setShowCityPicker(false);
+    const city = cities.find((c) => c.slug === slug) ?? null;
+    if (!city || city.slug === selectedCity?.slug) return;
+    // A partida tem de ser na cidade do roteiro: trocar de cidade descarta o endereco.
+    setSelectedCity(city);
+    handleClearInput();
+  };
+
+  const handleUseCityCenter = () => {
+    if (!selectedCity) return;
+    const label = t('roteiros:generateFlow.cityCenterLabel', { city: cityName(selectedCity) });
+    handleSelectSuggestion({ lat: selectedCity.latitude, lng: selectedCity.longitude, shortName: label, displayName: label });
+  };
 
   const endDate = addDays(startDate, days - 1);
   const availablePaces = PACES.filter((p) => days > 1 || !p.multiDayOnly);
@@ -220,7 +273,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
     const requestId = ++searchRequestId.current;
     debounceRef.current = setTimeout(async () => {
       try {
-        const results = await searchAddresses(text.trim());
+        const results = await searchAddresses(text.trim(), selectedCity ?? undefined);
         if (searchRequestId.current !== requestId) return; // resposta de uma busca ja abandonada
         setSuggestions(results);
         if (results.length === 0) setSearchMessage(t('roteiros:generateFlow.addressNotFound'));
@@ -276,7 +329,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
   const runGenerate = async () => {
     const start = Date.now();
-    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days, effectivePace);
+    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days, effectivePace, selectedCity?.slug);
     const elapsed = Date.now() - start;
     const remaining = 2000 - elapsed;
     if (remaining > 0) await new Promise(r => setTimeout(r, remaining));
@@ -286,7 +339,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   // A falha devolve o usuario para onde ele estava, com o endereco e o roteiro que ja
   // tinha, e o aviso aparece ali mesmo com a opcao de tentar de novo.
   const gerar = async (voltarPara: Step) => {
-    if (!selectedPlace || !user) return;
+    if (!selectedPlace || !selectedCity || !user) return;
     setErro('');
     setStep('loading');
     try {
@@ -310,7 +363,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   };
 
   const totalFields = 2;
-  const completedFields = 1 + (selectedPlace ? 1 : 0);
+  const completedFields = (selectedCity ? 1 : 0) + (selectedPlace ? 1 : 0);
 
   return (
     <Modal visible={visible} animationType="slide" presentationStyle="pageSheet" onRequestClose={onClose}>
@@ -355,18 +408,48 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               {/* Destino */}
               <View style={styles.card}>
                 <Text style={styles.cardLabel}>{t('roteiros:generateFlow.destinyLabel')}</Text>
-                <View style={styles.fakeSearchBoxDisabled}>
-                  <Ionicons name="location" size={20} color={colors.textSubtle} style={styles.inputIcon} />
-                  <Text style={styles.fakeSearchTextFilled}>
-                    {t('roteiros:destinations.rome')}, {t('roteiros:destinations.italy')}
+                <TouchableOpacity
+                  style={[styles.fakeSearchBox, selectedCity ? styles.inputRowSelected : null]}
+                  onPress={() => { Keyboard.dismiss(); setShowCityPicker(true); }}
+                  disabled={cities.length === 0}
+                  activeOpacity={0.8}
+                  accessibilityRole="button"
+                  accessibilityLabel={t('roteiros:generateFlow.pickCity')}
+                >
+                  <Ionicons name="location" size={20} color={selectedCity ? colors.primary : colors.textSubtle} style={styles.inputIcon} />
+                  <Text style={[styles.cityText, !selectedCity && styles.cityPlaceholder]} numberOfLines={1}>
+                    {selectedCity ? cityLabel(selectedCity) : t('roteiros:generateFlow.pickCity')}
                   </Text>
-                </View>
+                  {cities.length === 0 && !citiesError
+                    ? <ActivityIndicator size="small" color={colors.primary} />
+                    : <Ionicons name="chevron-down" size={18} color={colors.textSubtle} />}
+                </TouchableOpacity>
+                {citiesError && (
+                  <TouchableOpacity onPress={loadCities}>
+                    <Text style={styles.searchMessage}>{t('roteiros:generateFlow.citiesError')}</Text>
+                  </TouchableOpacity>
+                )}
               </View>
+
+              <OptionPickerModal
+                visible={showCityPicker}
+                title={t('roteiros:generateFlow.cityPickerTitle')}
+                options={cityOptions}
+                selected={selectedCity?.slug ?? null}
+                onSelect={handleSelectCity}
+                onClose={() => setShowCityPicker(false)}
+              />
 
               {/* Ponto de partida */}
               <View style={styles.card}>
                 <Text style={styles.cardLabel}>{t('roteiros:generateFlow.originLabel')}</Text>
-                <Text style={styles.hint}>{t('roteiros:generateFlow.originHint')}</Text>
+                <Text style={styles.hint}>
+                  {selectedCity
+                    ? t('roteiros:generateFlow.originHint', { city: cityName(selectedCity) })
+                    : t('roteiros:generateFlow.originNeedsCity')}
+                </Text>
+
+                {selectedCity && (<>
 
                 {/* Wrapper com zIndex para garantir visibilidade no iOS */}
                 <View style={{ zIndex: 10, elevation: 10 }}>
@@ -438,10 +521,14 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 )}
 
                 <View style={styles.chipRow}>
+                  <TouchableOpacity style={styles.chip} onPress={handleUseCityCenter}>
+                    <Text style={styles.chipText}>{t('roteiros:generateFlow.cityCenterChip')}</Text>
+                  </TouchableOpacity>
                   <TouchableOpacity style={styles.chip} onPress={handleUseCurrentLocation}>
                     <Text style={styles.chipText}>{t('roteiros:generateFlow.currentLocationLabel')}</Text>
                   </TouchableOpacity>
                 </View>
+                </>)}
               </View>
 
               <View style={styles.card}>
@@ -542,7 +629,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               <CustomButton
                 title={t('roteiros:generateFlow.generateButton')}
                 onPress={handleGenerate}
-                disabled={!selectedPlace}
+                disabled={!selectedPlace || !selectedCity}
                 style={styles.generateBtn}
               />
             </ScrollView>
@@ -563,7 +650,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 <View style={{flexDirection: 'row', alignItems: 'center', gap: 6}}>
                   <Ionicons name="location" size={18} color={colors.onPrimary} style={{marginBottom: 5}}/>
                   <Text style={[styles.summaryTitle]}>
-                  {t('roteiros:generateFlow.summaryTitle')}
+                  {selectedCity ? cityLabel(selectedCity) : ''}
                   </Text>
                   </View>
                 <Text style={styles.summaryMeta}>
@@ -599,7 +686,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                         </View>
                         <View style={styles.previewItemContent}>
                           <View style={styles.previewItemRow}>
-                            <Text style={styles.previewPlaceName} numberOfLines={2}>{place.name}</Text>
+                            <Text style={styles.previewPlaceName} numberOfLines={2}>{placeName(place)}</Text>
                             {place.estimatedVisitTime ? (
                               <View style={[styles.timeBadge, { backgroundColor: color + '18', borderColor: color + '50' }]}>
                                 <Text style={[styles.timeBadgeText, { color }]}>
@@ -702,14 +789,8 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     elevation: 3,
   },
-  fakeSearchBoxDisabled: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: colors.backgroundMuted,
-    borderRadius: 14,
-    paddingHorizontal: 16,
-  },
-  fakeSearchTextFilled: { fontSize: Platform.OS === 'ios' ? 15 : 18, color: colors.textMuted, fontWeight: '600', paddingVertical: 9 },
+  cityText: { flex: 1, fontSize: Platform.OS === 'ios' ? 15 : 18, color: colors.text, fontWeight: '600', paddingVertical: 12 },
+  cityPlaceholder: { color: colors.textSubtle, fontWeight: '400' },
 
   durationValue: { fontSize: Platform.OS === 'ios' ? 18 : 22, fontWeight: 'bold', color: colors.text, minWidth: 90, textAlign: 'center' },
   stepperRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 20 },

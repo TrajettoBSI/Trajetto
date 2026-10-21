@@ -6,7 +6,7 @@ import i18n from '@/src/i18n';
 import { Itinerary } from '@/hooks/itineraryStore';
 import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
-import { formatDate, formatTime } from '@/src/i18n/format';
+import { formatDate, formatTime, placeName } from '@/src/i18n/format';
 import { groupByDay } from '@/src/domain/itinerary/itineraryDays';
 import { freePeriod } from '@/src/domain/itinerary/freePeriod';
 import { categoryLabel } from '@/src/helpers/categoryIcon';
@@ -34,7 +34,7 @@ function buildItineraryHtml(itinerary: Itinerary) {
     day.places.forEach((place, index) => {
       placesHtml += `
         <div style="margin-bottom: 20px; padding: 15px; border-left: 5px solid ${PDF_PRIMARY}; background-color: #f8fafc; border-radius: 4px;">
-          <h3 style="margin: 0 0 8px 0; color: #1a1a1a; font-size: 18px;">${index + 1}. ${place.name}</h3>
+          <h3 style="margin: 0 0 8px 0; color: #1a1a1a; font-size: 18px;">${index + 1}. ${placeName(place)}</h3>
           <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🕒 ${t('estimatedTime')}</strong> ${formatTime(place.estimatedVisitTime)}</p>
           <p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>📍 ${t('address')}</strong> ${place.address}</p>
           ${place.category ? `<p style="margin: 4px 0; font-size: 14px; color: #4a5568;"><strong>🏷️ ${t('category')}</strong> ${categoryLabel(place.category)}</p>` : ''}

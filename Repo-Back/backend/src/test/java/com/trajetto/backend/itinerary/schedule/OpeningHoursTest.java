@@ -114,7 +114,7 @@ class OpeningHoursTest {
     @DisplayName("Todo horario do catalogo de Roma e lido sem erro, e a grande maioria tem resposta certa")
     void catalogoInteiro() throws Exception {
         JsonNode root;
-        try (InputStream in = getClass().getResourceAsStream("/data/rome_curated.geojson")) {
+        try (InputStream in = getClass().getResourceAsStream("/data/cities/roma.geojson")) {
             root = new ObjectMapper().readTree(in);
         }
         int comHorario = 0;

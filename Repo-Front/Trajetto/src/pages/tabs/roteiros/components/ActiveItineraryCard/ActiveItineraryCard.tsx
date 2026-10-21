@@ -6,7 +6,7 @@ import { Itinerary } from '@/hooks/itineraryStore';
 import { useColors } from '@/src/theme';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { groupByDay, placeDate, resolveDay, toIsoDate } from '@/src/domain/itinerary/itineraryDays';
-import { formatDate, formatTime } from '@/src/i18n/format';
+import { formatDate, formatTime, placeName } from '@/src/i18n/format';
 import Checkbox from '../Checkbox/Checkbox';
 import { styles } from './styles';
 
@@ -102,7 +102,7 @@ export default function ActiveItineraryCard({
                   </View>
                   <View style={[s.timelineContent, isPast && s.timelineContentPast]}>
                     <Text style={s.timelineTime}>{formatTime(place.estimatedVisitTime)}</Text>
-                    <Text style={s.timelineName} numberOfLines={1}>{place.name}</Text>
+                    <Text style={s.timelineName} numberOfLines={1}>{placeName(place)}</Text>
                     <Text style={s.timelineAddress} numberOfLines={1}>{place.address}</Text>
                   </View>
                 </View>

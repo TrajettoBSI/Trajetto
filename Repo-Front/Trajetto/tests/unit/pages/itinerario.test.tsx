@@ -48,7 +48,7 @@ const roteiro: Itinerary = {
     parada(0, 'Fontana di Trevi', '09:00:00', '2099-11-10', { note: 'Jogar uma moeda' }),
     parada(1, 'Pantheon', '12:00:00', '2099-11-10', { fee: 'yes', bookingUrl: 'https://www.pantheonroma.com/' }),
     parada(2, 'Colosseo', '14:00:00', '2099-11-10', { openAtVisit: false }),
-    parada(3, 'Piazza Navona', '21:00:00', '2099-11-10'),
+    parada(3, 'Piazza Navona', '21:00:00', '2099-11-10', { fee: 'yes', ticketUrl: 'https://www.museodiroma.it/' }),
     parada(4, 'Musei Vaticani', '09:00:00', '2099-11-11', { category: 'museum' }),
     parada(5, 'Castel Sant\'Angelo', '12:00:00', '2099-11-11'),
   ],
@@ -204,6 +204,14 @@ describe('itinerario', () => {
     expect(screen.getByText('Fechado neste horário. Troque o horário ou a parada.')).toBeTruthy();
     await fireEvent.press(screen.getByText('Reserve com antecedência no site oficial'));
     expect(abrir).toHaveBeenCalledWith('https://www.pantheonroma.com/');
+  });
+
+  it('lugar pago sem reserva leva ao site oficial para o ingresso', async () => {
+    const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(true);
+    await render(<Itinerario />);
+
+    await fireEvent.press(screen.getByText('Ingressos e horários no site oficial'));
+    expect(abrir).toHaveBeenCalledWith('https://www.museodiroma.it/');
   });
 
   it('no modo de edicao muda a ordem, remove com confirmacao e inclui um favorito no dia', async () => {

@@ -138,3 +138,18 @@ export function bearing(from: LatLng, to: LatLng): number {
   const x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(dLon);
   return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
 }
+
+/**
+ * Separa a rota do dia, pedida de uma vez so, nos trechos entre paradas seguidas.
+ * `wayPoints` e a posicao de cada parada na geometria (o `way_points` do
+ * OpenRouteService). Sem ele, ou se nao bater com as paradas, cada trecho vira
+ * uma linha reta.
+ */
+export function splitRoute(stops: LatLng[], coords: LatLng[] | null, wayPoints?: number[] | null): LatLng[][] {
+  const straight = stops.slice(0, -1).map((s, i) => [s, stops[i + 1]]);
+  if (!coords || !wayPoints || wayPoints.length !== stops.length) return straight;
+  return straight.map((line, i) => {
+    const leg = coords.slice(wayPoints[i], wayPoints[i + 1] + 1);
+    return leg.length >= 2 ? leg : line;
+  });
+}

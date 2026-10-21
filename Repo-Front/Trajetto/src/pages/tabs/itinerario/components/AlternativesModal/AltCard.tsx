@@ -5,6 +5,7 @@ import { useColors } from '@/src/theme';
 import { categoryIcon, categoryLabel } from '@/src/helpers/categoryIcon';
 import { formatDistance } from './distance';
 import { styles } from './styles';
+import { placeName } from '@/src/i18n/format';
 
 type AltCardProps = {
   alt: Place;
@@ -21,7 +22,7 @@ export default function AltCard({ alt, onPress, distanceMeters }: AltCardProps) 
         <Text style={s.iconText}>{categoryIcon(alt.category)}</Text>
       </View>
       <View style={s.info}>
-        <Text style={s.name} numberOfLines={1}>{alt.name}</Text>
+        <Text style={s.name} numberOfLines={1}>{placeName(alt)}</Text>
         <View style={s.metaRow}>
           {alt.category ? (
             <View style={s.catBadge}>

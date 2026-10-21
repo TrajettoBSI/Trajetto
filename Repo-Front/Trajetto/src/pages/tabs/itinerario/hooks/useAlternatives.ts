@@ -49,6 +49,7 @@ export function useAlternatives(itinerary: Itinerary | null) {
       openingHours: alt.openingHours ?? null,
       category: alt.category ?? null,
       fee: alt.fee ?? null,
+      names: alt.names ?? null,
     };
     const replacedIndex = swipedPlace.orderIndex;
     setShowAltModal(false);

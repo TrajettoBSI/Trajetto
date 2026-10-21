@@ -14,7 +14,7 @@ import { useSpotDetail } from './hooks/useSpotDetail';
 import { useSpotRating } from './hooks/useSpotRating';
 import { useSpotFavorite } from './hooks/useSpotFavorite';
 import { formatCar, formatDistance, formatWalk } from './spotFormat';
-import { formatDecimal, formatOpeningHours } from '@/src/i18n/format';
+import { formatDecimal, formatOpeningHours, placeName } from '@/src/i18n/format';
 import InfoRow from './components/InfoRow/InfoRow';
 import { styles } from './styles/styles';
 
@@ -62,7 +62,7 @@ export default function SpotDetail() {
           <MapView style={s.map} provider={PROVIDER_DEFAULT} initialRegion={region} scrollEnabled zoomEnabled>
             <Marker
               coordinate={{ latitude: spot.latitude, longitude: spot.longitude }}
-              title={spot.name}
+              title={placeName(spot)}
               description={categoryLabel(spot.category)}
             />
           </MapView>
@@ -89,7 +89,7 @@ export default function SpotDetail() {
           )}
         </View>
 
-        <Text style={s.name}>{spot.name}</Text>
+        <Text style={s.name}>{placeName(spot)}</Text>
 
         {distance !== null && (
           <Text style={s.subtitleLine}>

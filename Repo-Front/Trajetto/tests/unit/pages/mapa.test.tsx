@@ -56,7 +56,8 @@ describe('mapa do roteiro', () => {
 
     expect(screen.getByText(/Colosseo/)).toBeTruthy();
     expect(screen.getAllByText('visitado ✓').length).toBe(2);
-    await waitFor(() => expect(rotas.getRoute).toHaveBeenCalledTimes(2));
+    await waitFor(() => expect(rotas.getRoute).toHaveBeenCalledTimes(1));
+    expect(rotas.getRoute.mock.calls[0][0].waypoints.length).toBeGreaterThan(0);
 
     await fireEvent.press(screen.getByText('Dia 1'));
     expect(await screen.findByText(/Fontana di Tre…/)).toBeTruthy();

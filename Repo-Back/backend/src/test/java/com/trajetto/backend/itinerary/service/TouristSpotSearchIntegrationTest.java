@@ -1,7 +1,7 @@
 package com.trajetto.backend.itinerary.service;
 
 import com.trajetto.backend.exception.InvalidRequestException;
-import com.trajetto.backend.itinerary.data.RomePlacesLoader;
+import com.trajetto.backend.itinerary.data.CityCatalog;
 import com.trajetto.backend.itinerary.dto.TouristSpotResponseDTO;
 import com.trajetto.backend.itinerary.model.TouristSpotDocument;
 import com.trajetto.backend.itinerary.repository.TouristSpotMongoRepository;
@@ -47,7 +47,7 @@ class TouristSpotSearchIntegrationTest {
     private TouristSpotSearchService service;
 
     @Autowired
-    private RomePlacesLoader romePlacesLoader;
+    private CityCatalog cityCatalog;
 
     @Autowired
     private TouristSpotMongoRepository mongoRepository;
@@ -57,10 +57,20 @@ class TouristSpotSearchIntegrationTest {
     void catalogoEspelhadoNoBanco() {
         List<TouristSpotResponseDTO> todos = service.search(null, null, null, null, null, null, null, null);
 
-        assertEquals(romePlacesLoader.getPlaces().size(), todos.size());
-        assertEquals(romePlacesLoader.getPlaces().get(0).name(), todos.get(0).name());
+        assertEquals(cityCatalog.getPlaces().size(), todos.size());
+        assertEquals(cityCatalog.getPlaces().get(0).name(), todos.get(0).name());
         assertTrue(todos.stream().allMatch(p -> p.distanceMeters() == null),
                 "sem ponto de referencia nao ha distancia");
+    }
+
+    @Test
+    @DisplayName("A busca acha o lugar pelo nome traduzido e devolve os nomes por idioma")
+    void buscaPeloNomeTraduzido() {
+        List<TouristSpotResponseDTO> achados = service.search("Museu do Louvre", null, null, null, null, null, null, null);
+
+        TouristSpotResponseDTO louvre = achados.stream()
+                .filter(p -> p.name().equals("Musée du Louvre")).findFirst().orElseThrow();
+        assertEquals("Louvre Museum", louvre.names().get("en"));
     }
 
     @Test

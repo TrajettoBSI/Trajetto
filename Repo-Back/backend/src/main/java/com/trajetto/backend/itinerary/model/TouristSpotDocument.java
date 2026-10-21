@@ -8,9 +8,10 @@ import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
+import java.util.Map;
 
 /**
- * Ponto do catalogo curado de Roma, espelhado do GeoJSON na colecao MongoDB
+ * Ponto do catalogo curado de uma cidade, espelhado do GeoJSON na colecao MongoDB
  * {@code tourist_spots}.
  *
  * <p>Os perfis ficam embutidos no proprio documento (sem colecao separada,
@@ -27,6 +28,8 @@ public class TouristSpotDocument {
     @Id
     private Long id;
 
+    /** Slug da cidade no manifesto {@code data/cities.json}. */
+    private String city;
     private String name;
     private String address;
     private double latitude;
@@ -41,13 +44,16 @@ public class TouristSpotDocument {
     private String wikipedia;
     private String wheelchair;
     private List<String> profiles;
+    /** Nome por idioma do app ({@code pt}, {@code en}, {@code es}), dos rotulos do Wikidata. */
+    private Map<String, String> names;
 
-    public static TouristSpotDocument of(Long id, String name, String address, double latitude, double longitude,
+    public static TouristSpotDocument of(Long id, String city, String name, String address, double latitude, double longitude,
                                           String category, String fee, String openingHours, String phone,
                                           String website, String wikidata, String wikipedia, String wheelchair,
-                                          List<String> profiles) {
+                                          List<String> profiles, Map<String, String> names) {
         TouristSpotDocument doc = new TouristSpotDocument();
         doc.id = id;
+        doc.city = city;
         doc.name = name;
         doc.address = address;
         doc.latitude = latitude;
@@ -62,6 +68,7 @@ public class TouristSpotDocument {
         doc.wikipedia = wikipedia;
         doc.wheelchair = wheelchair;
         doc.profiles = profiles;
+        doc.names = names;
         return doc;
     }
 }

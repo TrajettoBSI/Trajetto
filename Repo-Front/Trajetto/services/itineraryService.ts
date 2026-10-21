@@ -19,8 +19,8 @@ export class ItineraryService {
         return response.data;
     }
 
-    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number, startDate: string, days: number, pace: TravelPace) {
-        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude, startDate, days, pace });
+    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number, startDate: string, days: number, pace: TravelPace, city?: string) {
+        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude, startDate, days, pace, city });
         return response.data;
     }
 

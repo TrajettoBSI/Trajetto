@@ -35,7 +35,10 @@ export type {
 } from './statsService';
 
 export { geocodingService, searchAddresses } from './geocodingService';
-export type { PlaceSuggestion } from './geocodingService';
+export type { PlaceSuggestion, SearchArea } from './geocodingService';
+
+export { cityService } from './cityService';
+export type { City } from './cityService';
 
 export { searchByCity, touristSpotService } from './touristSpotService';
 export type { SearchOptions, TouristSpot } from './touristSpotService';

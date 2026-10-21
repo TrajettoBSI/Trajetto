@@ -19,6 +19,9 @@ export function categoryIcon(category: string): string {
   if (c.includes('tower')) return '🗼';
   if (c.includes('view')) return '🌄';
   if (c.includes('beach')) return '🏖️';
+  if (c.includes('peak')) return '⛰️';
+  if (c.includes('waterfall')) return '💧';
+  if (c.includes('cave')) return '🕳️';
   if (c.includes('zoo')) return '🦁';
   if (c.includes('aquarium')) return '🐠';
   if (c.includes('amusement') || c.includes('theme_park')) return '🎡';

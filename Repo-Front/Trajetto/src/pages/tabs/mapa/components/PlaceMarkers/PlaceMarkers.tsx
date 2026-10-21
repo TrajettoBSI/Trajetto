@@ -9,6 +9,7 @@ import { isPlacePast } from '@/app/utils/isPlacePast';
 import { placeDate } from '@/src/domain/itinerary/itineraryDays';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
+import { placeName } from '@/src/i18n/format';
 
 type PlaceMarkersProps = {
   points: any[];
@@ -40,7 +41,7 @@ export default function PlaceMarkers({ points, startDate, firstUpcomingIdx, puls
                 onPress={() => onPinPress(index)}
                 activeOpacity={0.75}
               >
-                <Text style={[s.labelText, { color }]}>{index + 1}. {point.name.length > 14 ? point.name.slice(0, 14) + '…' : point.name}</Text>
+                <Text style={[s.labelText, { color }]}>{index + 1}. {placeName(point).length > 14 ? placeName(point).slice(0, 14) + '…' : placeName(point)}</Text>
                 <Text style={[s.labelSub, { color }]}>{isPast ? t('placeMarker.visited') : t('placeMarker.goToItinerary')}</Text>
               </TouchableOpacity>
               <View style={[s.pinContainer, isPast && s.pinContainerPast]}>

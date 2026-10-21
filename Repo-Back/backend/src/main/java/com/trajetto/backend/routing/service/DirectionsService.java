@@ -1,5 +1,6 @@
 package com.trajetto.backend.routing.service;
 
+import com.trajetto.backend.itinerary.data.CityCatalog;
 import com.trajetto.backend.routing.dto.CoordinateDTO;
 import com.trajetto.backend.routing.dto.DirectionsRequestDTO;
 import com.trajetto.backend.routing.dto.DirectionsResponseDTO;
@@ -16,11 +17,11 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalTime;
-import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -39,7 +40,6 @@ public class DirectionsService {
 
     private static final Logger logger = LogManager.getLogger(DirectionsService.class);
     private static final String ORS_URL = "https://api.openrouteservice.org/v2/directions/";
-    private static final ZoneId ROME = ZoneId.of("Europe/Rome");
 
     static final double WALK_SPEED = 4.8 / 3.6;
     static final double CAR_SPEED = 25 / 3.6;
@@ -56,10 +56,13 @@ public class DirectionsService {
 
     private final RestTemplate restTemplate;
     private final String apiKey;
+    private final CityCatalog cityCatalog;
 
-    public DirectionsService(RestTemplateBuilder restTemplateBuilder, @Value("${ors.api.key}") String apiKey) {
+    public DirectionsService(RestTemplateBuilder restTemplateBuilder, @Value("${ors.api.key}") String apiKey,
+                             CityCatalog cityCatalog) {
         this.restTemplate = restTemplateBuilder.build();
         this.apiKey = apiKey;
+        this.cityCatalog = cityCatalog;
     }
 
     public DirectionsResponseDTO directions(DirectionsRequestDTO req) {
@@ -72,7 +75,8 @@ public class DirectionsService {
                 : new Option(Mode.TRANSIT, driving.distance(),
                         TRANSIT_OVERHEAD + driving.distance() / TRANSIT_SPEED, true, null, List.of());
 
-        int hour = req.hour != null ? req.hour : LocalTime.now(ROME).getHour();
+        int hour = req.hour != null ? req.hour
+                : LocalTime.now(cityCatalog.nearestCity(req.origin.lat, req.origin.lng).zone()).getHour();
         return new DirectionsResponseDTO(walking, driving, transit, recommend(walking, driving, transit, hour));
     }
 
@@ -91,7 +95,9 @@ public class DirectionsService {
                             List.of(req.origin.lng, req.origin.lat),
                             List.of(req.destination.lng, req.destination.lat)),
                     "instructions", true,
-                    "language", language);
+                    "language", language,
+                    // Sem limite para achar a rua mais proxima (ver RouteService).
+                    "radiuses", List.of(-1, -1));
             HttpHeaders headers = new HttpHeaders();
             headers.set("Authorization", apiKey);
             headers.setContentType(MediaType.APPLICATION_JSON);
@@ -99,6 +105,11 @@ public class DirectionsService {
             Map<String, Object> response = restTemplate.exchange(ORS_URL + profile, HttpMethod.POST,
                     new HttpEntity<>(body, headers), new ParameterizedTypeReference<Map<String, Object>>() {}).getBody();
             return parse(mode, response);
+        } catch (HttpClientErrorException.TooManyRequests | HttpClientErrorException.Forbidden e) {
+            // 429: limite por minuto; 403: cota do dia da chave gratuita.
+            logger.warn("Limite de consultas do OpenRouteService atingido (rota {}): {}; usando estimativa",
+                    profile, e.getResponseBodyAsString().strip());
+            return new Option(mode, fallbackDistance, fallbackExtra + fallbackDistance / fallbackSpeed, true, null, List.of());
         } catch (RestClientException | ClassCastException | NullPointerException | IndexOutOfBoundsException e) {
             logger.warn("Rota {} indisponível no OpenRouteService; usando estimativa", profile, e);
             return new Option(mode, fallbackDistance, fallbackExtra + fallbackDistance / fallbackSpeed, true, null, List.of());

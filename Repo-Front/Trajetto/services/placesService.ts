@@ -16,6 +16,8 @@ export interface Place {
   wheelchair?: string;
   /** Site oficial de reserva, quando a atracao exige reservar antes. */
   bookingUrl?: string | null;
+  /** Nome por idioma do app (pt, en, es), quando o lugar e do catalogo. */
+  names?: Record<string, string> | null;
 }
 
 export type NearbyPlace = Place & { distanceMeters?: number | null };

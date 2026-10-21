@@ -29,7 +29,9 @@
     "editNote": "Editar nota",
     "closedAtVisit": "Cerrado a esta hora. Cambia la hora o la parada.",
     "booking": "Reserva con antelación en el sitio oficial",
-    "bookingHint": "Abre el sitio oficial de reservas"
+    "bookingHint": "Abre el sitio oficial de reservas",
+    "tickets": "Entradas y horarios en el sitio oficial",
+    "ticketsHint": "Abre el sitio oficial del lugar"
   },
   "exportPdfDoc": {
     "estimatedTime": "Horario Estimado:",

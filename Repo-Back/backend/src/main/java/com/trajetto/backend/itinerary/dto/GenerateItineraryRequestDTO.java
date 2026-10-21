@@ -32,4 +32,7 @@ GenerateItineraryRequestDTO {
     private Integer days;
 
     private TravelPace pace;
+
+    /** Slug da cidade em {@code data/cities.json}; sem ele, vale a cidade mais perto da partida. */
+    private String city;
 }
