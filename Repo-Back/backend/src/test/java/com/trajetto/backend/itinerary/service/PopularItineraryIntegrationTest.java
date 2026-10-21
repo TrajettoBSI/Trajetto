@@ -4,16 +4,20 @@ import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
 import com.trajetto.backend.itinerary.dto.PlaceResponseDTO;
 import jakarta.persistence.EntityManager;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.util.AopTestUtils;
+import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -33,10 +37,28 @@ class PopularItineraryIntegrationTest {
 
     @BeforeEach
     void seed() {
+        // O gerador sorteia parte da pontuacao para variar o roteiro. Aqui o sorteio fica sempre
+        // no meio da faixa, para o teste medir a prioridade dos pontos populares sem depender da sorte.
+        usarSorteio(new Random() {
+            @Override
+            public double nextDouble() {
+                return 0.5;
+            }
+        });
         em.createNativeQuery("INSERT INTO users (code, first_name, last_name, email, password, is_verified, role_id, travelerProfile) "
                 + "VALUES (" + USUARIO + ", 'Popular', 'Teste', 'popular.teste@trajetto.local', 'x', 1, (SELECT id FROM roles WHERE code = 'USER'), 'SOCIAL')")
                 .executeUpdate();
         em.flush();
+    }
+
+    @AfterEach
+    void sorteioLivre() {
+        usarSorteio(new Random());
+    }
+
+    private void usarSorteio(Random random) {
+        Object servico = AopTestUtils.getTargetObject(itineraryService);
+        ReflectionTestUtils.setField(servico, "random", random);
     }
 
     private List<String> gerar(int dias) {

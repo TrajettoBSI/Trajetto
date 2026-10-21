@@ -74,6 +74,9 @@ public class ItineraryService {
     @Autowired
     private PlaceRepository placeRepository;
 
+    // Sorteio que varia o roteiro entre geracoes. Fica num campo para os testes fixarem a semente.
+    private Random random = new Random();
+
     @Transactional
     public ItineraryModel createItineraryMock(Long userId) {
         UserModel user = userRepository.findById(userId)
@@ -153,8 +156,6 @@ public class ItineraryService {
 
         String profile = user.getTravelerProfile();
         boolean hasProfile = profile != null && !profile.equals("SKIPPED");
-
-        Random random = new Random();
 
         record ScoredPlace(RomePlace place, double score) {}
 
