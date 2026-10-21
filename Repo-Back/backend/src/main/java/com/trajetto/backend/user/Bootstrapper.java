@@ -43,7 +43,7 @@ public class Bootstrapper implements ApplicationListener<ContextRefreshedEvent> 
             admin.setLastName("");
             //admin.setCpf("000.000.000-00");
             admin.setRole(roleRepository.findByCode(Roles.ADMIN)
-                    .orElseThrow(() -> new IllegalStateException("Perfil ADMIN ausente; a migração V9 foi aplicada?")));
+                    .orElseThrow(() -> new IllegalStateException("Perfil ADMIN ausente; a migração V16 foi aplicada?")));
             userRepository.save(admin);
             log.info("ADMIN user created!");
         }

@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Conteúdo do token. Só identifica o usuário: o perfil vai junto apenas como informação para o
  * aplicativo, e a autorização do backend relê o perfil no banco a cada requisição.
  * <p>
- * {@code ignoreUnknown}: tokens emitidos antes da V9 trazem o campo {@code isAdmin}.
+ * {@code ignoreUnknown}: tokens emitidos antes da V16 trazem o campo {@code isAdmin}.
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserToken implements Serializable {

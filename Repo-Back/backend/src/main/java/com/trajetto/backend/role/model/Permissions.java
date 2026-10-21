@@ -1,7 +1,7 @@
 package com.trajetto.backend.role.model;
 
 /**
- * Códigos das permissões cadastradas em {@code permissions} (migração V9). As regras de
+ * Códigos das permissões cadastradas em {@code permissions} (migração V16). As regras de
  * autorização usam estes códigos com {@code hasAuthority}, nunca o código do perfil.
  */
 public final class Permissions {

@@ -59,7 +59,7 @@ que ainda não foram executados naquele banco. O controle fica na tabela
 | `V6` | Restrições de integridade: a chave estrangeira que faltava entre avaliação e usuário, `ON DELETE CASCADE` nos vínculos de posse, colunas obrigatórias e `CHECK` para as faixas de valor — mais os três índices que o painel ainda não tinha. |
 | `V7` | `sp_stats_user_overview` e `sp_stats_itinerary_overview` recriadas com os cinco parâmetros do recorte do painel gerencial (período, perfil, país e categoria). |
 | `V8` | Catálogo de pontos turísticos no banco (`tourist_spots` e `tourist_spot_profiles`), com a coluna geográfica `location` (`POINT SRID 4326`) e o índice espacial que resolvem a busca por proximidade. |
-| `V9` | Perfis de acesso extensíveis: `roles`, `permissions` e `role_permissions` substituem a coluna `users.isAdmin`. Cada usuário passa a apontar para um perfil (`users.role_id`); quem era admin vira `ADMIN`, os demais viram `USER`. A `sp_stats_user_overview` é recriada contando pelo perfil. |
+| `V16` | Perfis de acesso extensíveis: `roles`, `permissions` e `role_permissions` substituem a coluna `users.isAdmin`. Cada usuário passa a apontar para um perfil (`users.role_id`); quem era admin vira `ADMIN`, os demais viram `USER`. A `sp_stats_user_overview` é recriada contando pelo perfil. |
 
 A `V2` limpa duplicatas antes de criar cada `UNIQUE`: e-mail repetido faz a
 conta mais antiga manter o endereço e as demais receberem o sufixo
@@ -145,7 +145,7 @@ WHERE MBRContains(ST_Buffer(ST_SRID(POINT(12.4768, 41.8987), 4326), 500), s.loca
 O esperado é `type = range` com `key = sx_tourist_spots_location`, e não
 `ALL`.
 
-A `V9` troca o booleano `isAdmin` por um modelo de perfis e permissões. O
+A `V16` troca o booleano `isAdmin` por um modelo de perfis e permissões. O
 backend autoriza pela permissão (`hasAuthority('STATS_VIEW')`), nunca pelo nome
 do perfil, então um perfil novo é só dado:
 

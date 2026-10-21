@@ -1,5 +1,5 @@
 -- =====================================================================
--- V9 - Perfis de acesso extensiveis (OB06.1)
+-- V16 - Perfis de acesso extensiveis (OB06.1)
 --
 -- Ate aqui o perfil de cada usuario era a coluna booleana users.isAdmin:
 -- so cabiam dois papeis, e cada regra de autorizacao perguntava "e admin?".
