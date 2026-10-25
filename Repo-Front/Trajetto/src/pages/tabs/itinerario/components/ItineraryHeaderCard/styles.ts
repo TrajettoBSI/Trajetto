@@ -5,7 +5,11 @@ export const styles = (colors: AppColors) =>
   StyleSheet.create({
     headerCard: {
       backgroundColor: colors.primary, borderRadius: 20, paddingHorizontal: 24, paddingVertical: 18, marginBottom: 24,
+      overflow: 'hidden',
     },
+    imageShade: { ...StyleSheet.absoluteFill, backgroundColor: colors.overlay },
+    titleRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 12 },
+    title: { flexShrink: 1, fontSize: 22, fontFamily: 'Inter-Bold', color: colors.onPrimary },
     headerTopRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 },
     headerLabel: {
       fontSize: 11, fontFamily: 'Inter-Bold', color: colors.onPrimaryFaint55,

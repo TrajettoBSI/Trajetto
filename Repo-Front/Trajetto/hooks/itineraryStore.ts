@@ -34,6 +34,10 @@ export interface Itinerary {
   rating?: number | null;
   ratingDescription?: string | null;
   date?: string | null;
+  /** Nome dado pelo usuario; sem ele, vale o nome generico de itineraryTitle. */
+  name?: string | null;
+  /** Slug da cidade do catalogo. */
+  city?: string | null;
 }
 
 type ItineraryStore = {
@@ -46,12 +50,13 @@ type ItineraryStore = {
   selectedDay: string | null;
   fetchItinerary: (userId: number) => Promise<void>;
   fetchAllItineraries: (userId: number) => Promise<void>;
-  generateItinerary: (userId: number, startLat: number, startLng: number, startDate: string, days: number, pace: TravelPace, city?: string) => Promise<Itinerary>;
+  generateItinerary: (userId: number, startLat: number, startLng: number, startDate: string, days: number, pace: TravelPace, city?: string, name?: string) => Promise<Itinerary>;
   acceptGeneratedItinerary: (itinerary: Itinerary) => void;
   activateItinerary: (itineraryId: number, userId: number) => Promise<void>;
   deleteItinerary: (itineraryId: number, userId: number) => Promise<void>;
   rateItinerary: (itineraryId: number, rating: number | null, ratingDescription: string | null) => Promise<void>;
   updateDate: (itineraryId: number, date: string | null) => Promise<void>;
+  updateName: (itineraryId: number, name: string | null) => Promise<void>;
   replacePlace: (orderIndex: number, newPlace: Places) => Promise<void>;
   updateNote: (orderIndex: number, note: string | null) => Promise<void>;
   addPlace: (place: AddPlaceRequest) => Promise<void>;
@@ -101,8 +106,8 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
     }
   },
 
-  generateItinerary: async (userId, startLat, startLng, startDate, days, pace, city) => {
-    const data = await ItineraryService.generateItinerary(userId, startLat, startLng, startDate, days, pace, city);
+  generateItinerary: async (userId, startLat, startLng, startDate, days, pace, city, name) => {
+    const data = await ItineraryService.generateItinerary(userId, startLat, startLng, startDate, days, pace, city, name);
     return data as Itinerary;
   },
 
@@ -146,6 +151,10 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
       itinerary: state.itinerary?.id === itineraryId ? updated : state.itinerary,
       itineraries: state.itineraries.map(i => i.id === itineraryId ? updated : i),
     }));
+  },
+
+  updateName: async (itineraryId, name) => {
+    applyUpdate(set, await ItineraryService.updateName(itineraryId, name));
   },
 
   replacePlace: async (orderIndex, newPlace) => {

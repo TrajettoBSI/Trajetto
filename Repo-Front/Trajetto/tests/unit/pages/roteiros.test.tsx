@@ -32,7 +32,7 @@ const parada = (orderIndex: number, name: string, time: string, visitDate = '202
 });
 
 const roteiro = (id: number, active: boolean, extra: Partial<Itinerary> = {}): Itinerary => ({
-  id, active, startDate: '2026-11-10', endDate: '2026-11-11',
+  id, active, startDate: '2026-11-10', endDate: '2026-11-11', name: `Viagem ${id}`,
   places: [parada(0, `Lugar ${id}A`, '09:00:00'), parada(1, `Lugar ${id}B`, '12:00:00'), parada(2, `Lugar ${id}C`, '09:00:00', '2026-11-11')],
   ...extra,
 });
@@ -52,12 +52,14 @@ beforeEach(() => {
 
 describe('meus roteiros', () => {
   it('mostra o roteiro ativo e os outros, abre, ativa e apaga', async () => {
-    svc.getAllItineraries.mockResolvedValue([roteiro(1, true), roteiro(2, false)]);
+    svc.getAllItineraries.mockResolvedValue([roteiro(1, true, { name: null, city: 'roma' }), roteiro(2, false)]);
     svc.activateItinerary.mockResolvedValue(roteiro(2, true));
     svc.deleteItinerary.mockResolvedValue(undefined);
     await render(<Roteiros />);
 
     expect(await screen.findByText('ROTEIRO ATIVO')).toBeTruthy();
+    expect(screen.getByText('Roteiro Roma, dia 10/11')).toBeTruthy();
+    expect(screen.getByText('Viagem 2')).toBeTruthy();
     expect(screen.getByText('Olá, Ana 👋')).toBeTruthy();
     expect(screen.getByText('Dia 1 de 2')).toBeTruthy();
 
@@ -86,12 +88,12 @@ describe('meus roteiros', () => {
     svc.deleteItinerary.mockResolvedValue(undefined);
     await render(<Roteiros />);
 
-    await fireEvent(await screen.findByText('Lugar 2A'), 'longPress');
+    await fireEvent(await screen.findByText('Viagem 2'), 'longPress');
     expect(screen.getAllByText('1 selecionado').length).toBeGreaterThan(0);
     await fireEvent.press(screen.getByText('Todos'));
     expect(screen.getAllByText('2 selecionados').length).toBeGreaterThan(0);
-    await fireEvent.press(screen.getByText('Lugar 2A'));
-    await fireEvent.press(screen.getByText('Lugar 2A'));
+    await fireEvent.press(screen.getByText('Viagem 2'));
+    await fireEvent.press(screen.getByText('Viagem 2'));
     await fireEvent.press(screen.getByText('🗑️  Excluir (2)'));
     await tocarNoBotao('Excluir');
 
@@ -106,7 +108,7 @@ describe('meus roteiros', () => {
     await fireEvent.press(await screen.findByText('Mostrar mais (+1)'));
     expect(screen.getAllByText('Ativar')).toHaveLength(5);
 
-    await fireEvent(screen.getByText('Lugar 2A'), 'longPress');
+    await fireEvent(screen.getByText('Viagem 2'), 'longPress');
     await fireEvent.press(screen.getByText('Cancelar'));
     expect(screen.queryAllByText('1 selecionado')).toHaveLength(0);
   });
@@ -197,10 +199,11 @@ describe('gerar roteiro', () => {
     await fireEvent.press(screen.getByLabelText('Menos um dia'));
     expect(screen.getByText('2 dias')).toBeTruthy();
     await fireEvent.press(screen.getByText('Roteiro leve, sem pressa'));
+    await fireEvent.changeText(screen.getByPlaceholderText('Roteiro Roma, dia 20/11'), '  Ferias em Roma ');
     await fireEvent.press(screen.getByText('Gerar Roteiro'));
 
     expect(await screen.findByText('Roteiro Gerado', {}, { timeout: 4000 })).toBeTruthy();
-    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 41.9, 12.48, '2026-11-20', 2, 'LEVE', 'roma');
+    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 41.9, 12.48, '2026-11-20', 2, 'LEVE', 'roma', 'Ferias em Roma');
     expect(buscar).toHaveBeenCalledWith('veneto', ROMA);
     expect(screen.getByText('Colosseo')).toBeTruthy();
 
@@ -268,7 +271,7 @@ describe('gerar roteiro', () => {
     await fireEvent.press(screen.getByText('Centro da cidade'));
     await fireEvent.press(screen.getByText('Gerar Roteiro'));
     expect(await screen.findByText('Roteiro Gerado', {}, { timeout: 4000 })).toBeTruthy();
-    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 48.8566, 2.3522, expect.any(String), 1, 'INTENSO', 'paris');
+    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 48.8566, 2.3522, expect.any(String), 1, 'INTENSO', 'paris', undefined);
     expect(screen.getByText('Paris, França')).toBeTruthy();
   }, 15000);
 

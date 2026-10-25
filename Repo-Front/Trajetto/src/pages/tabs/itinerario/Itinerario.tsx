@@ -17,10 +17,13 @@ import ItineraryHeaderCard from './components/ItineraryHeaderCard/ItineraryHeade
 import TimelineRow from './components/TimelineRow/TimelineRow';
 import AlternativesModal from './components/AlternativesModal/AlternativesModal';
 import NoteModal from './components/NoteModal/NoteModal';
+import RenameModal from './components/RenameModal/RenameModal';
 import MealSuggestionCard from './components/MealSuggestionCard/MealSuggestionCard';
 import FreePeriodCard from './components/FreePeriodCard/FreePeriodCard';
 import OptionPickerModal from '@/src/components/OptionPickerModal/OptionPickerModal';
 import { freePeriod } from '@/src/domain/itinerary/freePeriod';
+import { itineraryTitle } from '@/src/i18n/format';
+import { cityImage } from '@/src/helpers/cityImage';
 
 const TAB_BAR_SPACE = 64 + 4 + 24;
 
@@ -65,6 +68,7 @@ export default function Itinerario() {
     closeNote,
     saveNote,
     edit,
+    rename,
   } = useItinerario();
 
   return (
@@ -116,6 +120,9 @@ export default function Itinerario() {
               showsVerticalScrollIndicator={false}
             >
               <ItineraryHeaderCard
+                title={itineraryTitle(roteiro)}
+                image={cityImage(roteiro.city)}
+                onRename={rename.open}
                 startDate={roteiro.startDate}
                 endDate={roteiro.endDate}
                 stopsCount={roteiro.places.length}
@@ -230,6 +237,17 @@ export default function Itinerario() {
               onChangeDraft={setNoteDraft}
               onSave={saveNote}
               onCancel={closeNote}
+            />
+
+            <RenameModal
+              visible={rename.visible}
+              draft={rename.draft}
+              genericName={itineraryTitle({ ...roteiro, name: null })}
+              saving={rename.saving}
+              error={rename.error}
+              onChangeDraft={rename.setDraft}
+              onSave={rename.save}
+              onCancel={rename.close}
             />
           </View>
         );

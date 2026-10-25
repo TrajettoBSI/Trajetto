@@ -8,7 +8,8 @@
     "period": "Período",
     "stops": "Paradas",
     "active": "Activo",
-    "days": "Días"
+    "days": "Días",
+    "rename": "Renombrar itinerario"
   },
   "alternativesModal": {
     "title": "Cambiar lugar",
@@ -92,5 +93,12 @@
     "cancel": "Cancelar",
     "error": "No fue posible cambiar el itinerario.",
     "hint": "Usa las flechas para cambiar el orden de las paradas del día. Los horarios no cambian."
+  },
+  "renameModal": {
+    "title": "Nombre del itinerario",
+    "hint": "En blanco, el itinerario vuelve a llamarse \"{{name}}\".",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "error": "No se pudo guardar el nombre."
   }
 }

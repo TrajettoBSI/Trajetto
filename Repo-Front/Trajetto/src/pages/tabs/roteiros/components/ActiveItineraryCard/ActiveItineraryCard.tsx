@@ -1,12 +1,13 @@
 import React from 'react';
-import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, Image, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { Itinerary } from '@/hooks/itineraryStore';
 import { useColors } from '@/src/theme';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { groupByDay, placeDate, resolveDay, toIsoDate } from '@/src/domain/itinerary/itineraryDays';
-import { formatDate, formatTime, placeName } from '@/src/i18n/format';
+import { formatDate, formatTime, itineraryTitle, placeName } from '@/src/i18n/format';
+import { cityImage } from '@/src/helpers/cityImage';
 import Checkbox from '../Checkbox/Checkbox';
 import { styles } from './styles';
 
@@ -39,6 +40,7 @@ export default function ActiveItineraryCard({
   const shownDay = itineraryDays.find((d) => d.date === todayDate);
   const shownPlaces = shownDay?.places ?? [];
   const progress = places.length > 0 ? Math.round((doneCount / places.length) * 100) : 0;
+  const image = cityImage(itinerary.city);
 
   return (
     <TouchableOpacity
@@ -47,6 +49,7 @@ export default function ActiveItineraryCard({
       onLongPress={onLongPress}
       activeOpacity={0.9}
     >
+      {image && <Image source={image} style={s.cover} resizeMode="cover" />}
       {selectMode && (
         <View style={s.checkboxRow}>
           <Checkbox selected={selected} />
@@ -65,7 +68,7 @@ export default function ActiveItineraryCard({
       <View style={s.titleRow}>
         <Ionicons name="location" size={18} color={colors.primary} style={s.locationIcon} />
         <Text style={s.itineraryCardTitle} numberOfLines={1}>
-          {places[0]?.name ?? t('defaultItineraryName')}
+          {itineraryTitle(itinerary)}
         </Text>
         {!selectMode && <Text style={s.chevron}>›</Text>}
       </View>

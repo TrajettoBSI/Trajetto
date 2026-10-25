@@ -3,6 +3,7 @@ import {
   ActivityIndicator,
   Animated,
   Easing,
+  ImageBackground,
   Keyboard,
   KeyboardAvoidingView,
   Modal,
@@ -32,7 +33,9 @@ import { Ionicons } from '@expo/vector-icons';
 import { AppColors, useColors } from '../src/theme';
 import { addDays, groupByDay, toIsoDate } from '../src/domain/itinerary/itineraryDays';
 import { freePeriod } from '../src/domain/itinerary/freePeriod';
-import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth, placeName } from '../src/i18n/format';
+import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth, itineraryTitle, placeName } from '../src/i18n/format';
+import { cityImage } from '../src/helpers/cityImage';
+import { NAME_MAX_LENGTH } from '../src/pages/tabs/itinerario/hooks/useItineraryRename';
 
 const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
 
@@ -159,6 +162,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   const [startDate, setStartDate] = useState(() => toIsoDate(new Date()));
   const [days, setDays] = useState(1);
   const [pace, setPace] = useState<TravelPace>('INTENSO');
+  const [name, setName] = useState('');
   const [showIosCalendar, setShowIosCalendar] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scrollViewRef = useRef<ScrollViewInstance>(null);
@@ -180,6 +184,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
       setStartDate(toIsoDate(new Date()));
       setDays(1);
       setPace('INTENSO');
+      setName('');
       setShowIosCalendar(false);
     }
   }
@@ -232,6 +237,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   };
 
   const endDate = addDays(startDate, days - 1);
+  const genericName = itineraryTitle({ city: selectedCity?.slug, startDate });
   const availablePaces = PACES.filter((p) => days > 1 || !p.multiDayOnly);
   const effectivePace = availablePaces.some((p) => p.id === pace) ? pace : 'INTENSO';
 
@@ -329,7 +335,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
   const runGenerate = async () => {
     const start = Date.now();
-    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days, effectivePace, selectedCity?.slug);
+    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days, effectivePace, selectedCity?.slug, name.trim() || undefined);
     const elapsed = Date.now() - start;
     const remaining = 2000 - elapsed;
     if (remaining > 0) await new Promise(r => setTimeout(r, remaining));
@@ -616,6 +622,21 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 })}
               </View>
 
+              <View style={styles.card}>
+                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.nameLabel')}</Text>
+                <CustomInput
+                  value={name}
+                  onChangeText={setName}
+                  placeholder={genericName}
+                  maxLength={NAME_MAX_LENGTH}
+                  returnKeyType="done"
+                  inputStyle={styles.addressInput}
+                  style={{ marginBottom: 0 }}
+                  inputWrapperStyle={styles.fakeSearchBox}
+                  leftIcon={<Ionicons name="pricetag-outline" size={20} color={colors.textSubtle} style={styles.inputIcon} />}
+                />
+              </View>
+
               {erro ? (
                 <FeedbackState
                   variant="error"
@@ -646,7 +667,9 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
             <ScrollView contentContainerStyle={styles.content}>
 
               {/* Resumo */}
-              <View style={styles.summaryCard}>
+              <ImageBackground source={cityImage(selectedCity?.slug) ?? undefined} style={styles.summaryCard} resizeMode="cover">
+                {cityImage(selectedCity?.slug) && <View style={styles.summaryShade} />}
+                <Text style={styles.summaryName}>{itineraryTitle(generatedItinerary)}</Text>
                 <View style={{flexDirection: 'row', alignItems: 'center', gap: 6}}>
                   <Ionicons name="location" size={18} color={colors.onPrimary} style={{marginBottom: 5}}/>
                   <Text style={[styles.summaryTitle]}>
@@ -660,7 +683,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     origin: selectedPlace?.shortName ?? '',
                   })}
                 </Text>
-              </View>
+              </ImageBackground>
 
               {/* Lista completa de lugares */}
               {groupByDay(generatedItinerary.startDate, generatedItinerary.places, generatedItinerary.endDate).map((day, _dayIdx, allDays) => (
@@ -955,7 +978,10 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
     borderRadius: 16,
     padding: 18,
     marginBottom: 18,
+    overflow: 'hidden',
   },
+  summaryShade: { ...StyleSheet.absoluteFill, backgroundColor: colors.overlay },
+  summaryName: { fontSize: 20, fontWeight: 'bold', color: colors.onPrimary, marginBottom: 8 },
   summaryTitle: { fontSize: 16, fontWeight: '700', color: colors.onPrimary, marginBottom: 4 },
   summaryMeta: { fontSize: 13, color: colors.onPrimaryFaint70 },
 

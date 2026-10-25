@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { ImageBackground, ImageSourcePropType, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useColors } from '@/src/theme';
@@ -7,6 +7,9 @@ import { formatDate, formatTime } from '@/src/i18n/format';
 import { styles } from './styles';
 
 type ItineraryHeaderCardProps = {
+  title: string;
+  image: ImageSourcePropType | null;
+  onRename: () => void;
   startDate: string;
   endDate: string;
   stopsCount: number;
@@ -15,14 +18,25 @@ type ItineraryHeaderCardProps = {
   endTime?: string;
 };
 
-export default function ItineraryHeaderCard({ startDate, endDate, stopsCount, daysCount, startTime, endTime }: ItineraryHeaderCardProps) {
+export default function ItineraryHeaderCard({ title, image, onRename, startDate, endDate, stopsCount, daysCount, startTime, endTime }: ItineraryHeaderCardProps) {
   const { t } = useTranslation('itinerario');
   const colors = useColors();
   const s = styles(colors);
   const sameDay = startDate === endDate;
 
   return (
-    <View style={s.headerCard}>
+    <ImageBackground source={image ?? undefined} style={s.headerCard} resizeMode="cover">
+      {image && <View style={s.imageShade} />}
+      <TouchableOpacity
+        style={s.titleRow}
+        onPress={onRename}
+        activeOpacity={0.8}
+        accessibilityRole="button"
+        accessibilityLabel={t('headerCard.rename')}
+      >
+        <Text style={s.title} numberOfLines={2}>{title}</Text>
+        <Ionicons name="pencil" size={16} color={colors.onPrimaryFaint60} />
+      </TouchableOpacity>
       <View style={s.headerTopRow}>
         <Text style={s.headerLabel}>{t('headerCard.period')}</Text>
         <View style={s.activeBadge}>
@@ -53,6 +67,6 @@ export default function ItineraryHeaderCard({ startDate, endDate, stopsCount, da
           </View>
         )}
       </View>
-    </View>
+    </ImageBackground>
   );
 }

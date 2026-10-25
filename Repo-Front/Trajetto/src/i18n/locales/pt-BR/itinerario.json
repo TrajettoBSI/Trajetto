@@ -8,7 +8,8 @@
     "period": "Período",
     "stops": "Paradas",
     "active": "Ativo",
-    "days": "Dias"
+    "days": "Dias",
+    "rename": "Renomear roteiro"
   },
   "alternativesModal": {
     "title": "Trocar lugar",
@@ -92,5 +93,12 @@
     "cancel": "Cancelar",
     "error": "Não foi possível alterar o roteiro.",
     "hint": "Use as setas para mudar a ordem das paradas do dia. Os horários continuam os mesmos."
+  },
+  "renameModal": {
+    "title": "Nome do roteiro",
+    "hint": "Em branco, o roteiro volta a se chamar \"{{name}}\".",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "error": "Não foi possível salvar o nome."
   }
 }

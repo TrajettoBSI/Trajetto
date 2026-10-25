@@ -17,8 +17,9 @@ export const styles = (colors: AppColors) =>
     inactiveCardRow: {
       flexDirection: 'row', alignItems: 'center', gap: 10,
     },
+    thumb: { width: 44, height: 44, borderRadius: 10 },
     inactiveCardInfo: { flex: 1 },
-    inactiveCardTitleRow: { flexDirection: 'row' },
+    inactiveCardTitleRow: { flexDirection: 'row', gap: 4 },
     inactiveCardTitle: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.text, marginBottom: 3 },
     inactiveCardMeta: { fontSize: 12, color: colors.textSubtle },
     activateBtn: {
