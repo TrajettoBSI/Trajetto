@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBackground, ImageSourcePropType, Text, TouchableOpacity, View } from 'react-native';
+import { Image, ImageSourcePropType, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useColors } from '@/src/theme';
@@ -25,7 +25,8 @@ export default function ItineraryHeaderCard({ title, image, onRename, startDate,
   const sameDay = startDate === endDate;
 
   return (
-    <ImageBackground source={image ?? undefined} style={s.headerCard} resizeMode="cover">
+    <View style={s.headerCard}>
+      {image && <Image source={image} style={s.image} resizeMode="cover" />}
       {image && <View style={s.imageShade} />}
       <TouchableOpacity
         style={s.titleRow}
@@ -67,6 +68,6 @@ export default function ItineraryHeaderCard({ title, image, onRename, startDate,
           </View>
         )}
       </View>
-    </ImageBackground>
+    </View>
   );
 }

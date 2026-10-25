@@ -3,7 +3,7 @@ import {
   ActivityIndicator,
   Animated,
   Easing,
-  ImageBackground,
+  Image,
   Keyboard,
   KeyboardAvoidingView,
   Modal,
@@ -238,6 +238,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
   const endDate = addDays(startDate, days - 1);
   const genericName = itineraryTitle({ city: selectedCity?.slug, startDate });
+  const summaryImage = cityImage(selectedCity?.slug);
   const availablePaces = PACES.filter((p) => days > 1 || !p.multiDayOnly);
   const effectivePace = availablePaces.some((p) => p.id === pace) ? pace : 'INTENSO';
 
@@ -667,8 +668,9 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
             <ScrollView contentContainerStyle={styles.content}>
 
               {/* Resumo */}
-              <ImageBackground source={cityImage(selectedCity?.slug) ?? undefined} style={styles.summaryCard} resizeMode="cover">
-                {cityImage(selectedCity?.slug) && <View style={styles.summaryShade} />}
+              <View style={styles.summaryCard}>
+                {summaryImage && <Image source={summaryImage} style={styles.summaryImage} resizeMode="cover" />}
+                {summaryImage && <View style={styles.summaryShade} />}
                 <Text style={styles.summaryName}>{itineraryTitle(generatedItinerary)}</Text>
                 <View style={{flexDirection: 'row', alignItems: 'center', gap: 6}}>
                   <Ionicons name="location" size={18} color={colors.onPrimary} style={{marginBottom: 5}}/>
@@ -683,7 +685,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     origin: selectedPlace?.shortName ?? '',
                   })}
                 </Text>
-              </ImageBackground>
+              </View>
 
               {/* Lista completa de lugares */}
               {groupByDay(generatedItinerary.startDate, generatedItinerary.places, generatedItinerary.endDate).map((day, _dayIdx, allDays) => (
@@ -980,6 +982,7 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
     marginBottom: 18,
     overflow: 'hidden',
   },
+  summaryImage: { ...StyleSheet.absoluteFill, width: undefined, height: undefined },
   summaryShade: { ...StyleSheet.absoluteFill, backgroundColor: colors.overlay },
   summaryName: { fontSize: 20, fontWeight: 'bold', color: colors.onPrimary, marginBottom: 8 },
   summaryTitle: { fontSize: 16, fontWeight: '700', color: colors.onPrimary, marginBottom: 4 },

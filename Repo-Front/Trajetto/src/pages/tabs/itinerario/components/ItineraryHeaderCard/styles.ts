@@ -7,6 +7,7 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.primary, borderRadius: 20, paddingHorizontal: 24, paddingVertical: 18, marginBottom: 24,
       overflow: 'hidden',
     },
+    image: { ...StyleSheet.absoluteFill, width: undefined, height: undefined },
     imageShade: { ...StyleSheet.absoluteFill, backgroundColor: colors.overlay },
     titleRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 12 },
     title: { flexShrink: 1, fontSize: 22, fontFamily: 'Inter-Bold', color: colors.onPrimary },

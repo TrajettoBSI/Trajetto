@@ -124,6 +124,10 @@ export default function Roteiros() {
           <SearchCard onPressSearch={() => openGenerate()} />
         )}
 
+        {!selectMode && (
+          <ExploreDestinationsCard onPress={() => router.push('/ExploreScreen')} />
+        )}
+
         {!selectMode && itineraries.length > 0 && (
           <View style={s.generateSection}>
             <Text style={s.generateLabel}>{t('generate.wantNew')}</Text>
@@ -132,10 +136,6 @@ export default function Roteiros() {
               onPress={() => openGenerate()}
             />
           </View>
-        )}
-
-        {!selectMode && (
-          <ExploreDestinationsCard onPress={() => router.push('/ExploreScreen')} />
         )}
 
         <AsyncBoundary
@@ -195,7 +195,6 @@ export default function Roteiros() {
           </>
           )}
         </AsyncBoundary>
-
       </Animated.ScrollView>
 
       {selectMode && (
