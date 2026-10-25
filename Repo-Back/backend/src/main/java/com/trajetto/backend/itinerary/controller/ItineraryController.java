@@ -4,6 +4,7 @@ import com.trajetto.backend.itinerary.dto.AddPlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
+import com.trajetto.backend.itinerary.dto.NameRequestDTO;
 import com.trajetto.backend.itinerary.dto.NoteRequestDTO;
 import com.trajetto.backend.itinerary.dto.PlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.RatingRequestDTO;
@@ -96,6 +97,16 @@ public class ItineraryController {
             @PathVariable Long itineraryId,
             @Valid @RequestBody DateRequestDTO req) {
         return ResponseEntity.ok(itineraryService.updateDate(itineraryId, requireAuthenticated(userToken).getId(), req));
+    }
+
+    @Operation(summary = "Da um nome ao roteiro; nome em branco volta ao nome generico")
+    @SecurityRequirement(name = "AuthServer")
+    @PatchMapping("/{itineraryId}/name")
+    public ResponseEntity<ItineraryResponseDTO> updateName(
+            @AuthenticationPrincipal UserToken userToken,
+            @PathVariable Long itineraryId,
+            @Valid @RequestBody NameRequestDTO req) {
+        return ResponseEntity.ok(itineraryService.updateName(itineraryId, requireAuthenticated(userToken).getId(), req));
     }
 
     @PatchMapping("/{itineraryId}/place/{orderIndex}")

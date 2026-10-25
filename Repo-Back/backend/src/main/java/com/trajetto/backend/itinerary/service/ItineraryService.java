@@ -7,7 +7,9 @@ import com.trajetto.backend.itinerary.data.CityCatalog.CatalogPlace;
 import com.trajetto.backend.itinerary.dto.AddPlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
+import com.trajetto.backend.itinerary.dto.ItineraryNames;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
+import com.trajetto.backend.itinerary.dto.NameRequestDTO;
 import com.trajetto.backend.itinerary.dto.NoteRequestDTO;
 import com.trajetto.backend.itinerary.dto.PlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.PlaceResponseDTO;
@@ -267,6 +269,8 @@ public class ItineraryService {
         itinerary.setUser(user);
         itinerary.setOriginLatitude(req.getStartLatitude());
         itinerary.setOriginLongitude(req.getStartLongitude());
+        itinerary.setCity(city.slug());
+        itinerary.setName(ItineraryNames.normalize(req.getName()));
 
         List<PlaceModel> places = new ArrayList<>();
         for (int i = 0; i < ordered.size(); i++) {
@@ -430,6 +434,16 @@ public class ItineraryService {
             throw new ForbiddenOperationException("Este roteiro pertence a outro usuário.");
         }
         itinerary.setDate(req.getDate());
+        return toDTO(itineraryRepository.save(itinerary));
+    }
+
+    public ItineraryResponseDTO updateName(Long itineraryId, Long userId, NameRequestDTO req) {
+        ItineraryModel itinerary = itineraryRepository.findById(itineraryId)
+                .orElseThrow(() -> new ResourceNotFoundException("Roteiro", itineraryId));
+        if (!itinerary.getUser().getId().equals(userId)) {
+            throw new ForbiddenOperationException("Este roteiro pertence a outro usuário.");
+        }
+        itinerary.setName(ItineraryNames.normalize(req.getName()));
         return toDTO(itineraryRepository.save(itinerary));
     }
 
@@ -620,6 +634,13 @@ public class ItineraryService {
         itineraryRepository.delete(itinerary);
     }
 
+    /** Roteiros de antes da V17 nao guardam a cidade: vale a do catalogo mais perto da partida. */
+    private String cityOf(ItineraryModel model) {
+        if (model.getCity() != null) return model.getCity();
+        if (model.getOriginLatitude() == null || model.getOriginLongitude() == null) return null;
+        return cityCatalog.nearestCity(model.getOriginLatitude(), model.getOriginLongitude()).slug();
+    }
+
     private ItineraryResponseDTO toDTO(ItineraryModel model) {
         ItineraryResponseDTO dto = new ItineraryResponseDTO();
         dto.setId(model.getId());
@@ -631,6 +652,8 @@ public class ItineraryService {
         dto.setRating(model.getRating());
         dto.setRatingDescription(model.getRatingDescription());
         dto.setDate(model.getDate());
+        dto.setName(model.getName());
+        dto.setCity(cityOf(model));
         dto.setPlaces(
                 model.getPlaces().stream()
                         .map(this::toPlaceDTO)
