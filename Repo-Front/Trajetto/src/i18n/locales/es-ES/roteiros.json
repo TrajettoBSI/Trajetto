@@ -23,7 +23,6 @@
   "activeSectionLabel": "ITINERARIO ACTIVO",
   "otherSectionLabel": "OTROS ITINERARIOS",
   "showMore": "Mostrar más (+{{count}})",
-  "defaultItineraryName": "Itinerario",
   "activeCard": {
     "activeBadge": "Activo",
     "stopsAndDays": "{{stops}} paradas · {{days}} días",
@@ -122,7 +121,8 @@
     "citiesError": "No se pudieron cargar las ciudades. Toca para intentarlo de nuevo.",
     "originNeedsCity": "Elige el destino primero",
     "cityCenterChip": "Centro de la ciudad",
-    "cityCenterLabel": "Centro de {{city}}"
+    "cityCenterLabel": "Centro de {{city}}",
+    "nameLabel": "NOMBRE DEL ITINERARIO (OPCIONAL)"
   },
   "cities": {
     "roma": "Roma",
@@ -145,5 +145,9 @@
     "dubai": "Dubái",
     "cidade-do-cabo": "Ciudad del Cabo",
     "marrakech": "Marrakech"
+  },
+  "itineraryName": {
+    "generic": "Itinerario {{city}}, día {{date}}",
+    "noCity": "Itinerario, día {{date}}"
   }
 }

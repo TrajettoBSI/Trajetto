@@ -103,6 +103,7 @@ describe('ItineraryService', () => {
     await ItineraryService.rateItinerary(5, 4, 'bom');
     await ItineraryService.updateDate(5, '2026-11-10');
     await ItineraryService.updateNote(5, 2, 'nota');
+    await ItineraryService.updateName(5, 'Ferias');
     await ItineraryService.replacePlace(5, 2, { name: 'X' } as never);
     await ItineraryService.addPlace(5, { name: 'Y', latitude: 1, longitude: 2, visitDate: '2026-11-10' });
     await ItineraryService.removePlace(5, 3);
@@ -113,7 +114,7 @@ describe('ItineraryService', () => {
       userId: 1, startLatitude: 41.9, startLongitude: 12.4, startDate: '2026-11-10', days: 3, pace: 'LEVE',
     });
     expect(mockedApi.patch.mock.calls.map((c) => c[0])).toEqual([
-      '/itinerary/5/activate/1', '/itinerary/5/rating', '/itinerary/5/date', '/itinerary/5/place/2/note', '/itinerary/5/place/2',
+      '/itinerary/5/activate/1', '/itinerary/5/rating', '/itinerary/5/date', '/itinerary/5/place/2/note', '/itinerary/5/name', '/itinerary/5/place/2',
       '/itinerary/5/place/1/move',
     ]);
     expect(mockedApi.patch).toHaveBeenLastCalledWith('/itinerary/5/place/1/move', null, { params: { direction: 'DOWN' } });

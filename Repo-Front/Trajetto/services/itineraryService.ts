@@ -19,8 +19,8 @@ export class ItineraryService {
         return response.data;
     }
 
-    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number, startDate: string, days: number, pace: TravelPace, city?: string) {
-        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude, startDate, days, pace, city });
+    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number, startDate: string, days: number, pace: TravelPace, city?: string, name?: string) {
+        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude, startDate, days, pace, city, name });
         return response.data;
     }
 
@@ -45,6 +45,11 @@ export class ItineraryService {
 
     static async updateDate(itineraryId: number, date: string | null) {
         const response = await api.patch(`/itinerary/${itineraryId}/date`, { date });
+        return response.data;
+    }
+
+    static async updateName(itineraryId: number, name: string | null) {
+        const response = await api.patch(`/itinerary/${itineraryId}/name`, { name });
         return response.data;
     }
 

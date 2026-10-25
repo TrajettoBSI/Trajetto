@@ -41,7 +41,7 @@ export const styles = (colors: AppColors) =>
     showMoreBtn: { alignItems: 'center', paddingVertical: 10, marginBottom: 24 },
     showMoreText: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.primary },
 
-    generateSection: { marginTop: 8 },
+    generateSection: { marginBottom: 20 },
     generateLabel: {
       fontSize: 11, fontFamily: 'Inter-Bold', color: colors.textSubtle,
       letterSpacing: 0.8, marginBottom: 12, textTransform: 'uppercase',

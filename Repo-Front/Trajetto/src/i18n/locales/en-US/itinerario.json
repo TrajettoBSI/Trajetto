@@ -8,7 +8,8 @@
     "period": "Period",
     "stops": "Stops",
     "active": "Active",
-    "days": "Days"
+    "days": "Days",
+    "rename": "Rename trip"
   },
   "alternativesModal": {
     "title": "Change place",
@@ -92,5 +93,12 @@
     "cancel": "Cancel",
     "error": "Couldn't change the itinerary.",
     "hint": "Use the arrows to reorder the day's stops. The times stay the same."
+  },
+  "renameModal": {
+    "title": "Trip name",
+    "hint": "Leave it blank to go back to \"{{name}}\".",
+    "save": "Save",
+    "cancel": "Cancel",
+    "error": "Could not save the name."
   }
 }

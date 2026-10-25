@@ -95,6 +95,27 @@ class ItineraryApiIntegrationTest extends ApiIntegrationTest {
     }
 
     @Test
+    @DisplayName("O roteiro guarda a cidade; o nome e opcional, pode ser trocado e em branco volta a nulo")
+    void nomeECidade() throws Exception {
+        UserModel user = usuario(false);
+        JsonNode roteiro = gerar(user);
+        long id = roteiro.get("id").asLong();
+
+        assertEquals("roma", roteiro.get("city").asText());
+        assertEquals(true, roteiro.get("name").isNull());
+        mvc.perform(json(comToken(patch("/itinerary/" + id + "/name"), user), Map.of("name", "  Ferias em Roma  ")))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name").value("Ferias em Roma"));
+        mvc.perform(json(comToken(patch("/itinerary/" + id + "/name"), user), Map.of("name", "x".repeat(81))))
+                .andExpect(status().isBadRequest());
+        mvc.perform(json(comToken(patch("/itinerary/" + id + "/name"), user), Map.of("name", " ")))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name").doesNotExist());
+        mvc.perform(json(comToken(patch("/itinerary/" + id + "/name"), usuario(false)), Map.of("name", "Outro")))
+                .andExpect(status().isForbidden());
+    }
+
+    @Test
     @DisplayName("Trocar uma parada mantem a posicao e grava o novo lugar")
     void trocarParada() throws Exception {
         UserModel user = usuario(false);

@@ -15,6 +15,7 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.selectedSurface,
     },
     checkboxRow: { marginBottom: 10 },
+    cover: { width: '100%', height: 130, borderRadius: 14, marginBottom: 16 },
 
     itineraryCardHeader: {
       flexDirection: 'row', justifyContent: 'space-between',

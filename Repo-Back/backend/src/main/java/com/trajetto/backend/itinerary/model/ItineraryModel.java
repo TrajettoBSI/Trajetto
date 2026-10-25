@@ -51,4 +51,10 @@ public class ItineraryModel {
     @Column(name = "date")
     private String date;
 
+    @Column(name = "name", length = 80)
+    private String name;
+
+    @Column(name = "city", length = 60)
+    private String city;
+
 }

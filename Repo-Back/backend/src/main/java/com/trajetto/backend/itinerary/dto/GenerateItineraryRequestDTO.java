@@ -4,6 +4,7 @@ import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -35,4 +36,8 @@ GenerateItineraryRequestDTO {
 
     /** Slug da cidade em {@code data/cities.json}; sem ele, vale a cidade mais perto da partida. */
     private String city;
+
+    /** Nome dado pelo usuario; sem ele, o app mostra um nome generico. */
+    @Size(max = ItineraryNames.MAX_LENGTH, message = "O nome do roteiro pode ter no máximo " + ItineraryNames.MAX_LENGTH + " caracteres")
+    private String name;
 }

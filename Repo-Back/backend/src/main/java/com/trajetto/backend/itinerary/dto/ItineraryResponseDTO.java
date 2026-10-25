@@ -18,4 +18,7 @@ public class ItineraryResponseDTO {
     private Integer rating;
     private String ratingDescription;
     private String date;
+    private String name;
+    /** Slug da cidade em {@code data/cities.json}. */
+    private String city;
 }

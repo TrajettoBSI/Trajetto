@@ -128,6 +128,16 @@ export default function Roteiros() {
           <ExploreDestinationsCard onPress={() => router.push('/ExploreScreen')} />
         )}
 
+        {!selectMode && itineraries.length > 0 && (
+          <View style={s.generateSection}>
+            <Text style={s.generateLabel}>{t('generate.wantNew')}</Text>
+            <CustomButton
+              title={t('generate.button')}
+              onPress={() => openGenerate()}
+            />
+          </View>
+        )}
+
         <AsyncBoundary
           state={{ loading, error, data: itineraries }}
           onRetry={reload}
@@ -185,16 +195,6 @@ export default function Roteiros() {
           </>
           )}
         </AsyncBoundary>
-
-        {!selectMode && itineraries.length > 0 && (
-          <View style={s.generateSection}>
-            <Text style={s.generateLabel}>{t('generate.wantNew')}</Text>
-            <CustomButton
-              title={t('generate.button')}
-              onPress={() => openGenerate()}
-            />
-          </View>
-        )}
       </Animated.ScrollView>
 
       {selectMode && (

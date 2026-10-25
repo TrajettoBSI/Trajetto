@@ -23,7 +23,6 @@
   "activeSectionLabel": "ACTIVE ITINERARY",
   "otherSectionLabel": "OTHER ITINERARIES",
   "showMore": "Show more (+{{count}})",
-  "defaultItineraryName": "Itinerary",
   "activeCard": {
     "activeBadge": "Active",
     "stopsAndDays": "{{stops}} stops · {{days}} days",
@@ -122,7 +121,8 @@
     "citiesError": "Couldn't load the cities. Tap to try again.",
     "originNeedsCity": "Choose the destination first",
     "cityCenterChip": "City center",
-    "cityCenterLabel": "{{city}} city center"
+    "cityCenterLabel": "{{city}} city center",
+    "nameLabel": "TRIP NAME (OPTIONAL)"
   },
   "cities": {
     "roma": "Rome",
@@ -145,5 +145,9 @@
     "dubai": "Dubai",
     "cidade-do-cabo": "Cape Town",
     "marrakech": "Marrakesh"
+  },
+  "itineraryName": {
+    "generic": "{{city}} trip, {{date}}",
+    "noCity": "Trip, {{date}}"
   }
 }
