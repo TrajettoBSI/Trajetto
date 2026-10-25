@@ -13,7 +13,7 @@ export { userService } from './userService';
 export type { ProfileRequest } from './userService';
 
 export { placesService } from './placesService';
-export type { NearbyPlace, Place, PlacesFilter } from './placesService';
+export type { NearbyPlace, Place, PlaceHighlight, PlacesFilter } from './placesService';
 
 export { ItineraryService } from './itineraryService';
 export type { AddPlaceRequest, TravelPace } from './itineraryService';

@@ -1,6 +1,8 @@
 package com.trajetto.backend.itinerary.controller;
 
+import com.trajetto.backend.itinerary.dto.PlaceHighlightDTO;
 import com.trajetto.backend.itinerary.dto.TouristSpotResponseDTO;
+import com.trajetto.backend.itinerary.service.PlaceHighlightService;
 import com.trajetto.backend.itinerary.service.TouristSpotSearchService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -15,6 +17,7 @@ import java.util.List;
 public class PlacesController {
 
     private final TouristSpotSearchService touristSpotSearchService;
+    private final PlaceHighlightService placeHighlightService;
 
     @Operation(summary = "Pontos do catalogo com os filtros do mapa; a distancia e filtrada pelo banco (indice espacial)")
     @GetMapping
@@ -42,6 +45,15 @@ public class PlacesController {
             @RequestParam(required = false) String profile
     ) {
         return touristSpotSearchService.nearby(lat, lng, radius, limit, category, profile);
+    }
+
+    @Operation(summary = "Lugares em destaque: populares no catalogo e bem avaliados, no maximo um por cidade")
+    @GetMapping("/highlights")
+    public List<PlaceHighlightDTO> getHighlights(
+            @Parameter(description = "Quantidade de lugares, de 1 a " + PlaceHighlightService.MAX_LIMIT)
+            @RequestParam(defaultValue = "5") int limit
+    ) {
+        return placeHighlightService.highlights(limit);
     }
 
     @GetMapping("/categories")

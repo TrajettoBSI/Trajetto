@@ -131,6 +131,7 @@ describe('servicos de lugares, favoritos, avaliacoes e rotas', () => {
     await placesService.nearby(41, 12, { radius: 1000, category: 'cafe' });
     await placesService.getCategories();
     await placesService.getProfiles();
+    await placesService.getHighlights();
 
     expect(mockedApi.get.mock.calls).toEqual([
       ['/places', { params: { search: 'Col', category: 'museum', fee: 'no', hasHours: true, profile: 'SOCIAL', lat: 41, lng: 12, maxDistance: 500 } }],
@@ -138,6 +139,7 @@ describe('servicos de lugares, favoritos, avaliacoes e rotas', () => {
       ['/places/nearby', { params: { lat: 41, lng: 12, radius: 1000, category: 'cafe' } }],
       ['/places/categories'],
       ['/places/profiles'],
+      ['/places/highlights', { params: { limit: 5 } }],
     ]);
   });
 

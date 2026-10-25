@@ -149,5 +149,13 @@
   "itineraryName": {
     "generic": "Itinerario {{city}}, día {{date}}",
     "noCity": "Itinerario, día {{date}}"
+  },
+  "highlights": {
+    "title": "Tendencias",
+    "subtitle": "Los lugares más visitados y mejor valorados",
+    "ratingsCount_one": "{{count}} reseña",
+    "ratingsCount_other": "{{count}} reseñas",
+    "noRatings": "Sé el primero en valorarlo",
+    "reviewBy": "- {{name}}"
   }
 }

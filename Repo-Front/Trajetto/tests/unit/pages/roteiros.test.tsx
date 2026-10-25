@@ -3,7 +3,7 @@ import { Alert, AlertButton } from 'react-native';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import Roteiros from '@/src/pages/tabs/roteiros/Roteiros';
 import GenerateItineraryFlow from '@/components/GenerateItineraryFlow';
-import { cityService, ItineraryService, searchAddresses } from '@/services';
+import { cityService, ItineraryService, placesService, searchAddresses } from '@/services';
 import { Itinerary, useItineraryStore } from '@/hooks/itineraryStore';
 import { mockRouter, setMockParams } from '../../mocks/expoRouter';
 import { apiError, networkError } from '../../helpers';
@@ -17,11 +17,13 @@ jest.mock('@/services', () => ({
   },
   searchAddresses: jest.fn(),
   cityService: { getCities: jest.fn() },
+  placesService: { getHighlights: jest.fn() },
 }));
 
 const ROMA = { slug: 'roma', name: 'Roma', country: 'IT', latitude: 41.9028, longitude: 12.4964, spots: 807 };
 const PARIS = { slug: 'paris', name: 'Paris', country: 'FR', latitude: 48.8566, longitude: 2.3522, spots: 862 };
 const cidades = cityService.getCities as jest.Mock;
+const destaques = placesService.getHighlights as jest.Mock;
 
 const svc = ItineraryService as unknown as Record<string, jest.Mock>;
 const buscar = searchAddresses as jest.Mock;
@@ -45,6 +47,7 @@ const tocarNoBotao = (texto: string) => {
 beforeEach(() => {
   cidades.mockResolvedValue([ROMA, PARIS]);
   jest.clearAllMocks();
+  destaques.mockResolvedValue([]);
   mockUser = { id: 1, firstName: 'Ana', lastName: 'Souza', isAdmin: false };
   jest.spyOn(Alert, 'alert').mockImplementation(() => undefined);
   useItineraryStore.setState({ itinerary: null, itineraries: [], loading: false, error: null, selectedDay: null });
@@ -72,6 +75,35 @@ describe('meus roteiros', () => {
     await fireEvent.press(screen.getAllByLabelText('Excluir')[0]);
     await tocarNoBotao('Excluir');
     await waitFor(() => expect(svc.deleteItinerary).toHaveBeenCalled());
+  });
+
+  it('mostra os lugares em alta com a avaliacao e abre o detalhe com o xid', async () => {
+    svc.getAllItineraries.mockResolvedValue([]);
+    const coliseu = {
+      spot: { name: 'Colosseo', names: { pt: 'Coliseu' }, latitude: 41.89, longitude: 12.49 },
+      xid: 'osm_colosseo', city: 'roma', imageUrl: 'https://upload.wikimedia.org/coliseu.jpg',
+      average: 4.5, ratingsCount: 2, latestReview: { userName: 'Maria Souza', rating: 5, comment: 'Imperdivel' },
+    };
+    destaques.mockResolvedValue([
+      coliseu,
+      { ...coliseu, spot: { ...coliseu.spot, name: 'Louvre', names: null }, xid: 'osm_louvre', city: 'paris', imageUrl: null,
+        average: 0, ratingsCount: 0, latestReview: null },
+    ]);
+    await render(<Roteiros />);
+
+    expect(await screen.findByText('Em alta')).toBeTruthy();
+    expect(screen.getByText('Coliseu')).toBeTruthy();
+    expect(screen.getByText('4,5')).toBeTruthy();
+    expect(screen.getByText('(2 avaliações)')).toBeTruthy();
+    expect(screen.getByText('"Imperdivel"')).toBeTruthy();
+    expect(screen.getByText('- Maria Souza')).toBeTruthy();
+    expect(screen.getByText('Seja o primeiro a avaliar')).toBeTruthy();
+
+    await fireEvent.press(screen.getByText('Coliseu'));
+    expect(mockRouter.push).toHaveBeenCalledWith({
+      pathname: '/SpotDetailScreen',
+      params: { spot: JSON.stringify({ ...coliseu.spot, xid: 'osm_colosseo' }), origin: 'inicio' },
+    });
   });
 
   it('sem roteiro ativo continua mostrando os outros roteiros', async () => {

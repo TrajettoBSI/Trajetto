@@ -3,9 +3,10 @@ import { useFocusEffect, useLocalSearchParams, useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/context/AuthContext';
 import { useItineraryStore } from '@/hooks/itineraryStore';
-import { PlaceSuggestion } from '@/services';
+import { PlaceHighlight, PlaceSuggestion, placesService } from '@/services';
 import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
+import { useAsyncData } from '@/src/components/feedback';
 import { useDestinationCarousel } from '@/src/pages/tabs/shared/hooks/useDestinationCarousel';
 
 export function useRoteiros() {
@@ -24,6 +25,7 @@ export function useRoteiros() {
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
   const [bulkDeleting, setBulkDeleting] = useState(false);
   const [showAllInactive, setShowAllInactive] = useState(false);
+  const highlights = useAsyncData(() => placesService.getHighlights(), []);
 
   const userId = user?.id;
 
@@ -124,6 +126,13 @@ export function useRoteiros() {
     });
   };
 
+  const openHighlight = (highlight: PlaceHighlight) => {
+    router.push({
+      pathname: '/SpotDetailScreen',
+      params: { spot: JSON.stringify({ ...highlight.spot, xid: highlight.xid }), origin: 'inicio' },
+    });
+  };
+
   const handleActivate = async (id: number) => {
     if (!user) return;
     try {
@@ -163,5 +172,7 @@ export function useRoteiros() {
     handleDelete,
     handleBulkDelete,
     handleActivate,
+    highlights: highlights.data ?? [],
+    openHighlight,
   };
 }
