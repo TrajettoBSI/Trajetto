@@ -1,7 +1,7 @@
 import { Platform } from 'react-native';
 import * as Print from 'expo-print';
 import * as Sharing from 'expo-sharing';
-import * as FileSystem from 'expo-file-system';
+import * as FileSystem from 'expo-file-system/legacy';
 import i18n from '@/src/i18n';
 import { Itinerary } from '@/hooks/itineraryStore';
 import { getErrorMessage } from '@/utils/apiError';
@@ -84,7 +84,7 @@ export function useExportPdf() {
       const { uri } = await Print.printToFileAsync({ html });
 
       if (Platform.OS === 'android') {
-        const StorageAccessFramework = (FileSystem as any).StorageAccessFramework;
+        const { StorageAccessFramework } = FileSystem;
         if (StorageAccessFramework) {
           const permissions = await StorageAccessFramework.requestDirectoryPermissionsAsync();
           if (permissions.granted) {
