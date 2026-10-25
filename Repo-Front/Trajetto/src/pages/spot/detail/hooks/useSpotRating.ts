@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { TextInput } from 'react-native';
+import type { TextInputInstance } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { RatingService, Rating, RatingSummary } from '@/services';
 import { getErrorMessage } from '@/utils/apiError';
@@ -9,7 +9,7 @@ import { useAuth } from '@/context/AuthContext';
 export function useSpotRating(xid: string | undefined) {
   const { t } = useTranslation(['spotDetail', 'common']);
   const { user } = useAuth();
-  const commentInputRef = useRef<TextInput>(null);
+  const commentInputRef = useRef<TextInputInstance>(null);
 
   const [allRatings, setAllRatings] = useState<Rating[]>([]);
   const [isRatingOpen, setIsRatingOpen] = useState(false);

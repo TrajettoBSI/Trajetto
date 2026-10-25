@@ -8,6 +8,7 @@ import {
   Modal,
   Platform,
   ScrollView,
+  ScrollViewInstance,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -160,7 +161,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   const [pace, setPace] = useState<TravelPace>('INTENSO');
   const [showIosCalendar, setShowIosCalendar] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const scrollViewRef = useRef<ScrollView>(null);
+  const scrollViewRef = useRef<ScrollViewInstance>(null);
   const inputLayoutY = useRef<number>(0);
   const searchRequestId = useRef(0);
 

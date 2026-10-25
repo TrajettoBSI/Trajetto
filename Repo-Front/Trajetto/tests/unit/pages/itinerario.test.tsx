@@ -198,7 +198,7 @@ describe('itinerario', () => {
   });
 
   it('avisa da reserva com o link oficial e de parada marcada num horario fechado', async () => {
-    const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(true);
+    const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
     await render(<Itinerario />);
 
     expect(screen.getByText('Fechado neste horário. Troque o horário ou a parada.')).toBeTruthy();
@@ -207,7 +207,7 @@ describe('itinerario', () => {
   });
 
   it('lugar pago sem reserva leva ao site oficial para o ingresso', async () => {
-    const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(true);
+    const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
     await render(<Itinerario />);
 
     await fireEvent.press(screen.getByText('Ingressos e horários no site oficial'));

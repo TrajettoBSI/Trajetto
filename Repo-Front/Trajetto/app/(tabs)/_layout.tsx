@@ -22,8 +22,10 @@ function TabIcon({ focused, color, colors, outlineName, filledName }: {
       </View>
     );
   }
-  return <Ionicons size={24} name={outlineName} color={color} />;
+  return <Ionicons size={24} name={outlineName} color={color as string} />;
 }
+
+export const unstable_settings = { initialRouteName: 'index' };
 
 export default function TabLayout() {
   const { t } = useTranslation('common');
@@ -32,7 +34,6 @@ export default function TabLayout() {
 
   return (
     <Tabs
-      initialRouteName="index"
       screenOptions={{
         headerShown: false,
         tabBarButton: HapticTab,

@@ -95,7 +95,7 @@ describe('detalhe do local', () => {
   };
 
   beforeEach(() => {
-    jest.spyOn(Linking, 'openURL').mockResolvedValue(true);
+    jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
     favorites.list.mockResolvedValue([]);
   });
 
