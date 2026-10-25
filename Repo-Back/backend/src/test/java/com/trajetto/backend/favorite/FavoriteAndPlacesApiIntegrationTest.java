@@ -43,7 +43,8 @@ class FavoriteAndPlacesApiIntegrationTest extends ApiIntegrationTest {
 
         mvc.perform(comToken(get("/places").param("search", "Colosseo"), user))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].name").value("Colosseo"));
+                .andExpect(jsonPath("$[0].name").value("Colosseo"))
+                .andExpect(jsonPath("$[0].xid").value("osm_colosseo"));
         mvc.perform(comToken(get("/places/nearby").param("lat", "41.8986").param("lng", "12.4769")
                         .param("radius", "1200").param("limit", "3").param("category", "cafe"), user))
                 .andExpect(status().isOk())

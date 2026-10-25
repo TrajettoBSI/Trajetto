@@ -14,6 +14,7 @@ import { AsyncBoundary } from '@/src/components/feedback';
 import { useExplore } from './hooks/useExplore';
 import { categoryIcon, categoryLabel } from '@/src/helpers/categoryIcon';
 import SpotCard from './components/SpotCard/SpotCard';
+import OptionPickerModal from '@/src/components/OptionPickerModal/OptionPickerModal';
 import { styles } from './styles/styles';
 
 export default function Explore() {
@@ -41,6 +42,12 @@ export default function Explore() {
     handleApplyFilter,
     handleClearFilter,
     handleSpotPress,
+    cityOptions,
+    selectedCity,
+    showCityPicker,
+    openCityPicker,
+    closeCityPicker,
+    handleSelectCity,
   } = useExplore();
 
   return (
@@ -89,6 +96,20 @@ export default function Explore() {
           </TouchableOpacity>
         </View>
 
+        <TouchableOpacity
+          style={[s.cityBtn, selectedCity && s.cityBtnActive]}
+          onPress={openCityPicker}
+          activeOpacity={0.8}
+          accessibilityRole="button"
+          accessibilityLabel={t('explore:cityPickerTitle')}
+        >
+          <Ionicons name="location" size={16} color={colors.primary} />
+          <Text style={s.cityBtnText}>
+            {cityOptions.find((o) => o.value === (selectedCity?.slug ?? null))?.label}
+          </Text>
+          <Ionicons name="chevron-down" size={16} color={colors.primary} />
+        </TouchableOpacity>
+
         {selectedCategory ? (
           <View style={s.activeFilterRow}>
             <View style={s.activeFilterChip}>
@@ -136,6 +157,15 @@ export default function Explore() {
         </AsyncBoundary>
 
       </KeyboardAvoidingView>
+
+      <OptionPickerModal
+        visible={showCityPicker}
+        title={t('explore:cityPickerTitle')}
+        options={cityOptions}
+        selected={selectedCity?.slug ?? null}
+        onSelect={handleSelectCity}
+        onClose={closeCityPicker}
+      />
 
       <Modal visible={showFilter} transparent animationType="slide" onRequestClose={closeFilter}>
         <TouchableOpacity style={s.modalOverlay} activeOpacity={1} onPress={closeFilter}>

@@ -33,4 +33,7 @@ public class PlaceResponseDTO {
 
     /** Nome do lugar por idioma do app ({@code pt}, {@code en}, {@code es}); vazio fora do catalogo. */
     private Map<String, String> names = Map.of();
+
+    /** Id do lugar no Wikidata, de onde vem a foto; nulo fora do catalogo. */
+    private String wikidata;
 }

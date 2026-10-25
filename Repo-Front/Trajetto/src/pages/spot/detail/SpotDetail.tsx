@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
@@ -10,6 +10,7 @@ import { categoryLabel, profileLabel } from '@/src/helpers/categoryIcon';
 import RatingForm from '@/src/components/rating/RatingForm/RatingForm';
 import ReviewItem from '@/src/components/rating/ReviewItem/ReviewItem';
 import { useColors } from '@/src/theme';
+import { usePlaceImage } from '@/hooks/usePlaceImage';
 import { useSpotDetail } from './hooks/useSpotDetail';
 import { useSpotRating } from './hooks/useSpotRating';
 import { useSpotFavorite } from './hooks/useSpotFavorite';
@@ -25,6 +26,7 @@ export default function SpotDetail() {
   const colors = useColors();
   const s = styles(colors);
   const { spot, distance, region, hours, openNow, wc, backLabel, openMaps, openWebsite, openBooking, callPhone, openWikipedia } = useSpotDetail();
+  const image = usePlaceImage(spot.wikidata);
   const {
     user, commentInputRef, allRatings, isRatingOpen, setIsRatingOpen,
     ratingData, ratingValue, setRatingValue, comment, setComment,
@@ -57,6 +59,17 @@ export default function SpotDetail() {
         </View>
       </View>
       <ScrollView contentContainerStyle={s.container} showsVerticalScrollIndicator={false}>
+
+        {image && (
+          <Image
+            source={{ uri: image }}
+            style={s.photo}
+            resizeMode="cover"
+            accessible
+            accessibilityRole="image"
+            accessibilityLabel={t('common:photoOf', { name: placeName(spot) })}
+          />
+        )}
 
         <View style={s.mapCard}>
           <MapView style={s.map} provider={PROVIDER_DEFAULT} initialRegion={region} scrollEnabled zoomEnabled>

@@ -13,6 +13,7 @@ export const styles = (colors: AppColors) =>
       borderRadius: 20, overflow: 'hidden',
     },
     map: { width: width - 32, height: 220 },
+    photo: { marginHorizontal: 16, marginTop: 16, height: 220, borderRadius: 20, backgroundColor: colors.gray200 },
 
     badgeRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginHorizontal: 16, marginBottom: 12 },
     badgePill: { backgroundColor: colors.gray200, borderRadius: 20, paddingHorizontal: 12, paddingVertical: 6 },

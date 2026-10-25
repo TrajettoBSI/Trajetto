@@ -18,6 +18,8 @@ export interface Place {
   bookingUrl?: string | null;
   /** Nome por idioma do app (pt, en, es), quando o lugar e do catalogo. */
   names?: Record<string, string> | null;
+  /** Identificador usado pelas avaliacoes e pelos favoritos. */
+  xid?: string;
 }
 
 export type NearbyPlace = Place & { distanceMeters?: number | null };
@@ -59,6 +61,12 @@ export const placesService = {
     if (filter.maxDistance)  params.maxDistance = filter.maxDistance;
     const res = await api.get('/places', { params });
     return res.data;
+  },
+
+  /** Foto do Wikimedia Commons pelo id do Wikidata; null quando o ponto nao tem foto. */
+  getImage: async (wikidata: string): Promise<string | null> => {
+    const res = await api.get('/places/image', { params: { wikidata } });
+    return res.data?.url ?? null;
   },
 
   getHighlights: async (limit = 5): Promise<PlaceHighlight[]> => {

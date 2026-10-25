@@ -28,6 +28,7 @@ export const styles = (colors: AppColors) =>
       marginRight: 12,
     },
     cardIconText: { fontSize: 22 },
+    cardImage: { width: 56, height: 56, borderRadius: 10, marginRight: 12 },
     cardContent: { flex: 1 },
     cardName: { fontSize: 15, fontFamily: 'Inter-Medium', color: colors.gray900 },
     cardCategory: {

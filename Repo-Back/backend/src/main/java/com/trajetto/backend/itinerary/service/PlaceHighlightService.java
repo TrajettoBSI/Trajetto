@@ -88,7 +88,7 @@ public class PlaceHighlightService {
         TouristSpotResponseDTO spot = new TouristSpotResponseDTO(
                 p.name(), p.address(), p.latitude(), p.longitude(), p.profiles(), p.openingHours(), p.category(),
                 p.fee(), p.phone(), p.website(), p.wikidata(), p.wikipedia(), p.wheelchair(), null,
-                BookingLinks.forPlace(p.name()), p.names());
+                BookingLinks.forPlace(p.name()), p.names(), xid);
         return new PlaceHighlightDTO(spot, xid, p.city(), wikimediaImages.imageUrl(p.wikidata()).orElse(null),
                 scored.stats().average(), scored.stats().count(), review);
     }

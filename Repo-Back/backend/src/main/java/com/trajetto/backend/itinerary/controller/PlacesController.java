@@ -1,5 +1,6 @@
 package com.trajetto.backend.itinerary.controller;
 
+import com.trajetto.backend.itinerary.data.WikimediaImages;
 import com.trajetto.backend.itinerary.dto.PlaceHighlightDTO;
 import com.trajetto.backend.itinerary.dto.TouristSpotResponseDTO;
 import com.trajetto.backend.itinerary.service.PlaceHighlightService;
@@ -7,9 +8,11 @@ import com.trajetto.backend.itinerary.service.TouristSpotSearchService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/places")
@@ -18,6 +21,7 @@ public class PlacesController {
 
     private final TouristSpotSearchService touristSpotSearchService;
     private final PlaceHighlightService placeHighlightService;
+    private final WikimediaImages wikimediaImages;
 
     @Operation(summary = "Pontos do catalogo com os filtros do mapa; a distancia e filtrada pelo banco (indice espacial)")
     @GetMapping
@@ -54,6 +58,16 @@ public class PlacesController {
             @RequestParam(defaultValue = "5") int limit
     ) {
         return placeHighlightService.highlights(limit);
+    }
+
+    @Operation(summary = "Foto do ponto no Wikimedia Commons, pelo id dele no Wikidata; 204 quando nao ha foto")
+    @GetMapping("/image")
+    public ResponseEntity<Map<String, String>> getImage(
+            @Parameter(description = "Id do ponto no Wikidata, como Q10285") @RequestParam String wikidata
+    ) {
+        return wikimediaImages.imageUrl(wikidata)
+                .map(url -> ResponseEntity.ok(Map.of("url", url)))
+                .orElseGet(() -> ResponseEntity.noContent().build());
     }
 
     @GetMapping("/categories")

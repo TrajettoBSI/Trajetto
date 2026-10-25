@@ -681,7 +681,10 @@ public class ItineraryService {
         Optional<CatalogPlace> catalogPlace = model.getLatitude() == null || model.getLongitude() == null
                 ? Optional.empty()
                 : cityCatalog.findByName(model.getName(), model.getLatitude(), model.getLongitude());
-        catalogPlace.ifPresent(cp -> dto.setNames(cp.names()));
+        catalogPlace.ifPresent(cp -> {
+            dto.setNames(cp.names());
+            dto.setWikidata(cp.wikidata().isBlank() ? null : cp.wikidata());
+        });
         if (dto.getBookingUrl() == null && "yes".equals(model.getFee())) {
             dto.setTicketUrl(catalogPlace.map(CatalogPlace::website).filter(w -> !w.isBlank()).orElse(null));
         }

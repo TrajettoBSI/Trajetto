@@ -38,6 +38,14 @@ export const styles = (colors: AppColors) =>
     },
     filterBadgeText: { color: colors.onPrimary, fontSize: 10, fontFamily: 'Inter-Bold' },
 
+    cityBtn: {
+      flexDirection: 'row', alignItems: 'center', alignSelf: 'flex-start', gap: 6,
+      borderWidth: 1.5, borderColor: colors.border, borderRadius: 20,
+      paddingHorizontal: 12, paddingVertical: 7, marginBottom: 10, backgroundColor: colors.white,
+    },
+    cityBtnActive: { borderColor: colors.primary, backgroundColor: colors.primarySurface },
+    cityBtnText: { fontSize: 13, color: colors.primary, fontFamily: 'Inter-Medium' },
+
     activeFilterRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 8 },
     activeFilterChip: {
       flexDirection: 'row',

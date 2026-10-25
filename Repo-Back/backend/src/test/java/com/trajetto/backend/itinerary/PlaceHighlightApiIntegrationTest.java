@@ -23,6 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 class PlaceHighlightApiIntegrationTest extends ApiIntegrationTest {
@@ -70,6 +71,19 @@ class PlaceHighlightApiIntegrationTest extends ApiIntegrationTest {
             assertEquals("https://upload.wikimedia.org/foto.jpg", n.get("imageUrl").asText());
             assertTrue(n.get("spot").get("name").asText().length() > 0);
         });
+    }
+
+    @Test
+    @DisplayName("A foto de um ponto vem pelo id do Wikidata; sem foto, responde 204")
+    void fotoDoPonto() throws Exception {
+        UserModel user = usuario(false);
+        when(wikimediaImages.imageUrl("Q1")).thenReturn(Optional.empty());
+
+        mvc.perform(comToken(get("/places/image").param("wikidata", "Q10285"), user))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.url").value("https://upload.wikimedia.org/foto.jpg"));
+        mvc.perform(comToken(get("/places/image").param("wikidata", "Q1"), user))
+                .andExpect(status().isNoContent());
     }
 
     @Test
