@@ -7,6 +7,8 @@ import { showAlert } from '@/src/components/alerts/alertService';
 import { useAuth } from '@/context/AuthContext';
 import { selectAlternatives } from '@/src/domain/alternatives/selectAlternatives';
 
+const ALTERNATIVES_RADIUS_METERS = 5000;
+
 export function useAlternatives(itinerary: Itinerary | null) {
   const { t } = useTranslation(['itinerario', 'common']);
   const { user } = useAuth();
@@ -28,8 +30,13 @@ export function useAlternatives(itinerary: Itinerary | null) {
     const currentNames = new Set(itinerary?.places.map((p) => p.name) ?? []);
 
     try {
-      const allByProfile = await placesService.getAll({ profile });
-      setAlternatives(selectAlternatives(allByProfile, place, currentNames));
+      const nearby = await placesService.getAll({
+        profile,
+        lat: place.latitude,
+        lng: place.longitude,
+        maxDistance: ALTERNATIVES_RADIUS_METERS,
+      });
+      setAlternatives(selectAlternatives(nearby, place, currentNames));
     } catch {
       setAlternatives([]);
     } finally {

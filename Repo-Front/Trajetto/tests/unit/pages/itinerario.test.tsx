@@ -107,6 +107,7 @@ describe('itinerario', () => {
 
     await fireEvent.press(screen.getAllByText('Trocar')[0]);
     expect(await screen.findByText('Substituir "Fontana di Trevi" por:')).toBeTruthy();
+    expect(places.getAll).toHaveBeenCalledWith(expect.objectContaining({ lat: 41.9, lng: 12.48, maxDistance: 5000 }));
     await fireEvent.press(await screen.findByText('Galleria Borghese'));
 
     await waitFor(() => expect(svc.replacePlace).toHaveBeenCalledWith(7, 0, expect.objectContaining({ name: 'Galleria Borghese', estimatedVisitTime: '09:00:00' })));
