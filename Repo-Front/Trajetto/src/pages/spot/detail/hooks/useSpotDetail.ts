@@ -30,7 +30,7 @@ export type SpotDetailData = {
 };
 
 /** Quem pode navegar pra ca manda esse valor em params.origin. */
-const KNOWN_ORIGINS = ['mapa', 'itinerario', 'explorar', 'favoritos'] as const;
+const KNOWN_ORIGINS = ['mapa', 'itinerario', 'explorar', 'favoritos', 'inicio'] as const;
 
 export function useSpotDetail(): SpotDetailData {
   const { t } = useTranslation('spotDetail');

@@ -22,6 +22,19 @@ export interface Place {
 
 export type NearbyPlace = Place & { distanceMeters?: number | null };
 
+/** Lugar em destaque na tela inicial: popular no catalogo e bem avaliado. */
+export interface PlaceHighlight {
+  spot: Place;
+  xid: string;
+  /** Slug da cidade do catalogo. */
+  city: string;
+  /** Foto do Wikimedia Commons; nula quando o lugar nao tem. */
+  imageUrl: string | null;
+  average: number;
+  ratingsCount: number;
+  latestReview: { userName: string; rating: number; comment: string } | null;
+}
+
 export interface PlacesFilter {
   search?: string;
   category?: string;
@@ -45,6 +58,11 @@ export const placesService = {
     if (filter.lng)          params.lng         = filter.lng;
     if (filter.maxDistance)  params.maxDistance = filter.maxDistance;
     const res = await api.get('/places', { params });
+    return res.data;
+  },
+
+  getHighlights: async (limit = 5): Promise<PlaceHighlight[]> => {
+    const res = await api.get('/places/highlights', { params: { limit } });
     return res.data;
   },
 

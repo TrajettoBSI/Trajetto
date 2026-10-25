@@ -149,5 +149,13 @@
   "itineraryName": {
     "generic": "{{city}} trip, {{date}}",
     "noCity": "Trip, {{date}}"
+  },
+  "highlights": {
+    "title": "Trending",
+    "subtitle": "The most visited and best rated places",
+    "ratingsCount_one": "{{count}} review",
+    "ratingsCount_other": "{{count}} reviews",
+    "noRatings": "Be the first to rate it",
+    "reviewBy": "- {{name}}"
   }
 }

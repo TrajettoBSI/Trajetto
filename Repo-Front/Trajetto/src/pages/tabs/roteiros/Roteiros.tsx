@@ -16,6 +16,7 @@ import EmptyState from './components/EmptyState/EmptyState';
 import SelectBar from './components/SelectBar/SelectBar';
 import SearchCard from './components/SearchCard/SearchCard';
 import ExploreDestinationsCard from './components/ExploreDestinationsCard/ExploreDestinationsCard';
+import PlaceHighlights from './components/PlaceHighlights/PlaceHighlights';
 
 export default function Roteiros() {
   const { t } = useTranslation('roteiros');
@@ -48,6 +49,8 @@ export default function Roteiros() {
     handleDelete,
     handleBulkDelete,
     handleActivate,
+    highlights,
+    openHighlight,
   } = useRoteiros();
 
   const inactiveItineraries = itineraries.filter((i) => !i.active);
@@ -137,6 +140,8 @@ export default function Roteiros() {
             />
           </View>
         )}
+
+        {!selectMode && <PlaceHighlights highlights={highlights} onPress={openHighlight} />}
 
         <AsyncBoundary
           state={{ loading, error, data: itineraries }}
