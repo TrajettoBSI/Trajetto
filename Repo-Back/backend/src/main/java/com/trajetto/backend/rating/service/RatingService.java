@@ -115,14 +115,24 @@ public class RatingService {
      * tabelas de novo.
      */
     private void espelharNoMongo(RatingModel rating) {
+        espelharNoMongo(rating, null, null);
+    }
+
+    /**
+     * Mesma copia, com o nome/categoria do catalogo para quando o local nao
+     * esta em nenhum roteiro (avaliacao inserida direto no banco, por exemplo).
+     */
+    void espelharNoMongo(RatingModel rating, String nomeNoCatalogo, String categoriaNoCatalogo) {
         UserModel usuario = userRepository.findById(rating.getUserId()).orElse(null);
         PlaceModel local = placeRepository.findFirstByXid(rating.getTouristSpotXid()).orElse(null);
+        String nome = local != null ? local.getName() : nomeNoCatalogo;
+        String categoria = local != null ? local.getCategory() : categoriaNoCatalogo;
 
         RatingDocument doc = new RatingDocument();
         doc.setId(String.valueOf(rating.getId()));
         doc.setTouristSpotXid(rating.getTouristSpotXid());
-        doc.setTouristSpotName(local != null ? local.getName() : rating.getTouristSpotXid());
-        doc.setTouristSpotCategory(rotuloOuPadrao(local != null ? local.getCategory() : null, OUTROS));
+        doc.setTouristSpotName(nome != null ? nome : rating.getTouristSpotXid());
+        doc.setTouristSpotCategory(rotuloOuPadrao(categoria, OUTROS));
         doc.setUserId(rating.getUserId());
         doc.setUserName(rating.getUserName());
         doc.setUserProfile(rotuloOuPadrao(usuario != null ? usuario.getTravelerProfile() : null, SEM_PERFIL));

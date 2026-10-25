@@ -1,6 +1,7 @@
 package com.trajetto.backend.itinerary.service;
 
 import com.trajetto.backend.itinerary.data.BookingLinks;
+import com.trajetto.backend.itinerary.data.PlaceXid;
 import com.trajetto.backend.exception.InvalidRequestException;
 import com.trajetto.backend.itinerary.dto.TouristSpotResponseDTO;
 import com.trajetto.backend.itinerary.repository.TouristSpotRepository;
@@ -105,7 +106,7 @@ public class TouristSpotSearchService {
                 nullToEmpty(r.getOpeningHours()), nullToEmpty(r.getCategory()), nullToEmpty(r.getFee()),
                 nullToEmpty(r.getPhone()), nullToEmpty(r.getWebsite()), nullToEmpty(r.getWikidata()),
                 nullToEmpty(r.getWikipedia()), nullToEmpty(r.getWheelchair()),
-                r.getDistanceMeters(), BookingLinks.forPlace(r.getName()), r.getNames());
+                r.getDistanceMeters(), BookingLinks.forPlace(r.getName()), r.getNames(), PlaceXid.of(r.getName()));
     }
 
     private static String blankToNull(String value) {

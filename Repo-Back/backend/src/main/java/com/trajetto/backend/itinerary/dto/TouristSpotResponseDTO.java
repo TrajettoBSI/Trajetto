@@ -10,8 +10,9 @@ import java.util.Map;
  * texto vazio, e nao {@code null}, para informacao que o ponto nao tem --, entao
  * o aplicativo nao precisa mudar. Os acrescimos sao {@code distanceMeters},
  * calculado pelo banco quando a busca informa um ponto de referencia, e
- * {@code bookingUrl}, o site oficial de reserva das atracoes que exigem uma, e
- * {@code names}, o nome do ponto em cada idioma do app.</p>
+ * {@code bookingUrl}, o site oficial de reserva das atracoes que exigem uma,
+ * {@code names}, o nome do ponto em cada idioma do app, e {@code xid}, o
+ * identificador que as avaliacoes e os favoritos usam.</p>
  */
 public record TouristSpotResponseDTO(
         String name,
@@ -29,5 +30,6 @@ public record TouristSpotResponseDTO(
         String wheelchair,
         Double distanceMeters,
         String bookingUrl,
-        Map<String, String> names
+        Map<String, String> names,
+        String xid
 ) {}

@@ -1,6 +1,6 @@
 {
   "headerTitle": "Explorar",
-  "subtitle": "Descubre puntos turísticos en Roma",
+  "subtitle": "Descubre puntos turísticos en las ciudades de Trajetto",
   "searchPlaceholder": "Buscar punto turístico...",
   "resultsCount_one": "{{count}} resultado",
   "resultsCount_other": "{{count}} resultados",
@@ -10,8 +10,10 @@
   "clearFiltersButton": "Limpiar filtros",
   "emptyNotFoundTitle": "Sin resultados",
   "emptyNotFoundText": "Prueba otros filtros o borra la búsqueda.",
-  "emptyDefaultTitle": "Explora Roma",
+  "emptyDefaultTitle": "Explora los destinos",
   "emptyDefaultText": "Busca o filtra puntos turísticos disponibles.",
   "loadingText": "Buscando puntos turísticos...",
-  "loadError": "No se pudieron cargar los puntos turísticos."
+  "loadError": "No se pudieron cargar los puntos turísticos.",
+  "allCities": "Todas las ciudades",
+  "cityPickerTitle": "Filtrar por ciudad"
 }

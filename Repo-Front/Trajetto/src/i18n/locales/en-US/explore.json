@@ -1,6 +1,6 @@
 {
   "headerTitle": "Explore",
-  "subtitle": "Discover tourist spots in Rome",
+  "subtitle": "Discover tourist spots in the Trajetto cities",
   "searchPlaceholder": "Search tourist spot...",
   "resultsCount_one": "{{count}} result",
   "resultsCount_other": "{{count}} results",
@@ -10,8 +10,10 @@
   "clearFiltersButton": "Clear filters",
   "emptyNotFoundTitle": "No results",
   "emptyNotFoundText": "Try other filters or clear the search.",
-  "emptyDefaultTitle": "Explore Rome",
+  "emptyDefaultTitle": "Explore the destinations",
   "emptyDefaultText": "Search or filter available tourist spots.",
   "loadingText": "Searching tourist spots...",
-  "loadError": "Couldn't load the tourist spots."
+  "loadError": "Couldn't load the tourist spots.",
+  "allCities": "All cities",
+  "cityPickerTitle": "Filter by city"
 }

@@ -55,5 +55,6 @@
     "dark": "Dark",
     "highContrast": "High contrast"
   },
-  "selectCountry": "Select your country"
+  "selectCountry": "Select your country",
+  "photoOf": "Photo of {{name}}"
 }

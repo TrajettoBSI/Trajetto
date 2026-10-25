@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
-import { Place, placesService } from '@/services';
+import { City, cityService, Place, placesService } from '@/services';
+import { PickerOption } from '@/src/components/OptionPickerModal/OptionPickerModal';
 import { getErrorMessage } from '@/utils/apiError';
 
 export type ExploreData = {
@@ -23,11 +24,20 @@ export type ExploreData = {
   handleApplyFilter: () => void;
   handleClearFilter: () => void;
   handleSpotPress: (spot: Place) => void;
+  cityOptions: PickerOption[];
+  selectedCity: City | null;
+  showCityPicker: boolean;
+  openCityPicker: () => void;
+  closeCityPicker: () => void;
+  handleSelectCity: (slug: string | null) => void;
 };
+
+/** Raio da busca em volta do centro da cidade: cobre o maior raio do catalogo (25 km). */
+const CITY_RADIUS_METERS = 30000;
 
 export function useExplore(): ExploreData {
   const router = useRouter();
-  const { t } = useTranslation('explore');
+  const { t, i18n } = useTranslation(['explore', 'roteiros']);
 
   // Comeca em null, e nao em lista vazia: antes da primeira resposta nao se sabe ainda se
   // existe ou nao lugar para mostrar.
@@ -40,22 +50,26 @@ export function useExplore(): ExploreData {
   const [showFilter, setShowFilter] = useState(false);
   const [tempCategory, setTempCategory] = useState('');
   const [searched, setSearched] = useState(false);
+  const [cities, setCities] = useState<City[]>([]);
+  const [selectedCity, setSelectedCity] = useState<City | null>(null);
+  const [showCityPicker, setShowCityPicker] = useState(false);
 
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const fetchSpots = useCallback(async (searchTerm: string, category: string) => {
+  const fetchSpots = useCallback(async (searchTerm: string, category: string, city: City | null) => {
     setLoading(true);
     setError('');
     try {
       const results = await placesService.getAll({
         search: searchTerm || undefined,
         category: category || undefined,
+        ...(city && { lat: city.latitude, lng: city.longitude, maxDistance: CITY_RADIUS_METERS }),
       });
       setSpots(results);
       setSearched(true);
     } catch (e) {
       setSpots([]);
-      setError(getErrorMessage(e, t('loadError')));
+      setError(getErrorMessage(e, t('explore:loadError')));
     } finally {
       setLoading(false);
     }
@@ -63,6 +77,7 @@ export function useExplore(): ExploreData {
 
   useEffect(() => {
     placesService.getCategories().then(setCategories).catch(() => {});
+    cityService.getCities().then(setCities).catch(() => {});
     placesService.getAll({})
       .then((results) => {
         setSpots(results);
@@ -70,7 +85,7 @@ export function useExplore(): ExploreData {
       })
       .catch((e) => {
         setSpots([]);
-        setError(getErrorMessage(e, t('loadError')));
+        setError(getErrorMessage(e, t('explore:loadError')));
       })
       .finally(() => setLoading(false));
   }, [t]);
@@ -79,21 +94,36 @@ export function useExplore(): ExploreData {
     setSearch(text);
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
-      fetchSpots(text, selectedCategory);
+      fetchSpots(text, selectedCategory, selectedCity);
     }, 400);
   };
 
   const handleApplyFilter = () => {
     setSelectedCategory(tempCategory);
     setShowFilter(false);
-    fetchSpots(search, tempCategory);
+    fetchSpots(search, tempCategory, selectedCity);
   };
 
   const handleClearFilter = () => {
     setTempCategory('');
     setSelectedCategory('');
     setShowFilter(false);
-    fetchSpots(search, '');
+    fetchSpots(search, '', selectedCity);
+  };
+
+  const cityName = (city: City) => t(`roteiros:cities.${city.slug}`, { defaultValue: city.name });
+  const cityOptions: PickerOption[] = [
+    { value: null, label: t('explore:allCities') },
+    ...[...cities]
+      .sort((a, b) => cityName(a).localeCompare(cityName(b), i18n.language))
+      .map((c) => ({ value: c.slug, label: cityName(c) })),
+  ];
+
+  const handleSelectCity = (slug: string | null) => {
+    const city = cities.find((c) => c.slug === slug) ?? null;
+    setShowCityPicker(false);
+    setSelectedCity(city);
+    fetchSpots(search, selectedCategory, city);
   };
 
   const handleSpotPress = (spot: Place) => {
@@ -105,7 +135,7 @@ export function useExplore(): ExploreData {
     categories,
     loading,
     error,
-    reload: () => fetchSpots(search, selectedCategory),
+    reload: () => fetchSpots(search, selectedCategory, selectedCity),
     search,
     selectedCategory,
     showFilter,
@@ -122,5 +152,11 @@ export function useExplore(): ExploreData {
     handleApplyFilter,
     handleClearFilter,
     handleSpotPress,
+    cityOptions,
+    selectedCity,
+    showCityPicker,
+    openCityPicker: () => setShowCityPicker(true),
+    closeCityPicker: () => setShowCityPicker(false),
+    handleSelectCity,
   };
 }

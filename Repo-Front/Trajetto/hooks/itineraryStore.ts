@@ -21,6 +21,8 @@ export interface Places {
   ticketUrl?: string | null;
   /** Nome por idioma do app (pt, en, es), quando o lugar e do catalogo. */
   names?: Record<string, string> | null;
+  /** Id no Wikidata, de onde vem a foto do lugar. */
+  wikidata?: string | null;
 }
 
 export interface Itinerary {

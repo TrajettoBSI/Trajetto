@@ -4,7 +4,7 @@ import { fireEvent, render, screen, waitFor } from '@testing-library/react-nativ
 import Explore from '@/src/pages/explore/Explore';
 import SpotDetail from '@/src/pages/spot/detail/SpotDetail';
 import Favorites from '@/src/pages/favorites/Favorites';
-import { favoriteService, placesService, RatingService } from '@/services';
+import { cityService, favoriteService, placesService, RatingService } from '@/services';
 import { useFavoritesStore } from '@/hooks/favoritesStore';
 import { mockRouter, setMockParams } from '../../mocks/expoRouter';
 import { apiError, networkError } from '../../helpers';
@@ -13,7 +13,8 @@ jest.mock('@/context/AuthContext', () => ({
   useAuth: () => ({ user: { id: 1, firstName: 'Ana', lastName: 'Souza' } }),
 }));
 jest.mock('@/services', () => ({
-  placesService: { getAll: jest.fn(), getCategories: jest.fn() },
+  placesService: { getAll: jest.fn(), getCategories: jest.fn(), getImage: jest.fn() },
+  cityService: { getCities: jest.fn() },
   RatingService: { getSummary: jest.fn(), getByPlace: jest.fn(), create: jest.fn(), update: jest.fn(), delete: jest.fn() },
   favoriteService: { list: jest.fn(), mark: jest.fn(), unmark: jest.fn() },
 }));
@@ -36,6 +37,11 @@ const tocarNoBotao = (texto: string) => {
 
 beforeEach(() => {
   jest.clearAllMocks();
+  places.getImage.mockResolvedValue(null);
+  (cityService.getCities as jest.Mock).mockResolvedValue([
+    { slug: 'roma', name: 'Roma', country: 'IT', latitude: 41.9028, longitude: 12.4964, spots: 807 },
+    { slug: 'paris', name: 'Paris', country: 'FR', latitude: 48.8566, longitude: 2.3522, spots: 862 },
+  ]);
   jest.spyOn(Alert, 'alert').mockImplementation(() => undefined);
   useFavoritesStore.setState({ ownerId: null, favorites: null, loading: false, error: null });
 });
@@ -77,6 +83,35 @@ describe('explorar', () => {
     await waitFor(() => expect(places.getAll).toHaveBeenLastCalledWith({ search: 'xyz', category: undefined }));
   });
 
+  it('filtra pela cidade buscando em volta do centro dela', async () => {
+    places.getCategories.mockResolvedValue([]);
+    places.getAll.mockResolvedValueOnce([coliseu, panteao]).mockResolvedValue([coliseu]);
+    await render(<Explore />);
+    await screen.findByText('Colosseo');
+
+    await fireEvent.press(screen.getByLabelText('Filtrar por cidade'));
+    await fireEvent.press(await screen.findByText('Roma'));
+    await waitFor(() => expect(places.getAll).toHaveBeenLastCalledWith({
+      search: undefined, category: undefined, lat: 41.9028, lng: 12.4964, maxDistance: 30000,
+    }));
+    expect(await screen.findByText('1 resultado')).toBeTruthy();
+
+    await fireEvent.press(screen.getByLabelText('Filtrar por cidade'));
+    await fireEvent.press(screen.getAllByText('Todas as cidades').at(-1)!);
+    await waitFor(() => expect(places.getAll).toHaveBeenLastCalledWith({ search: undefined, category: undefined }));
+  });
+
+  it('mostra a foto do Wikimedia no card quando o lugar tem', async () => {
+    places.getCategories.mockResolvedValue([]);
+    places.getImage.mockImplementation(async (q: string) => (q === 'Q99001' ? 'https://upload.wikimedia.org/trevi.jpg' : null));
+    places.getAll.mockResolvedValue([{ ...coliseu, name: 'Fontana di Trevi', wikidata: 'Q99001' }]);
+    await render(<Explore />);
+
+    const foto = await screen.findByLabelText('Foto de Fontana di Trevi');
+    expect(foto.props.source).toEqual({ uri: 'https://upload.wikimedia.org/trevi.jpg' });
+    expect(places.getImage).toHaveBeenCalledWith('Q99001');
+  });
+
   it('mostra o erro quando o catalogo nao carrega e tenta de novo', async () => {
     places.getCategories.mockResolvedValue([]);
     places.getAll.mockRejectedValueOnce(networkError()).mockResolvedValue([coliseu]);
@@ -97,6 +132,16 @@ describe('detalhe do local', () => {
   beforeEach(() => {
     jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
     favorites.list.mockResolvedValue([]);
+  });
+
+  it('mostra a foto do lugar no topo quando o Wikimedia tem uma', async () => {
+    ratings.getSummary.mockResolvedValue({ average: 0, count: 0 });
+    ratings.getByPlace.mockResolvedValue([]);
+    places.getImage.mockResolvedValue('https://upload.wikimedia.org/pantheon.jpg');
+    await abrir({ ...panteao, wikidata: 'Q99002', xid: 'osm_pantheon' });
+
+    const foto = await screen.findByLabelText('Foto de Pantheon');
+    expect(foto.props.source).toEqual({ uri: 'https://upload.wikimedia.org/pantheon.jpg' });
   });
 
   it('mostra dados, horarios, perfis e as acoes de contato', async () => {

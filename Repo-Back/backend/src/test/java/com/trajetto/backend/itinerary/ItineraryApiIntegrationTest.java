@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
@@ -39,6 +40,9 @@ class ItineraryApiIntegrationTest extends ApiIntegrationTest {
         JsonNode roteiro = gerar(user);
 
         assertEquals(8, roteiro.get("places").size());
+        // As paradas sao do catalogo de Roma: os pontos famosos tem id no Wikidata, de onde vem a foto.
+        assertTrue(java.util.stream.StreamSupport.stream(roteiro.get("places").spliterator(), false)
+                .anyMatch(p -> p.path("wikidata").asText("").matches("Q\\d+")));
         mvc.perform(comToken(get("/itinerary/active/" + user.getId()), user))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(roteiro.get("id").asLong()))
