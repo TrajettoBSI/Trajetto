@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import {
   TextInput,
+  TextInputInstance,
   View,
   Text,
   TouchableOpacity,
@@ -71,7 +72,7 @@ export default function CustomInput({
   const colors = useColors();
   const inputStyles = getStyles(colors);
   const [showPassword, setShowPassword] = useState(false);
-  const inputRef = useRef<TextInput>(null);
+  const inputRef = useRef<TextInputInstance>(null);
 
   const isPassword = type === 'password';
   const currentKeyboardType = keyboardType || (

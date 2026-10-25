@@ -1,12 +1,12 @@
 import React, { Ref } from 'react';
-import { Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Text, TextInput, TextInputInstance, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import StarRating from '@/components/Rating';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
 type RatingFormProps = {
-  commentInputRef: Ref<TextInput>;
+  commentInputRef: Ref<TextInputInstance>;
   ratingValue: number;
   onChangeRatingValue: (v: number) => void;
   comment: string;

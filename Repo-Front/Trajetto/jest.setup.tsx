@@ -8,7 +8,13 @@ jest.mock('@react-native-async-storage/async-storage', () =>
 );
 jest.mock('react-native-safe-area-context', () => mockSafeAreaContext);
 jest.mock('react-native-worklets', () => require('react-native-worklets/src/mock'));
+jest.mock('react-native-reanimated/src/initializers', () =>
+  jest.requireActual('react-native-reanimated/src/initializers.ts'),
+);
 jest.mock('react-native-reanimated', () => require('react-native-reanimated/mock'));
+jest.mock('react-native/src/private/assets/AssetRegistry', () => ({
+  AssetRegistry: jest.requireMock('react-native/asset-registry'),
+}));
 jest.mock('expo-router', () => require('./tests/mocks/expoRouter'));
 jest.mock('react-native-maps', () => require('./tests/mocks/reactNativeMaps'));
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Alert, Linking, Platform } from 'react-native';
 import * as Print from 'expo-print';
 import * as Sharing from 'expo-sharing';
-import * as FileSystem from 'expo-file-system';
+import * as FileSystem from 'expo-file-system/legacy';
 import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import Itinerario from '@/src/pages/tabs/itinerario/Itinerario';
 import { favoriteService, ItineraryService, placesService } from '@/services';
@@ -24,7 +24,7 @@ jest.mock('@/services', () => ({
 }));
 jest.mock('expo-print', () => ({ printToFileAsync: jest.fn() }));
 jest.mock('expo-sharing', () => ({ shareAsync: jest.fn() }));
-jest.mock('expo-file-system', () => ({
+jest.mock('expo-file-system/legacy', () => ({
   readAsStringAsync: jest.fn(async () => 'base64'),
   writeAsStringAsync: jest.fn(),
   StorageAccessFramework: {
@@ -198,7 +198,7 @@ describe('itinerario', () => {
   });
 
   it('avisa da reserva com o link oficial e de parada marcada num horario fechado', async () => {
-    const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(true);
+    const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
     await render(<Itinerario />);
 
     expect(screen.getByText('Fechado neste horário. Troque o horário ou a parada.')).toBeTruthy();
@@ -207,7 +207,7 @@ describe('itinerario', () => {
   });
 
   it('lugar pago sem reserva leva ao site oficial para o ingresso', async () => {
-    const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(true);
+    const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
     await render(<Itinerario />);
 
     await fireEvent.press(screen.getByText('Ingressos e horários no site oficial'));

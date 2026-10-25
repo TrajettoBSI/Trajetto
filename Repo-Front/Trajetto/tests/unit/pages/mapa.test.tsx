@@ -147,7 +147,7 @@ describe('mapa do roteiro', () => {
 
     it('inicia na proxima parada, mostra os modos com o recomendado e avanca ate concluir o dia', async () => {
       rotas.getDirections.mockResolvedValue(trecho);
-      const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(true);
+      const abrir = jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
       await render(<Mapa />);
 
       await fireEvent.press(screen.getByText('Iniciar'));

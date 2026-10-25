@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ScrollView } from 'react-native';
+import type { ScrollViewInstance } from 'react-native';
 import { useFocusEffect } from 'expo-router';
 import { Places, useItineraryStore } from '@/hooks/itineraryStore';
 import { isPlacePast } from '@/app/utils/isPlacePast';
@@ -9,7 +9,7 @@ export function useItinerarioScroll(places: Places[], startDate: string | undefi
   const { highlightedPlaceIndex, setHighlightedPlace } = useItineraryStore();
   const [layoutReady, setLayoutReady] = useState(false);
   const [placesAnteriores, setPlacesAnteriores] = useState(places);
-  const scrollRef = useRef<ScrollView>(null);
+  const scrollRef = useRef<ScrollViewInstance>(null);
   const cardOffsets = useRef<Record<number, number>>({});
 
   if (places !== placesAnteriores) {

@@ -39,7 +39,7 @@ export function useRoteiros() {
       openGenerate();
       router.setParams({ openGenerate: undefined });
     }
-  }, [params.openGenerate]);
+  }, [params.openGenerate, router]);
 
   const reload = useCallback(() => {
     if (userId) useItineraryStore.getState().fetchAllItineraries(userId);
