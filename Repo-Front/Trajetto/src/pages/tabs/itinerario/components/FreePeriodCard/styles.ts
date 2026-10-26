@@ -17,7 +17,6 @@ export const styles = (colors: AppColors) =>
       paddingHorizontal: 14,
       paddingVertical: 12,
     },
-    icon: { fontSize: 24 },
     textBox: { flex: 1 },
     title: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.gray900 },
     text: { fontSize: 12, color: colors.gray600, marginTop: 2, lineHeight: 17 },

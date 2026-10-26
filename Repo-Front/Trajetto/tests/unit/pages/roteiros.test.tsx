@@ -63,7 +63,7 @@ describe('meus roteiros', () => {
     expect(await screen.findByText('ROTEIRO ATIVO')).toBeTruthy();
     expect(screen.getByText('Roteiro Roma, dia 10/11')).toBeTruthy();
     expect(screen.getByText('Viagem 2')).toBeTruthy();
-    expect(screen.getByText('Olá, Ana 👋')).toBeTruthy();
+    expect(screen.getByText('Olá, Ana')).toBeTruthy();
     expect(screen.getByText('Dia 1 de 2')).toBeTruthy();
 
     await fireEvent.press(screen.getByText('Abrir Roteiro'));

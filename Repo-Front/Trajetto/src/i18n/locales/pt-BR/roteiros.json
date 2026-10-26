@@ -5,7 +5,7 @@
     "selectedCount_other": "{{count}} selecionados",
     "selectAll": "Todos",
     "title": "Meus Roteiros",
-    "greeting": "Olá, {{name}} 👋"
+    "greeting": "Olá, {{name}}"
   },
   "adminBanners": {
     "adminPanel": "Painel Administrador",

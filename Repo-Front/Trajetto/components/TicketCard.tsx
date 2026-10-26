@@ -6,23 +6,6 @@ import { categoryLabel } from '@/src/helpers/categoryIcon';
 import { AppColors, useColors } from '@/src/theme';
 import { formatOpeningHours, formatTime, placeName } from '@/src/i18n/format';
 
-function categoryIcon(category: string): string {
-    const c = (category || '').toLowerCase();
-    if (c.includes('museum')) return '🏛️';
-    if (c.includes('monument')) return '🗿';
-    if (c.includes('castle')) return '🏰';
-    if (c.includes('church')) return '⛪';
-    if (c.includes('park')) return '🌳';
-    if (c.includes('square')) return '🏙️';
-    if (c.includes('fountain')) return '⛲';
-    if (c.includes('ruins')) return '🏚️';
-    if (c.includes('art')) return '🎨';
-    if (c.includes('view')) return '🌄';
-    if (c.includes('restaurant') || c.includes('food')) return '🍽️';
-    if (c.includes('cafe') || c.includes('coffee')) return '☕';
-    return '📍';
-}
-
 
 interface TicketCardProps {
     place: {
@@ -73,11 +56,6 @@ export function TicketCard({
                 <View style={ticketStyles.headerLeft}>
                     <Text style={ticketStyles.stopLabel}>{t('ticketCard.stopLabel')}</Text>
                     <Text style={ticketStyles.stopNumber}>{String(idx + 1).padStart(2, '0')}</Text>
-                </View>
-                <View style={ticketStyles.headerCenter}>
-                    <Text style={ticketStyles.categoryEmoji}>
-                        {categoryIcon(place.category ?? '')}
-                    </Text>
                 </View>
                 <View style={ticketStyles.headerRight}>
                     <Text style={ticketStyles.timeLabel}>{t('ticketCard.timeLabel')}</Text>
@@ -277,13 +255,11 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
         paddingVertical: 10,
     },
     headerLeft: { flex: 1 },
-    headerCenter: { alignItems: 'center', paddingHorizontal: 12 },
     headerRight: { flex: 1, alignItems: 'flex-end' },
     stopLabel: { fontSize: 9, fontWeight: '700', color: colors.onPrimaryFaint70, letterSpacing: 1 },
     stopNumber: { fontSize: 22, fontWeight: '900', color: colors.onPrimary, letterSpacing: -0.5 },
     timeLabel: { fontSize: 9, fontWeight: '700', color: colors.onPrimaryFaint70, letterSpacing: 1 },
     timeValue: { fontSize: 18, fontWeight: '800', color: colors.onPrimary },
-    categoryEmoji: { fontSize: 28 },
 
 
     perforationRow: {

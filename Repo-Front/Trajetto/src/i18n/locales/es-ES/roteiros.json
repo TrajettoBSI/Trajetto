@@ -5,7 +5,7 @@
     "selectedCount_other": "{{count}} seleccionados",
     "selectAll": "Todos",
     "title": "Mis Itinerarios",
-    "greeting": "Hola, {{name}} 👋"
+    "greeting": "Hola, {{name}}"
   },
   "adminBanners": {
     "adminPanel": "Panel Administrador",

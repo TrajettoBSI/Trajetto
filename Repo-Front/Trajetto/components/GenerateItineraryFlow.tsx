@@ -43,10 +43,10 @@ type Step = 'config' | 'loading' | 'preview';
 
 const MAX_DAYS = 7;
 
-const PACES: { id: TravelPace; icon: string; multiDayOnly: boolean }[] = [
-  { id: 'INTENSO', icon: '🔥', multiDayOnly: false },
-  { id: 'EQUILIBRADO', icon: '⚖️', multiDayOnly: true },
-  { id: 'LEVE', icon: '🌿', multiDayOnly: false },
+const PACES: { id: TravelPace; multiDayOnly: boolean }[] = [
+  { id: 'INTENSO', multiDayOnly: false },
+  { id: 'EQUILIBRADO', multiDayOnly: true },
+  { id: 'LEVE', multiDayOnly: false },
 ];
 
 const fromIsoDate = (iso: string) => new Date(`${iso}T00:00:00`);
@@ -606,7 +606,6 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                       accessibilityRole="radio"
                       accessibilityState={{ selected: active }}
                     >
-                      <Text style={styles.paceIcon}>{option.icon}</Text>
                       <View style={styles.paceTextBox}>
                         <Text style={[styles.paceTitle, active && styles.paceTitleActive]}>
                           {t(`roteiros:generateFlow.paces.${option.id}.title`)}
@@ -730,7 +729,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 })}
                 {freePeriod(day.places) && (
                   <Text style={styles.previewFreePeriod}>
-                    🌿 {t(`itinerario:freePeriod.${freePeriod(day.places)!.period}.title`)}
+                    {t(`itinerario:freePeriod.${freePeriod(day.places)!.period}.title`)}
                   </Text>
                 )}
               </View>
@@ -857,7 +856,6 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
     backgroundColor: colors.white,
   },
   paceOptionActive: { borderColor: colors.primary, backgroundColor: colors.backgroundMuted },
-  paceIcon: { fontSize: 22 },
   paceTextBox: { flex: 1 },
   paceTitle: { fontSize: Platform.OS === 'ios' ? 15 : 17, fontWeight: '700', color: colors.text },
   paceTitleActive: { color: colors.primary },

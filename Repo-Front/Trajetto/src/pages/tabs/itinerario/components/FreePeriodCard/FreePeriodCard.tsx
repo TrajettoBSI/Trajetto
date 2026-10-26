@@ -15,7 +15,6 @@ export default function FreePeriodCard({ period }: { period: FreePeriod['period'
         <View style={s.railLine} />
       </View>
       <View style={s.card}>
-        <Text style={s.icon}>🌿</Text>
         <View style={s.textBox}>
           <Text style={s.title}>{t(`freePeriod.${period}.title`)}</Text>
           <Text style={s.text}>{t(`freePeriod.${period}.text`)}</Text>
