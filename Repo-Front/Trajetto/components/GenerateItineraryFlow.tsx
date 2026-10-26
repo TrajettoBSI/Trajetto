@@ -729,7 +729,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 })}
                 {freePeriod(day.places) && (
                   <Text style={styles.previewFreePeriod}>
-                    🌿 {t(`itinerario:freePeriod.${freePeriod(day.places)!.period}.title`)}
+                    {t(`itinerario:freePeriod.${freePeriod(day.places)!.period}.title`)}
                   </Text>
                 )}
               </View>
