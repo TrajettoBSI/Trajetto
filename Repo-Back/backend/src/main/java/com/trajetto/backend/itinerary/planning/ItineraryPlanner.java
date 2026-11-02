@@ -73,6 +73,16 @@ public class ItineraryPlanner {
     static final double PAID_PENALTY = 6.0;
     /** "Quero ver o Coliseu": o lugar passa na frente de todos. */
     static final double MUST_INCLUDE_BONUS = 100.0;
+    /**
+     * Quantos dos lugares de dia vao, por fama, para os primeiros dias (o resto entra por
+     * proximidade em qualquer dia) e quanto de cada dia eles podem ocupar. Medido nos 200
+     * roteiros do benchmark: os 3 mais famosos caem no 1o dia em 87% dos roteiros (antes, 34%)
+     * por 9% a mais de caminho; com todos por fama seriam 94%, mas com 17% a mais de caminho,
+     * porque os dias passam a atravessar a cidade.
+     */
+    static final double FAMOUS_SHARE = 0.25;
+    static final double FAMOUS_PER_DAY = 0.5;
+
     /** Ao ajustar um roteiro, as paradas atuais levam um pouco de vantagem: o resto nao muda a toa. */
     static final double KEEP_BONUS = 1.0;
 
@@ -188,6 +198,9 @@ public class ItineraryPlanner {
                 .toList();
         List<CatalogPlace> eveningPool = pick(eveningRanked, eveningSlots, chosen);
         List<CatalogPlace> dayPool = pick(visits, totalSlots - eveningSlots, chosen);
+        // Os mais famosos nos primeiros dias: quem encurta a viagem ou cansa no fim ja viu o principal.
+        List<List<CatalogPlace>> dayBuckets = byFame(dayPool, schedule, pins, false, FAMOUS_SHARE, FAMOUS_PER_DAY);
+        List<List<CatalogPlace>> eveningBuckets = byFame(eveningPool, schedule, pins, true, 1, 1);
 
         boolean anyRain = weather.values().stream().anyMatch(DayWeather::rainy);
         Point origin = new Point(req.startLatitude(), req.startLongitude());
@@ -220,16 +233,31 @@ public class ItineraryPlanner {
                     continue;
                 }
                 boolean evening = !time.isBefore(EVENING);
-                List<CatalogPlace> pool = evening && !eveningPool.isEmpty() ? eveningPool : dayPool;
+                List<List<CatalogPlace>> buckets = evening && !isEmpty(eveningBuckets) ? eveningBuckets : dayBuckets;
                 // Os proximos horarios do dia que ainda usam a mesma lista (o dia ou a noite).
                 List<LocalTime> later = times.subList(slot + 1, times.size()).stream()
                         .filter(t -> !t.isBefore(EVENING) == evening)
                         .filter(t -> !pins.containsKey(new Slot(dayIndex, t))).toList();
-                // Um museu fechado as segundas nao entra na segunda: entre os ja escolhidos, vale o
-                // mais perto que esteja aberto no horario; se nenhum estiver, busca outro na lista geral.
-                Optional<CatalogPlace> next = nearestOpen(pool, curLat, curLng, date, time, later, weatherFit);
+                // Primeiro, os lugares reservados para este dia. Um museu fechado as segundas nao
+                // entra na segunda: vale o de um dos proximos dias que esteja aberto; se nenhum
+                // estiver, busca outro na lista geral.
+                List<CatalogPlace> today = buckets.get(day);
+                List<CatalogPlace> shared = buckets.get(days);
+                List<CatalogPlace> upcoming = buckets.subList(day + 1, buckets.size()).stream()
+                        .flatMap(List::stream).toList();
+                Optional<CatalogPlace> next = nearestOpen(today, curLat, curLng, date, time, later, weatherFit);
+                if (next.isEmpty()) next = nearestOpen(shared, curLat, curLng, date, time, later, weatherFit);
+                // Chuva e o dia so tem lugar ao ar livre: traz um coberto de outro dia (e vice-versa
+                // no dia seco de uma viagem com chuva).
+                if (weatherFit != null && next.filter(weatherFit).isEmpty()) {
+                    Optional<CatalogPlace> fits = nearestOpen(upcoming, curLat, curLng, date, time, List.of(), weatherFit)
+                            .filter(weatherFit);
+                    if (fits.isPresent()) next = fits;
+                }
+                if (next.isEmpty()) next = nearestOpen(upcoming, curLat, curLng, date, time, List.of(), weatherFit);
                 if (next.isPresent()) {
-                    pool.remove(next.get());
+                    CatalogPlace taken = next.get();
+                    buckets.forEach(bucket -> bucket.remove(taken));
                 } else {
                     next = nearestOpen(evening ? reserve(ranked, chosen, eveningFit) : reserve(visits, chosen, place -> true),
                             curLat, curLng, date, time, List.of(), weatherFit);
@@ -240,6 +268,10 @@ public class ItineraryPlanner {
                 curLat = next.get().latitude();
                 curLng = next.get().longitude();
             }
+
+            // O famoso que sobrou do dia (fechado no horario, por exemplo) passa para o dia seguinte.
+            carryOver(dayBuckets, day);
+            carryOver(eveningBuckets, day);
 
             greedyKm += RouteOptimizer.pathKm(origin, null, dayStops, stop -> point(stop.place()));
             Map<LocalTime, CatalogPlace> dayPins = new HashMap<>();
@@ -312,6 +344,44 @@ public class ItineraryPlanner {
             if (slot.isPresent() && markChosen(place, chosen)) pins.put(slot.get(), place);
         }
         return pins;
+    }
+
+    /**
+     * Reparte os lugares pelos dias por fama. Os mais populares (a fracao {@code share} da
+     * lista) vao para os primeiros dias, ocupando no maximo a fracao {@code perDay} dos
+     * horarios livres de cada dia; o resto fica numa lista comum, no indice {@code dias},
+     * de onde cada dia completa os horarios pela proximidade.
+     */
+    private static List<List<CatalogPlace>> byFame(List<CatalogPlace> pool, List<List<LocalTime>> schedule,
+                                                   Map<Slot, CatalogPlace> pins, boolean evening,
+                                                   double share, double perDay) {
+        List<CatalogPlace> famous = pool.stream()
+                .sorted(Comparator.comparingInt(CatalogPlace::popularity).reversed()).toList();
+        int famousCount = (int) Math.ceil(famous.size() * share);
+        List<List<CatalogPlace>> buckets = new ArrayList<>();
+        int next = 0;
+        for (int day = 0; day < schedule.size(); day++) {
+            final int d = day;
+            long free = schedule.get(day).stream()
+                    .filter(t -> !t.isBefore(EVENING) == evening)
+                    .filter(t -> !pins.containsKey(new Slot(d, t)))
+                    .count();
+            int end = (int) Math.min(famousCount, next + Math.ceil(free * perDay));
+            buckets.add(new ArrayList<>(famous.subList(next, end)));
+            next = end;
+        }
+        buckets.add(new ArrayList<>(famous.subList(next, famous.size())));
+        return buckets;
+    }
+
+    private static boolean isEmpty(List<List<CatalogPlace>> buckets) {
+        return buckets.stream().allMatch(List::isEmpty);
+    }
+
+    private static void carryOver(List<List<CatalogPlace>> buckets, int day) {
+        if (day + 1 >= buckets.size()) return;
+        buckets.get(day + 1).addAll(0, buckets.get(day));
+        buckets.get(day).clear();
     }
 
     /** Dia pedido (1 e o primeiro, -1 o ultimo) para o indice a partir de 0, dentro da viagem. */

@@ -69,6 +69,25 @@ class ItineraryPlannerTest {
     }
 
     @Test
+    @DisplayName("Os lugares mais famosos do roteiro ficam nos primeiros dias")
+    void famososNosPrimeirosDias() {
+        int noPrimeiroDia = 0;
+        int total = 0;
+        for (long semente = 0; semente < 20; semente++) {
+            List<Stop> stops = planejar(TripPreferences.NONE, Map.of(), true, semente).stops();
+            List<Stop> maisFamosos = stops.stream()
+                    .sorted(java.util.Comparator.comparingInt((Stop s) -> s.place().popularity()).reversed())
+                    .limit(3).toList();
+            for (Stop stop : maisFamosos) {
+                total++;
+                if (stop.date().equals(INICIO)) noPrimeiroDia++;
+                assertFalse(stop.date().isAfter(INICIO.plusDays(1)), stop.place().name() + " ficou no " + stop.date());
+            }
+        }
+        assertTrue(noPrimeiroDia >= total * 0.8, noPrimeiroDia + " de " + total + " no primeiro dia");
+    }
+
+    @Test
     @DisplayName("Depois do 2-opt, nenhum lugar fica num horario em que esta fechado")
     void otimizacaoRespeitaHorarios() {
         for (long semente = 0; semente < 20; semente++) {
