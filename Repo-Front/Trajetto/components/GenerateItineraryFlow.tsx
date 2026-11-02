@@ -20,7 +20,7 @@ import Svg, { Circle } from 'react-native-svg';
 import { useTranslation } from 'react-i18next';
 import * as Location from 'expo-location';
 import * as Haptics from 'expo-haptics';
-import DateTimePicker, { DateTimePickerAndroid, DateTimePickerEvent } from '@react-native-community/datetimepicker';
+import DateTimePicker, { DateTimePickerAndroid, DateTimePickerChangeEvent } from '@react-native-community/datetimepicker';
 import { useAuth } from '../context/AuthContext';
 import { City, cityService, PlaceSuggestion, searchAddresses, TravelPace } from '../services';
 import { getErrorMessage } from '../utils/apiError';
@@ -244,9 +244,10 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   const availablePaces = PACES.filter((p) => days > 1 || !p.multiDayOnly);
   const effectivePace = availablePaces.some((p) => p.id === pace) ? pace : 'INTENSO';
 
-  const handlePickDate = (event: DateTimePickerEvent, date?: Date) => {
+  // So chamado quando uma data e escolhida; fechar o calendario sem escolher nao chama.
+  const handlePickDate = (_event: DateTimePickerChangeEvent, date: Date) => {
     if (Platform.OS === 'ios') setShowIosCalendar(false);
-    if (event.type === 'set' && date) setStartDate(toIsoDate(date));
+    setStartDate(toIsoDate(date));
   };
 
   const openCalendar = () => {
@@ -256,7 +257,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
         value: fromIsoDate(startDate),
         mode: 'date',
         minimumDate: new Date(),
-        onChange: handlePickDate,
+        onValueChange: handlePickDate,
       });
     } else {
       setShowIosCalendar(v => !v);
@@ -561,7 +562,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     mode="date"
                     display="inline"
                     minimumDate={new Date()}
-                    onChange={handlePickDate}
+                    onValueChange={handlePickDate}
                     accentColor={colors.primary}
                     themeVariant="light"
                   />

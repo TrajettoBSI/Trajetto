@@ -28,8 +28,8 @@ jest.mock('expo-location', () => ({
 
 jest.mock('@react-native-community/datetimepicker', () => {
   const { Text, TouchableOpacity } = require('react-native');
-  const Picker = ({ onChange }: { onChange: (event: { type: string }, date?: Date) => void }) => (
-    <TouchableOpacity testID="date-picker" onPress={() => onChange({ type: 'set' }, new Date(2026, 10, 20))}>
+  const Picker = ({ onValueChange }: { onValueChange: (event: object, date: Date) => void }) => (
+    <TouchableOpacity testID="date-picker" onPress={() => onValueChange({}, new Date(2026, 10, 20))}>
       <Text>calendario</Text>
     </TouchableOpacity>
   );
