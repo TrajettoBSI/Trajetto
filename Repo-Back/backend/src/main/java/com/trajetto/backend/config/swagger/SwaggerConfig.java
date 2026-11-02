@@ -102,8 +102,7 @@ public class SwaggerConfig {
                         tag("Rotas", "Trajetos entre pontos do mapa (a pé, de carro e transporte público)"),
                         tag("Pontos turísticos (Overpass)", "Busca direta no OpenStreetMap, fora do catálogo"),
                         tag("Painel gerencial", "Indicadores agregados do painel administrativo")))
-                .components(new Components()
-                        .schemas(new LinkedHashMap<>(ModelConverters.getInstance().readAll(ApiError.class))));
+                .components(new Components());
     }
 
     /**
@@ -113,6 +112,14 @@ public class SwaggerConfig {
     @Bean
     public OpenApiCustomizer standardErrorResponses() {
         return openApi -> {
+            // Registrado aqui, e não no bean OpenAPI: nenhum controller devolve ApiError
+            // diretamente, então o springdoc o descartaria como schema não usado, e as
+            // referências abaixo ficariam quebradas na página.
+            if (openApi.getComponents() == null) {
+                openApi.setComponents(new Components());
+            }
+            ModelConverters.getInstance().readAll(ApiError.class).forEach(openApi.getComponents()::addSchemas);
+
             if (openApi.getPaths() == null) {
                 return;
             }
