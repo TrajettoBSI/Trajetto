@@ -38,7 +38,7 @@ export const quizData: QuizData = {
       pontuacao: {
         sim: { SOCIAL: 2, AVENTUREIRO: 1 },
         nao: { SOLITARIO: 2, NATUREZA: 1 },
-        nao_sei: { RELAXAMENTO: 1, AVENTUREIRO: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -48,7 +48,7 @@ export const quizData: QuizData = {
       pontuacao: {
         sim: { CULTURAL: 3 },
         nao: { AVENTUREIRO: 1, LUXO: 1 },
-        nao_sei: { CULTURAL: 1, MOCHILEIRO: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -58,7 +58,7 @@ export const quizData: QuizData = {
       pontuacao: {
         sim: { AVENTUREIRO: 3, NATUREZA: 2 },
         nao: { LUXO: 2, CULTURAL: 1 },
-        nao_sei: { NATUREZA: 1, RELAXAMENTO: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -79,7 +79,7 @@ export const quizData: QuizData = {
       pontuacao: {
         sim: { CULTURAL: 1, LUXO: 2 },
         nao: { AVENTUREIRO: 2, SOCIAL: 1 },
-        nao_sei: { CULTURAL: 1, RELAXAMENTO: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -89,7 +89,7 @@ export const quizData: QuizData = {
       pontuacao: {
         sim: { LUXO: 3 },
         nao: { AVENTUREIRO: 1, MOCHILEIRO: 2 },
-        nao_sei: { RELAXAMENTO: 1, CULTURAL: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -108,9 +108,9 @@ export const quizData: QuizData = {
       texto: 'questions.8',
       tipo: 'sim_nao',
       pontuacao: {
-        sim: { CULTURAL: 2, AVENTUREIRO: 1, MOCHILEIRO: 1 },
+        sim: { AVENTUREIRO: 2, MOCHILEIRO: 2 },
         nao: { LUXO: 1, RELAXAMENTO: 1 },
-        nao_sei: { CULTURAL: 1, RELAXAMENTO: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -120,7 +120,7 @@ export const quizData: QuizData = {
       pontuacao: {
         sim: { SOLITARIO: 3, MOCHILEIRO: 1 },
         nao: { SOCIAL: 2, RELAXAMENTO: 1 },
-        nao_sei: { MOCHILEIRO: 1, AVENTUREIRO: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -141,7 +141,7 @@ export const quizData: QuizData = {
       pontuacao: {
         sim: { AVENTUREIRO: 2, MOCHILEIRO: 2 },
         nao: { LUXO: 1, CULTURAL: 1 },
-        nao_sei: { RELAXAMENTO: 1, MOCHILEIRO: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -151,7 +151,7 @@ export const quizData: QuizData = {
       pontuacao: {
         sim: { NATUREZA: 3, AVENTUREIRO: 1 },
         nao: { LUXO: 1, SOCIAL: 1 },
-        nao_sei: { NATUREZA: 1, RELAXAMENTO: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -159,7 +159,7 @@ export const quizData: QuizData = {
       texto: 'questions.13',
       tipo: 'multipla_escolha',
       opcoes: [
-        { letra: 'A', texto: 'questions.13_options.A', pontuacao: { RELAXAMENTO: 3, LUXO: 1 } },
+        { letra: 'A', texto: 'questions.13_options.A', pontuacao: { RELAXAMENTO: 2, SOLITARIO: 2 } },
         { letra: 'B', texto: 'questions.13_options.B', pontuacao: { CULTURAL: 2, MOCHILEIRO: 2 } },
         { letra: 'C', texto: 'questions.13_options.C', pontuacao: { NATUREZA: 2, AVENTUREIRO: 2 } },
         { letra: 'D', texto: 'questions.13_options.D', pontuacao: { SOCIAL: 3 } }
@@ -172,7 +172,7 @@ export const quizData: QuizData = {
       pontuacao: {
         sim: { SOCIAL: 3, AVENTUREIRO: 1 },
         nao: { SOLITARIO: 1, CULTURAL: 1 },
-        nao_sei: { SOCIAL: 1, CULTURAL: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -204,7 +204,7 @@ export const quizData: QuizData = {
       pontuacao: {
         sim: { AVENTUREIRO: 2, CULTURAL: 1 },
         nao: { RELAXAMENTO: 2, SOLITARIO: 1 },
-        nao_sei: { RELAXAMENTO: 1, CULTURAL: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -223,9 +223,9 @@ export const quizData: QuizData = {
       texto: 'questions.19',
       tipo: 'sim_nao',
       pontuacao: {
-        sim: { CULTURAL: 3 },
+        sim: { CULTURAL: 2, SOLITARIO: 1 },
         nao: { AVENTUREIRO: 1, RELAXAMENTO: 1 },
-        nao_sei: { CULTURAL: 1, MOCHILEIRO: 1 }
+        nao_sei: {}
       }
     },
     {
@@ -261,6 +261,54 @@ export function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export function calcularPerfil(scores: Record<string, number>): string {
-  return Object.entries(scores).reduce((a, b) => a[1] > b[1] ? a : b)[0];
+const respostas = (pergunta: Pergunta): Record<string, number>[] => (pergunta.tipo === 'sim_nao'
+  ? Object.values(pergunta.pontuacao ?? {})
+  : (pergunta.opcoes ?? []).map((op) => op.pontuacao));
+
+/**
+ * O maximo que cada perfil consegue nas perguntas feitas: em cada pergunta, a resposta que
+ * mais pontua aquele perfil. Serve de base para comparar perfis que aparecem em mais ou em
+ * menos perguntas.
+ */
+export function pontosPossiveis(perguntas: Pergunta[]): Record<string, number> {
+  const max: Record<string, number> = {};
+  perguntas.forEach((pergunta) => {
+    const melhor: Record<string, number> = {};
+    respostas(pergunta).forEach((r) => Object.entries(r).forEach(([perfil, v]) => {
+      melhor[perfil] = Math.max(melhor[perfil] ?? 0, v);
+    }));
+    Object.entries(melhor).forEach(([perfil, v]) => { max[perfil] = (max[perfil] ?? 0) + v; });
+  });
+  return max;
+}
+
+/**
+ * Sorteia as perguntas do teste garantindo que cada perfil apareca em pelo menos `minimo`
+ * delas: sem isso, um teste podia nao ter nenhuma pergunta capaz de dar Solitario.
+ */
+export function escolherPerguntas(perguntas: Pergunta[], quantas: number, minimo = 2): Pergunta[] {
+  const perfis = Object.keys(quizData.perfis);
+  let escolhidas = shuffle(perguntas).slice(0, quantas);
+  for (let tentativa = 0; tentativa < 200; tentativa++) {
+    const cobertura = (perfil: string) => escolhidas.filter((p) => respostas(p).some((r) => (r[perfil] ?? 0) > 0)).length;
+    if (perfis.every((perfil) => cobertura(perfil) >= minimo)) return escolhidas;
+    escolhidas = shuffle(perguntas).slice(0, quantas);
+  }
+  return escolhidas;
+}
+
+/**
+ * O perfil com a maior pontuacao. Com `possiveis`, compara a proporcao de cada perfil
+ * (pontos feitos / pontos que dava para fazer), para nao favorecer os perfis que aparecem
+ * em mais perguntas; no empate, vale quem fez mais pontos.
+ */
+export function calcularPerfil(scores: Record<string, number>, possiveis?: Record<string, number>): string {
+  const nota = (perfil: string) => {
+    if (!possiveis) return scores[perfil];
+    return possiveis[perfil] ? scores[perfil] / possiveis[perfil] : 0;
+  };
+  return Object.keys(scores).reduce((a, b) => {
+    if (nota(b) !== nota(a)) return nota(b) > nota(a) ? b : a;
+    return scores[b] > scores[a] ? b : a;
+  });
 }

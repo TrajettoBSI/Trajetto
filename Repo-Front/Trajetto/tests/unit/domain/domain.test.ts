@@ -3,7 +3,7 @@ import { freePeriod } from '@/src/domain/itinerary/freePeriod';
 import { mealSlots, MEALS } from '@/src/domain/itinerary/mealSlots';
 import { selectAlternatives } from '@/src/domain/alternatives/selectAlternatives';
 import { applyAnswerScore } from '@/src/domain/quiz/applyAnswerScore';
-import { calcularPerfil, quizData, shuffle } from '@/data/quizData';
+import { calcularPerfil, escolherPerguntas, pontosPossiveis, quizData, shuffle } from '@/data/quizData';
 import { Place } from '@/services';
 
 const parada = (orderIndex: number, estimatedVisitTime: string, visitDate?: string) =>
@@ -96,5 +96,56 @@ describe('quiz do perfil de viajante', () => {
   it('o perfil final e o de maior pontuacao, e o embaralhamento preserva os itens', () => {
     expect(calcularPerfil({ SOCIAL: 2, CULTURAL: 5, LUXO: 1 })).toBe('CULTURAL');
     expect(shuffle([1, 2, 3, 4]).sort()).toEqual([1, 2, 3, 4]);
+  });
+
+  it('"nao sei dizer" nao puxa para nenhum perfil', () => {
+    quizData.perguntas.filter((p) => p.tipo === 'sim_nao').forEach((p) => {
+      expect(applyAnswerScore(p, 'nao_sei', { SOCIAL: 1 })).toEqual({ SOCIAL: 1 });
+    });
+  });
+
+  it('compara a proporcao do que cada perfil podia fazer, nao os pontos brutos', () => {
+    // Cultural fez mais pontos, mas tinha 12 possiveis; Solitario fez tudo o que podia.
+    const possiveis = { CULTURAL: 12, SOLITARIO: 4 };
+    expect(calcularPerfil({ CULTURAL: 6, SOLITARIO: 4 }, possiveis)).toBe('SOLITARIO');
+    // Empate na proporcao: vale quem fez mais pontos.
+    expect(calcularPerfil({ CULTURAL: 6, SOLITARIO: 2 }, possiveis)).toBe('CULTURAL');
+    // Perfil que nao aparecia em nenhuma pergunta nao ganha.
+    expect(calcularPerfil({ CULTURAL: 1, LUXO: 0 }, { CULTURAL: 3, LUXO: 0 })).toBe('CULTURAL');
+  });
+
+  it('o maximo de cada perfil soma a melhor resposta para ele em cada pergunta', () => {
+    const [p4] = quizData.perguntas.filter((p) => p.id === 4);
+    const [p12] = quizData.perguntas.filter((p) => p.id === 12);
+    expect(pontosPossiveis([p4, p12])).toEqual({
+      RELAXAMENTO: 3, NATUREZA: 3 + 3, CULTURAL: 3, SOCIAL: 3 + 1, AVENTUREIRO: 1, LUXO: 1,
+    });
+  });
+
+  it('o sorteio sempre tem pelo menos duas perguntas que podem dar cada perfil', () => {
+    const perfis = Object.keys(quizData.perfis);
+    for (let i = 0; i < 50; i++) {
+      const sorteadas = escolherPerguntas(quizData.perguntas, 10);
+      expect(sorteadas).toHaveLength(10);
+      expect(new Set(sorteadas.map((p) => p.id)).size).toBe(10);
+      const possiveis = pontosPossiveis(sorteadas);
+      perfis.forEach((perfil) => expect(possiveis[perfil]).toBeGreaterThan(0));
+    }
+  });
+
+  it('quem responde sempre como um perfil cai nesse perfil', () => {
+    const perfis = Object.keys(quizData.perfis);
+    perfis.forEach((alvo) => {
+      const sorteadas = escolherPerguntas(quizData.perguntas, 10);
+      const scores = sorteadas.reduce((acc, p) => {
+        const escolhas = p.tipo === 'sim_nao'
+          ? Object.keys(p.pontuacao!)
+          : p.opcoes!.map((op) => op.letra);
+        const valor = (r: string) => (p.tipo === 'sim_nao' ? p.pontuacao![r][alvo] : p.opcoes!.find((op) => op.letra === r)!.pontuacao[alvo]) ?? 0;
+        const melhor = escolhas.reduce((a, b) => (valor(b) > valor(a) ? b : a));
+        return applyAnswerScore(p, melhor, acc);
+      }, Object.fromEntries(perfis.map((perfil) => [perfil, 0])) as Record<string, number>);
+      expect(calcularPerfil(scores, pontosPossiveis(sorteadas))).toBe(alvo);
+    });
   });
 });
