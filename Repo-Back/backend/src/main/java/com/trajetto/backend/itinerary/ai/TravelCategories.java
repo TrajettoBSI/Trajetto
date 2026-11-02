@@ -5,9 +5,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * As categorias do catalogo de pontos turisticos e como o viajante costuma chama-las. Serve a
- * IA (que recebe a lista para escolher os ids) e o interpretador por regras (que procura as
- * palavras no pedido).
+ * As categorias do catalogo de pontos turisticos e como o viajante costuma chama-las. O
+ * interpretador por regras procura essas palavras no pedido.
  */
 final class TravelCategories {
 

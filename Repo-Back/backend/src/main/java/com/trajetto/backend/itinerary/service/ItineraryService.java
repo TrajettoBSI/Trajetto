@@ -7,7 +7,6 @@ import com.trajetto.backend.itinerary.data.CityCatalog.CatalogPlace;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.trajetto.backend.itinerary.ai.PreferenceInterpreter;
-import com.trajetto.backend.itinerary.ai.PreferenceInterpreter.Interpretation;
 import com.trajetto.backend.itinerary.dto.AddPlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.AdjustItineraryRequestDTO;
 import com.trajetto.backend.itinerary.planning.ItineraryPlanner;
@@ -49,8 +48,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.IdentityHashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.Random;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
@@ -175,17 +176,16 @@ public class ItineraryService {
                 : cityCatalog.city(req.getCity())
                         .orElseThrow(() -> new InvalidRequestException("Cidade não atendida: " + req.getCity()));
 
-        Interpretation interpretation = preferenceInterpreter.interpret(req.getRequest(), city.name(), List.of());
         int days = req.getDays() == null ? 1 : req.getDays();
+        TripPreferences prefs = preferenceInterpreter.interpret(req.getRequest(), cityCatalog.placesOf(city));
         LocalDate startDate = req.getStartDate() == null ? LocalDate.now() : req.getStartDate();
         ItineraryModel itinerary = buildItinerary(user, city, req.getStartLatitude(), req.getStartLongitude(),
                 startDate, days, req.getPace(), ItineraryNames.normalize(req.getName()),
-                interpretation.preferences(), Map.of());
+                prefs, Map.of(), Set.of());
 
         ItineraryResponseDTO dto = toDTO(itinerary);
         if (req.getRequest() != null && !req.getRequest().isBlank()) {
-            dto.setAssistantSummary(interpretation.preferences().summary());
-            dto.setAssistantSource(interpretation.source().name());
+            dto.setAssistantSummary(prefs.summary());
         }
         return dto;
     }
@@ -206,25 +206,25 @@ public class ItineraryService {
         CityCatalog.City city = cityCatalog.city(slug)
                 .orElseThrow(() -> new InvalidRequestException("Cidade não atendida: " + slug));
 
-        List<String> stops = byVisitOrder(current).stream().map(PlaceModel::getName).toList();
-        Interpretation interpretation = preferenceInterpreter.interpret(req.getRequest(), city.name(), stops);
-        TripPreferences merged = readPreferences(current).then(interpretation.preferences());
-
         LocalDate start = current.getStartDate() == null ? LocalDate.now() : current.getStartDate();
         LocalDate end = current.getEndDate() == null ? start : current.getEndDate();
         int days = (int) Math.min(GenerateItineraryRequestDTO.MAX_DAYS, Math.max(1, ChronoUnit.DAYS.between(start, end) + 1));
+
+        TripPreferences requested = preferenceInterpreter.interpret(req.getRequest(), cityCatalog.placesOf(city));
+        TripPreferences merged = readPreferences(current).then(requested);
         TravelPace pace = parsePace(current.getPace());
 
         Map<String, String> notes = current.getPlaces().stream()
                 .filter(p -> p.getNote() != null && p.getXid() != null)
                 .collect(Collectors.toMap(PlaceModel::getXid, PlaceModel::getNote, (a, b) -> a));
 
+        Set<String> keep = current.getPlaces().stream().map(PlaceModel::getXid)
+                .filter(Objects::nonNull).collect(Collectors.toSet());
         ItineraryModel itinerary = buildItinerary(current.getUser(), city, current.getOriginLatitude(),
-                current.getOriginLongitude(), start, days, pace, current.getName(), merged, notes);
+                current.getOriginLongitude(), start, days, pace, current.getName(), merged, notes, keep);
 
         ItineraryResponseDTO dto = toDTO(itinerary);
-        dto.setAssistantSummary(interpretation.preferences().summary());
-        dto.setAssistantSource(interpretation.source().name());
+        dto.setAssistantSummary(requested.summary());
         return dto;
     }
 
@@ -234,7 +234,7 @@ public class ItineraryService {
      */
     private ItineraryModel buildItinerary(UserModel user, CityCatalog.City city, double startLat, double startLng,
                                           LocalDate startDate, int days, TravelPace pace, String name,
-                                          TripPreferences prefs, Map<String, String> notesByXid) {
+                                          TripPreferences prefs, Map<String, String> notesByXid, Set<String> keep) {
         TravelPace effectivePace = prefs.pace().isEmpty() ? (pace == null ? TravelPace.INTENSO : pace)
                 : TravelPace.valueOf(prefs.pace());
         Map<LocalDate, DayWeather> weather = weatherService.forecast(city.latitude(), city.longitude(),
@@ -242,7 +242,7 @@ public class ItineraryService {
 
         String profile = user.getTravelerProfile();
         ItineraryPlanner.Plan plan = planner.plan(new ItineraryPlanner.Request(city, profile, startLat, startLng,
-                startDate, days, effectivePace, prefs, weather, true), random);
+                startDate, days, effectivePace, prefs, weather, true, keep), random);
 
         deactivateActiveItineraries(user);
 

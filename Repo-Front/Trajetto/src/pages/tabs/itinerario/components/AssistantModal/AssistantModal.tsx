@@ -34,6 +34,7 @@ export default function AssistantModal({
     ...(preferences?.lessCategories ?? []).map((c) => ({ key: `less-${c}`, label: t('assistant.less', { category: t(`assistant.categories.${c}`, { defaultValue: c }) }), positive: false })),
     ...(preferences?.avoidPaid ? [{ key: 'free', label: t('assistant.onlyFree'), positive: true }] : []),
     ...(preferences?.mustInclude ?? []).map((n) => ({ key: `inc-${n}`, label: n, positive: true })),
+    ...(preferences?.placements ?? []).map((p) => ({ key: `pin-${p.place}`, label: p.place, positive: true })),
     ...(preferences?.exclude ?? []).map((n) => ({ key: `exc-${n}`, label: t('assistant.without', { name: n }), positive: false })),
   ];
 
@@ -75,10 +76,6 @@ export default function AssistantModal({
                   </View>
                   <View style={s.botBubble}>
                     <Text style={s.botText}>{reply.summary}</Text>
-                    <View style={s.sourceRow}>
-                      <Ionicons name={reply.source === 'IA' ? 'sparkles' : 'flash-outline'} size={12} color={colors.textSubtle} />
-                      <Text style={s.sourceText}>{t(reply.source === 'IA' ? 'assistant.sourceAi' : 'assistant.sourceRules')}</Text>
-                    </View>
                   </View>
                 </View>
               ))}

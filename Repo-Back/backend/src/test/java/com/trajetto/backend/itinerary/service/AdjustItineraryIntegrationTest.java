@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/** Ajuste por texto livre; nos testes nao ha chave da IA, entao vale o interpretador por regras. */
+/** Ajuste do roteiro por pedido em texto livre. */
 @SpringBootTest
 @Transactional
 class AdjustItineraryIntegrationTest {
@@ -75,7 +75,6 @@ class AdjustItineraryIntegrationTest {
     void gerarComPedido() {
         ItineraryResponseDTO roteiro = gerar("quero mais museus");
 
-        assertEquals("REGRAS", roteiro.getAssistantSource());
         assertFalse(roteiro.getAssistantSummary().isBlank());
         assertTrue(roteiro.getPreferences().moreCategories().contains("museum"));
         assertEquals("EQUILIBRADO", roteiro.getPace());
@@ -102,6 +101,35 @@ class AdjustItineraryIntegrationTest {
         List<ItineraryResponseDTO> todos = itineraryService.getAllItineraries(USUARIO);
         assertEquals(2, todos.size());
         assertEquals(1, todos.stream().filter(ItineraryResponseDTO::getActive).count());
+    }
+
+    @Test
+    @DisplayName("'Fontana di Trevi no ultimo dia, de manha' coloca a fonte nesse dia e periodo, uma vez so")
+    void colocaLugarNoDiaEPeriodoPedidos() {
+        ItineraryResponseDTO original = gerar(null);
+
+        ItineraryResponseDTO ajustado = itineraryService.adjustItinerary(original.getId(), USUARIO,
+                pedido("coloca a fontana di trevi no último dia, na parte da manhã"));
+
+        List<PlaceResponseDTO> trevi = ajustado.getPlaces().stream()
+                .filter(p -> p.getName().equals("Fontana di Trevi")).toList();
+        assertEquals(1, trevi.size());
+        assertEquals(ajustado.getEndDate(), trevi.get(0).getVisitDate());
+        assertTrue(trevi.get(0).getEstimatedVisitTime().isBefore(java.time.LocalTime.NOON));
+        assertTrue(ajustado.getAssistantSummary().contains("Fontana di Trevi"));
+    }
+
+    @Test
+    @DisplayName("Um ajuste so de horario mantem a maior parte das paradas do roteiro")
+    void ajustePontualMantemORoteiro() {
+        ItineraryResponseDTO original = gerar(null);
+
+        ItineraryResponseDTO ajustado = itineraryService.adjustItinerary(original.getId(), USUARIO,
+                pedido("Fontana di Trevi no primeiro dia à noite"));
+
+        List<String> antes = original.getPlaces().stream().map(PlaceResponseDTO::getXid).toList();
+        long mantidas = ajustado.getPlaces().stream().filter(p -> antes.contains(p.getXid())).count();
+        assertTrue(mantidas >= antes.size() - 2, "mantidas " + mantidas + " de " + antes.size());
     }
 
     @Test

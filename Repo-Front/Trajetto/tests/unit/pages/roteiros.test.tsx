@@ -219,7 +219,7 @@ describe('gerar roteiro', () => {
   };
 
   it('busca o endereco, configura data, dias e ritmo, gera e aceita', async () => {
-    svc.generateItinerary.mockResolvedValue({ ...gerado, assistantSummary: 'Mais museus e um ritmo tranquilo.', assistantSource: 'IA' });
+    svc.generateItinerary.mockResolvedValue({ ...gerado, assistantSummary: 'Mais museus e um ritmo tranquilo.' });
     const { onAccept } = await abrir();
 
     await escolherCidade();

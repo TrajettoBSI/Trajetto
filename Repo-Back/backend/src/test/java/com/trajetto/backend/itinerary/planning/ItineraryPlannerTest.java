@@ -48,6 +48,27 @@ class ItineraryPlannerTest {
     }
 
     @Test
+    @DisplayName("Lugar pedido para um dia e periodo fica la, mesmo depois do 2-opt, e aparece uma vez so")
+    void lugarFicaNoDiaEPeriodoPedidos() {
+        for (long semente = 0; semente < 20; semente++) {
+            TripPreferences prefs = new TripPreferences(List.of(), List.of(), false, "", List.of(), List.of(), "",
+                    List.of(new TripPreferences.Placement("Fontana di Trevi", -1, "MANHA"),
+                            new TripPreferences.Placement("Colosseo", 1, "TARDE")));
+            List<Stop> stops = planejar(prefs, Map.of(), true, semente).stops();
+
+            List<Stop> trevi = stops.stream().filter(s -> s.place().name().equals("Fontana di Trevi")).toList();
+            assertEquals(1, trevi.size());
+            assertEquals(INICIO.plusDays(2), trevi.get(0).date());
+            assertTrue(ItineraryPlanner.inPeriod(trevi.get(0).time(), "MANHA"), trevi.get(0).time().toString());
+
+            List<Stop> coliseu = stops.stream().filter(s -> s.place().name().equals("Colosseo")).toList();
+            assertEquals(1, coliseu.size());
+            assertEquals(INICIO, coliseu.get(0).date());
+            assertTrue(ItineraryPlanner.inPeriod(coliseu.get(0).time(), "TARDE"), coliseu.get(0).time().toString());
+        }
+    }
+
+    @Test
     @DisplayName("Depois do 2-opt, nenhum lugar fica num horario em que esta fechado")
     void otimizacaoRespeitaHorarios() {
         for (long semente = 0; semente < 20; semente++) {

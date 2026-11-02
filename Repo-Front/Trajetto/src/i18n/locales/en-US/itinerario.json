@@ -137,7 +137,7 @@
     "transitHint": "better by transit"
   },
   "assistant": {
-    "fab": "Adjust with AI",
+    "fab": "Adjust itinerary",
     "open": "Open the itinerary assistant",
     "title": "Itinerary assistant",
     "subtitle": "Tell me in your own words what to change. I will rebuild the itinerary.",
@@ -150,8 +150,6 @@
     "send": "Send request",
     "thinking": "Rebuilding your itinerary...",
     "hint": "The previous version stays in your history.",
-    "sourceAi": "Understood by AI",
-    "sourceRules": "Understood in offline mode",
     "defaultReply": "Done! I created a new version of the itinerary.",
     "error": "Could not adjust the itinerary right now.",
     "suggestions": {

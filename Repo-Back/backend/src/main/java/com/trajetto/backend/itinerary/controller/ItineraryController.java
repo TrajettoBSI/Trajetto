@@ -155,9 +155,9 @@ public class ItineraryController {
     }
 
     @Operation(summary = "Ajusta o roteiro com um pedido em texto livre",
-            description = "Interpreta o pedido (ex.: \"menos igrejas, mais comida de rua\") com IA e gera uma nova versão "
+            description = "Interpreta o pedido (ex.: \"menos igrejas, mais comida de rua\") por palavras-chave e gera uma nova versão "
                     + "do roteiro na mesma cidade, datas e ponto de partida. Os pedidos se acumulam; a versão anterior "
-                    + "fica no histórico. Sem IA configurada, um interpretador por palavras-chave assume.")
+                    + "fica no histórico.")
     @ApiResponse(responseCode = "200", description = "Nova versão do roteiro, com a resposta do assistente em assistantSummary")
     @ApiResponse(responseCode = "400", description = "Pedido vazio ou longo demais")
     @ApiResponse(responseCode = "403", description = "O roteiro é de outro usuário")

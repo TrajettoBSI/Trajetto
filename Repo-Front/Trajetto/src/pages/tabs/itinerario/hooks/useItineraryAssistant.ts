@@ -8,7 +8,6 @@ export const REQUEST_MAX_LENGTH = 500;
 export type AssistantReply = {
   request: string;
   summary: string;
-  source: 'IA' | 'REGRAS';
 };
 
 export function useItineraryAssistant() {
@@ -39,7 +38,6 @@ export function useItineraryAssistant() {
       setReplies((prev) => [...prev, {
         request,
         summary: adjusted.assistantSummary || t('assistant.defaultReply'),
-        source: adjusted.assistantSource === 'IA' ? 'IA' : 'REGRAS',
       }]);
       setDraft('');
     } catch (e) {

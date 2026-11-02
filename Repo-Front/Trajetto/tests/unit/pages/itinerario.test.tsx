@@ -328,21 +328,20 @@ describe('itinerario', () => {
 
   it('ajusta o roteiro com o assistente: sugestao, pedido digitado, preferencias aplicadas e erro', async () => {
     const ajustado: Itinerary = {
-      ...roteiro, id: 8, assistantSummary: 'Tirei as igrejas e coloquei mais museus.', assistantSource: 'IA',
+      ...roteiro, id: 8, assistantSummary: 'Tirei as igrejas e coloquei mais museus.',
       preferences: { moreCategories: ['museum'], lessCategories: ['historic_church'], avoidPaid: true, pace: '', mustInclude: ['Coliseu'], exclude: ['Pantheon'] },
     };
     svc.adjustItinerary.mockResolvedValueOnce(ajustado)
-      .mockResolvedValueOnce({ ...ajustado, id: 9, assistantSummary: null, assistantSource: 'REGRAS' })
+      .mockResolvedValueOnce({ ...ajustado, id: 9, assistantSummary: null })
       .mockRejectedValueOnce(networkError());
     await render(<Itinerario />);
 
-    await fireEvent.press(screen.getByText('Ajustar com IA'));
+    await fireEvent.press(screen.getByText('Ajustar roteiro'));
     expect(screen.getByText('Assistente do roteiro')).toBeTruthy();
     await fireEvent.press(screen.getByText('Menos igrejas, mais museus'));
 
     expect(await screen.findByText('Tirei as igrejas e coloquei mais museus.')).toBeTruthy();
     expect(svc.adjustItinerary).toHaveBeenCalledWith(7, 'Menos igrejas, mais museus');
-    expect(screen.getByText('Interpretado por IA')).toBeTruthy();
     expect(useItineraryStore.getState().itinerary?.id).toBe(8);
     expect(useItineraryStore.getState().itineraries.filter((i) => i.active)).toHaveLength(1);
     expect(screen.getByText('mais museus')).toBeTruthy();
@@ -354,7 +353,6 @@ describe('itinerario', () => {
     await fireEvent.changeText(screen.getByPlaceholderText(/menos igrejas, mais comida de rua/), 'com calma');
     await fireEvent.press(screen.getByLabelText('Enviar pedido'));
     expect(await screen.findByText('Pronto! Gerei uma nova versão do roteiro.')).toBeTruthy();
-    expect(screen.getByText('Interpretado no modo offline')).toBeTruthy();
 
     await fireEvent.changeText(screen.getByPlaceholderText(/menos igrejas, mais comida de rua/), 'mais bares');
     await fireEvent.press(screen.getByLabelText('Enviar pedido'));

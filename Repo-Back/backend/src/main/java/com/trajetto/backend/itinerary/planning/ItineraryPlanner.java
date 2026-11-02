@@ -16,6 +16,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
@@ -72,6 +73,8 @@ public class ItineraryPlanner {
     static final double PAID_PENALTY = 6.0;
     /** "Quero ver o Coliseu": o lugar passa na frente de todos. */
     static final double MUST_INCLUDE_BONUS = 100.0;
+    /** Ao ajustar um roteiro, as paradas atuais levam um pouco de vantagem: o resto nao muda a toa. */
+    static final double KEEP_BONUS = 1.0;
 
     /**
      * Os lugares mais famosos da cidade ganham o mesmo bonus de quem combina com o perfil: o
@@ -101,11 +104,24 @@ public class ItineraryPlanner {
      * @param weather  previsao por dia; dias sem previsao sao planejados sem levar o tempo em conta
      * @param optimize se aplica o 2-opt depois da construcao gulosa (o benchmark compara os dois)
      */
+    /**
+     * @param keep xids das paradas do roteiro que esta sendo ajustado; vazio num roteiro novo
+     */
     public record Request(CityCatalog.City city, String profile, double startLatitude, double startLongitude,
                           LocalDate startDate, int days, TravelPace pace, TripPreferences preferences,
-                          Map<LocalDate, DayWeather> weather, boolean optimize) {}
+                          Map<LocalDate, DayWeather> weather, boolean optimize, Set<String> keep) {
+
+        public Request(CityCatalog.City city, String profile, double startLatitude, double startLongitude,
+                       LocalDate startDate, int days, TravelPace pace, TripPreferences preferences,
+                       Map<LocalDate, DayWeather> weather, boolean optimize) {
+            this(city, profile, startLatitude, startLongitude, startDate, days, pace, preferences, weather, optimize, Set.of());
+        }
+    }
 
     public record Stop(CatalogPlace place, LocalDate date, LocalTime time) {}
+
+    /** Um horario do roteiro: o dia (a partir de 0) e a hora. */
+    private record Slot(int day, LocalTime time) {}
 
     /**
      * @param greedyKm    caminho total (soma dos dias, em linha reta) da construcao gulosa
@@ -120,6 +136,7 @@ public class ItineraryPlanner {
         boolean hasProfile = profile != null && !profile.equals("SKIPPED");
         TripPreferences prefs = req.preferences() == null ? TripPreferences.NONE : req.preferences();
         Map<LocalDate, DayWeather> weather = req.weather() == null ? Map.of() : req.weather();
+        Set<String> keep = req.keep() == null ? Set.of() : req.keep();
 
         List<CatalogPlace> candidates = cityCatalog.placesOf(req.city()).stream()
                 .filter(place -> !MEAL_CATEGORIES.contains(place.category()))
@@ -139,7 +156,8 @@ public class ItineraryPlanner {
                     ? PROFILE_BONUS : 0.0;
             double randomScore = random.nextDouble() * 0.5;
             double distKm = RouteOptimizer.km(new Point(req.startLatitude(), req.startLongitude()), point(place));
-            double score = popularityScore + profileScore + randomScore - (distKm * 0.15)
+            double keepScore = keep.contains(PlaceXid.of(place.name())) ? KEEP_BONUS : 0.0;
+            double score = popularityScore + profileScore + randomScore + keepScore - (distKm * 0.15)
                     + preferenceScore(place, prefs, wanted);
             return new ScoredPlace(place, score);
         }).sorted(Comparator.comparingDouble(ScoredPlace::score).reversed())
@@ -148,8 +166,12 @@ public class ItineraryPlanner {
         int days = req.days();
         TravelPace pace = req.pace() == null ? TravelPace.INTENSO : req.pace();
         List<List<LocalTime>> schedule = IntStream.range(0, days).mapToObj(pace::visitTimes).toList();
-        long eveningSlots = schedule.stream().flatMap(List::stream).filter(t -> !t.isBefore(EVENING)).count();
-        long totalSlots = schedule.stream().mapToLong(List::size).sum();
+        // "Fontana di Trevi no ultimo dia, de manha": esses horarios ja saem preenchidos.
+        Set<String> chosen = new HashSet<>();
+        Map<Slot, CatalogPlace> pins = pin(candidates, prefs.placements(), schedule, req.startDate(), chosen);
+        long pinnedEvening = pins.keySet().stream().filter(slot -> !slot.time().isBefore(EVENING)).count();
+        long eveningSlots = schedule.stream().flatMap(List::stream).filter(t -> !t.isBefore(EVENING)).count() - pinnedEvening;
+        long totalSlots = schedule.stream().mapToLong(List::size).sum() - pins.size();
 
         List<CatalogPlace> ranked = scored.stream().map(ScoredPlace::place).toList();
         // De dia, cada lugar vira a sua visita principal: quem pontuou com a Piramide do Louvre
@@ -160,7 +182,6 @@ public class ItineraryPlanner {
         boolean nightlife = hasProfile && NIGHTLIFE_PROFILES.contains(profile);
         Predicate<CatalogPlace> eveningFit = place -> isEveningPlace(place)
                 || (nightlife && NIGHTLIFE.contains(place.category()));
-        Set<String> chosen = new HashSet<>();
         // Para quem gosta da vida noturna, bar e pub passam na frente das pracas famosas a noite.
         List<CatalogPlace> eveningRanked = ranked.stream().filter(eveningFit)
                 .sorted(Comparator.comparing((CatalogPlace place) -> !(nightlife && NIGHTLIFE.contains(place.category()))))
@@ -188,13 +209,22 @@ public class ItineraryPlanner {
                     : null;
             List<LocalTime> times = schedule.get(day);
             List<Stop> dayStops = new ArrayList<>();
+            final int dayIndex = day;
             for (int slot = 0; slot < times.size(); slot++) {
                 LocalTime time = times.get(slot);
+                CatalogPlace pinned = pins.get(new Slot(day, time));
+                if (pinned != null) {
+                    dayStops.add(new Stop(pinned, date, time));
+                    curLat = pinned.latitude();
+                    curLng = pinned.longitude();
+                    continue;
+                }
                 boolean evening = !time.isBefore(EVENING);
                 List<CatalogPlace> pool = evening && !eveningPool.isEmpty() ? eveningPool : dayPool;
                 // Os proximos horarios do dia que ainda usam a mesma lista (o dia ou a noite).
                 List<LocalTime> later = times.subList(slot + 1, times.size()).stream()
-                        .filter(t -> !t.isBefore(EVENING) == evening).toList();
+                        .filter(t -> !t.isBefore(EVENING) == evening)
+                        .filter(t -> !pins.containsKey(new Slot(dayIndex, t))).toList();
                 // Um museu fechado as segundas nao entra na segunda: entre os ja escolhidos, vale o
                 // mais perto que esteja aberto no horario; se nenhum estiver, busca outro na lista geral.
                 Optional<CatalogPlace> next = nearestOpen(pool, curLat, curLng, date, time, later, weatherFit);
@@ -212,7 +242,11 @@ public class ItineraryPlanner {
             }
 
             greedyKm += RouteOptimizer.pathKm(origin, null, dayStops, stop -> point(stop.place()));
-            List<Stop> improved = req.optimize() ? optimizeDay(origin, dayStops) : dayStops;
+            Map<LocalTime, CatalogPlace> dayPins = new HashMap<>();
+            pins.forEach((slot, place) -> {
+                if (slot.day() == dayIndex) dayPins.put(slot.time(), place);
+            });
+            List<Stop> improved = req.optimize() ? optimizeDay(origin, dayStops, dayPins) : dayStops;
             optimizedKm += RouteOptimizer.pathKm(origin, null, improved, stop -> point(stop.place()));
             ordered.addAll(improved);
         }
@@ -221,9 +255,9 @@ public class ItineraryPlanner {
 
     /**
      * 2-opt nas paradas do dia; a da noite fica fixa no fim. Cada lugar so pode ir para um
-     * horario em que esteja aberto.
+     * horario em que esteja aberto, e os lugares pedidos para um horario nao saem dele.
      */
-    private List<Stop> optimizeDay(Point origin, List<Stop> dayStops) {
+    private List<Stop> optimizeDay(Point origin, List<Stop> dayStops, Map<LocalTime, CatalogPlace> pinned) {
         List<Stop> daytime = dayStops.stream().filter(s -> s.time().isBefore(EVENING)).toList();
         List<Stop> evening = dayStops.stream().filter(s -> !s.time().isBefore(EVENING)).toList();
         if (daytime.size() < 2) return dayStops;
@@ -234,12 +268,65 @@ public class ItineraryPlanner {
         List<Stop> best = RouteOptimizer.twoOpt(origin, end, daytime, stop -> point(stop.place()),
                 candidate -> IntStream.range(0, candidate.size()).allMatch(j ->
                         OpeningHours.statusAt(candidate.get(j).place().openingHours(), date, slots.get(j), VISIT_LENGTH)
-                                != Status.CLOSED));
+                                != Status.CLOSED
+                                && (!pinned.containsKey(slots.get(j)) || pinned.get(slots.get(j)) == candidate.get(j).place())));
 
         List<Stop> result = new ArrayList<>();
         for (int j = 0; j < best.size(); j++) result.add(new Stop(best.get(j).place(), date, slots.get(j)));
         result.addAll(evening);
         return result;
+    }
+
+    /**
+     * Prende cada lugar pedido num dia e periodo ao primeiro horario livre em que ele esteja
+     * aberto. Sem horario no periodo, vale qualquer horario livre do dia pedido; sem dia
+     * pedido, o primeiro dia que tiver horario no periodo.
+     */
+    private Map<Slot, CatalogPlace> pin(List<CatalogPlace> candidates, List<TripPreferences.Placement> placements,
+                                        List<List<LocalTime>> schedule, LocalDate start, Set<String> chosen) {
+        Map<Slot, CatalogPlace> pins = new HashMap<>();
+        int days = schedule.size();
+        for (TripPreferences.Placement placement : placements) {
+            Optional<CatalogPlace> found = candidates.stream().filter(place -> matchesName(place, placement.place()))
+                    .max(Comparator.comparingInt(CatalogPlace::popularity));
+            if (found.isEmpty()) continue;
+            CatalogPlace place = found.get();
+            List<Integer> dayOptions = placement.day() == 0 ? IntStream.range(0, days).boxed().toList()
+                    : List.of(dayIndex(placement.day(), days));
+            Optional<Slot> slot = Optional.empty();
+            for (int day : dayOptions) {
+                LocalDate date = start.plusDays(day);
+                List<LocalTime> free = schedule.get(day).stream()
+                        .filter(t -> !pins.containsKey(new Slot(day, t)))
+                        .filter(t -> OpeningHours.statusAt(place.openingHours(), date, t, VISIT_LENGTH) != Status.CLOSED)
+                        .toList();
+                Optional<LocalTime> time = free.stream().filter(t -> inPeriod(t, placement.period())).findFirst();
+                if (time.isEmpty() && placement.day() != 0 && !free.isEmpty()) {
+                    time = Optional.of("NOITE".equals(placement.period()) ? free.get(free.size() - 1) : free.get(0));
+                }
+                if (time.isPresent()) {
+                    slot = Optional.of(new Slot(day, time.get()));
+                    break;
+                }
+            }
+            if (slot.isPresent() && markChosen(place, chosen)) pins.put(slot.get(), place);
+        }
+        return pins;
+    }
+
+    /** Dia pedido (1 e o primeiro, -1 o ultimo) para o indice a partir de 0, dentro da viagem. */
+    static int dayIndex(int day, int days) {
+        int index = day > 0 ? day - 1 : days + day;
+        return Math.max(0, Math.min(days - 1, index));
+    }
+
+    static boolean inPeriod(LocalTime time, String period) {
+        return switch (period) {
+            case "MANHA" -> time.isBefore(LocalTime.NOON);
+            case "TARDE" -> !time.isBefore(LocalTime.NOON) && time.isBefore(EVENING);
+            case "NOITE" -> !time.isBefore(EVENING);
+            default -> true;
+        };
     }
 
     private double preferenceScore(CatalogPlace place, TripPreferences prefs, Set<CatalogPlace> wanted) {

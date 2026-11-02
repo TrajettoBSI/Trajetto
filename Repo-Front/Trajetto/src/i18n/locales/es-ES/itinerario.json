@@ -137,7 +137,7 @@
     "transitHint": "mejor en transporte"
   },
   "assistant": {
-    "fab": "Ajustar con IA",
+    "fab": "Ajustar itinerario",
     "open": "Abrir el asistente del itinerario",
     "title": "Asistente del itinerario",
     "subtitle": "Dime con tus palabras qué quieres cambiar. Rehago el itinerario.",
@@ -150,8 +150,6 @@
     "send": "Enviar pedido",
     "thinking": "Rehaciendo tu itinerario...",
     "hint": "La versión anterior queda guardada en el historial.",
-    "sourceAi": "Interpretado por IA",
-    "sourceRules": "Interpretado en modo offline",
     "defaultReply": "¡Listo! Generé una nueva versión del itinerario.",
     "error": "No fue posible ajustar el itinerario ahora.",
     "suggestions": {

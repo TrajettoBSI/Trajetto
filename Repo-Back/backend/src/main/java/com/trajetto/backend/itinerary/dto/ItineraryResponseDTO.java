@@ -49,10 +49,8 @@ public class ItineraryResponseDTO {
     @Schema(description = "Pedidos em texto livre já interpretados e aplicados ao roteiro", nullable = true)
     private com.trajetto.backend.itinerary.planning.TripPreferences preferences;
 
-    /** So na resposta da geracao/ajuste por texto livre: o que a IA entendeu do pedido. */
+    /** So na resposta da geracao/ajuste por texto livre: o que o assistente entendeu do pedido. */
     @Schema(description = "Resposta do assistente ao pedido em texto livre (só na geração e no ajuste)", nullable = true)
     private String assistantSummary;
 
-    @Schema(description = "Quem interpretou o pedido: IA ou REGRAS (só na geração e no ajuste)", example = "IA", nullable = true)
-    private String assistantSource;
 }

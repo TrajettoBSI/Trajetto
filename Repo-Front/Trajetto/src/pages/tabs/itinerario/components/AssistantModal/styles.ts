@@ -48,7 +48,6 @@ export const styles = (colors: AppColors) =>
     },
     botText: { color: colors.gray900, fontSize: 14, lineHeight: 20 },
     sourceRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: 6 },
-    sourceText: { fontSize: 11, color: colors.textSubtle },
     suggestion: {
       borderWidth: 1.5, borderColor: colors.primaryBorder, backgroundColor: colors.primarySurface,
       borderRadius: 16, paddingHorizontal: 12, paddingVertical: 8,

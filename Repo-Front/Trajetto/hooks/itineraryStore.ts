@@ -37,6 +37,7 @@ export interface TripPreferences {
   pace: string;
   mustInclude: string[];
   exclude: string[];
+  placements?: { place: string; day: number; period: '' | 'MANHA' | 'TARDE' | 'NOITE' }[];
 }
 
 export interface Itinerary {
@@ -62,7 +63,6 @@ export interface Itinerary {
   preferences?: TripPreferences | null;
   /** So na resposta da geracao/ajuste por texto livre: o que o assistente entendeu. */
   assistantSummary?: string | null;
-  assistantSource?: 'IA' | 'REGRAS' | null;
 }
 
 type ItineraryStore = {

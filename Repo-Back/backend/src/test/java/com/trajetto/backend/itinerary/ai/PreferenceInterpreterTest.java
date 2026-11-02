@@ -1,7 +1,5 @@
 package com.trajetto.backend.itinerary.ai;
 
-import com.trajetto.backend.itinerary.ai.PreferenceInterpreter.Interpretation;
-import com.trajetto.backend.itinerary.ai.PreferenceInterpreter.Source;
 import com.trajetto.backend.itinerary.planning.TripPreferences;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,16 +12,57 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class PreferenceInterpreterTest {
 
+    private static final com.trajetto.backend.itinerary.data.CityCatalog CATALOG =
+            new com.trajetto.backend.itinerary.data.CityCatalog(new com.fasterxml.jackson.databind.ObjectMapper());
+    private static final List<com.trajetto.backend.itinerary.data.CityCatalog.CatalogPlace> ROMA =
+            CATALOG.placesOf(CATALOG.city("roma").orElseThrow());
+
     @Test
-    @DisplayName("Sem chave da API, o pedido e interpretado pelas regras")
-    void semChaveUsaAsRegras() {
-        PreferenceInterpreter interpreter = new PreferenceInterpreter("");
+    @DisplayName("Pedido vazio nao muda nada; pedido com texto vira preferencias")
+    void interpretaPedido() {
+        PreferenceInterpreter interpreter = new PreferenceInterpreter();
 
-        Interpretation result = interpreter.interpret("mais museus", "Roma", List.of());
+        assertEquals(TripPreferences.NONE, interpreter.interpret("  ", ROMA));
+        assertTrue(interpreter.interpret("mais museus", ROMA).moreCategories().contains("museum"));
+    }
 
-        assertFalse(interpreter.aiEnabled());
-        assertEquals(Source.REGRAS, result.source());
-        assertTrue(result.preferences().moreCategories().contains("museum"));
+    @Test
+    @DisplayName("Regras: acha o lugar pelo nome e o dia e o periodo pedidos para ele")
+    void regrasAchamLugarDiaEPeriodo() {
+        TripPreferences prefs = RuleBasedInterpreter.interpret(
+                "coloca a fontana di trevi no último dia, na parte da manhã", ROMA);
+
+        assertEquals(List.of(new TripPreferences.Placement("Fontana di Trevi", -1, "MANHA")), prefs.placements());
+        assertTrue(prefs.mustInclude().isEmpty());
+        assertTrue(prefs.moreCategories().isEmpty());
+        assertTrue(prefs.summary().contains("Fontana di Trevi no último dia, de manhã"));
+    }
+
+    @Test
+    @DisplayName("Regras: lugar pelo nome em portugues, para incluir ou tirar, sem confundir com categoria")
+    void regrasIncluemETiramLugares() {
+        TripPreferences prefs = RuleBasedInterpreter.interpret("quero ver o Coliseu, tira o Pantheon e mais museus", ROMA);
+
+        assertEquals(List.of("Colosseo"), prefs.mustInclude());
+        assertEquals(List.of("Pantheon"), prefs.exclude());
+        assertTrue(prefs.moreCategories().contains("museum"));
+
+        TripPreferences segundoDia = RuleBasedInterpreter.interpret("Trevi Fountain on day 2 in the afternoon", ROMA);
+        assertEquals(List.of(new TripPreferences.Placement("Fontana di Trevi", 2, "TARDE")), segundoDia.placements());
+    }
+
+    @Test
+    @DisplayName("Um pedido novo de horario para o mesmo lugar substitui o anterior e tira o lugar da lista de evitar")
+    void novoHorarioSubstituiOAnterior() {
+        TripPreferences antes = new TripPreferences(List.of(), List.of(), false, "", List.of(), List.of("Fontana di Trevi"),
+                "", List.of(new TripPreferences.Placement("Colosseo", 1, "TARDE")));
+        TripPreferences depois = antes.then(new TripPreferences(List.of(), List.of(), false, "", List.of(), List.of(), "",
+                List.of(new TripPreferences.Placement("colosseo", 2, "MANHA"),
+                        new TripPreferences.Placement("Fontana di Trevi", -1, "NOITE"))));
+
+        assertEquals(2, depois.placements().size());
+        assertEquals(2, depois.placements().get(0).day());
+        assertTrue(depois.exclude().isEmpty());
     }
 
     @Test
@@ -56,20 +95,6 @@ class PreferenceInterpreterTest {
         assertTrue(en.lessCategories().contains("historic_church"));
         assertTrue(RuleBasedInterpreter.interpret("without churches").lessCategories().contains("historic_church"));
         assertTrue(RuleBasedInterpreter.interpret("sin iglesias").lessCategories().contains("historic_church"));
-    }
-
-    @Test
-    @DisplayName("A resposta da IA passa por um filtro: categoria inventada e ritmo invalido sao descartados")
-    void saidaDaIaESanitizada() {
-        TripPreferences raw = new TripPreferences(List.of("museum", "disco"), List.of("historic_church"), false,
-                "RAPIDO", List.of("Coliseu"), List.of(), "");
-
-        TripPreferences clean = PreferenceInterpreter.sanitize(raw);
-
-        assertEquals(List.of("museum"), clean.moreCategories());
-        assertEquals("", clean.pace());
-        assertEquals(List.of("Coliseu"), clean.mustInclude());
-        assertFalse(clean.summary().isBlank(), "sem resumo da IA, o resumo vem das regras");
     }
 
     @Test

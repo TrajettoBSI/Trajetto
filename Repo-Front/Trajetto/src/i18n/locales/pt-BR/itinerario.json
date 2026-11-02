@@ -137,7 +137,7 @@
     "transitHint": "melhor de transporte"
   },
   "assistant": {
-    "fab": "Ajustar com IA",
+    "fab": "Ajustar roteiro",
     "open": "Abrir o assistente do roteiro",
     "title": "Assistente do roteiro",
     "subtitle": "Diga com suas palavras o que quer mudar. Eu refaço o roteiro.",
@@ -150,8 +150,6 @@
     "send": "Enviar pedido",
     "thinking": "Refazendo seu roteiro...",
     "hint": "A versão anterior fica salva no histórico.",
-    "sourceAi": "Interpretado por IA",
-    "sourceRules": "Interpretado no modo offline",
     "defaultReply": "Pronto! Gerei uma nova versão do roteiro.",
     "error": "Não foi possível ajustar o roteiro agora.",
     "suggestions": {

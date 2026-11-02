@@ -52,7 +52,7 @@ GenerateItineraryRequestDTO {
     @Size(max = ItineraryNames.MAX_LENGTH, message = "O nome do roteiro pode ter no máximo " + ItineraryNames.MAX_LENGTH + " caracteres")
     private String name;
 
-    /** Como o viajante quer a viagem, com as proprias palavras; interpretado pela IA. */
+    /** Como o viajante quer a viagem, com as proprias palavras; interpretado por palavras-chave. */
     @Schema(description = "Como o viajante quer a viagem, em texto livre", example = "Quero museus e comida de rua, nada de igrejas", nullable = true)
     @Size(max = AdjustItineraryRequestDTO.MAX_LENGTH, message = "O pedido pode ter no máximo " + AdjustItineraryRequestDTO.MAX_LENGTH + " caracteres")
     private String request;

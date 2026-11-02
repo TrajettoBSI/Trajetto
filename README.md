@@ -52,7 +52,7 @@ O projeto é o **Trabalho de Conclusão de Curso (TCC)** do curso de **Sistemas 
 - Rota otimizada: construção gulosa + melhoria 2-opt que respeita o horário de funcionamento
   (31% menos caminho que uma ordem sem critério; ver o [benchmark](Repo-Back/backend/docs/BENCHMARK-DE-ROTAS.md))
 - Roteiro que considera o clima: em dia de chuva, museus e lugares cobertos primeiro
-- Ajuste do roteiro em linguagem natural ("menos igrejas, mais comida de rua"), interpretado por IA
+- Ajuste do roteiro em linguagem natural ("menos igrejas, mais comida de rua", "Fontana di Trevi no último dia, de manhã"), interpretado por palavras-chave, sem serviço pago
 - Modo viagem: próxima parada, contagem regressiva, distância a pé e progresso do dia
 - Edição do roteiro: trocar, incluir, remover e reordenar paradas, anotar e dar nome
 - Mapa com o trajeto e instruções a pé, de carro e de transporte público
@@ -107,8 +107,7 @@ Arquitetura **cliente-servidor**:
                      └───────────────────────────┘            └──────────────────────────────┘
 
 Serviços externos: OpenRouteService (rotas), Overpass/OpenStreetMap, Wikidata/Wikimedia
-(fotos), Open-Meteo (previsão do tempo), API da Anthropic (Claude, interpreta pedidos em texto
-livre) e Gmail SMTP (códigos de verificação).
+(fotos), Open-Meteo (previsão do tempo) e Gmail SMTP (códigos de verificação).
 ```
 
 ## Tecnologias
@@ -217,7 +216,6 @@ cp secrets.properties.example secrets.properties   # o secrets.properties é ign
 | `JWT_SECRET` | chave do token, com 32+ caracteres — gere com `openssl rand -hex 32` |
 | `ADMIN_PASSWORD` | senha do administrador criado na primeira subida |
 | `ors.api.key` | chave gratuita do [OpenRouteService](https://openrouteservice.org/dev/#/signup) |
-| `ANTHROPIC_API_KEY` | opcional: chave da [API da Anthropic](https://console.anthropic.com/); sem ela, os pedidos em texto livre são interpretados por palavras-chave |
 
 Cada chave também pode vir de uma variável de ambiente com o mesmo nome. Também são
 configuráveis por variável: `DB_HOST`, `DB_PORT`, `DB_NAME`, `MONGO_HOST`, `MONGO_PORT`,
