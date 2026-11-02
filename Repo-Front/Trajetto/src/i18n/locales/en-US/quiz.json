@@ -136,5 +136,11 @@
       "descricao": "You travel to find yourself, not to get lost in crowds. Introspection, silence and a deep connection with the place are what make a trip perfect.",
       "destinos": ["Scotland", "Tibet", "Finnish Lapland", "Atacama Desert"]
     }
+  },
+  "firstTrip": {
+    "kicker": "Your first trip",
+    "title": "How about {{city}}?",
+    "body": "It matches your profile. Build an itinerary in under a minute.",
+    "cta": "Build my itinerary"
   }
 }

@@ -25,6 +25,12 @@ import OptionPickerModal from '@/src/components/OptionPickerModal/OptionPickerMo
 import { freePeriod } from '@/src/domain/itinerary/freePeriod';
 import { itineraryTitle } from '@/src/i18n/format';
 import { cityImage } from '@/src/helpers/cityImage';
+import InsightsCard from './components/InsightsCard/InsightsCard';
+import TravelLeg from './components/TravelLeg/TravelLeg';
+import AssistantModal from './components/AssistantModal/AssistantModal';
+import OfflineBanner from '@/src/pages/tabs/shared/components/OfflineBanner/OfflineBanner';
+import ShareSheet from '@/src/components/share/ShareSheet';
+import ItineraryStoryCard from '@/src/components/share/ItineraryStoryCard';
 
 const TAB_BAR_SPACE = 64 + 4 + 24;
 
@@ -71,6 +77,11 @@ export default function Itinerario() {
     edit,
     rename,
     rating,
+    assistant,
+    savings,
+    dayWeather,
+    share,
+    shareCardRef,
   } = useItinerario();
 
   return (
@@ -105,22 +116,24 @@ export default function Itinerario() {
                 </TouchableOpacity>
                 <TouchableOpacity
                   style={s.headerExportBtn}
-                  onPress={handleExportPDF}
+                  onPress={share.open}
                   activeOpacity={0.8}
                   accessibilityRole="button"
-                  accessibilityLabel={t('exportPdf')}
+                  accessibilityLabel={t('share.button')}
                 >
-                  <Ionicons name="download-outline" size={18} color={colors.onPrimary} />
-                  <Text style={s.headerExportText}>{t('exportPdfShort')}</Text>
+                  <Ionicons name="share-social-outline" size={18} color={colors.onPrimary} />
+                  <Text style={s.headerExportText}>{t('share.buttonShort')}</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <ScrollView
               ref={scrollRef}
               style={s.container}
-              contentContainerStyle={[s.content, { paddingBottom: insets.bottom + TAB_BAR_SPACE }]}
+              contentContainerStyle={[s.content, { paddingBottom: insets.bottom + TAB_BAR_SPACE + 64 }]}
               showsVerticalScrollIndicator={false}
             >
+              <OfflineBanner />
+
               <ItineraryHeaderCard
                 title={itineraryTitle(roteiro)}
                 image={cityImage(roteiro.city)}
@@ -139,6 +152,10 @@ export default function Itinerario() {
                 onSelect={selectDay}
                 style={s.daySelector}
               />
+
+              {!edit.editing && (
+                <InsightsCard savings={savings} weather={dayWeather} />
+              )}
 
               <Text style={s.sectionLabel}>
                 {days.length > 1 && currentDay
@@ -161,6 +178,9 @@ export default function Itinerario() {
                     {mealSuggestions.filter((m) => m.insertAt === idx).map((m) => (
                       <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} onRetry={retryMealSuggestions} />
                     ))}
+                    {!edit.editing && place.walkingMinutesFromPrevious != null && place.distanceFromPreviousKm != null && (
+                      <TravelLeg minutes={place.walkingMinutesFromPrevious} km={place.distanceFromPreviousKm} fromStart={idx === 0} />
+                    )}
                     <TimelineRow
                       place={place}
                       idx={idx}
@@ -224,6 +244,52 @@ export default function Itinerario() {
                 style={s.btnExport}
               />
             </ScrollView>
+
+            {!edit.editing && (
+              <TouchableOpacity
+                style={[s.assistantFab, { bottom: insets.bottom + TAB_BAR_SPACE - 8 }]}
+                onPress={assistant.open}
+                activeOpacity={0.85}
+                accessibilityRole="button"
+                accessibilityLabel={t('assistant.open')}
+              >
+                <Ionicons name="sparkles" size={20} color={colors.onPrimary} />
+                <Text style={s.assistantFabText}>{t('assistant.fab')}</Text>
+              </TouchableOpacity>
+            )}
+
+            <AssistantModal
+              visible={assistant.visible}
+              draft={assistant.draft}
+              sending={assistant.sending}
+              error={assistant.error}
+              replies={assistant.replies}
+              preferences={roteiro.preferences}
+              onChangeDraft={assistant.setDraft}
+              onSend={assistant.send}
+              onClose={assistant.close}
+            />
+
+            <ShareSheet
+              visible={share.visible}
+              title={t('share.title')}
+              sharing={share.sharing}
+              onShare={share.send}
+              onClose={share.close}
+            >
+              {share.stats && (
+                <ItineraryStoryCard
+                  ref={shareCardRef}
+                  width={share.cardWidth}
+                  city={roteiro.city}
+                  title={itineraryTitle(roteiro)}
+                  startDate={roteiro.startDate}
+                  endDate={roteiro.endDate}
+                  stats={share.stats}
+                  headline={t('share.headlinePlan')}
+                />
+              )}
+            </ShareSheet>
 
             <AlternativesModal
               visible={showAltModal}

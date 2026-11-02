@@ -122,7 +122,10 @@
     "originNeedsCity": "Choose the destination first",
     "cityCenterChip": "City center",
     "cityCenterLabel": "{{city}} city center",
-    "nameLabel": "TRIP NAME (OPTIONAL)"
+    "nameLabel": "TRIP NAME (OPTIONAL)",
+    "requestLabel": "How do you want this trip? (optional)",
+    "requestPlaceholder": "E.g.: museums and street food, no churches, at a calm pace",
+    "assistantTitle": "What I understood from your request"
   },
   "cities": {
     "roma": "Rome",

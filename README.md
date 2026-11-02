@@ -47,13 +47,19 @@ O projeto é o **Trabalho de Conclusão de Curso (TCC)** do curso de **Sistemas 
 ## Funcionalidades
 
 - Cadastro com verificação de e-mail, login e recuperação de senha
-- Teste de perfil de viajante
+- Teste de perfil de viajante, com pontuação proporcional (todos os perfis têm a mesma chance de sair)
+  e uma cidade sugerida para o primeiro roteiro
 - Geração de roteiros por perfil, cidade, número de dias e ritmo de viagem
+- Rota otimizada: construção gulosa + melhoria 2-opt que respeita o horário de funcionamento
+  (27% menos caminho que uma ordem sem critério, com os lugares mais famosos nos primeiros dias; ver o [benchmark](Repo-Back/backend/docs/BENCHMARK-DE-ROTAS.md))
+- Roteiro que considera o clima: em dia de chuva, museus e lugares cobertos primeiro
+- Ajuste do roteiro em linguagem natural ("menos igrejas, mais comida de rua", "Fontana di Trevi no último dia, de manhã"), interpretado por palavras-chave, sem serviço pago
 - Edição do roteiro: trocar, incluir, remover e reordenar paradas, anotar e dar nome
 - Mapa com o trajeto e instruções a pé, de carro e de transporte público
 - Busca de pontos turísticos com filtros (categoria, preço, horário, perfil, distância)
 - Favoritos e avaliações de pontos turísticos
-- Histórico, avaliação e compartilhamento de roteiros
+- Histórico e avaliação de roteiros; compartilhamento em PDF ou como imagem no formato de story
+- Roteiros salvos no aparelho: sem internet, o app mostra a última versão carregada
 - Painel gerencial com indicadores e filtros (administração)
 - Gestão de usuários e perfis de acesso (administração)
 - Tema claro/escuro e interface em português, inglês e espanhol
@@ -102,7 +108,7 @@ Arquitetura **cliente-servidor**:
                      └───────────────────────────┘            └──────────────────────────────┘
 
 Serviços externos: OpenRouteService (rotas), Overpass/OpenStreetMap, Wikidata/Wikimedia
-(fotos) e Gmail SMTP (códigos de verificação).
+(fotos), Open-Meteo (previsão do tempo) e Gmail SMTP (códigos de verificação).
 ```
 
 ## Tecnologias
@@ -452,5 +458,6 @@ Os dois conjuntos rodam no GitHub Actions a cada pull request para `dev`, `test`
 | [Contrato de erro da API](Repo-Back/backend/docs/CONTRATO-DE-ERRO.md) | formato JSON e códigos de erro |
 | [Catálogo de cidades](Repo-Back/backend/docs/CATALOGO-DE-CIDADES.md) | como o catálogo é montado e como incluir uma cidade |
 | [Cobertura de testes](Repo-Back/backend/docs/COBERTURA-DE-TESTES.md) | resultado da medição por pacote |
+| [Benchmark de rotas](Repo-Back/backend/docs/BENCHMARK-DE-ROTAS.md) | ganho da otimização 2-opt nas 20 cidades |
 | [Migrações do banco](Repo-Back/backend/src/main/resources/db/migration/README.md) | regras do Flyway e passo a passo |
 | [Arquitetura do frontend](Repo-Front/Trajetto/ARQUITETURA.md) | camadas e padrões do app |

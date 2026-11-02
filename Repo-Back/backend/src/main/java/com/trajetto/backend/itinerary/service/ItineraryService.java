@@ -4,7 +4,16 @@ import com.trajetto.backend.itinerary.data.BookingLinks;
 import com.trajetto.backend.itinerary.data.PlaceXid;
 import com.trajetto.backend.itinerary.data.CityCatalog;
 import com.trajetto.backend.itinerary.data.CityCatalog.CatalogPlace;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.trajetto.backend.itinerary.ai.PreferenceInterpreter;
 import com.trajetto.backend.itinerary.dto.AddPlaceRequestDTO;
+import com.trajetto.backend.itinerary.dto.AdjustItineraryRequestDTO;
+import com.trajetto.backend.itinerary.planning.ItineraryPlanner;
+import com.trajetto.backend.itinerary.planning.RouteOptimizer;
+import com.trajetto.backend.itinerary.planning.TripPreferences;
+import com.trajetto.backend.weather.DayWeather;
+import com.trajetto.backend.weather.WeatherService;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryNames;
@@ -33,49 +42,26 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.HashSet;
+import java.util.IdentityHashMap;
+import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
-import java.util.function.Predicate;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 @Service
 public class ItineraryService {
 
-    private static final Set<String> MEAL_CATEGORIES = Set.of("restaurant", "cafe", "ice_cream");
-
-    private static final Set<String> NOT_FOR_EVENING = Set.of("historic_archaeological_site", "historic_ruins", "marketplace");
-
-    /** Bar e pub so entram a noite -- e so para quem tem o perfil da vida noturna. */
-    private static final Set<String> NIGHTLIFE = Set.of("bar", "pub");
-    private static final Set<String> NIGHTLIFE_PROFILES = Set.of("SOCIAL", "MOCHILEIRO");
-
-    /** Quanto o lugar ganha por combinar com o perfil do viajante (a popularidade vai de 0 a 6). */
-    static final double PROFILE_BONUS = 2.0;
-
-    /**
-     * Os lugares mais famosos da cidade ganham o mesmo bonus de quem combina com o perfil: o
-     * Coliseu entra para o aventureiro tambem, e o perfil decide o resto do roteiro.
-     */
-    static final int MUST_SEE = 5;
-
-    /** Pracas, fontes e pontes, que valem a visita a noite -- nos idiomas das cidades do catalogo. */
-    private static final Pattern EVENING_NAME = Pattern.compile(
-            "^(Piazza|Piazzale|Fontana|Scalinata|Ponte|Campo|Place|Pont|Fontaine|Praça|Largo|Plaza)\\b|\\bSquare$");
-
-    private static final LocalTime EVENING = LocalTime.of(20, 0);
+    /** Os mais famosos entram para qualquer perfil (ver {@link ItineraryPlanner#MUST_SEE}). */
+    static final int MUST_SEE = ItineraryPlanner.MUST_SEE;
 
     /** Tempo de visita que o roteiro reserva em cada parada; o lugar precisa estar aberto o tempo todo. */
-    static final Duration VISIT_LENGTH = Duration.ofHours(1);
-
-    /** Quantos lugares da lista geral entram na busca quando nenhum dos escolhidos esta aberto no horario. */
-    private static final int RESERVE_SIZE = 40;
+    static final Duration VISIT_LENGTH = ItineraryPlanner.VISIT_LENGTH;
 
     private static final LocalTime LAST_ADDED_TIME = LocalTime.of(22, 0);
     private static final Duration GAP_BETWEEN_STOPS = Duration.ofMinutes(90);
@@ -91,6 +77,18 @@ public class ItineraryService {
 
     @Autowired
     private PlaceRepository placeRepository;
+
+    @Autowired
+    private ItineraryPlanner planner;
+
+    @Autowired
+    private WeatherService weatherService;
+
+    @Autowired
+    private PreferenceInterpreter preferenceInterpreter;
+
+    @Autowired
+    private ObjectMapper objectMapper;
 
     // Sorteio que varia o roteiro entre geracoes. Fica num campo para os testes fixarem a semente.
     private Random random = new Random();
@@ -172,93 +170,79 @@ public class ItineraryService {
         UserModel user = userRepository.findById(req.getUserId())
                 .orElseThrow(() -> new ResourceNotFoundException("Usuário", req.getUserId()));
 
-        String profile = user.getTravelerProfile();
-        boolean hasProfile = profile != null && !profile.equals("SKIPPED");
-
-        record ScoredPlace(CatalogPlace place, double score) {}
-
         // A cidade escolhida no app; sem escolha, a do catalogo mais perto do ponto de partida.
         CityCatalog.City city = req.getCity() == null || req.getCity().isBlank()
                 ? cityCatalog.nearestCity(req.getStartLatitude(), req.getStartLongitude())
                 : cityCatalog.city(req.getCity())
                         .orElseThrow(() -> new InvalidRequestException("Cidade não atendida: " + req.getCity()));
-        List<CatalogPlace> candidates = cityCatalog.placesOf(city).stream()
-                .filter(place -> !MEAL_CATEGORIES.contains(place.category()))
-                .toList();
-        double maxPopularity = Math.log1p(candidates.stream().mapToInt(CatalogPlace::popularity).max().orElse(0));
-        Set<CatalogPlace> mustSee = candidates.stream()
-                .filter(place -> !NIGHTLIFE.contains(place.category()))
-                .sorted(Comparator.comparingInt(CatalogPlace::popularity).reversed())
-                .limit(MUST_SEE)
-                .collect(Collectors.toSet());
-
-        List<ScoredPlace> scored = candidates.stream().map(place -> {
-            double popularityScore = maxPopularity == 0 ? 0 : 6.0 * Math.log1p(place.popularity()) / maxPopularity;
-            double profileScore = hasProfile && (place.profiles().contains(profile) || mustSee.contains(place))
-                    ? PROFILE_BONUS : 0.0;
-            double randomScore = random.nextDouble() * 0.5;
-            double distKm = haversineKm(req.getStartLatitude(), req.getStartLongitude(),
-                    place.latitude(), place.longitude());
-            double score = popularityScore + profileScore + randomScore - (distKm * 0.15);
-            return new ScoredPlace(place, score);
-        }).sorted(Comparator.comparingDouble(ScoredPlace::score).reversed())
-                .collect(Collectors.toList());
 
         int days = req.getDays() == null ? 1 : req.getDays();
+        TripPreferences prefs = preferenceInterpreter.interpret(req.getRequest(), cityCatalog.placesOf(city));
         LocalDate startDate = req.getStartDate() == null ? LocalDate.now() : req.getStartDate();
+        ItineraryModel itinerary = buildItinerary(user, city, req.getStartLatitude(), req.getStartLongitude(),
+                startDate, days, req.getPace(), ItineraryNames.normalize(req.getName()),
+                prefs, Map.of(), Set.of());
 
-        TravelPace pace = req.getPace() == null ? TravelPace.INTENSO : req.getPace();
-        List<List<LocalTime>> schedule = IntStream.range(0, days).mapToObj(pace::visitTimes).toList();
-        long eveningSlots = schedule.stream().flatMap(List::stream).filter(t -> !t.isBefore(EVENING)).count();
-        long totalSlots = schedule.stream().mapToLong(List::size).sum();
-
-        List<CatalogPlace> ranked = scored.stream().map(ScoredPlace::place).toList();
-        // De dia, cada lugar vira a sua visita principal: quem pontuou com a Piramide do Louvre
-        // ganha o Museu do Louvre. A noite fica com os pontos como sao (o mirante, nao o museu).
-        List<CatalogPlace> visits = ranked.stream().filter(place -> !NIGHTLIFE.contains(place.category()))
-                .map(this::mainVisit).distinct().toList();
-        // A noite: mirantes e pracas para todos; bar e pub tambem, para os perfis Social e Mochileiro.
-        boolean nightlife = hasProfile && NIGHTLIFE_PROFILES.contains(profile);
-        Predicate<CatalogPlace> eveningFit = place -> isEveningPlace(place)
-                || (nightlife && NIGHTLIFE.contains(place.category()));
-        Set<String> chosen = new HashSet<>();
-        // Para quem gosta da vida noturna, bar e pub passam na frente das pracas famosas a noite.
-        List<CatalogPlace> eveningRanked = ranked.stream().filter(eveningFit)
-                .sorted(Comparator.comparing((CatalogPlace place) -> !(nightlife && NIGHTLIFE.contains(place.category()))))
-                .toList();
-        List<CatalogPlace> eveningPool = pick(eveningRanked, eveningSlots, chosen);
-        List<CatalogPlace> dayPool = pick(visits, totalSlots - eveningSlots, chosen);
-
-        record DayStop(CatalogPlace place, LocalDate date, LocalTime time) {}
-        List<DayStop> ordered = new ArrayList<>();
-        for (int day = 0; day < days; day++) {
-            double curLat = req.getStartLatitude();
-            double curLng = req.getStartLongitude();
-            LocalDate date = startDate.plusDays(day);
-            List<LocalTime> times = schedule.get(day);
-            for (int slot = 0; slot < times.size(); slot++) {
-                LocalTime time = times.get(slot);
-                boolean evening = !time.isBefore(EVENING);
-                List<CatalogPlace> pool = evening && !eveningPool.isEmpty() ? eveningPool : dayPool;
-                // Os proximos horarios do dia que ainda usam a mesma lista (o dia ou a noite).
-                List<LocalTime> later = times.subList(slot + 1, times.size()).stream()
-                        .filter(t -> !t.isBefore(EVENING) == evening).toList();
-                // Um museu fechado as segundas nao entra na segunda: entre os ja escolhidos, vale o
-                // mais perto que esteja aberto no horario; se nenhum estiver, busca outro na lista geral.
-                Optional<CatalogPlace> next = nearestOpen(pool, curLat, curLng, date, time, later);
-                if (next.isPresent()) {
-                    pool.remove(next.get());
-                } else {
-                    next = nearestOpen(evening ? reserve(ranked, chosen, eveningFit) : reserve(visits, chosen, place -> true),
-                            curLat, curLng, date, time, List.of());
-                    next.ifPresent(place -> markChosen(place, chosen));
-                }
-                if (next.isEmpty()) continue;
-                ordered.add(new DayStop(next.get(), date, time));
-                curLat = next.get().latitude();
-                curLng = next.get().longitude();
-            }
+        ItineraryResponseDTO dto = toDTO(itinerary);
+        if (req.getRequest() != null && !req.getRequest().isBlank()) {
+            dto.setAssistantSummary(prefs.summary());
         }
+        return dto;
+    }
+
+    /**
+     * Refaz o roteiro a partir de um pedido em texto livre ("menos igrejas, mais comida de rua").
+     * O pedido se soma aos anteriores e o roteiro e gerado de novo, na mesma cidade, datas e
+     * ponto de partida. A versao anterior fica no historico; as anotacoes das paradas que
+     * continuam no roteiro sao levadas para a nova versao.
+     */
+    @Transactional
+    public ItineraryResponseDTO adjustItinerary(Long itineraryId, Long userId, AdjustItineraryRequestDTO req) {
+        ItineraryModel current = ownedItinerary(itineraryId, userId);
+        if (current.getOriginLatitude() == null || current.getOriginLongitude() == null) {
+            throw new InvalidRequestException("Este roteiro não tem ponto de partida; gere um roteiro novo.");
+        }
+        String slug = cityOf(current);
+        CityCatalog.City city = cityCatalog.city(slug)
+                .orElseThrow(() -> new InvalidRequestException("Cidade não atendida: " + slug));
+
+        LocalDate start = current.getStartDate() == null ? LocalDate.now() : current.getStartDate();
+        LocalDate end = current.getEndDate() == null ? start : current.getEndDate();
+        int days = (int) Math.min(GenerateItineraryRequestDTO.MAX_DAYS, Math.max(1, ChronoUnit.DAYS.between(start, end) + 1));
+
+        TripPreferences requested = preferenceInterpreter.interpret(req.getRequest(), cityCatalog.placesOf(city));
+        TripPreferences merged = readPreferences(current).then(requested);
+        TravelPace pace = parsePace(current.getPace());
+
+        Map<String, String> notes = current.getPlaces().stream()
+                .filter(p -> p.getNote() != null && p.getXid() != null)
+                .collect(Collectors.toMap(PlaceModel::getXid, PlaceModel::getNote, (a, b) -> a));
+
+        Set<String> keep = current.getPlaces().stream().map(PlaceModel::getXid)
+                .filter(Objects::nonNull).collect(Collectors.toSet());
+        ItineraryModel itinerary = buildItinerary(current.getUser(), city, current.getOriginLatitude(),
+                current.getOriginLongitude(), start, days, pace, current.getName(), merged, notes, keep);
+
+        ItineraryResponseDTO dto = toDTO(itinerary);
+        dto.setAssistantSummary(requested.summary());
+        return dto;
+    }
+
+    /**
+     * Gera e grava um roteiro novo, que passa a ser o ativo. O ritmo pedido em texto livre
+     * vale mais que o escolhido no formulario.
+     */
+    private ItineraryModel buildItinerary(UserModel user, CityCatalog.City city, double startLat, double startLng,
+                                          LocalDate startDate, int days, TravelPace pace, String name,
+                                          TripPreferences prefs, Map<String, String> notesByXid, Set<String> keep) {
+        TravelPace effectivePace = prefs.pace().isEmpty() ? (pace == null ? TravelPace.INTENSO : pace)
+                : TravelPace.valueOf(prefs.pace());
+        Map<LocalDate, DayWeather> weather = weatherService.forecast(city.latitude(), city.longitude(),
+                startDate, startDate.plusDays(days - 1L));
+
+        String profile = user.getTravelerProfile();
+        ItineraryPlanner.Plan plan = planner.plan(new ItineraryPlanner.Request(city, profile, startLat, startLng,
+                startDate, days, effectivePace, prefs, weather, true, keep), random);
 
         deactivateActiveItineraries(user);
 
@@ -267,33 +251,64 @@ public class ItineraryService {
         itinerary.setEndDate(startDate.plusDays(days - 1L));
         itinerary.setActive(true);
         itinerary.setUser(user);
-        itinerary.setOriginLatitude(req.getStartLatitude());
-        itinerary.setOriginLongitude(req.getStartLongitude());
+        itinerary.setOriginLatitude(startLat);
+        itinerary.setOriginLongitude(startLng);
         itinerary.setCity(city.slug());
-        itinerary.setName(ItineraryNames.normalize(req.getName()));
+        itinerary.setName(name);
+        itinerary.setPace(effectivePace.name());
+        itinerary.setPreferences(prefs.isEmpty() ? null : writePreferences(prefs));
+        itinerary.setBaselineDistanceKm(Math.round(plan.greedyKm() * 100) / 100.0);
 
         List<PlaceModel> places = new ArrayList<>();
-        for (int i = 0; i < ordered.size(); i++) {
-            CatalogPlace rp = ordered.get(i).place();
+        List<ItineraryPlanner.Stop> stops = plan.stops();
+        for (int i = 0; i < stops.size(); i++) {
+            CatalogPlace rp = stops.get(i).place();
             PlaceModel p = new PlaceModel();
             p.setXid(PlaceXid.of(rp.name()));
             p.setName(rp.name());
             p.setAddress(rp.address());
             p.setLatitude(rp.latitude());
             p.setLongitude(rp.longitude());
-            p.setVisitDate(ordered.get(i).date());
-            p.setEstimatedVisitTime(ordered.get(i).time());
+            p.setVisitDate(stops.get(i).date());
+            p.setEstimatedVisitTime(stops.get(i).time());
             p.setOrderIndex(i);
             p.setOpeningHours(rp.openingHours().isBlank() ? null : rp.openingHours());
             p.setCategory(rp.category().isBlank() ? null : rp.category());
             p.setFee(rp.fee().isBlank() ? null : rp.fee());
+            p.setNote(notesByXid.get(p.getXid()));
             p.setItinerary(itinerary);
             places.add(p);
         }
         itinerary.setPlaces(places);
-
-        return toDTO(itineraryRepository.save(itinerary));
+        return itineraryRepository.save(itinerary);
     }
+
+    private static TravelPace parsePace(String pace) {
+        if (pace == null) return null;
+        try {
+            return TravelPace.valueOf(pace);
+        } catch (IllegalArgumentException e) {
+            return null;
+        }
+    }
+
+    private TripPreferences readPreferences(ItineraryModel model) {
+        if (model.getPreferences() == null || model.getPreferences().isBlank()) return TripPreferences.NONE;
+        try {
+            return objectMapper.readValue(model.getPreferences(), TripPreferences.class);
+        } catch (JsonProcessingException e) {
+            return TripPreferences.NONE;
+        }
+    }
+
+    private String writePreferences(TripPreferences prefs) {
+        try {
+            return objectMapper.writeValueAsString(prefs.withSummary(""));
+        } catch (JsonProcessingException e) {
+            throw new IllegalStateException("Preferências do roteiro não serializáveis", e);
+        }
+    }
+
 
     private void deactivateActiveItineraries(UserModel user) {
         List<ItineraryModel> ativos = itineraryRepository.findByUserAndActiveTrue(user);
@@ -301,80 +316,6 @@ public class ItineraryService {
         itineraryRepository.saveAllAndFlush(ativos);
     }
 
-    private List<CatalogPlace> pick(List<CatalogPlace> ranked, long limit, Set<String> chosen) {
-        List<CatalogPlace> picked = new ArrayList<>();
-        for (CatalogPlace place : ranked) {
-            if (picked.size() == limit) break;
-            if (markChosen(place, chosen)) picked.add(place);
-        }
-        return picked;
-    }
-
-    /**
-     * Marca o lugar como usado no roteiro, junto com os pontos no mesmo lugar (o Louvre leva
-     * a Piramide); devolve {@code false} se ele (ou o mesmo lugar com outro nome) ja estava.
-     */
-    private boolean markChosen(CatalogPlace place, Set<String> chosen) {
-        boolean repeated = chosen.contains(PlaceXid.of(place.name()))
-                || (!place.wikidata().isBlank() && chosen.contains(place.wikidata()));
-        if (repeated) return false;
-        for (CatalogPlace same : cityCatalog.sameVisit(place)) {
-            chosen.add(PlaceXid.of(same.name()));
-            if (!same.wikidata().isBlank()) chosen.add(same.wikidata());
-        }
-        return true;
-    }
-
-    /** O ponto mais conhecido entre os que ficam no mesmo lugar -- e ele que vale a parada. */
-    private CatalogPlace mainVisit(CatalogPlace place) {
-        CatalogPlace main = place;
-        for (CatalogPlace same : cityCatalog.sameVisit(place)) {
-            if (!MEAL_CATEGORIES.contains(same.category()) && same.popularity() > main.popularity()) main = same;
-        }
-        return main;
-    }
-
-    private List<CatalogPlace> reserve(List<CatalogPlace> ranked, Set<String> chosen, Predicate<CatalogPlace> fit) {
-        return ranked.stream()
-                .filter(fit)
-                .filter(place -> !chosen.contains(PlaceXid.of(place.name()))
-                        && (place.wikidata().isBlank() || !chosen.contains(place.wikidata())))
-                .limit(RESERVE_SIZE)
-                .toList();
-    }
-
-    /**
-     * O mais perto aberto no horario. Antes, porem, o que fecha antes dos proximos horarios
-     * do dia: o Coliseu fecha as 16h30 no inverno, e quem segue sempre o mais perto chega
-     * la tarde demais e perde a visita.
-     */
-    private Optional<CatalogPlace> nearestOpen(List<CatalogPlace> pool, double lat, double lng, LocalDate date,
-                                               LocalTime time, List<LocalTime> later) {
-        List<CatalogPlace> open = pool.stream()
-                .filter(place -> OpeningHours.statusAt(place.openingHours(), date, time, VISIT_LENGTH) != Status.CLOSED)
-                .toList();
-        List<CatalogPlace> lastChance = later.isEmpty() ? List.of() : open.stream()
-                .filter(place -> later.stream().allMatch(t ->
-                        OpeningHours.statusAt(place.openingHours(), date, t, VISIT_LENGTH) == Status.CLOSED))
-                .toList();
-        return (lastChance.isEmpty() ? open : lastChance).stream()
-                .min(Comparator.comparingDouble(place -> haversineKm(lat, lng, place.latitude(), place.longitude())));
-    }
-
-    private boolean isEveningPlace(CatalogPlace place) {
-        return !NOT_FOR_EVENING.contains(place.category())
-                && ("viewpoint".equals(place.category()) || EVENING_NAME.matcher(place.name()).find());
-    }
-
-    private double haversineKm(double lat1, double lon1, double lat2, double lon2) {
-        final double R = 6371.0;
-        double dLat = Math.toRadians(lat2 - lat1);
-        double dLon = Math.toRadians(lon2 - lon1);
-        double a = Math.sin(dLat / 2) * Math.sin(dLat / 2)
-                + Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2))
-                * Math.sin(dLon / 2) * Math.sin(dLon / 2);
-        return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    }
 
     public List<ItineraryResponseDTO> getAllItineraries(Long userId) {
         UserModel user = userRepository.findById(userId)
@@ -654,12 +595,53 @@ public class ItineraryService {
         dto.setDate(model.getDate());
         dto.setName(model.getName());
         dto.setCity(cityOf(model));
+        dto.setPace(model.getPace());
+        dto.setBaselineDistanceKm(model.getBaselineDistanceKm());
+        TripPreferences prefs = readPreferences(model);
+        dto.setPreferences(prefs.isEmpty() ? null : prefs);
+
+        Map<PlaceModel, Double> legs = legsKm(model);
+        double total = legs.values().stream().mapToDouble(Double::doubleValue).sum();
+        dto.setDistanceKm(Math.round(total * 100) / 100.0);
         dto.setPlaces(
                 model.getPlaces().stream()
-                        .map(this::toPlaceDTO)
+                        .map(place -> {
+                            PlaceResponseDTO placeDto = toPlaceDTO(place);
+                            Double km = legs.get(place);
+                            if (km != null) {
+                                placeDto.setDistanceFromPreviousKm(Math.round(km * 100) / 100.0);
+                                placeDto.setWalkingMinutesFromPrevious(RouteOptimizer.walkingMinutes(km));
+                            }
+                            return placeDto;
+                        })
                         .collect(Collectors.toList())
         );
         return dto;
+    }
+
+    /**
+     * Distancia de cada parada ate a anterior do mesmo dia; a primeira do dia conta desde o
+     * ponto de partida. A soma e o caminho total do roteiro, comparavel ao da ordem gulosa.
+     */
+    private Map<PlaceModel, Double> legsKm(ItineraryModel model) {
+        Map<PlaceModel, Double> legs = new IdentityHashMap<>();
+        if (model.getPlaces() == null) return legs;
+        RouteOptimizer.Point origin = model.getOriginLatitude() == null || model.getOriginLongitude() == null
+                ? null : new RouteOptimizer.Point(model.getOriginLatitude(), model.getOriginLongitude());
+        RouteOptimizer.Point prev = null;
+        LocalDate day = null;
+        for (PlaceModel place : byVisitOrder(model)) {
+            if (place.getLatitude() == null || place.getLongitude() == null) continue;
+            LocalDate date = visitDate(place);
+            if (!date.equals(day)) {
+                day = date;
+                prev = origin;
+            }
+            RouteOptimizer.Point here = new RouteOptimizer.Point(place.getLatitude(), place.getLongitude());
+            if (prev != null) legs.put(place, RouteOptimizer.km(prev, here));
+            prev = here;
+        }
+        return legs;
     }
 
     private PlaceResponseDTO toPlaceDTO(PlaceModel model) {

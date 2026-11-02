@@ -57,4 +57,15 @@ public class ItineraryModel {
     @Column(name = "city", length = 60)
     private String city;
 
+    @Column(name = "pace", length = 12)
+    private String pace;
+
+    /** JSON de {@code TripPreferences}: o que o viajante pediu em texto livre, ja interpretado. */
+    @Column(name = "preferences", columnDefinition = "TEXT")
+    private String preferences;
+
+    /** Caminho total na ordem gulosa, antes do 2-opt (km em linha reta). */
+    @Column(name = "baseline_distance_km")
+    private Double baselineDistanceKm;
+
 }

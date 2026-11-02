@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { useRouter, useLocalSearchParams } from 'expo-router';
-import { quizData, shuffle, calcularPerfil, Pergunta } from '@/data/quizData';
+import { quizData, escolherPerguntas, calcularPerfil, pontosPossiveis, Pergunta } from '@/data/quizData';
 import { applyAnswerScore } from '@/src/domain/quiz/applyAnswerScore';
 
 const INITIAL_SCORES: Record<string, number> = {
   AVENTUREIRO: 0, CULTURAL: 0, NATUREZA: 0, LUXO: 0,
   MOCHILEIRO: 0, RELAXAMENTO: 0, SOCIAL: 0, SOLITARIO: 0,
 };
+
+const QUESTIONS_PER_TEST = 10;
 
 export type QuizData = {
   questions: Pergunta[];
@@ -23,7 +25,7 @@ export type QuizData = {
 export function useQuiz(): QuizData {
   const router = useRouter();
   const { source } = useLocalSearchParams<{ source?: string }>();
-  const [questions] = useState<Pergunta[]>(() => shuffle([...quizData.perguntas]).slice(0, 10));
+  const [questions] = useState<Pergunta[]>(() => escolherPerguntas(quizData.perguntas, QUESTIONS_PER_TEST));
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [scores, setScores] = useState<Record<string, number>>({ ...INITIAL_SCORES });
@@ -38,7 +40,7 @@ export function useQuiz(): QuizData {
     const newScores = applyAnswerScore(current, selected, scores);
 
     if (currentIndex === total - 1) {
-      const perfil = calcularPerfil(newScores);
+      const perfil = calcularPerfil(newScores, pontosPossiveis(questions));
       const params: { profile: string; source?: string } = { profile: perfil };
       if (source) params.source = source;
       router.replace({ pathname: '/QuizResultScreen', params });

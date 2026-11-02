@@ -9,6 +9,8 @@ export const mockRouter = {
   canGoBack: jest.fn(() => true),
   navigate: jest.fn(),
   dismiss: jest.fn(),
+  canDismiss: jest.fn(() => false),
+  dismissAll: jest.fn(),
 };
 
 let params: Record<string, unknown> = {};

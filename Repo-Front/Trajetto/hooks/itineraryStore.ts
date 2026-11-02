@@ -1,6 +1,29 @@
 import { create } from 'zustand';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AddPlaceRequest, ItineraryService, TravelPace } from '../services';
-import { getErrorMessage } from '../utils/apiError';
+import { getErrorMessage, isNetworkError } from '../utils/apiError';
+
+/**
+ * Copia dos roteiros no aparelho: sem internet (na viagem, no exterior), o app mostra a
+ * ultima versao que carregou em vez de uma tela de erro.
+ */
+type OfflineCopy = { itinerary: Itinerary | null; itineraries: Itinerary[] };
+const offlineKey = (userId: number) => `@trajetto/offline/itineraries/${userId}`;
+let offlineOwner: number | null = null;
+
+async function readOfflineCopy(userId: number): Promise<OfflineCopy | null> {
+  try {
+    const raw = await AsyncStorage.getItem(offlineKey(userId));
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+async function writeOfflineCopy(userId: number, copy: OfflineCopy) {
+  offlineOwner = userId;
+  await AsyncStorage.setItem(offlineKey(userId), JSON.stringify(copy)).catch(() => {});
+}
 
 export interface Places {
   name: string;
@@ -23,6 +46,21 @@ export interface Places {
   names?: Record<string, string> | null;
   /** Id no Wikidata, de onde vem a foto do lugar. */
   wikidata?: string | null;
+  /** Da parada anterior do dia (ou da partida, na primeira) ate esta, em km. */
+  distanceFromPreviousKm?: number | null;
+  /** Estimativa a pe desde a parada anterior, em minutos. */
+  walkingMinutesFromPrevious?: number | null;
+}
+
+/** Pedidos em texto livre ja interpretados e aplicados ao roteiro. */
+export interface TripPreferences {
+  moreCategories: string[];
+  lessCategories: string[];
+  avoidPaid: boolean;
+  pace: string;
+  mustInclude: string[];
+  exclude: string[];
+  placements?: { place: string; day: number; period: '' | 'MANHA' | 'TARDE' | 'NOITE' }[];
 }
 
 export interface Itinerary {
@@ -40,6 +78,14 @@ export interface Itinerary {
   name?: string | null;
   /** Slug da cidade do catalogo. */
   city?: string | null;
+  pace?: TravelPace | null;
+  /** Caminho total entre as paradas (km em linha reta). */
+  distanceKm?: number | null;
+  /** Caminho na ordem gulosa, antes da otimizacao 2-opt; nulo em roteiros antigos. */
+  baselineDistanceKm?: number | null;
+  preferences?: TripPreferences | null;
+  /** So na resposta da geracao/ajuste por texto livre: o que o assistente entendeu. */
+  assistantSummary?: string | null;
 }
 
 type ItineraryStore = {
@@ -47,12 +93,15 @@ type ItineraryStore = {
   itineraries: Itinerary[];
   loading: boolean;
   error: string | null;
+  /** Mostrando a copia salva no aparelho porque o servidor nao respondeu. */
+  offline: boolean;
   highlightedPlaceIndex: number | null;
   focusedMapPlaceIndex: number | null;
   selectedDay: string | null;
   fetchItinerary: (userId: number) => Promise<void>;
   fetchAllItineraries: (userId: number) => Promise<void>;
-  generateItinerary: (userId: number, startLat: number, startLng: number, startDate: string, days: number, pace: TravelPace, city?: string, name?: string) => Promise<Itinerary>;
+  generateItinerary: (userId: number, startLat: number, startLng: number, startDate: string, days: number, pace: TravelPace, city?: string, name?: string, request?: string) => Promise<Itinerary>;
+  adjustItinerary: (request: string) => Promise<Itinerary>;
   acceptGeneratedItinerary: (itinerary: Itinerary) => void;
   activateItinerary: (itineraryId: number, userId: number) => Promise<void>;
   deleteItinerary: (itineraryId: number, userId: number) => Promise<void>;
@@ -81,6 +130,7 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
   itineraries: [],
   loading: false,
   error: null,
+  offline: false,
   highlightedPlaceIndex: null,
   focusedMapPlaceIndex: null,
   selectedDay: null,
@@ -89,8 +139,15 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
     try {
       set({ loading: true, error: null });
       const data = await ItineraryService.getItinerary(userId);
-      set({ itinerary: data?.id ? data : null, loading: false });
+      const itinerary = data?.id ? data : null;
+      await writeOfflineCopy(userId, { itinerary, itineraries: get().itineraries });
+      set({ itinerary, loading: false, offline: false });
     } catch (e) {
+      const copy = isNetworkError(e) ? await readOfflineCopy(userId) : null;
+      if (copy?.itinerary) {
+        set({ itinerary: copy.itinerary, error: null, loading: false, offline: true });
+        return;
+      }
       // Guardar a falha permite a tela dizer que algo deu errado, em vez de mostrar
       // "voce ainda nao tem roteiro" para quem esta so sem internet.
       set({ itinerary: null, error: getErrorMessage(e), loading: false });
@@ -102,15 +159,30 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
       set({ loading: true, error: null });
       const data: Itinerary[] = await ItineraryService.getAllItineraries(userId);
       const active = data.find(i => i.active) ?? null;
-      set({ itineraries: data, itinerary: active, loading: false });
+      await writeOfflineCopy(userId, { itinerary: active, itineraries: data });
+      set({ itineraries: data, itinerary: active, loading: false, offline: false });
     } catch (e) {
+      const copy = isNetworkError(e) ? await readOfflineCopy(userId) : null;
+      if (copy && (copy.itinerary || copy.itineraries.length > 0)) {
+        set({ itineraries: copy.itineraries, itinerary: copy.itinerary, error: null, loading: false, offline: true });
+        return;
+      }
       set({ itineraries: [], itinerary: null, error: getErrorMessage(e), loading: false });
     }
   },
 
-  generateItinerary: async (userId, startLat, startLng, startDate, days, pace, city, name) => {
-    const data = await ItineraryService.generateItinerary(userId, startLat, startLng, startDate, days, pace, city, name);
+  generateItinerary: async (userId, startLat, startLng, startDate, days, pace, city, name, request) => {
+    const data = await ItineraryService.generateItinerary(userId, startLat, startLng, startDate, days, pace, city, name, request);
     return data as Itinerary;
+  },
+
+  adjustItinerary: async (request) => {
+    const { itinerary } = get();
+    if (!itinerary) throw new Error('Sem roteiro ativo');
+    const adjusted: Itinerary = await ItineraryService.adjustItinerary(itinerary.id, request);
+    const prev = get().itineraries.map(i => ({ ...i, active: false }));
+    set({ itinerary: adjusted, itineraries: [adjusted, ...prev] });
+    return adjusted;
   },
 
   acceptGeneratedItinerary: (itinerary: Itinerary) => {
@@ -201,3 +273,10 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
   setFocusedMapPlace: (index) => set({ focusedMapPlaceIndex: index }),
   setSelectedDay: (date) => set({ selectedDay: date }),
 }));
+
+// Edicoes feitas com internet (trocar parada, anotar, ajustar) tambem vao para a copia salva.
+useItineraryStore.subscribe((state, prev) => {
+  if (offlineOwner == null || state.offline) return;
+  if (state.itinerary === prev.itinerary && state.itineraries === prev.itineraries) return;
+  writeOfflineCopy(offlineOwner, { itinerary: state.itinerary, itineraries: state.itineraries });
+});

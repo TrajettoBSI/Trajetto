@@ -36,4 +36,21 @@ public class ItineraryResponseDTO {
     /** Slug da cidade em {@code data/cities.json}. */
     @Schema(description = "Slug da cidade", example = "roma")
     private String city;
+
+    @Schema(description = "Ritmo do roteiro", example = "EQUILIBRADO", nullable = true)
+    private String pace;
+
+    @Schema(description = "Caminho total entre as paradas (soma dos dias, em linha reta)", example = "14.2")
+    private Double distanceKm;
+
+    @Schema(description = "Caminho total na ordem gulosa, antes da otimização 2-opt; nulo em roteiros antigos", example = "17.9", nullable = true)
+    private Double baselineDistanceKm;
+
+    @Schema(description = "Pedidos em texto livre já interpretados e aplicados ao roteiro", nullable = true)
+    private com.trajetto.backend.itinerary.planning.TripPreferences preferences;
+
+    /** So na resposta da geracao/ajuste por texto livre: o que o assistente entendeu do pedido. */
+    @Schema(description = "Resposta do assistente ao pedido em texto livre (só na geração e no ajuste)", nullable = true)
+    private String assistantSummary;
+
 }

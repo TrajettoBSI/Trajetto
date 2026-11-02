@@ -1,8 +1,13 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useTranslation } from 'react-i18next';
 import { Ionicons } from '@expo/vector-icons';
 import { useColors } from '@/src/theme';
+import { cityImage } from '@/src/helpers/cityImage';
+import { cityName } from '@/src/i18n/format';
+import { STORY_GRADIENT } from '@/src/components/share/storyStyles';
 import { useQuizResult } from './hooks/useQuizResult';
 import { styles } from './styles/styles';
 
@@ -10,7 +15,8 @@ export default function QuizResult() {
   const { t } = useTranslation('quiz');
   const colors = useColors();
   const s = styles(colors);
-  const { perfil, fromProfile, goBack } = useQuizResult();
+  const { perfil, fromProfile, firstTrip, goBack, startFirstTrip } = useQuizResult();
+  const tripImage = cityImage(firstTrip.slug);
 
   if (!perfil) {
     return (
@@ -62,11 +68,25 @@ export default function QuizResult() {
           ))}
         </View>
 
-        <TouchableOpacity style={s.backButton} onPress={goBack} activeOpacity={0.85}>
-          <Text style={s.backButtonText}>
+        {!fromProfile && (
+          <TouchableOpacity style={s.tripCard} onPress={startFirstTrip} activeOpacity={0.9} accessibilityRole="button">
+            {tripImage && <Image source={tripImage} style={s.tripImage} resizeMode="cover" />}
+            <LinearGradient colors={STORY_GRADIENT} style={s.tripImage} />
+            <Text style={s.tripKicker}>{t('firstTrip.kicker')}</Text>
+            <Text style={s.tripTitle}>{t('firstTrip.title', { city: cityName(firstTrip.slug) })}</Text>
+            <Text style={s.tripBody}>{t('firstTrip.body')}</Text>
+            <View style={s.tripCta}>
+              <Text style={s.tripCtaText}>{t('firstTrip.cta')}</Text>
+              <Ionicons name="arrow-forward" size={16} color={colors.primary} />
+            </View>
+          </TouchableOpacity>
+        )}
+
+        <TouchableOpacity style={fromProfile ? s.backButton : s.secondaryButton} onPress={goBack} activeOpacity={0.85}>
+          <Text style={fromProfile ? s.backButtonText : s.secondaryButtonText}>
             {fromProfile ? t('result.backToProfile') : t('result.startExploring')}
           </Text>
-          <Ionicons name="arrow-forward" size={18} color={colors.onPrimary} />
+          {fromProfile && <Ionicons name="arrow-forward" size={18} color={colors.onPrimary} />}
         </TouchableOpacity>
 
       </ScrollView>

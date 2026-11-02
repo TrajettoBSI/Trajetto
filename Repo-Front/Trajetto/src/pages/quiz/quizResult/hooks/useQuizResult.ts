@@ -6,18 +6,13 @@ import { userService } from '@/services';
 import { useAuth } from '@/context/AuthContext';
 import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
-
-export type QuizResultData = {
-  perfil: ReturnType<typeof getPerfil>;
-  fromProfile: boolean;
-  goBack: () => void;
-};
+import { firstTripFor, FirstTrip } from '@/src/domain/trip/firstTrip';
 
 function getPerfil(profile: string | undefined) {
   return quizData.perfis[profile ?? ''];
 }
 
-export function useQuizResult(): QuizResultData {
+export function useQuizResult() {
   const { t } = useTranslation('common');
   const router = useRouter();
   const { refreshUser } = useAuth();
@@ -25,6 +20,7 @@ export function useQuizResult(): QuizResultData {
   const fromProfile = source === 'profile';
 
   const perfil = getPerfil(profile);
+  const firstTrip: FirstTrip = firstTripFor(profile);
 
   useEffect(() => {
     if (profile) {
@@ -37,6 +33,8 @@ export function useQuizResult(): QuizResultData {
   return {
     perfil,
     fromProfile,
+    firstTrip,
     goBack: () => (fromProfile ? router.dismiss(2) : router.replace('/(tabs)')),
+    startFirstTrip: () => router.replace({ pathname: '/(tabs)', params: { openGenerate: '1', city: firstTrip.slug } }),
   };
 }

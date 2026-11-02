@@ -46,8 +46,29 @@ describe('estado do roteiro', () => {
     expect(useItineraryStore.getState().itinerary?.id).toBe(2);
 
     svc.getAllItineraries.mockRejectedValueOnce(networkError());
-    await useItineraryStore.getState().fetchAllItineraries(9);
+    await useItineraryStore.getState().fetchAllItineraries(77);
     expect(useItineraryStore.getState().itineraries).toEqual([]);
+    expect(useItineraryStore.getState().error).toBeTruthy();
+  });
+
+  it('sem internet, mostra a ultima copia salva no aparelho e avisa que esta offline', async () => {
+    svc.getAllItineraries.mockResolvedValueOnce([roteiro(1, false), roteiro(2, true)]);
+    await useItineraryStore.getState().fetchAllItineraries(9);
+    expect(useItineraryStore.getState().offline).toBe(false);
+
+    svc.getAllItineraries.mockRejectedValueOnce(networkError());
+    await useItineraryStore.getState().fetchAllItineraries(9);
+    expect(useItineraryStore.getState()).toMatchObject({ offline: true, error: null });
+    expect(useItineraryStore.getState().itinerary?.id).toBe(2);
+    expect(useItineraryStore.getState().itineraries).toHaveLength(2);
+
+    svc.getItinerary.mockRejectedValueOnce(networkError());
+    await useItineraryStore.getState().fetchItinerary(9);
+    expect(useItineraryStore.getState().itinerary?.id).toBe(2);
+
+    svc.getAllItineraries.mockRejectedValueOnce({ isAxiosError: true, response: { status: 500, data: {} } });
+    await useItineraryStore.getState().fetchAllItineraries(9);
+    expect(useItineraryStore.getState().error).toBeTruthy();
   });
 
   it('gera, aceita, ativa e apaga roteiros', async () => {

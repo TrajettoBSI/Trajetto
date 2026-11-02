@@ -13,6 +13,10 @@ import { useMealSuggestions } from './useMealSuggestions';
 import { useItineraryEdit } from './useItineraryEdit';
 import { useItineraryRename } from './useItineraryRename';
 import { useItineraryRating } from './useItineraryRating';
+import { useItineraryAssistant } from './useItineraryAssistant';
+import { useItineraryWeather } from '@/src/pages/tabs/shared/hooks/useItineraryWeather';
+import { routeSavings } from '@/src/domain/itinerary/routeSavings';
+import { useItineraryShare } from './useItineraryShare';
 
 export function useItinerario() {
   const router = useRouter();
@@ -34,6 +38,11 @@ export function useItinerario() {
   const edit = useItineraryEdit(currentDay?.date ?? null);
   const rename = useItineraryRename(itinerary);
   const rating = useItineraryRating(itinerary);
+  const assistant = useItineraryAssistant();
+  const weatherByDate = useItineraryWeather(itinerary);
+  const savings = routeSavings(itinerary?.distanceKm, itinerary?.baselineDistanceKm);
+  const dayWeather = currentDay ? weatherByDate[currentDay.date] ?? null : null;
+  const { cardRef: shareCardRef, ...share } = useItineraryShare(itinerary);
 
   const openMealPlace = useCallback((place: NearbyPlace) => {
     router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(place), origin: 'itinerario' } });
@@ -79,6 +88,11 @@ export function useItinerario() {
     edit,
     rename,
     rating,
+    assistant,
+    savings,
+    dayWeather,
+    share,
+    shareCardRef,
     handleExportPDF: () => handleExportPDF(itinerary),
   };
 }

@@ -5,7 +5,7 @@ import * as Sharing from 'expo-sharing';
 import * as FileSystem from 'expo-file-system/legacy';
 import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import Itinerario from '@/src/pages/tabs/itinerario/Itinerario';
-import { favoriteService, ItineraryService, placesService } from '@/services';
+import { favoriteService, ItineraryService, placesService, weatherService } from '@/services';
 import { Itinerary, useItineraryStore } from '@/hooks/itineraryStore';
 import { useFavoritesStore } from '@/hooks/favoritesStore';
 import { mockRouter } from '../../mocks/expoRouter';
@@ -18,12 +18,14 @@ jest.mock('@/services', () => ({
   ItineraryService: {
     getAllItineraries: jest.fn(), replacePlace: jest.fn(), updateNote: jest.fn(),
     addPlace: jest.fn(), removePlace: jest.fn(), movePlace: jest.fn(), rateItinerary: jest.fn(),
+    adjustItinerary: jest.fn(),
   },
   placesService: { getAll: jest.fn(), nearby: jest.fn() },
   favoriteService: { list: jest.fn() },
+  weatherService: { getForecast: jest.fn(async () => []) },
 }));
 jest.mock('expo-print', () => ({ printToFileAsync: jest.fn() }));
-jest.mock('expo-sharing', () => ({ shareAsync: jest.fn() }));
+jest.mock('expo-sharing', () => ({ isAvailableAsync: jest.fn(async () => true), shareAsync: jest.fn() }));
 jest.mock('expo-file-system/legacy', () => ({
   readAsStringAsync: jest.fn(async () => 'base64'),
   writeAsStringAsync: jest.fn(),
@@ -36,6 +38,7 @@ jest.mock('expo-file-system/legacy', () => ({
 const svc = ItineraryService as unknown as Record<string, jest.Mock>;
 const places = placesService as unknown as Record<string, jest.Mock>;
 const fav = favoriteService as unknown as Record<string, jest.Mock>;
+const weather = weatherService as unknown as Record<string, jest.Mock>;
 
 const parada = (orderIndex: number, name: string, time: string, visitDate: string, extra = {}) => ({
   name, address: `${name}, Roma`, latitude: 41.9, longitude: 12.48, estimatedVisitTime: time, orderIndex, visitDate,
@@ -180,11 +183,11 @@ describe('itinerario', () => {
     await waitFor(() => expect(screen.queryByText('Salvar comentário')).toBeNull());
   });
 
-  it('exporta o PDF pelo atalho do cabecalho e pelo botao do fim da lista', async () => {
+  it('exporta o PDF pelo botao do fim da lista e mostra o erro quando falha', async () => {
     (Print.printToFileAsync as jest.Mock).mockResolvedValue({ uri: 'roteiro.pdf' });
     await render(<Itinerario />);
 
-    await fireEvent.press(screen.getByLabelText('Exportar em PDF'));
+    await fireEvent.press(screen.getAllByText('Exportar em PDF').at(-1)!);
     await waitFor(() => expect(Sharing.shareAsync).toHaveBeenCalledWith('roteiro.pdf', expect.objectContaining({ mimeType: 'application/pdf' })));
     const html = (Print.printToFileAsync as jest.Mock).mock.calls[0][0].html as string;
     expect(html).toContain('Fontana di Trevi');
@@ -196,13 +199,24 @@ describe('itinerario', () => {
     await waitFor(() => expect(Alert.alert).toHaveBeenCalledWith('Erro', expect.any(String), undefined));
   });
 
+  it('compartilha o roteiro como story', async () => {
+    await render(<Itinerario />);
+
+    await fireEvent.press(screen.getByLabelText('Compartilhar roteiro'));
+    expect(screen.getByText('Meu roteiro em')).toBeTruthy();
+    expect(screen.getByText('Planejado com o Trajetto')).toBeTruthy();
+    await fireEvent.press(screen.getAllByText('Compartilhar').at(-1)!);
+    await waitFor(() => expect(Sharing.shareAsync).toHaveBeenCalledWith('file:///tmp/cartao.png', expect.objectContaining({ mimeType: 'image/png' })));
+    await fireEvent.press(screen.getByLabelText('Fechar'));
+  });
+
   it('no Android salva o PDF na pasta escolhida', async () => {
     const original = Platform.OS;
     Object.defineProperty(Platform, 'OS', { get: () => 'android', configurable: true });
     (Print.printToFileAsync as jest.Mock).mockResolvedValue({ uri: 'roteiro.pdf' });
     await render(<Itinerario />);
 
-    await fireEvent.press(screen.getByLabelText('Exportar em PDF'));
+    await fireEvent.press(screen.getAllByText('Exportar em PDF').at(-1)!);
     await waitFor(() => expect(FileSystem.writeAsStringAsync).toHaveBeenCalledWith('novo-arquivo', 'base64', { encoding: 'base64' }));
     expect(Alert.alert).toHaveBeenCalledWith('Sucesso', 'Roteiro salvo no seu celular!', undefined);
     Object.defineProperty(Platform, 'OS', { get: () => original, configurable: true });
@@ -289,5 +303,67 @@ describe('itinerario', () => {
     await fireEvent.press(screen.getByText('Editar'));
     await fireEvent.press(screen.getByText('Adicionar dos favoritos'));
     expect(await screen.findByText('Você ainda não tem lugares favoritos.')).toBeTruthy();
+  });
+
+  it('mostra a rota otimizada, o tempo a pe entre as paradas e o clima do dia', async () => {
+    weather.getForecast.mockResolvedValue([
+      { date: '2099-11-10', weatherCode: 63, maxTemperature: 15.4, minTemperature: 9.6, precipitationProbability: 85, rainy: true },
+    ]);
+    const comRota: Itinerary = {
+      ...roteiro, id: 70, originLatitude: 41.95, originLongitude: 12.5, distanceKm: 8, baselineDistanceKm: 10,
+      places: roteiro.places.map((p, i) => ({ ...p, walkingMinutesFromPrevious: i === 1 ? 45 : 12, distanceFromPreviousKm: i === 1 ? 2.8 : 0.7 })),
+    };
+    useItineraryStore.setState({ itinerary: comRota, itineraries: [comRota] });
+    await render(<Itinerario />);
+
+    expect(screen.getByText('20% menor')).toBeTruthy();
+    expect(screen.getByText('12 min a pé desde a partida - 0,7 km')).toBeTruthy();
+    expect(screen.getByText('45 min a pé - 2,8 km - melhor de transporte')).toBeTruthy();
+    expect(await screen.findByText('15° / 10°')).toBeTruthy();
+    expect(screen.getByText('Chuva - 85% de chuva')).toBeTruthy();
+    expect(screen.getByText(/Dia de chuva/)).toBeTruthy();
+    expect(weather.getForecast).toHaveBeenCalledWith(41.95, 12.5, '2099-11-10', '2099-11-11');
+  });
+
+  it('sem previsao nem distancia de referencia, nao inventa numeros', async () => {
+    const semRef: Itinerary = { ...roteiro, id: 71, distanceKm: 9.5, baselineDistanceKm: null };
+    useItineraryStore.setState({ itinerary: semRef, itineraries: [semRef] });
+    await render(<Itinerario />);
+
+    expect(screen.getByText('Ordem otimizada')).toBeTruthy();
+    expect(screen.getByText('Previsão disponível até 16 dias antes')).toBeTruthy();
+  });
+
+  it('ajusta o roteiro com o assistente: sugestao, pedido digitado, preferencias aplicadas e erro', async () => {
+    const ajustado: Itinerary = {
+      ...roteiro, id: 8, assistantSummary: 'Tirei as igrejas e coloquei mais museus.',
+      preferences: { moreCategories: ['museum'], lessCategories: ['historic_church'], avoidPaid: true, pace: '', mustInclude: ['Coliseu'], exclude: ['Pantheon'] },
+    };
+    svc.adjustItinerary.mockResolvedValueOnce(ajustado)
+      .mockResolvedValueOnce({ ...ajustado, id: 9, assistantSummary: null })
+      .mockRejectedValueOnce(networkError());
+    await render(<Itinerario />);
+
+    await fireEvent.press(screen.getByText('Ajustar roteiro'));
+    expect(screen.getByText('Assistente do roteiro')).toBeTruthy();
+    await fireEvent.press(screen.getByText('Menos igrejas, mais museus'));
+
+    expect(await screen.findByText('Tirei as igrejas e coloquei mais museus.')).toBeTruthy();
+    expect(svc.adjustItinerary).toHaveBeenCalledWith(7, 'Menos igrejas, mais museus');
+    expect(useItineraryStore.getState().itinerary?.id).toBe(8);
+    expect(useItineraryStore.getState().itineraries.filter((i) => i.active)).toHaveLength(1);
+    expect(screen.getByText('mais museus')).toBeTruthy();
+    expect(screen.getByText('menos igrejas')).toBeTruthy();
+    expect(screen.getByText('só gratuitos')).toBeTruthy();
+    expect(screen.getByText('Coliseu')).toBeTruthy();
+    expect(screen.getByText('sem Pantheon')).toBeTruthy();
+
+    await fireEvent.changeText(screen.getByPlaceholderText(/menos igrejas, mais comida de rua/), 'com calma');
+    await fireEvent.press(screen.getByLabelText('Enviar pedido'));
+    expect(await screen.findByText('Pronto! Gerei uma nova versão do roteiro.')).toBeTruthy();
+
+    await fireEvent.changeText(screen.getByPlaceholderText(/menos igrejas, mais comida de rua/), 'mais bares');
+    await fireEvent.press(screen.getByLabelText('Enviar pedido'));
+    expect(await screen.findByText(/conexão|internet|servidor/i)).toBeTruthy();
   });
 });

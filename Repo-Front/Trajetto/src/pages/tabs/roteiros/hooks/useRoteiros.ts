@@ -8,6 +8,8 @@ import { getErrorMessage } from '@/utils/apiError';
 import { showAlert } from '@/src/components/alerts/alertService';
 import { useAsyncData } from '@/src/components/feedback';
 import { useDestinationCarousel } from '@/src/pages/tabs/shared/hooks/useDestinationCarousel';
+import { firstTripBySlug } from '@/src/domain/trip/firstTrip';
+import { cityName } from '@/src/i18n/format';
 
 export function useRoteiros() {
   const { t } = useTranslation('roteiros');
@@ -15,7 +17,7 @@ export function useRoteiros() {
 
   const { user } = useAuth();
   const router = useRouter();
-  const params = useLocalSearchParams<{ openGenerate?: string }>();
+  const params = useLocalSearchParams<{ openGenerate?: string; city?: string }>();
   const { itinerary, itineraries, loading, error, deleteItinerary, activateItinerary } = useItineraryStore();
   const [deleting, setDeleting] = useState<number | null>(null);
   const [activating, setActivating] = useState<number | null>(null);
@@ -37,11 +39,15 @@ export function useRoteiros() {
   useEffect(() => {
     if (params.openGenerate) {
       // Sincroniza com o parametro da rota e o consome em seguida; precisa ser efeito.
+      // Vindo do quiz, ja abre com a cidade sugerida para o perfil como ponto de partida.
+      const trip = firstTripBySlug(params.city);
       // eslint-disable-next-line react-hooks/set-state-in-effect
-      openGenerate();
-      router.setParams({ openGenerate: undefined });
+      openGenerate(trip ? {
+        lat: trip.latitude, lng: trip.longitude, displayName: cityName(trip.slug), shortName: cityName(trip.slug),
+      } : undefined);
+      router.setParams({ openGenerate: undefined, city: undefined });
     }
-  }, [params.openGenerate, router]);
+  }, [params.openGenerate, params.city, router]);
 
   const reload = useCallback(() => {
     if (userId) useItineraryStore.getState().fetchAllItineraries(userId);

@@ -11,6 +11,7 @@ import { AsyncBoundary } from '@/src/components/feedback';
 import { useMapa } from './hooks/useMapa';
 import { styles } from './styles/styles';
 import RouteLines from './components/RouteLines/RouteLines';
+import { useRouteReveal } from './hooks/useRouteReveal';
 import OriginMarker from './components/OriginMarker/OriginMarker';
 import PlaceMarkers from './components/PlaceMarkers/PlaceMarkers';
 import SearchPin from './components/SearchPin/SearchPin';
@@ -78,6 +79,7 @@ export default function Mapa() {
     spotDistance,
     navigation,
   } = useMapa();
+  const revealedSegments = useRouteReveal(segments);
 
   return (
     <AsyncBoundary
@@ -121,7 +123,7 @@ export default function Mapa() {
             onPress={() => { hideSuggestions(); Keyboard.dismiss(); }}
           >
             <RouteLines
-              segments={segments}
+              segments={revealedSegments}
               currentSegIdx={currentSegIdx}
               hasOriginSeg={hasOriginSeg}
               firstUpcomingIdx={firstUpcomingIdx}

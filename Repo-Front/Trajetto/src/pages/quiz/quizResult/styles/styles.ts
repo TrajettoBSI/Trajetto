@@ -73,5 +73,24 @@ export const styles = (colors: AppColors) =>
     },
     backButtonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 16 },
 
+    tripCard: {
+      borderRadius: 20, overflow: 'hidden', padding: 20, minHeight: 190, marginBottom: 12,
+      backgroundColor: colors.primaryDark, justifyContent: 'flex-end',
+    },
+    tripImage: { ...StyleSheet.absoluteFill },
+    tripKicker: {
+      fontSize: 11, fontFamily: 'Inter-Bold', color: colors.onPrimaryMuted, letterSpacing: 1.5, textTransform: 'uppercase',
+    },
+    tripTitle: { fontSize: 24, fontFamily: 'FugazOne', color: colors.onPrimary, marginTop: 4 },
+    tripBody: { fontSize: 14, color: colors.onPrimaryMuted, marginTop: 4, lineHeight: 20 },
+    tripCta: {
+      flexDirection: 'row', alignItems: 'center', gap: 6, alignSelf: 'flex-start', marginTop: 14,
+      backgroundColor: colors.white, borderRadius: 18, paddingHorizontal: 16, paddingVertical: 10,
+    },
+    tripCtaText: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.primary },
+
+    secondaryButton: { alignItems: 'center', padding: 14 },
+    secondaryButtonText: { color: colors.textMuted, fontFamily: 'Inter-Bold', fontSize: 15 },
+
     errorText: { textAlign: 'center', marginTop: 40, fontSize: 16, color: colors.gray600 },
   });

@@ -1,6 +1,7 @@
 import React from 'react';
 import { LayoutChangeEvent, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useTranslation } from 'react-i18next';
 import { Places } from '@/hooks/itineraryStore';
 import { TicketCard } from '@/components/TicketCard';
@@ -39,7 +40,7 @@ export default function TimelineRow({
   const s = styles(colors);
 
   return (
-    <View style={s.timelineRow} onLayout={onLayout}>
+    <Animated.View entering={FadeInDown.delay(Math.min(idx, 6) * 70).duration(380)} style={s.timelineRow} onLayout={onLayout}>
       <View style={s.rail}>
         <View style={[s.dot, isPast ? s.dotPast : { backgroundColor: color }]} />
         {!isLast && <View style={s.line} />}
@@ -92,6 +93,6 @@ export default function TimelineRow({
           </View>
         )}
       </View>
-    </View>
+    </Animated.View>
   );
 }

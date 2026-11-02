@@ -41,6 +41,12 @@ export function formatDayMonth(date: string, locale = activeLocale()): string {
   return new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit' }).format(d);
 }
 
+/** Nome da cidade do catalogo no idioma ativo ("roma" vira "Roma", "Rome"...). */
+export function cityName(slug?: string | null): string {
+  if (!slug) return '';
+  return i18n.t(`roteiros:cities.${slug}`, { defaultValue: slug });
+}
+
 /** Nome do roteiro: o dado pelo usuario ou, sem ele, "Roteiro Paris, dia 25/10". */
 export function itineraryTitle(itinerary: { name?: string | null; city?: string | null; startDate: string }): string {
   if (itinerary.name) return itinerary.name;

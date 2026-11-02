@@ -119,4 +119,15 @@ describe('navegacao inicial do app', () => {
     await entrarComo({ ...ana, isAdmin: true }, '(tabs)');
     await waitFor(() => expect(mockRouter.replace).toHaveBeenCalledWith('/AdminPanelScreen'));
   });
+
+  it.each(['AdminPanelScreen', 'AdminProfileScreen', 'UserListScreen', 'UserDetailScreen'])(
+    'usuario comum que volta para %s e mandado para as abas',
+    async (tela) => {
+      mockRouter.canDismiss.mockReturnValueOnce(true);
+      await entrarComo(ana, tela);
+      await waitFor(() => expect(mockRouter.replace).toHaveBeenCalledWith('/(tabs)'));
+      expect(mockRouter.dismissAll).toHaveBeenCalled();
+      expect(mockRouter.replace).not.toHaveBeenCalledWith('/AdminPanelScreen');
+    },
+  );
 });
