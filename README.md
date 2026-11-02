@@ -35,7 +35,6 @@ O projeto é o **Trabalho de Conclusão de Curso (TCC)** do curso de **Sistemas 
 - Ana Julia Rocha Cezanoski
 - Eduardo Nicolosi de Oliveira
 - Kauane Santana da Rosa
-- Lucas Nascimento da Silva
 
 ### Objetivos
 
@@ -61,22 +60,29 @@ O projeto é o **Trabalho de Conclusão de Curso (TCC)** do curso de **Sistemas 
 
 ## Requisitos funcionais
 
-- RF01 – Realizar login no sistema
-- RF02 – Realizar CRUD dos usuários
-- RF03 – Realizar teste de perfil de viajante
-- RF04 – Gerar roteiro da viagem com base no perfil
-- RF05 – Avaliar roteiro gerado
-- RF06 – Visualizar mapa e itinerário do roteiro
-- RF07 – Filtrar pontos turísticos por critérios avançados
-- RF08 – Avaliar os pontos turísticos visitados
-- RF09 – Recalcular roteiros em tempo real
-- RF10 – Adicionar notas/observações pessoais ao roteiro
-- RF11 – Sugerir novos pontos de interesse para o sistema
-- RF12 – Exportar/Compartilhar roteiro
-- RF13 – Acessar/Consultar histórico de roteiros
-- RF14 – Gerenciar pontos turísticos
-- RF15 – Gerar estatísticas de uso/viagem
-- RF16 – Visualizar dashboards de uso
+A especificação completa, com atores, histórias de usuário e critérios de aceitação, está em
+[`BSI-Especificação do Projeto.docx`](BSI-Especificação%20do%20Projeto.docx).
+
+| # | Requisito | Ator | Sprint |
+|---|---|---|---|
+| RF01 | Realizar autenticação do usuário | Todos | 1 |
+| RF02 | Gerenciar cadastro do usuário | Todos | 1 |
+| RF03 | Realizar teste de perfil de viajante | Cliente | 1 |
+| RF04 | Gerar roteiro da viagem com base no perfil | Cliente | 1 |
+| RF05 | Avaliar roteiro gerado | Cliente | 1 |
+| RF06 | Visualizar mapa e itinerário do roteiro | Cliente | 1 |
+| RF07 | Filtrar pontos turísticos por critérios avançados | Cliente | 2 |
+| RF08 | Recalcular roteiros em tempo real | Cliente | 2 |
+| RF09 | Adicionar notas pessoais ao roteiro | Cliente | 4 |
+| RF10 | Avaliar os pontos turísticos visitados | Cliente | 2 |
+| RF11 | Exportar roteiro | Cliente | 2 |
+| RF12 | Consultar histórico de roteiros | Cliente | 1 |
+| RF13 | Sugerir novos pontos de interesse para o sistema | Cliente | Backlog |
+| RF14 | Gerenciar pontos turísticos | Especialista | Backlog |
+| RF15 | Gerar estatísticas de uso | Administrador | 2 e 3 |
+| RF16 | Visualizar dashboards de uso | Administrador | 2 e 3 |
+| RF17 | Favoritar locais | Cliente | 4 |
+| RF18 | Gerenciar usuários e perfis de acesso | Administrador | 4 |
 
 ## Arquitetura
 
