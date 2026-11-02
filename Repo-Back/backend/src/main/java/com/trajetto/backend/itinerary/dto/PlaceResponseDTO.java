@@ -56,4 +56,11 @@ public class PlaceResponseDTO {
     /** Id do lugar no Wikidata, de onde vem a foto; nulo fora do catalogo. */
     @Schema(description = "Id do lugar no Wikidata, de onde vem a foto", example = "Q10285", nullable = true)
     private String wikidata;
+
+    /** Da parada anterior do mesmo dia (ou do ponto de partida, na primeira) ate esta. */
+    @Schema(description = "Distância desde a parada anterior do dia (ou da partida), em km", example = "1.2", nullable = true)
+    private Double distanceFromPreviousKm;
+
+    @Schema(description = "Estimativa a pé desde a parada anterior, em minutos", example = "18", nullable = true)
+    private Integer walkingMinutesFromPrevious;
 }

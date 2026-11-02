@@ -7,6 +7,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 
 import com.trajetto.backend.itinerary.dto.AddPlaceRequestDTO;
+import com.trajetto.backend.itinerary.dto.AdjustItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.DateRequestDTO;
 import com.trajetto.backend.itinerary.dto.GenerateItineraryRequestDTO;
 import com.trajetto.backend.itinerary.dto.ItineraryResponseDTO;
@@ -151,6 +152,22 @@ public class ItineraryController {
             @Parameter(description = "Id do roteiro", example = "15") @PathVariable Long itineraryId,
             @Valid @RequestBody NameRequestDTO req) {
         return ResponseEntity.ok(itineraryService.updateName(itineraryId, requireAuthenticated(userToken).getId(), req));
+    }
+
+    @Operation(summary = "Ajusta o roteiro com um pedido em texto livre",
+            description = "Interpreta o pedido (ex.: \"menos igrejas, mais comida de rua\") com IA e gera uma nova versão "
+                    + "do roteiro na mesma cidade, datas e ponto de partida. Os pedidos se acumulam; a versão anterior "
+                    + "fica no histórico. Sem IA configurada, um interpretador por palavras-chave assume.")
+    @ApiResponse(responseCode = "200", description = "Nova versão do roteiro, com a resposta do assistente em assistantSummary")
+    @ApiResponse(responseCode = "400", description = "Pedido vazio ou longo demais")
+    @ApiResponse(responseCode = "403", description = "O roteiro é de outro usuário")
+    @ApiResponse(responseCode = "404", description = "Roteiro não encontrado")
+    @PostMapping("/{itineraryId}/adjust")
+    public ResponseEntity<ItineraryResponseDTO> adjust(
+            @AuthenticationPrincipal UserToken userToken,
+            @Parameter(description = "Id do roteiro", example = "15") @PathVariable Long itineraryId,
+            @Valid @RequestBody AdjustItineraryRequestDTO req) {
+        return ResponseEntity.ok(itineraryService.adjustItinerary(itineraryId, requireAuthenticated(userToken).getId(), req));
     }
 
     @Operation(summary = "Troca uma parada por outro lugar",
