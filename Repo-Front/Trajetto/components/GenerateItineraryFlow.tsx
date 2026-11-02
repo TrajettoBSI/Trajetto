@@ -36,8 +36,7 @@ import { freePeriod } from '../src/domain/itinerary/freePeriod';
 import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth, itineraryTitle, placeName } from '../src/i18n/format';
 import { cityImage } from '../src/helpers/cityImage';
 import { NAME_MAX_LENGTH } from '../src/pages/tabs/itinerario/hooks/useItineraryRename';
-
-const STOP_COLORS = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
+import { PLACE_COLORS } from '../constants/placeColors';
 
 type Step = 'config' | 'loading' | 'preview';
 
@@ -696,7 +695,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               )}
               <View style={styles.previewList}>
                 {day.places.map((place, idx) => {
-                  const color = STOP_COLORS[idx % STOP_COLORS.length];
+                  const color = PLACE_COLORS[idx % PLACE_COLORS.length];
                   const isLast = idx === day.places.length - 1;
                   return (
                     <View key={idx}>
