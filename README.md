@@ -47,17 +47,19 @@ O projeto é o **Trabalho de Conclusão de Curso (TCC)** do curso de **Sistemas 
 ## Funcionalidades
 
 - Cadastro com verificação de e-mail, login e recuperação de senha
-- Teste de perfil de viajante
+- Teste de perfil de viajante, com pontuação proporcional (todos os perfis têm a mesma chance de sair)
+  e uma cidade sugerida para o primeiro roteiro
 - Geração de roteiros por perfil, cidade, número de dias e ritmo de viagem
 - Rota otimizada: construção gulosa + melhoria 2-opt que respeita o horário de funcionamento
-  (31% menos caminho que uma ordem sem critério; ver o [benchmark](Repo-Back/backend/docs/BENCHMARK-DE-ROTAS.md))
+  (27% menos caminho que uma ordem sem critério, com os lugares mais famosos nos primeiros dias; ver o [benchmark](Repo-Back/backend/docs/BENCHMARK-DE-ROTAS.md))
 - Roteiro que considera o clima: em dia de chuva, museus e lugares cobertos primeiro
 - Ajuste do roteiro em linguagem natural ("menos igrejas, mais comida de rua", "Fontana di Trevi no último dia, de manhã"), interpretado por palavras-chave, sem serviço pago
 - Edição do roteiro: trocar, incluir, remover e reordenar paradas, anotar e dar nome
 - Mapa com o trajeto e instruções a pé, de carro e de transporte público
 - Busca de pontos turísticos com filtros (categoria, preço, horário, perfil, distância)
 - Favoritos e avaliações de pontos turísticos
-- Histórico, avaliação e compartilhamento de roteiros
+- Histórico e avaliação de roteiros; compartilhamento em PDF ou como imagem no formato de story
+- Roteiros salvos no aparelho: sem internet, o app mostra a última versão carregada
 - Painel gerencial com indicadores e filtros (administração)
 - Gestão de usuários e perfis de acesso (administração)
 - Tema claro/escuro e interface em português, inglês e espanhol
