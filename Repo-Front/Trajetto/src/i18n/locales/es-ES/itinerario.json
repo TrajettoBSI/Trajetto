@@ -100,5 +100,14 @@
     "save": "Guardar",
     "cancel": "Cancelar",
     "error": "No se pudo guardar el nombre."
+  },
+  "rating": {
+    "title": "¿Qué tal este itinerario?",
+    "subtitle": "Toca las estrellas para darle una nota del 1 al 5.",
+    "yourRating_one": "Tu nota: {{count}} estrella",
+    "yourRating_other": "Tu nota: {{count}} estrellas",
+    "commentPlaceholder": "Comentario sobre el itinerario (opcional)",
+    "saveComment": "Guardar comentario",
+    "error": "No se pudo guardar la valoración."
   }
 }

@@ -1,5 +1,7 @@
 package com.trajetto.backend.exception;
 
+import io.swagger.v3.oas.annotations.Hidden;
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.boot.web.servlet.error.ErrorController;
@@ -18,6 +20,7 @@ import java.util.List;
  * despacha a requisição para {@code /error}. Sem este controller, essas respostas sairiam em um
  * formato diferente do resto da API, e o aplicativo não conseguiria lê-las.
  */
+@Hidden
 @RestController
 public class ApiErrorController implements ErrorController {
 

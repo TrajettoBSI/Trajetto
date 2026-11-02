@@ -12,6 +12,7 @@ import { useItineraryNote } from './useItineraryNote';
 import { useMealSuggestions } from './useMealSuggestions';
 import { useItineraryEdit } from './useItineraryEdit';
 import { useItineraryRename } from './useItineraryRename';
+import { useItineraryRating } from './useItineraryRating';
 
 export function useItinerario() {
   const router = useRouter();
@@ -32,6 +33,7 @@ export function useItinerario() {
   const { mealSuggestions, retryMealSuggestions } = useMealSuggestions(dayPlaces);
   const edit = useItineraryEdit(currentDay?.date ?? null);
   const rename = useItineraryRename(itinerary);
+  const rating = useItineraryRating(itinerary);
 
   const openMealPlace = useCallback((place: NearbyPlace) => {
     router.push({ pathname: '/SpotDetailScreen', params: { spot: JSON.stringify(place), origin: 'itinerario' } });
@@ -76,6 +78,7 @@ export function useItinerario() {
     openMealPlace,
     edit,
     rename,
+    rating,
     handleExportPDF: () => handleExportPDF(itinerary),
   };
 }

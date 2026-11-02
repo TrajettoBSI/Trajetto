@@ -1,5 +1,9 @@
 package com.trajetto.backend.stats.controller;
 
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import com.trajetto.backend.stats.dto.*;
 import com.trajetto.backend.stats.service.StatsService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -51,6 +55,8 @@ import java.util.List;
  * tela; agora devolve o ranking já cortado em dez mais os dois totais de
  * clientes com e sem roteiro, ambos contados pelo banco.</p>
  */
+@Tag(name = "Painel gerencial")
+@ApiResponse(responseCode = "403", description = "Sem a permissão STATS_VIEW")
 @RestController
 @RequestMapping("/stats")
 @RequiredArgsConstructor
@@ -62,7 +68,8 @@ public class StatsController {
 
     // ─── Filtros ───────────────────────────────────────────────────────────
 
-    @Operation(summary = "Perfis, países e categorias disponíveis nos seletores do painel")
+    @Operation(summary = "Opções dos filtros do painel",
+            description = "Valores aceitos em profile, country e category nos demais endpoints de /stats, lidos da própria base. Exige a permissão STATS_VIEW.")
     @GetMapping("/filter-options")
     public ResponseEntity<FilterOptionsDTO> getFilterOptions() {
         return ResponseEntity.ok(statsService.getFilterOptions());
@@ -70,31 +77,36 @@ public class StatsController {
 
     // ─── Usuários ──────────────────────────────────────────────────────────
 
-    @Operation(summary = "Cartões de usuários do painel (stored procedure sp_stats_user_overview)")
+    @Operation(summary = "Cartões de usuários",
+            description = "Totais de usuários, administradores, clientes, roteiros, verificados e idade média, calculados pela stored procedure sp_stats_user_overview. Responde aos filtros profile e country. Exige a permissão STATS_VIEW.")
     @GetMapping("/overview")
     public ResponseEntity<UserOverviewDTO> getOverview(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getUserOverview(filtro));
     }
 
-    @Operation(summary = "Usuários agrupados por país")
+    @Operation(summary = "Usuários por país",
+            description = "Contagem de usuários por país, em ordem decrescente. Responde aos filtros profile e country. Exige a permissão STATS_VIEW.")
     @GetMapping("/countries")
     public ResponseEntity<List<CountryCountDTO>> getByCountry(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getUsersByCountry(filtro));
     }
 
-    @Operation(summary = "Usuários agrupados por perfil de viajante")
+    @Operation(summary = "Usuários por perfil de viajante",
+            description = "Quem não fez o teste de perfil entra como Sem perfil. Responde aos filtros profile e country. Exige a permissão STATS_VIEW.")
     @GetMapping("/traveler-profiles")
     public ResponseEntity<List<ProfileCountDTO>> getTravelerProfiles(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getUsersByTravelerProfile(filtro));
     }
 
-    @Operation(summary = "Ranking de roteiros por cliente, com o total de clientes com e sem roteiro")
+    @Operation(summary = "Roteiros por cliente",
+            description = "Os dez clientes que mais criaram roteiros e os totais de clientes com e sem roteiro, todos contados pelo banco. Exige a permissão STATS_VIEW.")
     @GetMapping("/itineraries-per-user")
     public ResponseEntity<ItinerariesPerUserPanelDTO> getItinerariesPerUser(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getItinerariesPerUser(filtro));
     }
 
-    @Operation(summary = "Usuários agrupados por faixa etária")
+    @Operation(summary = "Usuários por faixa etária",
+            description = "Sempre as sete faixas, inclusive as zeradas e a de data de nascimento desconhecida. Exige a permissão STATS_VIEW.")
     @GetMapping("/age-groups")
     public ResponseEntity<List<AgeGroupCountDTO>> getAgeGroups(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getUsersByAgeGroup(filtro));
@@ -102,13 +114,15 @@ public class StatsController {
 
     // ─── Roteiros ──────────────────────────────────────────────────────────
 
-    @Operation(summary = "Cartões de roteiros do painel (stored procedure sp_stats_itinerary_overview)")
+    @Operation(summary = "Cartões de roteiros",
+            description = "Total de roteiros, duração média, nota média e quantos foram ou não avaliados (stored procedure sp_stats_itinerary_overview). Exige a permissão STATS_VIEW.")
     @GetMapping("/itinerary-overview")
     public ResponseEntity<ItineraryOverviewDTO> getItineraryOverview(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getItineraryOverview(filtro));
     }
 
-    @Operation(summary = "Roteiros criados por mês")
+    @Operation(summary = "Roteiros criados por mês",
+            description = "Série mensal para o gráfico, com o rótulo do mês em português (ex.: Out/26). Exige a permissão STATS_VIEW.")
     @GetMapping("/itineraries-per-month")
     public ResponseEntity<List<MonthCountDTO>> getItinerariesPerMonth(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getItinerariesPerMonth(filtro));
@@ -116,25 +130,29 @@ public class StatsController {
 
     // ─── Lugares ───────────────────────────────────────────────────────────
 
-    @Operation(summary = "Lugares agrupados por categoria")
+    @Operation(summary = "Lugares por categoria",
+            description = "Quantas paradas de roteiro há em cada categoria; sem categoria entra como Outros. Exige a permissão STATS_VIEW.")
     @GetMapping("/places-by-category")
     public ResponseEntity<List<CategoryCountDTO>> getPlacesByCategory(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getPlacesByCategory(filtro));
     }
 
-    @Operation(summary = "Dez lugares com melhor média de avaliação")
+    @Operation(summary = "Lugares mais bem avaliados",
+            description = "Os dez lugares com a maior média de notas, com o total de avaliações de cada um. Exige a permissão STATS_VIEW.")
     @GetMapping("/top-rated-places")
     public ResponseEntity<List<TopRatedPlaceDTO>> getTopRatedPlaces(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getTopRatedPlaces(filtro));
     }
 
-    @Operation(summary = "Dez lugares com mais comentários")
+    @Operation(summary = "Lugares mais comentados",
+            description = "Os dez lugares que mais receberam avaliações com comentário. Exige a permissão STATS_VIEW.")
     @GetMapping("/most-commented-places")
     public ResponseEntity<List<MostCommentedPlaceDTO>> getMostCommentedPlaces(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getMostCommentedPlaces(filtro));
     }
 
-    @Operation(summary = "Dez lugares que mais aparecem em roteiros")
+    @Operation(summary = "Lugares mais incluídos em roteiros",
+            description = "Os dez lugares que aparecem em mais roteiros. Exige a permissão STATS_VIEW.")
     @GetMapping("/most-visited-places")
     public ResponseEntity<List<MostVisitedPlaceDTO>> getMostVisitedPlaces(@ParameterObject @ModelAttribute StatsFilter filtro) {
         return ResponseEntity.ok(statsService.getMostVisitedPlaces(filtro));

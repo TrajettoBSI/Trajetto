@@ -1,5 +1,7 @@
 package com.trajetto.backend.stats.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 import java.util.List;
 
 /**
@@ -14,8 +16,9 @@ import java.util.List;
  * fossem recortadas, escolher um país esconderia todos os outros e o usuário
  * ficaria preso ao filtro que acabou de escolher.</p>
  */
+@Schema(description = "Opções de cada seletor do filtro do painel, lidas da base")
 public record FilterOptionsDTO(
-        List<String> profiles,
-        List<String> countries,
-        List<String> categories
+        @Schema(example = "[\"Aventureiro\", \"Cultural\", \"Sem perfil\"]") List<String> profiles,
+        @Schema(example = "[\"Argentina\", \"Brasil\", \"Portugal\"]") List<String> countries,
+        @Schema(example = "[\"attraction\", \"museum\", \"park\", \"Outros\"]") List<String> categories
 ) {}

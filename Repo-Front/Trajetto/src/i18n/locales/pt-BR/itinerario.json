@@ -100,5 +100,14 @@
     "save": "Salvar",
     "cancel": "Cancelar",
     "error": "Não foi possível salvar o nome."
+  },
+  "rating": {
+    "title": "Como está este roteiro?",
+    "subtitle": "Toque nas estrelas para dar uma nota de 1 a 5.",
+    "yourRating_one": "Sua nota: {{count}} estrela",
+    "yourRating_other": "Sua nota: {{count}} estrelas",
+    "commentPlaceholder": "Comentário sobre o roteiro (opcional)",
+    "saveComment": "Salvar comentário",
+    "error": "Não foi possível salvar a avaliação."
   }
 }
