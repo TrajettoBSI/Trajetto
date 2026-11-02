@@ -1,5 +1,7 @@
 package com.trajetto.backend.stats.dto;
 
+import io.swagger.v3.oas.annotations.Parameter;
+
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
@@ -35,10 +37,15 @@ import java.time.LocalDate;
  * @param category rótulo da categoria do local, como o painel o exibe
  */
 public record StatsFilter(
+        @Parameter(description = "Primeiro dia do período, inclusive", example = "2026-01-01")
         @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate from,
+        @Parameter(description = "Último dia do período, inclusive", example = "2026-10-31")
         @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate to,
+        @Parameter(description = "Perfil de viajante, como o painel exibe (inclusive Sem perfil)", example = "Cultural")
         String profile,
+        @Parameter(description = "País do usuário, como cadastrado", example = "Brasil")
         String country,
+        @Parameter(description = "Categoria do local, como o painel exibe (inclusive Outros)", example = "attraction")
         String category
 ) {
 

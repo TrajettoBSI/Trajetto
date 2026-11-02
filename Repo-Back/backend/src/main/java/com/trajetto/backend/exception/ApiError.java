@@ -1,5 +1,7 @@
 package com.trajetto.backend.exception;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
@@ -30,32 +32,46 @@ import java.util.UUID;
  * }
  * </pre>
  */
+@Schema(name = "ApiError", description = "Contrato único de erro: todas as falhas da API voltam neste formato.")
 public record ApiError(
 
+        @Schema(description = "Momento da ocorrência", example = "2026-11-02T14:03:22.123-03:00", type = "string", format = "date-time")
         @JsonFormat(shape = JsonFormat.Shape.STRING)
         OffsetDateTime timestamp,
 
+        @Schema(description = "Status HTTP", example = "404")
         int status,
 
+        @Schema(description = "Descrição do status HTTP", example = "Not Found")
         String error,
 
+        @Schema(description = "Código estável do erro, usado pelo aplicativo", example = "RESOURCE_NOT_FOUND")
         String code,
 
+        @Schema(description = "Mensagem legível para o usuário", example = "Roteiro não encontrado.")
         String message,
 
+        @Schema(description = "Caminho chamado", example = "/itinerary/99/name")
         String path,
 
+        @Schema(description = "Método HTTP chamado", example = "PATCH")
         String method,
 
+        @Schema(description = "Identificador para localizar a falha no log do servidor", example = "3f1c2b9e")
         String traceId,
 
+        @Schema(description = "Campos rejeitados; presente apenas em erros de validação")
         @JsonInclude(JsonInclude.Include.NON_EMPTY)
         List<FieldError> details
 ) {
 
     /** Detalhe de um campo específico rejeitado na validação. */
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    public record FieldError(String field, String message, Object rejectedValue) {
+    @Schema(description = "Campo rejeitado na validação")
+    public record FieldError(
+            @Schema(description = "Nome do campo", example = "email") String field,
+            @Schema(description = "Motivo da rejeição", example = "Informe um e-mail válido") String message,
+            @Schema(description = "Valor enviado", example = "ana.silva@") Object rejectedValue) {
     }
 
     public static ApiError of(ApiErrorCode code, String message, String path, String method) {

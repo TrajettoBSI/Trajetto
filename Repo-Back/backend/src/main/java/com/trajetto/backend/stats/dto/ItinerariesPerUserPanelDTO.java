@@ -1,5 +1,7 @@
 package com.trajetto.backend.stats.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 import java.util.List;
 
 /**
@@ -16,8 +18,12 @@ import java.util.List;
  * @param clientsWithItinerary    clientes com pelo menos um roteiro
  * @param clientsWithoutItinerary clientes que ainda nao geraram nenhum
  */
+@Schema(description = "Ranking de roteiros por cliente e os totais exibidos ao lado")
 public record ItinerariesPerUserPanelDTO(
+        @Schema(description = "Os dez clientes que mais criaram roteiros")
         List<ItinerariesPerUserDTO> topClients,
+        @Schema(description = "Clientes com pelo menos um roteiro", example = "18")
         long clientsWithItinerary,
+        @Schema(description = "Clientes sem roteiro", example = "7")
         long clientsWithoutItinerary
 ) {}
