@@ -23,7 +23,7 @@ Plataforma mobile para descoberta e planejamento de roteiros turísticos persona
 O **Trajetto** é um aplicativo que ajuda o usuário a **descobrir, planejar e organizar roteiros
 turísticos personalizados**. A partir de um teste de perfil de viajante, o app gera um roteiro
 dia a dia para a cidade escolhida — com horários, refeições e o ritmo de viagem desejado —,
-mostra o trajeto no mapa e permite editar, anotar, avaliar e compartilhar o roteiro.
+mostra o trajeto no mapa e permite editar, anotar e compartilhar o roteiro.
 
 O catálogo cobre 20 cidades (Roma, Paris, Curitiba, Tóquio, Nova York, Lisboa, entre outras),
 com pontos turísticos do OpenStreetMap enriquecidos com Wikidata/Wikimedia.
@@ -53,7 +53,7 @@ O projeto é o **Trabalho de Conclusão de Curso (TCC)** do curso de **Sistemas 
 - Mapa com o trajeto e instruções a pé, de carro e de transporte público
 - Busca de pontos turísticos com filtros (categoria, preço, horário, perfil, distância)
 - Favoritos e avaliações de pontos turísticos
-- Histórico, avaliação e compartilhamento de roteiros
+- Histórico e compartilhamento de roteiros
 - Painel gerencial com indicadores e filtros (administração)
 - Gestão de usuários e perfis de acesso (administração)
 - Tema claro/escuro e interface em português, inglês e espanhol
@@ -69,18 +69,17 @@ A especificação completa, com atores, histórias de usuário e critérios de a
 | RF02 | Gerenciar cadastro do usuário | Todos | 1 |
 | RF03 | Realizar teste de perfil de viajante | Cliente | 1 |
 | RF04 | Gerar roteiro da viagem com base no perfil | Cliente | 1 |
-| RF05 | Avaliar roteiro gerado | Cliente | 1 |
-| RF06 | Visualizar mapa e itinerário do roteiro | Cliente | 1 |
-| RF07 | Filtrar pontos turísticos por critérios avançados | Cliente | 2 |
-| RF08 | Recalcular roteiros em tempo real | Cliente | 2 |
-| RF09 | Adicionar notas pessoais ao roteiro | Cliente | 4 |
-| RF10 | Avaliar os pontos turísticos visitados | Cliente | 2 |
-| RF11 | Exportar roteiro | Cliente | 2 |
-| RF12 | Consultar histórico de roteiros | Cliente | 1 |
-| RF13 | Gerar estatísticas de uso | Administrador | 2 e 3 |
-| RF14 | Visualizar dashboards de uso | Administrador | 2 e 3 |
-| RF15 | Favoritar locais | Cliente | 4 |
-| RF16 | Gerenciar usuários e perfis de acesso | Administrador | 4 |
+| RF05 | Visualizar mapa e itinerário do roteiro | Cliente | 1 |
+| RF06 | Filtrar pontos turísticos por critérios avançados | Cliente | 2 |
+| RF07 | Recalcular roteiros em tempo real | Cliente | 2 |
+| RF08 | Adicionar notas pessoais ao roteiro | Cliente | 4 |
+| RF09 | Avaliar os pontos turísticos visitados | Cliente | 2 |
+| RF10 | Exportar roteiro | Cliente | 2 |
+| RF11 | Consultar histórico de roteiros | Cliente | 1 |
+| RF12 | Gerar estatísticas de uso | Administrador | 2 e 3 |
+| RF13 | Visualizar dashboards de uso | Administrador | 2 e 3 |
+| RF14 | Favoritar locais | Cliente | 4 |
+| RF15 | Gerenciar usuários e perfis de acesso | Administrador | 4 |
 
 ## Arquitetura
 
