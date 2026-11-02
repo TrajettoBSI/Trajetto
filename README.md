@@ -77,12 +77,10 @@ A especificação completa, com atores, histórias de usuário e critérios de a
 | RF10 | Avaliar os pontos turísticos visitados | Cliente | 2 |
 | RF11 | Exportar roteiro | Cliente | 2 |
 | RF12 | Consultar histórico de roteiros | Cliente | 1 |
-| RF13 | Sugerir novos pontos de interesse para o sistema | Cliente | Backlog |
-| RF14 | Gerenciar pontos turísticos | Especialista | Backlog |
-| RF15 | Gerar estatísticas de uso | Administrador | 2 e 3 |
-| RF16 | Visualizar dashboards de uso | Administrador | 2 e 3 |
-| RF17 | Favoritar locais | Cliente | 4 |
-| RF18 | Gerenciar usuários e perfis de acesso | Administrador | 4 |
+| RF13 | Gerar estatísticas de uso | Administrador | 2 e 3 |
+| RF14 | Visualizar dashboards de uso | Administrador | 2 e 3 |
+| RF15 | Favoritar locais | Cliente | 4 |
+| RF16 | Gerenciar usuários e perfis de acesso | Administrador | 4 |
 
 ## Arquitetura
 
