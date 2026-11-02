@@ -4,7 +4,7 @@ import { Marker } from 'react-native-maps';
 import { MaterialIcons } from '@expo/vector-icons';
 import Animated from 'react-native-reanimated';
 import { useTranslation } from 'react-i18next';
-import { PLACE_COLORS } from '@/constants/placeColors';
+import { MAP_PLACE_COLORS } from '@/constants/placeColors';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { placeDate } from '@/src/domain/itinerary/itineraryDays';
 import { useColors } from '@/src/theme';
@@ -29,7 +29,7 @@ export default function PlaceMarkers({ points, startDate, firstUpcomingIdx, puls
       {points.map((point, index) => {
         const isPast = isPlacePast(placeDate(startDate, point), point.estimatedVisitTime);
         const isNext = index === firstUpcomingIdx;
-        const color = isPast ? colors.timelineDotPast : PLACE_COLORS[index % PLACE_COLORS.length];
+        const color = isPast ? colors.timelineDotPast : MAP_PLACE_COLORS[index % MAP_PLACE_COLORS.length];
         return (
           <Marker key={`pin-${index}`} coordinate={{ latitude: point.latitude, longitude: point.longitude }} anchor={{ x: 0.5, y: 1 }} tracksViewChanges={isNext}>
             <View style={s.markerWrapper}>
