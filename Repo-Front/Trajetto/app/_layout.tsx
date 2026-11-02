@@ -62,12 +62,16 @@ function RootLayoutNav() {
     const publicRoutes = ['LoginScreen', 'RegisterScreen', 'ForgotPasswordScreen', 'ResetPasswordScreen', 'VerifyEmailScreen'];
     const inPublic = publicRoutes.includes(currentSegment);
     const inTabs = currentSegment === '(tabs)';
+    const adminRoutes = ['AdminPanelScreen', 'AdminProfileScreen', 'UserListScreen', 'UserDetailScreen'];
+    const inAdmin = adminRoutes.includes(currentSegment);
 
     const needsQuiz = !user?.isAdmin && (!user?.travelerProfile || user.travelerProfile === 'SKIPPED');
 
     if (!user && !inPublic) {
+      if (router.canDismiss()) router.dismissAll();
       router.replace('/LoginScreen');
     } else if (user && inPublic) {
+      if (router.canDismiss()) router.dismissAll();
       if (user.isAdmin) {
         router.replace('/AdminPanelScreen');
       } else if (needsQuiz) {
@@ -77,6 +81,9 @@ function RootLayoutNav() {
       }
     } else if (user?.isAdmin && inTabs) {
       router.replace('/AdminPanelScreen');
+    } else if (user && !user.isAdmin && inAdmin) {
+      if (router.canDismiss()) router.dismissAll();
+      router.replace('/(tabs)');
     }
 
     if (fontsLoaded || fontError) {
