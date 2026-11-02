@@ -49,6 +49,11 @@ O projeto é o **Trabalho de Conclusão de Curso (TCC)** do curso de **Sistemas 
 - Cadastro com verificação de e-mail, login e recuperação de senha
 - Teste de perfil de viajante
 - Geração de roteiros por perfil, cidade, número de dias e ritmo de viagem
+- Rota otimizada: construção gulosa + melhoria 2-opt que respeita o horário de funcionamento
+  (31% menos caminho que uma ordem sem critério; ver o [benchmark](Repo-Back/backend/docs/BENCHMARK-DE-ROTAS.md))
+- Roteiro que considera o clima: em dia de chuva, museus e lugares cobertos primeiro
+- Ajuste do roteiro em linguagem natural ("menos igrejas, mais comida de rua"), interpretado por IA
+- Modo viagem: próxima parada, contagem regressiva, distância a pé e progresso do dia
 - Edição do roteiro: trocar, incluir, remover e reordenar paradas, anotar e dar nome
 - Mapa com o trajeto e instruções a pé, de carro e de transporte público
 - Busca de pontos turísticos com filtros (categoria, preço, horário, perfil, distância)
@@ -102,7 +107,8 @@ Arquitetura **cliente-servidor**:
                      └───────────────────────────┘            └──────────────────────────────┘
 
 Serviços externos: OpenRouteService (rotas), Overpass/OpenStreetMap, Wikidata/Wikimedia
-(fotos) e Gmail SMTP (códigos de verificação).
+(fotos), Open-Meteo (previsão do tempo), API da Anthropic (Claude, interpreta pedidos em texto
+livre) e Gmail SMTP (códigos de verificação).
 ```
 
 ## Tecnologias
@@ -211,6 +217,7 @@ cp secrets.properties.example secrets.properties   # o secrets.properties é ign
 | `JWT_SECRET` | chave do token, com 32+ caracteres — gere com `openssl rand -hex 32` |
 | `ADMIN_PASSWORD` | senha do administrador criado na primeira subida |
 | `ors.api.key` | chave gratuita do [OpenRouteService](https://openrouteservice.org/dev/#/signup) |
+| `ANTHROPIC_API_KEY` | opcional: chave da [API da Anthropic](https://console.anthropic.com/); sem ela, os pedidos em texto livre são interpretados por palavras-chave |
 
 Cada chave também pode vir de uma variável de ambiente com o mesmo nome. Também são
 configuráveis por variável: `DB_HOST`, `DB_PORT`, `DB_NAME`, `MONGO_HOST`, `MONGO_PORT`,
@@ -452,5 +459,6 @@ Os dois conjuntos rodam no GitHub Actions a cada pull request para `dev`, `test`
 | [Contrato de erro da API](Repo-Back/backend/docs/CONTRATO-DE-ERRO.md) | formato JSON e códigos de erro |
 | [Catálogo de cidades](Repo-Back/backend/docs/CATALOGO-DE-CIDADES.md) | como o catálogo é montado e como incluir uma cidade |
 | [Cobertura de testes](Repo-Back/backend/docs/COBERTURA-DE-TESTES.md) | resultado da medição por pacote |
+| [Benchmark de rotas](Repo-Back/backend/docs/BENCHMARK-DE-ROTAS.md) | ganho da otimização 2-opt nas 20 cidades |
 | [Migrações do banco](Repo-Back/backend/src/main/resources/db/migration/README.md) | regras do Flyway e passo a passo |
 | [Arquitetura do frontend](Repo-Front/Trajetto/ARQUITETURA.md) | camadas e padrões do app |
