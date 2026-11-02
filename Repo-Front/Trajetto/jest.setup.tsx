@@ -17,6 +17,7 @@ jest.mock('react-native/src/private/assets/AssetRegistry', () => ({
 }));
 jest.mock('expo-router', () => require('./tests/mocks/expoRouter'));
 jest.mock('react-native-maps', () => require('./tests/mocks/reactNativeMaps'));
+jest.mock('react-native-view-shot', () => ({ captureRef: jest.fn(async () => 'file:///tmp/cartao.png') }));
 
 jest.mock('expo-location', () => ({
   requestForegroundPermissionsAsync: jest.fn(async () => ({ status: 'granted' })),

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useColors } from '@/src/theme';
@@ -12,10 +12,9 @@ import { styles } from './styles';
 type InsightsCardProps = {
   savings: RouteSavings | null;
   weather: DayWeather | null;
-  onTravelMode: () => void;
 };
 
-export default function InsightsCard({ savings, weather, onTravelMode }: InsightsCardProps) {
+export default function InsightsCard({ savings, weather }: InsightsCardProps) {
   const { t } = useTranslation('itinerario');
   const colors = useColors();
   const s = styles(colors);
@@ -68,12 +67,6 @@ export default function InsightsCard({ savings, weather, onTravelMode }: Insight
           <Text style={s.rainText}>{t('insights.rainyDay')}</Text>
         </View>
       )}
-
-      <TouchableOpacity style={s.travelBtn} onPress={onTravelMode} activeOpacity={0.85} accessibilityRole="button">
-        <Ionicons name="navigate" size={18} color={colors.onPrimary} />
-        <Text style={s.travelBtnText}>{t('insights.travelMode')}</Text>
-        <Ionicons name="chevron-forward" size={18} color={colors.onPrimary} />
-      </TouchableOpacity>
     </View>
   );
 }

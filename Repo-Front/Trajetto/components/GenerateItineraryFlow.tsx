@@ -19,6 +19,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Svg, { Circle } from 'react-native-svg';
 import { useTranslation } from 'react-i18next';
 import * as Location from 'expo-location';
+import * as Haptics from 'expo-haptics';
 import DateTimePicker, { DateTimePickerAndroid, DateTimePickerEvent } from '@react-native-community/datetimepicker';
 import { useAuth } from '../context/AuthContext';
 import { City, cityService, PlaceSuggestion, searchAddresses, TravelPace } from '../services';
@@ -341,6 +342,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
     const elapsed = Date.now() - start;
     const remaining = 2000 - elapsed;
     if (remaining > 0) await new Promise(r => setTimeout(r, remaining));
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
     return result;
   };
 

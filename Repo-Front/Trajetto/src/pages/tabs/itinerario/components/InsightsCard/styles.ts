@@ -26,9 +26,4 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.primarySurface, borderRadius: 12, padding: 10,
     },
     rainText: { flex: 1, fontSize: 13, color: colors.primary, lineHeight: 18 },
-    travelBtn: {
-      flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8,
-      backgroundColor: colors.primary, borderRadius: 14, paddingVertical: 13, marginTop: 12,
-    },
-    travelBtnText: { fontSize: 15, fontFamily: 'Inter-Bold', color: colors.onPrimary },
   });

@@ -1,6 +1,29 @@
 import { create } from 'zustand';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AddPlaceRequest, ItineraryService, TravelPace } from '../services';
-import { getErrorMessage } from '../utils/apiError';
+import { getErrorMessage, isNetworkError } from '../utils/apiError';
+
+/**
+ * Copia dos roteiros no aparelho: sem internet (na viagem, no exterior), o app mostra a
+ * ultima versao que carregou em vez de uma tela de erro.
+ */
+type OfflineCopy = { itinerary: Itinerary | null; itineraries: Itinerary[] };
+const offlineKey = (userId: number) => `@trajetto/offline/itineraries/${userId}`;
+let offlineOwner: number | null = null;
+
+async function readOfflineCopy(userId: number): Promise<OfflineCopy | null> {
+  try {
+    const raw = await AsyncStorage.getItem(offlineKey(userId));
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+async function writeOfflineCopy(userId: number, copy: OfflineCopy) {
+  offlineOwner = userId;
+  await AsyncStorage.setItem(offlineKey(userId), JSON.stringify(copy)).catch(() => {});
+}
 
 export interface Places {
   name: string;
@@ -70,6 +93,8 @@ type ItineraryStore = {
   itineraries: Itinerary[];
   loading: boolean;
   error: string | null;
+  /** Mostrando a copia salva no aparelho porque o servidor nao respondeu. */
+  offline: boolean;
   highlightedPlaceIndex: number | null;
   focusedMapPlaceIndex: number | null;
   selectedDay: string | null;
@@ -105,6 +130,7 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
   itineraries: [],
   loading: false,
   error: null,
+  offline: false,
   highlightedPlaceIndex: null,
   focusedMapPlaceIndex: null,
   selectedDay: null,
@@ -113,8 +139,15 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
     try {
       set({ loading: true, error: null });
       const data = await ItineraryService.getItinerary(userId);
-      set({ itinerary: data?.id ? data : null, loading: false });
+      const itinerary = data?.id ? data : null;
+      await writeOfflineCopy(userId, { itinerary, itineraries: get().itineraries });
+      set({ itinerary, loading: false, offline: false });
     } catch (e) {
+      const copy = isNetworkError(e) ? await readOfflineCopy(userId) : null;
+      if (copy?.itinerary) {
+        set({ itinerary: copy.itinerary, error: null, loading: false, offline: true });
+        return;
+      }
       // Guardar a falha permite a tela dizer que algo deu errado, em vez de mostrar
       // "voce ainda nao tem roteiro" para quem esta so sem internet.
       set({ itinerary: null, error: getErrorMessage(e), loading: false });
@@ -126,8 +159,14 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
       set({ loading: true, error: null });
       const data: Itinerary[] = await ItineraryService.getAllItineraries(userId);
       const active = data.find(i => i.active) ?? null;
-      set({ itineraries: data, itinerary: active, loading: false });
+      await writeOfflineCopy(userId, { itinerary: active, itineraries: data });
+      set({ itineraries: data, itinerary: active, loading: false, offline: false });
     } catch (e) {
+      const copy = isNetworkError(e) ? await readOfflineCopy(userId) : null;
+      if (copy && (copy.itinerary || copy.itineraries.length > 0)) {
+        set({ itineraries: copy.itineraries, itinerary: copy.itinerary, error: null, loading: false, offline: true });
+        return;
+      }
       set({ itineraries: [], itinerary: null, error: getErrorMessage(e), loading: false });
     }
   },
@@ -234,3 +273,10 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
   setFocusedMapPlace: (index) => set({ focusedMapPlaceIndex: index }),
   setSelectedDay: (date) => set({ selectedDay: date }),
 }));
+
+// Edicoes feitas com internet (trocar parada, anotar, ajustar) tambem vao para a copia salva.
+useItineraryStore.subscribe((state, prev) => {
+  if (offlineOwner == null || state.offline) return;
+  if (state.itinerary === prev.itinerary && state.itineraries === prev.itineraries) return;
+  writeOfflineCopy(offlineOwner, { itinerary: state.itinerary, itineraries: state.itineraries });
+});

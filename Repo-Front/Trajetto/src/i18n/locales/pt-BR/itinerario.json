@@ -119,7 +119,6 @@
     "noForecast": "Previsão disponível até 16 dias antes",
     "rainChance": "{{percent}}% de chuva",
     "rainyDay": "Dia de chuva: priorizamos museus e lugares cobertos, e deixamos os passeios ao ar livre para os dias secos.",
-    "travelMode": "Iniciar modo viagem",
     "kinds": {
       "clear": "Céu limpo",
       "partlyCloudy": "Parcialmente nublado",
@@ -186,30 +185,20 @@
       "zoo": "zoológicos"
     }
   },
-  "travelMode": {
-    "title": "Modo viagem",
-    "back": "Voltar",
-    "dayOf": "Dia {{number}} de {{total}}",
-    "now": "Agora",
-    "next": "Próxima parada",
-    "nextIn": "Próxima parada em {{minutes}} min",
-    "nextInHours": "Próxima parada em {{hours}}h{{minutes}}",
-    "minutesLeft": "faltam {{minutes}} min",
-    "progress": "{{done}} de {{total}} paradas",
-    "fromYou": "{{minutes}} min a pé de você ({{km}} km)",
-    "fromPrevious": "{{minutes}} min a pé desde a parada anterior ({{km}} km)",
-    "directions": "Como chegar",
-    "onMap": "No mapa",
-    "complete": "Concluir",
-    "today": "Paradas do dia",
-    "dayDoneTitle": "Dia concluído!",
-    "dayDoneText": "Você passou por todas as paradas de hoje. Descanse, amanhã tem mais.",
-    "previewBefore_one": "Sua viagem começa em {{count}} dia. Veja como vai ser:",
-    "previewBefore_other": "Sua viagem começa em {{count}} dias. Veja como vai ser:",
-    "previewAfter": "Esta viagem já terminou. Reveja como foi:",
-    "simulatedTime": "Simulação - {{time}}",
-    "jumpNext": "Próxima parada",
-    "prevDay": "Dia anterior",
-    "nextDay": "Dia seguinte"
+  "share": {
+    "button": "Compartilhar roteiro",
+    "buttonShort": "Compartilhar",
+    "title": "Compartilhar roteiro",
+    "error": "Não foi possível compartilhar agora. Tente de novo.",
+    "headlinePlan": "Meu roteiro em",
+    "daysPill_one": "{{count}} dia",
+    "daysPill_other": "{{count}} dias",
+    "stops": "paradas",
+    "km": "km a pé",
+    "styles": "estilos",
+    "day": "DIA {{number}}",
+    "moreDays_one": "+ {{count}} dia de roteiro",
+    "moreDays_other": "+ {{count}} dias de roteiro",
+    "footer": "Planejado com o Trajetto"
   }
 }

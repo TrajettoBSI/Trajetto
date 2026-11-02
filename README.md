@@ -53,7 +53,6 @@ O projeto é o **Trabalho de Conclusão de Curso (TCC)** do curso de **Sistemas 
   (31% menos caminho que uma ordem sem critério; ver o [benchmark](Repo-Back/backend/docs/BENCHMARK-DE-ROTAS.md))
 - Roteiro que considera o clima: em dia de chuva, museus e lugares cobertos primeiro
 - Ajuste do roteiro em linguagem natural ("menos igrejas, mais comida de rua", "Fontana di Trevi no último dia, de manhã"), interpretado por palavras-chave, sem serviço pago
-- Modo viagem: próxima parada, contagem regressiva, distância a pé e progresso do dia
 - Edição do roteiro: trocar, incluir, remover e reordenar paradas, anotar e dar nome
 - Mapa com o trajeto e instruções a pé, de carro e de transporte público
 - Busca de pontos turísticos com filtros (categoria, preço, horário, perfil, distância)

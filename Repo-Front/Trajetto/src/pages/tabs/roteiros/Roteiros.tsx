@@ -17,6 +17,7 @@ import SelectBar from './components/SelectBar/SelectBar';
 import SearchCard from './components/SearchCard/SearchCard';
 import ExploreDestinationsCard from './components/ExploreDestinationsCard/ExploreDestinationsCard';
 import PlaceHighlights from './components/PlaceHighlights/PlaceHighlights';
+import OfflineBanner from '@/src/pages/tabs/shared/components/OfflineBanner/OfflineBanner';
 
 export default function Roteiros() {
   const { t } = useTranslation('roteiros');
@@ -123,6 +124,8 @@ export default function Roteiros() {
         )}
         scrollEventThrottle={16}
       >
+        <OfflineBanner />
+
         {!selectMode && (
           <SearchCard onPressSearch={() => openGenerate()} />
         )}

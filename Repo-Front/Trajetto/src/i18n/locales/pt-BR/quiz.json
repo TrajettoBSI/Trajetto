@@ -136,5 +136,11 @@
       "descricao": "Você viaja para se encontrar, não para se perder em multidões. Introspecção, silêncio e conexão profunda com o lugar são o que fazem uma viagem perfeita.",
       "destinos": ["Escócia", "Tibete", "Lapônia Finlandesa", "Deserto do Atacama"]
     }
+  },
+  "firstTrip": {
+    "kicker": "Sua primeira viagem",
+    "title": "Que tal {{city}}?",
+    "body": "É a cara do seu perfil. Monte um roteiro em menos de um minuto.",
+    "cta": "Montar meu roteiro"
   }
 }

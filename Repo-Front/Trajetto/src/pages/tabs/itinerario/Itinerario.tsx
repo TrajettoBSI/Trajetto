@@ -28,6 +28,9 @@ import { cityImage } from '@/src/helpers/cityImage';
 import InsightsCard from './components/InsightsCard/InsightsCard';
 import TravelLeg from './components/TravelLeg/TravelLeg';
 import AssistantModal from './components/AssistantModal/AssistantModal';
+import OfflineBanner from '@/src/pages/tabs/shared/components/OfflineBanner/OfflineBanner';
+import ShareSheet from '@/src/components/share/ShareSheet';
+import ItineraryStoryCard from '@/src/components/share/ItineraryStoryCard';
 
 const TAB_BAR_SPACE = 64 + 4 + 24;
 
@@ -77,7 +80,8 @@ export default function Itinerario() {
     assistant,
     savings,
     dayWeather,
-    openTravelMode,
+    share,
+    shareCardRef,
   } = useItinerario();
 
   return (
@@ -112,13 +116,13 @@ export default function Itinerario() {
                 </TouchableOpacity>
                 <TouchableOpacity
                   style={s.headerExportBtn}
-                  onPress={handleExportPDF}
+                  onPress={share.open}
                   activeOpacity={0.8}
                   accessibilityRole="button"
-                  accessibilityLabel={t('exportPdf')}
+                  accessibilityLabel={t('share.button')}
                 >
-                  <Ionicons name="download-outline" size={18} color={colors.onPrimary} />
-                  <Text style={s.headerExportText}>{t('exportPdfShort')}</Text>
+                  <Ionicons name="share-social-outline" size={18} color={colors.onPrimary} />
+                  <Text style={s.headerExportText}>{t('share.buttonShort')}</Text>
                 </TouchableOpacity>
               </View>
             </View>
@@ -128,6 +132,8 @@ export default function Itinerario() {
               contentContainerStyle={[s.content, { paddingBottom: insets.bottom + TAB_BAR_SPACE + 64 }]}
               showsVerticalScrollIndicator={false}
             >
+              <OfflineBanner />
+
               <ItineraryHeaderCard
                 title={itineraryTitle(roteiro)}
                 image={cityImage(roteiro.city)}
@@ -148,7 +154,7 @@ export default function Itinerario() {
               />
 
               {!edit.editing && (
-                <InsightsCard savings={savings} weather={dayWeather} onTravelMode={openTravelMode} />
+                <InsightsCard savings={savings} weather={dayWeather} />
               )}
 
               <Text style={s.sectionLabel}>
@@ -263,6 +269,27 @@ export default function Itinerario() {
               onSend={assistant.send}
               onClose={assistant.close}
             />
+
+            <ShareSheet
+              visible={share.visible}
+              title={t('share.title')}
+              sharing={share.sharing}
+              onShare={share.send}
+              onClose={share.close}
+            >
+              {share.stats && (
+                <ItineraryStoryCard
+                  ref={shareCardRef}
+                  width={share.cardWidth}
+                  city={roteiro.city}
+                  title={itineraryTitle(roteiro)}
+                  startDate={roteiro.startDate}
+                  endDate={roteiro.endDate}
+                  stats={share.stats}
+                  headline={t('share.headlinePlan')}
+                />
+              )}
+            </ShareSheet>
 
             <AlternativesModal
               visible={showAltModal}

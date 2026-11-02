@@ -59,6 +59,9 @@ export const getApiError = (error: unknown): ApiErrorBody | null => {
 export const getErrorCode = (error: unknown): string | null =>
   getApiError(error)?.code ?? null;
 
+/** Sem resposta do servidor: celular sem rede, servidor fora do ar ou timeout. */
+export const isNetworkError = (error: unknown): boolean => isAxiosError(error) && !error.response;
+
 /** Status HTTP da resposta, quando houver. */
 export const getErrorStatus = (error: unknown): number | null =>
   isAxiosError(error) ? error.response?.status ?? null : null;

@@ -119,7 +119,6 @@
     "noForecast": "Forecast available up to 16 days ahead",
     "rainChance": "{{percent}}% chance of rain",
     "rainyDay": "Rainy day: we put museums and indoor places first and saved outdoor spots for the dry days.",
-    "travelMode": "Start travel mode",
     "kinds": {
       "clear": "Clear sky",
       "partlyCloudy": "Partly cloudy",
@@ -186,30 +185,20 @@
       "zoo": "zoos"
     }
   },
-  "travelMode": {
-    "title": "Travel mode",
-    "back": "Back",
-    "dayOf": "Day {{number}} of {{total}}",
-    "now": "Now",
-    "next": "Next stop",
-    "nextIn": "Next stop in {{minutes}} min",
-    "nextInHours": "Next stop in {{hours}}h{{minutes}}",
-    "minutesLeft": "{{minutes}} min left",
-    "progress": "{{done}} of {{total}} stops",
-    "fromYou": "{{minutes}} min walk from you ({{km}} km)",
-    "fromPrevious": "{{minutes}} min walk from the previous stop ({{km}} km)",
-    "directions": "Directions",
-    "onMap": "On map",
-    "complete": "Done",
-    "today": "Today's stops",
-    "dayDoneTitle": "Day complete!",
-    "dayDoneText": "You visited every stop today. Get some rest, there is more tomorrow.",
-    "previewBefore_one": "Your trip starts in {{count}} day. Here is how it will go:",
-    "previewBefore_other": "Your trip starts in {{count}} days. Here is how it will go:",
-    "previewAfter": "This trip is over. Relive how it went:",
-    "simulatedTime": "Simulation - {{time}}",
-    "jumpNext": "Next stop",
-    "prevDay": "Previous day",
-    "nextDay": "Next day"
+  "share": {
+    "button": "Share itinerary",
+    "buttonShort": "Share",
+    "title": "Share itinerary",
+    "error": "Couldn't share right now. Please try again.",
+    "headlinePlan": "My itinerary in",
+    "daysPill_one": "{{count}} day",
+    "daysPill_other": "{{count}} days",
+    "stops": "stops",
+    "km": "km on foot",
+    "styles": "styles",
+    "day": "DAY {{number}}",
+    "moreDays_one": "+ {{count}} more day",
+    "moreDays_other": "+ {{count}} more days",
+    "footer": "Planned with Trajetto"
   }
 }

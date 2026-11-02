@@ -25,7 +25,7 @@ jest.mock('@/services', () => ({
   weatherService: { getForecast: jest.fn(async () => []) },
 }));
 jest.mock('expo-print', () => ({ printToFileAsync: jest.fn() }));
-jest.mock('expo-sharing', () => ({ shareAsync: jest.fn() }));
+jest.mock('expo-sharing', () => ({ isAvailableAsync: jest.fn(async () => true), shareAsync: jest.fn() }));
 jest.mock('expo-file-system/legacy', () => ({
   readAsStringAsync: jest.fn(async () => 'base64'),
   writeAsStringAsync: jest.fn(),
@@ -183,11 +183,11 @@ describe('itinerario', () => {
     await waitFor(() => expect(screen.queryByText('Salvar comentário')).toBeNull());
   });
 
-  it('exporta o PDF pelo atalho do cabecalho e pelo botao do fim da lista', async () => {
+  it('exporta o PDF pelo botao do fim da lista e mostra o erro quando falha', async () => {
     (Print.printToFileAsync as jest.Mock).mockResolvedValue({ uri: 'roteiro.pdf' });
     await render(<Itinerario />);
 
-    await fireEvent.press(screen.getByLabelText('Exportar em PDF'));
+    await fireEvent.press(screen.getAllByText('Exportar em PDF').at(-1)!);
     await waitFor(() => expect(Sharing.shareAsync).toHaveBeenCalledWith('roteiro.pdf', expect.objectContaining({ mimeType: 'application/pdf' })));
     const html = (Print.printToFileAsync as jest.Mock).mock.calls[0][0].html as string;
     expect(html).toContain('Fontana di Trevi');
@@ -199,13 +199,24 @@ describe('itinerario', () => {
     await waitFor(() => expect(Alert.alert).toHaveBeenCalledWith('Erro', expect.any(String), undefined));
   });
 
+  it('compartilha o roteiro como story', async () => {
+    await render(<Itinerario />);
+
+    await fireEvent.press(screen.getByLabelText('Compartilhar roteiro'));
+    expect(screen.getByText('Meu roteiro em')).toBeTruthy();
+    expect(screen.getByText('Planejado com o Trajetto')).toBeTruthy();
+    await fireEvent.press(screen.getAllByText('Compartilhar').at(-1)!);
+    await waitFor(() => expect(Sharing.shareAsync).toHaveBeenCalledWith('file:///tmp/cartao.png', expect.objectContaining({ mimeType: 'image/png' })));
+    await fireEvent.press(screen.getByLabelText('Fechar'));
+  });
+
   it('no Android salva o PDF na pasta escolhida', async () => {
     const original = Platform.OS;
     Object.defineProperty(Platform, 'OS', { get: () => 'android', configurable: true });
     (Print.printToFileAsync as jest.Mock).mockResolvedValue({ uri: 'roteiro.pdf' });
     await render(<Itinerario />);
 
-    await fireEvent.press(screen.getByLabelText('Exportar em PDF'));
+    await fireEvent.press(screen.getAllByText('Exportar em PDF').at(-1)!);
     await waitFor(() => expect(FileSystem.writeAsStringAsync).toHaveBeenCalledWith('novo-arquivo', 'base64', { encoding: 'base64' }));
     expect(Alert.alert).toHaveBeenCalledWith('Sucesso', 'Roteiro salvo no seu celular!', undefined);
     Object.defineProperty(Platform, 'OS', { get: () => original, configurable: true });
@@ -294,7 +305,7 @@ describe('itinerario', () => {
     expect(await screen.findByText('Você ainda não tem lugares favoritos.')).toBeTruthy();
   });
 
-  it('mostra a rota otimizada, o tempo a pe entre as paradas, o clima do dia e abre o modo viagem', async () => {
+  it('mostra a rota otimizada, o tempo a pe entre as paradas e o clima do dia', async () => {
     weather.getForecast.mockResolvedValue([
       { date: '2099-11-10', weatherCode: 63, maxTemperature: 15.4, minTemperature: 9.6, precipitationProbability: 85, rainy: true },
     ]);
@@ -312,9 +323,6 @@ describe('itinerario', () => {
     expect(screen.getByText('Chuva - 85% de chuva')).toBeTruthy();
     expect(screen.getByText(/Dia de chuva/)).toBeTruthy();
     expect(weather.getForecast).toHaveBeenCalledWith(41.95, 12.5, '2099-11-10', '2099-11-11');
-
-    await fireEvent.press(screen.getByText('Iniciar modo viagem'));
-    expect(mockRouter.push).toHaveBeenCalledWith('/TravelModeScreen');
   });
 
   it('sem previsao nem distancia de referencia, nao inventa numeros', async () => {

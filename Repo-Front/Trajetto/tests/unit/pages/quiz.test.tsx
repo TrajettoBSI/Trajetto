@@ -101,6 +101,23 @@ describe('resultado do teste', () => {
     expect(mockRouter.dismiss).toHaveBeenCalledWith(2);
   });
 
+  it('sugere a primeira viagem na cidade do perfil', async () => {
+    setMockParams({ profile: 'NATUREZA' });
+    users.updateTravelerProfile.mockResolvedValue({});
+    await render(<QuizResult />);
+
+    expect(screen.getByText('Que tal Rio de Janeiro?')).toBeTruthy();
+    await fireEvent.press(screen.getByText('Montar meu roteiro'));
+    expect(mockRouter.replace).toHaveBeenCalledWith({ pathname: '/(tabs)', params: { openGenerate: '1', city: 'rio-de-janeiro' } });
+  });
+
+  it('vindo do perfil nao sugere a primeira viagem', async () => {
+    setMockParams({ profile: 'CULTURAL', source: 'profile' });
+    users.updateTravelerProfile.mockResolvedValue({});
+    await render(<QuizResult />);
+    expect(screen.queryByText('Montar meu roteiro')).toBeNull();
+  });
+
   it('perfil desconhecido mostra o aviso', async () => {
     setMockParams({});
     await render(<QuizResult />);

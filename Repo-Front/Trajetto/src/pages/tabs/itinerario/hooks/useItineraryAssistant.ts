@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import * as Haptics from 'expo-haptics';
 import { useItineraryStore } from '@/hooks/itineraryStore';
 import { getErrorMessage } from '@/utils/apiError';
 
@@ -35,6 +36,7 @@ export function useItineraryAssistant() {
     setError('');
     try {
       const adjusted = await adjustItinerary(request);
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
       setReplies((prev) => [...prev, {
         request,
         summary: adjusted.assistantSummary || t('assistant.defaultReply'),

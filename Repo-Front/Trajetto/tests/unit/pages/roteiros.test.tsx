@@ -185,6 +185,16 @@ describe('meus roteiros', () => {
     expect(await screen.findByText('Novo Roteiro')).toBeTruthy();
   });
 
+  it('vindo do quiz, abre o fluxo de gerar com a cidade do perfil como partida', async () => {
+    setMockParams({ openGenerate: '1', city: 'rio-de-janeiro' });
+    svc.getAllItineraries.mockResolvedValue([]);
+    await render(<Roteiros />);
+
+    expect(await screen.findByText('Novo Roteiro')).toBeTruthy();
+    expect(screen.getByDisplayValue('Rio de Janeiro')).toBeTruthy();
+    expect(mockRouter.setParams).toHaveBeenCalledWith({ openGenerate: undefined, city: undefined });
+  });
+
   it('a busca de destinos nao tem atalho de uma cidade so', async () => {
     svc.getAllItineraries.mockResolvedValue([roteiro(1, true)]);
     await render(<Roteiros />);

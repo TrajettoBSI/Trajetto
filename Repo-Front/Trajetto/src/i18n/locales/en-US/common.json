@@ -56,5 +56,8 @@
     "highContrast": "High contrast"
   },
   "selectCountry": "Select your country",
-  "photoOf": "Photo of {{name}}"
+  "photoOf": "Photo of {{name}}",
+  "close": "Close",
+  "share": "Share",
+  "offlineBanner": "You're offline. Showing the last version saved on this device."
 }
