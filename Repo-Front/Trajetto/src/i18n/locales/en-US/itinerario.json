@@ -100,5 +100,14 @@
     "save": "Save",
     "cancel": "Cancel",
     "error": "Could not save the name."
+  },
+  "rating": {
+    "title": "How is this itinerary?",
+    "subtitle": "Tap the stars to rate it from 1 to 5.",
+    "yourRating_one": "Your rating: {{count}} star",
+    "yourRating_other": "Your rating: {{count}} stars",
+    "commentPlaceholder": "Comment on the itinerary (optional)",
+    "saveComment": "Save comment",
+    "error": "Could not save the rating."
   }
 }

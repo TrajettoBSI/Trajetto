@@ -20,6 +20,7 @@ import NoteModal from './components/NoteModal/NoteModal';
 import RenameModal from './components/RenameModal/RenameModal';
 import MealSuggestionCard from './components/MealSuggestionCard/MealSuggestionCard';
 import FreePeriodCard from './components/FreePeriodCard/FreePeriodCard';
+import ItineraryRatingCard from './components/ItineraryRatingCard/ItineraryRatingCard';
 import OptionPickerModal from '@/src/components/OptionPickerModal/OptionPickerModal';
 import { freePeriod } from '@/src/domain/itinerary/freePeriod';
 import { itineraryTitle } from '@/src/i18n/format';
@@ -69,6 +70,7 @@ export default function Itinerario() {
     saveNote,
     edit,
     rename,
+    rating,
   } = useItinerario();
 
   return (
@@ -191,6 +193,19 @@ export default function Itinerario() {
                   <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} onRetry={retryMealSuggestions} />
                 ))}
               </View>
+
+              {!edit.editing && (
+                <ItineraryRatingCard
+                  rating={rating.rating}
+                  draft={rating.draft}
+                  commentChanged={rating.commentChanged}
+                  saving={rating.saving}
+                  error={rating.error}
+                  onRate={rating.rate}
+                  onChangeDraft={rating.setDraft}
+                  onSaveComment={rating.saveComment}
+                />
+              )}
 
               {edit.editing && (
                 <CustomButton

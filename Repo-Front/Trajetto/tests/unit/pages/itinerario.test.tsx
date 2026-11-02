@@ -17,7 +17,7 @@ jest.mock('@/context/AuthContext', () => ({
 jest.mock('@/services', () => ({
   ItineraryService: {
     getAllItineraries: jest.fn(), replacePlace: jest.fn(), updateNote: jest.fn(),
-    addPlace: jest.fn(), removePlace: jest.fn(), movePlace: jest.fn(),
+    addPlace: jest.fn(), removePlace: jest.fn(), movePlace: jest.fn(), rateItinerary: jest.fn(),
   },
   placesService: { getAll: jest.fn(), nearby: jest.fn() },
   favoriteService: { list: jest.fn() },
@@ -154,6 +154,30 @@ describe('itinerario', () => {
 
     await fireEvent.press(screen.getAllByLabelText('Adicionar anotação')[0]);
     await fireEvent.press(screen.getAllByText('Cancelar').at(-1)!);
+  });
+
+  it('avalia o roteiro com estrelas e comentario, e avisa quando nao consegue salvar', async () => {
+    svc.rateItinerary
+      .mockResolvedValueOnce({ ...roteiro, rating: 4, ratingDescription: null })
+      .mockRejectedValueOnce(networkError())
+      .mockResolvedValueOnce({ ...roteiro, rating: 4, ratingDescription: 'Bem distribuído' });
+    await render(<Itinerario />);
+
+    expect(screen.getByText('Como está este roteiro?')).toBeTruthy();
+    expect(screen.getByText('Toque nas estrelas para dar uma nota de 1 a 5.')).toBeTruthy();
+    expect(screen.queryByText('Salvar comentário')).toBeNull();
+
+    await fireEvent.press(screen.getByLabelText('4 estrelas'));
+    await waitFor(() => expect(svc.rateItinerary).toHaveBeenLastCalledWith(7, 4, null));
+    expect(await screen.findByText('Sua nota: 4 estrelas')).toBeTruthy();
+
+    await fireEvent.changeText(screen.getByPlaceholderText('Comentário sobre o roteiro (opcional)'), 'Bem distribuído');
+    await fireEvent.press(screen.getByText('Salvar comentário'));
+    expect(await screen.findByText(/Não foi possível conectar/)).toBeTruthy();
+
+    await fireEvent.press(screen.getByText('Salvar comentário'));
+    await waitFor(() => expect(svc.rateItinerary).toHaveBeenLastCalledWith(7, 4, 'Bem distribuído'));
+    await waitFor(() => expect(screen.queryByText('Salvar comentário')).toBeNull());
   });
 
   it('exporta o PDF pelo atalho do cabecalho e pelo botao do fim da lista', async () => {
