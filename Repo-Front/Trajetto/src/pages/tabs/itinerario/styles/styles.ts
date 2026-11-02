@@ -38,4 +38,12 @@ export const styles = (colors: AppColors) =>
     btnAdd: {
       marginTop: 16,
     },
+    assistantFab: {
+      position: 'absolute', right: 20,
+      flexDirection: 'row', alignItems: 'center', gap: 8,
+      backgroundColor: colors.primary, borderRadius: 28, paddingHorizontal: 18, paddingVertical: 14,
+      shadowColor: colors.shadow, shadowOpacity: 0.25, shadowRadius: 10, shadowOffset: { width: 0, height: 4 },
+      elevation: 6,
+    },
+    assistantFabText: { fontSize: 15, fontFamily: 'Inter-Bold', color: colors.onPrimary },
   });

@@ -36,6 +36,7 @@ import { freePeriod } from '../src/domain/itinerary/freePeriod';
 import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth, itineraryTitle, placeName } from '../src/i18n/format';
 import { cityImage } from '../src/helpers/cityImage';
 import { NAME_MAX_LENGTH } from '../src/pages/tabs/itinerario/hooks/useItineraryRename';
+import { REQUEST_MAX_LENGTH } from '../src/pages/tabs/itinerario/hooks/useItineraryAssistant';
 import { PLACE_COLORS } from '../constants/placeColors';
 
 type Step = 'config' | 'loading' | 'preview';
@@ -162,6 +163,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   const [days, setDays] = useState(1);
   const [pace, setPace] = useState<TravelPace>('INTENSO');
   const [name, setName] = useState('');
+  const [tripRequest, setTripRequest] = useState('');
   const [showIosCalendar, setShowIosCalendar] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scrollViewRef = useRef<ScrollViewInstance>(null);
@@ -335,7 +337,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
   const runGenerate = async () => {
     const start = Date.now();
-    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days, effectivePace, selectedCity?.slug, name.trim() || undefined);
+    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days, effectivePace, selectedCity?.slug, name.trim() || undefined, tripRequest.trim() || undefined);
     const elapsed = Date.now() - start;
     const remaining = 2000 - elapsed;
     if (remaining > 0) await new Promise(r => setTimeout(r, remaining));
@@ -636,6 +638,21 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 />
               </View>
 
+              <View style={styles.card}>
+                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.requestLabel')}</Text>
+                <CustomInput
+                  value={tripRequest}
+                  onChangeText={setTripRequest}
+                  placeholder={t('roteiros:generateFlow.requestPlaceholder')}
+                  maxLength={REQUEST_MAX_LENGTH}
+                  multiline
+                  inputStyle={styles.addressInput}
+                  style={{ marginBottom: 0 }}
+                  inputWrapperStyle={styles.fakeSearchBox}
+                  leftIcon={<Ionicons name="sparkles-outline" size={20} color={colors.primary} style={styles.inputIcon} />}
+                />
+              </View>
+
               {erro ? (
                 <FeedbackState
                   variant="error"
@@ -684,6 +701,16 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                   })}
                 </Text>
               </View>
+
+              {generatedItinerary.assistantSummary ? (
+                <View style={styles.assistantCard}>
+                  <Ionicons name="sparkles" size={18} color={colors.primary} />
+                  <View style={{ flex: 1 }}>
+                    <Text style={styles.assistantTitle}>{t('roteiros:generateFlow.assistantTitle')}</Text>
+                    <Text style={styles.assistantText}>{generatedItinerary.assistantSummary}</Text>
+                  </View>
+                </View>
+              ) : null}
 
               {/* Lista completa de lugares */}
               {groupByDay(generatedItinerary.startDate, generatedItinerary.places, generatedItinerary.endDate).map((day, _dayIdx, allDays) => (
@@ -816,6 +843,13 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
   cityPlaceholder: { color: colors.textSubtle, fontWeight: '400' },
 
   durationValue: { fontSize: Platform.OS === 'ios' ? 18 : 22, fontWeight: 'bold', color: colors.text, minWidth: 90, textAlign: 'center' },
+  assistantCard: {
+    flexDirection: 'row', gap: 10, alignItems: 'flex-start',
+    backgroundColor: colors.primarySurface, borderRadius: 16, padding: 14, marginBottom: 16,
+    borderWidth: 1, borderColor: colors.primaryBorder,
+  },
+  assistantTitle: { fontSize: 12, fontWeight: '700', color: colors.primary, textTransform: 'uppercase', letterSpacing: 0.5 },
+  assistantText: { fontSize: 14, color: colors.text, marginTop: 4, lineHeight: 20 },
   stepperRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 20 },
   stepperBtn: {
     width: 44,

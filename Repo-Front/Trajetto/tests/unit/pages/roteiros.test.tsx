@@ -219,7 +219,7 @@ describe('gerar roteiro', () => {
   };
 
   it('busca o endereco, configura data, dias e ritmo, gera e aceita', async () => {
-    svc.generateItinerary.mockResolvedValue(gerado);
+    svc.generateItinerary.mockResolvedValue({ ...gerado, assistantSummary: 'Mais museus e um ritmo tranquilo.', assistantSource: 'IA' });
     const { onAccept } = await abrir();
 
     await escolherCidade();
@@ -232,15 +232,17 @@ describe('gerar roteiro', () => {
     expect(screen.getByText('2 dias')).toBeTruthy();
     await fireEvent.press(screen.getByText('Roteiro leve, sem pressa'));
     await fireEvent.changeText(screen.getByPlaceholderText('Roteiro Roma, dia 20/11'), '  Ferias em Roma ');
+    await fireEvent.changeText(screen.getByPlaceholderText('Ex.: museus e comida de rua, nada de igrejas, com calma'), ' mais museus ');
     await fireEvent.press(screen.getByText('Gerar Roteiro'));
 
     expect(await screen.findByText('Roteiro Gerado', {}, { timeout: 4000 })).toBeTruthy();
-    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 41.9, 12.48, '2026-11-20', 2, 'LEVE', 'roma', 'Ferias em Roma');
+    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 41.9, 12.48, '2026-11-20', 2, 'LEVE', 'roma', 'Ferias em Roma', 'mais museus');
+    expect(screen.getByText('Mais museus e um ritmo tranquilo.')).toBeTruthy();
     expect(buscar).toHaveBeenCalledWith('veneto', ROMA);
     expect(screen.getByText('Colosseo')).toBeTruthy();
 
     await fireEvent.press(screen.getByText('Aceitar'));
-    expect(onAccept).toHaveBeenCalledWith(gerado);
+    expect(onAccept).toHaveBeenCalledWith(expect.objectContaining({ id: gerado.id }));
     expect(useItineraryStore.getState().itinerary?.id).toBe(9);
   }, 15000);
 
@@ -303,7 +305,7 @@ describe('gerar roteiro', () => {
     await fireEvent.press(screen.getByText('Centro da cidade'));
     await fireEvent.press(screen.getByText('Gerar Roteiro'));
     expect(await screen.findByText('Roteiro Gerado', {}, { timeout: 4000 })).toBeTruthy();
-    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 48.8566, 2.3522, expect.any(String), 1, 'INTENSO', 'paris', undefined);
+    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 48.8566, 2.3522, expect.any(String), 1, 'INTENSO', 'paris', undefined, undefined);
     expect(screen.getByText('Paris, França')).toBeTruthy();
   }, 15000);
 

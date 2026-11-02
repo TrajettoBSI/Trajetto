@@ -25,6 +25,9 @@ import OptionPickerModal from '@/src/components/OptionPickerModal/OptionPickerMo
 import { freePeriod } from '@/src/domain/itinerary/freePeriod';
 import { itineraryTitle } from '@/src/i18n/format';
 import { cityImage } from '@/src/helpers/cityImage';
+import InsightsCard from './components/InsightsCard/InsightsCard';
+import TravelLeg from './components/TravelLeg/TravelLeg';
+import AssistantModal from './components/AssistantModal/AssistantModal';
 
 const TAB_BAR_SPACE = 64 + 4 + 24;
 
@@ -71,6 +74,10 @@ export default function Itinerario() {
     edit,
     rename,
     rating,
+    assistant,
+    savings,
+    dayWeather,
+    openTravelMode,
   } = useItinerario();
 
   return (
@@ -118,7 +125,7 @@ export default function Itinerario() {
             <ScrollView
               ref={scrollRef}
               style={s.container}
-              contentContainerStyle={[s.content, { paddingBottom: insets.bottom + TAB_BAR_SPACE }]}
+              contentContainerStyle={[s.content, { paddingBottom: insets.bottom + TAB_BAR_SPACE + 64 }]}
               showsVerticalScrollIndicator={false}
             >
               <ItineraryHeaderCard
@@ -139,6 +146,10 @@ export default function Itinerario() {
                 onSelect={selectDay}
                 style={s.daySelector}
               />
+
+              {!edit.editing && (
+                <InsightsCard savings={savings} weather={dayWeather} onTravelMode={openTravelMode} />
+              )}
 
               <Text style={s.sectionLabel}>
                 {days.length > 1 && currentDay
@@ -161,6 +172,9 @@ export default function Itinerario() {
                     {mealSuggestions.filter((m) => m.insertAt === idx).map((m) => (
                       <MealSuggestionCard key={m.key} suggestion={m} onSelect={openMealPlace} onRetry={retryMealSuggestions} />
                     ))}
+                    {!edit.editing && place.walkingMinutesFromPrevious != null && place.distanceFromPreviousKm != null && (
+                      <TravelLeg minutes={place.walkingMinutesFromPrevious} km={place.distanceFromPreviousKm} fromStart={idx === 0} />
+                    )}
                     <TimelineRow
                       place={place}
                       idx={idx}
@@ -224,6 +238,31 @@ export default function Itinerario() {
                 style={s.btnExport}
               />
             </ScrollView>
+
+            {!edit.editing && (
+              <TouchableOpacity
+                style={[s.assistantFab, { bottom: insets.bottom + TAB_BAR_SPACE - 8 }]}
+                onPress={assistant.open}
+                activeOpacity={0.85}
+                accessibilityRole="button"
+                accessibilityLabel={t('assistant.open')}
+              >
+                <Ionicons name="sparkles" size={20} color={colors.onPrimary} />
+                <Text style={s.assistantFabText}>{t('assistant.fab')}</Text>
+              </TouchableOpacity>
+            )}
+
+            <AssistantModal
+              visible={assistant.visible}
+              draft={assistant.draft}
+              sending={assistant.sending}
+              error={assistant.error}
+              replies={assistant.replies}
+              preferences={roteiro.preferences}
+              onChangeDraft={assistant.setDraft}
+              onSend={assistant.send}
+              onClose={assistant.close}
+            />
 
             <AlternativesModal
               visible={showAltModal}

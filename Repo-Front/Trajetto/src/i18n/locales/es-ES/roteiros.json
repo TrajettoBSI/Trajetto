@@ -122,7 +122,10 @@
     "originNeedsCity": "Elige el destino primero",
     "cityCenterChip": "Centro de la ciudad",
     "cityCenterLabel": "Centro de {{city}}",
-    "nameLabel": "NOMBRE DEL ITINERARIO (OPCIONAL)"
+    "nameLabel": "NOMBRE DEL ITINERARIO (OPCIONAL)",
+    "requestLabel": "¿Cómo quieres este viaje? (opcional)",
+    "requestPlaceholder": "Ej.: museos y comida callejera, nada de iglesias, con calma",
+    "assistantTitle": "Lo que entendí de tu pedido"
   },
   "cities": {
     "roma": "Roma",

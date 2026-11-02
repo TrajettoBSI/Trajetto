@@ -40,5 +40,8 @@ export type { PlaceSuggestion, SearchArea } from './geocodingService';
 export { cityService } from './cityService';
 export type { City } from './cityService';
 
+export { weatherService } from './weatherService';
+export type { DayWeather } from './weatherService';
+
 export { searchByCity, touristSpotService } from './touristSpotService';
 export type { SearchOptions, TouristSpot } from './touristSpotService';
