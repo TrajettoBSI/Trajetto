@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { PLACE_COLORS } from '@/constants/placeColors';
+import { MAP_PLACE_COLORS } from '@/constants/placeColors';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
@@ -15,8 +15,8 @@ export default function RouteBar({ firstUpcomingIdx, hasOriginSeg, placeName }: 
   const { t } = useTranslation('mapa');
   const colors = useColors();
   const s = styles(colors);
-  const currentColor = PLACE_COLORS[firstUpcomingIdx % PLACE_COLORS.length];
-  const prevColor = PLACE_COLORS[(firstUpcomingIdx - 1 + PLACE_COLORS.length) % PLACE_COLORS.length];
+  const currentColor = MAP_PLACE_COLORS[firstUpcomingIdx % MAP_PLACE_COLORS.length];
+  const prevColor = MAP_PLACE_COLORS[(firstUpcomingIdx - 1 + MAP_PLACE_COLORS.length) % MAP_PLACE_COLORS.length];
   const displayName = placeName && placeName.length > 16 ? placeName.slice(0, 16) + '…' : placeName;
 
   return (
