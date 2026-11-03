@@ -4,7 +4,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomButton from '@/components/CustomButton';
-import { PLACE_COLORS } from '@/constants/placeColors';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { useColors } from '@/src/theme';
 import { AsyncBoundary } from '@/src/components/feedback';
@@ -168,7 +167,7 @@ export default function Itinerario() {
               <View style={s.timeline}>
                 {sorted.map((place, idx) => {
                   const isPast = isPlacePast(placeDate(roteiro.startDate, place), place.estimatedVisitTime);
-                  const color = PLACE_COLORS[idx % PLACE_COLORS.length];
+                  const color = colors.placeBadge;
                   const isLast = idx === sorted.length - 1;
                   const isHighlighted = highlightedPlaceIndex === place.orderIndex;
 

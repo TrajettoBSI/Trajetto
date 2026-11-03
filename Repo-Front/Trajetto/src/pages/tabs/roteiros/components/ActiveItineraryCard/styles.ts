@@ -26,7 +26,7 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.activeBadgeSurface, borderRadius: 20,
       paddingHorizontal: 10, paddingVertical: 4, gap: 6,
     },
-    activeDot: { width: 7, height: 7, borderRadius: 4, backgroundColor: colors.successStrong },
+    activeDot: { width: 7, height: 7, borderRadius: 4, backgroundColor: colors.timelineDotFuture },
     activeBadgeText: { fontSize: 12, fontFamily: 'Inter-Bold', color: colors.successText },
     itineraryDates: { fontSize: 12, color: colors.textSubtle, fontFamily: 'Inter-Medium' },
     titleRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 4, gap: 5 },

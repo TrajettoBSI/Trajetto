@@ -38,7 +38,6 @@ import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth, itinerary
 import { cityImage } from '../src/helpers/cityImage';
 import { NAME_MAX_LENGTH } from '../src/pages/tabs/itinerario/hooks/useItineraryRename';
 import { REQUEST_MAX_LENGTH } from '../src/pages/tabs/itinerario/hooks/useItineraryAssistant';
-import { PLACE_COLORS } from '../constants/placeColors';
 
 type Step = 'config' | 'loading' | 'preview';
 
@@ -725,7 +724,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               )}
               <View style={styles.previewList}>
                 {day.places.map((place, idx) => {
-                  const color = PLACE_COLORS[idx % PLACE_COLORS.length];
+                  const color = colors.placeBadge;
                   const isLast = idx === day.places.length - 1;
                   return (
                     <View key={idx}>
