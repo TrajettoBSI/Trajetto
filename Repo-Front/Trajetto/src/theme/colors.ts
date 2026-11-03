@@ -91,6 +91,7 @@ export type AppColors = {
   mapRoute: string;
   /** Numero dentro do pin, sobre a cor do mapRoute. */
   mapOnRoute: string;
+  placeBadge: string;
   pinBorderPast: string;
   pinBgPast: string;
   surfaceFaded92: string;
@@ -100,8 +101,8 @@ export type AppColors = {
 };
 
 export const lightColors: AppColors = {
-  primary: '#0a2472',
-  primaryDark: '#0a2472',
+  primary: '#132045',
+  primaryDark: '#132045',
   primarySurface: '#EEF2FF',
   primarySurfaceAlt: '#F0F4FF',
   primaryBorder: '#C7D2FE',
@@ -174,7 +175,7 @@ export const lightColors: AppColors = {
   dangerSurface: '#fff5f5',
   borderSubtle: '#e8edf3',
   timelineDotPast: '#9aa4b2',
-  timelineDotFuture: '#4a90d9',
+  timelineDotFuture: '#8492B8',
   exploreOverlay: 'rgba(0,20,60,0.52)',
   glassTag: 'rgba(255,255,255,0.18)',
   backgroundFaint: '#f9f9f9',
@@ -188,8 +189,9 @@ export const lightColors: AppColors = {
   overlay45: 'rgba(0,0,0,0.45)',
   hintSurface: '#e8f0fa',
   textSlate: '#4B5563',
-  mapRoute: '#0a2472',
+  mapRoute: '#132045',
   mapOnRoute: '#ffffff',
+  placeBadge: '#8492B8',
   pinBorderPast: '#c8ced8',
   pinBgPast: '#f0f2f5',
   surfaceFaded92: 'rgba(255,255,255,0.92)',
@@ -274,7 +276,7 @@ export const darkColors: AppColors = {
   dangerSurface: '#3a1a1d',
   borderSubtle: '#2b3648',
   timelineDotPast: '#64748b',
-  timelineDotFuture: '#60a5fa',
+  timelineDotFuture: '#8492B8',
   exploreOverlay: 'rgba(0,10,30,0.6)',
   glassTag: 'rgba(255,255,255,0.18)',
   backgroundFaint: '#131c2e',
@@ -290,6 +292,7 @@ export const darkColors: AppColors = {
   textSlate: '#cbd5e1',
   mapRoute: '#6b8cff',
   mapOnRoute: '#0b1220',
+  placeBadge: '#4f6bed',
   pinBorderPast: '#475569',
   pinBgPast: '#1f2937',
   surfaceFaded92: 'rgba(30,41,59,0.92)',
@@ -300,11 +303,11 @@ export const darkColors: AppColors = {
 
 // Alto contraste: preto sobre branco, bordas pretas e o azul da marca escurecido (WCAG AAA para texto).
 export const highContrastColors: AppColors = {
-  primary: '#00205b',
-  primaryDark: '#00163f',
+  primary: '#132045',
+  primaryDark: '#132045',
   primarySurface: '#ffffff',
   primarySurfaceAlt: '#ffffff',
-  primaryBorder: '#00205b',
+  primaryBorder: '#132045',
   successSurface: '#ffffff',
   warningSurface: '#ffffff',
   infoSurface: '#ffffff',
@@ -374,7 +377,7 @@ export const highContrastColors: AppColors = {
   dangerSurface: '#ffffff',
   borderSubtle: '#000000',
   timelineDotPast: '#3d3d3d',
-  timelineDotFuture: '#00205b',
+  timelineDotFuture: '#0047AB',
   exploreOverlay: 'rgba(0,0,0,0.75)',
   glassTag: 'rgba(0,0,0,0.6)',
   backgroundFaint: '#ffffff',
@@ -388,8 +391,9 @@ export const highContrastColors: AppColors = {
   overlay45: 'rgba(0,0,0,0.7)',
   hintSurface: '#ffffff',
   textSlate: '#000000',
-  mapRoute: '#00205b',
+  mapRoute: '#132045',
   mapOnRoute: '#ffffff',
+  placeBadge: '#132045',
   pinBorderPast: '#000000',
   pinBgPast: '#ffffff',
   surfaceFaded92: '#ffffff',
