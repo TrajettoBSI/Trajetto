@@ -246,7 +246,7 @@ describe('gerar roteiro', () => {
     await fireEvent.press(screen.getByText('Gerar Roteiro'));
 
     expect(await screen.findByText('Roteiro Gerado', {}, { timeout: 4000 })).toBeTruthy();
-    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 41.9, 12.48, '2026-11-20', 2, 'LEVE', 'roma', 'Ferias em Roma', 'mais museus');
+    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 41.9, 12.48, '2026-11-20', 2, 'LEVE', 'roma', 'Ferias em Roma', 'mais museus', 'pt-BR');
     expect(screen.getByText('Mais museus e um ritmo tranquilo.')).toBeTruthy();
     expect(buscar).toHaveBeenCalledWith('veneto', ROMA);
     expect(screen.getByText('Colosseo')).toBeTruthy();
@@ -315,7 +315,7 @@ describe('gerar roteiro', () => {
     await fireEvent.press(screen.getByText('Centro da cidade'));
     await fireEvent.press(screen.getByText('Gerar Roteiro'));
     expect(await screen.findByText('Roteiro Gerado', {}, { timeout: 4000 })).toBeTruthy();
-    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 48.8566, 2.3522, expect.any(String), 1, 'INTENSO', 'paris', undefined, undefined);
+    expect(svc.generateItinerary).toHaveBeenCalledWith(1, 48.8566, 2.3522, expect.any(String), 1, 'INTENSO', 'paris', undefined, undefined, 'pt-BR');
     expect(screen.getByText('Paris, França')).toBeTruthy();
   }, 15000);
 

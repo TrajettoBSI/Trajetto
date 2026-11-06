@@ -264,6 +264,7 @@ export default function Itinerario() {
               sending={assistant.sending}
               error={assistant.error}
               replies={assistant.replies}
+              suggestions={assistant.suggestions}
               preferences={roteiro.preferences}
               onChangeDraft={assistant.setDraft}
               onSend={assistant.send}

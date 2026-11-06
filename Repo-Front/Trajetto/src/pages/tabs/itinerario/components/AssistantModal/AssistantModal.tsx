@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { FeedbackState } from '@/src/components/feedback';
 import { useColors } from '@/src/theme';
 import { TripPreferences } from '@/hooks/itineraryStore';
-import { AssistantReply, REQUEST_MAX_LENGTH } from '../../hooks/useItineraryAssistant';
+import { AssistantReply, REQUEST_MAX_LENGTH, SuggestionChip } from '../../hooks/useItineraryAssistant';
 import { styles } from './styles';
 
 type AssistantModalProps = {
@@ -14,16 +14,15 @@ type AssistantModalProps = {
   sending: boolean;
   error: string;
   replies: AssistantReply[];
+  suggestions: SuggestionChip[];
   preferences?: TripPreferences | null;
   onChangeDraft: (text: string) => void;
   onSend: (text?: string) => void;
   onClose: () => void;
 };
 
-const SUGGESTIONS = ['lessChurches', 'calmer', 'free', 'nature', 'nightlife', 'history'] as const;
-
 export default function AssistantModal({
-  visible, draft, sending, error, replies, preferences, onChangeDraft, onSend, onClose,
+  visible, draft, sending, error, replies, suggestions, preferences, onChangeDraft, onSend, onClose,
 }: AssistantModalProps) {
   const { t } = useTranslation('itinerario');
   const colors = useColors();
@@ -33,6 +32,7 @@ export default function AssistantModal({
     ...(preferences?.moreCategories ?? []).map((c) => ({ key: `more-${c}`, label: t('assistant.more', { category: t(`assistant.categories.${c}`, { defaultValue: c }) }), positive: true })),
     ...(preferences?.lessCategories ?? []).map((c) => ({ key: `less-${c}`, label: t('assistant.less', { category: t(`assistant.categories.${c}`, { defaultValue: c }) }), positive: false })),
     ...(preferences?.avoidPaid ? [{ key: 'free', label: t('assistant.onlyFree'), positive: true }] : []),
+    ...(preferences?.walking === 'MENOS' ? [{ key: 'walk', label: t('assistant.lessWalking'), positive: true }] : []),
     ...(preferences?.mustInclude ?? []).map((n) => ({ key: `inc-${n}`, label: n, positive: true })),
     ...(preferences?.placements ?? []).map((p) => ({ key: `pin-${p.place}`, label: p.place, positive: true })),
     ...(preferences?.exclude ?? []).map((n) => ({ key: `exc-${n}`, label: t('assistant.without', { name: n }), positive: false })),
@@ -89,13 +89,16 @@ export default function AssistantModal({
                 </View>
               )}
 
-              {replies.length === 0 && !sending && (
-                <View style={s.chipsWrap}>
-                  {SUGGESTIONS.map((key) => (
-                    <TouchableOpacity key={key} style={s.suggestion} onPress={() => onSend(t(`assistant.suggestions.${key}`))} activeOpacity={0.8}>
-                      <Text style={s.suggestionText}>{t(`assistant.suggestions.${key}`)}</Text>
-                    </TouchableOpacity>
-                  ))}
+              {!sending && suggestions.length > 0 && (
+                <View>
+                  <Text style={s.suggestionsTitle}>{t('assistant.suggestionsTitle')}</Text>
+                  <View style={s.chipsWrap}>
+                    {suggestions.map((suggestion) => (
+                      <TouchableOpacity key={suggestion.key} style={s.suggestion} onPress={() => onSend(suggestion.request)} activeOpacity={0.8}>
+                        <Text style={s.suggestionText}>{suggestion.label}</Text>
+                      </TouchableOpacity>
+                    ))}
+                  </View>
                 </View>
               )}
             </ScrollView>

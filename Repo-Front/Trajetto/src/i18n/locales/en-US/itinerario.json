@@ -144,6 +144,7 @@
     "more": "more {{category}}",
     "less": "fewer {{category}}",
     "onlyFree": "free only",
+    "lessWalking": "less walking",
     "without": "no {{name}}",
     "placeholder": "E.g.: fewer churches, more street food and I want to see the sunset",
     "send": "Send request",
@@ -151,13 +152,35 @@
     "hint": "The previous version stays in your history.",
     "defaultReply": "Done! I created a new version of the itinerary.",
     "error": "Could not adjust the itinerary right now.",
+    "suggestionsTitle": "Suggestions for this itinerary",
     "suggestions": {
       "lessChurches": "Fewer churches, more museums",
       "calmer": "I want a calmer pace",
-      "free": "Free places only",
       "nature": "More nature and viewpoints",
       "nightlife": "More nightlife",
       "history": "I want more history"
+    },
+    "smart": {
+      "rain": {
+        "label": "Rain is forecast this day: prioritize indoor places?",
+        "request": "More indoor places"
+      },
+      "longDay": {
+        "label": "This day has {{km}} km between stops: shorten it?",
+        "request": "Less walking"
+      },
+      "dominant": {
+        "label": "{{count}} of {{total}} stops are {{category}}: reduce them?",
+        "request": "Fewer {{category}}"
+      },
+      "paid": {
+        "label": "{{count}} paid places: see free ones only?",
+        "request": "Free places only"
+      },
+      "allowPaid": {
+        "label": "Include paid places again?",
+        "request": "Paid places are fine"
+      }
     },
     "categories": {
       "museum": "museums",

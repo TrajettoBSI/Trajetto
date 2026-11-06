@@ -19,13 +19,13 @@ export class ItineraryService {
         return response.data;
     }
 
-    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number, startDate: string, days: number, pace: TravelPace, city?: string, name?: string, request?: string) {
-        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude, startDate, days, pace, city, name, request });
+    static async generateItinerary(userId: number, startLatitude: number, startLongitude: number, startDate: string, days: number, pace: TravelPace, city?: string, name?: string, request?: string, language?: string) {
+        const response = await api.post('/itinerary/generate', { userId, startLatitude, startLongitude, startDate, days, pace, city, name, request, language });
         return response.data;
     }
 
-    static async adjustItinerary(itineraryId: number, request: string) {
-        const response = await api.post(`/itinerary/${itineraryId}/adjust`, { request });
+    static async adjustItinerary(itineraryId: number, request: string, language?: string) {
+        const response = await api.post(`/itinerary/${itineraryId}/adjust`, { request, language });
         return response.data;
     }
 
