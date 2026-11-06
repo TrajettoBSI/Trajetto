@@ -133,6 +133,93 @@ class AdjustItineraryIntegrationTest {
     }
 
     @Test
+    @DisplayName("Pedido que nao foi entendido nao cria versao nova e diz o que tentar")
+    void pedidoNaoEntendido() {
+        ItineraryResponseDTO original = gerar(null);
+
+        ItineraryResponseDTO resposta = itineraryService.adjustItinerary(original.getId(), USUARIO, pedido("asdfgh"));
+
+        assertEquals(original.getId(), resposta.getId());
+        assertEquals(1, itineraryService.getAllItineraries(USUARIO).size());
+        assertTrue(resposta.getAssistantSummary().contains("Não entendi"));
+    }
+
+    @Test
+    @DisplayName("Pedido de refeicao recebe a explicacao, sem criar versao nova")
+    void pedidoDeRefeicao() {
+        ItineraryResponseDTO original = gerar(null);
+
+        ItineraryResponseDTO resposta = itineraryService.adjustItinerary(original.getId(), USUARIO, pedido("mais restaurantes"));
+
+        assertEquals(original.getId(), resposta.getId());
+        assertTrue(resposta.getAssistantSummary().contains("Refeições"));
+    }
+
+    @Test
+    @DisplayName("A resposta diz o que entrou e o que saiu, no idioma do app")
+    void respostaComAsMudancas() {
+        ItineraryResponseDTO original = gerar(null);
+        AdjustItineraryRequestDTO req = pedido("more museums");
+        req.setLanguage("en-US");
+
+        ItineraryResponseDTO ajustado = itineraryService.adjustItinerary(original.getId(), USUARIO, req);
+
+        assertTrue(ajustado.getAssistantSummary().startsWith("Got it: more museums."), ajustado.getAssistantSummary());
+        assertTrue(ajustado.getAssistantSummary().contains("Added"), ajustado.getAssistantSummary());
+        assertTrue(ajustado.getAssistantSummary().contains("Removed"), ajustado.getAssistantSummary());
+    }
+
+    @Test
+    @DisplayName("Categoria que a cidade nao tem: a resposta avisa em vez de fingir que ajustou")
+    void categoriaQueACidadeNaoTem() {
+        ItineraryResponseDTO original = gerar(null);
+
+        ItineraryResponseDTO ajustado = itineraryService.adjustItinerary(original.getId(), USUARIO, pedido("mais praias"));
+
+        assertTrue(ajustado.getAssistantSummary().contains("Esta cidade não tem praias"), ajustado.getAssistantSummary());
+    }
+
+    @Test
+    @DisplayName("'Menos caminhada' responde com o caminho antes e depois")
+    void respostaComACaminhada() {
+        ItineraryResponseDTO original = gerar(null);
+
+        ItineraryResponseDTO ajustado = itineraryService.adjustItinerary(original.getId(), USUARIO, pedido("menos caminhada"));
+
+        assertTrue(ajustado.getAssistantSummary().contains(" km"), ajustado.getAssistantSummary());
+        assertEquals("MENOS", ajustado.getPreferences().walking());
+    }
+
+    @Test
+    @DisplayName("'Pode incluir pagos' desfaz o 'so gratis' entre ajustes")
+    void desfazSoGratis() {
+        ItineraryResponseDTO gratis = gerar("só lugares grátis");
+        assertTrue(gratis.getPreferences().avoidPaid());
+
+        ItineraryResponseDTO ajustado = itineraryService.adjustItinerary(gratis.getId(), USUARIO, pedido("pode incluir lugares pagos"));
+
+        assertTrue(ajustado.getPreferences() == null || !ajustado.getPreferences().avoidPaid());
+    }
+
+    @Test
+    @DisplayName("Ajuste que nao muda nenhuma parada fica na mesma versao")
+    void ajusteSemMudancaNaoCriaVersao() {
+        // O sorteio do planejador pode mexer em uma parada; repetindo, o roteiro estabiliza.
+        ItineraryResponseDTO atual = gerar(null);
+        ItineraryResponseDTO mesmaVersao = null;
+        for (int i = 0; i < 10 && mesmaVersao == null; i++) {
+            ItineraryResponseDTO ajustado = itineraryService.adjustItinerary(atual.getId(), USUARIO, pedido("sem zoológicos"));
+            if (ajustado.getId().equals(atual.getId())) mesmaVersao = ajustado;
+            atual = ajustado;
+        }
+
+        assertNotNull(mesmaVersao, "nenhum dos ajustes manteve a versao");
+        assertTrue(mesmaVersao.getAssistantSummary().contains("não mudou"), mesmaVersao.getAssistantSummary());
+        assertTrue(mesmaVersao.getPreferences().lessCategories().contains("zoo"));
+        assertEquals(1, itineraryService.getAllItineraries(USUARIO).stream().filter(ItineraryResponseDTO::getActive).count());
+    }
+
+    @Test
     @DisplayName("Os pedidos se acumulam entre ajustes")
     void pedidosSeAcumulam() {
         ItineraryResponseDTO original = gerar("mais parques");

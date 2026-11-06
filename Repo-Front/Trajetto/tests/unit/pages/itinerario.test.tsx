@@ -346,10 +346,11 @@ describe('itinerario', () => {
 
     await fireEvent.press(screen.getByText('Ajustar roteiro'));
     expect(screen.getByText('Assistente do roteiro')).toBeTruthy();
-    await fireEvent.press(screen.getByText('Menos igrejas, mais museus'));
+    expect(screen.getByText('Sugestões para este roteiro')).toBeTruthy();
+    await fireEvent.press(screen.getByText('Mais vida noturna'));
 
     expect(await screen.findByText('Tirei as igrejas e coloquei mais museus.')).toBeTruthy();
-    expect(svc.adjustItinerary).toHaveBeenCalledWith(7, 'Menos igrejas, mais museus');
+    expect(svc.adjustItinerary).toHaveBeenCalledWith(7, 'Mais vida noturna', 'pt-BR');
     expect(useItineraryStore.getState().itinerary?.id).toBe(8);
     expect(useItineraryStore.getState().itineraries.filter((i) => i.active)).toHaveLength(1);
     expect(screen.getByText('mais museus')).toBeTruthy();
@@ -365,5 +366,34 @@ describe('itinerario', () => {
     await fireEvent.changeText(screen.getByPlaceholderText(/menos igrejas, mais comida de rua/), 'mais bares');
     await fireEvent.press(screen.getByLabelText('Enviar pedido'));
     expect(await screen.findByText(/conexão|internet|servidor/i)).toBeTruthy();
+  });
+
+  it('pedido sem efeito mantem o roteiro, sem duplicar a versao, e mostra a resposta', async () => {
+    svc.adjustItinerary.mockResolvedValueOnce({ ...roteiro, assistantSummary: 'Não entendi esse pedido.' });
+    await render(<Itinerario />);
+
+    await fireEvent.press(screen.getByText('Ajustar roteiro'));
+    await fireEvent.changeText(screen.getByPlaceholderText(/menos igrejas, mais comida de rua/), 'asdfgh');
+    await fireEvent.press(screen.getByLabelText('Enviar pedido'));
+
+    expect(await screen.findByText('Não entendi esse pedido.')).toBeTruthy();
+    expect(useItineraryStore.getState().itineraries).toHaveLength(1);
+    expect(useItineraryStore.getState().itinerary?.id).toBe(7);
+  });
+
+  it('as sugestoes acompanham o roteiro: dia puxado e categoria que domina', async () => {
+    const puxado: Itinerary = {
+      ...roteiro,
+      places: roteiro.places.map((place) => ({ ...place, category: 'museum', distanceFromPreviousKm: 3 })),
+    };
+    useItineraryStore.setState({ itinerary: puxado, itineraries: [puxado] });
+    svc.adjustItinerary.mockResolvedValueOnce({ ...puxado, id: 8, assistantSummary: 'Pronto.' });
+    await render(<Itinerario />);
+
+    await fireEvent.press(screen.getByText('Ajustar roteiro'));
+    expect(screen.getByText('6 de 6 paradas são museus: reduzir?')).toBeTruthy();
+    await fireEvent.press(screen.getByText('Este dia tem 12 km entre as paradas: encurtar?'));
+
+    expect(svc.adjustItinerary).toHaveBeenCalledWith(7, 'Menos caminhada', 'pt-BR');
   });
 });

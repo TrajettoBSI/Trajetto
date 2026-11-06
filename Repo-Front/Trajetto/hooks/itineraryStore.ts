@@ -61,6 +61,8 @@ export interface TripPreferences {
   mustInclude: string[];
   exclude: string[];
   placements?: { place: string; day: number; period: '' | 'MANHA' | 'TARDE' | 'NOITE' }[];
+  /** MENOS quando o viajante pediu menos caminhada. */
+  walking?: string;
 }
 
 export interface Itinerary {
@@ -84,7 +86,7 @@ export interface Itinerary {
   /** Caminho na ordem gulosa, antes da otimizacao 2-opt; nulo em roteiros antigos. */
   baselineDistanceKm?: number | null;
   preferences?: TripPreferences | null;
-  /** So na resposta da geracao/ajuste por texto livre: o que o assistente entendeu. */
+  /** So na resposta da geracao/ajuste por texto livre: o que o assistente entendeu e o que mudou. */
   assistantSummary?: string | null;
 }
 
@@ -100,8 +102,8 @@ type ItineraryStore = {
   selectedDay: string | null;
   fetchItinerary: (userId: number) => Promise<void>;
   fetchAllItineraries: (userId: number) => Promise<void>;
-  generateItinerary: (userId: number, startLat: number, startLng: number, startDate: string, days: number, pace: TravelPace, city?: string, name?: string, request?: string) => Promise<Itinerary>;
-  adjustItinerary: (request: string) => Promise<Itinerary>;
+  generateItinerary: (userId: number, startLat: number, startLng: number, startDate: string, days: number, pace: TravelPace, city?: string, name?: string, request?: string, language?: string) => Promise<Itinerary>;
+  adjustItinerary: (request: string, language?: string) => Promise<Itinerary>;
   acceptGeneratedItinerary: (itinerary: Itinerary) => void;
   activateItinerary: (itineraryId: number, userId: number) => Promise<void>;
   deleteItinerary: (itineraryId: number, userId: number) => Promise<void>;
@@ -171,15 +173,19 @@ export const useItineraryStore = create<ItineraryStore>((set, get) => ({
     }
   },
 
-  generateItinerary: async (userId, startLat, startLng, startDate, days, pace, city, name, request) => {
-    const data = await ItineraryService.generateItinerary(userId, startLat, startLng, startDate, days, pace, city, name, request);
+  generateItinerary: async (userId, startLat, startLng, startDate, days, pace, city, name, request, language) => {
+    const data = await ItineraryService.generateItinerary(userId, startLat, startLng, startDate, days, pace, city, name, request, language);
     return data as Itinerary;
   },
 
-  adjustItinerary: async (request) => {
+  adjustItinerary: async (request, language) => {
     const { itinerary } = get();
     if (!itinerary) throw new Error('Sem roteiro ativo');
-    const adjusted: Itinerary = await ItineraryService.adjustItinerary(itinerary.id, request);
+    const adjusted: Itinerary = await ItineraryService.adjustItinerary(itinerary.id, request, language);
+    if (adjusted.id === itinerary.id) {
+      applyUpdate(set, adjusted);
+      return adjusted;
+    }
     const prev = get().itineraries.map(i => ({ ...i, active: false }));
     set({ itinerary: adjusted, itineraries: [adjusted, ...prev] });
     return adjusted;

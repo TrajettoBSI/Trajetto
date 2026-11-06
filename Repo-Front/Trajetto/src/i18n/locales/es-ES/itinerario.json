@@ -144,6 +144,7 @@
     "more": "más {{category}}",
     "less": "menos {{category}}",
     "onlyFree": "solo gratuitos",
+    "lessWalking": "menos caminata",
     "without": "sin {{name}}",
     "placeholder": "Ej.: menos iglesias, más comida callejera y quiero ver el atardecer",
     "send": "Enviar pedido",
@@ -151,13 +152,35 @@
     "hint": "La versión anterior queda guardada en el historial.",
     "defaultReply": "¡Listo! Generé una nueva versión del itinerario.",
     "error": "No fue posible ajustar el itinerario ahora.",
+    "suggestionsTitle": "Sugerencias para este itinerario",
     "suggestions": {
       "lessChurches": "Menos iglesias, más museos",
       "calmer": "Quiero un ritmo más tranquilo",
-      "free": "Solo lugares gratuitos",
       "nature": "Más naturaleza y miradores",
       "nightlife": "Más vida nocturna",
       "history": "Quiero más historia"
+    },
+    "smart": {
+      "rain": {
+        "label": "Va a llover este día: ¿priorizar lugares cubiertos?",
+        "request": "Más lugares cubiertos"
+      },
+      "longDay": {
+        "label": "Este día tiene {{km}} km entre paradas: ¿acortarlo?",
+        "request": "Menos caminata"
+      },
+      "dominant": {
+        "label": "{{count}} de {{total}} paradas son {{category}}: ¿reducirlas?",
+        "request": "Menos {{category}}"
+      },
+      "paid": {
+        "label": "{{count}} lugares de pago: ¿ver solo los gratuitos?",
+        "request": "Solo lugares gratuitos"
+      },
+      "allowPaid": {
+        "label": "¿Incluir lugares de pago otra vez?",
+        "request": "Pueden ser lugares de pago"
+      }
     },
     "categories": {
       "museum": "museos",

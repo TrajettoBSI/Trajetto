@@ -33,8 +33,15 @@ public record TripPreferences(
         @JsonPropertyDescription("Uma ou duas frases, no idioma do pedido, dizendo ao viajante o que vai mudar no roteiro")
         String summary,
         @JsonPropertyDescription("Lugares citados pelo nome que o viajante quer num dia ou periodo especifico")
-        List<Placement> placements
+        List<Placement> placements,
+        @JsonPropertyDescription("true so no pedido que libera de novo os lugares pagos; desfaz o avoidPaid dos pedidos anteriores")
+        boolean allowPaid,
+        @JsonPropertyDescription("MENOS quando o viajante quer andar menos; NORMAL no pedido que desfaz isso; texto vazio para manter")
+        String walking
 ) {
+
+    public static final String WALK_LESS = "MENOS";
+    public static final String WALK_ANY = "NORMAL";
 
     public static final Set<String> PERIODS = Set.of("MANHA", "TARDE", "NOITE");
 
@@ -64,6 +71,11 @@ public record TripPreferences(
         this(moreCategories, lessCategories, avoidPaid, pace, mustInclude, exclude, summary, List.of());
     }
 
+    public TripPreferences(List<String> moreCategories, List<String> lessCategories, boolean avoidPaid, String pace,
+                           List<String> mustInclude, List<String> exclude, String summary, List<Placement> placements) {
+        this(moreCategories, lessCategories, avoidPaid, pace, mustInclude, exclude, summary, placements, false, "");
+    }
+
     public TripPreferences {
         moreCategories = clean(moreCategories);
         lessCategories = clean(lessCategories);
@@ -71,22 +83,25 @@ public record TripPreferences(
         exclude = clean(exclude);
         pace = pace == null ? "" : pace.trim().toUpperCase();
         summary = summary == null ? "" : summary.trim();
+        walking = walking == null ? "" : walking.trim().toUpperCase();
         placements = placements == null ? List.of()
                 : placements.stream().filter(p -> p != null && !p.place().isBlank()).toList();
     }
 
     public TripPreferences withSummary(String text) {
-        return new TripPreferences(moreCategories, lessCategories, avoidPaid, pace, mustInclude, exclude, text, placements);
+        return new TripPreferences(moreCategories, lessCategories, avoidPaid, pace, mustInclude, exclude, text, placements, allowPaid, walking);
     }
 
     public boolean isEmpty() {
         return moreCategories.isEmpty() && lessCategories.isEmpty() && !avoidPaid && pace.isEmpty()
-                && mustInclude.isEmpty() && exclude.isEmpty() && placements.isEmpty();
+                && mustInclude.isEmpty() && exclude.isEmpty() && placements.isEmpty()
+                && !allowPaid && walking.isEmpty();
     }
 
     /**
      * Junta um pedido novo aos anteriores: "mais museus" e depois "sem igrejas" vira as duas
-     * coisas. Quando os dois se contradizem, vale o pedido mais recente.
+     * coisas. Quando os dois se contradizem, vale o pedido mais recente: "pode incluir pagos"
+     * desfaz o "so gratis", e "pode andar mais" desfaz o "menos caminhada".
      */
     public TripPreferences then(TripPreferences next) {
         Set<String> more = new LinkedHashSet<>(moreCategories);
@@ -111,9 +126,10 @@ public record TripPreferences(
             skip.removeIf(name -> ItineraryPlanner.normalize(name).equals(ItineraryPlanner.normalize(p.place())));
         });
 
-        return new TripPreferences(new ArrayList<>(more), new ArrayList<>(less), avoidPaid || next.avoidPaid,
+        String nextWalking = next.walking.isEmpty() ? walking : WALK_LESS.equals(next.walking) ? WALK_LESS : "";
+        return new TripPreferences(new ArrayList<>(more), new ArrayList<>(less), !next.allowPaid && (avoidPaid || next.avoidPaid),
                 next.pace.isEmpty() ? pace : next.pace, new ArrayList<>(include), new ArrayList<>(skip), next.summary,
-                new ArrayList<>(pinned.values()));
+                new ArrayList<>(pinned.values()), false, nextWalking);
     }
 
     private static List<String> clean(List<String> values) {

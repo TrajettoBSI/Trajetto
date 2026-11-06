@@ -53,7 +53,8 @@ O projeto é o **Trabalho de Conclusão de Curso (TCC)** do curso de **Sistemas 
 - Rota otimizada: construção gulosa + melhoria 2-opt que respeita o horário de funcionamento
   (27% menos caminho que uma ordem sem critério, com os lugares mais famosos nos primeiros dias; ver o [benchmark](Repo-Back/backend/docs/BENCHMARK-DE-ROTAS.md))
 - Roteiro que considera o clima: em dia de chuva, museus e lugares cobertos primeiro
-- Ajuste do roteiro em linguagem natural ("menos igrejas, mais comida de rua", "Fontana di Trevi no último dia, de manhã"), interpretado por palavras-chave, sem serviço pago
+- Ajuste do roteiro em linguagem natural ("menos igrejas e museus", "troca o Coliseu pelo Pantheon", "menos caminhada", "Fontana di Trevi no último dia, de manhã"), interpretado por regras e palavras-chave em português, inglês e espanhol, sem serviço pago. A resposta diz o que entrou, o que saiu e o que não deu para atender, e um pedido sem efeito não cria versão nova
+- Sugestões do assistente baseadas no roteiro: chuva no dia, dia com muita caminhada, categoria que domina a viagem e lugares pagos
 - Edição do roteiro: trocar, incluir, remover e reordenar paradas, anotar e dar nome
 - Mapa com o trajeto e instruções a pé, de carro e de transporte público
 - Busca de pontos turísticos com filtros (categoria, preço, horário, perfil, distância)

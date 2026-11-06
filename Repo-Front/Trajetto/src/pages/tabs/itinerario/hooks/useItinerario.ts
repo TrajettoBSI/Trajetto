@@ -38,10 +38,10 @@ export function useItinerario() {
   const edit = useItineraryEdit(currentDay?.date ?? null);
   const rename = useItineraryRename(itinerary);
   const rating = useItineraryRating(itinerary);
-  const assistant = useItineraryAssistant();
   const weatherByDate = useItineraryWeather(itinerary);
   const savings = routeSavings(itinerary?.distanceKm, itinerary?.baselineDistanceKm);
   const dayWeather = currentDay ? weatherByDate[currentDay.date] ?? null : null;
+  const assistant = useItineraryAssistant(itinerary, dayPlaces, dayWeather?.rainy ?? false);
   const { cardRef: shareCardRef, ...share } = useItineraryShare(itinerary);
 
   const openMealPlace = useCallback((place: NearbyPlace) => {

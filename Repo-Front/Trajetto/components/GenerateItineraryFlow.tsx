@@ -339,7 +339,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
   const runGenerate = async () => {
     const start = Date.now();
-    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days, effectivePace, selectedCity?.slug, name.trim() || undefined, tripRequest.trim() || undefined);
+    const result = await generateItinerary(user!.id, selectedPlace!.lat, selectedPlace!.lng, startDate, days, effectivePace, selectedCity?.slug, name.trim() || undefined, tripRequest.trim() || undefined, i18n.language);
     const elapsed = Date.now() - start;
     const remaining = 2000 - elapsed;
     if (remaining > 0) await new Promise(r => setTimeout(r, remaining));
