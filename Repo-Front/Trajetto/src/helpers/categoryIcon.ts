@@ -1,38 +1,39 @@
+import { Ionicons } from '@expo/vector-icons';
 import i18n from '@/src/i18n';
 
-export function categoryIcon(category: string): string {
+export function categoryIcon(category: string): keyof typeof Ionicons.glyphMap {
   const c = (category || '').toLowerCase();
-  if (c.includes('museum')) return '🏛️';
-  if (c.includes('monument')) return '🗿';
-  if (c.includes('castle')) return '🏰';
-  if (c.includes('palace')) return '🏯';
-  if (c.includes('church') || c.includes('cathedral')) return '⛪';
-  if (c.includes('synagogue') || c.includes('mosque') || c.includes('temple')) return '🛐';
-  if (c.includes('garden')) return '🌷';
-  if (c.includes('park')) return '🌳';
-  if (c.includes('square')) return '🏙️';
-  if (c.includes('fountain')) return '⛲';
-  if (c.includes('aqueduct') || c.includes('bridge')) return '🌉';
-  if (c.includes('ruins') || c.includes('historic')) return '🏚️';
-  if (c.includes('gallery') || c.includes('artwork') || c.includes('art')) return '🎨';
-  if (c.includes('theatre') || c.includes('theater')) return '🎭';
-  if (c.includes('tower')) return '🗼';
-  if (c.includes('view')) return '🌄';
-  if (c.includes('beach')) return '🏖️';
-  if (c.includes('peak')) return '⛰️';
-  if (c.includes('waterfall')) return '💧';
-  if (c.includes('cave')) return '🕳️';
-  if (c.includes('zoo')) return '🦁';
-  if (c.includes('aquarium')) return '🐠';
-  if (c.includes('amusement') || c.includes('theme_park')) return '🎡';
-  if (c.includes('stadium')) return '🏟️';
-  if (c.includes('market') || c.includes('shop')) return '🛍️';
-  if (c.includes('hotel')) return '🏨';
-  if (c.includes('restaurant') || c.includes('food')) return '🍽️';
-  if (c.includes('bar') || c.includes('pub')) return '🍸';
-  if (c.includes('cafe') || c.includes('coffee')) return '☕';
-  if (c.includes('attraction')) return '✨';
-  return '📍';
+  if (c.includes('museum')) return 'business';
+  if (c.includes('monument')) return 'flag';
+  if (c.includes('castle')) return 'shield';
+  if (c.includes('palace')) return 'diamond';
+  if (c.includes('church') || c.includes('cathedral')) return 'home';
+  if (c.includes('synagogue') || c.includes('mosque') || c.includes('temple')) return 'sunny';
+  if (c.includes('garden')) return 'flower';
+  if (c.includes('park')) return 'leaf';
+  if (c.includes('square')) return 'grid';
+  if (c.includes('fountain')) return 'water';
+  if (c.includes('aqueduct') || c.includes('bridge')) return 'git-merge';
+  if (c.includes('ruins') || c.includes('historic')) return 'hourglass';
+  if (c.includes('gallery') || c.includes('artwork') || c.includes('art')) return 'color-palette';
+  if (c.includes('theatre') || c.includes('theater')) return 'musical-notes';
+  if (c.includes('tower')) return 'radio';
+  if (c.includes('view')) return 'image';
+  if (c.includes('beach')) return 'umbrella';
+  if (c.includes('peak')) return 'triangle';
+  if (c.includes('waterfall')) return 'rainy';
+  if (c.includes('cave')) return 'moon';
+  if (c.includes('zoo')) return 'paw';
+  if (c.includes('aquarium')) return 'fish';
+  if (c.includes('amusement') || c.includes('theme_park')) return 'happy';
+  if (c.includes('stadium')) return 'football';
+  if (c.includes('market') || c.includes('shop')) return 'basket';
+  if (c.includes('hotel')) return 'bed';
+  if (c.includes('restaurant') || c.includes('food')) return 'restaurant';
+  if (c.includes('bar') || c.includes('pub')) return 'wine';
+  if (c.includes('cafe') || c.includes('coffee')) return 'cafe';
+  if (c.includes('attraction')) return 'star';
+  return 'location';
 }
 
 export function formatCategoryLabel(category: string): string {

@@ -11,6 +11,7 @@ export function useItinerarioScroll(places: Places[], startDate: string | undefi
   const [placesAnteriores, setPlacesAnteriores] = useState(places);
   const scrollRef = useRef<ScrollViewInstance>(null);
   const cardOffsets = useRef<Record<number, number>>({});
+  const scrolledDay = useRef<string | null>(null);
 
   if (places !== placesAnteriores) {
     setPlacesAnteriores(places);
@@ -36,8 +37,19 @@ export function useItinerarioScroll(places: Places[], startDate: string | undefi
   }, [highlightedPlaceIndex, setHighlightedPlace]);
 
   useFocusEffect(
+    useCallback(() => () => {
+      scrolledDay.current = null;
+    }, [])
+  );
+
+  // Rola ate a proxima parada ao abrir a tela ou trocar de dia; editar o dia nao mexe na rolagem.
+  useFocusEffect(
     useCallback(() => {
       if (!layoutReady || !startDate || !places.length) return;
+
+      const day = placeDate(startDate, places[0]);
+      if (scrolledDay.current === day) return;
+      scrolledDay.current = day;
 
       const firstUpcoming = places.find(
         (place) => !isPlacePast(placeDate(startDate, place), place.estimatedVisitTime)

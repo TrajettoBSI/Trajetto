@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroFill from '@/src/components/brand/HeroFill';
 import { ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
@@ -46,6 +47,7 @@ export default function Profile() {
     <KeyboardAvoidingView style={s.flex} behavior="padding" keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 30}>
 
       <View style={[s.headerWrapper, { paddingTop: insets.top }]}>
+        <HeroFill variant="bar" />
         <View style={s.headerRow}>
           <View style={s.headerLeft}>
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>

@@ -7,11 +7,11 @@ export const styles = (colors: AppColors) =>
       marginTop: 10, padding: 12, backgroundColor: colors.surfaceAlt,
       borderRadius: 12, borderWidth: 1, borderColor: colors.gray200, gap: 10,
     },
-    ratingTitle: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.text },
+    ratingTitle: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.text },
     ratingInput: {
       borderWidth: 1, borderColor: colors.gray200, borderRadius: 10,
       padding: 10, fontSize: 13, minHeight: 60, textAlignVertical: 'top', backgroundColor: colors.white,
     },
     ratingButton: { backgroundColor: colors.primary, paddingVertical: 10, borderRadius: 10, alignItems: 'center' },
-    ratingButtonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 13 },
+    ratingButtonText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 13 },
   });

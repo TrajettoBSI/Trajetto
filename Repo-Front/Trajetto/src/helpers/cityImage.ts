@@ -1,7 +1,6 @@
-import { ImageSourcePropType } from 'react-native';
 
 // Uma foto por cidade do catalogo, em assets/cities/<slug>.jpg.
-const CITY_IMAGES: Record<string, ImageSourcePropType> = {
+const CITY_IMAGES: Record<string, number> = {
   atenas: require('@/assets/cities/atenas.jpg'),
   barcelona: require('@/assets/cities/barcelona.jpg'),
   'buenos-aires': require('@/assets/cities/buenos-aires.jpg'),
@@ -24,6 +23,6 @@ const CITY_IMAGES: Record<string, ImageSourcePropType> = {
   toquio: require('@/assets/cities/toquio.jpg'),
 };
 
-export function cityImage(slug?: string | null): ImageSourcePropType | null {
+export function cityImage(slug?: string | null): number | null {
   return (slug && CITY_IMAGES[slug]) || null;
 }

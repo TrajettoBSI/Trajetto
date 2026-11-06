@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroFill from '@/src/components/brand/HeroFill';
 import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -15,13 +16,14 @@ export default function TravelerTest() {
 
   return (
     <SafeAreaView style={s.container}>
+      <HeroFill />
       <View style={s.content}>
         <View style={s.hero}>
           <Ionicons name="location-outline" size={18} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { top: 4, left: 18 }]} />
           <Ionicons name="compass-outline" size={20} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { bottom: 10, right: 12, transform: [{ rotate: '14deg' }] }]} />
           <Ionicons name="globe-outline" size={16} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { top: 14, right: 22 }]} />
           <View style={s.heroBadge}>
-            <Ionicons name="airplane" size={40} color={colors.primary} />
+            <Ionicons name="airplane" size={40} color={colors.primaryText} />
           </View>
         </View>
 

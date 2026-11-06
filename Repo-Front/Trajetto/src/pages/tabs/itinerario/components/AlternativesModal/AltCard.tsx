@@ -1,4 +1,5 @@
 import React from 'react';
+import { Ionicons } from '@expo/vector-icons';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { Place } from '@/services';
 import { useColors } from '@/src/theme';
@@ -19,7 +20,7 @@ export default function AltCard({ alt, onPress, distanceMeters }: AltCardProps) 
   return (
     <TouchableOpacity style={s.card} onPress={onPress} activeOpacity={0.8}>
       <View style={s.iconBox}>
-        <Text style={s.iconText}>{categoryIcon(alt.category)}</Text>
+        <Ionicons name={categoryIcon(alt.category)} size={22} color={colors.primaryText} />
       </View>
       <View style={s.info}>
         <Text style={s.name} numberOfLines={1}>{placeName(alt)}</Text>

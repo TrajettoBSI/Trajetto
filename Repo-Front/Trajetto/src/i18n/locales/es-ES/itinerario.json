@@ -1,7 +1,7 @@
 {
   "loadingText": "Cargando itinerario...",
-  "sectionLabel": "PARADAS DEL ITINERARIO",
-  "daySectionLabel": "PARADAS DEL DÍA {{number}} DE {{total}}",
+  "sectionLabel": "Paradas del itinerario",
+  "daySectionLabel": "Paradas del día {{number}} de {{total}}",
   "exportPdf": "Exportar como PDF",
   "exportPdfShort": "PDF",
   "headerCard": {
@@ -22,8 +22,8 @@
   "ticketCard": {
     "stopLabel": "PARADA",
     "timeLabel": "HORARIO",
-    "paid": "🎟️ De pago",
-    "free": "🆓 Gratis",
+    "paid": "De pago",
+    "free": "Gratis",
     "about": "Acerca de",
     "switch": "Cambiar",
     "addNote": "Añadir nota",
@@ -117,6 +117,7 @@
     "optimized": "Orden optimizado",
     "weather": "Clima",
     "noForecast": "Pronóstico disponible hasta 16 días antes",
+    "weatherUnavailable": "Pronóstico no disponible",
     "rainChance": "{{percent}}% de lluvia",
     "rainyDay": "Día de lluvia: priorizamos museos y lugares cubiertos, y dejamos los paseos al aire libre para los días secos.",
     "kinds": {
@@ -136,7 +137,7 @@
     "transitHint": "mejor en transporte"
   },
   "assistant": {
-    "fab": "Ajustar itinerario",
+    "fab": "Asistente de IA",
     "open": "Abrir el asistente del itinerario",
     "title": "Asistente del itinerario",
     "subtitle": "Dime con tus palabras qué quieres cambiar. Rehago el itinerario.",

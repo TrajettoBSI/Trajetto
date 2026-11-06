@@ -1,4 +1,4 @@
-export { colors, lightColors, darkColors, highContrastColors } from './colors';
+export { colors, lightColors, darkColors, highContrastColors, placeColor } from './colors';
 export type { AppColors } from './colors';
 export { useColors } from './useColors';
 export { ThemeProvider, useTheme, resolveScheme, THEME_PREFERENCES } from './ThemeContext';

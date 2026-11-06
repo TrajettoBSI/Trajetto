@@ -6,7 +6,8 @@ import { useTranslation } from 'react-i18next';
 import { Ionicons } from '@expo/vector-icons';
 import CustomInput from '@/components/CustomInput';
 import CustomButton from '@/components/CustomButton';
-import Logo from '@/assets/appImgs/logo.svg';
+import BrandMark from '@/src/components/brand/BrandMark';
+import HeroFill from '@/src/components/brand/HeroFill';
 import { useColors } from '@/src/theme';
 import { FeedbackState } from '@/src/components/feedback';
 import { useLogin } from './hooks/useLogin';
@@ -38,22 +39,19 @@ export default function Login() {
         showsVerticalScrollIndicator={false}
       >
         <View style={[s.hero, { paddingTop: insets.top + 32 }]}>
-          <Ionicons name="airplane-outline" size={22} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { top: 12, left: 28, transform: [{ rotate: '-18deg' }] }]} />
-          <Ionicons name="location-outline" size={18} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { top: 8, right: 40 }]} />
-          <Ionicons name="compass-outline" size={20} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { bottom: 16, left: 48, transform: [{ rotate: '12deg' }] }]} />
-
-          <Animated.Text entering={FadeIn.duration(600)} style={s.intro}>
+          <HeroFill />
+          <Animated.View entering={FadeIn.duration(500)} style={s.logoBadge}>
+            <BrandMark size={52} draw color={colors.onPrimary} />
+          </Animated.View>
+          <Animated.Text entering={FadeIn.delay(450).duration(600)} style={s.intro}>
             {t('intro')}
           </Animated.Text>
-          <Animated.View entering={FadeInDown.delay(150).duration(600)} style={s.logoBadge}>
-            <Logo width={48} height={48} color={colors.primary} />
-          </Animated.View>
           <Animated.Text entering={FadeInDown.delay(250).duration(600)} style={s.brand}>
-            Trajetto
+            trajetto
           </Animated.Text>
         </View>
 
-        <View style={s.card}>
+        <Animated.View entering={FadeInDown.delay(150).duration(500)} style={s.card}>
           <Text style={s.cardTitle}>{t('cardTitle')}</Text>
           <Text style={s.cardSubtitle}>{t('cardSubtitle')}</Text>
 
@@ -94,7 +92,7 @@ export default function Login() {
               <Text style={s.registerLink}>{t('signUp')}</Text>
             </TouchableOpacity>
           </View>
-        </View>
+        </Animated.View>
       </ScrollView>
     </KeyboardAvoidingView>
   );

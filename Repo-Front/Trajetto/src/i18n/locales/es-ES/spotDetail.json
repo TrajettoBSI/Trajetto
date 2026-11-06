@@ -6,8 +6,8 @@
     "favoritos": "Favoritos",
     "inicio": "Inicio"
   },
-  "free": "🆓 Gratis",
-  "paid": "💰 De pago",
+  "free": "Gratis",
+  "paid": "De pago",
   "awaySuffix": "de distancia",
   "walkSuffix": "a pie",
   "driveSuffix": "en coche",
@@ -28,9 +28,9 @@
   "openMapsError": "No se pudo abrir Google Maps",
   "callError": "No se pudo realizar la llamada",
   "accessibility": {
-    "yes": "♿ Totalmente accesible",
-    "limited": "♿ Parcialmente accesible",
-    "no": "🚫 No accesible"
+    "yes": "Totalmente accesible",
+    "limited": "Parcialmente accesible",
+    "no": "No accesible"
   },
   "rating": {
     "sectionTitle": "Valoraciones",

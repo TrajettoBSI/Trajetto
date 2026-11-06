@@ -20,7 +20,7 @@ export const styles = (colors: AppColors) =>
     },
     routeDot: { width: 8, height: 8, borderRadius: 4 },
     routeText: { fontSize: 12, color: colors.text, flexShrink: 1 },
-    routeLabel: { fontSize: 11, color: colors.textSubtle, fontFamily: 'Inter-Medium' },
-    routeNum: { fontSize: 12, fontFamily: 'Inter-Bold' },
+    routeLabel: { fontSize: 11, color: colors.textSubtle, fontFamily: 'Jakarta-Medium' },
+    routeNum: { fontSize: 12, fontFamily: 'Jakarta-Bold' },
     routeArrow: { fontSize: 11, color: colors.textSubtle },
   });

@@ -10,6 +10,6 @@ export const styles = (colors: AppColors) =>
     rowBorder: { borderBottomWidth: 1, borderBottomColor: colors.gray100 },
     label: { flex: 1, fontSize: 15, color: colors.text, marginRight: 8 },
     valueGroup: { flexDirection: 'row', alignItems: 'baseline', gap: 6 },
-    value: { fontSize: 16, fontFamily: 'Inter-Bold', color: colors.text },
+    value: { fontSize: 16, fontFamily: 'Jakarta-Bold', color: colors.text },
     subValue: { fontSize: 13, color: colors.textSubtle },
   });

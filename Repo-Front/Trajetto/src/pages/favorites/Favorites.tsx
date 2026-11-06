@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroFill from '@/src/components/brand/HeroFill';
 import { FlatList, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -19,6 +20,7 @@ export default function Favorites() {
   return (
     <View style={s.safe}>
       <View style={[s.headerWrapper, { paddingTop: insets.top }]}>
+        <HeroFill variant="bar" />
         <View style={s.headerRow}>
           <View style={s.headerLeft}>
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>

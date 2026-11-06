@@ -7,8 +7,9 @@ export const styles = (colors: AppColors) =>
     content: { padding: 24, paddingBottom: 40 },
 
     hero: {
-      backgroundColor: colors.primary,
-      borderRadius: 20,
+      backgroundColor: colors.primaryDark,
+      overflow: 'hidden',
+      borderRadius: 30,
       padding: 32,
       alignItems: 'center',
       marginBottom: 20,
@@ -30,7 +31,7 @@ export const styles = (colors: AppColors) =>
     emoji: { fontSize: 48 },
     profileName: {
       fontSize: 26,
-      fontFamily: 'Inter-Bold',
+      fontFamily: 'Display-Bold',
       color: colors.onPrimary,
       textAlign: 'center',
       letterSpacing: 1,
@@ -49,8 +50,8 @@ export const styles = (colors: AppColors) =>
     cardTitleRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 12 },
     cardTitle: {
       fontSize: 15,
-      fontFamily: 'Inter-Bold',
-      color: colors.primary,
+      fontFamily: 'Jakarta-Bold',
+      color: colors.primaryText,
       marginBottom: 12,
     },
     descricao: { fontSize: 15, color: colors.textFaint, lineHeight: 24 },
@@ -71,7 +72,7 @@ export const styles = (colors: AppColors) =>
       padding: 16,
       marginTop: 4,
     },
-    backButtonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 16 },
+    backButtonText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 16 },
 
     tripCard: {
       borderRadius: 20, overflow: 'hidden', padding: 20, minHeight: 190, marginBottom: 12,
@@ -79,18 +80,18 @@ export const styles = (colors: AppColors) =>
     },
     tripImage: { ...StyleSheet.absoluteFill },
     tripKicker: {
-      fontSize: 11, fontFamily: 'Inter-Bold', color: colors.onPrimaryMuted, letterSpacing: 1.5, textTransform: 'uppercase',
+      fontSize: 11, fontFamily: 'Jakarta-Bold', color: colors.onPrimaryMuted, letterSpacing: 1.5, textTransform: 'uppercase',
     },
-    tripTitle: { fontSize: 24, fontFamily: 'FugazOne', color: colors.onPrimary, marginTop: 4 },
+    tripTitle: { fontSize: 24, fontFamily: 'Display-Bold', color: colors.onPrimary, marginTop: 4 },
     tripBody: { fontSize: 14, color: colors.onPrimaryMuted, marginTop: 4, lineHeight: 20 },
     tripCta: {
       flexDirection: 'row', alignItems: 'center', gap: 6, alignSelf: 'flex-start', marginTop: 14,
       backgroundColor: colors.white, borderRadius: 18, paddingHorizontal: 16, paddingVertical: 10,
     },
-    tripCtaText: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.primary },
+    tripCtaText: { fontSize: 14, fontFamily: 'Jakarta-Bold', color: colors.primaryText },
 
     secondaryButton: { alignItems: 'center', padding: 14 },
-    secondaryButtonText: { color: colors.textMuted, fontFamily: 'Inter-Bold', fontSize: 15 },
+    secondaryButtonText: { color: colors.textMuted, fontFamily: 'Jakarta-Bold', fontSize: 15 },
 
     errorText: { textAlign: 'center', marginTop: 40, fontSize: 16, color: colors.gray600 },
   });

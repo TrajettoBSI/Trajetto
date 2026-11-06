@@ -87,12 +87,12 @@ describe('horario de funcionamento', () => {
 describe('categorias e perfis', () => {
   it('escolhe o icone pela categoria', () => {
     const casos: [string, string][] = [
-      ['museum', '🏛️'], ['historic_monument', '🗿'], ['historic_castle', '🏰'], ['palace', '🏯'],
-      ['historic_church', '⛪'], ['historic_temple', '🛐'], ['garden', '🌷'], ['park', '🌳'],
-      ['square', '🏙️'], ['fountain', '⛲'], ['historic_aqueduct', '🌉'], ['historic_ruins', '🏚️'],
-      ['artwork', '🎨'], ['theatre', '🎭'], ['tower', '🗼'], ['viewpoint', '🌄'], ['beach', '🏖️'],
-      ['zoo', '🦁'], ['aquarium', '🐠'], ['amusement', '🎡'], ['stadium', '🏟️'], ['marketplace', '🛍️'],
-      ['hotel', '🏨'], ['restaurant', '🍽️'], ['pub', '🍸'], ['cafe', '☕'], ['attraction', '✨'], ['', '📍'],
+      ['museum', 'business'], ['historic_monument', 'flag'], ['historic_castle', 'shield'], ['palace', 'diamond'],
+      ['historic_church', 'home'], ['historic_temple', 'sunny'], ['garden', 'flower'], ['park', 'leaf'],
+      ['square', 'grid'], ['fountain', 'water'], ['historic_aqueduct', 'git-merge'], ['historic_ruins', 'hourglass'],
+      ['artwork', 'color-palette'], ['theatre', 'musical-notes'], ['tower', 'radio'], ['viewpoint', 'image'], ['beach', 'umbrella'],
+      ['zoo', 'paw'], ['aquarium', 'fish'], ['amusement', 'happy'], ['stadium', 'football'], ['marketplace', 'basket'],
+      ['hotel', 'bed'], ['restaurant', 'restaurant'], ['pub', 'wine'], ['cafe', 'cafe'], ['attraction', 'star'], ['', 'location'],
     ];
     casos.forEach(([categoria, icone]) => expect(categoryIcon(categoria)).toBe(icone));
   });

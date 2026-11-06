@@ -3,7 +3,7 @@ import { AppColors } from '@/src/theme';
 
 export const styles = (colors: AppColors) =>
   StyleSheet.create({
-    container: { flex: 1, backgroundColor: colors.primary },
+    container: { flex: 1, backgroundColor: colors.primaryDark },
     content: {
       flex: 1,
       alignItems: 'center',
@@ -51,11 +51,11 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center',
       gap: 6,
     },
-    retakeBadgeText: { color: colors.onPrimary, fontSize: 13, fontFamily: 'Inter-Medium' },
+    retakeBadgeText: { color: colors.onPrimary, fontSize: 13, fontFamily: 'Jakarta-Medium' },
     textBlock: { alignSelf: 'stretch' },
     title: {
       fontSize: 28,
-      fontFamily: 'Inter-Bold',
+      fontFamily: 'Display-Bold',
       color: colors.onPrimary,
       marginBottom: 12,
     },
@@ -74,7 +74,7 @@ export const styles = (colors: AppColors) =>
       borderRadius: 28,
       padding: 16,
     },
-    primaryButtonText: { color: colors.primaryDark, fontFamily: 'Inter-Bold', fontSize: 16 },
+    primaryButtonText: { color: colors.primaryDark, fontFamily: 'Jakarta-Bold', fontSize: 16 },
     secondaryButton: {
       borderRadius: 28,
       padding: 16,

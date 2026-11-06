@@ -19,7 +19,7 @@ export const styles = (colors: AppColors) =>
     },
     title: {
       fontSize: 16,
-      fontFamily: 'Inter-Bold',
+      fontFamily: 'Jakarta-Bold',
       color: colors.text,
       textAlign: 'center',
       marginBottom: 6,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Dimensions, Text, View } from 'react-native';
-import Svg, { Path } from 'react-native-svg';
+import Svg, { Defs, LinearGradient, Path, Stop } from 'react-native-svg';
 import { Ionicons } from '@expo/vector-icons';
 import { useColors } from '@/src/theme';
 import { styles, SVG_HEIGHT } from './styles';
@@ -41,7 +41,14 @@ export default function ProfileHero({ name, email, travelerProfile }: ProfileHer
   return (
     <View style={s.wrapper}>
       <Svg width={width} height={SVG_HEIGHT} style={s.svg}>
-        <Path d={wavePath} fill={colors.primary} />
+        <Defs>
+          <LinearGradient id="profileHero" x1="0" y1="0" x2="1" y2="0">
+            {colors.gradientHero.map((stop, i) => (
+              <Stop key={stop + i} offset={i / (colors.gradientHero.length - 1)} stopColor={stop} />
+            ))}
+          </LinearGradient>
+        </Defs>
+        <Path d={wavePath} fill="url(#profileHero)" />
       </Svg>
 
       <Ionicons name="briefcase-outline" size={20} color={colors.onPrimaryFaint20} style={[s.patternIcon, { top: 14, left: 110, transform: [{ rotate: '-12deg' }] }]} />
@@ -49,7 +56,9 @@ export default function ProfileHero({ name, email, travelerProfile }: ProfileHer
       <Ionicons name="glasses-outline" size={18} color={colors.onPrimaryFaint20} style={[s.patternIcon, { top: 85, left: 30, transform: [{ rotate: '-6deg' }] }]} />
 
       <View style={s.avatarCircle}>
-        <Ionicons name="person" size={44} color={colors.primary} />
+        {name.trim()
+          ? <Text style={s.avatarInitial}>{name.trim().charAt(0).toUpperCase()}</Text>
+          : <Ionicons name="person" size={44} color={colors.primaryText} />}
       </View>
 
       <View style={s.info}>
@@ -57,7 +66,7 @@ export default function ProfileHero({ name, email, travelerProfile }: ProfileHer
         {email ? <Text style={s.userEmail}>{email}</Text> : null}
         {travelerProfile ? (
           <View style={s.profileBadge}>
-            <Ionicons name="briefcase" size={14} color={colors.primary} />
+            <Ionicons name="briefcase" size={14} color={colors.primaryText} />
             <Text style={s.profileBadgeText}>{travelerProfile}</Text>
           </View>
         ) : null}

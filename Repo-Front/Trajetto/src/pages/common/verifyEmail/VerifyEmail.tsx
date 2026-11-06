@@ -1,11 +1,11 @@
 import React from 'react';
+import HeroFill from '@/src/components/brand/HeroFill';
 import { Keyboard, KeyboardAvoidingView, Platform, ScrollView, Text, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import CustomInput from '@/components/CustomInput';
 import CustomButton from '@/components/CustomButton';
-import Logo from '@/assets/appImgs/logo.svg';
 import { useColors } from '@/src/theme';
 import { FeedbackState } from '@/src/components/feedback';
 import { useVerifyEmail } from './hooks/useVerifyEmail';
@@ -24,18 +24,13 @@ export default function VerifyEmail() {
     <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
       <ScrollView style={s.scrollView} contentContainerStyle={s.scrollContent} keyboardShouldPersistTaps="handled">
         <View style={s.headerWrapper}>
+<HeroFill />
           <View style={s.headerRow}>
             <View style={s.headerLeft}>
               <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
                 <Ionicons name="chevron-back" size={32} color={colors.onPrimary} />
               </TouchableOpacity>
               <Text style={s.headerText}>{t('headerTitle')}</Text>
-            </View>
-
-            <View style={s.headerCenter} pointerEvents="none">
-              <View style={s.logoBadge}>
-                <Logo width={20} height={20} color={colors.primary} />
-              </View>
             </View>
           </View>
         </View>

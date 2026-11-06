@@ -9,7 +9,7 @@ export const shareSheetStyles = (colors: AppColors) =>
       paddingTop: 16, paddingHorizontal: 20, maxHeight: '94%',
     },
     header: { flexDirection: 'row', alignItems: 'center', marginBottom: 12 },
-    title: { flex: 1, fontSize: 18, fontFamily: 'Inter-Bold', color: colors.text },
+    title: { flex: 1, fontSize: 18, fontFamily: 'Jakarta-Bold', color: colors.text },
     close: { width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center' },
     preview: { alignItems: 'center', paddingBottom: 16 },
     button: { marginTop: 4 },

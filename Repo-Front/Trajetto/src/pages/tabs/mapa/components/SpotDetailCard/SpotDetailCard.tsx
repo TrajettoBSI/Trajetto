@@ -1,4 +1,5 @@
 import React from 'react';
+import { Ionicons } from '@expo/vector-icons';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
@@ -18,13 +19,14 @@ type SpotDetailCardProps = {
 export default function SpotDetailCard({ spot, distanceMeters, onClose }: SpotDetailCardProps) {
   const { t } = useTranslation('mapa');
   const router = useRouter();
-  const s = styles(useColors());
+  const colors = useColors();
+  const s = styles(colors);
   const todayHours = resolveTodayHours(spot.openingHours);
 
   return (
     <View style={s.spotCard}>
       <View style={s.spotCardHeader}>
-        <Text style={s.spotCardEmoji}>{categoryIcon(spot.category)}</Text>
+        <Ionicons name={categoryIcon(spot.category)} size={26} color={colors.primaryText} />
         <View style={s.spotCardInfo}>
           <Text style={s.spotCardName} numberOfLines={1}>{placeName(spot)}</Text>
           <Text style={s.spotCardCategory}>{categoryLabel(spot.category)}</Text>

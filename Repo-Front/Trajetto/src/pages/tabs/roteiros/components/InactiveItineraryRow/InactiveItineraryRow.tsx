@@ -1,5 +1,6 @@
 import React from 'react';
-import { ActivityIndicator, Image, Text, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native';
+import { Image } from 'expo-image';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { Itinerary } from '@/hooks/itineraryStore';
@@ -39,10 +40,10 @@ export default function InactiveItineraryRow({
         activeOpacity={selectMode ? 0.9 : 1}
       >
         {selectMode && <Checkbox selected={selected} />}
-        {image && <Image source={image} style={s.thumb} resizeMode="cover" />}
+        {image && <Image source={image} style={s.thumb} contentFit="cover" transition={220} />}
         <View style={s.inactiveCardInfo}>
           <View style={s.inactiveCardTitleRow}>
-            {!image && <Ionicons name="location" size={18} color={colors.primary} />}
+            {!image && <Ionicons name="location" size={18} color={colors.primaryText} />}
             <Text style={s.inactiveCardTitle} numberOfLines={1}>{itineraryTitle(item)}</Text>
           </View>
           <Text style={s.inactiveCardMeta}>
@@ -58,7 +59,7 @@ export default function InactiveItineraryRow({
               activeOpacity={0.8}
             >
               {activating
-                ? <ActivityIndicator size="small" color={colors.primary} />
+                ? <ActivityIndicator size="small" color={colors.primaryText} />
                 : <Text style={s.activateBtnText}>{t('inactiveRow.activate')}</Text>
               }
             </TouchableOpacity>

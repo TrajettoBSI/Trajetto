@@ -1,7 +1,7 @@
 {
   "loadingText": "Loading itinerary...",
-  "sectionLabel": "ITINERARY STOPS",
-  "daySectionLabel": "STOPS OF DAY {{number}} OF {{total}}",
+  "sectionLabel": "Itinerary stops",
+  "daySectionLabel": "Stops of day {{number}} of {{total}}",
   "exportPdf": "Export as PDF",
   "exportPdfShort": "PDF",
   "headerCard": {
@@ -22,8 +22,8 @@
   "ticketCard": {
     "stopLabel": "STOP",
     "timeLabel": "TIME",
-    "paid": "🎟️ Paid",
-    "free": "🆓 Free",
+    "paid": "Paid",
+    "free": "Free",
     "about": "About",
     "switch": "Switch",
     "addNote": "Add a note",
@@ -117,6 +117,7 @@
     "optimized": "Optimized order",
     "weather": "Weather",
     "noForecast": "Forecast available up to 16 days ahead",
+    "weatherUnavailable": "Forecast unavailable",
     "rainChance": "{{percent}}% chance of rain",
     "rainyDay": "Rainy day: we put museums and indoor places first and saved outdoor spots for the dry days.",
     "kinds": {
@@ -136,7 +137,7 @@
     "transitHint": "better by transit"
   },
   "assistant": {
-    "fab": "Adjust itinerary",
+    "fab": "AI assistant",
     "open": "Open the itinerary assistant",
     "title": "Itinerary assistant",
     "subtitle": "Tell me in your own words what to change. I will rebuild the itinerary.",

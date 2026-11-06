@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { ScrollView, Text, View } from 'react-native';
+import { Image } from 'expo-image';
+import Animated, { FadeInDown, LinearTransition } from 'react-native-reanimated';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import StarRating from '@/components/Rating';
 import { PlaceHighlight } from '@/services';
+import PressableScale from '@/src/components/motion/PressableScale';
 import { useColors } from '@/src/theme';
 import { cityImage } from '@/src/helpers/cityImage';
 import { placeName } from '@/src/i18n/format';
@@ -25,7 +28,7 @@ export default function PlaceHighlights({ highlights, onPress }: PlaceHighlights
   if (highlights.length === 0) return null;
 
   return (
-    <View style={s.section}>
+    <Animated.View entering={FadeInDown.delay(180).duration(380)} style={s.section}>
       <Text style={s.title}>{t('highlights.title')}</Text>
       <Text style={s.subtitle}>{t('highlights.subtitle')}</Text>
       <ScrollView
@@ -38,12 +41,13 @@ export default function PlaceHighlights({ highlights, onPress }: PlaceHighlights
         {highlights.map((h) => {
           const image = h.imageUrl && !failedImages.has(h.xid) ? { uri: h.imageUrl } : cityImage(h.city);
           return (
-            <TouchableOpacity key={h.xid} style={[s.card, { width }]} onPress={() => onPress(h)} activeOpacity={0.85}>
+            <PressableScale key={h.xid} style={[s.card, { width }]} onPress={() => onPress(h)} scaleTo={0.98}>
               {image ? (
                 <Image
                   source={image}
                   style={s.image}
-                  resizeMode="cover"
+                  contentFit="cover"
+                  transition={280}
                   onError={() => setFailedImages((prev) => new Set(prev).add(h.xid))}
                 />
               ) : <View style={s.image} />}
@@ -73,15 +77,17 @@ export default function PlaceHighlights({ highlights, onPress }: PlaceHighlights
                   </>
                 )}
               </View>
-            </TouchableOpacity>
+            </PressableScale>
           );
         })}
       </ScrollView>
       {highlights.length > 1 && (
         <View style={s.dots}>
-          {highlights.map((h, i) => <View key={h.xid} style={[s.dot, i === page && s.dotActive]} />)}
+          {highlights.map((h, i) => (
+            <Animated.View key={h.xid} layout={LinearTransition.springify().damping(16)} style={[s.dot, i === page && s.dotActive]} />
+          ))}
         </View>
       )}
-    </View>
+    </Animated.View>
   );
 }

@@ -29,6 +29,10 @@ export function useItinerario() {
     if (userId) useItineraryStore.getState().fetchAllItineraries(userId);
   }, [userId]);
 
+  const refresh = useCallback(async () => {
+    if (userId) await useItineraryStore.getState().fetchAllItineraries(userId);
+  }, [userId]);
+
   const alternatives = useAlternatives(itinerary);
   const { handleExportPDF } = useExportPdf();
   const note = useItineraryNote();
@@ -38,7 +42,7 @@ export function useItinerario() {
   const edit = useItineraryEdit(currentDay?.date ?? null);
   const rename = useItineraryRename(itinerary);
   const rating = useItineraryRating(itinerary);
-  const weatherByDate = useItineraryWeather(itinerary);
+  const { weatherByDate, loading: weatherLoading } = useItineraryWeather(itinerary);
   const savings = routeSavings(itinerary?.distanceKm, itinerary?.baselineDistanceKm);
   const dayWeather = currentDay ? weatherByDate[currentDay.date] ?? null : null;
   const assistant = useItineraryAssistant(itinerary, dayPlaces, dayWeather?.rainy ?? false);
@@ -71,6 +75,7 @@ export function useItinerario() {
     loading,
     error,
     reload,
+    refresh,
     setFocusedMapPlace,
     days,
     currentDay,
@@ -91,6 +96,7 @@ export function useItinerario() {
     assistant,
     savings,
     dayWeather,
+    weatherLoading,
     share,
     shareCardRef,
     handleExportPDF: () => handleExportPDF(itinerary),

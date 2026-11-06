@@ -1,4 +1,5 @@
 import React from 'react';
+import { Ionicons } from '@expo/vector-icons';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { Place } from '@/services';
@@ -15,7 +16,8 @@ type SpotCardProps = {
 
 export default function SpotCard({ spot, onPress }: SpotCardProps) {
   const { t } = useTranslation('common');
-  const s = styles(useColors());
+  const colors = useColors();
+  const s = styles(colors);
   const image = usePlaceImage(spot.wikidata);
   return (
     <TouchableOpacity style={s.card} onPress={onPress} activeOpacity={0.8}>
@@ -30,7 +32,7 @@ export default function SpotCard({ spot, onPress }: SpotCardProps) {
         />
       ) : (
         <View style={s.cardIcon}>
-          <Text style={s.cardIconText}>{categoryIcon(spot.category)}</Text>
+          <Ionicons name={categoryIcon(spot.category)} size={24} color={colors.primaryText} />
         </View>
       )}
       <View style={s.cardContent}>

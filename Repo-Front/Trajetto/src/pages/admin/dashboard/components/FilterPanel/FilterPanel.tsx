@@ -118,7 +118,7 @@ export default function FilterPanel({
     <View style={s.card}>
       <View style={s.header}>
         <Text style={s.title}>{t('dashboard.filters.title')}</Text>
-        {atualizando && <ActivityIndicator size="small" color={colors.primary} style={s.spinner} />}
+        {atualizando && <ActivityIndicator size="small" color={colors.primaryText} style={s.spinner} />}
         <View style={s.headerRight}>
           {ativos > 0 && (
             <>

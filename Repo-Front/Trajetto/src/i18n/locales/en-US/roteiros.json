@@ -20,8 +20,8 @@
     "title": "Explore destinations",
     "subtitle": "Discover tourist spots before building your itinerary"
   },
-  "activeSectionLabel": "ACTIVE ITINERARY",
-  "otherSectionLabel": "OTHER ITINERARIES",
+  "activeSectionLabel": "Active itinerary",
+  "otherSectionLabel": "Other itineraries",
   "showMore": "Show more (+{{count}})",
   "activeCard": {
     "activeBadge": "Active",
@@ -39,7 +39,7 @@
   "selectBar": {
     "count_one": "{{count}} selected",
     "count_other": "{{count}} selected",
-    "delete": "🗑️  Delete ({{count}})"
+    "delete": "Delete ({{count}})"
   },
   "generate": {
     "wantNew": "Want a new itinerary?",
@@ -82,15 +82,15 @@
   "generateFlow": {
     "configureTitle": "New Itinerary",
     "generatedTitle": "Generated Itinerary",
-    "destinyLabel": "DESTINY",
-    "startDateLabel": "START DATE",
+    "destinyLabel": "Destiny",
+    "startDateLabel": "Start date",
     "pickStartDate": "Choose start date",
-    "durationLabel": "DURATION",
+    "durationLabel": "Duration",
     "daysCount_one": "{{count}} day",
     "daysCount_other": "{{count}} days",
     "lessDays": "One day less",
     "moreDays": "One more day",
-    "paceLabel": "TRAVEL PACE",
+    "paceLabel": "Travel pace",
     "paces": {
       "INTENSO": {
         "title": "Every day packed",
@@ -105,12 +105,15 @@
         "description": "Just a few stops a day, starting at 10am"
       }
     },
-    "originLabel": "STARTING POINT",
+    "originLabel": "Starting point",
     "originHint": "Type your hotel or address in {{city}}",
     "originPlaceholder": "E.g. hotel name or street and number",
     "currentLocationLabel": "Current Location",
     "generateButton": "Generate Itinerary",
-    "loadingText": "Creating your itinerary...",
+    "loadingText": "Creating your itinerary",
+    "loadingStepPlaces": "Choosing the best places in {{city}}",
+    "loadingStepDays": "Spreading the stops across your days",
+    "loadingStepRoute": "Mapping the best route",
     "summaryMeta": "{{stops}} stops · {{days}} · {{origin}}",
     "regenerate": "Regenerate",
     "accept": "Accept",
@@ -122,10 +125,11 @@
     "originNeedsCity": "Choose the destination first",
     "cityCenterChip": "City center",
     "cityCenterLabel": "{{city}} city center",
-    "nameLabel": "TRIP NAME (OPTIONAL)",
+    "nameLabel": "Trip name (optional)",
     "requestLabel": "How do you want this trip? (optional)",
     "requestPlaceholder": "E.g.: museums and street food, no churches, at a calm pace",
-    "assistantTitle": "What I understood from your request"
+    "assistantTitle": "What I understood from your request",
+    "configureSubtitle": "Tell us how you want this trip"
   },
   "cities": {
     "roma": "Rome",

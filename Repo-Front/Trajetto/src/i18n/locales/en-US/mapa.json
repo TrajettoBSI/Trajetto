@@ -10,29 +10,29 @@
     "start": "Start"
   },
   "activeFilterChips": {
-    "free": "🆓 Free",
-    "paid": "💰 Paid",
-    "hasHours": "🕐 With hours"
+    "free": "Free",
+    "paid": "Paid",
+    "hasHours": "With hours"
   },
   "filterModal": {
     "title": "Filters",
     "clearAll": "Clear all",
     "categorySection": "Category",
-    "allCategories": "📍 All",
+    "allCategories": "All",
     "feeSection": "Admission",
-    "feeFree": "🆓 Free",
-    "feePaid": "💰 Paid",
+    "feeFree": "Free",
+    "feePaid": "Paid",
     "hoursSection": "Only with defined hours",
     "hoursSubLabel": "Excludes places without hours information",
     "profileSection": "Traveler profile",
-    "allProfiles": "👤 All",
+    "allProfiles": "All",
     "distanceSection": "Maximum distance from your location",
     "cancel": "Cancel",
     "apply": "Apply filters"
   },
   "spotDetailCard": {
-    "free": "🆓 Free",
-    "paid": "💰 Paid",
+    "free": "Free",
+    "paid": "Paid",
     "walking": "walking",
     "driving": "driving",
     "fromHere": "from here",

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Ionicons } from '@expo/vector-icons';
 import { FlatList, Text, TouchableOpacity, View } from 'react-native';
 import { Place } from '@/services';
 import { categoryIcon, categoryLabel } from '@/src/helpers/categoryIcon';
@@ -12,7 +13,8 @@ type SuggestionsListProps = {
 };
 
 export default function SuggestionsList({ suggestions, onSelect }: SuggestionsListProps) {
-  const s = styles(useColors());
+  const colors = useColors();
+  const s = styles(colors);
   return (
     <View style={s.suggestions}>
       <FlatList
@@ -22,7 +24,7 @@ export default function SuggestionsList({ suggestions, onSelect }: SuggestionsLi
         scrollEnabled={false}
         renderItem={({ item }) => (
           <TouchableOpacity style={s.suggestionItem} onPress={() => onSelect(item)} activeOpacity={0.7}>
-            <Text style={s.suggestionEmoji}>{categoryIcon(item.category)}</Text>
+            <Ionicons name={categoryIcon(item.category)} size={20} color={colors.primaryText} />
             <View style={s.suggestionText}>
               <Text style={s.suggestionName} numberOfLines={1}>{placeName(item)}</Text>
               <Text style={s.suggestionCategory}>{categoryLabel(item.category)}{item.fee === 'no' ? ' · 🆓' : item.fee === 'yes' ? ' · 💰' : ''}</Text>

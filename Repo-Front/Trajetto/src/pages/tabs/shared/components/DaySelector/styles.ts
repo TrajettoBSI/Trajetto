@@ -15,7 +15,7 @@ export const styles = (colors: AppColors) =>
       minWidth: 76,
     },
     chipActive: { backgroundColor: colors.primary, borderColor: colors.primary },
-    chipTitle: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.gray900 },
+    chipTitle: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.gray900 },
     chipTitleActive: { color: colors.onPrimary },
     chipDate: { fontSize: 11, color: colors.gray500, marginTop: 2 },
     chipDateActive: { color: colors.onPrimaryMuted },

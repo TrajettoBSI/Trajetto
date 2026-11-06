@@ -1,6 +1,7 @@
 import React from 'react';
-import { ScrollView, StyleProp, Text, TouchableOpacity, ViewStyle } from 'react-native';
+import { ScrollView, StyleProp, Text, ViewStyle } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import PressableScale from '@/src/components/motion/PressableScale';
 import { useColors } from '@/src/theme';
 import { formatWeekdayDayMonth } from '@/src/i18n/format';
 import { styles } from './styles';
@@ -23,17 +24,18 @@ export default function DaySelector({ days, selectedDate, onSelect, style }: Day
       {days.map((day) => {
         const active = day.date === selectedDate;
         return (
-          <TouchableOpacity
+          <PressableScale
             key={day.date}
             style={[s.chip, active && s.chipActive]}
             onPress={() => onSelect(day.date)}
-            activeOpacity={0.8}
+            scaleTo={0.94}
+            haptic
             accessibilityRole="button"
             accessibilityState={{ selected: active }}
           >
             <Text style={[s.chipTitle, active && s.chipTitleActive]}>{t('daySelector.day', { number: day.number })}</Text>
             <Text style={[s.chipDate, active && s.chipDateActive]}>{formatWeekdayDayMonth(day.date)}</Text>
-          </TouchableOpacity>
+          </PressableScale>
         );
       })}
     </ScrollView>

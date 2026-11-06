@@ -6,9 +6,9 @@ import 'react-native-reanimated';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Text, TextInput } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
-import { useFonts, Inter_400Regular, Inter_500Medium, Inter_700Bold } from '@expo-google-fonts/inter';
-import { Righteous_400Regular } from '@expo-google-fonts/righteous';
-import { FugazOne_400Regular } from '@expo-google-fonts/fugaz-one';
+import { useFonts } from 'expo-font';
+import { PlusJakartaSans_400Regular, PlusJakartaSans_500Medium, PlusJakartaSans_700Bold } from '@expo-google-fonts/plus-jakarta-sans';
+import { BricolageGrotesque_700Bold, BricolageGrotesque_800ExtraBold } from '@expo-google-fonts/bricolage-grotesque';
 
 import '@/src/i18n';
 import { ThemeProvider as AppThemeProvider, useTheme } from '@/src/theme';
@@ -29,28 +29,28 @@ function RootLayoutNav() {
   const { t } = useTranslation(['admin', 'resetPassword']);
   const { scheme } = useTheme();
   const [fontsLoaded, fontError] = useFonts({
-    'Inter': Inter_400Regular,
-    'Inter-Medium': Inter_500Medium,
-    'Inter-Bold': Inter_700Bold,
-    'Righteous': Righteous_400Regular,
-    'FugazOne': FugazOne_400Regular,
+    'Jakarta': PlusJakartaSans_400Regular,
+    'Jakarta-Medium': PlusJakartaSans_500Medium,
+    'Jakarta-Bold': PlusJakartaSans_700Bold,
+    'Display-Bold': BricolageGrotesque_700Bold,
+    'Display-Black': BricolageGrotesque_800ExtraBold,
   });
   const { user, loading } = useAuth();
   const router = useRouter();
   const segments = useSegments();
 
-  // Define a fonte Inter como padrão global para os componentes nativos
+  // Define a fonte Plus Jakarta Sans como padrão global para os componentes nativos
   useEffect(() => {
     if (fontsLoaded) {
       (Text as any).defaultProps = {
       ...((Text as any).defaultProps || {}),
       allowFontScaling: false,
-      style: { fontFamily: 'Inter', includeFontPadding: false },
+      style: { fontFamily: 'Jakarta', includeFontPadding: false },
     };
     (TextInput as any).defaultProps = {
       ...((TextInput as any).defaultProps || {}),
       allowFontScaling: false,
-      style: { fontFamily: 'Inter', includeFontPadding: false },
+      style: { fontFamily: 'Jakarta', includeFontPadding: false },
     };
     }
   }, [fontsLoaded]);
@@ -95,9 +95,9 @@ function RootLayoutNav() {
 
   return (
     <ThemeProvider value={scheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
+      <Stack screenOptions={{ animation: 'slide_from_right' }}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false, headerBackTitle: '' }} />
-        <Stack.Screen name="LoginScreen" options={{ headerShown: false }} />
+        <Stack.Screen name="LoginScreen" options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="RegisterScreen" options={{ headerShown: false }} />
         <Stack.Screen name="VerifyEmailScreen" options={{ headerShown: false }} />
         <Stack.Screen name="UserListScreen" options={{ headerShown: false }} />
@@ -107,11 +107,11 @@ function RootLayoutNav() {
         <Stack.Screen name="ResetPasswordScreen" options={{ title: t('resetPassword:title'), headerBackTitle: '' }} />
         <Stack.Screen name="TravelerTestScreen" options={{ headerShown: false }} />
         <Stack.Screen name="QuizScreen" options={{ headerShown: false }} />
-        <Stack.Screen name="QuizResultScreen" options={{ headerShown: false }} />
+        <Stack.Screen name="QuizResultScreen" options={{ headerShown: false, animation: 'fade_from_bottom' }} />
         <Stack.Screen name="perfil" options={{ headerShown: false }} />
         <Stack.Screen name="ProfileScreen" options={{ headerShown: false }} />
         <Stack.Screen name="ExploreScreen" options={{ headerShown: false }} />
-        <Stack.Screen name="SpotDetailScreen" options={{ headerShown: false }} />
+        <Stack.Screen name="SpotDetailScreen" options={{ headerShown: false, animation: 'fade_from_bottom' }} />
         <Stack.Screen name="FavoritesScreen" options={{ headerShown: false }} />
         <Stack.Screen name="AdminPanelScreen" options={{ headerShown: false }} />
       </Stack>

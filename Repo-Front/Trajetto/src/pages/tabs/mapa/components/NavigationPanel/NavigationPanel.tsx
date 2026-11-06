@@ -55,7 +55,7 @@ export default function NavigationPanel({ nav, bottomInset }: { nav: MapaNavigat
 
       {nav.loading && !nav.directions ? (
         <View style={s.loadingBox}>
-          <ActivityIndicator color={colors.primary} />
+          <ActivityIndicator color={colors.primaryText} />
           <Text style={s.loadingText}>{t('navigation.loading')}</Text>
         </View>
       ) : null}
@@ -121,7 +121,7 @@ export default function NavigationPanel({ nav, bottomInset }: { nav: MapaNavigat
 
           <View style={s.actions}>
             <TouchableOpacity style={s.secondaryBtn} onPress={nav.openExternal} accessibilityRole="link">
-              <Ionicons name="navigate-outline" size={18} color={colors.primary} />
+              <Ionicons name="navigate-outline" size={18} color={colors.primaryText} />
               <Text style={s.secondaryText}>{t('navigation.openMaps')}</Text>
             </TouchableOpacity>
             <CustomButton

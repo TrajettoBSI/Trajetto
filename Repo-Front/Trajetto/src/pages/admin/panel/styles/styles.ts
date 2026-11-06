@@ -7,20 +7,19 @@ export const styles = (colors: AppColors) =>
 
     header: {
       flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center',
-      paddingHorizontal: 20, paddingTop: 16, paddingBottom: 12,
+      paddingHorizontal: 20, paddingBottom: 18, overflow: 'hidden', backgroundColor: colors.primaryDark,
     },
-    headerTitle: { fontSize: 24, fontFamily: 'Inter-Bold', color: colors.text },
-    headerSub: { fontSize: 14, color: colors.textSubtle, marginTop: 2 },
+    headerTitle: { fontSize: 28, letterSpacing: -0.5, fontFamily: 'Display-Black', color: colors.onPrimary },
+    headerSub: { fontSize: 14, color: colors.onPrimaryFaint80, marginTop: 2 },
     avatarBtn: {
       width: 44, height: 44, borderRadius: 22,
-      backgroundColor: colors.avatarSurface,
+      backgroundColor: colors.glassSurface,
+      borderWidth: 1, borderColor: colors.glassBorderStrong,
       alignItems: 'center', justifyContent: 'center',
-      shadowColor: colors.shadow, shadowOpacity: 0.1, shadowRadius: 4,
-      shadowOffset: { width: 0, height: 2 }, elevation: 2,
     },
 
     chip: { backgroundColor: colors.gray100, borderRadius: 20, paddingHorizontal: 12, paddingVertical: 6 },
-    chipText: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.text },
+    chipText: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.text },
 
     tabBar: {
       flexDirection: 'row', backgroundColor: colors.gray100,
@@ -36,8 +35,8 @@ export const styles = (colors: AppColors) =>
       shadowColor: colors.shadow, shadowOpacity: 0.08, shadowRadius: 4,
       shadowOffset: { width: 0, height: 1 }, elevation: 1,
     },
-    tabText: { fontSize: 14, fontFamily: 'Inter-Medium', color: colors.gray500 },
-    tabTextActive: { color: colors.text, fontFamily: 'Inter-Bold' },
+    tabText: { fontSize: 14, fontFamily: 'Jakarta-Medium', color: colors.gray500 },
+    tabTextActive: { color: colors.text, fontFamily: 'Jakarta-Bold' },
 
     container: { padding: 16, paddingBottom: 40 },
 
@@ -58,7 +57,7 @@ export const styles = (colors: AppColors) =>
     twoColRow: { flexDirection: 'row', gap: 12 },
     twoCol: { flex: 1 },
     twoColTitle: {
-      fontSize: 11, fontFamily: 'Inter-Bold', color: colors.gray500,
+      fontSize: 11, fontFamily: 'Jakarta-Bold', color: colors.gray500,
       textTransform: 'uppercase', letterSpacing: 0.8,
       marginBottom: 8, marginLeft: 2,
     },
@@ -69,9 +68,9 @@ export const styles = (colors: AppColors) =>
       borderWidth: 1.5, borderColor: colors.border,
       alignItems: 'center', justifyContent: 'center',
     },
-    featuredRankText: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.text },
+    featuredRankText: { fontSize: 14, fontFamily: 'Jakarta-Bold', color: colors.text },
     featuredInfo: { flex: 1 },
-    featuredName: { fontSize: 15, fontFamily: 'Inter-Bold', color: colors.text, marginBottom: 2 },
+    featuredName: { fontSize: 15, fontFamily: 'Jakarta-Bold', color: colors.text, marginBottom: 2 },
     featuredSub: { fontSize: 13, color: colors.textSubtle },
 
     userListBtn: {
@@ -82,6 +81,6 @@ export const styles = (colors: AppColors) =>
       shadowOffset: { width: 0, height: 2 }, elevation: 2,
       marginBottom: 8,
     },
-    userListBtnText: { flex: 1, fontSize: 15, fontFamily: 'Inter-Bold', color: colors.text },
+    userListBtnText: { flex: 1, fontSize: 15, fontFamily: 'Jakarta-Bold', color: colors.text },
     userListBtnArrow: { fontSize: 22, color: colors.gray500 },
   });

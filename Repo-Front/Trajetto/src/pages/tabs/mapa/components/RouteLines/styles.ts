@@ -9,5 +9,5 @@ export const styles = (colors: AppColors) =>
       borderWidth: 1.5,
       alignItems: 'center', justifyContent: 'center',
     },
-    arrowText: { fontSize: 9, fontFamily: 'Inter-Bold' },
+    arrowText: { fontSize: 9, fontFamily: 'Jakarta-Bold' },
   });

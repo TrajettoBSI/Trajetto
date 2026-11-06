@@ -17,13 +17,13 @@ export const styles = (colors: AppColors) =>
       maxWidth: 160,
     },
     labelPast: { borderColor: colors.pinBorderPast, backgroundColor: colors.pinBgPast, opacity: 0.6 },
-    labelText: { fontSize: 12, fontFamily: 'Inter-Bold', textAlign: 'center' },
-    labelSub: { fontSize: 10, fontFamily: 'Inter-Medium', textAlign: 'center', opacity: 0.8, marginTop: 1 },
+    labelText: { fontSize: 12, fontFamily: 'Jakarta-Bold', textAlign: 'center' },
+    labelSub: { fontSize: 10, fontFamily: 'Jakarta-Medium', textAlign: 'center', opacity: 0.8, marginTop: 1 },
     pinContainer: { alignItems: 'center', justifyContent: 'center', width: 42, height: 42 },
     pinContainerPast: { opacity: 0.45 },
     numberBadge: {
       position: 'absolute', top: 5, width: 17, height: 17, borderRadius: 9,
       alignItems: 'center', justifyContent: 'center', borderWidth: 1.5, borderColor: colors.white,
     },
-    numberText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 10 },
+    numberText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 10 },
   });

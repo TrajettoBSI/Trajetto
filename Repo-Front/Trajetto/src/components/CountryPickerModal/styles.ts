@@ -27,7 +27,7 @@ export const styles = (colors: AppColors) =>
     },
     modalTitle: {
       fontSize: 16,
-      fontFamily: 'Inter-Bold',
+      fontFamily: 'Jakarta-Bold',
       color: colors.text,
       marginBottom: 12,
     },
@@ -44,12 +44,12 @@ export const styles = (colors: AppColors) =>
       color: colors.text,
     },
     modalItemSelected: {
-      color: colors.primary,
-      fontFamily: 'Inter-Bold',
+      color: colors.primaryText,
+      fontFamily: 'Jakarta-Bold',
     },
     checkmark: {
-      color: colors.primary,
+      color: colors.primaryText,
       fontSize: 16,
-      fontFamily: 'Inter-Bold',
+      fontFamily: 'Jakarta-Bold',
     },
   });

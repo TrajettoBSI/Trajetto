@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroFill from '@/src/components/brand/HeroFill';
 import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
@@ -39,6 +40,7 @@ export default function SpotDetail() {
   return (
     <View style={s.safe}>
       <View style={[s.headerWrapper, { paddingTop: insets.top }]}>
+        <HeroFill variant="bar" />
         <View style={s.headerRow}>
           <View style={s.headerLeft}>
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
@@ -204,7 +206,7 @@ export default function SpotDetail() {
         {hours.length > 0 && (
           <>
             <View style={s.sectionHeaderRow}>
-              <Text style={s.sectionTitle}>{t('openingHours')}</Text>
+              <Text style={[s.sectionTitle, s.sectionTitleInRow]}>{t('openingHours')}</Text>
               {openNow !== null && (
                 <View style={s.openBadge}>
                   <Text style={s.openBadgeText}>{openNow ? t('openNow') : t('closedNow')}</Text>

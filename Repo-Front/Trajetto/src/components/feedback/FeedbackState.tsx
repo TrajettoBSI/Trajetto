@@ -5,9 +5,11 @@
 // língua escolhida pelo usuário; as cores vêm do tema, para o aviso acompanhar o app.
 
 import React from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
 import { ActivityIndicator, StyleProp, Text, TouchableOpacity, View, ViewStyle } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { Ionicons } from '@expo/vector-icons';
+import Animated, { FadeInDown, ZoomIn } from 'react-native-reanimated';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
@@ -104,16 +106,29 @@ export function FeedbackState({
       {variant === 'loading' ? (
         <ActivityIndicator size="large" color={colors.primaryDark} />
       ) : variant === 'error' && !icon ? (
-        <Ionicons name="alert-circle" size={44} color={colors.error} />
+        <Animated.View entering={ZoomIn.springify().damping(12)}>
+          <View style={s.iconTile}>
+            <Ionicons name="alert-circle" size={42} color={colors.error} />
+          </View>
+        </Animated.View>
       ) : (
-        <Text style={s.icon}>{simbolo}</Text>
+        <Animated.View entering={ZoomIn.springify().damping(12)}>
+          <View style={s.iconTile}>
+            {icon
+              ? <Text style={s.icon}>{icon}</Text>
+              : <Ionicons name="file-tray-outline" size={40} color={colors.primaryText} />}
+          </View>
+        </Animated.View>
       )}
 
-      {Boolean(textoDoTitulo) && <Text style={s.title}>{textoDoTitulo}</Text>}
-      {Boolean(textoDaMensagem) && <Text style={s.message}>{textoDaMensagem}</Text>}
+      <Animated.View entering={FadeInDown.delay(80).duration(320)} style={{ alignItems: 'center' }}>
+        {Boolean(textoDoTitulo) && <Text style={s.title}>{textoDoTitulo}</Text>}
+        {Boolean(textoDaMensagem) && <Text style={s.message}>{textoDaMensagem}</Text>}
+      </Animated.View>
 
       {mostrarAcao && (
         <TouchableOpacity style={s.action} onPress={onAction} activeOpacity={0.85}>
+          <LinearGradient colors={colors.gradientAction} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={s.actionFill} />
           <Text style={s.actionText}>{textoDaAcao}</Text>
         </TouchableOpacity>
       )}

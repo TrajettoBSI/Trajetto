@@ -55,6 +55,10 @@ export function useRoteiros() {
 
   useFocusEffect(reload);
 
+  const refresh = useCallback(async () => {
+    if (userId) await useItineraryStore.getState().fetchAllItineraries(userId);
+  }, [userId]);
+
   const enterSelectMode = (id: number) => {
     setSelectMode(true);
     setSelectedIds(new Set([id]));
@@ -160,6 +164,7 @@ export function useRoteiros() {
     loading,
     error,
     reload,
+    refresh,
     deleting,
     activating,
     showGenerate,

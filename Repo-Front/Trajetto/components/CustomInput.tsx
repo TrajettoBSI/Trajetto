@@ -51,7 +51,7 @@ export default function CustomInput({
   value,
   onChangeText,
   placeholder,
-  autoCapitalize = 'sentences',
+  autoCapitalize,
   keyboardType,
   maxLength,
   returnKeyType,
@@ -72,6 +72,7 @@ export default function CustomInput({
   const colors = useColors();
   const inputStyles = getStyles(colors);
   const [showPassword, setShowPassword] = useState(false);
+  const [focused, setFocused] = useState(false);
   const inputRef = useRef<TextInputInstance>(null);
 
   const isPassword = type === 'password';
@@ -131,7 +132,7 @@ export default function CustomInput({
   return (
     <View style={[inputStyles.fieldContainer, style]}>
       {label && <Text style={inputStyles.label}>{label}</Text>}
-      <View style={[inputStyles.inputWrapper, error ? inputStyles.inputError : null, inputWrapperStyle]}>
+      <View style={[inputStyles.inputWrapper, focused && inputStyles.inputFocused, error ? inputStyles.inputError : null, inputWrapperStyle]}>
         {leftIcon}
         <TextInput
           style={[inputStyles.input, inputStyle, isPassword && inputStyles.passwordInput]}
@@ -140,7 +141,7 @@ export default function CustomInput({
           value={value}
           onChangeText={onChangeText}
           keyboardType={currentKeyboardType}
-          autoCapitalize={autoCapitalize}
+          autoCapitalize={autoCapitalize ?? (isPassword ? 'none' : 'sentences')}
           maxLength={maxLength}
           secureTextEntry={isPassword && !showPassword}
           returnKeyType={returnKeyType}
@@ -149,9 +150,9 @@ export default function CustomInput({
           editable={editable}
           multiline={multiline}
           numberOfLines={numberOfLines}
-          autoCorrect={autoCorrect}
-          onBlur={onBlur}
-          onFocus={onFocus}
+          autoCorrect={autoCorrect ?? (isPassword ? false : undefined)}
+          onBlur={() => { setFocused(false); onBlur?.(); }}
+          onFocus={() => { setFocused(true); onFocus?.(); }}
         />
         {rightElement}
         {isPassword && (
@@ -181,7 +182,7 @@ const getStyles = (colors: ReturnType<typeof useColors>) => StyleSheet.create({
   },
   label: {
     fontSize: 13,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Jakarta-Medium',
     color: colors.label,
     marginBottom: 6,
   },
@@ -191,8 +192,12 @@ const getStyles = (colors: ReturnType<typeof useColors>) => StyleSheet.create({
     backgroundColor: colors.surface,
     borderWidth: 1,
     borderColor: colors.border,
-    borderRadius: 12,
+    borderRadius: 16,
     paddingHorizontal: 14,
+  },
+  inputFocused: {
+    borderColor: colors.primary,
+    backgroundColor: colors.white,
   },
   input: {
     flex: 1,
@@ -238,7 +243,7 @@ const getStyles = (colors: ReturnType<typeof useColors>) => StyleSheet.create({
   },
   codeText: {
     fontSize: 22,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Display-Bold',
     color: colors.text,
   },
   hiddenInput: {

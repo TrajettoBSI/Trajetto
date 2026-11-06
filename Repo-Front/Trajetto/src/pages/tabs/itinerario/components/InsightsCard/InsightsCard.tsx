@@ -2,19 +2,22 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
+import Skeleton from '@/src/components/motion/Skeleton';
 import { useColors } from '@/src/theme';
 import { DayWeather } from '@/services';
 import { RouteSavings } from '@/src/domain/itinerary/routeSavings';
-import { WEATHER_ICONS, weatherKind } from '@/src/domain/weather/weatherInfo';
+import { isBeyondForecast, WEATHER_ICONS, weatherKind } from '@/src/domain/weather/weatherInfo';
 import { formatDecimal } from '@/src/i18n/format';
 import { styles } from './styles';
 
 type InsightsCardProps = {
   savings: RouteSavings | null;
   weather: DayWeather | null;
+  weatherLoading: boolean;
+  date: string | null;
 };
 
-export default function InsightsCard({ savings, weather }: InsightsCardProps) {
+export default function InsightsCard({ savings, weather, weatherLoading, date }: InsightsCardProps) {
   const { t } = useTranslation('itinerario');
   const colors = useColors();
   const s = styles(colors);
@@ -26,7 +29,7 @@ export default function InsightsCard({ savings, weather }: InsightsCardProps) {
         {savings && (
           <View style={s.tile}>
             <View style={s.tileHeader}>
-              <Ionicons name="git-network-outline" size={16} color={colors.primary} />
+              <Ionicons name="git-network-outline" size={16} color={colors.primaryText} />
               <Text style={s.tileLabel}>{t('insights.route')}</Text>
             </View>
             <Text style={s.tileValue}>{t('insights.km', { value: formatDecimal(savings.distanceKm) })}</Text>
@@ -43,7 +46,7 @@ export default function InsightsCard({ savings, weather }: InsightsCardProps) {
 
         <View style={s.tile}>
           <View style={s.tileHeader}>
-            <Ionicons name={(kind ? WEATHER_ICONS[kind] : 'partly-sunny-outline') as never} size={16} color={colors.primary} />
+            <Ionicons name={(kind ? WEATHER_ICONS[kind] : 'partly-sunny-outline') as never} size={16} color={colors.primaryText} />
             <Text style={s.tileLabel}>{t('insights.weather')}</Text>
           </View>
           {weather && kind ? (
@@ -55,15 +58,22 @@ export default function InsightsCard({ savings, weather }: InsightsCardProps) {
                 {t(`insights.kinds.${kind}`)}{weather.precipitationProbability > 0 ? ` - ${t('insights.rainChance', { percent: weather.precipitationProbability })}` : ''}
               </Text>
             </>
+          ) : weatherLoading ? (
+            <View testID="weather-skeleton">
+              <Skeleton style={s.skeletonValue} />
+              <Skeleton style={s.skeletonSub} />
+            </View>
           ) : (
-            <Text style={s.tileSub}>{t('insights.noForecast')}</Text>
+            <Text style={s.tileSub}>
+              {t(date && isBeyondForecast(date) ? 'insights.noForecast' : 'insights.weatherUnavailable')}
+            </Text>
           )}
         </View>
       </View>
 
       {weather?.rainy && (
         <View style={s.rainBanner}>
-          <Ionicons name="umbrella" size={16} color={colors.primary} />
+          <Ionicons name="umbrella" size={16} color={colors.primaryText} />
           <Text style={s.rainText}>{t('insights.rainyDay')}</Text>
         </View>
       )}

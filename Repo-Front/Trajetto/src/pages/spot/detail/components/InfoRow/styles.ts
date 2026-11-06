@@ -10,7 +10,7 @@ export const styles = (colors: AppColors) =>
       borderBottomColor: colors.gray100,
     },
     infoRowLast: { borderBottomWidth: 0 },
-    infoText: { fontSize: 14, color: colors.gray900, fontFamily: 'Inter-Medium' },
+    infoText: { fontSize: 14, color: colors.gray900, fontFamily: 'Jakarta-Medium' },
     infoPrefix: { color: colors.gray500 },
-    infoLink: { color: colors.primary, textDecorationLine: 'underline' },
+    infoLink: { color: colors.primaryText, textDecorationLine: 'underline' },
   });

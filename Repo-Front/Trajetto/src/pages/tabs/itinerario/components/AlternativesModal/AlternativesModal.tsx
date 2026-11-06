@@ -38,7 +38,7 @@ export default function AlternativesModal({
 
           {loading ? (
             <View style={s.loading}>
-              <ActivityIndicator size="large" color={colors.primary} />
+              <ActivityIndicator size="large" color={colors.primaryText} />
               <Text style={s.loadingText}>{t('alternativesModal.loading')}</Text>
             </View>
           ) : alternatives.length === 0 ? (

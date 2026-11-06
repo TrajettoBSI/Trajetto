@@ -10,29 +10,29 @@
     "start": "Início"
   },
   "activeFilterChips": {
-    "free": "🆓 Gratuito",
-    "paid": "💰 Pago",
-    "hasHours": "🕐 Com horário"
+    "free": "Gratuito",
+    "paid": "Pago",
+    "hasHours": "Com horário"
   },
   "filterModal": {
     "title": "Filtros",
     "clearAll": "Limpar tudo",
     "categorySection": "Categoria",
-    "allCategories": "📍 Todas",
+    "allCategories": "Todas",
     "feeSection": "Entrada",
-    "feeFree": "🆓 Gratuito",
-    "feePaid": "💰 Pago",
+    "feeFree": "Gratuito",
+    "feePaid": "Pago",
     "hoursSection": "Apenas com horário definido",
     "hoursSubLabel": "Exclui locais sem informação de horário",
     "profileSection": "Perfil de viajante",
-    "allProfiles": "👤 Todos",
+    "allProfiles": "Todos",
     "distanceSection": "Distância máxima da sua localização",
     "cancel": "Cancelar",
     "apply": "Aplicar filtros"
   },
   "spotDetailCard": {
-    "free": "🆓 Gratuito",
-    "paid": "💰 Pago",
+    "free": "Gratuito",
+    "paid": "Pago",
     "walking": "a pé",
     "driving": "de carro",
     "fromHere": "daqui",

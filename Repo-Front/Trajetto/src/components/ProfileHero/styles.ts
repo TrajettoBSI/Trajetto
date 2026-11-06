@@ -34,7 +34,8 @@ export const styles = (colors: AppColors) =>
       marginTop: AVATAR_TOP + AVATAR_SIZE + 10,
       alignItems: 'center',
     },
-    userName: { fontSize: 20, fontFamily: 'Inter-Bold', color: colors.text, marginBottom: 2 },
+    avatarInitial: { fontSize: 44, lineHeight: 52, fontFamily: 'Display-Black', color: colors.primaryText },
+    userName: { fontSize: 26, letterSpacing: -0.4, fontFamily: 'Display-Bold', color: colors.text, marginBottom: 2 },
     userEmail: { fontSize: 13, color: colors.textSubtle, marginBottom: 10 },
     profileBadge: {
       flexDirection: 'row',
@@ -45,5 +46,5 @@ export const styles = (colors: AppColors) =>
       paddingHorizontal: 14,
       paddingVertical: 6,
     },
-    profileBadgeText: { color: colors.primary, fontSize: 13, fontFamily: 'Inter-Bold' },
+    profileBadgeText: { color: colors.primaryText, fontSize: 13, fontFamily: 'Jakarta-Bold' },
   });
