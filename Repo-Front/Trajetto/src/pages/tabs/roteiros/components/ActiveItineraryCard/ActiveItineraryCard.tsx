@@ -3,6 +3,7 @@ import { ActivityIndicator, Image, Text, TouchableOpacity, View } from 'react-na
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { Itinerary } from '@/hooks/itineraryStore';
+import { PLACE_COLORS } from '@/constants/placeColors';
 import { useColors } from '@/src/theme';
 import { isPlacePast } from '@/app/utils/isPlacePast';
 import { groupByDay, placeDate, resolveDay, toIsoDate } from '@/src/domain/itinerary/itineraryDays';
@@ -100,7 +101,7 @@ export default function ActiveItineraryCard({
               return (
                 <View key={idx} style={s.timelineItem}>
                   <View style={s.timelineLeft}>
-                    <View style={[s.timelineDot, isPast ? s.timelineDotPast : (idx === 0 ? s.timelineDotFirst : s.timelineDotNext)]} />
+                    <View style={[s.timelineDot, isPast ? s.timelineDotPast : { backgroundColor: PLACE_COLORS[idx % PLACE_COLORS.length] }]} />
                     {idx < shownPlaces.length - 1 && <View style={s.timelineLine} />}
                   </View>
                   <View style={[s.timelineContent, isPast && s.timelineContentPast]}>
