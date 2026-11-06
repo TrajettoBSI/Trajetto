@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
-  Animated,
-  Easing,
   Image,
   Keyboard,
   KeyboardAvoidingView,
@@ -16,13 +14,12 @@ import {
   View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Svg, { Circle } from 'react-native-svg';
 import { useTranslation } from 'react-i18next';
 import Reanimated, { FadeInDown } from 'react-native-reanimated';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Image as ExpoImage } from 'expo-image';
-import BrandMark from '../src/components/brand/BrandMark';
 import HeroFill from '../src/components/brand/HeroFill';
+import RouteLoader from '../src/components/brand/RouteLoader';
 import PressableScale from '../src/components/motion/PressableScale';
 import * as Location from 'expo-location';
 import * as Haptics from 'expo-haptics';
@@ -71,81 +68,7 @@ type Props = {
 };
 
 
-const RADIUS = 54;
-const BALL_R = 9;
-const SIZE = (RADIUS + BALL_R + 6) * 2;
-const CENTER = SIZE / 2;
-const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 const PACE_ICONS: Record<string, keyof typeof Ionicons.glyphMap> = { INTENSO: 'flash', EQUILIBRADO: 'options', LEVE: 'leaf' };
-// Fraction of the circle covered by the trail behind the ball
-const TRAIL = 0.3;
-
-function OrbitLoader() {
-  const colors = useColors();
-  const loaderStyles = getLoaderStyles(colors);
-  const [rot] = useState(() => new Animated.Value(0));
-
-  useEffect(() => {
-    // Everything spins on the native driver, so the loader stays smooth while the
-    // JS thread is busy waiting for (and parsing) the generated itinerary.
-    const anim = Animated.loop(
-      Animated.timing(rot, {
-        toValue: 1,
-        duration: 1400,
-        easing: Easing.linear,
-        useNativeDriver: true,
-      })
-    );
-    anim.start();
-    return () => anim.stop();
-  }, [rot]);
-
-  const rotate = rot.interpolate({ inputRange: [0, 1], outputRange: ['0deg', '360deg'] });
-
-  return (
-    <View style={loaderStyles.container}>
-      <Svg width={SIZE} height={SIZE} style={{ position: 'absolute' }}>
-        <Circle cx={CENTER} cy={CENTER} r={RADIUS} stroke={colors.onPrimary} strokeOpacity={0.18} strokeWidth={3} fill="none" />
-      </Svg>
-      <Animated.View style={[loaderStyles.arm, { transform: [{ rotate }] }]}>
-        {/* Trail ends at 12 o'clock, where the ball sits, and trails counter-clockwise */}
-        <Svg width={SIZE} height={SIZE} style={{ position: 'absolute' }}>
-          <Circle
-            cx={CENTER} cy={CENTER} r={RADIUS}
-            stroke={colors.onPrimary} strokeWidth={3} fill="none"
-            strokeDasharray={`${CIRCUMFERENCE * TRAIL} ${CIRCUMFERENCE}`}
-            strokeLinecap="round"
-            rotation={-90 - 360 * TRAIL} origin={`${CENTER},${CENTER}`}
-          />
-        </Svg>
-        <View style={loaderStyles.ball} />
-      </Animated.View>
-      <BrandMark size={SIZE * 0.5} color={colors.onPrimary} />
-    </View>
-  );
-}
-
-const getLoaderStyles = (colors: AppColors) => StyleSheet.create({
-  container: { width: SIZE, height: SIZE, alignItems: 'center', justifyContent: 'center' },
-  arm: {
-    position: 'absolute',
-    width: SIZE,
-    height: SIZE,
-  },
-  ball: {
-    position: 'absolute',
-    width: BALL_R * 2,
-    height: BALL_R * 2,
-    borderRadius: BALL_R,
-    backgroundColor: colors.onPrimary,
-    top: CENTER - BALL_R - RADIUS,
-    left: CENTER - BALL_R,
-    shadowColor: colors.primary,
-    shadowOpacity: 0.5,
-    shadowRadius: 6,
-    elevation: 5,
-  },
-});
 
 // ── Main component ───────────────────────────────────────────────────────────
 export default function GenerateItineraryFlow({ visible, initialPlace, onAccept, onClose }: Props) {
@@ -719,11 +642,14 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
           )}
 
           {step === 'loading' && (
-            <View style={styles.loadingContainer}>
-              <HeroFill />
-              <OrbitLoader />
-              <Text style={styles.loadingText}>{t('roteiros:generateFlow.loadingText')}</Text>
-            </View>
+            <RouteLoader
+              title={t('roteiros:generateFlow.loadingText')}
+              steps={[
+                t('roteiros:generateFlow.loadingStepPlaces', { city: selectedCity?.name ?? '' }),
+                t('roteiros:generateFlow.loadingStepDays'),
+                t('roteiros:generateFlow.loadingStepRoute'),
+              ]}
+            />
           )}
 
           {step === 'preview' && generatedItinerary && (
@@ -955,7 +881,7 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
     marginBottom: 8,
     backgroundColor: colors.white,
   },
-  paceOptionActive: { borderColor: colors.primaryText, backgroundColor: colors.selectedSurface },
+  paceOptionActive: { borderWidth: 2.5, padding: 11, borderColor: colors.primaryText, backgroundColor: colors.selectedSurface },
   paceTextBox: { flex: 1 },
   paceTitle: { fontSize: 16, fontFamily: 'Jakarta-Bold', color: colors.text },
   paceTitleActive: { color: colors.primaryText },
@@ -1066,8 +992,6 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
   generateBtnText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 16 },
 
   // Loading
-  loadingContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 28, overflow: 'hidden', backgroundColor: colors.primaryDark },
-  loadingText: { fontSize: 17, color: colors.onPrimary, fontFamily: 'Jakarta-Medium' },
 
   // Preview
   summaryCard: {
