@@ -67,10 +67,20 @@ public class ItineraryPlanner {
     /** Quanto o lugar ganha por combinar com o perfil do viajante (a popularidade vai de 0 a 6). */
     public static final double PROFILE_BONUS = 2.0;
 
-    /** Pedidos em texto livre: "mais museus" vale mais que o perfil; "sem igrejas" derruba ate as famosas. */
+    /** Pedidos em texto livre: "sem igrejas" derruba ate as famosas. */
     static final double MORE_BONUS = 2.5;
-    static final double LESS_PENALTY = 6.0;
+    static final double LESS_PENALTY = 20.0;
     static final double PAID_PENALTY = 6.0;
+    /**
+     * "Mais museus" precisa aparecer no roteiro de qualquer perfil, e so o bonus acima perde para
+     * quem combina com o perfil e ja estava no roteiro. Por isso os melhores lugares do que foi
+     * pedido passam na frente, ate essa fracao dos horarios; o resto do roteiro nao muda a toa.
+     */
+    static final double MORE_SHARE = 0.4;
+    static final double MORE_SHARE_BONUS = 50.0;
+    /** Quanto cada km desde a partida tira da pontuacao; quem pede menos caminhada fica mais perto. */
+    static final double DISTANCE_WEIGHT = 0.15;
+    static final double SHORT_WALK_DISTANCE_WEIGHT = 1.0;
     /** "Quero ver o Coliseu": o lugar passa na frente de todos. */
     static final double MUST_INCLUDE_BONUS = 100.0;
     /**
@@ -147,6 +157,8 @@ public class ItineraryPlanner {
         TripPreferences prefs = req.preferences() == null ? TripPreferences.NONE : req.preferences();
         Map<LocalDate, DayWeather> weather = req.weather() == null ? Map.of() : req.weather();
         Set<String> keep = req.keep() == null ? Set.of() : req.keep();
+        boolean shortWalks = TripPreferences.WALK_LESS.equals(prefs.walking());
+        double distanceWeight = shortWalks ? SHORT_WALK_DISTANCE_WEIGHT : DISTANCE_WEIGHT;
 
         List<CatalogPlace> candidates = cityCatalog.placesOf(req.city()).stream()
                 .filter(place -> !MEAL_CATEGORIES.contains(place.category()))
@@ -167,7 +179,7 @@ public class ItineraryPlanner {
             double randomScore = random.nextDouble() * 0.5;
             double distKm = RouteOptimizer.km(new Point(req.startLatitude(), req.startLongitude()), point(place));
             double keepScore = keep.contains(PlaceXid.of(place.name())) ? KEEP_BONUS : 0.0;
-            double score = popularityScore + profileScore + randomScore + keepScore - (distKm * 0.15)
+            double score = popularityScore + profileScore + randomScore + keepScore - (distKm * distanceWeight)
                     + preferenceScore(place, prefs, wanted);
             return new ScoredPlace(place, score);
         }).sorted(Comparator.comparingDouble(ScoredPlace::score).reversed())
@@ -176,6 +188,7 @@ public class ItineraryPlanner {
         int days = req.days();
         TravelPace pace = req.pace() == null ? TravelPace.INTENSO : req.pace();
         List<List<LocalTime>> schedule = IntStream.range(0, days).mapToObj(pace::visitTimes).toList();
+        scored = withRequestedFirst(scored, prefs.moreCategories(), schedule);
         // "Fontana di Trevi no ultimo dia, de manha": esses horarios ja saem preenchidos.
         Set<String> chosen = new HashSet<>();
         Map<Slot, CatalogPlace> pins = pin(candidates, prefs.placements(), schedule, req.startDate(), chosen);
@@ -189,9 +202,11 @@ public class ItineraryPlanner {
         List<CatalogPlace> visits = ranked.stream().filter(place -> !NIGHTLIFE.contains(place.category()))
                 .map(this::mainVisit).distinct().toList();
         // A noite: mirantes e pracas para todos; bar e pub tambem, para os perfis Social e Mochileiro.
-        boolean nightlife = hasProfile && NIGHTLIFE_PROFILES.contains(profile);
+        // Quem pede a vida noturna tambem ganha, com qualquer perfil; quem recusa, perde.
+        boolean nightlife = !prefs.lessCategories().stream().anyMatch(NIGHTLIFE::contains)
+                && ((hasProfile && NIGHTLIFE_PROFILES.contains(profile)) || prefs.moreCategories().stream().anyMatch(NIGHTLIFE::contains));
         Predicate<CatalogPlace> eveningFit = place -> isEveningPlace(place)
-                || (nightlife && NIGHTLIFE.contains(place.category()));
+                || (NIGHTLIFE.contains(place.category()) && (nightlife || wanted.contains(place)));
         // Para quem gosta da vida noturna, bar e pub passam na frente das pracas famosas a noite.
         List<CatalogPlace> eveningRanked = ranked.stream().filter(eveningFit)
                 .sorted(Comparator.comparing((CatalogPlace place) -> !(nightlife && NIGHTLIFE.contains(place.category()))))
@@ -199,7 +214,8 @@ public class ItineraryPlanner {
         List<CatalogPlace> eveningPool = pick(eveningRanked, eveningSlots, chosen);
         List<CatalogPlace> dayPool = pick(visits, totalSlots - eveningSlots, chosen);
         // Os mais famosos nos primeiros dias: quem encurta a viagem ou cansa no fim ja viu o principal.
-        List<List<CatalogPlace>> dayBuckets = byFame(dayPool, schedule, pins, false, FAMOUS_SHARE, FAMOUS_PER_DAY);
+        // Quem pede menos caminhada abre mao disso: a fama faz os dias atravessarem a cidade.
+        List<List<CatalogPlace>> dayBuckets = byFame(dayPool, schedule, pins, false, shortWalks ? 0 : FAMOUS_SHARE, FAMOUS_PER_DAY);
         List<List<CatalogPlace>> eveningBuckets = byFame(eveningPool, schedule, pins, true, 1, 1);
 
         boolean anyRain = weather.values().stream().anyMatch(DayWeather::rainy);
@@ -283,6 +299,32 @@ public class ItineraryPlanner {
             ordered.addAll(improved);
         }
         return new Plan(ordered, greedyKm, optimizedKm, rainyDays);
+    }
+
+    /**
+     * Os melhores lugares das categorias pedidas passam na frente, um de cada categoria por vez:
+     * "mais natureza e mirantes" nao vira so parques. Bar e pub ficam de fora, porque usam os
+     * horarios da noite, que tem a sua propria lista.
+     */
+    private static List<ScoredPlace> withRequestedFirst(List<ScoredPlace> scored, List<String> categories,
+                                                        List<List<LocalTime>> schedule) {
+        List<? extends List<ScoredPlace>> byCategory = categories.stream().filter(category -> !NIGHTLIFE.contains(category))
+                .map(category -> scored.stream().filter(s -> category.equals(s.place().category()))
+                        .collect(Collectors.toCollection(ArrayList::new)))
+                .filter(list -> !list.isEmpty()).toList();
+        if (byCategory.isEmpty()) return scored;
+        long slots = schedule.stream().flatMap(List::stream).count();
+        int quota = (int) Math.ceil(slots * MORE_SHARE);
+        Set<CatalogPlace> first = new HashSet<>();
+        while (first.size() < quota && byCategory.stream().anyMatch(list -> !list.isEmpty())) {
+            for (List<ScoredPlace> list : byCategory) {
+                if (!list.isEmpty() && first.size() < quota) first.add(list.remove(0).place());
+            }
+        }
+        return scored.stream()
+                .map(s -> first.contains(s.place()) ? new ScoredPlace(s.place(), s.score() + MORE_SHARE_BONUS) : s)
+                .sorted(Comparator.comparingDouble(ScoredPlace::score).reversed())
+                .toList();
     }
 
     /**
@@ -385,12 +427,12 @@ public class ItineraryPlanner {
     }
 
     /** Dia pedido (1 e o primeiro, -1 o ultimo) para o indice a partir de 0, dentro da viagem. */
-    static int dayIndex(int day, int days) {
+    public static int dayIndex(int day, int days) {
         int index = day > 0 ? day - 1 : days + day;
         return Math.max(0, Math.min(days - 1, index));
     }
 
-    static boolean inPeriod(LocalTime time, String period) {
+    public static boolean inPeriod(LocalTime time, String period) {
         return switch (period) {
             case "MANHA" -> time.isBefore(LocalTime.NOON);
             case "TARDE" -> !time.isBefore(LocalTime.NOON) && time.isBefore(EVENING);

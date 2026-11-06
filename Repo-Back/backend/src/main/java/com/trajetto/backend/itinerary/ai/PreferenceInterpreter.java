@@ -15,11 +15,16 @@ import java.util.List;
 @Service
 public class PreferenceInterpreter {
 
-    /**
-     * @param places lugares do catalogo da cidade, para achar os citados pelo nome
-     */
     public TripPreferences interpret(String request, List<CatalogPlace> places) {
+        return interpret(request, places, null);
+    }
+
+    /**
+     * @param places   lugares do catalogo da cidade, para achar os citados pelo nome
+     * @param language idioma do app ("en-US"), o da resposta; sem ele, portugues
+     */
+    public TripPreferences interpret(String request, List<CatalogPlace> places, String language) {
         if (request == null || request.isBlank()) return TripPreferences.NONE;
-        return RuleBasedInterpreter.interpret(request, places);
+        return RuleBasedInterpreter.interpret(request, places, AssistantMessages.language(language));
     }
 }

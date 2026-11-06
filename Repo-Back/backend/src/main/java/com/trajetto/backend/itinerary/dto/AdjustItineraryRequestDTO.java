@@ -16,4 +16,8 @@ public class AdjustItineraryRequestDTO {
     @NotBlank(message = "Escreva o que você quer mudar no roteiro")
     @Size(max = MAX_LENGTH, message = "O pedido pode ter no máximo " + MAX_LENGTH + " caracteres")
     private String request;
+
+    @Schema(description = "Idioma do app, o da resposta do assistente; sem ele, português", example = "pt-BR", nullable = true)
+    @Size(max = 10, message = "Idioma inválido")
+    private String language;
 }

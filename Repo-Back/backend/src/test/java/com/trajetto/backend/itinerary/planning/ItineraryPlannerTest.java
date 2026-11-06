@@ -129,6 +129,61 @@ class ItineraryPlannerTest {
         assertTrue(depois > antes, "museus: antes " + antes + ", depois " + depois);
     }
 
+    private Plan planejarComo(String perfil, TripPreferences prefs, long semente) {
+        return PLANNER.plan(new Request(ROMA, perfil, 41.9009, 12.4833, INICIO, 3, TravelPace.INTENSO,
+                prefs, Map.of(), true), new Random(semente));
+    }
+
+    private static long daCategoria(Plan plano, java.util.Set<String> categorias) {
+        return plano.stops().stream().filter(s -> categorias.contains(s.place().category())).count();
+    }
+
+    private static TripPreferences categorias(List<String> mais, List<String> menos) {
+        return new TripPreferences(mais, menos, false, "", List.of(), List.of(), "");
+    }
+
+    @Test
+    @DisplayName("'Mais museus' aparece ate para o perfil que nao costuma ir a museu")
+    void pedidoValeMaisQueOPerfil() {
+        for (long semente = 0; semente < 5; semente++) {
+            long museus = daCategoria(planejarComo("SOCIAL", categorias(List.of("museum"), List.of()), semente), java.util.Set.of("museum"));
+            assertTrue(museus >= 4, "semente " + semente + ": " + museus + " museus");
+        }
+    }
+
+    @Test
+    @DisplayName("'Mais natureza e mirantes' reparte os horarios entre as categorias pedidas")
+    void pedidoRepartidoEntreCategorias() {
+        Plan plano = planejarComo("CULTURAL", categorias(List.of("park", "viewpoint"), List.of()), 2);
+
+        assertTrue(daCategoria(plano, java.util.Set.of("park")) > 0);
+        assertTrue(daCategoria(plano, java.util.Set.of("viewpoint")) > 0);
+    }
+
+    @Test
+    @DisplayName("Quem pede vida noturna ganha bar a noite com qualquer perfil; quem recusa nao ganha")
+    void vidaNoturnaPedida() {
+        java.util.Set<String> bares = java.util.Set.of("bar", "pub");
+        assertEquals(0, daCategoria(planejarComo("CULTURAL", TripPreferences.NONE, 1), bares));
+        assertTrue(daCategoria(planejarComo("CULTURAL", categorias(List.of("bar", "pub"), List.of()), 1), bares) > 0);
+        assertTrue(daCategoria(planejarComo("SOCIAL", TripPreferences.NONE, 1), bares) > 0);
+        assertEquals(0, daCategoria(planejarComo("SOCIAL", categorias(List.of(), List.of("bar", "pub")), 1), bares));
+    }
+
+    @Test
+    @DisplayName("'Menos caminhada' encurta o caminho total")
+    void menosCaminhada() {
+        TripPreferences perto = new TripPreferences(List.of(), List.of(), false, "", List.of(), List.of(), "", List.of(),
+                false, TripPreferences.WALK_LESS);
+        double antes = 0;
+        double depois = 0;
+        for (long semente = 0; semente < 10; semente++) {
+            antes += planejar(TripPreferences.NONE, Map.of(), true, semente).optimizedKm();
+            depois += planejar(perto, Map.of(), true, semente).optimizedKm();
+        }
+        assertTrue(depois < antes * 0.9, "antes " + antes + ", depois " + depois);
+    }
+
     @Test
     @DisplayName("Lugar pedido pelo nome, em portugues, entra no roteiro; lugar recusado sai")
     void incluiEExcluiPeloNome() {

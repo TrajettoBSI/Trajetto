@@ -6,6 +6,7 @@ import com.trajetto.backend.itinerary.data.CityCatalog;
 import com.trajetto.backend.itinerary.data.CityCatalog.CatalogPlace;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.trajetto.backend.itinerary.ai.AssistantReply;
 import com.trajetto.backend.itinerary.ai.PreferenceInterpreter;
 import com.trajetto.backend.itinerary.dto.AddPlaceRequestDTO;
 import com.trajetto.backend.itinerary.dto.AdjustItineraryRequestDTO;
@@ -177,15 +178,16 @@ public class ItineraryService {
                         .orElseThrow(() -> new InvalidRequestException("Cidade não atendida: " + req.getCity()));
 
         int days = req.getDays() == null ? 1 : req.getDays();
-        TripPreferences prefs = preferenceInterpreter.interpret(req.getRequest(), cityCatalog.placesOf(city));
+        TripPreferences prefs = preferenceInterpreter.interpret(req.getRequest(), cityCatalog.placesOf(city), req.getLanguage());
         LocalDate startDate = req.getStartDate() == null ? LocalDate.now() : req.getStartDate();
-        ItineraryModel itinerary = buildItinerary(user, city, req.getStartLatitude(), req.getStartLongitude(),
-                startDate, days, req.getPace(), ItineraryNames.normalize(req.getName()),
-                prefs, Map.of(), Set.of());
+        TravelPace pace = effectivePace(req.getPace(), prefs);
+        ItineraryPlanner.Plan plan = plan(user, city, req.getStartLatitude(), req.getStartLongitude(), startDate, days, pace, prefs, Set.of());
+        ItineraryModel itinerary = saveItinerary(user, city, req.getStartLatitude(), req.getStartLongitude(),
+                startDate, days, pace, ItineraryNames.normalize(req.getName()), prefs, Map.of(), plan);
 
         ItineraryResponseDTO dto = toDTO(itinerary);
         if (req.getRequest() != null && !req.getRequest().isBlank()) {
-            dto.setAssistantSummary(prefs.summary());
+            dto.setAssistantSummary(AssistantReply.forGenerated(replyContext(req.getRequest(), prefs, req.getLanguage(), city), dto));
         }
         return dto;
     }
@@ -194,7 +196,8 @@ public class ItineraryService {
      * Refaz o roteiro a partir de um pedido em texto livre ("menos igrejas, mais comida de rua").
      * O pedido se soma aos anteriores e o roteiro e gerado de novo, na mesma cidade, datas e
      * ponto de partida. A versao anterior fica no historico; as anotacoes das paradas que
-     * continuam no roteiro sao levadas para a nova versao.
+     * continuam no roteiro sao levadas para a nova versao. Pedido que nao rendeu ajuste e
+     * ajuste que nao mudou nada nao criam versao nova.
      */
     @Transactional
     public ItineraryResponseDTO adjustItinerary(Long itineraryId, Long userId, AdjustItineraryRequestDTO req) {
@@ -210,9 +213,15 @@ public class ItineraryService {
         LocalDate end = current.getEndDate() == null ? start : current.getEndDate();
         int days = (int) Math.min(GenerateItineraryRequestDTO.MAX_DAYS, Math.max(1, ChronoUnit.DAYS.between(start, end) + 1));
 
-        TripPreferences requested = preferenceInterpreter.interpret(req.getRequest(), cityCatalog.placesOf(city));
+        TripPreferences requested = preferenceInterpreter.interpret(req.getRequest(), cityCatalog.placesOf(city), req.getLanguage());
+        AssistantReply.Context reply = replyContext(req.getRequest(), requested, req.getLanguage(), city);
+        ItineraryResponseDTO before = toDTO(current);
+        if (requested.isEmpty()) {
+            before.setAssistantSummary(AssistantReply.withoutChanges(reply));
+            return before;
+        }
         TripPreferences merged = readPreferences(current).then(requested);
-        TravelPace pace = parsePace(current.getPace());
+        TravelPace pace = effectivePace(parsePace(current.getPace()), merged);
 
         Map<String, String> notes = current.getPlaces().stream()
                 .filter(p -> p.getNote() != null && p.getXid() != null)
@@ -220,30 +229,61 @@ public class ItineraryService {
 
         Set<String> keep = current.getPlaces().stream().map(PlaceModel::getXid)
                 .filter(Objects::nonNull).collect(Collectors.toSet());
-        ItineraryModel itinerary = buildItinerary(current.getUser(), city, current.getOriginLatitude(),
-                current.getOriginLongitude(), start, days, pace, current.getName(), merged, notes, keep);
+        ItineraryPlanner.Plan plan = plan(current.getUser(), city, current.getOriginLatitude(), current.getOriginLongitude(),
+                start, days, pace, merged, keep);
+
+        if (sameSchedule(current, plan)) {
+            current.setPreferences(merged.isEmpty() ? null : writePreferences(merged));
+            current.setPace(pace.name());
+            ItineraryResponseDTO kept = toDTO(itineraryRepository.save(current));
+            kept.setAssistantSummary(AssistantReply.forAdjusted(reply, before, kept));
+            return kept;
+        }
+        ItineraryModel itinerary = saveItinerary(current.getUser(), city, current.getOriginLatitude(),
+                current.getOriginLongitude(), start, days, pace, current.getName(), merged, notes, plan);
 
         ItineraryResponseDTO dto = toDTO(itinerary);
-        dto.setAssistantSummary(requested.summary());
+        dto.setAssistantSummary(AssistantReply.forAdjusted(reply, before, dto));
         return dto;
     }
 
-    /**
-     * Gera e grava um roteiro novo, que passa a ser o ativo. O ritmo pedido em texto livre
-     * vale mais que o escolhido no formulario.
-     */
-    private ItineraryModel buildItinerary(UserModel user, CityCatalog.City city, double startLat, double startLng,
-                                          LocalDate startDate, int days, TravelPace pace, String name,
-                                          TripPreferences prefs, Map<String, String> notesByXid, Set<String> keep) {
-        TravelPace effectivePace = prefs.pace().isEmpty() ? (pace == null ? TravelPace.INTENSO : pace)
-                : TravelPace.valueOf(prefs.pace());
+    private AssistantReply.Context replyContext(String request, TripPreferences requested, String language, CityCatalog.City city) {
+        List<CatalogPlace> catalog = cityCatalog.placesOf(city);
+        return new AssistantReply.Context(request, requested, language, catalog, name -> catalog.stream()
+                .filter(place -> place.name().equals(name))
+                .flatMap(place -> cityCatalog.sameVisit(place).stream())
+                .map(CatalogPlace::name)
+                .collect(Collectors.toSet()));
+    }
+
+    /** Mesmos lugares, nos mesmos dias e horarios. */
+    private boolean sameSchedule(ItineraryModel current, ItineraryPlanner.Plan plan) {
+        Set<String> now = current.getPlaces().stream()
+                .map(p -> p.getXid() + "|" + visitDate(p) + "|" + p.getEstimatedVisitTime())
+                .collect(Collectors.toSet());
+        Set<String> planned = plan.stops().stream()
+                .map(s -> PlaceXid.of(s.place().name()) + "|" + s.date() + "|" + s.time())
+                .collect(Collectors.toSet());
+        return now.equals(planned);
+    }
+
+    /** O ritmo pedido em texto livre vale mais que o escolhido no formulario. */
+    private static TravelPace effectivePace(TravelPace pace, TripPreferences prefs) {
+        return prefs.pace().isEmpty() ? (pace == null ? TravelPace.INTENSO : pace) : TravelPace.valueOf(prefs.pace());
+    }
+
+    private ItineraryPlanner.Plan plan(UserModel user, CityCatalog.City city, double startLat, double startLng,
+                                       LocalDate startDate, int days, TravelPace pace, TripPreferences prefs, Set<String> keep) {
         Map<LocalDate, DayWeather> weather = weatherService.forecast(city.latitude(), city.longitude(),
                 startDate, startDate.plusDays(days - 1L));
+        return planner.plan(new ItineraryPlanner.Request(city, user.getTravelerProfile(), startLat, startLng,
+                startDate, days, pace, prefs, weather, true, keep), random);
+    }
 
-        String profile = user.getTravelerProfile();
-        ItineraryPlanner.Plan plan = planner.plan(new ItineraryPlanner.Request(city, profile, startLat, startLng,
-                startDate, days, effectivePace, prefs, weather, true, keep), random);
-
+    /** Grava o roteiro planejado, que passa a ser o ativo. */
+    private ItineraryModel saveItinerary(UserModel user, CityCatalog.City city, double startLat, double startLng,
+                                         LocalDate startDate, int days, TravelPace pace, String name,
+                                         TripPreferences prefs, Map<String, String> notesByXid, ItineraryPlanner.Plan plan) {
         deactivateActiveItineraries(user);
 
         ItineraryModel itinerary = new ItineraryModel();
@@ -255,7 +295,7 @@ public class ItineraryService {
         itinerary.setOriginLongitude(startLng);
         itinerary.setCity(city.slug());
         itinerary.setName(name);
-        itinerary.setPace(effectivePace.name());
+        itinerary.setPace(pace.name());
         itinerary.setPreferences(prefs.isEmpty() ? null : writePreferences(prefs));
         itinerary.setBaselineDistanceKm(Math.round(plan.greedyKm() * 100) / 100.0);
 

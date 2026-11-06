@@ -56,4 +56,8 @@ GenerateItineraryRequestDTO {
     @Schema(description = "Como o viajante quer a viagem, em texto livre", example = "Quero museus e comida de rua, nada de igrejas", nullable = true)
     @Size(max = AdjustItineraryRequestDTO.MAX_LENGTH, message = "O pedido pode ter no máximo " + AdjustItineraryRequestDTO.MAX_LENGTH + " caracteres")
     private String request;
+
+    @Schema(description = "Idioma do app, o da resposta do assistente; sem ele, português", example = "pt-BR", nullable = true)
+    @Size(max = 10, message = "Idioma inválido")
+    private String language;
 }
