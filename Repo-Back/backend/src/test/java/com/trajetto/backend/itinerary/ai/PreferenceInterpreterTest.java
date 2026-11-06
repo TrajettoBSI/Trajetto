@@ -28,6 +28,25 @@ class PreferenceInterpreterTest {
             "Más vida nocturna", "Quiero más historia", "Menos caminata", "Más lugares cubiertos", "Pueden ser lugares de pago");
 
     @Test
+    @DisplayName("Horario exato: trocar a hora nao tira o lugar do roteiro")
+    void horarioExato() {
+        List<com.trajetto.backend.itinerary.data.CityCatalog.CatalogPlace> atenas = CATALOG.placesOf(CATALOG.city("atenas").orElseThrow());
+        Map<String, Integer> pedidos = Map.of(
+                "troca a biblioteca de adriano para as 15:30", 0,
+                "muda a biblioteca de adriano para 15:30 no terceiro dia", 3,
+                "no terceiro dia, biblioteca de adriano esta para as 09h, troca para 15:30", 3,
+                "quero a biblioteca de adriano as 15h30", 0,
+                "bibliotece de adriano as 3:30 pm no dia 3", 3);
+        pedidos.forEach((pedido, dia) -> {
+            TripPreferences prefs = new PreferenceInterpreter().interpret(pedido, atenas);
+            assertTrue(prefs.exclude().isEmpty(), pedido);
+            assertEquals(List.of(new TripPreferences.Placement("Hadrian's Library", dia, "", "15:30")), prefs.placements(), pedido);
+        });
+        assertEquals("15:00", new PreferenceInterpreter().interpret("biblioteca de adriano as 3 da tarde", atenas).placements().get(0).time());
+        assertTrue(new PreferenceInterpreter().interpret("troca a biblioteca de adriano pelo arco de adriano", atenas).exclude().contains("Hadrian's Library"));
+    }
+
+    @Test
     @DisplayName("Pedido vazio nao muda nada; pedido com texto vira preferencias")
     void interpretaPedido() {
         PreferenceInterpreter interpreter = new PreferenceInterpreter();

@@ -213,7 +213,8 @@ public class ItineraryService {
         LocalDate end = current.getEndDate() == null ? start : current.getEndDate();
         int days = (int) Math.min(GenerateItineraryRequestDTO.MAX_DAYS, Math.max(1, ChronoUnit.DAYS.between(start, end) + 1));
 
-        TripPreferences requested = preferenceInterpreter.interpret(req.getRequest(), cityCatalog.placesOf(city), req.getLanguage());
+        TripPreferences interpreted = preferenceInterpreter.interpret(req.getRequest(), cityCatalog.placesOf(city), req.getLanguage());
+        TripPreferences requested = onCurrentDays(interpreted, current, start, city);
         AssistantReply.Context reply = replyContext(req.getRequest(), requested, req.getLanguage(), city);
         ItineraryResponseDTO before = toDTO(current);
         if (requested.isEmpty()) {
@@ -245,6 +246,21 @@ public class ItineraryService {
         ItineraryResponseDTO dto = toDTO(itinerary);
         dto.setAssistantSummary(AssistantReply.forAdjusted(reply, before, dto));
         return dto;
+    }
+
+    /** "Muda o Pantheon para as 15:30" sem dizer o dia: o lugar continua no dia em que ja esta. */
+    private TripPreferences onCurrentDays(TripPreferences requested, ItineraryModel current, LocalDate start, CityCatalog.City city) {
+        List<CatalogPlace> catalog = cityCatalog.placesOf(city);
+        return requested.withPlacements(requested.placements().stream().map(placement -> {
+            if (placement.day() != 0 || placement.time().isEmpty()) return placement;
+            Set<String> names = catalog.stream().filter(place -> place.name().equals(placement.place()))
+                    .flatMap(place -> cityCatalog.sameVisit(place).stream())
+                    .map(CatalogPlace::name).collect(Collectors.toSet());
+            return current.getPlaces().stream().filter(place -> names.contains(place.getName())).findFirst()
+                    .map(place -> new TripPreferences.Placement(placement.place(),
+                            (int) ChronoUnit.DAYS.between(start, visitDate(place)) + 1, placement.period(), placement.time()))
+                    .orElse(placement);
+        }).toList());
     }
 
     private AssistantReply.Context replyContext(String request, TripPreferences requested, String language, CityCatalog.City city) {

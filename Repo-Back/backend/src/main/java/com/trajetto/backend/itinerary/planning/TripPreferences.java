@@ -47,7 +47,8 @@ public record TripPreferences(
 
     /**
      * "Fontana di Trevi no ultimo dia, de manha": o lugar fica preso nesse dia e periodo.
-     * O dia comeca em 1; -1 e o ultimo, -2 o penultimo; 0 e qualquer dia.
+     * O dia comeca em 1; -1 e o ultimo, -2 o penultimo; 0 e qualquer dia. Com horario exato
+     * ("as 15:30"), o horario vale no lugar do periodo.
      */
     public record Placement(
             @JsonPropertyDescription("Nome do lugar, como ele e conhecido localmente ou em portugues")
@@ -55,12 +56,19 @@ public record TripPreferences(
             @JsonPropertyDescription("Dia da viagem comecando em 1; -1 para o ultimo dia; 0 se o viajante nao disse o dia")
             int day,
             @JsonPropertyDescription("MANHA, TARDE ou NOITE; texto vazio se o viajante nao disse o periodo")
-            String period
+            String period,
+            @JsonPropertyDescription("Horario exato no formato HH:mm; texto vazio se o viajante nao disse o horario")
+            String time
     ) {
         public Placement {
             place = place == null ? "" : place.trim();
             String p = period == null ? "" : ItineraryPlanner.normalize(period).toUpperCase();
             period = PERIODS.contains(p) ? p : "";
+            time = time == null ? "" : time.trim();
+        }
+
+        public Placement(String place, int day, String period) {
+            this(place, day, period, "");
         }
     }
 
@@ -86,6 +94,10 @@ public record TripPreferences(
         walking = walking == null ? "" : walking.trim().toUpperCase();
         placements = placements == null ? List.of()
                 : placements.stream().filter(p -> p != null && !p.place().isBlank()).toList();
+    }
+
+    public TripPreferences withPlacements(List<Placement> pinned) {
+        return new TripPreferences(moreCategories, lessCategories, avoidPaid, pace, mustInclude, exclude, summary, pinned, allowPaid, walking);
     }
 
     public TripPreferences withSummary(String text) {

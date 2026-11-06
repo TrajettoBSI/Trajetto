@@ -23,7 +23,8 @@ import java.util.stream.Stream;
  * Interpretador por palavras-chave, sem servico externo. Entende, em portugues, ingles e
  * espanhol, categorias ("mais museus", "sem igrejas"), preco ("so gratis"), ritmo ("com calma"),
  * caminhada ("menos caminhada"), trocas ("troca o Coliseu pelo Pantheon") e os lugares do
- * catalogo citados pelo nome, com dia e periodo ("Fontana di Trevi no ultimo dia, de manha").
+ * catalogo citados pelo nome, com dia, periodo ou horario ("Fontana di Trevi no ultimo dia, de
+ * manha", "Pantheon as 15:30").
  *
  * <p>O pedido e quebrado em trechos. Cada trecho e negativo ou positivo conforme as palavras que
  * tiver; sem nenhuma delas, herda do trecho anterior: em "menos igrejas e museus", os museus
@@ -57,6 +58,16 @@ final class RuleBasedInterpreter {
             "\\b(?:troc\\w*|troqu\\w*|substitu\\w*|swap\\w*|replace\\w*|cambi\\w*|change)\\s+(.+?)\\s+(?:por|pelo|pela|pelos|pelas|with|for)\\s+([^,.;!?\\n]+)");
     private static final Pattern INSTEAD = Pattern.compile(
             "\\b(?:em\\s+vez\\s+d[eao]s?|ao\\s+inves\\s+d[eao]s?|no\\s+lugar\\s+d[eao]s?|instead\\s+of|en\\s+vez\\s+de|en\\s+lugar\\s+de)\\s+([^,.;!?\\n]+)");
+
+    /** 15:30, 3:30 pm, 3pm, 15h, 15h30, "as 15". */
+    private static final Pattern TIME = Pattern.compile(
+            "(?<![\\d:.])(?:(\\d{1,2}):(\\d{2})(?:\\s*(am|pm)\\b)?|(\\d{1,2})\\s*(am|pm)\\b|(\\d{1,2})\\s*(?:h|hs|hrs?|horas?)(?:\\s*(\\d{2}))?(?![a-z\\d])"
+                    + "|(?:\\bas|\\ba\\s+las|\\bat)\\s+(\\d{1,2})(?=\\s*$|\\s*[,.;!?]|\\s+(?:no|na|do|da|de|em|on|el|e)\\b))");
+    /** O horario novo vem depois do "para": em "esta para as 09h, troca para 15:30", vale o 15:30. */
+    private static final Pattern TIME_TARGET = Pattern.compile("\\b(?:para|pra|pras|to)(?:\\s+(?:as|a\\s+las|o|the))?\\s*$");
+    private static final Pattern AFTER_NOON = Pattern.compile("^\\s*(?:da\\s+(?:tarde|noite)|de\\s+la\\s+(?:tarde|noche)|in\\s+the\\s+(?:afternoon|evening)|at\\s+night)\\b");
+    /** "Troca o Pantheon para as 15:30": com horario, trocar e mudar a hora, nao tirar o lugar. */
+    private static final Pattern RESCHEDULE = Pattern.compile("\\b(?:troc\\w*|troqu\\w*|substitu\\w*|replace\\w*)\\b");
 
     private static final List<String> NEGATIVE = List.of(
             "menos", "sem", "nada de", "evitar", "evite", "evita", "nao", "odeio", "detesto", "dispenso", "chega de",
@@ -218,7 +229,13 @@ final class RuleBasedInterpreter {
             String after = text.substring(mention.end(), last ? text.length() : mentions.get(i + 1).start());
             String around = " " + before + " " + (last ? after : clauseAfter(after)) + " ";
             int day = day(around);
-            String period = period(around);
+            String time = time(around);
+            // "No terceiro dia, Pantheon as 15:30": o que veio antes da virgula tambem vale.
+            if (i == 0) {
+                if (day == 0) day = day(" " + between + " ");
+                if (time.isEmpty()) time = time(" " + between + " ");
+            }
+            String period = time.isEmpty() ? period(around) : "";
             boolean continuesList = previousExcluded && !RESET.matcher(between).find()
                     && POSITIVE.stream().noneMatch(w -> has(" " + between + " ", w));
             String name = mention.place().name();
@@ -228,7 +245,7 @@ final class RuleBasedInterpreter {
                 continue;
             }
             previousExcluded = false;
-            if (day != 0 || !period.isEmpty()) placements.add(new Placement(name, day, period));
+            if (day != 0 || !period.isEmpty() || !time.isEmpty()) placements.add(new Placement(name, day, period, time));
             else include.add(name);
         }
 
@@ -259,6 +276,7 @@ final class RuleBasedInterpreter {
         text = KEEP.matcher(text).replaceAll("quero");
         text = SWAP.matcher(text).replaceAll("sem $1 , quero $2 ");
         text = INSTEAD.matcher(text).replaceAll(" , sem $1 , quero ");
+        if (TIME.matcher(text).find()) text = RESCHEDULE.matcher(text).replaceAll("coloca");
         return text;
     }
 
@@ -388,6 +406,33 @@ final class RuleBasedInterpreter {
         Matcher numbered = NUMBERED_DAY.matcher(text);
         if (numbered.find()) return Integer.parseInt(numbered.group(1));
         return 0;
+    }
+
+    /** Horario citado no trecho, em HH:mm: o ultimo; "para as 15:30 em vez das 09h" fica com o que vem depois do "para". */
+    static String time(String text) {
+        String last = "";
+        String lastTarget = "";
+        Matcher matcher = TIME.matcher(text);
+        while (matcher.find()) {
+            String found = parsedTime(matcher, text);
+            if (found.isEmpty()) continue;
+            if (TIME_TARGET.matcher(text.substring(0, matcher.start())).find()) lastTarget = found;
+            last = found;
+        }
+        return lastTarget.isEmpty() ? last : lastTarget;
+    }
+
+    private static String parsedTime(Matcher m, String text) {
+        String hourText = Stream.of(m.group(1), m.group(4), m.group(6), m.group(8)).filter(g -> g != null).findFirst().orElse("0");
+        String minuteText = m.group(2) != null ? m.group(2) : m.group(7);
+        String meridiem = m.group(3) != null ? m.group(3) : m.group(5);
+        int hour = Integer.parseInt(hourText);
+        int minute = minuteText == null ? 0 : Integer.parseInt(minuteText);
+        if ("pm".equals(meridiem) && hour < 12) hour += 12;
+        if ("am".equals(meridiem) && hour == 12) hour = 0;
+        if (meridiem == null && hour < 12 && AFTER_NOON.matcher(text.substring(m.end())).find()) hour += 12;
+        if (hour > 23 || minute > 59) return "";
+        return String.format("%02d:%02d", hour, minute);
     }
 
     static String period(String text) {

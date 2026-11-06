@@ -45,7 +45,7 @@ final class AssistantMessages {
     static String understood(TripPreferences prefs, String language, UnaryOperator<String> placeName) {
         if (prefs.isEmpty()) return notUnderstood(language);
         List<String> parts = new ArrayList<>();
-        prefs.placements().forEach(p -> parts.add(placeName.apply(p.place()) + when(p.day(), p.period(), language)));
+        prefs.placements().forEach(p -> parts.add(placeName.apply(p.place()) + when(p, language)));
         if (!prefs.mustInclude().isEmpty()) {
             parts.add(t(language, "a visita a ", "a visit to ", "la visita a ")
                     + join(prefs.mustInclude().stream().map(placeName).toList(), language));
@@ -97,14 +97,17 @@ final class AssistantMessages {
         };
     }
 
-    static String when(int day, String period, String language) {
+    static String when(Placement placement, String language) {
+        int day = placement.day();
         String dayText = switch (day) {
             case 0 -> "";
             case -1 -> t(language, " no último dia", " on the last day", " el último día");
             case -2 -> t(language, " no penúltimo dia", " on the second to last day", " el penúltimo día");
             default -> day > 0 ? t(language, " no dia ", " on day ", " el día ") + day : "";
         };
-        String periodText = switch (period) {
+        String periodText = !placement.time().isEmpty()
+                ? t(language, " às ", " at ", " a las ") + placement.time()
+                : switch (placement.period()) {
             case "MANHA" -> t(language, " de manhã", " in the morning", " por la mañana");
             case "TARDE" -> t(language, " à tarde", " in the afternoon", " por la tarde");
             case "NOITE" -> t(language, " à noite", " in the evening", " por la noche");

@@ -141,12 +141,12 @@ public final class AssistantReply {
             List<PlaceResponseDTO> stops = stopsOf(context, after, placement.place());
             if (stops.isEmpty()) {
                 lines.add(t(language, "Não consegui colocar ", "I couldn't fit ", "No pude incluir ") + placeLabel(context, placement.place(), language)
-                        + AssistantMessages.when(placement.day(), placement.period(), language)
+                        + AssistantMessages.when(placement, language)
                         + t(language, ": ele não está aberto nos horários livres.", ": it isn't open at the free times.", ": no está abierto en los horarios libres."));
             } else if (stops.stream().noneMatch(stop -> inPlace(stop, placement, after))) {
                 lines.add(placeLabel(context, placement.place(), language)
                         + t(language, " não coube", " didn't fit", " no cupo")
-                        + AssistantMessages.when(placement.day(), placement.period(), language)
+                        + AssistantMessages.when(placement, language)
                         + t(language, ": ficou no dia ", ": it's on day ", ": quedó en el día ") + dayNumber(stops.get(0), after)
                         + t(language, ", às ", ", at ", ", a las ") + stops.get(0).getEstimatedVisitTime() + ".");
             }
@@ -203,7 +203,9 @@ public final class AssistantReply {
     private static boolean inPlace(PlaceResponseDTO stop, TripPreferences.Placement placement, ItineraryResponseDTO itinerary) {
         if (stop.getEstimatedVisitTime() == null) return false;
         boolean dayOk = placement.day() == 0 || dayNumber(stop, itinerary) - 1 == ItineraryPlanner.dayIndex(placement.day(), days(itinerary));
-        return dayOk && ItineraryPlanner.inPeriod(stop.getEstimatedVisitTime(), placement.period());
+        java.time.LocalTime exact = ItineraryPlanner.requestedTime(placement);
+        return dayOk && (exact != null ? exact.equals(stop.getEstimatedVisitTime())
+                : ItineraryPlanner.inPeriod(stop.getEstimatedVisitTime(), placement.period()));
     }
 
     private static long dayNumber(PlaceResponseDTO stop, ItineraryResponseDTO itinerary) {

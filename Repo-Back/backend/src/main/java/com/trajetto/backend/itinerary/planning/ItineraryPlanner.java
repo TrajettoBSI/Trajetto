@@ -187,7 +187,8 @@ public class ItineraryPlanner {
 
         int days = req.days();
         TravelPace pace = req.pace() == null ? TravelPace.INTENSO : req.pace();
-        List<List<LocalTime>> schedule = IntStream.range(0, days).mapToObj(pace::visitTimes).toList();
+        List<List<LocalTime>> schedule = withRequestedTimes(IntStream.range(0, days).mapToObj(pace::visitTimes).toList(),
+                candidates, prefs.placements(), req.startDate());
         scored = withRequestedFirst(scored, prefs.moreCategories(), schedule);
         // "Fontana di Trevi no ultimo dia, de manha": esses horarios ja saem preenchidos.
         Set<String> chosen = new HashSet<>();
@@ -352,9 +353,49 @@ public class ItineraryPlanner {
     }
 
     /**
+     * "Pantheon as 16:20": o horario entra na agenda do dia no lugar do mais proximo, e o dia
+     * continua com o mesmo numero de paradas. Lugar fechado nesse horario nao muda a agenda.
+     */
+    private List<List<LocalTime>> withRequestedTimes(List<List<LocalTime>> schedule, List<CatalogPlace> candidates,
+                                                     List<TripPreferences.Placement> placements, LocalDate start) {
+        List<List<LocalTime>> result = schedule.stream().map(day -> (List<LocalTime>) new ArrayList<>(day)).toList();
+        Set<Slot> requested = new HashSet<>();
+        int days = schedule.size();
+        for (TripPreferences.Placement placement : placements) {
+            LocalTime time = requestedTime(placement);
+            if (time == null) continue;
+            Optional<CatalogPlace> place = candidates.stream().filter(p -> matchesName(p, placement.place()))
+                    .max(Comparator.comparingInt(CatalogPlace::popularity));
+            if (place.isEmpty()) continue;
+            List<Integer> dayOptions = placement.day() == 0 ? IntStream.range(0, days).boxed().toList()
+                    : List.of(dayIndex(placement.day(), days));
+            Optional<Integer> open = dayOptions.stream().filter(day -> OpeningHours.statusAt(place.get().openingHours(),
+                    start.plusDays(day), time, VISIT_LENGTH) != Status.CLOSED).findFirst();
+            if (open.isEmpty()) continue;
+            int day = open.get();
+            List<LocalTime> times = result.get(day);
+            if (!times.contains(time)) {
+                Optional<LocalTime> nearest = times.stream().filter(t -> !requested.contains(new Slot(day, t)))
+                        .min(Comparator.comparingLong(t -> Math.abs(Duration.between(t, time).toMinutes())));
+                if (nearest.isEmpty()) continue;
+                times.set(times.indexOf(nearest.get()), time);
+                times.sort(Comparator.naturalOrder());
+            }
+            requested.add(new Slot(day, time));
+        }
+        return result;
+    }
+
+    /** O horario exato pedido para o lugar, ou null se o pedido nao disse. */
+    public static LocalTime requestedTime(TripPreferences.Placement placement) {
+        return placement.time().isEmpty() ? null : LocalTime.parse(placement.time());
+    }
+
+    /**
      * Prende cada lugar pedido num dia e periodo ao primeiro horario livre em que ele esteja
      * aberto. Sem horario no periodo, vale qualquer horario livre do dia pedido; sem dia
-     * pedido, o primeiro dia que tiver horario no periodo.
+     * pedido, o primeiro dia que tiver horario no periodo. Com horario exato, vale ele ou, se
+     * o lugar estiver fechado, o horario livre mais proximo.
      */
     private Map<Slot, CatalogPlace> pin(List<CatalogPlace> candidates, List<TripPreferences.Placement> placements,
                                         List<List<LocalTime>> schedule, LocalDate start, Set<String> chosen) {
@@ -374,9 +415,14 @@ public class ItineraryPlanner {
                         .filter(t -> !pins.containsKey(new Slot(day, t)))
                         .filter(t -> OpeningHours.statusAt(place.openingHours(), date, t, VISIT_LENGTH) != Status.CLOSED)
                         .toList();
-                Optional<LocalTime> time = free.stream().filter(t -> inPeriod(t, placement.period())).findFirst();
+                LocalTime exact = requestedTime(placement);
+                Optional<LocalTime> time = exact != null
+                        ? free.stream().filter(exact::equals).findFirst()
+                        : free.stream().filter(t -> inPeriod(t, placement.period())).findFirst();
                 if (time.isEmpty() && placement.day() != 0 && !free.isEmpty()) {
-                    time = Optional.of("NOITE".equals(placement.period()) ? free.get(free.size() - 1) : free.get(0));
+                    time = exact != null
+                            ? free.stream().min(Comparator.comparingLong(t -> Math.abs(Duration.between(t, exact).toMinutes())))
+                            : Optional.of("NOITE".equals(placement.period()) ? free.get(free.size() - 1) : free.get(0));
                 }
                 if (time.isPresent()) {
                     slot = Optional.of(new Slot(day, time.get()));

@@ -104,6 +104,25 @@ class AdjustItineraryIntegrationTest {
     }
 
     @Test
+    @DisplayName("'Troca a Fontana di Trevi para as 16:20' muda a hora e deixa a fonte no mesmo dia")
+    void mudaOHorarioNoMesmoDia() {
+        ItineraryResponseDTO noUltimoDia = itineraryService.adjustItinerary(gerar(null).getId(), USUARIO,
+                pedido("coloca a fontana di trevi no último dia, de manhã"));
+
+        ItineraryResponseDTO ajustado = itineraryService.adjustItinerary(noUltimoDia.getId(), USUARIO,
+                pedido("troca a fontana di trevi para as 16:20"));
+
+        List<PlaceResponseDTO> trevi = ajustado.getPlaces().stream()
+                .filter(p -> p.getName().equals("Fontana di Trevi")).toList();
+        assertEquals(1, trevi.size());
+        assertEquals(ajustado.getEndDate(), trevi.get(0).getVisitDate());
+        assertEquals(java.time.LocalTime.of(16, 20), trevi.get(0).getEstimatedVisitTime());
+        assertEquals(noUltimoDia.getPlaces().size(), ajustado.getPlaces().size());
+        assertTrue(ajustado.getAssistantSummary().contains("16:20"));
+        assertFalse(ajustado.getAssistantSummary().contains("não coube"));
+    }
+
+    @Test
     @DisplayName("'Fontana di Trevi no ultimo dia, de manha' coloca a fonte nesse dia e periodo, uma vez so")
     void colocaLugarNoDiaEPeriodoPedidos() {
         ItineraryResponseDTO original = gerar(null);

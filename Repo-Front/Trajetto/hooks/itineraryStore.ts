@@ -60,7 +60,7 @@ export interface TripPreferences {
   pace: string;
   mustInclude: string[];
   exclude: string[];
-  placements?: { place: string; day: number; period: '' | 'MANHA' | 'TARDE' | 'NOITE' }[];
+  placements?: { place: string; day: number; period: '' | 'MANHA' | 'TARDE' | 'NOITE'; time?: string }[];
   /** MENOS quando o viajante pediu menos caminhada. */
   walking?: string;
 }
