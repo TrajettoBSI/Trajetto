@@ -1,4 +1,4 @@
-import { Platform, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { AppColors } from '@/src/theme';
 
 export const styles = (colors: AppColors) =>
@@ -7,8 +7,8 @@ export const styles = (colors: AppColors) =>
     background: { ...StyleSheet.absoluteFill },
     overlay: { flex: 1 },
     headerTitle: {
-      fontSize: Platform.OS === 'ios' ? 16 : 24,
-      fontFamily: 'Inter-Bold',
+      fontSize: 17,
+      fontFamily: 'Jakarta-Bold',
       color: colors.text,
       paddingTop: 16,
       paddingHorizontal: 24,

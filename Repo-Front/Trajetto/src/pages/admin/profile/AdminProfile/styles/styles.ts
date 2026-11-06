@@ -14,12 +14,12 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.primary,
     },
     headerBackBtn: { padding: 4, marginRight: 8 },
-    headerTitle: { fontSize: 20, fontFamily: 'Inter-Bold', color: colors.onPrimary },
+    headerTitle: { fontSize: 20, fontFamily: 'Display-Bold', color: colors.onPrimary },
 
     section: { paddingHorizontal: 20, marginBottom: 8 },
     sectionTitle: {
       fontSize: 12,
-      fontFamily: 'Inter-Bold',
+      fontFamily: 'Jakarta-Bold',
       color: colors.textSubtle,
       letterSpacing: 0.8,
       textTransform: 'uppercase',

@@ -20,7 +20,7 @@ export default function ActiveFilterChips({ activeFilter, onRemove }: ActiveFilt
     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={s.chipsRow} keyboardShouldPersistTaps="handled">
       {activeFilter.category && (
         <View style={s.chip}>
-          <Text style={s.chipText}>📍 {categoryLabel(activeFilter.category)}</Text>
+          <Text style={s.chipText}>{categoryLabel(activeFilter.category)}</Text>
           <TouchableOpacity onPress={() => onRemove({ category: undefined })}>
             <Text style={s.chipClose}>✕</Text>
           </TouchableOpacity>

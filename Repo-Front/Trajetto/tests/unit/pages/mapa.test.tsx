@@ -80,7 +80,7 @@ describe('mapa do roteiro', () => {
 
     await fireEvent.changeText(screen.getByPlaceholderText('Buscar ponto turístico...'), 'Colo');
     await fireEvent.press(await screen.findByText('Colosseo', {}, { timeout: 2000 }));
-    expect(screen.getByText('💰 Pago')).toBeTruthy();
+    expect(screen.getByText('Pago')).toBeTruthy();
     expect(screen.getByText(/Aberto até 23:59/)).toBeTruthy();
 
     await fireEvent.press(screen.getByText('Ver detalhes completos →'));
@@ -97,9 +97,9 @@ describe('mapa do roteiro', () => {
     await screen.findByText('Colosseo', {}, { timeout: 2000 });
 
     await fireEvent.press(screen.getByLabelText('Filtros'));
-    await fireEvent.press(await screen.findByText('🏛️ Museu'));
+    await fireEvent.press(await screen.findByText('Museu'));
     await fireEvent.press(screen.getByText('Explorador Cultural'));
-    await fireEvent.press(screen.getAllByText('🆓 Gratuito')[0]);
+    await fireEvent.press(screen.getAllByText('Gratuito')[0]);
     await fireEvent.press(screen.getByText('500 m'));
     await fireEvent(screen.getByRole('switch'), 'valueChange', true);
     await fireEvent.press(screen.getByText('Aplicar filtros'));
@@ -107,17 +107,17 @@ describe('mapa do roteiro', () => {
     await waitFor(() => expect(places.getAll).toHaveBeenLastCalledWith(expect.objectContaining({
       search: 'Colo', category: 'museum', fee: 'no', hasHours: true, profile: 'CULTURAL', maxDistance: 500,
     })));
-    expect(screen.getByText('📍 Museu')).toBeTruthy();
+    expect(screen.getByText('Museu')).toBeTruthy();
     expect(screen.getByText('📏 500 m')).toBeTruthy();
 
     const fecharChips = () => screen.getAllByText('✕');
     for (let i = 0; i < 4; i++) await fireEvent.press(fecharChips().at(-1)!);
     expect(screen.queryByText('📏 500 m')).toBeNull();
-    expect(screen.getByText('📍 Museu')).toBeTruthy();
+    expect(screen.getByText('Museu')).toBeTruthy();
 
     await fireEvent.press(screen.getByLabelText('Filtros'));
     await fireEvent.press(screen.getByText('Limpar tudo'));
-    await waitFor(() => expect(screen.queryByText('📍 Museu')).toBeNull());
+    await waitFor(() => expect(screen.queryByText('Museu')).toBeNull());
     await fireEvent.press(screen.getByLabelText('Filtros'));
     await fireEvent.press(screen.getByText('Cancelar'));
   });

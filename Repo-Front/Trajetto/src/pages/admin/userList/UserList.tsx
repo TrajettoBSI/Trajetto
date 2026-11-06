@@ -1,7 +1,8 @@
 import React from 'react';
+import HeroFill from '@/src/components/brand/HeroFill';
 import { FlatList, Text, TouchableOpacity, View } from 'react-native';
 import { useRouter } from 'expo-router';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import { Ionicons } from '@expo/vector-icons';
 import { useColors } from '@/src/theme';
@@ -14,15 +15,17 @@ export default function UserList() {
   const { t } = useTranslation('admin');
   const router = useRouter();
   const colors = useColors();
+  const insets = useSafeAreaInsets();
   const s = styles(colors);
   const { admin, usuarios, editUser, deleteUser } = useUserList();
 
   return (
-    <SafeAreaView style={s.safe} edges={['top', 'bottom']}>
-      <View style={[s.header, { paddingTop: 16 }]}>
+    <SafeAreaView style={s.safe} edges={['bottom']}>
+      <View style={[s.header, { paddingTop: insets.top + 16 }]}>
+        <HeroFill variant="bar" />
         <View style={s.headerLeft}>
           <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
-            <Ionicons name="chevron-back" size={28} color={colors.text} />
+            <Ionicons name="chevron-back" size={28} color={colors.onPrimary} />
           </TouchableOpacity>
           <View>
             <Text style={s.headerTitle}>{t('userList.headerTitle')}</Text>

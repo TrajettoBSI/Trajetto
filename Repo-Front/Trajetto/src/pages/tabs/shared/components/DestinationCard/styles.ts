@@ -22,7 +22,7 @@ export const styles = (colors: AppColors) =>
     },
     cardTitle: {
       fontSize: 22,
-      fontFamily: 'Inter-Bold',
+      fontFamily: 'Display-Bold',
       color: colors.onPrimary,
       flex: 1,
     },
@@ -36,13 +36,13 @@ export const styles = (colors: AppColors) =>
     },
     timeText: {
       fontSize: 11,
-      fontFamily: 'Inter-Medium',
+      fontFamily: 'Jakarta-Medium',
       color: colors.onPrimary,
     },
     cardSubtitle: {
       fontSize: 12,
       color: colors.onPrimaryFaint80,
-      fontFamily: 'Inter-Medium',
+      fontFamily: 'Jakarta-Medium',
       marginBottom: 10,
     },
     cardImage: {

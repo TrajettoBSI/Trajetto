@@ -20,13 +20,13 @@ export const styles = (colors: AppColors) =>
     thumb: { width: 44, height: 44, borderRadius: 10 },
     inactiveCardInfo: { flex: 1 },
     inactiveCardTitleRow: { flexDirection: 'row', gap: 4 },
-    inactiveCardTitle: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.text, marginBottom: 3 },
+    inactiveCardTitle: { fontSize: 14, fontFamily: 'Jakarta-Bold', color: colors.text, marginBottom: 3 },
     inactiveCardMeta: { fontSize: 12, color: colors.textSubtle },
     activateBtn: {
       borderWidth: 1.5, borderColor: colors.primary, borderRadius: 10,
       paddingHorizontal: 14, paddingVertical: 7, minWidth: 60, alignItems: 'center',
       marginLeft: 15,
     },
-    activateBtnText: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.primary },
+    activateBtnText: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.primaryText },
     inactiveDeleteBtn: { padding: 6 },
   });

@@ -26,7 +26,7 @@ export const styles = (colors: AppColors) =>
       marginRight: 12,
     },
     cardInfo: { flex: 1 },
-    cardName: { fontSize: 15, fontFamily: 'Inter-Bold', color: colors.text, marginBottom: 2 },
+    cardName: { fontSize: 15, fontFamily: 'Jakarta-Bold', color: colors.text, marginBottom: 2 },
     cardEmail: { fontSize: 13, color: colors.chipMutedText, marginBottom: 2 },
     cardMeta: { fontSize: 12, color: colors.gray400, marginBottom: 6 },
     roleBadge: {
@@ -37,7 +37,7 @@ export const styles = (colors: AppColors) =>
       paddingVertical: 3,
     },
     roleBadgeAdmin: { backgroundColor: colors.chipPrimarySurface },
-    roleBadgeText: { fontSize: 11, fontFamily: 'Inter-Bold', color: colors.chipMutedText },
+    roleBadgeText: { fontSize: 11, fontFamily: 'Jakarta-Bold', color: colors.chipMutedText },
     roleBadgeTextAdmin: { color: colors.primaryDark },
 
     cardActions: { flexDirection: 'row', alignItems: 'center', gap: 8, marginLeft: 8 },
@@ -48,6 +48,6 @@ export const styles = (colors: AppColors) =>
       paddingHorizontal: 12,
       paddingVertical: 6,
     },
-    editBtnText: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.primaryDark },
+    editBtnText: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.primaryDark },
     deleteBtn: { padding: 6 },
   });

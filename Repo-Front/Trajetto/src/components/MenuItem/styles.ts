@@ -16,7 +16,7 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center', justifyContent: 'center',
     },
     iconBadgeDanger: { backgroundColor: colors.errorSurface },
-    label: { flex: 1, fontSize: 16, color: colors.text, fontFamily: 'Inter-Medium' },
+    label: { flex: 1, fontSize: 16, color: colors.text, fontFamily: 'Jakarta-Medium' },
     labelDanger: { color: colors.error },
     value: { fontSize: 14, color: colors.textSubtle, marginRight: 8 },
   });

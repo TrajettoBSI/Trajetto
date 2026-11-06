@@ -11,8 +11,8 @@ export const styles = (colors: AppColors) =>
     },
     headerRow: { flexDirection: 'row', alignItems: 'flex-start' },
     headerText: { flex: 1 },
-    legLabel: { fontSize: 11, fontFamily: 'Inter-Bold', color: colors.textSubtle, letterSpacing: 0.8, textTransform: 'uppercase' },
-    destName: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.text, marginTop: 2 },
+    legLabel: { fontSize: 11, fontFamily: 'Jakarta-Bold', color: colors.textSubtle, letterSpacing: 0.8, textTransform: 'uppercase' },
+    destName: { fontSize: 18, fontFamily: 'Jakarta-Bold', color: colors.text, marginTop: 2 },
     fromText: { fontSize: 13, color: colors.textMuted, marginTop: 2 },
     closeBtn: { padding: 4, marginLeft: 8 },
 
@@ -21,7 +21,7 @@ export const styles = (colors: AppColors) =>
     feedback: { marginTop: 12 },
 
     remainingRow: { flexDirection: 'row', alignItems: 'baseline', gap: 10, marginTop: 12 },
-    remainingBig: { fontSize: 26, fontFamily: 'Inter-Bold', color: colors.primary },
+    remainingBig: { fontSize: 26, fontFamily: 'Display-Bold', color: colors.primaryText },
     remainingSmall: { fontSize: 14, color: colors.textMuted, flexShrink: 1 },
 
     modesRow: { flexDirection: 'row', gap: 8, marginTop: 12 },
@@ -31,18 +31,18 @@ export const styles = (colors: AppColors) =>
     },
     modeCardSelected: { backgroundColor: colors.primary, borderColor: colors.primary },
     recommended: {
-      position: 'absolute', top: -9, fontSize: 10, fontFamily: 'Inter-Bold', color: colors.onPrimary,
+      position: 'absolute', top: -9, fontSize: 10, fontFamily: 'Jakarta-Bold', color: colors.onPrimary,
       backgroundColor: colors.success, borderRadius: 8, paddingHorizontal: 6, paddingVertical: 1, overflow: 'hidden',
     },
-    modeName: { fontSize: 12, fontFamily: 'Inter-Medium', color: colors.text, marginTop: 4 },
-    modeTime: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.text, marginTop: 2 },
+    modeName: { fontSize: 12, fontFamily: 'Jakarta-Medium', color: colors.text, marginTop: 4 },
+    modeTime: { fontSize: 14, fontFamily: 'Jakarta-Bold', color: colors.text, marginTop: 2 },
     modeDistance: { fontSize: 11, color: colors.textMuted },
     modeTextSelected: { color: colors.onPrimary },
 
     reason: { fontSize: 13, color: colors.textMuted, marginTop: 10 },
     steps: { maxHeight: 130, marginTop: 10 },
     stepRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 10, paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: colors.divider },
-    stepNumber: { width: 20, fontSize: 12, fontFamily: 'Inter-Bold', color: colors.primary, textAlign: 'center' },
+    stepNumber: { width: 20, fontSize: 12, fontFamily: 'Jakarta-Bold', color: colors.primaryText, textAlign: 'center' },
     stepText: { flex: 1, fontSize: 13, color: colors.text },
     stepDistance: { fontSize: 12, color: colors.textMuted },
     estimateNote: { fontSize: 13, color: colors.textMuted, marginTop: 10, lineHeight: 18 },
@@ -52,10 +52,10 @@ export const styles = (colors: AppColors) =>
       flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: 14, paddingVertical: 14,
       borderRadius: 14, borderWidth: 1.5, borderColor: colors.primary,
     },
-    secondaryText: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.primary },
+    secondaryText: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.primaryText },
     primaryBtn: { flex: 1 },
 
     finishedEmoji: { fontSize: 36, textAlign: 'center' },
-    finishedTitle: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.text, textAlign: 'center', marginTop: 6 },
+    finishedTitle: { fontSize: 18, fontFamily: 'Jakarta-Bold', color: colors.text, textAlign: 'center', marginTop: 6 },
     finishedText: { fontSize: 14, color: colors.textMuted, textAlign: 'center', marginTop: 4, marginBottom: 14 },
   });

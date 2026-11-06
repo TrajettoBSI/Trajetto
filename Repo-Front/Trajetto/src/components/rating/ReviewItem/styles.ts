@@ -12,9 +12,9 @@ export const styles = (colors: AppColors) =>
       width: 36, height: 36, borderRadius: 18,
       backgroundColor: colors.primary, alignItems: 'center', justifyContent: 'center',
     },
-    reviewAvatarText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 16 },
+    reviewAvatarText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 16 },
     reviewInfo: { flex: 1 },
-    reviewName: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.text, marginBottom: 2 },
+    reviewName: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.text, marginBottom: 2 },
     reviewActions: { flexDirection: 'row', gap: 12 },
     reviewComment: { fontSize: 13, color: colors.textMuted, lineHeight: 18 },
   });

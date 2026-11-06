@@ -9,7 +9,7 @@ export const styles = (colors: AppColors) =>
       shadowOffset: { width: 0, height: 2 }, elevation: 2,
     },
     statIcon: { fontSize: 24, marginBottom: 8 },
-    statValue: { fontSize: 26, fontFamily: 'Inter-Bold', color: colors.gray900, marginBottom: 2 },
-    statLabel: { fontSize: 12, color: colors.gray500, fontFamily: 'Inter-Medium' },
+    statValue: { fontSize: 26, fontFamily: 'Display-Bold', color: colors.gray900, marginBottom: 2 },
+    statLabel: { fontSize: 12, color: colors.gray500, fontFamily: 'Jakarta-Medium' },
     statSub: { fontSize: 11, color: colors.gray400, marginTop: 4 },
   });

@@ -15,7 +15,7 @@ export const styles = (colors: AppColors) =>
     },
     header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
     textBox: { flex: 1 },
-    title: { fontSize: 16, fontFamily: 'Inter-Bold', color: colors.gray900 },
+    title: { fontSize: 16, fontFamily: 'Jakarta-Bold', color: colors.gray900 },
     subtitle: { fontSize: 13, color: colors.gray600, marginTop: 2 },
     input: {
       minHeight: 64,
@@ -35,6 +35,6 @@ export const styles = (colors: AppColors) =>
       borderRadius: 12,
       backgroundColor: colors.primary,
     },
-    saveBtnText: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.onPrimary },
+    saveBtnText: { fontSize: 14, fontFamily: 'Jakarta-Bold', color: colors.onPrimary },
     feedback: { marginTop: 0 },
   });

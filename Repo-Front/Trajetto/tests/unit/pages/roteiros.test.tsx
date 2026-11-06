@@ -60,7 +60,7 @@ describe('meus roteiros', () => {
     svc.deleteItinerary.mockResolvedValue(undefined);
     await render(<Roteiros />);
 
-    expect(await screen.findByText('ROTEIRO ATIVO')).toBeTruthy();
+    expect(await screen.findByText('Roteiro ativo')).toBeTruthy();
     expect(screen.getByText('Roteiro Roma, dia 10/11')).toBeTruthy();
     expect(screen.getByText('Viagem 2')).toBeTruthy();
     expect(screen.getByText('Olá, Ana')).toBeTruthy();
@@ -110,8 +110,8 @@ describe('meus roteiros', () => {
     svc.getAllItineraries.mockResolvedValue([roteiro(2, false), roteiro(3, false)]);
     await render(<Roteiros />);
 
-    expect(await screen.findByText('OUTROS ROTEIROS')).toBeTruthy();
-    expect(screen.queryByText('ROTEIRO ATIVO')).toBeNull();
+    expect(await screen.findByText('Outros roteiros')).toBeTruthy();
+    expect(screen.queryByText('Roteiro ativo')).toBeNull();
     expect(screen.getAllByText('Ativar')).toHaveLength(2);
   });
 
@@ -126,7 +126,7 @@ describe('meus roteiros', () => {
     expect(screen.getAllByText('2 selecionados').length).toBeGreaterThan(0);
     await fireEvent.press(screen.getByText('Viagem 2'));
     await fireEvent.press(screen.getByText('Viagem 2'));
-    await fireEvent.press(screen.getByText('🗑️  Excluir (2)'));
+    await fireEvent.press(screen.getByText('Excluir (2)'));
     await tocarNoBotao('Excluir');
 
     await waitFor(() => expect(svc.deleteItinerary).toHaveBeenCalledTimes(2));

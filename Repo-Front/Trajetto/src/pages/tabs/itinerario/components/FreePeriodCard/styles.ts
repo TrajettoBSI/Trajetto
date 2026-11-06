@@ -18,6 +18,6 @@ export const styles = (colors: AppColors) =>
       paddingVertical: 12,
     },
     textBox: { flex: 1 },
-    title: { fontSize: 14, fontFamily: 'Inter-Bold', color: colors.gray900 },
+    title: { fontSize: 14, fontFamily: 'Jakarta-Bold', color: colors.gray900 },
     text: { fontSize: 12, color: colors.gray600, marginTop: 2, lineHeight: 17 },
   });

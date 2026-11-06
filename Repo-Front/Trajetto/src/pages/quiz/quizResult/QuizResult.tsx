@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroFill from '@/src/components/brand/HeroFill';
 import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -34,6 +35,7 @@ export default function QuizResult() {
       <ScrollView contentContainerStyle={s.content}>
 
         <View style={s.hero}>
+<HeroFill />
           <Ionicons name="location-outline" size={18} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { top: 18, left: 24 }]} />
           <Ionicons name="airplane-outline" size={20} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { top: 14, right: 20, transform: [{ rotate: '20deg' }] }]} />
           <Ionicons name="compass-outline" size={18} color={colors.onPrimaryFaint20} style={[s.heroDecoration, { bottom: 18, left: 32 }]} />
@@ -57,7 +59,7 @@ export default function QuizResult() {
 
         <View style={s.card}>
           <View style={s.cardTitleRow}>
-            <Ionicons name="location" size={16} color={colors.primary} />
+            <Ionicons name="location" size={16} color={colors.primaryText} />
             <Text style={s.cardTitle}>{t('result.matchingDestinations')}</Text>
           </View>
           {perfil.destinos_sugeridos.map((destino) => (
@@ -77,7 +79,7 @@ export default function QuizResult() {
             <Text style={s.tripBody}>{t('firstTrip.body')}</Text>
             <View style={s.tripCta}>
               <Text style={s.tripCtaText}>{t('firstTrip.cta')}</Text>
-              <Ionicons name="arrow-forward" size={16} color={colors.primary} />
+              <Ionicons name="arrow-forward" size={16} color={colors.primaryText} />
             </View>
           </TouchableOpacity>
         )}

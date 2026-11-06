@@ -32,7 +32,7 @@ export default function ItineraryRatingCard({
           <Text style={s.title}>{t('rating.title')}</Text>
           <Text style={s.subtitle}>{rating > 0 ? t('rating.yourRating', { count: rating }) : t('rating.subtitle')}</Text>
         </View>
-        {saving && <ActivityIndicator size="small" color={colors.primary} />}
+        {saving && <ActivityIndicator size="small" color={colors.primaryText} />}
       </View>
 
       <StarRating value={rating} size={30} onChange={onRate} readonly={saving} />

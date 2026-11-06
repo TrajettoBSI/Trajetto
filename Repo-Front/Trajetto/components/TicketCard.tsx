@@ -1,8 +1,10 @@
 import React from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
 import { Linking, View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { categoryLabel } from '@/src/helpers/categoryIcon';
+import PressableScale from '@/src/components/motion/PressableScale';
 import { AppColors, useColors } from '@/src/theme';
 import { formatOpeningHours, formatTime, placeName } from '@/src/i18n/format';
 
@@ -40,19 +42,23 @@ export function TicketCard({
     const colors = useColors();
     const ticketStyles = getTicketStyles(colors);
     return (
-        <TouchableOpacity
+        <PressableScale
             style={[
                 ticketStyles.ticket,
                 isLast && { marginBottom: 0 },
                 isHighlighted && { borderColor: color },
                 isPast && ticketStyles.pastTicket,
             ]}
-            activeOpacity={0.75}
+            scaleTo={0.985}
             onPress={onPress}
         >
           <View style={ticketStyles.ticketInner}>
             {/* Cabeçalho colorido */}
-            <View style={[ticketStyles.header, { backgroundColor: isPast ? colors.timelineDotPast : color }]}>
+            <LinearGradient
+                colors={isPast ? [colors.timelineDotPast, colors.timelineDotPast] : [color, `${color}C7`]}
+                start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}
+                style={ticketStyles.header}
+            >
                 <View style={ticketStyles.headerLeft}>
                     <Text style={ticketStyles.stopLabel}>{t('ticketCard.stopLabel')}</Text>
                     <Text style={ticketStyles.stopNumber}>{String(idx + 1).padStart(2, '0')}</Text>
@@ -61,7 +67,7 @@ export function TicketCard({
                     <Text style={ticketStyles.timeLabel}>{t('ticketCard.timeLabel')}</Text>
                     <Text style={ticketStyles.timeValue}>{formatTime(place.estimatedVisitTime)}</Text>
                 </View>
-            </View>
+            </LinearGradient>
 
 
             <View style={ticketStyles.perforationRow}>
@@ -140,9 +146,9 @@ export function TicketCard({
                         accessibilityRole="link"
                         accessibilityHint={t('ticketCard.ticketsHint')}
                     >
-                        <Ionicons name="ticket-outline" size={15} color={colors.primary} />
+                        <Ionicons name="ticket-outline" size={15} color={colors.primaryText} />
                         <Text style={ticketStyles.ticketText}>{t('ticketCard.tickets')}</Text>
-                        <Ionicons name="open-outline" size={14} color={colors.primary} />
+                        <Ionicons name="open-outline" size={14} color={colors.primaryText} />
                     </TouchableOpacity>
                 ) : null}
 
@@ -183,14 +189,14 @@ export function TicketCard({
                 </TouchableOpacity>
             </View>
           </View>
-        </TouchableOpacity>
+        </PressableScale>
     );
 }
 
 const getTicketStyles = (colors: AppColors) => StyleSheet.create({
     ticket: {
         flex: 1,
-        borderRadius: 16,
+        borderRadius: 24,
         marginBottom: 12,
         shadowColor: colors.shadow,
         shadowOpacity: 0.08,
@@ -201,7 +207,7 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
         borderColor: 'transparent',
     },
     ticketInner: {
-        borderRadius: 16,
+        borderRadius: 24,
         overflow: 'hidden',
         backgroundColor: colors.white,
     },
@@ -220,7 +226,7 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
         borderWidth: 1,
         borderColor: colors.dangerBorder,
     },
-    closedText: { flex: 1, fontSize: 12, fontWeight: '700', color: colors.errorText },
+    closedText: { flex: 1, fontSize: 12, fontFamily: 'Jakarta-Bold', color: colors.errorText },
     bookingRow: {
         flexDirection: 'row',
         alignItems: 'center',
@@ -233,7 +239,7 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
         borderWidth: 1,
         borderColor: colors.warningBannerBorder,
     },
-    bookingText: { flex: 1, fontSize: 12, fontWeight: '700', color: colors.warningBannerText },
+    bookingText: { flex: 1, fontSize: 12, fontFamily: 'Jakarta-Bold', color: colors.warningBannerText },
     // Ingresso pago sem reserva obrigatoria: informacao, nao alerta.
     ticketRow: {
         flexDirection: 'row',
@@ -245,7 +251,7 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
         borderRadius: 10,
         backgroundColor: colors.backgroundMuted,
     },
-    ticketText: { flex: 1, fontSize: 12, fontWeight: '700', color: colors.primary },
+    ticketText: { flex: 1, fontSize: 12, fontFamily: 'Jakarta-Bold', color: colors.primaryText },
 
     // ── Cabeçalho ──
     header: {
@@ -256,10 +262,10 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
     },
     headerLeft: { flex: 1 },
     headerRight: { flex: 1, alignItems: 'flex-end' },
-    stopLabel: { fontSize: 9, fontWeight: '700', color: colors.onPrimaryFaint70, letterSpacing: 1 },
-    stopNumber: { fontSize: 22, fontWeight: '900', color: colors.onPrimary, letterSpacing: -0.5 },
-    timeLabel: { fontSize: 9, fontWeight: '700', color: colors.onPrimaryFaint70, letterSpacing: 1 },
-    timeValue: { fontSize: 18, fontWeight: '800', color: colors.onPrimary },
+    stopLabel: { fontSize: 9, fontFamily: 'Jakarta-Bold', color: colors.onPrimaryFaint70, letterSpacing: 1 },
+    stopNumber: { fontSize: 28, fontFamily: 'Display-Black', color: colors.onPrimary, letterSpacing: -0.5 },
+    timeLabel: { fontSize: 9, fontFamily: 'Jakarta-Bold', color: colors.onPrimaryFaint70, letterSpacing: 1 },
+    timeValue: { fontSize: 22, fontFamily: 'Display-Bold', color: colors.onPrimary },
 
 
     perforationRow: {
@@ -303,12 +309,12 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
         paddingBottom: 16,
     },
     placeName: {
-        fontSize: 16,
-        fontWeight: '800',
+        fontSize: 20,
+        fontFamily: 'Display-Bold',
         color: colors.text,
         marginBottom: 6,
         letterSpacing: -0.3,
-        lineHeight: 22,
+        lineHeight: 25,
     },
     addressRow: {
         flexDirection: 'row',
@@ -329,21 +335,21 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
         paddingHorizontal: 10,
         paddingVertical: 4,
     },
-    badgeText: { fontSize: 11, fontWeight: '700' },
+    badgeText: { fontSize: 11, fontFamily: 'Jakarta-Bold' },
     feeBadge: {
         backgroundColor: colors.warningSurface,
         borderRadius: 20,
         paddingHorizontal: 10,
         paddingVertical: 4,
     },
-    feeBadgeText: { fontSize: 11, fontWeight: '600', color: colors.feeTextOrange },
+    feeBadgeText: { fontSize: 11, fontFamily: 'Jakarta-Bold', color: colors.feeTextOrange },
     freeBadge: {
         backgroundColor: colors.successSurface,
         borderRadius: 20,
         paddingHorizontal: 10,
         paddingVertical: 4,
     },
-    freeBadgeText: { fontSize: 11, fontWeight: '600', color: colors.successText },
+    freeBadgeText: { fontSize: 11, fontFamily: 'Jakarta-Bold', color: colors.successText },
     noteBox: {
         flexDirection: 'row',
         alignItems: 'flex-start',
@@ -375,14 +381,14 @@ const getTicketStyles = (colors: AppColors) => StyleSheet.create({
         paddingVertical: 16,
         backgroundColor: colors.white,
     },
-    aboutBtnText: { fontSize: 15, fontWeight: '700', color: colors.text },
+    aboutBtnText: { fontSize: 15, fontFamily: 'Jakarta-Bold', color: colors.text },
     switchBtn: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 16,
     },
-    switchBtnText: { fontSize: 15, fontWeight: '700', color: colors.onPrimary },
+    switchBtnText: { fontSize: 15, fontFamily: 'Jakarta-Bold', color: colors.onPrimary },
 
     // ── Ícone mapa (canto) ──
     mapCorner: {

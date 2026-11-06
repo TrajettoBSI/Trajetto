@@ -16,12 +16,12 @@ export const styles = (colors: AppColors) =>
       width: 40, height: 4, backgroundColor: colors.border,
       borderRadius: 2, alignSelf: 'center', marginTop: 12, marginBottom: 16,
     },
-    title: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.gray900, marginBottom: 16 },
+    title: { fontSize: 18, fontFamily: 'Jakarta-Bold', color: colors.gray900, marginBottom: 16 },
     option: {
       flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
       paddingVertical: 14, borderBottomWidth: 1, borderBottomColor: colors.gray100,
     },
     optionText: { fontSize: 16, color: colors.text },
-    optionTextActive: { color: colors.primary, fontFamily: 'Inter-Bold' },
-    checkmark: { color: colors.primary, fontSize: 16, fontFamily: 'Inter-Bold' },
+    optionTextActive: { color: colors.primaryText, fontFamily: 'Jakarta-Bold' },
+    checkmark: { color: colors.primaryText, fontSize: 16, fontFamily: 'Jakarta-Bold' },
   });

@@ -1,4 +1,6 @@
 import React from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
+import HeroFill from '@/src/components/brand/HeroFill';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
@@ -19,6 +21,7 @@ export default function Quiz() {
   return (
     <View style={s.container}>
       <View style={[s.headerWrapper, { paddingTop: insets.top }]}>
+        <HeroFill variant="bar" />
         <View style={s.headerRow}>
           <View style={s.headerLeft}>
             <TouchableOpacity onPress={goBack} style={s.headerBackBtn} activeOpacity={0.7}>
@@ -31,7 +34,9 @@ export default function Quiz() {
 
       <View style={s.progressRow}>
         <View style={s.progressTrack}>
-          <View style={[s.progressFill, { width: `${progress * 100}%` }]} />
+          <View style={[s.progressFill, { width: `${progress * 100}%`, overflow: 'hidden' }]}>
+            <LinearGradient colors={colors.gradientProgress} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={{ flex: 1 }} />
+          </View>
         </View>
         <Text style={s.progressLabel}>{t('quiz.progressLabel', { current: currentIndex + 1, total })}</Text>
       </View>

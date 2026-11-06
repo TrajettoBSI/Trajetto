@@ -7,7 +7,8 @@ import { styles } from './styles';
 
 export default function PasswordStrength({ password, style }: { password: string; style?: StyleProp<ViewStyle> }) {
   const { t } = useTranslation('common');
-  const s = styles(useColors());
+  const colors = useColors();
+  const s = styles(colors);
   const strength = passwordStrength(password);
 
   const requirements = [
@@ -17,12 +18,22 @@ export default function PasswordStrength({ password, style }: { password: string
     { met: strength.special, label: t('passwordStrength.special') },
   ];
   const missing = requirements.filter((r) => !r.met).map((r) => r.label);
+  const filled = requirements.length - missing.length;
+  const levelColor = [colors.error, colors.error, colors.warningBannerArrow, colors.primaryText, colors.success][filled];
 
   return (
     <View style={[s.container, style]}>
-      <View style={s.strengthRow}>
-        {requirements.map((req, i) => (
-          <View key={i} style={[s.strengthBar, req.met ? s.strengthOk : s.strengthWeak]} />
+      <View
+        style={s.strengthRow}
+        accessibilityRole="progressbar"
+        accessibilityValue={{ min: 0, max: requirements.length, now: filled }}
+      >
+        {requirements.map((_, i) => (
+          <View
+            key={i}
+            testID={`password-strength-${i}`}
+            style={[s.strengthBar, { backgroundColor: i < filled ? levelColor : colors.trackMuted }]}
+          />
         ))}
       </View>
       {missing.length > 0 && (

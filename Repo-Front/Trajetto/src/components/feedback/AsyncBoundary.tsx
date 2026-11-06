@@ -28,16 +28,19 @@ export interface AsyncBoundaryProps<T> {
    * de quando mostrar continua sendo do padrão; só o desenho muda.
    */
   renderEmpty?: () => ReactNode;
+  /** Um esqueleto do conteúdo no lugar do aviso de carregando. */
+  renderLoading?: () => ReactNode;
   /** O conteúdo, desenhado só quando existe conteúdo para desenhar. */
   children: (data: T) => ReactNode;
 }
 
 export function AsyncBoundary<T>({
-  state, onRetry, layout, style, loading, error, empty, isEmpty, renderEmpty, children,
+  state, onRetry, layout, style, loading, error, empty, isEmpty, renderEmpty, renderLoading, children,
 }: AsyncBoundaryProps<T>) {
   const status = resolveFeedbackStatus(state, isEmpty);
 
   if (status === 'loading') {
+    if (renderLoading) return <>{renderLoading()}</>;
     return <FeedbackState variant="loading" layout={layout} style={style} {...loading} />;
   }
 

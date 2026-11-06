@@ -160,7 +160,7 @@ export default function Mapa() {
               inputStyle={s.searchInput}
               leftIcon={
                 searchLoading ? (
-                  <ActivityIndicator size="small" color={colors.primary} />
+                  <ActivityIndicator size="small" color={colors.primaryText} />
                 ) : (
                   <Ionicons name="search" size={20} color={colors.gray400} />
                 )

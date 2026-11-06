@@ -15,11 +15,11 @@ export const styles = (colors: AppColors) =>
       shadowColor: colors.primaryDark, shadowOpacity: 0.3, shadowRadius: 10, elevation: 5,
     },
     avatarEmoji: { fontSize: 40 },
-    avatarName: { fontSize: 20, fontFamily: 'Inter-Bold', color: colors.text, marginBottom: 2 },
+    avatarName: { fontSize: 20, fontFamily: 'Display-Bold', color: colors.text, marginBottom: 2 },
     avatarEmail: { fontSize: 13, color: colors.chipMutedText },
 
     sectionTitle: {
-      fontSize: 11, fontFamily: 'Inter-Bold', color: colors.chipMutedText,
+      fontSize: 11, fontFamily: 'Jakarta-Bold', color: colors.chipMutedText,
       textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 12,
     },
     card: {
@@ -29,7 +29,7 @@ export const styles = (colors: AppColors) =>
     row: { flexDirection: 'row', gap: 12 },
     field: { flex: 1, marginBottom: 16 },
     fieldLabel: {
-      fontSize: 12, fontFamily: 'Inter-Bold', color: colors.chipMutedText,
+      fontSize: 12, fontFamily: 'Jakarta-Bold', color: colors.chipMutedText,
       marginBottom: 6, textTransform: 'uppercase', letterSpacing: 0.5,
     },
     dropdownTrigger: {
@@ -42,7 +42,7 @@ export const styles = (colors: AppColors) =>
     dropdownChevron: { fontSize: 10, color: colors.gray400, marginLeft: 8 },
 
     roleInfo: { fontSize: 14, color: colors.chipMutedText, marginBottom: 14 },
-    roleValue: { color: colors.primaryDark, fontFamily: 'Inter-Bold' },
+    roleValue: { color: colors.primaryDark, fontFamily: 'Jakarta-Bold' },
     roleRow: { flexDirection: 'row', gap: 12 },
     roleBtn: {
       flex: 1, paddingVertical: 12, borderRadius: 10,
@@ -50,7 +50,7 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center', backgroundColor: colors.surfaceAlt,
     },
     roleBtnActive: { backgroundColor: colors.primaryDark, borderColor: colors.primaryDark },
-    roleBtnText: { fontFamily: 'Inter-Bold', color: colors.chipMutedText, fontSize: 14 },
+    roleBtnText: { fontFamily: 'Jakarta-Bold', color: colors.chipMutedText, fontSize: 14 },
     roleBtnTextActive: { color: colors.onPrimary },
 
     saveButton: {
@@ -59,5 +59,5 @@ export const styles = (colors: AppColors) =>
       shadowRadius: 8, shadowOffset: { width: 0, height: 4 }, elevation: 5,
       minHeight: 50, justifyContent: 'center',
     },
-    saveButtonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 16 },
+    saveButtonText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 16 },
   });

@@ -1,6 +1,7 @@
 import React from 'react';
+import HeroFill from '@/src/components/brand/HeroFill';
 import { RefreshControl, ScrollView, Text, TouchableOpacity, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Ionicons } from '@expo/vector-icons';
@@ -22,6 +23,7 @@ export default function AdminPanel() {
   const { t } = useTranslation('admin');
   const router = useRouter();
   const colors = useColors();
+  const insets = useSafeAreaInsets();
   const s = styles(colors);
   const {
     activeTab, setActiveTab,
@@ -65,15 +67,16 @@ export default function AdminPanel() {
   );
 
   return (
-    <SafeAreaView style={s.safe}>
+    <SafeAreaView style={s.safe} edges={['bottom', 'left', 'right']}>
 
-      <View style={s.header}>
+      <View style={[s.header, { paddingTop: insets.top + 16 }]}>
+        <HeroFill variant="bar" />
         <View>
           <Text style={s.headerTitle}>{t('panel.headerTitle')}</Text>
           <Text style={s.headerSub}>{t('panel.greeting', { name: userFirstName })}</Text>
         </View>
         <TouchableOpacity style={s.avatarBtn} onPress={() => router.push('/AdminProfileScreen')} activeOpacity={0.8}>
-          <Ionicons name="person" size={22} color={colors.textSubtle} />
+          <Ionicons name="person" size={22} color={colors.onPrimary} />
         </TouchableOpacity>
       </View>
 

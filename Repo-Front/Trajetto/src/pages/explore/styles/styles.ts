@@ -7,7 +7,7 @@ export const styles = (colors: AppColors) =>
     container: { flex: 1, paddingHorizontal: 16, backgroundColor: colors.backgroundMuted },
 
     header: { paddingTop: 24, paddingBottom: 8 },
-    headerTitle: { fontSize: 28, fontFamily: 'Inter-Bold', color: colors.gray900 },
+    headerTitle: { fontSize: 28, fontFamily: 'Display-Bold', color: colors.gray900 },
     headerSubtitle: { fontSize: 14, color: colors.gray500, marginTop: 2 },
 
     searchRow: { flexDirection: 'row', gap: 8, marginTop: 12, marginBottom: 8 },
@@ -36,7 +36,7 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center',
       justifyContent: 'center',
     },
-    filterBadgeText: { color: colors.onPrimary, fontSize: 10, fontFamily: 'Inter-Bold' },
+    filterBadgeText: { color: colors.onPrimary, fontSize: 10, fontFamily: 'Jakarta-Bold' },
 
     cityBtn: {
       flexDirection: 'row', alignItems: 'center', alignSelf: 'flex-start', gap: 6,
@@ -44,7 +44,7 @@ export const styles = (colors: AppColors) =>
       paddingHorizontal: 12, paddingVertical: 7, marginBottom: 10, backgroundColor: colors.white,
     },
     cityBtnActive: { borderColor: colors.primary, backgroundColor: colors.primarySurface },
-    cityBtnText: { fontSize: 13, color: colors.primary, fontFamily: 'Inter-Medium' },
+    cityBtnText: { fontSize: 13, color: colors.primaryText, fontFamily: 'Jakarta-Medium' },
 
     activeFilterRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 8 },
     activeFilterChip: {
@@ -58,8 +58,8 @@ export const styles = (colors: AppColors) =>
       borderWidth: 1,
       borderColor: colors.primary,
     },
-    activeFilterText: { fontSize: 13, color: colors.primary, fontFamily: 'Inter-Medium' },
-    activeFilterClose: { fontSize: 13, color: colors.primary, fontFamily: 'Inter-Bold' },
+    activeFilterText: { fontSize: 13, color: colors.primaryText, fontFamily: 'Jakarta-Medium' },
+    activeFilterClose: { fontSize: 13, color: colors.primaryText, fontFamily: 'Jakarta-Bold' },
 
     resultsLabel: { fontSize: 13, color: colors.gray500, marginBottom: 8 },
 
@@ -77,7 +77,7 @@ export const styles = (colors: AppColors) =>
       paddingBottom: 40,
     },
     modalHandle: { width: 40, height: 4, backgroundColor: colors.border, borderRadius: 2, alignSelf: 'center', marginTop: 12, marginBottom: 16 },
-    modalTitle: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.gray900, marginBottom: 16 },
+    modalTitle: { fontSize: 18, fontFamily: 'Jakarta-Bold', color: colors.gray900, marginBottom: 16 },
     categoryItem: {
       flexDirection: 'row',
       alignItems: 'center',
@@ -94,9 +94,8 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center', justifyContent: 'center',
     },
     categoryIconBadgeSelected: { backgroundColor: colors.white },
-    categoryIconEmoji: { fontSize: 16 },
-    categoryItemText: { flex: 1, fontSize: 15, color: colors.gray700, fontFamily: 'Inter-Medium' },
-    categoryItemTextSelected: { color: colors.primary, fontFamily: 'Inter-Bold' },
+    categoryItemText: { flex: 1, fontSize: 15, color: colors.gray700, fontFamily: 'Jakarta-Medium' },
+    categoryItemTextSelected: { color: colors.primaryText, fontFamily: 'Jakarta-Bold' },
     modalActions: { flexDirection: 'row', gap: 12, marginTop: 20 },
     clearFilterBtn: {
       flex: 1,
@@ -106,13 +105,13 @@ export const styles = (colors: AppColors) =>
       paddingVertical: 14,
       alignItems: 'center',
     },
-    clearFilterBtnText: { color: colors.gray500, fontFamily: 'Inter-Medium', fontSize: 15 },
+    clearFilterBtnText: { color: colors.gray500, fontFamily: 'Jakarta-Medium', fontSize: 15 },
     applyBtn: { flex: 2, backgroundColor: colors.primary, borderRadius: 12, paddingVertical: 14, alignItems: 'center' },
-    applyBtnText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 15 },
+    applyBtnText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 15 },
 
-    headerWrapper: { paddingHorizontal: 24, backgroundColor: colors.primary },
+    headerWrapper: { paddingHorizontal: 24, overflow: 'hidden', backgroundColor: colors.primaryDark },
     headerRow: { flexDirection: 'row', alignItems: 'center', position: 'relative', height: 56 },
     headerLeft: { flexDirection: 'row', alignItems: 'center', zIndex: 10 },
     headerBackBtn: { paddingVertical: 4, paddingRight: 8, marginLeft: -12 },
-    headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.onPrimary },
+    headerText: { fontSize: 18, fontFamily: 'Jakarta-Bold', color: colors.onPrimary },
   });

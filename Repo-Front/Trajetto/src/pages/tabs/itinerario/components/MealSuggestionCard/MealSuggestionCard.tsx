@@ -49,7 +49,7 @@ export default function MealSuggestionCard({ suggestion, onSelect, onRetry }: Me
             <Text style={s.retryAction}>{t('meals.retry')}</Text>
           </TouchableOpacity>
         ) : options === null ? (
-          <ActivityIndicator size="small" color={colors.primary} style={s.loading} />
+          <ActivityIndicator size="small" color={colors.primaryText} style={s.loading} />
         ) : (
           options.map((place) => (
             <TouchableOpacity

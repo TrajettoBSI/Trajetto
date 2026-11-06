@@ -1,7 +1,7 @@
 {
   "loadingText": "Carregando itinerário...",
-  "sectionLabel": "PARADAS DO ROTEIRO",
-  "daySectionLabel": "PARADAS DO DIA {{number}} DE {{total}}",
+  "sectionLabel": "Paradas do roteiro",
+  "daySectionLabel": "Paradas do dia {{number}} de {{total}}",
   "exportPdf": "Exportar em PDF",
   "exportPdfShort": "PDF",
   "headerCard": {
@@ -22,8 +22,8 @@
   "ticketCard": {
     "stopLabel": "PARADA",
     "timeLabel": "HORÁRIO",
-    "paid": "🎟️ Pago",
-    "free": "🆓 Grátis",
+    "paid": "Pago",
+    "free": "Grátis",
     "about": "Sobre",
     "switch": "Trocar",
     "addNote": "Adicionar anotação",
@@ -136,7 +136,7 @@
     "transitHint": "melhor de transporte"
   },
   "assistant": {
-    "fab": "Ajustar roteiro",
+    "fab": "Assistente de IA",
     "open": "Abrir o assistente do roteiro",
     "title": "Assistente do roteiro",
     "subtitle": "Diga com suas palavras o que quer mudar. Eu refaço o roteiro.",

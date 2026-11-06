@@ -20,13 +20,13 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.primary,
       borderRadius: 3,
     },
-    progressLabel: { fontSize: 12, fontFamily: 'Inter-Bold', color: colors.gray400 },
+    progressLabel: { fontSize: 12, fontFamily: 'Jakarta-Bold', color: colors.gray400 },
 
     content: { flexGrow: 1, padding: 24, paddingTop: 0, paddingBottom: 16, justifyContent: 'center' },
 
     question: {
       fontSize: 20,
-      fontFamily: 'Inter-Bold',
+      fontFamily: 'Display-Bold',
       color: colors.text,
       lineHeight: 30,
       marginBottom: 32,
@@ -49,8 +49,8 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.primary,
       alignItems: 'center', justifyContent: 'center',
     },
-    simNaoText: { fontSize: 17, fontFamily: 'Inter-Medium', color: colors.gray600 },
-    simNaoTextSelected: { color: colors.primary },
+    simNaoText: { fontSize: 17, fontFamily: 'Jakarta-Medium', color: colors.gray600 },
+    simNaoTextSelected: { color: colors.primaryText },
     naoSeiButton: {
       marginTop: 12,
       padding: 14,
@@ -60,7 +60,7 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center',
       backgroundColor: colors.gray50,
     },
-    naoSeiText: { fontSize: 15, fontFamily: 'Inter-Medium', color: colors.gray400 },
+    naoSeiText: { fontSize: 15, fontFamily: 'Jakarta-Medium', color: colors.gray400 },
 
     option: {
       flexDirection: 'row',
@@ -90,7 +90,7 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.primary,
     },
     optionText: { flex: 1, fontSize: 15, color: colors.textBody, lineHeight: 22 },
-    optionTextSelected: { color: colors.primary, fontFamily: 'Inter-Medium' },
+    optionTextSelected: { color: colors.primaryText, fontFamily: 'Jakarta-Medium' },
 
     footer: { padding: 24, paddingTop: 8 },
     nextButton: {
@@ -100,10 +100,10 @@ export const styles = (colors: AppColors) =>
       alignItems: 'center',
     },
     nextButtonDisabled: { backgroundColor: colors.primaryDisabled },
-    nextButtonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 16 },
-    headerWrapper: { paddingHorizontal: 24, backgroundColor: colors.primary, marginBottom: 20 },
+    nextButtonText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 16 },
+    headerWrapper: { paddingHorizontal: 24, overflow: 'hidden', backgroundColor: colors.primaryDark, marginBottom: 20 },
     headerRow: { flexDirection: 'row', alignItems: 'center', position: 'relative', height: 56 },
     headerLeft: { flexDirection: 'row', alignItems: 'center', zIndex: 10 },
     headerBackBtn: { paddingVertical: 4, paddingRight: 8, marginLeft: -12 },
-    headerText: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.onPrimary },
+    headerText: { fontSize: 18, fontFamily: 'Jakarta-Bold', color: colors.onPrimary },
   });

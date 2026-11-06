@@ -1,14 +1,19 @@
 import React from 'react';
-import { Image, ImageSourcePropType, Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
+import { Image } from 'expo-image';
+import { LinearGradient } from 'expo-linear-gradient';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
+import HeroFill from '@/src/components/brand/HeroFill';
+import PulseDot from '@/src/components/motion/PulseDot';
 import { useColors } from '@/src/theme';
 import { formatDate, formatTime } from '@/src/i18n/format';
 import { styles } from './styles';
 
 type ItineraryHeaderCardProps = {
   title: string;
-  image: ImageSourcePropType | null;
+  image: number | null;
   onRename: () => void;
   startDate: string;
   endDate: string;
@@ -25,9 +30,10 @@ export default function ItineraryHeaderCard({ title, image, onRename, startDate,
   const sameDay = startDate === endDate;
 
   return (
-    <View style={s.headerCard}>
-      {image && <Image source={image} style={s.image} resizeMode="cover" />}
-      {image && <View style={s.imageShade} />}
+    <Animated.View entering={FadeInDown.duration(420)} style={s.headerCard}>
+      {!image && <HeroFill />}
+      {image && <Image source={image} style={s.image} contentFit="cover" transition={280} />}
+      {image && <LinearGradient colors={[colors.overlay, colors.scrimEnd]} style={s.imageShade} />}
       <TouchableOpacity
         style={s.titleRow}
         onPress={onRename}
@@ -41,7 +47,7 @@ export default function ItineraryHeaderCard({ title, image, onRename, startDate,
       <View style={s.headerTopRow}>
         <Text style={s.headerLabel}>{t('headerCard.period')}</Text>
         <View style={s.activeBadge}>
-          <View style={s.activeDot} />
+          <PulseDot color={colors.activeDotGreen} />
           <Text style={s.activeBadgeText}>{t('headerCard.active')}</Text>
         </View>
       </View>
@@ -68,6 +74,6 @@ export default function ItineraryHeaderCard({ title, image, onRename, startDate,
           </View>
         )}
       </View>
-    </View>
+    </Animated.View>
   );
 }

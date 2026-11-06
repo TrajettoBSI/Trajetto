@@ -15,7 +15,7 @@ export const styles = (colors: AppColors) =>
       paddingHorizontal: 16, marginBottom: 10,
     },
     title: {
-      fontSize: 11, fontFamily: 'Inter-Bold', color: colors.gray500,
+      fontSize: 11, fontFamily: 'Jakarta-Bold', color: colors.gray500,
       textTransform: 'uppercase', letterSpacing: 0.8,
     },
     spinner: { marginLeft: 8 },
@@ -25,9 +25,9 @@ export const styles = (colors: AppColors) =>
       paddingHorizontal: 6, paddingVertical: 1,
     },
     badgeText: {
-      fontSize: 11, fontFamily: 'Inter-Bold', color: colors.onPrimary, textAlign: 'center',
+      fontSize: 11, fontFamily: 'Jakarta-Bold', color: colors.onPrimary, textAlign: 'center',
     },
-    clear: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.primary },
+    clear: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.primaryText },
 
     scrollRowWrapper: { position: 'relative' },
     scrollFade: { position: 'absolute', top: 0, bottom: 0, width: 28 },
@@ -41,6 +41,6 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.border,
     },
     chipActive: { backgroundColor: colors.primarySurface, borderColor: colors.primaryBorder },
-    chipText: { fontSize: 13, color: colors.gray700, fontFamily: 'Inter-Medium', flexShrink: 1 },
-    chipTextActive: { color: colors.primaryDark, fontFamily: 'Inter-Bold' },
+    chipText: { fontSize: 13, color: colors.gray700, fontFamily: 'Jakarta-Medium', flexShrink: 1 },
+    chipTextActive: { color: colors.primaryDark, fontFamily: 'Jakarta-Bold' },
   });

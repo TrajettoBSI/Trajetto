@@ -20,8 +20,8 @@
     "title": "Explorar destinos",
     "subtitle": "Descubre puntos turísticos antes de armar el itinerario"
   },
-  "activeSectionLabel": "ITINERARIO ACTIVO",
-  "otherSectionLabel": "OTROS ITINERARIOS",
+  "activeSectionLabel": "Itinerario activo",
+  "otherSectionLabel": "Otros itinerarios",
   "showMore": "Mostrar más (+{{count}})",
   "activeCard": {
     "activeBadge": "Activo",
@@ -39,7 +39,7 @@
   "selectBar": {
     "count_one": "{{count}} seleccionado",
     "count_other": "{{count}} seleccionados",
-    "delete": "🗑️  Eliminar ({{count}})"
+    "delete": "Eliminar ({{count}})"
   },
   "generate": {
     "wantNew": "¿Quieres un nuevo itinerario?",
@@ -82,15 +82,15 @@
   "generateFlow": {
     "configureTitle": "Nuevo Itinerario",
     "generatedTitle": "Itinerario Generado",
-    "destinyLabel": "DESTINO",
-    "startDateLabel": "FECHA DE INICIO",
+    "destinyLabel": "Destino",
+    "startDateLabel": "Fecha de inicio",
     "pickStartDate": "Elegir fecha de inicio",
-    "durationLabel": "DURACIÓN",
+    "durationLabel": "Duración",
     "daysCount_one": "{{count}} día",
     "daysCount_other": "{{count}} días",
     "lessDays": "Un día menos",
     "moreDays": "Un día más",
-    "paceLabel": "RITMO DEL VIAJE",
+    "paceLabel": "Ritmo del viaje",
     "paces": {
       "INTENSO": {
         "title": "Todos los días completos",
@@ -105,7 +105,7 @@
         "description": "Pocas paradas por día, empezando a las 10h"
       }
     },
-    "originLabel": "PUNTO DE PARTIDA",
+    "originLabel": "Punto de partida",
     "originHint": "Escribe tu hotel o dirección en {{city}}",
     "originPlaceholder": "Ej.: nombre del hotel o calle y número",
     "currentLocationLabel": "Ubicación actual",
@@ -122,10 +122,11 @@
     "originNeedsCity": "Elige el destino primero",
     "cityCenterChip": "Centro de la ciudad",
     "cityCenterLabel": "Centro de {{city}}",
-    "nameLabel": "NOMBRE DEL ITINERARIO (OPCIONAL)",
+    "nameLabel": "Nombre del itinerario (opcional)",
     "requestLabel": "¿Cómo quieres este viaje? (opcional)",
     "requestPlaceholder": "Ej.: museos y comida callejera, nada de iglesias, con calma",
-    "assistantTitle": "Lo que entendí de tu pedido"
+    "assistantTitle": "Lo que entendí de tu pedido",
+    "configureSubtitle": "Cuéntanos cómo quieres este viaje"
   },
   "cities": {
     "roma": "Roma",

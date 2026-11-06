@@ -10,6 +10,6 @@ export const styles = (colors: AppColors) =>
       borderBottomWidth: 1, borderBottomColor: colors.warningBannerBorder,
     },
     bannerIcon: { fontSize: 18, marginRight: 10 },
-    adminBannerText: { flex: 1, fontSize: 14, fontFamily: 'Inter-Medium', color: colors.warningBannerText },
+    adminBannerText: { flex: 1, fontSize: 14, fontFamily: 'Jakarta-Medium', color: colors.warningBannerText },
     adminBannerArrow: { fontSize: 20, color: colors.warningBannerArrow },
   });

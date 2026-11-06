@@ -31,6 +31,8 @@ const pares = (c: AppColors): [string, string, string][] => [
   ['texto sobre cartao', c.text, c.white],
   ['titulo sobre cartao', c.gray900, c.white],
   ['texto sobre o azul da marca', c.onPrimary, c.primary],
+  ['link sobre cartao', c.primaryText, c.white],
+  ['texto sobre o fim do degrade dos botoes', c.onPrimary, c.gradientAction[c.gradientAction.length - 1]],
   ['texto secundario sobre cartao', c.textMuted, c.white],
   ['erro sobre cartao', c.errorText, c.white],
 ];
@@ -45,6 +47,18 @@ describe('paletas de cores', () => {
       expect({ par, contraste: Math.round(contraste(frente, fundo) * 10) / 10 }).toEqual({ par, contraste: expect.any(Number) });
       expect(contraste(frente, fundo)).toBeGreaterThanOrEqual(minimo);
     });
+  });
+
+  it.each([
+    ['claro', lightColors, 4.5],
+    ['escuro', darkColors, 3],
+    ['alto contraste', highContrastColors, 7],
+  ])('as cores das paradas do tema %s funcionam nos tickets, no mapa e nos pontinhos', (_nome, paleta, minimo) => {
+    paleta.placeColors.forEach((cor) => {
+      expect(contraste(paleta.onPrimary, cor)).toBeGreaterThanOrEqual(minimo);
+      expect(contraste(cor, paleta.white)).toBeGreaterThanOrEqual(3);
+    });
+    expect(new Set(paleta.placeColors).size).toBe(paleta.placeColors.length);
   });
 
   it('as tres paletas definem as mesmas cores', () => {

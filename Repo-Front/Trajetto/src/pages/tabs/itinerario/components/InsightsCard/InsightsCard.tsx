@@ -26,7 +26,7 @@ export default function InsightsCard({ savings, weather }: InsightsCardProps) {
         {savings && (
           <View style={s.tile}>
             <View style={s.tileHeader}>
-              <Ionicons name="git-network-outline" size={16} color={colors.primary} />
+              <Ionicons name="git-network-outline" size={16} color={colors.primaryText} />
               <Text style={s.tileLabel}>{t('insights.route')}</Text>
             </View>
             <Text style={s.tileValue}>{t('insights.km', { value: formatDecimal(savings.distanceKm) })}</Text>
@@ -43,7 +43,7 @@ export default function InsightsCard({ savings, weather }: InsightsCardProps) {
 
         <View style={s.tile}>
           <View style={s.tileHeader}>
-            <Ionicons name={(kind ? WEATHER_ICONS[kind] : 'partly-sunny-outline') as never} size={16} color={colors.primary} />
+            <Ionicons name={(kind ? WEATHER_ICONS[kind] : 'partly-sunny-outline') as never} size={16} color={colors.primaryText} />
             <Text style={s.tileLabel}>{t('insights.weather')}</Text>
           </View>
           {weather && kind ? (
@@ -63,7 +63,7 @@ export default function InsightsCard({ savings, weather }: InsightsCardProps) {
 
       {weather?.rainy && (
         <View style={s.rainBanner}>
-          <Ionicons name="umbrella" size={16} color={colors.primary} />
+          <Ionicons name="umbrella" size={16} color={colors.primaryText} />
           <Text style={s.rainText}>{t('insights.rainyDay')}</Text>
         </View>
       )}

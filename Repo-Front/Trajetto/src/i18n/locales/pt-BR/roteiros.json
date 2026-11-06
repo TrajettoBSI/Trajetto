@@ -20,8 +20,8 @@
     "title": "Explorar destinos",
     "subtitle": "Descubra pontos turísticos antes de montar o roteiro"
   },
-  "activeSectionLabel": "ROTEIRO ATIVO",
-  "otherSectionLabel": "OUTROS ROTEIROS",
+  "activeSectionLabel": "Roteiro ativo",
+  "otherSectionLabel": "Outros roteiros",
   "showMore": "Mostrar mais (+{{count}})",
   "activeCard": {
     "activeBadge": "Ativo",
@@ -39,7 +39,7 @@
   "selectBar": {
     "count_one": "{{count}} selecionado",
     "count_other": "{{count}} selecionados",
-    "delete": "🗑️  Excluir ({{count}})"
+    "delete": "Excluir ({{count}})"
   },
   "generate": {
     "wantNew": "Quer um novo roteiro?",
@@ -82,15 +82,15 @@
   "generateFlow": {
     "configureTitle": "Novo Roteiro",
     "generatedTitle": "Roteiro Gerado",
-    "destinyLabel": "DESTINO",
-    "startDateLabel": "DATA DE INÍCIO",
+    "destinyLabel": "Destino",
+    "startDateLabel": "Data de início",
     "pickStartDate": "Escolher data de início",
-    "durationLabel": "DURAÇÃO",
+    "durationLabel": "Duração",
     "daysCount_one": "{{count}} dia",
     "daysCount_other": "{{count}} dias",
     "lessDays": "Menos um dia",
     "moreDays": "Mais um dia",
-    "paceLabel": "RITMO DA VIAGEM",
+    "paceLabel": "Ritmo da viagem",
     "paces": {
       "INTENSO": {
         "title": "Todos os dias cheios",
@@ -105,7 +105,7 @@
         "description": "Poucas paradas por dia, começando às 10h"
       }
     },
-    "originLabel": "PONTO DE PARTIDA",
+    "originLabel": "Ponto de partida",
     "originHint": "Digite seu hotel ou endereço em {{city}}",
     "originPlaceholder": "Ex: nome do hotel ou rua e número",
     "currentLocationLabel": "Localização atual",
@@ -122,10 +122,11 @@
     "originNeedsCity": "Escolha o destino primeiro",
     "cityCenterChip": "Centro da cidade",
     "cityCenterLabel": "Centro de {{city}}",
-    "nameLabel": "NOME DO ROTEIRO (OPCIONAL)",
+    "nameLabel": "Nome do roteiro (opcional)",
     "requestLabel": "Como você quer essa viagem? (opcional)",
     "requestPlaceholder": "Ex.: museus e comida de rua, nada de igrejas, com calma",
-    "assistantTitle": "O que entendi do seu pedido"
+    "assistantTitle": "O que entendi do seu pedido",
+    "configureSubtitle": "Conte como você quer essa viagem"
   },
   "cities": {
     "roma": "Roma",

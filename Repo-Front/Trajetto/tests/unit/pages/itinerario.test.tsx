@@ -76,7 +76,7 @@ describe('itinerario', () => {
 
     expect(screen.getByText('Fontana di Trevi')).toBeTruthy();
     expect(screen.getByText('Jogar uma moeda')).toBeTruthy();
-    expect(screen.getByText('PARADAS DO DIA 1 DE 2')).toBeTruthy();
+    expect(screen.getByText('Paradas do dia 1 de 2')).toBeTruthy();
     expect(await screen.findByText('Café da manhã · 08:00')).toBeTruthy();
     expect((await screen.findAllByText('Tazza d\'Oro')).length).toBe(3);
 
@@ -344,7 +344,7 @@ describe('itinerario', () => {
       .mockRejectedValueOnce(networkError());
     await render(<Itinerario />);
 
-    await fireEvent.press(screen.getByText('Ajustar roteiro'));
+    await fireEvent.press(screen.getByText('Assistente de IA'));
     expect(screen.getByText('Assistente do roteiro')).toBeTruthy();
     expect(screen.getByText('Sugestões para este roteiro')).toBeTruthy();
     await fireEvent.press(screen.getByText('Mais vida noturna'));
@@ -372,7 +372,7 @@ describe('itinerario', () => {
     svc.adjustItinerary.mockResolvedValueOnce({ ...roteiro, assistantSummary: 'Não entendi esse pedido.' });
     await render(<Itinerario />);
 
-    await fireEvent.press(screen.getByText('Ajustar roteiro'));
+    await fireEvent.press(screen.getByText('Assistente de IA'));
     await fireEvent.changeText(screen.getByPlaceholderText(/menos igrejas, mais comida de rua/), 'asdfgh');
     await fireEvent.press(screen.getByLabelText('Enviar pedido'));
 
@@ -390,7 +390,7 @@ describe('itinerario', () => {
     svc.adjustItinerary.mockResolvedValueOnce({ ...puxado, id: 8, assistantSummary: 'Pronto.' });
     await render(<Itinerario />);
 
-    await fireEvent.press(screen.getByText('Ajustar roteiro'));
+    await fireEvent.press(screen.getByText('Assistente de IA'));
     expect(screen.getByText('6 de 6 paradas são museus: reduzir?')).toBeTruthy();
     await fireEvent.press(screen.getByText('Este dia tem 12 km entre as paradas: encurtar?'));
 

@@ -14,7 +14,7 @@ export const styles = (colors: AppColors) =>
       width: 40, height: 4, backgroundColor: colors.border,
       borderRadius: 2, alignSelf: 'center', marginBottom: 16,
     },
-    title: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.gray900, marginBottom: 4 },
+    title: { fontSize: 18, fontFamily: 'Jakarta-Bold', color: colors.gray900, marginBottom: 4 },
     subtitle: { fontSize: 13, color: colors.gray500, marginBottom: 16 },
     input: {
       borderWidth: 1.5, borderColor: colors.border, borderRadius: 14,
@@ -23,6 +23,6 @@ export const styles = (colors: AppColors) =>
     feedback: { marginTop: 12 },
     actions: { flexDirection: 'row', gap: 12, marginTop: 20, alignItems: 'center' },
     cancelBtn: { flex: 1, alignItems: 'center', justifyContent: 'center', paddingVertical: 16 },
-    cancelBtnText: { fontSize: 15, fontFamily: 'Inter-Bold', color: colors.gray700 },
+    cancelBtnText: { fontSize: 15, fontFamily: 'Jakarta-Bold', color: colors.gray700 },
     saveBtn: { flex: 1.3, marginTop: 0 },
   });

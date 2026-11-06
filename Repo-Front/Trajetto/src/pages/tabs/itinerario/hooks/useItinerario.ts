@@ -29,6 +29,10 @@ export function useItinerario() {
     if (userId) useItineraryStore.getState().fetchAllItineraries(userId);
   }, [userId]);
 
+  const refresh = useCallback(async () => {
+    if (userId) await useItineraryStore.getState().fetchAllItineraries(userId);
+  }, [userId]);
+
   const alternatives = useAlternatives(itinerary);
   const { handleExportPDF } = useExportPdf();
   const note = useItineraryNote();
@@ -71,6 +75,7 @@ export function useItinerario() {
     loading,
     error,
     reload,
+    refresh,
     setFocusedMapPlace,
     days,
     currentDay,

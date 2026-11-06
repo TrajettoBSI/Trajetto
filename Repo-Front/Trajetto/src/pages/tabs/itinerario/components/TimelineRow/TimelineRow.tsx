@@ -5,6 +5,7 @@ import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useTranslation } from 'react-i18next';
 import { Places } from '@/hooks/itineraryStore';
 import { TicketCard } from '@/components/TicketCard';
+import StopDot from '@/src/components/brand/StopDot';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
@@ -42,7 +43,7 @@ export default function TimelineRow({
   return (
     <Animated.View entering={FadeInDown.delay(Math.min(idx, 6) * 70).duration(380)} style={s.timelineRow} onLayout={onLayout}>
       <View style={s.rail}>
-        <View style={[s.dot, isPast ? s.dotPast : { backgroundColor: color }]} />
+        <View style={s.dot}><StopDot index={idx} past={isPast} size={24} /></View>
         {!isLast && <View style={s.line} />}
       </View>
 

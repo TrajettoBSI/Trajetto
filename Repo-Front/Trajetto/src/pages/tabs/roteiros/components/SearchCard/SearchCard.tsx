@@ -1,8 +1,9 @@
 import React from 'react';
-import { Pressable, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import CustomInput from '@/components/CustomInput';
+import PressableScale from '@/src/components/motion/PressableScale';
 import { useColors } from '@/src/theme';
 import { styles } from './styles';
 
@@ -19,7 +20,7 @@ export default function SearchCard({ onPressSearch }: Props) {
     <View style={s.card}>
       <Text style={s.title}>{t('searchCard.title')}</Text>
 
-      <Pressable onPress={onPressSearch}>
+      <PressableScale onPress={onPressSearch} scaleTo={0.985} haptic>
         <View pointerEvents="none">
           <CustomInput
             value=""
@@ -33,7 +34,7 @@ export default function SearchCard({ onPressSearch }: Props) {
             rightElement={<Ionicons name="chevron-forward" size={18} color={colors.textSubtle} />}
           />
         </View>
-      </Pressable>
+      </PressableScale>
     </View>
   );
 }

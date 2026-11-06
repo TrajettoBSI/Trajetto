@@ -7,10 +7,10 @@ export const styles = (colors: AppColors) =>
     modalSheet: { backgroundColor: colors.white, borderTopLeftRadius: 24, borderTopRightRadius: 24, paddingHorizontal: 24, paddingBottom: 40, maxHeight: '88%' },
     modalHandle: { width: 40, height: 4, backgroundColor: colors.border, borderRadius: 2, alignSelf: 'center', marginTop: 12, marginBottom: 16 },
     modalTitleRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 },
-    modalTitle: { fontSize: 18, fontFamily: 'Inter-Bold', color: colors.gray900 },
-    modalClearAll: { fontSize: 14, color: colors.error, fontFamily: 'Inter-Medium' },
+    modalTitle: { fontSize: 18, fontFamily: 'Jakarta-Bold', color: colors.gray900 },
+    modalClearAll: { fontSize: 14, color: colors.error, fontFamily: 'Jakarta-Medium' },
     scrollArea: { flexShrink: 1 },
-    filterSection: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.gray700, marginBottom: 10, textTransform: 'uppercase', letterSpacing: 0.5 },
+    filterSection: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.gray700, marginBottom: 10, textTransform: 'uppercase', letterSpacing: 0.5 },
     filterSubLabel: { fontSize: 12, color: colors.gray500, marginTop: 2 },
     filterChipsRow: { marginBottom: 16 },
 
@@ -22,7 +22,7 @@ export const styles = (colors: AppColors) =>
     filterChip: { borderWidth: 1, borderColor: colors.gray200, borderRadius: 20, paddingHorizontal: 14, paddingVertical: 8, marginRight: 8, backgroundColor: colors.white },
     filterChipActive: { backgroundColor: colors.primary, borderColor: colors.primary },
     filterChipText: { fontSize: 13, color: colors.gray700, textTransform: 'capitalize' },
-    filterChipTextActive: { color: colors.onPrimary, fontFamily: 'Inter-Medium' },
+    filterChipTextActive: { color: colors.onPrimary, fontFamily: 'Jakarta-Medium' },
 
     filterRow: { flexDirection: 'row', marginBottom: 16 },
 
@@ -31,11 +31,11 @@ export const styles = (colors: AppColors) =>
       backgroundColor: colors.surfaceAlt, borderRadius: 14, padding: 14, marginBottom: 4,
     },
     switchCardText: { flex: 1, marginRight: 12 },
-    switchCardLabel: { fontSize: 13, fontFamily: 'Inter-Bold', color: colors.gray700 },
+    switchCardLabel: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.gray700 },
 
     modalActions: { flexDirection: 'row', gap: 12, marginTop: 20 },
     clearFilterBtn: { flex: 1, borderRadius: 12, borderWidth: 1, borderColor: colors.gray200, paddingVertical: 14, alignItems: 'center' },
-    clearFilterBtnText: { color: colors.gray500, fontFamily: 'Inter-Medium', fontSize: 15 },
+    clearFilterBtnText: { color: colors.gray500, fontFamily: 'Jakarta-Medium', fontSize: 15 },
     applyBtn: { flex: 2, backgroundColor: colors.primary, borderRadius: 12, paddingVertical: 14, alignItems: 'center' },
-    applyBtnText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: 15 },
+    applyBtnText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 15 },
   });

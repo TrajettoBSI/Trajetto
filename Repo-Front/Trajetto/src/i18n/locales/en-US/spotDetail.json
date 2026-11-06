@@ -6,8 +6,8 @@
     "favoritos": "Favorites",
     "inicio": "Home"
   },
-  "free": "🆓 Free",
-  "paid": "💰 Paid",
+  "free": "Free",
+  "paid": "Paid",
   "awaySuffix": "away",
   "walkSuffix": "walk",
   "driveSuffix": "drive",
@@ -28,9 +28,9 @@
   "openMapsError": "Could not open Google Maps",
   "callError": "Could not place the call",
   "accessibility": {
-    "yes": "♿ Fully accessible",
-    "limited": "♿ Partially accessible",
-    "no": "🚫 Not accessible"
+    "yes": "Fully accessible",
+    "limited": "Partially accessible",
+    "no": "Not accessible"
   },
   "rating": {
     "sectionTitle": "Ratings",

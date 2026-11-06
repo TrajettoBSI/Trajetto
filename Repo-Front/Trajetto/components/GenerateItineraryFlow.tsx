@@ -18,6 +18,12 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Svg, { Circle } from 'react-native-svg';
 import { useTranslation } from 'react-i18next';
+import Reanimated, { FadeInDown } from 'react-native-reanimated';
+import { LinearGradient } from 'expo-linear-gradient';
+import { Image as ExpoImage } from 'expo-image';
+import BrandMark from '../src/components/brand/BrandMark';
+import HeroFill from '../src/components/brand/HeroFill';
+import PressableScale from '../src/components/motion/PressableScale';
 import * as Location from 'expo-location';
 import * as Haptics from 'expo-haptics';
 import DateTimePicker, { DateTimePickerAndroid, DateTimePickerChangeEvent } from '@react-native-community/datetimepicker';
@@ -31,14 +37,13 @@ import CustomInput from './CustomInput';
 import OptionPickerModal from '../src/components/OptionPickerModal/OptionPickerModal';
 import { countryLabelFromCode } from '../src/i18n/countries';
 import { Ionicons } from '@expo/vector-icons';
-import { AppColors, useColors } from '../src/theme';
+import { AppColors, placeColor, useColors } from '../src/theme';
 import { addDays, groupByDay, toIsoDate } from '../src/domain/itinerary/itineraryDays';
 import { freePeriod } from '../src/domain/itinerary/freePeriod';
 import { formatDate, formatTime, formatWeekday, formatWeekdayDayMonth, itineraryTitle, placeName } from '../src/i18n/format';
 import { cityImage } from '../src/helpers/cityImage';
 import { NAME_MAX_LENGTH } from '../src/pages/tabs/itinerario/hooks/useItineraryRename';
 import { REQUEST_MAX_LENGTH } from '../src/pages/tabs/itinerario/hooks/useItineraryAssistant';
-import { PLACE_COLORS } from '../constants/placeColors';
 
 type Step = 'config' | 'loading' | 'preview';
 
@@ -71,6 +76,7 @@ const BALL_R = 9;
 const SIZE = (RADIUS + BALL_R + 6) * 2;
 const CENTER = SIZE / 2;
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+const PACE_ICONS: Record<string, keyof typeof Ionicons.glyphMap> = { INTENSO: 'flash', EQUILIBRADO: 'options', LEVE: 'leaf' };
 // Fraction of the circle covered by the trail behind the ball
 const TRAIL = 0.3;
 
@@ -99,14 +105,14 @@ function OrbitLoader() {
   return (
     <View style={loaderStyles.container}>
       <Svg width={SIZE} height={SIZE} style={{ position: 'absolute' }}>
-        <Circle cx={CENTER} cy={CENTER} r={RADIUS} stroke={colors.primary} strokeOpacity={0.15} strokeWidth={3} fill="none" />
+        <Circle cx={CENTER} cy={CENTER} r={RADIUS} stroke={colors.onPrimary} strokeOpacity={0.18} strokeWidth={3} fill="none" />
       </Svg>
       <Animated.View style={[loaderStyles.arm, { transform: [{ rotate }] }]}>
         {/* Trail ends at 12 o'clock, where the ball sits, and trails counter-clockwise */}
         <Svg width={SIZE} height={SIZE} style={{ position: 'absolute' }}>
           <Circle
             cx={CENTER} cy={CENTER} r={RADIUS}
-            stroke={colors.primary} strokeWidth={3} fill="none"
+            stroke={colors.onPrimary} strokeWidth={3} fill="none"
             strokeDasharray={`${CIRCUMFERENCE * TRAIL} ${CIRCUMFERENCE}`}
             strokeLinecap="round"
             rotation={-90 - 360 * TRAIL} origin={`${CENTER},${CENTER}`}
@@ -114,6 +120,7 @@ function OrbitLoader() {
         </Svg>
         <View style={loaderStyles.ball} />
       </Animated.View>
+      <BrandMark size={SIZE * 0.5} color={colors.onPrimary} />
     </View>
   );
 }
@@ -130,7 +137,7 @@ const getLoaderStyles = (colors: AppColors) => StyleSheet.create({
     width: BALL_R * 2,
     height: BALL_R * 2,
     borderRadius: BALL_R,
-    backgroundColor: colors.primary,
+    backgroundColor: colors.onPrimary,
     top: CENTER - BALL_R - RADIUS,
     left: CENTER - BALL_R,
     shadowColor: colors.primary,
@@ -218,6 +225,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
   }, [visible, initialPlace, cities, selectedCity]);
 
   const cityName = (city: City) => t(`roteiros:cities.${city.slug}`, { defaultValue: city.name });
+  const cityPhoto = selectedCity ? cityImage(selectedCity.slug) : null;
   const cityLabel = (city: City) => `${cityName(city)}, ${countryLabelFromCode(city.country, i18n.language)}`;
   const cityOptions = [...cities]
     .sort((a, b) => cityName(a).localeCompare(cityName(b), i18n.language))
@@ -384,13 +392,14 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
           {/* ── Header ── */}
           {step !== 'loading' && (
             <View style={styles.header}>
+              <HeroFill variant="bar" />
               <View style={styles.headerTopRow}>
                 <View>
                   <Text style={styles.headerTitle}>
                     {step === 'config' ? t('roteiros:generateFlow.configureTitle') : t('roteiros:generateFlow.generatedTitle')}
                   </Text>
                   {step === 'config' && (
-                    <Text style={styles.headerCounter}>{completedFields}/{totalFields}</Text>
+                    <Text style={styles.headerCounter}>{t('roteiros:generateFlow.configureSubtitle')}</Text>
                   )}
                 </View>
                 {step === 'config' && (
@@ -418,23 +427,29 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
               {/* Destino */}
               <View style={styles.card}>
-                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.destinyLabel')}</Text>
-                <TouchableOpacity
-                  style={[styles.fakeSearchBox, selectedCity ? styles.inputRowSelected : null]}
+                <View style={styles.cardHeader}>
+                  <View style={styles.cardIcon}><Ionicons name="location" size={17} color={colors.primaryText} /></View>
+                  <Text style={styles.cardLabel}>{t('roteiros:generateFlow.destinyLabel')}</Text>
+                </View>
+                <PressableScale
+                  style={[styles.cityField, cityPhoto ? styles.cityFieldPhoto : null]}
                   onPress={() => { Keyboard.dismiss(); setShowCityPicker(true); }}
                   disabled={cities.length === 0}
-                  activeOpacity={0.8}
+                  scaleTo={0.98}
+                  haptic
                   accessibilityRole="button"
                   accessibilityLabel={t('roteiros:generateFlow.pickCity')}
                 >
-                  <Ionicons name="location" size={20} color={selectedCity ? colors.primary : colors.textSubtle} style={styles.inputIcon} />
-                  <Text style={[styles.cityText, !selectedCity && styles.cityPlaceholder]} numberOfLines={1}>
+                  {cityPhoto && <ExpoImage source={cityPhoto} style={styles.cityPhoto} contentFit="cover" transition={260} />}
+                  {cityPhoto && <LinearGradient colors={[colors.scrimStart, colors.scrimEnd]} style={styles.cityPhoto} />}
+                  <Ionicons name="location" size={20} color={cityPhoto ? colors.onPrimary : colors.textSubtle} style={styles.inputIcon} />
+                  <Text style={[styles.cityText, !selectedCity && styles.cityPlaceholder, cityPhoto ? styles.cityTextOnPhoto : null]} numberOfLines={1}>
                     {selectedCity ? cityLabel(selectedCity) : t('roteiros:generateFlow.pickCity')}
                   </Text>
                   {cities.length === 0 && !citiesError
-                    ? <ActivityIndicator size="small" color={colors.primary} />
-                    : <Ionicons name="chevron-down" size={18} color={colors.textSubtle} />}
-                </TouchableOpacity>
+                    ? <ActivityIndicator size="small" color={colors.primaryText} />
+                    : <Ionicons name="chevron-down" size={18} color={cityPhoto ? colors.onPrimary : colors.textSubtle} />}
+                </PressableScale>
                 {citiesError && (
                   <TouchableOpacity onPress={loadCities}>
                     <Text style={styles.searchMessage}>{t('roteiros:generateFlow.citiesError')}</Text>
@@ -453,7 +468,10 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
               {/* Ponto de partida */}
               <View style={styles.card}>
-                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.originLabel')}</Text>
+                <View style={styles.cardHeader}>
+                  <View style={styles.cardIcon}><Ionicons name="navigate" size={17} color={colors.primaryText} /></View>
+                  <Text style={styles.cardLabel}>{t('roteiros:generateFlow.originLabel')}</Text>
+                </View>
                 <Text style={styles.hint}>
                   {selectedCity
                     ? t('roteiros:generateFlow.originHint', { city: cityName(selectedCity) })
@@ -485,7 +503,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                       leftIcon={<Ionicons name="search" size={20} color={colors.textSubtle} style={styles.inputIcon} />}
                       rightElement={
                         searching ? (
-                          <ActivityIndicator size="small" color={colors.primary} />
+                          <ActivityIndicator size="small" color={colors.primaryText} />
                         ) : addressInput.length > 0 ? (
                           <TouchableOpacity onPress={handleClearInput} style={styles.clearBtn}>
                             <Text style={styles.clearBtnText}>✕</Text>
@@ -533,9 +551,11 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
 
                 <View style={styles.chipRow}>
                   <TouchableOpacity style={styles.chip} onPress={handleUseCityCenter}>
+                    <Ionicons name="business-outline" size={15} color={colors.primaryText} />
                     <Text style={styles.chipText}>{t('roteiros:generateFlow.cityCenterChip')}</Text>
                   </TouchableOpacity>
                   <TouchableOpacity style={styles.chip} onPress={handleUseCurrentLocation}>
+                    <Ionicons name="locate-outline" size={15} color={colors.primaryText} />
                     <Text style={styles.chipText}>{t('roteiros:generateFlow.currentLocationLabel')}</Text>
                   </TouchableOpacity>
                 </View>
@@ -543,7 +563,10 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               </View>
 
               <View style={styles.card}>
-                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.startDateLabel')}</Text>
+                <View style={styles.cardHeader}>
+                  <View style={styles.cardIcon}><Ionicons name="calendar" size={17} color={colors.primaryText} /></View>
+                  <Text style={styles.cardLabel}>{t('roteiros:generateFlow.startDateLabel')}</Text>
+                </View>
                 <TouchableOpacity
                   style={[styles.dateField, showIosCalendar && styles.dateFieldOpen]}
                   onPress={openCalendar}
@@ -551,7 +574,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                   accessibilityRole="button"
                   accessibilityLabel={t('roteiros:generateFlow.pickStartDate')}
                 >
-                  <Ionicons name="calendar-outline" size={20} color={colors.primary} />
+                  <Ionicons name="calendar-outline" size={20} color={colors.primaryText} />
                   <Text style={styles.dateFieldText}>{formatDate(startDate)}</Text>
                   <Text style={styles.dateFieldWeekday}>{formatWeekday(startDate)}</Text>
                   <Ionicons name={showIosCalendar ? 'chevron-up' : 'chevron-down'} size={18} color={colors.textSubtle} />
@@ -570,7 +593,10 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               </View>
 
               <View style={styles.card}>
-                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.durationLabel')}</Text>
+                <View style={styles.cardHeader}>
+                  <View style={styles.cardIcon}><Ionicons name="time" size={17} color={colors.primaryText} /></View>
+                  <Text style={styles.cardLabel}>{t('roteiros:generateFlow.durationLabel')}</Text>
+                </View>
                 <View style={styles.stepperRow}>
                   <TouchableOpacity
                     style={[styles.stepperBtn, days <= 1 && styles.stepperBtnDisabled]}
@@ -578,7 +604,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     disabled={days <= 1}
                     accessibilityLabel={t('roteiros:generateFlow.lessDays')}
                   >
-                    <Ionicons name="remove" size={22} color={colors.primary} />
+                    <Ionicons name="remove" size={22} color={colors.primaryText} />
                   </TouchableOpacity>
                   <Text style={styles.durationValue}>{t('roteiros:generateFlow.daysCount', { count: days })}</Text>
                   <TouchableOpacity
@@ -587,7 +613,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     disabled={days >= MAX_DAYS}
                     accessibilityLabel={t('roteiros:generateFlow.moreDays')}
                   >
-                    <Ionicons name="add" size={22} color={colors.primary} />
+                    <Ionicons name="add" size={22} color={colors.primaryText} />
                   </TouchableOpacity>
                 </View>
                 <Text style={styles.periodText}>
@@ -598,7 +624,10 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               </View>
 
               <View style={styles.card}>
-                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.paceLabel')}</Text>
+                <View style={styles.cardHeader}>
+                  <View style={styles.cardIcon}><Ionicons name="speedometer" size={17} color={colors.primaryText} /></View>
+                  <Text style={styles.cardLabel}>{t('roteiros:generateFlow.paceLabel')}</Text>
+                </View>
                 {availablePaces.map((option) => {
                   const active = option.id === effectivePace;
                   return (
@@ -610,6 +639,9 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                       accessibilityRole="radio"
                       accessibilityState={{ selected: active }}
                     >
+                      <View style={[styles.paceIcon, active && styles.paceIconActive]}>
+                        <Ionicons name={PACE_ICONS[option.id] ?? 'walk'} size={18} color={active ? colors.onPrimary : colors.primaryText} />
+                      </View>
                       <View style={styles.paceTextBox}>
                         <Text style={[styles.paceTitle, active && styles.paceTitleActive]}>
                           {t(`roteiros:generateFlow.paces.${option.id}.title`)}
@@ -617,9 +649,9 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                         <Text style={styles.paceDescription}>{t(`roteiros:generateFlow.paces.${option.id}.description`)}</Text>
                       </View>
                       <Ionicons
-                        name={active ? 'radio-button-on' : 'radio-button-off'}
-                        size={22}
-                        color={active ? colors.primary : colors.borderMuted}
+                        name={active ? 'checkmark-circle' : 'ellipse-outline'}
+                        size={24}
+                        color={active ? colors.primaryText : colors.borderMuted}
                       />
                     </TouchableOpacity>
                   );
@@ -627,7 +659,10 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               </View>
 
               <View style={styles.card}>
-                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.nameLabel')}</Text>
+                <View style={styles.cardHeader}>
+                  <View style={styles.cardIcon}><Ionicons name="pricetag" size={17} color={colors.primaryText} /></View>
+                  <Text style={styles.cardLabel}>{t('roteiros:generateFlow.nameLabel')}</Text>
+                </View>
                 <CustomInput
                   value={name}
                   onChangeText={setName}
@@ -642,7 +677,10 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               </View>
 
               <View style={styles.card}>
-                <Text style={styles.cardLabel}>{t('roteiros:generateFlow.requestLabel')}</Text>
+                <View style={styles.cardHeader}>
+                  <View style={styles.cardIcon}><Ionicons name="chatbubble-ellipses" size={17} color={colors.primaryText} /></View>
+                  <Text style={styles.cardLabel}>{t('roteiros:generateFlow.requestLabel')}</Text>
+                </View>
                 <CustomInput
                   value={tripRequest}
                   onChangeText={setTripRequest}
@@ -652,7 +690,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                   inputStyle={styles.addressInput}
                   style={{ marginBottom: 0 }}
                   inputWrapperStyle={styles.fakeSearchBox}
-                  leftIcon={<Ionicons name="sparkles-outline" size={20} color={colors.primary} style={styles.inputIcon} />}
+                  leftIcon={<Ionicons name="create-outline" size={20} color={colors.textSubtle} style={styles.inputIcon} />}
                 />
               </View>
 
@@ -666,17 +704,23 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                 />
               ) : null}
 
+            </ScrollView>
+          )}
+
+          {step === 'config' && (
+            <View style={styles.footer}>
               <CustomButton
                 title={t('roteiros:generateFlow.generateButton')}
                 onPress={handleGenerate}
                 disabled={!selectedPlace || !selectedCity}
-                style={styles.generateBtn}
+                icon={<Ionicons name="navigate" size={18} color={colors.onPrimary} />}
               />
-            </ScrollView>
+            </View>
           )}
 
           {step === 'loading' && (
             <View style={styles.loadingContainer}>
+              <HeroFill />
               <OrbitLoader />
               <Text style={styles.loadingText}>{t('roteiros:generateFlow.loadingText')}</Text>
             </View>
@@ -686,9 +730,9 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
             <ScrollView contentContainerStyle={styles.content}>
 
               {/* Resumo */}
-              <View style={styles.summaryCard}>
+              <Reanimated.View entering={FadeInDown.duration(420)} style={styles.summaryCard}>
                 {summaryImage && <Image source={summaryImage} style={styles.summaryImage} resizeMode="cover" />}
-                {summaryImage && <View style={styles.summaryShade} />}
+                {summaryImage && <LinearGradient colors={[colors.scrimStart, colors.scrimEnd]} style={styles.summaryShade} />}
                 <Text style={styles.summaryName}>{itineraryTitle(generatedItinerary)}</Text>
                 <View style={{flexDirection: 'row', alignItems: 'center', gap: 6}}>
                   <Ionicons name="location" size={18} color={colors.onPrimary} style={{marginBottom: 5}}/>
@@ -703,16 +747,16 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                     origin: selectedPlace?.shortName ?? '',
                   })}
                 </Text>
-              </View>
+              </Reanimated.View>
 
               {generatedItinerary.assistantSummary ? (
-                <View style={styles.assistantCard}>
-                  <Ionicons name="sparkles" size={18} color={colors.primary} />
+                <Reanimated.View entering={FadeInDown.delay(120).duration(380)} style={styles.assistantCard}>
+                  <Ionicons name="chatbubble-ellipses" size={18} color={colors.primaryText} />
                   <View style={{ flex: 1 }}>
                     <Text style={styles.assistantTitle}>{t('roteiros:generateFlow.assistantTitle')}</Text>
                     <Text style={styles.assistantText}>{generatedItinerary.assistantSummary}</Text>
                   </View>
-                </View>
+                </Reanimated.View>
               ) : null}
 
               {/* Lista completa de lugares */}
@@ -725,7 +769,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
               )}
               <View style={styles.previewList}>
                 {day.places.map((place, idx) => {
-                  const color = PLACE_COLORS[idx % PLACE_COLORS.length];
+                  const color = placeColor(colors, idx);
                   const isLast = idx === day.places.length - 1;
                   return (
                     <View key={idx}>
@@ -781,6 +825,7 @@ export default function GenerateItineraryFlow({ visible, initialPlace, onAccept,
                   <Text style={styles.regenBtnText}>{t('roteiros:generateFlow.regenerate')}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.acceptBtn} onPress={handleAccept} activeOpacity={0.85}>
+                  <LinearGradient colors={colors.gradientAction} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.acceptFill} />
                   <Text style={styles.acceptBtnText}>{t('roteiros:generateFlow.accept')}</Text>
                 </TouchableOpacity>
               </View>
@@ -797,72 +842,91 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.backgroundMuted },
 
   header: {
-    backgroundColor: colors.white,
+    backgroundColor: colors.primaryDark,
+    overflow: 'hidden',
     paddingTop: Platform.OS === 'ios' ? 20 : 16,
     paddingBottom: 16,
     paddingHorizontal: 24,
   },
   headerTopRow: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' },
-  headerTitle: { fontSize: Platform.OS === 'ios' ? 20 : 26, fontWeight: 'bold', color: colors.text },
-  headerCounter: { fontSize: 13, color: colors.textSubtle, marginTop: 2 },
-  closeBtn: { padding: 4 },
-  closeBtnText: { fontSize: 18, color: colors.textSubtle },
-  progressTrack: { height: 4, backgroundColor: colors.border, borderRadius: 2, overflow: 'hidden', marginTop: 16 },
-  progressFill: { height: '100%', backgroundColor: colors.primary, borderRadius: 2 },
+  headerTitle: { fontSize: 28, letterSpacing: -0.6, fontFamily: 'Display-Black', color: colors.onPrimary },
+  headerCounter: { fontSize: 13, color: colors.onPrimaryFaint80, marginTop: 2 },
+  closeBtn: {
+    width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center',
+    backgroundColor: colors.glassSurface, borderWidth: 1, borderColor: colors.glassBorder,
+  },
+  closeBtnText: { fontSize: 15, color: colors.onPrimary },
+  progressTrack: { height: 5, backgroundColor: colors.glassSurface, borderRadius: 3, overflow: 'hidden', marginTop: 16 },
+  progressFill: { height: '100%', borderRadius: 3, backgroundColor: colors.onPrimary },
+  acceptFill: { ...StyleSheet.absoluteFill, borderRadius: 18 },
 
-  content: { padding: 24, paddingBottom: 80 },
+  content: { padding: 16, paddingBottom: 32 },
+  footer: {
+    paddingHorizontal: 16, paddingTop: 12, paddingBottom: 12, backgroundColor: colors.white,
+    borderTopWidth: 1, borderTopColor: colors.borderSubtle,
+  },
+  cardHeader: { flexDirection: 'row', alignItems: 'center', gap: 10, marginBottom: 12 },
+  cardIcon: { width: 32, height: 32, borderRadius: 11, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.primarySurface },
+  cityField: {
+    flexDirection: 'row', alignItems: 'center', borderRadius: 16, paddingHorizontal: 14, minHeight: 54,
+    backgroundColor: colors.surfaceAlt, borderWidth: 1, borderColor: colors.border, overflow: 'hidden',
+  },
+  cityFieldPhoto: { minHeight: 132, alignItems: 'flex-end', paddingBottom: 12, borderWidth: 0, backgroundColor: colors.primaryDark },
+  cityPhoto: { ...StyleSheet.absoluteFill },
+  cityTextOnPhoto: { color: colors.onPrimary, fontFamily: 'Display-Bold', fontSize: 21, paddingVertical: 0 },
+  paceIcon: { width: 38, height: 38, borderRadius: 13, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.primarySurface },
+  paceIconActive: { backgroundColor: colors.primary },
 
   feedback: { marginTop: 18 },
 
   card: {
     backgroundColor: colors.white,
-    borderRadius: 16,
+    borderRadius: 24,
     padding: 16,
-    marginBottom: 16,
+    marginBottom: 12,
+    borderWidth: 1,
+    borderColor: colors.borderSubtle,
+    shadowColor: colors.shadow,
+    shadowOpacity: 0.05,
+    shadowRadius: 14,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 2,
   },
   cardLabel: {
-    fontSize: Platform.OS === 'ios' ? 11 : 16,
-    fontWeight: '700',
-    color: colors.textSubtle,
-    letterSpacing: 0.8,
-    textTransform: 'uppercase',
-    marginBottom: 12,
+    fontSize: 17,
+    fontFamily: 'Display-Bold',
+    color: colors.text,
   },
-  hint: { fontSize: Platform.OS === 'ios' ? 13 : 18, color: colors.textSubtle, marginBottom: 10, marginTop: -6 },
+  hint: { fontSize: 14, color: colors.textSubtle, marginBottom: 10, marginTop: -4, lineHeight: 20 },
 
   fakeSearchBox: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: colors.white,
-    borderRadius: 14,
-    paddingHorizontal: 16,
-    shadowColor: colors.shadow,
-    shadowOpacity: 0.15,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 2 },
-    elevation: 3,
+    backgroundColor: colors.surfaceAlt,
+    borderRadius: 16,
+    paddingHorizontal: 14,
+    borderWidth: 1,
+    borderColor: colors.border,
   },
-  cityText: { flex: 1, fontSize: Platform.OS === 'ios' ? 15 : 18, color: colors.text, fontWeight: '600', paddingVertical: 12 },
-  cityPlaceholder: { color: colors.textSubtle, fontWeight: '400' },
+  cityText: { flex: 1, fontSize: 16, color: colors.text, fontFamily: 'Jakarta-Bold', paddingVertical: 12 },
+  cityPlaceholder: { color: colors.textSubtle, fontFamily: 'Jakarta' },
 
-  durationValue: { fontSize: Platform.OS === 'ios' ? 18 : 22, fontWeight: 'bold', color: colors.text, minWidth: 90, textAlign: 'center' },
+  durationValue: { fontSize: 26, letterSpacing: -0.4, fontFamily: 'Display-Bold', color: colors.text, minWidth: 110, textAlign: 'center' },
   assistantCard: {
     flexDirection: 'row', gap: 10, alignItems: 'flex-start',
     backgroundColor: colors.primarySurface, borderRadius: 16, padding: 14, marginBottom: 16,
     borderWidth: 1, borderColor: colors.primaryBorder,
   },
-  assistantTitle: { fontSize: 12, fontWeight: '700', color: colors.primary, textTransform: 'uppercase', letterSpacing: 0.5 },
+  assistantTitle: { fontSize: 12, fontFamily: 'Jakarta-Bold', color: colors.primaryText, textTransform: 'uppercase', letterSpacing: 0.5 },
   assistantText: { fontSize: 14, color: colors.text, marginTop: 4, lineHeight: 20 },
   stepperRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 20 },
   stepperBtn: {
     width: 44,
     height: 44,
     borderRadius: 22,
-    borderWidth: 1.5,
-    borderColor: colors.border,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.white,
+    backgroundColor: colors.primarySurface,
   },
   stepperBtnDisabled: { opacity: 0.35 },
   periodText: { fontSize: 13, color: colors.textSubtle, textAlign: 'center', marginTop: 10 },
@@ -870,55 +934,53 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
-    backgroundColor: colors.backgroundMuted,
-    borderRadius: 14,
-    borderWidth: 1.5,
+    backgroundColor: colors.surfaceAlt,
+    borderRadius: 16,
+    borderWidth: 1,
     borderColor: colors.border,
-    paddingHorizontal: 16,
+    paddingHorizontal: 14,
     paddingVertical: 12,
   },
   dateFieldOpen: { borderColor: colors.primary },
-  dateFieldText: { flex: 1, fontSize: Platform.OS === 'ios' ? 16 : 18, fontWeight: '600', color: colors.text },
+  dateFieldText: { flex: 1, fontSize: 17, fontFamily: 'Jakarta-Bold', color: colors.text },
   dateFieldWeekday: { fontSize: 13, color: colors.textSubtle, textTransform: 'capitalize' },
   paceOption: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    borderRadius: 14,
+    borderRadius: 18,
     borderWidth: 1.5,
-    borderColor: colors.border,
+    borderColor: colors.borderSubtle,
     padding: 12,
     marginBottom: 8,
     backgroundColor: colors.white,
   },
-  paceOptionActive: { borderColor: colors.primary, backgroundColor: colors.backgroundMuted },
+  paceOptionActive: { borderColor: colors.primaryText, backgroundColor: colors.selectedSurface },
   paceTextBox: { flex: 1 },
-  paceTitle: { fontSize: Platform.OS === 'ios' ? 15 : 17, fontWeight: '700', color: colors.text },
-  paceTitleActive: { color: colors.primary },
-  paceDescription: { fontSize: Platform.OS === 'ios' ? 12 : 14, color: colors.textSubtle, marginTop: 2 },
-  previewFreePeriod: { fontSize: 13, fontWeight: '600', color: colors.successText, paddingVertical: 10 },
+  paceTitle: { fontSize: 16, fontFamily: 'Jakarta-Bold', color: colors.text },
+  paceTitleActive: { color: colors.primaryText },
+  paceDescription: { fontSize: 13, color: colors.textSubtle, marginTop: 2 },
+  previewFreePeriod: { fontSize: 13, fontFamily: 'Jakarta-Bold', color: colors.successText, paddingVertical: 10 },
   previewDayLabel: {
     fontSize: 12,
-    fontWeight: '700',
+    fontFamily: 'Jakarta-Bold',
     color: colors.textSubtle,
     letterSpacing: 0.8,
     textTransform: 'uppercase',
     marginBottom: 8,
   },
 
-  chipRow: { flexDirection: 'row', gap: 10, marginTop: 12, marginBottom: 4 },
+  chipRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 12, marginBottom: 2 },
   chip: {
-    backgroundColor: colors.white,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    backgroundColor: colors.primarySurface,
     borderRadius: 16,
-    paddingHorizontal: 14,
-    paddingVertical: 8,
-    shadowColor: colors.shadow,
-    shadowOpacity: 0.12,
-    shadowRadius: 4,
-    shadowOffset: { width: 0, height: 1 },
-    elevation: 1,
+    paddingHorizontal: 12,
+    paddingVertical: 9,
   },
-  chipText: { fontWeight: '700', fontSize: Platform.OS === 'ios' ? 12 : 18, color: colors.text },
+  chipText: { fontFamily: 'Jakarta-Bold', fontSize: 13, color: colors.primaryText },
 
   autocompleteWrapper: { marginBottom: 0 },
   inputRow: {
@@ -935,11 +997,11 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
   addressInput: {
     flex: 1,
     paddingVertical: 9,
-    fontSize: Platform.OS === 'ios' ? 16 : 18,
+    fontSize: 17,
     color: colors.text,
   },
   clearBtn: { padding: 8 },
-  clearBtnText: { fontSize: 14, color: colors.placeholder, fontWeight: '600' },
+  clearBtnText: { fontSize: 14, color: colors.placeholder, fontFamily: 'Jakarta-Bold' },
 
   suggestionsBox: {
     backgroundColor: colors.white,
@@ -969,8 +1031,8 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.dividerSoft,
   },
-  suggestionPrimary: { fontSize: Platform.OS === 'ios' ? 14 : 22, fontWeight: '600', color: colors.text, marginBottom: 2 },
-  suggestionSecondary: { fontSize: Platform.OS === 'ios' ? 12 : 16, color: colors.textSubtle },
+  suggestionPrimary: { fontSize: 15, fontFamily: 'Jakarta-Bold', color: colors.text, marginBottom: 2 },
+  suggestionSecondary: { fontSize: 13, color: colors.textSubtle },
 
   resolvedBox: {
     flexDirection: 'row',
@@ -989,45 +1051,47 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
   searchMessage: { fontSize: 13, color: colors.warningBannerText, lineHeight: 18, marginTop: 10 },
 
   generateBtn: {
-    backgroundColor: colors.primary,
-    borderRadius: 14,
+    borderRadius: 18,
     padding: 16,
     alignItems: 'center',
     marginTop: 28,
-    shadowColor: colors.primary,
-    shadowOpacity: 0.3,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 5,
-    width: '80%', alignSelf: 'center', minHeight: 55,
+    shadowColor: colors.shadowBrand,
+    shadowOpacity: 0.34,
+    shadowRadius: 16,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 8,
+    width: '100%', alignSelf: 'center', minHeight: 56,
   },
   generateBtnDisabled: { opacity: 0.45, shadowOpacity: 0 },
-  generateBtnText: { color: colors.onPrimary, fontWeight: 'bold', fontSize: 16 },
+  generateBtnText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 16 },
 
   // Loading
-  loadingContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 28 },
-  loadingText: { fontSize: 16, color: colors.textSubtle, fontWeight: '500' },
+  loadingContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 28, overflow: 'hidden', backgroundColor: colors.primaryDark },
+  loadingText: { fontSize: 17, color: colors.onPrimary, fontFamily: 'Jakarta-Medium' },
 
   // Preview
   summaryCard: {
-    backgroundColor: colors.primary,
-    borderRadius: 16,
+    backgroundColor: colors.primaryDark,
+    borderRadius: 26,
     padding: 18,
-    marginBottom: 18,
+    paddingTop: 110,
+    marginBottom: 16,
     overflow: 'hidden',
   },
   summaryImage: { ...StyleSheet.absoluteFill, width: undefined, height: undefined },
-  summaryShade: { ...StyleSheet.absoluteFill, backgroundColor: colors.overlay },
-  summaryName: { fontSize: 20, fontWeight: 'bold', color: colors.onPrimary, marginBottom: 8 },
-  summaryTitle: { fontSize: 16, fontWeight: '700', color: colors.onPrimary, marginBottom: 4 },
-  summaryMeta: { fontSize: 13, color: colors.onPrimaryFaint70 },
+  summaryShade: { ...StyleSheet.absoluteFill },
+  summaryName: { fontSize: 30, lineHeight: 33, letterSpacing: -0.6, fontFamily: 'Display-Black', color: colors.onPrimary, marginBottom: 8 },
+  summaryTitle: { fontSize: 16, fontFamily: 'Jakarta-Bold', color: colors.onPrimary, marginBottom: 4 },
+  summaryMeta: { fontSize: 13, color: colors.onPrimaryFaint80 },
 
   previewList: {
     backgroundColor: colors.white,
-    borderRadius: 18,
+    borderRadius: 24,
+    borderWidth: 1,
+    borderColor: colors.borderSubtle,
     paddingVertical: 8,
     paddingHorizontal: 16,
-    marginBottom: 24,
+    marginBottom: 16,
     shadowColor: colors.shadow,
     shadowOpacity: 0.06,
     shadowRadius: 8,
@@ -1055,10 +1119,10 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  previewIndexText: { color: colors.onPrimary, fontWeight: 'bold', fontSize: 13 },
+  previewIndexText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 13 },
   previewItemContent: { flex: 1, paddingBottom: 4 },
   previewItemRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 8, marginBottom: 3 },
-  previewPlaceName: { flex: 1, fontSize: 14, fontWeight: '700', color: colors.text, lineHeight: 20 },
+  previewPlaceName: { flex: 1, fontSize: 14, fontFamily: 'Jakarta-Bold', color: colors.text, lineHeight: 20 },
   previewPlaceAddr: { fontSize: 12, color: colors.textSubtle },
   timeBadge: {
     borderRadius: 8,
@@ -1067,23 +1131,23 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
     paddingVertical: 2,
     alignSelf: 'flex-start',
   },
-  timeBadgeText: { fontSize: 11, fontWeight: '700' },
+  timeBadgeText: { fontSize: 11, fontFamily: 'Jakarta-Bold' },
 
   previewActions: { flexDirection: 'row', gap: 12 },
   regenBtn: {
     flex: 1,
-    borderRadius: 12,
+    borderRadius: 18,
     padding: 16,
-    minHeight: 52,
+    minHeight: 54,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.white,
+    backgroundColor: colors.primarySurface,
   },
-  regenBtnText: { fontSize: 16, fontWeight: 'bold', color: colors.text },
+  regenBtnText: { fontSize: 16, fontFamily: 'Jakarta-Bold', color: colors.primaryText },
   acceptBtn: {
     flex: 1.3,
     backgroundColor: colors.primary,
-    borderRadius: 12,
+    borderRadius: 18,
     padding: 16,
     minHeight: 52,
     alignItems: 'center',
@@ -1094,5 +1158,5 @@ const getStyles = (colors: AppColors) => StyleSheet.create({
     shadowOffset: { width: 0, height: 4 },
     elevation: 5,
   },
-  acceptBtnText: { fontSize: 16, fontWeight: 'bold', color: colors.onPrimary },
+  acceptBtnText: { fontSize: 16, fontFamily: 'Jakarta-Bold', color: colors.onPrimary },
 });

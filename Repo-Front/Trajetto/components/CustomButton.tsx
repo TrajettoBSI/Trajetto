@@ -1,6 +1,6 @@
 import React from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
 import {
-  TouchableOpacity,
   Text,
   StyleSheet,
   ActivityIndicator,
@@ -8,8 +8,8 @@ import {
   ViewStyle,
   TextStyle,
   View,
-  Platform,
 } from 'react-native';
+import PressableScale from '@/src/components/motion/PressableScale';
 import { useColors } from '@/src/theme';
 
 interface CustomButtonProps {
@@ -34,14 +34,23 @@ export default function CustomButton({
   const colors = useColors();
   const buttonStyles = getStyles(colors);
   const isButtonDisabled = disabled || loading;
+  const flat = StyleSheet.flatten(style) ?? {};
 
   return (
-    <TouchableOpacity
+    <PressableScale
       style={[buttonStyles.button, style, isButtonDisabled && buttonStyles.buttonDisabled]}
       onPress={onPress}
       disabled={isButtonDisabled}
-      activeOpacity={0.85}
+      haptic
+      accessibilityRole="button"
     >
+      {!flat.backgroundColor && (
+        <LinearGradient
+          colors={colors.gradientAction}
+          start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}
+          style={[StyleSheet.absoluteFill, { borderRadius: flat.borderRadius ?? 18 }]}
+        />
+      )}
       {loading ? (
         <ActivityIndicator color={colors.onPrimary} />
       ) : (
@@ -54,26 +63,26 @@ export default function CustomButton({
           <Text style={[buttonStyles.buttonText, textStyle]}>{title}</Text>
         </View>
       )}
-    </TouchableOpacity>
+    </PressableScale>
   );
 }
 
 const getStyles = (colors: ReturnType<typeof useColors>) => StyleSheet.create({
   button: {
     backgroundColor: colors.primary,
-    borderRadius: 12,
+    borderRadius: 18,
     padding: 16,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: colors.primary,
-    shadowOpacity: 0.35,
-    shadowRadius: 8,
+    shadowColor: colors.shadow,
+    shadowOpacity: 0.14,
+    shadowRadius: 10,
     shadowOffset: { width: 0, height: 4 },
-    elevation: 5,
+    elevation: 3,
     minHeight: 52,
   },
   buttonDisabled: { opacity: 0.6 },
   content: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   icon: { fontSize: 22 },
-  buttonText: { color: colors.onPrimary, fontFamily: 'Inter-Bold', fontSize: Platform.OS === 'ios' ? 16 : 22 },
+  buttonText: { color: colors.onPrimary, fontFamily: 'Jakarta-Bold', fontSize: 17 },
 });

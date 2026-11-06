@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroFill from '@/src/components/brand/HeroFill';
 import {
   View, Text, TouchableOpacity, FlatList,
   Modal,
@@ -53,6 +54,7 @@ export default function Explore() {
   return (
     <View style={s.safe}>
       <View style={[s.headerWrapper, { paddingTop: insets.top }]}>
+        <HeroFill variant="bar" />
         <View style={s.headerRow}>
           <View style={s.headerLeft}>
             <TouchableOpacity onPress={() => router.back()} style={s.headerBackBtn} activeOpacity={0.7}>
@@ -103,11 +105,11 @@ export default function Explore() {
           accessibilityRole="button"
           accessibilityLabel={t('explore:cityPickerTitle')}
         >
-          <Ionicons name="location" size={16} color={colors.primary} />
+          <Ionicons name="location" size={16} color={colors.primaryText} />
           <Text style={s.cityBtnText}>
             {cityOptions.find((o) => o.value === (selectedCity?.slug ?? null))?.label}
           </Text>
-          <Ionicons name="chevron-down" size={16} color={colors.primary} />
+          <Ionicons name="chevron-down" size={16} color={colors.primaryText} />
         </TouchableOpacity>
 
         {selectedCategory ? (
@@ -185,7 +187,7 @@ export default function Explore() {
                 <Text style={[s.categoryItemText, tempCategory === '' && s.categoryItemTextSelected]}>
                   {t('explore:allCategories')}
                 </Text>
-                {tempCategory === '' && <Ionicons name="checkmark" size={20} color={colors.primary} />}
+                {tempCategory === '' && <Ionicons name="checkmark" size={20} color={colors.primaryText} />}
               </TouchableOpacity>
 
               {categories.map((cat) => (
@@ -196,12 +198,12 @@ export default function Explore() {
                   activeOpacity={0.7}
                 >
                   <View style={[s.categoryIconBadge, tempCategory === cat && s.categoryIconBadgeSelected]}>
-                    <Text style={s.categoryIconEmoji}>{categoryIcon(cat)}</Text>
+                    <Ionicons name={categoryIcon(cat)} size={16} color={tempCategory === cat ? colors.primaryText : colors.gray500} />
                   </View>
                   <Text style={[s.categoryItemText, tempCategory === cat && s.categoryItemTextSelected]}>
                     {categoryLabel(cat)}
                   </Text>
-                  {tempCategory === cat && <Ionicons name="checkmark" size={20} color={colors.primary} />}
+                  {tempCategory === cat && <Ionicons name="checkmark" size={20} color={colors.primaryText} />}
                 </TouchableOpacity>
               ))}
             </ScrollView>

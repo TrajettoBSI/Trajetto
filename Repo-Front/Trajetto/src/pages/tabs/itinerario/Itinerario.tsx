@@ -1,16 +1,23 @@
 import React from 'react';
-import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
+import HeroFill from '@/src/components/brand/HeroFill';
+import { RefreshControl, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import Animated, { FadeIn } from 'react-native-reanimated';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomButton from '@/components/CustomButton';
-import { PLACE_COLORS } from '@/constants/placeColors';
 import { isPlacePast } from '@/app/utils/isPlacePast';
-import { useColors } from '@/src/theme';
+import { placeColor, useColors } from '@/src/theme';
 import { AsyncBoundary } from '@/src/components/feedback';
 import NoItineraryEmptyState from '@/src/pages/tabs/shared/components/NoItineraryEmptyState/NoItineraryEmptyState';
 import DaySelector from '@/src/pages/tabs/shared/components/DaySelector/DaySelector';
 import { placeDate } from '@/src/domain/itinerary/itineraryDays';
+import BrandMark from '@/src/components/brand/BrandMark';
+import PressableScale from '@/src/components/motion/PressableScale';
+import { useLightStatusBar } from '@/src/pages/tabs/shared/hooks/useLightStatusBar';
+import { usePullToRefresh } from '@/src/pages/tabs/shared/hooks/usePullToRefresh';
+import ItinerarioSkeleton from './components/ItinerarioSkeleton/ItinerarioSkeleton';
 import { useItinerario } from './hooks/useItinerario';
 import { styles } from './styles/styles';
 import ItineraryHeaderCard from './components/ItineraryHeaderCard/ItineraryHeaderCard';
@@ -45,6 +52,7 @@ export default function Itinerario() {
     loading,
     error,
     reload,
+    refresh,
     setFocusedMapPlace,
     days,
     currentDay,
@@ -83,6 +91,8 @@ export default function Itinerario() {
     share,
     shareCardRef,
   } = useItinerario();
+  const { refreshing, onRefresh } = usePullToRefresh(refresh);
+  useLightStatusBar();
 
   return (
     <AsyncBoundary
@@ -90,7 +100,7 @@ export default function Itinerario() {
       onRetry={reload}
       error={{ message: error ?? undefined }}
       style={s.center}
-      loading={{ title: t('loadingText'), message: '' }}
+      renderLoading={() => <ItinerarioSkeleton />}
       renderEmpty={() => <NoItineraryEmptyState destIndex={destIndex} title="Trajetto" />}
     >
       {(roteiro) => {
@@ -100,7 +110,11 @@ export default function Itinerario() {
         return (
           <View style={s.safe}>
             <View style={[s.headerBar, { paddingTop: insets.top + 12 }]}>
-              <Text style={s.headerBarTitle}>Trajetto</Text>
+              <HeroFill variant="bar" />
+              <View style={s.headerBrand}>
+                <BrandMark size={26} color={colors.onPrimary} />
+                <Text style={s.headerBarTitle}>trajetto</Text>
+              </View>
               <View style={s.headerActions}>
                 <TouchableOpacity
                   style={[s.headerExportBtn, edit.editing && s.headerEditActive]}
@@ -122,7 +136,6 @@ export default function Itinerario() {
                   accessibilityLabel={t('share.button')}
                 >
                   <Ionicons name="share-social-outline" size={18} color={colors.onPrimary} />
-                  <Text style={s.headerExportText}>{t('share.buttonShort')}</Text>
                 </TouchableOpacity>
               </View>
             </View>
@@ -131,6 +144,9 @@ export default function Itinerario() {
               style={s.container}
               contentContainerStyle={[s.content, { paddingBottom: insets.bottom + TAB_BAR_SPACE + 64 }]}
               showsVerticalScrollIndicator={false}
+              refreshControl={
+                <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primary} colors={[colors.primary]} />
+              }
             >
               <OfflineBanner />
 
@@ -168,7 +184,7 @@ export default function Itinerario() {
               <View style={s.timeline}>
                 {sorted.map((place, idx) => {
                   const isPast = isPlacePast(placeDate(roteiro.startDate, place), place.estimatedVisitTime);
-                  const color = PLACE_COLORS[idx % PLACE_COLORS.length];
+                  const color = placeColor(colors, idx);
                   const isLast = idx === sorted.length - 1;
                   const isHighlighted = highlightedPlaceIndex === place.orderIndex;
 
@@ -246,16 +262,23 @@ export default function Itinerario() {
             </ScrollView>
 
             {!edit.editing && (
-              <TouchableOpacity
-                style={[s.assistantFab, { bottom: insets.bottom + TAB_BAR_SPACE - 8 }]}
-                onPress={assistant.open}
-                activeOpacity={0.85}
-                accessibilityRole="button"
-                accessibilityLabel={t('assistant.open')}
+              <Animated.View
+                entering={FadeIn.duration(300)}
+                style={[s.assistantFabWrap, { bottom: insets.bottom + TAB_BAR_SPACE - 8 }]}
               >
-                <Ionicons name="sparkles" size={20} color={colors.onPrimary} />
-                <Text style={s.assistantFabText}>{t('assistant.fab')}</Text>
-              </TouchableOpacity>
+                <PressableScale
+                  style={s.assistantFab}
+                  onPress={assistant.open}
+                  scaleTo={0.97}
+                  haptic
+                  accessibilityRole="button"
+                  accessibilityLabel={t('assistant.open')}
+                >
+                  <LinearGradient colors={colors.gradientAction} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={s.assistantFabFill} />
+                  <Ionicons name="sparkles" size={19} color={colors.onPrimary} />
+                  <Text style={s.assistantFabText}>{t('assistant.fab')}</Text>
+                </PressableScale>
+              </Animated.View>
             )}
 
             <AssistantModal
