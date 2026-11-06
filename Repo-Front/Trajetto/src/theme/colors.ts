@@ -209,14 +209,14 @@ export const lightColors: AppColors = {
   routePast: 'rgba(154,167,186,0.24)',
   surfaceTransparent: 'rgba(255,255,255,0)',
   shadowBrand: '#14284F',
-  tabBar: '#14284F',
-  tabBarIcon: 'rgba(255,255,255,0.62)',
-  tabBarBorder: 'rgba(255,255,255,0.22)',
+  tabBar: '#FFFFFF',
+  tabBarIcon: '#67748A',
+  tabBarBorder: '#E1E8F1',
   placeColors: ['#1F5FAF', '#0E7C86', '#AD600E', '#C2492F', '#5A55B5', '#2B7F4F', '#96457F', '#14284F'],
-  gradientHero: ['#0B1A38', '#14284F', '#17457A', '#17788A', '#2A9D96'],
-  gradientAction: ['#14284F', '#1B4B7A', '#14788A'],
-  gradientProgress: ['#1B4B7A', '#14A3A3'],
-  heroLine: 'rgba(255,255,255,0.08)',
+  gradientHero: ['#101F40', '#14284F', '#1D3A6E'],
+  gradientAction: ['#1B3768', '#2A5296'],
+  gradientProgress: ['#1F4480', '#2F66B0'],
+  heroLine: 'rgba(255,255,255,0.1)',
 };
 
 // Tema escuro: noite azul-marinho, texto claro e o azul da marca clareado para manter contraste.
@@ -322,10 +322,10 @@ export const darkColors: AppColors = {
   tabBarIcon: 'rgba(255,255,255,0.6)',
   tabBarBorder: 'rgba(255,255,255,0.18)',
   placeColors: ['#3F86DB', '#16949F', '#C97A1C', '#D65C40', '#7A74DB', '#2F9A61', '#B85C9E', '#5E7FBF'],
-  gradientHero: ['#050C1F', '#0C1C40', '#123A66', '#125F70', '#1F8F84'],
-  gradientAction: ['#23549F', '#1F6A9A', '#14808A'],
-  gradientProgress: ['#3B82D6', '#23B5B0'],
-  heroLine: 'rgba(255,255,255,0.06)',
+  gradientHero: ['#0C1830', '#101D3A', '#18305C'],
+  gradientAction: ['#23549F', '#2C69BE'],
+  gradientProgress: ['#3B82D6', '#5A9BE6'],
+  heroLine: 'rgba(255,255,255,0.1)',
 };
 
 // Alto contraste: preto sobre branco, bordas pretas e o azul-marinho da marca (WCAG AAA para texto).
@@ -396,7 +396,7 @@ export const highContrastColors: AppColors = {
   warningBannerArrow: '#000000',
   infoBannerBorder: '#000000',
   textMutedLight: '#000000',
-  selectedSurface: '#ffe600',
+  selectedSurface: '#ffffff',
   borderMuted: '#000000',
   activeBadgeSurface: '#ffffff',
   successStrong: '#006b2e',
@@ -434,7 +434,7 @@ export const highContrastColors: AppColors = {
   gradientHero: ['#0F2557', '#0F2557'],
   gradientAction: ['#0F2557', '#0F2557'],
   gradientProgress: ['#0F2557', '#0F2557'],
-  heroLine: 'rgba(255,255,255,0)',
+  heroLine: 'rgba(255,255,255,0.1)',
 };
 
 export const colors = lightColors;

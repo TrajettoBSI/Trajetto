@@ -55,7 +55,7 @@ export function TicketCard({
           <View style={ticketStyles.ticketInner}>
             {/* Cabeçalho colorido */}
             <LinearGradient
-                colors={isPast ? [colors.timelineDotPast, colors.timelineDotPast] : [color, `${color}C7`]}
+                colors={isPast ? [colors.timelineDotPast, colors.timelineDotPast] : [color, `${color}E6`]}
                 start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}
                 style={ticketStyles.header}
             >
