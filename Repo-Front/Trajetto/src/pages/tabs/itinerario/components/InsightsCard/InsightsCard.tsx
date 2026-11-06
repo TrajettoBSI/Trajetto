@@ -2,19 +2,22 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
+import Skeleton from '@/src/components/motion/Skeleton';
 import { useColors } from '@/src/theme';
 import { DayWeather } from '@/services';
 import { RouteSavings } from '@/src/domain/itinerary/routeSavings';
-import { WEATHER_ICONS, weatherKind } from '@/src/domain/weather/weatherInfo';
+import { isBeyondForecast, WEATHER_ICONS, weatherKind } from '@/src/domain/weather/weatherInfo';
 import { formatDecimal } from '@/src/i18n/format';
 import { styles } from './styles';
 
 type InsightsCardProps = {
   savings: RouteSavings | null;
   weather: DayWeather | null;
+  weatherLoading: boolean;
+  date: string | null;
 };
 
-export default function InsightsCard({ savings, weather }: InsightsCardProps) {
+export default function InsightsCard({ savings, weather, weatherLoading, date }: InsightsCardProps) {
   const { t } = useTranslation('itinerario');
   const colors = useColors();
   const s = styles(colors);
@@ -55,8 +58,15 @@ export default function InsightsCard({ savings, weather }: InsightsCardProps) {
                 {t(`insights.kinds.${kind}`)}{weather.precipitationProbability > 0 ? ` - ${t('insights.rainChance', { percent: weather.precipitationProbability })}` : ''}
               </Text>
             </>
+          ) : weatherLoading ? (
+            <View testID="weather-skeleton">
+              <Skeleton style={s.skeletonValue} />
+              <Skeleton style={s.skeletonSub} />
+            </View>
           ) : (
-            <Text style={s.tileSub}>{t('insights.noForecast')}</Text>
+            <Text style={s.tileSub}>
+              {t(date && isBeyondForecast(date) ? 'insights.noForecast' : 'insights.weatherUnavailable')}
+            </Text>
           )}
         </View>
       </View>

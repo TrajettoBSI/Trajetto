@@ -117,6 +117,7 @@
     "optimized": "Ordem otimizada",
     "weather": "Clima",
     "noForecast": "Previsão disponível até 16 dias antes",
+    "weatherUnavailable": "Previsão indisponível",
     "rainChance": "{{percent}}% de chuva",
     "rainyDay": "Dia de chuva: priorizamos museus e lugares cobertos, e deixamos os passeios ao ar livre para os dias secos.",
     "kinds": {

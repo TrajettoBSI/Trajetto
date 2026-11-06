@@ -117,6 +117,7 @@
     "optimized": "Optimized order",
     "weather": "Weather",
     "noForecast": "Forecast available up to 16 days ahead",
+    "weatherUnavailable": "Forecast unavailable",
     "rainChance": "{{percent}}% chance of rain",
     "rainyDay": "Rainy day: we put museums and indoor places first and saved outdoor spots for the dry days.",
     "kinds": {

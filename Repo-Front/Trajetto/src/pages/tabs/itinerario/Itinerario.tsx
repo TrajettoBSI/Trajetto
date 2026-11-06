@@ -88,6 +88,7 @@ export default function Itinerario() {
     assistant,
     savings,
     dayWeather,
+    weatherLoading,
     share,
     shareCardRef,
   } = useItinerario();
@@ -170,7 +171,7 @@ export default function Itinerario() {
               />
 
               {!edit.editing && (
-                <InsightsCard savings={savings} weather={dayWeather} />
+                <InsightsCard savings={savings} weather={dayWeather} weatherLoading={weatherLoading} date={currentDay?.date ?? null} />
               )}
 
               <Text style={s.sectionLabel}>

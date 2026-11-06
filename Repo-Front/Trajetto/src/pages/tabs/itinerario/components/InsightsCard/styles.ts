@@ -16,6 +16,8 @@ export const styles = (colors: AppColors) =>
     },
     tileValue: { fontSize: 20, fontFamily: 'Display-Bold', color: colors.gray900 },
     tileSub: { fontSize: 12, color: colors.textMuted, marginTop: 2 },
+    skeletonValue: { width: '70%', height: 22 },
+    skeletonSub: { width: '90%', height: 12, marginTop: 8 },
     badge: {
       flexDirection: 'row', alignItems: 'center', gap: 4, alignSelf: 'flex-start',
       backgroundColor: colors.successSurface, borderRadius: 10, paddingHorizontal: 8, paddingVertical: 3, marginTop: 4,

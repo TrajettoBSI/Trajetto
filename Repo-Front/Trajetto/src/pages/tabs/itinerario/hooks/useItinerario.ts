@@ -42,7 +42,7 @@ export function useItinerario() {
   const edit = useItineraryEdit(currentDay?.date ?? null);
   const rename = useItineraryRename(itinerary);
   const rating = useItineraryRating(itinerary);
-  const weatherByDate = useItineraryWeather(itinerary);
+  const { weatherByDate, loading: weatherLoading } = useItineraryWeather(itinerary);
   const savings = routeSavings(itinerary?.distanceKm, itinerary?.baselineDistanceKm);
   const dayWeather = currentDay ? weatherByDate[currentDay.date] ?? null : null;
   const assistant = useItineraryAssistant(itinerary, dayPlaces, dayWeather?.rainy ?? false);
@@ -96,6 +96,7 @@ export function useItinerario() {
     assistant,
     savings,
     dayWeather,
+    weatherLoading,
     share,
     shareCardRef,
     handleExportPDF: () => handleExportPDF(itinerary),

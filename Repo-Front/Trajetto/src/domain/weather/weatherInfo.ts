@@ -22,3 +22,11 @@ export const WEATHER_ICONS: Record<WeatherKind, string> = {
   snow: 'snow',
   storm: 'thunderstorm',
 };
+
+const FORECAST_DAYS = 16;
+
+export function isBeyondForecast(date: string, today = new Date()): boolean {
+  const limit = new Date(today.getFullYear(), today.getMonth(), today.getDate() + FORECAST_DAYS - 1);
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return date > `${limit.getFullYear()}-${pad(limit.getMonth() + 1)}-${pad(limit.getDate())}`;
+}

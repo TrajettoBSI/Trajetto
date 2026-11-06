@@ -326,12 +326,13 @@ describe('itinerario', () => {
   });
 
   it('sem previsao nem distancia de referencia, nao inventa numeros', async () => {
+    weather.getForecast.mockResolvedValue([]);
     const semRef: Itinerary = { ...roteiro, id: 71, distanceKm: 9.5, baselineDistanceKm: null };
     useItineraryStore.setState({ itinerary: semRef, itineraries: [semRef] });
     await render(<Itinerario />);
 
     expect(screen.getByText('Ordem otimizada')).toBeTruthy();
-    expect(screen.getByText('Previsão disponível até 16 dias antes')).toBeTruthy();
+    expect(await screen.findByText('Previsão disponível até 16 dias antes')).toBeTruthy();
   });
 
   it('ajusta o roteiro com o assistente: sugestao, pedido digitado, preferencias aplicadas e erro', async () => {
